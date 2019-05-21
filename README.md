@@ -2,10 +2,6 @@
 
 `steemblog` is a blog service that syncs your steem blogs into [https://steemblog.github.io](https://steemblog.github.io) pages. It's built based on steem APIs and [hexo](https://hexo.io) blog framework.
 
-![Pixabay](https://cdn.pixabay.com/photo/2015/06/01/09/04/blog-793047_1280.jpg)
-<br/>
-Image Source: [Pixabay](https://cdn.pixabay.com/photo/2015/06/01/09/04/blog-793047_1280.jpg)
-
 
 ### Features
 
@@ -20,6 +16,11 @@ You can find my blog from [https://steemblog.github.io/@robertyan](https://steem
 To use the blog service, we simply add your steem account name to the STEEM_ACCOUNTS variable of this project's Travis CI job, then the synchronization will be done daily automatically.
 
 You may contact [@robertyan](https://busy.org/@robertyan) if you need help to setup the service in steemblog.
+
+
+![Pixabay](https://cdn.pixabay.com/photo/2015/06/01/09/04/blog-793047_1280.jpg)
+<br/>
+Image Source: [Pixabay](https://cdn.pixabay.com/photo/2015/06/01/09/04/blog-793047_1280.jpg)
 
 
 ### Reference
