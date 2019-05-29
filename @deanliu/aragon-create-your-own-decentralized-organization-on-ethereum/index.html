@@ -1,0 +1,460 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Aragon: Create your Own Decentralized Organization on Ethereum. - deanliu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@deanliu/css/style.css">
+
+<link rel="stylesheet" href="/@deanliu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@deanliu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@deanliu/">Home</a>
+                
+                <a class="navbar-item" href="/@deanliu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@deanliu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@deanliu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@deanliu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Aragon">
+        <span class="has-mr-6">1</span>
+        <span>Aragon.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#I-Executive-Summary">
+        <span class="has-mr-6">1.1</span>
+        <span>I- Executive Summary.</span>
+        </a></li><li>
+        <a class="is-flex" href="#II-How-to-deploy-a-Multi-Signature-Multi-Sig-organization">
+        <span class="has-mr-6">1.2</span>
+        <span>II- How to deploy a Multi-Signature (Multi-Sig) organization.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Step-by-step-guide">
+        <span class="has-mr-6">1.2.1</span>
+        <span>Step-by-step guide:</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@deanliu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmYoa52EEMSyd3hNxk49ZUXpnWNjiTLWLHj8YEqUeC4WpR/y3tLQbs.jpg" alt="Aragon: Create your Own Decentralized Organization on Ethereum.">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-27T02:35:27.000Z">2018-05-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@deanliu/categories/dao/">dao</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1084 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Aragon: Create your Own Decentralized Organization on Ethereum.
+            
+        </h1>
+        <div class="content">
+            <p>Hi entrepreneurs, Dean (@deanliu) and Dan (@tradealert) are back and today we&#x2019;re showing you how to create and manage your very own decentralized organisation with Aragon.</p>
+<p><img src="https://cdn.steemitimages.com/DQmYoa52EEMSyd3hNxk49ZUXpnWNjiTLWLHj8YEqUeC4WpR/y3tLQbs.jpg" alt="y3tLQbs.jpg"></p>
+<h1 id="Aragon"><a href="#Aragon" class="headerlink" title="Aragon."></a>Aragon.</h1><h2 id="I-Executive-Summary"><a href="#I-Executive-Summary" class="headerlink" title="I- Executive Summary."></a>I- Executive Summary.</h2><p>Aragon is a dApp on the Ethereum network that allows anybody to create and manage a general-purpose decentralized autonomous organisation (DAO). Each  Aragon DAO is technically a collection of interconnected Ethereum smart contracts packaged into one sleek user interface. Although the project is still in development, basic DAOs come equipped with a solid suite of basic functions such as token emissions, voting and finance management which we will go over in details in the second section of this article.</p>
+<p>The grand vision behind Aragon is to create an entire network of decentralized organizations ruled by a decentralized court system to create a transparent and censorship-resistant new economy on the blockchain. The Aragon network  possess is own native token  (ANT) which will be used to decentralize the government of the protocol in the future but aren&#x2019;t required to deploy nor manage your own DAO at this time.</p>
+<p>Aragon DAOs currently come in two different flavors:</p>
+<ol>
+<li>General purpose tokenized democracies;</li>
+<li>Business oriented multi-signature organizations.</li>
+</ol>
+<p>Since <strong><em>the</em></strong> <a href="https://www.coindesk.com/understanding-dao-hack-journalists/" target="_blank" rel="noopener"><strong>DAO hack</strong></a>, autonomous organizations have somewhat faded into the background and their general-purpose nature makes it somewhat difficult to lay out their benefits to new users but today we would like to focus on giving you an overview on how to deploy a multi-signature organization and propose one use case which hopefully might inspire you to start your own project on the platform.</p>
+<p>We will discuss the more technical stuff for subsequent articles once the project develops and also once we gain in familiarity with the platform and its functions.</p>
+<p>So let&#x2019;s get into it.</p>
+<p><img src="https://cdn.steemitimages.com/DQmSPdZdN8LRNFQdJGhgzrLPcED622ogiYnWeEyCnauMp6T/1.PNG" alt="1.PNG"></p>
+<h2 id="II-How-to-deploy-a-Multi-Signature-Multi-Sig-organization"><a href="#II-How-to-deploy-a-Multi-Signature-Multi-Sig-organization" class="headerlink" title="II- How to deploy a Multi-Signature (Multi-Sig) organization."></a>II- How to deploy a Multi-Signature (Multi-Sig) organization.</h2><p>Our project started with the need to pool tokens in order to run a node on a third-party Ethereum-based network. Multi-Sig DAOs not only allow you to securely store the tokens needed to run a node into a multi-sig smart contract but also to create a decentralized &#x201C;bank account&#x201D; where the rewards can be pooled then sent out to individual investors according to their stake in the investment.</p>
+<p>Let&#x2019;s break this down.</p>
+<h3 id="Step-by-step-guide"><a href="#Step-by-step-guide" class="headerlink" title="Step-by-step guide:"></a>Step-by-step guide:</h3><ul>
+<li><p>Go to <a href="https://aragon.one/" target="_blank" rel="noopener"><strong>Aragon.one</strong></a> and open the Rikeby Testnet on Metamask, make sure your Rinkeby wallet has got some ETH in it, you can request some from <a href="https://faucet.rinkeby.io/" target="_blank" rel="noopener"><strong>this faucet</strong></a>:
+<img src="https://cdn.steemitimages.com/DQmax4imvibXAShxc7mH5XumHXiYYJXgNmGfBeSo2p6jtZd/1.PNG" alt="1.PNG"></p>
+</li>
+<li><p>Then click on the &#x201C;Try Aragon Core 0.5&#x201D; Icon:</p>
+</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmTpdrT2K4L4JM2zX6EpdWqBTNacaqohSbafyZhoA2eLyi/1.PNG" alt="1.PNG"></p>
+<p>&#x2026; and create a new organization, ours is a Token Project with Multisig:</p>
+<p><img src="https://cdn.steemitimages.com/DQmQ2Bcc3AskSiGb7A4RN3x98tXGDhdMUBAitzwTSz8uWC8/2.png" alt="2.png"></p>
+<ul>
+<li>Now you can claim your own testnet domain:</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmZ4P8JAom1EN732cT5RDMB5SzDm4SaZxnK6Z2SoH6tBbk/page.png" alt="page.png"></p>
+<p>&#x2026;and assign as many co-signers as you want:</p>
+<p><img src="https://cdn.steemitimages.com/DQmbM2WUWy8vYFWsySvz2GhK755wddv4dD6UeRvHhmbQkqr/1.PNG" alt="1.PNG"></p>
+<ul>
+<li>Next, name your DAO governance tokens and assign a ticker symbol to them:</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmX4zYWtmJq7gsTAzP3FtNPJfYVtfyGpU5fdRrKtTnLz6k/1.PNG" alt="1.PNG"></p>
+<ul>
+<li>Finally deploy your unstoppable organization and tokens on the testnet by signing a couple  of transactions:</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmNQU2pKUzSThCTa8TpveqKhFDmYkedZ28KNL8PcvCWz7z/2.png" alt="2.png"></p>
+<ul>
+<li>Shazam! You&#x2019;re now the proud owner of your very own (testnet) DAO.</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmUsiz7yDX79Dgri6MjhTwFQZzBuQuDA8z1PB2ZNSLUuxS/1.PNG" alt="1.PNG"></p>
+<ul>
+<li><strong><em>Once the real app goes live on the main-net</em></strong> you&#x2019;ll be able to fund your DAO with tokens by going into Settings and sending ERC-20 tokens to it, <em><strong>sending real tokens to a testnet DAO now will only result in the loss of your tokens</strong></em>, you&#x2019;ve been warned!</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmSYfbAj8UJzXXzsu5SgP3aqPJ3whRW1vV6C7X4nMNo2Y5/1.PNG" alt="1.PNG"></p>
+<ul>
+<li>Your tokens will appear in the Finance Tab, together with a tool to implement automatic payments, it&#x2019; really neat:</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmQK4DaCULGEatdZN3hoeDnQk9xUWdxFWdazTmbvnfiKMz/1.PNG" alt="1.PNG"></p>
+<ul>
+<li>Finally you&#x2019;ll be able to manage the government of your DAO from the Voting app and create polls for your community to vote on:</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmbyPy8LBHUs3S5Tned2acdqXGCdnN7PR57VNv2qyK7vpT/1.PNG" alt="1.PNG"></p>
+<p>And that&#x2019;s it! You&#x2019;re now part of the decentralized governance revolution.</p>
+<p>Aragon surely is an ambitious project with a grand vision to reinvent governance at every level of society. What&#x2019;s more, its general-purpose design can be disarming at first but the tools the dApp offers are just as well suited for micro projects, community building and investment management on the blockchain. That&#x2019;s why we strongly encourage you to go check out <a href="https://aragon.one/" target="_blank" rel="noopener"><strong>Aragon</strong></a> for yourself so you can experience first-hand the power of its smart contract and start the governance revolution at your scale.</p>
+<p>Dan &amp; Dean.</p>
+<hr>
+<p> <strong>_If you liked this post please consider supporting Dan&#x2019;s blog by upvoting, re-steeming and following yours truly and If you&#x2019;d like more content like this or if you&#x2019;re simply interested in learning more about cryptocurrencies, come join my [</strong>awesome community on Discord<strong>](https://discord.gg/4VGVHrs). Don&#x2019;t be shy, it&#x2019;s free!!_</strong></p>
+<p><img src="https://steemitimages.com/DQmQbrCF2UW8b69NWRVTBu2crKozuVob2SVVbrzFrALQ9y3/TA%20Discord.jpg" alt="TA Discord.jpg"></p>
+<p>Also, make sure to go check out our other featured review, that time on  <a href="https://steemit.com/cryptocurrency/@deanliu/generate-passive-income-with-zencash-secure-nodes-and-super-nodes" target="_blank" rel="noopener"><strong>generating passive income with ZenCash</strong></a>  and Dan&#x2019;s <a href="https://steemit.com/cryptocurrency/@tradealert/trading-on-a-0x-exchange-radar-relay" target="_blank" rel="noopener"><strong>guide on how to use Radar Relay</strong></a>, the best  zero-fee decentralized exchange built on the 0x protocol.</p>
+<p>Tip Dan:</p>
+<p> EOS:  0x942a1F730f6ED432e663869d61097E73D48037d2
+ ZEN: znd4A1TVbnn76YDNrRb8vxeCvu3WBvZeV1a
+ ETH: 0x942a1F730f6ED432e663869d61097E73D48037d2</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/aragon-create-your-own-decentralized-organization-on-ethereum" target="_blank" rel="noopener">Aragon: Create your Own Decentralized Organization on Ethereum.</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@deanliu/tags/aragon/">aragon</a>, <a class="has-link-grey -link" href="/@deanliu/tags/blockchain/">blockchain</a>, <a class="has-link-grey -link" href="/@deanliu/tags/dao/">dao</a>, <a class="has-link-grey -link" href="/@deanliu/tags/ethereum/">ethereum</a>, <a class="has-link-grey -link" href="/@deanliu/tags/governance/">governance</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@deanliu/nba-finals/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[NBA Finals] 火箭蓄勢 勇士達陣</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@deanliu/photography-a-high-speed-rail-journey-home/">
+                <span class="level-item">[照片集] 高鐵返台北 [Photography] A High Speed Rail Journey Home</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@deanliu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 deanliu&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@deanliu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@deanliu/content.json"};</script>
+
+
+
+    
+<script src="/@deanliu/js/bundle.js" defer></script></body>
+</html>
+

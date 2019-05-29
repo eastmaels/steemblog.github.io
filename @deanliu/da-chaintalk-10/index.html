@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>DA-ChainTalk #10 — 區塊鏈上的手續費 - deanliu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@deanliu/css/style.css">
+
+<link rel="stylesheet" href="/@deanliu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@deanliu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@deanliu/">Home</a>
+                
+                <a class="navbar-item" href="/@deanliu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@deanliu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@deanliu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@deanliu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x524D;&#x8A00;">
+        <span class="has-mr-6">1.1</span>
+        <span>&#x524D;&#x8A00;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;">
+        <span class="has-mr-6">1.1.1</span>
+        <span>&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;</span>
+        </a></li><li>
+        <a class="is-flex" href="#ETH&#x6642;&#x4EE3;">
+        <span class="has-mr-6">1.1.2</span>
+        <span>ETH&#x6642;&#x4EE3;</span>
+        </a></li><li>
+        <a class="is-flex" href="#POS-&#x7684;&#x597D;&#x8655;">
+        <span class="has-mr-6">1.1.3</span>
+        <span>POS &#x7684;&#x597D;&#x8655;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem-&#x7684;&#x5275;&#x65B0;">
+        <span class="has-mr-6">1.1.4</span>
+        <span>Steem &#x7684;&#x5275;&#x65B0;</span>
+        </a></li><li>
+        <a class="is-flex" href="#EOS-&#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;">
+        <span class="has-mr-6">1.1.5</span>
+        <span>EOS - &#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x7E3D;&#x7D50;">
+        <span class="has-mr-6">1.2</span>
+        <span>&#x7E3D;&#x7D50;</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#da-chaintalk">
+        <span class="has-mr-6">2</span>
+        <span>da-chaintalk</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@deanliu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmf8EkBHSRi9ypJDw5zMD9affUGqd1rfyra1cjx3L1wzSH/highway-370005_1280.jpg" alt="DA-ChainTalk #10 — 區塊鏈上的手續費">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-07-15T23:34:42.000Z">2018-07-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@deanliu/categories/da-chaintalk/">da-chaintalk</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    17 minutes read (About 2549 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                DA-ChainTalk #10 — 區塊鏈上的手續費
+            
+        </h1>
+        <div class="content">
+            <p>&#x5404;&#x4F4D;&#x597D;&#xFF0C;&#x4E0A;&#x6B21;&#x6211;&#x8207; @antonsteemit&#x63A2;&#x8A0E;&#x4E86;&#xFF1A;</p>
+<p><a href="https://steemit.com/da-chaintalk/@deanliu/da-chaintalk-9-pos" target="_blank" rel="noopener">DA-ChainTalk #9 &#x2014; &#x5171;&#x8B58;&#x6A5F;&#x5236;&#x4ECB;&#x7D39;&#xFF1A;POS&#x7684;&#x524D;&#x4E16;&#x4ECA;&#x751F;</a></p>
+<p>&#x76F8;&#x4FE1;&#x5927;&#x5BB6;&#x73FE;&#x5728;&#x5C0D;&#x65BC;&#x6240;&#x8B02;&#x5171;&#x8B58;&#x6A5F;&#x5236;&#x90FD;&#x6709;&#x4E86;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x8A8D;&#x8B58;&#x4E86;&#x5427;&#xFF01;&#x4ECA;&#x5929;&#xFF0C;&#x6211;&#x5011;&#x8AC7;&#x4E00;&#x500B;&#x5927;&#x5BB6;&#x90FD;&#x4E00;&#x5B9A;&#x6703;&#x201C;&#x6709;&#x611F;&#x201D;&#x7684;&#x8B70;&#x984C;&#xFF1A;&#x624B;&#x7E8C;&#x8CBB;&#x3002;&#x5728;&#x4E0D;&#x540C;&#x7CFB;&#x7D71;&#x4E2D;&#xFF0C;&#x624B;&#x7E8C;&#x8CBB;&#x4F3C;&#x4E4E;&#x90FD;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C;&#x751A;&#x81F3;&#xFF0C;&#x6709;&#x4E9B;&#x7CFB;&#x7D71;&#x4F8B;&#x5982;Steem&#xFF0C;&#x6839;&#x672C;&#x5C31;&#x4E0D;&#x6536;&#x624B;&#x7E8C;&#x8CBB;&#xFF1F;&#x600E;&#x9EBC;&#x56DE;&#x4E8B;&#xFF1F;&#x70BA;&#x4EC0;&#x9EBC;&#x53EF;&#x4EE5;&#x4E0D;&#x5FC5;&#x4ED8;&#x9322;&#x5462;&#xFF1F;&#x8ACB;&#x770B;&#x4ECA;&#x5929;&#x7684;&#x4ECB;&#x7D39;&#x5427;&#xFF01;</p>
+<p>&#x6B64;&#x4E00;&#x7CFB;&#x5217;&#x4EE5;&#x300C;DA-ChainTalk&#x300D;&#x7684;&#x540D;&#x7A31;&#x958B;&#x982D;&#xFF0C;&#x60A8;&#x4EA6;&#x53EF;&#x5F9E; #da-chaintalk&#x4F86;&#x8FFD;&#x8E64;&#x6211;&#x5011;&#x7684;&#x6587;&#x7AE0;&#x3002;&#x8B1D;&#x8B1D;&#xFF01;</p>
+<p><img src="https://cdn.steemitimages.com/DQmf8EkBHSRi9ypJDw5zMD9affUGqd1rfyra1cjx3L1wzSH/highway-370005_1280.jpg" alt="highway-370005_1280.jpg">
+<sub> Image Source: https://pixabay.com/en </sub></p>
+<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x6700;&#x8FD1;&#x88AB;&#x554F;&#x5230;&#x9019;&#x500B;&#x554F;&#x984C;&#xFF1A;&#x300C;&#x70BA;&#x4EC0;&#x9EBC;&#x6BD4;&#x7279;&#x5E63;&#x8DDF;ETH&#x4E0A;&#x4EA4;&#x6613;&#x9700;&#x8981;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x800C;Steem&#x8DDF;EOS&#x4E0A;&#x9762;&#x6C92;&#x6709;&#x624B;&#x7E8C;&#x8CBB;&#x5462;&#xFF1F;&#x300D;&#x9019;&#x662F;&#x4E00;&#x500B;&#x5F88;&#x6709;&#x8DA3;&#x7684;&#x554F;&#x984C;&#xFF0C;&#x8B93;&#x6211;&#x91CD;&#x65B0;&#x91D0;&#x6E05;&#x4E86;&#x4E00;&#x4E0B;&#x81EA;&#x5DF1;&#x5C0D;&#x65BC;&#x300C;&#x624B;&#x7E8C;&#x8CBB;&#x300D;&#x7684;&#x601D;&#x8DEF;&#x3002;&#x60F3;&#x8981;&#x641E;&#x6E05;&#x695A;&#x9019;&#x4E9B;&#x89C0;&#x5FF5;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x4E00;&#x8D77;&#x5F9E;&#x5340;&#x584A;&#x93C8;&#x7684;&#x767C;&#x5C55;&#x6E90;&#x982D;&#x770B;&#x8D77;&#x3002;</p>
+<h3 id="&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;"><a href="#&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;" class="headerlink" title="&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;"></a>&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x4EE3;</h3><p>&#x5728;&#x6700;&#x4E00;&#x958B;&#x59CB;&#x7684;&#x6BD4;&#x7279;&#x5E63;&#x8A2D;&#x8A08;&#x4E2D;&#xFF0C;&#x4EA4;&#x6613;&#x8005;&#x5C31;&#x9700;&#x8981;&#x4ED8;&#x4E00;&#x7B46;&#x624B;&#x7E8C;&#x8CBB;&#x7D66;&#x7926;&#x5DE5;&#xFF0C;&#x8ACB;&#x7926;&#x5DE5;&#x5E6B;&#x5FD9;&#x6253;&#x5305;&#x4EA4;&#x6613;&#xFF0C;&#x9019;&#x4E5F;&#x8B93;&#x300C;&#x652F;&#x4ED8;&#x624B;&#x7E8C;&#x8CBB;&#x300D;&#x4F3C;&#x4E4E;&#x6210;&#x70BA;&#x4E86;&#x5340;&#x584A;&#x93C8;&#x7684;&#x539F;&#x7F6A;&#x3002;&#x70BA;&#x4EC0;&#x9EBC;&#x9019;&#x6A23;&#x8A2D;&#x8A08;&#x5462;&#xFF1F;&#x6211;&#x5011;&#x8981;&#x56DE;&#x60F3;&#x4E00;&#x4E0B;&#x4E2D;&#x672C;&#x8070;&#x8A2D;&#x8A08;&#x6BD4;&#x7279;&#x5E63;&#x6642;&#x7684;&#x4E2D;&#x5FC3;&#x601D;&#x60F3;&#xFF1A;&#x6BD4;&#x7279;&#x5E63;&#x662F;&#x500B;&#x5728;<strong>&#x6240;&#x6709;&#x4EBA;&#x90FD;&#x53EA;&#x5728;&#x4E4E;&#x81EA;&#x8EAB;&#x5229;&#x76CA;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x904B;&#x4F5C;&#x7684;&#x652F;&#x4ED8;&#x7CFB;&#x7D71;</strong>&#x3002;&#x5728;&#x6BD4;&#x7279;&#x5E63;&#x4E2D;&#xFF0C;&#x6316;&#x5230;&#x4E0B;&#x4E00;&#x500B;&#x5340;&#x584A;&#x7684;&#x7926;&#x5DE5;&#x9664;&#x4E86;&#x6703;&#x6709;<strong>&#x5340;&#x584A;&#x734E;&#x52F5;</strong>&#x5916;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x53EF;&#x4EE5;&#x6536;&#x53D6;&#x6240;&#x6709;&#x4EA4;&#x6613;&#x7684;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x4F7F;&#x5F97;&#x7926;&#x5DE5;&#x5011;&#x50BE;&#x5411;&#x65BC;&#x300C;&#x4E56;&#x4E56;&#x6253;&#x5305;&#x4EA4;&#x6613;&#x300D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x55AE;&#x7D14;&#x4E00;&#x76F4;&#x63D0;&#x4EA4;&#x300C;&#x7A7A;&#x7684;&#x5340;&#x584A;&#x300D;&#x3002;&#x9019;&#x6A23;&#x7684;&#x8A2D;&#x8A08;&#x4E0B;&#xFF0C;&#x4F7F;&#x5F97;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x5404;&#x7A2E;&#x533F;&#x540D;&#x7926;&#x5DE5;&#x4ECD;&#x9858;&#x610F;&#x6536;&#x9304;&#x5927;&#x5BB6;&#x7684;&#x6BCF;&#x4E00;&#x7B46;&#x4EA4;&#x6613;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmbEne8u5oQkjHmBB4twHTwepWPFB2XwrDqmhMhdzhuwuR/image.png" alt="">
+<sub>Image Source: <a href="https://medium.com/@ed_resende/why-are-bitcoin-transaction-fees-so-high-f6dea69e7db7" target="_blank" rel="noopener">Medium</a></sub></p>
+<h3 id="ETH&#x6642;&#x4EE3;"><a href="#ETH&#x6642;&#x4EE3;" class="headerlink" title="ETH&#x6642;&#x4EE3;"></a>ETH&#x6642;&#x4EE3;</h3><p>&#x6642;&#x9593;&#x5FEB;&#x8F49;&#x4F86;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x6642;&#x4EE3;&#xFF0C;&#x7531;&#x65BC;&#x5B83;&#x627F;&#x63A5;&#x4E86;&#x6BD4;&#x7279;&#x5E63;&#x4F7F;&#x7528;&#x300C;POW&#x300D;&#x7684;&#x5171;&#x8B58;&#x6A5F;&#x5236;&#xFF0C;&#x5C0D;&#x65BC;&#x672A;&#x77E5;&#x7684;&#x5340;&#x584A;&#x7522;&#x751F;&#x8005;&#xFF0C;&#x4E00;&#x6A23;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x300C;&#x7D93;&#x6FDF;&#x5229;&#x76CA;&#x52D5;&#x6A5F;&#x300D;&#x4F86;&#x52A0;&#x4EE5;&#x63A7;&#x5236;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#x3002;&#x552F;&#x6709;&#x8981;&#x6C42;&#x4F7F;&#x7528;&#x8005;&#x652F;&#x4ED8;&#x624B;&#x7E8C;&#x8CBB;&#x3002;&#x80FD;&#x5920;&#x78BA;&#x4FDD;&#x7926;&#x5DE5;&#x9858;&#x610F;&#x6253;&#x5305;&#x4EA4;&#x6613;&#x3002;</p>
+<p>&#x5728;&#x9019;&#x540C;&#x6642;&#xFF0C;ETH&#x5C0D;&#x65BC;&#x300C;&#x4EA4;&#x6613;&#x300D;&#x4E5F;&#x6709;&#x4E86;&#x65B0;&#x7684;&#x5B9A;&#x7FA9;&#x3002;ETH&#x662F;&#x4E00;&#x500B;&#x65E8;&#x5728;&#x57F7;&#x884C;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x300C;Transaction&#x300D;&#x9664;&#x4E86;&#x7C21;&#x55AE;&#x7684;&#x9001;&#x9322;&#x4E4B;&#x5916;&#xFF0C;&#x73FE;&#x5728;&#x9084;&#x5305;&#x62EC;&#x4E86;&#x5404;&#x7A2E;&#x8207;Dapp&#x4E92;&#x52D5;&#x7684;Function&#x3002;&#x57F7;&#x884C;&#x9019;&#x4E9B;&#x51FD;&#x5F0F;&#x90FD;&#x662F;&#x9700;&#x8981;&#x82B1;&#x8CBB;&#x904B;&#x7B97;&#x8CC7;&#x6E90;&#x7684;&#xFF0C;&#x56E0;&#x6B64;ETH&#x4E5F;&#x8A2D;&#x8A08;&#x51FA;&#x4E86;GAS&#x9019;&#x6A23;&#x300C;<strong>&#x4F7F;&#x7528;&#x8005;&#x4ED8;&#x8CBB;</strong>&#x300D;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x6BCF;&#x6B21;&#x8981;&#x547C;&#x53EB;&#x4E00;&#x500B;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x6642;&#xFF0C;&#x90FD;&#x8981;&#x652F;&#x4ED8;&#x4E00;&#x7B46;Gas&#x8CBB;&#x7528;&#xFF0C;&#x514D;&#x5F97;&#x6709;&#x4EBA;&#x5728;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x7684;&#x7A0B;&#x5F0F;&#x4E2D;&#x5BEB;&#x4E86;&#x4E00;&#x500B;&#x7121;&#x9650;&#x8FF4;&#x5708;&#xFF0C;&#x641E;&#x7684;&#x7926;&#x5DE5;&#x90FD;&#x7576;&#x6A5F;&#x3002;&#x9019;&#x500B;&#x8A2D;&#x8A08;&#x5F77;&#x5F7F;&#x8B93;&#x5340;&#x584A;&#x93C8;&#x3001;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x8207;&#x300C;&#x4F7F;&#x7528;&#x8005;&#x4ED8;&#x8CBB;&#x300D;&#x9019;&#x4EF6;&#x4E8B;&#x60C5;&#x5E7E;&#x4E4E;&#x5283;&#x4E0A;&#x7B49;&#x865F;&#x3002;&#x76F4;&#x5230;POS&#x7CFB;&#x7D71;&#x51FA;&#x73FE;&#x4E4B;&#x5F8C;&#xFF0C;&#x624D;&#x6709;&#x4E86;&#x65B0;&#x7684;&#x6539;&#x8B8A;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmWdZnw35PwY3JbQk3jWcGVcvUgtAvYeYy1z78tRwa7wgH/image.png" alt="">
+<sub>https://www.coindesk.com/7-cool-decentralized-apps-built-ethereum/</sub></p>
+<h3 id="POS-&#x7684;&#x597D;&#x8655;"><a href="#POS-&#x7684;&#x597D;&#x8655;" class="headerlink" title="POS &#x7684;&#x597D;&#x8655;"></a>POS &#x7684;&#x597D;&#x8655;</h3><p>&#x7B2C;&#x4E00;&#x500B;POS&#x7684;&#x865B;&#x64EC;&#x8CA8;&#x5E63; PeerCoin &#x5C31;&#x5927;&#x81BD;&#x7684;&#x6539;&#x8B8A;&#x4E86;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x904B;&#x4F5C;&#x65B9;&#x5F0F;&#xFF0C;&#x4E0D;&#x518D;&#x628A;&#x624B;&#x7E8C;&#x8CBB;&#x7576;&#x6210;&#x734E;&#x52F5;&#x5206;&#x7D66;&#x7926;&#x5DE5;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x6BC0;&#x6389;&#x3002;&#x9019;&#x8B93;&#x6211;&#x5011;&#x770B;&#x898B;POS&#x7684;&#x4E00;&#x500B;&#x5927;&#x597D;&#x8655;&#xFF1A;&#x6240;&#x6709;Block Producer&#x90FD;&#x6301;&#x6709;&#x5927;&#x91CF;&#x8CA8;&#x5E63;(Stake)&#xFF0C;&#x6240;&#x4EE5;&#x4ED6;&#x5011;&#x6709;&#x5F37;&#x70C8;&#x52D5;&#x6A5F;&#x8981;&#x7DAD;&#x6301;&#x7DB2;&#x8DEF;&#x904B;&#x884C;&#x9806;&#x66A2;&#x3002;&#x5982;&#x679C;&#x4ED6;&#x5011;&#x9072;&#x9072;&#x4E0D;&#x6253;&#x5305;&#x4E00;&#x7B46;&#x4EA4;&#x6613;&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x751F;&#x6C23;&#x4E86;&#xFF0C;&#x4E0D;&#x7528;&#x4E86;&#xFF0C;&#x5E63;&#x50F9;&#x4E00;&#x8DCC;&#xFF0C;&#x90A3;&#x9EBC;&#x9019;&#x4E9B;BlockProducer&#x90FD;&#x6703;&#x6210;&#x70BA;&#x6700;&#x5927;&#x8F38;&#x5BB6;&#x3002;&#x6240;&#x4EE5;&#x6211;&#x5011;&#x6703;&#x767C;&#x73FE;&#x7D55;&#x5927;&#x591A;&#x6578;POS&#x7684;&#x5340;&#x584A;&#x7522;&#x751F;&#x8005;&#xFF0C;&#x90FD;&#x53EA;&#x6703;&#x62FF;&#x5230;&#x300C;&#x7522;&#x751F;&#x5340;&#x584A;&#x734E;&#x52F5;&#x300D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x624B;&#x7E8C;&#x8CBB;&#x6536;&#x5165;&#x3002;</p>
+<p>&#x4E0D;&#x904E;&#x5728;&#x5340;&#x584A;&#x7522;&#x751F;&#x8005;&#x4E0D;&#x6703;&#x62FF;&#x5230;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6709;&#x4E9B;&#x8CA8;&#x5E63;(&#x5982;PeerCoin)&#x4ECD;&#x7136;&#x6703;&#x8981;&#x6C42;&#x652F;&#x4ED8;&#x5C11;&#x91CF;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x9019;&#x5C31;&#x662F;&#x79C9;&#x6301;&#x4E86;&#x4F7F;&#x7528;&#x8005;&#x4ED8;&#x8CBB;&#x7684;&#x539F;&#x5247;&#xFF0C;&#x540C;&#x6642;&#x907F;&#x514D;&#x6709;&#x4EBA;&#x900F;&#x904E;&#x5927;&#x91CF;&#x4EA4;&#x6613;&#x6545;&#x610F;&#x7671;&#x7613;&#x7DB2;&#x8DEF;&#x3002;</p>
+<h4 id="NEO"><a href="#NEO" class="headerlink" title="NEO"></a>NEO</h4><p>&#x503C;&#x5F97;&#x4E00;&#x63D0;&#xFF0C;&#x6536;&#x8CBB;&#x65B9;&#x5F0F;&#x6709;&#x8DA3;&#x7684;&#x7CFB;&#x7D71;&#x9084;&#x6709;NEO&#x3002;&#x5728;NEO&#x4E0A;&#xFF0C;&#x55AE;&#x7D14;&#x7684;&#x8F49;&#x5E33;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x8981;<strong>&#x547C;&#x53EB;&#x667A;&#x80FD;&#x5408;&#x7D04;</strong>&#xFF0C;&#x5728;Function&#x8907;&#x96DC;&#x5EA6;&#x8D85;&#x904E;&#x67D0;&#x4E00;&#x500B;&#x7A0B;&#x5EA6;&#x4E4B;&#x5F8C;&#x5C31;&#x6703;&#x8981;&#x6C42;&#x652F;&#x4ED8;<strong>GAS</strong>&#xFF0C;&#x7A31;&#x70BA;Smart Contract Fee&#x3002;&#x9019;&#x6A23;&#x7684;&#x8A2D;&#x8A08;&#x4E5F;&#x662F;&#x70BA;&#x4E86;&#x5728;&#x63D0;&#x4F9B;&#x65B9;&#x4FBF;&#x6027;&#x7684;&#x540C;&#x6642;&#xFF0C;&#x4E0D;&#x5FD8;&#x900F;&#x904E;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x65B9;&#x5F0F;&#x9650;&#x5236;&#x60E1;&#x610F;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x547C;&#x53EB;&#x4F86;&#x653B;&#x64CA;&#x7DB2;&#x8DEF;&#x3002;</p>
+<h3 id="Steem-&#x7684;&#x5275;&#x65B0;"><a href="#Steem-&#x7684;&#x5275;&#x65B0;" class="headerlink" title="Steem &#x7684;&#x5275;&#x65B0;"></a>Steem &#x7684;&#x5275;&#x65B0;</h3><p>&#x770B;&#x5230;&#x9019;&#x88E1;&#x5C31;&#x767C;&#x73FE;Steem&#x7684;&#x53B2;&#x5BB3;&#x4E86;&#x3002;&#x5728;Steem&#x4E0A;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x9019;&#x8F29;&#x5B50;&#x9084;&#x6C92;&#x6709;&#x4ED8;&#x904E;&#x8AB0;&#x4EA4;&#x6613;&#x624B;&#x7E8C;&#x8CBB;&#x5427;&#xFF08;&#x6709;&#x7684;&#x8A71;&#x5C31;&#x662F;&#x88AB;&#x9A19;&#x4E86;&#xFF09;&#x3002;&#x5728;Steem&#x4E0A;&#xFF0C;&#x4E00;&#x500B;transaction&#x53EF;&#x4EE5;&#x662F;&#x4ED8;&#x6B3E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;<code>Upvote</code>&#x6216;&#x662F;<code>Comment</code>&#x3001;<code>Follow</code>&#x7B49;&#x7B49;&#xFF0C;&#x9019;&#x7576;&#x7136;&#x4E0D;&#x80FD;&#x6536;&#x624B;&#x7E8C;&#x8CBB;&#x4E86;&#xFF08;&#x5C31;&#x50CF;&#x4F60;&#x4E0A;Facebook&#x6309;&#x8B9A;&#x8981;&#x6536;&#x9322;&#x7684;&#x8A71;&#x6210;&#x4F55;&#x9AD4;&#x7D71;&#xFF01;&#xFF09;&#x65BC;&#x662F;Steem&#x51FA;&#x65BC;&#x4ED6;&#x5011;POS&#x7684;&#x672C;&#x8CEA;&#x60F3;&#x5230;&#x4E86;&#x4E00;&#x500B;&#x5F88;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x9650;&#x5236;&#x5927;&#x5BB6;&#x5408;&#x7406;&#x4F7F;&#x7528;&#x7DB2;&#x8DEF;&#xFF1A;&#x300C;&#x983B;&#x5BEC;&#x9650;&#x5236;&#xFF08;Bandwidth Limit&#xFF09;&#x300D;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmQGqC7nm39udDwLPhj9apkwzyFDkDxmtmf96h6XkCdX4T/image.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x4E0A;&#x904E; https://steemd.com/ &#x89C0;&#x5BDF;&#x81EA;&#x5DF1;&#x7684;&#x5E33;&#x865F;&#xFF0C;&#x61C9;&#x8A72;&#x591A;&#x5C11;&#x6703;&#x6CE8;&#x610F;&#x904E;&#x50CF;&#x4E0A;&#x9762;&#x5716;&#x4E0A;&#x5169;&#x689D;&#x986F;&#x773C;&#x7684;&#x5716;&#x793A;&#xFF0C;&#x4E0B;&#x9762;&#x7DA0;&#x8272;&#x90A3;&#x4E00;&#x689D;&#x6240;&#x756B;&#x7684;&#x5C31;&#x6B63;&#x662F;&#x4F60;&#x7684;&#x983B;&#x5BEC;&#x7528;&#x91CF;&#x9650;&#x5236;&#x3002;&#x5728;Steem&#x7684;&#x8A2D;&#x8A08;&#x4E2D;&#xFF0C;&#x300C;<strong>&#x4F60;&#x7684;Steem Power&#x8D8A;&#x5927;&#x3001;&#x4F60;&#x6709;&#x6B0A;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x904B;&#x7B97;&#x8CC7;&#x6E90;&#x3002;</strong>&#x300D;&#x9019;&#x500B;&#x57FA;&#x672C;&#x6982;&#x5FF5;&#x5C31;&#x662F;&#x8AAA;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x64C1;&#x6709;&#x5168;&#x4E16;&#x754C;1/5&#x7684;Steem&#xFF0C;&#x90A3;&#x9EBC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x6240;&#x6709;Steem&#x7DB2;&#x8DEF;1/5&#x7684;&#x6D41;&#x91CF;&#x3002;&#x7531;&#x65BC;<code>Steem Power</code>&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x300C;Staked Steem&#x300D;&#xFF0C;&#x597D;&#x6BD4;&#x4F60;&#x5B9A;&#x5B58;&#x5728;&#x7CFB;&#x7D71;&#x88E1;&#x7684;Steem&#xFF0C;&#x6240;&#x4EE5;&#x662F;&#x900F;&#x904E;Steem Power&#x4F86;&#x4F5C;&#x70BA;&#x5224;&#x65B7;&#x4F9D;&#x64DA;&#x3002;</p>
+<p>&#x5728;Steem&#x4E0A;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x6240;&#x8B02;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4EA4;&#x6613;&#x90FD;&#x50C5;&#x9650;&#x65BC;<code>Vote</code>&#x3001;<code>Comment</code>&#x7B49;&#x7B49;&#xFF0C;&#x540C;&#x6642;&#x7531;&#x65BC;dPOS&#x7684;&#x5171;&#x8B58;&#x6A5F;&#x5236;&#x7D66;&#x4E86;Steem&#x975E;&#x5E38;&#x597D;&#x7684;&#x7E3D;&#x904B;&#x4F5C;&#x6548;&#x80FD;&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5BE6;&#x9019;&#x4E9B;&#x983B;&#x5BEC;&#x662F;&#x5F88;&#x5920;&#x7528;&#x7684;&#x3002;&#x5C31;&#x7B97;&#x4F60;&#x662F;&#x4E00;&#x96BB;SP&#x5F88;&#x4F4E;&#x7684;&#x5C0F;&#x5C0F;&#x9B5A;&#xFF0C;&#x4E5F;&#x4E0D;&#x6703;&#x9047;&#x5230;&#x906D;&#x9047;&#x983B;&#x5BEC;&#x4E0A;&#x9650;&#x7684;&#x554F;&#x984C;&#x3002;&#x901A;&#x5E38;&#x6703;&#x56E0;&#x983B;&#x5BEC;&#x53D7;&#x5230;&#x9650;&#x5236;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x900F;&#x904E;&#x7A0B;&#x5F0F;&#x7684;&#x65B9;&#x5F0F;&#x5927;&#x91CF;<code>Follow</code>&#x6216;&#x662F;<code>Reblog</code>&#x7684;&#x6D41;&#x91CF;&#xFF08;Spamming&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x4EBA;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x592A;&#x64D4;&#x5FC3;&#x3002;</p>
+<h3 id="EOS-&#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;"><a href="#EOS-&#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;" class="headerlink" title="EOS - &#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;"></a>EOS - &#x4E0D;&#x7528;&#x624B;&#x7E8C;&#x8CBB;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;</h3><p>&#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;EOS&#x5C31;&#x50CF;&#x662F;&#x5347;&#x7D1A;&#x677F;&#x7684; Steem&#xFF0C;&#x4E5F;&#x627F;&#x8972;&#x4E86;&#x9019;&#x7A2E;&#x900F;&#x904E;Staking&#x52A0;&#x4EE5;&#x9650;&#x5236;&#x6D41;&#x91CF;&#x7684;&#x767C;&#x660E;&#x3002;&#x4E0D;&#x904E;EOS&#x4E0A;&#x60F3;&#x8981;&#x904B;&#x884C;&#x7684;&#x662F;&#x5927;&#x91CF;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#xFF0C;&#x65BC;&#x662F;EOS&#x9032;&#x4E00;&#x6B65;&#x898F;&#x5B9A;&#xFF0C;&#x82E5;&#x662F;&#x6709;&#x4EBA;&#x60F3;&#x8981;&#x5728;EOS&#x4E0A;&#x767C;&#x5E03;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#xFF0C;&#x4ED6;&#x540C;&#x6642;&#x9700;&#x8981;Stake&#x4E00;&#x5B9A;&#x91CF;&#x7684;EOS&#xFF0C;&#x4F5C;&#x70BA;&#x62B5;&#x62BC;&#x63DB;&#x53D6;&#x983B;&#x5BEC;&#x3001;CPU&#x8CC7;&#x6E90;&#x4EE5;&#x53CA;RAM&#x7B49;&#x7B49;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmUZS4eK9SFCiz7E6L6aa5ZjkviUXzAro4eVsVsXJcAL1L/image.png" alt=""></p>
+<p>EOS&#x7528;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x9650;&#x5236;&#x4E86;&#x4E00;&#x500B;Dapp&#x7684;&#x904B;&#x7B97;&#x6B0A;&#x529B;&#xFF0C;&#x514D;&#x65BC;&#x60E1;&#x610F;&#x653B;&#x64CA;&#xFF0C;&#x540C;&#x6642;&#x76F8;&#x7576;&#x65BC;<strong>&#x514D;&#x9664;&#x4F7F;&#x7528;&#x8005;&#x4ED8;&#x8CBB;</strong>&#xFF01;</p>
+<p>&#x5728;ETH&#x4E16;&#x754C;&#x4E2D;&#xFF0C;Gas&#x70BA;&#x8A31;&#x591A;&#x4EBA;&#x5E36;&#x4F86;&#x4E0D;&#x4FBF;&#xFF0C;&#x56E0;&#x70BA;&#x4F60;&#x7121;&#x8AD6;&#x4F55;&#x6642;&#x90FD;&#x9700;&#x8981;&#x5728;&#x9322;&#x5305;&#x88E1;&#x5B58;&#x6709;ETH&#x7528;&#x4EE5;&#x652F;&#x4ED8;&#x624B;&#x7E8C;&#x8CBB;&#x3002;&#x540C;&#x6642;&#x9019;&#x4E5F;&#x8B93;&#x4EBA;&#x5011;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;&#x610F;&#x9858;&#x964D;&#x4F4E;&#xFF0C;&#x7562;&#x7ADF;&#x8981;&#x53EB;&#x500B;&#x7A0B;&#x5F0F;&#x9084;&#x8981;&#x82B1;&#x9322;&#xFF0C;&#x5118;&#x7BA1;&#x4E0D;&#x591A;&#x4F46;&#x7E3D;&#x662F;&#x6703;&#x64CB;&#x6389;&#x4E0D;&#x5C11;&#x4F7F;&#x7528;&#x8005;&#x3002;&#x65BC;&#x662F;EOS&#x628A;&#x9019;&#x4E00;&#x5207;&#x8F49;&#x5AC1;&#x5230;&#x4E86;&#x958B;&#x767C;&#x8005;&#x7684;&#x8EAB;&#x4E0A;&#xFF0C;&#x958B;&#x767C;&#x8005;&#x53EA;&#x9700;&#x8981;&#x300C;&#x5B58;&#x5165;&#x300D;&#x5920;&#x591A;&#x7684;EOS&#x5C31;&#x53EF;&#x4EE5;&#x78BA;&#x4FDD;&#x5927;&#x5BB6;&#x958B;&#x5FC3;&#x3001;&#x514D;&#x8CBB;&#x7684;&#x4F7F;&#x7528;&#x4F60;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#xFF0C;&#x800C;&#x7576;&#x958B;&#x767C;&#x8005;&#x6709;&#x5929;&#x60F3;&#x8981;&#x9818;&#x51FA;&#x9019;&#x4E9B;&#x9322;&#x6642;&#xFF0C;&#x4E5F;&#x4E00;&#x584A;&#x90FD;&#x4E0D;&#x6703;&#x5C11;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x6703;&#x6709;&#x4EBA;&#x771F;&#x7684;&#x300C;&#x4ED8;&#x9322;&#x300D;&#x7D66;Block Producer&#x3002;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x958B;&#x5FC3;&#x5462;&#xFF1F;</p>
+<h2 id="&#x7E3D;&#x7D50;"><a href="#&#x7E3D;&#x7D50;" class="headerlink" title="&#x7E3D;&#x7D50;"></a>&#x7E3D;&#x7D50;</h2><p>&#x7A81;&#x7136;&#x767C;&#x73FE;&#xFF0C;&#x600E;&#x9EBC;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x5BEB;&#x5230;&#x6700;&#x5F8C;&#x597D;&#x50CF;&#x5728;&#x63A8;&#x92B7;EOS&#x5462;&#xFF1F;&#x54C8;&#x54C8;&#xFF01;&#x4E0D;&#x904E;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x770B;&#x5B8C;&#x9019;&#x7BC7;&#x6587;&#x7AE0;&#x5F8C;&#xFF0C;&#x80FD;&#x5920;&#x7406;&#x89E3;&#x6574;&#x500B;&#x5340;&#x584A;&#x93C8;&#x8207;&#x624B;&#x7E8C;&#x8CBB;&#x4E4B;&#x9593;&#x7684;&#x6069;&#x6028;&#x60C5;&#x4EC7;&#x3002;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x6211;&#x8A8D;&#x70BA;&#x8DA8;&#x52E2;&#x4E00;&#x5B9A;&#x662F;&#x8D70;&#x5411;&#x300C;&#x514D;&#x624B;&#x7E8C;&#x8CBB;&#x300D;&#x7684;&#xFF0C;&#x4F46;&#x70BA;&#x4EC0;&#x9EBC;&#x80FD;&#x5920;&#x7531;&#x6709;&#x624B;&#x7E8C;&#x8CBB;&#x8F49;&#x70BA;&#x975E;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x78BA;&#x5BE6;&#x662F;&#x4E00;&#x500B;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x82B1;&#x6642;&#x9593;&#x4F86;&#x7406;&#x89E3;&#x7684;&#x904E;&#x7A0B;&#x3002;&#x518D;&#x70BA;&#x5927;&#x5BB6;&#x6574;&#x7406;&#x672C;&#x7BC7;&#x91CD;&#x9EDE;&#x5982;&#x4E0B;&#xFF0C;&#x4EE5;&#x5F8C;&#x518D;&#x88AB;&#x554F;&#x5230;&#x9019;&#x7A2E;&#x554F;&#x984C;&#x5C31;&#x80FD;&#x5920;&#x5F88;&#x6709;&#x908F;&#x8F2F;&#x7684;&#x56DE;&#x7B54;&#x4E86;&#xFF01;</p>
+<ul>
+<li>&#x6BD4;&#x7279;&#x5E63;&#x9700;&#x8981;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x56E0;&#x70BA;POW&#x4E2D;&#x53EA;&#x80FD;&#x900F;&#x904E;&#x300C;&#x5229;&#x76CA;&#x300D;&#x78BA;&#x4FDD;&#x7926;&#x5DE5;&#x7D00;&#x9304;&#x6BCF;&#x7B46;&#x4EA4;&#x6613;&#x3002;</li>
+<li>&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x4ECD;&#x7136;&#x6709;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x540C;&#x6642;&#x4E5F;&#x662F;&#x900F;&#x904E;&#x624B;&#x7E8C;&#x8CBB;&#x5728;&#x9650;&#x5236;&#x300C;Dapp&#x300D;&#x7684;&#x884C;&#x70BA;&#x3002;</li>
+<li>&#x8F49;&#x8B8A;&#x6210;&#x70BA;POS&#x5F8C;&#xFF0C;&#x958B;&#x59CB;&#x6709;&#x5225;&#x7684;&#x52D5;&#x6A5F;&#x8B93;&#x5340;&#x584A;&#x7522;&#x751F;&#x8005;&#x300C;&#x4E0D;&#x62FF;&#x624B;&#x7E8C;&#x8CBB;&#x4ECD;&#x7136;&#x4E56;&#x4E56;&#x5DE5;&#x4F5C;&#x300D;(&#x4ED6;&#x5011;&#x9818;&#x5230;Block Reward&#x5C31;&#x597D;)</li>
+<li>POS&#x4E2D;&#x900F;&#x904E;Staking&#x6A5F;&#x5236;&#x9650;&#x5236;&#x6D41;&#x91CF;&#x3001;CPU&#x8CC7;&#x6E90;&#x7B49;&#x4F5C;&#x6CD5;&#xFF0C;&#x78BA;&#x4FDD;&#x6C92;&#x6709;&#x4EBA;&#x80FD;&#x5920;Spam&#x7DB2;&#x8DEF;&#xFF0C;&#x56E0;&#x6B64;&#x89E3;&#x6C7A;&#x4E86;ETH&#x8981;&#x6C42;&#x4F7F;&#x7528;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x6642;&#x300C;&#x4F7F;&#x7528;&#x8005;&#x4ED8;&#x8CBB;&#x300D;&#x7684;&#x554F;&#x984C;&#x3002;</li>
+<li>&#x73FE;&#x5728;Steem&#x3001;EOS&#x90FD;&#x6C92;&#x6709;&#x624B;&#x7E8C;&#x8CBB;&#xFF0C;&#x56E0;&#x70BA;&#x300C;&#x5340;&#x584A;&#x7522;&#x751F;&#x8005;&#x4ECD;&#x6703;&#x7E7C;&#x7E8C;&#x4E56;&#x4E56;&#x5DE5;&#x4F5C;&#x300D;&#xFF0C;&#x800C;&#x4E14;&#x300C;&#x6C92;&#x6709;&#x4EBA;&#x80FD;&#x5920;&#x900F;&#x904E;&#x5927;&#x91CF;&#x6216;&#x904B;&#x7B97;&#x91CF;&#x5927;&#x4EA4;&#x6613;&#x7671;&#x7613;&#x7DB2;&#x8DEF;&#x300D;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x7E8C;&#x8CBB;&#x5566;&#xFF01;</li>
+</ul>
+<p><img src="https://cdn.steemitimages.com/DQmYDbaGcE76H1pfVTBXLRCi9f8kU4v2Ch6SJoHpfQbhrKm/image.png" alt="">
+<sub>Image Source: https://www.merchantmike.com/nofeemerchantaccounts/</sub></p>
+<hr>
+<h1 id="da-chaintalk"><a href="#da-chaintalk" class="headerlink" title="da-chaintalk"></a>da-chaintalk</h1><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/da-chaintalk-10" target="_blank" rel="noopener">DA-ChainTalk #10 &#x2014; &#x5340;&#x584A;&#x93C8;&#x4E0A;&#x7684;&#x624B;&#x7E8C;&#x8CBB;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@deanliu/tags/bandwidth/">bandwidth</a>, <a class="has-link-grey -link" href="/@deanliu/tags/blockchain/">blockchain</a>, <a class="has-link-grey -link" href="/@deanliu/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@deanliu/tags/da-chaintalk/">da-chaintalk</a>, <a class="has-link-grey -link" href="/@deanliu/tags/transaction-fee/">transaction-fee</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@deanliu/481z7k/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">比特幣是對數資產？</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@deanliu/5jkr5c/">
+                <span class="level-item">交易的價值屬於誰？</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@deanliu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 deanliu&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@deanliu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@deanliu/content.json"};</script>
+
+
+
+    
+<script src="/@deanliu/js/bundle.js" defer></script></body>
+</html>
+

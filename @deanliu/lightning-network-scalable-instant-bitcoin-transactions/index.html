@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Lightning Network:  Scalable, Instant Bitcoin Transactions. - deanliu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@deanliu/css/style.css">
+
+<link rel="stylesheet" href="/@deanliu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@deanliu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@deanliu/">Home</a>
+                
+                <a class="navbar-item" href="/@deanliu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@deanliu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@deanliu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@deanliu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#I-Problems">
+        <span class="has-mr-6">1</span>
+        <span>I- Problems.</span>
+        </a></li><li>
+        <a class="is-flex" href="#II-Solution-s">
+        <span class="has-mr-6">2</span>
+        <span>II- Solution(s).</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#a-How-the-LN-works">
+        <span class="has-mr-6">2.1</span>
+        <span>a- How the LN works.</span>
+        </a></li><li>
+        <a class="is-flex" href="#b-Applications">
+        <span class="has-mr-6">2.2</span>
+        <span>b- Applications.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1-Lightning-Fast-Mobile-Wallets">
+        <span class="has-mr-6">2.2.1</span>
+        <span>1. Lightning Fast Mobile Wallets.</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-Decentralized-Exchange-of-Crypto-Currencies-and-Financial-Assets">
+        <span class="has-mr-6">2.2.2</span>
+        <span>2. Decentralized Exchange of Crypto-Currencies and Financial Assets.</span>
+        </a></li></ul></li></ul></li><li>
+        <a class="is-flex" href="#IV-Criticism-against-the-LN">
+        <span class="has-mr-6">3</span>
+        <span>IV-Criticism against the LN.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#a-Will-the-LN-create-Bitcoin-banks">
+        <span class="has-mr-6">3.1</span>
+        <span>a- Will the LN create Bitcoin banks?</span>
+        </a></li><li>
+        <a class="is-flex" href="#b-Will-LN-Node-Operators-be-Subject-to-Anti-Money-Laundering-AML-Regulations">
+        <span class="has-mr-6">3.2</span>
+        <span>b- Will LN Node Operators be Subject to Anti-Money-Laundering (AML) Regulations.</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@deanliu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmPGif4zkq2uL3oDXjTAFvGcL4RyaighRZ4yqu3qBDQDNS/maxresdefault.jpg" alt="Lightning Network:  Scalable, Instant Bitcoin Transactions.">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-18T00:59:39.000Z">2018-04-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@deanliu/categories/bitcoin/">bitcoin</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 minutes read (About 2345 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Lightning Network:  Scalable, Instant Bitcoin Transactions.
+            
+        </h1>
+        <div class="content">
+            <p>Hi investors, Dean (@deanliu) and Dan (@tradealert) are back and today we&#x2019;re talking about the Bitcoin Lightning Network and how it could change the financial world as we know it.</p>
+<p><img src="https://steemitimages.com/DQmPGif4zkq2uL3oDXjTAFvGcL4RyaighRZ4yqu3qBDQDNS/maxresdefault.jpg" alt="maxresdefault.jpg"></p>
+<p>The Lightning Network (LN) is a scalability solution for the Bitcoin block-chain aiming at solving many of the issues that currently prevent Bitcoin from becoming a true global form of decentralized digital cash.</p>
+<p>In this article we will first talk about the origin of Bitcoin and the problems that the network is currently facing (I). We&#x2019;ll then explore how the LN will address these issues and talk about some of the technology&#x2019;s most exciting applications (II). Finally, we&#x2019;ll discuss some of the most common criticism which have been raised against the LN (III).</p>
+<h1 id="I-Problems"><a href="#I-Problems" class="headerlink" title="I- Problems."></a>I- Problems.</h1><p>The Bitcoin network was originally launched by the anonymous <a href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto" target="_blank" rel="noopener"><strong>Satoshi Nakamoto</strong></a> in 2008 as a proof-of-concept for a revolutionary, decentralized financial network . Its first application was a distributed ledger allowing users to transact value trustlessly: bitcoin.</p>
+<p>In these early days, the network was small and didn&#xED;t require large blocks to process transactions quickly but as Bitcoin started to gain in popularity, so grew the congestion on the network causing fees to skyrocket and unconfirmed transactions to pile in the mempool. </p>
+<p><img src="https://steemitimages.com/DQmWAbYJqk7yjxS6jaLLtfERP15b9LjUy6M7aDVMmTEN4So/hacker.jpg" alt="hacker.jpg"></p>
+<p>The fee crisis reached a peak on December 22, 2017 when, at the apex of the Bitcoin bubble, a single transaction reached the price of $54 dollars while some users saw their bitcoin stuck on the block-chain for days.</p>
+<p>Although fees have gone down considerably since ($1.5 at the time of writing), that episode was evidence that Bitcoin wasn&#x2019;t ready to scale to Satoshi&#xED;s original vision.</p>
+<h1 id="II-Solution-s"><a href="#II-Solution-s" class="headerlink" title="II- Solution(s)."></a>II- Solution(s).</h1><p>The issue of scalability is a very divisive one and has already led to a split in the Bitcoin community when, in July 2017, a powerful group of miners and developers elected to fork off the legacy chain to create Bitcoin-Cash, a version of Bitcoin with bigger blocks (8Mb) and faster mining latency.</p>
+<p><img src="https://steemitimages.com/DQmUD6TUXvwhTTBfRjJqUdasX9dJBCTUbiQf5xGUZ3CQTab/48749491-15155778136031818.png" alt="48749491-15155778136031818.png"></p>
+<p>Scaling the Bitcoin block-chain can be implemented in two different ways:</p>
+<ol>
+<li>by making on-chain transactions faster, either by increasing the block-size to allow more transaction to be mined in a single block or by reducing the latency between two mining events;</li>
+<li>by taking some of the transaction volume off the main chain onto side-chains or servers.</li>
+</ol>
+<p>The &#x201C;on-chain&#x201D; approach chosen by Bitcoin Cash is heavily criticized by the legacy Bitcoin community which believes that increasing the blocksize will only lead to concentrating mining and node-running into the hands of only a few operators, eventually compromising the decentralized and trustless nature of the network.</p>
+<p>The &#x201C;off-chain&#x201D; option is the one that relates to the Lightning Network.</p>
+<p><img src="https://steemitimages.com/DQmP7sAMzqHmEChSfvSguGBv5f7uU9Q8oC6mQjAUYcYwYoN/maxresdefault.jpg" alt="maxresdefault.jpg"></p>
+<p>The Lightning Network (LN) is a potentially game-changing scalability solution wich is currently being implemented on the &#x201C;legacy/Segwit&#x201D; Bitcoin blockchain.  Inspired by payment systems used by financial institutions, the LN is designed to allow Bitcoin to scale to billions of instantaneous, quasi-free transactions per second while preserving the decentralized nature of the network.</p>
+<h2 id="a-How-the-LN-works"><a href="#a-How-the-LN-works" class="headerlink" title="a- How the LN works."></a>a- How the LN works.</h2><p>At a basic level, the LN can be best imagined as a network of user-to-user payment channels secured by the Bitcoin block-chain.</p>
+<p><img src="https://steemitimages.com/DQmP3mvMrazMdQ738oiyXj8oe3fUsGSnYD3W8aJiZdyPkqj/2.PNG" alt="2.PNG"></p>
+<p>A payment channels is a multi-signature bitcoin address shared by two users and managed by a smart contract. The smart contract is responsible for creating and managing an off-chain &#xEC;balance sheet&#xEE; which allows the parties to transact indefinitely or for a set amount of time. Once funded, this balance sheet can then be freely and instantly modified until the parties decide to settle their transaction by closing the channel (for a very tiny fee).</p>
+<p><img src="https://steemitimages.com/DQmecCwdn9zeTGLozjD9ETUn6i3X3b8W3o7f1KKogUMLTDj/528e948fda31ac641e1abf178399ccd3.png" alt="528e948fda31ac641e1abf178399ccd3.png"></p>
+<p>If any dispute arises between the parties, the smart contract will turn to the blockchain to automatically settle the payment and distribute the bitcoin. In this regard, the role of the blockchain is very much similar to the role of a judiciary court settling a dispute between two contracting parties.</p>
+<p>Once created, payment channels can then be used to process payments originating from any user in the network. The system is optimized so a payment from user A will hop its way through the network to user B; using existing payment channels or automatically creating new ones as it goes along but always taking the shortest and cheapest route similarly to how packets of information are routed on the internet.</p>
+<p>In practice, this technology will allow anyone to send instant, cheap payments of any size to anybody on the planet through a simple exchange of QR codes, all in a secure, entirely trust-less and permission-less fashion.</p>
+<p>If you wish to know more about how the LN works, I recommend you watch this great video from Savjee&#x2019;s <a href="https://www.youtube.com/channel/UCnxrdFPXJMeHru_b4Q_vTPQ" target="_blank" rel="noopener"><strong>YouTube channel</strong></a>:</p>
+<p>https://www.youtube.com/watch?v=rrr_zPmEiME</p>
+<p>The Lightning Network is currently in development on the  <a href="https://explorer.acinq.co/#/" target="_blank" rel="noopener"><strong>Bitcoin test-net</strong></a> and is expected to roll-out on the main-net sometime during the year 2018.</p>
+<p><em>PS: The deployment of the LN won&#xED;t require a hard-fork so be wary of fraudster who will certainly try to scam unsuspecting users as we near the launch.</em></p>
+<p>Beside being an elegant scaling solution for the Bitcoin blockchain, the LN also allows for very exciting applications which could end up revolutionizing finance way beyond simple peer-to-peer payment channels.</p>
+<h2 id="b-Applications"><a href="#b-Applications" class="headerlink" title="b- Applications."></a>b- Applications.</h2><p>Although the LN is still very early in its development, its underlying technology already opens the door to a myriad of exciting applications.</p>
+<h3 id="1-Lightning-Fast-Mobile-Wallets"><a href="#1-Lightning-Fast-Mobile-Wallets" class="headerlink" title="1. Lightning Fast Mobile Wallets."></a>1. Lightning Fast Mobile Wallets.</h3><p>Mobile wallets will play a critical role in Bitcoin&#x2019;s consumer adoption. In their current form, Lightning wallets are rather complex interfaces reserved for technical users. However, as the technology  improves, so will their design and the user experience they provide.</p>
+<p>Ideally, the Lightning wallets of the future will hide all the complexities of the LN, letting users only interact with two basic <em>Send</em> and <em>Receive</em> options while the wallet processes transactions at the best possible price under the hood.</p>
+<p><img src="https://steemitimages.com/DQmWQsaCCvLeNABFrLj9hSwXxvbUbLDo6dR5x29tH8Ebhit/unnamed.png" alt="unnamed.png"></p>
+<p>One of the biggest improvement lightning wallets will bring is the ability for users to send micro-transactions to third-parties, merchants or service providers. One can imagine the wallets of the future automatically managing a whole range of services from tipping, to paying bills to micro-transact with IOT device, the possibilities are amazing. </p>
+<p>If you wish to experience first-hand the power and speed of lightning wallets, there are currently two implementations we can recommend: <a href="https://zap.jackmallers.com/" target="_blank" rel="noopener"><strong>Zap</strong></a> and <a href="https://play.google.com/store/apps/details?id=fr.acinq.eclair.wallet&amp;hl=en" target="_blank" rel="noopener"><strong>Eclair</strong></a>, the last one being a mobile wallet on Android and MacOs. Be aware that these projects are still at an alpha stage of development and should be used only on the <a href="https://explorer.acinq.co/#/" target="_blank" rel="noopener"><strong>Bitcoin test-net</strong></a>, doing otherwise would expose you to a loss of funds if things start getting buggy.</p>
+<p>Here&#xED;s a great video tutorial from Ivan on Tech&#x2019;s <a href="https://www.youtube.com/channel/UCrYmtJBtLdtm2ov84ulV-yg" target="_blank" rel="noopener"><strong>YouTube channel</strong></a> on how to use a Lightning wallet:
+https://www.youtube.com/watch?v=B5IPheyaNHA</p>
+<h3 id="2-Decentralized-Exchange-of-Crypto-Currencies-and-Financial-Assets"><a href="#2-Decentralized-Exchange-of-Crypto-Currencies-and-Financial-Assets" class="headerlink" title="2. Decentralized Exchange of Crypto-Currencies and Financial Assets."></a>2. Decentralized Exchange of Crypto-Currencies and Financial Assets.</h3><p>Decentralize exchanges (DEX) are a <em>very</em> important part of the crypto ecosystem because they allow anyone to freely trade assets without the need to trust, or be authorized, by a third party. Many DEX solutions have already been implemented on other blockchains. The most popular being  <a href="https://wavesplatform.com/" target="_blank" rel="noopener"><strong>WAVES</strong></a>, <a href="https://etherdelta.com/" target="_blank" rel="noopener"><strong>EtherDelta</strong></a> or <a href="https://steemit.com/cryptocurrency/@deanliu/0x-protocol-decentralized-trading-on-ethereum" target="_blank" rel="noopener"><strong>0x protocol-based</strong></a> DEX like <a href="https://paradex.io/" target="_blank" rel="noopener"><strong>Paradex</strong></a> or <a href="https://radarrelay.com/" target="_blank" rel="noopener"><strong>Radar Relay</strong></a>.</p>
+<p><img src="https://steemitimages.com/DQmV3eSt9jj9dQcZvD3jMbphLUJ1EYmtqosbaZmQPnYpovj/pros-cons.png" alt="pros-cons.png"></p>
+<p>For a long time, DEX solutions weren&#x2019;t practical to implement on Bitcoin. Projects like <a href="http://coloredcoins.org/" target="_blank" rel="noopener"><strong>Coloured Coins</strong></a> or <a href="https://counterparty.io/" target="_blank" rel="noopener"><strong>Counterparty</strong></a> for example pioneered the idea of transacting traditional financial assets (like securities) on the Bitcoin blockchain.  However the problem these projects encountered was that renting security services from the Bitcoin blockchain to secure assets and provide immutability also meant inheriting Bitcoin&#xED;s limitations? in terms of transaction time and fees. </p>
+<p>With the  existence of the LN though, digitized financial assets like securities could theoretically be  transferred P2p with no verification time, almost no fees and with the security offered by the bitcoin block-chain.</p>
+<p>Traditional finance is a slow and fossilized industry so the transition from NASDAQ to DEX will certainly be an uphill battle (if it ever happens). Nonetheless, we&#xED;re starting to see forward-thinking fin-tech companies like Cinnober <a href="https://www.cinnober.com/blog/the-potential-of-the-lightning-network" target="_blank" rel="noopener"><strong>express interest</strong></a> in setting full-nodes on the LN with the goal of researching the technology and its possible applications in the traditional financial sector.</p>
+<p><img src="https://steemitimages.com/DQmZ3hKRBAwmppgi1YKKWXzkyfPCP6rin2yExfncWC1Avh2/What-are-atomic-swaps.jpg" alt="What-are-atomic-swaps.jpg"></p>
+<p>Another path to DEX are <em>atomic swaps</em>, a new technology which allows cryptocurrencies and digital assets to be transacted <em>across</em> block-chains instantly and for almost no fee. 
+Since most cryptocurrencies will in time implement atomic swaps and probably their own version of the LN (ex: Zcash&#xED;s BOLT network or Litecoin&#x2019;s own Ligthning Network), one  can imagine  a future where bitcoin will be used to instantaneously purchase services or assets managed on third party blockchains. </p>
+<blockquote>
+<p><em>&#x201C;Bob wants to diversify his financial portfolio which is mainly in Bitcoin.  He decides to send some bitcoin over to the Tezos blockchain to buy digitized stocks and some to the Ethereum blockchain to buy a digitized fraction of a Picasso painting </em>via<em> the <a href="https://www.maecenas.co/" target="_blank" rel="noopener"><strong>Maecenas app</strong></a>. Bob can do all this simply from his wallet, without any friction and for a fraction of a penny.&#x201D;</em></p>
+</blockquote>
+<p>The promise of the Lightning network and how it could revolutionize the way we think about finance are indeed tantalizing. However, the LN is not without issues and some of the criticism against it should be addressed.</p>
+<h1 id="IV-Criticism-against-the-LN"><a href="#IV-Criticism-against-the-LN" class="headerlink" title="IV-Criticism against the LN."></a>IV-Criticism against the LN.</h1><h2 id="a-Will-the-LN-create-Bitcoin-banks"><a href="#a-Will-the-LN-create-Bitcoin-banks" class="headerlink" title="a- Will the LN create Bitcoin banks?"></a>a- Will the LN create Bitcoin banks?</h2><p>As we&#x2019;ve seen, the speed and low fees of the LN will allow users to send microtransactions over the network. Microtransactions are easy to route through the network due to their small size, however bigger transactions need richer payment channels to be pushed through the network.</p>
+<p>Some have predicted that this limitation will lead the lightning network to naturally produce large liquidity hubs akin to banks which over time will lead to yet another form of centralization on the network. This is a fair criticism but there are a couple of elements that might invalidate this prediction.</p>
+<p><img src="https://steemitimages.com/DQma21qviYzRDsx3S3S1bn7MirCbNe3R3bQgwfMdK8nKgUg/pros-cons.png" alt="pros-cons.png"></p>
+<p>First, creating channels staked with massive balances of bitcoin expose stakers to serious risks of being hacked which is why it&#xED;s likely that the network will actually organically decentralize itself into smaller-sized payment channels. In this configuration, large payments can still be routed through multiple smaller channels without sacrificing speed of security.</p>
+<p>Second, even if the network does happen to foster some degree of centralization, smaller users could still be able to to stake their bitcoin with other users to create their own pool of liquidity and collect fees from the transaction traffic.</p>
+<h2 id="b-Will-LN-Node-Operators-be-Subject-to-Anti-Money-Laundering-AML-Regulations"><a href="#b-Will-LN-Node-Operators-be-Subject-to-Anti-Money-Laundering-AML-Regulations" class="headerlink" title="b- Will LN Node Operators be Subject to Anti-Money-Laundering (AML) Regulations."></a>b- Will LN Node Operators be Subject to Anti-Money-Laundering (AML) Regulations.</h2><p>This last concern is much more difficult to predict. In his YouTube Bitcoin Q&amp;A series <a href="https://www.youtube.com/channel/UCJWCJCWOxBYSi5DhCieLOLQ" target="_blank" rel="noopener"><strong>Andreas Antonopoulos</strong></a> notes that:</p>
+<blockquote>
+<p> &#x201C;<em>AML regulations only apply to flows of money greater than a certain amount [&#x2026;] Characterizing all [node operators] a  banks is preposterous  and would only lead to more stealthy implementation</em>&#x201C;. </p>
+</blockquote>
+<p><img src="https://steemitimages.com/DQmZYxJEnpYzQruv63BpgsL3RtivNpBF6DhXJC9mNCCZfLF/Science-Law-icon.png" alt="Science-Law-icon.png"></p>
+<p>He also points that those fears already existed in the early days of Bitcoin but that none of the legacy node operators were ever prosecuted for running illegal money transmitting operations.</p>
+<p>It&#x2019;s worth pointing though that there is a regulatory risk here and as Bitcoin will gain in popularity and rise to challenge the traditional banking system we could see some regulators take a stricter stance on this issue. After all very few revolutions were ever conducted without a struggle and the financial disruption promised by Bitcoin is likely to provoke a lot of resistance from the traditional banking system.</p>
+<p>Exciting times ahead.</p>
+<hr>
+<p> <strong>_If you liked this post please consider supporting Dan&#x2019;s blog @tradealert and if you&#x2019;re interested in learning more about cryptocurrencies, come join our  [</strong>awesome community on Discord<strong>](https://discord.gg/4VGVHrs). Don&#x2019;t be shy, it&#x2019;s free!!_</strong></p>
+<p><img src="https://steemitimages.com/DQmQbrCF2UW8b69NWRVTBu2crKozuVob2SVVbrzFrALQ9y3/TA%20Discord.jpg" alt="TA Discord.jpg"></p>
+<p>Also, make sure to go check out Dan&#x2019;s latest review this time on  <a href="https://steemit.com/cryptocurreny/@tradealert/spankchain-porn-on-ethereum" target="_blank" rel="noopener"><strong>SpankChain</strong></a> and his <a href="https://steemit.com/cryptocurrency/@tradealert/interview-with-ernie-varitimos-the-trader-of-futures" target="_blank" rel="noopener"><strong>interview with Ernie from Trader of Futures</strong></a>.</p>
+<p>Dan &amp; Dean.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/lightning-network-scalable-instant-bitcoin-transactions" target="_blank" rel="noopener">Lightning Network:  Scalable, Instant Bitcoin Transactions.</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@deanliu/tags/bitcoin/">bitcoin</a>, <a class="has-link-grey -link" href="/@deanliu/tags/blockchain/">blockchain</a>, <a class="has-link-grey -link" href="/@deanliu/tags/cryptocurrency/">cryptocurrency</a>, <a class="has-link-grey -link" href="/@deanliu/tags/lightning-network/">lightning-network</a>, <a class="has-link-grey -link" href="/@deanliu/tags/scalability/">scalability</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@deanliu/qxhqf/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[寓言] 市集之爭（上）</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@deanliu/46b4wp-b-d/">
+                <span class="level-item">[B.D.單身日記] 與子偕老</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@deanliu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 deanliu&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@deanliu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@deanliu/content.json"};</script>
+
+
+
+    
+<script src="/@deanliu/js/bundle.js" defer></script></body>
+</html>
+

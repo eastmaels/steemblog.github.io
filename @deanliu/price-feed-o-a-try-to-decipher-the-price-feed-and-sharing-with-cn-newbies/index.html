@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies - deanliu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@deanliu/css/style.css">
+
+<link rel="stylesheet" href="/@deanliu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@deanliu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@deanliu/">Home</a>
+                
+                <a class="navbar-item" href="/@deanliu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@deanliu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@deanliu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@deanliu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1</span>
+        <span>&#x6F23;&#x6F2A;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">2</span>
+        <span>&#x5713;&#x684C;&#x4E0A;&#x5750;&#x8457;19&#x4F4D;&#x8D85;&#x7D1A;&#x5927;&#x5927;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">3</span>
+        <span>&#x5176;&#x4E2D;&#x8C93;&#x81A9;&#xFF1F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">4</span>
+        <span>&#x9ED1;&#x7BB1;&#x8B0E;&#x5718;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">5</span>
+        <span>English Summary</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">5.1</span>
+        <span>images credit: pixabay, steemd, steemit</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@deanliu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-07-10T07:46:12.000Z">2017-07-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@deanliu/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    14 minutes read (About 2173 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies
+            
+        </h1>
+        <div class="content">
+            <h2>&#x6F23;&#x6F2A;</h2>
+<p><br>
+&#x770B;O&#x5C0F;&#x5B38;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x7E3D;&#x662F;&#x5E36;&#x7D66;&#x4EBA;&#x60F3;&#x66F4;&#x9032;&#x4E00;&#x6B65;&#x7814;&#x7A76;&#x8A31;&#x591A;&#x5E73;&#x53F0;&#x6A5F;&#x5236;&#x7684;&#x6E34;&#x671B;&#x3002;[<a href="https://steemit.com/cn/@cnfund/49hh7y" target="_blank" rel="noopener">&#x70BA;&#x4F55;&#x53EB;&#x4ED6;&#x5C0F;&#x5B38;&#xFF1F;</a>]</p>
+<p>&#x4ECA;&#x5929;&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;&#x6211;&#x770B;&#x5230;&#x9019;&#x7BC7;&#x300C; <a href="https://steemit.com/cn/@oflyhigh/7kwevu" target="_blank" rel="noopener">&#x4E5F;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x5E16;&#x5B50;&#x7684;&#x5956;&#x52B1;</a>&#x300D;&#xFF08;<del>&#x5582;&#xFF01;&#x592A;&#x6C92;&#x6709;&#x6587;&#x5B78;&#x6C23;&#x606F;&#x7684;&#x6A19;&#x984C;&#x4E86;&#x5427;</del>&#xFF09;&#xFF0C;&#x9019;&#x7BC7;&#x8AC7;&#x7684;&#x662F;&#x734E;&#x52F5;&#x7684;&#x8A08;&#x7B97;&#xFF0C;&#x6211;&#x5927;&#x6982;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x5927;&#x6982;&#x5566;&#xFF01;&#x53EA;&#x662F;&#x770B;&#x5230;&#x9019;&#x88E1;&#x982D;&#x95DC;&#x65BC;<strong>&#x7CFB;&#x7D71;&#x50F9;&#x683C;</strong>&#x90E8;&#x5206;&#x63D0;&#x5230;</p>
+<blockquote>&#xA0;&#x8FD9;&#x4E2A;&#x4EF7;&#x683C;&#x636E;&#x8BF4;&#x662F;7&#x65E5;&#x5747;&#x4EF7;&#xFF0C;&#x5177;&#x4F53;&#x6838;&#x7B97;&#x8FC7;&#x7A0B;&#x6211;&#x6CA1;&#x7814;&#x7A76;&#xFF0C;&#x603B;&#x4E4B;&#x5982;&#x679C;&#x5E02;&#x573A;&#x4E0A;steem&#x4EF7;&#x683C;&#x4E00;&#x8DEF;&#x8D70;&#x4F4E;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x4EF7;&#x683C;&#x5C31;&#x4F1A;&#x53D8;&#x4F4E;&#x3002;&#xA0;</blockquote>
+<p>&#x9019;&#x6BB5;&#x8A71;&#x57FA;&#x672C;&#x4E0A;&#x662F;&#x6C92;&#x932F;&#x7684;&#xFF08;&#x96D6;&#x7136;&#x53EF;&#x80FD;&#x6709;&#x9EDE;&#x5C0F;&#x932F;&#xFF0C;&#x4F46;&#x7121;&#x50B7;&#x5927;&#x96C5;&#xFF09;&#xFF0C;&#x4F46;&#x5176;&#x5BE6;&#x9019;&#x88E1;&#x982D;&#x85CF;&#x8457;Steem&#x6700;&#x5927;&#x7684;&#x9ED1;&#x7BB1;&#x79D8;&#x5BC6;&#xFF01;&#x4EC0;&#x9EBC;&#x79D8;&#x5BC6;&#xFF1F;&#x770B;&#x4E0B;&#x53BB;&#x5427;&#xFF01;</p>
+<p>https://steemitimages.com/DQmZLEKUkZZy2obF9hdQiej8bRcgU71Q8f6kgaBi6Fj7ceC/danbo-1206484_640%20.jpg</p><hr>
+<h2>&#x5713;&#x684C;&#x4E0A;&#x5750;&#x8457;19&#x4F4D;&#x8D85;&#x7D1A;&#x5927;&#x5927;</h2>
+<p><br>
+&#x8209;&#x51E1;&#x91CD;&#x8981;&#x4E8B;&#x60C5;&#xFF0C;&#x4F3C;&#x4E4E;&#x5C31;&#x8A72;&#x6709;&#x500B;&#x5713;&#x684C;&#xFF0C;&#x4E00;&#x7FA4;&#x6709;&#x6B0A;&#x529B;&#x7684; <del>&#x9ED1;&#x5E6B;&#x8001;&#x5927; </del>&#x5927;&#x9BE8;&#x9B5A;&#x5011;&#xFF0C;&#x570D;&#x5750;&#x8457;&#xFF0C;&#x5BA4;&#x5167;&#x96EA;&#x8304;&#x5473;&#x7159;&#x9727;&#x7E5A;&#x7E5E;&#x3002;&#x4ED6;&#x5011;&#x5634;&#x88E1;&#x4E0D;&#x6E05;&#x4E0D;&#x695A;&#x5730;&#x8AAA;&#x8457;&#x4E00;&#x5806;&#x6211;&#x5011;&#x901A;&#x4E0D;&#x61C2;&#x7684;&#x8853;&#x8A9E;&#xFF0C;&#x6084;&#x6084;&#x5730;&#x6C7A;&#x5B9A;&#x8457;&#x8A31;&#x591A;&#x7121;&#x6CD5;&#x5750;&#x4E0A;&#x5713;&#x684C;&#x7684;&#x82B8;&#x82B8;&#x773E;&#x751F;&#x5011;&#x7684;&#x751F;&#x8A08;&#x2026;&#xA0;</p>
+<p>&#x5475;&#x5475;&#xFF0C;&#x88AB;&#x5C0F;&#x8AAA;&#x5BB6;&#x5F71;&#x97FF;&#x4E86;&#x2026;&#xA0;</p>
+<p>&#x597D;&#x7684;&#xFF0C;&#x56DE;&#x5230;Steem&#x4E16;&#x754C;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x80FD;&#x90FD;&#x7A0D;&#x5FAE;&#x807D;&#x904E;&#x4EC0;&#x9EBC;&#x662F;Witness&#x4E86;&#x5427;&#xFF1F;&#x9019;&#x662F;Steem blockchain DPoS&#x7684;&#x91CD;&#x8981;&#x5BE6;&#x8E10;&#x6A5F;&#x5236;&#x554A;&#xFF01;&#x4E0D;&#x6E05;&#x695A;&#x5730;&#x53EF;&#x4EE5;&#x770B;O&#x5C0F;&#x5B38;&#x7684;<a href="https://steemit.com/cn/@oflyhigh/6dbdqm" target="_blank" rel="noopener">&#x9019;&#x7BC7;</a>&#xFF0C;&#x6216;&#x662F;&#x82F1;&#x6587;&#x5340;&#x5927;&#x8001;&#x7684; @pfunk &#x7684;<a href="https://steemit.com/steemit-guides/@pfunk/a-full-steemit-user-s-guide-to-steem-witnesses" target="_blank" rel="noopener">&#x90A3;&#x7BC7;</a>&#x3002;(&#x5F8C;&#x8005;&#x53EF;&#x80FD;&#x7565;&#x820A;&#x4E86;&#xFF0C;&#x4F46;&#x8F03;&#x5168;&#x9762;&#xFF0C;&#x91CD;&#x9EDE;&#x5728;&#x65BC;&#x6982;&#x5FF5;&#x5B78;&#x7FD2;)&#xA0;</p>
+<p>&#x4E0A;&#x982D;&#x8AAA;&#x7684;&#x7CFB;&#x7D71;&#x50F9;&#x683C;&#xFF0C;&#x5176;&#x5BE6;&#x5C31;&#x662F; &#x201C;feed price&#x201D;&#xFF0C;&#x4EA6;&#x5373;&#xFF0C;<strong>&#x7CFB;&#x7D71;&#x5167; 1 &#x55AE;&#x4F4D;&#x7684;Steem&#x50F9;&#x503C;&#x591A;&#x5C11;SBD&#x7684;&#x57FA;&#x6E96;</strong>&#x3002;[&#x5F8C;&#x9762;&#x518D;&#x8AC7;&#x5176;&#x610F;&#x7FA9;]</p>
+<p>Witnesses&#xFF0C;&#x898B;&#x8B49;&#x4EBA;&#x5011;&#xFF0C;&#x5C31;&#x662F;&#x6C7A;&#x5B9A;&#x9019;&#x7CFB;&#x7D71;&#x50F9;&#x683C;&#x7684;&#x5BE1;&#x982D;&#x5011;&#x554A;&#xFF01;&#x600E;&#x9EBC;&#x6C7A;&#x5B9A;&#xFF1F;&#x958B;&#x6703;&#x55CE;&#xFF1F;&#x5230;&#x54EA;&#x88E1;&#x958B;&#xFF1F;&#x8996;&#x8A0A;&#x6703;&#x8B70;&#x55CE;&#xFF1F;</p>
+<p>https://steemitimages.com/DQmTgGGXmejpA6yuH55DjMbEr5y8Co6GsNWNED2PcaQkn5A/federal-chancellery-639100_640.jpg</p>
+<p>&#x50BB;&#x5B69;&#x5B50;&#xFF0C;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x4E00;&#x5207;&#x7167;protocal&#x4F86;&#x7684;&#xFF0C;&#x958B;&#x4EC0;&#x9EBC;&#x6703;&#x5462;&#xFF1F;&#x6309;&#x7167;&#x53E6;&#x4E00;&#x4F4D;&#x5927;&#x8001; @timcliff &#x516D;&#x500B;&#x6708;&#x524D;&#x66FE;&#x7D93;&#x6559;&#x904E;&#x6211;&#x7684;&#x4E00;&#x6BB5;&#x8A71;</p>
+<p>https://steemitimages.com/DQmWBubdUPfgFHnnaurnHQzuQ38UCbzpaWWWbGdgMm5p4n8/image.png</p>
+<p>&#x770B;&#x904E;&#x4E86;&#xFF0C;&#x4F60;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x3002;&#x539F;&#x4F86;&#xFF0C;&#x6BCF;&#x500B;Witness&#x90FD;&#x6709;&#x610F;&#x7FA9;&#x52D9;&#x63D0;&#x4F9B;&#x7CFB;&#x7D71;&#x4E00;&#x500B;&#x81EA;&#x5DF2;&#x6C7A;&#x5B9A;&#x7684;&#x201D;feed price&#x201D;&#x3002;&#x4F46;&#x53EA;&#x6709;&#x524D;19&#x500B;Witness&#x7684;&#x6578;&#x64DA;&#x6703;&#x88AB;&#x7CFB;&#x7D71;&#x8003;&#x616E;&#xFF0C;&#x800C;&#x63A1;&#x53D6;19&#x500B;&#x6578;&#x64DA;&#x7576;&#x4E2D;&#x7684;&#x4E2D;&#x4F4D;&#x6578;&#xFF08;median price&#xFF09;&#x4F86;&#x505A;&#x70BA;&#x7CFB;&#x7D71;&#x6700;&#x7D42;&#x7684;&#x90A3;&#x500B;&#x6578;&#x64DA;&#xFF08;&#x53EF;&#x4EE5;&#x5230;steemd.com&#x7DB2;&#x7AD9;&#x770B;&#x9019;&#x6578;&#x64DA;&#xFF0C;&#x5F80;&#x4E0B;&#x62C9;&#x5728;&#x53F3;&#x5074;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF09;</p>
+<p>https://steemitimages.com/DQmWB6miXfDwpLxZNYWvCVdzLyKrMn1KMHi3eEnjPyb94o6/image.png</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x8DDF;&#x6211;&#x4E00;&#x6A23;&#xFF0C;&#x6709;&#x4E8B;&#x6C92;&#x7A7A;&#x5C31;&#x53BB;&#x5077;&#x770B;&#x5927;&#x201D;&#x5B38;&#x201D; <del>&#x6D17;&#x6FA1;</del> <a href="https://steemd.com/@abit" target="_blank" rel="noopener">&#x52D5;&#x614B;</a>&#xFF0C;&#x5C31;&#x6703;&#x5F88;&#x719F;&#x6089;&#x9019;&#x756B;&#x9762;&#xFF0C;&#x4EE5;&#x53CA;&#x4ED6;&#x5E38;&#x5728;&#x505A;&#x7684;&#x4E8B;&#x300C; abit publish feed price: $1.395/STEEM&#x300D;&#x2026; &#x9019;&#x5C31;&#x662F;&#x56C9;&#xFF01;&#x4F60;&#x8981;&#x662F;&#x770B;&#x5F97;&#x5920;&#x4E45;&#xFF0C;&#x4E0D;&#x8981;&#x4EE5;&#x70BA;&#x4ED6;&#x4E0D;&#x7761;&#x89BA;&#xFF0C;&#x9019;&#x53EF;&#x4EE5;&#x81EA;&#x52D5;&#x5316;&#x7684;&#x2026;&#xA0;</p>
+<p>https://steemitimages.com/DQmXYkPRo9BoxGpxitFELCN5bkkuFY6dFgk5BYr1zayXV8E/image.png</p>
+<hr><h2>&#x5176;&#x4E2D;&#x8C93;&#x81A9;&#xFF1F;</h2>
+<p><br>
+&#x7576; timcliff&#x5144;&#x5F88;&#x4E45;&#x524D;&#x63D0;&#x4F9B;&#x6211;&#x610F;&#x898B;&#x5F8C;&#xFF0C;&#x6211;&#x4E00;&#x76F4;&#x60F3;&#x597D;&#x597D;&#x53BB;&#x78BA;&#x8A8D;&#x9019;&#x4E8B;&#xFF0C;&#x4F46;&#x5F8C;&#x4F86;&#x5C31;&#x5FD8;&#x4E86;&#xFF0C;&#x76F4;&#x5230;&#x4ECA;&#x5929;&#x770B;&#x5230;O&#x5C0F;&#x5B38;&#x7684;&#x6587;&#x7AE0;&#x624D;&#x60F3;&#x8D77;&#xFF0C;&#x6240;&#x4EE5;&#x6C7A;&#x5B9A;&#x99AC;&#x4E0A;&#x4F86;&#x7814;&#x7A76;&#x770B;&#x770B;&#xFF0C;&#x78BA;&#x8A8D;&#x4E00;&#x4E0B;&#x2026; &#x7D50;&#x679C;&#x2026; &#x600E;&#x9EBC;&#x51FA;&#x4E4E;&#x6211;&#x610F;&#x6599;&#xFF0C;&#x9019;&#x96E3;&#x89E3;&#x554A;&#x2026; &#x8ACB;&#x770B;&#x2026;&#xA0;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x6293;&#x53D6;&#x9019;&#x88E1;&#x7684;<a href="https://steemd.com/witnesses" target="_blank" rel="noopener">&#x898B;&#x8B49;&#x4EBA;&#x5373;&#x6642;&#x6578;&#x64DA;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6211;&#x5011;&#x5927;&#x201D;&#x5B38;&#x201D;&#x6392;&#x540D;18&#xFF08;&#x5FEB;&#x554A;&#xFF01;&#x9084;&#x6C92;&#x6295;&#x7968;&#x7684;&#x5FEB;&#x53BB;&#x5427;&#xFF0C;&#x592A;&#x4F4E;&#x4E86;&#x9EDE;&#xFF01;&#xFF09;&#x3002;&#x9019;&#x88E1;&#x6709;&#x5F88;&#x591A;&#x8A0A;&#x606F;&#xFF0C;&#x6211;&#x5C31;&#x4E0D;&#x591A;&#x8AAA;&#x4E86;&#xFF0C;&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#xFF0C;&#x5982;&#x6700;&#x53F3;&#x5074;&#x5927;&#x5BB6;&#x90FD;&#x5DF2;&#x7D93;&#x5728;run HF19&#x4E86;&#xFF08;&#x9019;&#x53E5;&#x8A71;&#x88E1;&#x6709;&#x5F88;&#x591A;&#x554F;&#x984C;&#x7684;&#xFF0C;&#x539F;&#x4F86;&#x53EF;&#x4EE5;&#x6709;&#x4EBA;&#x4E0D;run HF19&#x554A;&#xFF1F;&#x90A3;&#x7CFB;&#x7D71;&#x600E;&#x9EBC;&#x904B;&#x4F5C;&#xFF1F;&#x9019;&#x4E5F;&#x662F;&#x6211;&#x7684;&#x65E2;&#x6709;&#x7591;&#x60D1;&#x4E4B;&#x4E00;&#xFF09;&#x2026;</p>
+<p>&#x597D;&#x56DE;&#x5230;&#x672C;&#x8B70;&#x984C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x500B;&#x898B;&#x8B49;&#x4EBA;&#x90FD;&#x6709;feed&#xFF0C;&#x5C31;&#x662F;feed price&#x3002;</p>
+<p>https://steemitimages.com/DQmRVQcpDBc9XXvCdVBMEiWrizTczW1EYMb6oABs39iGyga/image.png</p>
+<p>&#x65BC;&#x662F;&#x4E4E;&#x6211;&#x7528;excel&#x6392;&#x4E86;&#x4E00;&#x4E0B;&#x524D;19&#x5927;&#x7684;&#x6578;&#x64DA;&#x5982;&#x4E0B;&#xFF0C;&#x767C;&#x73FE;&#x2026;&#xA0;</p>
+<p>https://steemitimages.com/DQmNufHwT5X5rUSEwvr4BMHvzhPgjvRy16SXHzKK8zgcwnD/image.png</p>
+<p>&#x4E0D;&#x5C0D;&#x554A;&#xFF01;&#x7CFB;&#x7D71;&#x7684;feed price&#x61C9;&#x8A72;&#x662F;$1.51&#x554A;&#xFF01;&#xFF08;&#x4E2D;&#x4F4D;&#x6578;&#xFF09;&#x600E;&#x9EBC;&#x524D;&#x9762;&#x986F;&#x793A;&#x7684;&#x662F; $1.613&#xFF1F;&#x600E;&#x9EBC;&#x56DE;&#x4E8B;&#xFF1F;</p>
+<p>&#x597D;&#x5427;&#xFF01;&#x6211;&#x8981;&#x544A;&#x8A34;&#x4F60;&#x672C;&#x5E16;&#x6700;&#x5927;&#x7684;&#x7B11;&#x8A71;&#x4E86;&#xFF0D;&#x7B54;&#x6848;&#x662F;&#xFF1A;&#x6211;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#xFF01;</p>
+<p>&#x6211;&#x904D;&#x5C0B;&#x53EF;&#x80FD;&#x77E5;&#x8B58;&#x4F86;&#x6E90;&#xFF0C;&#x627E;&#x4E0D;&#x5230;&#x89E3;&#x91CB;&#x65B9;&#x6CD5;&#x3002;&#x4F46;&#x81F3;&#x5C11;&#x6211;&#x6709;&#x4E00;&#x500B;&#x53EF;&#x80FD;&#x7684;&#x731C;&#x6E2C;&#xFF0C;&#x8B93;&#x8B80;&#x8005;&#x5225;&#x592A;&#x751F;&#x6C23;&#x4E86;&#x2026; &#x90A3;&#x5C31;&#x662F;&#x2026;&#xA0;</p>
+<p><strong>&#x9019;&#x898B;&#x8B49;&#x4EBA;&#x7684;&#x4E2D;&#x4F4D;&#x6578;&#x4E26;&#x4E0D;&#x662F;&#x7576;&#x4E0B;&#x7684;19&#x5927;&#x898B;&#x8B49;&#x4EBA;&#x7684;&#x6578;&#x64DA;&#x4E2D;&#x4F4D;&#x6578;&#xFF0C;&#x800C;&#x662F;&#x904E;&#x53BB;3.5&#x5929;&#x5167;&#xFF0C;&#x6839;&#x64DA;&#x6642;&#x9593;&#x9577;&#x5EA6;&#x8207;&#x52D5;&#x614B;&#x7684;&#x524D;19&#x4F4D;&#x898B;&#x8B49;&#x4EBA;&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x6578;&#x64DA;&#x7684;&#x4E2D;&#x4F4D;&#x6578;&#x3002;</strong></p>
+<p>&#x9019;&#x662F;&#x6211;&#x7684;&#x731C;&#x6E2C;&#xFF0C;&#x4E14;&#x9019;&#x731C;&#x6E2C;&#x6211;&#x7121;&#x6CD5;&#x53EA;&#x6191;steemd&#x4F86;&#x9A57;&#x8B49;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x6709;&#x5F85;&#x8CE2;&#x8005;&#x4E86;&#x2026;&#x4F46;&#x6211;&#x89E3;&#x91CB;&#x4E00;&#x4E0B;</p>
+<ol>
+  <li>3.5&#x5929;&#xFF0C;&#x4E0D;&#x662F;7&#x5929;&#xFF0C;7&#x5929;&#x662F;&#x820A;&#x5236;&#x4E86;&#xFF0C;7&#x5929;&#x5236;&#x5728;Steem&#x6539;&#x8B8A;power down&#x9031;&#x671F;&#x90A3;&#x6B21;&#x6539;&#x6210;3.5&#x5929;&#x4E86;&#xFF0C;&#x53EF;&#x4EE5;&#x53C3;&#x8003;<a href="https://steemit.com/steem/@steemitblog/final-review-of-steem-economic-changes" target="_blank" rel="noopener">&#x9019;&#x88E1;</a>&#x3002;&#x9019;&#x662F;&#x6211;&#x8AAA;&#x7684;O&#x6587;&#x5C0F;&#x932F;&#x4E4B;&#x8655;&#x3002;&#x4F46;&#x7576;&#x7136;&#x6211;&#x4E5F;&#x4E0D;&#x662F;100%&#x6709;&#x628A;&#x63E1;</li>
+  <li>&#x6240;&#x8B02;&#x300C;&#x6642;&#x9593;&#x9577;&#x5EA6;&#x300D;&#x731C;&#x6E2C;&#x662F;&#x56E0;&#x70BA;&#xFF0C;&#x4F60;&#x628A;&#x6E38;&#x6A19;&#x79FB;&#x5230;<a href="https://steemd.com/witnesses" target="_blank" rel="noopener">witness page</a>&#x7684;feed price&#x65C1;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;age&#x7684;&#x6578;&#x64DA;&#xFF0C;&#x9019;&#x4F3C;&#x4E4E;&#x6697;&#x793A;&#x4E86;age&#x662F;&#x91CD;&#x8981;&#x53C3;&#x8003;&#x3002;&#x9019;&#x4E5F;&#x6709;&#x9053;&#x7406;&#xFF0C;&#x56E0;&#x70BA;&#x6578;&#x64DA;&#x662F;&#x96A8;&#x6642;&#x8B8A;&#x7684;&#xFF0C;&#x6642;&#x9593;&#x78BA;&#x5BE6;&#x662F;&#x91CD;&#x8981;&#x8003;&#x91CF;</li>
+  <li>&#x6240;&#x8B02;&#x300C;&#x52D5;&#x614B;&#x7684;&#x524D;19&#x4F4D;&#x898B;&#x8B49;&#x4EBA;&#x300D;&#x6307;&#x7684;&#x662F;&#x7576;&#x4E0B;&#x7684;19&#x4F4D;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x4E0B;&#x4E00;&#x79D2;&#x7684;19&#x4F4D;&#xFF0C;&#x5728;&#x5176;&#x4F4D;&#x8B00;&#x5176;&#x653F;&#xFF0C;&#x4E0B;&#x53BB;&#x4E86;&#x5C31;&#x6C92;&#x767C;&#x8A00;&#x6B0A;&#x4E86;&#xFF0C;&#x9019;&#x662F;dantheman&#x5E38;&#x8AAA;&#x7684;&#x201D;state&#x201D;&#x7684;&#x89C0;&#x5FF5;&#x4E86;&#x2026; &#x9644;&#x5E36;&#x8AAA;&#xFF0C;19&#x6216;20&#x4F4D;&#x5F8C;&#x7684;&#x898B;&#x8B49;&#x4EBA;&#x4E0D;&#x662F;&#x667E;&#x5728;&#x90A3;&#x88CF;&#x597D;&#x770B;&#x7684;&#xFF0C;&#x4ED6;&#x5011;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;backup&#xFF0C;&#x662F;&#x5427;&#xFF1F;&#x5982;&#x679C;&#x524D;&#x9762;&#x54EA;&#x4F4D;&#x5BB6;&#x88E1;&#x505C;&#x96FB;&#x4E86;&#x4E4B;&#x985E;&#x7684;&#xFF0C;<del>&#x6211;&#x90A3;&#x73CD;&#x8CB4;&#x7684;&#x6587;&#x7AE0;&#x4F60;&#x8CE0;&#x5F97;&#x8D77;&#x55CE;&#xFF1F;</del>&#x54C8;&#x54C8;&#xFF01;</li>
+  <li>&#x4F3C;&#x4E4E;&#x4E5F;&#x6709;&#x4EBA;&#x8AAA;20&#x4F4D;&#xFF0C;&#x9019;&#x6211;&#x4E0D;&#x78BA;&#x5B9A;&#x4E86;&#x3002;[update: O&#x5927;&#x8AAA;&#x662F;20+1&#xFF0C;&#x898B;&#x56DE;&#x5E16;]</li>
+</ol>
+<hr><h2>&#x9ED1;&#x7BB1;&#x8B0E;&#x5718;</h2>
+<p><br>
+&#x662F;&#x7684;&#xFF01;&#x9ED1;&#x7BB1;&#x3002;&#x5176;&#x5BE6;&#x4E0D;&#x662F;&#x6307;&#x898B;&#x8B49;&#x4EBA;&#x5982;&#x4F55;&#x6C7A;&#x5B9A;&#x7CFB;&#x7D71; feed price&#xFF0C;&#x5340;&#x584A;&#x93C8;&#x6C92;&#x6709;&#x4E0D;&#x900F;&#x660E;&#x9019;&#x4E8B;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x4F60;&#x6709;&#x6C92;&#x6709;&#x641E;&#x61C2;&#x800C;&#x5DF2;&#x3002;&#x9ED1;&#x7BB1;&#x5728;&#x54EA;&#x88E1;&#xFF1F;&#x4E0D;&#x7136;&#x8981;&#x9000;&#x9322;&#x4E86;&#x5594;&#xFF01;&#x597D;&#x7684;&#xFF0C;&#x6211;&#x7D66;&#x4F60;&#x9ED1;&#x7BB1;&#x2026;</p>
+<p>&#x9ED1;&#x7BB1;&#x5728;&#x65BC;<strong>Witnesses&#x5011;&#x5982;&#x4F55;&#x601D;&#x8003;feed price&#x7684;&#x6C7A;&#x5B9A;</strong>&#xFF0C;&#x9019;&#x53EF;&#x662F;&#x5927;&#x5B78;&#x554F;&#x554A;&#xFF01;&#x6BCF;&#x500B;&#x4EBA;&#x601D;&#x8003;&#x5DEE;&#x7570;&#x5F88;&#x5927;&#xFF0C;&#x56E0;&#x70BA;&#x9019;&#x6578;&#x64DA;&#x6C7A;&#x5B9A;&#x4E86;&#x6574;&#x500B;Steem blockchain&#x7684;&#x904B;&#x4F5C;&#x6548;&#x7387;&#xFF0C;&#x9023;&#x7D50;&#x4E86;&#x6240;&#x6709;&#x4E00;&#x5207;&#xFF01;&#x6295;&#x8CC7;&#x4EBA;&#x3001;&#x6295;&#x6A5F;&#x4EBA;&#x3001;&#x4F5C;&#x8005;&#x3001;&#x5927;&#x80A1;&#x6771;&#x2026; &#x9019;&#x88E1;&#x9762;&#x6C92;&#x6709;&#x5B9A;&#x8AD6;&#x3002;&#x5305;&#x62EC;&#x524D;&#x4E00;&#x9663;&#x5B50;&#x96E3;&#x4EE5;&#x7406;&#x89E3;&#x7684;SBD&#x6EA2;&#x50F9;&#x4E4B;&#x8B0E;&#xFF0C;&#x4EE5;&#x53CA;&#x6574;&#x500B;&#x7CFB;&#x7D71;&#x7684;&#x4F30;&#x503C;&#x3001;&#x8CA0;&#x50B5;&#xFF08;&#x662F;&#x7684;&#xFF01;SBD&#x662F;&#x7CFB;&#x7D71;&#x8CA0;&#x50B5;&#x7684;&#x6982;&#x5FF5;&#xFF09;&#x4EE5;&#x53CA;&#x8207;&#x7F8E;&#x5143;&#x7684;&#x639B;&#x9264;&#x7B49;&#x7B49;&#x2026; &#x4E00;&#x5207;&#x7D93;&#x6FDF;&#x4E16;&#x754C;&#x7684;&#x908F;&#x8F2F;&#x5C31;&#x5728;&#x9019;&#x88E1;&#x9762;&#x4E86;&#x2026; &#x9019;&#x5DF2;&#x7D93;&#x8D85;&#x51FA;&#x5340;&#x584A;&#x93C8;&#x7684;&#x6280;&#x8853;&#x7BC4;&#x7587;&#xFF0C;&#x9054;&#x5230;&#x7D93;&#x6FDF;&#x904B;&#x4F5C;&#x7684;&#x5C64;&#x6B21;&#x4E86;&#x2026;</p>
+<p>&#x4F60;&#x8AAA;&#xFF0C;&#x9019;&#x9ED1;&#x7BB1;&#x597D;&#x61C2;&#x55CE;&#xFF1F;<del>&#x6211;&#x5BB9;&#x6613;&#x55CE;&#x6211;&#xFF0C;&#x90FD;&#x5BEB;&#x5230;&#x9019;&#x88E1;&#x4E86;&#xFF1F;</del></p>
+<p>&#x4F46;&#x9019;&#x4E5F;&#x662F;&#x6A02;&#x8DA3;&#x6240;&#x5728;&#x3002;&#x5967;&#x5999;&#x5C31;&#x5728;&#x5176;&#x4E2D;&#x4E86;&#x3002;&#x9019;&#x5C07;&#x6703;&#x662F;&#x4E00;&#x500B;&#x6F2B;&#x9577;&#x7684;&#x5B78;&#x7FD2;&#x8207;&#x63A2;&#x7D22;&#x7684;&#x904E;&#x7A0B;&#x554A;&#xFF01;:)</p>
+<p><strong>&#x518D;&#x6B21;&#x611F;&#x8B1D;O&#x5C0F;&#x5B38;&#x7D66;&#x6211;&#x7684;&#x5BEB;&#x4F5C;&#x9748;&#x611F;&#x89F8;&#x767C;</strong>&#x2026;. [&#x7576;&#x7136; @htliao &#x662F;&#x89F8;&#x767C;&#x4ED6;&#x7684;&#x4EBA;&#x2026; &#x53EF;&#x898B;&#x5C0F;&#x9B5A;&#x4E5F;&#x6709;&#x80FD;&#x529B;&#x6539;&#x8B8A;&#x5F88;&#x591A;&#x4E8B;&#x7684;&#xFF01;:) ]</p>
+<p>https://steemitimages.com/DQmXYrZWCUgwZD2XPrrEj34Hu25je6iY6pBSQhP1sqvnU52/danbo-1206478_640.jpg</p>
+<hr><h2>English Summary</h2>
+<p><br>
+Dear English readers, I know there will be many asking but this post is not serious enough for me to write a bilingual post. So I will give you a sketch here. This is a post describing my endeavors to decipher how &#x201C;price feed&#x201D; works via witness system based on what @timcliff said to me in a comment 6 months ago [<strong>10% SBD of this post goes to you man, for sharing what you know with me :)</strong>]. He said that system&#x2019;s price feed is determined by the median price of top 19 witnesses.&#xA0;</p>
+<p>I did the homework today and found out it seems weird&#x2026; or, it is more complicated than I thought. As I search many information sources but cannot explain it, I have a conjecture - the system&#x2019;s price is based on <em><strong>all </strong></em>the witnesses&#x2019; numbers during the past 3.5 days time frame <em><strong>dynamically</strong></em>. So it means that you cannot just look at steemd right now and calculate the final result. That&#x2019;s the main point of this post in Chinese. I share some commonly known knowledge to newbies in a relaxing way as well&#x2026; Don&#x2019;t know if you can google translate to get the idea&#x2026; haha!</p>
+<p>@deanliu</p>
+<hr>
+<h6><p>images credit: pixabay, steemd, steemit</p><p><br></p></h6>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/price-feed-o-a-try-to-decipher-the-price-feed-and-sharing-with-cn-newbies" target="_blank" rel="noopener">&#x89E3;&#x4E0D;&#x958B;&#x7684;&#x9ED1;&#x7BB1;&#xFF0D;&#x4E5F;&#x4F86;&#x8AAA;&#x4E00;&#x4E0B;Price Feed&#xFF0C;&#x547C;&#x61C9;O&#x5C0F;&#x5B38;&#x300C;&#x4E5F;&#x6765;&#x8BF4;&#x4E00;&#x4E0B;&#x5E16;&#x5B50;&#x7684;&#x5956;&#x52B1;&#x300D;A Try to Decipher the Price Feed and Sharing with CN Newbies</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@deanliu/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@deanliu/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@deanliu/tags/sbd/">sbd</a>, <a class="has-link-grey -link" href="/@deanliu/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@deanliu/tags/witness/">witness</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@deanliu/sleep-well-free-from-steem-waves/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">🙊  昨夜風狂雨驟 怎麼我一夜好眠？🙊 Sleep Well Free From Steem Waves</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@deanliu/budapest-eye-myeuropaplog-series/">
+                <span class="level-item">✶ Budapest Eye ✶ 布達佩斯之眼 ✶ #myeuropaplog series 歐洲行旅照片記錄系列</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@deanliu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 deanliu&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@deanliu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@deanliu/content.json"};</script>
+
+
+
+    
+<script src="/@deanliu/js/bundle.js" defer></script></body>
+</html>
+

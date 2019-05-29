@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Radar Relay: Trustless Token Trading on Ethereum. - deanliu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@deanliu/css/style.css">
+
+<link rel="stylesheet" href="/@deanliu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@deanliu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@deanliu/">Home</a>
+                
+                <a class="navbar-item" href="/@deanliu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@deanliu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@deanliu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@deanliu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Radar-Relay">
+        <span class="has-mr-6">1</span>
+        <span>Radar Relay.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#I-Benefits-of-trading-on-Radar-RElay">
+        <span class="has-mr-6">1.1</span>
+        <span>I-Benefits of trading on Radar RElay.</span>
+        </a></li><li>
+        <a class="is-flex" href="#II-Trading-Ether-and-ERC-20-Tokens-from-a-LEDGER">
+        <span class="has-mr-6">1.2</span>
+        <span>II-Trading Ether and ERC-20 Tokens from a LEDGER.</span>
+        </a></li><li>
+        <a class="is-flex" href="#III-Hedging-into-DAI">
+        <span class="has-mr-6">1.3</span>
+        <span>III- Hedging into DAI.</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@deanliu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmVhcuUQTSJmUGgwDAiybeajjdNmv5MSzJFNHs4oR26tob/5339f07a6da811b11ff4bf5e-750-563.jpg" alt="Radar Relay: Trustless Token Trading on Ethereum.">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-04T13:27:51.000Z">2018-04-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@deanliu/categories/exchange/">exchange</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 923 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Radar Relay: Trustless Token Trading on Ethereum.
+            
+        </h1>
+        <div class="content">
+            <p>Hi traders, Dan (@tradealert) and Dean (@deanliu) are back for our weekly feature and today we&#x2019;d like to show you how to trade on <a href="https://radarrelay.com/" target="_blank" rel="noopener"><strong>Radar Relay</strong></a>.</p>
+<p><img src="https://steemitimages.com/DQmVhcuUQTSJmUGgwDAiybeajjdNmv5MSzJFNHs4oR26tob/5339f07a6da811b11ff4bf5e-750-563.jpg" alt="5339f07a6da811b11ff4bf5e-750-563.jpg"></p>
+<h1 id="Radar-Relay"><a href="#Radar-Relay" class="headerlink" title="Radar Relay."></a>Radar Relay.</h1><p>A while back we posted a review <a href="https://steemit.com/cryptocurrency/@deanliu/0x-protocol-decentralized-trading-on-ethereum" target="_blank" rel="noopener"><strong>of the 0x Protocol</strong></a> in which we mentioned a few decentralized exchanges (DEX) among them Radar Relay which we&#x2019;d like to talk about in more details today. We&#x2019;ll start with explaining the benefits of trading on this exchange (I), then we&#x2019;ll show you how to trade tokens (II) and finally how to hedge your position in a bearish market (III).</p>
+<h2 id="I-Benefits-of-trading-on-Radar-RElay"><a href="#I-Benefits-of-trading-on-Radar-RElay" class="headerlink" title="I-Benefits of trading on Radar RElay."></a>I-Benefits of trading on Radar RElay.</h2><ul>
+<li><p><a href="https://radarrelay.com/" target="_blank" rel="noopener"><strong>Radar Relay</strong></a> (RR) is an 0x-based DEX (D0x) which allows you to trade ERC-20 tokens and Ether <strong><em>directly from your LEDGER or MetaMask wallet</em></strong>;</p>
+</li>
+<li><p>Because your crypto never leaves your wallet, you are always protected against counter-party risks (hacks, phishing,etc);</p>
+</li>
+<li><p>You can trade on RR for <em><strong>no fees</strong></em> until the 1.0 version goes live, the fees will then be denominated in ZRX tokens;</p>
+</li>
+<li><p>You can broadcast orders through social medias using the carrier feature:</p>
+</li>
+</ul>
+<p>https://www.youtube.com/watch?v=Q41HM5U483g</p>
+<h2 id="II-Trading-Ether-and-ERC-20-Tokens-from-a-LEDGER"><a href="#II-Trading-Ether-and-ERC-20-Tokens-from-a-LEDGER" class="headerlink" title="II-Trading Ether and ERC-20 Tokens from a LEDGER."></a>II-Trading Ether and ERC-20 Tokens from a LEDGER.</h2><ul>
+<li><p>First make sure to have Ether in your LEDGER (you&#x2019;ll need it to trade on RR) and that the ETH app is turned on with Contract Data and Browser support <em>enabled</em>;</p>
+</li>
+<li><p>Go to <a href="https://radarrelay.com/" target="_blank" rel="noopener"><strong>Radar Relay</strong></a> and open the App;</p>
+</li>
+</ul>
+<p><img src="https://steemitimages.com/DQmSWoM2QaZmSsH8mUsEhZoL4YRCtRugu4wFvvF6dUZ4pH9/2.PNG" alt="2.PNG"></p>
+<ul>
+<li>Once in the App, follow these steps:</li>
+</ul>
+<p><img src="https://steemitimages.com/DQmcsXBJ9gcMQJbNeKXEf2CPuc7oZK5hJK38vLSaLWbcfCy/DQmWtBqs3B7siu4JMyw8M8BcAHgkrz4K3218N7NNr637poo_1680x8400.png" alt="DQmWtBqs3B7siu4JMyw8M8BcAHgkrz4K3218N7NNr637poo_1680x8400.png"></p>
+<p>RR first need to convert (wrap) the ETH you want to trade with into WETH (WrappedETH),  both wrapping ETH (3.) and enabling trading with WETH (2.) will cost you a very small transaction fee (around 2 Gwei) which you need to confirm manually on your Ledger.</p>
+<ul>
+<li>Now you can use your WETH to trade tokens as you would in a normal exchange:</li>
+</ul>
+<p><img src="https://steemitimages.com/DQmSiwCRNAVtCXGuRGWwEjsg64BjHY5QkEkZyULhqYFbhBc/5.PNG" alt="5.PNG"></p>
+<ul>
+<li>Close your trade by unwrapping leftover WETH&#x2026; and that&#x2019;s it, you can close the app, your new tokens are awaiting in your LEDGER.</li>
+</ul>
+<hr>
+<p>As you can see all these operations are conducted directly from your secure hardware wallet without exposing your ETH to counterparty risk, user experience is very smooth and is only going to get better as the 0x team has announced the near release of a <a href="https://blog.0xproject.com/sneak-peek-0x-trade-widget-cbd13305407d" target="_blank" rel="noopener"><strong>trading widget</strong></a> which will abstract away the need to wrap ETH.</p>
+<h2 id="III-Hedging-into-DAI"><a href="#III-Hedging-into-DAI" class="headerlink" title="III- Hedging into DAI."></a>III- Hedging into DAI.</h2><p><a href="https://makerdao.com/" target="_blank" rel="noopener"><strong>DAI</strong></a> is a stable coin which trades on Radar Relay. Just like Tether, DAI is transferable, pegged to the dollar and can be redeemed for USD on <a href="https://gatecoin.com/" target="_blank" rel="noopener"><strong>some exchanges</strong></a>.</p>
+<p>Unlike Tether though, DAI tokens are backed by Ethereum collaterals (and soon gold) and their supply is transparently managed and auditable on the blockchain which makes it a much safer hedge than Tether in our opinion.</p>
+<p>If you&#x2019;d like to know more about how DAI works under the hood, we recommend you watch this <a href="https://www.youtube.com/watch?v=bhE_RC7tNEs" target="_blank" rel="noopener"><strong>fantastic interview</strong></a> with Rune Christensen, the founder of the Dai project.</p>
+<ul>
+<li>DAI tokens can be purchased on RR for WETH as you would for any other token:</li>
+</ul>
+<p><img src="https://steemitimages.com/DQmennjCo3RQZGDL9W8nn8odpf7kpmN77QMXmoHmbvZ4MUP/2.PNG" alt="2.PNG"></p>
+<p>For example, hedging your ETH from your wallet would look something like this:</p>
+<p><em>ETH&gt;(wrap)&gt;WETH&gt;(trade)&gt;DAI&gt;(trade)&gt;WETH&gt;(unwrap)&gt;ETH</em></p>
+<ul>
+<li>DAI can also be traded directly for other ERC-20 tokens;</li>
+</ul>
+<p><img src="https://steemitimages.com/DQmcXDHbAPuSFhjcksMygdydak7WCjJfW241HHyNjdc13nU/4.PNG" alt="4.PNG"></p>
+<ul>
+<li>A word of caution though, liquidity with DAI/ parings (that includes WETH) is still very thin so it&#x2019;s recommended you check the spread carefully before you buy so you don&#x2019;t lose money on slippage.</li>
+</ul>
+<hr>
+<p>And that&#x2019;s it for today guys, as you can see trading on RR is a breeze, the exchange truly is a wonderful piece of engineering which will give you a taste of the power of 0x-built exchanges and a glimpse into the future of what decentralized exchanges on the Ethereum network can become.</p>
+<p>Cheers.</p>
+<hr>
+<p> <strong>_If you liked this post please consider supporting Dan&#x2019;s blog @tradealert and if you&#x2019;re interested in learning more about cryptocurrencies, come join our  [</strong>awesome community on Discord<strong>](https://discord.gg/4VGVHrs). Don&#x2019;t be shy, it&#x2019;s free!!_</strong></p>
+<p><img src="https://steemitimages.com/DQmQbrCF2UW8b69NWRVTBu2crKozuVob2SVVbrzFrALQ9y3/TA%20Discord.jpg" alt="TA Discord.jpg"></p>
+<p>Also, make sure to go check out Dan&#x2019;s latest review this time on  <a href="https://steemit.com/cryptocurreny/@tradealert/spankchain-porn-on-ethereum" target="_blank" rel="noopener"><strong>SpankChain</strong></a> and his <a href="https://steemit.com/cryptocurrency/@tradealert/interview-with-ernie-varitimos-the-trader-of-futures" target="_blank" rel="noopener"><strong>interview with Ernie from Trader of Futures</strong></a>.</p>
+<p>Dan and Dean.</p>
+<p>Tip Jar:</p>
+<p>?? LTC: LaMv8hWUj88ik2LBJ2ArLoe1WkfTG4M1Eq
+?? ETH: 0x942a1F730f6ED432e663869d61097E73D48037d2</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/radar-relay-trustless-token-trading-on-ethereum" target="_blank" rel="noopener">Radar Relay: Trustless Token Trading on Ethereum.</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@deanliu/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@deanliu/tags/dex/">dex</a>, <a class="has-link-grey -link" href="/@deanliu/tags/ethereum/">ethereum</a>, <a class="has-link-grey -link" href="/@deanliu/tags/exchange/">exchange</a>, <a class="has-link-grey -link" href="/@deanliu/tags/radar-relay/">radar-relay</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@deanliu/146-steem/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[146號檔案] Steem價格與獎勵？</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@deanliu/2ix8gu/">
+                <span class="level-item">💯 什麼叫專業素養，這就是了。</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@deanliu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="deanliu" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 deanliu&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@deanliu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@deanliu/content.json"};</script>
+
+
+
+    
+<script src="/@deanliu/js/bundle.js" defer></script></body>
+</html>
+
