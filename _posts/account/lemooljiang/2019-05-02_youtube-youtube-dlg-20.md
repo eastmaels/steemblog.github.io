@@ -1,0 +1,69 @@
+
+---
+title: "YouTube 视频下载利器—Youtube-DLG / 网络研习社#20"
+permlink: youtube-youtube-dlg-20
+catalog: true
+toc_nav_num: true
+toc: true
+date: 2019-05-02 15:09:48
+categories:
+- cn
+tags:
+- cn
+- network-institute
+- youtube
+- youtube-dlg
+thumbnail: https://cdn.steemitimages.com/DQmVgamsdqTFZSBZ15NKRsWVVzz6bXW6JXUDbYz9dcJYDYJ/youtube-dlg.jpg
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+![youtube-dlg.jpg](https://cdn.steemitimages.com/DQmVgamsdqTFZSBZ15NKRsWVVzz6bXW6JXUDbYz9dcJYDYJ/youtube-dlg.jpg)
+
+https://github.com/MrS0m30n3/youtube-dl-gui
+
+这几天学爬虫时偶然间发现的一个好用的工具，YoutTube 视频下载利器—Youtube-DLG。YoutTube上还是蛮多好视频的，有时限于网速看起来费劲，还有时不时地插播广告，有些烦人。下载下来再看即流畅，又没有广告，还是有不少优点的。
+
+![youtube-dlg2.jpg](https://cdn.steemitimages.com/DQmcCeYzRkFyrNH8zzjzue9M11a4voZWupk4KnmH37fAZiS/youtube-dlg2.jpg)
+
+Youtube-DLG这款工具相当亲民，需要基本的设置就可以了。比如：下载存储的文件夹，视频的大小（推荐720P）。
+
+![youtube-dlg3.jpg](https://cdn.steemitimages.com/DQmbwLp4ELSZMnUAeWLTv7hXgxzpCLpwzePux4TVFzC69YZ/youtube-dlg3.jpg)
+
+将Youtube上视频的地址（url）贴到下载框中，点 add ,  再点 start ， 就可以下载了，相当简易。
+
+
+****
+网络研习社系列文章：
+* [微信小程序开发初体验 / 网络研习社#1]( https://steemit.com/cn/@lemooljiang/61qx8h-1)
+* [新技能：小程序空间当图床！ / 网络研习社#2](https://steemit.com/cn/@lemooljiang/gjekw-2)
+* [小程序云开发中数据的传递形式 / 网络研习社#3](https://steemit.com/cn/@lemooljiang/6a8ukt-3)
+* [如何突破coreldraw的网络限制 / 网络研习社#4](https://steemit.com/cn/@lemooljiang/coreldraw-4)
+* [我师网小程序初发布，大家多多指教 / 网络研习社#5](https://steemit.com/cn/@lemooljiang/6rr2ug-5)
+* [用github 做文件目录 / 网络研习社#6](https://steemit.com/cn/@lemooljiang/github-6)
+* [LNMP环境一键安装（一） / 网络研习社#7](https://steemit.com/cn/@lemooljiang/lnmp-7)
+* [LNMP环境自定义安装（二） / 网络研习社#8](https://steemit.com/cn/@lemooljiang/lnmp-8)
+* [利用github做免费博客 / 网络研习社#9](https://steemit.com/cn/@lemooljiang/github-9)
+* [Nodejs，打开服务器黑匣子 / 网络研习社#10](https://steemit.com/cn/@lemooljiang/nodejs-10)
+* [一入前端深似海，聊聊vue.js / 网络研习社#11]( https://steemit.com/cn/@lemooljiang/vue-js-11)
+* [我们想做的，vue都帮我们做好了 / 网络研习社#12]( https://steemit.com/cn/@lemooljiang/vue-11)
+* [vue和小程序一家亲 / 网络研习社#13]( https://steemit.com/cn/@lemooljiang/vue-13)
+* [vue的组件面面观 / 网络研习社#14]( https://steemit.com/cn/@lemooljiang/vue-14)
+* [vue-router路由的参数和设计 / 网络研习社#15]( https://steemit.com/cn/@lemooljiang/vue-router-15)
+* [webpack前端神器 / 网络研习社#16]( https://steemit.com/cn/@lemooljiang/webpack-16)
+* [用FileZilla作FTP文件服务器 / 网络研习社#17](https://steemit.com/cn/@lemooljiang/filezilla-ftp-17)
+* [连接FTP文件服务器的方法/ 网络研习社#18](https://steemit.com/cn/@lemooljiang/ftp-18)
+* [axios请求HTTP和vuex数据管理 / 网络研习社#19](https://steemit.com/cn/@lemooljiang/axios-http-vuex-19)
+
+****
+　@lemooljiang  #network-institute
+
+- - -
+
+This page is synchronized from the post: [YouTube 视频下载利器—Youtube-DLG / 网络研习社#20](https://steemit.com/@lemooljiang/youtube-youtube-dlg-20)
