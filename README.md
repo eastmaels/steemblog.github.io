@@ -5,15 +5,15 @@
 
 ### Features
 
-1. Synchronize posts from steem by account to https://steemblog.github.io/@{account} daily.
-1. With the help of hexo themes, the blog is easier to read, search, archive, etc.
+1. Synchronize posts from a steem account to https://steemblog.github.io/@{account} daily.
+1. Comparing to Steem client apps, the blog is efficient and happy to browse, read and search.
 
 You can find my blog from [https://steemblog.github.io/@robertyan](https://steemblog.github.io/@robertyan) as an example.
 
 
 ### How to Sync Your Blogs
 
-To use the blog service, we simply add your steem account name to the STEEM_ACCOUNTS variable of this project's Travis CI job, then the synchronization will be done daily automatically.
+To use the blog service, we simply add your steem account name to the account list of this project, then the synchronization will be done daily automatically.
 
 You may contact [@robertyan](https://busy.org/@robertyan) if you need help to setup the service in steemblog.
 
