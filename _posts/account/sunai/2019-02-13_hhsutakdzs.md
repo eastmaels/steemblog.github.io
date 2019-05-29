@@ -1,0 +1,50 @@
+
+---
+title: "人生如戲，戲如人生"
+permlink: hhsutakdzs
+catalog: true
+toc_nav_num: true
+toc: true
+date: 2019-02-13 06:25:18
+categories:
+- steempress
+tags:
+- steempress
+- blog
+- cn
+- cnstm
+- life
+thumbnail: https://i.loli.net/2019/02/13/5c63b0faea140.jpeg
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+![](https://i.loli.net/2019/02/13/5c63b0faea140.jpeg)
+
+人生如戲，戲如人生。人生就是個大舞臺，我們每個人都在戲中，扮演著各自不同的角色，而且都希望以最好的演出，得到觀眾的肯定和自己的認可。但也時常在戲裡被別人笑笑，在戲外又笑笑他人，這一切雖是過程，但也不會、也不可重來。有時候又需要我們入戲太深，方能完美演繹真實的角色。如果敷衍了事，就會失去觀眾和自我。
+
+![](https://i.loli.net/2019/02/13/5c63b118610ac.jpeg)
+
+緣起無自性，一切法無我。該來的一切都會來，該離去的也終歸會離去。即使強強挽留，也終難留住。緣生緣滅，緣聚緣散。
+
+![](https://i.loli.net/2019/02/13/5c63b13fc84e2.jpeg)
+
+人生當中，你扮演了導演，又扮演了演員，有時又扮演著觀眾，抽離自如，但最重要的是演好自我，完美落幕。因為戲能夠重拍，可人生不可能重來。所以我們要淡看世事，一切隨緣。放下小我、無我，才能找到真我。
+
+![](https://i.loli.net/2019/02/13/5c63b15ca588d.jpeg)
+
+人生如戲，戲如人生。有人落場，有人出場；有人死亡，有人重生。然而生活畢竟不是演戲，戲裡，人死能復生；而戲外，人卻死難再生。兩者是那麼的相近，卻永遠不可能相同。
+
+![](https://i.loli.net/2019/02/13/5c63b17b37e2e.jpeg)
+
+所以，我們知道生命只有一次，那我們就要好好的活一次。因為我們要死好久好久。雖然靈魂不滅，但我想我們只能在它方世界感知了。而在今生，就要努力的去活著，活好自己生而為人的這一生。趁著陽光正好，趁著現在還年輕，愛自己所愛，做自己想做的事情，有所期待，有所歸依，不慌亂，不迷茫，演好自己這戲裡戲外的人生。 <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : https://shxai33.000webhostapp.com/2019/02/%e4%ba%ba%e7%94%9f%e5%a6%82%e6%88%b2%ef%bc%8c%e6%88%b2%e5%a6%82%e4%ba%ba%e7%94%9f-3 </em><hr/></center>     
+
+- - -
+
+This page is synchronized from the post: [人生如戲，戲如人生](https://steemit.com/@sunai/hhsutakdzs)
