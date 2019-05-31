@@ -123,7 +123,7 @@ widgets:
 <p></p>
 <h3 id="5-jie-mi-hei-li-shi"><strong>（5）揭秘黑历史</strong><a href="#5-jie-mi-hei-li-shi"></a></h3>
 <p>‌steemblog 不但能让有用的信息能够被快速查询到，还能让罪行无处遁形。是不是听着挺像一位侦探的？‌</p>
-<p>好吧，下面我们来看看 机机 @julian 和 村长 @ericet 是如何互黑的。（其实你们是不是更愿意看 软哥 @softmetal 和 小P @pgr 互黑的桥段？）‌</p>
+<p>好吧，下面我们来看看 机机 @julian2013 和 村长 @ericet 是如何互黑的。（其实你们是不是更愿意看 软哥 @softmetal 和 小P @pgr 互黑的桥段？）‌</p>
 <p>到 steemblog 页面上，点击右上角的搜索进行“侦查”。‌</p>
 <p>----‌</p>
 <p>机机谈论村长：</p>
