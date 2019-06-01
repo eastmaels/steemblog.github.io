@@ -1,0 +1,35 @@
+
+---
+title: "海鲜大排档--海鲜街美食Seafood street food"
+permlink: --seafoodstreetfood-wbj967yd30
+catalog: true
+toc_nav_num: true
+toc: true
+date: 2018-08-28 18:52:18
+categories:
+- cn
+tags:
+- cn
+- cn-curation
+- food
+- steempress
+- team-cn
+thumbnail: https://cdn.steemitimages.com/DQmeBMYYTMkgjn7dDENRLB9wSt5uEMe4ocmfmT8e5e8Fbx8/EC1DB6CE-74E1-4045-9201-15B8FE69FCA4.jpeg
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+![EC1DB6CE-74E1-4045-9201-15B8FE69FCA4.jpeg](https://cdn.steemitimages.com/DQmeBMYYTMkgjn7dDENRLB9wSt5uEMe4ocmfmT8e5e8Fbx8/EC1DB6CE-74E1-4045-9201-15B8FE69FCA4.jpeg)![CCD9D28B-5E7F-4352-97FA-98E6BEA9111B.jpeg](https://cdn.steemitimages.com/DQmc7tQFuc7F9UspowwPXT7GJReiLcdJdPau4ohPHAVCNdq/CCD9D28B-5E7F-4352-97FA-98E6BEA9111B.jpeg)<hr> 深圳东门乐园路，东门附近的海鲜一条街，这里从前是大排档的聚集地，现在环境就是大排档的样子，拥挤嘈杂，环境没有大酒店好，但是味道还是不错的，重要的是价格适中，约上好友，在这里啤酒，聊天，还是非常不错的地方。今天我又来到这里吃饭，海鲜一条街，我觉得吃海鲜生意最好的就是这就家店了，我们简称：华城。我们每次来乐园路，一定就在这里吃的，我来这里吃了十年了，这家老店一直生意火爆，今天来到一楼满，二楼满，三楼勉强有一间房间。4楼也基本满座了。今天还是下雨天，人才没有那么多，车也不多，平时车都是在这里堵着进不来的。Shenzhen Dongmen Paradise Road, a famous seafood street.Now the environment is like big stalls, crowded and noisy.But it tastes good and the price is moderate.About friends, beer and chat here, very good place.The best thing to do is to shop.For ten years, this old store has been booming.<div class=pull-left><img class="alignnone size-large wp-image-271" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/772120585389448119-1024x768.jpg" alt="" width="1024" height="768" /><br/></div><div class=pull-right><img src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/381282832919815936-1024x768.jpg" alt="" width="1024" height="768" class="alignnone size-large wp-image-273" /><br/></div><hr>海鲜都放在门口，我们都习惯在海鲜旁边点菜，价格清晰，又看着新鲜的海鲜，更有食欲了。<br>Seafood is at the door, the price is clear.<img class="alignnone size-large wp-image-274" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/20197432225340439-1024x768.jpg" alt="" width="1024" height="768" /><br/><div class=pull-left><img class="alignnone size-large wp-image-278" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/475114863032317151-1024x768.jpg" alt="" width="1024" height="768" /><br/><img class="alignnone size-large wp-image-276" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/254796054606645830-1024x768.jpg" alt="" width="1024" height="768" /><br/><img class="alignnone size-large wp-image-279" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/750657229961096533-1024x768.jpg" alt="" width="1024" height="768" /><br/></div><div class=pull-right><img class="alignnone size-large wp-image-280" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/342889524462606829-1024x768.jpg" alt="" width="1024" height="768" /><br/><img class="alignnone size-large wp-image-275" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/132327024519939250-1024x768.jpg" alt="" width="1024" height="768" /><br/><br><br>这里海鲜的品种齐全，比起在深圳的南澳，沙头角的海鲜，价格我觉得是比较优惠的，南澳的海鲜很多会抬高价格卖，这里的价格实在。There are many seafood varieties here.</div><hr><img class="alignnone size-large wp-image-277" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/461016735772017733-1024x768.jpg" alt="" width="1024" height="768" /><br/><hr>还有各种广东的老火汤。And all kinds of soup.<div class=pull-left><img class="alignnone size-large wp-image-281" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/627839875028617721-e1535480480140-768x1024.jpg" alt="" width="768" height="1024" /><br/> </div><div class=pull-right><img class="alignnone size-large wp-image-282" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/789172191400115122-1024x768.jpg" alt="" width="1024" height="768" /><br/><br>这里是一楼酒店的后面，这里曾经是露天的环境，我们最爱在这里吃饭了，现在搭了一个帐篷，可能是为了防雨水吧，少了露天大排档的感觉。<br>It used to be an open air environment and now has a tent.</div><hr>姜葱炒蟹，也可以做成避风塘炒蟹，味道都不错的。<img class="alignnone size-large wp-image-284" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/93474984386105375-1024x768.jpg" alt="" width="1024" height="768" /><br/><img class="alignnone size-large wp-image-290" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/121159195374530566-768x1024.jpg" alt="" width="768" height="1024" /><br/>椒盐濑尿虾，香脆好吃，北方那边叫皮皮虾吧。<img class="alignnone size-large wp-image-283" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/68671379299858114-1024x1024.jpg" alt="" width="1024" height="1024" /><br/>粉丝蒸扇贝<img class="alignnone size-large wp-image-285" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/208858950858128139-1024x768.jpg" alt="" width="1024" height="768" /><br/>白灼大虾<img class="alignnone size-large wp-image-287" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/370926366648996008-1024x768.jpg" alt="" width="1024" height="768" /><br/>炒圣子<img class="alignnone size-large wp-image-288" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/773982535161201899-1024x768.jpg" alt="" width="1024" height="768" /><br/>粉丝蒸元贝<img class="alignnone size-large wp-image-289" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/848700259087485912-768x1024.jpg" alt="" width="768" height="1024" /><br/>铁板牛仔骨<img class="alignnone size-large wp-image-286" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/262634654428602269-1024x768.jpg" alt="" width="1024" height="768" /><br/>煎饼<img class="alignnone size-large wp-image-291" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/282044063005049841-1024x768.jpg" alt="" width="1024" height="768" /><br/>湛江鸡<img class="alignnone size-large wp-image-295" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/659806044988509655-768x1024.jpg" alt="" width="768" height="1024" /><br/><img class="alignnone size-large wp-image-294" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/668920996940144261-1024x1024.jpg" alt="" width="1024" height="1024" /><br/>酿豆腐<img class="alignnone size-large wp-image-292" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/412016967531352278-1024x768.jpg" alt="" width="1024" height="768" /><br/>炒牛河<img class="alignnone size-large wp-image-293" src="https://cherryzy.000webhostapp.com/wp-content/uploads/2018/08/436796767364369356-1024x768.jpg" alt="" width="1024" height="768" /><br/><hr>海鲜都很新鲜，这也许就是生意一直好的原因吧，下次有机会来深圳，可以尝一下。<hr>感谢大家投票并关注我，如果没有特别注明，照片都是我亲自拍摄的。如果需要用到我的照片，请询问并写明出处。
+
+Upvotes and resteem are always welcome. In the event anyone wants to use one of my photos please ask and give me credit.
+ <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : https://cherryzy.000webhostapp.com/2018/08/%e6%b5%b7%e9%b2%9c%e5%a4%a7%e6%8e%92%e6%a1%a3-%e6%b5%b7%e9%b2%9c%e8%a1%97%e7%be%8e%e9%a3%9fseafood-street-food </em><hr/></center>
+
+- - -
+
+This page is synchronized from the post: [海鲜大排档--海鲜街美食Seafood street food](https://steemit.com/@cherryzz/--seafoodstreetfood-wbj967yd30)
