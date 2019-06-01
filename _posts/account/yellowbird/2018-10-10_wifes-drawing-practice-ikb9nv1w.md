@@ -1,0 +1,65 @@
+
+---
+title: "草莓蛋糕 | Wife's Drawing Practice"
+permlink: wifes-drawing-practice-ikb9nv1w
+catalog: true
+toc_nav_num: true
+toc: true
+date: 2018-10-10 13:14:36
+categories:
+- partiko
+tags:
+- partiko
+- cn
+- drawing
+- art
+- life
+thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/243389bd67ea4efb930d61a22eac23a57afb334b.png
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+![](https://s3.us-east-2.amazonaws.com/partiko.io/img/243389bd67ea4efb930d61a22eac23a57afb334b.png)
+
+![](https://s3.us-east-2.amazonaws.com/partiko.io/img/3a0ec574b6dfef74253a0bb02915002d6b631834.png)
+
+![](https://s3.us-east-2.amazonaws.com/partiko.io/img/8c27c1418479997272aa4ff6e90b9dd617e2f581.png)
+
+---
+
+老婆大人的最新练习画作《草莓蛋糕》。
+
+---
+
+往期作品：
+
+[水仙](https://steemit.com/cn/@yellowbird/bc68jw66)
+[麋鹿](https://steemit.com/cn/@yellowbird/wifes-drawing-practice-pmgjgoeg)
+[薰衣草](https://steemit.com/drawing/@yellowbird/sjrppm44)
+[神鹿](https://steemit.com/drawing/@yellowbird/wifes-drawing-practice-lzocy0rv)
+[猪](https://steemit.com/drawing/@yellowbird/wifes-drawing-practice-fddgl1zm)
+[西瓜](https://steemit.com/drawing/@yellowbird/wifes-drawing-practice-fcr1uoqg)
+[猫](https://steemit.com/drawing/@yellowbird/wifes-drawing-practice-bqj8rq8p)
+[红苹果](https://steemit.com/drawing/@yellowbird/wifes-drawing-practice-njblzpjo)
+[切过的苹果](https://steemit.com/drawing/@yellowbird/6k4mqu-or-wife-s-drawing-practice)
+[眼](https://steemit.com/drawing/@yellowbird/6krvuv-or-wife-s-drawing-practice)
+[虎鲸](https://steemit.com/drawing/@yellowbird/7cnnds-or-wife-s-drawing-practice)
+[崽崽](https://steemit.com/drawing/@yellowbird/6ddtoo-or-wife-s-drawing-practice)
+[小鹿](https://steemit.com/drawing/@yellowbird/6ajeng-or-wife-s-drawing-practice)
+[巨嘴鸟](https://steemit.com/drawing/@yellowbird/6clmh8-or-wife-s-drawing-practice)
+[忧伤](https://steemit.com/drawing/@yellowbird/3a3tor-or-wife-s-drawing-practice)
+[唇色](https://steemit.com/drawing/@yellowbird/2n7bmr-or-wife-s-drawing-practice)
+[荔枝](https://steemit.com/drawing/@yellowbird/35q48g-or-wife-s-drawing-practice)
+[碧荷](https://steemit.com/drawing/@yellowbird/4kjcxt-or-wife-s-drawing-practice)
+
+Posted using [Partiko Android](https://steemit.com/@partiko-android)
+
+- - -
+
+This page is synchronized from the post: [草莓蛋糕 | Wife's Drawing Practice](https://steemit.com/@yellowbird/wifes-drawing-practice-ikb9nv1w)
