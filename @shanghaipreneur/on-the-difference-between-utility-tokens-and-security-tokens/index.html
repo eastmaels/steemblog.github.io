@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>On the Difference Between Utility Tokens &amp; Security Tokens</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@shanghaipreneur/css/style.css">
+
+<link rel="stylesheet" href="/@shanghaipreneur/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@shanghaipreneur/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@shanghaipreneur/">Home</a>
+                
+                <a class="navbar-item" href="/@shanghaipreneur/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@shanghaipreneur/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@shanghaipreneur/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@shanghaipreneur/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Why-Are-Utility-Tokens-Still-So-Important">
+        <span class="has-mr-6">1</span>
+        <span>Why Are Utility Tokens Still So Important?</span>
+        </a></li><li>
+        <a class="is-flex" href="#Security-tokens-are-not-revolutionary-Utility-tokens-are">
+        <span class="has-mr-6">2</span>
+        <span>Security tokens are not revolutionary. Utility tokens are.</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@shanghaipreneur/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmUfF1Hacnq9ri7L6nLc8EmFW2FVQkgsXz5eiunEEkYixx/image.png" alt="On the Difference Between Utility Tokens &amp; Security Tokens">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-29T18:02:12.000Z">2018-12-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@shanghaipreneur/categories/cryptocurrency/">cryptocurrency</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    16 minutes read (About 2469 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                On the Difference Between Utility Tokens &amp; Security Tokens
+            
+        </h1>
+        <div class="content">
+            <p>Recently, much of the &#x201C;brain hash&#x201D; in the blockchain industry has been devoted to the demise of ICOs (initial coin offerings) and the seemingly inevitable rise of STOs (security token offerings) that is to come in the as-yet-undeterminable time frame of &#x201C;some time soon.&#x201D;</p>
+<p>The Great ICO Bust of 2018 has been largely blamed on what is essentially the file format of the majority of the tokens that were sold in ICOs to raise funds for projects. It has gotten to the point where the very concept of utility tokens has come under fire. Many pundits now claim that the utility token is dead and will never rise again. My favorite new crypto jargon these days is <a href="https://tokeneconomy.co/futility-tokens-a-utility-based-post-mortem-d7b1712a5a4e" target="_blank" rel="noopener">futility token</a>.</p>
+<p>However, correlation is not always causation. Utility tokens did not cause the collapse of the crypto markets this year. Insider trading, outright scams, the lack of <a href="https://steemit.com/investing/@shanghaipreneur/on-investment-risk-and-investor-psychology" target="_blank" rel="noopener">proper risk management</a>, the inevitable unwinding of a hype cycle, the Tether hypothesis, the impact of bitcoin futures, and more&#x2026; All of these reasons are more obvious and more direct causes of the approximate 90% collapse in prices across the board for all cryptographic assets seen in 2018. Increasingly, however, especially within the context of the stock market&#x2019;s recent Santa Claus Folly, I&#x2019;m leaning more and more towards the <a href="https://twitter.com/_jillruth/status/1069666389533675520?lang=en" target="_blank" rel="noopener">&#x201C;canary in a coal mine&#x201D; scenario</a>. If that is indeed the case, then there was nothing any one blockchain person or entity could have done to avoid it.</p>
+<p><img src="https://cdn.steemitimages.com/DQmUfF1Hacnq9ri7L6nLc8EmFW2FVQkgsXz5eiunEEkYixx/image.png" alt=""></p>
+<p>Let&#x2019;s not blame the messenger though. In this environment, that&#x2019;s all the poor little utility token was - a fleet-footed Pheidippides warning us all to take off our rose-colored glasses and start to clean house before digital tokenized assets on the blockchain become a legitimate asset class warranting a significant part in investor portfolios all over the world. And if you buy into the &#x201C;canary&#x201D; argument, you&#x2019;d have to thank bitcoin for warning us all to get our financial asset portfolio &#x201C;ducks in a row&#x201D; before the shit truly hit the fan.</p>
+<p>But let&#x2019;s be very clear about the distinction between utility tokens and security tokens going forward. <strong>Security tokens are great, but by no means are they revolutionary.</strong></p>
+<p>Utility tokens, on the other hand, still have the capacity to reshape the digital world we live in for the better of all mankind. Security tokens, in what will most likely be their most prevalent use case, are basically just digital stock certificates.</p>
+<p>Cool and useful? Yes. Revolutionary? No.</p>
+<p>I don&#x2019;t know. You tell me. But I&#x2019;m thinking that might be an opinion that is a little bit out of tune with the rest of the industry these days. So please allow me to explain.</p>
+<h1 id="Why-Are-Utility-Tokens-Still-So-Important"><a href="#Why-Are-Utility-Tokens-Still-So-Important" class="headerlink" title="Why Are Utility Tokens Still So Important?"></a>Why Are Utility Tokens Still So Important?</h1><p>Utility tokens offer the hope of redefining the way ownership of a network works forever. In today&#x2019;s equity-based environment, the gains due to the <em>private</em> ownership of a successful <em>closed</em> network or platform business accrue solely to the equity holders. Users are subject to monopoly pricing power and at-times authoritarian regulation.</p>
+<p><strong>Closed network ecosystems do not maximize economic value.</strong><br>Closed network ecosystems almost always allow too much power to accumulate to one participant, eventually that will be to a single node in the network. There are <em>users</em> and there are <em>owners</em> and never the twain shall meet. A user may use that platform in order to transact as either a platform buyer or a platform seller. But in either case, they are a platform <em>user</em> that endeavors to exploit said platform for their own economic benefit by engaging in economic activity, the profit from which mostly accrues to the platform <em>owner</em>, though there may be just enough of a &#x201C;taste&#x201D; provided to the <em>user</em> to keep them engaged.</p>
+<p>This type of closed system incentivizes the platform <em>users</em> to engage solely in pure profit-seeking behavior. However, in game theoretical terms, because platform <em>owners</em> must also make this base assumption, they must also engage in profit-seeking behavior, the result of which, in the long run, hampers the growth of network activity. In short, the economic incentives are not the same for a platform <em>user</em> as they are for a platform <em>owner</em>. This inequity results in massive economic inefficiency. Thus, closed network ecosystems do not maximize economic value, but they can maximize it for the one player in the ecosystem that may achieve monopoly status.</p>
+<p>At the very least, growth is sacrificed for control. Perhaps the most famous example of a monopoly owner of a closed network system is the famous  <a href="https://www.investopedia.com/ask/answers/09/browser-wars-netscape-internet-explorer.asp" target="_blank" rel="noopener">Browser Wars</a> of 1995 to 2001. In this case, Microsoft exerted its control over the ecosystem to the detriment of the ecosystem&#x2019;s growth but to the benefit of the monopoly owner, Microsoft.<br><img src="https://cdn.steemitimages.com/DQmbnCpQu6WKaCMEaBbhUfK8xAzxzjRguNY5Pu2gbTsz2Km/image.png" alt=""></p>
+<p>In this lockdown dragout battle from the Internet Bubble era, the open-source browser software Netscape Navigator held an IPO, almost immediately tripling its valuation to $2 billion. But the company still lacked the cash reserves and OS domination of rival Microsoft. Thus, when Microsoft introduced a browser of its own, the even-to-this-very-day notoriously flawed Internet Explorer, Netscape despite having a superior product of its own, eventually could not compete against its pre-installed and freely distributed browser competitor.</p>
+<p>Why? Microsoft operated its own <strong>closed network ecosystem</strong>, the Windows operating system (OS). That OS commanded more than 90% of the pre-install market for newly manufactured computers. Basically, they controlled what software got bundled onto PCs without actually having to produce those new machines themselves. As you would expect, the margins were redonkulous. However, this practice would quickly land Bill Gates&#x2019; company in hot water with the Department of Justice and a protracted five-year-long battle with superlawyer <a href="https://www.bsfllp.com/lawyers/david-boies.html" target="_blank" rel="noopener">David Boies</a> in one of the <a href="https://www.wired.com/story/what-microsofts-antitrust-case-teaches-us-about-silicon-valley/" target="_blank" rel="noopener">most famous anti-trust cases</a> in the history of the Sherman Anti-Trust Act of 1890.</p>
+<p><img src="https://cdn.steemitimages.com/DQmWTMcxRv8BWE6JofdoajbzKkxDhw8xAiWsRukajsFpujs/image.png" alt=""><br><a href="http://wikieducator.org/Internet_%26_Web_development_(2" target="_blank" rel="noopener">Source</a>/Course_materials/Overview/Web_Browsers)</p>
+<p>The result was a relatively swift kill by IE over Navigator. The monopolistic interest had no interest in letting a valuable business (the internet browser) camping out and flourishing in its pre-existing monopoly ecosystem (the Windows operating system).</p>
+<p>We see these kinds of epic struggles over market share every once in a while in our technology cycle-driven lives. The last one I remember clearly was the argument surrounding the struggle between China, a country that basically owns its telecommunications industry via a triumvirate of nationalized behemoths, and Tencent, a fast-growing Chinese tech firm that plays by the Party rules in order to safeguard its status as &#x201C;national champion&#x201D; of IT and all that is not e-commerce in the Chinese Web 2.0. Back in 2011, when its now flagship app WeChat had just been launched, it siphoned off a key piece of revenue for the closed network operators of China Mobile, China Telecom, and China Unicom. They had been used to billions of dollars in annual revenue from SMS fees. Yes, that arcane practice of charging per text (or even per character!) to people who want to communicate with one another. But WeChat was about to end that game with its over-the-top (OTT) network services.</p>
+<p><img src="https://cdn.steemitimages.com/DQmVQBL5S61ZSqNgviM7fhg8HATyVSG8mqWFJ6My6fDzPLM/image.png" alt=""></p>
+<p>When WeChat first came on the scene, the Chinese government&#x2019;s telecom triopoly tried to force Tencent to pay compensation for this displacement of revenue. In the end, the effort stalled and the Chinese telecom industry vowed to reorganize as a more efficient pseduo-monopoly, realizing that the 4G, and soon to be 5G, closed networks that they operated would serve as the backbone for all future tech innovation in China. If those Chinese telecoms were not state-owned enterprises (SOE), and thus willing to operate within the bounds of what&#x2019;s best for the country&#x2019;s economy (at least some of the time) rather than what&#x2019;s best for their company, rest assured that they would not have given up such a battle so quietly. See AT&amp;T, its forced breakup, and eventual reassembly for an example of how a more purely capitalist enterprise would have responded.</p>
+<p>An example of how capitalist monopolies in control of closed network systems work to deter innovation that Western readers might be more familiar with is the classic story of <a href="https://www.zynga.com/" target="_blank" rel="noopener">Zynga</a> versus Facebook.</p>
+<p>With its flagship game <strong>Farmville</strong>, this online gaming startup took advantage of an API Facebook initially released in <a href="https://arstechnica.com/information-technology/2013/09/how-zynga-went-from-social-gaming-powerhouse-to-has-been/" target="_blank" rel="noopener">May 2007</a>. Ironically, the API had initially been a part of Mark Zuckerberg&#x2019;s kill move on <a href="https://myspace.com/" target="_blank" rel="noopener">Myspace</a>. Hey, I just went to check and see if Myspace still had a website and, yep, it does! Isn&#x2019;t that amazing?</p>
+<p>After Zynga <a href="https://arstechnica.com/information-technology/2013/09/how-zynga-went-from-social-gaming-powerhouse-to-has-been/2/" target="_blank" rel="noopener">growth hacked</a> its way to something like 100 million DAUs (daily active users), Facebook aggressively moved to cut off the fuel that fed Zynga&#x2019;s growth after negotiations broke down after the implementation of Facebook Credits. Eventually, however, Facebook would reduce the amount of insidious messages on its platform by 95%, in the name of <a href="https://www.fastcompany.com/1721252/how-facebook-killed-most-spam-using-smart-filters" target="_blank" rel="noopener">fighting spam</a>, but it could just as well be characterized as starving Zynga of potential new users. The software company with the cute bulldog logo almost starved to death.</p>
+<p>With a post-IPO peak valuation of nearly $13 billion in 2012, Zynga (ZNGA) trades today at a little less than $3.5 billion, which is still about double the value it fetched at its all-time low back in early 2016. Meanwhile, Facebook (FB) traded at its all-time low in 2012, at around a $50 billion market capitalization. Earlier this year, in 2018, FB traded at an all-time high of over $600 billion.</p>
+<p>I&#x2019;ll just leave those numbers right here again. ZNGA - $3 B; FB - $600 B.</p>
+<p>I can&#x2019;t think of a better argument than that for opting to support the development of open network economies. Just think of how much better we could have made <em>Farmville</em> if only Facebook would have let us innovate! Well, I realize that my last sentence might not exactly persuade you of my argument, but i hope you get my meaning.</p>
+<p>The stories of Microsoft &amp; Netscape, Facebook &amp; Zynga, as well as the anti-story of China Mobile &amp; WeChat all illustrate why closed network economic systems are so dangerous. And why the growth of open-architecture network systems, driven by utility token adoption, is so god damn important.</p>
+<p>In contrast to the easily exploitable &#x201C;walled garden&#x201D; approach to network economics, a well-designed and well-operated open utility token economy creates a third class of economic actor, a <em>user-owner</em> if you will, to add to the previously mentioned classes of <em>user</em> and <em>owner</em>. In theory, such a <em>user-owner</em> would engage in economic behavior that would emphasize long term returns over short term. Introducing this economic actor into an economic system should help to balance the inherently short-term nature of the user/owner dialectic. In other words, giving early adopters some &#x201C;skin in the game&#x201D; while simultaneously diluting the power of the capitalist technocrats (&#x201C;You gotta have someone to pay for it and someone to build it!&#x201D;) at the heart of any network economy may in fact be the key to solving a whole host of technological issues related to cybersecurity, efficiency, and asset monetization.</p>
+<p>The friction between <em>owner</em> and <em>user</em> that is everpresent in a closed network economy just isn&#x2019;t there in an open network economic ecosystem. In addition to injecting into the system an increasing amount of hybrid economic actors with stabilizing long-term economic time horizons, open token networks remove this friction by aligning all network participants to work together toward two common goals:</p>
+<ul>
+<li>the growth of the network and</li>
+<li>the appreciation of the token.</li>
+</ul>
+<p>Most importantly, they offer society the best chance to resist the over accumulation, or centralization, of power at any one particular node in an emerging economic ecosystem.</p>
+<p>So please don&#x2019;t <em>pooh-pooh</em> on utility tokens (UT) any more than you have to. They are not the problem. Assuredly, there are going to be some UTs that will emerge from this crypto winter that become very, very valuable. Other UTs will, inevitably, die. But they won&#x2019;t have died because the <em>concept</em> of the utility token is inherently flawed. They will have died because the <em>design</em> of their particular utility token was flawed.</p>
+<p>In the end, UTs may only represent future access to a company&#x2019;s networked product or network service (not equity). But given that <a href="https://www.nfx.com/post/70-percent-value-network-effects" target="_blank" rel="noopener">70% of tech value</a> is driven by <a href="https://medium.com/evergreen-business-weekly/the-power-of-network-effects-why-they-make-such-valuable-companies-and-how-to-harness-them-5d3fbc3659f8" target="_blank" rel="noopener">network effects</a>, that could easily become a very valuable access token <em>in the long run</em>.</p>
+<p>UTs are not designed as investments and they should never have been even confused with securities. They are simply the fuel to engage in transactions on a specific network. Therefore, they should be exempt from securities laws. Though, in effect, they are a form of regulation upon their respective networks in and of themselves, should governments believe that UTs still deserve regulation, they could work towards a body of legislation specific to the nuances of utility tokens and not try to shoehorn them into existing regulatory policy. But these things take time, of course.</p>
+<p>In short, security tokens (STs) are great, but they aren&#x2019;t the bee&#x2019;s knees like utility tokens have the potential to be. STs may represent equity in a company or some other asset and offer many substantial benefits to tokenholders. There are a lot of reasons to like them (which I will reserve for another post). But let&#x2019;s make this clear:</p>
+<h1 id="Security-tokens-are-not-revolutionary-Utility-tokens-are"><a href="#Security-tokens-are-not-revolutionary-Utility-tokens-are" class="headerlink" title="Security tokens are not revolutionary. Utility tokens are."></a>Security tokens are not revolutionary. Utility tokens are.</h1><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@shanghaipreneur/on-the-difference-between-utility-tokens-and-security-tokens" target="_blank" rel="noopener">On the Difference Between Utility Tokens &amp; Security Tokens</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@shanghaipreneur/tags/bitcoin/">bitcoin</a>, <a class="has-link-grey -link" href="/@shanghaipreneur/tags/crypto/">crypto</a>, <a class="has-link-grey -link" href="/@shanghaipreneur/tags/cryptocurrency/">cryptocurrency</a>, <a class="has-link-grey -link" href="/@shanghaipreneur/tags/investing/">investing</a>, <a class="has-link-grey -link" href="/@shanghaipreneur/tags/money/">money</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@shanghaipreneur/on-the-value-of-land-pskxdbhh/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">On the Value of Land</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@shanghaipreneur/casesin-success-1-jeff-bezos-of-amazon-amzn-1544677232307/">
+                <span class="level-item">Cases in Success #1 - JEFF BEZOS of Amazon (AMZN)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@shanghaipreneur/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 shanghaipreneur&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@shanghaipreneur/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@shanghaipreneur/content.json"};</script>
+
+
+
+    
+<script src="/@shanghaipreneur/js/bundle.js" defer></script></body>
+</html>
+
