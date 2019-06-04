@@ -1,6 +1,6 @@
 
 ---
-title: "红包币EM & EMFOUR背后的逻辑"
+title: '红包币EM & EMFOUR背后的逻辑'
 permlink: ememfour-yp4ve8bwnn
 catalog: true
 toc_nav_num: true
