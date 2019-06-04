@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>一起来玩内部市场吧(二)！/ Market history APIs by example - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#get-ticker">
+        <span class="has-mr-6">1</span>
+        <span>get_ticker()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-volume">
+        <span class="has-mr-6">2</span>
+        <span>get_volume()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-order-book">
+        <span class="has-mr-6">3</span>
+        <span>get_order_book()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-recent-trades">
+        <span class="has-mr-6">4</span>
+        <span>get_recent_trades()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-trade-history">
+        <span class="has-mr-6">5</span>
+        <span>get_trade_history()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-market-history-buckets">
+        <span class="has-mr-6">6</span>
+        <span>get_market_history_buckets()</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-market-history">
+        <span class="has-mr-6">7</span>
+        <span>get_market_history()</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0;-Previous-articles">
+        <span class="has-mr-6">8</span>
+        <span>&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0; / Previous articles</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmWvzn1cdSFzLmgPBw2EgybRpxsCKWLBnLUGYkNb8GB6tK/keyboard-621830_1280.jpg" alt="一起来玩内部市场吧(二)！/ Market history APIs by example">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-19T10:06:27.000Z">2017-10-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1154 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                一起来玩内部市场吧(二)！/ Market history APIs by example
+            
+        </h1>
+        <div class="content">
+            <p>&#x6628;&#x5929;&#x53D1;&#x4E86;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;<a href="https://steemit.com/cn/@oflyhigh/let-s-play-the-internal-market" target="_blank" rel="noopener">&#x300A;&#x4E00;&#x8D77;&#x6765;&#x73A9;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x5427;&#xFF01;/ Let&#x2019;s play the internal market&#x300B;</a></p>
+<p>&#x5F88;&#x591A;&#x670B;&#x53CB;&#x79C1;&#x4E0B;&#x91CC;&#x8868;&#x793A;&#x4E86;&#x6781;&#x5927;&#x7684;&#x5174;&#x8DA3;&#xFF0C;&#x56E0;&#x4E3A;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x6700;&#x5438;&#x5F15;&#x4EBA;&#x7684;&#x7279;&#x70B9;&#xFF1A;<strong><em>&#x6CA1;&#x6709;&#x624B;&#x7EED;&#x8D39;</em></strong>&#xFF01;&#x4E0E;&#x5176;&#x53BB;&#x5176;&#x5B83;&#x5404;&#x7C7B;&#x5E02;&#x573A;&#x88AB;&#x4EBA;&#x5BB6;&#x8585;&#x7F8A;&#x6BDB;&#xFF0C;&#x4E0D;&#x5982;&#x54B1;&#x4EEC;&#x81EA;&#x5DF1;&#x5728;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x6109;&#x5FEB;&#x7684;&#x73A9;&#x800D;&#xFF0C;&#x6CA1;&#x6709;&#x624B;&#x7EED;&#x8D39;&#xFF0C;&#x8003;&#x9A8C;&#x7684;&#x5C31;&#x662F;&#x6280;&#x672F;&#x548C;&#x8FD0;&#x6C14;&#x4E86;&#x3002;</p>
+<p>&#x5173;&#x4E8E;&#x5185;&#x90E8;&#x5E02;&#x573A;&#xFF0C;&#x6211;&#x4E4B;&#x524D;&#x4E5F;&#x5199;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x5F53;&#x7136;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x81EA;&#x5DF1;&#x5B66;&#x4E60;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x6BD5;&#x7ADF;&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x5BF9;&#x4EA4;&#x6613;&#x4EC0;&#x4E48;&#x7684;&#x4E5F;&#x4E00;&#x7A8D;&#x4E0D;&#x901A;&#x3002;&#x8BE6;&#x60C5;&#x53EF;&#x53C2;&#x8003;&#x9875;&#x9762;&#x5E95;&#x90E8;&#x7684;&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0;&#x3002;&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x6765;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#xFF0C;&#x81EA;&#x52A8;&#x64CD;&#x4F5C;&#x53EF;&#x80FD;&#x6D89;&#x53CA;&#x5230;&#x7684;API&#x7B49;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmWvzn1cdSFzLmgPBw2EgybRpxsCKWLBnLUGYkNb8GB6tK/keyboard-621830_1280.jpg" alt=""><br>(&#x56FE;&#x6E90;&#xFF1A;<a href="https://pixabay.com" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x672C;&#x7BC7;&#x6587;&#x7AE0;&#x4ECB;&#x7ECD;&#x4EE5;&#x4E0B;API /  In this article, I&#x2019;ll introduce the following APIs by example: </p>
+<ul>
+<li>get_ticker()</li>
+<li>get_volume()</li>
+<li>get_order_book()</li>
+<li>get_recent_trades()</li>
+<li>get_trade_history()</li>
+<li>get_market_history_buckets()</li>
+<li>get_market_history()</li>
+</ul>
+<p>&#x8BE6;&#x60C5;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF0C;<a href="https://github.com/steemit/steem/blob/master/libraries/plugins/market_history/include/steemit/market_history/market_history_api.hpp" target="_blank" rel="noopener">market_history_api.hpp</a><br>They are located in <a href="https://github.com/steemit/steem/blob/master/libraries/plugins/market_history/include/steemit/market_history/market_history_api.hpp" target="_blank" rel="noopener">market_history_api.hpp</a></p>
+<p>API&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x662F;JSON &#x7F16;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x67E5;&#x770B;&#xFF0C;&#x6211;&#x5C06;&#x5176;&#x89E3;&#x7801;&#x5E76;&#x683C;&#x5F0F;&#x5316;&#x663E;&#x793A;&#x3002;<br>The return results are JSON encoded string, For convenience, I decode them and display them formatted.</p>
+<hr>
+<h1 id="get-ticker"><a href="#get-ticker" class="headerlink" title="get_ticker()"></a>get_ticker()</h1><p><strong><em>API:</em></strong> <code>market_ticker get_ticker() const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5E02;&#x573A;&#x62A5;&#x4EF7;&#x4FE1;&#x606F;<br>Returns the market ticker for the internal SBD:STEEM market</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_ticker&quot;, []], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmQg8jUBZKf9gwTn7NW4cHxZiiFtraQFxKgzjsJz2ppXbi/image.png" alt=""></p>
+<hr>
+<h1 id="get-volume"><a href="#get-volume" class="headerlink" title="get_volume()"></a>get_volume()</h1><p><strong><em>API:</em></strong> <code>market_volume get_volume() const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x6700;&#x8FD1;24&#x5C0F;&#x65F6;&#x7684;&#x65F6;&#x5E38;&#x4EA4;&#x6613;&#x91CF;<br>Returns the market volume for the past 24 hours</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_volume&quot;, []], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmQpN1Eksdt4pa5aVHyJNqkC76GUhg3LPbgE1ECPaihsS5/image.png" alt=""></p>
+<hr>
+<h1 id="get-order-book"><a href="#get-order-book" class="headerlink" title="get_order_book()"></a>get_order_book()</h1><p><strong><em>API:</em></strong> <code>order_book get_order_book( uint32_t limit = 500 ) const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5E02;&#x573A;&#x5F53;&#x524D;&#x8BA2;&#x5355;&#x4FE1;&#x606F;<br>Returns the current order book for the internal SBD:STEEM market.</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_order_book&quot;, [5]], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmf8KBu8qTw5tTYJHCbtsk4z9d9Q7fVnEHPEvfZGT9SiLG/image.png" alt=""></p>
+<hr>
+<h1 id="get-recent-trades"><a href="#get-recent-trades" class="headerlink" title="get_recent_trades()"></a>get_recent_trades()</h1><p><strong><em>API:</em></strong> <code>std::vector&lt; market_trade &gt; get_recent_trades( uint32_t limit = 1000 ) const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x6700;&#x8FD1;&#x6210;&#x4EA4;&#x4FE1;&#x606F;<br>Returns the N most recent trades for the internal SBD:STEEM market.</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_recent_trades&quot;, [5]], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmWRdLGnWJCy5DqzX8BYGtPaSEzv5uTjenXKrJ4C2XjeHP/image.png" alt=""></p>
+<hr>
+<h1 id="get-trade-history"><a href="#get-trade-history" class="headerlink" title="get_trade_history()"></a>get_trade_history()</h1><p><strong><em>API:</em></strong> <code>std::vector&lt; market_trade &gt; get_trade_history( time_point_sec start, time_point_sec end, uint32_t limit = 1000 ) const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6210;&#x4EA4;&#x4FE1;&#x606F;<br>Returns the trade history for the internal SBD:STEEM market.</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_trade_history&quot;, [&quot;2016-08-01T00:00:00&quot;, &quot;2016-08-05T00:00:00&quot;, 10]], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmdKjoq4AnQeXJFwFMVLxUAXgtxr73U3a9dgU8WxKekwyc/image.png" alt=""></p>
+<hr>
+<h1 id="get-market-history-buckets"><a href="#get-market-history-buckets" class="headerlink" title="get_market_history_buckets()"></a>get_market_history_buckets()</h1><p><strong><em>API:</em></strong> <code>flat_set&lt; uint32_t &gt; get_market_history_buckets() const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5E02;&#x573A;&#x884C;&#x60C5;&#x5904;&#x7406;&#x533A;&#x95F4;(15&#x79D2;/&#x5206;&#x949F;/5&#x5206;&#x949F;/&#x7B49;)<br>Returns the bucket seconds being tracked by the plugin.</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_market_history_buckets&quot;, []], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmexvhBmYP8jzT1WN1ktpCyuNt4fngsHB63hQATEGgneEj/image.png" alt=""></p>
+<hr>
+<h1 id="get-market-history"><a href="#get-market-history" class="headerlink" title="get_market_history()"></a>get_market_history()</h1><p><strong><em>API:</em></strong> <code>std::vector&lt; bucket_object &gt; get_market_history( uint32_t bucket_seconds, time_point_sec start, time_point_sec end ) const;</code><br><strong><em>&#x8BF4;&#x660E;:</em></strong> &#x83B7;&#x53D6;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x5386;&#x53F2;&#x4FE1;&#x606F;<br>Returns the market history for the internal SBD:STEEM market.</p>
+<p><strong><em>&#x8C03;&#x7528;&#x793A;&#x4F8B; /Example:</em></strong><br><code>curl -s --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;market_history_api&quot;, &quot;get_market_history&quot;, [86400, &quot;2016-08-01T00:00:00&quot;, &quot;2016-08-05T00:00:00&quot;]], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p><strong><em>&#x8FD4;&#x56DE;&#x4FE1;&#x606F; / Return:</em></strong><br><img src="https://steemitimages.com/DQmPhv6wUukiyufqUeBM2AN2XbcsAZVcJ4WgmgBPrgWJNtn/image.png" alt=""></p>
+<hr>
+<h1 id="&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0;-Previous-articles"><a href="#&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0;-Previous-articles" class="headerlink" title="&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0; / Previous articles"></a>&#x4E4B;&#x524D;&#x76F8;&#x5173;&#x6587;&#x7AE0; / Previous articles</h1><ul>
+<li><a href="https://steemit.com/cn/@oflyhigh/6ha3fx" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x4FE1;&#x606F;&#x5566;</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/2xxlfx" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x5F53;&#x524D;&#x53C2;&#x8003;&#x4EF7;&#x683C;</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/vlif6" target="_blank" rel="noopener">&#x5185;&#x90E8;&#x5E02;&#x573A;&#x4EA4;&#x6613;&#x7C7B;&#x578B;&#x663E;&#x793A;&#x7684;&#x95EE;&#x9898;</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/internal-market-ask-bid" target="_blank" rel="noopener">&#x5185;&#x90E8;&#x5E02;&#x573A;(Internal market)&#x8981;&#x4EF7;(Ask)&#x4E0E;&#x51FA;&#x4EF7;(Bid)&#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="https://steemit.com/steemit/@oflyhigh/guide-for-newbie-how-to-use-internal-market-hand-by-hand" target="_blank" rel="noopener">&#x1F449; Guide for newbie: How to use internal market / step by step / &#x65B0;&#x4EBA;&#x6307;&#x5357;&#xFF1A;&#x6559;&#x4F60;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x5E02;&#x573A;</a></li>
+<li><a href="https://steemit.com/steemit/@oflyhigh/chinese-version-guide-for-newbie-how-to-use-internal-market" target="_blank" rel="noopener">&#x1F449; [&#x4E2D;&#x6587;&#x7248;]&#x65B0;&#x4EBA;&#x6307;&#x5357;&#xFF1A;&#x6559;&#x4F60;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5185;&#x90E8;&#x5E02;&#x573A; / [Chinese Version] Guide for newbie: How to use internal market.</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/market-history-apis-by-example" target="_blank" rel="noopener">&#x4E00;&#x8D77;&#x6765;&#x73A9;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x5427;(&#x4E8C;)&#xFF01;/ Market history APIs by example</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/api/">api</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/market/">market</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/money/">money</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/program-trading/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">一起来玩内部市场吧(三)！/ Program trading</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/pjujm/">
+                <span class="level-item">内心最感兴趣的事情 / 最畏惧的事情</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>How to calculate estimated account value: Part One / 如何计算账户估值：第一部分 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Get-estimated-account-value-in-wallet-page">
+        <span class="has-mr-6">1</span>
+        <span>Get estimated account value in wallet page</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x2705;&#xFE0F;Check-my-wallet-after-logged-in">
+        <span class="has-mr-6">1.1</span>
+        <span>&#x2705;&#xFE0F;Check my wallet after logged-in</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x274C;&#xFE0F;Check-my-wallet-without-logged-in">
+        <span class="has-mr-6">1.2</span>
+        <span>&#x274C;&#xFE0F;Check my wallet without  logged-in</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#How-to-solve-this-problem">
+        <span class="has-mr-6">2</span>
+        <span>How to solve this problem?</span>
+        </a></li><li>
+        <a class="is-flex" href="#What-we-need-to-get">
+        <span class="has-mr-6">3</span>
+        <span>What we need to get?</span>
+        </a></li><li>
+        <a class="is-flex" href="#Conclusions">
+        <span class="has-mr-6">4</span>
+        <span>Conclusions</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4E2D;&#x6587;">
+        <span class="has-mr-6">5</span>
+        <span>&#x4E2D;&#x6587;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt="How to calculate estimated account value: Part One / 如何计算账户估值：第一部分">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-01T10:47:03.000Z">2017-09-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 710 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                How to calculate estimated account value: Part One / 如何计算账户估值：第一部分
+            
+        </h1>
+        <div class="content">
+            <p>Are you curious about your estimated account value?  Or,  curious about estimated account value of your friends?</p>
+<p><img src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt=""></p>
+<h1 id="Get-estimated-account-value-in-wallet-page"><a href="#Get-estimated-account-value-in-wallet-page" class="headerlink" title="Get estimated account value in wallet page"></a>Get estimated account value in wallet page</h1><p>You can check your estimated account value in your wallet after your logged in steemit.com, and you can check your friend&#x2019;s wallet by visit <a href="https://steemit.com/@yourfriendid/transfers" target="_blank" rel="noopener">https://steemit.com/@yourfriendid/transfers</a> without login. But, Have you noticed that there are some differences between them?</p>
+<p>Take my account for example:</p>
+<h4 id="&#x2705;&#xFE0F;Check-my-wallet-after-logged-in"><a href="#&#x2705;&#xFE0F;Check-my-wallet-after-logged-in" class="headerlink" title="&#x2705;&#xFE0F;Check my wallet after logged-in"></a>&#x2705;&#xFE0F;Check my wallet after logged-in</h4><p><img src="https://steemitimages.com/DQmVgdiMVYtEMNuy8fSHKPibUHyoQUyiycq3VfJuo94GJse/image.png" alt=""></p>
+<hr>
+<h4 id="&#x274C;&#xFE0F;Check-my-wallet-without-logged-in"><a href="#&#x274C;&#xFE0F;Check-my-wallet-without-logged-in" class="headerlink" title="&#x274C;&#xFE0F;Check my wallet without  logged-in"></a>&#x274C;&#xFE0F;Check my wallet without  logged-in</h4><p><img src="https://steemitimages.com/DQmNnate1fykMWgdBVzFcQ7bx98jbQUV5VUFLoF78hojpQr/image.png" alt=""></p>
+<p>Pay attention to where I marked it, the estimated account value after logged-in in is  more than without logged-in. Why? &#x26A0;&#xFE0F;Because <strong><em>the assets in internal market are not counted in estimated account value if this account is not logged in</em></strong>.</p>
+<p>So, if your friends have a lot of assets  in internal market, you will get a completely wrong value.</p>
+<h1 id="How-to-solve-this-problem"><a href="#How-to-solve-this-problem" class="headerlink" title="How to solve this problem?"></a>How to solve this problem?</h1><p>There is a API <code>get_open_orders</code>, will return all open orders in internal market of the specified account, and then we can calculate the assets in internal market of this account. </p>
+<p>Is it enough? No!<br>After we got account&#x2019;s assets in internal market by script, we need to manually add them to the values we got from web page(wallet), This is very annoying thing.  A better way is to read the user&#x2019;s wallet information by script too, and then add the corresponding information together.</p>
+<h1 id="What-we-need-to-get"><a href="#What-we-need-to-get" class="headerlink" title="What we need to get?"></a>What we need to get?</h1><p>To read the user&#x2019;s wallet information, we need to get the following information:</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+</ul>
+<p>Is it enough now? No!</p>
+<p>There a function in wallet called  <strong><em>Convert to Steem</em></strong>, if you use it to convert SBD to STEEM, your SBD will disappear from the wallet, until it be converted successfully. </p>
+<p>So, It should be better if we can obtain the assets(SBD) to be converted.<br>Fortunately, there is a API called <code>get_conversion_requests</code>. We can use it to calculate the amount of assets(SBD).</p>
+<p>And after HF18, users need to claim their rewards manually, so to accurately calculate the estimated account value, we need to add this part:  <strong><em>Rewards to be claim</em></strong></p>
+<h1 id="Conclusions"><a href="#Conclusions" class="headerlink" title="Conclusions"></a>Conclusions</h1><p>Estimated account value contains four parts:</p>
+<p>1) The assets in wallet( And in SAVINGS)<br>2) The assets in internal market<br>3) The assets(SBD) in conversion processes<br>4) The assets(rewards) to be claimed</p>
+<p>To calculate estimated account value, we need to get following items:</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+<li><strong><em>STEEM in internal market</em></strong></li>
+<li><strong><em>STEEM DOLLARS in internal market</em></strong></li>
+<li><strong><em>STEEM DOLLARS in conversion requests</em></strong></li>
+<li><strong><em>STEEM Reward to be claimed</em></strong></li>
+<li><strong><em>STEEM POWER to be claimed</em></strong></li>
+<li><strong><em>STEEM DOLLARS to be claimed</em></strong></li>
+</ul>
+<p>I&#x2019;ll explain how to get these items in my next article.<br>Thank you for reading.</p>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x767B;&#x9646;&#x67E5;&#x770B;&#x7528;&#x6237;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x548C;&#x4E0D;&#x767B;&#x5F55;&#x67E5;&#x770B;&#xFF0C;&#x7ED3;&#x679C;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x533A;&#x522B;&#x3002;<br>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x767B;&#x9646;&#xFF0C;&#x6216;&#x8005;ID A&#x767B;&#x5F55;&#x67E5;&#x770B;ID B&#x7684;&#x94B1;&#x5305;, &#x5728;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x7684;&#x8D44;&#x4EA7;&#x4E0D;&#x88AB;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;&#xFF0C; &#x4EE5;&#x53CA;&#x5F85;&#x6536;&#x53D6;&#x7684;&#x6536;&#x76CA;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x8BA1;&#x7B97;&#x5728;&#x5185;&#x3002;<br>&#x6240;&#x4EE5;&#x8981;&#x7CBE;&#x786E;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BFB;&#x53D6;</p>
+<ul>
+<li>&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x4FDD;&#x62A4;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;</li>
+<li>&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;</li>
+<li>&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;</li>
+<li>&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</li>
+</ul>
+<p>&#x6211;&#x5C06;&#x5728;&#x4E0B;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x83B7;&#x5F97;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-calculate-estimated-account-value-part-one" target="_blank" rel="noopener">How to calculate estimated account value: Part One / &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF1A;&#x7B2C;&#x4E00;&#x90E8;&#x5206;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/steemit/">steemit</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/wallet/">wallet</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/how-to-calculate-estimated-account-value-part-two/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">How to calculate estimated account value: Part Two / 如何计算账户估值：第二部分</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/multisignature-account-test/">
+                <span class="level-item">Multisignature account test / 多重签名测试</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>secp256k1-py 安装以及命令行操作 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x5B89;&#x88C5;">
+        <span class="has-mr-6">1</span>
+        <span>&#x5B89;&#x88C5;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x5B89;&#x88C5;&#x6307;&#x4EE4;">
+        <span class="has-mr-6">1.1</span>
+        <span>&#x5B89;&#x88C5;&#x6307;&#x4EE4;</span>
+        </a></li><li>
+        <a class="is-flex" href="#39-pkg-config-39-is-required">
+        <span class="has-mr-6">1.2</span>
+        <span>&apos;pkg-config&apos; is required</span>
+        </a></li><li>
+        <a class="is-flex" href="#autoreconf-not-found">
+        <span class="has-mr-6">1.3</span>
+        <span>autoreconf: not found</span>
+        </a></li><li>
+        <a class="is-flex" href="#39-LIBTOOL-39-is-undefined">
+        <span class="has-mr-6">1.4</span>
+        <span>&apos;LIBTOOL&apos; is undefined</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;">
+        <span class="has-mr-6">2</span>
+        <span>&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;">
+        <span class="has-mr-6">2.1</span>
+        <span>&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x6D88;&#x606F;&#x7B7E;&#x540D;">
+        <span class="has-mr-6">2.2</span>
+        <span>&#x6D88;&#x606F;&#x7B7E;&#x540D;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x6821;&#x9A8C;&#x7B7E;&#x540D;">
+        <span class="has-mr-6">2.3</span>
+        <span>&#x6821;&#x9A8C;&#x7B7E;&#x540D;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;">
+        <span class="has-mr-6">2.4</span>
+        <span>&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;">
+        <span class="has-mr-6">2.5</span>
+        <span>&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">3</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">4</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmQcXkbdbWV5zrXMdr4YUnNBKyy3kaEPaYqQx2S63YQpbE/image.png" alt="secp256k1-py 安装以及命令行操作">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-13T02:57:57.000Z">2018-01-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/python/">python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1175 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                secp256k1-py 安装以及命令行操作
+            
+        </h1>
+        <div class="content">
+            <p>&#x9605;&#x8BFB;steem-python&#x4EE3;&#x7801;&#x65F6;&#x53D1;&#x73B0;&#x4E86;<a href="https://github.com/ludbb/secp256k1-py" target="_blank" rel="noopener">secp256k1-py</a> &#x8FD9;&#x4E2A;&#x5E93;&#x3002;&#x5B98;&#x65B9;&#x4ECB;&#x7ECD;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>Python FFI bindings for libsecp256k1(an experimental and optimized C library for EC operations on curve secp256k1).</p>
+</blockquote>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BB2;&#x5C31;&#x662F;&#x4E13;&#x95E8;&#x7528;&#x4E8E;&#x66F2;&#x7EBF;secp256k1&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x64CD;&#x4F5C;&#x7684;C&#x5E93;libsecp256k1&#x7684;Python FFI(foreign function interface)&#x7ED1;&#x5B9A;&#x3002;&#x5F88;&#x62D7;&#x53E3;&#x662F;&#x5427;&#xFF0C;&#x6CA1;&#x529E;&#x6CD5;&#xFF0C;&#x6C34;&#x5E73;&#x6709;&#x9650;&#x1F633;</p>
+<p><img src="https://steemitimages.com/DQmQcXkbdbWV5zrXMdr4YUnNBKyy3kaEPaYqQx2S63YQpbE/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h1><p>&#x539F;&#x672C;&#x4EE5;&#x4E3A;&#x5B89;&#x88C5;&#x4F1A;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x5B89;&#x88C5;&#x65F6;&#x5374;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x73B0;&#x8BB0;&#x5F55;&#x5982;&#x4E0B;&#x3002;</p>
+<h4 id="&#x5B89;&#x88C5;&#x6307;&#x4EE4;"><a href="#&#x5B89;&#x88C5;&#x6307;&#x4EE4;" class="headerlink" title="&#x5B89;&#x88C5;&#x6307;&#x4EE4;"></a>&#x5B89;&#x88C5;&#x6307;&#x4EE4;</h4><p>&#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x4E0D;&#x4F7F;&#x7528;&#x9884;&#x5148;&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x5E93;&#x7684;&#x5B89;&#x88C5;&#x65B9;&#x6CD5;&#x4E3A;&#xFF1A;<br><code>pip install --no-binary secp256k1</code></p>
+<p>&#x6211;&#x6267;&#x884C;&#x4E0A;&#x8FF0;&#x6307;&#x4EE4;&#xFF0C;&#x63D0;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p>You must give at least one requirement to install (see &#x201C;pip help install&#x201D;)</p>
+</blockquote>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x7F51;&#x9875;&#x4E2D;&#xFF0C;&#x5B66;&#x4E60;&#x5230;&#x2013;no-binary &#x9009;&#x9879;&#x540E;&#x5E94;&#x8BE5;&#x8DDF;&#x683C;&#x5F0F;&#x63A7;&#x5236;<br><a href="https://pip.pypa.io/en/stable/reference/pip_install/#install-no-binary" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/reference/pip_install/#install-no-binary</a><br><code>--no-binary &lt;format_control&gt;</code></p>
+<p>&#x6240;&#x4EE5;&#x4E0A;&#x8FF0;&#x6307;&#x4EE4;&#x5E94;&#x4E3A;&#xFF1A;<br><strong><em><code>pip install --no-binary :all: secp256k1</code></em></strong></p>
+<p>&#x5F53;&#x7136;&#x5982;&#x679C;&#x56FE;&#x7701;&#x4E8B;&#xFF0C;&#x76F4;&#x63A5;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x6307;&#x4EE4;&#x5C31;&#x884C;&#x4E86;<br><strong><em><code>pip install secp256k1</code></em></strong><br>&#x53CD;&#x6B63;&#x5BF9;&#x6211;&#x800C;&#x8A00;&#x662F;&#x6CA1;&#x5565;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x5C31;&#x5B8C;&#x4E8B;&#x4E86;&#x5417;&#xFF1F;NO&#xFF0C;&#x5B89;&#x88C5;&#x8FD8;&#x662F;&#x51FA;&#x4E86;&#x4E00;&#x5806;&#x95EE;&#x9898;&#xFF0C;&#x89C1;&#x62DB;&#x62C6;&#x62DB;&#x5427;&#x3002;</p>
+<h4 id="39-pkg-config-39-is-required"><a href="#39-pkg-config-39-is-required" class="headerlink" title="&apos;pkg-config&apos; is required"></a><code>&apos;pkg-config&apos; is required</code></h4><p>&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF1A;<br><img src="https://steemitimages.com/DQmfLhg8NqW3hKSa81xc1Rh25Pfnp4V3bwUuaPBg3XrTCq1/image.png" alt=""></p>
+<blockquote>
+<p>&#x2018;pkg-config&#x2019; is required to install this package. Please see the README for details.</p>
+</blockquote>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br>&#x5B89;&#x88C5;pkg-config<br><strong><em><code>sudo apt-get install pkg-config</code></em></strong></p>
+<h4 id="autoreconf-not-found"><a href="#autoreconf-not-found" class="headerlink" title="autoreconf: not found"></a><code>autoreconf: not found</code></h4><p>&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF1A;</p>
+<blockquote>
+<p>/tmp/pip-build-ar3agy47/secp256k1/libsecp256k1/autogen.sh: 3: /tmp/pip-build-ar3agy47/secp256k1/libsecp256k1/autogen.sh: autoreconf: not found</p>
+</blockquote>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br>&#x5B89;&#x88C5;autoconf<br><strong><em><code>sudo apt-get install autoconf</code></em></strong></p>
+<h4 id="39-LIBTOOL-39-is-undefined"><a href="#39-LIBTOOL-39-is-undefined" class="headerlink" title="&apos;LIBTOOL&apos; is undefined"></a><code>&apos;LIBTOOL&apos; is undefined</code></h4><p>&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF1A;</p>
+<blockquote>
+<p> Makefile.am:3: error: Libtool library used but &#x2018;LIBTOOL&#x2019; is undefined</p>
+</blockquote>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;<br>&#x5B89;&#x88C5;LIBTOOL<br><strong><em><code>sudo apt-get install libtool</code></em></strong></p>
+<p>&#x53EF;&#x80FD;&#x8FD8;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x4F9D;&#x8D56;&#xFF0C;&#x4F46;&#x53EF;&#x80FD;&#x6211;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x5305;&#x6216;&#x8005;&#x5E93;&#xFF0C;&#x5C31;&#x6CA1;&#x63D0;&#x793A;&#xFF0C;&#x6240;&#x4EE5;&#x670B;&#x53CB;&#x4EEC;&#x5982;&#x679C;&#x5B89;&#x88C5;&#x9047;&#x5230;&#x95EE;&#x9898;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x4ED4;&#x7EC6;&#x67E5;&#x770B;&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x51FA;&#x9519;&#x4FE1;&#x606F;&#x4E2D;&#x627E;&#x51FA;&#x9700;&#x8981;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<h1 id="&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;"><a href="#&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;" class="headerlink" title="&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;"></a>&#x547D;&#x4EE4;&#x884C;&#x4F7F;&#x7528;</h1><p>&#x5E9F;&#x4E86;&#x4E5D;&#x725B;&#x4E8C;&#x864E;&#x4E4B;&#x529B;&#xFF0C;&#x603B;&#x7B97;&#x628A;&#x8FD9;&#x4E2A;&#x4E1C;&#x4E1C;&#x88C5;&#x4E0A;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x8BD5;&#x5B83;&#x7684;&#x5A01;&#x529B;&#x5427;&#x3002;</p>
+<h4 id="&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;"><a href="#&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;" class="headerlink" title="&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;"></a>&#x751F;&#x6210;&#x79C1;&#x94A5;&#x548C;&#x516C;&#x94A5;</h4><p>&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;<br><code>python -m secp256k1 privkey -p</code></p>
+<p><img src="https://steemitimages.com/DQmSuQFT2LVvUyhUVFcwYntgv6Ew9QYMiEYfP2Ax5RvP47P/image.png" alt=""></p>
+<blockquote>
+<p>c6e193266883a500c6e51a117e012d96ad113d5f21f42b28eb648be92a78f92f<br>Public key: 0314bf901a6640033ea07b39c6b3acb675fc0af6a6ab526f378216085a93e5c7a2</p>
+</blockquote>
+<p>&#x8FD9;&#x901F;&#x5EA6;&#xFF0C;&#x55F7;&#x55F7;&#x5FEB;&#x554A;&#xFF0C;&#x770B;&#x6765;&#x6211;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x751F;&#x6210;&#x8363;&#x8000;&#x5730;&#x5740;&#x4E86;&#x3002;</p>
+<h4 id="&#x6D88;&#x606F;&#x7B7E;&#x540D;"><a href="#&#x6D88;&#x606F;&#x7B7E;&#x540D;" class="headerlink" title="&#x6D88;&#x606F;&#x7B7E;&#x540D;"></a>&#x6D88;&#x606F;&#x7B7E;&#x540D;</h4><p>&#x6D88;&#x606F;&#x7B7E;&#x540D;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x79C1;&#x94A5;&#x5BF9;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x7B7E;&#x540D;<br><!--￼0--></p>
+<p>&#x5176;&#x4E2D;&#x79C1;&#x94A5;&#x4E3A;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x751F;&#x6210;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x660E;&#x6587;&#x6D88;&#x606F;&#x4E3A;hello<br>&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x7B7E;&#x540D;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>3045022100a314a579fb9f30a804c172eec4881ed603e661eed692797149dfdbce24d671d202203ccfab0603ad97c34864caa22d42a24d0cb5750fcb159476b8ae30a11edc0ed6</p>
+</blockquote>
+<h4 id="&#x6821;&#x9A8C;&#x7B7E;&#x540D;"><a href="#&#x6821;&#x9A8C;&#x7B7E;&#x540D;" class="headerlink" title="&#x6821;&#x9A8C;&#x7B7E;&#x540D;"></a>&#x6821;&#x9A8C;&#x7B7E;&#x540D;</h4><p>&#x6821;&#x9A8C;&#x7B7E;&#x540D;&#x5C31;&#x662F;&#x4F7F;&#x7528;&#x4F7F;&#x7528;&#x6D88;&#x606F;&#x3001;&#x516C;&#x94A5;&#x3001;&#x7B7E;&#x540D;&#xFF0C;&#x6765;&#x6821;&#x9A8C;&#x7B7E;&#x540D;&#x662F;&#x5426;&#x662F;&#x516C;&#x94A5;&#x5BF9;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x6240;&#x7B7E;&#x53D1;<br><!--￼1--></p>
+<p>&#x4EE5;&#x4E0A;&#x6307;&#x4EE4;&#x6267;&#x884C;&#x540E;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;<strong><em><code>True</code></em></strong>&#xFF0C;&#x8868;&#x793A;&#x6821;&#x9A8C;&#x901A;&#x8FC7;</p>
+<h4 id="&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;"><a href="#&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;" class="headerlink" title="&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;"></a>&#x751F;&#x6210;&#x53EF;&#x6062;&#x590D;&#x516C;&#x94A5;&#x7684;&#x7B7E;&#x540D;</h4><!--￼2-->
+<p>&#x6700;&#x7EC8;&#x751F;&#x6210;&#x7684;&#x7B7E;&#x540D;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>a314a579fb9f30a804c172eec4881ed603e661eed692797149dfdbce24d671d23ccfab0603ad97c34864caa22d42a24d0cb5750fcb159476b8ae30a11edc0ed6 0</p>
+</blockquote>
+<h4 id="&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;"><a href="#&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;" class="headerlink" title="&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;"></a>&#x4ECE;&#x7B7E;&#x540D;&#x4E2D;&#x6062;&#x590D;&#x516C;&#x94A5;</h4><!--￼3-->
+<p>&#x6700;&#x7EC8;&#x6211;&#x4EEC;&#x6062;&#x590D;&#x51FA;&#x6765;&#x7684;&#x516C;&#x94A5;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>Public key: 0314bf901a6640033ea07b39c6b3acb675fc0af6a6ab526f378216085a93e5c7a2</p>
+</blockquote>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x672C;&#x6587;&#x4ECB;&#x7ECD;secp256k1-py &#x7684;&#x5B89;&#x88C5;&#x4EE5;&#x53CA;&#x547D;&#x4EE4;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;libsecp256k1&#x662F;&#x4E13;&#x95E8;&#x4E3A;secp256k1&#x66F2;&#x7EBF;&#x5B9E;&#x73B0;&#x7684;C&#x5E93;&#xFF0C;&#x800C;secp256k1-py&#x662F;libsecp256k1&#x7684;FFI&#x7ED1;&#x5B9A;&#xFF0C;&#x6240;&#x4EE5;&#x90A3;&#x64CD;&#x4F5C;&#x901F;&#x5EA6;&#x662F;&#x6760;&#x6760;&#x6EF4;&#x3002;</p>
+<p>&#x672C;&#x6587;&#x53EA;&#x662F;&#x7565;&#x4F5C;&#x63A2;&#x7D22;&#xFF0C;&#x4E4B;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x8FDB;&#x4E00;&#x6B65;&#x5B66;&#x4E60;secp256k1-py&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://github.com/ludbb/secp256k1-py" target="_blank" rel="noopener">https://github.com/ludbb/secp256k1-py</a></li>
+<li><a href="https://github.com/bitcoin-core/secp256k1" target="_blank" rel="noopener">https://github.com/bitcoin-core/secp256k1</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Foreign_function_interface" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Foreign_function_interface</a></li>
+<li><a href="https://pip.pypa.io/en/stable/reference/pip_install/#install-no-binary" target="_blank" rel="noopener">https://pip.pypa.io/en/stable/reference/pip_install/#install-no-binary</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/secp256k1-py" target="_blank" rel="noopener">secp256k1-py &#x5B89;&#x88C5;&#x4EE5;&#x53CA;&#x547D;&#x4EE4;&#x884C;&#x64CD;&#x4F5C;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python/">python</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/secp256k1/">secp256k1</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/secp256k1-py/">secp256k1-py</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/3ux1yv/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">渣渣程序员随便聊聊自己学过的编程语言(下)</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/78wzrg/">
+                <span class="level-item">渣渣程序员随便聊聊自己学过的编程语言(中)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

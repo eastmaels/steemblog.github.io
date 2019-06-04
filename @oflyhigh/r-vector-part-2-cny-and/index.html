@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>继续学R：Vector(向量) Part 2, 多元素向量访问 &amp; 计算长度 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;">
+        <span class="has-mr-6">1</span>
+        <span>&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;">
+        <span class="has-mr-6">1.1</span>
+        <span>&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;">
+        <span class="has-mr-6">1.2</span>
+        <span>&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x903B;&#x8F91;&#x5F00;&#x5173;">
+        <span class="has-mr-6">1.3</span>
+        <span>&#x903B;&#x8F91;&#x5F00;&#x5173;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4E0B;&#x6807;-0">
+        <span class="has-mr-6">1.4</span>
+        <span>&#x4E0B;&#x6807; 0</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4E0B;&#x6807;&#x8D1F;&#x6570;">
+        <span class="has-mr-6">1.5</span>
+        <span>&#x4E0B;&#x6807;&#x8D1F;&#x6570;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;">
+        <span class="has-mr-6">2</span>
+        <span>&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">3</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：Vector(向量) Part 2, 多元素向量访问 &amp; 计算长度">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-30T05:20:39.000Z">2018-05-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 889 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                继续学R：Vector(向量) Part 2, 多元素向量访问 &amp; 计算长度
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x5B66;&#x4E60;&#x4E86;<a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x300A;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;&#x300B;</a>&#xFF0C;&#x5B66;&#x5230;&#x4E86;&#x7528;<strong><code>c()&#x51FD;&#x6570;</code></strong>&#x3001;<strong><code>&#x5192;&#x53F7;&#x64CD;&#x4F5C;&#x7B26;(:)</code></strong>&#x3001;<strong><code>seq()</code></strong>&#x64CD;&#x4F5C;&#x7B26;&#x7B49;&#x51E0;&#x79CD;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;&#xFF0C;&#x5E76;&#x4E14;&#x6D4B;&#x8BD5;&#x4E86;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x5F97;&#x51FA;<strong><code>raw &gt; logical &gt; integer &gt;numeric &gt;complex &gt; character</code></strong>&#x7684;&#x7ED3;&#x8BBA;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
+<p>&#x8FD9;&#x8282;&#x6211;&#x4EEC;&#x6765;&#x7EE7;&#x7EED;&#x5B66;&#x4E60;&#x3002;</p>
+<h1 id="&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;"><a href="#&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;" class="headerlink" title="&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;"></a>&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE;</h1><h4 id="&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;"><a href="#&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;" class="headerlink" title="&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;"></a>&#x4E0B;&#x6807;&#x5355;&#x5143;&#x7D20;</h4><p>&#x548C;&#x5F88;&#x591A;&#x8BED;&#x8A00;&#x4E00;&#x6837;&#xFF0C;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x662F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0B;&#x6807;&#x6765;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x4E3E;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>v&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;);</code><br><code>print(v[1])</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmeA2aCfPvAFegxo148sqLL7wCVsr2TKHSPRsovzNifAhG/image.png" alt=""></p>
+<p>&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x601D;&#x7684;&#x4E8B;&#x5C31;&#x8FD9;&#x4E2A;<strong>&#x4E0B;&#x6807;&#x662F;&#x4ECE;1&#x5F00;&#x59CB;&#x8BA1;&#x7B97;&#x7684;</strong>&#xFF0C;&#x8FD9;&#x4E2A;&#x548C;C&#x8BED;&#x8A00;&#x4EE5;&#x53CA;Python&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x4E60;&#x60EF;&#x4E0D;&#x592A;&#x4E00;&#x81F4;&#x3002;</p>
+<h4 id="&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;"><a href="#&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;" class="headerlink" title="&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;"></a>&#x4E0B;&#x6807;&#x591A;&#x5143;&#x7D20;</h4><p>&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x6709;&#x610F;&#x601D;&#x7684;&#x5730;&#x65B9;&#x662F;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x591A;&#x4E2A;&#x591A;&#x4E2A;&#x5143;&#x7D20;</p>
+<blockquote>
+<p><code>v&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;);</code><br><code>print(v[c(1, 2, 3)])</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmc3aXSfL1tLNZstdMaEqRKk2CdzyfGtp8D8y1PptfuaMf/image.png" alt=""><br>&#x662F;&#x4E0D;&#x662F;&#x6709;&#x4E9B;&#x795E;&#x5947;&#xFF1F;</p>
+<h4 id="&#x903B;&#x8F91;&#x5F00;&#x5173;"><a href="#&#x903B;&#x8F91;&#x5F00;&#x5173;" class="headerlink" title="&#x903B;&#x8F91;&#x5F00;&#x5173;"></a>&#x903B;&#x8F91;&#x5F00;&#x5173;</h4><p>&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x4E24;&#x79CD;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x5176;&#x5B83;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F7F;&#x7528;<strong>&#x903B;&#x8F91;&#x7C7B;&#x578B;&#x6765;&#x63A7;&#x5236;&#x663E;&#x793A;&#x5F00;&#x5173;</strong></p>
+<blockquote>
+<p><code>v&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;);</code><br><code>print(v[c(TRUE, FALSE, TRUE, FALSE, TRUE, FALSE)])</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmQVuHARhTvXMNyfnpgi3NtLcFKwmdpxJScLApdTa2WK4n/image.png" alt=""><br>&#x5199;&#x5230;&#x8FD9;&#x91CC;&#x4E0D;&#x7981;&#x6709;&#x4E00;&#x4E2A;&#x7591;&#x95EE;&#xFF0C;<strong>&#x5982;&#x679C;&#x4F20;&#x9012;&#x7684;&#x5F00;&#x5173;&#x91CF;&#x6BD4;&#x5143;&#x7D20;&#x4E2A;&#x6570;&#x5C11;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x8BE5;&#x5982;&#x4F55;&#x663E;&#x793A;&#xFF1F;</strong>&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#x627E;&#x4E0D;&#x51FA;&#x6765;&#x5565;&#x89C4;&#x5F8B;&#xFF0C;&#x884C;&#x4E3A;&#x8BE1;&#x5F02;&#x554A;&#x3002;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x7528;&#x5230;&#x4E86;&#xFF0C;&#x8FD8;&#x662F;&#x8001;&#x8001;&#x5B9E;&#x5B9E;&#x4F20;&#x9012;&#x76F8;&#x540C;&#x4E2A;&#x6570;&#x7684;&#x5F00;&#x5173;&#x91CF;&#x5427;&#xFF0C;&#x8981;&#x4E48;&#x7B49;&#x4EE5;&#x540E;&#x627E;&#x5230;&#x89C4;&#x5F8B;&#x518D;&#x8BF4;&#x3002;</p>
+<h4 id="&#x4E0B;&#x6807;-0"><a href="#&#x4E0B;&#x6807;-0" class="headerlink" title="&#x4E0B;&#x6807; 0"></a>&#x4E0B;&#x6807; 0</h4><p>&#x5728;<a href="https://www.tutorialspoint.com/r/index.htm" target="_blank" rel="noopener">R Tutorial</a>&#x7684;<a href="https://www.tutorialspoint.com/r/r_vectors.htm" target="_blank" rel="noopener">R - Vectors</a>&#x4E2D;&#xFF0C;&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x6BB5;&#x793A;&#x4F8B;&#xFF1A;</p>
+<blockquote>
+<p><code># Accessing vector elements using 0/1 indexing.</code><br><code>t &lt;- c(&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thurs&quot;,&quot;Fri&quot;,&quot;Sat&quot;)</code><br><code>y &lt;- t[c(0,0,0,0,0,0,1)]</code><br><code>print(y)</code></p>
+</blockquote>
+<p>&#x4E4D;&#x4E00;&#x770B;&#x4E0A;&#x8FB9;&#x7684;&#x793A;&#x4F8B;&#xFF0C;&#x8FD8;&#x4EE5;&#x4E3A;&#x662F;&#x53EF;&#x4EE5;&#x7528;0/1&#x6765;&#x505A;&#x5F00;&#x5173;&#x548C;TRUE/FALSE&#x4E00;&#x6837;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;0/1&#x5E76;&#x975E;&#x5F00;&#x5173;&#x91CF;&#xFF0C;&#x8FD8;&#x662F;&#x4E0B;&#x6807;&#xFF0C;&#x53EA;&#x662F;<strong>&#x5BF9;&#x4E8E;&#x4E0B;&#x6807;0&#x800C;&#x8A00;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x7A7A;&#x503C;</strong>&#x3002;&#x6240;&#x4EE5;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7B49;&#x4EF7;&#x4E8E;&#xFF1A;</p>
+<blockquote>
+<p><code>t &lt;- c(&quot;Sun&quot;,&quot;Mon&quot;,&quot;Tue&quot;,&quot;Wed&quot;,&quot;Thurs&quot;,&quot;Fri&quot;,&quot;Sat&quot;)</code><br><code>y &lt;- t[c(1)]</code><br><code>print(y)</code><br><img src="https://cdn.steemitimages.com/DQmRTtGcrb4V6cGDjYAjY3zcfTzWRFQMGC7iyP923SueFiQ/image.png" alt=""></p>
+</blockquote>
+<h4 id="&#x4E0B;&#x6807;&#x8D1F;&#x6570;"><a href="#&#x4E0B;&#x6807;&#x8D1F;&#x6570;" class="headerlink" title="&#x4E0B;&#x6807;&#x8D1F;&#x6570;"></a>&#x4E0B;&#x6807;&#x8D1F;&#x6570;</h4><p>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x4E0B;&#x6807;&#x4F20;&#x5165;&#x8D1F;&#x6570;</p>
+<blockquote>
+<p><code>v&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;);</code><br><code>print(v[c(-2, -4)])</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmRURrzyDjF4sP8kRCLXUG45Bezu2usa5UsLG86BMf8wrh/image.png" alt=""><br>&#x7531;&#x6B64;&#x53EF;&#x89C1;&#xFF0C;&#x8D1F;&#x6570;&#x76F8;&#x5F53;&#x4E8E;&#x5173;&#x6389;&#x5BF9;&#x5E94;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<h1 id="&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;"><a href="#&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;" class="headerlink" title="&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;"></a>&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;</h1><p>&#x987A;&#x4FBF;&#x8003;&#x5BDF;&#x4E86;&#x4E00;&#x4E0B;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x957F;&#x5EA6;&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#xFF0C;&#x53D1;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;<strong><code>length()</code></strong>&#x51FD;&#x6570;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>v&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;, &apos;e&apos;, &apos;f&apos;);</code><br><code>print(length(v))</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmTk9L5wv4VGXPnhKRydUK3Lu7egvsiq1Ca5Xuto95MEzU/image.png" alt=""></p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x6C34;&#x5230;&#x8FD9;&#x91CC;&#x4E86;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;)  Part 1, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;</a></li>
+<li><a href="https://www.tutorialspoint.com/r/r_vectors.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_vectors.htm</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-vector-part-2-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 2, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE; &amp; &#x8BA1;&#x7B97;&#x957F;&#x5EA6;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/programming/">programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/r/">r</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/tutorial/">tutorial</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/8000cny-qq/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">竟然有人8000元就想买我的QQ号🐧</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/1vaqj/">
+                <span class="level-item">在山本清，入世皆幻</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

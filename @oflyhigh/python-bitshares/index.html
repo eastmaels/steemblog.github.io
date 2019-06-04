@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>python-bitshares 边学边记 (一) - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x5982;&#x4F55;&#x5B89;&#x88C5;">
+        <span class="has-mr-6">1</span>
+        <span>&#x5982;&#x4F55;&#x5B89;&#x88C5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;">
+        <span class="has-mr-6">2</span>
+        <span>&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#bitshares-info-&#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;">
+        <span class="has-mr-6">3</span>
+        <span>bitshares.info() &#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">4</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x6587;&#x7AE0;">
+        <span class="has-mr-6">5</span>
+        <span>&#x76F8;&#x5173;&#x6587;&#x7AE0;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmab7QPFcG6Q4U9Z1FMThkdVcDneSY5xR2bPxVWryEZfeX/image.png" alt="python-bitshares 边学边记 (一)">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-12-07T13:16:36.000Z">2017-12-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/python-bitshares/">python-bitshares</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 964 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                python-bitshares 边学边记 (一)
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x7ED9;&#x5927;&#x5BB6;&#x5206;&#x4EAB;&#x4E86;uptick&#x3002;uptick&#x662F;&#x7531; @xeroc &#x5927;&#x795E;&#x5F00;&#x53D1;&#x548C;&#x7EF4;&#x62A4;&#xFF0C;&#x7528;&#x4E8E;&#x548C;&#x6BD4;&#x7279;&#x80A1;&#x7F51;&#x7EDC;&#x6253;&#x4EA4;&#x9053;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x4F7F;&#x7528;Python&#x8BED;&#x8A00;&#x5F00;&#x53D1;&#xFF0C;&#x5E95;&#x5C42;&#x4F7F;&#x7528;&#x4E86;python-bitshares &#x8FD9;&#x4E2A;Python&#x5E93;&#x3002;uptick&#x7684;&#x5F3A;&#x5927;&#x529F;&#x80FD;&#x6211;&#x4EEC;&#x90FD;&#x89C1;&#x8BC6;&#x8FC7;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x63A5;&#x4E0B;&#x6765;&#x4F1A;&#x6574;&#x7406;&#x4E00;&#x4E9B;python-bitshares&#x7684;&#x5B66;&#x4E60;&#x8BB0;&#x5F55;&#xFF0C;&#x4FBF;&#x4E8E;&#x81EA;&#x5DF1;&#x4EE5;&#x540E;&#x67E5;&#x9605;&#xFF0C;&#x4E5F;&#x5E0C;&#x671B;&#x80FD;&#x7ED9;&#x6709;&#x60F3;&#x4E86;&#x89E3;python-bitshares&#x7684;&#x670B;&#x53CB;&#x4E00;&#x4E9B;&#x53C2;&#x8003;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmab7QPFcG6Q4U9Z1FMThkdVcDneSY5xR2bPxVWryEZfeX/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;pixabay)</p>
+<h1 id="&#x5982;&#x4F55;&#x5B89;&#x88C5;"><a href="#&#x5982;&#x4F55;&#x5B89;&#x88C5;" class="headerlink" title="&#x5982;&#x4F55;&#x5B89;&#x88C5;"></a>&#x5982;&#x4F55;&#x5B89;&#x88C5;</h1><p>python-bitshares  &#x8FD9;&#x4E2A;&#x5E93;&#x4E5F;&#x662F; @xeroc &#x5927;&#x795E; &#x5F00;&#x53D1;&#x548C;&#x7EF4;&#x62A4;&#x7684;&#xFF0C;&#x81F4;&#x656C;&#x3002;</p>
+<p>Github&#x5730;&#x5740;&#x4E3A;&#xFF1A;<a href="https://github.com/xeroc/python-bitshares" target="_blank" rel="noopener">https://github.com/xeroc/python-bitshares</a></p>
+<p>&#x5B89;&#x88C5;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x6307;&#x4EE4;&#x5373;&#x53EF;&#xFF1A;<br><code>sudo apt-get install libffi-dev libssl-dev python-dev</code><br><code>pip3 install bitshares</code></p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x5B89;&#x88C5;<br><code>git clone https://github.com/xeroc/python-bitshares/</code><br><code>cd python-bitshares</code><br><code>python3 setup.py install --user</code></p>
+<p>&#x5982;&#x9700;&#x5347;&#x7EA7;&#xFF0C;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x6307;&#x4EE4;&#x5373;&#x53EF;&#xFF1A;<br><code>pip install --user --upgrade</code></p>
+<p>&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x56E0;&#x4E3A;uptick&#x4F9D;&#x8D56;&#x4E8E;python-bitshares&#xFF0C;&#x6240;&#x4EE5;&#x5B89;&#x88C5;uptick&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5;python-bitshares</p>
+<h1 id="&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;"><a href="#&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;" class="headerlink" title="&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;"></a>&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x4FE1;&#x606F;</h1><p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5199;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x6765;&#x67E5;&#x770B;bitshares&#x533A;&#x5757;&#x94FE;&#x7684;&#x4FE1;&#x606F;</p>
+<p><code>from bitshares import BitShares</code><br><code>from pprint import pprint</code><br><code>bitshares = BitShares()</code><br><code>pprint(bitshares.info())</code></p>
+<p>&#x5176;&#x4E2D;BitShares&#x662F;python-bitshares&#x5E93;&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x7C7B;&#x4E4B;&#x4E00;&#x3002;</p>
+<ul>
+<li><code>bitshares = BitShares()</code>&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;</li>
+<li><code>bitshares.info()</code>&#x662F;<code>get_dynamic_global_properties()</code>API&#x7684;&#x5C01;&#x88C5;&#x3002;</li>
+</ul>
+<p>&#x5C06;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4FDD;&#x5B58;&#x4E3A;info.py&#x5E76;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmRGLYo1cNn8gr1hJnQMFoTwTrYMNaSzhNHeA69zYvgi11/image.png" alt=""></p>
+<p>&#x8FD9;&#x4E5F;&#x8BF4;&#x660E;&#x6211;&#x4EEC;&#x7684;&#x5B89;&#x88C5;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;</p>
+<h1 id="bitshares-info-&#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;"><a href="#bitshares-info-&#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;" class="headerlink" title="bitshares.info() &#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;"></a><code>bitshares.info()</code> &#x7684;API&#x8C03;&#x7528;&#x5B9E;&#x4F8B;</h1><p>&#x6211;&#x4EEC;&#x8BF4;<code>bitshares.info()</code>&#x662F;&#x5BF9;<code>get_dynamic_global_properties()</code>API&#x7684;&#x5C01;&#x88C5;&#x3002;</p>
+<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;<a href="https://steemit.com/bitshares/@oflyhigh/bts-learn-the-remote-procedure-call-of-bts" target="_blank" rel="noopener">&#x5B66;&#x4E60;&#x4E00;&#x4E0B;BTS&#x7684;&#x8FDC;&#x7A0B;&#x8FC7;&#x7A0B;&#x8C03;&#x7528; / Learn the remote procedure call of BTS</a>&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x8FC7;&#x5982;&#x4F55;&#x7528;&#x5DE5;&#x5177;curl&#x6765;&#x8FDB;&#x884C;API&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x76F4;&#x63A5;&#x7528;curl&#x8C03;&#x7528;&#x4F1A;&#x662F;&#x4EC0;&#x4E48;&#x6548;&#x679C;&#x5462;&#xFF1F;</p>
+<p>&#x6839;&#x636E;&#x4EE5;&#x524D;&#x5B66;&#x4E60;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x6211;&#x4EEC;&#x751F;&#x6210;&#x4E86;curl&#x7684;&#x547D;&#x4EE4;&#x4EE5;&#x53CA;&#x53C2;&#x6570;<br><code>curl  --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;get_dynamic_global_properties&quot;, &quot;params&quot;: [], &quot;id&quot;: 1}&apos; https://openledger.hk/ws</code></p>
+<p>&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x9605;&#x8BFB;&#xFF0C;&#x6211;&#x5BF9;&#x8C03;&#x7528;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x4E86;&#x683C;&#x5F0F;&#x5316;&#x5904;&#x7406;<br><img src="https://steemitimages.com/DQmcbqyp8R6rhktQtrGt7LBAgL1VMcQJ6jLVz8x1qxbw5ps/image.png" alt=""></p>
+<p>&#x901A;&#x8FC7;&#x4E0E;<code>bitshares.info()</code>&#x7684;&#x5BF9;&#x6BD4;&#x53EF;&#x77E5;&#xFF0C;<code>bitshares.info()</code>&#x8FD4;&#x56DE;&#x7684;&#x662F;<code>get_dynamic_global_properties</code>&#x7684;<code>result</code>&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x4E8B;&#x5B9E;&#x4E0A;&#xFF0C;python-bitshares&#x5C31;&#x662F;&#x5BF9;bitshares RPC&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x53EA;&#x662F;&#x76F8;&#x6BD4;&#x4E8E;&#x6211;&#x4EEC;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#x7684;&#x4F7F;&#x7528;curl&#xFF0C;&#x5B83;&#x5C06;websocket&#x5C01;&#x88C5;&#x4E3A;GrapheneWebsocketRPC&#xFF0C;&#x7136;&#x540E;&#x518D;&#x88AB;BitSharesNodeRPC&#x6240;&#x7EE7;&#x627F;&#x3002;&#x4F46;&#x662F;&#x672C;&#x8D28;&#x4E0A;&#x548C;&#x6211;&#x4EEC;&#x7528;curl&#x662F;&#x6CA1;&#x6709;&#x533A;&#x522B;&#x7684;&#x3002;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x5728;&#x8FD9;&#x7BC7;&#x7B14;&#x8BB0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;</p>
+<ul>
+<li>python-bitshares&#x7684;&#x5B89;&#x88C5;</li>
+<li>python-bitshares&#x7684;&#x7B80;&#x5355;&#x4F8B;&#x5B50;</li>
+<li>python-bitshares&#x4E0E;bitshares RPC&#x7684;&#x5173;&#x7CFB;&#x7B80;&#x4ECB;</li>
+</ul>
+<p>&#x6709;&#x4E86;&#x8FD9;&#x4E9B;&#x57FA;&#x7840;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x6211;&#x4EEC;&#x7684;python-bitshares&#x6109;&#x5FEB;&#x65C5;&#x7A0B;&#x4E86;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x6587;&#x7AE0;"><a href="#&#x76F8;&#x5173;&#x6587;&#x7AE0;" class="headerlink" title="&#x76F8;&#x5173;&#x6587;&#x7AE0;"></a>&#x76F8;&#x5173;&#x6587;&#x7AE0;</h1><ul>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/bts-learn-the-remote-procedure-call-of-bts" target="_blank" rel="noopener">&#x5B66;&#x4E60;&#x4E00;&#x4E0B;BTS&#x7684;&#x8FDC;&#x7A0B;&#x8FC7;&#x7A0B;&#x8C03;&#x7528; / Learn the remote procedure call of BTS</a></li>
+<li><a href="https://steemit.com/uptick/@oflyhigh/uptick" target="_blank" rel="noopener">&#x53C8;&#x4E00;&#x628A;&#x745E;&#x58EB;&#x519B;&#x5200;&#xFF1F; Uptick&#x521D;&#x4F53;&#x9A8C;&#xFF08;&#x4E00;&#xFF09;</a></li>
+<li><a href="https://steemit.com/uptick/@oflyhigh/32cec-uptick" target="_blank" rel="noopener">&#x53C8;&#x4E00;&#x628A;&#x745E;&#x58EB;&#x519B;&#x5200;&#xFF1F; Uptick&#x521D;&#x4F53;&#x9A8C;&#xFF08;&#x4E8C;&#xFF09;&#xFF1A;&#x5BFC;&#x5165;&#x79C1;&#x94A5;</a></li>
+<li><a href="https://steemit.com/uptick/@oflyhigh/uptick-uptick" target="_blank" rel="noopener">&#x53C8;&#x4E00;&#x628A;&#x745E;&#x58EB;&#x519B;&#x5200;&#xFF1F; Uptick&#x521D;&#x4F53;&#x9A8C;&#xFF08;&#x4E09;&#xFF09;&#xFF1A;uptick&#x547D;&#x4EE4;&#x9009;&#x9879;&#x4EE5;&#x53CA;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x503C;</a></li>
+<li><a href="https://steemit.com/uptick/@oflyhigh/5jdo3s-uptick-uptick" target="_blank" rel="noopener">&#x53C8;&#x4E00;&#x628A;&#x745E;&#x58EB;&#x519B;&#x5200;&#xFF1F; Uptick&#x521D;&#x4F53;&#x9A8C;&#xFF08;&#x56DB;&#xFF09;&#xFF1A;uptick&#x547D;&#x4EE4; / &#x67E5;&#x8BE2;&#x5E02;&#x573A;&#x884C;&#x60C5;&#x3001;&#x8F6C;&#x8D26;&#x3001;&#x4EA4;&#x6613;&#x3001;&#x67E5;&#x8BE2;&#x53CA;&#x53D6;&#x6D88;&#x8BA2;&#x5355;</a></li>
+<li><a href="https://steemit.com/uptick/@oflyhigh/2ppgyw-uptick-uptick" target="_blank" rel="noopener">&#x53C8;&#x4E00;&#x628A;&#x745E;&#x58EB;&#x519B;&#x5200;&#xFF1F; Uptick&#x521D;&#x4F53;&#x9A8C;&#xFF08;&#x4E94;&#xFF09;&#xFF1A;uptick&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#x7684;&#x5C1D;&#x8BD5;  (&#x5B8C;)</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/python-bitshares" target="_blank" rel="noopener">python-bitshares &#x8FB9;&#x5B66;&#x8FB9;&#x8BB0; (&#x4E00;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/bitshares/">bitshares</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python/">python</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python-bitshares/">python-bitshares</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/openledger-openledger-steem-gateway-maintenance/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Openledger 害死人，维护了几十个小时了 / Openledger STEEM gateway maintenance</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/linode/">
+                <span class="level-item">好“大方”的Linode</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

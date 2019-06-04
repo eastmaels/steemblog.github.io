@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>每天进步一点点：Python中使用Requests访问STEEM RPC - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x4F7F;&#x7528;curl&#x547D;&#x4EE4;">
+        <span class="has-mr-6">1</span>
+        <span>&#x4F7F;&#x7528;curl&#x547D;&#x4EE4;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Requests-&#x5B89;&#x88C5;">
+        <span class="has-mr-6">2</span>
+        <span>Requests &#x5B89;&#x88C5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM-RPC-&#x8282;&#x70B9;">
+        <span class="has-mr-6">3</span>
+        <span>&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC &#x8282;&#x70B9;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Requests-&#x7684;&#x624B;&#x518C;">
+        <span class="has-mr-6">4</span>
+        <span>Requests &#x7684;&#x624B;&#x518C;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Requests-&#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;">
+        <span class="has-mr-6">5</span>
+        <span>Requests &#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">6</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">7</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmefy1d97k1eGU5fCSXwCWyCpga6ztwqFsQ2mT7He76v4d/image.png" alt="每天进步一点点：Python中使用Requests访问STEEM RPC">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-11T14:08:39.000Z">2018-02-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/python/">python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1138 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                每天进步一点点：Python中使用Requests访问STEEM RPC
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x63A2;&#x8BA8;&#x8FC7;STEEM&#x7684;RPC&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x6B62;&#x4E00;&#x6B21;&#x4F7F;&#x7528;<strong><code>curl</code></strong>&#x6765;&#x6F14;&#x793A;&#x8BBF;&#x95EE;STEEM&#x7684;RPC&#x8282;&#x70B9;&#x3002;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x6362;&#x4E00;&#x79CD;&#x73A9;&#x6CD5;&#xFF0C;&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC&#x8282;&#x70B9;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmefy1d97k1eGU5fCSXwCWyCpga6ztwqFsQ2mT7He76v4d/image.png" alt=""></p>
+<h1 id="&#x4F7F;&#x7528;curl&#x547D;&#x4EE4;"><a href="#&#x4F7F;&#x7528;curl&#x547D;&#x4EE4;" class="headerlink" title="&#x4F7F;&#x7528;curl&#x547D;&#x4EE4;"></a>&#x4F7F;&#x7528;<strong><code>curl</code></strong>&#x547D;&#x4EE4;</h1><p>&#x5728;&#x4ECB;&#x7ECD;Requests&#x4E4B;&#x524D;&#xFF0C;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x66F4;&#x597D;&#x7684;&#x5F15;&#x51FA;&#x95EE;&#x9898;&#x4EE5;&#x53CA;&#x5BF9;&#x6BD4;&#xFF0C;&#x6211;&#x4EEC;&#x56DE;&#x987E;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x4F7F;&#x7528;<strong><code>curl</code></strong>&#x547D;&#x4EE4;&#x8BBF;&#x95EE;STEEM RPC&#x8282;&#x70B9;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x5728;<a href="https://steemit.com/security/@oflyhigh/o-qq" target="_blank" rel="noopener">&#x4ECA;&#x5929;&#x65E9;&#x4E9B;&#x65F6;&#x5019;&#x7684;&#x5E16;&#x5B50;</a>&#x4E2D;&#xFF0C;&#x6211;&#x5C31;&#x6F14;&#x793A;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x516C;&#x94A5;&#x4ECE;STEEM&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x540D;&#x3002;</p>
+<blockquote>
+<p><code>curl --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;account_by_key_api&quot;, &quot;get_key_references&quot;, [[&quot;STM6MGdForcZ8HskcguP84QSCb8udgz7W9yUPU5jtsAKQAxth3U16&quot;]]], &quot;id&quot;: 1}&apos; https://api.steemit.com</code></p>
+</blockquote>
+<p>&#x4F7F;&#x7528;<strong><code>curl</code></strong>&#x6765;&#x6F14;&#x793A;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#x5C31;&#x662F;&#x8BFB;&#x8005;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x62FF;&#x6765;&#x6D4B;&#x8BD5;&#xFF0C;&#x590D;&#x5236;&#x3001;&#x7C98;&#x8D34;&#x5373;&#x53EF;&#xFF0C;&#x65E0;&#x9700;&#x7F16;&#x5199;&#x4EFB;&#x4F55;&#x4EE3;&#x7801;&#x3002;&#x4F46;&#x662F;&#x5F0A;&#x7AEF;&#x4E5F;&#x662F;&#x6709;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x60F3;&#x5BF9;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#xFF0C;&#x76F4;&#x63A5;&#x7528;<strong><code>curl</code></strong>&#x5C31;&#x50BB;&#x773C;&#x4E86;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x529E;&#x6CD5;&#x603B;&#x662F;&#x6BD4;&#x95EE;&#x9898;&#x591A;&#x7684;&#xFF0C;&#x636E;&#x6211;&#x6240;&#x77E5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;subprocess&#x6765;&#x8C03;&#x7528;&#x547D;&#x4EE4;&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;PycURL&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;urlib&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8FD8;&#x6709;Requests &#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x5C31;&#x5148;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;Requests &#x3002;</p>
+<h1 id="Requests-&#x5B89;&#x88C5;"><a href="#Requests-&#x5B89;&#x88C5;" class="headerlink" title="Requests &#x5B89;&#x88C5;"></a>Requests &#x5B89;&#x88C5;</h1><p>&#x5982;&#x679C;&#x4F60;&#x7684;Python&#x8FD8;&#x6CA1;&#x6709;&#x5B89;&#x88C5;Requests &#x5E93;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;&#x5B83;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#x5373;&#x53EF;&#xFF1A;<br><code>pip install requests</code><br>&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x6709;&#x6728;&#x6709;&#xFF1F;</p>
+<h1 id="&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM-RPC-&#x8282;&#x70B9;"><a href="#&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM-RPC-&#x8282;&#x70B9;" class="headerlink" title="&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC &#x8282;&#x70B9;"></a>&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC &#x8282;&#x70B9;</h1><p>&#x597D;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;requests&#x6765;&#x8BBF;&#x95EE;STEEM RPC&#x8282;&#x70B9;&#x5566;</p>
+<p>&#x8FD8;&#x662F;&#x7528;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x4F7F;&#x7528;requests&#x6539;&#x5199;&#x8D77;&#x6765;&#xFF0C;&#x90A3;&#x662F;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x554A;</p>
+<!--￼0-->
+<p>&#x6267;&#x884C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x6BB5;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmVGB5wdJ3gCLtGn7n1d5SgkhGRjrUbMyKUDwSGxbxTvha/image.png" alt=""><br>&#x548C;<strong><code>curl</code></strong> &#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5BF9;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x65B9;&#x4FBF;&#x7684;&#x5904;&#x7406;&#x55BD;&#x3002;</p>
+<h1 id="Requests-&#x7684;&#x624B;&#x518C;"><a href="#Requests-&#x7684;&#x624B;&#x518C;" class="headerlink" title="Requests &#x7684;&#x624B;&#x518C;"></a>Requests &#x7684;&#x624B;&#x518C;</h1><p>&#x901A;&#x8FC7;&#x4E0A;&#x8FB9;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x60F3;&#x5FC5;&#x5927;&#x5BB6;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x5982;&#x4F55;&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC&#x8282;&#x70B9;&#xFF0C;&#x7B80;&#x5355;&#x5230;&#x6211;&#x90FD;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x89E3;&#x91CA;&#x7684;&#x3002;&#x4F46;&#x5176;&#x5B9E;Requests&#x8FD8;&#x662F;&#x5F88;&#x5F3A;&#x5927;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4F7F;&#x7528;&#x5176;&#x5F3A;&#x5927;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#x53EF;&#x80FD;&#x4E0D;&#x6B62;&#x7528;&#x5728;STEEM&#x4E0A;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x5B66;&#x4E60;&#x4E00;&#x4E0B;Requests&#x7684;&#x7528;&#x6237;&#x624B;&#x518C;&#x3002;</p>
+<p>&#x7528;&#x6237;&#x624B;&#x518C;&#x5730;&#x5740;&#xFF1A;<a href="http://www.python-requests.org/en/master/" target="_blank" rel="noopener">http://www.python-requests.org/en/master/</a><br>&#x5C3D;&#x7BA1;&#x6211;&#x53D1;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;<a href="http://docs.python-requests.org/zh_CN/latest/index.html" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x7248;&#x672C;&#x7684;&#x624B;&#x518C;</a>&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5E76;&#x4E0D;&#x63A8;&#x8350;&#x4F60;&#x9605;&#x8BFB;&#x5B83;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#x4E2D;&#x6587;&#x7248;&#x672C;&#x624B;&#x518C;&#x5173;&#x4E8E;Requests&#x7684;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<blockquote>
+<p>Requests &#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x975E;&#x8F6C;&#x57FA;&#x56E0;&#x7684; Python HTTP &#x5E93;&#xFF0C;&#x4EBA;&#x7C7B;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x4EAB;&#x7528;&#x3002;<br>&#x8B66;&#x544A;&#xFF1A;&#x975E;&#x4E13;&#x4E1A;&#x4F7F;&#x7528;&#x5176;&#x4ED6; HTTP &#x5E93;&#x4F1A;&#x5BFC;&#x81F4;&#x5371;&#x9669;&#x7684;&#x526F;&#x4F5C;&#x7528;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;&#x5B89;&#x5168;&#x7F3A;&#x9677;&#x75C7;&#x3001;&#x5197;&#x4F59;&#x4EE3;&#x7801;&#x75C7;&#x3001;&#x91CD;&#x65B0;&#x53D1;&#x660E;&#x8F6E;&#x5B50;&#x75C7;&#x3001;&#x5543;&#x6587;&#x6863;&#x75C7;&#x3001;&#x6291;&#x90C1;&#x3001;&#x5934;&#x75BC;&#x3001;&#x751A;&#x81F3;&#x6B7B;&#x4EA1;&#x3002;</p>
+</blockquote>
+<p>&#x8FD9;&#x4E25;&#x91CD;&#x5730;&#x89E6;&#x53D1;&#x4E86;&#x6211;&#x7684;&#x5F3A;&#x8FEB;&#x75C7;&#xFF0C;&#x6BD4;&#x5982;<strong>&#x8F6C;&#x57FA;&#x56E0;&#x662F;&#x5426;&#x771F;&#x7684;&#x4E0D;&#x5B89;&#x5168;&#xFF1F;</strong></p>
+<h1 id="Requests-&#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;"><a href="#Requests-&#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;" class="headerlink" title="Requests &#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;"></a>Requests &#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;</h1><p>&#x5982;&#x679C;&#x9700;&#x8981;&#x66F4;&#x597D;&#x7684;&#x4F7F;&#x7528;Requests &#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x6709;&#x5FC5;&#x8981;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x5B83;&#x7684;&#x9AD8;&#x7EA7;&#x529F;&#x80FD;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F1A;&#x8BDD;&#xFF08;Session&#xFF09;&#x3001;&#x6301;&#x4E45;&#x94FE;&#x63A5;&#xFF08;Keep-Alive&#xFF09;&#x3001;Header&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x4E86;&#x89E3;&#x8FD9;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF0C;&#x9700;&#x8981;&#x4F60;&#x6709;&#x4E00;&#x5B9A;&#x7684;HTTP&#x534F;&#x8BAE;&#x7684;&#x57FA;&#x672C;&#x77E5;&#x8BC6;&#xFF0C;&#x8FD9;&#x6837;&#x7406;&#x89E3;&#x8D77;&#x6765;&#x5C31;&#x5F88;&#x65B9;&#x4FBF;&#x4E86;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x597D;&#x6D88;&#x606F;&#x662F;&#x5728;&#x4F1A;&#x8BDD;&#xFF08;Session&#xFF09;&#x4E2D;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x5B9E;&#x73B0;&#x6301;&#x4E45;&#x94FE;&#x63A5;&#xFF08;Keep-Alive&#xFF09;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x6FC0;&#x52A8;&#x4EBA;&#x5FC3;&#xFF1F;</p>
+<p>&#x5565;&#xFF1F;&#x4F60;&#x95EE;&#x6211;&#x6301;&#x4E45;&#x94FE;&#x63A5;&#x6709;&#x5565;&#x7528;&#xFF1F;</p>
+<p>&#x4EC0;&#x4E48;TCP&#x63E1;&#x624B;&#x5565;&#x7684;&#x6211;&#x4E5F;&#x4E0D;&#x61C2;&#xFF0C;&#x7528;QQ&#x804A;&#x5929;&#x6BD4;&#x55BB;&#x4E00;&#x4E0B;&#xFF0C;&#x6301;&#x4E45;&#x94FE;&#x63A5;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x5BF9;&#x65B9;&#x4E00;&#x76F4;&#x5728;&#x7EBF;&#x7ED9;&#x4F60;&#x56DE;&#x7B54;&#x95EE;&#x9898;&#xFF1B;&#x800C;&#x975E;&#x6301;&#x4E45;&#x94FE;&#x63A5;&#xFF0C;&#x5C31;&#x597D;&#x6BD4;&#x4F60;&#x6BCF;&#x6B21;&#x95EE;&#x9898;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x6253;&#x7535;&#x8BDD;&#x558A;&#x5BF9;&#x65B9;&#x4E0A;&#x7EBF;&#xFF0C;&#x7136;&#x540E;&#x4ED6;&#x56DE;&#x7B54;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x540E;&#x5C31;&#x4E0B;&#x7EBF;&#x4E86;&#xFF0C;&#x4F60;&#x60F3;&#x95EE;&#x7B2C;&#x4E8C;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x518D;&#x6253;&#x7535;&#x8BDD;&#x558A;&#x4ED6;&#x4E0A;&#x7EBF;&#x1F630;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>Requests<del>&#x5F88;&#x9EC4;&#x5F88;&#x66B4;&#x529B;</del>&#x5F88;&#x597D;&#x5F88;&#x5F3A;&#x5927;&#xFF0C;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5FEB;&#x70B9;&#x73A9;&#x8D77;&#x6765;&#x5427;&#xFF01;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="http://www.python-requests.org/en/master/" target="_blank" rel="noopener">Requests: HTTP for Humans</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/python-requests-steem-rpc" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;Python&#x4E2D;&#x4F7F;&#x7528;Requests&#x8BBF;&#x95EE;STEEM RPC</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/http/">http</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python/">python</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/requests/">requests</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/o/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">O哥闲扯淡： 转发才是真爱粉吗？</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/o-qq/">
+                <span class="level-item">O哥闲扯淡： 将私钥备注到QQ签名是个好主意吗？</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

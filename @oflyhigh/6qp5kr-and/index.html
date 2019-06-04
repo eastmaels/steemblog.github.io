@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>继续学习比特币的私钥 &amp; 私钥的表示方法 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;">
+        <span class="has-mr-6">1</span>
+        <span>&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;">
+        <span class="has-mr-6">2</span>
+        <span>&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;">
+        <span class="has-mr-6">2.1</span>
+        <span>&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;">
+        <span class="has-mr-6">2.2</span>
+        <span>&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;">
+        <span class="has-mr-6">3</span>
+        <span>&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;</span>
+        </a><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Base58">
+        <span class="has-mr-6">3.1.1</span>
+        <span>Base58</span>
+        </a></li><li>
+        <a class="is-flex" href="#WIF">
+        <span class="has-mr-6">3.1.2</span>
+        <span>WIF</span>
+        </a></li></ul></ul></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">4</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmStjKczQQyxWyzqBeGnDsjMb3Ao6EPWE6K2bRktE8Lnsj/image.png" alt="继续学习比特币的私钥 &amp; 私钥的表示方法">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-07-28T15:14:39.000Z">2017-07-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 minutes read (About 1434 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                继续学习比特币的私钥 &amp; 私钥的表示方法
+            
+        </h1>
+        <div class="content">
+            <p>&#x4E4B;&#x524D;&#x5B66;&#x4E60;&#x4E86; <a href="https://steemit.com/cn/@oflyhigh/base58" target="_blank" rel="noopener">Base58&#x7F16;&#x89E3;&#x7801;</a> &#x4EE5;&#x53CA;<a href="https://steemit.com/cn/@oflyhigh/base58-base58check" target="_blank" rel="noopener">Base58Check</a></p>
+<p>&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x4E4B;&#x524D;&#x7684;&#x5B66;&#x4E60;&#x6210;&#x679C;&#xFF0C;&#x90A3;&#x5C31;&#x662F;</p>
+<ul>
+<li>Bash58&#x7F16;&#x7801;&#x628A;&#x5927;&#x6574;&#x6570;&#xFF0C;&#x8F6C;&#x6362;&#x6210;&#x6309;58&#x8FDB;&#x5236;&#x8868;&#x793A;&#x7684;&#x5B57;&#x7B26;&#x4E32;<br>&#x53BB;&#x6389;&#x4E86;0 , O , I&#xFF0C; l &#x4EE5;&#x53CA;  +, / &#x6613;&#x6DF7;&#x6DC6;&#x5B57;&#x7B26;</li>
+<li>Base58Check&#x5728;Base58&#x57FA;&#x7840;&#x4E0A;&#x52A0;&#x4E0A;&#x4E86;&#x7248;&#x672C;&#x4FE1;&#x606F;&#x4EE5;&#x53CA;&#x6821;&#x9A8C;</li>
+</ul>
+<p>&#x5176;&#x5B9E;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x4E3A;&#x4E86;&#x5B66;&#x4E60;&#x4E86;&#x4E86;&#x89E3;STEEM&#x4EE5;&#x53CA;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x5730;&#x5740;&#x5565;&#x7684;<br>&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x4E60;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x79C1;&#x94A5;</p>
+<p><img src="https://steemitimages.com/DQmStjKczQQyxWyzqBeGnDsjMb3Ao6EPWE6K2bRktE8Lnsj/image.png" alt=""></p>
+<h1 id="&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;"><a href="#&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;" class="headerlink" title="&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;"></a>&#x79C1;&#x94A5;&#x5373;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;</h1><p>&#x4E4B;&#x524D;&#x6211;&#x4E00;&#x76F4;&#x6CA1;&#x641E;&#x61C2;&#x79C1;&#x94A5;&#x662F;&#x5565;&#x73A9;&#x610F;&#xFF0C;&#x542C;&#x7740;&#x5F88;&#x9AD8;&#x5927;&#x4E0A;&#x6709;&#x6728;&#x6709;<br>&#x7ECF;&#x8FC7;&#x4E00;&#x756A;&#x6DF1;&#x5165;&#x7684;&#x5B66;&#x4E60;&#x548C;&#x7814;&#x7A76;&#xFF0C;&#x6211;&#x7EC8;&#x4E8E;&#x5F97;&#x51FA;&#x4E00;&#x4E2A;&#x60CA;&#x5929;&#x5730;&#x6CE3;&#x9B3C;&#x795E;&#x7684;&#x7ED3;&#x8BBA;<br>&#x90A3;&#x5C31;&#x662F;&#xFF1A; <strong><em>&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4FDD;&#x5B58;&#x91D1;&#x94B1;&#x7684;&#x5730;&#x65B9;</em></strong></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x662F;&#x94B1;&#x5305;&#xFF0C;&#x662F;&#x79C1;&#x94A5;&#x3002;</p>
+<p>&#x4E3A;&#x5565;&#x8FD9;&#x4E48;&#x8BF4;&#x5462;&#xFF1F;<br>&#x56E0;&#x4E3A;&#x5373;&#x4FBF;&#x7684;&#x94B1;&#x5305;&#x4FDD;&#x7BA1;&#x7684;&#x5F88;&#x597D;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x7684;&#x6BD4;&#x7279;&#x5E01;&#x79C1;&#x94A5;&#x6CC4;&#x9732;&#x51FA;&#x53BB;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x7684;&#x94B1;&#xFF0C;&#x5C06;&#x4E0D;&#x4F1A;&#x5C5E;&#x4E8E;&#x4F60;&#x4E86;&#x3002;<br><strong><em>&#x94B1;&#x5305;&#x8FD8;&#x5728;&#xFF0C;&#x94B1;&#x6CA1;&#x4E86;&#xFF0C;&#x6700;&#x60B2;&#x60E8;&#x7684;&#x83AB;&#x8FC7;&#x4E8E;&#x6B64;&#x5427;&#xFF1F;</em></strong></p>
+<p>&#x901A;&#x8FC7;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x53C8;&#x6709;&#x91CD;&#x5927;&#x53D1;&#x73B0;&#x4E86;<br><strong><em>&#x79C1;&#x94A5;&#x76F8;&#x5F53;&#x4E8E;&#x4F60;&#x85CF;&#x94B1;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x800C;&#x5730;&#x5740;&#x662F;&#x4F60;&#x6536;&#x94B1;&#x7684;&#x5165;&#x53E3;</em></strong><br>&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5F80;&#x5730;&#x5740;&#x8FD9;&#x4E2A;&#x5165;&#x53E3;&#x91CC;&#x6254;&#x94B1;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6CD5;&#x5F80;&#x51FA;&#x638F;&#x94B1;<br>&#x53EA;&#x6709;&#x62E5;&#x6709;&#x79C1;&#x94A5;&#x7684;&#x4EBA;&#x624D;&#x53EF;&#x4EE5;&#x3002;</p>
+<p>&#x518D;&#x8FDB;&#x4E00;&#x6B65;&#x5B66;&#x4E60;&#xFF0C;&#x53D1;&#x73B0;&#x5730;&#x5740;&#x662F;&#x7531;&#x79C1;&#x94A5;&#x4EA7;&#x751F;&#x7684;&#xFF0C;&#x800C;&#x901A;&#x8FC7;&#x5730;&#x5740;&#x5374;&#x65E0;&#x6CD5;&#x8BA1;&#x7B97;&#x5F97;&#x51FA;&#x79C1;&#x94A5;<br>&#x5C31;&#x662F;&#x8BF4;&#x79C1;&#x94A5;&#x5230;&#x5730;&#x5740;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#x5355;&#x5411;&#x4E0D;&#x53EF;&#x9006;&#x7684;&#x3002;</p>
+<h1 id="&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;"><a href="#&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;" class="headerlink" title="&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;"></a>&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;</h1><p>&#x8BF4;&#x4E86;&#x534A;&#x5929;&#xFF0C;&#x79C1;&#x94A5;&#x5230;&#x5E95;&#x662F;&#x5565;&#xFF0C;&#x5176;&#x5B9E;&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#xFF0C;&#x53D6;&#x503C;&#x5904;&#x4E8E;1&#x5230;n - 1&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x6570;<br>&#x5176;&#x4E2D;&#xFF1A; <strong><em>n = 1.158 </em> 10<sup>77</sup>*</strong></p>
+<p>&#x641E;&#x4E86;&#x534A;&#x5929;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x6570;&#x5B57;&#x561B;&#x3002;<br>&#x636E;&#x8BF4;sha256&#xFF0C;&#x5C31;&#x80FD;&#x8F7B;&#x6613;&#x751F;&#x6210;&#x4E2A;256&#x4F4D;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x4E0D;&#x662F;&#x5C31;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4EA7;&#x751F;&#x79C1;&#x94A5;&#x5462;&#xFF1F;<br>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x300A;Mastering Bitcoin&#x300B;&#xFF0C;&#x679C;&#x7136;&#x53EF;&#x4EE5;<br>&#x5927;&#x81F4;&#x610F;&#x601D;&#x5C31;&#x662F;&#x628A;&#x968F;&#x673A;&#x6E90;&#x6536;&#x96C6;&#x7684;&#x6BD4;&#x7279;&#x4E32;&#x9001;&#x7ED9;sha256&#x6765;&#x751F;&#x6210;256&#x4F4D;&#x6570;&#xFF0C;&#x5E76;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5904;&#x4E8E;1&#x5230;n - 1&#x4E4B;&#x95F4;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x7528;Hello World&#x505A;&#x6BD4;&#x7279;&#x4E32;&#x6765;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x8BD5;&#x8BD5;<br><!--￼0--></p>
+<p>&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x6709;&#x79C1;&#x94A5;&#x5566;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmXDmYVtKXzgJrujVkZZbmWDTYYbpPUEHFGM7qbdrDYS36/image.png" alt=""></p>
+<h2 id="&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;"><a href="#&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;" class="headerlink" title="&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;"></a>&#x8FD9;&#x4E2A;&#x662F;&#x771F;&#x7684;&#x79C1;&#x94A5;&#x54E6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BFC;&#x5165;&#x94B1;&#x5305;&#x7684;&#x54E6;</h2><p><img src="https://steemitimages.com/DQmRhpXidNq8bgwnfn8sBNQqFYaXmvsofxqPQGN99pdHQX1/image.png" alt=""></p>
+<h2 id="&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;"><a href="#&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;" class="headerlink" title="&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;"></a>&#x5BFC;&#x5165;&#x8BD5;&#x8BD5;&#x770B;&#xFF0C;&#x8036;&#xFF0C;&#x54B1;&#x4E5F;&#x6709;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x5566;</h2><p><img src="https://steemitimages.com/DQmdQzH4sL4JBQjXZnwJ8qrKWdfHUvAQPyxFPc6oDjatJdH/image.png" alt=""><br>&#x53BB;blockchain.info&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x5C45;&#x7136;&#xFF0C;&#x7ADF;&#x7136;&#x771F;&#x7684;&#x6709;&#x56DB;&#x7B14;&#x4EA4;&#x6613;<br>&#x5411;&#x4F1F;&#x5927;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#x81F4;&#x656C;&#xFF01;&#x5411;<strong><em>Hello World</em></strong>&#x81F4;&#x656C;&#xFF01;<br><a href="https://blockchain.info/address/1LGWpj3pqbzYWvTLEcBKP6CS5PQkxBgjXj" target="_blank" rel="noopener">https://blockchain.info/address/1LGWpj3pqbzYWvTLEcBKP6CS5PQkxBgjXj</a></p>
+<h1 id="&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;"><a href="#&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;" class="headerlink" title="&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;"></a>&#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;</h1><p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5728;&#x56DE;&#x5934;&#x6765;&#x770B;blockchain.info&#x91CC;&#x7684;&#x94B1;&#x5305;</p>
+<p><img src="https://steemitimages.com/DQmYWjqhNRy6S5YQVGFPtW2PoqbSAyZTrhZ1zq1vCkkTTve/image.png" alt=""></p>
+<p><img src="https://steemitimages.com/DQmNsBebKue1osFeS1Zk1koEXVrKNeNnogqMWk5vS7Q5oe7/image.png" alt=""></p>
+<p>&#x6211;&#x54ED;&#x4E86;&#xFF0C;&#x65E0;&#x8BBA;&#x9009;&#x62E9;&#x54EA;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x90FD;&#x4E0D;&#x662F;&#x6211;&#x5BFC;&#x5165;&#x7684;&#x79C1;&#x94A5;&#x5440;&#xFF0C;&#x6211;&#x7684;&#x79C1;&#x94A5;&#x54EA;&#x91CC;&#x53BB;&#x4E86;?<br>&#x4E8E;&#x662F;&#x53C8;&#x4ED4;&#x7EC6;&#x5B66;&#x4E60;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x539F;&#x6765;&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5F62;&#x5F0F;&#x7684;&#x6570;&#x5B57;</p>
+<p>&#x79C1;&#x94A5;&#x8FD8;&#x53EF;&#x4EE5;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8868;&#x793A;&#x65B9;&#x5F0F;&#xFF01;<br>&#x6BD4;&#x5982;&#x8BF4;&#x4E0A;&#x8FB9;&#x4E24;&#x4E2A;&#x56FE;&#x5217;&#x51FA;&#x7684;</p>
+<ul>
+<li>WIF</li>
+<li>Base58</li>
+</ul>
+<p>&#x54A6;&#xFF0C;&#x77E5;&#x9053;&#x6211;&#x4E3A;&#x5565;&#x5B66;&#x4E60;Base58&#x4E86;&#x5427;&#xFF01;</p>
+<h4 id="Base58"><a href="#Base58" class="headerlink" title="Base58"></a>Base58</h4><p>&#x5148;&#x6765;&#x770B;&#x770B;Base58&#xFF0C;Base58&#x5C31;&#x662F;&#x628A;&#x751F;&#x6210;&#x7684;&#x79C1;&#x94A5;&#x4E32;&#x4F7F;&#x7528;Base58&#x7F16;&#x7801;</p>
+<p>&#x5F15;&#x5165;&#x6211;&#x4EEC;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x5B66;&#x7684;Base58&#x7F16;&#x7801;<br>&#x5BF9;<code>a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e</code>&#x8FDB;&#x884C;&#x7F16;&#x7801;<br>&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmYzeBVzMUTixb2cTptx2tnP9j93WR3T3NwNjFuHYNgBVv/image.png" alt=""><br>&#x548C;&#x4E0A;&#x8FB9;Base58&#x7F16;&#x7801;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x6709;&#x6728;&#x6709;&#xFF1F;</p>
+<h4 id="WIF"><a href="#WIF" class="headerlink" title="WIF"></a>WIF</h4><p>&#x518D;&#x6765;&#x770B;WIF<br>WIF&#x4EA6;&#x5373;&#xFF1A; Wallet Import Format (WIF)</p>
+<p>&#x518D;&#x6B21;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x300A;Mastering Bitcoin&#x300B;&#xFF0C;&#x6211;&#x60F3;&#x8981;&#x7684;&#x5B83;&#x90FD;&#x8BB2;<br><img src="https://steemitimages.com/DQmSkr2rwj81AanQ5BD41MxvdmVtVEPEba7jf5SeqwZwnEg/image.png" alt=""></p>
+<p>&#x5176;&#x4E2D;HEX<br>&#x5E94;&#x8BE5;&#x5C31;&#x662F;<code>a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e</code></p>
+<p>WIF&#x770B;&#x56FE;&#x5C31;&#x662F;&#x52A0;&#x4E0A;&#x524D;&#x7F00;&#x52A0;&#x4E0A;&#x6821;&#x9A8C;&#x7801;&#x561B;&#xFF0C;&#x7136;&#x540E;&#x7528;Base58Check&#x7F16;&#x7801;</p>
+<p><strong><em>&#x77E5;&#x9053;&#x4E3A;&#x5565;&#x5B66;Base58Check&#x4E86;&#x5427;&#xFF1F;</em></strong></p>
+<p>&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#x751F;&#x6210;&#x7684;&#x4E1C;&#x897F;&#x4E3A;&#xFF1A;<br><img src="https://steemitimages.com/DQmab8QnH7EtLnJpAm1W9Du4gGVrv2awgQgJTDjatCfeuXY/image.png" alt=""><br>&#x800C;BlockChain&#x7684;&#x94B1;&#x5305;&#x91CC;&#x7684;&#x5F00;&#x5934;&#x662F;L, &#x5F88;&#x660E;&#x663E;&#x6211;&#x8FD9;&#x4E2A;&#x662F;&#x672A;&#x7ECF;&#x538B;&#x7F29;&#x7684;</p>
+<p>&#x548B;&#x538B;&#x7F29;&#x5462;&#xFF1F;&#x770B;&#x56FE;&#x662F;&#x52A0;&#x4E86;&#x4E2A;0x01&#x540E;&#x7F00;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7F16;&#x7801;&#xFF0C;&#x8BA9;&#x6211;&#x8BD5;&#x8BD5;&#x8BD5;&#x770B;<br><img src="https://steemitimages.com/DQmcpLrJ8FpfdgyFNuKviZJWfQLNxNYHUUfMk3eJuKyrz8c/image.png" alt=""></p>
+<p><img src="https://steemitimages.com/DQmZWkmFAvYTukvzcXNoeJqjMVL9wRP4gmAm7Vq91A5q8yQ/image.png" alt=""></p>
+<p>&#x5B8C;&#x5168;&#x4E00;&#x6837;&#x6709;&#x6728;&#x6709;&#xFF01;<br>&#x8BDD;&#x8BF4;, Blockchain.info&#x4E0D;&#x539A;&#x9053;&#xFF0C;&#x660E;&#x660E;&#x662F;WIF-compressed&#xFF0C;&#x4F60;&#x975E;&#x5F97;&#x663E;&#x793A;&#x7684;&#x4E2A;WIF&#xFF0C;&#x8FD9;&#x4E0D;&#x662F;&#x8BEF;&#x5BFC;&#x6211;&#x5462;&#x5417;&#xFF1F;&#x5DEE;&#x8BC4;&#xFF01;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><ul>
+<li>&#x79C1;&#x94A5;&#x5C31;&#x662F;&#x4E00;&#x4E2A;256&#x4F4D;&#x968F;&#x673A;&#x6570;(&#x5904;&#x4E8E;1&#x5230;n - 1&#x4E4B;&#x95F4;)</li>
+<li>&#x79C1;&#x94A5;&#x53EF;&#x4EE5;&#x7528;hashlib.sha256&#x6765;&#x751F;&#x6210;</li>
+<li>&#x79C1;&#x94A5;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E3A;<strong><em>64&#x4F4D;16&#x8FDB;&#x5236;&#x4E32;&#x3001;Base58&#x3001;WIF&#x3001;WIF-compressed</em></strong></li>
+<li>64&#x4F4D;16&#x8FDB;&#x5236;&#x4E32;&#x5C31;&#x662F;&#x628A;&#x79C1;&#x94A5;&#x76F4;&#x63A5;&#x8F6C;&#x6362;</li>
+<li>Base58&#x7F16;&#x7801;&#x5C31;&#x662F;&#x5BF9;64&#x4F4D;16&#x8FDB;&#x5236;&#x4E32;&#x76F4;&#x63A5;&#x7F16;&#x7801;</li>
+<li>WIF&#x5C31;&#x662F;&#x5728;64&#x4F4D;16&#x8FDB;&#x5236;&#x4E32;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x8282;&#x4E32;&#x524D;&#x52A0;&#x4E0A;&#x524D;&#x7F00;0x80&#xFF0C; &#x5E76;&#x7528;Base58Check&#x7F16;&#x7801;</li>
+<li>WIF-compressed&#x5C31;&#x662F;&#x5728;64&#x4F4D;16&#x8FDB;&#x5236;&#x4E32;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x8282;&#x4E32;&#x524D;&#x52A0;&#x4E0A;&#x524D;&#x7F00;0x80&#xFF0C;&#x5E76;&#x52A0;&#x4E0A;&#x540E;&#x7F00;0x01&#xFF0C; &#x5E76;&#x7528;Base58Check&#x7F16;&#x7801;</li>
+</ul>
+<hr>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x5B66;&#x4E60;&#x5230;&#x8FD9;&#x91CC;&#x3002;<br>&#x514D;&#x8D23;&#x58F0;&#x660E;&#xFF0C;&#x672C;&#x6587;&#x4E3A;&#x4E2A;&#x4EBA;&#x7406;&#x89E3;&#xFF0C;&#x793A;&#x4F8B;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;<br><strong><em>&#x8BF7;&#x52FF;&#x4F7F;&#x7528;&#x6587;&#x7AE0;&#x4E2D;&#x5199;&#x5230;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x5BFC;&#x81F4;bitcoin&#x635F;&#x5931;&#xFF0C;&#x6982;&#x4E0D;&#x8D1F;&#x8D23;&#xFF01;</em></strong></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/6qp5kr-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;&#x4E60;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x79C1;&#x94A5; &amp; &#x79C1;&#x94A5;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/bitcoin/">bitcoin</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python/">python</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/wif/">wif</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/61quvw/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">每天进步一点点： 学习比特币的公钥</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/5mgvjb/">
+                <span class="level-item">早起的鸟有虫吃</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

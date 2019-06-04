@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>站点迁移时域名解析问题的一些处理经验 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x4FEE;&#x6539;DNS">
+        <span class="has-mr-6">1</span>
+        <span>&#x4FEE;&#x6539;DNS</span>
+        </a></li><li>
+        <a class="is-flex" href="#DNS&#x8F6C;&#x5411;">
+        <span class="has-mr-6">2</span>
+        <span>DNS&#x8F6C;&#x5411;</span>
+        </a></li><li>
+        <a class="is-flex" href="#IP&#x8FC1;&#x79FB;">
+        <span class="has-mr-6">3</span>
+        <span>IP&#x8FC1;&#x79FB;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x9644;&#x52A0;DNS">
+        <span class="has-mr-6">4</span>
+        <span>&#x9644;&#x52A0;DNS</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">5</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmQJ5V7a6BB26E6VGcKgjgfJACPxXypmFsuh2GTQkrkhCD/image.png" alt="站点迁移时域名解析问题的一些处理经验">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-09T00:30:06.000Z">2018-05-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/dns/">dns</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 minutes read (About 1485 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                站点迁移时域名解析问题的一些处理经验
+            
+        </h1>
+        <div class="content">
+            <p>&#x524D;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x8BF4;&#x5230;&#x4E3A;&#x4E86;&#x8282;&#x7701;&#x7761;&#x540E;&#x652F;&#x51FA;&#xFF0C;&#x6211;&#x51C6;&#x5907;&#x5173;&#x6389;&#x4E00;&#x4E9B;&#x51E0;&#x4E4E;&#x95F2;&#x7F6E;&#x7684;&#x670D;&#x52A1;&#x5668;&#x3002;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x9664;&#x4E86;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x7AD9;&#x548C;&#x7A0B;&#x5E8F;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x7528;&#x6237;&#x7AD9;&#x70B9;&#xFF0C;&#x5982;&#x4F55;&#x5C06;&#x7528;&#x7AD9;&#x70B9;&#x5E73;&#x6ED1;&#x7684;&#x8FC1;&#x79FB;&#xFF08;&#x96F6;DOWN&#x673A;&#x65F6;&#x95F4;&#xFF09;&#xFF0C;&#x662F;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5176;&#x4E2D;&#x5F71;&#x54CD;&#x9887;&#x5927;&#x7684;&#x5C31;&#x662F;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmQJ5V7a6BB26E6VGcKgjgfJACPxXypmFsuh2GTQkrkhCD/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x6211;&#x5C06;&#x64CD;&#x4F5C;&#x7ECF;&#x9A8C;&#x5206;&#x60C5;&#x51B5;&#x6574;&#x7406;&#x5982;&#x4E0B;&#x3002;</p>
+<h1 id="&#x4FEE;&#x6539;DNS"><a href="#&#x4FEE;&#x6539;DNS" class="headerlink" title="&#x4FEE;&#x6539;DNS"></a>&#x4FEE;&#x6539;DNS</h1><p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90FD;&#x81EA;&#x5EFA;&#x4E86;DNS(&#x57DF;&#x540D;&#x89E3;&#x6790;&#x670D;&#x52A1;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x6709;&#x4E2A;&#x597D;&#x5904;&#x5C31;&#x662F;&#x5F00;&#x901A;&#x7AD9;&#x70B9;&#x4EE5;&#x53CA;&#x7ED1;&#x5B9A;&#x57DF;&#x540D;&#x65F6;&#xFF0C;&#x4E0D;&#x7528;&#x624B;&#x5DE5;&#x6307;&#x5B9A;&#x5404;&#x79CD;&#x89E3;&#x6790;&#x8BB0;&#x5F55;(A&#x8BB0;&#x5F55;&#x3001;MX&#x8BB0;&#x5F55;&#x3001;CNAME&#x8BB0;&#x5F55;&#x7B49;&#x7B49;&#xFF09;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x7B80;&#x5316;&#x4E86;&#x6D41;&#x7A0B;&#x4EE5;&#x53CA;&#x65B9;&#x4FBF;&#x4E86;&#x7528;&#x6237;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x57DF;&#x540D;&#x4E5F;&#x662F;&#x5728;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x6CE8;&#x518C;&#x548C;&#x7BA1;&#x7406;&#xFF0C;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x8D77;&#x6765;&#x5C31;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x4E86;&#x3002;&#x8FC1;&#x79FB;&#x4F1A;&#x628A;&#x76F8;&#x5173;&#x7684;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#x5168;&#x90E8;&#x8FC1;&#x79FB;&#x5230;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x5E76;&#x81EA;&#x52A8;&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x8BB0;&#x5F55;&#x7684;&#x6307;&#x5411;&#xFF0C;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x5C06;&#x57DF;&#x540D;DNS&#x4FEE;&#x6539;&#x4E3A;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x7684;DNS&#x5373;&#x53EF;&#x3002;</p>
+<h1 id="DNS&#x8F6C;&#x5411;"><a href="#DNS&#x8F6C;&#x5411;" class="headerlink" title="DNS&#x8F6C;&#x5411;"></a>DNS&#x8F6C;&#x5411;</h1><p>&#x76F4;&#x63A5;&#x4FEE;&#x6539;DNS&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x7528;&#x6237;&#x662F;&#x5728;&#x5176;&#x5B83;&#x6CE8;&#x518C;&#x5546;&#x6CE8;&#x518C;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x57DF;&#x540D;&#x7684;NS&#x8BB0;&#x5F55;&#x6307;&#x5411;&#x6211;&#x4EEC;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x662F;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x57DF;&#x540D;&#x7684;DNS&#x7684;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8054;&#x7CFB;&#x7528;&#x6237;&#x4FEE;&#x6539;DNS&#x662F;&#x5FC5;&#x987B;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x65F6;&#x5019;&#x7528;&#x6237;&#x4F1A;&#x7531;&#x4E8E;&#x5404;&#x79CD;&#x539F;&#x56E0;&#x6CA1;&#x80FD;&#x53CA;&#x65F6;&#x8054;&#x7CFB;&#x4E0A;&#x6216;&#x8005;&#x6CA1;&#x80FD;&#x53CA;&#x65F6;&#x4FEE;&#x6539;DNS&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x9759;&#x6001;&#x7AD9;&#x70B9;&#xFF0C;&#x8FD9;&#x6837;&#x5E76;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x4FDD;&#x5B58;&#x4E00;&#x4E9B;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x52A8;&#x6001;&#x7AD9;&#x70B9;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x65E7;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x7AD9;&#x70B9;&#x53D1;&#x751F;&#x4E86;&#x4FEE;&#x6539;&#xFF08;&#x6BD4;&#x5982;&#x65B0;&#x63D2;&#x5165;&#x4E00;&#x6761;&#x6570;&#x636E;&#xFF09;&#x7136;&#x540E;DNS&#x518D;&#x6307;&#x5411;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x7AD9;&#x70B9;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6570;&#x636E;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x8FD9;&#x65F6;&#x5019;&#x5904;&#x7406;&#x7C7B;&#x4F3C;&#x60C5;&#x51B5;&#x7684;&#x6700;&#x597D;&#x529E;&#x6CD5;&#x662F;DNS&#x8F6C;&#x5411;&#xFF0C;DNS&#x8F6C;&#x5411;&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x547D;&#x540D;&#x7684;&#x4E00;&#x4E2A;&#x540D;&#x8BCD;&#x3002;&#x7B80;&#x5355;&#x6765;&#x8BB2;&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x57DF;&#x540D;&#x7684;DNS&#x8BBE;&#x7F6E;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p><code>ns1.xxx.com</code><br><code>ns2.xxx.com</code></p>
+</blockquote>
+<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;ns1&#x548C;ns2&#x7684;DNS&#x670D;&#x52A1;&#x4E2D;&#x6DFB;&#x52A0;&#x5BF9;&#x5E94;&#x7684;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<blockquote>
+<p><code>example.com    14400    IN    A    1.1.1.1</code><br><code>example.com    14400    IN    MX    0 example.com</code></p>
+</blockquote>
+<p>&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x8BA9;&#x5176;&#x4E0D;&#x4FEE;&#x6539;&#x57DF;&#x540D;NS&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528;ns3&#x4EE5;&#x53CA;ns4&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x5728;&#x57DF;&#x540D;&#x7684;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;NS&#x8BB0;&#x5F55;&#x3002;</p>
+<blockquote>
+<p><code>example.com    14400    IN    A    1.1.1.1</code><br><code>example.com    14400    IN    MX    0 example.com</code><br><code>example.com    14400    IN    NS    ns3.xxx.com</code><br><code>example.com    14400    IN    NS    ns4.xxx.com</code></p>
+</blockquote>
+<p>&#x56E0;&#x4E3A;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x65F6;&#xFF0C;NS&#x8BB0;&#x5F55;&#x662F;&#x9012;&#x5F52;&#x5224;&#x65AD;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x7EB5;&#x7136;&#x4ECE;&#x57DF;&#x540D;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x6CE8;&#x518C;&#x4FE1;&#x606F;&#xFF09;&#x90A3;&#x67E5;&#x8BE2;&#x5230;&#x7684;NS&#x4E3A;ns1/ns2&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x65F6;&#xFF0C;&#x57DF;&#x540D;&#x4F7F;&#x7528;&#x7684;NS&#x4E3A;ns3/ns4&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmUdUm9URGPsYVTCLjfZtMs8U5YkEBhVHYFtGs5icjsQvu/image.png" alt=""><br>&#x622A;&#x56FE;&#x662F;&#x4E00;&#x4E2A;DNS&#x8F6C;&#x5411;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x89E3;&#x6790;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x6839;&#x57DF;&#x540D;&#x670D;&#x52A1;&#x5668;&#x83B7;&#x53D6;NS&#x8BB0;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x4ECE;.cn&#x7684;&#x89E3;&#x6790;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x57DF;&#x540D;&#x7684;&#x6CE8;&#x518C;NS&#xFF0C;&#x518D;&#x7531;&#x6CE8;&#x518C;NS&#x83B7;&#x5F97;&#x8F6C;&#x5411;&#x7684;NS&#xFF0C;&#x6700;&#x540E;&#x4ECE;&#x8F6C;&#x5411;NS&#x4E2D;&#x5F97;&#x5230;A&#x8BB0;&#x5F55;&#x3002;</p>
+<h1 id="IP&#x8FC1;&#x79FB;"><a href="#IP&#x8FC1;&#x79FB;" class="headerlink" title="IP&#x8FC1;&#x79FB;"></a>IP&#x8FC1;&#x79FB;</h1><p>&#x5982;&#x679C;&#x7528;&#x6237;&#x57DF;&#x540D;&#x4E0D;&#x518D;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x6CE8;&#x518C;&#xFF0C;&#x5E76;&#x4E14;&#x7528;&#x6237;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x7684;&#x6211;&#x4EEC;&#x7684;DNS&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;DNS&#x670D;&#x52A1;&#x901A;&#x8FC7;A&#x8BB0;&#x5F55;&#x7B49;&#x76F4;&#x63A5;&#x6307;&#x5411;&#x7AD9;&#x70B9;&#x7684;IP&#xFF0C;&#x8FD9;&#x53EF;&#x548B;&#x529E;&#xFF1F;</p>
+<p>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7565;&#x9EBB;&#x70E6;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#x558A;&#x7528;&#x6237;&#x6539;&#x89E3;&#x6790;&#x662F;&#x6700;&#x597D;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x8FC1;&#x79FB;IP&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x4E0D;&#x4FBF;&#x6210;&#x672C;&#x592A;&#x9AD8;&#x3002;&#x4EE5;SOFTLAYER&#x4E3A;&#x4F8B;&#xFF0C;&#x540C;&#x4E00;&#x673A;&#x623F;&#x7684;IP&#x53EF;&#x4EE5;route&#x5230;&#x4EFB;&#x610F;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x9700;&#x8981;&#x53D1;&#x8D77;ticket&#xFF0C;&#x7136;&#x540E;&#x7531;&#x4ED6;&#x4EEC;&#x7684;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6211;&#x8FD9;&#x8FB9;&#x53EF;&#x4EE5;&#x5728;&#x65B0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6DFB;&#x52A0;&#xFF08;&#x7ED1;&#x5B9A;&#xFF09;&#x540C;&#x6837;&#x7684;IP&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FC1;&#x79FB;&#x7684;&#x7AD9;&#x70B9;&#x8BBE;&#x7F6E;&#x5230;&#x8FD9;&#x4E2A;&#x76F8;&#x540C;&#x7684;IP&#x4E0A;&#xFF0C;&#x7B49;&#x670D;&#x52A1;&#x5546;IP route&#x64CD;&#x4F5C;&#x5B8C;&#x6BD5;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x65E0;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x670D;&#x52A1;&#x5546;&#x4E4B;&#x95F4;&#x5B8C;&#x6210;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x673A;&#x623F;&#x4E4B;&#x95F4;&#x8FC1;&#x79FB;IP&#xFF08;&#x4EE5;&#x524D;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x64CD;&#x4F5C;&#x7E41;&#x7410;&#xFF0C;&#x6240;&#x4EE5;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x4E0D;&#x63A8;&#x8350;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x3002;</p>
+<h1 id="&#x9644;&#x52A0;DNS"><a href="#&#x9644;&#x52A0;DNS" class="headerlink" title="&#x9644;&#x52A0;DNS"></a>&#x9644;&#x52A0;DNS</h1><p>&#x5BF9;&#x4E8E;DNS&#x8F6C;&#x5411;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x8FC1;&#x79FB;&#x5B8C;&#x6240;&#x6709;&#x7684;&#x7AD9;&#x70B9;&#xFF0C;&#x90A3;&#x4E48;&#x8FD8;&#x4FDD;&#x7559;&#x7740;DNS&#x670D;&#x52A1;&#x5668;&#x505A;DNS&#x8F6C;&#x5411;&#x529F;&#x80FD;&#xFF0C;&#x8FD9;&#x65E0;&#x7591;&#x662F;&#x5BF9;&#x8D44;&#x6E90;&#x7684;&#x6781;&#x5927;&#x6D6A;&#x8D39;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x5C06;ns1/ns2&#x9644;&#x52A0;&#x4E0A;ns3/ns4&#x7684;IP&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x8001;&#x65E7;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x5F7B;&#x5E95;&#x5730;&#x5173;&#x95ED;&#x4E86;&#x3002;</p>
+<p>&#x9644;&#x52A0;DNS IP&#x548C;&#x6CE8;&#x518C;DNS&#x7C7B;&#x4F3C;&#xFF08;&#x6709;&#x4E9B;&#x670D;&#x52A1;&#x5546;&#x652F;&#x6301;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#xFF09;&#xFF0C;&#x8FD9;&#x4E2A;&#x6CA1;&#x5565;&#x542B;&#x91CF;&#xFF0C;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x4E86;&#x3002;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x603B;&#x7684;&#x6765;&#x8BB2;&#x6211;&#x4EEC;&#x6709;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x89E3;&#x51B3;&#x548C;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x76F8;&#x5173;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x8FC7;&#x4E4B;&#x6240;&#x4EE5;&#x4EA7;&#x751F;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x662F;&#x56E0;&#x4E3A;&#x5F53;&#x521D;&#x7684;&#x67B6;&#x6784;&#x8BBE;&#x8BA1;&#x7684;&#x4E0D;&#x5408;&#x7406;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;&#x521D;&#x6211;&#x8BBE;&#x7F6E;&#x51E0;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x505A;DNS Cluster&#xFF0C;&#x90A3;&#x4E48;&#x81F3;&#x5C11;&#x5C31;&#x4E0D;&#x4F1A;&#x6D89;&#x53CA;&#x5230;&#x6539;DNS&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x96F6;DOWN&#x673A;&#x65F6;&#x95F4;&#x8FC1;&#x79FB;&#x7AD9;&#x70B9;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x77E5;&#x7528;&#x6237;&#x8FD8;&#x662F;&#x8981;&#x505A;&#x5230;&#x7684;&#xFF0C;&#x6BD5;&#x7ADF;&#x77E5;&#x60C5;&#x6743;&#x4E5F;&#x662F;&#x5E94;&#x6709;&#x7684;&#x6743;&#x5229;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8BF4;&#x5230;&#x5E95;&#x8FD8;&#x662F;&#x751F;&#x610F;&#x60E8;&#x6DE1;&#xFF0C;&#x5426;&#x5219;&#x6211;&#x5F04;100&#x53F0;DNS&#x670D;&#x52A1;&#x5668;&#x53C8;&#x5982;&#x4F55;&#x5462;&#xFF1F;&#x53EA;&#x6101;&#x6269;&#x5F20;&#x5F97;&#x4E0D;&#x591F;&#x5FEB;&#xFF0C;&#x54EA;&#x50CF;&#x73B0;&#x5728;&#x6101;&#x600E;&#x4E48;&#x9AD8;&#x6548;&#x5FEB;&#x901F;&#x7684;&#x6536;&#x7F29;&#x5462;&#xFF1F;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/2zvx4t" target="_blank" rel="noopener">&#x7AD9;&#x70B9;&#x8FC1;&#x79FB;&#x65F6;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x95EE;&#x9898;&#x7684;&#x4E00;&#x4E9B;&#x5904;&#x7406;&#x7ECF;&#x9A8C;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/blog/">blog</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/dns/">dns</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/ns/">ns</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/webmaster/">webmaster</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/omdvd-and/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">江郎才尽 &amp; 黔驴技穷</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/4i8rok/">
+                <span class="level-item">睡后收入与睡后支出</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

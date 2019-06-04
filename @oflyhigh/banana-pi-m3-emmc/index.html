@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Banana Pi M3扩展系统到整个eMMC存储空间 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x5927;&#x81F4;&#x601D;&#x8DEF;">
+        <span class="has-mr-6">1</span>
+        <span>&#x5927;&#x81F4;&#x601D;&#x8DEF;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x574F;&#x6389;&#x7684;raspi-config">
+        <span class="has-mr-6">2</span>
+        <span>&#x574F;&#x6389;&#x7684;raspi-config</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4FEE;&#x590D;raspi-config">
+        <span class="has-mr-6">3</span>
+        <span>&#x4FEE;&#x590D;raspi-config</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x603B;&#x7ED3;">
+        <span class="has-mr-6">4</span>
+        <span>&#x603B;&#x7ED3;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmPsdpyhM1FCQvPZtianMNmgxX6fYpp3NRz9QEzbR817dF/image.png" alt="Banana Pi M3扩展系统到整个eMMC存储空间">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-07-24T02:45:30.000Z">2018-07-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 860 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Banana Pi M3扩展系统到整个eMMC存储空间
+            
+        </h1>
+        <div class="content">
+            <p>&#x6628;&#x5929;&#x88C5;&#x5B8C;M3&#x7684;&#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x7A81;&#x7136;&#x53D1;&#x73B0;eMMC&#x5B58;&#x50A8;&#x7684;&#x7A7A;&#x95F4;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x5B8C;&#x5168;&#x5229;&#x7528;&#x3002;&#x4E4B;&#x6240;&#x4EE5;&#x8FD9;&#x6837;&#x7684;&#x539F;&#x56E0;&#x662F;&#xFF0C;&#x5236;&#x4F5C;&#x8005;&#x5728;&#x5236;&#x4F5C;&#x5B89;&#x88C5;&#x955C;&#x50CF;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x5236;&#x4F5C;&#x5F97;&#x5C3D;&#x53EF;&#x80FD;&#x5C0F;&#xFF0C;&#x8FD9;&#x6837;&#x65E0;&#x8BBA;&#x662F;&#x7F51;&#x7EDC;&#x4F20;&#x8F93;&#x8FD8;&#x662F;&#x5199;&#x5165;&#x5230;eMMC&#x5B58;&#x50A8;&#x65F6;&#x6548;&#x7387;&#x90FD;&#x4F1A;&#x66F4;&#x9AD8;&#x4E00;&#x4E9B;&#x3002;</p>
+<h1 id="&#x5927;&#x81F4;&#x601D;&#x8DEF;"><a href="#&#x5927;&#x81F4;&#x601D;&#x8DEF;" class="headerlink" title="&#x5927;&#x81F4;&#x601D;&#x8DEF;"></a>&#x5927;&#x81F4;&#x601D;&#x8DEF;</h1><p>&#x5728;&#x5199;&#x5165;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x518D;&#x5BF9;&#x7CFB;&#x7EDF;&#x7A7A;&#x95F4;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#x5373;&#x53EF;&#xFF0C;&#x5927;&#x81F4;&#x601D;&#x8DEF;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x5220;&#x9664;&#x539F;&#x6709;&#x5206;&#x533A;</li>
+<li>&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x8D77;&#x59CB;&#x6247;&#x9762;&#x521B;&#x5EFA;&#x65B0;&#x5206;&#x533A;</li>
+<li>&#x521B;&#x5EFA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x542F;&#x52A8;&#x811A;&#x672C;&#xFF0C;&#x4E0B;&#x6B21;&#x542F;&#x52A8;&#x8BD5;&#x5728;&#x6B64;&#x811A;&#x672C;&#x4E2D;&#x6267;&#x884C;resize2fs&#x5BF9;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x5E76;&#x5220;&#x9664;&#x6B64;&#x811A;&#x672C;</li>
+</ul>
+<p>&#x5F53;&#x521D;&#x5728;R1&#x4E0A;&#x6298;&#x817E;OPENWRT&#x7684;&#x65F6;&#x5019;&#x6CA1;&#x5C11;&#x6298;&#x817E;&#x8FD9;&#x4E8B;&#xFF0C;&#x5E76;&#x5199;&#x8FC7;&#x597D;&#x591A;&#x811A;&#x672C;&#xFF0C;&#x53EF;&#x60DC;&#x521A;&#x521A;&#x627E;&#x4E86;&#x4E00;&#x4E0B;&#x7535;&#x8111;&#xFF0C;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x4E5F;&#x627E;&#x4E0D;&#x5230;&#x4E86;&#x3002;&#x1F62D;</p>
+<h1 id="&#x574F;&#x6389;&#x7684;raspi-config"><a href="#&#x574F;&#x6389;&#x7684;raspi-config" class="headerlink" title="&#x574F;&#x6389;&#x7684;raspi-config"></a>&#x574F;&#x6389;&#x7684;<code>raspi-config</code></h1><p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x4E0D;&#x8FD9;&#x4E48;&#x590D;&#x6742;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x53EF;&#x662F;&#x4F7F;&#x7528;<code>raspi-config</code>&#x5DE5;&#x5177;&#x6765;&#x8C03;&#x6574;&#xFF0C;&#x5927;&#x81F4;&#x601D;&#x8DEF;&#x8FD8;&#x662F;&#x90A3;&#x4E2A;&#x601D;&#x8DEF;&#xFF0C;&#x4E0D;&#x8FC7;&#x4EBA;&#x5BB6;&#x811A;&#x672C;&#x505A;&#x7684;&#x975E;&#x5E38;&#x5B8C;&#x5584;&#x3002;</p>
+<blockquote>
+<p><code>sudo raspi-config</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmPsdpyhM1FCQvPZtianMNmgxX6fYpp3NRz9QEzbR817dF/image.png" alt=""></p>
+<p>&#x54A6;&#xFF0C;&#x600E;&#x4E48;&#x627E;&#x4E0D;&#x5230;&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x7A7A;&#x95F4;&#x7684;&#x9009;&#x9879;&#x4E86;&#xFF1F;</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x53BB;&#x4E00;&#x4E2A;BPI &#x5F00;&#x53D1;&#x8005;&#x7684;&#x7FA4;&#x91CC;&#xFF0C;&#x95EE;&#x5982;&#x4F55;&#x6269;&#x5C55;&#x7A7A;&#x95F4;&#xFF1F;&#x7ED3;&#x679C;&#x91CC;&#x8FB9;&#x7684;&#x4EBA;&#x7ED9;&#x7684;&#x53C2;&#x8003;&#x94FE;&#x63A5;&#x90FD;&#x662F;&#x6211;&#x4EEC;&#x4E00;&#x4F19;&#x4EBA;&#x73A9;&#x817B;&#x7684;&#xFF0C;&#x8981;&#x662F;&#x624B;&#x52A8;&#x8C03;&#xFF0C;&#x6211;&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x5806;&#x7684;&#x6587;&#x7AE0;&#x53C2;&#x8003;&#x554A;&#x3002;</p>
+<p>&#x95EE;<code>raspi-config</code>&#x91CC;&#x5BF9;&#x5E94;&#x7684;&#x9009;&#x9879;&#x54EA;&#x91CC;&#x53BB;&#x5566;&#xFF1F;&#x56DE;&#x7B54;&#x8BF4;&#x88AB;&#x5F00;&#x53D1;&#x8005;&#x62FF;&#x6389;&#x4E86;&#xFF01;&#x1F632;</p>
+<h1 id="&#x4FEE;&#x590D;raspi-config"><a href="#&#x4FEE;&#x590D;raspi-config" class="headerlink" title="&#x4FEE;&#x590D;raspi-config"></a>&#x4FEE;&#x590D;<code>raspi-config</code></h1><p>&#x770B;&#x6765;&#x53EA;&#x6709;&#x81EA;&#x5DF1;&#x52A8;&#x624B;&#x641E;&#x5B9A;&#x4E86;&#xFF0C;&#x4E8E;&#x662F;&#x770B;&#x4E86;&#x4E00;&#x4E0B;<code>raspi-config</code>&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53D1;&#x73B0;&#x91CC;&#x8FB9;&#x6269;&#x5C55;&#x5206;&#x533A;&#x7684;&#x4EE3;&#x7801;&#x8FD8;&#x5728;&#xFF0C;&#x53EA;&#x662F;&#x83DC;&#x5355;&#x4E2D;&#x62FF;&#x6389;&#x4E86;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x4E4B;&#x524D;&#x622A;&#x56FE;&#x7684;&#x83DC;&#x5355;&#xFF0C;&#x679C;&#x7136;&#x53D1;&#x73B0;6&#x3001;7&#x4E24;&#x9879;&#x3002;</p>
+<p>&#x518D;&#x770B;&#x4EE3;&#x7801;&#xFF0C;&#x53D1;&#x73B0;6&#x3001;7&#x4E24;&#x9879;&#x90FD;&#x662F;&#x786C;&#x4EF6;&#x76F8;&#x5173;&#x7684;&#x9879;&#x76EE;&#xFF0C;&#x4E0D;&#x540C;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x56E0;&#x4E3A;&#x63A5;&#x53E3;&#x7B49;&#x533A;&#x522B;&#xFF0C;&#x53EF;&#x80FD;&#x6CA1;&#x6CD5;&#x901A;&#x7528;&#xFF0C;&#x6240;&#x4EE5;<code>raspi-config</code>&#x7684;&#x4EE3;&#x7801;&#x9996;&#x5148;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x6811;&#x8393;&#x6D3E;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x6811;&#x8393;&#x6D3E;&#xFF0C;&#x5219;&#x5C4F;&#x853D;6&#x3001;7&#x4E24;&#x4E2A;&#x9879;&#x76EE;&#x3002;</p>
+<p>&#x77E5;&#x9053;&#x4E86;&#x8FD9;&#x4E2A;&#x539F;&#x56E0;&#x5C31;&#x597D;&#x529E;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4E07;&#x5206;&#x786E;&#x8BA4;&#x6269;&#x5C55;&#x7A7A;&#x95F4;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x6811;&#x8393;&#x6D3E;&#x548C;&#x9999;&#x8549;&#x6D3E;&#x90FD;&#x662F;&#x6CA1;&#x5565;&#x533A;&#x522B;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x76F4;&#x63A5;&#x5F3A;&#x529B;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#xFF0C;&#x8BA9;&#x5176;&#x663E;&#x793A;&#x5B8C;&#x6574;&#x83DC;&#x5355;<br><img src="https://cdn.steemitimages.com/DQmRsMd9dzKMSqDXKRnamSVCFzgiRYiJE54WHa6nT4zRNQu/image.png" alt=""></p>
+<blockquote>
+<p><code>sudo raspi-config</code></p>
+</blockquote>
+<p>&#x54C7;&#x5494;&#x5494;&#xFF0C;&#x4E22;&#x6389;&#x7684;&#x9009;&#x9879;&#x90FD;&#x56DE;&#x6765;&#x5566;<br><img src="https://cdn.steemitimages.com/DQmc1743wHB4xYA4in7MS4dnrPvLHo7mfiNMvKgWwudUJQv/image.png" alt=""></p>
+<p>&#x6269;&#x5C55;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x9009;&#x9879;<br><img src="https://cdn.steemitimages.com/DQmQb4xmy48CKBosGbxmZTiCASPD6EJPwDVddnya1Hfr6sd/image.png" alt=""></p>
+<p>&#x6267;&#x884C;&#x5E76;&#x91CD;&#x542F;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5BF9;&#x7167;&#x6269;&#x5C55;&#x524D;&#x540E;&#x7684;&#x5206;&#x533A;&#x5927;&#x5C0F;</p>
+<blockquote>
+<p><code>sudo fdisk -l</code></p>
+</blockquote>
+<p>&#x6269;&#x5C55;&#x524D;&#x622A;&#x56FE;<br><img src="https://cdn.steemitimages.com/DQmQTYEj69CX8jv6fP9etP6SYBJxEmJGgxymciwpvXWpQif/image.png" alt=""></p>
+<p>&#x6269;&#x5C55;&#x540E;&#x622A;&#x56FE;<br><img src="https://cdn.steemitimages.com/DQmXeqcgJHZZFgMmVoEm6TjQHeqwfHrWTpZkvEALKhQL9PH/image.png" alt=""></p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x56E0;&#x4E3A;&#x6811;&#x8393;&#x6D3E;&#x548C;&#x9999;&#x8549;&#x6D3E;&#x5728;&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x7A7A;&#x95F4;&#x7684;&#x64CD;&#x4F5C;&#x4E0A;&#x6CA1;&#x5565;&#x533A;&#x522B;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F3A;&#x529B;&#x4FEE;&#x6539;<code>raspi-config</code>&#x5DE5;&#x5177;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6062;&#x590D;&#x76F8;&#x5E94;&#x9009;&#x9879;&#x5E76;&#x6267;&#x884C;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x4E0D;&#x5ACC;&#x8D39;&#x52B2;&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x662F;&#x5F88;&#x9EBB;&#x70E6;&#x662F;&#x5566;&#xFF0C;&#x80FD;&#x5077;&#x61D2;&#x8FD8;&#x662F;&#x5077;&#x61D2;&#x597D;&#x5566;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/banana-pi-m3-emmc" target="_blank" rel="noopener">Banana Pi M3&#x6269;&#x5C55;&#x7CFB;&#x7EDF;&#x5230;&#x6574;&#x4E2A;eMMC&#x5B58;&#x50A8;&#x7A7A;&#x95F4;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/bananapi/">bananapi</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/iot/">iot</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/raspberrypi/">raspberrypi</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/raspbian/">raspbian</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/5yc6gn/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">夜、月、灯火</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/banana-pi-m3/">
+                <span class="level-item">重装了一下Banana Pi M3</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>如何查询 PowerDown Route - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#API-get-withdraw-routes">
+        <span class="has-mr-6">1</span>
+        <span>API get_withdraw_routes</span>
+        </a></li><li>
+        <a class="is-flex" href="#curl-&#x6D4B;&#x8BD5;">
+        <span class="has-mr-6">2</span>
+        <span>curl &#x6D4B;&#x8BD5;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x67E5;&#x8BE2;account-a&#x7684;PowerDown-Routes">
+        <span class="has-mr-6">2.1</span>
+        <span>&#x67E5;&#x8BE2;account_a&#x7684;PowerDown Routes</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x67E5;&#x8BE2;&#x5C06;account-a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown-Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;">
+        <span class="has-mr-6">2.2</span>
+        <span>&#x67E5;&#x8BE2;&#x5C06;account_a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#steem-python-&#x5E93;">
+        <span class="has-mr-6">3</span>
+        <span>steem python &#x5E93;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#get-withdraw-routes">
+        <span class="has-mr-6">3.1</span>
+        <span>get_withdraw_routes</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;">
+        <span class="has-mr-6">3.2</span>
+        <span>&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x7ED3;&#x679C;">
+        <span class="has-mr-6">3.3</span>
+        <span>&#x7ED3;&#x679C;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#&#x8BBE;&#x7F6E;-amp-&#x53D6;&#x6D88;PowerDown-Route">
+        <span class="has-mr-6">4</span>
+        <span>&#x8BBE;&#x7F6E;&amp; &#x53D6;&#x6D88;PowerDown Route</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x8BBE;&#x7F6E;">
+        <span class="has-mr-6">4.1</span>
+        <span>&#x8BBE;&#x7F6E;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x53D6;&#x6D88;">
+        <span class="has-mr-6">4.2</span>
+        <span>&#x53D6;&#x6D88;</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRRHJbz1yoett4WsQDkzKfST6Ex3PCj4bxw9N3PGfnRSk/image.png" alt="如何查询 PowerDown Route">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-08T11:40:51.000Z">2017-08-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 673 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                如何查询 PowerDown Route
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@oflyhigh/steemit-steem" target="_blank" rel="noopener">&#x4F60;&#x6216;&#x8BB8;&#x4E0D;&#x77E5;&#x9053;&#x7684;STEEMIT(STEEM)&#x4E00;&#x4E9B;&#x9690;&#x85CF;&#x529F;&#x80FD;</a></li>
+</ul>
+<p>&#x6211;&#x63D0;&#x53CA;&#x4E86;&#x4E00;&#x4E2A;&#x5927;&#x5BB6;&#x6216;&#x8BB8;&#x4E0D;&#x77E5;&#x9053;&#x7684;&#x529F;&#x80FD;<strong><em>PowerDown Route</em></strong>&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E00;&#x529F;&#x80FD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#x91CC;&#x7684;SP&#x63D0;&#x73B0;&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x63D0;&#x73B0;&#x7684;&#x65F6;&#x5019;PowerUp&#x5230;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#x3002;<br><img src="https://steemitimages.com/DQmRRHJbz1yoett4WsQDkzKfST6Ex3PCj4bxw9N3PGfnRSk/image.png" alt=""></p>
+<p>&#x5F53;&#x65F6;&#x4E3A;&#x4E86;&#x7406;&#x89E3;&#x8FD9;&#x4E2A;&#x4E8B;&#xFF0C;&#x7279;&#x610F;&#x62FF;&#x4E2A;&#x6D4B;&#x8BD5;&#x8D26;&#x6237;&#x6D4B;&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;<strong><em>&#x8BBE;&#x7F6E;&#x6D4B;&#x8BD5;&#x53F7;A&#x7684;PowerDown Route&#x4E3A;B</em></strong>, &#x7136;&#x540E;&#x6211;&#x4ECA;&#x5929;&#x7A81;&#x7136;&#x60F3;&#x770B;&#x4E00;&#x4E0B;&#x6211;&#x8BBE;&#x7F6E;&#x7684;<strong><em>B</em></strong>&#x662F;&#x54EA;&#x4E2A;&#x8D26;&#x6237;&#xFF0C;&#x7ED3;&#x679C;&#x5C34;&#x5C2C;&#x4E86;&#xFF0C;&#x5728;steemd.com &#x627E;&#x4E0D;&#x5230;&#x3002;</p>
+<p>steemd.com&#x4E0A;&#x53EA;&#x6709;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#xFF1A; <img src="https://steemitimages.com/DQmcGdYMdMaqBvv8YJUonp9Qfsyp4gYeAscJMN9K2MzHKUf/image.png" alt=""><br>&#x5982;&#x679C;&#x4F60;&#x4ECE;&#x672A;&#x8BBE;&#x7F6E;&#x8FC7;&#xFF0C;&#x90A3;&#x4E48;&#x5E94;&#x8BE5;&#x662F;&#xFF1A; <img src="https://steemitimages.com/DQmeJTSrXg6hCkFiymSXomEz8qsvQ58foVXPtcQZCRoBKK4/image.png" alt=""></p>
+<p>&#x597D;&#x5427;&#xFF0C;&#x6211;&#x77E5;&#x9053;&#x6211;&#x8BBE;&#x7F6E;&#x8FC7;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x8BBE;&#x7F6E;&#x54EA;&#x91CC;&#x53BB;&#x4E86;&#x5462;&#xFF1F;</p>
+<h1 id="API-get-withdraw-routes"><a href="#API-get-withdraw-routes" class="headerlink" title="API get_withdraw_routes"></a>API get_withdraw_routes</h1><p>&#x7814;&#x7A76;&#x534A;&#x5929;&#x53D1;&#x73B0;&#x6709;&#x4E00;&#x4E2A;API<br><code>vector&lt; withdraw_route &gt; get_withdraw_routes( string account, withdraw_route_type type = outgoing )const;</code></p>
+<p>&#x76F8;&#x5173;&#x7ED3;&#x6784;&#x4F53;&#x548C;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#xFF1A;<br><!--￼0--></p>
+<h1 id="curl-&#x6D4B;&#x8BD5;"><a href="#curl-&#x6D4B;&#x8BD5;" class="headerlink" title="curl &#x6D4B;&#x8BD5;"></a>curl &#x6D4B;&#x8BD5;</h1><p>&#x6709;&#x4E86;&#x4E0A;&#x8FF0;API&#x5B9A;&#x4E49;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;curl&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x4E86;</p>
+<h4 id="&#x67E5;&#x8BE2;account-a&#x7684;PowerDown-Routes"><a href="#&#x67E5;&#x8BE2;account-a&#x7684;PowerDown-Routes" class="headerlink" title="&#x67E5;&#x8BE2;account_a&#x7684;PowerDown Routes"></a>&#x67E5;&#x8BE2;account_a&#x7684;PowerDown Routes</h4><p><code>curl --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;get_withdraw_routes&quot;, &quot;params&quot;: [&quot;account_a&quot;, 1], &quot;id&quot;: 1}&apos; https://steemd.steemit.com</code></p>
+<p>&#x5F97;&#x51FA;&#x5982;&#x4E0B;&#x7ED3;&#x679C;&#xFF1A;<br><code>{&quot;id&quot;:1,&quot;result&quot;:[{&quot;from_account&quot;:&quot;account_a&quot;,&quot;to_account&quot;:&quot;account_b&quot;,&quot;percent&quot;:10000,&quot;auto_vest&quot;:false}]}</code></p>
+<h4 id="&#x67E5;&#x8BE2;&#x5C06;account-a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown-Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;"><a href="#&#x67E5;&#x8BE2;&#x5C06;account-a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown-Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;" class="headerlink" title="&#x67E5;&#x8BE2;&#x5C06;account_a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;"></a>&#x67E5;&#x8BE2;&#x5C06;account_a&#x8BBE;&#x7F6E;&#x4E3A;PowerDown Route&#x7684;&#x8D26;&#x6237;&#x5217;&#x8868;</h4><p><code>curl --data &apos;{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;get_withdraw_routes&quot;, &quot;params&quot;: [&quot;account_a&quot;, 0], &quot;id&quot;: 1}&apos; 
+https://steemd.steemit.com</code></p>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x4E3A;&#x7A7A;&#xFF1A;<br><code>{&quot;id&quot;:1,&quot;result&quot;:[]}</code></p>
+<h1 id="steem-python-&#x5E93;"><a href="#steem-python-&#x5E93;" class="headerlink" title="steem python &#x5E93;"></a>steem python &#x5E93;</h1><p>&#x76F4;&#x63A5;&#x4F7F;&#x7528;API&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x8D26;&#x6237;&#x7684;PowerDown Route(Incoming, outgoing)<br>&#x5F53;&#x7136;&#x4E5F;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5BF9;API&#x5C31;&#x884C;&#x5C01;&#x88C5;</p>
+<p>&#x5E86;&#x5E78;&#x7684;&#x662F;&#xFF0C; steem python &#x5E93;&#x5DF2;&#x7ECF;&#x5E2E;&#x6211;&#x4EEC;&#x505A;&#x597D;&#x4E86;&#x5C01;&#x88C5;</p>
+<h4 id="get-withdraw-routes"><a href="#get-withdraw-routes" class="headerlink" title="get_withdraw_routes"></a>get_withdraw_routes</h4><!--￼1-->
+<h4 id="&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><a href="#&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;" class="headerlink" title="&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"></a>&#x7B80;&#x5355;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</h4><!--￼2-->
+<h4 id="&#x7ED3;&#x679C;"><a href="#&#x7ED3;&#x679C;" class="headerlink" title="&#x7ED3;&#x679C;"></a>&#x7ED3;&#x679C;</h4><!--￼3-->
+<h1 id="&#x8BBE;&#x7F6E;-amp-&#x53D6;&#x6D88;PowerDown-Route"><a href="#&#x8BBE;&#x7F6E;-amp-&#x53D6;&#x6D88;PowerDown-Route" class="headerlink" title="&#x8BBE;&#x7F6E;&amp; &#x53D6;&#x6D88;PowerDown Route"></a>&#x8BBE;&#x7F6E;&amp; &#x53D6;&#x6D88;PowerDown Route</h1><h4 id="&#x8BBE;&#x7F6E;"><a href="#&#x8BBE;&#x7F6E;" class="headerlink" title="&#x8BBE;&#x7F6E;"></a>&#x8BBE;&#x7F6E;</h4><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;steem python &#x5E93;&#x63D0;&#x4F9B;&#x7684;API&#x8BBE;&#x7F6E;PowerDown Route<br><code>set_withdraw_vesting_route</code><br>&#x8BE6;&#x60C5;&#x89C1;&#x4EE3;&#x7801;&#x5185;&#x6CE8;&#x91CA;&#x5373;&#x53EF;<br>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;N&#x4E2A;Routes&#xFF0C;&#x5E76;&#x5BF9;&#x5176;&#x5206;&#x914D;&#x4E0D;&#x540C;&#x6BD4;&#x4F8B;&#xFF0C;<strong><em>&#x603B;&#x91CF;&#x4E0D;&#x8D85;&#x8FC7;100%</em></strong></p>
+<h4 id="&#x53D6;&#x6D88;"><a href="#&#x53D6;&#x6D88;" class="headerlink" title="&#x53D6;&#x6D88;"></a>&#x53D6;&#x6D88;</h4><p>&#x5982;&#x679C;&#x60F3;&#x53D6;&#x6D88;&#x5BF9;account_a&#x8BBE;&#x7F6E;&#x7684;PowerDown Route<br>&#x53EA;&#x9700;&#x5C06;account_a&#x7684;PowerDown Route &#x8BBE;&#x7F6E;&#x4E3A;account_b&#xFF0C;&#x5E76;&#x5C06;percent&#x8BBE;&#x7F6E;&#x4E3A;0 &#x5373;&#x53EF;</p>
+<hr>
+<p>&#x8BF4;&#x660E;&#xFF1A; &#x6587;&#x4E2D; account_a&#xFF0C; account_b &#x4EC5;&#x4E3A;&#x8BF4;&#x660E;&#x95EE;&#x9898;&#xFF0C;&#x975E;&#x5B9E;&#x9645;&#x8D26;&#x6237;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/powerdown-route" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x67E5;&#x8BE2; PowerDown Route</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/api/">api</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/route/">route</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/steem/">steem</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/72gkla/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">三人行，必有我师焉</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/reputation/">
+                <span class="level-item">关于声望分与Reputation数值对应关系的几幅图形</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

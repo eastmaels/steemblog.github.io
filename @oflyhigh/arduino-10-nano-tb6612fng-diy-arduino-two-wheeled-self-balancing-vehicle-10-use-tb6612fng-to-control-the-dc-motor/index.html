@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>用Arduino 制作双轮（玩具）自平衡车(10，使用NANO与TB6612FNG控制直流电机) / DIY Arduino Two wheeled self balancing vehicle (10: Use TB6612FNG to control the DC motor) - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x8FDE;&#x7EBF;&#x793A;&#x610F;">
+        <span class="has-mr-6">1</span>
+        <span>&#x8FDE;&#x7EBF;&#x793A;&#x610F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;">
+        <span class="has-mr-6">2</span>
+        <span>TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Arduino-&#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;">
+        <span class="has-mr-6">3</span>
+        <span>Arduino &#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;">
+        <span class="has-mr-6">4</span>
+        <span>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;">
+        <span class="has-mr-6">5</span>
+        <span>&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_201719ed8e3.jpg" alt="用Arduino 制作双轮（玩具）自平衡车(10，使用NANO与TB6612FNG控制直流电机) / DIY Arduino Two wheeled self balancing vehicle (10: Use TB6612FNG to control the DC motor)">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-01-03T09:49:48.000Z">2017-01-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1063 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                用Arduino 制作双轮（玩具）自平衡车(10，使用NANO与TB6612FNG控制直流电机) / DIY Arduino Two wheeled self balancing vehicle (10: Use TB6612FNG to control the DC motor)
+            
+        </h1>
+        <div class="content">
+            <p><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_201719ed8e3.jpg" alt="IMG_20170102_201719ed8e3.jpg"></p>
+<hr>
+<p>&#x7EE7;&#x7EED;&#x6211;&#x4EEC;&#x7684;&#x73A9;&#x5177;&#x81EA;&#x5E73;&#x8861;&#x8F66;DIY&#x4E4B;&#x65C5;&#x3002;<br>&#x8FD9;&#x8282;&#x597D;&#x591A;&#x5E72;&#x8D27;&#x554A;&#x3002;</p>
+<h1 id="&#x8FDE;&#x7EBF;&#x793A;&#x610F;"><a href="#&#x8FDE;&#x7EBF;&#x793A;&#x610F;" class="headerlink" title="&#x8FDE;&#x7EBF;&#x793A;&#x610F;"></a>&#x8FDE;&#x7EBF;&#x793A;&#x610F;</h1><p>&#x5728;&#x524D;&#x6587;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA1;&#x5212;&#x4F7F;&#x7528;NANO&#x4F5C;&#x4E3A;&#x5E73;&#x8861;&#x8F66;&#x7684;&#x4E3B;&#x63A7;&#xFF0C;&#x4F7F;TB6612FNG&#x63A7;&#x5236;&#x76F4;&#x6D41;&#x7535;&#x673A;&#x3002;<br>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x710A;&#x63A5;&#x5230;&#x677F;&#x5B50;&#x4E0A;&#x53D1;&#x751F;&#x6A21;&#x5757;&#x635F;&#x6BC1;&#x548C;&#x6216;&#x8005;&#x5176;&#x5B83;&#x60C5;&#x51B5;&#x5BFC;&#x81F4;&#x7684;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x7528;&#x9762;&#x5305;&#x677F;&#x4EE5;&#x53CA;&#x675C;&#x90A6;&#x7EBF;&#x8FDE;&#x63A5;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x3002;</p>
+<ul>
+<li><p>&#x516C;&#x5BF9;&#x516C;&#x675C;&#x90A6;&#x7EBF;<br><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_193430cf78e.jpg" alt="IMG_20170102_193430cf78e.jpg"></p>
+</li>
+<li><p>&#x636E;&#x8BF4;&#x53EB;T&#x5934;&#xFF0C;&#x7528;&#x4E8E;&#x822A;&#x6A21;&#x7535;&#x6C60;&#x63A5;&#x53E3;&#xFF0C;&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x94FE;&#x63A5;&#xFF0C;&#x6211;&#x7528;&#x675C;&#x90A6;&#x7EBF;&#x5C06;&#x5176;&#x63A5;&#x4E86;&#x8D77;&#x6765;<br><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_195802d8c7e.jpg" alt="IMG_20170102_195802d8c7e.jpg"></p>
+</li>
+<li><p>TB6612FNG&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x7684;&#x76F4;&#x63A5;&#x662F;&#x73B0;&#x6210;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x7701;&#x5374;&#x4E86;&#x710A;&#x63A5;&#x82AF;&#x7247;&#x548C;&#x5916;&#x56F4; &#x7535;&#x8DEF;&#x7684;&#x70E6;&#x607C;<br><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_193449298e4.jpg" alt="IMG_20170102_193449298e4.jpg"></p>
+</li>
+<li><p>&#x5C06;NANO&#x4E0E;TB6612FNG&#x8FDE;&#x63A5;&#x597D;&#xFF0C;<br><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_2006383af24.jpg" alt="IMG_20170102_2006383af24.jpg"></p>
+</li>
+</ul>
+<h1 id="TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;"><a href="#TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;" class="headerlink" title="TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;"></a>TB6612FNG&#x63A7;&#x5236;&#x65B9;&#x5F0F;</h1><p>TB6612FNG&#x662F;&#x4E1C;&#x829D;&#x534A;&#x5BFC;&#x4F53;&#x516C;&#x53F8;&#x751F;&#x4EA7;&#x7684;&#x4E00;&#x6B3E;&#x76F4;&#x6D41;&#x7535;&#x673A;&#x9A71;&#x52A8;&#x5668;&#x4EF6;&#xFF0C;&#x5B83;&#x5177;&#x6709;&#x5927;&#x7535;&#x6D41;MOSFET-H&#x6865;&#x7ED3;&#x6784;&#xFF0C;&#x53CC;&#x901A;&#x9053;&#x7535;&#x8DEF;&#x8F93;&#x51FA;&#xFF0C;&#x53EF;&#x540C;&#x65F6;&#x9A71;&#x52A8;2&#x4E2A;&#x7535;&#x673A;&#x3002;</p>
+<p>TB6612FNG&#x6BCF;&#x901A;&#x9053;&#x8F93;&#x51FA;&#x6700;&#x9AD8;1.2 A&#x7684;&#x8FDE;&#x7EED;&#x9A71;&#x52A8;&#x7535;&#x6D41;&#xFF0C;&#x542F;&#x52A8;&#x5CF0;&#x503C;&#x7535;&#x6D41;&#x8FBE;2A/3.2 A(&#x8FDE;&#x7EED;&#x8109;&#x51B2;/&#x5355;&#x8109;&#x51B2;); 4&#x79CD;&#x7535;&#x673A;&#x63A7;&#x5236;&#x6A21;&#x5F0F;&#xFF1A;&#x6B63;&#x8F6C;/&#x53CD;&#x8F6C;/&#x5236;&#x52A8;/&#x505C;&#x6B62;;PWM&#x652F;&#x6301;&#x9891;&#x7387;&#x9AD8;&#x8FBE;100 kHz;&#x5F85;&#x673A;&#x72B6;&#x6001;;&#x7247;&#x5185;&#x4F4E;&#x538B;&#x68C0;&#x6D4B;&#x7535;&#x8DEF;&#x4E0E;&#x70ED;&#x505C;&#x673A;&#x4FDD;&#x62A4;&#x7535;&#x8DEF;;&#x5DE5;&#x4F5C;&#x6E29;&#x5EA6;&#xFF1A;-20&#xFF5E;85&#x2103;;SSOP24&#x5C0F;&#x578B;&#x8D34;&#x7247;&#x5C01;&#x88C5;&#x3002;</p>
+<ul>
+<li>&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x63A7;&#x5236;&#x65B9;&#x5F0F;&#xFF0C;&#x5148;&#x6765;&#x4E00;&#x5F20;&#x5F15;&#x811A;&#x56FE;<br><img src="http://www.steemimg.com/images/2017/01/01/IMG_20170101_15523568a5e.jpg" alt="IMG_20170101_15523568a5e.jpg"></li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x6765;&#x4E00;&#x4E00;&#x8BF4;&#x660E;&#xFF1A;</p>
+<ul>
+<li>GND: &#x7535;&#x6E90;&#x5730;&#x4EE5;&#x53CA;&#x4FE1;&#x53F7;&#x5730;</li>
+<li>VM&#xFF1A; &#x7535;&#x673A;&#x7535;&#x6E90;&#x63A5;&#x53E3;</li>
+<li>VCC: &#x63A7;&#x5236;&#x7535;&#x6E90;&#x63A5;&#x53E3;&#xFF08;&#x63A5;&#x5355;&#x7247;&#x673A;&#x7684;5V&#xFF09;</li>
+<li>A01, A02&#xFF1A;&#x63A5;&#x7535;&#x673A;A</li>
+<li>B01, B02&#xFF1A;&#x63A5;&#x7535;&#x673A;B</li>
+<li>PWMA: &#x7535;&#x673A;A&#x8C03;&#x901F;&#x63A5;&#x53E3;</li>
+<li>AIN1,  AIN2: &#x7535;&#x673A;A&#x63A7;&#x5236;&#x4FE1;&#x53F7;</li>
+<li>PWMB: &#x7535;&#x673A;B&#x8C03;&#x901F;&#x63A5;&#x53E3;</li>
+<li>BIN1,  BIN2: &#x7535;&#x673A;B&#x63A7;&#x5236;&#x4FE1;&#x53F7;</li>
+<li>STBY &#x63A7;&#x5236;&#x4F7F;&#x80FD;&#x4FE1;&#x53F7;</li>
+</ul>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x7B80;&#x5355;&#x660E;&#x4E86;!</p>
+<ul>
+<li>&#x771F;&#x503C;&#x8868;<br><img width="450" height="288" alt="" src="http://image.c114.net/10090634.gif"></li>
+</ul>
+<h1 id="Arduino-&#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;"><a href="#Arduino-&#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;" class="headerlink" title="Arduino &#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;"></a>Arduino &#x6D4B;&#x8BD5;&#x7A0B;&#x5E8F;</h1><!--￼0-->
+<ul>
+<li>&#x7A0B;&#x5E8F;&#x53EA;&#x7B80;&#x5355;&#x6D4B;&#x8BD5;&#x4E86;&#x63A7;&#x5236;&#x4E00;&#x4E2A;&#x7535;&#x673A;&#x3002;</li>
+<li>&#x63A7;&#x5236;&#x53E6;&#x5916;&#x7684;&#x7535;&#x673A;&#x6216;&#x8005;&#x540C;&#x65F6;&#x63A7;&#x5236;&#x4E24;&#x4E2A;&#x7535;&#x673A;&#x7565;&#x4F5C;&#x4FEE;&#x6539;&#x5373;&#x53EF;&#x3002;</li>
+<li>&#x6CE8;&#x610F;&#x7A0B;&#x5E8F;&#x4E2D;&#x505C;&#x6B62;&#x4EE5;&#x53CA;&#x5239;&#x8F66;&#x7684;&#x533A;&#x522B; &#xFF08;&#x53EF;&#x4EE5;&#x5BF9;&#x7167;&#x771F;&#x503C;&#x8868;&#x7406;&#x89E3;&#xFF09;</li>
+</ul>
+<h1 id="&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;"><a href="#&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;" class="headerlink" title="&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;"></a>&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6548;&#x679C;</h1><ul>
+<li>&#x867D;&#x7136;&#x662F;&#x9759;&#x6001;&#x56FE;&#x7247;&#xFF0C;&#x4F60;&#x80FD;&#x770B;&#x5230;&#x5176;&#x4E2D;&#x7535;&#x673A;&#x5728;&#x65CB;&#x8F6C;&#x5417;&#xFF1F;<br><img src="http://www.steemimg.com/images/2017/01/02/IMG_20170102_201719ed8e3.jpg" alt="IMG_20170102_201719ed8e3.jpg"></li>
+</ul>
+<p>Steemit&#x4E0A;&#x6700;&#x4F1F;&#x5927;&#x7684;&#x9884;&#x8A00;&#x5BB6; @myfirst &#x66FE;&#x7ECF;&#x8BF4;&#x8FC7;&#xFF1A;&#x201C;&#x4F1A;&#x4E0D;&#x4F1A;&#x4E00;&#x4E0A;&#x7535;&#x5C31;&#x5192;&#x70DF;&#x70E7;&#x6BC1;&#x554A;&#xFF1F;&#x201D;<br>&#x8FD8;&#x597D;&#xFF0C;&#x8FD9;&#x6B21;&#x6CA1;&#x5192;&#x70DF;&#xFF1A;&#xFF09;</p>
+<h1 id="&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;"><a href="#&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;" class="headerlink" title="&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;"></a>&#x90E8;&#x5206;&#x76F8;&#x5173;&#x5E16;&#x5B50;&#x5217;&#x8868;</h1><ul>
+<li><a href="https://steemit.com/cn/@oflyhigh/arduino-l298n-diy-arduino-two-wheeled-self-balancing-vehicle-7" target="_blank" rel="noopener">&#x7528;Arduino &#x5236;&#x4F5C;&#x53CC;&#x8F6E;&#xFF08;&#x73A9;&#x5177;&#xFF09;&#x81EA;&#x5E73;&#x8861;&#x8F66;(&#x4E03;&#xFF0C;&#x8BF4;&#x4E00;&#x4E0B;&#x7535;&#x673A;&#x9A71;&#x52A8;&#x677F;L298N) / DIY Arduino Two wheeled self balancing vehicle (7)</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/arduino-diy-arduino-two-wheeled-self-balancing-vehicle-8-cutting-and-welding" target="_blank" rel="noopener">&#x7528;Arduino &#x5236;&#x4F5C;&#x53CC;&#x8F6E;&#xFF08;&#x73A9;&#x5177;&#xFF09;&#x81EA;&#x5E73;&#x8861;&#x8F66;(&#x516B;&#xFF0C;&#x5207;&#x5272;&#x4E0E;&#x710A;&#x63A5;) / DIY Arduino Two wheeled self balancing vehicle (8: Cutting and welding)</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/arduino-diy-arduino-two-wheeled-self-balancing-vehicle-9-continue-to-welding" target="_blank" rel="noopener">&#x7528;Arduino &#x5236;&#x4F5C;&#x53CC;&#x8F6E;&#xFF08;&#x73A9;&#x5177;&#xFF09;&#x81EA;&#x5E73;&#x8861;&#x8F66;(&#x4E5D;&#xFF0C;&#x710A;&#x63A5;&#x65E0;&#x6B62;&#x5883;) / DIY Arduino Two wheeled self balancing vehicle (9: continue to welding)</a></li>
+</ul>
+<p>&#x4E0D;&#x5168;&#x90E8;&#x5217;&#x51FA;&#x6765;&#x4E86;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x76F4;&#x63A5;&#x8FDB;&#x6211;blog&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x5566;<br>@oflyhigh</p>
+<p>&#x8C22;&#x8C22;&#x5927;&#x5BB6;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/arduino-10-nano-tb6612fng-diy-arduino-two-wheeled-self-balancing-vehicle-10-use-tb6612fng-to-control-the-dc-motor" target="_blank" rel="noopener">&#x7528;Arduino &#x5236;&#x4F5C;&#x53CC;&#x8F6E;&#xFF08;&#x73A9;&#x5177;&#xFF09;&#x81EA;&#x5E73;&#x8861;&#x8F66;(10&#xFF0C;&#x4F7F;&#x7528;NANO&#x4E0E;TB6612FNG&#x63A7;&#x5236;&#x76F4;&#x6D41;&#x7535;&#x673A;) / DIY Arduino Two wheeled self balancing vehicle (10: Use TB6612FNG to control the DC motor)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/arduino/">arduino</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/diy/">diy</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/life/">life</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/inadvertently-a-snow-but-did-not-disperse-smog/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">不经意的一场雪，但是没能驱散雾霾/Inadvertently a snow, but did not disperse smog</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/arduino-diy-arduino-two-wheeled-self-balancing-vehicle-9-continue-to-welding/">
+                <span class="level-item">用Arduino 制作双轮（玩具）自平衡车(九，焊接无止境) / DIY Arduino Two wheeled self balancing vehicle (9: continue to welding)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+
