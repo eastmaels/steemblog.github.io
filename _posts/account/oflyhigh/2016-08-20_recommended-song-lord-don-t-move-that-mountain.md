@@ -1,6 +1,6 @@
 
 ---
-title: '我的幸福何时来敲门？荐歌： 上帝不要挪走高山/Recommended song： Lord,don\'t move that mountain'
+title: '我的幸福何时来敲门？荐歌： 上帝不要挪走高山/Recommended song： Lord,don''t move that mountain'
 permlink: recommended-song-lord-don-t-move-that-mountain
 catalog: true
 toc_nav_num: true
@@ -68,4 +68,4 @@ You'd meet me at the altar of prayer
 
 - - -
 
-This page is synchronized from the post: [我的幸福何时来敲门？荐歌： 上帝不要挪走高山/Recommended song： Lord,don\'t move that mountain](https://steemit.com/@oflyhigh/recommended-song-lord-don-t-move-that-mountain)
+This page is synchronized from the post: [我的幸福何时来敲门？荐歌： 上帝不要挪走高山/Recommended song： Lord,don''t move that mountain](https://steemit.com/@oflyhigh/recommended-song-lord-don-t-move-that-mountain)

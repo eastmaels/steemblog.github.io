@@ -1,6 +1,6 @@
 
 ---
-title: '讲一讲我用过的电脑(三)/Talk about the computers which I\'ve used(3)'
+title: '讲一讲我用过的电脑(三)/Talk about the computers which I''ve used(3)'
 permlink: talk-about-the-computers-which-i-ve-used-3
 catalog: true
 toc_nav_num: true
@@ -78,4 +78,4 @@ X61拿回来之后，用着还好，就是偶尔卡顿一下，各种查找原�
 
 - - -
 
-This page is synchronized from the post: [讲一讲我用过的电脑(三)/Talk about the computers which I\'ve used(3)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-3)
+This page is synchronized from the post: [讲一讲我用过的电脑(三)/Talk about the computers which I''ve used(3)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-3)

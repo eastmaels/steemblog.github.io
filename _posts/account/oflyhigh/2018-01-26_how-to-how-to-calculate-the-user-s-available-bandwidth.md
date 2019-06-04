@@ -1,6 +1,6 @@
 
 ---
-title: 'How to: 如何计算用户可用带宽 / How to calculate the user\'s available bandwidth?'
+title: 'How to: 如何计算用户可用带宽 / How to calculate the user''s available bandwidth?'
 permlink: how-to-how-to-calculate-the-user-s-available-bandwidth
 catalog: true
 toc_nav_num: true
@@ -106,4 +106,4 @@ Average Bandwidth 以***7天为时间窗***
 
 - - -
 
-This page is synchronized from the post: [How to: 如何计算用户可用带宽 / How to calculate the user\'s available bandwidth?](https://steemit.com/@oflyhigh/how-to-how-to-calculate-the-user-s-available-bandwidth)
+This page is synchronized from the post: [How to: 如何计算用户可用带宽 / How to calculate the user''s available bandwidth?](https://steemit.com/@oflyhigh/how-to-how-to-calculate-the-user-s-available-bandwidth)

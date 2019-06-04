@@ -1,6 +1,6 @@
 
 ---
-title: '灵异事件：托梦(中) / Paranormal——The ghost in one\'s dream: Part Two'
+title: '灵异事件：托梦(中) / Paranormal——The ghost in one''s dream: Part Two'
 permlink: --paranormalthe-ghost-in-ones-dream-part-two
 catalog: true
 toc_nav_num: true
@@ -64,4 +64,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [灵异事件：托梦(中) / Paranormal——The ghost in one\'s dream: Part Two](https://steemit.com/@oflyhigh/--paranormalthe-ghost-in-ones-dream-part-two)
+This page is synchronized from the post: [灵异事件：托梦(中) / Paranormal——The ghost in one''s dream: Part Two](https://steemit.com/@oflyhigh/--paranormalthe-ghost-in-ones-dream-part-two)

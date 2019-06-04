@@ -1,6 +1,6 @@
 
 ---
-title: '注意： 请不要登陆 openledger.info\\ openledger.io 等站点！！！'
+title: '注意： 请不要登陆 openledger.info\ openledger.io 等站点！！！'
 permlink: openledger-info-openledger-io
 catalog: true
 toc_nav_num: true
@@ -60,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [注意： 请不要登陆 openledger.info\\ openledger.io 等站点！！！](https://steemit.com/@oflyhigh/openledger-info-openledger-io)
+This page is synchronized from the post: [注意： 请不要登陆 openledger.info\ openledger.io 等站点！！！](https://steemit.com/@oflyhigh/openledger-info-openledger-io)

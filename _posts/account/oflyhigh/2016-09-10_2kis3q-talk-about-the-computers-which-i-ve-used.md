@@ -1,6 +1,6 @@
 
 ---
-title: '讲一讲我用过的电脑(二)/Talk about the computers which I\'ve used'
+title: '讲一讲我用过的电脑(二)/Talk about the computers which I''ve used'
 permlink: 2kis3q-talk-about-the-computers-which-i-ve-used
 catalog: true
 toc_nav_num: true
@@ -67,4 +67,4 @@ T42之后，IBM的笔记本事业部被联想收购，以后的笔记本虽然�
 
 - - -
 
-This page is synchronized from the post: [讲一讲我用过的电脑(二)/Talk about the computers which I\'ve used](https://steemit.com/@oflyhigh/2kis3q-talk-about-the-computers-which-i-ve-used)
+This page is synchronized from the post: [讲一讲我用过的电脑(二)/Talk about the computers which I''ve used](https://steemit.com/@oflyhigh/2kis3q-talk-about-the-computers-which-i-ve-used)

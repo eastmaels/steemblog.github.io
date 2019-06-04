@@ -1,6 +1,6 @@
 
 ---
-title: '讲一讲我用过的电脑(五-全文完)/Talk about the computers which I\'ve used(5)'
+title: '讲一讲我用过的电脑(五-全文完)/Talk about the computers which I''ve used(5)'
 permlink: talk-about-the-computers-which-i-ve-used-5
 catalog: true
 toc_nav_num: true
@@ -97,4 +97,4 @@ Thinkpad的质量说实话，真的不如从前了。
 
 - - -
 
-This page is synchronized from the post: [讲一讲我用过的电脑(五-全文完)/Talk about the computers which I\'ve used(5)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-5)
+This page is synchronized from the post: [讲一讲我用过的电脑(五-全文完)/Talk about the computers which I''ve used(5)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-5)

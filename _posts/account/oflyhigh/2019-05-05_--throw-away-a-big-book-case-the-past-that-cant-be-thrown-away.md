@@ -1,6 +1,6 @@
 
 ---
-title: '扔掉个大书箱，扔不掉的过往 / Throw away a big book case, the past that can\'t be thrown away'
+title: '扔掉个大书箱，扔不掉的过往 / Throw away a big book case, the past that can''t be thrown away'
 permlink: --throw-away-a-big-book-case-the-past-that-cant-be-thrown-away
 catalog: true
 toc_nav_num: true
@@ -63,4 +63,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [扔掉个大书箱，扔不掉的过往 / Throw away a big book case, the past that can\'t be thrown away](https://steemit.com/@oflyhigh/--throw-away-a-big-book-case-the-past-that-cant-be-thrown-away)
+This page is synchronized from the post: [扔掉个大书箱，扔不掉的过往 / Throw away a big book case, the past that can''t be thrown away](https://steemit.com/@oflyhigh/--throw-away-a-big-book-case-the-past-that-cant-be-thrown-away)

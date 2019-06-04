@@ -1,6 +1,6 @@
 
 ---
-title: 'Calculate your future wealth with Arduino, let\'s keep up with @dan !'
+title: 'Calculate your future wealth with Arduino, let''s keep up with @dan !'
 permlink: calculate-your-future-wealth-with-arduino-let-s-keep-up-with-dan
 catalog: true
 toc_nav_num: true
@@ -134,4 +134,4 @@ Could you give this post upvote, so I can earn more to keep up with @dan ? :)
 
 - - -
 
-This page is synchronized from the post: [Calculate your future wealth with Arduino, let\'s keep up with @dan !](https://steemit.com/@oflyhigh/calculate-your-future-wealth-with-arduino-let-s-keep-up-with-dan)
+This page is synchronized from the post: [Calculate your future wealth with Arduino, let''s keep up with @dan !](https://steemit.com/@oflyhigh/calculate-your-future-wealth-with-arduino-let-s-keep-up-with-dan)

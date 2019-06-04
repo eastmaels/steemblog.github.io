@@ -1,6 +1,6 @@
 
 ---
-title: '一起来玩内部市场吧！/ Let\'s play the internal market'
+title: '一起来玩内部市场吧！/ Let''s play the internal market'
 permlink: let-s-play-the-internal-market
 catalog: true
 toc_nav_num: true
@@ -96,4 +96,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [一起来玩内部市场吧！/ Let\'s play the internal market](https://steemit.com/@oflyhigh/let-s-play-the-internal-market)
+This page is synchronized from the post: [一起来玩内部市场吧！/ Let''s play the internal market](https://steemit.com/@oflyhigh/let-s-play-the-internal-market)

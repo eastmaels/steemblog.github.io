@@ -1,6 +1,6 @@
 
 ---
-title: '🎇Wow，STEEM POWER doubled every 100 days! What\'s wrong?'
+title: '🎇Wow，STEEM POWER doubled every 100 days! What''s wrong?'
 permlink: wow-steem-power-doubled-every-100-days-what-s-wrong
 catalog: true
 toc_nav_num: true
@@ -87,4 +87,4 @@ Maybe the programmer of steem entered the wrong number?😀
 
 - - -
 
-This page is synchronized from the post: [🎇Wow，STEEM POWER doubled every 100 days! What\'s wrong?](https://steemit.com/@oflyhigh/wow-steem-power-doubled-every-100-days-what-s-wrong)
+This page is synchronized from the post: [🎇Wow，STEEM POWER doubled every 100 days! What''s wrong?](https://steemit.com/@oflyhigh/wow-steem-power-doubled-every-100-days-what-s-wrong)

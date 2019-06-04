@@ -1,6 +1,6 @@
 
 ---
-title: '别想太多，来听歌吧 /  Don\'t think too much, Let\'s listen to the music!'
+title: '别想太多，来听歌吧 /  Don''t think too much, Let''s listen to the music!'
 permlink: don-t-think-too-much-let-s-listen-to-the-music
 catalog: true
 toc_nav_num: true
@@ -54,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [别想太多，来听歌吧 /  Don\'t think too much, Let\'s listen to the music!](https://steemit.com/@oflyhigh/don-t-think-too-much-let-s-listen-to-the-music)
+This page is synchronized from the post: [别想太多，来听歌吧 /  Don''t think too much, Let''s listen to the music!](https://steemit.com/@oflyhigh/don-t-think-too-much-let-s-listen-to-the-music)

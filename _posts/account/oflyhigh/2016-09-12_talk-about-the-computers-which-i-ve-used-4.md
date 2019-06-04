@@ -1,6 +1,6 @@
 
 ---
-title: '讲一讲我用过的电脑(四)/Talk about the computers which I\'ve used(4)'
+title: '讲一讲我用过的电脑(四)/Talk about the computers which I''ve used(4)'
 permlink: talk-about-the-computers-which-i-ve-used-4
 catalog: true
 toc_nav_num: true
@@ -90,4 +90,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [讲一讲我用过的电脑(四)/Talk about the computers which I\'ve used(4)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-4)
+This page is synchronized from the post: [讲一讲我用过的电脑(四)/Talk about the computers which I''ve used(4)](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used-4)

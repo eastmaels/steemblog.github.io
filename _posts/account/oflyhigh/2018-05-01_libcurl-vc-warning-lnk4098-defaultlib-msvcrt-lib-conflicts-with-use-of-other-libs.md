@@ -1,6 +1,6 @@
 
 ---
-title: '解决libcurl VC工程下： "warning LNK4098: defaultlib \'msvcrt.lib\' conflicts with use of other libs;" 错误'
+title: '解决libcurl VC工程下： "warning LNK4098: defaultlib ''msvcrt.lib'' conflicts with use of other libs;" 错误'
 permlink: libcurl-vc-warning-lnk4098-defaultlib-msvcrt-lib-conflicts-with-use-of-other-libs
 catalog: true
 toc_nav_num: true
@@ -86,4 +86,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [解决libcurl VC工程下： "warning LNK4098: defaultlib \'msvcrt.lib\' conflicts with use of other libs;" 错误](https://steemit.com/@oflyhigh/libcurl-vc-warning-lnk4098-defaultlib-msvcrt-lib-conflicts-with-use-of-other-libs)
+This page is synchronized from the post: [解决libcurl VC工程下： "warning LNK4098: defaultlib ''msvcrt.lib'' conflicts with use of other libs;" 错误](https://steemit.com/@oflyhigh/libcurl-vc-warning-lnk4098-defaultlib-msvcrt-lib-conflicts-with-use-of-other-libs)

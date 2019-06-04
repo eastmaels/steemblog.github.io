@@ -1,6 +1,6 @@
 
 ---
-title: '[ 中文区] 让我们彼此了解，回复获得点赞 / #CN Let\'s get to know each other，get upvote (about 0.2 SBD) for qualified reply'
+title: '[ 中文区] 让我们彼此了解，回复获得点赞 / #CN Let''s get to know each other，get upvote (about 0.2 SBD) for qualified reply'
 permlink: cn-let-s-get-to-know-each-other-get-upvote-about-0-2-sbd-for-qualified-reply
 catalog: true
 toc_nav_num: true
@@ -85,4 +85,4 @@ https://steemit.com/created/laodr-teahouse
 
 - - -
 
-This page is synchronized from the post: [[ 中文区] 让我们彼此了解，回复获得点赞 / #CN Let\'s get to know each other，get upvote (about 0.2 SBD) for qualified reply](https://steemit.com/@oflyhigh/cn-let-s-get-to-know-each-other-get-upvote-about-0-2-sbd-for-qualified-reply)
+This page is synchronized from the post: [[ 中文区] 让我们彼此了解，回复获得点赞 / #CN Let''s get to know each other，get upvote (about 0.2 SBD) for qualified reply](https://steemit.com/@oflyhigh/cn-let-s-get-to-know-each-other-get-upvote-about-0-2-sbd-for-qualified-reply)

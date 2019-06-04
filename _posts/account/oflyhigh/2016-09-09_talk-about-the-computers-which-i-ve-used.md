@@ -1,6 +1,6 @@
 
 ---
-title: '讲一讲我用过的电脑(一)/Talk about the computers which I\'ve used'
+title: '讲一讲我用过的电脑(一)/Talk about the computers which I''ve used'
 permlink: talk-about-the-computers-which-i-ve-used
 catalog: true
 toc_nav_num: true
@@ -70,4 +70,4 @@ WIN2000简洁高效，最喜欢啦。
 
 - - -
 
-This page is synchronized from the post: [讲一讲我用过的电脑(一)/Talk about the computers which I\'ve used](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used)
+This page is synchronized from the post: [讲一讲我用过的电脑(一)/Talk about the computers which I''ve used](https://steemit.com/@oflyhigh/talk-about-the-computers-which-i-ve-used)
