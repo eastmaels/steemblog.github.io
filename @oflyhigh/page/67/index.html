@@ -230,6 +230,88 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/php-microtime-and/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：PHP的microtime()函数 &amp; 浮点数显示精度">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-19T02:29:18.000Z">2018-11-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/php/">php</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 653 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/php-microtime-and/">每天进步一点点：PHP的microtime()函数 &amp; 浮点数显示精度</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x6628;&#x5929;&#x5E16;&#x5B50;<a href="https://steemit.com/php/@oflyhigh/cwuq3-php" target="_blank" rel="noopener">&#x300A;PHP &#x95EE;&#x53F7;&#x8868;&#x8FBE;&#x5F0F;&#x6548;&#x7387;&#x95EE;&#x9898;&#x300B;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4F7F;&#x7528;<code>microtime(true)</code>&#x6765;&#x83B7;&#x5F97;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x7684;&#x8D77;&#x59CB;&#x70B9;&#x548C;&#x7EC8;&#x6B62;&#x70B9;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x54B3;&#x54B3;&#xFF0C;&#x6211;&#x4E00;&#x76F4;&#x5BF9;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x547D;&#x540D;&#x633A;&#x7EA0;&#x7ED3;&#x7684;&#xFF0C;&#x660E;&#x660E;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x79D2;&#xFF0C;&#x975E;&#x8981;&#x5728;&#x540D;&#x5B57;&#x5E26;&#x4E2A;micro&#xFF0C;&#x603B;&#x8BA9;&#x6211;&#x4EE5;&#x4E3A;&#x8FD4;&#x6CAA;&#x7684;&#x662F;&#x5FAE;&#x79D2;&#xFF08;microseconds&#xFF09;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#x662F;<strong><em>&#x8FD4;&#x56DE;&#x5E26;&#x5FAE;&#x79D2;&#x7684;&#x65F6;&#x95F4;</em></strong>&#xFF0C;PHP&#x4E2D;&#x58F0;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>mixed microtime ([ bool $get_as_float = FALSE ] )</code></p>
+</blockquote>
+<p>&#x5173;&#x4E8E;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x6587;&#x6863;&#x4E2D;&#x662F;&#x8FD9;&#x6837;&#x63CF;&#x8FF0;&#x7684;</p>
+<blockquote>
+<p>By default, microtime() returns a string in the form &#x201C;msec sec&#x201D;, where sec is the number of seconds since the Unix epoch (0:00:00 January 1,1970 GMT), and msec measures microseconds that have elapsed since sec and is also expressed in seconds.</p>
+<p>If get_as_float is set to TRUE, then microtime() returns a float, which represents the current time in seconds since the Unix epoch accurate to the nearest microsecond. </p>
+</blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x52A0;&#x53C2;&#x6570;<strong><em>TRUE</em></strong>&#xFF0C;&#x90A3;&#x4E48;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x201D;msec sec&#x201D;&#x8FD9;&#x6837;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5176;&#x4E2D;msec&#x4E5F;&#x5C31;&#x662F;&#x7528;&#x79D2;&#x8868;&#x793A;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x662F;&#x5C0F;&#x6570;&#x5F62;&#x5F0F;&#x7684;&#x79D2;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x52A0;&#x4E0A;&#x53C2;&#x6570;<strong><em>TRUE</em></strong>&#xFF0C;&#x5C31;&#x66F4;&#x597D;&#x7406;&#x89E3;&#x55BD;&#xFF0C;&#x5C31;&#x662F;&#x5E26;&#x5C0F;&#x6570;&#x7684;&#x79D2;&#x55BD;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x5199;&#x6BB5;&#x7B80;&#x5355;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x4E00;&#x4E0B;<br><!--￼0--></p>
+<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmPfyVPygjLHEb8fXTCrxLZaxrAmeXbK3kX2YwGv3hAv6i/image.png" alt=""></p>
+</blockquote>
+<p>&#x53EF;&#x662F;&#x4E3A;&#x4F55;&#x6D6E;&#x70B9;&#x6570;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#x7684;&#x79D2;&#xFF0C;&#x5C0F;&#x6570;&#x70B9;&#x540E;&#x8FB9;&#x53EA;&#x6709;&#x4E24;&#x4F4D;&#x554A;&#xFF1F;&#x8FD9;&#x8FD8;&#x600E;&#x4E48;&#x7CBE;&#x786E;&#x5230;&#x5FAE;&#x79D2;&#x5566;&#xFF1F;&#x5176;&#x5B9E;&#x8FD9;&#x53EA;&#x662F;&#x7531;&#x4E8E;&#x6D6E;&#x70B9;&#x6570;&#x663E;&#x793A;&#x7CBE;&#x5EA6;&#x8BBE;&#x5B9A;&#x5BFC;&#x81F4;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x5F71;&#x54CD;&#x8FD0;&#x7B97;(&#x6BD4;&#x5982;&#x6C42;&#x65F6;&#x95F4;&#x5DEE;&#x503C;&#xFF09;&#x7CBE;&#x5EA6;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x60F3;&#x8BA9;&#x5176;&#x66F4;&#x9AD8;&#x7CBE;&#x5EA6;&#x7684;&#x663E;&#x793A;&#xFF0C;&#x53EF;&#x4EE5;&#x8BD5;&#x8BD5;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;<br><!--￼1--></p>
+<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmVPPoeFEg9689Lqzi2hpDNJgSMetTMfdBp3BFw2QN74iD/image.png" alt=""></p>
+</blockquote>
+<p>&#x53EF;&#x89C1;&#x4E4B;&#x524D;&#x9ED8;&#x8BA4;&#x7684;&#x6D6E;&#x70B9;&#x6570;&#x663E;&#x793A;&#x7CBE;&#x5EA6;&#x4E3A;12&#x4F4D;&#xFF0C;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E3A;16&#x4F4D;&#x540E;&#xFF0C;&#x5C31;&#x663E;&#x793A;&#x5230;&#x5C0F;&#x6570;&#x70B9;&#x540E;6&#x4F4D;&#x5566;&#x3002;</p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x5C31;&#x5570;&#x55E6;&#x8FD9;&#x4E9B;&#x5566;&#xFF0C;&#x5176;&#x5B9E;&#x6211;&#x672C;&#x6765;&#x60F3;&#x591A;&#x5570;&#x55E6;&#x4E00;&#x4E9B;&#x7684;&#xFF0C;&#x53EF;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x5D29;&#x6E83;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x6211;&#x91CD;&#x65B0;&#x6572;&#x7684;&#xFF0C;&#x8FD9;&#x5FC3;&#x60C5;&#x554A;&#xFF0C;&#x53EF;&#x9178;&#x723D;&#x4E86;&#x3002;</p>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/php-microtime-and" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;PHP&#x7684;microtime()&#x51FD;&#x6570; &amp; &#x6D6E;&#x70B9;&#x6570;&#x663E;&#x793A;&#x7CBE;&#x5EA6;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/3we1jq/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmc55WwmVaLf4kn9kbJnSW4YCN2mPqLbDrNVbE3RSih7b4/image.png" alt="朋友要常联系">
         </a>
@@ -578,66 +660,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/31pjq7/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmaD1MiA5BR8xmrFevqaAKGc8jb6TcieFm4qP2qSGBrwu8/image.png" alt="一夜之间，一地落叶">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-11-16T01:15:51.000Z">2018-11-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/photography/">photography</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 166 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/31pjq7/">一夜之间，一地落叶</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmaD1MiA5BR8xmrFevqaAKGc8jb6TcieFm4qP2qSGBrwu8/image.png" alt=""></p>
-<p>&#x4E0D;&#x53D1;&#x7262;&#x9A9A;&#xFF0C;&#x53D1;&#x6811;&#x53F6;&#x1F343;&#x3002;&#x6211;&#x786E;&#x4FE1;&#x6628;&#x5929;&#x4E4B;&#x524D;&#xFF0C;&#x5730;&#x4E0A;&#x6CA1;&#x6709;&#x8FD9;&#x79CD;&#x53F6;&#x5B50;&#xFF0C;&#x4EFF;&#x4F5B;&#x4E00;&#x591C;&#x4E4B;&#x95F4;&#xFF0C;&#x53F6;&#x5B50;&#x7EA6;&#x5B9A;&#x597D;&#x7684;&#x4E00;&#x6837;&#x5168;&#x843D;&#x4E86;&#x4E0B;&#x6765;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmXcZL9SBTovxKSDNV6Srs4efTgLcUs51ahPRHvidDuVWs/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmcRpLTheBgB8SUfBSK6kMMwfqGzejohsbVkRnDGpxZ836/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmWFSSZeNTQQNEbeP1hv9H1kqE8yN2z2YERfnQGzSvujan/image.png" alt=""></p>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/31pjq7" target="_blank" rel="noopener">&#x4E00;&#x591C;&#x4E4B;&#x95F4;&#xFF0C;&#x4E00;&#x5730;&#x843D;&#x53F6;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -662,7 +684,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/256/">256</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/258/">258</a></li>
             
         </ul>
     </nav>
