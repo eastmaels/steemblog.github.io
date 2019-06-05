@@ -10,11 +10,12 @@ categories:
 - aaa
 tags:
 - aaa
-- sct
+- cn
 - ocd-resteem
 - sct-cn
 - cn-movie
-thumbnail: https://i.loli.net/2019/06/04/5cf66c0a9726674242.png
+- partiko
+thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf66c0a9726674242.png
 sidebar:
     right:
         sticky: true
@@ -25,15 +26,15 @@ widgets:
 ---
 
 
-[![2019-06-04 21.01.55.png](https://i.loli.net/2019/06/04/5cf66c0a9726674242.png)](https://i.loli.net/2019/06/04/5cf66c0a9726674242.png)
+[![](https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf66c0a9726674242.png)](https://i.loli.net/2019/06/04/5cf66c0a9726674242.png)
 
-There are some theoretical evidence prove that yellow is more likely to delivery positive emotions, so objects in yellow are more likely to be accepted by people. For example, we prefer to keep company with orange cats, Shiba Inus as well as Corgis in yellow. When it comes to animated characters, Minions and SpongeBob are world-famous among these years. For me, the **Pokemon Pikachu** is my favorite animated character, no other options. 
+There are some theoretical evidence prove that yellow is more likely to delivery positive emotions, so objects in yellow are more likely to be accepted by people. For example, we prefer to keep company with orange cats, Shiba Inus as well as Corgis in yellow. When it comes to animated characters, Minions and SpongeBob are world-famous among these years. For me, the **Pokemon Pikachu** is my favorite animated character, no other options.
 
-The film ***Pokémon Detective Pikachu*** that was released in May 2019, has been hotly discussed online since the trailer was released. Pikachu is known for his yellow skin, red cheeks and boyish voice, whereas he's actually has furs in the movie version... What's more, this character is dubbed by *Ryan Reynolds*, who provided excellent performance in ***Deadpool***.
+The film **_Pokémon Detective Pikachu_** that was released in May 2019, has been hotly discussed online since the trailer was released. Pikachu is known for his yellow skin, red cheeks and boyish voice, whereas he's actually has furs in the movie version... What's more, this character is dubbed by _Ryan Reynolds_, who provided excellent performance in **_Deadpool_**.
 
 This movie version of Pokemon is not a simple reproduction of the animated version, nor a crude attempt to awake the audiences' memories or sell feelings cheaply. In this film, Pikachu is no longer a pure cute image, but has more human-like personalities and emotions. After watching this movie, I felt that Pokemon are not only cute pets, but also the companions and comrades with human beings.
 
-If you have become numb in your daily life, *Pokémon Detective Pikachu* is a great choice for you to bring back the happiness. **Let's PIKA PIKA PIKACHU~**
+If you have become numb in your daily life, _Pokémon Detective Pikachu_ is a great choice for you to bring back the happiness. **Let's PIKA PIKA PIKACHU~**
 
 「中文部分」
 
@@ -48,14 +49,14 @@ If you have become numb in your daily life, *Pokémon Detective Pikachu* is a gr
 （本篇完）
 
 ---
+
 ※ The following part is needed to put filled in and added to your text, as otherwise it will not be included later on phase II on Triple A.
 ※ 리뷰 하단에 다음 두가지 항목 포함 필수 (미포함 시 차후 자체사이트에 반영 안됨)
 
-* Movie URL: (https://www.themoviedb.org/movie/447404-detective-pikachu)
-* Critic: AAA
-
-* 영화 URL: (https://www.themoviedb.org/movie/447404-detective-pikachu)
-* 별점: AAA
+- Movie URL: ([https://www.themoviedb.org/movie/447404-detective-pikachu](https://www.themoviedb.org/movie/447404-detective-pikachu))
+- Critic: AAA
+- 영화 URL: ([https://www.themoviedb.org/movie/447404-detective-pikachu](https://www.themoviedb.org/movie/447404-detective-pikachu))
+- 별점: AAA
 
 - - -
 
