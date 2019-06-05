@@ -230,6 +230,168 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/how-to-calculate-estimated-account-value-part-two/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt="How to calculate estimated account value: Part Two / 如何计算账户估值：第二部分">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-02T05:27:12.000Z">2017-09-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 814 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-calculate-estimated-account-value-part-two/">How to calculate estimated account value: Part Two / 如何计算账户估值：第二部分</a>
+            
+        </h1>
+        <div class="content">
+            <p>In my <a href="https://steemit.com/steemdev/@oflyhigh/how-to-calculate-estimated-account-value-part-one" target="_blank" rel="noopener">previous article</a>, we concluded that:<br>To calculate estimated account value, we need to get items from these four parts:<br>1) The assets in wallet( And in SAVINGS)<br>2) The assets in internal market<br>3) The assets(SBD) in conversion processes<br>4) The assets(rewards) to be claimed</p>
+<p>I will explain how to get them in this article.</p>
+<p><img src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt=""></p>
+<h1 id="The-assets-in-wallet-And-in-SAVINGS"><a href="#The-assets-in-wallet-And-in-SAVINGS" class="headerlink" title="The assets in wallet( And in SAVINGS)"></a>The assets in wallet( And in SAVINGS)</h1><p>The following assets need to be fetched.</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+</ul>
+<p>There is a API named <strong><code>get_accounts</code></strong> will retrieve the account information which contained the above items.<br><code>vector&lt; extended_account &gt; get_accounts( vector&lt; string &gt; names ) const;</code></p>
+<p>To retrieve them we need to put the account name into list, and then call API with this list as arguments. We can read the item value from the result using the corresponding key.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Key </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM</td>
+<td>balance</td>
+</tr>
+<tr>
+<td>STEEM POWER</td>
+<td>vesting_shares</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS</td>
+<td>sbd_balance</td>
+</tr>
+<tr>
+<td>STEEM in SAVINGS</td>
+<td>savings_balance</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS in SAVINGS</td>
+<td>savings_sbd_balance</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://steemitimages.com/DQmePGpEQhp6GcCRfqPrqWHop4eKarF4pmEZ77s21NprFLR/image.png" alt=""><br><img src="https://steemitimages.com/DQmQETyNWCmG71g62JbedfCg58PZXiEjCtaMiD4FVYarFq2/image.png" alt=""><br><img src="https://steemitimages.com/DQmNnnmDmmVpJ8hWjZieRdR6pEZmvLXS1JtQm4wwwdj4MB6/image.png" alt=""><br><img src="https://steemitimages.com/DQmc6REL5iKYF6hDDxvMeFWvPEDNXcAHyaMmK3SnE6ZGNwX/image.png" alt=""></p>
+<p>An additional note, STEEM POWER was expressed in the form of  VESTS, we need to convert it to equivalent STEEM.</p>
+<h1 id="The-assets-in-internal-market"><a href="#The-assets-in-internal-market" class="headerlink" title="The assets in internal market"></a>The assets in internal market</h1><p>To simplify the problem, In order to simplify the problem, we define two type of operations: <strong><em>BUY</em></strong> and <strong><em>SELL</em></strong>.</p>
+<ul>
+<li><strong>BUY</strong>: We pay SBD, and want to receive STEEM</li>
+<li><strong>SELL</strong>: We pay STEEM, and want to receive SBD</li>
+</ul>
+<p>So, We get the following correspondence</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>How to calculate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM in internal market</td>
+<td>Remaining STEEM in all opening SELL order</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS in internal market</td>
+<td>Remaining SBD in all opening BUY order</td>
+</tr>
+</tbody>
+</table>
+<p>There is a API named <strong><code>get_open_orders</code></strong>, will return all open orders in internal market for specified account.<br><code>vector&lt;extended_limit_order&gt; get_open_orders( string owner )const;</code></p>
+<p>The example return information for my account.<br><img src="https://steemitimages.com/DQmXaRGkLLRGHDviC7YUT6RtuNmAaiP4z4523ehkimF2oM5/image.png" alt=""></p>
+<p>We can draw the results from above information: we have 0.586 STEEM and 2 SBD in internal market.</p>
+<h1 id="The-assets-SBD-in-conversion-processes"><a href="#The-assets-SBD-in-conversion-processes" class="headerlink" title="The assets(SBD) in conversion processes"></a>The assets(SBD) in conversion processes</h1><p>As I mentioned in previous article, if we try to convert some amount SBD to STEEM, it will disappear from the wallet. So to accurately calculate the estimated account value, we need to get this part of SBD.</p>
+<p>Fortunately, there is a API called <strong><code>get_conversion_requests</code></strong>.<br><code>vector&lt;convert_request_api_obj&gt; get_conversion_requests( const string&amp; account_name )const;</code></p>
+<p>The result should like this one, We can work out the total amount of SBD easily.<br><img src="https://steemitimages.com/DQmbQyo4FaENctoreWzudn9cEpfqp9U4ZZeCHNSziMf7omf/image.png" alt=""></p>
+<h1 id="The-assets-rewards-to-be-claimed"><a href="#The-assets-rewards-to-be-claimed" class="headerlink" title="The assets(rewards) to be claimed"></a>The assets(rewards) to be claimed</h1><p>And after HF18, users need to claim their rewards manually, so to accurately calculate the estimated account value, we need to add this part: Rewards to be claim.</p>
+<p>The good news is we can retrieval them directly from user info,  with same API  <strong><code>get_accounts</code></strong> and the same way.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Key </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM Reward to be claimed</td>
+<td><code>reward_steem_balance</code></td>
+</tr>
+<tr>
+<td>STEEM DOLLARS to be claimed</td>
+<td><code>reward_sbd_balance</code></td>
+</tr>
+<tr>
+<td>STEEM POWER to be claimed</td>
+<td><code>reward_vesting_balance</code> / <code>reward_vesting_steem</code></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://steemitimages.com/DQmTRx1tH8Cp7J2rQP5raa23fxB2iray8MDa6BkPc51ZhHd/image.png" alt=""><br>For STEEM POWER to be claimed, we can obtain it from <strong><code>reward_vesting_balance</code></strong> or <strong><code>reward_vesting_steem</code></strong>, but the previous one need to be converted, so the later one is better.</p>
+<p>For detailed usage of APIs, Please refer to the <a href="https://github.com/steemit/steem" target="_blank" rel="noopener"><strong>steem source code</strong> on Github</a>.</p>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x4E0A;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x6211;&#x4EEC;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF0C;&#x7CBE;&#x786E;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#xFF1A;</p>
+<ul>
+<li>&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x5305;&#x62EC;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;</li>
+<li>&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;</li>
+<li>&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;</li>
+<li>&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<br><strong><code>get_accounts</code></strong>&#x8BFB;&#x56DE;&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x5305;&#x62EC;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;<br><strong><code>get_open_orders</code></strong>&#x8BFB;&#x56DE;&#x5E76;&#x8BA1;&#x7B97;&#x51FA;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;<br><strong><code>get_conversion_requests</code></strong>&#x8BFB;&#x56DE;&#x5E76;&#x8BA1;&#x7B97;&#x51FA; &#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;<br><strong><code>get_accounts</code></strong>&#x8BFB;&#x56DE;&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</p>
+<p>API&#x7684;&#x8BE6;&#x7EC6;&#x7528;&#x6CD5;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="https://github.com/steemit/steem" target="_blank" rel="noopener">Github&#x4E0A;&#x7684;steem&#x6E90;&#x7801;</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-calculate-estimated-account-value-part-two" target="_blank" rel="noopener">How to calculate estimated account value: Part Two / &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF1A;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/how-to-calculate-estimated-account-value-part-one/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt="How to calculate estimated account value: Part One / 如何计算账户估值：第一部分">
         </a>
@@ -503,7 +665,7 @@
 <p><img src="https://steemitimages.com/DQmW3dU8u1bmkf5iRL4w4axoona486wr3NnGEcmz5XAHNQh/image.png" alt=""><br>(&#x5185;&#x90E8;&#x5E02;&#x573A;&#x5F53;&#x524D;&#x90E8;&#x5206;Orders)</p>
 <p><img src="https://steemitimages.com/DQmd9KcKGvHaNULbjFmLgDeMv6uaUZ6L7sMNs7cmbL7gSP7/image.png" alt=""><br>(&#x5185;&#x90E8;&#x5E02;&#x573A;&#x6211;&#x7684;&#x4E24;&#x7B14;&#x6302;&#x5355;)</p>
 <p>&#x901A;&#x8FC7;&#x4E0A;&#x8FB9;&#x4E24;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x82E5;&#x6211;&#x7684;&#x7B2C;&#x4E8C;&#x7B14;&#x6302;&#x7684;&#x662F;&#x4E70;&#x5355;&#xFF0C;&#x65E9;&#x5C31;&#x5E94;&#x8BE5;&#x6210;&#x4EA4;&#x7684;&#x3002;</p>
-<h4 id="&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;"><a href="#&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;" class="headerlink" title="&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;"></a>&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;</h4><p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x94B1;&#x5305;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x7A0B;&#x5E8F;&#x4E0A;&#x662F;&#x4E0D;&#x533A;&#x5206;&#x5565;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x7684;<br><!--￼0--></p>
+<h4 id="&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;"><a href="#&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;" class="headerlink" title="&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;"></a>&#x4ECE;&#x4EE3;&#x7801;&#x4E0A;&#x770B;&#x7A0B;&#x5E8F;&#x5BF9;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x6CA1;&#x6709;&#x533A;&#x522B;</h4><p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x94B1;&#x5305;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x7A0B;&#x5E8F;&#x4E0A;&#x662F;&#x4E0D;&#x533A;&#x5206;&#x5565;&#x4E70;&#x5165;&#x5356;&#x51FA;&#x7684;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">annotated_signed_transaction wallet_api::create_order(  string owner, uint32_t order_id, asset amount_to_sell, asset min_to_receive, bool fill_or_kill, uint32_t expiration_sec, bool broadcast )</span><br><span class="line">{</span><br><span class="line">   FC_ASSERT( !is_locked() );</span><br><span class="line">   limit_order_create_operation op;</span><br><span class="line">   op.owner = owner;</span><br><span class="line">   op.orderid = order_id;</span><br><span class="line">   op.amount_to_sell = amount_to_sell;</span><br><span class="line">   op.min_to_receive = min_to_receive;</span><br><span class="line">   op.fill_or_kill = fill_or_kill;</span><br><span class="line">   op.expiration = expiration_sec ? (fc::time_point::now() + fc::seconds(expiration_sec)) : fc::time_point::maximum();</span><br><span class="line"></span><br><span class="line">   signed_transaction tx;</span><br><span class="line">   tx.operations.push_back( op );</span><br><span class="line">   tx.validate();</span><br><span class="line"></span><br><span class="line">   return my-&gt;sign_transaction( tx, broadcast );</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
 <p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x6709;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;<br>1) &#x4E70;&#x5165;STEEM, &#x4ED8;&#x51FA;SBD<br>2) &#x5356;&#x51FA;STEEM, &#x6362;&#x53D6;SBD<br>3) &#x4E70;&#x5165;SBD, &#x4ED8;&#x51FA;STEEM<br>4) &#x5356;&#x51FA;SBD, &#x6362;&#x53D6;STEEM</p>
 <p>&#x5176;&#x4E2D;1&#x548C;4&#xFF0C;2&#x548C;3&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x4E0D;&#x540C;&#x7684;&#x89C6;&#x89D2;<br>&#x65E0;&#x8BBA;&#x54EA;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x90FD;&#x662F;&#x586B;&#x5145;&#x4EE5;&#x4E0B;&#x7ED3;&#x6784;&#x4F53;&#x5E76;&#x5E7F;&#x64AD;&#x51FA;&#x53BB;<br> <code>struct limit_order_create_operation : public base_operation</code><br>(&#x4EE3;&#x7801;&#x5927;&#x5BB6;&#x53BB;github&#x81EA;&#x5DF1;&#x641C;&#x7D22;&#xFF0C;&#x4E0D;&#x8D34;&#x51FA;&#x6765;&#x51D1;&#x6570;&#x4E86;&#x3002;)</p>
 <p>&#x7136;&#x540E;&#x5728;&#x8FD9;&#x91CC;&#x88AB;&#x5904;&#x7406;&#xFF1A;<br><code>void limit_order_create_evaluator::do_apply( const limit_order_create_operation&amp; o )</code><br>(&#x4EE3;&#x7801;&#x5927;&#x5BB6;&#x53BB;github&#x81EA;&#x5DF1;&#x641C;&#x7D22;&#xFF0C;&#x4E0D;&#x8D34;&#x51FA;&#x6765;&#x51D1;&#x6570;&#x4E86;&#x3002;)</p>
@@ -581,98 +743,6 @@
 <p>&#x6211;&#x60F3;&#x6216;&#x8BB8;&#x662F;&#x6709;&#x4E86;&#x5C0F;&#x5B69;&#x540E;&#xFF0C;&#x5979;&#x5C31;&#x53EF;&#x4EE5;&#x548C;&#x513F;&#x5973;&#x5728;&#x4E00;&#x8D77;&#x4E86;&#x5427;&#x3002;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/3gm4ah" target="_blank" rel="noopener">&#x5D14;&#x5976;&#x5976;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/who-resteemed-rebloged-your-posts/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmQ9fQGiM5E8rXEJUm8x3wWJDaxwMPeeU3bajaciDjoKKt/image.png" alt="Who resteemed/rebloged your posts? / 谁转发了你的文章？">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-27T11:13:33.000Z">2017-08-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 476 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/who-resteemed-rebloged-your-posts/">Who resteemed/rebloged your posts? / 谁转发了你的文章？</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemitimages.com/DQmQ9fQGiM5E8rXEJUm8x3wWJDaxwMPeeU3bajaciDjoKKt/image.png" alt=""></p>
-<p>We often see replies like this&#xFF1A;</p>
-<blockquote>
-<p>Nice post, upvoted and resteemed.</p>
-</blockquote>
-<p>&#x6211;&#x4EEC;&#x6216;&#x8BB8;&#x65F6;&#x5E38;&#x770B;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x56DE;&#x590D;&#xFF1A;</p>
-<blockquote>
-<p>&#x597D;&#x6587;&#x7AE0;&#xFF0C;&#x6295;&#x7968;&#x5E76;&#x8F6C;&#x53D1;&#x4E86;&#x3002;</p>
-</blockquote>
-<p>Most of the replies like this come from robots, We don&#x2019;t have to care.<br>But&#xFF0C;Do you care who resteemed your posts?</p>
-<blockquote>
-<p>&#x5927;&#x591A;&#x6570;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x56DE;&#x590D;&#x6765;&#x81EA;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x662F;&#x5426;&#x5173;&#x5FC3;&#x90FD;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x4F60;&#x7684;&#x5E16;&#x5B50;&#x5462;&#xFF1F;</p>
-</blockquote>
-<p>One of my friends said that&#xFF1A; &#x201C;Who resteemed your posts is your truly fan!&#x201D;, I don&#x2019;t think so, but the more people resteemed, the more popular the post is.</p>
-<blockquote>
-<p>&#x6211;&#x7684;&#x4E00;&#x4E2A;&#x670B;&#x53CB;&#x8BF4;&#xFF1A;&#x201C;&#x8F6C;&#x53D1;&#x624D;&#x662F;&#x771F;&#x7231;&#x7C89;&#x3002;&#x201D;&#xFF0C;&#x6211;&#x4E0D;&#x8FD9;&#x6837;&#x8BA4;&#x4E3A;&#xFF0C;&#x4F46;&#x662F;&#x8F6C;&#x53D1;&#x7684;&#x8D8A;&#x591A;&#xFF0C;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#x8D8A;&#x53D7;&#x6B22;&#x8FCE;&#x3002;</p>
-</blockquote>
-<p>So I made a small tool to check who resteemed my posts.</p>
-<blockquote>
-<p>&#x6240;&#x4EE5;&#x6211;&#x5F04;&#x4E2A;&#x4E86;&#x5C0F;&#x5DE5;&#x5177;&#x6765;&#x68C0;&#x67E5;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x6211;&#x7684;&#x5E16;&#x5B50;&#x3002;</p>
-</blockquote>
-<h1 id="The-URL-amp-Interface"><a href="#The-URL-amp-Interface" class="headerlink" title="The URL &amp; Interface"></a>The URL &amp; Interface</h1><p><a href="http://steemit.serviceuptime.net/check_resteem.php" target="_blank" rel="noopener">http://steemit.serviceuptime.net/check_resteem.php</a></p>
-<p><img src="https://steemitimages.com/DQmPiHwvcs6sFSx35HRMv8fRnELtb9PxDY9Bcs44DW22HVY/image.png" alt=""><br>Just input the account name you want to check, then press Return or click Check Button, you will get the results.</p>
-<blockquote>
-<p>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x5566;&#xFF0C;&#x8F93;&#x5165;&#x4F60;&#x8981;&#x67E5;&#x770B;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x56DE;&#x8F66;&#x6216;&#x8005;&#x70B9;Check &#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x4E86;&#x3002;</p>
-</blockquote>
-<h1 id="The-Results-Filed"><a href="#The-Results-Filed" class="headerlink" title="The Results Filed"></a>The Results Filed</h1><p>The tool will read out 20 entries from user&#x2019;s blog, and listed them in table, and give a list who resteemed the posts.</p>
-<blockquote>
-<p>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x8FD1;20&#x6761;&#x535A;&#x5BA2;&#x6761;&#x76EE;&#xFF0C;&#x5E76;&#x5217;&#x51FA;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x5BF9;&#x5E94;&#x6587;&#x7AE0;&#x3002;</p>
-</blockquote>
-<p>For example, the part of the results for oflyhigh<br><img src="https://steemitimages.com/DQmPcQqAxBV1rYtjya9RcnJKaSUaXWCoLLgLvUwsYd5xwk6/image.png" alt=""></p>
-<blockquote>
-<p>&#x4EE5;&#x4E0A;&#x662F;oflyhigh&#x7684;&#x90E8;&#x5206;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x3002;</p>
-</blockquote>
-<p>You can click the user to reach the user&#x2019;s blog page at steemit.</p>
-<blockquote>
-<p>&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x7528;&#x6237;&#x540D;&#x76F4;&#x8FBE;&#x7528;&#x6237;&#x7684;steemit&#x535A;&#x5BA2;&#x4E3B;&#x9875;&#x3002;</p>
-</blockquote>
-<hr>
-<p>Are you want to know who resteemed your posts? <a href="http://steemit.serviceuptime.net/check_resteem.php" target="_blank" rel="noopener">Check it Now! </a></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/who-resteemed-rebloged-your-posts" target="_blank" rel="noopener">Who resteemed/rebloged your posts? / &#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#xFF1F;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
