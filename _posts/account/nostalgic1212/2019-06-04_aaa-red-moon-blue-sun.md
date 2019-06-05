@@ -1,6 +1,6 @@
 
 ---
-title: '【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun'
+title: '【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun （2019）'
 permlink: aaa-red-moon-blue-sun
 catalog: true
 toc_nav_num: true
@@ -48,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun](https://steemit.com/@nostalgic1212/aaa-red-moon-blue-sun)
+This page is synchronized from the post: [【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun （2019）](https://steemit.com/@nostalgic1212/aaa-red-moon-blue-sun)
