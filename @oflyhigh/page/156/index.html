@@ -230,6 +230,184 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/4civzn-python-click/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmXQzDMbiUMFVUWX8A9qodarzSPfjvgJH9NufV46enHncb/image.png" alt="python 命令行神器：Click (二)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-27T12:53:27.000Z">2018-02-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/python/">python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 894 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/4civzn-python-click/">python 命令行神器：Click (二)</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x54B3;&#xFF0C;&#x505A;&#x4EBA;&#x505A;&#x4E8B;&#x8981;&#x6709;&#x59CB;&#x6709;&#x7EC8;&#xFF0C;&#x7EE7;&#x7EED;&#x5B8C;&#x6210;&#x4ECA;&#x5929;&#x7684;click &#x5B66;&#x4E60;&#x3002;&#xFF08;&#x5077;&#x6478;&#x56DE;&#x987E;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x6211;&#x6316;&#x4E0B;&#x7684;&#x5751;&#x4F3C;&#x4E4E;&#x5F88;&#x591A;&#x4E86;&#x1F62D;&#xFF09;<br><img src="https://steemitimages.com/DQmXQzDMbiUMFVUWX8A9qodarzSPfjvgJH9NufV46enHncb/image.png" alt=""><br>&#xFF08;&#x56FE;&#x6E90;&#xFF1A;<a href="https://bing.com" target="_blank" rel="noopener">bing.com</a>&#xFF09;</p>
+<p>&#x5728;<a href="https://steemit.com/python/@oflyhigh/python-click" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x5E16;&#x5B50;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86;<code>click</code>&#x7684;&#x5B89;&#x88C5;&#xFF0C;&#x4EE5;&#x53CA;&#x5B9E;&#x73B0;&#x547D;&#x4EE4;&#x7EC4;&#xFF0C;&#x4EE5;&#x53CA;&#x901A;&#x8FC7;<code>@click.option</code>&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#x7EC4;&#x5B9E;&#x73B0;&#x5168;&#x5C40;&#x7684;&#x9009;&#x9879;&#xFF0C;&#x8FD8;&#x6709;&#x5728;<code>@click.command()</code>&#x4E2D;&#x6DFB;&#x52A0;&#x7C7B;&#x4F3C;<code>help=&quot;Vote Post&quot;</code>&#x7684;&#x5185;&#x5BB9;&#x6765;&#x4E3A;&#x547D;&#x4EE4;&#x6DFB;&#x52A0;&#x5E2E;&#x52A9;&#x3002;</p>
+<h1 id="Options-&#x9009;&#x9879;-&#x547D;&#x4EE4;"><a href="#Options-&#x9009;&#x9879;-&#x547D;&#x4EE4;" class="headerlink" title="Options &#x9009;&#x9879; (&#x547D;&#x4EE4;)"></a>Options &#x9009;&#x9879; (&#x547D;&#x4EE4;)</h1><p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7528;<code>@click.option</code>&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#x7EC4;&#xFF0C;&#x5176;&#x5B9E;&#x7528;&#x6765;&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#x662F;&#x4E00;&#x6837;&#x4E00;&#x6837;&#x6EF4;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">@click.command(help=&apos;Vote Post&apos;)</span><br><span class="line">@click.option(&apos;--account&apos;, default=&apos;oflyhigh&apos;, help=&apos;The voter account name&apos;)</span><br><span class="line">@click.option(&apos;--weight&apos;, default=100.00, help=&apos;Actual weight (from 0.1 to 100.0)&apos;)</span><br><span class="line">def vote(account, weight):</span><br><span class="line">        click.echo(&apos;Voter: &apos; + account)</span><br><span class="line">        click.echo(&apos;Weight: &apos; + str(weight))</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x7ED9;&#x6295;&#x7968;&#x6307;&#x4EE4;&#x52A0;&#x4E86;&#x4E24;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6295;&#x7968;&#x4EBA;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6295;&#x7968;&#x6743;&#x91CD;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5F88;&#x6709;&#x8DA3;&#x4E5F;&#x5F88;&#x6709;&#x7528;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x5B50;&#x547D;&#x4EE4;&#x7684;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;<br><code>./mysteem.py vote --help</code><br><img src="https://steemitimages.com/DQmZyuScCgrTPKa2CoKes88sN9e2p6b2ESziq1bBzNzp9G4/image.png" alt=""><br>(<code>@click.option</code>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x9ED8;&#x8BA4;&#x503C;&#x81EA;&#x52A8;&#x5224;&#x65AD;&#x9009;&#x9879;&#x7684;&#x7C7B;&#x578B;&#xFF09;</p>
+<p>&#x6211;&#x4EEC;&#x6267;&#x884C;&#x4E00;&#x4E0B;&#x5B50;&#x547D;&#x4EE4;<br><code>./mysteem.py vote</code><br>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x5DF2;&#x7ECF;&#x751F;&#x6548;&#x4E86;<br><img src="https://steemitimages.com/DQmaaVdwdMRRC6cjC8WMyTsJ3bvZMwTVVbeQPFdwXXLzTkb/image.png" alt=""></p>
+<p><code>@click.option</code>&#x652F;&#x6301;&#x6307;&#x5B9A;&#x9009;&#x9879;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8BE6;&#x60C5;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://click.pocoo.org/6/parameters/#parameter-types" target="_blank" rel="noopener">Parameter Types</a><br>&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x52A0;&#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x7C7B;&#x578B;&#x7684;&#x9009;&#x9879;&#xFF1A;<br><code>@click.option(&apos;--b&apos;, type=bool, default=True, help=&apos;bool test&apos;)</code><br>&#x5177;&#x4F53;&#x4FE1;&#x606F;&#x5C31;&#x4E0D;&#x8D58;&#x8FF0;&#x4E86;&#x3002;</p>
+<h1 id="Arguments-&#x53C2;&#x6570;"><a href="#Arguments-&#x53C2;&#x6570;" class="headerlink" title="Arguments &#x53C2;&#x6570;"></a>Arguments &#x53C2;&#x6570;</h1><p>&#x5728;click&#x4E2D;&#xFF0C;Parameters&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF0C;</p>
+<ul>
+<li>&#x4E00;&#x79CD;&#x662F;Options(&#x9009;&#x9879;)</li>
+<li>&#x4E00;&#x79CD;&#x662F;Arguments(&#x53C2;&#x6570;)&#x3002;</li>
+</ul>
+<p>&#x539F;&#x8C05;&#x6211;&#x7684;&#x82F1;&#x8BED;&#xFF0C;Parameters&#x548C;Arguments&#x5982;&#x4F55;&#x7FFB;&#x8BD1;&#x6210;&#x6C49;&#x8BED;&#xFF0C;&#x624D;&#x80FD;&#x8BA9;&#x5B83;&#x4EEC;&#x533A;&#x522B;&#x5F00;&#x6765;&#xFF1F;</p>
+<p>Option&#x66F4;&#x7075;&#x6D3B;&#xFF0C;&#x652F;&#x6301;&#x597D;&#x591A;&#x5F3A;&#x5927;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EF;&#x9009;&#x7684;&#x3002;<br>Argument&#x66F4;&#x4E25;&#x683C;&#xFF0C;&#x5FC5;&#x9009;&#x7684;&#x3002;</p>
+<p>&#x4E0A;&#x8FB9;&#x6211;&#x4EEC;&#x5728;vote&#x547D;&#x4EE4;&#x4E2D;&#x5B9E;&#x73B0;&#x4E86;<code>--account</code>&#x4EE5;&#x53CA;<code>--weight</code>&#x9009;&#x9879;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x586B;&#xFF0C;&#x5C31;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#x3002;<br>&#x4F46;&#x662F;&#x6295;&#x7968;&#x603B;&#x6D89;&#x53CA;&#x5230;&#x7ED9;&#x54EA;&#x4E2A;&#x5E16;&#x5B50;&#x6295;&#x554A;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x518D;&#x7ED9;&#x5B83;&#x52A0;&#x4E2A;&#x53C2;&#x6570;<br>&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<p><code>@click.argument(&apos;post&apos;)</code></p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x5E2E;&#x52A9;<br><code>./mysteem.py vote --help</code><br><img src="https://steemitimages.com/DQmYeWhQFznSYXcJX4pbm6LD6c693pyqCzr3oWacCADA49D/image.png" alt=""><br>&#x4F3C;&#x4E4E;&#x6709;&#x4E9B;&#x7F8E;&#x4E2D;&#x4E0D;&#x8DB3;&#xFF0C;&#x6BD4;&#x5982;&#x8FD9;&#x4E2A;post&#x5230;&#x5E95;&#x662F;&#x5565;&#x73A9;&#x610F;&#xFF1F;<br>&#x662F;<code>https://steemit.com/python/@oflyhigh/python-click</code> &#x8FD8;&#x662F;<code>@oflyhigh/python-click</code> &#xFF1F;</p>
+<p>&#x5982;&#x679C;&#x80FD;&#x7ED9;post&#x52A0;&#x4E2A;&#x5E2E;&#x52A9;&#x5C31;&#x597D;&#x4E86;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;<br><code>@click.argument(&apos;post&apos;&#xFF0C; help=&apos;Permlink of post(e.g.  @oflyhigh/python-click))</code><br>&#x7136;&#x800C;&#x6211;&#x88AB;click&#x6253;&#x8138;&#x4E86;&#xFF0C;&#x8FD0;&#x884C;&#x51FA;&#x9519;&#xFF1A;</p>
+<blockquote>
+<p>TypeError: <strong>init</strong>() got an unexpected keyword argument &#x2018;help&#x2019;</p>
+</blockquote>
+<p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x6587;&#x6863;<br><a href="http://click.pocoo.org/6/documentation/" target="_blank" rel="noopener">http://click.pocoo.org/6/documentation/</a></p>
+<blockquote>
+<p>Arguments cannot be documented this way. This is to follow the general convention of Unix tools of using arguments for only the most necessary things and to document them in the introduction text by referring to them by name.</p>
+</blockquote>
+<p>&#x597D;&#x5427;&#xFF0C;&#x4F60;&#x548B;&#x8BF4;&#x90FD;&#x6709;&#x7406;&#xFF0C;&#x90A3;&#x96BE;&#x9053;&#x5C31;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x52A0;&#x5E2E;&#x52A9;&#x4E86;&#x5417;&#xFF1F;</p>
+<p>&#x8FD9;&#x5757;&#x6211;&#x8FD8;&#x6CA1;&#x6D4B;&#x8BD5;&#x660E;&#x767D;&#xFF0C;&#x56DE;&#x5934;&#x6211;&#x7814;&#x7A76;&#x660E;&#x767D;&#x518D;&#x8865;&#x4E0A;&#x5427;&#x3002;&#x1F62D;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x6709;&#x4E86;click&#xFF0C;&#x505A;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x5F3A;&#x5927;&#xFF0C;&#x6587;&#x6863;&#x5B8C;&#x5584;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x7B80;&#x76F4;&#x5BB9;&#x6613;&#x7684;&#x4E0D;&#x8981;&#x4E0D;&#x8981;&#x7684;&#x3002;</p>
+<p>click&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5F3A;&#x5927;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4E00;&#x65F6;&#x534A;&#x4F1A;&#x4E5F;&#x53D1;&#x6398;&#x4E0D;&#x4E86;&#x591A;&#x5C11;&#xFF0C;&#x60F3;&#x5FC5;&#x65E5;&#x540E;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;&#x4F1A;&#x7ED9;&#x6211;&#x8D8A;&#x6765;&#x8D8A;&#x7684;&#x60CA;&#x559C;&#x5427;&#x3002;</p>
+<h1 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;"><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="headerlink" title="&#x53C2;&#x8003;&#x94FE;&#x63A5;"></a>&#x53C2;&#x8003;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/python/@oflyhigh/python-click" target="_blank" rel="noopener">python &#x547D;&#x4EE4;&#x884C;&#x795E;&#x5668;&#xFF1A;Click (&#x4E00;)</a></li>
+<li><a href="https://github.com/pallets/click" target="_blank" rel="noopener">https://github.com/pallets/click</a></li>
+<li><a href="http://click.pocoo.org/6/" target="_blank" rel="noopener">http://click.pocoo.org/6/</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/4civzn-python-click" target="_blank" rel="noopener">python &#x547D;&#x4EE4;&#x884C;&#x795E;&#x5668;&#xFF1A;Click (&#x4E8C;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/python-click/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmXQzDMbiUMFVUWX8A9qodarzSPfjvgJH9NufV46enHncb/image.png" alt="python 命令行神器：Click (一)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-27T04:25:36.000Z">2018-02-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/python/">python</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1106 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/python-click/">python 命令行神器：Click (一)</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x8BF4;&#x5230;Python &#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x6211;&#x53EA;&#x4F1A;&#x7528; <code>sys.argv</code>&#xFF0C;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#xFF0C;&#x9002;&#x5408;&#x6211;&#x8FD9;&#x79CD;&#x534A;&#x540A;&#x5B50;&#x7A0B;&#x5E8F;&#x5458;&#x5199;&#x5199;&#x5783;&#x573E;&#x7A0B;&#x5E8F;&#xFF0C;&#x81F3;&#x4E8E;&#x5BF9;&#x522B;&#x4EBA;&#x662F;&#x5426;&#x53CB;&#x597D;&#xFF0C;&#x54EA;&#x7BA1;&#x5F97;&#x4E86;&#x90A3;&#x4E48;&#x591A;&#xFF0C;&#x53CD;&#x6B63;&#x53C8;&#x6CA1;&#x8138;&#x5F00;&#x6E90;&#x3002;&#x636E;&#x8BF4;<code>getopt&#x6A21;&#x5757;</code>&#x4E5F;&#x633A;&#x597D;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x4F5C;&#x4E3A;&#x6211;&#x8FD9;&#x79CD;&#x6DF1;&#x5F97;<strong>&#x5DEE;&#x4E0D;&#x591A;&#x5148;&#x751F;</strong>&#x601D;&#x60F3;&#x7CBE;&#x9AD3;&#x7684;&#x4EBA;&#xFF0C;&#x65E2;&#x7136;&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x6211;&#x4F55;&#x5FC5;&#x975E;&#x5F97;&#x53BB;&#x7528;&#x5462;&#xFF0C;&#x7A0B;&#x5E8F;&#x4E0D;&#x51FA;&#x9519;&#x5C31;&#x662F;&#x771F;&#x7406;&#xFF01;</p>
+<p>&#x4F46;&#x662F;&#x8BFB; @xeroc &#x5927;&#x795E;&#x5199;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x597D;&#x4E1C;&#x897F;&#xFF0C;&#x90A3;&#x5C31;&#x662F;<strong><code>click</code></strong>&#xFF0C;&#x7528;&#x6765;&#x505A;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x7B80;&#x76F4;&#x582A;&#x6BD4;&#x795E;&#x5668;&#x554A;&#xFF0C;&#x592A;&#x4F18;&#x96C5;&#x4E86;&#xFF01;&#x597D;&#x4E1C;&#x897F;&#x4E0D;&#x6562;&#x72EC;&#x4EAB;&#xFF0C;&#x5206;&#x4EAB;&#x7ED9;&#x5927;&#x5BB6;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmXQzDMbiUMFVUWX8A9qodarzSPfjvgJH9NufV46enHncb/image.png" alt=""><br>&#xFF08;&#x56FE;&#x6E90;&#xFF1A;<a href="https://bing.com" target="_blank" rel="noopener">bing.com</a>&#xFF09;</p>
+<h1 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h1><p>click &#x4E0D;&#x662F;Python &#x81EA;&#x5E26;&#x7684;&#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x8981;&#x5148;&#x5B89;&#x88C5;&#x5566;</p>
+<p>&#x5B89;&#x88C5;&#x6307;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;<br><code>pip install click</code></p>
+<p>&#x5B98;&#x7F51;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x5B89;&#x88C5;&#x5728;virtualenv &#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x6211;&#x4E5F;&#x63A8;&#x8350;&#x3002;<br>&#x6709;&#x5173;&#x5982;&#x4F55;&#x4F7F;&#x7528;virtualenv&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<a href="http://click.pocoo.org/5/quickstart/#virtualenv" target="_blank" rel="noopener">&#x5B98;&#x7F51;&#x76F8;&#x5173;&#x94FE;&#x63A5;</a>&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x5566;&#x3002;</p>
+<h1 id="&#x8BF4;&#x660E;"><a href="#&#x8BF4;&#x660E;" class="headerlink" title="&#x8BF4;&#x660E;"></a>&#x8BF4;&#x660E;</h1><p>&#x5B89;&#x88C5;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x5B66;&#x548B;&#x73A9;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4FBF;&#x4E8E;&#x8BF4;&#x660E;&#xFF0C;&#x6211;&#x5047;&#x88C5;&#x5B9E;&#x73B0;steem&#x5DE5;&#x5177;&#xFF0C;&#x652F;&#x6301;&#x6295;&#x7968;&#x4EE5;&#x53CA;&#x8F6C;&#x8D26;&#x3002;&#x7136;&#x540E;&#x6211;&#x6162;&#x6162;&#x52A0;&#x4E9B;&#x9009;&#x9879;&#x548C;&#x53C2;&#x6570;&#x4E4B;&#x7C7B;&#x7684;&#x3002;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8FD9;&#x662F;&#x5047;&#x88C5;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6F14;&#x793A;click&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<h1 id="&#x547D;&#x4EE4;&#x7EC4;"><a href="#&#x547D;&#x4EE4;&#x7EC4;" class="headerlink" title="&#x547D;&#x4EE4;&#x7EC4;"></a>&#x547D;&#x4EE4;&#x7EC4;</h1><p>&#x56E0;&#x4E3A;&#x8981;&#x5B9E;&#x73B0;&#x597D;&#x591A;&#x529F;&#x80FD;&#xFF0C;&#x90A3;&#x4E48;&#x5355;&#x7EAF;&#x7684;&#x7528;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&#x5E26;&#x4E00;&#x5806;&#x9009;&#x9879;&#x6216;&#x8005;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x53EF;&#x80FD;&#x4E0D;&#x591F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x5F15;&#x7528;&#x4E86;&#x547D;&#x4EE4;&#x7EC4;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env python</span><br><span class="line"></span><br><span class="line">import click</span><br><span class="line"></span><br><span class="line">@click.group()</span><br><span class="line">def mysteem():</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">@click.command()</span><br><span class="line">def vote():</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">@click.command()</span><br><span class="line">def transfer():</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">mysteem.add_command(vote)</span><br><span class="line">mysteem.add_command(transfer)</span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">        mysteem()</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7528;<code>@click.group()</code>&#x4FEE;&#x9970;&#x7684;&#x51FD;&#x6570;&#x4E3A;&#x547D;&#x4EE4;&#x7EC4;&#x7684;&#x5165;&#x53E3;&#xFF0C;<code>@click.command()</code>&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#xFF0C;&#x7528;<code>mysteem.add_command(add)</code>&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C06;&#x547D;&#x4EE4;&#x52A0;&#x5165;&#x5230;&#x547D;&#x4EE4;&#x7EC4;&#x4E2D;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x6846;&#x67B6;&#x642D;&#x8D77;&#x6765;&#x5566;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x7ED9;&#x5927;&#x5BB6;&#x6F14;&#x793A;&#x4E00;&#x4E2A;&#x795E;&#x5947;&#x7684;&#x529F;&#x80FD;<br><code>./mysteem.py --help</code><br><img src="https://steemitimages.com/DQmfBAZMFJ8Uj3iQTbKEDLdD5XEWN1c8wX9SQUmSno7L6qU/image.png" alt=""></p>
+<p><strong>&#x5988;&#x5988;&#x518D;&#x4E5F;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x6211;&#x5199;&#x7684;&#x7A0B;&#x5E8F;&#x6CA1;&#x5E2E;&#x52A9;&#x5566;&#xFF01;&#xFF0C;&#x7A0B;&#x5E8F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E86;&#x975E;&#x5E38;&#x4F18;&#x96C5;&#x7684;&#x5E2E;&#x52A9;&#x3002;</strong></p>
+<h1 id="Options-&#x9009;&#x9879;-&#x547D;&#x4EE4;&#x7EC4;"><a href="#Options-&#x9009;&#x9879;-&#x547D;&#x4EE4;&#x7EC4;" class="headerlink" title="Options &#x9009;&#x9879; (&#x547D;&#x4EE4;&#x7EC4;)"></a>Options &#x9009;&#x9879; (&#x547D;&#x4EE4;&#x7EC4;)</h1><p>&#x4E0B;&#x8FB9;&#x6211;&#x5047;&#x88C5;&#x7ED9;&#x8FD9;&#x4E2A;STEEM&#x5DE5;&#x5177;&#x52A0;&#x4E9B;&#x9009;&#x9879;&#x5566;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x4E00;&#x4E0B;RPC Node</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@click.group()</span><br><span class="line">@click.option(&apos;--node&apos;, default=&apos;https://api.steemit.com&apos;, help=&apos;Steem RPC Node&apos;)</span><br><span class="line">def mysteem(node):</span><br><span class="line">        click.echo(&quot;The RPC Node: &quot; + node)</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7528;<code>@click.option</code>&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#x7EC4;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x6267;&#x884C;&#x5404;&#x9879;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x6307;&#x5B9A;&#x9009;&#x9879;&#x5566;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmQ2T39Cq6f1zD2vHWY99qhaH4ywD5WHWxrpXNPfBFi7vc/image.png" alt=""><br>&#x5E2E;&#x52A9;&#x4F9D;&#x65E7;&#x662F;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x592A;&#x5E05;&#x4E86;</p>
+<p>&#x6211;&#x4EEC;&#x5047;&#x88C5;&#x6267;&#x884C;&#x4E00;&#x4E0B;&#xFF0C;&#x5148;&#x7528;&#x9ED8;&#x8BA4;&#x503C;<br><code>./mysteem.py vote</code></p>
+<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>The RPC Node: <a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a></p>
+</blockquote>
+<p>&#x518D;&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x4E00;&#x4E0B;&#xFF1A;<br><code>./mysteem.py --node https://mynode.com vote</code></p>
+<p>&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>The RPC Node: <a href="https://mynode.com" target="_blank" rel="noopener">https://mynode.com</a></p>
+</blockquote>
+<p>&#x9664;&#x4E86;&#x4FEE;&#x9970;&#x547D;&#x4EE4;&#x7EC4;&#xFF0C;@click.option &#x8FD8;&#x53EF;&#x4EE5;&#x4FEE;&#x9970;&#x547D;&#x4EE4;<br>&#x5478;&#x5478;&#xFF0C;&#x4E3E;&#x6BDB;&#x7EBF;&#x6570;&#x636E;&#x5E93;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x7F16;&#x4E2A;&#x5565;&#x9009;&#x9879;&#x597D;&#x5462;&#xFF1F;&#x6101;&#x6B7B;&#x6211;&#x4E86;&#xFF01;<br>&#x8FD9;&#x6837;&#xFF0C;&#x81EA;&#x52A8;&#x52A0;&#x5E8F;&#x53F7;&#x5427;&#xFF0C;&#x5C31;&#x53EB;<code>autoseq</code>&#x5427;&#xFF0C;&#x5927;&#x5BB6;&#x522B;&#x7EA0;&#x7ED3;&#x6570;&#x636E;&#x5E93;&#x662F;&#x5426;&#x5408;&#x7406;&#xFF0C;&#x6211;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x547D;&#x4EE4;&#x884C;&#xFF0C;&#x4E3E;&#x4E86;&#x4E2A;&#x4E0D;&#x6070;&#x5F53;&#x7684;&#x4F8B;&#x5B50;&#x1F62D;</p>
+<h1 id="&#x547D;&#x4EE4;&#x5E2E;&#x52A9;"><a href="#&#x547D;&#x4EE4;&#x5E2E;&#x52A9;" class="headerlink" title="&#x547D;&#x4EE4;&#x5E2E;&#x52A9;"></a>&#x547D;&#x4EE4;&#x5E2E;&#x52A9;</h1><p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x4F3C;&#x4E4E;&#x642D;&#x597D;&#x4E86;&#x7A0B;&#x5E8F;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x4F46;&#x662F;&#x611F;&#x89C9;&#x5C11;&#x4E86;&#x70B9;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
+<p>&#x4ED4;&#x7EC6;&#x627E;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x53D1;&#x73B0;&#x4F7F;&#x7528;<code>./mysteem.py --help</code> &#x751F;&#x6210;&#x7684;&#x5E2E;&#x52A9;&#x6709;&#x70B9;&#x5355;&#x8584;<br><img src="https://steemitimages.com/DQmQ2T39Cq6f1zD2vHWY99qhaH4ywD5WHWxrpXNPfBFi7vc/image.png" alt=""><br>&#x5176;&#x4E2D;&#x547D;&#x4EE4;&#x5217;&#x8868;&#x540E;&#x7ADF;&#x7136;&#x6CA1;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x662F;&#x53EF;&#x5FCD;&#x5B70;&#x4E0D;&#x53EF;&#x5FCD;&#xFF0C;&#x5A76;&#x4E5F;&#x4E0D;&#x80FD;&#x5FCD;&#xFF01;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@click.command(help=&quot;Vote Post&quot;)</span><br><span class="line">def vote():</span><br><span class="line">        pass</span><br><span class="line"></span><br><span class="line">@click.command(help=&quot;Transfer Money&quot;)</span><br><span class="line">def transfer():</span><br><span class="line">        pass</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7ED9;&#x547D;&#x4EE4;&#x52A0;&#x4E0A;&#x5E2E;&#x52A9;</p>
+<p><code>./mysteem.py --help</code><br><img src="https://steemitimages.com/DQmTogqRgsKXxYWqxSeQqVv6AKhUtCwNrwrjXhCLvfjcxnU/image.png" alt=""><br>&#x8FD9;&#x56DE;&#x8212;&#x670D;&#x591A;&#x4E86;&#xFF01;</p>
+<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x6211;&#x4EEC;&#x6A21;&#x4EFF; steempy&#xFF0C;&#x505A;&#x4E86;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x7A0B;&#x5E8F;&#x7684;&#x6846;&#x67B6;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x4E00;&#x70B9;&#x529F;&#x80FD;&#x4E5F;&#x6CA1;&#x6709;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x6765;&#x7406;&#x89E3;click&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x662F;&#x7565;&#x6709;&#x5E2E;&#x52A9;&#x7684;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x9650;&#x4E8E;&#x7BC7;&#x5E45;&#xFF0C;&#x672C;&#x6587;&#x53EA;&#x8BB2;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x56DE;&#x5934;&#x7EE7;&#x7EED;&#x66F4;&#x65B0;&#xFF0C;&#x656C;&#x8BF7;&#x671F;&#x5F85;&#xFF01;</p>
+<h1 id="&#x53C2;&#x8003;&#x94FE;&#x63A5;"><a href="#&#x53C2;&#x8003;&#x94FE;&#x63A5;" class="headerlink" title="&#x53C2;&#x8003;&#x94FE;&#x63A5;"></a>&#x53C2;&#x8003;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://github.com/pallets/click" target="_blank" rel="noopener">https://github.com/pallets/click</a></li>
+<li><a href="http://click.pocoo.org/6/" target="_blank" rel="noopener">http://click.pocoo.org/6/</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/python-click" target="_blank" rel="noopener">python &#x547D;&#x4EE4;&#x884C;&#x795E;&#x5668;&#xFF1A;Click (&#x4E00;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/3b4zul/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmdY2DNMMtXZo5pEvGvZrbzmmwzWbCj8NNFR1uVQT3HxKn/image.png" alt="公众号恢复正常啦，宇宙首富的梦想破灭">
         </a>
@@ -562,152 +740,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/4pdnpp/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitstageimages.com/DQmUEWYvgYTaYYopyyMirCB2TQk2ZezGfJmYKxEnksv8GNk/image.png" alt="史上最无聊的工具： 查询谁拉黑了谁">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-24T13:24:15.000Z">2018-02-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 722 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/4pdnpp/">史上最无聊的工具： 查询谁拉黑了谁</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x54B3;&#x54B3;&#xFF0C;&#x5728;<a href="https://steemitstage.com/cn/@oflyhigh/24fjbl-o" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x5E16;&#x5B50;</a>&#x4E2D;&#x5199;&#x5230;&#xFF0C;&#x62C9;&#x9ED1;&#x5C31;&#x662F;&#x6253;&#x8138;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x610F;&#x65E0;&#x610F;&#x5939;&#x5E26;&#x79C1;&#x8D27;&#xFF0C;&#x63A8;&#x9500;&#x4E86;&#x4E00;&#x4E0B;&#x81EA;&#x5DF1;&#x7684;&#x5783;&#x573E;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x67E5;&#x8C01;&#x6253;&#x6211;&#x7684;&#x8138;&#xFF0C;&#x6307;&#x4EE4;&#x662F;<strong><code>@oflyhigh?mt</code></strong>&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x4F60;&#x8981;&#x67E5;&#x8C01;&#x6253;&#x4F60;&#x7684;&#x8138;&#xFF0C;&#x90A3;&#x5C31;&#x628A;oflyhigh&#x6362;&#x6210;&#x4F60;&#x7684;STEEM ID&#x5373;&#x53EF;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x72E0;&#x72E0;&#x7684;&#x6253;&#x56DE;&#x53BB;&#x3002;</p>
-<p><img src="https://steemitstageimages.com/DQmUEWYvgYTaYYopyyMirCB2TQk2ZezGfJmYKxEnksv8GNk/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x5199;&#x5B8C;&#x8FD9;&#x5E16;&#x5B50;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x5C31;&#x7A81;&#x53D1;&#x5947;&#x60F3;&#xFF0C;&#x5149;&#x77E5;&#x9053;&#x8C01;&#x6253;&#x6211;&#x7684;&#x8138;&#x8FD9;&#x4E2A;&#x6CA1;&#x5565;&#x610F;&#x601D;&#x554A;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x7AA5;&#x63A2;&#x72C2;&#xFF0C;&#x770B;&#x770B;&#x522B;&#x4EBA;&#x90FD;&#x6253;&#x8C01;&#x7684;&#x8138;&#xFF0C;&#x597D;&#x50CF;&#x4F1A;&#x66F4;&#x8BA9;&#x4EBA;&#x5174;&#x594B;&#x4E00;&#x4E9B;&#x3002;</p>
-<p>&#x6BD4;&#x5982;&#x521B;&#x59CB;&#x4EBA;ned&#x62C9;&#x9ED1;&#x4E86;&#x8C01;&#xFF1F;&#x521B;&#x59CB;&#x4EBA;&#x540E;&#x53C8;&#x62BD;&#x8EAB;&#x800C;&#x9000;&#x7684;dan&#x62C9;&#x9ED1;&#x4E86;&#x8C01;&#xFF1F;&#x5168;&#x7F51;&#x77E5;&#x540D;&#x7684;&#x5927;&#x6237;&#x90FD;&#x62C9;&#x9ED1;&#x4E86;&#x8C01;&#xFF1F;&#x60F3;&#x60F3;&#x5C31;&#x5F88;&#x6FC0;&#x52A8;&#xFF0C;&#x516B;&#x5366;&#x4E4B;&#x706B;&#x718A;&#x718A;&#x71C3;&#x70E7;&#x554A;&#x3002;</p>
-<p>&#x90A3;&#x5C31;&#x7ED9;&#x516C;&#x4F17;&#x53F7;&#x52A0;&#x4E2A;&#x65B0;&#x529F;&#x80FD;&#x55BD;&#xFF0C;&#x770B;&#x770B;&#x522B;&#x4EBA;&#x90FD;&#x62C9;&#x9ED1;&#x4E86;&#x8C01;&#x3002;</p>
-<h1 id="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><a href="#&#x4F7F;&#x7528;&#x65B9;&#x5F0F;" class="headerlink" title="&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"></a>&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h1><p>&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5F88;&#x7B80;&#x5355;&#x5566;&#xFF0C;&#x6307;&#x4EE4;&#x4E3A;&#xFF1A;<br><strong><code>@steemid?mt2</code></strong><br>&#x8BB0;&#x5F97;&#x628A;steemid&#x6362;&#x6210;&#x4F60;&#x81EA;&#x5DF1;&#x7684;ID&#xFF0C;&#x6BD4;&#x5982;<code>oflyhigh</code><br><img src="https://steemitstageimages.com/DQmWgSQDRrEXGjz6vER8wr5FbCzt2vJBWWhF1KrTpgdHzys/image.png" alt=""></p>
-<p>&#x54C7;&#x5494;&#x5494;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x5F97;&#x7F6A;&#x4EBA;&#xFF0C;&#x6211;&#x628A;&#x6211;&#x62C9;&#x9ED1;&#x7684;&#x90FD;&#x8D66;&#x514D;&#x4E86;&#x3002;&#x6BD5;&#x7ADF;&#x62C9;&#x9ED1;&#x662F;&#x4E00;&#x56DE;&#x4E8B;&#xFF0C;&#x5728;&#x5E16;&#x5B50;&#x516C;&#x5F00;&#x5C31;&#x597D;&#x6BD4;&#x6E38;&#x8857;&#x793A;&#x4F17;&#x4E86;&#xFF0C;&#x90A3;&#x5C31;&#x4EC7;&#x5927;&#x4E86;&#x3002;</p>
-<p>&#x54CE;&#xFF0C;&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x6211;&#x7684;&#x516C;&#x4F17;&#x53F7;&#x662F;&#x597D;&#x7528;&#x7684;&#xFF0C;&#x53EA;&#x597D;&#x727A;&#x7272;&#x6211;&#x7684;&#x4E24;&#x4E2A;&#x5C0F;&#x9A6C;&#x7532;&#x4E86;&#xFF0C;&#x4E14;&#x59D4;&#x5C48;&#x4F60;&#x4EEC;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x7B49;&#x8FC7;&#x4E24;&#x5929;&#x6211;&#x5C31;&#x5BA3;&#x5E03;&#x4F60;&#x4EEC;&#x65E0;&#x7F6A;&#x91CA;&#x653E;&#x3002;</p>
-<h1 id="&#x65E0;&#x804A;&#x7684;&#x5DE5;&#x5177;"><a href="#&#x65E0;&#x804A;&#x7684;&#x5DE5;&#x5177;" class="headerlink" title="&#x65E0;&#x804A;&#x7684;&#x5DE5;&#x5177;"></a>&#x65E0;&#x804A;&#x7684;&#x5DE5;&#x5177;</h1><p>&#x7136;&#x800C;&#x67E5;&#x6765;&#x67E5;&#x53BB;&#xFF0C;&#x53D1;&#x73B0;&#x521B;&#x59CB;&#x4EBA;&#x548C;&#x5927;&#x6237;&#x4EEC;&#x5F88;&#x5C11;&#x62C9;&#x9ED1;&#x522B;&#x4EBA;&#xFF0C;&#x770B;&#x6765;&#x4ED6;&#x4EEC;&#x4E5F;&#x4E0D;&#x80FD;&#x514D;&#x4FD7;&#x554A;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x6211;&#x5C82;&#x4E0D;&#x662F;&#x505A;&#x4E86;&#x53F2;&#x4E0A;&#x6700;&#x65E0;&#x804A;&#x4E5F;&#x6700;&#x65E0;&#x7528;&#x7684;&#x5DE5;&#x5177;&#x4E86;&#xFF1F;&#x8BF7;&#x5BB9;&#x8BB8;&#x6211;&#x9ED8;&#x9ED8;&#x5730;&#x54ED;&#x4E00;&#x4F1A;&#x3002;</p>
-<p>&#x54ED;&#x6765;&#x54ED;&#x53BB;&#xFF0C;&#x89C9;&#x5F97;&#x8FD8;&#x662F;&#x628A;&#x5DE5;&#x5177;&#x53D1;&#x51FA;&#x53BB;&#xFF0C;&#x5C31;&#x7B97;&#x6CA1;&#x7528;&#xFF0C;&#x81F3;&#x5C11;&#x53EF;&#x4EE5;&#x535A;&#x541B;&#x4E00;&#x7B11;&#xFF0C;&#x8FD8;&#x80FD;&#x987A;&#x5E26;&#x4E3A;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;&#x70B9;&#x4EBA;&#x6C14;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5927;&#x5BB6;&#x90FD;&#x5FC3;&#x77E5;&#x809A;&#x660E;&#x7684;&#x539F;&#x56E0;&#xFF0C;&#x5C31;&#x662F;&#x53D1;&#x5E16;&#x8D5A;&#x94B1;&#x55BD;&#x3002;</p>
-<h1 id="&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"><a href="#&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;" class="headerlink" title="&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"></a>&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</h1><p>&#x8FD8;&#x6CA1;&#x52A0;&#x516C;&#x4F17;&#x53F7;&#x7684;&#xFF0C;&#x5FEB;&#x70B9;&#x4E0A;&#x8F66;&#x554A;</p>
-<ul>
-<li><p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;<br>  &#x8FDB;&#x5165;&#x5FAE;&#x4FE1;&#x901A;&#x8BAF;&#x5F55;-&gt;&#x70B9;&#x51FB;&#x516C;&#x4F17;&#x53F7;-&gt;&#x70B9;&#x53F3;&#x4E0A;&#x89D2;&#x52A0;&#x53F7;-&gt;&#x641C;&#x7D22;steemit&#xFF0C;&#x5173;&#x6CE8;&#x5373;&#x53EF;&#x3002;</p>
-</li>
-<li><p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;<br>  &#x76F4;&#x63A5;&#x626B;&#x63CF;&#x4EE5;&#x4E0B;&#x4E8C;&#x7EF4;&#x7801;&#xFF1A;<br><img src="https://steemitstageimages.com/DQmNxMW2tParyESCyp1s6fm5SjPmNSibkct4wcdaQcTA5BD/image.png" alt=""></p>
-</li>
-</ul>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemitstage.com/cn/@oflyhigh/24fjbl-o" target="_blank" rel="noopener">O&#x54E5;&#x95F2;&#x626F;&#x6DE1;&#xFF1A;&#x62C9;&#x9ED1;&#x3001;&#x8E29;&#x7070;&#x4E0B;&#x5F97;&#x53BB;&#x624B;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/59x8rc" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x6587;&#x7AE0;&#x6536;&#x5165;&#x4FE1;&#x606F; / &#x67E5;&#x8BE2;&#x9ED1;&#x540D;&#x5355;&#x529F;&#x80FD;&#x5566;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/4pdnpp" target="_blank" rel="noopener">&#x53F2;&#x4E0A;&#x6700;&#x65E0;&#x804A;&#x7684;&#x5DE5;&#x5177;&#xFF1A; &#x67E5;&#x8BE2;&#x8C01;&#x62C9;&#x9ED1;&#x4E86;&#x8C01;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/24fjbl-o/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmckXCF4Gb93L5HiVQBz9LmcRTwf5TarkiKERWJbq6WStz/image.png" alt="O哥闲扯淡：拉黑、踩灰下得去手？">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-24T03:48:54.000Z">2018-02-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1208 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/24fjbl-o/">O哥闲扯淡：拉黑、踩灰下得去手？</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;<a href="https://steemit.com/cn/@oflyhigh/o-cn" target="_blank" rel="noopener">&#x4E00;&#x7BC7;&#x6587;&#x7AE0;</a>&#x4E2D;&#x6211;&#x63D0;&#x5230;&#x4E86;<del>&#x6C34;&#x533A;</del>CN&#x533A;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x6587;&#x7AE0;&#x592A;&#x591A;&#xFF0C;&#x770B;&#x4E0D;&#x8FC7;&#x6765;&#x3002;&#x90A3;&#x4E48;&#x64CD;&#x4F5C;&#x7684;&#x624B;&#x6BB5;&#x65E0;&#x5916;&#x4E4E;&#x51E0;&#x79CD;&#xFF0C;&#x4E00;&#x662F;&#x53EA;&#x770B;&#x81EA;&#x5DF1;&#x5173;&#x6CE8;&#x5217;&#x8868;&#x91CC;&#x7684;&#xFF1B;&#x4E8C;&#x662F;&#x5C06;&#x90A3;&#x4E9B;&#x5783;&#x573E;&#x5E16;&#x5236;&#x9020;&#x8005;&#x62C9;&#x9ED1;&#xFF1B;&#x4E09;&#x5C31;&#x662F;&#x8E29;&#x7070;&#x90A3;&#x4E9B;SPAM&#x6587;&#x3002;</p>
-<p>&#x53EA;&#x770B;&#x5173;&#x6CE8;&#x5217;&#x8868;&#x7684;&#x8C8C;&#x4F3C;&#x6CA1;&#x6BDB;&#x75C5;&#x5566;&#xFF0C;&#x62C9;&#x9ED1;&#x3001;&#x8E29;&#x7070;&#x542C;&#x8D77;&#x6765;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x8FD9;&#x4E09;&#x5957;&#x7EC4;&#x5408;&#x62F3;&#x4E0B;&#x6765;&#xFF0C;CN&#x533A;&#x6D77;&#x664F;&#x6CB3;&#x6E05;&#x3001;&#x4E7E;&#x5764;&#x6717;&#x6717;&#xFF0C;&#x7B80;&#x76F4;&#x662F;&#x68A6;&#x60F3;&#x4E2D;&#x7684;&#x5BB6;&#x56ED;&#x554A;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x4E8B;&#x5B9E;&#x771F;&#x7684;&#x8FD9;&#x4E48;&#x7B80;&#x5355;&#x5417;&#xFF1F;&#x542C;&#x6211;&#x6162;&#x6162;&#x626F;&#x6765;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmckXCF4Gb93L5HiVQBz9LmcRTwf5TarkiKERWJbq6WStz/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com" target="_blank" rel="noopener">pixabay</a>)</p>
-<p><strong>&#x5B89;&#x5168;&#x63D0;&#x793A;&#xFF1A;O&#x54E5;&#x95F2;&#x626F;&#x6DE1;&#x7CFB;&#x5217;&#x672C;&#x5C31;&#x662F;&#x95F2;&#x626F;&#x6DE1;&#xFF0C;&#x8BF8;&#x4F4D;&#x5343;&#x4E07;&#x522B;&#x5F53;&#x771F;&#xFF01;</strong></p>
-<h1 id="STEEM&#x4E0A;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;"><a href="#STEEM&#x4E0A;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;" class="headerlink" title="STEEM&#x4E0A;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;"></a>STEEM&#x4E0A;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;</h1><p>&#x9996;&#x5148;&#xFF0C;&#x8981;&#x77E5;&#x9053;&#xFF0C;STEEM&#x4E0A;&#x4E00;&#x5207;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x50CF;&#x53D1;&#x5E16;&#x56DE;&#x590D;&#x8FD9;&#x7C7B;&#x5C31;&#x4E0D;&#x7528;&#x8BF4;&#x4E86;&#xFF0C;&#x70B9;&#x8D5E;&#x3001;&#x8E29;&#x7070;&#x3001;&#x5173;&#x6CE8;&#x3001;&#x53D6;&#x5173;&#x3001;&#x62C9;&#x9ED1;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x3002;</p>
-<p>&#x6709;&#x670B;&#x53CB;&#x53EF;&#x80FD;&#x4F1A;&#x8BF4;&#xFF0C;&#x4E0D;&#x5C31;&#x662F;steemd&#x561B;&#xFF0C;&#x8C01;&#x6CA1;&#x4E8B;&#x603B;&#x76EF;&#x7740;steemd&#x770B;&#x554A;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5077;&#x5077;&#x62C9;&#x9ED1;&#x4E00;&#x4E9B;&#x6C34;&#x6587;&#x5236;&#x9020;&#x8005;&#xFF0C;&#x6BD4;&#x5982;&#x90A3;&#x4E48;&#x4EC0;&#x4E48; @oflyhigh&#xFF0C;&#x4ED6;&#x4E00;&#x5B9A;&#x4E0D;&#x77E5;&#x9053;&#x3002;</p>
-<p>&#x54B3;&#x54B3;&#xFF0C;&#x8FD9;&#x79CD;&#x60F3;&#x6CD5;&#x662F;&#x5927;&#x9519;&#x7279;&#x9519;&#x7684;&#xFF0C;STEEM&#x4E0A;&#x4E00;&#x5207;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x900F;&#x660E;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x60F3;&#x67E5;&#xFF0C;&#x6CA1;&#x6709;&#x67E5;&#x4E0D;&#x5230;&#x7684;&#x4FE1;&#x606F;(&#x9664;&#x4E86;&#x522B;&#x4EBA;&#x7684;&#x79C1;&#x94A5;&#x548C;&#x52A0;&#x5BC6;&#x7684;memo&#x4E4B;&#x7C7B;)&#x3002;&#x5C24;&#x5176;&#x662F;&#xFF0C;&#x6709;&#x4E9B;&#x53D8;&#x6001;&#x8FD8;&#x5F00;&#x53D1;&#x51FA;&#x6765;&#x4E00;&#x4E9B;&#x5783;&#x573E;&#x5DE5;&#x5177;&#xFF0C;&#x4E13;&#x95E8;&#x7AA5;&#x63A2;&#x8FD9;&#x4E9B;&#x4E8B;&#x60C5;&#xFF0C;&#x6BD4;&#x5982;&#x90A3;&#x4E2A; @oflyhigh &#x7684;&#x7834;&#x516C;&#x4F17;&#x53F7;&#x5C31;&#x6709;&#x4E2A;&#x67E5;&#x8C01;&#x62C9;&#x9ED1;&#x4F60;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x6307;&#x4EE4;&#x662F;&#xFF1A;<strong><code>@oflyhigh?mt</code></strong></p>
-<p>&#x90A3;&#x5217;&#x8868;&#x90A3;&#x4E2A;&#x53EB;&#x957F;&#x554A;&#xFF0C;&#x62C9;&#x9ED1;&#x4ED6;&#x7684;&#x4EBA;&#x90A3;&#x4E2A;&#x53EB;&#x591A;&#x554A;&#xFF0C;&#x5145;&#x5206;&#x8BC1;&#x5B9E;&#x4ED6;&#x7684;&#x6587;&#x7AE0;&#x6709;&#x591A;&#x6EE5;&#xFF0C;&#x4ED6;&#x6709;&#x591A;&#x62DB;&#x4EBA;&#x70E6;&#x3002;</p>
-<h1 id="&#x62C9;&#x9ED1;&#x5C31;&#x662F;&#x6253;&#x8138;"><a href="#&#x62C9;&#x9ED1;&#x5C31;&#x662F;&#x6253;&#x8138;" class="headerlink" title="&#x62C9;&#x9ED1;&#x5C31;&#x662F;&#x6253;&#x8138;"></a>&#x62C9;&#x9ED1;&#x5C31;&#x662F;&#x6253;&#x8138;</h1><p>&#x54B3;&#x54B3;&#xFF0C;&#x867D;&#x7136;&#x597D;&#x591A;&#x4EBA;&#x62C9;&#x9ED1;&#x4E86; @oflyhigh&#xFF0C;&#x4F46;&#x662F;&#x6570;&#x4E86;&#x6570;&#xFF0C;&#x67E5;&#x4E86;&#x67E5;&#xFF0C;&#x55EF;&#xFF0C;&#x81F3;&#x5C11;&#x6CA1;&#x6709;CN&#x533A;&#x719F;&#x6089;&#x7684;&#x9762;&#x5B54;&#x62C9;&#x9ED1;&#x4ED6;&#x3002;</p>
-<p>&#x8FD9;&#x5C31;&#x662F;&#x4E2D;&#x56FD;&#x4EBA;&#x8BB2;&#x7A76;&#x4EBA;&#x60C5;&#xFF0C;&#x8F7B;&#x6613;&#x4E0D;&#x5F97;&#x7F6A;&#x4EBA;&#xFF0C;&#x770B;&#x4F60;&#x6587;&#x7AE0;&#x6EE5;&#x4E0D;&#x723D;&#xFF0C;&#x6211;&#x4E0D;&#x770B;&#x5C31;&#x662F;&#x4E86;&#xFF0C;&#x53CD;&#x6B63;&#x4E5F;&#x4E0D;&#x5F71;&#x54CD;&#x5565;&#xFF0C;&#x62C9;&#x9ED1;&#x65E0;&#x5F02;&#x4E8E;&#x6253;&#x8138;&#xFF0C;&#x6253;&#x522B;&#x4EBA;&#x7684;&#x8138;&#x7684;&#x6B21;&#x6570;&#x591A;&#x4E86;&#xFF0C; &#x7EC8;&#x7A76;&#x4F1A;&#x6709;&#x88AB;&#x522B;&#x4EBA;&#x6253;&#x8138;&#x7684;&#x4E00;&#x5929;&#x3002;&#x65E2;&#x7136;&#x5982;&#x6B64;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x770B;&#x56F4;&#x89C2;&#x522B;&#x4EBA;&#x4E92;&#x76F8;&#x6253;&#x8138;&#x597D;&#x4E86;&#x3002;</p>
-<p>&#x53E6;&#x5916;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;&#x5176;&#x5B83;&#x793E;&#x4EA4;&#x7F51;&#x7EDC;&#xFF0C;&#x5355;&#x7EAF;&#x7684;&#x793E;&#x4EA4;&#xFF0C;&#x522B;&#x7684;&#x793E;&#x4EA4;&#x7F51;&#x7AD9;&#xFF0C;&#x4F60;&#x62C9;&#x9ED1;&#x6211;&#x3001;&#x6211;&#x62C9;&#x9ED1;&#x4F60;&#xFF0C;&#x5927;&#x4E0D;&#x4E86;&#x8001;&#x6B7B;&#x4E0D;&#x76F8;&#x5F80;&#x6765;&#x3002;STEEM&#x8FD9;&#x4E0A;&#x8FB9;&#x6709;&#x94B1;&#x554A;&#xFF0C;&#x5047;&#x8BBE;&#x4F60;&#x628A;&#x6240;&#x4EE5;&#x7684;&#x5927;&#x6237;&#x90FD;&#x62C9;&#x9ED1;&#x4E86;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x8FD8;&#x6307;&#x671B;&#x4EBA;&#x5BB6;&#x7ED9;&#x4F60;&#x70B9;&#x8D5E;&#xFF1F;&#x5F00;&#x4EC0;&#x4E48;&#x73A9;&#x7B11;&#x554A;&#x3002;</p>
-<p>&#x6211;&#x53C8;&#x67E5;&#x4E86;&#x67E5;CN&#x533A;&#x7684;&#x4E00;&#x4E9B;<del>&#x540D;&#x4EBA;</del>&#x4EBA;&#x540D;&#xFF0C;&#x5177;&#x4F53;&#x662F;&#x8C01;&#x5C31;&#x4E0D;&#x8BF4;&#x5566;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x62C9;&#x9ED1;&#x4ED6;&#x4EEC;&#x7684;&#x4EBA;&#x4E5F;&#x5F88;&#x591A;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x5C11;&#x6709;CN&#x533A;&#x7684;&#x4EBA;&#x62C9;&#x9ED1;&#x4ED6;&#x4EEC;&#x3002;&#x770B;&#x6765;&#x6211;&#x7684;<del>&#x8C2C;&#x8BBA;</del>&#x7ED3;&#x8BBA;&#x5E94;&#x8BE5;&#x662F;&#x5927;&#x6982;&#x6210;&#x7ACB;&#x7684;&#x3002;</p>
-<h1 id="&#x8E29;&#x7070;&#x65E0;&#x5F02;&#x4E8E;&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;"><a href="#&#x8E29;&#x7070;&#x65E0;&#x5F02;&#x4E8E;&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;" class="headerlink" title="&#x8E29;&#x7070;&#x65E0;&#x5F02;&#x4E8E;&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;"></a>&#x8E29;&#x7070;&#x65E0;&#x5F02;&#x4E8E;&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;</h1><p>&#x5982;&#x679C;&#x8BF4;&#x62C9;&#x9ED1;&#x662F;&#x6253;&#x8138;&#xFF0C;&#x6253;&#x4E86;&#x5C31;&#x6253;&#x4E86;&#xFF0C;&#x6BD5;&#x7ADF;&#x54B1;&#x8138;&#x76AE;&#x539A;&#xFF0C;&#x6253;&#x51E0;&#x4E0B;&#x51E0;&#x5341;&#x4E0B;&#x4E5F;&#x4E0D;&#x75BC;&#xFF0C;&#x90A3;&#x4E48;&#x8E29;&#x7070;&#x5C31;&#x72E0;&#x4E86;&#xFF0C;&#x7528;&#x9053;&#x4E0A;&#x7684;&#x8BDD;&#x8BF4;&#x65E0;&#x5F02;&#x4E8E;&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x597D;&#x591A;&#x4EBA;&#x6253;&#x7740;&#x521B;&#x4F5C;&#x7684;&#x53E3;&#x53F7;&#xFF0C;&#x6216;&#x8005;&#x6709;&#x7740;&#x4E3A;&#x4E2D;&#x534E;&#x4E4B;&#x5D1B;&#x8D77;&#x800C;&#x52AA;&#x529B;&#x53D1;&#x6587;&#x7684;&#x5B8F;&#x5927;&#x613F;&#x666F;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x8D28;&#x4E0A;&#x5927;&#x90E8;&#x5206;&#x4EBA;&#xFF0C;&#x5305;&#x62EC;&#x90A3;&#x4E2A;&#x5565; @oflyhigh &#x5728;&#x5185;&#xFF0C;&#x90FD;&#x662F;&#x4E3A;&#x4E86;&#x94B1;&#x800C;&#x6765;&#x3002;</p>
-<p>&#x65E2;&#x7136;&#x5927;&#x5BB6;&#x90FD;&#x662F;&#x4E3A;&#x94B1;&#x800C;&#x6765;&#xFF0C;&#x90A3;&#x4E48;&#x4EBA;&#x5BB6;SPAM &#x8D5A;&#x4E86;&#x70B9;&#x94B1;&#xFF0C;&#x4F60;&#x4E00;&#x811A;&#x8E29;&#x7070;&#x53D8;&#x6210;&#x96F6;&#xFF0C;&#x90A3;&#x5C82;&#x4E0D;&#x662F;&#x5F7B;&#x5E95;&#x65AD;&#x4E86;&#x4EBA;&#x5BB6;&#x7684;&#x8D22;&#x8DEF;&#x5462;&#xFF1F;&#x6C5F;&#x6E56;&#x4E0A;&#x6709;&#x53E5;&#x8BDD;&#x548B;&#x8BF4;&#x6765;&#x7740;&#xFF0C;<strong>&#x65AD;&#x4EBA;&#x8D22;&#x8DEF;&#x5982;&#x2026;&#x2026;</strong></p>
-<p>&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x7740;&#x719F;&#x4EBA;&#x4E5F;&#x4E0B;&#x4E0D;&#x53BB;&#x811A;&#x554A;&#x3002;</p>
-<h1 id="&#x7ED3;&#x8BBA;"><a href="#&#x7ED3;&#x8BBA;" class="headerlink" title="&#x7ED3;&#x8BBA;"></a>&#x7ED3;&#x8BBA;</h1><p>&#x8FD9;&#x4E00;&#x5206;&#x6790;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x62C9;&#x9ED1;&#x8FD8;&#x662F;&#x8E29;&#x7070;&#x90FD;&#x4E0B;&#x4E0D;&#x53BB;&#x624B;&#x554A;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x6709;&#x4E9B;&#x662F;CN&#x533A;&#x7684;&#x719F;&#x9762;&#x5B54;&#x3002;&#x5C3D;&#x7BA1;&#x4ED6;&#x4EEC;&#x6216;&#x6574;&#x6BB5;&#x6574;&#x6BB5;&#x7684;&#x6284;&#x88AD;&#xFF0C;&#x6216;&#x4E09;&#x8A00;&#x4E24;&#x8BED;&#x5237;&#x5C4F;&#xFF0C;&#x9664;&#x4E86;&#x5728;&#x5FC3;&#x5E95;&#x6307;&#x8D23;&#x4E00;&#x4E0B;&#xFF0C;&#x8FD8;&#x80FD;&#x505A;&#x4EC0;&#x4E48;&#xFF1F;</p>
-<p>&#x6216;&#x8005;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x660E;&#x660E;&#x77E5;&#x9053;&#x662F;&#x6284;&#x88AD;&#xFF0C;&#x6216;&#x660E;&#x660E;&#x770B;&#x7740;&#x4E0D;&#x723D;&#xFF0C;&#x8FD8;&#x5F97;&#x53BB;&#x56DE;&#x590D;&#xFF0C;&#x201C;&#x55EF;&#xFF0C;&#x8BF4;&#x5F97;&#x771F;&#x597D;&#xFF0C;&#x8A00;&#x4E4B;&#x6709;&#x7406;&#x201D;&#xFF0C;&#x65E0;&#x4ED6;&#xFF0C;&#x5237;&#x8138;&#x800C;&#x5DF2;&#x3002;&#x5237;&#x6210;&#x8138;&#x719F;&#xFF0C;&#x4E00;&#x65E6;&#x81EA;&#x5DF1;&#x4E5F;&#x73A9;&#x70B9;&#x5957;&#x8DEF;&#xFF0C;&#x522B;&#x4EBA;&#x4E5F;&#x4E0D;&#x597D;&#x6307;&#x8D23;&#x4E86;&#x4E0D;&#x662F;&#xFF1F;</p>
-<p>&#x8BB2;&#x7A76;&#x70B9;&#x7684;&#x4EBA;&#x660E;&#x54F2;&#x4FDD;&#x8EAB;&#xFF0C;&#x81EA;&#x626B;&#x95E8;&#x524D;&#x96EA;&#xFF0C;&#x4E0D;&#x8BB2;&#x7A76;&#x7684;&#xFF0C;&#x968F;&#x6CE2;&#x9010;&#x6D41;&#xFF0C;&#x5982;&#x6B64;&#x770B;&#x6765;&#xFF0C;<strong>&#x6D77;&#x664F;&#x6CB3;&#x6E05;&#x3001;&#x4E7E;&#x5764;&#x6717;&#x6717;</strong>&#xFF0C;&#x53EA;&#x80FD;&#x662F;&#x68A6;&#x60F3;&#x4E86;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/24fjbl-o" target="_blank" rel="noopener">O&#x54E5;&#x95F2;&#x626F;&#x6DE1;&#xFF1A;&#x62C9;&#x9ED1;&#x3001;&#x8E29;&#x7070;&#x4E0B;&#x5F97;&#x53BB;&#x624B;&#xFF1F;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -732,7 +764,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/258/">258</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/259/">259</a></li>
             
         </ul>
     </nav>
