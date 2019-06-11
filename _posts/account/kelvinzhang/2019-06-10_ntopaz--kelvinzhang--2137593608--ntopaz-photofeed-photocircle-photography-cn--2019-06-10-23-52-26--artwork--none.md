@@ -25,7 +25,11 @@ widgets:
 ---
 
 
-![ntopaz-image-0](https://artisteem.io/media/cb1fc137-3441-4c0a-8a3b-c7afb2ab192c)This is a 'Sheep grabbing' game of Tuva people in Xinjiang, China. Two teams of riders were grabbing a sheep. The game was intense and friendly. Although it was still snowing in the sky. It could not stop the warm atmosphere of the crowd. The picture can get more details of character's expression and the dynamic look of horses against the white snow background. This was a happy game of this new year.
+![ntopaz-image-0](https://artisteem.io/media/cb1fc137-3441-4c0a-8a3b-c7afb2ab192c)
+
+You can [click here](https://cdn.steemitimages.com/DQmbaoXCZ9RsHV7sTfRn2WxX6nDWShwf38WK3kWSdSCbSLj/IMG_5301_2.JPG) to open the original image for the details.
+
+This is a 'Sheep grabbing' game of Tuva people in Xinjiang, China. Two teams of riders were grabbing a sheep. The game was intense and friendly. Although it was still snowing in the sky. It could not stop the warm atmosphere of the crowd. The picture can get more details of character's expression and the dynamic look of horses against the white snow background. This was a happy game of this new year.
 
 Photo by @kelvinzhang, Camara: Canon 5D Mark II, Lens: EF 70-200/2.8L, Focal length: 105mm, TV: 1/500, AV: 5.0 ISO: 200
 
