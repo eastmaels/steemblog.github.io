@@ -1,20 +1,17 @@
 
 ---
-title: 'Steem Engine Trading list 20190609'
-permlink: steemenginetradinglist20190609-fuvy8wa967
+title: 'Steem Engine Trading list 20190612'
+permlink: steemenginetradinglist20190612-hyg1z2ma83
 catalog: true
 toc_nav_num: true
 toc: true
 position: 9999
-date: 2019-06-09 03:41:06
+date: 2019-06-12 00:52:51
 categories:
-- leaderboard
+- steempress
 tags:
-- leaderboard
-- sct
-- sct-steem
-- steem
-- steemengine
+- steempress
+- blog
 thumbnail: http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/%E4%BA%A4%E6%98%93%E6%95%B0%E6%8D%AE%E6%8E%92%E8%A1%8C%E6%A6%9C-2.png
 sidebar:
     right:
@@ -62,107 +59,107 @@ Thank you very much. 🙏
 </tr>
 <tr>
 <td>1</td>
-<td>RORS</td>
-<td>Road Of Rich STEEM</td>
-<td>$3594638</td>
-<td>$0.00359</td>
-<td>100.00%</td>
-<td>$6130</td>
-<td>1000000000</td>
+<td>JJM</td>
+<td>jjangjjangman</td>
+<td>$48334020</td>
+<td>$0.161</td>
+<td>0.00%</td>
+<td>$2120</td>
+<td>300000000</td>
 </tr>
 <tr>
 <td>2</td>
 <td>PAL</td>
 <td>PALcoin</td>
-<td>$320195</td>
-<td>$0.02333</td>
-<td>-2.70%</td>
-<td>$2477</td>
-<td>13,727,426</td>
+<td>$1357862</td>
+<td>$0.09667</td>
+<td>77.60%</td>
+<td>$1980</td>
+<td>14,046,652</td>
 </tr>
 <tr>
 <td>3</td>
-<td>SCT</td>
-<td>steemcoinpan token</td>
-<td>$285460</td>
-<td>$0.253</td>
+<td>PALMM</td>
+<td>PAL MEGA MINER</td>
+<td>$435442</td>
+<td>$43.54</td>
 <td>0.00%</td>
-<td>$1780</td>
-<td>1,127,310.08</td>
+<td>$1520</td>
+<td>10,000.00</td>
 </tr>
 <tr>
 <td>4</td>
 <td>ENG</td>
 <td>Steem Engine Token</td>
-<td>$1427175</td>
-<td>$0.359</td>
-<td>0.00%</td>
-<td>$902.56</td>
-<td>3,970,200</td>
+<td>$1365314</td>
+<td>$0.344</td>
+<td>9.70%</td>
+<td>$1450</td>
+<td>3,969,300</td>
 </tr>
 <tr>
 <td>5</td>
-<td>JJM</td>
-<td>jjangjjangman</td>
-<td>$44273953</td>
-<td>$0.148</td>
-<td>0.00%</td>
-<td>$892.26</td>
-<td>300,000,000</td>
+<td>SCT</td>
+<td>steemcoinpan token</td>
+<td>$432956</td>
+<td>$0.37</td>
+<td>32.81%</td>
+<td>$1397</td>
+<td>1,169,755</td>
 </tr>
 <tr>
 <td>6</td>
-<td>PALMM</td>
-<td>PAL MEGA MINER</td>
-<td>$399404</td>
-<td>$39.94</td>
+<td>AIT</td>
+<td>AI Channel Token</td>
+<td>$391897</td>
+<td>$0.00327</td>
 <td>0.00%</td>
-<td>$678.99</td>
-<td>10,000</td>
+<td>$1331</td>
+<td>120,000,000</td>
 </tr>
 <tr>
 <td>7</td>
-<td>EOSP</td>
-<td>EOSPeg</td>
-<td>$6796</td>
-<td>$6.86</td>
-<td>-3.80%</td>
-<td>$654.95</td>
-<td>991</td>
+<td>DEC</td>
+<td>Dark Energy Crystals</td>
+<td>$204907</td>
+<td>$0.00107</td>
+<td>2.10%</td>
+<td>$929.55</td>
+<td>192,070,282</td>
 </tr>
 <tr>
 <td>8</td>
-<td>DEC</td>
-<td>Dark Energy Crystals</td>
-<td>$192122</td>
-<td>$0.00103</td>
-<td>4.50%</td>
-<td>$563.65</td>
-<td>186442734.1</td>
+<td>GAMER</td>
+<td>Krypto Gamers Token</td>
+<td>$29410</td>
+<td>$0.00002</td>
+<td>0.00%</td>
+<td>$883.68</td>
+<td>1350828726</td>
 </tr>
 <tr>
 <td>9</td>
-<td>GAMER</td>
-<td>Krypto Gamers Token</td>
-<td>$32148</td>
-<td>$0.00002</td>
-<td>0.00%</td>
-<td>$476.64</td>
-<td>1,341,497,677.74</td>
+<td>EMFOUR</td>
+<td>Engine Miner 4</td>
+<td>$130632</td>
+<td>$130.63</td>
+<td>-0.20%</td>
+<td>$363.25</td>
+<td>1,000.00</td>
 </tr>
 <tr>
 <td>10</td>
-<td>EMFOUR</td>
-<td>Engine Miner 4</td>
-<td>$120620</td>
-<td>$120.62</td>
+<td>EM</td>
+<td>Engine Miner</td>
+<td>$435572</td>
+<td>$43.54</td>
 <td>0.00%</td>
-<td>$432.6</td>
-<td>1,000</td>
+<td>$295.12</td>
+<td>10,003</td>
 </tr>
 <tr>
 <td colspan="3">https://steem-engine.com/?p=tokens</td>
-<td>2019/6/9</td>
+<td>2019/6/12</td>
 <td></td>
 <td></td>
 <td></td>
@@ -198,107 +195,107 @@ Thank you very much. 🙏
 </tr>
 <tr>
 <td>1</td>
-<td>TROLL</td>
-<td>TROLL of STEEM Token</td>
-<td>$3187</td>
-<td>$0.00008</td>
-<td>18900.00%</td>
-<td>$0.405</td>
-<td>42000000</td>
-</tr>
-<tr>
-<td>2</td>
 <td>DC</td>
 <td>Donatello Club Token</td>
-<td>$1797</td>
-<td>$0.05991</td>
-<td>733.30%</td>
-<td>$5.1</td>
+<td>$3919</td>
+<td>$0.131</td>
+<td>1400.00%</td>
+<td>$31.81</td>
 <td>30000</td>
 </tr>
 <tr>
+<td>2</td>
+<td>BANJO</td>
+<td>Banjo</td>
+<td>$726.56</td>
+<td>$0.283</td>
+<td>441.70%</td>
+<td>$18.64</td>
+<td>2567</td>
+</tr>
+<tr>
 <td>3</td>
-<td>SPT</td>
-<td>Splintertalk</td>
-<td>$9052</td>
-<td>$0.0008</td>
-<td>150.00%</td>
-<td>$112.02</td>
-<td>11331402.89</td>
+<td>PROXY</td>
+<td>PROXY token</td>
+<td>$101893</td>
+<td>$0.01698</td>
+<td>298.00%</td>
+<td>$27.35</td>
+<td>6000000</td>
 </tr>
 <tr>
 <td>4</td>
-<td>SHOP</td>
-<td>Shop Coin</td>
-<td>$8875648</td>
-<td>$0.09985</td>
-<td>150.00%</td>
-<td>$1.64</td>
-<td>88888888</td>
+<td>SHADE</td>
+<td>SHADE</td>
+<td>$9580</td>
+<td>$0.0958</td>
+<td>144.40%</td>
+<td>$9.91</td>
+<td>100000</td>
 </tr>
 <tr>
 <td>5</td>
-<td>RORS</td>
-<td>Road Of Rich STEEM</td>
-<td>$3594638</td>
-<td>$0.00359</td>
-<td>100.00%</td>
-<td>$6130</td>
-<td>1000000000</td>
+<td>EPC</td>
+<td>Epic Token</td>
+<td>$16168</td>
+<td>$0.00006</td>
+<td>85.70%</td>
+<td>$2.73</td>
+<td>285610757.8</td>
 </tr>
 <tr>
 <td>6</td>
-<td>BEER</td>
-<td>beer</td>
-<td>$310337</td>
-<td>$0.31</td>
-<td>41.30%</td>
-<td>$8.03</td>
-<td>1000000</td>
+<td>PAL</td>
+<td>PALcoin</td>
+<td>$1357862</td>
+<td>$0.09667</td>
+<td>77.60%</td>
+<td>$1980</td>
+<td>14046652</td>
 </tr>
 <tr>
 <td>7</td>
-<td>BLQ</td>
-<td>Bloque64</td>
-<td>$155769</td>
-<td>$0.01558</td>
-<td>30.00%</td>
-<td>$7.14</td>
-<td>10000100</td>
+<td>SCT</td>
+<td>steemcoinpan token</td>
+<td>$432956</td>
+<td>$0.37</td>
+<td>32.81%</td>
+<td>$1397</td>
+<td>1169755.312</td>
 </tr>
 <tr>
 <td>8</td>
-<td>ACTNEARN</td>
-<td>actnearn</td>
-<td>$1156971</td>
-<td>$0.00231</td>
-<td>15.80%</td>
-<td>$1.14</td>
-<td>500300793</td>
+<td>ENG</td>
+<td>Steem Engine Token</td>
+<td>$1365314</td>
+<td>$0.344</td>
+<td>9.70%</td>
+<td>$1450</td>
+<td>3969300</td>
 </tr>
 <tr>
 <td>9</td>
-<td>TPU</td>
-<td>tipU Token</td>
-<td>$7045</td>
-<td>$0.479</td>
-<td>11.10%</td>
-<td>$90.84</td>
-<td>14700</td>
+<td>AAA</td>
+<td>TRIPLE A</td>
+<td>$214452</td>
+<td>$0.00213</td>
+<td>8.90%</td>
+<td>$100.63</td>
+<td>100508597.1</td>
 </tr>
 <tr>
 <td>10</td>
 <td>DEC</td>
 <td>Dark Energy Crystals</td>
-<td>$192122</td>
-<td>$0.00103</td>
-<td>4.50%</td>
-<td>$563.65</td>
-<td>186442734.1</td>
+<td>$204907</td>
+<td>$0.00107</td>
+<td>2.10%</td>
+<td>$929.55</td>
+<td>192070282.1</td>
 </tr>
 <tr>
 <td colspan="3">https://steem-engine.com/?p=tokens</td>
-<td>2019/6/9</td>
+<td>2019/6/12</td>
 <td></td>
 <td></td>
 <td></td>
@@ -334,115 +331,115 @@ Thank you very much. 🙏
 </tr>
 <tr>
 <td>1</td>
-<td>BOOSTER</td>
-<td>BOOSTER</td>
-<td>$3957799964242</td>
-<td>$78840637</td>
+<td>HIPHOP</td>
+<td>HIPHOP</td>
+<td>$435442</td>
+<td>$43544</td>
 <td>0</td>
 <td>$--</td>
-<td>50200</td>
+<td>10</td>
 </tr>
 <tr>
 <td>2</td>
-<td>HIPHOP</td>
-<td>HIPHOP</td>
-<td>$399404</td>
-<td>$39940</td>
+<td>LOVE</td>
+<td>JANASILVER</td>
+<td>$3004547</td>
+<td>$30045</td>
 <td>0.00%</td>
-<td>$--</td>
-<td>10</td>
+<td>$0.15</td>
+<td>100</td>
 </tr>
 <tr>
 <td>3</td>
-<td>LOVE</td>
-<td>JANASILVER</td>
-<td>$2276604</td>
-<td>$22766</td>
+<td>BTCP</td>
+<td>BITCOIN Pegged</td>
+<td>$16046</td>
+<td>$12276</td>
 <td>0.00%</td>
-<td>$0.25</td>
-<td>100.00</td>
+<td>$--</td>
+<td>1.31</td>
 </tr>
 <tr>
 <td>4</td>
-<td>BTCP</td>
-<td>BITCOIN Pegged</td>
-<td>$14718</td>
-<td>$11260</td>
+<td>BCHP</td>
+<td>BITCOIN CASH Pegged</td>
+<td>$8582</td>
+<td>$2220</td>
 <td>0.00%</td>
 <td>$--</td>
-<td>1</td>
+<td>4</td>
 </tr>
 <tr>
 <td>5</td>
-<td>BCHP</td>
-<td>BITCOIN CASH Pegged</td>
-<td>$7872</td>
-<td>$2036</td>
+<td>TROPHY</td>
+<td>JJM Trophy</td>
+<td>$2177</td>
+<td>$435.44</td>
 <td>0.00%</td>
 <td>$--</td>
-<td>4</td>
+<td>5</td>
 </tr>
 <tr>
 <td>6</td>
-<td>TROPHY</td>
-<td>JJM Trophy</td>
-<td>$1997</td>
-<td>$399.4</td>
-<td>0.00%</td>
-<td>$--</td>
-<td>5</td>
-</tr>
-<tr>
-<td>7</td>
 <td>LTCP</td>
 <td>LITECOIN Pegged</td>
-<td>$10359</td>
-<td>$319.52</td>
+<td>$8470</td>
+<td>$261.26</td>
 <td>0.00%</td>
-<td>$8.56</td>
+<td>$--</td>
 <td>32</td>
 </tr>
 <tr>
-<td>8</td>
+<td>7</td>
 <td>EMFOUR</td>
 <td>Engine Miner 4</td>
-<td>$120620</td>
-<td>$120.62</td>
+<td>$130632</td>
+<td>$130.63</td>
+<td>-0.20%</td>
+<td>$363.25</td>
+<td>1,000</td>
+</tr>
+<tr>
+<td>8</td>
+<td>FUND</td>
+<td>FUND</td>
+<td>$4180</td>
+<td>$55.74</td>
 <td>0.00%</td>
-<td>$432.6</td>
-<td>1000</td>
+<td>$--</td>
+<td>75</td>
 </tr>
 <tr>
 <td>9</td>
-<td>FUND</td>
-<td>FUND</td>
-<td>$3834</td>
-<td>$51.12</td>
+<td>PALMM</td>
+<td>PAL MEGA MINER</td>
+<td>$435442</td>
+<td>$43.54</td>
 <td>0.00%</td>
-<td>$--</td>
-<td>75.00</td>
+<td>$1520</td>
+<td>10,000.00</td>
 </tr>
 <tr>
 <td>10</td>
-<td>PALMM</td>
-<td>PAL MEGA MINER</td>
-<td>$399404</td>
-<td>$39.94</td>
+<td>EM</td>
+<td>Engine Miner</td>
+<td>$435572</td>
+<td>$43.54</td>
 <td>0.00%</td>
-<td>$678.99</td>
-<td>10,000</td>
+<td>$295.12</td>
+<td>10,003</td>
 </tr>
 <tr>
 <td colspan="3">https://steem-engine.com/?p=tokens</td>
-<td>2019/6/9</td>
+<td>2019/6/12</td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
-</table> <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : http://cnstm.org/blog/2019/06/09/steem-engine-trading-list-20190609/ </em><hr/></center>  
+</table> <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : http://cnstm.org/blog/2019/06/12/steem-engine-trading-list-20190612/ </em><hr/></center>  
 
 - - -
 
-This page is synchronized from the post: [Steem Engine Trading list 20190609](https://steemit.com/@m18207319997/steemenginetradinglist20190609-fuvy8wa967)
+This page is synchronized from the post: [Steem Engine Trading list 20190612](https://steemit.com/@m18207319997/steemenginetradinglist20190612-hyg1z2ma83)
