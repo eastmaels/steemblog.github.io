@@ -5,6 +5,7 @@ permlink: --farming-diary-clean-up-jujube-trees
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-09 09:28:30
 categories:
 - cn

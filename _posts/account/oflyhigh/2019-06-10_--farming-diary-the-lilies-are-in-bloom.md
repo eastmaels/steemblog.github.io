@@ -5,6 +5,7 @@ permlink: --farming-diary-the-lilies-are-in-bloom
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-10 10:40:21
 categories:
 - cn
