@@ -1,10 +1,11 @@
 
 ---
-title: "【Steem指南】浏览器插件：Steem Server选择工具；解决*.steemit.com被禁的问题"
+title: '【Steem指南】浏览器插件：Steem Server选择工具；解决*.steemit.com被禁的问题'
 permlink: steemsteemserver-fs43botbb3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-17 15:42:12
 categories:
 - steempress

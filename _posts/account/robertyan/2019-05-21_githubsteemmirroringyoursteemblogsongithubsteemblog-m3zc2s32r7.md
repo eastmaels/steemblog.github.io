@@ -1,10 +1,11 @@
 
 ---
-title: "用GitHub创建Steem文章镜像 | Mirroring Your Steem Blogs on GitHub | 免费博客备份服务： steemblog"
+title: '用GitHub创建Steem文章镜像 | Mirroring Your Steem Blogs on GitHub | 免费博客备份服务： steemblog'
 permlink: githubsteemmirroringyoursteemblogsongithubsteemblog-m3zc2s32r7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-21 19:17:12
 categories:
 - steempress

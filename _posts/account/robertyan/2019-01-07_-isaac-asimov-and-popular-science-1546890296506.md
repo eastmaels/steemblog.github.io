@@ -1,10 +1,11 @@
 
 ---
-title: "作为科普作家的艾萨克·阿西莫夫 | Isaac Asimov and Popular Science"
+title: '作为科普作家的艾萨克·阿西莫夫 | Isaac Asimov and Popular Science'
 permlink: -isaac-asimov-and-popular-science-1546890296506
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-07 19:44:57
 categories:
 - cn-stem

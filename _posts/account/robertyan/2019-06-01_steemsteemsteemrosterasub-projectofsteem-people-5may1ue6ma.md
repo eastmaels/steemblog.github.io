@@ -1,10 +1,11 @@
 
 ---
-title: "Steem 花名册：《Steem指北》子项目 | Steem Roster: A Sub-Project of Steem-People"
+title: 'Steem 花名册：《Steem指北》子项目 | Steem Roster: A Sub-Project of Steem-People'
 permlink: steemsteemsteemrosterasub-projectofsteem-people-5may1ue6ma
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-01 19:48:36
 categories:
 - sct

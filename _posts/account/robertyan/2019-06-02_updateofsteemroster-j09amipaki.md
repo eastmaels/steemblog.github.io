@@ -1,10 +1,11 @@
 
 ---
-title: "真·花名册 | Update of Steem Roster"
+title: '真·花名册 | Update of Steem Roster'
 permlink: updateofsteemroster-j09amipaki
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-02 16:32:36
 categories:
 - sct

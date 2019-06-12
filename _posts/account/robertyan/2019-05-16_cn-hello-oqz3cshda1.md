@@ -1,10 +1,11 @@
 
 ---
-title: "借问师友何处有，门童遥指新手村 | 关于 @cn-hello 小友的来历"
+title: '借问师友何处有，门童遥指新手村 | 关于 @cn-hello 小友的来历'
 permlink: cn-hello-oqz3cshda1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-16 18:58:39
 categories:
 - steempress

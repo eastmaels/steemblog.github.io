@@ -1,10 +1,11 @@
 
 ---
-title: "标签的本质 | The Nature of Tags（一）"
+title: '标签的本质 | The Nature of Tags（一）'
 permlink: thenatureoftags-mn0nty7nab
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-27 17:35:45
 categories:
 - steempress

@@ -1,10 +1,11 @@
 
 ---
-title: "【Steem指南】用eSteem Surfer发帖"
+title: '【Steem指南】用eSteem Surfer发帖'
 permlink: steem-esteem-surfer
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-13 04:47:30
 categories:
 - esteem-cn

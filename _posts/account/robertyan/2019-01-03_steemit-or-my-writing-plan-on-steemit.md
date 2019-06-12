@@ -1,10 +1,11 @@
 
 ---
-title: "在Steemit的写作计划 | My Writing Plan on Steemit"
+title: '在Steemit的写作计划 | My Writing Plan on Steemit'
 permlink: steemit-or-my-writing-plan-on-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-03 10:51:21
 categories:
 - cn

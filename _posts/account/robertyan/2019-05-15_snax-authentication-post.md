@@ -1,10 +1,11 @@
 
 ---
-title: "Snax authentication post"
+title: 'Snax authentication post'
 permlink: snax-authentication-post
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-15 15:12:51
 categories:
 - free-snaxaccount

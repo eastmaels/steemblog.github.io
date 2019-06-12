@@ -1,10 +1,11 @@
 
 ---
-title: "【Steem之旅】2019年Steem世界的探索 | Exploring the Steem World in 2019 |【新手学堂作业】"
+title: '【Steem之旅】2019年Steem世界的探索 | Exploring the Steem World in 2019 |【新手学堂作业】'
 permlink: steem2019steemexploringthesteemworldin2019-75f55ju8qg
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-09 16:41:09
 categories:
 - steempress

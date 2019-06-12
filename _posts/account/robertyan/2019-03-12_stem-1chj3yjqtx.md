@@ -1,10 +1,11 @@
 
 ---
-title: "【未来教育学】成年人需要什么样的STEM教育？（四）"
+title: '【未来教育学】成年人需要什么样的STEM教育？（四）'
 permlink: stem-1chj3yjqtx
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-12 15:05:18
 categories:
 - steempress
