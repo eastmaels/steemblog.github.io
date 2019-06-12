@@ -5,6 +5,7 @@ permlink: scot-tokens-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-11 02:49:54
 categories:
 - sct

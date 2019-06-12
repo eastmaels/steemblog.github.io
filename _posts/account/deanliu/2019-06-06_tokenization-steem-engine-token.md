@@ -5,6 +5,7 @@ permlink: tokenization-steem-engine-token
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-06 02:31:12
 categories:
 - sct

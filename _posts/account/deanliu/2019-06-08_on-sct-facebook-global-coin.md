@@ -5,6 +5,7 @@ permlink: on-sct-facebook-global-coin
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-08 01:52:15
 categories:
 - sct

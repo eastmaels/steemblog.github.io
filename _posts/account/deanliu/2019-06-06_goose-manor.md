@@ -5,6 +5,7 @@ permlink: goose-manor
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-06 13:58:42
 categories:
 - cn
