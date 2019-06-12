@@ -1,10 +1,11 @@
 
 ---
-title: "对steemit新手可能有用的文章合集"
+title: '对steemit新手可能有用的文章合集'
 permlink: 58nfuw-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-06 12:54:39
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "Smart Media Tokens (SMTs)白皮书简介-01 | SMTs Translation"
+title: 'Smart Media Tokens (SMTs)白皮书简介-01 | SMTs Translation'
 permlink: smart-media-tokens-smts-01-or-smts-translation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-16 03:17:24
 categories:
 - cn

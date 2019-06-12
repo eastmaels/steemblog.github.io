@@ -1,10 +1,11 @@
 
 ---
-title: "唇色 | Wife's Drawing Practice"
+title: '唇色 | Wife''s Drawing Practice'
 permlink: 2n7bmr-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-29 12:35:57
 categories:
 - drawing
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [唇色 | Wife's Drawing Practice](https://steemit.com/@yellowbird/2n7bmr-or-wife-s-drawing-practice)
+This page is synchronized from the post: [唇色 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/2n7bmr-or-wife-s-drawing-practice)

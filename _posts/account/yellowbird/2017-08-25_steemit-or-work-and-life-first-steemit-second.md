@@ -1,10 +1,11 @@
 
 ---
-title: "工作生活第一，steemit第二 |  Work and life first, steemit second"
+title: '工作生活第一，steemit第二 |  Work and life first, steemit second'
 permlink: steemit-or-work-and-life-first-steemit-second
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-25 12:46:15
 categories:
 - cn

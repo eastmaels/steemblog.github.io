@@ -1,10 +1,11 @@
 
 ---
-title: "猪年，诸事顺心 | Wife's Drawing Practice"
+title: '猪年，诸事顺心 | Wife''s Drawing Practice'
 permlink: 5xsspq-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-16 00:29:36
 categories:
 - cn-reader
@@ -77,4 +78,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [猪年，诸事顺心 | Wife's Drawing Practice](https://steemit.com/@yellowbird/5xsspq-or-wife-s-drawing-practice)
+This page is synchronized from the post: [猪年，诸事顺心 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/5xsspq-or-wife-s-drawing-practice)

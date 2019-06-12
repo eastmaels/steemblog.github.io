@@ -1,10 +1,11 @@
 
 ---
-title: "小偷 | 第一屆deanliu X Partiko微小說競賽"
+title: '小偷 | 第一屆deanliu X Partiko微小說競賽'
 permlink: deanliu-x-partiko-pzgim0op
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-17 00:25:45
 categories:
 - wei-story

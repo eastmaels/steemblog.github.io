@@ -1,10 +1,11 @@
 
 ---
-title: "Steem and Bitshares"
+title: 'Steem and Bitshares'
 permlink: steem-and-bitshares
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-26 03:40:06
 categories:
 - cn

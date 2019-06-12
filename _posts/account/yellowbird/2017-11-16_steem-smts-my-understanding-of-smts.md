@@ -1,10 +1,11 @@
 
 ---
-title: "基于STEEM区块链的SMTs/My understanding of SMTs"
+title: '基于STEEM区块链的SMTs/My understanding of SMTs'
 permlink: steem-smts-my-understanding-of-smts
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-16 10:51:12
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "FLOWER | Wife's Drawing Practice"
+title: 'FLOWER | Wife''s Drawing Practice'
 permlink: flower-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-24 01:44:39
 categories:
 - drawing
@@ -75,4 +76,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [FLOWER | Wife's Drawing Practice](https://steemit.com/@yellowbird/flower-or-wife-s-drawing-practice)
+This page is synchronized from the post: [FLOWER | Wife''s Drawing Practice](https://steemit.com/@yellowbird/flower-or-wife-s-drawing-practice)

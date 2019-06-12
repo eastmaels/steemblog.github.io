@@ -1,10 +1,11 @@
 
 ---
-title: "自从上了steemit，感觉身体被掏空"
+title: '自从上了steemit，感觉身体被掏空'
 permlink: 6per2g-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-14 13:18:18
 categories:
 - cn

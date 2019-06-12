@@ -1,10 +1,11 @@
 
 ---
-title: "@yellowbird区块链内容社区报告"
+title: '@yellowbird区块链内容社区报告'
 permlink: 4hjde6-yellowbird
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-30 12:44:00
 categories:
 - steem

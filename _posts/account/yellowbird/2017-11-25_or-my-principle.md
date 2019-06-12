@@ -1,10 +1,11 @@
 
 ---
-title: "践人无敌|My Principle"
+title: '践人无敌|My Principle'
 permlink: or-my-principle
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-25 03:22:00
 categories:
 - cn

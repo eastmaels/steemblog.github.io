@@ -1,10 +1,11 @@
 
 ---
-title: "对比steemit聊聊币乎——投票能量"
+title: '对比steemit聊聊币乎——投票能量'
 permlink: 3k8mzr-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-03 11:52:15
 categories:
 - cn

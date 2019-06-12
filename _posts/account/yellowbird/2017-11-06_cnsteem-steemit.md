@@ -1,10 +1,11 @@
 
 ---
-title: "通过CNsteem方便快捷注册steemit"
+title: '通过CNsteem方便快捷注册steemit'
 permlink: cnsteem-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-06 11:07:54
 categories:
 - cn

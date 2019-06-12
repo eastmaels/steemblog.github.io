@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第1日-我家龟儿子/Seven Days of Black and White Challenge: Day 1"
+title: '七天黑白挑战-第1日-我家龟儿子/Seven Days of Black and White Challenge: Day 1'
 permlink: 1-seven-days-of-black-and-white-challenge-day-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-04 13:43:48
 categories:
 - sevendaybnwchallenge

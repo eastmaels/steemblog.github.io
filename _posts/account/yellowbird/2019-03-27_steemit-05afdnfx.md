@@ -1,10 +1,11 @@
 
 ---
-title: "在地铁刷steemit是怎样的自恋"
+title: '在地铁刷steemit是怎样的自恋'
 permlink: steemit-05afdnfx
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-27 00:42:42
 categories:
 - cn-reader

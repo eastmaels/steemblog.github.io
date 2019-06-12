@@ -1,10 +1,11 @@
 
 ---
-title: "持有STEEM的我当了回股东/STEEM DPOS"
+title: '持有STEEM的我当了回股东/STEEM DPOS'
 permlink: steem-steem-dpos
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-30 03:27:24
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "BM要离开EOS？STEEM躺枪"
+title: 'BM要离开EOS？STEEM躺枪'
 permlink: bm-eos-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-30 00:06:18
 categories:
 - cn

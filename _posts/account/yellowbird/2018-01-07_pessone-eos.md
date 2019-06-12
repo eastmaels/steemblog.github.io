@@ -1,10 +1,11 @@
 
 ---
-title: "PressOne的底层链不再基于EOS？"
+title: 'PressOne的底层链不再基于EOS？'
 permlink: pessone-eos
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-07 03:33:45
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "基于STEEM的网页游戏steemGG | 区块链内容社区报告之项目简介"
+title: '基于STEEM的网页游戏steemGG | 区块链内容社区报告之项目简介'
 permlink: steem-steemgg-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-07 00:02:06
 categories:
 - steem

@@ -1,10 +1,11 @@
 
 ---
-title: "steemit上写作的“损失厌恶”心理现象"
+title: 'steemit上写作的“损失厌恶”心理现象'
 permlink: 3cbscb-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-22 09:21:21
 categories:
 - cn

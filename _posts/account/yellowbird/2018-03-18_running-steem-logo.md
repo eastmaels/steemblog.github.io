@@ -1,10 +1,11 @@
 
 ---
-title: "我也瞎捣鼓给running-steem设计一个logo"
+title: '我也瞎捣鼓给running-steem设计一个logo'
 permlink: running-steem-logo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-18 09:06:06
 categories:
 - running-steem

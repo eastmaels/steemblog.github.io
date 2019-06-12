@@ -1,10 +1,11 @@
 
 ---
-title: "steemit到底是内容挖矿还是影响力挖矿？"
+title: 'steemit到底是内容挖矿还是影响力挖矿？'
 permlink: 2hbfcg-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-05 12:00:06
 categories:
 - cn

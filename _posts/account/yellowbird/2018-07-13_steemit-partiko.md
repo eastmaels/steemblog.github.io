@@ -1,10 +1,11 @@
 
 ---
-title: "移动端的steemit——Partiko"
+title: '移动端的steemit——Partiko'
 permlink: steemit-partiko
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-13 11:31:06
 categories:
 - partiko

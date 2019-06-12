@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM再次逼近5元以下 | STEEM定投日记"
+title: 'STEEM再次逼近5元以下 | STEEM定投日记'
 permlink: steem-5cny-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-12 10:45:18
 categories:
 - steem

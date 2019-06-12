@@ -1,10 +1,11 @@
 
 ---
-title: "关于running-steem成立的初步构想"
+title: '关于running-steem成立的初步构想'
 permlink: running-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-17 13:02:30
 categories:
 - running-steem

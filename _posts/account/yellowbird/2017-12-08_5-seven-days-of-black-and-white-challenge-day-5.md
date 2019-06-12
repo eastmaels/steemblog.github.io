@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第5日-公司楼下的足球场/Seven Days of Black and White Challenge: Day 5"
+title: '七天黑白挑战-第5日-公司楼下的足球场/Seven Days of Black and White Challenge: Day 5'
 permlink: 5-seven-days-of-black-and-white-challenge-day-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-08 16:30:06
 categories:
 - sevendaybnwchallenge

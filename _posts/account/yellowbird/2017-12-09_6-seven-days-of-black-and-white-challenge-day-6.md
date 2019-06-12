@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第6日-在建的中国第一高楼/Seven Days of Black and White Challenge: Day 6"
+title: '七天黑白挑战-第6日-在建的中国第一高楼/Seven Days of Black and White Challenge: Day 6'
 permlink: 6-seven-days-of-black-and-white-challenge-day-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-09 11:35:48
 categories:
 - sevendaybnwchallenge

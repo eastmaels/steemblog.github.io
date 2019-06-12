@@ -1,10 +1,11 @@
 
 ---
-title: "在这个冬天有种默契，你懂我懂|steem logo雪地涂鸦活动发起"
+title: '在这个冬天有种默契，你懂我懂|steem logo雪地涂鸦活动发起'
 permlink: or-steem-logo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-26 07:22:27
 categories:
 - cn

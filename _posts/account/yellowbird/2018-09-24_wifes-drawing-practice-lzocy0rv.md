@@ -1,10 +1,11 @@
 
 ---
-title: "神鹿 | Wife's Drawing Practice"
+title: '神鹿 | Wife''s Drawing Practice'
 permlink: wifes-drawing-practice-lzocy0rv
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-24 00:57:24
 categories:
 - drawing
@@ -43,4 +44,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [神鹿 | Wife's Drawing Practice](https://steemit.com/@yellowbird/wifes-drawing-practice-lzocy0rv)
+This page is synchronized from the post: [神鹿 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/wifes-drawing-practice-lzocy0rv)

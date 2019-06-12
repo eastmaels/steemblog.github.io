@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM获得Netcoins投票第一名，然后呢？"
+title: 'STEEM获得Netcoins投票第一名，然后呢？'
 permlink: steem-netcoins
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-23 00:50:33
 categories:
 - steem

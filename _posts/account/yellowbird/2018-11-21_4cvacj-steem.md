@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM投资逻辑之追随行业龙头"
+title: 'STEEM投资逻辑之追随行业龙头'
 permlink: 4cvacj-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-21 00:08:15
 categories:
 - cn

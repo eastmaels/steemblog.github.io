@@ -1,10 +1,11 @@
 
 ---
-title: "partiko推出聊天功能，激动，先睹为快吧！"
+title: 'partiko推出聊天功能，激动，先睹为快吧！'
 permlink: partiko-sr1bbxon
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-10 00:44:57
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "忧伤 | Wife's Drawing Practice"
+title: '忧伤 | Wife''s Drawing Practice'
 permlink: 3a3tor-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-30 13:12:09
 categories:
 - drawing
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [忧伤 | Wife's Drawing Practice](https://steemit.com/@yellowbird/3a3tor-or-wife-s-drawing-practice)
+This page is synchronized from the post: [忧伤 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/3a3tor-or-wife-s-drawing-practice)

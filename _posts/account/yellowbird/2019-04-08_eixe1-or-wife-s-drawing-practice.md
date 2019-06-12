@@ -1,10 +1,11 @@
 
 ---
-title: "浪花 | Wife's Drawing Practice"
+title: '浪花 | Wife''s Drawing Practice'
 permlink: eixe1-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-08 00:05:48
 categories:
 - cn-reader
@@ -92,4 +93,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [浪花 | Wife's Drawing Practice](https://steemit.com/@yellowbird/eixe1-or-wife-s-drawing-practice)
+This page is synchronized from the post: [浪花 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/eixe1-or-wife-s-drawing-practice)

@@ -1,10 +1,11 @@
 
 ---
-title: "steemit里那些作者们是如何给文章取个好标题的？"
+title: 'steemit里那些作者们是如何给文章取个好标题的？'
 permlink: tkrqo-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-28 08:28:15
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "steemit上的注意力经济"
+title: 'steemit上的注意力经济'
 permlink: 7dqts1-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-24 01:47:48
 categories:
 - cn

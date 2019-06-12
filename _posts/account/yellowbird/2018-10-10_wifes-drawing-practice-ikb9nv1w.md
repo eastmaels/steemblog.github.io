@@ -1,10 +1,11 @@
 
 ---
-title: "草莓蛋糕 | Wife's Drawing Practice"
+title: '草莓蛋糕 | Wife''s Drawing Practice'
 permlink: wifes-drawing-practice-ikb9nv1w
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-10 13:14:36
 categories:
 - partiko
@@ -62,4 +63,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [草莓蛋糕 | Wife's Drawing Practice](https://steemit.com/@yellowbird/wifes-drawing-practice-ikb9nv1w)
+This page is synchronized from the post: [草莓蛋糕 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/wifes-drawing-practice-ikb9nv1w)

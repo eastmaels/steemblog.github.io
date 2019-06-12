@@ -1,10 +1,11 @@
 
 ---
-title: "推广steemit的一些认识"
+title: '推广steemit的一些认识'
 permlink: 3dvlaj-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-14 13:49:18
 categories:
 - cn

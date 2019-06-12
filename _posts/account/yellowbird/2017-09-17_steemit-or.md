@@ -1,10 +1,11 @@
 
 ---
-title: "我是steemit大海里的一只小虾米 | 随笔"
+title: '我是steemit大海里的一只小虾米 | 随笔'
 permlink: steemit-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-17 03:25:03
 categories:
 - cn

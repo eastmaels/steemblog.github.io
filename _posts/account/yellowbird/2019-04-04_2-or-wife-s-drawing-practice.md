@@ -1,10 +1,11 @@
 
 ---
-title: "小鸟2 | Wife's Drawing Practice"
+title: '小鸟2 | Wife''s Drawing Practice'
 permlink: 2-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-04 09:35:33
 categories:
 - cn-reader
@@ -94,4 +95,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [小鸟2 | Wife's Drawing Practice](https://steemit.com/@yellowbird/2-or-wife-s-drawing-practice)
+This page is synchronized from the post: [小鸟2 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/2-or-wife-s-drawing-practice)

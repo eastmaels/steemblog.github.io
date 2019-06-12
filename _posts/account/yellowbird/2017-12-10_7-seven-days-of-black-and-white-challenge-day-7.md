@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第7日-周末/Seven Days of Black and White Challenge: Day 7"
+title: '七天黑白挑战-第7日-周末/Seven Days of Black and White Challenge: Day 7'
 permlink: 7-seven-days-of-black-and-white-challenge-day-7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-10 15:13:33
 categories:
 - sevendaybnwchallenge

@@ -1,10 +1,11 @@
 
 ---
-title: "粗浅的聊聊steemit，币乎，yoyow等平台不同"
+title: '粗浅的聊聊steemit，币乎，yoyow等平台不同'
 permlink: steemit-yoyow
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-14 03:30:54
 categories:
 - cn

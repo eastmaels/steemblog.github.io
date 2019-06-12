@@ -1,10 +1,11 @@
 
 ---
-title: "WuHan, Different Every Day | 南国大武汉，每天不一样！"
+title: 'WuHan, Different Every Day | 南国大武汉，每天不一样！'
 permlink: wuhan-different-every-day-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-20 04:36:42
 categories:
 - cn

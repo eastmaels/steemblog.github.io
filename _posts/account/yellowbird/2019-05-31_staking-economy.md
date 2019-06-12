@@ -1,10 +1,11 @@
 
 ---
-title: "Staking Economy并不是高大上的概念"
+title: 'Staking Economy并不是高大上的概念'
 permlink: staking-economy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-31 00:11:36
 categories:
 - sct

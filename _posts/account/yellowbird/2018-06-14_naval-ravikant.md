@@ -1,10 +1,11 @@
 
 ---
-title: "Naval Ravikant的“如何不靠运气致富”语录"
+title: 'Naval Ravikant的“如何不靠运气致富”语录'
 permlink: naval-ravikant
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-14 04:33:57
 categories:
 - money

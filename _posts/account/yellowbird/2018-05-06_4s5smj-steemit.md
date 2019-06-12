@@ -1,10 +1,11 @@
 
 ---
-title: "能把steemit的丰富活动引入币问社区吗？我尝试做一次实验！"
+title: '能把steemit的丰富活动引入币问社区吗？我尝试做一次实验！'
 permlink: 4s5smj-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-06 09:23:33
 categories:
 - bitask

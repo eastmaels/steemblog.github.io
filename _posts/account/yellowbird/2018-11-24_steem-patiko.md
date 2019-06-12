@@ -1,10 +1,11 @@
 
 ---
-title: "趁着STEEM大促销，买点支持PATIKO！"
+title: '趁着STEEM大促销，买点支持PATIKO！'
 permlink: steem-patiko
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-24 00:00:03
 categories:
 - cn

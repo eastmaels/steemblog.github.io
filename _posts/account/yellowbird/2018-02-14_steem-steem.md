@@ -1,10 +1,11 @@
 
 ---
-title: "《Steem 指南》高级篇区块链steem见证人"
+title: '《Steem 指南》高级篇区块链steem见证人'
 permlink: steem-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-14 11:25:18
 categories:
 - cn

@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM的币价构成"
+title: 'STEEM的币价构成'
 permlink: 5xpkqx-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-26 11:49:57
 categories:
 - steem

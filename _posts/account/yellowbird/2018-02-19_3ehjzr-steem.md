@@ -1,10 +1,11 @@
 
 ---
-title: "《Steem 指南》初级篇文章写作——如何创作优质内容"
+title: '《Steem 指南》初级篇文章写作——如何创作优质内容'
 permlink: 3ehjzr-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-19 03:39:39
 categories:
 - steem

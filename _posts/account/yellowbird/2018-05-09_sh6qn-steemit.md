@@ -1,10 +1,11 @@
 
 ---
-title: "其它平台为什么没有steemit平台丰富的社区自发活动"
+title: '其它平台为什么没有steemit平台丰富的社区自发活动'
 permlink: sh6qn-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-09 12:16:18
 categories:
 - cn

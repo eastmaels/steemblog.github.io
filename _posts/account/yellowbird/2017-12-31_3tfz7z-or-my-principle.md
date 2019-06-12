@@ -1,10 +1,11 @@
 
 ---
-title: "你是否投资了让自己睡不好的项目？ | My Principles"
+title: '你是否投资了让自己睡不好的项目？ | My Principles'
 permlink: 3tfz7z-or-my-principle
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-31 04:47:21
 categories:
 - cn

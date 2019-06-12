@@ -1,10 +1,11 @@
 
 ---
-title: "《steem指南》小故事——@yellowbird与steemit的故事"
+title: '《steem指南》小故事——@yellowbird与steemit的故事'
 permlink: steem-yellowbird-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-24 14:54:36
 categories:
 - cn

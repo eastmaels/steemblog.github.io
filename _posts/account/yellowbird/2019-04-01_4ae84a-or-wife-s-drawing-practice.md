@@ -1,10 +1,11 @@
 
 ---
-title: "海浪 | Wife's Drawing Practice"
+title: '海浪 | Wife''s Drawing Practice'
 permlink: 4ae84a-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-01 00:12:45
 categories:
 - cn-reader
@@ -84,4 +85,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [海浪 | Wife's Drawing Practice](https://steemit.com/@yellowbird/4ae84a-or-wife-s-drawing-practice)
+This page is synchronized from the post: [海浪 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/4ae84a-or-wife-s-drawing-practice)

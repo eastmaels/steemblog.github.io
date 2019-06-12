@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第4日-路过大学/Seven Days of Black and White Challenge: Day 4"
+title: '七天黑白挑战-第4日-路过大学/Seven Days of Black and White Challenge: Day 4'
 permlink: 4-seven-days-of-black-and-white-challenge-day-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-07 09:07:51
 categories:
 - sevendaybnwchallenge

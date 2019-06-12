@@ -1,10 +1,11 @@
 
 ---
-title: "夏目 | Wife's Drawing Practice"
+title: '夏目 | Wife''s Drawing Practice'
 permlink: wwevf-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-26 00:05:51
 categories:
 - cn-reader
@@ -81,4 +82,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [夏目 | Wife's Drawing Practice](https://steemit.com/@yellowbird/wwevf-or-wife-s-drawing-practice)
+This page is synchronized from the post: [夏目 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/wwevf-or-wife-s-drawing-practice)

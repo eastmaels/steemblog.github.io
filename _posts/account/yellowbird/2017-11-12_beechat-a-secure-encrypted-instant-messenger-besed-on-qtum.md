@@ -1,10 +1,11 @@
 
 ---
-title: "BeeChat一个区块链的微信？/A secure encrypted Instant messenger besed on Qtum."
+title: 'BeeChat一个区块链的微信？/A secure encrypted Instant messenger besed on Qtum.'
 permlink: beechat-a-secure-encrypted-instant-messenger-besed-on-qtum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-12 01:20:33
 categories:
 - cn

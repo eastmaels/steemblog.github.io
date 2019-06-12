@@ -1,10 +1,11 @@
 
 ---
-title: "BNB第五季度市盈率分析 | Analysis of BNB"
+title: 'BNB第五季度市盈率分析 | Analysis of BNB'
 permlink: bnb-or-analysis-of-bnb
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-21 11:42:06
 categories:
 - binance

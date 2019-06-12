@@ -1,10 +1,11 @@
 
 ---
-title: "小鹿 | Wife's Drawing Practice"
+title: '小鹿 | Wife''s Drawing Practice'
 permlink: 6ajeng-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-03 12:18:33
 categories:
 - drawing
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [小鹿 | Wife's Drawing Practice](https://steemit.com/@yellowbird/6ajeng-or-wife-s-drawing-practice)
+This page is synchronized from the post: [小鹿 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/6ajeng-or-wife-s-drawing-practice)

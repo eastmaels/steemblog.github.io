@@ -1,10 +1,11 @@
 
 ---
-title: "@yellowbird用户名怎么来的？ 参加#steemitnamechallenge活动"
+title: '@yellowbird用户名怎么来的？ 参加#steemitnamechallenge活动'
 permlink: yellowbird-steemitnamechallenge
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-13 12:58:15
 categories:
 - steemitnamechallenge

@@ -1,10 +1,11 @@
 
 ---
-title: "5元以下的STEEM你买了没？ | STEEM定投日记"
+title: '5元以下的STEEM你买了没？ | STEEM定投日记'
 permlink: 5cny-steem-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-16 00:46:30
 categories:
 - steem

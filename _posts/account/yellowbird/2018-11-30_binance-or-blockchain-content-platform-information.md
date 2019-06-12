@@ -1,10 +1,11 @@
 
 ---
-title: "币安(Binance)入驻币乎 | Blockchain Content Platform Information"
+title: '币安(Binance)入驻币乎 | Blockchain Content Platform Information'
 permlink: binance-or-blockchain-content-platform-information
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-30 08:34:39
 categories:
 - cn

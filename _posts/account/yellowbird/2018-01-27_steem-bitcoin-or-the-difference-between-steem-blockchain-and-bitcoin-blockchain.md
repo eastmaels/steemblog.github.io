@@ -1,10 +1,11 @@
 
 ---
-title: "Steem区块链和 Bitcoin区块链的区别 | The difference between Steem blockchain and Bitcoin blockchain"
+title: 'Steem区块链和 Bitcoin区块链的区别 | The difference between Steem blockchain and Bitcoin blockchain'
 permlink: steem-bitcoin-or-the-difference-between-steem-blockchain-and-bitcoin-blockchain
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-27 08:53:06
 categories:
 - cn

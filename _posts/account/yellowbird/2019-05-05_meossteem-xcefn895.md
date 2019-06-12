@@ -1,10 +1,11 @@
 
 ---
-title: "MEOS是啥？感觉到STEEM的危机"
+title: 'MEOS是啥？感觉到STEEM的危机'
 permlink: meossteem-xcefn895
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-05 23:34:51
 categories:
 - cn

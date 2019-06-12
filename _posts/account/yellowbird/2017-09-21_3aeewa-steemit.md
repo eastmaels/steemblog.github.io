@@ -1,10 +1,11 @@
 
 ---
-title: "steemit写文排版常用技巧"
+title: 'steemit写文排版常用技巧'
 permlink: 3aeewa-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-21 13:19:09
 categories:
 - cn

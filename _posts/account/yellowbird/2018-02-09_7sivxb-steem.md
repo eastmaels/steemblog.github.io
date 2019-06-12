@@ -1,10 +1,11 @@
 
 ---
-title: "能参与到《steem指南》很荣幸"
+title: '能参与到《steem指南》很荣幸'
 permlink: 7sivxb-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-09 13:12:21
 categories:
 - cn

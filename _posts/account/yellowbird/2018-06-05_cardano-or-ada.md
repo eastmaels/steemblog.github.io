@@ -1,10 +1,11 @@
 
 ---
-title: "Cardano一个透着文艺气息的区块链项目|ADA笔记"
+title: 'Cardano一个透着文艺气息的区块链项目|ADA笔记'
 permlink: cardano-or-ada
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-05 13:06:57
 categories:
 - ada

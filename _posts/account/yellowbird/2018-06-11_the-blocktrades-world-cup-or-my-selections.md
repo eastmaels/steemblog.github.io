@@ -1,10 +1,11 @@
 
 ---
-title: "The @blocktrades World Cup | My selections"
+title: 'The @blocktrades World Cup | My selections'
 permlink: the-blocktrades-world-cup-or-my-selections
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-11 12:11:54
 categories:
 - blocktradesworldcup

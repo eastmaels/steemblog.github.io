@@ -1,10 +1,11 @@
 
 ---
-title: "steemit写作就是把同一份时间出售N次 |《财富自由之路》读书笔记"
+title: 'steemit写作就是把同一份时间出售N次 |《财富自由之路》读书笔记'
 permlink: steemit-n-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-27 03:30:18
 categories:
 - cn

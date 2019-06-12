@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第3日-我爱马拉松/Seven Days of Black and White Challenge: Day 3"
+title: '七天黑白挑战-第3日-我爱马拉松/Seven Days of Black and White Challenge: Day 3'
 permlink: 3-seven-days-of-black-and-white-challenge-day-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-06 13:21:24
 categories:
 - sevendaybnwchallenge

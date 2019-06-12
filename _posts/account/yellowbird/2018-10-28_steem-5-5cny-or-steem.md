@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM稳定在5.5元左右 | STEEM定投日记"
+title: 'STEEM稳定在5.5元左右 | STEEM定投日记'
 permlink: steem-5-5cny-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-28 05:06:18
 categories:
 - steem

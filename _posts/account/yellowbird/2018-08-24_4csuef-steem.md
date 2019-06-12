@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM是怎样一个“公司”？"
+title: 'STEEM是怎样一个“公司”？'
 permlink: 4csuef-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-24 03:10:15
 categories:
 - steem

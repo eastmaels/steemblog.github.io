@@ -1,10 +1,11 @@
 
 ---
-title: "币乎（bihu）的代币为什么叫KEY，而不是BIH或者BHU？"
+title: '币乎（bihu）的代币为什么叫KEY，而不是BIH或者BHU？'
 permlink: bihu-key-bih-bhu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-30 10:28:42
 categories:
 - bihu

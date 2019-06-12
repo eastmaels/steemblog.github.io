@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM稳定在了6元 | STEEM定投日记"
+title: 'STEEM稳定在了6元 | STEEM定投日记'
 permlink: 5ijhtn-steem-6cny-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-08 01:04:24
 categories:
 - steem

@@ -1,10 +1,11 @@
 
 ---
-title: "远方 | Wife's Drawing Practice"
+title: '远方 | Wife''s Drawing Practice'
 permlink: 39fc7t-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-19 00:59:51
 categories:
 - cn-reader
@@ -78,4 +79,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [远方 | Wife's Drawing Practice](https://steemit.com/@yellowbird/39fc7t-or-wife-s-drawing-practice)
+This page is synchronized from the post: [远方 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/39fc7t-or-wife-s-drawing-practice)

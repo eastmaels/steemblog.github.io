@@ -1,10 +1,11 @@
 
 ---
-title: "如何赚取双倍工资How to earn double pay |《财富自由之路》读书笔记"
+title: '如何赚取双倍工资How to earn double pay |《财富自由之路》读书笔记'
 permlink: how-to-earn-double-pay-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-31 07:35:12
 categories:
 - cn

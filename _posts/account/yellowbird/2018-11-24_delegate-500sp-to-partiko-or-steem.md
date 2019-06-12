@@ -1,10 +1,11 @@
 
 ---
-title: "Delegate 500sp to Partiko | STEEM定投日记"
+title: 'Delegate 500sp to Partiko | STEEM定投日记'
 permlink: delegate-500sp-to-partiko-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-24 09:59:15
 categories:
 - cn

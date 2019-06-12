@@ -1,10 +1,11 @@
 
 ---
-title: "How to Overcome Procrastination如何减少拖延症 |《细节》读书笔记"
+title: 'How to Overcome Procrastination如何减少拖延症 |《细节》读书笔记'
 permlink: how-to-overcome-procrastination-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-17 07:20:03
 categories:
 - cn

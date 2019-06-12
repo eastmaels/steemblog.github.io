@@ -1,10 +1,11 @@
 
 ---
-title: "steem指南的币问版，还没开始也许就死了"
+title: 'steem指南的币问版，还没开始也许就死了'
 permlink: 4mmxgz-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-25 06:35:54
 categories:
 - bitask

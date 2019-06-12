@@ -1,10 +1,11 @@
 
 ---
-title: "蓝绿鹊 |  Wife's Drawing Practice"
+title: '蓝绿鹊 |  Wife''s Drawing Practice'
 permlink: or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-18 10:23:33
 categories:
 - drawing
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [蓝绿鹊 |  Wife's Drawing Practice](https://steemit.com/@yellowbird/or-wife-s-drawing-practice)
+This page is synchronized from the post: [蓝绿鹊 |  Wife''s Drawing Practice](https://steemit.com/@yellowbird/or-wife-s-drawing-practice)

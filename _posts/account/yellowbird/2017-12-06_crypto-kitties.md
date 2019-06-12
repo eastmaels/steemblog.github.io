@@ -1,10 +1,11 @@
 
 ---
-title: "crypto kitties基于区块链的养猫游戏"
+title: 'crypto kitties基于区块链的养猫游戏'
 permlink: crypto-kitties
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-06 01:46:54
 categories:
 - cn

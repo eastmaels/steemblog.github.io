@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM创新低跌破5元 | STEEM定投日记"
+title: 'STEEM创新低跌破5元 | STEEM定投日记'
 permlink: steem5steem-dglv34z5ny
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-12 11:08:09
 categories:
 - steempress

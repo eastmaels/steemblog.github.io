@@ -1,10 +1,11 @@
 
 ---
-title: "通过其它加密货币付费快捷注册steemit"
+title: '通过其它加密货币付费快捷注册steemit'
 permlink: 2xubg7-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-18 12:19:15
 categories:
 - cn

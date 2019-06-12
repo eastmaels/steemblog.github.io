@@ -1,10 +1,11 @@
 
 ---
-title: "partiko的新功能?"
+title: 'partiko的新功能?'
 permlink: partiko-uw8nhjua
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-15 00:14:00
 categories:
 - partiko

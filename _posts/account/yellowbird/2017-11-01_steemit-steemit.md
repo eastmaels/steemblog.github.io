@@ -1,10 +1,11 @@
 
 ---
-title: "steemit在这万圣节扮鬼？/steemit改版了留个纪念"
+title: 'steemit在这万圣节扮鬼？/steemit改版了留个纪念'
 permlink: steemit-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-01 01:59:06
 categories:
 - cn

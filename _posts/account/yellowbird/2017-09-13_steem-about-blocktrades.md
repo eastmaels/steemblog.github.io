@@ -1,10 +1,11 @@
 
 ---
-title: "Steem交易转账操作/ About BlockTrades"
+title: 'Steem交易转账操作/ About BlockTrades'
 permlink: steem-about-blocktrades
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-13 11:03:24
 categories:
 - cn

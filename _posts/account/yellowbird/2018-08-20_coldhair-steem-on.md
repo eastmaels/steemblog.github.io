@@ -1,10 +1,11 @@
 
 ---
-title: "币安收录了@coldhair的文章！STEEM ON！"
+title: '币安收录了@coldhair的文章！STEEM ON！'
 permlink: coldhair-steem-on
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-20 11:42:18
 categories:
 - cn

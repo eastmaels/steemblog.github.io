@@ -1,10 +1,11 @@
 
 ---
-title: "如何在币安BINANCE交易STEEM"
+title: '如何在币安BINANCE交易STEEM'
 permlink: binance-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-29 00:26:15
 categories:
 - sct

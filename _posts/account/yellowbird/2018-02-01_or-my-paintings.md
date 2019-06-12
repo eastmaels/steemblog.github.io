@@ -1,10 +1,11 @@
 
 ---
-title: "那年夏天，绿岛花园下的板凳 | My paintings"
+title: '那年夏天，绿岛花园下的板凳 | My paintings'
 permlink: or-my-paintings
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-01 03:26:33
 categories:
 - drawing

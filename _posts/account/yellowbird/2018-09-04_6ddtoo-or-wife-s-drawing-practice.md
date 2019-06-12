@@ -1,10 +1,11 @@
 
 ---
-title: "崽崽 | Wife's Drawing Practice"
+title: '崽崽 | Wife''s Drawing Practice'
 permlink: 6ddtoo-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-04 11:32:51
 categories:
 - drawing
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [崽崽 | Wife's Drawing Practice](https://steemit.com/@yellowbird/6ddtoo-or-wife-s-drawing-practice)
+This page is synchronized from the post: [崽崽 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/6ddtoo-or-wife-s-drawing-practice)

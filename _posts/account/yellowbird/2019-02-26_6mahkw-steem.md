@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM游戏"
+title: 'STEEM游戏'
 permlink: 6mahkw-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-26 00:30:09
 categories:
 - blockchain

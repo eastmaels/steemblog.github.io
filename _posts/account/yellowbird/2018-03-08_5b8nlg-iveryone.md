@@ -1,10 +1,11 @@
 
 ---
-title: "关于iVeryone的几点认识"
+title: '关于iVeryone的几点认识'
 permlink: 5b8nlg-iveryone
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-08 11:50:06
 categories:
 - cn

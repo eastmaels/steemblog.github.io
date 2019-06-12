@@ -1,10 +1,11 @@
 
 ---
-title: "碧荷 | Wife's Drawing Practice"
+title: '碧荷 | Wife''s Drawing Practice'
 permlink: 4kjcxt-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-22 12:33:12
 categories:
 - drawing
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [碧荷 | Wife's Drawing Practice](https://steemit.com/@yellowbird/4kjcxt-or-wife-s-drawing-practice)
+This page is synchronized from the post: [碧荷 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/4kjcxt-or-wife-s-drawing-practice)

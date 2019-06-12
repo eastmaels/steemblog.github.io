@@ -1,10 +1,11 @@
 
 ---
-title: "事实证明STEEM应该重视中文社区"
+title: '事实证明STEEM应该重视中文社区'
 permlink: steem-4zfmqxdf
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-20 05:01:27
 categories:
 - cn

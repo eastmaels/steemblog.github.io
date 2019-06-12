@@ -1,10 +1,11 @@
 
 ---
-title: "steemit写作你需要了解的一些事/About steemit writing"
+title: 'steemit写作你需要了解的一些事/About steemit writing'
 permlink: steemit-about-steemit-writing
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-09 06:53:30
 categories:
 - cn

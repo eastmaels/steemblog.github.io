@@ -1,10 +1,11 @@
 
 ---
-title: "在steemit持续发文的动力∣月旦评"
+title: '在steemit持续发文的动力∣月旦评'
 permlink: 5zrqpk-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-29 14:05:30
 categories:
 - cn

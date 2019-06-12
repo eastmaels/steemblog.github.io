@@ -1,10 +1,11 @@
 
 ---
-title: "切过的苹果 | Wife's Drawing Practice"
+title: '切过的苹果 | Wife''s Drawing Practice'
 permlink: 6k4mqu-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-14 09:44:30
 categories:
 - drawing
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [切过的苹果 | Wife's Drawing Practice](https://steemit.com/@yellowbird/6k4mqu-or-wife-s-drawing-practice)
+This page is synchronized from the post: [切过的苹果 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/6k4mqu-or-wife-s-drawing-practice)

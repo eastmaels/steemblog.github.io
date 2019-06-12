@@ -1,10 +1,11 @@
 
 ---
-title: "庆幸自己现在没钱|My Principle"
+title: '庆幸自己现在没钱|My Principle'
 permlink: 6yxju7-or-my-principle
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-03 12:13:57
 categories:
 - cn

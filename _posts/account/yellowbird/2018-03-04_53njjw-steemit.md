@@ -1,10 +1,11 @@
 
 ---
-title: "对比steemit聊聊币乎——评论留言"
+title: '对比steemit聊聊币乎——评论留言'
 permlink: 53njjw-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-04 12:46:15
 categories:
 - cn

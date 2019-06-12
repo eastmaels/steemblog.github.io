@@ -1,10 +1,11 @@
 
 ---
-title: "占座 | 第一屆deanliu X Partiko微小說競賽"
+title: '占座 | 第一屆deanliu X Partiko微小說競賽'
 permlink: deanliu-x-partiko-0zylsc1c
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-13 03:26:30
 categories:
 - wei-story

@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM投资逻辑之“能力圈”"
+title: 'STEEM投资逻辑之“能力圈”'
 permlink: 6vkaek-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-13 11:41:12
 categories:
 - cn

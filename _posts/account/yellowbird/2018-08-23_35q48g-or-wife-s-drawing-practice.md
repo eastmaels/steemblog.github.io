@@ -1,10 +1,11 @@
 
 ---
-title: "荔枝 | Wife's Drawing Practice"
+title: '荔枝 | Wife''s Drawing Practice'
 permlink: 35q48g-or-wife-s-drawing-practice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-23 13:01:30
 categories:
 - drawing
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [荔枝 | Wife's Drawing Practice](https://steemit.com/@yellowbird/35q48g-or-wife-s-drawing-practice)
+This page is synchronized from the post: [荔枝 | Wife''s Drawing Practice](https://steemit.com/@yellowbird/35q48g-or-wife-s-drawing-practice)

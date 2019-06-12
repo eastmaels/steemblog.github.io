@@ -1,10 +1,11 @@
 
 ---
-title: "Shopping with my wife!"
+title: 'Shopping with my wife!'
 permlink: shopping-with-my-wife
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-16 12:37:09
 categories:
 - partiko

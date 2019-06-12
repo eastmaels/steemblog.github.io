@@ -1,10 +1,11 @@
 
 ---
-title: "七天黑白挑战-第2日-我的专业/Seven Days of Black and White Challenge: Day 2"
+title: '七天黑白挑战-第2日-我的专业/Seven Days of Black and White Challenge: Day 2'
 permlink: 2-seven-days-of-black-and-white-challenge-day-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-05 04:58:45
 categories:
 - sevendaybnwchallenge

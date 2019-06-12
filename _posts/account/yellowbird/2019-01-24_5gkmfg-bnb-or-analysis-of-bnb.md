@@ -1,10 +1,11 @@
 
 ---
-title: "BNB第六季度市盈率分析 | Analysis of BNB"
+title: 'BNB第六季度市盈率分析 | Analysis of BNB'
 permlink: 5gkmfg-bnb-or-analysis-of-bnb
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-24 12:57:42
 categories:
 - binance

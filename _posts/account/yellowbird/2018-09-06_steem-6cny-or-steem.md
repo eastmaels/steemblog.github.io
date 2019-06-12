@@ -1,10 +1,11 @@
 
 ---
-title: "STEEM又回落6元以下 | STEEM定投日记"
+title: 'STEEM又回落6元以下 | STEEM定投日记'
 permlink: steem-6cny-or-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-06 00:23:51
 categories:
 - cn

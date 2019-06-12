@@ -1,10 +1,11 @@
 
 ---
-title: "对比STEEM来聊聊YOYOW"
+title: '对比STEEM来聊聊YOYOW'
 permlink: steem-yoyow
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-24 13:14:39
 categories:
 - cn

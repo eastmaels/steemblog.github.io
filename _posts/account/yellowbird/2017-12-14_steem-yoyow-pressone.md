@@ -1,10 +1,11 @@
 
 ---
-title: "对比STEEM、YOYOW来看PressOne"
+title: '对比STEEM、YOYOW来看PressOne'
 permlink: steem-yoyow-pressone
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-14 03:34:03
 categories:
 - cn

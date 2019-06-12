@@ -1,10 +1,11 @@
 
 ---
-title: "从价值投资到博弈游戏 | Blockchain Notes 区块链随笔3"
+title: '从价值投资到博弈游戏 | Blockchain Notes 区块链随笔3'
 permlink: or-blockchain-notes-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-25 00:28:00
 categories:
 - cn-reader
