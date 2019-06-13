@@ -15,7 +15,7 @@ tags:
 - diary
 - flowers
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmRJ6tUvpKfVNMmm93H3WtRCWDM81TwmKeujWpGVMtvJff/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmRJ6tUvpKfVNMmm93H3WtRCWDM81TwmKeujWpGVMtvJff/image.png'
 sidebar:
     right:
         sticky: true
@@ -59,4 +59,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [务农日记： 玛格丽特和牵牛花 /Farming diary:  Marguerites & Morning glory](https://steemit.com/@oflyhigh/--farming-diary--marguerites--morning-glory)
+This page is synchronized from the post: ['务农日记： 玛格丽特和牵牛花 /Farming diary:  Marguerites & Morning glory'](https://steemit.com/@oflyhigh/--farming-diary--marguerites--morning-glory)

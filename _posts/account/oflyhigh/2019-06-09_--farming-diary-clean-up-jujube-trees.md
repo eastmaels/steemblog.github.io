@@ -15,7 +15,7 @@ tags:
 - blog
 - diary
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmZqnAgNqWi7MgkipAWR4EpJJGtDYevmunvRheFTycxbLJ/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmZqnAgNqWi7MgkipAWR4EpJJGtDYevmunvRheFTycxbLJ/image.png'
 sidebar:
     right:
         sticky: true
@@ -63,4 +63,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [务农日记：清理枣树 / Farming diary: Clean up jujube trees](https://steemit.com/@oflyhigh/--farming-diary-clean-up-jujube-trees)
+This page is synchronized from the post: ['务农日记：清理枣树 / Farming diary: Clean up jujube trees'](https://steemit.com/@oflyhigh/--farming-diary-clean-up-jujube-trees)

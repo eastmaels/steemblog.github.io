@@ -15,7 +15,7 @@ tags:
 - blog
 - diary
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmVXJqjNHTbvvwrqeGKZsZdC4o8o9ePx1KS5sddo3gW3xW/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmVXJqjNHTbvvwrqeGKZsZdC4o8o9ePx1KS5sddo3gW3xW/image.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [务农日记：园艺手套 / Farming diary: gardening gloves](https://steemit.com/@oflyhigh/--farming-diary-gardening-gloves)
+This page is synchronized from the post: ['务农日记：园艺手套 / Farming diary: gardening gloves'](https://steemit.com/@oflyhigh/--farming-diary-gardening-gloves)

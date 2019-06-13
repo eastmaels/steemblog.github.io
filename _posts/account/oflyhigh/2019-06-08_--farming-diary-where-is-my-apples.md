@@ -15,7 +15,7 @@ tags:
 - blog
 - diary
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmdeBi1fFCitgDAZdMiztfE18Ev48JEWa884mtjD5voRt7/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmdeBi1fFCitgDAZdMiztfE18Ev48JEWa884mtjD5voRt7/image.png'
 sidebar:
     right:
         sticky: true
@@ -61,4 +61,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [务农日记：我的苹果哪里去啦？ / Farming diary: Where is my apples?](https://steemit.com/@oflyhigh/--farming-diary-where-is-my-apples)
+This page is synchronized from the post: ['务农日记：我的苹果哪里去啦？ / Farming diary: Where is my apples?'](https://steemit.com/@oflyhigh/--farming-diary-where-is-my-apples)

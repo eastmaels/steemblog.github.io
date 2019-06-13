@@ -15,7 +15,7 @@ tags:
 - diary
 - flowers
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmWk3uHF6Asy3GsE8KYdpg1oZTCc2k1FtjqcswnGub28pG/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmWk3uHF6Asy3GsE8KYdpg1oZTCc2k1FtjqcswnGub28pG/image.png'
 sidebar:
     right:
         sticky: true
@@ -58,4 +58,4 @@ https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 
 - - -
 
-This page is synchronized from the post: [务农日记：百合花开 / Farming diary: The lilies are in bloom](https://steemit.com/@oflyhigh/--farming-diary-the-lilies-are-in-bloom)
+This page is synchronized from the post: ['务农日记：百合花开 / Farming diary: The lilies are in bloom'](https://steemit.com/@oflyhigh/--farming-diary-the-lilies-are-in-bloom)
