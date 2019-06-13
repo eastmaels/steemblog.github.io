@@ -15,7 +15,7 @@ tags:
 - photography
 - photocircle
 - cn
-thumbnail: https://artisteem.io/media/7940f883-6108-41ce-89ac-62b58412890c
+thumbnail: 'https://artisteem.io/media/7940f883-6108-41ce-89ac-62b58412890c'
 sidebar:
     right:
         sticky: true
@@ -32,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Village](https://steemit.com/@kelvinzhang/ntopaz--kelvinzhang--460367020--ntopaz-photofeed-photography-photocircle-cn--2019-06-09-02-40-29--artwork--none)
+This page is synchronized from the post: ['Village'](https://steemit.com/@kelvinzhang/ntopaz--kelvinzhang--460367020--ntopaz-photofeed-photography-photocircle-cn--2019-06-09-02-40-29--artwork--none)

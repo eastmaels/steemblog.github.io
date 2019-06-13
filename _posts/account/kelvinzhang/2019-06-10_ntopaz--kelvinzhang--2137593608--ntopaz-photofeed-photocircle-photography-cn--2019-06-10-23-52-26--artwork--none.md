@@ -15,7 +15,7 @@ tags:
 - photocircle
 - photography
 - cn
-thumbnail: https://artisteem.io/media/cb1fc137-3441-4c0a-8a3b-c7afb2ab192c
+thumbnail: 'https://artisteem.io/media/cb1fc137-3441-4c0a-8a3b-c7afb2ab192c'
 sidebar:
     right:
         sticky: true
@@ -38,4 +38,4 @@ Photo by @kelvinzhang, Camara: Canon 5D Mark II, Lens: EF 70-200/2.8L, Focal len
 
 - - -
 
-This page is synchronized from the post: [Happy Game of New Year](https://steemit.com/@kelvinzhang/ntopaz--kelvinzhang--2137593608--ntopaz-photofeed-photocircle-photography-cn--2019-06-10-23-52-26--artwork--none)
+This page is synchronized from the post: ['Happy Game of New Year'](https://steemit.com/@kelvinzhang/ntopaz--kelvinzhang--2137593608--ntopaz-photofeed-photocircle-photography-cn--2019-06-10-23-52-26--artwork--none)
