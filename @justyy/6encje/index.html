@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>银行开源点赞比例计算算法啦 - justyy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@justyy/css/style.css">
+
+<link rel="stylesheet" href="/@justyy/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@justyy/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@justyy/">Home</a>
+                
+                <a class="navbar-item" href="/@justyy/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@justyy/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@justyy/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@justyy/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;">
+        <span class="has-mr-6">1</span>
+        <span>&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;">
+        <span class="has-mr-6">1.1</span>
+        <span>&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;">
+        <span class="has-mr-6">1.2</span>
+        <span>&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;">
+        <span class="has-mr-6">1.3</span>
+        <span>&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;</span>
+        </a></li><li>
+        <a class="is-flex" href="#12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;">
+        <span class="has-mr-6">1.4</span>
+        <span>12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x4F8B;&#x5B50;">
+        <span class="has-mr-6">1.5</span>
+        <span>&#x4F8B;&#x5B50;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x652F;&#x6301;&#x94F6;&#x884C;">
+        <span class="has-mr-6">1.6</span>
+        <span>&#x652F;&#x6301;&#x94F6;&#x884C;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;">
+        <span class="has-mr-6">1.7</span>
+        <span>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;">
+        <span class="has-mr-6">1.8</span>
+        <span>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Your-Vote-is-much-appreciated-and-every-vote-counts">
+        <span class="has-mr-6">2</span>
+        <span>Your Vote is much appreciated, and every vote counts.</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Support-me-and-my-work-as-a-witness-witness-thread-by">
+        <span class="has-mr-6">2.1</span>
+        <span>Support me and my work as a witness - witness thread by</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@justyy/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmPwChwsfaGKFW6gdnGCxUp6sFQN2bNyd6FekouVzU2TuA" alt="银行开源点赞比例计算算法啦">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-10-03T14:22:39.000Z">2018-10-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 699 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                银行开源点赞比例计算算法啦
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmPwChwsfaGKFW6gdnGCxUp6sFQN2bNyd6FekouVzU2TuA" alt="image.png"></p>
+<h1 id="&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;"><a href="#&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;" class="headerlink" title="&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;"></a>&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;</h1><p>&#x6BCF;&#x5929;&#x9664;&#x4E86;&#x53D1;&#x5229;&#x606F;&#xFF0C;&#x8FD8;&#x6709;&#x70B9;&#x8D5E; - &#x4E0D;&#x53EA;&#x662F;&#x884C;&#x957F;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x8FD8;&#x6709;&#x8DB3;&#x7403;&#x961F;&#x8DDF;&#x8D5E;&#x5462;&#x3002;</p>
+<h2 id="&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;"><a href="#&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;" class="headerlink" title="&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;"></a>&#x65B0;&#x7684;&#x70B9;&#x8D5E;&#x7B97;&#x6CD5;</h2><p> <a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/bank_getvp.py" target="_blank" rel="noopener">&#x5F00;&#x6E90;</a></p>
+<h2 id="&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;"><a href="#&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;" class="headerlink" title="&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;"></a>&#x8FD9;&#x6B21;&#x66F4;&#x65B0;&#x7684;&#x76EE;&#x7684;</h2><ol>
+<li>&#x5F00;&#x6E90; - &#x900F;&#x660E;</li>
+<li>&#x6807;&#x7B7E; test, cn-shui, nsfw &#x4F1A;&#x88AB;&#x8FC7;&#x6EE4; - &#x6587;&#x7AE0;&#x957F;&#x5EA6;&#x5C0F;&#x4E8E;200&#x4F1A;&#x88AB;&#x8FC7;&#x6EE4;&#x3002;</li>
+<li>&#x652F;&#x6301;&#x4E00;&#x4E9B;&#x6D3B;&#x52A8;&#x6807;&#x7B7E;<code>cn-activity</code></li>
+<li>&#x8D8A;&#x591A;&#x4EE3;&#x7406;&#x70B9;&#x8D5E;&#x8D8A;&#x591A;</li>
+<li>&#x7B49;&#x7EA7;&#x8D8A;&#x9AD8; &#x70B9;&#x8D5E;&#x8D8A;&#x591A;</li>
+<li>&#x4E92;&#x5229;&#x4E92;&#x60E0; (&#x5BF9;@justyy &#x548C; @dailychina&#x70B9;&#x8D5E;&#x4E5F;&#x6709;&#x989D;&#x5916;&#x5956;&#x52B1;&#xFF09;</li>
+<li>&#x89C1;&#x8BC1;&#x4EBA;&#x7968;&#x5956;&#x52B1;</li>
+<li>&#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458; <a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">&#x5956;&#x52B1;</a></li>
+</ol>
+<h2 id="&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;"><a href="#&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;" class="headerlink" title="&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;"></a>&#x73B0;&#x6709;&#x7684;&#x89C4;&#x5219;&#x4E0D;&#x53D8;</h2><ol>
+<li>&#x4EE3;&#x7406;&#x81F3;&#x5C11;350 SP &#x4E00;&#x5929;&#x4E24;&#x8D34;&#x3002;</li>
+<li>&#x4EE3;&#x7406;&#x81F3;&#x5C11;600 SP &#x4E00;&#x5929;&#x4E09;&#x8D34;&#x3002;</li>
+</ol>
+<h2 id="12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;"><a href="#12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;" class="headerlink" title="12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;"></a>12&#x5C0F;&#x65F6;&#x5185;&#x5373;&#x5C06;&#x4E0A;&#x7EBF;&#xFF01;</h2><p>&#x94F6;&#x884C;&#x6709;&#x6743;&#x628A; &#x7ECF;&#x5E38;&#x53D1;&#x6C34;&#x8D34;&#x7684;&#x5E10;&#x53F7;&#x62C9;&#x9ED1;&#xFF08;&#x4F46;&#x8FD8;&#x662F;&#x4F1A;&#x53D1;&#x5229;&#x606F;&#x7684;&#xFF09; &#x4E3E;&#x62A5;&#xFF1A;report@steemyy.com</p>
+<h2 id="&#x4F8B;&#x5B50;"><a href="#&#x4F8B;&#x5B50;" class="headerlink" title="&#x4F8B;&#x5B50;"></a>&#x4F8B;&#x5B50;</h2><p>&#x4EE5;&#x4E0B;&#x53EA;&#x662F;&#x793A;&#x4F8B;&#xFF0C;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x4F1A;&#x52A8;&#x6001;&#x8C03;&#x6574; - &#x4E00;&#x5B9A;&#x4F1A;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;<br><img src="https://cdn.steemitimages.com/DQmc451ZWXp5Yk5L24zSd464w4udZZg4dqNH5uo5dqDz1cx/image.png" alt=""><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">3.442940124152536</span><br><span class="line">3.9548323318837193</span><br><span class="line">5.126563167235281</span><br><span class="line">6.367386166003069</span><br><span class="line">7.206820572356469</span><br><span class="line">9.466957395716554</span><br><span class="line">9.757087792330198</span><br><span class="line">11.972950532346252</span><br><span class="line">12.185107507256959</span><br><span class="line">17.108217774260922</span><br><span class="line">17.539473344520456</span><br><span class="line">19.328405125829864</span><br><span class="line">21.29279408255786</span><br><span class="line">26.937036139713307</span><br><span class="line">30.589893351938596</span><br><span class="line">35</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><strong>Enjoy and Steem On!</strong></p>
+<h2 id="&#x652F;&#x6301;&#x94F6;&#x884C;"><a href="#&#x652F;&#x6301;&#x94F6;&#x884C;" class="headerlink" title="&#x652F;&#x6301;&#x94F6;&#x884C;"></a>&#x652F;&#x6301;&#x94F6;&#x884C;</h2><p>&#x53EA;&#x9700;&#x8981;&#x6295;&#x884C;&#x957F;&#x4E3A;<a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a> &#x6216;&#x8005; &#x8BBE;&#x7F6E;<a href="https://steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#x4EE3;&#x7406;</a>, &#x4E00;&#x4E2A;&#x4EBA;&#x6709;30&#x7968;,&#x6295;&#x7968;&#x5E76;&#x4E0D;&#x4F1A;&#x8BA9;&#x4F60;&#x635F;&#x5931;&#x4EC0;&#x4E48;.</p>
+<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
+<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://steemyy.com/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
+<li><a href="https://steemyy.com/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
+</ol>
+<blockquote>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
+</blockquote>
+<p><em>&#x535A;&#x6587;&#x540C;&#x6B65;&#x5230;&#xFF1A; <a href="https://justyy.com/archives/6590" target="_blank" rel="noopener">https://justyy.com/archives/6590</a></em></p>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
+<li><a href="https://steemyy.com/witness-lookup/justyy" target="_blank" rel="noopener">&#x6211;&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#x4FE1;&#x606F;</a> - <em>&#x611F;&#x8C22;&#x6295;&#x7968;&#xFF0C;&#x6BCF;&#x4E00;&#x7968;&#x90FD;&#x5F88;&#x91CD;&#x8981;&#xFF01;</em></li>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
+</ol>
+<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; <strong>&#x6211;&#x7684;&#x4E00;&#x4E9B;&#x8D21;&#x732E;&#xFF1A;<a href="https://steemyy.com/steemit-tools/" target="_blank" rel="noopener">SteemYY.com - SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></strong></p>
+<h1 id="Your-Vote-is-much-appreciated-and-every-vote-counts"><a href="#Your-Vote-is-much-appreciated-and-every-vote-counts" class="headerlink" title="Your Vote is much appreciated, and every vote counts."></a>Your Vote is much appreciated, and every vote counts.</h1><p>Check out <a href="https://steemyy.com/witness-data/justyy" target="_blank" rel="noopener">My Witness Page</a></p>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a witness proxy</a> - let @justyy represent you.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://steemyy.com/" target="_blank" rel="noopener">SteemYY.com - SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/6encje" target="_blank" rel="noopener">&#x2018;&#x94F6;&#x884C;&#x5F00;&#x6E90;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x8BA1;&#x7B97;&#x7B97;&#x6CD5;&#x5566;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@justyy/tags/bankofchina/">bankofchina</a>, <a class="has-link-grey -link" href="/@justyy/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@justyy/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@justyy/tags/cn-curation/">cn-curation</a>, <a class="has-link-grey -link" href="/@justyy/tags/cn-reader/">cn-reader</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-10-06/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">【第 肆零柒 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-10-06)</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@justyy/bank-of-china-implements-a-new-voting-algorithm/">
+                <span class="level-item">Bank Of China Implements a New Voting Algorithm.</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@justyy/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 justyy&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@justyy/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+
+
+
+    
+<script src="/@justyy/js/bundle.js" defer></script></body>
+</html>
+
