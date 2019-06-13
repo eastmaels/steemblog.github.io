@@ -17,7 +17,7 @@ tags:
 - teamcn-homework
 - whalepower
 - partiko
-thumbnail: https://steemitimages.com/0x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/6260ff568883cfb17ce949c0d58df75a_mh1560093824563.jpg
+thumbnail: 'https://steemitimages.com/0x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/6260ff568883cfb17ce949c0d58df75a_mh1560093824563.jpg'
 sidebar:
     right:
         sticky: true
@@ -134,4 +134,4 @@ _Posted from [Steem中文社区](http://cnstm.org) : [http://cnstm.org/blog/2019
 
 - - -
 
-This page is synchronized from the post: [新手学堂作业#49｜annepink作业汇报📝](https://steemit.com/@annepink/49annepink-kjmh42onjk)
+This page is synchronized from the post: ['新手学堂作业#49｜annepink作业汇报📝'](https://steemit.com/@annepink/49annepink-kjmh42onjk)

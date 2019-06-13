@@ -15,7 +15,7 @@ tags:
 - life
 - ocd-resteem
 - whalepower
-thumbnail: http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/mmexport1556094923777.jpg
+thumbnail: 'http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/mmexport1556094923777.jpg'
 sidebar:
     right:
         sticky: true
@@ -98,4 +98,4 @@ Thank you for being supportive as always. I appreciate if you can click below li
 
 - - -
 
-This page is synchronized from the post: [团队家宴Team dinner](https://steemit.com/@annepink/teamdinner-c03ixybjn1)
+This page is synchronized from the post: ['团队家宴Team dinner'](https://steemit.com/@annepink/teamdinner-c03ixybjn1)
