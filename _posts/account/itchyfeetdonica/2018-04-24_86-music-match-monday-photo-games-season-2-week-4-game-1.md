@@ -15,7 +15,7 @@ tags:
 - contests
 - music
 - cn-reader
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true

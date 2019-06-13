@@ -15,7 +15,7 @@ tags:
 - travel
 - cn
 - nature
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true

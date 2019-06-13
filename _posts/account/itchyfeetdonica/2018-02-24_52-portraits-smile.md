@@ -11,7 +11,7 @@ categories:
 - portraitcontest
 tags:
 - portraitcontest
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
