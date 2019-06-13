@@ -15,7 +15,7 @@ tags:
 - sct
 - sct-cn
 - team-cn
-thumbnail: https://steemitimages.com/640x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/04/nbc.jpg
+thumbnail: 'https://steemitimages.com/640x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/04/nbc.jpg'
 sidebar:
     right:
         sticky: true
@@ -205,4 +205,4 @@ NBC holders will receive one upvote from @sct.teamcn if the post has the 'sct' t
 
 - - -
 
-This page is synchronized from the post: [新手币 NBC 分红条款变更最后提醒+持有者额外福利/The Terms Change of NBC Daily Dividends Last Reminder + Additional Holders Benefit](https://steemit.com/@team-cn/nbcthetermschangeofnbcdailydividendslastreminderadditionalholdersbenefit-2ian23kr4m)
+This page is synchronized from the post: ['新手币 NBC 分红条款变更最后提醒+持有者额外福利/The Terms Change of NBC Daily Dividends Last Reminder + Additional Holders Benefit'](https://steemit.com/@team-cn/nbcthetermschangeofnbcdailydividendslastreminderadditionalholdersbenefit-2ian23kr4m)
