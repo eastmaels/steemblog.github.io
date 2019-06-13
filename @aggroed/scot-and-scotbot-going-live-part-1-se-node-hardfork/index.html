@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Scot and Scotbot going live!  Part 1: SE Node Hardfork. - Aggroed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@aggroed/css/style.css">
+
+<link rel="stylesheet" href="/@aggroed/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@aggroed/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@aggroed/">Home</a>
+                
+                <a class="navbar-item" href="/@aggroed/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@aggroed/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@aggroed/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@aggroed/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#What&#x2019;s-happening">
+        <span class="has-mr-6">1.1</span>
+        <span>What&#x2019;s happening?</span>
+        </a></li><li>
+        <a class="is-flex" href="#What-happens-after-it&#x2019;s-live">
+        <span class="has-mr-6">1.2</span>
+        <span>What happens after it&#x2019;s live?</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#It&#x2019;s-changable">
+        <span class="has-mr-6">2</span>
+        <span>It&#x2019;s changable</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#What-will-running-a-Scot-cost">
+        <span class="has-mr-6">2.1</span>
+        <span>What will running a Scot cost?</span>
+        </a></li><li>
+        <a class="is-flex" href="#What&#x2019;s-coming-next-Custom-Interfaces">
+        <span class="has-mr-6">2.2</span>
+        <span>What&#x2019;s coming next?  Custom Interfaces!</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@aggroed/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://i.imgur.com/OAPsDVj.png" alt="Scot and Scotbot going live!  Part 1: SE Node Hardfork.">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-02T12:35:42.000Z">2019-05-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@aggroed/categories/steem-engine/">steem-engine</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1074 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Scot and Scotbot going live!  Part 1: SE Node Hardfork.
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://i.imgur.com/OAPsDVj.png" alt=""></p>
+<p>Scot is the Smart Contract Organizational token.  It&#x2019;s modeled after the SMT protocol and we literally use the SMT white paper as the basis for the design spec.  SMTs are quite delayed so if you&#x2019;d like a way to create and tokenize your community <strong>NOW</strong> we&#x2019;re offering Scot as a way to do it through steem-engine.com!</p>
+<p>Want to switch to SMTs later?  Go ahead!  We plan to help launch SMTs as well.  Want to use our smart contract tool that we&#x2019;re working on to distribute tokens in the future? That&#x2019;s ok too. You can switch!  We don&#x2019;t really care which tool you decide to use for your community so long as it&#x2019;s based on Steem!</p>
+<p>Also, keep in mind, Scot and Scotbot are starting points to tokenize everything and they are expected to be available to the public starting in about a week (this is still notice of change rather than change itself) .  They aren&#x2019;t necessarily the end game.  Some people may prefer this, others may want different tools, we&#x2019;ll support as many tools as we can that we think will help grow Steem!</p>
+<h2 id="What&#x2019;s-happening"><a href="#What&#x2019;s-happening" class="headerlink" title="What&#x2019;s happening?"></a>What&#x2019;s happening?</h2><p>In order for voting to work properly you need to be able to stake tokens.  On Steem, the comparative ability is to take liquid steem and power it up into steem power.  On the test server @harpagon made it so you can go from liquid tokens to token power and @beggars added a UI so users can Stake their tokens (aka power them up) with a few clicks.  </p>
+<p><img src="https://i.imgur.com/VidClHw.png" alt=""></p>
+<p><strong>With staking enabled we&#x2019;re now able to run the voting bot that @holger80 made, which we&#x2019;re calling Scotbot (ND Scot is also a term we&#x2019;ll use).</strong></p>
+<p>We&#x2019;ve been testing the staking feature on the QA server for the last week with the scottest token.  We&#x2019;ve been testing Scotbot with it too.  It&#x2019;s gone quite smoothly.  So, today we&#x2019;re announcing a Hard Fork for the Steem Engine platform to add the new staking functionality.</p>
+<p>The hard fork is scheduled to take place on <strong>Tuesday, May 7th at 8pm EST</strong> on the main node that runs steem-engine.com. Anyone else who is running their own Steem Engine node should plan to update to the new software at around the same time (though it doesn&#x2019;t have to be exact since all of the data and consensus still happens on the Steem blockchain). </p>
+<p>Once the hardfork is done we&#x2019;ll technically be able to run Scot and Scotbot on the live server!  We will likely need time and tooling to bring on board everyone that wants their own community token, but you&#x2019;re welcome to message aggroed in <a href="https://discord.gg/whqnzqT" target="_blank" rel="noopener">discord</a> if you&#x2019;d like to get moving as soon as possible.</p>
+<h2 id="What-happens-after-it&#x2019;s-live"><a href="#What-happens-after-it&#x2019;s-live" class="headerlink" title="What happens after it&#x2019;s live?"></a>What happens after it&#x2019;s live?</h2><p>Then we get rockin&#x2019; and rollin&#x2019; with Scot and Scotbot so anyone in the community can create a token and get their proof-of-brain-style reward system up and running.</p>
+<ul>
+<li>Step 1 you&#x2019;ll create a token.</li>
+<li>Step 2 you may want to then airdrop that token.  The interface for that should be out soon.</li>
+<li>Step 3 users will have to stake the token.  There&#x2019;s an easy UI built.</li>
+<li>Step 4 you&#x2019;ll setup scotbot to start distributing your tokens.</li>
+<li>Step 5 users will post normally through steempeak, busy, steemit etc and they&#x2019;ll add tags to the post based on the tokens they are looking to be rewarded in (yes, more than one will work, but we&#x2019;re limiting to 5)</li>
+<li>Step 6 when the post reaches the specified payout period you can claim your rewards in the available Steem Engine token(s).  After 7 days you can claim your Steem rewards normally.</li>
+</ul>
+<p><img src="https://i.imgur.com/LfnTD1A.jpg" alt=""></p>
+<h1 id="It&#x2019;s-changable"><a href="#It&#x2019;s-changable" class="headerlink" title="It&#x2019;s changable"></a>It&#x2019;s changable</h1><p>You screwed up how Scotbot works and want a different distribution framework.  This will be allowed!!!  So, no, it&#x2019;s not a smart contract yet.  The token distributor can change the dynamics/settings of how it&#x2019;s distributed.  This is good and bad!</p>
+<p>If you mess up or find there&#x2019;s a better way for this to work with your community then you&#x2019;re going to be happy you can change it.  If you&#x2019;re investing money into a community token and someone changes how it distributes you might get pissed.  </p>
+<p>This is a tool launch.  You have to do your own due diligence on tokens and communities you want to put your money into to make sure that the people leading them aren&#x2019;t horrible human beings that will rob you later.  It&#x2019;s crypto, be wary.  The benefit though is that if there&#x2019;s a better way for a token to operate then it can adjust easily on the fly.</p>
+<h2 id="What-will-running-a-Scot-cost"><a href="#What-will-running-a-Scot-cost" class="headerlink" title="What will running a Scot cost?"></a>What will running a Scot cost?</h2><p>We have programming, server, and support costs to run these.  I know lots of crypto people want everything for free, but we simply can&#x2019;t offer that and still be a business that&#x2019;s successful.  Here&#x2019;s the fees we&#x2019;ll be charging.</p>
+<p>Scotbot setup = 1000 ENG<br>Sctbot monthly charge = 1 ENG per active account per month. </p>
+<p>This is billed in arrears.  So, at the end of 30 days we&#x2019;ll count how many unique, active accounts you had over the past month and invoice you for that many ENG.  Failure to pay will result in termination of the Scotbot instance.  (Tokens are still on chain, but it will cease distributing tokens).</p>
+<p>Thinking of getting this rolling?  Feel free to message me on Discord!</p>
+<h2 id="What&#x2019;s-coming-next-Custom-Interfaces"><a href="#What&#x2019;s-coming-next-Custom-Interfaces" class="headerlink" title="What&#x2019;s coming next?  Custom Interfaces!"></a>What&#x2019;s coming next?  Custom Interfaces!</h2><p>What we&#x2019;re trying to put into place is the ability to run a condenser clone that will feature your token as the post rewards.  This is under development, but in theory you would go to a custom website like magictoken.xyz, and post there.  All the post rewards would show you how much magic you&#x2019;ve earned.  It&#x2019;s like your own personally-branded white label version of steemit.com.  When you click the wallet it&#x2019;ll bring you back to your token wallet in Steem-engine.com.</p>
+<p>It&#x2019;s under development and I&#x2019;ll keep you posted.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@aggroed/scot-and-scotbot-going-live-part-1-se-node-hardfork" target="_blank" rel="noopener">&#x2018;Scot and Scotbot going live!  Part 1: SE Node Hardfork.&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@aggroed/tags/scot/">scot</a>, <a class="has-link-grey -link" href="/@aggroed/tags/scotbot/">scotbot</a>, <a class="has-link-grey -link" href="/@aggroed/tags/smt/">smt</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steem-engine/">steem-engine</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@aggroed/scot-and-scotbot-part-ii-considerations-when-creating-a-community-token-faucets-and-sinks/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Scot and Scotbot Part II: Considerations When Creating a Community Token!  Faucets and Sinks.</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@aggroed/steem-town-hall-join-us-tonight-we-ll-discuss-steem-alliance-steem-engine-scot-and-maybe-even-talk-some-splinterlands/">
+                <span class="level-item">Steem Town Hall: Join us tonight, we&#39;ll discuss Steem Alliance, Steem-Engine // SCOT, and maybe even talk some Splinterlands!</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@aggroed/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Aggroed&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@aggroed/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@aggroed/content.json"};</script>
+
+
+
+    
+<script src="/@aggroed/js/bundle.js" defer></script></body>
+</html>
+

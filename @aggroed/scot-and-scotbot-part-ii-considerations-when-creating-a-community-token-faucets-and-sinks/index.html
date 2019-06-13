@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Scot and Scotbot Part II: Considerations When Creating a Community Token!  Faucets and Sinks. - Aggroed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@aggroed/css/style.css">
+
+<link rel="stylesheet" href="/@aggroed/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@aggroed/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@aggroed/">Home</a>
+                
+                <a class="navbar-item" href="/@aggroed/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@aggroed/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@aggroed/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@aggroed/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Faucets-and-Sinks">
+        <span class="has-mr-6">1</span>
+        <span>Faucets and Sinks</span>
+        </a></li><li>
+        <a class="is-flex" href="#Where-does-the-token-value-come-from">
+        <span class="has-mr-6">2</span>
+        <span>Where does the token value come from</span>
+        </a></li><li>
+        <a class="is-flex" href="#Security-tokens-vs-other-tokens">
+        <span class="has-mr-6">3</span>
+        <span>Security tokens vs other tokens</span>
+        </a></li><li>
+        <a class="is-flex" href="#What&#x2019;s-left-with-token-creation">
+        <span class="has-mr-6">4</span>
+        <span>What&#x2019;s left with token creation?</span>
+        </a></li><li>
+        <a class="is-flex" href="#Gearing-up-to-start">
+        <span class="has-mr-6">5</span>
+        <span>Gearing up to start!</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@aggroed/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://i.imgur.com/OAPsDVj.png" alt="Scot and Scotbot Part II: Considerations When Creating a Community Token!  Faucets and Sinks.">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-02T23:18:15.000Z">2019-05-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@aggroed/categories/steem-engine/">steem-engine</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1131 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Scot and Scotbot Part II: Considerations When Creating a Community Token!  Faucets and Sinks.
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://i.imgur.com/OAPsDVj.png" alt=""></p>
+<p>So, you got really excited and want to make a community token!  That&#x2019;s great and we want you to do it.  There&#x2019;s a few things to consider, and I want to help you understand it as best as I can.</p>
+<h2 id="Faucets-and-Sinks"><a href="#Faucets-and-Sinks" class="headerlink" title="Faucets and Sinks"></a>Faucets and Sinks</h2><p>In general all tokens have faucets and sinks.  A faucet is how the token enters the ecosystem and a sink is how it leaves it.  If no one uses your token it won&#x2019;t have any value.  If lots of people use your token but it&#x2019;s overflowing with a lot of new tokens it still won&#x2019;t have value.  The goal is to find a healthy balance.</p>
+<p>How do I find that balance?  Well, that&#x2019;s a really hard question and there&#x2019;s no one answer that will work for everything.  The first two questions to me are:</p>
+<p>What should the max supply be?<br>How much should enter the ecosystem initially?</p>
+<p>In general the value of a currency should match the value of goods and services in the ecosystem. </p>
+<p>Number of tokens * Token value =  Goods + Services</p>
+<p>If goods + servies go up in value and the amount of tokens stay the same then value of each token will go up.  If the value of goods and services go up and the token supply goes up the token value might remain constant.</p>
+<p>It&#x2019;s a tricky balance.  But I like to think in terms of USD.  Then I think how much USD is this community project going to be worth in X years and then I issue that many tokens as a max supply.  You might want a weaker currency value.  You might want a stronger currency value.  If you want it to be less than a dollar than make the max issuable higher.  If you want it to be more than a dollar make the max issuable lower or just don&#x2019;t issue as many.</p>
+<p>Now, when you start a project and there&#x2019;s 15 users you need fewer tokens.  After a few years when there 15000 users you&#x2019;re likely to want more.  So, you need to think not just about the final state of the token, but you need to consider the initial state of the token.</p>
+<p>FOMO and scarcity are an important part of the token value.  I strongly suggest that you make slightly less token supply available than what you think will be consumed.  That way the token is likely to go up in value.</p>
+<p>But how do you know what that is?  This is a best guess kinda thing.  If you&#x2019;re nervous air on the side of caution and add more tokens later.  But if you&#x2019;re selling onion ice cream with your token and you know not many people will want it you&#x2019;ll want a supply of like 7.  If you&#x2019;re selling sex and drugs with your token (don&#x2019;t sell sex and drugs with these tokens because they&#x2019;ll be taken off of the front end of steem-engine) then you&#x2019;ll probably want billions of them up front because everyone wants sex and drugs.</p>
+<h2 id="Where-does-the-token-value-come-from"><a href="#Where-does-the-token-value-come-from" class="headerlink" title="Where does the token value come from"></a>Where does the token value come from</h2><p>Aggy&#x2019;s rule of value:</p>
+<p><code>10% of the value of a token comes from the distribution of it.
+90% of the value comes from the desirability of the sinks for it!</code></p>
+<p>What does that mean?  It means that issuing a token and distributing it is the easy part.  Making it have value is the hard part.  You have to get people that want to hold it.  It is part of a good or service.  You can play a game with it.  You can get a service with it.  You can trade it for a limited wigit.  Just having a token and distributing it won&#x2019;t make it worth anything.  You have to make people want to both buy your token and turn it in to get something they perceive has value to them.</p>
+<h2 id="Security-tokens-vs-other-tokens"><a href="#Security-tokens-vs-other-tokens" class="headerlink" title="Security tokens vs other tokens"></a>Security tokens vs other tokens</h2><p>I&#x2019;m not an attorney.  I work with one, and I&#x2019;m familiar with the space, but I&#x2019;m not your legal council.  That said, if you&#x2019;re planning on offering shares in a company, promises of profit, or you&#x2019;re selling vaporware with the promise to build something later with the token sale money those are definately securities.  It&#x2019;s ok to be a security, but you&#x2019;ll need a registered company and either full registration or an exemption filed with the SEC if you&#x2019;d like to raise money for your security in the US.</p>
+<p>Other types of tokens may end up being a security because non-securities can still be bundled in a way to actually be a security, and this shit is complex, but if you&#x2019;re selling something that&#x2019;s clearly a product or service it has a much larger possibility that it&#x2019;s exempt from the securities registration.  That means you can launch an ICO, raise however much you can, and not worry about securities law (if you&#x2019;ve made sure you&#x2019;re in the clear).</p>
+<p><a href="https://sto.steem-engine.com/#/launch" target="_blank" rel="noopener">Need legal help?</a></p>
+<h2 id="What&#x2019;s-left-with-token-creation"><a href="#What&#x2019;s-left-with-token-creation" class="headerlink" title="What&#x2019;s left with token creation?"></a>What&#x2019;s left with token creation?</h2><p><img src="https://i.imgur.com/3r8JMfN.png" alt=""></p>
+<p>To make a token on steem-engine.com go to steem-engine.com and click tokens.  Then click create.  (If you don&#x2019;t have 100 ENG you&#x2019;ll have to click buy ENG first or buy some on the market at a small discount).</p>
+<p>Now you have to give it a token name, and then choose a symbol up to 10 characters long.  You have to give it a URL.  Make sure to include the https:// part in your URL.  We just had a discussion around max supply&#x2026; so hopefully you have some ideas for that.  Lastly, you have to decide decimal precision.  </p>
+<p>Decimal precision is how many decimal points your token will care about.  Bitcoin is 8 so you can trade 0.00000001 btc.  Steem is 3 so you can trade 0.001 steem.  If you suspect your token will be used in a lot of micro transactions or you have an incredibly small supply you may want to have 8 for decimal precision.  If you&#x2019;re selling something like a brick and you don&#x2019;t want to sell half a brick to someone then you might want 0.</p>
+<h2 id="Gearing-up-to-start"><a href="#Gearing-up-to-start" class="headerlink" title="Gearing up to start!"></a>Gearing up to start!</h2><p>I don&#x2019;t know about you, but I&#x2019;m getting excited for releasing tokens into the wild. Hopefully you&#x2019;ll get one started yourself.  Next up I&#x2019;m going to talk about some parameters for Scotbot!  Stay tuned!</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@aggroed/scot-and-scotbot-part-ii-considerations-when-creating-a-community-token-faucets-and-sinks" target="_blank" rel="noopener">&#x2018;Scot and Scotbot Part II: Considerations When Creating a Community Token!  Faucets and Sinks.&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@aggroed/tags/scot/">scot</a>, <a class="has-link-grey -link" href="/@aggroed/tags/scottest/">scottest</a>, <a class="has-link-grey -link" href="/@aggroed/tags/smt/">smt</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steem-engine/">steem-engine</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@aggroed/scot-and-scotbot-part-iii-scotbot-settings/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Scot and Scotbot Part III: Scotbot settings.</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@aggroed/scot-and-scotbot-going-live-part-1-se-node-hardfork/">
+                <span class="level-item">Scot and Scotbot going live!  Part 1: SE Node Hardfork.</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@aggroed/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Aggroed&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@aggroed/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@aggroed/content.json"};</script>
+
+
+
+    
+<script src="/@aggroed/js/bundle.js" defer></script></body>
+</html>
+

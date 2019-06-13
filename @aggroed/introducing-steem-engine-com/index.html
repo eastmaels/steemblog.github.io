@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Introducing Steem-Engine.com (smart contracts and token creation on Steem) - Aggroed</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@aggroed/css/style.css">
+
+<link rel="stylesheet" href="/@aggroed/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@aggroed/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@aggroed/">Home</a>
+                
+                <a class="navbar-item" href="/@aggroed/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@aggroed/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@aggroed/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@aggroed/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Smart-Contracts-on-a-Steem-Sidechain">
+        <span class="has-mr-6">1.1</span>
+        <span>Smart Contracts on a Steem Sidechain</span>
+        </a></li><li>
+        <a class="is-flex" href="#Standardizing-Tokens-on-Steem">
+        <span class="has-mr-6">1.2</span>
+        <span>Standardizing Tokens on Steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem-Engine-tokens-vs-SMTs">
+        <span class="has-mr-6">1.3</span>
+        <span>Steem Engine tokens vs SMTs</span>
+        </a></li><li>
+        <a class="is-flex" href="#Advantages-of-Steem-Engine-vs-SMTs">
+        <span class="has-mr-6">1.4</span>
+        <span>Advantages of Steem Engine vs SMTs</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">1.5</span>
+        <span>Roadmap</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#We&#x2019;re-ready-for-you-NOW">
+        <span class="has-mr-6">2</span>
+        <span>We&#x2019;re ready for you NOW!</span>
+        </a><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Join-us-in-Discord-and-be-sure-to-follow-the-steem-eng-account-for-future-updates">
+        <span class="has-mr-6">2.1.1</span>
+        <span>Join us in Discord and be sure to follow the @steem-eng account for future updates!</span>
+        </a></li></ul></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@aggroed/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://i.imgur.com/JldZkxt.png" alt="Introducing Steem-Engine.com (smart contracts and token creation on Steem)">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-02-07T21:15:06.000Z">2019-02-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@aggroed/categories/steemengine/">steemengine</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1051 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Introducing Steem-Engine.com (smart contracts and token creation on Steem)
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://i.imgur.com/JldZkxt.png" alt="Steem Engine Logo"></center>
+
+
+<p>@yabapmatt and I, in partnership with @harpagon, are launching a platform and accompanying website called Steem Engine (<a href="https://steem-engine.com" target="_blank" rel="noopener">https://steem-engine.com</a>) with an initial focus of allowing the creation of custom tokens on the Steem Blockchain.</p>
+<h2 id="Smart-Contracts-on-a-Steem-Sidechain"><a href="#Smart-Contracts-on-a-Steem-Sidechain" class="headerlink" title="Smart Contracts on a Steem Sidechain"></a>Smart Contracts on a Steem Sidechain</h2><p>Steem Engine uses the <a href="https://github.com/harpagon210/steemsmartcontracts" target="_blank" rel="noopener">Steem Smart Contracts software</a>, built by @harpagon, which is a smart contract enabled sidechain platform built on top of the Steem blockchain. Initially we&#x2019;re launching with a limited set of smart contracts enabled which allow anyone to easily make custom, simple tokens on the Steem blockchain. </p>
+<p><a href="steem-engine.com">Make a token now</a></p>
+<p>It will also &#x201C;soon&#x201D; include an internal market, very similar to the existing STEEM/SBD market, to allow all tokens created on the platform to be traded against STEEM. Special thanks to @asgarth for help on the market user interface design and development shown below.  Testing on the market has already begun.</p>
+<p><img src="https://i.imgur.com/XqQsekE.png" alt=""></p>
+<p>We hope that the ability for apps to use Steem for their token sales rather than Ethereum or other similar platforms will drive demand for the STEEM token and allow many apps and dapps to migrate and raise money here before the SMT platform is ready.</p>
+<h2 id="Standardizing-Tokens-on-Steem"><a href="#Standardizing-Tokens-on-Steem" class="headerlink" title="Standardizing Tokens on Steem"></a>Standardizing Tokens on Steem</h2><p>Currently many Steem projects are setting up their own temporary tokens using various different methods, while waiting for the mythical SMTs. We think it will be very beneficial for both token creators and token holders to have all of that be in one place, working in a standardized way, with a robust toolset.</p>
+<p>One of the biggest benefits to token standards like ERC-20 is that any app, wallet, exchange, etc, only has to do one integration and then they can support any token using the standard. We would like to do the same thing for Steem tokens. Once any app, wallet, exchange, etc integrates with Steem Engine, they can instantly work with and support any of the tokens created on the platform.</p>
+<p>Currently with Steem Engine, users can easily see what tokens are available, view balances, and make transfers right from the Steem Engine website] as well as the <a href="https://chrome.google.com/webstore/detail/steem-keychain/lkcjlnjfpbikmcmbachjpdbijejflpcm" target="_blank" rel="noopener">Steem Keychain</a> and very soon the <a href="https://chrome.google.com/webstore/detail/steemplus/mjbkjgcplmaneajhcbegoffkedeankaj?hl=en" target="_blank" rel="noopener">Steem Plus</a> browser extensions.</p>
+<p><img src="https://i.imgur.com/7UndXl9.png" alt=""></p>
+<h2 id="Steem-Engine-tokens-vs-SMTs"><a href="#Steem-Engine-tokens-vs-SMTs" class="headerlink" title="Steem Engine tokens vs SMTs"></a>Steem Engine tokens vs SMTs</h2><p>We want to clarify that Steem Engine Tokens are different than Smart Media Tokens (SMTs) currently(?) being developed by Steemit, Inc. SMTs will be tokens that are native to the Steem platform and their transactions will be validated by the same software which currently runs the Steem blockchain.</p>
+<p>Steem Engine, on the other hand, will have all transactions posted to the Steem blockchain, so that they will all be available on a public, immutable ledger with deterministic, consensus-based transaction ordering and finality, however the validation of the transactions will be done by a separate piece of software (the Steem Smart Contracts software created by @harpagon).</p>
+<p>Just as with the Steem software, the Steem Smart Contracts (SSC) software is free and open source and anyone may run their own SSC node and independently verify the transactions and query the current state of the system.</p>
+<h2 id="Advantages-of-Steem-Engine-vs-SMTs"><a href="#Advantages-of-Steem-Engine-vs-SMTs" class="headerlink" title="Advantages of Steem Engine vs SMTs"></a>Advantages of Steem Engine vs SMTs</h2><p>SMTs are planned to have a certain, fixed set of smart contracts implemented which are very similar to the ones currently in place for the native Steem blockchain tokens revolving primarily around content publishing and reward distribution.</p>
+<p>On the other hand the Steem Smart Contracts platform, on which Steem Engine is built, will allow arbitrary, custom smart contracts to be published, similar to platforms like Ethereum and EOS.</p>
+<p>While it is our ultimate goal to allow anyone to publish their own smart contracts to the platform, in the meantime the software is set up such that only the @steemsc account, controlled jointly by @harpagon, @yabapmatt, and myself, is able to publish new smart contracts.</p>
+<p>The point being that it is possible to publish custom smart contracts to the platform to allow token and dapp creators to build things that will not be possible with SMTs. If you would like to create a custom smart contract on the platform, please get in touch with us on the <a href="https://discord.gg/xWRYB9s" target="_blank" rel="noopener">Steem Engine Discord</a> and we&#x2019;ll work with you to get it up and running!</p>
+<h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h2><p>We can provide more detail in the coming weeks, but right now we&#x2019;re focused on:</p>
+<ol>
+<li>Improving the Steem Smart Contracts platform</li>
+<li>Launching the DEX for trading tokens against STEEM</li>
+<li>Building tools and interfaces to support common types of token distributions</li>
+<li>Putting in place a legal services division which enables dapps to incorpate and register a Reg. D security token offering in the US which allows up to $5M/yr to be raised, including from a limited number of non-accredited investors, in a fully legal and compliant manner. Some restrictions apply.</li>
+</ol>
+<p>We expect major progress on all fronts in February and through the end of March.</p>
+<h1 id="We&#x2019;re-ready-for-you-NOW"><a href="#We&#x2019;re-ready-for-you-NOW" class="headerlink" title="We&#x2019;re ready for you NOW!"></a>We&#x2019;re ready for you NOW!</h1><p>We&#x2019;re executing our soft launch right now! If you run an app it&#x2019;s time to create your token on the platform! This starts <strong>immediately!!</strong></p>
+<p><a href="steem-engine.com"><strong>Make your coin right now</strong></a></p>
+<p>We have a full public launch planned in the next few months, which will include a PR campaign to get the word out inside and beyond the Steem community.</p>
+<p>If you have a token for a Steem-based project, or are considering creating a token in the near future, please get in touch with us about launching on the Steem Engine platform. We can coordinate marketing efforts and get the word out together!</p>
+<p>Let&#x2019;s get started tokenizing the internet TODAY through the Steem Engine platform, built on top of Steem, and supported by websites and apps you run.</p>
+<p>Happy to answer questions on getting started.</p>
+<h3 id="Join-us-in-Discord-and-be-sure-to-follow-the-steem-eng-account-for-future-updates"><a href="#Join-us-in-Discord-and-be-sure-to-follow-the-steem-eng-account-for-future-updates" class="headerlink" title="Join us in Discord and be sure to follow the @steem-eng account for future updates!"></a>Join us in <a href="https://discord.gg/MbCVbej" target="_blank" rel="noopener">Discord</a> and be sure to follow the @steem-eng account for future updates!</h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@aggroed/introducing-steem-engine-com" target="_blank" rel="noopener">&#x2018;Introducing Steem-Engine.com (smart contracts and token creation on Steem)&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@aggroed/tags/crypto/">crypto</a>, <a class="has-link-grey -link" href="/@aggroed/tags/eng/">eng</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steemengine/">steemengine</a>, <a class="has-link-grey -link" href="/@aggroed/tags/steemit/">steemit</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@aggroed/consensus-witness-again-phew/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Consensus Witness Again!  Phew!</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@aggroed/well-back-to-campaigning/">
+                <span class="level-item">Well, back to campaigning!</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@aggroed/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Aggroed" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Aggroed&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@aggroed/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@aggroed/content.json"};</script>
+
+
+
+    
+<script src="/@aggroed/js/bundle.js" defer></script></body>
+</html>
+
