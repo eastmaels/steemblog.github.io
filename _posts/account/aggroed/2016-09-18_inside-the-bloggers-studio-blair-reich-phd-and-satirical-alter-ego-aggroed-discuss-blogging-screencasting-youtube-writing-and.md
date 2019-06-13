@@ -1,0 +1,89 @@
+
+---
+title: 'Inside the bloggers studio- Blair Reich, PhD and satirical alter ego @aggroed discuss blogging, screencasting, youtube, writing, and more'
+permlink: inside-the-bloggers-studio-blair-reich-phd-and-satirical-alter-ego-aggroed-discuss-blogging-screencasting-youtube-writing-and
+catalog: true
+toc_nav_num: true
+toc: true
+position: 9999
+date: 2016-09-18 15:09:30
+categories:
+- introduceyourself
+tags:
+- introduceyourself
+- philosophy
+- writing
+- steemit
+- introducemyself
+thumbnail: 'https://s22.postimg.org/t5wu0xie9/steemit_series.jpg'
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+<html>
+<p><img src="https://s22.postimg.org/t5wu0xie9/steemit_series.jpg" width="556" height="244"/></p>
+<p>We join you live for a discussion between satirical writer @aggroed and scientist Dr. Reich as they explore their social media experience and topics of interest</p>
+<p>(To be clear- @aggroed and Reich are the same person, but @aggroed is in character)</p>
+<p>&nbsp;@aggroed- So, we’re here because you failed at the first post right? You put it in topic “introduction” instead of “introduceyourself” not as smart as you’d like to think you are, huh?&nbsp;</p>
+<p>Reich- Yeah. Well, I’m not totally new to social media, but this was my first real blog I’ve devoted any kind of time to and it’s also the first time I’ve ever created screen casts. This blog is also not just another blogspot or something like that. There is a culture here and a freaking currency. The whole thing is different, and I’m still learning a lot as I’m going. I use MS Paint for any art I have to put together, which just shows I'm a bit of tech luddite. This isn’t where I’ve put much time before say 4 weeks ago.&nbsp;</p>
+<p>@aggroed- What did you manage to learn in those four weeks?&nbsp;</p>
+<p>Reich- hmmm, well I think I found more of my voice. I really don’t get paid a cent for the Satirically Yours pieces that we do, but they are by far my favorite. I think about them basically all day now. Ever since the Onion got purchased by a Hillary supporter (aka the deep state) I knew there was a real gap. And while The Onion dove into libertarian ideas at times they never fully embraced them. Same with the Daily show. The whole point of that show was to make you a moderate between Republican or Democrat and distract you from the real question of who has authority individuals or the state. I created you to be a really funny way of spreading the fallacy of state run arguments.&nbsp;</p>
+<p>@aggroed- So you’re an anarchist and want isis warlords running America punching babies?&nbsp;</p>
+<p>Reich- No! I still think that people do their best work when they work together. I think that togetherness should be voluntary rather than at the threat of violence. I think I’m somewhere between Libertarian, Anarchist, and Occupier. Maybe I dig nomadic tribalism… I don’t know. I think I like the idea of going back to constitutional con/federations and city states. There are 160 governments that claim all the land and rule over 7 Billion people. I think the world would be better with like 20,000+ communities that are collectively deciding their fate rather than leaving it up to just 160. Maybe we need 7 billion governments. &nbsp;&nbsp;But it's not a reasonable expectation that I'll be able to completely come up with a working alternative overnight. &nbsp;We need to run lots of experiments and see what works for groups of people.</p>
+<p>The system now looks too much like feudalism. That said, I still think people need a single forum where they can go to work out problems. &nbsp;We need commonly held values like do not cause harm and help your neighbor. If we stick with the current form we’re missing a 4th branch as in “we the people.” &nbsp;Representation has been a terrible failure for the common people. I don’t mind the existence of politicians whose primary goal is to plan and work with people, but the real authority shouldn’t rest with them but with residents in the community in which those plans operate. How many wars would we really be in if there was an unrigged popular vote for any of them?&nbsp;</p>
+<p>@aggroed- You also like to talk about some other really weird stuff. Do you want to talk about any of those?&nbsp;</p>
+<p>Reich- Sure. Half my content time is spent managing the Mandela Effect stuff. As far as I can tell the rules for how the world operates, that we all take for granted, are incorrect. We think objects don’t change while we’re sleeping, that history is constant and can’t change after the fact. I’m of the opinion that sorta stuff is actually fluid. &nbsp;It’s been a pretty weird time to be a classically trained scientist and also not believe a lot of it. I mean some of it, like lots of pysics, &nbsp;is automatically not worth believing when it starts failing at predicting the world.</p>
+<p>Dewey Larson wrote a book about all the ways that modern physics and parts of chemistry are wrong and non-predictive. It’s been largely ignored, but he has a system called the reciprocal system that can account for some of the weirdness, but not all of it. Reality and the physical stuff around us changing is pretty wild and it’s worth studying. It’s especially worth it when I have evidence that can be interpreted to say it changes.&nbsp;</p>
+<p>The other thing I do on here is write fiction and news. I suffered from a nasty depression for years that started with my mom’s death shortly out of grad school, and I finally came out of it last year. I loved writing before and now I have the drive to get this stuff out there again since I’ve been healthy. The fiction is called the Hard Times and is inspired by a book of 55 word stories and also this abstract concept of what life is going to be like after this system ends. I try to write something clever, descriptive, and with a twist. I also try to keep it short with every story leaving the audience with a cliff hanger and a place for their own imagination to fill in the blanks.&nbsp;</p>
+<p>The news stories are hard. I am looking into things that most people would consider conspiracy theory. Conspiracy Theorists don’t typically have PhDs though. They also leap to conclusions because they think it might be right rather than look at evidence. I’m trying to put my science knowledge into practice looking at things that other scientists won’t touch. It doesn’t mean I’m right all the time, but normally by the time I’m ready to put a statement out into the world I have researched it pretty hard and feel like it’s ready. I don’t have a source for this quote but “Wisdom is not believing everything you think.” I start with hunches, but I don’t believe them. I look for data one way or another and see if it matches or doesn’t. When the data can tell a story it’s ready to talk about.&nbsp;</p>
+<p>@aggroed- You’re sounding pretty nuts here doc. Fluid universe. You post Hillary is dead and uses a double. I mean maybe you’re still just in la-la land. Do you consider that?&nbsp;</p>
+<p>Reich- Sure. I could be wrong. But on the Mandela stuff I have a 25,000 response survey that I’m basing my judgement on. For Clinton’s death I’ve found three sources: a Chuck Todd tweet, an ABC7 video, and an ABC website. I’m not a conspiracy theorist for reporting that those three media outlets have released and then retracted the story of her death. Maybe it was just an accident, but because there are multiple parties reporting who in theory are credible I think there is a story there and am happy to write about it. If I immediately jump to she’s dead or she’s arrested without letting the story develop then that’s conspiracy. Sharing three big news players dropped a note about her death is just factual.&nbsp;</p>
+<p>As for things like aliens and UFOs and dracos and reptillians? Who knows?!? That hasn’t been my daily experience so I can’t really comment on it. I leave room for it. I follow stories. I track popular data points in my head about it, and if the time is right for me to fully believe so be it.&nbsp;</p>
+<p>@aggroed – What are you trying to accomplish doing all this? I mean can’t you earn more working for companies than you can by being on a blogging site where only the top 1% of people have 95-97% of the reward? It’s not like whales are hitting up Satirically Yours with tons of STEEM.&nbsp;</p>
+<p>Reich- I am desperate for the world to change. The limiting factor right now is the number of Americans that get the nature of the kleptocracy. The Mandela survey said there are 25% of people that call themselves conspiracy theorists, which I mostly take to mean they don’t trust what their government says. That number has to keep rising in order to effect the kind of change we need without violence and bloodshed. I’ve tried waking people up with really blunt upfront conversations and they aren’t ready for it, it ruins friendships, and it doesn’t help the movement. Instead I think I can play a role by providing well researched points and then let you create easily digestible formats for those points.</p>
+<p>I want three things. Peace. Abundance. Liberty/Freedom. If we get those the rest will take care of itself. &nbsp;What about you? You have a ton of posts in a very short period of time. What are you doing here and what motivates you?&nbsp;</p>
+<p>@aggroed- rage!&nbsp;</p>
+<p>Reich- rage?&nbsp;</p>
+<p>@aggroed- Unbridled raw rage. I’m sick of seeing cops killing unarmed people. I hate that we have more people tied up in the justice system than we had tied up in the slavery system. I’m sick of getting my testicles grouped when I go through the TSA. I’m sick of empire building. I’m tired of bullshit stories on the media. I hate how they lie and they’ve been able to get away with it for years. I’m livid. &nbsp;These assholes have to stop killing people who have what they want.&nbsp;</p>
+<p>Reich- That can’t be healthy.&nbsp;</p>
+<p>@aggroed- It’s not. It’s certainly cost us friendships and at times strained our family. It’s a balancing act. I feel like Bruce Banner (the nerd the Hulk turns back into). I guess my other problem is fear. I’m so afraid that one day my kids will figure out just how shitty the leadership has become and they are going to ask me “Daddy, what did you do to make this world better than when you found it so we wouldn’t have to live through it too.” If I don’t have an answer to that by the time they’re ready to ask it I won’t be able to live with myself.&nbsp;</p>
+<p>Reich- Is this the only form of protest that you do?&nbsp;</p>
+<p>@aggroed- I’ve been in the lines staring down cops. I’ve done the “am I being detained” speeches that got me cuffed at least once. I’ve fought traffic tickets in court while I try to figure out what’s admirality law, what’s common law, and what part is trust law. They don’t teach you this stuff in school so we’re on our own to navigate the system.&nbsp;</p>
+<p>I was there in Crawford years ago protesting Bush when we first went to war in Iraq. Protests aren’t enough. I’m not sure I know what is, but the internet seems like the best way to reach a lot of people and get the masses off their asses.&nbsp;</p>
+<p>Reich- What’s the humor that you’re putting into those Satirically Yours posts? How do they work?&nbsp;</p>
+<p>@aggroed- I channel my anger and focus on the idiocy of what I’m seeing. When I inflate that one balloon it’s easier to see, it's easier to pop, and that way everyone can more easily figure out what’s wrong with the current path our country or media is on.&nbsp;</p>
+<p>Reich- What about news stories. Which one of us is breaking news?&nbsp;</p>
+<p>@aggroed- Wow that’s tough. I think news and reports are mostly you. You spend all that time writing and researching it. I only pop in a little to breathe a little funny into your dry ass writing style.&nbsp;</p>
+<p>Reich- Do you think it’s odd we have formed these alter egos?&nbsp;</p>
+<p>@aggroed- Technically only you formed one, but I think there is good precedence. Slim Shady and Marshal Mathers. Lil’D and Dave Bird. Bruce Wayne and Batman. Stephen Colbert and Stephen Colbert. Sometimes you just got to play the character that you think will make the difference rather than be yourself. Especially you because scientists aren’t cool enough for this kind of work. You need a snide and snarky voice to be edgy enough to hit hard. &nbsp;Then we infuse it with brutal open honesty about ourselves at random points to show that we are human and vulnerable.</p>
+<p>Reich- Who do you want to win the election?&nbsp;</p>
+<p>@aggroed- Well, I like the idea that we self-govern. So, mostly I want no one. I don’t think that’s going to happen this election cycle. I also don’t want to give this government any of my consent. I hate just about everything they are doing, so why vote. I don’t want any version of what their selling and I want them thinking I have given them any consent. &nbsp;I want something completely different that involves the people as a 4th and most powerful branch of governments.&nbsp;</p>
+<p>In trust law the people would be the beneficiaries, politicians would be the administrators that strategize and design a plan to implement the vision, and the unelected officials are trustees that have to do the bidding. We currently confuse the beneficiary with the administrator. Until that changes we’re going to keep getting robbed and steamrolled. It doesn’t stop there though.&nbsp;</p>
+<p>My next fear is that a vote for Trump, Johnson, and Stein are wasted votes because in a rigged election all votes don’t matter. It’s possible if voter turnout is ridiculous and it’s a landslide against Clinton they may not be able to cover it up. I don’t know. Hillary has the worst policies and worst track record. I don’t trust Trump. He’s a democrat wrapped up in the Republican party and this feels like a big business venture for him rather than a real desire to enact change. The one saving grace for him for me was when Newt Gingrich came out and said the establishment hates him because he’s not part of the secret societies. That’s an amazing statement. He might be working for Hillary. He might be working to undermine her. I don’t know. We’ll have to see how this plays out.</p>
+<p>I considered Gary Johnson for a while but he lost me at carbon taxes. NOPE. Even the head of the garyjohnsonarmy said he’s not a Libertarian. Can’t we get Ron Paul back? Ironically, he probably would have won this election, but who knows, maybe he sold out.&nbsp;</p>
+<p>So, that leaves Jill Stein. I’m down with energy independence so If I have to suffer through a little more printing money to get that piece solved so be it. She wouldn’t take shit from the corporations, but then again she might go the way of President Garfield, Kennedy, and Jackson. Hopefully we’ll get someone stronger against the Federal Reserve one day. Honestly I think she’s the only one that isn’t a Democrat that’s running.</p>
+<p>Reich- Do you see any difference between the parties?&nbsp;</p>
+<p>@aggroed- No, well, not between Dems and Republicans. Either way you are supporting perpetual wars and mercantilist policy. The only question there is do you want an empire and perpetual war with abortion and gay rights or without them and a wall. Actually though, Hillary has some pro wall sentiments these days so you can take that one away. It’s a two headed snake so either choice loses. They have different rhetoric, but on a policy level it's all leads to a similiar fate. &nbsp;Obama turned out to be Bush's 3rd and 4th term. &nbsp;That's terrible. &nbsp;</p>
+<p>Reich- This was more fun than I thought it would be. Wanna do it again?&nbsp;</p>
+<p>@aggroed- Sure. We should keep this format but instead of just us we should ask other prominent bloggers on STEEMIT the same kind of questions and see how they fair. Hey audience. Anyone wanna be on Inside the Bloggers Studio with us?&nbsp;</p>
+<p>@stellebelle would you have the first dance?&nbsp;</p>
+<p>That said, we gotta keep it semi-anonymous still for a while. The material we talk about is a little heavy for a professional existence and until I could get fired and do this for a living I don’t want to put our handsome face out there. If the whales wanna give me 6 figures in steem to write full time I’d take them up on that.&nbsp;</p>
+<p>I suspect anonymity is going to get harder. We have 100 followers here. We will have 500 by end of today on youtube. Our steem account is a month old starting from scratch. Our Youtube is less than two weeks and we’re up to 50k hits. Maybe one day we’ll be able to quit to do this full time, but it will probably be years unless the whales intervene and invest in staying on the platform. &nbsp;</p>
+<p>Reich- That would take a lot of work, but if we could launch Satirically Yours as a real fake news outlet that would be a dream come true.&nbsp;</p>
+<p>@aggroed- You’re telling me.&nbsp;</p>
+<p>Reich- Any last thoughts before we go?&nbsp;</p>
+<p>@aggroed- Taxation is theft. 1% of the people shouldn’t have 95% of any currency. War is bad. Peace is good. And we need to gently wake up our friends and then mobilize together for peace, abundance, and liberty. It’s been a month and I feel like we’re picking up momentum because truth and that message resonate. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><br></p>
+<p>-----</p>
+<p>If anything here made you think, smile, or laugh and you hope to see more please upvote, follow, and share. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</html>
+
+- - -
+
+This page is synchronized from the post: ['Inside the bloggers studio- Blair Reich, PhD and satirical alter ego @aggroed discuss blogging, screencasting, youtube, writing, and more'](https://steemit.com/@aggroed/inside-the-bloggers-studio-blair-reich-phd-and-satirical-alter-ego-aggroed-discuss-blogging-screencasting-youtube-writing-and)
