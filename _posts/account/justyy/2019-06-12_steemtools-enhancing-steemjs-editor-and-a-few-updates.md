@@ -15,7 +15,7 @@ tags:
 - busy
 - steem-tools
 - witness-category
-thumbnail: https://ipfs.busy.org/ipfs/QmPsjkgv7poPXXf5yTZG3dQKb7jifcXUjMDfGniAswv9pa
+thumbnail: 'https://ipfs.busy.org/ipfs/QmPsjkgv7poPXXf5yTZG3dQKb7jifcXUjMDfGniAswv9pa'
 sidebar:
     right:
         sticky: true
@@ -70,4 +70,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [SteemTools: Enhancing SteemJS Editor and a few updates](https://steemit.com/@justyy/steemtools-enhancing-steemjs-editor-and-a-few-updates)
+This page is synchronized from the post: ['SteemTools: Enhancing SteemJS Editor and a few updates'](https://steemit.com/@justyy/steemtools-enhancing-steemjs-editor-and-a-few-updates)
