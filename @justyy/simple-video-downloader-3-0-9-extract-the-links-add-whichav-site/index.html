@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site - justyy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@justyy/css/style.css">
+
+<link rel="stylesheet" href="/@justyy/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@justyy/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@justyy/">Home</a>
+                
+                <a class="navbar-item" href="/@justyy/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@justyy/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@justyy/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@justyy/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Introducing-the-Simple-Video-Downloader">
+        <span class="has-mr-6">1</span>
+        <span>Introducing the Simple Video Downloader</span>
+        </a></li><li>
+        <a class="is-flex" href="#Total-Number-of-Current-Users-growing">
+        <span class="has-mr-6">2</span>
+        <span>Total Number of Current Users (growing!)</span>
+        </a></li><li>
+        <a class="is-flex" href="#Install-on-Firefox-or-other-browsers">
+        <span class="has-mr-6">3</span>
+        <span>Install on Firefox or other browsers?</span>
+        </a></li><li>
+        <a class="is-flex" href="#Install-Unpacked-Versions">
+        <span class="has-mr-6">4</span>
+        <span>Install Unpacked Versions</span>
+        </a></li><li>
+        <a class="is-flex" href="#Changes-v3-0-9">
+        <span class="has-mr-6">5</span>
+        <span>Changes v3.0.9</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-Tests">
+        <span class="has-mr-6">6</span>
+        <span>Unit Tests</span>
+        </a></li><li>
+        <a class="is-flex" href="#Build">
+        <span class="has-mr-6">7</span>
+        <span>Build</span>
+        </a></li><li>
+        <a class="is-flex" href="#Screenshot">
+        <span class="has-mr-6">8</span>
+        <span>Screenshot</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">9</span>
+        <span>Roadmap</span>
+        </a></li><li>
+        <a class="is-flex" href="#Task-Requests">
+        <span class="has-mr-6">10</span>
+        <span>Task Requests</span>
+        </a></li><li>
+        <a class="is-flex" href="#VIP-Key-Exclusive-to-Utopian">
+        <span class="has-mr-6">11</span>
+        <span>VIP Key Exclusive to Utopian</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Vote-for-me-or-Set-me-as-a-witness-Proxy-Every-vote-counts-Thank-you">
+        <span class="has-mr-6">11.1</span>
+        <span>Vote for me or Set me as a witness Proxy - Every vote counts! - Thank you!</span>
+        </a></li><li>
+        <a class="is-flex" href="#Your-Vote-is-much-appreciated-and-every-vote-counts">
+        <span class="has-mr-6">11.2</span>
+        <span>Your Vote is much appreciated, and every vote counts.</span>
+        </a></li><li>
+        <a class="is-flex" href="#Support-me-and-my-work-as-a-witness-witness-thread-by">
+        <span class="has-mr-6">11.3</span>
+        <span>Support me and my work as a witness - witness thread by</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@justyy/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw" alt="Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-01-25T00:59:06.000Z">2019-01-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 540 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site
+            
+        </h1>
+        <div class="content">
+            <h1 id="Introducing-the-Simple-Video-Downloader"><a href="#Introducing-the-Simple-Video-Downloader" class="headerlink" title="Introducing the Simple Video Downloader"></a>Introducing the Simple Video Downloader</h1><p><img src="https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw" alt="image.png"></p>
+<p>The <a href="https://chrome.google.com/webstore/detail/simple-video-download-hel/ilcdiicigjaccgipndigcenjieedjohj" target="_blank" rel="noopener">Video Downloader</a> is a Chrome Extension that helps you save your favorite videos. It can be installed via Chrome Webstore:<br><a href="https://chrome.google.com/webstore/detail/ilcdiicigjaccgipndigcenjieedjohj/" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/ilcdiicigjaccgipndigcenjieedjohj/</a></p>
+<h1 id="Total-Number-of-Current-Users-growing"><a href="#Total-Number-of-Current-Users-growing" class="headerlink" title="Total Number of Current Users (growing!)"></a>Total Number of Current Users (growing!)</h1><p><img src="https://ipfs.busy.org/ipfs/QmfZYN8tckPHKr8n9Ed3Q1B5vD9RcfmhgZyoAK3y5hmrcy" alt="image.png"></p>
+<h1 id="Install-on-Firefox-or-other-browsers"><a href="#Install-on-Firefox-or-other-browsers" class="headerlink" title="Install on Firefox or other browsers?"></a>Install on Firefox or other browsers?</h1><p>It should work, but not fully tested on Firefox via <a href="https://addons.mozilla.org/en-GB/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Extension Foxified</a></p>
+<h1 id="Install-Unpacked-Versions"><a href="#Install-Unpacked-Versions" class="headerlink" title="Install Unpacked Versions"></a>Install Unpacked Versions</h1><p>Zipped releases: <a href="https://github.com/DoctorLai/VideoDownloadHelper/releases" target="_blank" rel="noopener">https://github.com/DoctorLai/VideoDownloadHelper/releases</a><br>Download the zip and then you can load unpacked version in Chrome (under development mode)</p>
+<h1 id="Changes-v3-0-9"><a href="#Changes-v3-0-9" class="headerlink" title="Changes v3.0.9"></a>Changes v3.0.9</h1><p>Pull Requests Merged: <a href="https://github.com/DoctorLai/VideoDownloadHelper/pull/9" target="_blank" rel="noopener">https://github.com/DoctorLai/VideoDownloadHelper/pull/9</a></p>
+<ol>
+<li>Support WhichAV</li>
+<li>New Feature: Links Extractor - all the links (unique) in the current page will be extracted<br><img src="https://ipfs.busy.org/ipfs/QmdBcu8PkLbkU6ZtPqLoTpGG6VP8ceq8JWEuTwNA3rpDbr" alt="image.png"></li>
+</ol>
+<h1 id="Unit-Tests"><a href="#Unit-Tests" class="headerlink" title="Unit Tests"></a>Unit Tests</h1><p><code>npm run test</code><br><img src="https://ipfs.busy.org/ipfs/QmW2HvjW2ESQRoVJfA2LEAEk7QqRPHviQWn7nF4qvEps3Z" alt="image.png"></p>
+<p>59 tests passed on Travis CI: <a href="https://travis-ci.com/DoctorLai/VideoDownloadHelper/builds/98552005" target="_blank" rel="noopener">https://travis-ci.com/DoctorLai/VideoDownloadHelper/builds/98552005</a></p>
+<h1 id="Build"><a href="#Build" class="headerlink" title="Build"></a>Build</h1><p><code>npm run build</code> which webpacks the ES6 class <code>ParseVideo</code> into <code>\dist\*js</code></p>
+<h1 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h1><p><img src="https://ipfs.busy.org/ipfs/QmPy4oS8yG9aobDDJyUDgtmA1ztS6raHdLLb53sN1R1zqc" alt="image.png"></p>
+<h1 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h1><ol>
+<li>Use async/await to replace Promise/Then</li>
+<li>Fix broken video parser due to video site changes.</li>
+<li>Add more unit tests (increase code coverage)</li>
+<li>Support vimeo and other video sites</li>
+<li>Merge video segments (ts)</li>
+</ol>
+<h1 id="Task-Requests"><a href="#Task-Requests" class="headerlink" title="Task Requests"></a>Task Requests</h1><ol>
+<li><a href="https://steemit.com/utopian-io/@justyy/task-request-adding-dailymotion-support-100-vote-10-steem" target="_blank" rel="noopener">Task Request: Adding dailymotion Support (100% vote + 10 STEEM)
+</a></li>
+</ol>
+<h1 id="VIP-Key-Exclusive-to-Utopian"><a href="#VIP-Key-Exclusive-to-Utopian" class="headerlink" title="VIP Key Exclusive to Utopian"></a>VIP Key Exclusive to Utopian</h1><p>Please note, you can enter the VIP Key which allows you to call the <a href="https://weibomiaopai.com/download-video-parser.php" target="_blank" rel="noopener">server API</a> in case the client video parser fails locally - this greatly unlocks video parser to many many other video sites. </p>
+<p><img src="https://ipfs.busy.org/ipfs/QmcDoZyZpEYoa7JeVEU16bVPeyMA7SSYRir7fNgfHt5Z28" alt="image.png"></p>
+<p>The KEY is <strong>iamutopian</strong></p>
+<hr>
+<p><strong>Enjoy and Steem On!</strong></p>
+<h2 id="Vote-for-me-or-Set-me-as-a-witness-Proxy-Every-vote-counts-Thank-you"><a href="#Vote-for-me-or-Set-me-as-a-witness-Proxy-Every-vote-counts-Thank-you" class="headerlink" title="Vote for me or Set me as a witness Proxy - Every vote counts! - Thank you!"></a><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">Vote for me</a> or <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">Set me as a witness Proxy</a> - Every vote counts! - Thank you!</h2><h2 id="Your-Vote-is-much-appreciated-and-every-vote-counts"><a href="#Your-Vote-is-much-appreciated-and-every-vote-counts" class="headerlink" title="Your Vote is much appreciated, and every vote counts."></a>Your Vote is much appreciated, and every vote counts.</h2><p>Check out <a href="https://steemyy.com/witness-data/justyy" target="_blank" rel="noopener">My Witness Page</a></p>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">my work</a> as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a witness proxy</a> - let @justyy represent you.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://steemyy.com/" target="_blank" rel="noopener">SteemYY.com - SteemIt Tutorials, Robots, Tools and APIs</a></strong> and <a href="https://anothervps.com/vps-database/" target="_blank" rel="noopener">VPS Search Tool</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/simple-video-downloader-3-0-9-extract-the-links-add-whichav-site" target="_blank" rel="noopener">&#x2018;Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@justyy/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@justyy/tags/development/">development</a>, <a class="has-link-grey -link" href="/@justyy/tags/programming/">programming</a>, <a class="has-link-grey -link" href="/@justyy/tags/utopian-io/">utopian-io</a>, <a class="has-link-grey -link" href="/@justyy/tags/witness-category/">witness-category</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@justyy/--daily-cn-updates-cncnpower-downyy2019-01-25/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">【第 伍壹捌 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2019-01-25)</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@justyy/witness-update-node-upgraded-to-0-20-9/">
+                <span class="level-item">Witness Update: Node Upgraded to 0.20.9!</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@justyy/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 justyy&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@justyy/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+
+
+
+    
+<script src="/@justyy/js/bundle.js" defer></script></body>
+</html>
+
