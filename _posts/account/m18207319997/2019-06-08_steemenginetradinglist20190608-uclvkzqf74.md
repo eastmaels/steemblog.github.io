@@ -15,7 +15,7 @@ tags:
 - sct-steem
 - steem
 - steemengine
-thumbnail: http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/%E4%BA%A4%E6%98%93%E6%95%B0%E6%8D%AE%E6%8E%92%E8%A1%8C%E6%A6%9C-2.png
+thumbnail: 'http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/06/%E4%BA%A4%E6%98%93%E6%95%B0%E6%8D%AE%E6%8E%92%E8%A1%8C%E6%A6%9C-2.png'
 sidebar:
     right:
         sticky: true
@@ -446,4 +446,4 @@ Thank you very much. 🙏
 
 - - -
 
-This page is synchronized from the post: [Steem Engine Trading list 20190608](https://steemit.com/@m18207319997/steemenginetradinglist20190608-uclvkzqf74)
+This page is synchronized from the post: ['Steem Engine Trading list 20190608'](https://steemit.com/@m18207319997/steemenginetradinglist20190608-uclvkzqf74)

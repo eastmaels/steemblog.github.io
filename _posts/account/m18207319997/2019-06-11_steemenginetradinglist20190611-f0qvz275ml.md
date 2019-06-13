@@ -15,7 +15,7 @@ tags:
 - sct-steem
 - steem
 - steemengine
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -441,4 +441,4 @@ Thank you very much. 🙏
 
 - - -
 
-This page is synchronized from the post: [Steem Engine Trading list 20190611](https://steemit.com/@m18207319997/steemenginetradinglist20190611-f0qvz275ml)
+This page is synchronized from the post: ['Steem Engine Trading list 20190611'](https://steemit.com/@m18207319997/steemenginetradinglist20190611-f0qvz275ml)
