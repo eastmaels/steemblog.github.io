@@ -13,7 +13,7 @@ tags:
 - witness-category
 - witness-update
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmSb6VuW1Bv4cHEqQA4wHnmmHsui4EEWCMhxZtpgLLxmsb
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSb6VuW1Bv4cHEqQA4wHnmmHsui4EEWCMhxZtpgLLxmsb'
 sidebar:
     right:
         sticky: true
@@ -38,4 +38,4 @@ In progress - please be patient, thanks!
 
 - - -
 
-This page is synchronized from the post: [Witness Update: Full Replay in Progress](https://steemit.com/@justyy/witness-update-full-replay-in-progress)
+This page is synchronized from the post: ['Witness Update: Full Replay in Progress'](https://steemit.com/@justyy/witness-update-full-replay-in-progress)

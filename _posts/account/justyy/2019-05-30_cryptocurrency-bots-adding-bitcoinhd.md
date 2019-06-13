@@ -15,7 +15,7 @@ tags:
 - bitcoin-hd
 - bitcoin
 - development
-thumbnail: https://ipfs.busy.org/ipfs/QmQPuzW8zVesM1aiRp5rzXzGNjSUrYs6iQmmV7xRDaiDKr
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQPuzW8zVesM1aiRp5rzXzGNjSUrYs6iQmmV7xRDaiDKr'
 sidebar:
     right:
         sticky: true
@@ -57,4 +57,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [Cryptocurrency Bots Adding BitcoinHD](https://steemit.com/@justyy/cryptocurrency-bots-adding-bitcoinhd)
+This page is synchronized from the post: ['Cryptocurrency Bots Adding BitcoinHD'](https://steemit.com/@justyy/cryptocurrency-bots-adding-bitcoinhd)

@@ -15,7 +15,7 @@ tags:
 - witness
 - busy
 - steemit
-thumbnail: https://ipfs.busy.org/ipfs/QmTRRLSVn8TZDqVfoKKt5X9QMSqgGovh9NBzUpHwUjdetn
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTRRLSVn8TZDqVfoKKt5X9QMSqgGovh9NBzUpHwUjdetn'
 sidebar:
     right:
         sticky: true
@@ -58,4 +58,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [Finally be online again - Not easy, Lessons Learned](https://steemit.com/@justyy/finally-be-online-again-not-easy-lessons-learned)
+This page is synchronized from the post: ['Finally be online again - Not easy, Lessons Learned'](https://steemit.com/@justyy/finally-be-online-again-not-easy-lessons-learned)

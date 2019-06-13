@@ -15,7 +15,7 @@ tags:
 - steem
 - steemit
 - witness-update
-thumbnail: https://ipfs.busy.org/ipfs/QmTmRw19my9HbybjwcDMFAaqZeS5FpRfVzMYBvHkNzxDg6
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTmRw19my9HbybjwcDMFAaqZeS5FpRfVzMYBvHkNzxDg6'
 sidebar:
     right:
         sticky: true
@@ -47,4 +47,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [Have some faith on Steem because A One-Year Old PR has finally been reviewed and merged to Steem-JS](https://steemit.com/@justyy/have-some-faith-on-steem-because-a-one-year-old-pr-has-finally-been-reviewed-and-merged-to-steem-js)
+This page is synchronized from the post: ['Have some faith on Steem because A One-Year Old PR has finally been reviewed and merged to Steem-JS'](https://steemit.com/@justyy/have-some-faith-on-steem-because-a-one-year-old-pr-has-finally-been-reviewed-and-merged-to-steem-js)

@@ -15,7 +15,7 @@ tags:
 - token
 - wirex
 - ico
-thumbnail: https://ipfs.busy.org/ipfs/QmX467JPqMmRLsm1zLgDMg3ZKXMDgw9nzPa1MRPDxN2bwh
+thumbnail: 'https://ipfs.busy.org/ipfs/QmX467JPqMmRLsm1zLgDMg3ZKXMDgw9nzPa1MRPDxN2bwh'
 sidebar:
     right:
         sticky: true
@@ -53,4 +53,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [Are you ready for Wirex Token: WXT?](https://steemit.com/@justyy/are-you-ready-for-wirex-token-wxt)
+This page is synchronized from the post: ['Are you ready for Wirex Token: WXT?'](https://steemit.com/@justyy/are-you-ready-for-wirex-token-wxt)

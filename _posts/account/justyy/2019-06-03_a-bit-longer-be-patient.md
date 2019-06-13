@@ -15,7 +15,7 @@ tags:
 - steem-witness
 - replay
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmTkfasBxUhSoFfdzh6PcTyTEbqCKrfG71ezzj6M76RDeb
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTkfasBxUhSoFfdzh6PcTyTEbqCKrfG71ezzj6M76RDeb'
 sidebar:
     right:
         sticky: true
@@ -52,4 +52,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [A bit longer.... be patient..](https://steemit.com/@justyy/a-bit-longer-be-patient)
+This page is synchronized from the post: ['A bit longer.... be patient..'](https://steemit.com/@justyy/a-bit-longer-be-patient)

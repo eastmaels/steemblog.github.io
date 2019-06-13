@@ -15,7 +15,7 @@ tags:
 - cryptocurrency
 - learning
 - coinbase
-thumbnail: https://ipfs.busy.org/ipfs/QmXXVyntewSqoZbhgUv3HpypGuXJLikp7qAQdJviQW3J2w
+thumbnail: 'https://ipfs.busy.org/ipfs/QmXXVyntewSqoZbhgUv3HpypGuXJLikp7qAQdJviQW3J2w'
 sidebar:
     right:
         sticky: true
@@ -40,4 +40,4 @@ Earn Free Stellar Now:  https://coinbase.com/earn/xlm/invite/1c872zdh
 
 - - -
 
-This page is synchronized from the post: [Earn Free Stellar-Lumens by Learning in Two Minutes!](https://steemit.com/@justyy/earn-free-stellar-lumens-by-learning-in-two-minutes)
+This page is synchronized from the post: ['Earn Free Stellar-Lumens by Learning in Two Minutes!'](https://steemit.com/@justyy/earn-free-stellar-lumens-by-learning-in-two-minutes)

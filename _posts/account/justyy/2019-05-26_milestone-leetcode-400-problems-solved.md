@@ -15,7 +15,7 @@ tags:
 - programming
 - sct
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmeLHihcRShJmhV3yMg3eCMhpecPvrdVx5Nevcx2YF28SX
+thumbnail: 'https://ipfs.busy.org/ipfs/QmeLHihcRShJmhV3yMg3eCMhpecPvrdVx5Nevcx2YF28SX'
 sidebar:
     right:
         sticky: true
@@ -40,4 +40,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [Milestone: Leetcode 400 problems solved.](https://steemit.com/@justyy/milestone-leetcode-400-problems-solved)
+This page is synchronized from the post: ['Milestone: Leetcode 400 problems solved.'](https://steemit.com/@justyy/milestone-leetcode-400-problems-solved)
