@@ -15,7 +15,7 @@ tags:
 - busy
 - steemapp
 - witness-tool
-thumbnail: https://ipfs.busy.org/ipfs/QmVZibqMV5CyttZLgBBw2JfVrADCoFgp2LTsfGwv9YGJyf
+thumbnail: 'https://ipfs.busy.org/ipfs/QmVZibqMV5CyttZLgBBw2JfVrADCoFgp2LTsfGwv9YGJyf'
 sidebar:
     right:
         sticky: true
@@ -52,4 +52,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Steem Witness Information - Your Witness Information Page](https://steemit.com/@justyy/steem-witness-information-your-witness-information-page)
+This page is synchronized from the post: ['Steem Witness Information - Your Witness Information Page'](https://steemit.com/@justyy/steem-witness-information-your-witness-information-page)

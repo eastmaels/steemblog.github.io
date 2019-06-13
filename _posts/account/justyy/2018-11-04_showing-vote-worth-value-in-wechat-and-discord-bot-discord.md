@@ -15,7 +15,7 @@ tags:
 - cn-reader
 - witness-category
 - steemtools
-thumbnail: https://justyy.com/justyy-wx2.jpg
+thumbnail: 'https://justyy.com/justyy-wx2.jpg'
 sidebar:
     right:
         sticky: true
@@ -91,4 +91,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Showing Vote Worth Value in Wechat and Discord Bot - 公众号和Discord 机器人查询显示点赞价值了！](https://steemit.com/@justyy/showing-vote-worth-value-in-wechat-and-discord-bot-discord)
+This page is synchronized from the post: ['Showing Vote Worth Value in Wechat and Discord Bot - 公众号和Discord 机器人查询显示点赞价值了！'](https://steemit.com/@justyy/showing-vote-worth-value-in-wechat-and-discord-bot-discord)

@@ -15,7 +15,7 @@ tags:
 - google
 - witness-category
 - blog
-thumbnail: https://ipfs.busy.org/ipfs/QmWTm8TZvpMsdieo5VNWrhtT6PD8YpKP5RFhGwPeAZXhMz
+thumbnail: 'https://ipfs.busy.org/ipfs/QmWTm8TZvpMsdieo5VNWrhtT6PD8YpKP5RFhGwPeAZXhMz'
 sidebar:
     right:
         sticky: true
@@ -46,4 +46,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [The Programmers Dont usually work over weekend](https://steemit.com/@justyy/the-programmers-dont-usually-work-over-weekend)
+This page is synchronized from the post: ['The Programmers Dont usually work over weekend'](https://steemit.com/@justyy/the-programmers-dont-usually-work-over-weekend)

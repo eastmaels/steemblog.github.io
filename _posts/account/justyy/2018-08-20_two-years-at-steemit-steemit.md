@@ -15,7 +15,7 @@ tags:
 - steemit
 - anniversary
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmbnE2DytqRRnh4HyQL3qP4bFY2T7LeGGtwC8F2TtCWMjB
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbnE2DytqRRnh4HyQL3qP4bFY2T7LeGGtwC8F2TtCWMjB'
 sidebar:
     right:
         sticky: true
@@ -57,4 +57,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Two Years at SteemIt! 在STEEMIT 上两年了！](https://steemit.com/@justyy/two-years-at-steemit-steemit)
+This page is synchronized from the post: ['Two Years at SteemIt! 在STEEMIT 上两年了！'](https://steemit.com/@justyy/two-years-at-steemit-steemit)

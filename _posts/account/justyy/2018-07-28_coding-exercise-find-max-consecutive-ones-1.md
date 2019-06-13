@@ -15,7 +15,7 @@ tags:
 - cn-programming
 - busy
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED'
 sidebar:
     right:
         sticky: true
@@ -95,4 +95,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Coding Exercise - Find Max Consecutive Ones 编程练习题 - 最多连续的 1](https://steemit.com/@justyy/coding-exercise-find-max-consecutive-ones-1)
+This page is synchronized from the post: ['Coding Exercise - Find Max Consecutive Ones 编程练习题 - 最多连续的 1'](https://steemit.com/@justyy/coding-exercise-find-max-consecutive-ones-1)

@@ -69,4 +69,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [@ilovecoding - The SteemRebloggerService supports BlackList Tags and Automatic Voting](https://steemit.com/@justyy/ilovecoding-the-steemrebloggerservice-supports-blacklist-tags-and-automatic-voting)
+This page is synchronized from the post: ['@ilovecoding - The SteemRebloggerService supports BlackList Tags and Automatic Voting'](https://steemit.com/@justyy/ilovecoding-the-steemrebloggerservice-supports-blacklist-tags-and-automatic-voting)

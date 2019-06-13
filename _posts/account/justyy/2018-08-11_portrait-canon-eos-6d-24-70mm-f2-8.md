@@ -15,7 +15,7 @@ tags:
 - life
 - busy
 - blog
-thumbnail: https://ipfs.busy.org/ipfs/QmZvnuHJZcj6nSkgq5q7c71ydMznuuwsEocs6Gr7CcQLm8
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZvnuHJZcj6nSkgq5q7c71ydMznuuwsEocs6Gr7CcQLm8'
 sidebar:
     right:
         sticky: true
@@ -48,4 +48,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Portrait - Canon EOS 6D + 24-70mm F2.8](https://steemit.com/@justyy/portrait-canon-eos-6d-24-70mm-f2-8)
+This page is synchronized from the post: ['Portrait - Canon EOS 6D + 24-70mm F2.8'](https://steemit.com/@justyy/portrait-canon-eos-6d-24-70mm-f2-8)

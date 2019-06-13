@@ -15,7 +15,7 @@ tags:
 - busy
 - coding
 - cn
-thumbnail: https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED'
 sidebar:
     right:
         sticky: true
@@ -236,4 +236,4 @@ public:
 
 - - -
 
-This page is synchronized from the post: [Coding Exercise - Search in a Binary Search Tree 编程练习题：二叉查找树BST](https://steemit.com/@justyy/coding-exercise-search-in-a-binary-search-tree-bst)
+This page is synchronized from the post: ['Coding Exercise - Search in a Binary Search Tree 编程练习题：二叉查找树BST'](https://steemit.com/@justyy/coding-exercise-search-in-a-binary-search-tree-bst)

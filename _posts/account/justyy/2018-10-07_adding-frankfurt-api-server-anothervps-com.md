@@ -15,7 +15,7 @@ tags:
 - vps
 - busy
 - api
-thumbnail: https://ipfs.busy.org/ipfs/QmSu2UKvhw5nJt9hUyeC7U6kdrQ1gF7Jw6qcANMqa1vExy
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSu2UKvhw5nJt9hUyeC7U6kdrQ1gF7Jw6qcANMqa1vExy'
 sidebar:
     right:
         sticky: true
@@ -59,4 +59,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Adding Frankfurt API Server - AnotherVPS.com](https://steemit.com/@justyy/adding-frankfurt-api-server-anothervps-com)
+This page is synchronized from the post: ['Adding Frankfurt API Server - AnotherVPS.com'](https://steemit.com/@justyy/adding-frankfurt-api-server-anothervps-com)

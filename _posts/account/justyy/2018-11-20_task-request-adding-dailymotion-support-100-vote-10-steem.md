@@ -15,7 +15,7 @@ tags:
 - programming
 - video-downloader
 - github
-thumbnail: https://ipfs.busy.org/ipfs/QmQ4ts2Sy9QsKxKjU3j5vwt4sNxeYmYpi3dv2BTjkCBFZz
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQ4ts2Sy9QsKxKjU3j5vwt4sNxeYmYpi3dv2BTjkCBFZz'
 sidebar:
     right:
         sticky: true
@@ -64,4 +64,4 @@ https://github.com/DoctorLai/VideoDownloadHelper
 
 - - -
 
-This page is synchronized from the post: [Task Request: Adding dailymotion Support (100% vote + 10 STEEM)](https://steemit.com/@justyy/task-request-adding-dailymotion-support-100-vote-10-steem)
+This page is synchronized from the post: ['Task Request: Adding dailymotion Support (100% vote + 10 STEEM)'](https://steemit.com/@justyy/task-request-adding-dailymotion-support-100-vote-10-steem)

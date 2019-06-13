@@ -15,7 +15,7 @@ tags:
 - busy
 - steem-guides
 - steemapps
-thumbnail: https://justyy.com/wp-content/uploads/2018/03/steem-guides.jpg
+thumbnail: 'https://justyy.com/wp-content/uploads/2018/03/steem-guides.jpg'
 sidebar:
     right:
         sticky: true
@@ -70,4 +70,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [《Steem 指南》 之查看你的帐号信息](https://steemit.com/@justyy/2rhnkr-steem)
+This page is synchronized from the post: ['《Steem 指南》 之查看你的帐号信息'](https://steemit.com/@justyy/2rhnkr-steem)

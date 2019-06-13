@@ -13,7 +13,7 @@ tags:
 - witness-category
 - witness-news
 - pumpkin
-thumbnail: https://ipfs.busy.org/ipfs/QmdNCowanBKvcMhZCR6MK9zc7heBPmXqiwvapw4h1LyegG
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdNCowanBKvcMhZCR6MK9zc7heBPmXqiwvapw4h1LyegG'
 sidebar:
     right:
         sticky: true
@@ -34,4 +34,4 @@ Now, the top 75 witnesses's active rank are exactly the same as the ranking stan
 
 - - -
 
-This page is synchronized from the post: [Big news! @pumpkin has updated his votes!](https://steemit.com/@justyy/big-news-pumpkin-has-updated-his-votes)
+This page is synchronized from the post: ['Big news! @pumpkin has updated his votes!'](https://steemit.com/@justyy/big-news-pumpkin-has-updated-his-votes)

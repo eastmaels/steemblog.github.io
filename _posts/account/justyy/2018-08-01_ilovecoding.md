@@ -15,7 +15,7 @@ tags:
 - busy
 - ilovecoding
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmYjtL3zq31RachrnzYCqGVkwVKHDCz9WpLmKVSsrvLx2S
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYjtL3zq31RachrnzYCqGVkwVKHDCz9WpLmKVSsrvLx2S'
 sidebar:
     right:
         sticky: true
@@ -60,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [程序员都应该来关注 @ilovecoding](https://steemit.com/@justyy/ilovecoding)
+This page is synchronized from the post: ['程序员都应该来关注 @ilovecoding'](https://steemit.com/@justyy/ilovecoding)

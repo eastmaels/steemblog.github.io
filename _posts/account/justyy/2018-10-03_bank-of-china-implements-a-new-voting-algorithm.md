@@ -15,7 +15,7 @@ tags:
 - curation
 - cn-curation
 - python
-thumbnail: https://cdn.steemitimages.com/DQmRGM7s4pXTQBK5NwqzKYmTCsQwTxUJZcdRS5NkjLf2HDZ/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmRGM7s4pXTQBK5NwqzKYmTCsQwTxUJZcdRS5NkjLf2HDZ/image.png'
 sidebar:
     right:
         sticky: true
@@ -86,4 +86,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Bank Of China Implements a New Voting Algorithm.](https://steemit.com/@justyy/bank-of-china-implements-a-new-voting-algorithm)
+This page is synchronized from the post: ['Bank Of China Implements a New Voting Algorithm.'](https://steemit.com/@justyy/bank-of-china-implements-a-new-voting-algorithm)

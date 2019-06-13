@@ -15,7 +15,7 @@ tags:
 - vps
 - development
 - app
-thumbnail: https://ipfs.busy.org/ipfs/QmRPSLX5So3TgRp8ZQHaNmPhgY3MCqUwzHKXoY6DZLh1VG
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRPSLX5So3TgRp8ZQHaNmPhgY3MCqUwzHKXoY6DZLh1VG'
 sidebar:
     right:
         sticky: true
@@ -59,4 +59,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Another VPS Search Tool](https://steemit.com/@justyy/another-vps-search-tool)
+This page is synchronized from the post: ['Another VPS Search Tool'](https://steemit.com/@justyy/another-vps-search-tool)

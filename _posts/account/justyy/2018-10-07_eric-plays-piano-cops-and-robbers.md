@@ -15,7 +15,7 @@ tags:
 - piano
 - music
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmQRNg4BChoFLtgiePiCfuHTRVzVoFF7gFFYy3V1W6HvK4/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmQRNg4BChoFLtgiePiCfuHTRVzVoFF7gFFYy3V1W6HvK4/image.png'
 sidebar:
     right:
         sticky: true
@@ -36,4 +36,4 @@ https://justyy.com/wp-content/uploads/2018/10/eric-cops-and-robbers-20181007.mp4
 
 - - -
 
-This page is synchronized from the post: [Eric Plays Piano - Cops and Robbers 老大弹钢琴之警察和强盗](https://steemit.com/@justyy/eric-plays-piano-cops-and-robbers)
+This page is synchronized from the post: ['Eric Plays Piano - Cops and Robbers 老大弹钢琴之警察和强盗'](https://steemit.com/@justyy/eric-plays-piano-cops-and-robbers)

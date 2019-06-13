@@ -15,7 +15,7 @@ tags:
 - delegationhub
 - steem
 - bounty
-thumbnail: https://ipfs.busy.org/ipfs/QmU5fExbSdBxkjp4VRCEdhLTAS3QjPo7ZSRpwbtq6s4iLU
+thumbnail: 'https://ipfs.busy.org/ipfs/QmU5fExbSdBxkjp4VRCEdhLTAS3QjPo7ZSRpwbtq6s4iLU'
 sidebar:
     right:
         sticky: true
@@ -65,4 +65,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [DelegationHub Bounty - Win additional SP and STEEM in October!](https://steemit.com/@justyy/delegationhub-bounty-win-additional-sp-and-steem-in-october)
+This page is synchronized from the post: ['DelegationHub Bounty - Win additional SP and STEEM in October!'](https://steemit.com/@justyy/delegationhub-bounty-win-additional-sp-and-steem-in-october)

@@ -15,7 +15,7 @@ tags:
 - software
 - programming
 - linux
-thumbnail: https://huntimages.s3.us-west-2.amazonaws.com/production/steemhunt/2018-09-13/e0bbe515-termius-1.jpg
+thumbnail: 'https://huntimages.s3.us-west-2.amazonaws.com/production/steemhunt/2018-09-13/e0bbe515-termius-1.jpg'
 sidebar:
     right:
         sticky: true
@@ -49,4 +49,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [Termius](https://steemit.com/@justyy/termius-a-very-nice-portable-ssh-connection-tool)
+This page is synchronized from the post: ['Termius'](https://steemit.com/@justyy/termius-a-very-nice-portable-ssh-connection-tool)

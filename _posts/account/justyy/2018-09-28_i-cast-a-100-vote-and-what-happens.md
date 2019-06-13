@@ -15,7 +15,7 @@ tags:
 - steemit
 - witness-update
 - witness-category
-thumbnail: https://ipfs.busy.org/ipfs/QmfUV4kNMkk8qabF4fLp8cKCkvN3r4Z5SMuT5RWHHmjoLf
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfUV4kNMkk8qabF4fLp8cKCkvN3r4Z5SMuT5RWHHmjoLf'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [I cast a 100% vote and what happens?](https://steemit.com/@justyy/i-cast-a-100-vote-and-what-happens)
+This page is synchronized from the post: ['I cast a 100% vote and what happens?'](https://steemit.com/@justyy/i-cast-a-100-vote-and-what-happens)

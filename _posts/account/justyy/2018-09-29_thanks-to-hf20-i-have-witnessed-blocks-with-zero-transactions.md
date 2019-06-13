@@ -15,7 +15,7 @@ tags:
 - witness
 - busy
 - hf20
-thumbnail: https://ipfs.busy.org/ipfs/QmbtDJy6DaCFc6Fjtm4SHR4cwDhb5p9FWxpZdvVBTBEArN
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbtDJy6DaCFc6Fjtm4SHR4cwDhb5p9FWxpZdvVBTBEArN'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Thanks to HF20 - I have witnessed blocks with zero transactions](https://steemit.com/@justyy/thanks-to-hf20-i-have-witnessed-blocks-with-zero-transactions)
+This page is synchronized from the post: ['Thanks to HF20 - I have witnessed blocks with zero transactions'](https://steemit.com/@justyy/thanks-to-hf20-i-have-witnessed-blocks-with-zero-transactions)

@@ -15,7 +15,7 @@ tags:
 - busy
 - cpp
 - boost
-thumbnail: https://ipfs.busy.org/ipfs/QmQhFSDJpwdqknQqpdLAFuBK7iXVWgfUNHaCuzxZUvtUXR
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQhFSDJpwdqknQqpdLAFuBK7iXVWgfUNHaCuzxZUvtUXR'
 sidebar:
     right:
         sticky: true
@@ -45,4 +45,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [I don''t know how to write C++ without boost :(](https://steemit.com/@justyy/i-don-t-know-how-to-write-c-without-boost)
+This page is synchronized from the post: ['I don''t know how to write C++ without boost :('](https://steemit.com/@justyy/i-don-t-know-how-to-write-c-without-boost)

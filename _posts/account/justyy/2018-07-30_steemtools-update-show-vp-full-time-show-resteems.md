@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - steemtools
-thumbnail: https://ipfs.busy.org/ipfs/QmRynYYnCPEUsZTkqnpMaozpQ1CZBJHATnf7xvgfsdWf5m
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRynYYnCPEUsZTkqnpMaozpQ1CZBJHATnf7xvgfsdWf5m'
 sidebar:
     right:
         sticky: true
@@ -63,4 +63,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [SteemTools Update - Show VP Full Time, Show Resteems](https://steemit.com/@justyy/steemtools-update-show-vp-full-time-show-resteems)
+This page is synchronized from the post: ['SteemTools Update - Show VP Full Time, Show Resteems'](https://steemit.com/@justyy/steemtools-update-show-vp-full-time-show-resteems)

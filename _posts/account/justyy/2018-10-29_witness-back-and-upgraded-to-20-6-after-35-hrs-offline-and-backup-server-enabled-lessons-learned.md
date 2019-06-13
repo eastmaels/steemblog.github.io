@@ -15,7 +15,7 @@ tags:
 - witness-update
 - witness
 - steem
-thumbnail: https://ipfs.busy.org/ipfs/QmRV9iZ8saGrawAq7YeS2HTFgN2EskQ23SQK9TYzygYyU3
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRV9iZ8saGrawAq7YeS2HTFgN2EskQ23SQK9TYzygYyU3'
 sidebar:
     right:
         sticky: true
@@ -94,4 +94,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Witness Back and Upgraded to 20.6 - after 35 hrs offline and Backup Server Enabled! Lessons Learned](https://steemit.com/@justyy/witness-back-and-upgraded-to-20-6-after-35-hrs-offline-and-backup-server-enabled-lessons-learned)
+This page is synchronized from the post: ['Witness Back and Upgraded to 20.6 - after 35 hrs offline and Backup Server Enabled! Lessons Learned'](https://steemit.com/@justyy/witness-back-and-upgraded-to-20-6-after-35-hrs-offline-and-backup-server-enabled-lessons-learned)

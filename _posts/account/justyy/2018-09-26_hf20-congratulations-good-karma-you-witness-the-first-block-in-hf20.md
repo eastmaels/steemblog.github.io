@@ -15,7 +15,7 @@ tags:
 - busy
 - hf20
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/Qme55kpTNPM6UkeN8usDwerffKn87WtzWEE8cejudn6GCP
+thumbnail: 'https://ipfs.busy.org/ipfs/Qme55kpTNPM6UkeN8usDwerffKn87WtzWEE8cejudn6GCP'
 sidebar:
     right:
         sticky: true
@@ -46,4 +46,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [HF20! - Congratulations @good-karma You witness the first block in HF20!](https://steemit.com/@justyy/hf20-congratulations-good-karma-you-witness-the-first-block-in-hf20)
+This page is synchronized from the post: ['HF20! - Congratulations @good-karma You witness the first block in HF20!'](https://steemit.com/@justyy/hf20-congratulations-good-karma-you-witness-the-first-block-in-hf20)

@@ -15,7 +15,7 @@ tags:
 - busy
 - steem-ua
 - ua
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmasSWqhPTGVjcbbcbWLxTHtwnQxDPW1a9H9UxGc95XrD8/image.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmasSWqhPTGVjcbbcbWLxTHtwnQxDPW1a9H9UxGc95XrD8/image.png'
 sidebar:
     right:
         sticky: true
@@ -47,4 +47,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [@justyy delegates 250 SP to @steem-ua](https://steemit.com/@justyy/justyy-delegates-250-sp-to-steem-ua)
+This page is synchronized from the post: ['@justyy delegates 250 SP to @steem-ua'](https://steemit.com/@justyy/justyy-delegates-250-sp-to-steem-ua)

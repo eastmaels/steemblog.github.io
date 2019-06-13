@@ -15,7 +15,7 @@ tags:
 - witness-category
 - steem-ua
 - ua
-thumbnail: https://ipfs.busy.org/ipfs/QmdZEM8eo9qXq4ZeuxKDY6yZSGbZg1zYQU89hyg6DoGXCs
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdZEM8eo9qXq4ZeuxKDY6yZSGbZg1zYQU89hyg6DoGXCs'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Steem-UA Favors Witnesses - but only when they are active](https://steemit.com/@justyy/steem-ua-favors-witnesses-but-only-when-they-are-active)
+This page is synchronized from the post: ['Steem-UA Favors Witnesses - but only when they are active'](https://steemit.com/@justyy/steem-ua-favors-witnesses-but-only-when-they-are-active)

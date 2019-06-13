@@ -15,7 +15,7 @@ tags:
 - steemtools
 - programming
 - steemapps
-thumbnail: https://ipfs.busy.org/ipfs/QmbxcLMDJQ1W64uvNqg1CsiRCLuuFkWTQi8fEci8rJbUmv
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbxcLMDJQ1W64uvNqg1CsiRCLuuFkWTQi8fEci8rJbUmv'
 sidebar:
     right:
         sticky: true
@@ -59,4 +59,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [SteemTool - the Most Delegated Accounts on the Steem Blockchain](https://steemit.com/@justyy/steemtool-the-most-delegated-accounts-on-the-steem-blockchain)
+This page is synchronized from the post: ['SteemTool - the Most Delegated Accounts on the Steem Blockchain'](https://steemit.com/@justyy/steemtool-the-most-delegated-accounts-on-the-steem-blockchain)

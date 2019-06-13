@@ -15,7 +15,7 @@ tags:
 - witness-proxy
 - steemtools
 - steemapps
-thumbnail: https://ipfs.busy.org/ipfs/QmREU5rQox4BvxcNn7pQ9nSvVWgnPBDwomXV7FsWrX5xrd
+thumbnail: 'https://ipfs.busy.org/ipfs/QmREU5rQox4BvxcNn7pQ9nSvVWgnPBDwomXV7FsWrX5xrd'
 sidebar:
     right:
         sticky: true
@@ -41,4 +41,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Steemit Witness Proxy Update - Add VestingShares, SteemPower and Reputation](https://steemit.com/@justyy/steemit-witness-proxy-update-add-vestingshares-steempower-and-reputation)
+This page is synchronized from the post: ['Steemit Witness Proxy Update - Add VestingShares, SteemPower and Reputation'](https://steemit.com/@justyy/steemit-witness-proxy-update-add-vestingshares-steempower-and-reputation)

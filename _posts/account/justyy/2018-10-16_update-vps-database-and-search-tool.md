@@ -15,7 +15,7 @@ tags:
 - vps
 - database
 - witness-category
-thumbnail: https://ipfs.busy.org/ipfs/QmNeJisuweyCyUgg6iN9vuZBfd9w8pWFTwNRUyGQ8ry9Up
+thumbnail: 'https://ipfs.busy.org/ipfs/QmNeJisuweyCyUgg6iN9vuZBfd9w8pWFTwNRUyGQ8ry9Up'
 sidebar:
     right:
         sticky: true
@@ -53,4 +53,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Update: VPS Database and Search Tool](https://steemit.com/@justyy/update-vps-database-and-search-tool)
+This page is synchronized from the post: ['Update: VPS Database and Search Tool'](https://steemit.com/@justyy/update-vps-database-and-search-tool)

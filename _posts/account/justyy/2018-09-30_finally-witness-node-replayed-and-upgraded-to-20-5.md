@@ -15,7 +15,7 @@ tags:
 - busy
 - steem
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmYSoBGz4eAGJyPsf9MfyiTXicHdyfJxaTAtYhzHKZUrXZ
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYSoBGz4eAGJyPsf9MfyiTXicHdyfJxaTAtYhzHKZUrXZ'
 sidebar:
     right:
         sticky: true
@@ -48,4 +48,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Finally Witness Node Replayed and Upgraded to 20.5!](https://steemit.com/@justyy/finally-witness-node-replayed-and-upgraded-to-20-5)
+This page is synchronized from the post: ['Finally Witness Node Replayed and Upgraded to 20.5!'](https://steemit.com/@justyy/finally-witness-node-replayed-and-upgraded-to-20-5)

@@ -15,7 +15,7 @@ tags:
 - witness-update
 - zram
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmbTvHLt7jhbsh7WqTaignyAsgEFg1ANgNux8dvKyzQC12
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbTvHLt7jhbsh7WqTaignyAsgEFg1ANgNux8dvKyzQC12'
 sidebar:
     right:
         sticky: true
@@ -66,4 +66,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Witness Updated to 0.19.6 and Server using ZRAM!](https://steemit.com/@justyy/witness-updated-to-0-19-6-and-server-using-zram)
+This page is synchronized from the post: ['Witness Updated to 0.19.6 and Server using ZRAM!'](https://steemit.com/@justyy/witness-updated-to-0-19-6-and-server-using-zram)

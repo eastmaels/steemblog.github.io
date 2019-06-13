@@ -15,7 +15,7 @@ tags:
 - portrait
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmTXebqCsU661fRf7Gz1scjwBtWodozaMFrC4KqPgFFyPZ/2018-11-25%2018.32.57.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmTXebqCsU661fRf7Gz1scjwBtWodozaMFrC4KqPgFFyPZ/2018-11-25%2018.32.57.jpg'
 sidebar:
     right:
         sticky: true
@@ -38,4 +38,4 @@ XXXX ![2018-11-25 18.32.57.jpg](https://cdn.steemitimages.com/DQmTXebqCsU661fRf7
 
 - - -
 
-This page is synchronized from the post: [Photography (Portrait) - 晒晒媳妇](https://steemit.com/@justyy/photography-portrait)
+This page is synchronized from the post: ['Photography (Portrait) - 晒晒媳妇'](https://steemit.com/@justyy/photography-portrait)

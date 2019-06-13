@@ -15,7 +15,7 @@ tags:
 - busy
 - bank
 - bank-of-china
-thumbnail: https://ipfs.busy.org/ipfs/QmQsBQSzcqtapuezMtdqKhUvCQPvGhNWPnQ9omKwubKk2i
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQsBQSzcqtapuezMtdqKhUvCQPvGhNWPnQ9omKwubKk2i'
 sidebar:
     right:
         sticky: true
@@ -69,4 +69,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [银行从2018-08-17开始发STEEM利息了！ @justyy Bank Changes Interests Currency to STEEM](https://steemit.com/@justyy/2018-08-17-steem-justyy-bank-changes-interests-currency-to-steem)
+This page is synchronized from the post: ['银行从2018-08-17开始发STEEM利息了！ @justyy Bank Changes Interests Currency to STEEM'](https://steemit.com/@justyy/2018-08-17-steem-justyy-bank-changes-interests-currency-to-steem)

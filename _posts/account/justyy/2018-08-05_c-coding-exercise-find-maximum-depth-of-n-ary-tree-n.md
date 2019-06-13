@@ -15,7 +15,7 @@ tags:
 - cn-programming
 - busy
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED'
 sidebar:
     right:
         sticky: true
@@ -192,4 +192,4 @@ public:
 
 - - -
 
-This page is synchronized from the post: [C++ Coding Exercise - Find Maximum Depth of N-ary Tree - 编程练习题：找出N叉树的深度](https://steemit.com/@justyy/c-coding-exercise-find-maximum-depth-of-n-ary-tree-n)
+This page is synchronized from the post: ['C++ Coding Exercise - Find Maximum Depth of N-ary Tree - 编程练习题：找出N叉树的深度'](https://steemit.com/@justyy/c-coding-exercise-find-maximum-depth-of-n-ary-tree-n)

@@ -15,7 +15,7 @@ tags:
 - steem
 - steemit
 - cn
-thumbnail: https://ipfs.busy.org/ipfs/QmYyfiTjJT9BqN3q1rNpffPkdfYBtcNVG7nw6P6F6V5uAK
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYyfiTjJT9BqN3q1rNpffPkdfYBtcNVG7nw6P6F6V5uAK'
 sidebar:
     right:
         sticky: true
@@ -56,4 +56,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Effective SP 50K Now!](https://steemit.com/@justyy/effective-sp-50k-now)
+This page is synchronized from the post: ['Effective SP 50K Now!'](https://steemit.com/@justyy/effective-sp-50k-now)

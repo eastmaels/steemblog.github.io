@@ -15,7 +15,7 @@ tags:
 - cn
 - promo-china
 - stats
-thumbnail: http://www.bing.com/az/hprichbg/rb/DarwinOrigin_EN-US14530151991_1920x1080.jpg
+thumbnail: 'http://www.bing.com/az/hprichbg/rb/DarwinOrigin_EN-US14530151991_1920x1080.jpg'
 sidebar:
     right:
         sticky: true
@@ -41,6 +41,7 @@ On Daily basis, @dailychina will select quality posts and reward them.
 *[图片来源： 每日BING桌面壁纸 2018-11-24](https://steemit.com/@superbing/daily-bing-wallpaper-bing-2018-11-24)* by @superbing
 
 These posts are selected by @dailychina and will be rewarded. ^_^ Delegations to @justyy or @dailychina are much apprecicated if you find this idea useful. Thanks.
+
 |          |      作者 Author|    文章 Post|
 |----------|:-------------:|:------|
 | 1 | [@kimzwarch](https://steemit.com/@kimzwarch) | [7 Ways to Form Micro Habits That Will Change Your Life](https://steemit.com/teammalaysia/@kimzwarch/7-ways-to-form-micro-habits-that-will-change-your-life) | 
@@ -53,6 +54,7 @@ These posts are selected by @dailychina and will be rewarded. ^_^ Delegations to
 ## 2018-11-24 Daily Top Authors in [CN] (Last 7 Days) 每日cn社区之 *过去7天潜在收益排行榜*
 The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the [SQL](https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/) for more details. 
 这是根据[这篇的SQL](https://justyy.com/archives/5198) - 经[少量修改](https://steemit.com/cn/@justyy/steem-sql-7-cn)和调整统计出过去7天作者的潜在收益排行。
+
 |   排名 Rank| 作者 Author| 发贴数 Posts| 点赞数 Votes| 潜在收益 Pending Payout|  平均每贴 Average Per Post|  平均每天 Average Per Day|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1|@partiko| 643|1029|340.63|0.53|48.66|
@@ -95,6 +97,7 @@ The following is the list of top 30 daily authors in [CN] in the last 7 days sor
 **[CN Good-Content-Bot](https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn) may upvote these authors every day!**
 ## 2018-11-24 Daily Top Authors in [CN] (Last 30 Days) 每日cn社区之 *过去30天收益排行榜*
 The following is the list of top 30 daily authors in [CN] in the last 30 days sorted by payout.
+
 |   排名 Rank| 作者 Author| 发贴数 Posts| 点赞数 Votes| 收益 Payout|  平均每贴收益 Average Payout Per Post| 平均每天收益 Average Daily Payout|  
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 | 1|@darksaint| 121|6262|2517.03|20.80|83.90|
@@ -196,6 +199,7 @@ The following is the list of top 30 daily authors in [CN] in the last 30 days so
 
 # YY银行有 272位股东，一共股权总量为 46513.3 SP
 查询谁都参于了也可以用这个[在线工具: Steemit 查看谁委派代理给你Steem Power？](https://steemyy.com/list-of-delegators/?id=justyy)。 
+
 |Delegator| Steem Power| Vests|  DateTime|
 |:--|:--|:--|:--|
 | [@xiaohui](https://steemit.com/@xiaohui) |5070.09|10212478.13|2018-03-06 01:46:15|
@@ -545,4 +549,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [【第 肆伍陆 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-11-24)](https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-11-24)
+This page is synchronized from the post: ['【第 肆伍陆 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-11-24)'](https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-11-24)

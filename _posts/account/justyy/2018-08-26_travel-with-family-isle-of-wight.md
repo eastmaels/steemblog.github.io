@@ -15,7 +15,7 @@ tags:
 - photography
 - travel
 - life
-thumbnail: https://cdn.steemitimages.com/DQmRaeDKc3fvAoDWosVtR3dC4tx6w29TFCdF2JjG1VGi7uh/IMG_8275.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmRaeDKc3fvAoDWosVtR3dC4tx6w29TFCdF2JjG1VGi7uh/IMG_8275.JPG'
 sidebar:
     right:
         sticky: true
@@ -61,4 +61,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [带媳妇孩子去旅行 - 英国怀特岛 - Travel with Family - Isle of Wight](https://steemit.com/@justyy/travel-with-family-isle-of-wight)
+This page is synchronized from the post: ['带媳妇孩子去旅行 - 英国怀特岛 - Travel with Family - Isle of Wight'](https://steemit.com/@justyy/travel-with-family-isle-of-wight)

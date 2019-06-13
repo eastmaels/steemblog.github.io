@@ -15,7 +15,7 @@ tags:
 - programming
 - hacktoberfest
 - open-source
-thumbnail: https://anothervps.com/wp-content/uploads/2018/10/digital-ocean-hacktoberfest.jpg
+thumbnail: 'https://anothervps.com/wp-content/uploads/2018/10/digital-ocean-hacktoberfest.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +67,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Hacktoberfest: Free $100 and T-shirt on Digital Ocean to Celebrate Open Source!](https://steemit.com/@justyy/hacktoberfest-free-usd100-and-t-shirt-on-digital-ocean-to-celebrate-open-source)
+This page is synchronized from the post: ['Hacktoberfest: Free $100 and T-shirt on Digital Ocean to Celebrate Open Source!'](https://steemit.com/@justyy/hacktoberfest-free-usd100-and-t-shirt-on-digital-ocean-to-celebrate-open-source)

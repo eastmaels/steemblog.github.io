@@ -15,7 +15,7 @@ tags:
 - bankofchina
 - busy
 - promo-cn
-thumbnail: https://ipfs.busy.org/ipfs/QmdDxHMjwwnFHWkJ7NK4b5voT1H1SCoFAR5xcqKfMDocuc
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdDxHMjwwnFHWkJ7NK4b5voT1H1SCoFAR5xcqKfMDocuc'
 sidebar:
     right:
         sticky: true
@@ -62,4 +62,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [银行恢复点赞及日报转到 @dailychina](https://steemit.com/@justyy/dailychina)
+This page is synchronized from the post: ['银行恢复点赞及日报转到 @dailychina'](https://steemit.com/@justyy/dailychina)

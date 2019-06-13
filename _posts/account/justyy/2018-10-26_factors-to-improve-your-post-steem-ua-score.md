@@ -15,7 +15,7 @@ tags:
 - curation
 - ua
 - steem
-thumbnail: https://ipfs.busy.org/ipfs/QmQap81hfchKnzWmoyXE3sUY7GXmnXktMacEp1XJGX9fUp
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQap81hfchKnzWmoyXE3sUY7GXmnXktMacEp1XJGX9fUp'
 sidebar:
     right:
         sticky: true
@@ -70,4 +70,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Steem-UA voting weight definitely not linear with the post ranking...](https://steemit.com/@justyy/factors-to-improve-your-post-steem-ua-score)
+This page is synchronized from the post: ['Steem-UA voting weight definitely not linear with the post ranking...'](https://steemit.com/@justyy/factors-to-improve-your-post-steem-ua-score)

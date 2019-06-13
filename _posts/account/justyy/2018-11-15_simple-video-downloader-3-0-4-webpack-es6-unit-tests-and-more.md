@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmQE23ep76rNaZbw7NVZEsFzE7JEETqk5KZuxYVUhnJuBF
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQE23ep76rNaZbw7NVZEsFzE7JEETqk5KZuxYVUhnJuBF'
 sidebar:
     right:
         sticky: true
@@ -203,4 +203,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple Video Downloader 3.0.4 - Webpack, ES6, Unit Tests and more!](https://steemit.com/@justyy/simple-video-downloader-3-0-4-webpack-es6-unit-tests-and-more)
+This page is synchronized from the post: ['Simple Video Downloader 3.0.4 - Webpack, ES6, Unit Tests and more!'](https://steemit.com/@justyy/simple-video-downloader-3-0-4-webpack-es6-unit-tests-and-more)

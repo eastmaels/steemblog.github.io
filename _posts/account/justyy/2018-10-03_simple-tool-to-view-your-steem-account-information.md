@@ -15,7 +15,7 @@ tags:
 - busy
 - steemtools
 - steemapps
-thumbnail: https://ipfs.busy.org/ipfs/QmckrHfB9GC33HUs1cwh14BG2mSiHLeC5vExLS6XsjP819
+thumbnail: 'https://ipfs.busy.org/ipfs/QmckrHfB9GC33HUs1cwh14BG2mSiHLeC5vExLS6XsjP819'
 sidebar:
     right:
         sticky: true
@@ -57,4 +57,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple Tool to View Your Steem Account Information](https://steemit.com/@justyy/simple-tool-to-view-your-steem-account-information)
+This page is synchronized from the post: ['Simple Tool to View Your Steem Account Information'](https://steemit.com/@justyy/simple-tool-to-view-your-steem-account-information)

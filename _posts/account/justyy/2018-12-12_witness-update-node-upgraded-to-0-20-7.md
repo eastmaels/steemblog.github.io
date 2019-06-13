@@ -15,7 +15,7 @@ tags:
 - witness
 - steem
 - steem-witness
-thumbnail: https://thumbs.gfycat.com/CheerySpitefulBlueandgoldmackaw-size_restricted.gif
+thumbnail: 'https://thumbs.gfycat.com/CheerySpitefulBlueandgoldmackaw-size_restricted.gif'
 sidebar:
     right:
         sticky: true
@@ -72,4 +72,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Witness Update: Node Upgraded to 0.20.7!](https://steemit.com/@justyy/witness-update-node-upgraded-to-0-20-7)
+This page is synchronized from the post: ['Witness Update: Node Upgraded to 0.20.7!'](https://steemit.com/@justyy/witness-update-node-upgraded-to-0-20-7)

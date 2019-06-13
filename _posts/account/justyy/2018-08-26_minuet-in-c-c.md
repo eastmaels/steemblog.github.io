@@ -15,7 +15,7 @@ tags:
 - busy
 - cn
 - life
-thumbnail: https://ipfs.busy.org/ipfs/QmXsucWkrGuVbZYmxD75zoiJUsnFsJLykVcmnNTauMYLhL
+thumbnail: 'https://ipfs.busy.org/ipfs/QmXsucWkrGuVbZYmxD75zoiJUsnFsJLykVcmnNTauMYLhL'
 sidebar:
     right:
         sticky: true
@@ -57,4 +57,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Minuet in C - 小步舞曲C](https://steemit.com/@justyy/minuet-in-c-c)
+This page is synchronized from the post: ['Minuet in C - 小步舞曲C'](https://steemit.com/@justyy/minuet-in-c-c)

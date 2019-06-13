@@ -15,7 +15,7 @@ tags:
 - witness-category
 - steemapps
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmUNkFQuTB9XAH9fFxsYwydF2UPGLkAc3caywc3vjcN5WX
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUNkFQuTB9XAH9fFxsYwydF2UPGLkAc3caywc3vjcN5WX'
 sidebar:
     right:
         sticky: true
@@ -68,4 +68,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Steem Wallet Tools - Fixing 3 Decimal Errors](https://steemit.com/@justyy/steem-wallet-tools-fixing-3-decimal-errors)
+This page is synchronized from the post: ['Steem Wallet Tools - Fixing 3 Decimal Errors'](https://steemit.com/@justyy/steem-wallet-tools-fixing-3-decimal-errors)

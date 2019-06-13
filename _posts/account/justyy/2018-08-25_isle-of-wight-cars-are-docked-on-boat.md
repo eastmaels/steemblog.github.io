@@ -35,4 +35,4 @@ Cars are docked on the huge boat!
 
 - - -
 
-This page is synchronized from the post: [Isle of Wight - Cars are Docked on Boat - 怀特岛游轮 - 车上船了](https://steemit.com/@justyy/isle-of-wight-cars-are-docked-on-boat)
+This page is synchronized from the post: ['Isle of Wight - Cars are Docked on Boat - 怀特岛游轮 - 车上船了'](https://steemit.com/@justyy/isle-of-wight-cars-are-docked-on-boat)

@@ -15,7 +15,7 @@ tags:
 - busy
 - steemtools
 - steemapps
-thumbnail: https://ipfs.busy.org/ipfs/QmT2JsrGxS9aLoTAnBmSTMJGKpRnp3bfgff6XGrXEmGYx4
+thumbnail: 'https://ipfs.busy.org/ipfs/QmT2JsrGxS9aLoTAnBmSTMJGKpRnp3bfgff6XGrXEmGYx4'
 sidebar:
     right:
         sticky: true
@@ -61,4 +61,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [注册了 SteemYY.com ！](https://steemit.com/@justyy/steemyy-com)
+This page is synchronized from the post: ['注册了 SteemYY.com ！'](https://steemit.com/@justyy/steemyy-com)

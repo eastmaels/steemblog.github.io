@@ -15,7 +15,7 @@ tags:
 - busy
 - witness
 - hf20
-thumbnail: https://ipfs.busy.org/ipfs/QmRDEZ1vogMQbDRc6nXv2eH1Gj3bnNTjTgBEqQnG9GVEV8
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRDEZ1vogMQbDRc6nXv2eH1Gj3bnNTjTgBEqQnG9GVEV8'
 sidebar:
     right:
         sticky: true
@@ -60,4 +60,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [All Witnesses Should Now All Upgrade to 20.2 (HF20)](https://steemit.com/@justyy/all-witness-should-now-all-upgrade-to-20-2-hf20)
+This page is synchronized from the post: ['All Witnesses Should Now All Upgrade to 20.2 (HF20)'](https://steemit.com/@justyy/all-witness-should-now-all-upgrade-to-20-2-hf20)

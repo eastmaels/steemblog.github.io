@@ -15,7 +15,7 @@ tags:
 - gadget
 - selfie
 - hardware
-thumbnail: https://huntimages.s3.us-west-2.amazonaws.com/production/steemhunt/2018-09-08/959e5d81-2018-09-07%2018.05.56.jpg
+thumbnail: 'https://huntimages.s3.us-west-2.amazonaws.com/production/steemhunt/2018-09-08/959e5d81-2018-09-07%2018.05.56.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +64,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [The Bluetooth Selfie Stick - A powerful and easy-to-use Selfie Stick](https://steemit.com/@justyy/the-bluetooth-selfie-stick-a-powerful-and-easy-to-use-selfie-stick)
+This page is synchronized from the post: ['The Bluetooth Selfie Stick - A powerful and easy-to-use Selfie Stick'](https://steemit.com/@justyy/the-bluetooth-selfie-stick-a-powerful-and-easy-to-use-selfie-stick)

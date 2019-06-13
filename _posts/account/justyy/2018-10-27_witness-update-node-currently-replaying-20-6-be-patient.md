@@ -15,7 +15,7 @@ tags:
 - witness-update
 - witness
 - steem
-thumbnail: https://ipfs.busy.org/ipfs/QmPfpG6wCJ3ECBgRPQis36APnMyDxNsqGP7AbPRP4HKDVA
+thumbnail: 'https://ipfs.busy.org/ipfs/QmPfpG6wCJ3ECBgRPQis36APnMyDxNsqGP7AbPRP4HKDVA'
 sidebar:
     right:
         sticky: true
@@ -69,4 +69,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Witness Update:  Node Currently Replaying 20.6 - Be Patient!](https://steemit.com/@justyy/witness-update-node-currently-replaying-20-6-be-patient)
+This page is synchronized from the post: ['Witness Update:  Node Currently Replaying 20.6 - Be Patient!'](https://steemit.com/@justyy/witness-update-node-currently-replaying-20-6-be-patient)

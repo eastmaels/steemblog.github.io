@@ -15,7 +15,7 @@ tags:
 - cn-programming
 - busy
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED'
 sidebar:
     right:
         sticky: true
@@ -220,4 +220,4 @@ public:
 
 - - -
 
-This page is synchronized from the post: [Coding Exercise - Find Third Maximum 编程练习题 - 找出第三大的数](https://steemit.com/@justyy/coding-exercise-find-third-maximum)
+This page is synchronized from the post: ['Coding Exercise - Find Third Maximum 编程练习题 - 找出第三大的数'](https://steemit.com/@justyy/coding-exercise-find-third-maximum)

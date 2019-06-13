@@ -56,4 +56,4 @@ XXX原文： [https://justyy.com/archives/6447](https://justyy.com/archives/6447
 
 - - -
 
-This page is synchronized from the post: [C++ Coding Exercise - Find All Duplicates in an Array - 编程练习题：找出数组中所有重复的元素](https://steemit.com/@justyy/coding-exercise-find-all-duplicates-in-an-array)
+This page is synchronized from the post: ['C++ Coding Exercise - Find All Duplicates in an Array - 编程练习题：找出数组中所有重复的元素'](https://steemit.com/@justyy/coding-exercise-find-all-duplicates-in-an-array)

@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-update
 - cn
-thumbnail: https://ipfs.busy.org/ipfs/QmcTEmNwTdeEQbitQg9M5i7ZExENETAUPeEEbnc9up69Ci
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcTEmNwTdeEQbitQg9M5i7ZExENETAUPeEEbnc9up69Ci'
 sidebar:
     right:
         sticky: true
@@ -88,4 +88,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Witness Is Back online with 0.19.12!](https://steemit.com/@justyy/witness-is-back-online-with-0-19-12)
+This page is synchronized from the post: ['Witness Is Back online with 0.19.12!'](https://steemit.com/@justyy/witness-is-back-online-with-0-19-12)

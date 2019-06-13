@@ -15,7 +15,7 @@ tags:
 - exchange-blast
 - oracle-d
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmQY4R4Vifcsvt2f8X9JAtAEEsA2iRcmDHX3YdrDYUajJR
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQY4R4Vifcsvt2f8X9JAtAEEsA2iRcmDHX3YdrDYUajJR'
 sidebar:
     right:
         sticky: true
@@ -36,4 +36,4 @@ http://contest.gonetcoins.com/
 
 - - -
 
-This page is synchronized from the post: [Make STEEM great again - Let''s do the final vote!](https://steemit.com/@justyy/make-steem-great-again-let-s-do-the-final-vote)
+This page is synchronized from the post: ['Make STEEM great again - Let''s do the final vote!'](https://steemit.com/@justyy/make-steem-great-again-let-s-do-the-final-vote)

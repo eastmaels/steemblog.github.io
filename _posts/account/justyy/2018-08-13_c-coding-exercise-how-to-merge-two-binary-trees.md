@@ -59,4 +59,4 @@ XXX原文: [https://justyy.com/archives/6463](https://justyy.com/archives/6463)
 
 - - -
 
-This page is synchronized from the post: [C++ Coding Exercise - How to Merge Two Binary Trees? 编程练习题：如何合并两个二叉树？](https://steemit.com/@justyy/c-coding-exercise-how-to-merge-two-binary-trees)
+This page is synchronized from the post: ['C++ Coding Exercise - How to Merge Two Binary Trees? 编程练习题：如何合并两个二叉树？'](https://steemit.com/@justyy/c-coding-exercise-how-to-merge-two-binary-trees)

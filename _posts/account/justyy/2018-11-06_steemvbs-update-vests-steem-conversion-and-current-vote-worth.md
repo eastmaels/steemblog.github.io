@@ -15,7 +15,7 @@ tags:
 - steemvbs
 - busy
 - programming
-thumbnail: https://helloacm.com/wp-content/uploads/2018/05/vbscript.png
+thumbnail: 'https://helloacm.com/wp-content/uploads/2018/05/vbscript.png'
 sidebar:
     right:
         sticky: true
@@ -124,4 +124,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [SteemVBS Update: Vests/Steem Conversion and Current Vote Worth](https://steemit.com/@justyy/steemvbs-update-vests-steem-conversion-and-current-vote-worth)
+This page is synchronized from the post: ['SteemVBS Update: Vests/Steem Conversion and Current Vote Worth'](https://steemit.com/@justyy/steemvbs-update-vests-steem-conversion-and-current-vote-worth)

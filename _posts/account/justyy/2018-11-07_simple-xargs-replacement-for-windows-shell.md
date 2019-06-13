@@ -15,7 +15,7 @@ tags:
 - xargs
 - windows
 - shell
-thumbnail: https://ipfs.busy.org/ipfs/QmaNTX8XDMbqgBkwFD6xwuVKUaZJSXeM4kugYYDaRYjEnk
+thumbnail: 'https://ipfs.busy.org/ipfs/QmaNTX8XDMbqgBkwFD6xwuVKUaZJSXeM4kugYYDaRYjEnk'
 sidebar:
     right:
         sticky: true
@@ -108,4 +108,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple xargs replacement for Windows Shell](https://steemit.com/@justyy/simple-xargs-replacement-for-windows-shell)
+This page is synchronized from the post: ['Simple xargs replacement for Windows Shell'](https://steemit.com/@justyy/simple-xargs-replacement-for-windows-shell)

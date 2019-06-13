@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw
+thumbnail: 'https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw'
 sidebar:
     right:
         sticky: true
@@ -109,4 +109,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple Video Downloader 3.0.7 - Adding Facebook and Generic Video Parser](https://steemit.com/@justyy/simple-video-downloader-3-0-7-adding-facebook-and-generic-video-parser)
+This page is synchronized from the post: ['Simple Video Downloader 3.0.7 - Adding Facebook and Generic Video Parser'](https://steemit.com/@justyy/simple-video-downloader-3-0-7-adding-facebook-and-generic-video-parser)

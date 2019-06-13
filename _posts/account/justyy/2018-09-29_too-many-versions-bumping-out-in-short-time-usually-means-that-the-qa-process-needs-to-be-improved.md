@@ -15,7 +15,7 @@ tags:
 - busy
 - hf20
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmUCxpbYpvfZh6F1WmUYKPoKggpM7vqyWAmR8WhoJ46tq7
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUCxpbYpvfZh6F1WmUYKPoKggpM7vqyWAmR8WhoJ46tq7'
 sidebar:
     right:
         sticky: true
@@ -55,4 +55,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Too many versions bumping out in short time usually means that the QA process needs to be improved!](https://steemit.com/@justyy/too-many-versions-bumping-out-in-short-time-usually-means-that-the-qa-process-needs-to-be-improved)
+This page is synchronized from the post: ['Too many versions bumping out in short time usually means that the QA process needs to be improved!'](https://steemit.com/@justyy/too-many-versions-bumping-out-in-short-time-usually-means-that-the-qa-process-needs-to-be-improved)

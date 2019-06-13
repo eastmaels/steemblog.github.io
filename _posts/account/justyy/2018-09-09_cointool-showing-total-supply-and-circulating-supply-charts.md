@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-update
 - cryptocurrency
-thumbnail: https://ipfs.busy.org/ipfs/QmX1w2TM9kXPa1p3faKGGkTkgB1e9m5hyuo5pUemUms623
+thumbnail: 'https://ipfs.busy.org/ipfs/QmX1w2TM9kXPa1p3faKGGkTkgB1e9m5hyuo5pUemUms623'
 sidebar:
     right:
         sticky: true
@@ -58,4 +58,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [CoinTool: Showing Total Supply and Circulating Supply Charts](https://steemit.com/@justyy/cointool-showing-total-supply-and-circulating-supply-charts)
+This page is synchronized from the post: ['CoinTool: Showing Total Supply and Circulating Supply Charts'](https://steemit.com/@justyy/cointool-showing-total-supply-and-circulating-supply-charts)

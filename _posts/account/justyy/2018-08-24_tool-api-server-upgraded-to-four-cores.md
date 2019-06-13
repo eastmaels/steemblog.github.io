@@ -15,7 +15,7 @@ tags:
 - server-upgrade
 - busy
 - witness-update
-thumbnail: https://ipfs.busy.org/ipfs/QmcGsZFzGuGodisykZgo6K19AJjdSS3cpxjuATgM1oYR6L
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcGsZFzGuGodisykZgo6K19AJjdSS3cpxjuATgM1oYR6L'
 sidebar:
     right:
         sticky: true
@@ -50,4 +50,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Tool/API Server Upgraded to Four Cores!](https://steemit.com/@justyy/tool-api-server-upgraded-to-four-cores)
+This page is synchronized from the post: ['Tool/API Server Upgraded to Four Cores!'](https://steemit.com/@justyy/tool-api-server-upgraded-to-four-cores)

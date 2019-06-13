@@ -15,7 +15,7 @@ tags:
 - witness
 - witness-update
 - steemapps
-thumbnail: https://ipfs.busy.org/ipfs/QmYLjPBx28uwTZG2A8vYuJxK3wrhF5gHgVwyFrP4unf27K
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYLjPBx28uwTZG2A8vYuJxK3wrhF5gHgVwyFrP4unf27K'
 sidebar:
     right:
         sticky: true
@@ -52,4 +52,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Introducing SteemYY.com = Steem + @justyy!](https://steemit.com/@justyy/introducing-steemyy-com-steem-justyy)
+This page is synchronized from the post: ['Introducing SteemYY.com = Steem + @justyy!'](https://steemit.com/@justyy/introducing-steemyy-com-steem-justyy)

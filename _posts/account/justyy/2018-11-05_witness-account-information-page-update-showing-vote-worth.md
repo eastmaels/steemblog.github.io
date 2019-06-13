@@ -15,7 +15,7 @@ tags:
 - witness-tools
 - steemtools
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmcXHQGcFEQTHBMVAa7KbrQ9KKZaDnoFBvTEgQVec6VDcb
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcXHQGcFEQTHBMVAa7KbrQ9KKZaDnoFBvTEgQVec6VDcb'
 sidebar:
     right:
         sticky: true
@@ -60,4 +60,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Witness/Account Information Page Update: Showing Vote Worth](https://steemit.com/@justyy/witness-account-information-page-update-showing-vote-worth)
+This page is synchronized from the post: ['Witness/Account Information Page Update: Showing Vote Worth'](https://steemit.com/@justyy/witness-account-information-page-update-showing-vote-worth)

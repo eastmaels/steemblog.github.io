@@ -15,7 +15,7 @@ tags:
 - witness
 - busy
 - witness-update
-thumbnail: https://ipfs.busy.org/ipfs/QmQhCri8k6yeQU2J2DvMK7qBp4rcBiPF2EM8ncyKpHsX1A
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQhCri8k6yeQU2J2DvMK7qBp4rcBiPF2EM8ncyKpHsX1A'
 sidebar:
     right:
         sticky: true
@@ -50,4 +50,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Witness Tool Update: Know who is your biggest supporter?](https://steemit.com/@justyy/witness-tool-update-know-who-is-your-biggest-supporter)
+This page is synchronized from the post: ['Witness Tool Update: Know who is your biggest supporter?'](https://steemit.com/@justyy/witness-tool-update-know-who-is-your-biggest-supporter)

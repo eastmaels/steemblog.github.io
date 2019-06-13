@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/Qmf2YGgyLQJd3rAcrAYUYjKz6YTKAinLGCTaLzBHorgTWX
+thumbnail: 'https://ipfs.busy.org/ipfs/Qmf2YGgyLQJd3rAcrAYUYjKz6YTKAinLGCTaLzBHorgTWX'
 sidebar:
     right:
         sticky: true
@@ -100,4 +100,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple Video Downloader 3.0.5 - Supporting MSDN and TED !](https://steemit.com/@justyy/simple-video-downloader-3-0-5-supporting-msdn-and-ted)
+This page is synchronized from the post: ['Simple Video Downloader 3.0.5 - Supporting MSDN and TED !'](https://steemit.com/@justyy/simple-video-downloader-3-0-5-supporting-msdn-and-ted)

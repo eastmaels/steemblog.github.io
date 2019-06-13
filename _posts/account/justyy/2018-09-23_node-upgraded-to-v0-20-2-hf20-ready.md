@@ -15,7 +15,7 @@ tags:
 - busy
 - hf20
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmUM3T2cqMLonfU2ysT2PJpzS2V7FUcFyDhzTpq8EmuwrC
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUM3T2cqMLonfU2ysT2PJpzS2V7FUcFyDhzTpq8EmuwrC'
 sidebar:
     right:
         sticky: true
@@ -69,4 +69,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [Embracing HF20! My Steem Witness Node Upgraded to v0.20.2 on a new Server!](https://steemit.com/@justyy/node-upgraded-to-v0-20-2-hf20-ready)
+This page is synchronized from the post: ['Embracing HF20! My Steem Witness Node Upgraded to v0.20.2 on a new Server!'](https://steemit.com/@justyy/node-upgraded-to-v0-20-2-hf20-ready)

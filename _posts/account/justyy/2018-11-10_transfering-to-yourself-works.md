@@ -14,7 +14,7 @@ tags:
 - steemjs
 - programming
 - steemit
-thumbnail: https://ipfs.busy.org/ipfs/QmcJHLb5KWLPYxYztYVW3zViqfrp6PCVk2hxQ6B7KN5SoC
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcJHLb5KWLPYxYztYVW3zViqfrp6PCVk2hxQ6B7KN5SoC'
 sidebar:
     right:
         sticky: true
@@ -35,4 +35,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Transfering to Yourself - works!](https://steemit.com/@justyy/transfering-to-yourself-works)
+This page is synchronized from the post: ['Transfering to Yourself - works!'](https://steemit.com/@justyy/transfering-to-yourself-works)

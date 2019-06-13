@@ -15,7 +15,7 @@ tags:
 - programming
 - hacktoberfest
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmVw6PL18gqexdECfahXQTP2ZfXhRVyBNensQuq3mViGmK
+thumbnail: 'https://ipfs.busy.org/ipfs/QmVw6PL18gqexdECfahXQTP2ZfXhRVyBNensQuq3mViGmK'
 sidebar:
     right:
         sticky: true
@@ -61,4 +61,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [@justyy has completed the Hacktoberfest challenge!](https://steemit.com/@justyy/justyy-has-completed-the-hacktoberfest-challenge)
+This page is synchronized from the post: ['@justyy has completed the Hacktoberfest challenge!'](https://steemit.com/@justyy/justyy-has-completed-the-hacktoberfest-challenge)

@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmbRok1X23FBXjGTKMqR9AC2sFTuZ488uYiVircdtaKUQy
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbRok1X23FBXjGTKMqR9AC2sFTuZ488uYiVircdtaKUQy'
 sidebar:
     right:
         sticky: true
@@ -83,4 +83,4 @@ Thank you! **Some of My Contributions: [SteemIt Tutorials, Robots, Tools and API
 
 - - -
 
-This page is synchronized from the post: [I Love Coding! The SteemIt Reblogger Service](https://steemit.com/@justyy/i-love-coding-the-steemit-reblogger-service)
+This page is synchronized from the post: ['I Love Coding! The SteemIt Reblogger Service'](https://steemit.com/@justyy/i-love-coding-the-steemit-reblogger-service)

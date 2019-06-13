@@ -15,7 +15,7 @@ tags:
 - promo-steem
 - exchange-blast
 - steem
-thumbnail: https://cdn.steemitimages.com/DQmSERbnZwL4o6F7iFWn1zRRxcVrCoyeyrjBETb5kDkbKxm/Netcoins.png
+thumbnail: 'https://cdn.steemitimages.com/DQmSERbnZwL4o6F7iFWn1zRRxcVrCoyeyrjBETb5kDkbKxm/Netcoins.png'
 sidebar:
     right:
         sticky: true
@@ -89,4 +89,4 @@ _NETCOINs 是一家加拿大的区块链公司。它们帮助了成千上万的�
 
 - - -
 
-This page is synchronized from the post: [请为STEEM投票，让STEEM上NETCoins 并且得到 Oracle-D 的点赞（竞赛）](https://steemit.com/@justyy/steem-steem-netcoins-oracle-d)
+This page is synchronized from the post: ['请为STEEM投票，让STEEM上NETCoins 并且得到 Oracle-D 的点赞（竞赛）'](https://steemit.com/@justyy/steem-steem-netcoins-oracle-d)

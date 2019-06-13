@@ -15,7 +15,7 @@ tags:
 - linkedin
 - busy
 - premium
-thumbnail: https://ipfs.busy.org/ipfs/QmSazmk1jniByDdqqDPa3dSD7hbbPhthCvs7DRPawytRzb
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSazmk1jniByDdqqDPa3dSD7hbbPhthCvs7DRPawytRzb'
 sidebar:
     right:
         sticky: true
@@ -76,4 +76,4 @@ Linkedin (领英) 算是比较靠谱的职业社交网站，在上面有很多�
 
 - - -
 
-This page is synchronized from the post: [试用 Linkedin (领英) 高级帐号 (Premium)](https://steemit.com/@justyy/linkedin-premium)
+This page is synchronized from the post: ['试用 Linkedin (领英) 高级帐号 (Premium)'](https://steemit.com/@justyy/linkedin-premium)

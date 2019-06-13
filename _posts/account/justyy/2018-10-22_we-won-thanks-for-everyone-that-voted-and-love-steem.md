@@ -15,7 +15,7 @@ tags:
 - exchange-blast
 - oracle-d
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmTA6mVBrgionoXMxou3m1xX2t6nJJQdAZ6PqRQNcpia58
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTA6mVBrgionoXMxou3m1xX2t6nJJQdAZ6PqRQNcpia58'
 sidebar:
     right:
         sticky: true
@@ -53,4 +53,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [We won! Thanks for everyone that voted and love STEEM !](https://steemit.com/@justyy/we-won-thanks-for-everyone-that-voted-and-love-steem)
+This page is synchronized from the post: ['We won! Thanks for everyone that voted and love STEEM !'](https://steemit.com/@justyy/we-won-thanks-for-everyone-that-voted-and-love-steem)

@@ -15,7 +15,7 @@ tags:
 - bounty
 - bitcoin
 - rewards
-thumbnail: https://justyy.com/wp-content/uploads/2018/06/wirex-payment-crypto-card-fiat.jpg
+thumbnail: 'https://justyy.com/wp-content/uploads/2018/06/wirex-payment-crypto-card-fiat.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +61,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Fantastic $5 to $10 BTC Bounty ^_^ ](https://steemit.com/@justyy/fantastic-usd5-to-usd10-btc-bounty-)
+This page is synchronized from the post: ['Fantastic $5 to $10 BTC Bounty ^_^ '](https://steemit.com/@justyy/fantastic-usd5-to-usd10-btc-bounty-)

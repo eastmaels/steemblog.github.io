@@ -15,7 +15,7 @@ tags:
 - cn-programming
 - busy
 - coding
-thumbnail: https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED
+thumbnail: 'https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED'
 sidebar:
     right:
         sticky: true
@@ -124,4 +124,4 @@ private:
 
 - - -
 
-This page is synchronized from the post: [Coding Exercise - Find Letter Case Permutation with DFS 编程练习题：找出字符串的所有大小小组合](https://steemit.com/@justyy/coding-exercise-find-letter-case-permutation-with-dfs)
+This page is synchronized from the post: ['Coding Exercise - Find Letter Case Permutation with DFS 编程练习题：找出字符串的所有大小小组合'](https://steemit.com/@justyy/coding-exercise-find-letter-case-permutation-with-dfs)

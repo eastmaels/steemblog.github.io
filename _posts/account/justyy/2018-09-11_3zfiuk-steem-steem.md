@@ -15,7 +15,7 @@ tags:
 - busy
 - cn-curation
 - steem-guides
-thumbnail: https://steemitimages.com/DQmc9ka9n5aVok9ShgzmuswUVjMKnJXWkSYfhTyXtKLr41c/banner.jpg
+thumbnail: 'https://steemitimages.com/DQmc9ka9n5aVok9ShgzmuswUVjMKnJXWkSYfhTyXtKLr41c/banner.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +65,4 @@ STEEM [区块链](https://justyy.com/archives/5733)上一个很好玩的功能�
 
 - - -
 
-This page is synchronized from the post: [《Steem 指南》之查看STEEM区块链上最受欢迎的代理](https://steemit.com/@justyy/3zfiuk-steem-steem)
+This page is synchronized from the post: ['《Steem 指南》之查看STEEM区块链上最受欢迎的代理'](https://steemit.com/@justyy/3zfiuk-steem-steem)

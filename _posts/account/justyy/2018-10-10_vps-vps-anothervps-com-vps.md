@@ -15,7 +15,7 @@ tags:
 - cn-tools
 - busy
 - vps
-thumbnail: https://ipfs.busy.org/ipfs/Qmaq2ms7SCDvUB5bnCEBVDzLghkk85XdPKfCACv6QHmWRg
+thumbnail: 'https://ipfs.busy.org/ipfs/Qmaq2ms7SCDvUB5bnCEBVDzLghkk85XdPKfCACv6QHmWRg'
 sidebar:
     right:
         sticky: true
@@ -74,4 +74,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [VPS 数据库 - VPS 搜索工具 AnotherVPS.com/vps](https://steemit.com/@justyy/vps-vps-anothervps-com-vps)
+This page is synchronized from the post: ['VPS 数据库 - VPS 搜索工具 AnotherVPS.com/vps'](https://steemit.com/@justyy/vps-vps-anothervps-com-vps)
