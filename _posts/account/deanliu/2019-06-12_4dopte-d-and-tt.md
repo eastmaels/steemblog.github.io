@@ -15,7 +15,7 @@ tags:
 - jjm
 - palnet
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/e4db995971eab4396a97d47ba6a59a7edaed7723.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/e4db995971eab4396a97d47ba6a59a7edaed7723.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +57,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 放閃](https://steemit.com/@deanliu/4dopte-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 放閃'](https://steemit.com/@deanliu/4dopte-d-and-tt)

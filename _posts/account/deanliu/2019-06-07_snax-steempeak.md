@@ -16,7 +16,7 @@ tags:
 - cn
 - jjm
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmX2rapMfs8zgxUhFXZTUTWvmP1fGsj47yLr9KHwRg2uPz/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmX2rapMfs8zgxUhFXZTUTWvmP1fGsj47yLr9KHwRg2uPz/image.png'
 sidebar:
     right:
         sticky: true
@@ -53,4 +53,4 @@ My authentication hash: f2e44a8fc3ea2c272c2a4d46fa0ee7b2205169d7197c199ff78ee8e2
 
 - - -
 
-This page is synchronized from the post: [Snax認證，祝賀SteemPeak更新！](https://steemit.com/@deanliu/snax-steempeak)
+This page is synchronized from the post: ['Snax認證，祝賀SteemPeak更新！'](https://steemit.com/@deanliu/snax-steempeak)

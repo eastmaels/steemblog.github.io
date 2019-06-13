@@ -16,7 +16,7 @@ tags:
 - dean-hk
 - jjm
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/2ebf322f3f7c4821e75b73bbe680f2bdc9e81396.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/2ebf322f3f7c4821e75b73bbe680f2bdc9e81396.jpg'
 sidebar:
     right:
         sticky: true
@@ -74,4 +74,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[香港隨拍] Street Art 街頭藝術](https://steemit.com/@deanliu/street-art)
+This page is synchronized from the post: ['[香港隨拍] Street Art 街頭藝術'](https://steemit.com/@deanliu/street-art)

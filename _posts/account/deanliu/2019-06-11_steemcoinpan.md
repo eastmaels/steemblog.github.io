@@ -15,7 +15,7 @@ tags:
 - cn
 - palnet
 - jjm
-thumbnail: https://cdn.steemitimages.com/DQmTGGQqMziPohr5YCKdYC75YMGSaTVBys5TFMcEmC8WaSr/checklist-2077019_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmTGGQqMziPohr5YCKdYC75YMGSaTVBys5TFMcEmC8WaSr/checklist-2077019_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [盤點SteemCoinpan平台還缺的東西](https://steemit.com/@deanliu/steemcoinpan)
+This page is synchronized from the post: ['盤點SteemCoinpan平台還缺的東西'](https://steemit.com/@deanliu/steemcoinpan)

@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - cn
 - distribution
-thumbnail: https://www.humortimes.com/wp-content/uploads/2014/03/05-1-e1394217856480.jpg
+thumbnail: 'https://www.humortimes.com/wp-content/uploads/2014/03/05-1-e1394217856480.jpg'
 sidebar:
     right:
         sticky: true
@@ -83,4 +83,4 @@ N^2的曲線，曾經在早期達成一些效果；N^1的現況，顯然並沒�
 
 - - -
 
-This page is synchronized from the post: [Distribution真的是造成平台發展的障礙嗎？](https://steemit.com/@deanliu/distribution)
+This page is synchronized from the post: ['Distribution真的是造成平台發展的障礙嗎？'](https://steemit.com/@deanliu/distribution)

@@ -15,7 +15,7 @@ tags:
 - crypto
 - facebook
 - globalcoin
-thumbnail: https://dkyfoqsw29om1.cloudfront.net/2019/05/libra-facebook-stablecoin-full-payment-750x346.jpg
+thumbnail: 'https://dkyfoqsw29om1.cloudfront.net/2019/05/libra-facebook-stablecoin-full-payment-750x346.jpg'
 sidebar:
     right:
         sticky: true
@@ -70,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[幣圈動態 on SCT] 🚀🚀 Facebook將在本月發布穩定幣Global Coin計畫！🚀🚀](https://steemit.com/@deanliu/on-sct-facebook-global-coin)
+This page is synchronized from the post: ['[幣圈動態 on SCT] 🚀🚀 Facebook將在本月發布穩定幣Global Coin計畫！🚀🚀'](https://steemit.com/@deanliu/on-sct-facebook-global-coin)

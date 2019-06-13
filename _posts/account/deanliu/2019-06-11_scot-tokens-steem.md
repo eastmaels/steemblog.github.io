@@ -15,7 +15,7 @@ tags:
 - steem
 - scot
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmUDiro9wVYqMjpW1BLhqnP7crxSebov4SEeMMR3wCwvmy/stock-1863880_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmUDiro9wVYqMjpW1BLhqnP7crxSebov4SEeMMR3wCwvmy/stock-1863880_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +60,4 @@ https://cdn.steemitimages.com/DQmVBEhPcfnn8ZFkSLieM8Ze8hLhZMbLQGZ3ngFSQWj5PyY/ra
 
 - - -
 
-This page is synchronized from the post: [SCOT Tokens與STEEM的價格關聯](https://steemit.com/@deanliu/scot-tokens-steem)
+This page is synchronized from the post: ['SCOT Tokens與STEEM的價格關聯'](https://steemit.com/@deanliu/scot-tokens-steem)

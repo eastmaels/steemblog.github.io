@@ -15,7 +15,7 @@ tags:
 - crypto
 - money
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmZaRgJEerSxwNftDR5VHxrbMtWw37qepEDMUGZWQw7bHy/crypto-3569795_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmZaRgJEerSxwNftDR5VHxrbMtWw37qepEDMUGZWQw7bHy/crypto-3569795_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -80,4 +80,4 @@ OK，假設建立完畢，後續推論都將基於這些假設。那麼，關鍵
 
 - - -
 
-This page is synchronized from the post: [設想全面接受Crypto作為Money的年代](https://steemit.com/@deanliu/crypto-money)
+This page is synchronized from the post: ['設想全面接受Crypto作為Money的年代'](https://steemit.com/@deanliu/crypto-money)
