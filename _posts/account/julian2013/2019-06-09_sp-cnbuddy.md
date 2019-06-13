@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - steem
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmbmTSiKF9JCarF8fPvvkRxNryZUuRtSZg751FiBkZ4qLH
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbmTSiKF9JCarF8fPvvkRxNryZUuRtSZg751FiBkZ4qLH'
 sidebar:
     right:
         sticky: true
@@ -45,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [租借SP，参加cnbuddy 优质大股东计划](https://steemit.com/@julian2013/sp-cnbuddy)
+This page is synchronized from the post: ['租借SP，参加cnbuddy 优质大股东计划'](https://steemit.com/@julian2013/sp-cnbuddy)
