@@ -15,7 +15,7 @@ tags:
 - crypto
 - cn
 - blog
-thumbnail: https://cdn.steemitimages.com/DQmUycRnqi1BRxZMtVv3mfPMfr2AxLw3y9ktFAWYfdXanYj/Snipaste_2019-06-09_22-42-46.png
+thumbnail: 'https://cdn.steemitimages.com/DQmUycRnqi1BRxZMtVv3mfPMfr2AxLw3y9ktFAWYfdXanYj/Snipaste_2019-06-09_22-42-46.png'
 sidebar:
     right:
         sticky: true
@@ -44,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [购入了一些SCT来Staked](https://steemit.com/@jianan/sct-staked)
+This page is synchronized from the post: ['购入了一些SCT来Staked'](https://steemit.com/@jianan/sct-staked)

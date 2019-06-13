@@ -15,7 +15,7 @@ tags:
 - cn
 - crypto
 - partiko
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/a0c9ca4fd0ed96f6bf79e056b8f0a866ca799220.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/a0c9ca4fd0ed96f6bf79e056b8f0a866ca799220.jpg'
 sidebar:
     right:
         sticky: true
@@ -52,4 +52,4 @@ Posted using [Partiko iOS](https://partiko.app/referral/jianan)
 
 - - -
 
-This page is synchronized from the post: [Staking Economy火热起来的一些看法](https://steemit.com/@jianan/staking-economy-zlrmpbpz)
+This page is synchronized from the post: ['Staking Economy火热起来的一些看法'](https://steemit.com/@jianan/staking-economy-zlrmpbpz)
