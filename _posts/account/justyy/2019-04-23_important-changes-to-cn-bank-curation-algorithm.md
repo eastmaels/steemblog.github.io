@@ -73,4 +73,4 @@ Join cnsteem Discord channel: https://discord.gg/SnNaaYS
 
 - - -
 
-This page is synchronized from the post: [Important Changes to CN Bank Curation Algorithm](https://steemit.com/@justyy/important-changes-to-cn-bank-curation-algorithm)
+This page is synchronized from the post: ['Important Changes to CN Bank Curation Algorithm'](https://steemit.com/@justyy/important-changes-to-cn-bank-curation-algorithm)

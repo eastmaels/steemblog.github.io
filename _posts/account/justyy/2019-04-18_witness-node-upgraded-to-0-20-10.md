@@ -15,7 +15,7 @@ tags:
 - witness-update
 - busy
 - steemit
-thumbnail: https://cdn.steemitimages.com/DQmfThXh7gagsffajM8L25Zm8iaj2TfyYs6SFPSupjRVYhX/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmfThXh7gagsffajM8L25Zm8iaj2TfyYs6SFPSupjRVYhX/image.png'
 sidebar:
     right:
         sticky: true
@@ -47,4 +47,4 @@ Thank you!
 
 - - -
 
-This page is synchronized from the post: [Witness Node Upgraded to 0.20.10](https://steemit.com/@justyy/witness-node-upgraded-to-0-20-10)
+This page is synchronized from the post: ['Witness Node Upgraded to 0.20.10'](https://steemit.com/@justyy/witness-node-upgraded-to-0-20-10)

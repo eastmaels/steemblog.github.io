@@ -14,7 +14,7 @@ tags:
 - funny
 - esteem
 - partiko
-thumbnail: https://ipfs.busy.org/ipfs/QmRmt5THoJvBKt7N6TG2ZF8MwPJPVhM7QvwDQd1Qgs3HJP
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRmt5THoJvBKt7N6TG2ZF8MwPJPVhM7QvwDQd1Qgs3HJP'
 sidebar:
     right:
         sticky: true
@@ -33,4 +33,4 @@ LOL
 
 - - -
 
-This page is synchronized from the post: [Find this a tiny bit amusing... ](https://steemit.com/@justyy/find-this-a-tiny-bit-amusing)
+This page is synchronized from the post: ['Find this a tiny bit amusing... '](https://steemit.com/@justyy/find-this-a-tiny-bit-amusing)

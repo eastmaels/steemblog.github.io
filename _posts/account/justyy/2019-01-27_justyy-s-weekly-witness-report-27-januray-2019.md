@@ -15,7 +15,7 @@ tags:
 - busy
 - witness
 - witness-report
-thumbnail: https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif
+thumbnail: 'https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif'
 sidebar:
     right:
         sticky: true
@@ -146,4 +146,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [@justyy''s Weekly Witness Report - 27/Januray/2019](https://steemit.com/@justyy/justyy-s-weekly-witness-report-27-januray-2019)
+This page is synchronized from the post: ['@justyy''s Weekly Witness Report - 27/Januray/2019'](https://steemit.com/@justyy/justyy-s-weekly-witness-report-27-januray-2019)

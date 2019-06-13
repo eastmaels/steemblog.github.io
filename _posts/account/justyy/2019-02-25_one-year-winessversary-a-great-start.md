@@ -15,7 +15,7 @@ tags:
 - busy
 - steem-witness
 - witness
-thumbnail: https://ipfs.busy.org/ipfs/QmYDP1yN7Wo2fujSyBbzXskiHczscas8c9utDrQTqPCgbk
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYDP1yN7Wo2fujSyBbzXskiHczscas8c9utDrQTqPCgbk'
 sidebar:
     right:
         sticky: true
@@ -54,4 +54,4 @@ If you believe what I am doing, please consider a spare vote voting me [here](ht
 
 - - -
 
-This page is synchronized from the post: [One Year Witnessversary - A Great Start!](https://steemit.com/@justyy/one-year-winessversary-a-great-start)
+This page is synchronized from the post: ['One Year Witnessversary - A Great Start!'](https://steemit.com/@justyy/one-year-winessversary-a-great-start)

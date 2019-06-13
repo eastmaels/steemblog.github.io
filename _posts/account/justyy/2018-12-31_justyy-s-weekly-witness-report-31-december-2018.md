@@ -15,7 +15,7 @@ tags:
 - busy
 - witness
 - witness-report
-thumbnail: https://justyy.com/wp-content/uploads/2018/08/justyy-on-beach.jpg
+thumbnail: 'https://justyy.com/wp-content/uploads/2018/08/justyy-on-beach.jpg'
 sidebar:
     right:
         sticky: true
@@ -136,4 +136,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Happy New Year! @justyy ''s Weekly Witness Report - 31/December/2018](https://steemit.com/@justyy/justyy-s-weekly-witness-report-31-december-2018)
+This page is synchronized from the post: ['Happy New Year! @justyy ''s Weekly Witness Report - 31/December/2018'](https://steemit.com/@justyy/justyy-s-weekly-witness-report-31-december-2018)

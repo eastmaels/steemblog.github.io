@@ -15,7 +15,7 @@ tags:
 - cryptocurrency
 - curation
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmW8GSi4iH7V2HD1LScQqKLQ25ZGgecHjYMARSkcLktb9r
+thumbnail: 'https://ipfs.busy.org/ipfs/QmW8GSi4iH7V2HD1LScQqKLQ25ZGgecHjYMARSkcLktb9r'
 sidebar:
     right:
         sticky: true
@@ -34,4 +34,4 @@ Register [Coinbase](https://justyy.com/out/coinbase) now!
 
 - - -
 
-This page is synchronized from the post: [PayPal withdrawals now available on Coinbase!](https://steemit.com/@justyy/paypal-withdrawals-now-available-on-coinbase)
+This page is synchronized from the post: ['PayPal withdrawals now available on Coinbase!'](https://steemit.com/@justyy/paypal-withdrawals-now-available-on-coinbase)

@@ -15,7 +15,7 @@ tags:
 - programming
 - steemtools
 - steemapp
-thumbnail: https://ipfs.busy.org/ipfs/QmW3afWbpcPnSKRCUEQntjVjAZCcp5dr5nApcwUFa4kiLU
+thumbnail: 'https://ipfs.busy.org/ipfs/QmW3afWbpcPnSKRCUEQntjVjAZCcp5dr5nApcwUFa4kiLU'
 sidebar:
     right:
         sticky: true
@@ -65,4 +65,4 @@ Join cnsteem Discord channel: https://discord.gg/SnNaaYS
 
 - - -
 
-This page is synchronized from the post: [Steem Wallet Tool Upgrade - You can Specify counter and interval!](https://steemit.com/@justyy/steem-wallet-tool-upgrade-you-can-specify-counter-and-interval)
+This page is synchronized from the post: ['Steem Wallet Tool Upgrade - You can Specify counter and interval!'](https://steemit.com/@justyy/steem-wallet-tool-upgrade-you-can-specify-counter-and-interval)

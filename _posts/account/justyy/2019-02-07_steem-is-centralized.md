@@ -13,7 +13,7 @@ tags:
 - witness-category
 - steem
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmcutmuExiGoUa6ofXf1k4qQJkGagqR4VccBWTYu95xaKH
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcutmuExiGoUa6ofXf1k4qQJkGagqR4VccBWTYu95xaKH'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ Support me and my work: [my witness campagin](https://steemit.com/witness-catego
 
 - - -
 
-This page is synchronized from the post: [Steem Is Centralized?!](https://steemit.com/@justyy/steem-is-centralized)
+This page is synchronized from the post: ['Steem Is Centralized?!'](https://steemit.com/@justyy/steem-is-centralized)

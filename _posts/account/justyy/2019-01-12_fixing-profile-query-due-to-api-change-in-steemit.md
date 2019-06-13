@@ -15,7 +15,7 @@ tags:
 - programming
 - steemsql
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmZJjjzcD8S6ESknbwXL51BMBxgjvDxK8rpLrMiQJ4SgjT
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZJjjzcD8S6ESknbwXL51BMBxgjvDxK8rpLrMiQJ4SgjT'
 sidebar:
     right:
         sticky: true
@@ -102,4 +102,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Fixing Profile Query due to API Change in SteemIt](https://steemit.com/@justyy/fixing-profile-query-due-to-api-change-in-steemit)
+This page is synchronized from the post: ['Fixing Profile Query due to API Change in SteemIt'](https://steemit.com/@justyy/fixing-profile-query-due-to-api-change-in-steemit)

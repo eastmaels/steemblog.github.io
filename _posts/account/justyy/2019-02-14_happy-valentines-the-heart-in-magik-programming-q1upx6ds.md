@@ -14,7 +14,7 @@ tags:
 - valentines
 - magik
 - partiko
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/justyy-happy-valentines-the-heart-in-magik-programming-q1upx6ds-1550148384854.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/justyy-happy-valentines-the-heart-in-magik-programming-q1upx6ds-1550148384854.jpg'
 sidebar:
     right:
         sticky: true
@@ -39,4 +39,4 @@ Posted using [Partiko iOS](https://steemit.com/@partiko-ios)
 
 - - -
 
-This page is synchronized from the post: [Happy Valentines - the heart in Magik programming!](https://steemit.com/@justyy/happy-valentines-the-heart-in-magik-programming-q1upx6ds)
+This page is synchronized from the post: ['Happy Valentines - the heart in Magik programming!'](https://steemit.com/@justyy/happy-valentines-the-heart-in-magik-programming-q1upx6ds)

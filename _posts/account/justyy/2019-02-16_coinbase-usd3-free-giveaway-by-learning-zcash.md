@@ -15,7 +15,7 @@ tags:
 - zcash
 - cryptocurrency
 - giveaway
-thumbnail: https://www.draglet.com/wp-content/uploads/2017/11/What-is-Zcash.png
+thumbnail: 'https://www.draglet.com/wp-content/uploads/2017/11/What-is-Zcash.png'
 sidebar:
     right:
         sticky: true
@@ -42,4 +42,4 @@ After each video (1-2 minute each), there is a question, which should be fairly 
 
 - - -
 
-This page is synchronized from the post: [Coinbase $3 Free Giveaway by Learning ZCASH!](https://steemit.com/@justyy/coinbase-usd3-free-giveaway-by-learning-zcash)
+This page is synchronized from the post: ['Coinbase $3 Free Giveaway by Learning ZCASH!'](https://steemit.com/@justyy/coinbase-usd3-free-giveaway-by-learning-zcash)

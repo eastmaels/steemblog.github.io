@@ -15,7 +15,7 @@ tags:
 - hacktoberfest
 - coding
 - photo
-thumbnail: https://steemitimages.com/640x0/https://ipfs.busy.org/ipfs/QmVw6PL18gqexdECfahXQTP2ZfXhRVyBNensQuq3mViGmK
+thumbnail: 'https://steemitimages.com/640x0/https://ipfs.busy.org/ipfs/QmVw6PL18gqexdECfahXQTP2ZfXhRVyBNensQuq3mViGmK'
 sidebar:
     right:
         sticky: true
@@ -72,4 +72,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Received the Gift from Digital Ocean - The Hacktoberfest T-shirt and Gadgets](https://steemit.com/@justyy/received-the-gift-from-digital-ocean-the-hacktoberfest-t-shirt-and-gadgets)
+This page is synchronized from the post: ['Received the Gift from Digital Ocean - The Hacktoberfest T-shirt and Gadgets'](https://steemit.com/@justyy/received-the-gift-from-digital-ocean-the-hacktoberfest-t-shirt-and-gadgets)

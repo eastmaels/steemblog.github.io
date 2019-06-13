@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - steemtools
-thumbnail: https://ipfs.busy.org/ipfs/QmbbeGRoTMbTp3YbZFctKGrmNXmGJSat2rH9GxzDgoVZUu
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbbeGRoTMbTp3YbZFctKGrmNXmGJSat2rH9GxzDgoVZUu'
 sidebar:
     right:
         sticky: true
@@ -65,4 +65,4 @@ Support me and my work: [my witness campagin](https://steemit.com/witness-catego
 
 - - -
 
-This page is synchronized from the post: [The Steem Conversations Viewer!](https://steemit.com/@justyy/the-steem-conversations-viewer)
+This page is synchronized from the post: ['The Steem Conversations Viewer!'](https://steemit.com/@justyy/the-steem-conversations-viewer)

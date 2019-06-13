@@ -12,7 +12,7 @@ categories:
 tags:
 - busy
 - partiko
-thumbnail: https://ipfs.busy.org/ipfs/QmWZaTUuA3uy6modsss1TwdDxhN8BXQpxorBngRYQaguUz
+thumbnail: 'https://ipfs.busy.org/ipfs/QmWZaTUuA3uy6modsss1TwdDxhN8BXQpxorBngRYQaguUz'
 sidebar:
     right:
         sticky: true
@@ -28,4 +28,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [First time using Partiko](https://steemit.com/@justyy/first-time-using-partiko)
+This page is synchronized from the post: ['First time using Partiko'](https://steemit.com/@justyy/first-time-using-partiko)

@@ -15,7 +15,7 @@ tags:
 - photography
 - vintage-computers
 - history
-thumbnail: https://justyy.com/wp-content/uploads/2018/12/centre-computing-history.gif
+thumbnail: 'https://justyy.com/wp-content/uploads/2018/12/centre-computing-history.gif'
 sidebar:
     right:
         sticky: true
@@ -55,4 +55,4 @@ More photos please visit my Chinese post: https://justyy.com/archives/6695
 
 - - -
 
-This page is synchronized from the post: [Some Photos Taken at Computing History Museum](https://steemit.com/@justyy/some-photos-taken-at-computing-history-museum)
+This page is synchronized from the post: ['Some Photos Taken at Computing History Museum'](https://steemit.com/@justyy/some-photos-taken-at-computing-history-museum)

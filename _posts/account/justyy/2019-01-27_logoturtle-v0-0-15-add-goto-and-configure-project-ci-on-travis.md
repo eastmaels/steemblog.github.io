@@ -15,7 +15,7 @@ tags:
 - steemstem
 - busy
 - development
-thumbnail: https://ipfs.busy.org/ipfs/QmU5XJ5RsVchdxifDgw3WqvsoqoCmuHu9aKnWjjpEkibf8
+thumbnail: 'https://ipfs.busy.org/ipfs/QmU5XJ5RsVchdxifDgw3WqvsoqoCmuHu9aKnWjjpEkibf8'
 sidebar:
     right:
         sticky: true
@@ -67,4 +67,4 @@ Some of my contributions: **[SteemIt Tools, Bots, APIs and Tutorial](https://hel
 
 - - -
 
-This page is synchronized from the post: [LogoTurtle v0.0.15: Add GOTO and Configure Project CI on Travis](https://steemit.com/@justyy/logoturtle-v0-0-15-add-goto-and-configure-project-ci-on-travis)
+This page is synchronized from the post: ['LogoTurtle v0.0.15: Add GOTO and Configure Project CI on Travis'](https://steemit.com/@justyy/logoturtle-v0-0-15-add-goto-and-configure-project-ci-on-travis)

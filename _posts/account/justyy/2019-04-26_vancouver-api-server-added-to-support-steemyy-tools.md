@@ -15,7 +15,7 @@ tags:
 - steem-apis
 - busy
 - steem
-thumbnail: https://ipfs.busy.org/ipfs/QmWxpGdGn2UVakrQHCsnLvvaQTKC9hDofUw4Mhdr7DPnHv
+thumbnail: 'https://ipfs.busy.org/ipfs/QmWxpGdGn2UVakrQHCsnLvvaQTKC9hDofUw4Mhdr7DPnHv'
 sidebar:
     right:
         sticky: true
@@ -55,4 +55,4 @@ Join cnsteem Discord channel: https://discord.gg/SnNaaYS
 
 - - -
 
-This page is synchronized from the post: [Vancouver API Server Added to Support SteemYY Tools](https://steemit.com/@justyy/vancouver-api-server-added-to-support-steemyy-tools)
+This page is synchronized from the post: ['Vancouver API Server Added to Support SteemYY Tools'](https://steemit.com/@justyy/vancouver-api-server-added-to-support-steemyy-tools)

@@ -15,7 +15,7 @@ tags:
 - steem
 - steem-witness
 - busy
-thumbnail: https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif
+thumbnail: 'https://media.giphy.com/media/rdma0nDFZMR32/giphy.gif'
 sidebar:
     right:
         sticky: true
@@ -91,4 +91,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Witness Update: Node Upgraded to 0.20.9!](https://steemit.com/@justyy/witness-update-node-upgraded-to-0-20-9)
+This page is synchronized from the post: ['Witness Update: Node Upgraded to 0.20.9!'](https://steemit.com/@justyy/witness-update-node-upgraded-to-0-20-9)

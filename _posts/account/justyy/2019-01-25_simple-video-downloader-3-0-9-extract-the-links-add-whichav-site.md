@@ -15,7 +15,7 @@ tags:
 - busy
 - witness-category
 - programming
-thumbnail: https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw
+thumbnail: 'https://ipfs.busy.org/ipfs/QmS4Zzmp1BTqPtP4i6LYYTApFFGzVQCCeLzJckVTTaoutw'
 sidebar:
     right:
         sticky: true
@@ -95,4 +95,4 @@ Thank you! **Some of My Contributions: [SteemYY.com - SteemIt Tutorials, Robots,
 
 - - -
 
-This page is synchronized from the post: [Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site](https://steemit.com/@justyy/simple-video-downloader-3-0-9-extract-the-links-add-whichav-site)
+This page is synchronized from the post: ['Simple Video Downloader 3.0.9 - Extract the Links + Add WhichAV Site'](https://steemit.com/@justyy/simple-video-downloader-3-0-9-extract-the-links-add-whichav-site)
