@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - sct-ubi
 - whalepower
-thumbnail: https://ipfs.busy.org/ipfs/QmU7MbTUGQu3kNyK9TrNFDA1yMExnPcSJ2TpSkbrJqYfQG
+thumbnail: 'https://ipfs.busy.org/ipfs/QmU7MbTUGQu3kNyK9TrNFDA1yMExnPcSJ2TpSkbrJqYfQG'
 sidebar:
     right:
         sticky: true
@@ -80,4 +80,4 @@ https://coin-on.com/steem/aaa/orderbook
 
 - - -
 
-This page is synchronized from the post: [SCT/AAA实用链接](https://steemit.com/@ericet/sctaaa-tywmvu7a7j)
+This page is synchronized from the post: ['SCT/AAA实用链接'](https://steemit.com/@ericet/sctaaa-tywmvu7a7j)

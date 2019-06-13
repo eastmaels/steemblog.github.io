@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - sct-ubi
 - whalepower
-thumbnail: https://ipfs.busy.org/ipfs/QmdSNH2ztKw3q5fQbmtamtKwptUfyprEHp24nWYpCdtg5g
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdSNH2ztKw3q5fQbmtamtKwptUfyprEHp24nWYpCdtg5g'
 sidebar:
     right:
         sticky: true
@@ -48,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [挖矿币EMFOUR一周收益](https://steemit.com/@ericet/emfour-cxeatxurpr)
+This page is synchronized from the post: ['挖矿币EMFOUR一周收益'](https://steemit.com/@ericet/emfour-cxeatxurpr)

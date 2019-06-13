@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - sct-ubi
 - busy
-thumbnail: https://steemitimages.com/0x0/https://files.steempeak.com/file/steempeak/steempeak/6J4aEEZI-release_cover.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://files.steempeak.com/file/steempeak/steempeak/6J4aEEZI-release_cover.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +68,4 @@ steem用户可以关联SNAX的钱包按照帖子的关注度获取SNAX币。现�
 
 - - -
 
-This page is synchronized from the post: [SteemPeak的新更新](https://steemit.com/@ericet/steempeak-psitubhspb)
+This page is synchronized from the post: ['SteemPeak的新更新'](https://steemit.com/@ericet/steempeak-psitubhspb)

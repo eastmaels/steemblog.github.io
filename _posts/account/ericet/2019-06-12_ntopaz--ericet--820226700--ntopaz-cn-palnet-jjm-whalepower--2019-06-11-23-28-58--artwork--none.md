@@ -15,7 +15,7 @@ tags:
 - palnet
 - jjm
 - whalepower
-thumbnail: https://artisteem.io/media/bf625b03-a1cd-4cfa-adf1-97fd2f92e335
+thumbnail: 'https://artisteem.io/media/bf625b03-a1cd-4cfa-adf1-97fd2f92e335'
 sidebar:
     right:
         sticky: true
@@ -36,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Handmade Little Car Purse/手工小汽车包包](https://steemit.com/@ericet/ntopaz--ericet--820226700--ntopaz-cn-palnet-jjm-whalepower--2019-06-11-23-28-58--artwork--none)
+This page is synchronized from the post: ['Handmade Little Car Purse/手工小汽车包包'](https://steemit.com/@ericet/ntopaz--ericet--820226700--ntopaz-cn-palnet-jjm-whalepower--2019-06-11-23-28-58--artwork--none)

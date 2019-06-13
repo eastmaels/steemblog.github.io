@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - sct-ubi
 - whalepower
-thumbnail: https://steemitimages.com/640x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/04/nbc.jpg
+thumbnail: 'https://steemitimages.com/640x0/http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/04/nbc.jpg'
 sidebar:
     right:
         sticky: true
@@ -108,4 +108,4 @@ NBC是@team-cn在steem-engine上发的一款代币。目的是取代对SBI（Ste
 
 - - -
 
-This page is synchronized from the post: [【Steem-Engine代币系列】NBC 新手币](https://steemit.com/@ericet/steem-enginenbc-8gramkt1en)
+This page is synchronized from the post: ['【Steem-Engine代币系列】NBC 新手币'](https://steemit.com/@ericet/steem-enginenbc-8gramkt1en)

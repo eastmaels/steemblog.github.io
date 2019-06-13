@@ -15,7 +15,7 @@ tags:
 - sct-cn
 - sct-ubi
 - whalepower
-thumbnail: https://ipfs.busy.org/ipfs/QmdPYNAzfvUbn7P1kaNKxnbTGVPd8b986XmGFUFCXH71jw
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdPYNAzfvUbn7P1kaNKxnbTGVPd8b986XmGFUFCXH71jw'
 sidebar:
     right:
         sticky: true
@@ -69,4 +69,4 @@ block explorer解决了这个问题，比如你想查看我的账号的开放订
 
 - - -
 
-This page is synchronized from the post: [Steem Engine数据查看利器：Steem Engine Block Explorer](https://steemit.com/@ericet/steemenginesteemengineblockexplorer-5a13reqn2k)
+This page is synchronized from the post: ['Steem Engine数据查看利器：Steem Engine Block Explorer'](https://steemit.com/@ericet/steemenginesteemengineblockexplorer-5a13reqn2k)
