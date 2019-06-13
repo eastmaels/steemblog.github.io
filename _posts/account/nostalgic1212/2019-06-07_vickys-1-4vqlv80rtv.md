@@ -15,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/01/10/5c36febe1f4d1.png
+thumbnail: 'https://i.loli.net/2019/01/10/5c36febe1f4d1.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky''s电影/电视剧推荐】重口大尺度血腥动画短片：《颤抖的真相》-1](https://steemit.com/@nostalgic1212/vickys-1-4vqlv80rtv)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】重口大尺度血腥动画短片：《颤抖的真相》-1'](https://steemit.com/@nostalgic1212/vickys-1-4vqlv80rtv)

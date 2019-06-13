@@ -15,7 +15,7 @@ tags:
 - ocd-resteem
 - cn-movie
 - sct-cn
-thumbnail: https://i.loli.net/2019/06/08/5cfb257a751e675534.png
+thumbnail: 'https://i.loli.net/2019/06/08/5cfb257a751e675534.png'
 sidebar:
     right:
         sticky: true
@@ -62,4 +62,4 @@ If you wanna to watch a romantic comedy, I think the movie ***Always Be My Maybe
 
 - - -
 
-This page is synchronized from the post: [【AAA】 两大无猜 우리 사이 어쩌면 Always Be My Maybe (2019)](https://steemit.com/@nostalgic1212/aaa-always-be-my-maybe-2019)
+This page is synchronized from the post: ['【AAA】 两大无猜 우리 사이 어쩌면 Always Be My Maybe (2019)'](https://steemit.com/@nostalgic1212/aaa-always-be-my-maybe-2019)

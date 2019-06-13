@@ -15,7 +15,7 @@ tags:
 - ocd-resteem
 - cn-movie
 - sct-cn
-thumbnail: https://i.loli.net/2019/06/10/5cfe0a599cb8431087.png
+thumbnail: 'https://i.loli.net/2019/06/10/5cfe0a599cb8431087.png'
 sidebar:
     right:
         sticky: true
@@ -63,4 +63,4 @@ This life is our first life, but also the only life. If it is possible, I hope m
 
 - - -
 
-This page is synchronized from the post: [【AAA】今生是第一次 이번 생은 처음이라 This Life Is Our First Life （2017）](https://steemit.com/@nostalgic1212/aaa-this-life-is-our-first-life-2017)
+This page is synchronized from the post: ['【AAA】今生是第一次 이번 생은 처음이라 This Life Is Our First Life （2017）'](https://steemit.com/@nostalgic1212/aaa-this-life-is-our-first-life-2017)
