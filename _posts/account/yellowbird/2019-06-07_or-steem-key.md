@@ -15,7 +15,7 @@ tags:
 - cn-reader
 - steem
 - analyse
-thumbnail: https://cdn.steemitimages.com/DQmbLBok64JVmqLe2WZ8oXk1siWFbg2NJFaxku69L229pAN/01.png
+thumbnail: 'https://cdn.steemitimages.com/DQmbLBok64JVmqLe2WZ8oXk1siWFbg2NJFaxku69L229pAN/01.png'
 sidebar:
     right:
         sticky: true
@@ -104,4 +104,4 @@ STEEM、YOYO、PST等5月份有30%-50%的涨幅，而KEY确是独立下跌行情
 
 - - -
 
-This page is synchronized from the post: [区块链内容社区分析 | 五月，STEEM稳步小涨，KEY下跌回调](https://steemit.com/@yellowbird/or-steem-key)
+This page is synchronized from the post: ['区块链内容社区分析 | 五月，STEEM稳步小涨，KEY下跌回调'](https://steemit.com/@yellowbird/or-steem-key)
