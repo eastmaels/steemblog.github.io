@@ -12,7 +12,7 @@ categories:
 tags:
 - cn
 - deantt
-- jjm
+- sct
 - palnet
 - busy
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/e4db995971eab4396a97d47ba6a59a7edaed7723.jpg'
