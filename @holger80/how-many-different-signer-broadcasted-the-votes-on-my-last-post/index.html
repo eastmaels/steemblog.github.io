@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>How many different signer broadcasted the votes on my last post? - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Results">
+        <span class="has-mr-6">1</span>
+        <span>Results</span>
+        </a></li><li>
+        <a class="is-flex" href="#Conclusion">
+        <span class="has-mr-6">2</span>
+        <span>Conclusion</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/@holger80/None" alt="How many different signer broadcasted the votes on my last post?">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-08-31T12:42:18.000Z">2018-08-31</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/tutorial/">tutorial</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 681 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                How many different signer broadcasted the votes on my last post?
+            
+        </h1>
+        <div class="content">
+            <p>After reading the last <a href="https://steemit.com/utopian-io/@crokkon/what-is-the-reward-pool-share-of-vote-sellers-bid-bots-and-autovotes-1535479520399" target="_blank" rel="noopener">analysis post</a> from @crokkon, I wanted to know how many different signer broadcasted the votes for my last post. </p>
+<p>The provided script checks the signature of all broadcasted votes. This is done by the following steps:</p>
+<ol>
+<li>extracting the vote timestamp</li>
+<li>finding the blocknumber with <code>get_estimated_block_num</code></li>
+<li>extracting the signature of the vote operation that belongs to the vote</li>
+<li>extract the public key from the signature  by <code>Signed_Transaction</code> using <code>verify</code></li>
+<li>using a steem rpc-call to get the account name</li>
+<li>compare the signer account name with the voter account name</li>
+</ol>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">from beem.wallet import Wallet</span><br><span class="line">from beem.block import Block</span><br><span class="line">from beem.blockchain import Blockchain</span><br><span class="line">from beem.comment import Comment</span><br><span class="line">from beem import Steem</span><br><span class="line">from beemgraphenebase.base58 import Base58</span><br><span class="line">from beembase.signedtransactions import Signed_Transaction</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line"></span><br><span class="line">    stm = Steem()</span><br><span class="line">    wallet = Wallet(steem_instance=stm)</span><br><span class="line">    b = Blockchain(steem_instance=stm)</span><br><span class="line"></span><br><span class="line">    authorperm = &quot;@holger80/holger80-s-curation-league-week-7&quot;</span><br><span class="line">    c = Comment(authorperm)</span><br><span class="line">    </span><br><span class="line">    new_votes = []</span><br><span class="line">    voter = {}</span><br><span class="line">    signer = {}</span><br><span class="line">    cnt = 0</span><br><span class="line">    current_block_num = b.get_current_block_num()</span><br><span class="line">    for v in c[&quot;active_votes&quot;]:</span><br><span class="line">        cnt += 1</span><br><span class="line">        print(&quot;%d / %d&quot; % (cnt, len(c[&quot;active_votes&quot;])))</span><br><span class="line">        block_num = b.get_estimated_block_num(v[&quot;time&quot;])</span><br><span class="line">        transaction = None</span><br><span class="line">        block_search_list = [0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5]                       </span><br><span class="line">        block_cnt = 0</span><br><span class="line">        while transaction is None and block_cnt &lt; len(block_search_list):</span><br><span class="line">            if block_num + block_search_list[block_cnt] &gt; current_block_num:</span><br><span class="line">                block_cnt += 1</span><br><span class="line">                continue</span><br><span class="line">            block = Block(block_num + block_search_list[block_cnt], steem_instance=stm)</span><br><span class="line">            for tt in block.transactions:</span><br><span class="line">                for op in tt[&quot;operations&quot;]:</span><br><span class="line">                    if isinstance(op, dict) and op[&quot;type&quot;][:4] == &quot;vote&quot;:</span><br><span class="line">                        if op[&quot;value&quot;][&quot;voter&quot;] == v[&quot;voter&quot;]:</span><br><span class="line">                            transaction = tt</span><br><span class="line">                    elif isinstance(op, list) and len(op) &gt; 1 and op[0][:4] == &quot;vote&quot;:</span><br><span class="line">                        if op[1][&quot;voter&quot;] == v[&quot;voter&quot;]:</span><br><span class="line">                            transaction = tt</span><br><span class="line">            block_cnt += 1</span><br><span class="line">        key_accounts = []</span><br><span class="line">        if transaction is not None:</span><br><span class="line">            signed_tx = Signed_Transaction(transaction)</span><br><span class="line">            public_keys = []</span><br><span class="line">            for key in signed_tx.verify(chain=stm.chain_params, recover_parameter=True):</span><br><span class="line">                public_keys.append(format(Base58(key, prefix=stm.prefix), stm.prefix))                            </span><br><span class="line">            </span><br><span class="line">            for key in public_keys:</span><br><span class="line">                pubkey_account = wallet.getAccountFromPublicKey(key)</span><br><span class="line">                if pubkey_account is not None:</span><br><span class="line">                    key_accounts.append(pubkey_account)</span><br><span class="line"></span><br><span class="line">        if len(key_accounts) &gt; 0:</span><br><span class="line">            if key_accounts[0] in signer:</span><br><span class="line">                signer[key_accounts[0]].append(v)</span><br><span class="line">            else:</span><br><span class="line">                signer[key_accounts[0]] = [v]</span><br><span class="line">    </span><br><span class="line">    signer_list = []</span><br><span class="line">    signer_is_voter = 0</span><br><span class="line">    signers_not_voters =  []</span><br><span class="line">    for s in signer:</span><br><span class="line">        rshares = 0</span><br><span class="line">        for v in signer[s]:</span><br><span class="line">            rshares += v[&quot;rshares&quot;]</span><br><span class="line">        signer_list.append({&quot;signer&quot;: s, &quot;votes&quot;: len(signer[s]), &quot;rshares&quot;: rshares})</span><br><span class="line">        if len(signer[s]) == 1 and s == signer[s][0][&quot;voter&quot;]:</span><br><span class="line">            signer_is_voter += 1</span><br><span class="line">        elif len(signer[s]) == 1:</span><br><span class="line">            signers_not_voters.append({&quot;signer&quot;: s, &quot;voter&quot;: signer[s][0][&quot;voter&quot;]})</span><br><span class="line">            </span><br><span class="line">    </span><br><span class="line">    sorted_signer_list = sorted(signer_list, key=lambda x: x[&quot;votes&quot;], reverse=True)</span><br><span class="line">    </span><br><span class="line">    print(&quot;%d signer broadcasted votes for %d accounts&quot; % (len(signer), len(c[&quot;active_votes&quot;])))</span><br><span class="line">    print(&quot;| # | signer | votes | SBD | votes / n_all_votes&quot;)</span><br><span class="line">    print(&quot;| --- | --- | --- | --- | --- |&quot;)</span><br><span class="line">    rank = 0</span><br><span class="line">    for s in sorted_signer_list[:10]:</span><br><span class="line">        rank += 1</span><br><span class="line">        if s[&quot;votes&quot;] &gt; 1:</span><br><span class="line">            print(&quot;| %d | %s | %d | %.2f | %.2f %% |&quot; % (rank, s[&quot;signer&quot;], s[&quot;votes&quot;], stm.rshares_to_sbd(s[&quot;rshares&quot;]), 100 * s[&quot;votes&quot;] / len(c[&quot;active_votes&quot;])))</span><br><span class="line">    print(&quot;| signer | voter |&quot;)</span><br><span class="line">    print(&quot;| --- | --- |&quot;)</span><br><span class="line">    for s in signers_not_voters:</span><br><span class="line">        print(&quot;| %s | %s |&quot; % (s[&quot;signer&quot;], s[&quot;voter&quot;]))</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>42 signer broadcasted votes of 60 different accounts</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>signer</th>
+<th>votes</th>
+<th>SBD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>steemauto</td>
+<td>11</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>2</td>
+<td>buildteam</td>
+<td>5</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>3</td>
+<td>steemconnect</td>
+<td>4</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>4</td>
+<td>steemdunk</td>
+<td>2</td>
+<td>0.15</td>
+</tr>
+</tbody>
+</table>
+<p>Additionally to the listed votes above, one account did sign the vote of a different account:</p>
+<table>
+<thead>
+<tr>
+<th>signer</th>
+<th>voter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>remindme.bot</td>
+<td>isnochys</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Around 20% of the votes are broadcasted from auto voting services as steemauto and steemdunk. 9 of the 60 voters did use a different dApp / interface to vote. One vote was signed by another account.</p>
+<p>By analysing the signatures of the broadcasted votes, the number of automatically casted votes can be estimated.</p>
+<p>If you want to try out the script, you have to do the following steps:</p>
+<ol>
+<li>install <a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a></li>
+<li>save the provided script in a file</li>
+<li>run it with <code>python filename.py</code> inside the python terminal</li>
+</ol>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/how-many-different-signer-broadcasted-the-votes-on-my-last-post" target="_blank" rel="noopener">&#x2018;How many different signer broadcasted the votes on my last post?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/tutorial/">tutorial</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/holger80-s-curation-league-week-8/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">holger80`s Curation League - week 8</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/holger80-s-curation-league-week-7/">
+                <span class="level-item">holger80`s Curation League - week 7</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

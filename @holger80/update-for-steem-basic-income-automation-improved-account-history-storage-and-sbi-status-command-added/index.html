@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Update for Steem Basic Income Automation - improved account history storage and sbi status command added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#Bug-fixes">
+        <span class="has-mr-6">2</span>
+        <span>Bug fixes</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-features">
+        <span class="has-mr-6">3</span>
+        <span>New features</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">4</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Several-improvements">
+        <span class="has-mr-6">4.1</span>
+        <span>Several improvements</span>
+        </a></li><li>
+        <a class="is-flex" href="#Change-table-structure">
+        <span class="has-mr-6">4.2</span>
+        <span>Change table structure</span>
+        </a></li><li>
+        <a class="is-flex" href="#Clean-up-code-and-remove-old-steembasicincome-ops-database-replaced-by-sbi-ops">
+        <span class="has-mr-6">4.3</span>
+        <span>Clean up code and remove old steembasicincome_ops database (replaced by sbi_ops)</span>
+        </a></li><li>
+        <a class="is-flex" href="#Remove-deprated-create-table-and-exists-table">
+        <span class="has-mr-6">4.4</span>
+        <span>Remove deprated create_table and exists_table</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Remove-unused-steembasicincome-ops-in-which-account-history-ops-were-stored-by-index">
+        <span class="has-mr-6">4.4.1</span>
+        <span>Remove unused steembasicincome_ops in which account history ops were stored by index</span>
+        </a></li></ul></li></ul></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">5</span>
+        <span>GitHub Account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmVhhf7x6ovMeN9qLV7HSPjNea7FM81rMB9Kkt7wu5sT9F/image.png" alt="Update for Steem Basic Income Automation - improved account history storage and sbi status command added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-22T23:27:00.000Z">2018-12-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 685 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Update for Steem Basic Income Automation - improved account history storage and sbi status command added
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmVhhf7x6ovMeN9qLV7HSPjNea7FM81rMB9Kkt7wu5sT9F/image.png" alt=""></p>
+<h2 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h2><p><a href="https://github.com/holgern/steembasicincome" target="_blank" rel="noopener">https://github.com/holgern/steembasicincome</a></p>
+<h2 id="Bug-fixes"><a href="#Bug-fixes" class="headerlink" title="Bug fixes"></a>Bug fixes</h2><p>I found out that the account history index is not reliable (<a href="https://steemit.com/steemdev/@holger80/by-carefull-with-account-history-index-it-is-not-reliable" target="_blank" rel="noopener">post</a>), so I had to change the database structure. I changed it from using the account index as a primary index to a combined index using block number, trx number, op in trx number and virtual operation count.</p>
+<p>The following example code shows how it works:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">start_block = 1000</span><br><span class="line">trx_in_block = 0</span><br><span class="line">op_in_trx  = 0</span><br><span class="line">virtual_op = 0</span><br><span class="line"></span><br><span class="line">last_block = 0</span><br><span class="line">last_trx = 0</span><br><span class="line">for op in account.history(start=start_block - 3, use_block_num=True):</span><br><span class="line">    if op[&quot;block&quot;] &lt; start_block:</span><br><span class="line">        last_block = op[&quot;block&quot;]</span><br><span class="line">        continue</span><br><span class="line">    elif op[&quot;block&quot;] == start_block:</span><br><span class="line">        if op[&quot;virtual_op&quot;] == 0:</span><br><span class="line">            if op[&quot;trx_in_block&quot;] &lt; trx_in_block:</span><br><span class="line">                last_trx = op[&quot;trx_in_block&quot;]</span><br><span class="line">                continue</span><br><span class="line">            if op[&quot;op_in_trx&quot;] &lt;= op_in_trx and (trx_in_block != last_trx):</span><br><span class="line">                continue</span><br><span class="line">        else:</span><br><span class="line">            if op[&quot;virtual_op&quot;] &lt;= virtual_op and (trx_in_block == last_trx):</span><br><span class="line">                continue</span><br><span class="line">    start_block = op[&quot;block&quot;]</span><br><span class="line">    virtual_op = op[&quot;virtual_op&quot;]</span><br><span class="line">    trx_in_block = op[&quot;trx_in_block&quot;]</span><br><span class="line"></span><br><span class="line">    if trx_in_block != last_trx or op[&quot;block&quot;] != last_block:</span><br><span class="line">        op_in_trx = op[&quot;op_in_trx&quot;]</span><br><span class="line">    else:</span><br><span class="line">        op_in_trx += 1</span><br><span class="line">    if virtual_op &gt; 0:</span><br><span class="line">        op_in_trx = 0</span><br><span class="line">        if trx_in_block &gt; 255:</span><br><span class="line">            trx_in_block = 0</span><br><span class="line"></span><br><span class="line">    # do something with the op dict</span><br><span class="line"></span><br><span class="line">    start_index += 1</span><br><span class="line">    last_block = op[&quot;block&quot;]</span><br><span class="line">    last_trx = trx_in_block</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The code uses now <code>history</code> with <code>use_block_num=True</code>. Instead of an unreliable index, the block number is used. As  a block has more than one transaction, it is also checked that:</p>
+<ul>
+<li>virtual_op is higher than the last op when it is a virtual operation (only inside the same block)</li>
+<li>trx_in_block is higher and also op_in_trx  is increased for non-virtual operations (only inside the same block)</li>
+</ul>
+<p>I found that the op_in_trx value in the dictionary is not always reliable, so I increased it by myself.</p>
+<p>I adapt the database structure so that <code>virtual_op</code>,<code>block</code>,<code>trx_in_block</code>,<code>op_in_trx</code> are the primary keys.</p>
+<h2 id="New-features"><a href="#New-features" class="headerlink" title="New features"></a>New features</h2><p>I added a way for user to receive information about their sbi unit state. As already all posts and comments are obtained in <code>sbi_stream_post_comment.py</code>, I additionally scan the comments body for <code>!sbi status</code>. When a sbi unit holder wrote a comment, containing this text, a sbi account will reply with some information regarding this user.<br>The sbi units are returned and the rshares balance. The next upvote is estimated and also returned.</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmaWueSnc67u7YpNKuqytztEBgr4MPLSbWpiwsGhkVreAS" alt="image.png"></p>
+<p>In this case, the next upvote value would be below the upvote threshold and the sbi user has to wait until his rshares balance is above the upvote threshold</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmbjfwNcDhXwjwEYAkhpizGwXK9kUKDnYm6soZVokJed9E" alt="image.png"></p>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="Several-improvements"><a href="#Several-improvements" class="headerlink" title="Several improvements"></a>Several improvements</h3><ul>
+<li><a href="https://github.com/holgern/steembasicincome/commit/8e98c97a2981075cea552bff07737decc54ce9fc" target="_blank" rel="noopener">commit 8e98c97</a></li>
+<li>Execution time is measured</li>
+<li>Store account history ops based on block, trx_num, op_num and virtual_op_num</li>
+</ul>
+<h3 id="Change-table-structure"><a href="#Change-table-structure" class="headerlink" title="Change table structure"></a>Change table structure</h3><ul>
+<li><a href="https://github.com/holgern/steembasicincome/commit/cc7faae4e64636cdd9330858488b81b002c8d04f" target="_blank" rel="noopener">commit cc7faae</a></li>
+</ul>
+<h3 id="Clean-up-code-and-remove-old-steembasicincome-ops-database-replaced-by-sbi-ops"><a href="#Clean-up-code-and-remove-old-steembasicincome-ops-database-replaced-by-sbi-ops" class="headerlink" title="Clean up code and remove old steembasicincome_ops database (replaced by sbi_ops)"></a>Clean up code and remove old steembasicincome_ops database (replaced by sbi_ops)</h3><ul>
+<li><a href="https://github.com/holgern/steembasicincome/commit/227c6251945f7d19e2839e794e51887477c536b1" target="_blank" rel="noopener">commit 227c625</a></li>
+</ul>
+<h3 id="Remove-deprated-create-table-and-exists-table"><a href="#Remove-deprated-create-table-and-exists-table" class="headerlink" title="Remove deprated create_table and exists_table"></a>Remove deprated create_table and exists_table</h3><ul>
+<li><a href="https://github.com/holgern/steembasicincome/commit/046bfe181c9357902299a87bb2935bb7ca86bd75" target="_blank" rel="noopener">commit 046bfe1</a></li>
+</ul>
+<h4 id="Remove-unused-steembasicincome-ops-in-which-account-history-ops-were-stored-by-index"><a href="#Remove-unused-steembasicincome-ops-in-which-account-history-ops-were-stored-by-index" class="headerlink" title="Remove unused steembasicincome_ops in which account history ops were stored by index"></a>Remove unused steembasicincome_ops in which account history ops were stored by index</h4><ul>
+<li><a href="https://github.com/holgern/steembasicincome/commit/13ef090842d82ca41a2d606b8fa78fadeeea7dd3" target="_blank" rel="noopener">commit 13ef090</a></li>
+</ul>
+<h2 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-steem-basic-income-automation-improved-account-history-storage-and-sbi-status-command-added" target="_blank" rel="noopener">&#x2018;Update for Steem Basic Income Automation - improved account history storage and sbi status command added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/steembasicincome/">steembasicincome</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/splinter-statistics-for-for-the-last-steemmonster-season/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Splinter statistics for for the last  steemmonster season</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemhistory-a-command-line-tool-for-storing-all-posts-and-images-from-an-account/">
+                <span class="level-item">steemhistory - a command line tool for storing all posts and images from an account</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

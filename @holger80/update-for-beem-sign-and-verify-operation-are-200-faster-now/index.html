@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>update for beem - sign and verify operation are 200 % faster now - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#secp256k1">
+        <span class="has-mr-6">1.1</span>
+        <span>secp256k1</span>
+        </a></li><li>
+        <a class="is-flex" href="#cryptography">
+        <span class="has-mr-6">1.2</span>
+        <span>cryptography</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Speed-improvements-by-cryptography">
+        <span class="has-mr-6">2</span>
+        <span>Speed improvements by cryptography</span>
+        </a></li><li>
+        <a class="is-flex" href="#Using-cryptography-to-speed-up-sign-and-verify-operation">
+        <span class="has-mr-6">3</span>
+        <span>Using cryptography to speed up sign and verify operation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#sign-message">
+        <span class="has-mr-6">3.1</span>
+        <span>sign_message</span>
+        </a></li><li>
+        <a class="is-flex" href="#recover-public-key">
+        <span class="has-mr-6">3.2</span>
+        <span>recover_public_key</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Golos-network">
+        <span class="has-mr-6">4</span>
+        <span>Golos network</span>
+        </a></li><li>
+        <a class="is-flex" href="#beem-can-be-used-in-Pydroid-3">
+        <span class="has-mr-6">5</span>
+        <span>beem can be used in Pydroid 3</span>
+        </a></li><li>
+        <a class="is-flex" href="#Changes">
+        <span class="has-mr-6">6</span>
+        <span>Changes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#ecdsa-improved-with-cryptography">
+        <span class="has-mr-6">6.1</span>
+        <span>ecdsa improved with cryptography</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">6.1.1</span>
+        <span>Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Blockchain">
+        <span class="has-mr-6">6.1.2</span>
+        <span>Blockchain</span>
+        </a></li><li>
+        <a class="is-flex" href="#Instance">
+        <span class="has-mr-6">6.1.3</span>
+        <span>Instance</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem">
+        <span class="has-mr-6">6.1.4</span>
+        <span>Steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Chains">
+        <span class="has-mr-6">6.1.5</span>
+        <span>Chains</span>
+        </a></li><li>
+        <a class="is-flex" href="#graphenebase-Account">
+        <span class="has-mr-6">6.1.6</span>
+        <span>graphenebase/Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#ecsdasig">
+        <span class="has-mr-6">6.1.7</span>
+        <span>ecsdasig</span>
+        </a></li><li>
+        <a class="is-flex" href="#benchmark-added">
+        <span class="has-mr-6">6.1.8</span>
+        <span>benchmark added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Examples">
+        <span class="has-mr-6">6.1.9</span>
+        <span>Examples</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests">
+        <span class="has-mr-6">6.1.10</span>
+        <span>Unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#add-test-golos">
+        <span class="has-mr-6">6.2</span>
+        <span>add test_golos</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-bug-in-transactionbuilder">
+        <span class="has-mr-6">6.3</span>
+        <span>Fix bug in transactionbuilder</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improve-module-loading">
+        <span class="has-mr-6">6.4</span>
+        <span>Improve module loading</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-unit-tests-by-cleaning-Wallet-keys">
+        <span class="has-mr-6">6.5</span>
+        <span>Fix unit tests by cleaning Wallet.keys</span>
+        </a></li><li>
+        <a class="is-flex" href="#Clear-Wallet-keys-when-setting-new-ones">
+        <span class="has-mr-6">6.6</span>
+        <span>Clear Wallet.keys when setting new ones</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-small-bug-in-ecdsasig">
+        <span class="has-mr-6">6.7</span>
+        <span>Fix small bug in ecdsasig</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1521209192/w2oscwc1kxueqfhrj1vg.jpg" alt="update for beem - sign and verify operation are 200 % faster now">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-03-16T14:22:21.000Z">2018-03-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1114 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                update for beem - sign and verify operation are 200 % faster now
+            
+        </h1>
+        <div class="content">
+            <p>beem is a python library for steem. It has now 316 unit tests and the current version is 0.19.17. You can find beem on <a href="https://github.com/holgern/beem" target="_blank" rel="noopener">github</a>. It can be installed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Whenever a transaction should be broadcasted to the steem blockchain, the content has to be signed  with the private key of the sender. It has to assure that the public key can be extracted from the signature. </p>
+<p>The public key can than be used to verify the signed transaction. This is performed by extracting the public key from the signature and comparing it with the provided one. </p>
+<p>An Elliptic Curve Digital Signature Algorithm (ECDSA) set to secp256k1 is used for both. There is a pure python implementation <a href="https://github.com/warner/python-ecdsa" target="_blank" rel="noopener">python-ecdsa</a> which is used by python-steem and beem. </p>
+<h2 id="secp256k1"><a href="#secp256k1" class="headerlink" title="secp256k1"></a>secp256k1</h2><p>In order to accelerate this, <a href="https://github.com/ludbb/secp256k1-py" target="_blank" rel="noopener">secp256k1</a> might be installed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install secp256k1</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>secp256k1 has the problem that it uses a depreated way to access ffi. Without update it might stop working (last update for secp256k1 was 2016):<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UserWarning: implicit cast from &apos;char *&apos; to a different pointer type: will be forbidden in the future (check that the types are as you expect; use an explicit ffi.cast() if they are correct)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>secp256k1 cannot be installed  on windows. </p>
+<h2 id="cryptography"><a href="#cryptography" class="headerlink" title="cryptography"></a>cryptography</h2><p>Then I found <a href="https://github.com/pyca/cryptography" target="_blank" rel="noopener">cryptography</a> which uses also openssl and was easily installable by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install cryptography</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install cryptography</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>So I decided to speed up signing and verification for all user who are not able to install secp256k1.</p>
+<h1 id="Speed-improvements-by-cryptography"><a href="#Speed-improvements-by-cryptography" class="headerlink" title="Speed improvements by cryptography"></a>Speed improvements by cryptography</h1><p>The following is the mean times from 50 times signing and verifying a Transfer operation.</p>
+<table>
+<thead>
+<tr>
+<th>library</th>
+<th>beem/steem</th>
+<th>sign duration [s]</th>
+<th>verify duration [s]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>python-ecdsa</td>
+<td>beem</td>
+<td>0.37</td>
+<td>0.58</td>
+</tr>
+<tr>
+<td>python-ecdsa</td>
+<td>steem</td>
+<td>0.37</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td>secp256k1</td>
+<td>beem</td>
+<td>0.16</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>secp256k1</td>
+<td>steem</td>
+<td>0.16</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>cryptography</td>
+<td>beem</td>
+<td>0.23</td>
+<td>0.26</td>
+</tr>
+</tbody>
+</table>
+<p>beem is 166.98 % (sign) and 229.39 % (verify) faster than steem, when secp256k1 is not installed!<br>Sending out 10 transfers can than be reduced from 9.7 seconds to 4.9 seconds.</p>
+<h1 id="Using-cryptography-to-speed-up-sign-and-verify-operation"><a href="#Using-cryptography-to-speed-up-sign-and-verify-operation" class="headerlink" title="Using cryptography to speed up sign and verify operation"></a>Using cryptography to speed up sign and verify operation</h1><p>I was then trying to replace python-ecdsa by cryptography, but it was not possible, as some functions are not implemented in cryptography. I was then replacing some parts with algorithms from cryptography and could speed up sign/verify.</p>
+<p>I&#x2019;m using the following functions from cryptography:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">from cryptography.hazmat.backends import default_backend</span><br><span class="line">from cryptography.hazmat.primitives import hashes</span><br><span class="line">from cryptography.hazmat.primitives.asymmetric import ec</span><br><span class="line">from cryptography.hazmat.primitives.asymmetric.utils \</span><br><span class="line">            import decode_dss_signature, encode_dss_signature</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="sign-message"><a href="#sign-message" class="headerlink" title="sign_message"></a>sign_message</h2><p>I&#x2019;m using the <code>derive_private_key</code> function from cryptography to derive a private_key from the wif string. It has to converted into an integer first.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">private_key = ec.derive_private_key(int(repr(priv_key), 16), ec.SECP256K1(), default_backend())</span><br><span class="line">public_key = private_key.public_key()</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Then I&#x2019;m looping and creating new signatures until ones fits:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">while True:</span><br><span class="line">    cnt += 1</span><br><span class="line">    if not cnt % 20:</span><br><span class="line">        log.info(&quot;Still searching for a canonical signature. Tried %d times already!&quot; % cnt)</span><br><span class="line">    order = ecdsa.SECP256k1.order</span><br><span class="line">    signer = private_key.signer(ec.ECDSA(hashes.SHA256()))</span><br><span class="line">    signer.update(message)</span><br><span class="line">    sigder = signer.finalize()</span><br><span class="line">    r, s = decode_dss_signature(sigder)</span><br><span class="line">    signature = ecdsa.util.sigencode_string(r, s, order)</span><br><span class="line">    # Make sure signature is canonical!</span><br><span class="line">    #</span><br><span class="line">    sigder = bytearray(sigder)</span><br><span class="line">    lenR = sigder[3]</span><br><span class="line">    lenS = sigder[5 + lenR]</span><br><span class="line">    if lenR is 32 and lenS is 32:</span><br><span class="line">        # Derive the recovery parameter</span><br><span class="line">        #</span><br><span class="line">        i = recoverPubkeyParameter(</span><br><span class="line">            message, digest, signature, public_key)</span><br><span class="line">        i += 4   # compressed</span><br><span class="line">        i += 27  # compact</span><br><span class="line">        break</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>I&#x2019;m using the signer <code>private_key.signer(ec.ECDSA(hashes.SHA256()))</code> from cryptography. </p>
+<h2 id="recover-public-key"><a href="#recover-public-key" class="headerlink" title="recover_public_key"></a>recover_public_key</h2><p>Is called by recoverPubkeyParameter until the recovered pubkey is correct, if not the index i is increased by one.<br>This function assures that the public key can be guessed from the signature.<br>I replaced:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if not ecdsa.VerifyingKey.from_public_point(Q, curve=ecdsa.SECP256k1).verify_digest(signature, digest, sigdecode=ecdsa.util.sigdecode_string):</span><br><span class="line">    return None</span><br><span class="line">return ecdsa.VerifyingKey.from_public_point(Q, curve=ecdsa.SECP256k1)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>by<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sigder = encode_dss_signature(r, s)</span><br><span class="line">public_key = ec.EllipticCurvePublicNumbers(Q._Point__x, Q._Point__y, ec.SECP256K1()).public_key(default_backend())</span><br><span class="line">public_key.verify(sigder, message, ec.ECDSA(hashes.SHA256()))</span><br><span class="line">return public_key</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>where message is the orignal message which has to be signed as bytes representation. The rest of the function remains the same.</p>
+<h1 id="Golos-network"><a href="#Golos-network" class="headerlink" title="Golos network"></a>Golos network</h1><p>beem can now be used with the golos network:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from beem import Steem</span><br><span class="line">gls = Steem(</span><br><span class="line">            node=[&quot;wss://ws.golos.io&quot;],</span><br><span class="line">        )</span><br><span class="line">gls.prefix</span><br><span class="line">&apos;GLS&apos;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h1 id="beem-can-be-used-in-Pydroid-3"><a href="#beem-can-be-used-in-Pydroid-3" class="headerlink" title="beem can be used in Pydroid 3"></a>beem can be used in Pydroid 3</h1><p>You can find Pydroid 3 on the <a href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3" target="_blank" rel="noopener">Play store</a></p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1521209192/w2oscwc1kxueqfhrj1vg.jpg" alt="20180316_150030.jpg"><br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1521209231/uh39nmk143cpxiflxt3c.jpg" alt="20180316_150044.jpg"><br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1521209029/mrx81ltpyfvdhjc6b89u.jpg" alt="20180316_150057.jpg"></p>
+<h1 id="Changes"><a href="#Changes" class="headerlink" title="Changes"></a>Changes</h1><h2 id="ecdsa-improved-with-cryptography"><a href="#ecdsa-improved-with-cryptography" class="headerlink" title="ecdsa improved with cryptography"></a>ecdsa improved with cryptography</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/ea5f3cad6f85229ec0d57475e40e3005cb60e5fa" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/ea5f3cad6f85229ec0d57475e40e3005cb60e5fa</a><h3 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h3></li>
+<li>Improved some function, so that account works limited on GOLOS<h3 id="Blockchain"><a href="#Blockchain" class="headerlink" title="Blockchain"></a>Blockchain</h3></li>
+<li>sync changes from python-bitshares<h3 id="Instance"><a href="#Instance" class="headerlink" title="Instance"></a>Instance</h3></li>
+<li>sync changes from python-bitshares<h3 id="Steem"><a href="#Steem" class="headerlink" title="Steem"></a>Steem</h3></li>
+<li>Improved some functions so that steem works on GOLOS<h3 id="Chains"><a href="#Chains" class="headerlink" title="Chains"></a>Chains</h3></li>
+<li>Added GOLOS<h3 id="graphenebase-Account"><a href="#graphenebase-Account" class="headerlink" title="graphenebase/Account"></a>graphenebase/Account</h3></li>
+<li>derive256address_with_version added<h3 id="ecsdasig"><a href="#ecsdasig" class="headerlink" title="ecsdasig"></a>ecsdasig</h3></li>
+<li>Huge speed improvement (200%) by using cryptography<h3 id="benchmark-added"><a href="#benchmark-added" class="headerlink" title="benchmark added"></a>benchmark added</h3></li>
+<li>benchmark for beemgraphenebase/account funcions</li>
+<li>benchmark for ecdsa</li>
+<li>benchmark for sign/verification of all transaction<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3></li>
+<li>compare sign/verificaiton speed with steem<h3 id="Unit-tests"><a href="#Unit-tests" class="headerlink" title="Unit tests"></a>Unit tests</h3></li>
+<li>use memo unittests from steem-js</li>
+<li>add key_format unittests from steem-js</li>
+<li>Improved the ecdsa tests</li>
+</ul>
+<h2 id="add-test-golos"><a href="#add-test-golos" class="headerlink" title="add test_golos"></a>add test_golos</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/0d61daab346dd79e0196988df4ef4968ff658781" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/0d61daab346dd79e0196988df4ef4968ff658781</a></li>
+</ul>
+<h2 id="Fix-bug-in-transactionbuilder"><a href="#Fix-bug-in-transactionbuilder" class="headerlink" title="Fix bug in transactionbuilder"></a>Fix bug in transactionbuilder</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/96634446b68e7e1fb8440e45b4da1186a22141f7" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/96634446b68e7e1fb8440e45b4da1186a22141f7</a></li>
+<li>secp256k1 is faster than cryptography and put first</li>
+</ul>
+<h2 id="Improve-module-loading"><a href="#Improve-module-loading" class="headerlink" title="Improve module loading"></a>Improve module loading</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/f7d5a13f65276e32eb8497f6ad75717cdf30ad1a" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/f7d5a13f65276e32eb8497f6ad75717cdf30ad1a</a></li>
+<li>fix unit tests</li>
+</ul>
+<h2 id="Fix-unit-tests-by-cleaning-Wallet-keys"><a href="#Fix-unit-tests-by-cleaning-Wallet-keys" class="headerlink" title="Fix unit tests by cleaning Wallet.keys"></a>Fix unit tests by cleaning Wallet.keys</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/fd63004044266f05d0ce1e1ddde54532a1eab0d2" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/fd63004044266f05d0ce1e1ddde54532a1eab0d2</a></li>
+</ul>
+<h2 id="Clear-Wallet-keys-when-setting-new-ones"><a href="#Clear-Wallet-keys-when-setting-new-ones" class="headerlink" title="Clear Wallet.keys when setting new ones"></a>Clear Wallet.keys when setting new ones</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/f6305b88fdcbf134f237f7ce1ca8849f595539d8" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/f6305b88fdcbf134f237f7ce1ca8849f595539d8</a></li>
+<li>Fix unit tests for python 2.7</li>
+<li>Account votes improved for appbase</li>
+</ul>
+<h2 id="Fix-small-bug-in-ecdsasig"><a href="#Fix-small-bug-in-ecdsasig" class="headerlink" title="Fix small bug in ecdsasig"></a>Fix small bug in ecdsasig</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/ad5bef2c17481c6302a360100d0c40ecfb9eac33" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/ad5bef2c17481c6302a360100d0c40ecfb9eac33</a></li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/update-for-beem-sign-and-verify-operation-are-200-faster-now" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-sign-and-verify-operation-are-200-faster-now" target="_blank" rel="noopener">&#x2018;update for beem - sign and verify operation are 200 % faster now&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/python-steem/">python-steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/let-community-projects-upvote-your-great-posts-update-03-2018/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Let community projects upvote your great posts - update 03-2018</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/appics-bounty-campaign/">
+                <span class="level-item">APPICS Bounty Campaign</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

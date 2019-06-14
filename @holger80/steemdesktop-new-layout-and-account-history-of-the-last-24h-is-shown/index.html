@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steemdesktop - new layout and account history of the last 24h is shown - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#steemdesktop">
+        <span class="has-mr-6">2</span>
+        <span>steemdesktop</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-features">
+        <span class="has-mr-6">3</span>
+        <span>New features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Qt-designer-is-used-to-layout-the-application">
+        <span class="has-mr-6">3.1</span>
+        <span>Qt designer is used to layout the application</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Using-a-QRunnable-to-prevent-GUI-blocking">
+        <span class="has-mr-6">4</span>
+        <span>Using a QRunnable to prevent GUI blocking</span>
+        </a></li><li>
+        <a class="is-flex" href="#Parse-and-show-account-history-of-the-last-24-hours">
+        <span class="has-mr-6">5</span>
+        <span>Parse and show account history  of the last 24 hours</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Printing-a-notification-on-every-new-account-history-operation">
+        <span class="has-mr-6">5.1</span>
+        <span>Printing a notification on every new account history operation</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Deploy-binaries-for-linux-and-osx">
+        <span class="has-mr-6">6</span>
+        <span>Deploy binaries for linux and osx</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">7</span>
+        <span>Roadmap</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">8</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Simplify-and-improve-all-account-history-functions">
+        <span class="has-mr-6">8.1</span>
+        <span>Simplify and improve all account history functions</span>
+        </a></li><li>
+        <a class="is-flex" href="#Move-account-refresh-and-update-account-hist-to-threads">
+        <span class="has-mr-6">8.2</span>
+        <span>Move account refresh and update account hist to threads</span>
+        </a></li><li>
+        <a class="is-flex" href="#Display-account-history-of-the-last-24-hours">
+        <span class="has-mr-6">8.3</span>
+        <span>Display account history of the last 24 hours</span>
+        </a></li><li>
+        <a class="is-flex" href="#Use-qtdesigner-to-generate-layout">
+        <span class="has-mr-6">8.4</span>
+        <span>Use qtdesigner to generate layout</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">9</span>
+        <span>GitHub Account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmUGT1D2Zp8n96aVBTFVfCfAq2SspHiCcQP8qXzAQRvucd" alt="steemdesktop - new layout and account history of the last 24h is shown">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-25T13:37:30.000Z">2019-03-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 854 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steemdesktop - new layout and account history of the last 24h is shown
+            
+        </h1>
+        <div class="content">
+            <h2 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h2><p><a href="https://github.com/holgern/steemdesktop" target="_blank" rel="noopener">https://github.com/holgern/steemdesktop</a></p>
+<h2 id="steemdesktop"><a href="#steemdesktop" class="headerlink" title="steemdesktop"></a>steemdesktop</h2><p>steemdesktop is a new Qt5 python app that allows it to check the current state of an steem account. </p>
+<h2 id="New-features"><a href="#New-features" class="headerlink" title="New features"></a>New features</h2><h3 id="Qt-designer-is-used-to-layout-the-application"><a href="#Qt-designer-is-used-to-layout-the-application" class="headerlink" title="Qt designer is used to layout the application"></a>Qt designer is used to layout the application</h3><p><img src="https://ipfs.busy.org/ipfs/QmUGT1D2Zp8n96aVBTFVfCfAq2SspHiCcQP8qXzAQRvucd" alt="image.png"></p>
+<p>I&#x2019;m using now Qt designer to layout all the widget for Mainwindow.<br>The ui file can then be converted into a py file by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pyuic5 ui/mainwindow.ui -o src/main/python/ui_mainwin</span><br><span class="line">dow.py</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>This py file is then included and added to the main window by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">from ui_mainwindow import Ui_MainWindow</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class MainWindow(QMainWindow, Ui_MainWindow):</span><br><span class="line">    def __init__(self):</span><br><span class="line">        super(QMainWindow, self).__init__()</span><br><span class="line">        # Set up the user interface from Designer.</span><br><span class="line">        self.setupUi(self)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>I added two progressbars for showing the vote power and the available RC. The SP/SBD/STEEM balance is shown using three QLabels. The upvote of the last 24 hours are shown in a QListWidget. Curation rewards and author rewards are shown below.</p>
+<h2 id="Using-a-QRunnable-to-prevent-GUI-blocking"><a href="#Using-a-QRunnable-to-prevent-GUI-blocking" class="headerlink" title="Using a QRunnable to prevent GUI blocking"></a>Using a QRunnable to prevent GUI blocking</h2><p>I&#x2019;m using the following class to automatically let a function run in a thread, in order to prevent gui blocking.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Worker(QRunnable):</span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line">    Worker thread</span><br><span class="line"></span><br><span class="line">    Inherits from QRunnable to handler worker thread setup, signals and wrap-up.</span><br><span class="line"></span><br><span class="line">    :param callback: The function callback to run on this worker thread. Supplied args and </span><br><span class="line">                     kwargs will be passed through to the runner.</span><br><span class="line">    :type callback: function</span><br><span class="line">    :param args: Arguments to pass to the callback function</span><br><span class="line">    :param kwargs: Keywords to pass to the callback function</span><br><span class="line"></span><br><span class="line">    &apos;&apos;&apos;</span><br><span class="line"></span><br><span class="line">    def __init__(self, fn, *args, **kwargs):</span><br><span class="line">        super(Worker, self).__init__()</span><br><span class="line">        # Store constructor arguments (re-used for processing)</span><br><span class="line">        self.fn = fn</span><br><span class="line">        self.args = args</span><br><span class="line">        self.kwargs = kwargs</span><br><span class="line"></span><br><span class="line">    @pyqtSlot()</span><br><span class="line">    def run(self):</span><br><span class="line">        &apos;&apos;&apos;</span><br><span class="line">        Initialise the runner function with passed args, kwargs.</span><br><span class="line">        &apos;&apos;&apos;</span><br><span class="line">        self.fn(*self.args, **self.kwargs)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The usage is then:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">self.threadpool = QThreadPool()</span><br><span class="line">worker = Worker(self.refresh_account)</span><br><span class="line">self.threadpool.start(worker)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>In this case, the <code>refresh_account</code> function is started in a new thread.</p>
+<h2 id="Parse-and-show-account-history-of-the-last-24-hours"><a href="#Parse-and-show-account-history-of-the-last-24-hours" class="headerlink" title="Parse and show account history  of the last 24 hours"></a>Parse and show account history  of the last 24 hours</h2><p>I&#x2019;m continuously parse the account history every 15 s of the last 24 hours. Only new ops are stored and displayed.</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmTdWWM6yweVYbcJkRmysKZ7GFPc6AEAbY7dbuxKkrMF9y" alt="image.png"></p>
+<p>The block number, trx index,  op index and the virtual op index is stored in <code>self.append_hist_info</code><br>and used to skip older operations when starting from <code>start_block - 3</code>. This allows it reduce the number of api calls by preventing to reload the account history every time. The account history index itself is not reliable.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">def append_account_hist(self):</span><br><span class="line">    start_block = self.append_hist_info[&quot;start_block&quot;]</span><br><span class="line">    trx_ids = self.append_hist_info[&quot;trx_ids&quot;]</span><br><span class="line">    for op in self.hist_account.history(start=start_block - 3, use_block_num=True):</span><br><span class="line">        if op[&quot;block&quot;] &lt; start_block:</span><br><span class="line">            continue</span><br><span class="line">        elif op[&quot;block&quot;] == start_block:</span><br><span class="line">            if op[&quot;trx_id&quot;] in trx_ids:</span><br><span class="line">                continue</span><br><span class="line">            else:</span><br><span class="line">                trx_ids.append(op[&quot;trx_id&quot;])</span><br><span class="line">        else:</span><br><span class="line">            trx_ids = [op[&quot;trx_id&quot;]]</span><br><span class="line"></span><br><span class="line">        start_block = op[&quot;block&quot;]</span><br><span class="line">        self.account_history.append(op)        </span><br><span class="line">    self.append_hist_info[&quot;start_block&quot;] = start_block</span><br><span class="line">    self.append_hist_info[&quot;trx_ids&quot;] = trx_ids</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Printing-a-notification-on-every-new-account-history-operation"><a href="#Printing-a-notification-on-every-new-account-history-operation" class="headerlink" title="Printing a notification on every new account history operation"></a>Printing a notification on every new account history operation</h3><p>When the check box is set, a notification is send on every new account history op.<br><img src="https://ipfs.busy.org/ipfs/QmYm7ks2mb4RzxUp1dAdRMrLsJeK7YnPFcZJciH5qV3iXs" alt="image.png"></p>
+<h2 id="Deploy-binaries-for-linux-and-osx"><a href="#Deploy-binaries-for-linux-and-osx" class="headerlink" title="Deploy binaries for linux and osx"></a>Deploy binaries for linux and osx</h2><p><img src="https://ipfs.busy.org/ipfs/QmXZftCa2MzcfRStUKnffV4Na7YwvFbFuDdwSyfScWG11T" alt="image.png"></p>
+<p>Finally, I managed it to automatically upload binaries for osx and linux. They can be downloaded from <a href="https://github.com/holgern/steemdesktop/releases" target="_blank" rel="noopener">https://github.com/holgern/steemdesktop/releases</a></p>
+<h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h2><p>I&#x2019;m planing store the complete account history in a file and use the account history for some calculations:</p>
+<ul>
+<li>curation rewards</li>
+<li>reputation over time</li>
+<li>SP over time<br>I&#x2019;m also planing to enhance the notification system and to parse all steem blocks. This allow it to show mentions and other thinks.</li>
+</ul>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="Simplify-and-improve-all-account-history-functions"><a href="#Simplify-and-improve-all-account-history-functions" class="headerlink" title="Simplify and improve all account history functions"></a>Simplify and improve all account history functions</h3><ul>
+<li><a href="https://github.com/holgern/steemdesktop/commit/4d0fa7b2101634fe0125840f142d8196a0aab1cf" target="_blank" rel="noopener">commit 4d0fa7b</a></li>
+</ul>
+<h3 id="Move-account-refresh-and-update-account-hist-to-threads"><a href="#Move-account-refresh-and-update-account-hist-to-threads" class="headerlink" title="Move account refresh and update account hist to threads"></a>Move account refresh and update account hist to threads</h3><ul>
+<li><a href="https://github.com/holgern/steemdesktop/commit/e7b210a26c302f791f1a5316c5db8c01da1affde" target="_blank" rel="noopener">commit e7b210a</a></li>
+<li>New Worker class for running function in a thread</li>
+<li>timer call now the thread function, which prevent gui freezing</li>
+<li>The account history of the last 24 h is now loaded not at once, only new ops are loaded<h3 id="Display-account-history-of-the-last-24-hours"><a href="#Display-account-history-of-the-last-24-hours" class="headerlink" title="Display account history of the last 24 hours"></a>Display account history of the last 24 hours</h3></li>
+<li><a href="https://github.com/holgern/steemdesktop/commit/5761814a51a87ed889bee69c6a26a35ba3ebfaed" target="_blank" rel="noopener">commit 5761814</a></li>
+</ul>
+<h3 id="Use-qtdesigner-to-generate-layout"><a href="#Use-qtdesigner-to-generate-layout" class="headerlink" title="Use qtdesigner to generate layout"></a>Use qtdesigner to generate layout</h3><ul>
+<li><a href="https://github.com/holgern/steemdesktop/commit/c04a832403814d58841046fb1bf19c6e76c15643" target="_blank" rel="noopener">commit c04a832</a></li>
+<li>show vote power, RC and balances</li>
+<li>latest upvotes, curation and author rewards</li>
+<li>layout is generated from ui file</li>
+</ul>
+<h2 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steemdesktop-new-layout-and-account-history-of-the-last-24h-is-shown" target="_blank" rel="noopener">&#x2018;steemdesktop - new layout and account history of the last 24h is shown&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdesktop/">steemdesktop</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/6whidb-current-state-of-steemrewarding-com/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Current state of steemrewarding.com</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemdesktop-a-new-pyqt5-desktop-app-for-steem/">
+                <span class="level-item">steemdesktop - a new pyQt5 desktop app for steem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>API endpoints for snax.one and registering for snax.one - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#User-ID-and-snax-username">
+        <span class="has-mr-6">1</span>
+        <span>User ID and snax username</span>
+        </a></li><li>
+        <a class="is-flex" href="#snax-one-API">
+        <span class="has-mr-6">2</span>
+        <span>snax.one API</span>
+        </a></li><li>
+        <a class="is-flex" href="#history-API-calls-Account-related-calls">
+        <span class="has-mr-6">3</span>
+        <span>history API calls - Account related calls</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#v1-history-get-actions">
+        <span class="has-mr-6">3.1</span>
+        <span>v1/history/get_actions</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#v1-history-get-transaction">
+        <span class="has-mr-6">4</span>
+        <span>v1/history/get_transaction</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#v1-history-get-key-accounts">
+        <span class="has-mr-6">4.1</span>
+        <span>v1/history/get_key_accounts</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-history-get-transfers-by-account">
+        <span class="has-mr-6">4.2</span>
+        <span>/v1/history/get_transfers_by_account</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-history-get-platform-transfers-by-account">
+        <span class="has-mr-6">4.3</span>
+        <span>/v1/history/get_platform_transfers_by_account</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-history-get-rewards-by-account">
+        <span class="has-mr-6">4.4</span>
+        <span>/v1/history/get_rewards_by_account</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-history-get-controlled-accounts">
+        <span class="has-mr-6">4.5</span>
+        <span>/v1/history/get_controlled_accounts</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Chain-related-calls">
+        <span class="has-mr-6">5</span>
+        <span>Chain related calls</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#v1-chain-get-account">
+        <span class="has-mr-6">5.1</span>
+        <span>v1/chain/get_account</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-chain-get-block">
+        <span class="has-mr-6">5.2</span>
+        <span>v1/chain/get_block</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-chain-get-info">
+        <span class="has-mr-6">5.3</span>
+        <span>v1/chain/get_info</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-chain-get-table-rows">
+        <span class="has-mr-6">5.4</span>
+        <span>v1/chain/get_table_rows</span>
+        </a></li><li>
+        <a class="is-flex" href="#v1-chain-get-currency-balance">
+        <span class="has-mr-6">5.5</span>
+        <span>v1/chain/get_currency_balance</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Register-on-snax">
+        <span class="has-mr-6">6</span>
+        <span>Register on snax</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmNbLoxhZsXpGirb3ipAYkjYXoTC5sFiSZCz7UuSw6WMKR/image.png" alt="API endpoints for snax.one and registering for snax.one">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-15T09:08:48.000Z">2019-05-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/free-snaxaccount/">free-snaxaccount</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1048 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                API endpoints for snax.one and registering for snax.one
+            
+        </h1>
+        <div class="content">
+            <p>You might have seen some snax.one registration posts on steem lately. At the moment, 78 steem account have been registered (<a href="https://explorer.snax.one/" target="_blank" rel="noopener">source</a> :<br><img src="https://cdn.steemitimages.com/DQmNbLoxhZsXpGirb3ipAYkjYXoTC5sFiSZCz7UuSw6WMKR/image.png" alt=""></p>
+<p>It seems that snax.one does not know that steem is not steemit. The internal platform codename for steem is <code>p.steemit</code>.</p>
+<h2 id="User-ID-and-snax-username"><a href="#User-ID-and-snax-username" class="headerlink" title="User ID and snax username"></a>User ID and snax username</h2><p>You need your snax username and the platform ID for receiving more information using the snax API.</p>
+<p>Both can be received from the snax blockchain raw data. When registering on a platform, an addaccount operation is broadcasted. In this operation, a platform  (in our case it is <code>p.steemit</code>), a steem account, a snax account, a platform user id and the verification post.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">act:Object </span><br><span class="line">{&quot;account&quot;:&quot;p.steemit&quot;,</span><br><span class="line">&quot;name&quot;:&quot;addaccount&quot;,</span><br><span class="line">&quot;authorization&quot;:</span><br><span class="line">[{&quot;actor&quot;:&quot;p.steemit&quot;,&quot;permission&quot;:&quot;active&quot;}],</span><br><span class="line">&quot;data&quot;:[&quot;creator&quot;:&quot;p.steemit&quot;,</span><br><span class="line">&quot;account&quot;:&quot;bobokyaw&quot;,</span><br><span class="line">&quot;id&quot;:306643,</span><br><span class="line">&quot;account_name&quot;:&quot;bobokyaw&quot;,</span><br><span class="line">&quot;verification_post&quot;:74786076,</span><br><span class="line">&quot;verification_salt&quot;:&quot;d8ea45790b9b2df8c20dd937e00a9c1c&quot;,</span><br><span class="line">&quot;stat_diff&quot;:[]},&quot;hex_data&quot;:&quot;0000c84e2a9531a8000000dc78480f3dd3ad04000000000008626f626f6b7961771c2575040000000020643865613435373930623962326466386332306464393337653030613963316300&quot;}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>In this case, the steem-account and snax-account is boboyaw and the steem user ID is 306643.</p>
+<p>This transaction can be found by going through all transactions id provided by the v1/history/get_actions call from the p.steemit account.</p>
+<h2 id="snax-one-API"><a href="#snax-one-API" class="headerlink" title="snax.one API"></a>snax.one API</h2><p>There is already an API, you can use to find out more about single transactions or blockchain parameter. The API is on <a href="https://github.com/SnaxFoundation/es-history-api" target="_blank" rel="noopener">github</a>, but not fully documented. I found some API calls that were not yet documented.</p>
+<p>The API endpoint URL is <a href="https://cdn.snax.one/" target="_blank" rel="noopener">https://cdn.snax.one/</a>.</p>
+<h2 id="history-API-calls-Account-related-calls"><a href="#history-API-calls-Account-related-calls" class="headerlink" title="history API calls - Account related calls"></a>history API calls - Account related calls</h2><p>These calls can be used to receive transaction details from a single account.</p>
+<h3 id="v1-history-get-actions"><a href="#v1-history-get-actions" class="headerlink" title="v1/history/get_actions"></a>v1/history/get_actions</h3><p>This API needs <code>{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;pos&quot;: -1, &quot;offset&quot;: -20}</code></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;pos&quot;: -1, &quot;offset&quot;: -20}&apos; https://cdn.snax.one/v1/history/get_actions</span><br></pre></td></tr></tbody></table></figure>
+<p>and returns an  array of actions of a given account</p>
+<h2 id="v1-history-get-transaction"><a href="#v1-history-get-transaction" class="headerlink" title="v1/history/get_transaction"></a>v1/history/get_transaction</h2><p>This call needs an transaction id <code>{&quot;id&quot;: &quot;8c5a1fe143c5fbd202ec3620eb4ec3b6248938308779a35e65ee2de82496e49f&quot;}</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;id&quot;: &quot;8c5a1fe143c5fbd202ec3620eb4ec3b6248938308779a35e65ee2de82496e49f&quot;}&apos; https://cdn.snax.one/v1/history/get_transaction</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and returns content of the transaction.</p>
+<h3 id="v1-history-get-key-accounts"><a href="#v1-history-get-key-accounts" class="headerlink" title="v1/history/get_key_accounts"></a>v1/history/get_key_accounts</h3><p>This call returns an account name for a given public key, the call needs:<br><code>{&quot;public_key&quot;: &quot;SNAX83XFetwYpt7aqxKoKxV3AAP6cuTP3FcyvYh9o5bkkWXtEB73gi&quot;}</code>:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;public_key&quot;: &quot;SNAX83XFetwYpt7aqxKoKxV3AAP6cuTP3FcyvYh9o5bkkWXtEB73gi&quot;}&apos; https://cdn.snax.one/v1/history/get_key_accounts</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="v1-history-get-transfers-by-account"><a href="#v1-history-get-transfers-by-account" class="headerlink" title="/v1/history/get_transfers_by_account"></a>/v1/history/get_transfers_by_account</h3><p>This call returns all transfers for the account. The call needs: <code>{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}&apos; https://cdn.snax.one/v1/history/get_transfers_by_account</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-history-get-platform-transfers-by-account"><a href="#v1-history-get-platform-transfers-by-account" class="headerlink" title="/v1/history/get_platform_transfers_by_account"></a>/v1/history/get_platform_transfers_by_account</h3><p>This call returns all transfers for the account on the given platform. The call needs: <code>{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}&apos; https://cdn.snax.one/v1/history/get_platform_transfers_by_account</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-history-get-rewards-by-account"><a href="#v1-history-get-rewards-by-account" class="headerlink" title="/v1/history/get_rewards_by_account"></a>/v1/history/get_rewards_by_account</h3><p>This call returns the received rewards for the account on the given platform. The call needs: <code>{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;account_name&quot;: &quot;bobokyaw&quot;, &quot;platform&quot;: { &quot;p.steemit&quot;: {&quot;id&quot;: &quot;306643&quot;} }, &quot;pos&quot;: -1, &quot;offset&quot;: -20}&apos; https://cdn.snax.one/v1/history/get_rewards_by_account</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-history-get-controlled-accounts"><a href="#v1-history-get-controlled-accounts" class="headerlink" title="/v1/history/get_controlled_accounts"></a>/v1/history/get_controlled_accounts</h3><p>This call returns the controlling accounts for a given one. The call needs <code>{&quot;controlling_account&quot;: &quot;bobokyaw&quot;}</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;controlling_account&quot;: &quot;bobokyaw&quot;}&apos; https://cdn.snax.one/v1/history/get_controlled_accounts</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Chain-related-calls"><a href="#Chain-related-calls" class="headerlink" title="Chain related calls"></a>Chain related calls</h2><h3 id="v1-chain-get-account"><a href="#v1-chain-get-account" class="headerlink" title="v1/chain/get_account"></a>v1/chain/get_account</h3><p>This API needs <code>{&quot;account_name&quot;: &quot;bobokyaw&quot;}</code> and returns account information<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;account_name&quot;: &quot;bobokyaw&quot;}&apos; https://cdn.snax.one/v1/chain/get_account</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-chain-get-block"><a href="#v1-chain-get-block" class="headerlink" title="v1/chain/get_block"></a>v1/chain/get_block</h3><p>This call needs a block number and returns the block raw data. json input is <code>{&quot;block_num_or_id&quot;: 5934124}</code>.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;block_num_or_id&quot;: 5934124}&apos; https://cdn.snax.one/v1/chain/get_block</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-chain-get-info"><a href="#v1-chain-get-info" class="headerlink" title="v1/chain/get_info"></a>v1/chain/get_info</h3><p>This call needs no input and returns some information about the snax blockchain<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot;  https://cdn.snax.one/v1/chain/get_info</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-chain-get-table-rows"><a href="#v1-chain-get-table-rows" class="headerlink" title="v1/chain/get_table_rows"></a>v1/chain/get_table_rows</h3><p>This call returns information about a specific platform. The json input is <code>{&quot;json&quot;:true,&quot;code&quot;:&quot;p.steemit&quot;,&quot;scope&quot;:&quot;p.steemit&quot;,&quot;table&quot;:&quot;state&quot;,&quot;table_key&quot;:&quot;&quot;,&quot;lower_bound&quot;:&quot;&quot;,&quot;upper_bound&quot;:&quot;&quot;,&quot;index_position&quot;:1,&quot;key_type&quot;:&quot;&quot;,&quot;limit&quot;:1</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;json&quot;:true,&quot;code&quot;:&quot;p.steemit&quot;,&quot;scope&quot;:&quot;p.steemit&quot;,&quot;table&quot;:&quot;state&quot;,&quot;table_key&quot;:&quot;&quot;,&quot;lower_bound&quot;:&quot;&quot;,&quot;upper_bound&quot;:&quot;&quot;,&quot;index_position&quot;:1,&quot;key_type&quot;:&quot;&quot;,&quot;limit&quot;:1}&apos; https://cdn.snax.one/v1/chain/get_table_rows</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="v1-chain-get-currency-balance"><a href="#v1-chain-get-currency-balance" class="headerlink" title="v1/chain/get_currency_balance"></a>v1/chain/get_currency_balance</h3><p>This call returns the supply. The input json is <code>{&quot;code&quot;:&quot;snax.token&quot;,&quot;account&quot;:&quot;p.steemit&quot;,&quot;symbol&quot;:&quot;SNAX&quot;}</code>.<br><code>account</code> can be:</p>
+<ul>
+<li><code>snax</code></li>
+<li><code>p.twitter</code></li>
+<li><code>snax.creator</code></li>
+<li><code>snax.airdrop</code></li>
+<li><code>p.steemit</code><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -H &quot;Content-Type: application/json&quot; --data &apos;{&quot;code&quot;:&quot;snax.token&quot;,&quot;account&quot;:&quot;p.steemit&quot;,&quot;symbol&quot;:&quot;SNAX&quot;}&apos; https://cdn.snax.one/v1/chain/get_currency_balance</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h2 id="Register-on-snax"><a href="#Register-on-snax" class="headerlink" title="Register on snax"></a>Register on snax</h2><p>When creating a new account, I was asked to publish a post on steem with the following content:</p>
+<p><img src="https://cdn.steemitimages.com/DQmRbqrZxEr8ysVHYpJ7cHMnLEGL9MffwzE8AR8LmcSrdg3/image.png" alt=""></p>
+<p>You have to post this  on steem and have clicked on the Authenificate with Steem:</p>
+<p><img src="https://cdn.steemitimages.com/DQmWdryoVeuXdzVqo749sDZt6dkSfkac6Dn1aFhvuT16Les/image.png" alt=""></p>
+<hr>
+<p>Edit:<br>The post must not contain any other text then the shown one. I will start over and create a new empty post for registering on stax.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/api-endpoints-for-snax-one-and-registering-for-snax-one" target="_blank" rel="noopener">&#x2018;API endpoints for snax.one and registering for snax.one&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/api/">api</a>, <a class="has-link-grey -link" href="/@holger80/tags/free-snaxaccount/">free-snaxaccount</a>, <a class="has-link-grey -link" href="/@holger80/tags/snax/">snax</a>, <a class="has-link-grey -link" href="/@holger80/tags/snaxbountyprogram/">snaxbountyprogram</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/snax-authentication-post/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Snax authentication post</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/scotbot-parameter-manual/">
+                <span class="level-item">Scotbot  parameter manual</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

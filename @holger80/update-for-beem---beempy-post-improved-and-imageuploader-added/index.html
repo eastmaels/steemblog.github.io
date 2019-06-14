@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>update for beem - beempy post improved and imageuploader added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">2</span>
+        <span>New Features</span>
+        </a></li><li>
+        <a class="is-flex" href="#beempy-post-improved">
+        <span class="has-mr-6">3</span>
+        <span>beempy post improved</span>
+        </a></li><li>
+        <a class="is-flex" href="#Too-Many-Requests-error-handled-in-graphenerpc">
+        <span class="has-mr-6">4</span>
+        <span>Too Many Requests error handled in graphenerpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#beempy-uploadimageadded">
+        <span class="has-mr-6">5</span>
+        <span>beempy uploadimageadded</span>
+        </a></li><li>
+        <a class="is-flex" href="#Issue-125-fixed">
+        <span class="has-mr-6">6</span>
+        <span>Issue #125 fixed</span>
+        </a></li><li>
+        <a class="is-flex" href="#VotedBeforeWaitTimeReached-exception-added">
+        <span class="has-mr-6">7</span>
+        <span>VotedBeforeWaitTimeReached exception added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">8</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Add-uploadimage-to-beempy">
+        <span class="has-mr-6">8.1</span>
+        <span>Add uploadimage to beempy</span>
+        </a></li><li>
+        <a class="is-flex" href="#VotedBeforeWaitTimeReached-exception-added-for-&#x201C;Can-only-vote-once-every-3-seconds&#x201D;">
+        <span class="has-mr-6">8.2</span>
+        <span>VotedBeforeWaitTimeReached exception added for &#x201C;Can only vote once every 3 seconds&#x201D;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-issue-126">
+        <span class="has-mr-6">8.3</span>
+        <span>Fix issue #126</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improved-key-handling-fixes-issue-125">
+        <span class="has-mr-6">8.4</span>
+        <span>Improved key handling fixes issue #125</span>
+        </a></li><li>
+        <a class="is-flex" href="#derive-beneficiaries-derive-tags-and-seperate-yaml-dict-from-body-added-to-utils">
+        <span class="has-mr-6">8.5</span>
+        <span>derive_beneficiaries, derive_tags and seperate_yaml_dict_from_body added to utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-claimaccount-and-improve-post-commands-for-beempy">
+        <span class="has-mr-6">8.6</span>
+        <span>Fix claimaccount and improve post commands for beempy</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-20-12">
+        <span class="has-mr-6">8.7</span>
+        <span>Release 0.20.12</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Github-account">
+        <span class="has-mr-6">9</span>
+        <span>Github account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmcRrwLPSywSYMierfP6um6mejeMNGjN9Rxw7audJqTDgb/beem-logo" alt="update for beem - beempy post improved and imageuploader added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-25T21:35:27.000Z">2018-11-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 628 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                update for beem - beempy post improved and imageuploader added
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">https://github.com/holgern/beem</a></p><center><br><img src="https://cdn.steemitimages.com/DQmcRrwLPSywSYMierfP6um6mejeMNGjN9Rxw7audJqTDgb/beem-logo" alt="beem-logo"><br></center><br><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 506 unit tests and a coverage of 72 %. The current version is 0.20.13.<br>I created a discord channel for answering a question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a><br>The newest beem version can be installed by:<p></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure>
+<p>or when  using conda:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>beem can be updated by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h3 id="beempy-post-improved"><a href="#beempy-post-improved" class="headerlink" title="beempy post improved"></a><code>beempy post</code> improved</h3><p>Utility functions <code>derive_beneficiaries</code>, <code>derive_tags</code> and <code>seperate_yaml_dict_from_body</code> are added to utils.py and unit tests are added for each function. The yaml dection was improved, it is now possible to use <code>---</code> everywhere in the document. <code>derive_tags</code>detects now tags correctly:</p>
+<ul>
+<li><p>a,b</p>
+</li>
+<li><p>a, b</p>
+</li>
+<li><p>a b</p>
+<p>are detected as <code>tags = [&apos;a&apos;, &apos;b&apos;].</code></p>
+<p>The yaml-parameter  <code>percent-steem-dollars</code> and <code>max-accepted-payout</code> were added.</p>
+<p>100 SP payout is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">percent-steem-dollars: 0</span><br></pre></td></tr></tbody></table></figure>
+<p>50/50 payout is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">percent-steem-dollars: 10000</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h3 id="Too-Many-Requests-error-handled-in-graphenerpc"><a href="#Too-Many-Requests-error-handled-in-graphenerpc" class="headerlink" title="Too Many Requests error handled in graphenerpc"></a>Too Many Requests error handled in graphenerpc</h3><p>This server error lead before to a unhandled rpc exception (The problem occurred in whaleshares). With the changes, the error is now handled and the failed rpc call is automatically retried.</p>
+<h3 id="beempy-uploadimageadded"><a href="#beempy-uploadimageadded" class="headerlink" title="beempy uploadimageadded"></a><code>beempy uploadimage</code>added</h3><p>It is now possible to upload images with &#xC2;&#xB4;beempy&#xC2;&#xB4; to steemitimages.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy uploadimage -a holger80 -n beem-logo beem.png</span><br></pre></td></tr></tbody></table></figure>
+<p>When successfully uploaded, a markdown code for embedding the image is returned:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![beem-logo](https://cdn.steemitimages.com/DQmcRrwLPSywSYMierfP6um6mejeMNGjN9Rxw7audJqTDgb/beem-logo)</span><br></pre></td></tr></tbody></table></figure>
+<p><code>-n</code> specify a image name (optional) and <code>-a</code>specify the account name which is used for uploading. An account must be specified and the posting key of this account must be available in the wallet.</p>
+<h3 id="Issue-125-fixed"><a href="#Issue-125-fixed" class="headerlink" title="Issue #125 fixed"></a>Issue #125 fixed</h3><p>The prefix of the pubkey is now checked. It is now possible to store different keys from different chains  for the same account in the wallet. <code>beempy listaccounts</code> and <code>beempy listkeys</code> returns only the keys and accounts for the current chain, which is set by <code>beempy set nodes</code>  . The default chain is steem.</p>
+<h3 id="VotedBeforeWaitTimeReached-exception-added"><a href="#VotedBeforeWaitTimeReached-exception-added" class="headerlink" title="VotedBeforeWaitTimeReached exception added"></a>VotedBeforeWaitTimeReached exception added</h3><p>When voting twice within 3 seconds, an error with <code>Can only vote once every 3 seconds is returned.</code></p>
+<p>This raises now to an exception VotedBeforeWaitTimeReached.</p>
+<h3 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h3><h4 id="Add-uploadimage-to-beempy"><a href="#Add-uploadimage-to-beempy" class="headerlink" title="Add uploadimage to beempy"></a>Add uploadimage to beempy</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/96e98c3a9c795183f587612ace1a3b481735fe68" target="_blank" rel="noopener">commit 96e98c3</a>)</li>
+</ul>
+<h4 id="VotedBeforeWaitTimeReached-exception-added-for-&#x201C;Can-only-vote-once-every-3-seconds&#x201D;"><a href="#VotedBeforeWaitTimeReached-exception-added-for-&#x201C;Can-only-vote-once-every-3-seconds&#x201D;" class="headerlink" title="VotedBeforeWaitTimeReached exception added for &#x201C;Can only vote once every 3 seconds&#x201D;"></a>VotedBeforeWaitTimeReached exception added for &#x201C;Can only vote once every 3 seconds&#x201D;</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/9c7594ef3bf0b6d64e4da3c4667146bbd5df9157" target="_blank" rel="noopener">commit 9c7594e</a><h4 id="Fix-issue-126"><a href="#Fix-issue-126" class="headerlink" title="Fix issue #126"></a>Fix issue #126</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/e92cdf464b6562b2f4924d280cbb01a0aede3b3e" target="_blank" rel="noopener">commit e92cdf4</a><h4 id="Improved-key-handling-fixes-issue-125"><a href="#Improved-key-handling-fixes-issue-125" class="headerlink" title="Improved key handling fixes issue #125"></a>Improved key handling fixes issue #125</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/355042e568191df3fbfa956b840ea1a10b9b66b6" target="_blank" rel="noopener">commit 355042e</a></li>
+<li>prefix is checked in getPublicKeys<h4 id="derive-beneficiaries-derive-tags-and-seperate-yaml-dict-from-body-added-to-utils"><a href="#derive-beneficiaries-derive-tags-and-seperate-yaml-dict-from-body-added-to-utils" class="headerlink" title="derive_beneficiaries, derive_tags and seperate_yaml_dict_from_body added to utils"></a>derive_beneficiaries, derive_tags and seperate_yaml_dict_from_body added to utils</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/5b17c5e49b32671b2d1077803ece671a54f8dee4" target="_blank" rel="noopener">commit 5b17c5e</a></li>
+<li>unit tests added for all new functions<h4 id="Fix-claimaccount-and-improve-post-commands-for-beempy"><a href="#Fix-claimaccount-and-improve-post-commands-for-beempy" class="headerlink" title="Fix claimaccount and improve post commands for beempy"></a>Fix claimaccount and improve post commands for beempy</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/d2cefdeae3e776be746962894cd8d63bc5d7324a" target="_blank" rel="noopener">commit d2cefde</a><h4 id="Release-0-20-12"><a href="#Release-0-20-12" class="headerlink" title="Release 0.20.12"></a>Release 0.20.12</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/49a8db878bff1a503b2e9acc9cd38f337efe9ba5" target="_blank" rel="noopener">commit 49a8db8</a></li>
+<li>pep8 formating improved</li>
+<li>Too Many Requests error handled</li>
+<li>different limit handling in WLS fixed for account history</li>
+<li>percent-steem-dollars and max-accepted-payout added to beempy post<h3 id="Github-account"><a href="#Github-account" class="headerlink" title="Github account"></a>Github account</h3><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem---beempy-post-improved-and-imageuploader-added" target="_blank" rel="noopener">&#x2018;update for beem - beempy post improved and imageuploader added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemtank/">steemtank</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/the-steemmonsters-site-on-beempy-is-adapted-to-the-new-gameplay/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">The steemmonsters site on beempy is adapted to the new gameplay</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/store-all-posts-from-an-author-in-markdown-files/">
+                <span class="level-item">Store all posts from an author in markdown files</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

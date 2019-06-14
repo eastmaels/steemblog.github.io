@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Update for beem - all broadcast operation are now supported and beempy curation improved - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">2</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Missing-broadcast-operation-were-added">
+        <span class="has-mr-6">2.1</span>
+        <span>Missing broadcast operation were added</span>
+        </a></li><li>
+        <a class="is-flex" href="#active-key-permission-can-be-used-for-posting-operation">
+        <span class="has-mr-6">2.2</span>
+        <span>active key permission can be used for posting operation</span>
+        </a></li><li>
+        <a class="is-flex" href="#refactoring-of-beem">
+        <span class="has-mr-6">2.3</span>
+        <span>refactoring of beem</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-replies-added-to-Comment-class">
+        <span class="has-mr-6">2.4</span>
+        <span>get_replies added to Comment class</span>
+        </a></li><li>
+        <a class="is-flex" href="#Keys-for-accounts-with-more-than-one-key-can-be-obtained">
+        <span class="has-mr-6">2.5</span>
+        <span>Keys for accounts with more than one key can be obtained</span>
+        </a></li><li>
+        <a class="is-flex" href="#beempy-curation-improved">
+        <span class="has-mr-6">2.6</span>
+        <span>beempy curation improved</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">3</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Add-missing-operations-with-unit-tests">
+        <span class="has-mr-6">3.1</span>
+        <span>Add missing operations with unit tests</span>
+        </a></li><li>
+        <a class="is-flex" href="#beembase-objects">
+        <span class="has-mr-6">3.2</span>
+        <span>beembase\objects</span>
+        </a></li><li>
+        <a class="is-flex" href="#beembase-operations">
+        <span class="has-mr-6">3.3</span>
+        <span>beembase\operations</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests">
+        <span class="has-mr-6">3.4</span>
+        <span>Unit tests</span>
+        </a></li><li>
+        <a class="is-flex" href="#Comment-get-replies-added-get-curation-penalty-improved-and-get-rewards-fixed">
+        <span class="has-mr-6">3.5</span>
+        <span>Comment: get_replies added, get_curation_penalty improved and get_rewards fixed</span>
+        </a></li><li>
+        <a class="is-flex" href="#beemgrapheneapi-is-deprecated-all-classes-and-functions-are-available-under-beemapi">
+        <span class="has-mr-6">3.6</span>
+        <span>beemgrapheneapi is deprecated, all classes and functions are available under beemapi</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-remaining-references-to-beemgrapheneapi-and-fix-not-working-wss-testnet-steem-vc">
+        <span class="has-mr-6">3.7</span>
+        <span>Fix remaining references to beemgrapheneapi and fix not working wss:/testnet.steem.vc</span>
+        </a></li><li>
+        <a class="is-flex" href="#common-steem-constants-added-and-used-in-account-comment-and-steem">
+        <span class="has-mr-6">3.8</span>
+        <span>common steem constants added and used in account, comment and steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-unit-test-for-constants">
+        <span class="has-mr-6">3.9</span>
+        <span>Add unit test for constants</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-export-option-for-curation-and-votes">
+        <span class="has-mr-6">3.10</span>
+        <span>Add export option for curation and votes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#CLI">
+        <span class="has-mr-6">3.10.1</span>
+        <span>CLI</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#New-nodes-class-for-better-node-url-handling">
+        <span class="has-mr-6">3.11</span>
+        <span>New nodes class for better node url handling</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Wallet">
+        <span class="has-mr-6">3.11.1</span>
+        <span>Wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#beemapi">
+        <span class="has-mr-6">3.11.2</span>
+        <span>beemapi</span>
+        </a></li><li>
+        <a class="is-flex" href="#GrapheneRPC">
+        <span class="has-mr-6">3.11.3</span>
+        <span>GrapheneRPC</span>
+        </a></li><li>
+        <a class="is-flex" href="#Nodes">
+        <span class="has-mr-6">3.11.4</span>
+        <span>Nodes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests-1">
+        <span class="has-mr-6">3.11.5</span>
+        <span>Unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#NodeList-class-added-for-better-nodelist-handling">
+        <span class="has-mr-6">3.12</span>
+        <span>NodeList class added for better nodelist handling</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#NodeList">
+        <span class="has-mr-6">3.12.1</span>
+        <span>NodeList</span>
+        </a></li><li>
+        <a class="is-flex" href="#Utils">
+        <span class="has-mr-6">3.12.2</span>
+        <span>Utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-Tests-and-Examples-adapted-to-the-changes">
+        <span class="has-mr-6">3.12.3</span>
+        <span>Unit Tests and Examples adapted to the changes</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Several-improvements">
+        <span class="has-mr-6">3.13</span>
+        <span>Several improvements</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">3.13.1</span>
+        <span>Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#CLI-1">
+        <span class="has-mr-6">3.13.2</span>
+        <span>CLI</span>
+        </a></li><li>
+        <a class="is-flex" href="#Comment">
+        <span class="has-mr-6">3.13.3</span>
+        <span>Comment</span>
+        </a></li><li>
+        <a class="is-flex" href="#Transactionbuilder">
+        <span class="has-mr-6">3.13.4</span>
+        <span>Transactionbuilder</span>
+        </a></li><li>
+        <a class="is-flex" href="#utils">
+        <span class="has-mr-6">3.13.5</span>
+        <span>utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Wallet-1">
+        <span class="has-mr-6">3.13.6</span>
+        <span>Wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests-2">
+        <span class="has-mr-6">3.13.7</span>
+        <span>Unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#If-keys-are-empty-try-with-next-higher-permission">
+        <span class="has-mr-6">3.14</span>
+        <span>If keys are empty try with next higher permission</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-flake8-and-add-unit-tests-for-permission-downgrade">
+        <span class="has-mr-6">3.15</span>
+        <span>Fix flake8 and add unit tests for permission downgrade</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-and-improve-curation-even-more">
+        <span class="has-mr-6">3.16</span>
+        <span>Fix and improve curation even more</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">3.17</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="Update for beem - all broadcast operation are now supported and beempy curation improved">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-27T20:21:03.000Z">2018-05-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1120 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Update for beem - all broadcast operation are now supported and beempy curation improved
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">https://github.com/holgern/beem</a></p>
+<center><img src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="beem-logo.png"><br></center>
+
+<p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 477 unit tests and a coverage of 81 %. The current version is 0.19.32.</p>
+<p>I created a discord channel for answering a question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a></p>
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h4 id="Missing-broadcast-operation-were-added"><a href="#Missing-broadcast-operation-were-added" class="headerlink" title="Missing broadcast operation were added"></a>Missing broadcast operation were added</h4><ul>
+<li>Account_witness_proxy added</li>
+<li>Custom added</li>
+<li>Custom_binary added</li>
+<li>Prove_authority added</li>
+<li>Limit_order_create2 added</li>
+<li>Request_account_recovery added</li>
+<li>Recover_account added</li>
+<li>Escrow_transfer added</li>
+<li>Escrow_dispute added</li>
+<li>Escrow_release added</li>
+<li>Escrow_approve added</li>
+<li>Decline_voting_rights added<h4 id="active-key-permission-can-be-used-for-posting-operation"><a href="#active-key-permission-can-be-used-for-posting-operation" class="headerlink" title="active key permission can be used for posting operation"></a>active key permission can be used for posting operation</h4>When no posting key is found, an active key is used instead for signing posting operation (e.g. voting).<br>When no key could be found, MissingKeyError is now always raised when a transaction should be signed.</li>
+</ul>
+<h4 id="refactoring-of-beem"><a href="#refactoring-of-beem" class="headerlink" title="refactoring of beem"></a>refactoring of beem</h4><ul>
+<li>beemgrapheneapi is depreated and all python files are moved to beemapi</li>
+<li>GrapheneRPC uses now a Nodes class instead of cycle([urls])</li>
+<li>get_nodes_list is removed from beem.utils and available in beem.nodelist.<h4 id="get-replies-added-to-Comment-class"><a href="#get-replies-added-to-Comment-class" class="headerlink" title="get_replies added to Comment class"></a>get_replies added to Comment class</h4><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from beem.comment import Comment</span><br><span class="line">c =Comment(&quot;@utopian-io/people-of-utopian-2-nepeta&quot;)</span><br><span class="line">replies = c.get_replies()</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h4 id="Keys-for-accounts-with-more-than-one-key-can-be-obtained"><a href="#Keys-for-accounts-with-more-than-one-key-can-be-obtained" class="headerlink" title="Keys for accounts with more than one key can be obtained"></a>Keys for accounts with more than one key can be obtained</h4><ul>
+<li>getKeysForAccount added</li>
+<li>getOwnerKeysForAccount, getActiveKeysForAccount, getPostingKeysForAccount added<h4 id="beempy-curation-improved"><a href="#beempy-curation-improved" class="headerlink" title="beempy curation improved"></a>beempy curation improved</h4><center><br><img src="https://ipfs.busy.org/ipfs/QmUCy4RsViUs63smw1NqqmSCJSbSxFSFuW2cKiqCsMy2UV" alt="image.png"><br></center><br>Besides the curation of a single post, the complete curation history of the last <code>d (default is 7)</code> days can be displayed. The curation command shows all votes from now on and goes backward. The first 7 days are pending rewards and then paid curation rewards are shown, when <code>-d</code> is set to a number higher than 7.<br>E.g.<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy curation -a holger80 -v 0.5 -x 100 -s</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>shows the curation of the last 7 days for votes higher than 0.5 SBD and with a performance better than 100 %. <code>-s</code> supresses the summery:<br><img src="https://ipfs.busy.org/ipfs/QmTtTiE2MXNzj62dFd2VeqUuDGuDBQsyuU6gFogKBMGHvd" alt="image.png"><br>There are two votes with a performance better than 100%.<br>Without <code>-s</code>:<br><img src="https://ipfs.busy.org/ipfs/QmdTLegAF6Yim3TXi2c7jVqRy8teYeixm1um2Bmku8MTQL" alt="image.png"><br>The highest vote and the vote with the highest curation performance are addionally shown for each post. The sum shows the resulting sum of all votes. The performance is in this case the curation percentage (maximum value is 25 %).</p>
+<p>It possible to analyze a post by taking the id which is shown by the author name (<code>ihtiht/logo-design-contribution-for-gplanner</code> can also be used instead of <code>24</code>) :<br><img src="https://ipfs.busy.org/ipfs/QmWqHDsNcxJb3d2kFqgCHPQBK4sumTesatXu872rM1a3g5" alt="image.png"></p>
+<ul>
+<li><code>-e curation.html</code> exports the result as html file</li>
+<li><code>-p</code>  shows the permlink</li>
+<li><code>-t</code> shows the title<br>#### <h3 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h3><h4 id="Add-missing-operations-with-unit-tests"><a href="#Add-missing-operations-with-unit-tests" class="headerlink" title="Add missing operations with unit tests"></a>Add missing operations with unit tests</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/17679d6b128c2504a78e310ef32039e62df5ca92" target="_blank" rel="noopener">commit 17679d6</a><h4 id="beembase-objects"><a href="#beembase-objects" class="headerlink" title="beembase\objects"></a>beembase\objects</h4></li>
+<li>Amount improve handling of new appbase Amount format<h4 id="beembase-operations"><a href="#beembase-operations" class="headerlink" title="beembase\operations"></a>beembase\operations</h4></li>
+<li>missing broadcast operation were added<h4 id="Unit-tests"><a href="#Unit-tests" class="headerlink" title="Unit tests"></a>Unit tests</h4></li>
+<li>add test_order_create2, test_witness_proxy, test_custom, test_request_account_recovery,  test_recover_account, test_escrow_transfer, test_escrow_dispute, test_escrow_release, test_escrow_approve, test_decline_voting_rights, test_delegate_vesting_shares, test_account_create_with_delegation added</li>
+</ul>
+<h4 id="Comment-get-replies-added-get-curation-penalty-improved-and-get-rewards-fixed"><a href="#Comment-get-replies-added-get-curation-penalty-improved-and-get-rewards-fixed" class="headerlink" title="Comment: get_replies added, get_curation_penalty improved and get_rewards fixed"></a>Comment: get_replies added, get_curation_penalty improved and get_rewards fixed</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/25ce837358b65970417edcb3dac71cd720e9d3ca" target="_blank" rel="noopener">commit 25ce837</a></li>
+</ul>
+<h4 id="beemgrapheneapi-is-deprecated-all-classes-and-functions-are-available-under-beemapi"><a href="#beemgrapheneapi-is-deprecated-all-classes-and-functions-are-available-under-beemapi" class="headerlink" title="beemgrapheneapi is deprecated, all classes and functions are available under beemapi"></a>beemgrapheneapi is deprecated, all classes and functions are available under beemapi</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/951d83220a4aa00d0de69be4b13bae90ef34929a" target="_blank" rel="noopener">commit 951d832</a></li>
+</ul>
+<h4 id="Fix-remaining-references-to-beemgrapheneapi-and-fix-not-working-wss-testnet-steem-vc"><a href="#Fix-remaining-references-to-beemgrapheneapi-and-fix-not-working-wss-testnet-steem-vc" class="headerlink" title="Fix remaining references to beemgrapheneapi and fix not working wss:/testnet.steem.vc"></a>Fix remaining references to beemgrapheneapi and fix not working wss:/testnet.steem.vc</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/0c0fbf2c321810433c3a377fe1dab0b5d24b0341" target="_blank" rel="noopener">commit 0c0fbf2</a></li>
+</ul>
+<h4 id="common-steem-constants-added-and-used-in-account-comment-and-steem"><a href="#common-steem-constants-added-and-used-in-account-comment-and-steem" class="headerlink" title="common steem constants added and used in account, comment and steem"></a>common steem constants added and used in account, comment and steem</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/bac8b3c4e7bbb592616614dd01ff3f6a276d1c42" target="_blank" rel="noopener">commit bac8b3c</a></li>
+</ul>
+<h4 id="Add-unit-test-for-constants"><a href="#Add-unit-test-for-constants" class="headerlink" title="Add unit test for constants"></a>Add unit test for constants</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/9199f83505e90559b53682debd0efe1e6fab7505" target="_blank" rel="noopener">commit 9199f83</a></li>
+</ul>
+<h4 id="Add-export-option-for-curation-and-votes"><a href="#Add-export-option-for-curation-and-votes" class="headerlink" title="Add export option for curation and votes"></a>Add export option for curation and votes</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/1b7ab8c76bc055df883917e0d43c183847df1b42" target="_blank" rel="noopener">commit 1b7ab8c</a><h5 id="CLI"><a href="#CLI" class="headerlink" title="CLI"></a>CLI</h5></li>
+<li>speed up votes and added export to text file</li>
+<li>curation can be used to export all pending curation rewards of one account</li>
+</ul>
+<h4 id="New-nodes-class-for-better-node-url-handling"><a href="#New-nodes-class-for-better-node-url-handling" class="headerlink" title="New nodes class for better node url handling"></a>New nodes class for better node url handling</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/a261c53ed744ca91124e5d6d0f5cc5d198843578" target="_blank" rel="noopener">commit a261c53</a><h5 id="Wallet"><a href="#Wallet" class="headerlink" title="Wallet"></a>Wallet</h5></li>
+<li>getKeysForAccount added</li>
+<li>getOwnerKeysForAccount, getActiveKeysForAccount, getPostingKeysForAccount added<h5 id="beemapi"><a href="#beemapi" class="headerlink" title="beemapi"></a>beemapi</h5></li>
+<li>WorkingNodeMissing is raised when no working node could be found<h5 id="GrapheneRPC"><a href="#GrapheneRPC" class="headerlink" title="GrapheneRPC"></a>GrapheneRPC</h5></li>
+<li>cycle([urls]) is replaced by the nodes class<h5 id="Nodes"><a href="#Nodes" class="headerlink" title="Nodes"></a>Nodes</h5></li>
+<li>Node handling and management of url and error_counts is performed by the nodes class</li>
+<li>sleep_and_check_retries is moved to the nodes class</li>
+<li>Websocket, steemnodrpc were adpapted to the changes<h5 id="Unit-tests-1"><a href="#Unit-tests-1" class="headerlink" title="Unit tests"></a>Unit tests</h5></li>
+<li>new tests for the nodes class</li>
+<li>tests adapted for websocket and rpcutils</li>
+</ul>
+<h4 id="NodeList-class-added-for-better-nodelist-handling"><a href="#NodeList-class-added-for-better-nodelist-handling" class="headerlink" title="NodeList class added for better nodelist handling"></a>NodeList class added for better nodelist handling</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/223ac872ae4bb57f2da737bfd57a25cd0260dd66" target="_blank" rel="noopener">commit 223ac87</a><h5 id="NodeList"><a href="#NodeList" class="headerlink" title="NodeList"></a>NodeList</h5></li>
+<li>replaces get_node_list from utils.py</li>
+<li>is a list and contains all nodes as dict</li>
+<li>get_nodes() returns the url in a list<h5 id="Utils"><a href="#Utils" class="headerlink" title="Utils"></a>Utils</h5></li>
+<li>get_node_list removed<h5 id="Unit-Tests-and-Examples-adapted-to-the-changes"><a href="#Unit-Tests-and-Examples-adapted-to-the-changes" class="headerlink" title="Unit Tests and Examples adapted to the changes"></a>Unit Tests and Examples adapted to the changes</h5></li>
+</ul>
+<h4 id="Several-improvements"><a href="#Several-improvements" class="headerlink" title="Several improvements"></a>Several improvements</h4><ul>
+<li><a href="https://github.com/holgern/beem/commit/818c8f1b54d159889e1c0bd0ffe39fa1c1680855" target="_blank" rel="noopener">commit </a><h5 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h5></li>
+<li>datetime.date is also supported<h5 id="CLI-1"><a href="#CLI-1" class="headerlink" title="CLI"></a>CLI</h5></li>
+<li>curation improved<h5 id="Comment"><a href="#Comment" class="headerlink" title="Comment"></a>Comment</h5></li>
+<li>doc improved<h5 id="Transactionbuilder"><a href="#Transactionbuilder" class="headerlink" title="Transactionbuilder"></a>Transactionbuilder</h5></li>
+<li>doc fixed</li>
+<li>owner key is used, when provided and when no other permission is given<h5 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h5></li>
+<li>datetime.date supported<h5 id="Wallet-1"><a href="#Wallet-1" class="headerlink" title="Wallet"></a>Wallet</h5></li>
+<li>raise MissingKeyError when a wrong key is given by Steem(keys=[])<h5 id="Unit-tests-2"><a href="#Unit-tests-2" class="headerlink" title="Unit tests"></a>Unit tests</h5></li>
+<li>several unit tests has to be changed as now it is really tested if a given wif belongs to the account or not.<h4 id="If-keys-are-empty-try-with-next-higher-permission"><a href="#If-keys-are-empty-try-with-next-higher-permission" class="headerlink" title="If keys are empty try with next higher permission"></a>If keys are empty try with next higher permission</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/56faf8c42a2093bfeeb7e9fcd4f0973568c8be63" target="_blank" rel="noopener">commit 56faf8c</a><h4 id="Fix-flake8-and-add-unit-tests-for-permission-downgrade"><a href="#Fix-flake8-and-add-unit-tests-for-permission-downgrade" class="headerlink" title="Fix flake8 and add unit tests for permission downgrade"></a>Fix flake8 and add unit tests for permission downgrade</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/b66d97fc861624976e4d76fc4e290fa2e608d6d3" target="_blank" rel="noopener">commit b66d97f</a><h4 id="Fix-and-improve-curation-even-more"><a href="#Fix-and-improve-curation-even-more" class="headerlink" title="Fix and improve curation even more"></a>Fix and improve curation even more</h4></li>
+<li><a href="https://github.com/holgern/beem/commit/122e2348a79249b98e481fb2120d12dead561628" target="_blank" rel="noopener">commit 122e234</a><h4 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h4><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-all-broadcast-operation-are-now-supported-and-beempy-curation-improved" target="_blank" rel="noopener">&#x2018;Update for beem - all broadcast operation are now supported and beempy curation improved&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/update-for-beem-steemconnect-integration-and-bug-fixes/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Update for beem - steemconnect integration and bug fixes</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/does-the-steem-blockchain-comply-with-the-gdpr-and-european-privacy-laws/">
+                <span class="level-item">Does the steem blockchain comply with the GDPR and European privacy laws?</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steemmonsters, a new command line tool for battling opponents with your cards - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#steemmonsters-a-new-command-line-tool-for-python">
+        <span class="has-mr-6">1.2</span>
+        <span>steemmonsters - a new command line tool for python</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Installation">
+        <span class="has-mr-6">2</span>
+        <span>Installation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Windows-user">
+        <span class="has-mr-6">2.1</span>
+        <span>Windows user</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Commands">
+        <span class="has-mr-6">3</span>
+        <span>Commands</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Available-commands-inside-the-tool">
+        <span class="has-mr-6">3.1</span>
+        <span>Available commands inside the tool</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Setup-the-beem-wallet">
+        <span class="has-mr-6">4</span>
+        <span>Setup the beem wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#Configuration">
+        <span class="has-mr-6">5</span>
+        <span>Configuration</span>
+        </a></li><li>
+        <a class="is-flex" href="#How-does-it-work">
+        <span class="has-mr-6">6</span>
+        <span>How does it work</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Play-a-match">
+        <span class="has-mr-6">6.1</span>
+        <span>Play a match</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">6.2</span>
+        <span>Roadmap</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#How-to-contribute">
+        <span class="has-mr-6">6.2.1</span>
+        <span>How to contribute</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">6.2.2</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmTUKeF2hLXKyC4CaggkFp6GwGBaDcFjn8zTPxiBJKRqJN" alt="steemmonsters, a new command line tool for battling opponents with your cards">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-10-19T22:02:27.000Z">2018-10-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 752 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steemmonsters, a new command line tool for battling opponents with your cards
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/steemmonsters" target="_blank" rel="noopener">https://github.com/holgern/steemmonsters</a></p>
+<h3 id="steemmonsters-a-new-command-line-tool-for-python"><a href="#steemmonsters-a-new-command-line-tool-for-python" class="headerlink" title="steemmonsters - a new command line tool for python"></a>steemmonsters - a new command line tool for python</h3><p>Steem monsters is a fully decentralized trading card game on the steem blockchain. This new toolbox can be used to play ranked matches and to stream currently played matches.</p>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install steemmonsters</span><br></pre></td></tr></tbody></table></figure>
+<p>Copy <a href="https://github.com/holgern/steemmonsters/blob/master/config.json" target="_blank" rel="noopener">https://github.com/holgern/steemmonsters/blob/master/config.json</a> to a directory and adapt it. Start <code>steemmonsters</code> in the directory with the <code>config.json</code>.</p>
+<h3 id="Windows-user"><a href="#Windows-user" class="headerlink" title="Windows user"></a>Windows user</h3><p>clone the github<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/holgern/steemmonsters.git</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><p>The steem monsters shell can be started with<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">steemmonsters</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>config.json</code> must be available in the current directory of the terminal.</p>
+<p>When cloned the github instead of using pip (e.g. on windows with the anaconda terminal):<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python steemmonsters.py</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Available-commands-inside-the-tool"><a href="#Available-commands-inside-the-tool" class="headerlink" title="Available commands inside the tool"></a>Available commands inside the tool</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; stream</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://ipfs.busy.org/ipfs/QmTUKeF2hLXKyC4CaggkFp6GwGBaDcFjn8zTPxiBJKRqJN" alt="image.png"></p>
+<p>This command shows the current battles and which player are participating</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play deck_name</span><br></pre></td></tr></tbody></table></figure>
+<p><code>deck_name</code> is one of the stored decks defined in <code>config.json</code>. E.g. <code>death1</code>:<br><img src="https://ipfs.busy.org/ipfs/QmbQrtwL2aohc2YQTgxGsXYU4WkcqWm7krcW8FQiMRjg29" alt="image.png"></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play random</span><br></pre></td></tr></tbody></table></figure>
+<p>selects randomly a deck.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; show_deck deck_name</span><br></pre></td></tr></tbody></table></figure>
+<p>shows deck <code>deck_name</code>.<br><img src="https://ipfs.busy.org/ipfs/QmbQRkUHGCHgxShzCzmyTkTsfPT8mooEcaPyjq9oQ337A3" alt="image.png"></p>
+<h2 id="Setup-the-beem-wallet"><a href="#Setup-the-beem-wallet" class="headerlink" title="Setup the beem wallet"></a>Setup the beem wallet</h2><p>Create a new wallet, when not already done.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy createwallet</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Add the posting key of the player by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy addkey</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><p>A file <code>config.json</code> must  exist in the current directory with the following content:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">    &quot;wallet_password&quot;: &quot;123&quot;,</span><br><span class="line">    &quot;account&quot;: &quot;holger80&quot;,</span><br><span class="line">    &quot;mana_cap&quot;: 23,</span><br><span class="line">    &quot;ruleset&quot;: &quot;Standard&quot;,</span><br><span class="line">    &quot;match_type&quot;: &quot;Ranked&quot;,</span><br><span class="line">    &quot;decks&quot;: {</span><br><span class="line">                &quot;death1&quot;: [&quot;Zintar Mortalis&quot;, &quot;Haunted Spirit&quot;, &quot;Skeleton Assassin&quot;, &quot;Twisted Jester&quot;, &quot;Haunted Spider&quot;, &quot;Screaming Banshee&quot;, &quot;Undead Priest&quot;],</span><br><span class="line">                &quot;water1&quot;: [&quot;Alric Stormbringer&quot;, &quot;Naga Warrior&quot;, &quot;Medusa&quot;, &quot;Mischievous Mermaid&quot;, &quot;Pirate Captain&quot;, &quot;Crustacean King&quot;],</span><br><span class="line">                &quot;fire1&quot;: [&quot;Malric Inferno&quot;, &quot;Serpentine Soldier&quot;, &quot;Elemental Phoenix&quot;, &quot;Goblin Shaman&quot;, &quot;Fire Demon&quot;],</span><br><span class="line">    },</span><br><span class="line">    &quot;play_counter&quot;: 1</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<ul>
+<li><code>wallet_password</code> is the <code>beempy</code> wallet password</li>
+<li><code>account</code>: steem user name of the player</li>
+<li><code>mana_cap</code>: current mana cap</li>
+<li><code>ruleset</code>: current rule set</li>
+<li><code>match_type</code>: match type</li>
+<li><code>decks</code> contains the different pre defined decks. There is no mana_cap check</li>
+<li><code>play_counter</code> diffens how often a deck is played</li>
+</ul>
+<h2 id="How-does-it-work"><a href="#How-does-it-work" class="headerlink" title="How does it work"></a>How does it work</h2><p>The package uses beem for broadcasting the necessary custom_json and finding the transation id.</p>
+<h3 id="Play-a-match"><a href="#Play-a-match" class="headerlink" title="Play a match"></a>Play a match</h3><p>At first a deck is build from the <code>config.json</code>. Therefore, all cards of the player are fetched by<br>the <code>get_collection</code> function from the Api class. The card names are than matched and the card uid is selected. It is always the card with the highest level selected.</p>
+<p>In the next step, a secret is created:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;&apos;.join(random.choice(string.ascii_letters + string.digits) for _ in range(length))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and the team hash is calculated:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">m = hashlib.md5()</span><br><span class="line">m.update((summoner+&apos;,&apos; + &apos;,&apos;.join(monsters)+ &apos;,&apos;+secret).encode(&quot;utf-8&quot;))</span><br><span class="line">team_hash = m.hexdigest()</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The first custom_json with id <code>sm_find_match</code> can then be broadcasted:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">json_data = {&quot;match_type&quot;:match_type, &quot;mana_cap&quot;:mana_cap,&quot;team_hash&quot;:team_hash,&quot;summoner_level&quot;:summoner_level,&quot;ruleset&quot;:ruleset}</span><br><span class="line">trx = self.stm.custom_json(&apos;sm_find_match&apos;, json_data, required_posting_auths=[acc[&quot;name&quot;]])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>All custom_json are now streamed until a custom_json with the correct team_hash is found:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">for h in self.b.stream(opNames=[&quot;custom_json&quot;]):</span><br><span class="line">     if h[&quot;id&quot;] == &apos;sm_find_match&apos;:</span><br><span class="line">         if json.loads(h[&apos;json&apos;])[&quot;team_hash&quot;] == team_hash:</span><br><span class="line">             found = True</span><br><span class="line">             break</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The <code>trx_id</code> is then stored into the <code>deck</code> dict:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deck[&quot;trx_id&quot;] =  h[&apos;trx_id&apos;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>It is now checked that a opponent wants to play with the <code>get_from_block</code> function from the steemmonsters api.</p>
+<p>When at least one player also searches for a match, the second custom_json is send<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">json_data = deck</span><br><span class="line">trx = self.stm.custom_json(&apos;sm_team_reveal&apos;, json_data, required_posting_auths=[acc[&quot;name&quot;]])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now the battle result is checked:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">response = requests.get(&quot;https://steemmonsters.com/transactions/lookup?trx_id=%s&quot; % deck[&quot;trx_id&quot;])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and printed.</p>
+<h3 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h3><ul>
+<li>Improved config file handling</li>
+<li>Show more details about the battle</li>
+<li>Fetch currently played decks and allow using them for the next battle</li>
+</ul>
+<h4 id="How-to-contribute"><a href="#How-to-contribute" class="headerlink" title="How to contribute"></a>How to contribute</h4><p>Please create issues in <a href="https://github.com/holgern/steemmonsters" target="_blank" rel="noopener">https://github.com/holgern/steemmonsters</a> when something does no work or for a feature wish or improvement. Pull requests are welcome.</p>
+<p>You can contact me also in discord holger80 [Witness]#3688</p>
+<h4 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h4><p><a href="https://github.com/holgern/" target="_blank" rel="noopener">https://github.com/holgern/</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steemmonsters-a-new-command-line-tool-for-battling-opponents-with-your-decks" target="_blank" rel="noopener">&#x2018;steemmonsters, a new command line tool for battling opponents with your cards&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemmonsters/">steemmonsters</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/new-features-for-python-steemmonsters-0-0-10-added/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">New features in python steemmonsters added</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/do-you-want-to-know-which-decks-currently-win-in-steem-monsters/">
+                <span class="level-item">Do you want to know which decks currently win in steem monsters?</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Bug: steem-verifier crashes on certain transaction ids - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Project-Information">
+        <span class="has-mr-6">1</span>
+        <span>Project Information</span>
+        </a></li><li>
+        <a class="is-flex" href="#Expected-behavior">
+        <span class="has-mr-6">2</span>
+        <span>Expected behavior</span>
+        </a></li><li>
+        <a class="is-flex" href="#Actual-behavior">
+        <span class="has-mr-6">3</span>
+        <span>Actual behavior`</span>
+        </a></li><li>
+        <a class="is-flex" href="#How-to-reproduce">
+        <span class="has-mr-6">4</span>
+        <span>How to reproduce</span>
+        </a></li><li>
+        <a class="is-flex" href="#Recording-Of-The-Bug">
+        <span class="has-mr-6">5</span>
+        <span>Recording Of The Bug</span>
+        </a></li><li>
+        <a class="is-flex" href="#Proof-of-Work-Done">
+        <span class="has-mr-6">6</span>
+        <span>Proof of Work Done</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://gateway.ipfs.io/ipfs/QmR55g2HWLYQJFXko46exShA9rNuRZ1jEtkrbZjJ5grX7P" alt="Bug: steem-verifier crashes on certain transaction ids">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-07T10:08:27.000Z">2018-05-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 496 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Bug: steem-verifier crashes on certain transaction ids
+            
+        </h1>
+        <div class="content">
+            <h4 id="Project-Information"><a href="#Project-Information" class="headerlink" title="Project Information"></a>Project Information</h4><ul>
+<li>Repository: <a href="https://github.com/hernandev/steem-verifier" target="_blank" rel="noopener">https://github.com/hernandev/steem-verifier</a></li>
+<li>Project Name: steem-verifier</li>
+</ul>
+<h4 id="Expected-behavior"><a href="#Expected-behavior" class="headerlink" title="Expected behavior"></a>Expected behavior</h4><p>When giving a valid transaction id, steem-verifier should show the public key of the signer and the user name of the signer.</p>
+<h4 id="Actual-behavior"><a href="#Actual-behavior" class="headerlink" title="Actual behavior`"></a>Actual behavior`</h4><p>Install steem-verifier with<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install steem-verifier</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and enter the following into the terminal:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">steem-verifier d6457b3ad20583b3434f3a06c2c648b3a770c341</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now steem-verifier crashes with:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ecdsa.numbertheory.SquareRootError: 76198183007165409965398859979003670973818984091490751645956120696063919941083 has no square root modulo 115792089237316195423570985008687907853269984665640564039457584007908834671663</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h4 id="How-to-reproduce"><a href="#How-to-reproduce" class="headerlink" title="How to reproduce"></a>How to reproduce</h4><p>Here is the proof that <code>d6457b3ad20583b3434f3a06c2c648b3a770c341</code> is a valid trx<br>(using <a href="https://steemd.com/tx/d6457b3ad20583b3434f3a06c2c648b3a770c341" target="_blank" rel="noopener">https://steemd.com/tx/d6457b3ad20583b3434f3a06c2c648b3a770c341</a>):<br><img src="https://gateway.ipfs.io/ipfs/QmR55g2HWLYQJFXko46exShA9rNuRZ1jEtkrbZjJ5grX7P" alt="image.png"></p>
+<ul>
+<li>Browser/App version: Python 3.6.4, steempy 1.0.0</li>
+<li>Operating system: Linux brooks.uberspace.de 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux</li>
+</ul>
+<h4 id="Recording-Of-The-Bug"><a href="#Recording-Of-The-Bug" class="headerlink" title="Recording Of The Bug"></a>Recording Of The Bug</h4><p><img src="https://gateway.ipfs.io/ipfs/Qmbv1V6DxEzuBVYKrhGGZ2rBVPq6ENPWemJWyUWKw755vA" alt="07-05-_2018_11-59-32.gif"><br>Traceback:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/home/holger80/.local/bin/steem-verifier&quot;, line 11, in &lt;module&gt;</span><br><span class="line">    sys.exit(entry())</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/verifier/cli.py&quot;, line 48, in entry</span><br><span class="line">    public_keys = verifier.get_public_keys(transaction_data)</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/verifier/verifier.py&quot;, line 56, in get_public_keys</span><br><span class="line">    for key in transaction.verify(chain=self.chain):</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/steembase/transactions.py&quot;, line 225, in verify</span><br><span class="line">    p = self.recover_public_key(self.digest, sig, recoverParameter)</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/steembase/transactions.py&quot;, line 141, in recover_public_key</span><br><span class="line">    beta = ecdsa.numbertheory.square_root_mod_prime(alpha, curve.p())</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/ecdsa/numbertheory.py&quot;, line 165, in square_root_mod_prime</span><br><span class="line">    % ( a, p ) )</span><br><span class="line">ecdsa.numbertheory.SquareRootError: 76198183007165409965398859979003670973818984091490751645956120696063919941083 has no square root modulo 115792089237316195423570985008687907853269984665640564039457584007908834671663</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>It is possible to use the <code>secp256k1</code> module for sign and verify in steem-python. Let&#x2019;s see if the usage of this module changes something:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">=&gt; Extracting public keys...</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/home/holger80/.local/bin/steem-verifier&quot;, line 11, in &lt;module&gt;</span><br><span class="line">    sys.exit(entry())</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/verifier/cli.py&quot;, line 48, in entry</span><br><span class="line">    public_keys = verifier.get_public_keys(transaction_data)</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/verifier/verifier.py&quot;, line 56, in get_public_keys</span><br><span class="line">    for key in transaction.verify(chain=self.chain):</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/steembase/transactions.py&quot;, line 213, in verify</span><br><span class="line">    sig = pub.ecdsa_recoverable_deserialize(sig, recoverParameter)</span><br><span class="line">  File &quot;/home/holger80/.local/lib/python3.6/site-packages/secp256k1/__init__.py&quot;, line 136, in ecdsa_recoverable_deserialize</span><br><span class="line">    raise Exception(&quot;invalid rec_id&quot;)</span><br><span class="line">Exception: invalid rec_id</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Does also not work, but different error message.</p>
+<h4 id="Proof-of-Work-Done"><a href="#Proof-of-Work-Done" class="headerlink" title="Proof of Work Done"></a>Proof of Work Done</h4><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/bug-steem-verifier-crashes-on-certain-transaction-ids" target="_blank" rel="noopener">&#x2018;Bug: steem-verifier crashes on certain transaction ids&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/blockchain/">blockchain</a>, <a class="has-link-grey -link" href="/@holger80/tags/bug-hunting/">bug-hunting</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/update-for-beem-autoclean-new-cli-commands-virtual-op-estimation-new-comment-functions-and-stand-alone-beempy/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Update for beem - autoclean, new CLI commands, virtual op estimation, new Comment functions and stand alone beempy</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/warning-revoke-all-your-steemconnect-token-now/">
+                <span class="level-item">SteemConnect token were stolen from utopian.io and used to downvote</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Next update for beem - a python library for steem - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">1</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Acount">
+        <span class="has-mr-6">1.1</span>
+        <span>Acount</span>
+        </a></li><li>
+        <a class="is-flex" href="#Comment">
+        <span class="has-mr-6">1.2</span>
+        <span>Comment</span>
+        </a></li><li>
+        <a class="is-flex" href="#Discussions">
+        <span class="has-mr-6">1.3</span>
+        <span>Discussions</span>
+        </a></li><li>
+        <a class="is-flex" href="#Market">
+        <span class="has-mr-6">1.4</span>
+        <span>Market</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem">
+        <span class="has-mr-6">1.5</span>
+        <span>Steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#utils">
+        <span class="has-mr-6">1.6</span>
+        <span>utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Wallet">
+        <span class="has-mr-6">1.7</span>
+        <span>Wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#Witness">
+        <span class="has-mr-6">1.8</span>
+        <span>Witness</span>
+        </a></li><li>
+        <a class="is-flex" href="#Several-Unit-tests-were-also-added">
+        <span class="has-mr-6">1.9</span>
+        <span>Several Unit tests were also added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Small-bugfix-and-relase-of-version-0-19-6">
+        <span class="has-mr-6">1.10</span>
+        <span>Small bugfix and relase of version 0.19.6</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519568648/vgzfw6jvaxlckmgnsebf.png" alt="Next update for beem - a python library for steem">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-25T14:30:33.000Z">2018-02-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 476 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Next update for beem - a python library for steem
+            
+        </h1>
+        <div class="content">
+            <p>In this update, I added more functionality to the account, comment, market, steem and witness class.<br>The beem library can also be used with python 3.4, as all unit tests are passing. The current coverage is 69%. You can find my library on <a href="https://github.com/holgern/beem" target="_blank" rel="noopener">github</a> and <a href="https://pypi.python.org/pypi/beem" target="_blank" rel="noopener">pypi</a>. You can also take a look in the <a href="http://beem.readthedocs.io/en/latest/" target="_blank" rel="noopener">documentation</a>.</p>
+<center><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519568648/vgzfw6jvaxlckmgnsebf.png" alt="image.png"></center>
+
+
+<h1 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h1><ul>
+<li><a href="https://github.com/holgern/beem/commit/acbb397571ca2ead503a4adabab5259cbd2c1223" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/acbb397571ca2ead503a4adabab5259cbd2c1223</a><h2 id="Acount"><a href="#Acount" class="headerlink" title="Acount"></a>Acount</h2></li>
+<li>print_info() shows import information about the account</li>
+<li>voting_power, steem_power, get_voting_value_SBD, get_followers, get_following, get_bandwidth</li>
+<li>unfollow, follow, update_account_profile, transfer_to_vesting, convert, transfer_to_savings, transfer_from_savings, cancel_transfer_from_savings, claim_reward_balance, delegate_vesting_shares, withdraw_vesting added to the account class</li>
+<li>transfer, approvewitness, dissapprovewitness and update_memo_key moved from the steem-class to the account class<h2 id="Comment"><a href="#Comment" class="headerlink" title="Comment"></a>Comment</h2></li>
+<li>upvote, downvote, vote, edit, reply, post, resteem, comment_options added<h2 id="Discussions"><a href="#Discussions" class="headerlink" title="Discussions"></a>Discussions</h2></li>
+<li>Comment_discussions_by_payout, Post_discussions_by_payout, Discussions_by_created, Discussions_by_active, Discussions_by_cashout, Discussions_by_payout, Discussions_by_votes, Discussions_by_children, Discussions_by_hot, Discussions_by_feed, Discussions_by_blog, Discussions_by_comments, Discussions_by_promoted added<h2 id="Market"><a href="#Market" class="headerlink" title="Market"></a>Market</h2></li>
+<li>Is now fully functional</li>
+<li>ticker, volume24h, orderbook, recent_trades, trades, market_history and accountopenorders added</li>
+<li>buy, sell and cancel added<h2 id="Steem"><a href="#Steem" class="headerlink" title="Steem"></a>Steem</h2></li>
+<li>register apis fixed</li>
+<li>dynamic_global_properties, feed_history, current_median_history_price, next_scheduled_hardfork, hardfork_version, network, chain_properties, config and reward_fund are stored in self.data. It can be refreshed by refresh_data(True). All functions to read these variables were moved from blockchain to steem.</li>
+<li>get_median_price, get_payout_from_rshares, get_steem_per_mvest, vests_to_sp, sp_to_vests, sp_to_sbd, sp_to_rshares added</li>
+<li>custom_json added<h2 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h2></li>
+<li>make_patch added<h2 id="Wallet"><a href="#Wallet" class="headerlink" title="Wallet"></a>Wallet</h2></li>
+<li>small fix<h2 id="Witness"><a href="#Witness" class="headerlink" title="Witness"></a>Witness</h2></li>
+<li>feed_publish and update added</li>
+</ul>
+<h2 id="Several-Unit-tests-were-also-added"><a href="#Several-Unit-tests-were-also-added" class="headerlink" title="Several Unit tests were also added"></a>Several Unit tests were also added</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/27e41802d2bf883ba52953e8e2c851d02c00c1da" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/27e41802d2bf883ba52953e8e2c851d02c00c1da</a><ul>
+<li><a href="https://github.com/holgern/beem/commit/f5bfccbf6caffaf05e88a83d33f8abf14da66aad" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/f5bfccbf6caffaf05e88a83d33f8abf14da66aad</a></li>
+<li><a href="https://github.com/holgern/beem/commit/809b7b23b9b152dc1a336e027e421b4e7daf8de5" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/809b7b23b9b152dc1a336e027e421b4e7daf8de5</a><h2 id="Small-bugfix-and-relase-of-version-0-19-6"><a href="#Small-bugfix-and-relase-of-version-0-19-6" class="headerlink" title="Small bugfix and relase of version 0.19.6"></a>Small bugfix and relase of version 0.19.6</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/63c5381107670d65fa23ff3dd37846916993f3d2" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/63c5381107670d65fa23ff3dd37846916993f3d2</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>For the next update, I will try to add missing functions and i will improve the documentation.<br>Did you try my new library yet? Please give me feedback!</p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/next-update-for-beem-a-python-library-for-steem" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/next-update-for-beem-a-python-library-for-steem" target="_blank" rel="noopener">&#x2018;Next update for beem - a python library for steem&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-python/">steem-python</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/update-for-beem-now-compatible-with-python-2-7/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Update for beem - now compatible with python 2.7</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/update-for-beem-former-steempy-the-new-a-python-library-for-steem/">
+                <span class="level-item">Update for beem (former steempy) - the new python library for steem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

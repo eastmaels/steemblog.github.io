@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steem-scot - distributing token by comment command - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#Distribute-token-by-specific-comment-commands">
+        <span class="has-mr-6">2</span>
+        <span>Distribute token by specific comment commands</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Usage">
+        <span class="has-mr-6">2.1</span>
+        <span>Usage</span>
+        </a></li><li>
+        <a class="is-flex" href="#config-json">
+        <span class="has-mr-6">2.2</span>
+        <span>config.json</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#How-does-the-script-work">
+        <span class="has-mr-6">3</span>
+        <span>How does the script work</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">4</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Version-0-2-0-added-a-way-to-distribution-token-by-comment-commands">
+        <span class="has-mr-6">4.1</span>
+        <span>Version 0.2.0, added a way to distribution token by comment commands</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">5</span>
+        <span>GitHub Account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmXE1oWFb5uj1sHHcbZSsuRAUFNjCZBpBUE3oRaGwPYTDz" alt="steem-scot - distributing token by comment command">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-29T23:18:27.000Z">2019-03-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 867 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steem-scot - distributing token by comment command
+            
+        </h1>
+        <div class="content">
+            <h2 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h2><p><a href="https://github.com/holgern/steem-scot" target="_blank" rel="noopener">https://github.com/holgern/steem-scot</a></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmXE1oWFb5uj1sHHcbZSsuRAUFNjCZBpBUE3oRaGwPYTDz" alt="image.png"></p>
+<p>The python package steem-scot is an implementation for distribute Smart Contract Organizational Token (SCOT). It can be installed by</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ (sudo) pip install steem-scot</span><br></pre></td></tr></tbody></table></figure>
+<p>and depends on <a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> and <a href="https://github.com/holgern/steemengine" target="_blank" rel="noopener">steemengine</a>.</p>
+<h2 id="Distribute-token-by-specific-comment-commands"><a href="#Distribute-token-by-specific-comment-commands" class="headerlink" title="Distribute token by specific comment commands"></a>Distribute token by specific comment commands</h2><p>I added a second way for distributing token.  Every steem account which has sufficient Token, is allowed to issue token to other by writing a command into a reply.<br><img src="https://ipfs.busy.org/ipfs/QmSxPFCPwawjQYzwMDS64fCuGiWehcQ5SWUqy9eKPtqc1n" alt="image.png"></p>
+<p><img src="https://ipfs.busy.org/ipfs/Qmf4SNRy1rektqSrMoQNc1kNJvSMF2rdt1VousSYNmxzBU" alt="image.png"></p>
+<p>In this case, the scot-account was beembot and the scot-token is DRAGON. As I have more than 10 DRAGON, I&#x2019;m  allowed to write the !DRAGON command as reply. Whenever I&#x2019;m doing this, the scot-account will issue a certain amount of the token to the parent author of my comment.</p>
+<p>An example is the DRAMA token, which works in this way. So everyone can have their own DRAMA by using the steem-scot package.</p>
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>The script should be running all day, so that new comments can be parsed and comments with the specified command can be found.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ scot_by_comment /path/to/config.json</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="config-json"><a href="#config-json" class="headerlink" title="config.json"></a>config.json</h3><p>In order to be using the script, a config.json must be created. All fields must be included.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Option</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">scot_account</td>
+<td>steem account name, which should distribute the token</td>
+</tr>
+<tr>
+<td style="text-align:center">scot_token</td>
+<td>token symbol, which should be distributed</td>
+</tr>
+<tr>
+<td style="text-align:center">token_memo</td>
+<td>memo which is attached to each token transfer</td>
+</tr>
+<tr>
+<td style="text-align:center">wallet_password</td>
+<td>Contains the beempy wallet password</td>
+</tr>
+<tr>
+<td style="text-align:center">no_broadcast</td>
+<td>When true, no transfer is made</td>
+</tr>
+<tr>
+<td style="text-align:center">min_staked_token</td>
+<td>Minimum amount of token a comment writer must have</td>
+</tr>
+<tr>
+<td style="text-align:center">send_token_amount</td>
+<td>Amount of token that will be send</td>
+</tr>
+<tr>
+<td style="text-align:center">sucess_reply_body</td>
+<td>Reply body, when token are send</td>
+</tr>
+<tr>
+<td style="text-align:center">fail_reply_body</td>
+<td>Reply body, when no token are sent (not min_staked_token available)</td>
+</tr>
+<tr>
+<td style="text-align:center">comment_command</td>
+<td>Command which must be included in a comment, to activate the bot</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>sucess_reply_body</code> can have a placeholder <code>%s</code>, which will be filled with the comment parent author. token_memo   can also have a placeholder <code>%s</code>, which is replaced by the command issuer.</p>
+<h2 id="How-does-the-script-work"><a href="#How-does-the-script-work" class="headerlink" title="How does the script work"></a>How does the script work</h2><p>The posting and active key of the scot account, which will sent the token and reply to the comment with the command, needs to be stored in the beem wallet.</p>
+<p>The script parses all comment ops by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for op in self.blockchain.stream(start=start_block, stop=stop_block, opNames=[&quot;comment&quot;],  max_batch_size=50):</span><br><span class="line">     cnt += 1</span><br><span class="line">     last_block_num = op[&quot;block_num&quot;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>last_block_num</code> is stored in a shelve:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data_db = shelve.open(&apos;data.db&apos;)</span><br><span class="line">data_db[&quot;last_block_num&quot;] = last_block_num</span><br><span class="line">data_db.close()</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>This allows it to start exactly there where the script was stopped. When a comment with a command was found (all comments which do not include the command string will be skipped):<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">if op[&quot;body&quot;].find(self.config[&quot;comment_command&quot;]) &lt; 0:</span><br><span class="line">    continue</span><br><span class="line">if op[&quot;author&quot;] == self.config[&quot;scot_account&quot;]:</span><br><span class="line">    continue</span><br><span class="line">try:</span><br><span class="line">    c_comment = Comment(op, steem_instance=self.stm)</span><br><span class="line">    c_comment.refresh()</span><br><span class="line">except:</span><br><span class="line">    logger.warn(&quot;Could not read %s/%s&quot; % (op[&quot;author&quot;], op[&quot;permlink&quot;]))</span><br><span class="line">    continue</span><br><span class="line">if c_comment.is_main_post():</span><br><span class="line">    continue</span><br><span class="line">if abs((c_comment[&quot;created&quot;] - op[&apos;timestamp&apos;]).total_seconds()) &gt; 9.0:</span><br><span class="line">    logger.warn(&quot;Skip %s, as edited&quot; % c_comment[&quot;authorperm&quot;])</span><br><span class="line">    continue</span><br><span class="line">already_replied = False</span><br><span class="line">for r in c_comment.get_all_replies():</span><br><span class="line">    if r[&quot;author&quot;] == self.config[&quot;scot_account&quot;]:</span><br><span class="line">        already_replied = True</span><br><span class="line">if already_replied:</span><br><span class="line">    continue</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>It is then checked if the comment writer has sufficient token. If this is the case, a comment is replied with the stored <code>sucess_reply_body</code> from the config file and <code>send_token_amount</code> token are sent to the parent author.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">wallet = Wallet(c_comment[&quot;author&quot;], steem_instance=self.stm)</span><br><span class="line">token = wallet.get_token(self.config[&quot;scot_token&quot;])</span><br><span class="line">if token is None or float(token[&quot;balance&quot;]) &lt; self.config[&quot;min_staked_token&quot;]:</span><br><span class="line">    reply_body = self.config[&quot;fail_reply_body&quot;]</span><br><span class="line">elif c_comment[&quot;parent_author&quot;] == c_comment[&quot;author&quot;]:</span><br><span class="line">    reply_body = &quot;You cannot sent token to yourself.&quot;</span><br><span class="line">else:</span><br><span class="line">    if &quot;%s&quot; in self.config[&quot;sucess_reply_body&quot;]:</span><br><span class="line">        reply_body = self.config[&quot;sucess_reply_body&quot;] % c_comment[&quot;parent_author&quot;]</span><br><span class="line">    else:</span><br><span class="line">        reply_body = self.config[&quot;sucess_reply_body&quot;]</span><br><span class="line">    if &quot;%s&quot; in self.config[&quot;token_memo&quot;]:</span><br><span class="line">        token_memo = self.config[&quot;token_memo&quot;] % c_comment[&quot;author&quot;]</span><br><span class="line">    else:</span><br><span class="line">        token_memo = self.config[&quot;token_memo&quot;]</span><br><span class="line">    sendwallet = Wallet(self.config[&quot;scot_account&quot;], steem_instance=self.stm)</span><br><span class="line">    sendwallet.transfer(c_comment[&quot;parent_author&quot;], self.config[&quot;send_token_amount&quot;], self.config[&quot;scot_token&quot;], token_memo)</span><br><span class="line">reply_identifier = c_comment[&quot;authorperm&quot;]</span><br><span class="line">if self.config[&quot;no_broadcast&quot;]:</span><br><span class="line">    logger.info(&quot;%s&quot; % reply_body)</span><br><span class="line">else:</span><br><span class="line">    self.stm.post(&quot;&quot;, reply_body, author=self.config[&quot;scot_account&quot;], reply_identifier=reply_identifier)</span><br><span class="line">time.sleep(4)</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="Version-0-2-0-added-a-way-to-distribution-token-by-comment-commands"><a href="#Version-0-2-0-added-a-way-to-distribution-token-by-comment-commands" class="headerlink" title="Version 0.2.0, added a way to distribution token by comment commands"></a>Version 0.2.0, added a way to distribution token by comment commands</h3><ul>
+<li><a href="https://github.com/holgern/steem-scot/commit/b38664b4994f27b10c11337531bf9d262e189e39" target="_blank" rel="noopener">commit b38664b</a></li>
+</ul>
+<h2 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steem-scot-distributing-token-by-comment-command" target="_blank" rel="noopener">&#x2018;steem-scot - distributing token by comment command&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/scot/">scot</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-engine/">steem-engine</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/steemrewarding-com-tables-improved-links-and-sortable-and-more-options-for-trail-vote-rules/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/6whidb-current-state-of-steemrewarding-com/">
+                <span class="level-item">Current state of steemrewarding.com</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,422 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>How to setup a minimal python for using beempy on windows - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Install-python-3-7">
+        <span class="has-mr-6">1</span>
+        <span>Install python 3.7</span>
+        </a></li><li>
+        <a class="is-flex" href="#Creating-a-working-environment">
+        <span class="has-mr-6">2</span>
+        <span>Creating a working environment</span>
+        </a></li><li>
+        <a class="is-flex" href="#Install-beem">
+        <span class="has-mr-6">3</span>
+        <span>Install beem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Create-a-shortcut">
+        <span class="has-mr-6">4</span>
+        <span>Create a shortcut</span>
+        </a></li><li>
+        <a class="is-flex" href="#Uninstall">
+        <span class="has-mr-6">5</span>
+        <span>Uninstall</span>
+        </a></li><li>
+        <a class="is-flex" href="#Using-the-64-bit-version-of-python">
+        <span class="has-mr-6">6</span>
+        <span>Using the 64 bit version of python</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmXPQJMPD6TdqEvJYzaraFA857GHfb9Tw6fdbGocTYX1wc" alt="How to setup a minimal python for using beempy on windows">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-02-13T10:30:33.000Z">2019-02-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/beempy/">beempy</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 421 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                How to setup a minimal python for using beempy on windows
+            
+        </h1>
+        <div class="content">
+            <p>I worked on the scrypt wheels for windows (<a href="https://steemit.com/scrypt/@holger80/fixing-scrypt-for-windows-a-second-time-tester-needed" target="_blank" rel="noopener">post</a>). Due to my work, it is now easily possible to use <code>beempy</code> on windows. The setup can also be used to start small python scripts. It will not mess up with windows, as no PATH is set. Everything can easily removed.</p>
+<h2 id="Install-python-3-7"><a href="#Install-python-3-7" class="headerlink" title="Install python 3.7"></a>Install python 3.7</h2><p>First we will download python from <a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/</a><br><img src="https://ipfs.busy.org/ipfs/QmXPQJMPD6TdqEvJYzaraFA857GHfb9Tw6fdbGocTYX1wc" alt="image.png"></p>
+<p>Then we Customize the Installation:<br><img src="https://ipfs.busy.org/ipfs/QmY7zLxmcWNfmcP7kSnDYZgBL3udUNuPtnnM5nDa41p86q" alt="image.png"></p>
+<p>We only need pip:<br><img src="https://ipfs.busy.org/ipfs/QmV493n4SVFRKqAWzSx1ZMXm4v1ZMEzAJyvMcT6uinRuRh" alt="image.png"></p>
+<p>Then we change the path, to find the python.exe easier:<br><img src="https://ipfs.busy.org/ipfs/QmRcV42fnJcD3h4GWGHDgc22r4Wcd5YZ7iC8C1Gzqm6ZgS" alt="image.png"></p>
+<p>Then we start the powershell and update pip and install virtualenv:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Python37-32\python.exe -m pip install pip --upgrade</span><br><span class="line">C:\Python37-32\python.exe -m pip install virtualenv</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmYxWEdCUVNYxkKGdAc5fJQrtUGxFEJFpgxuR8uqEAdgfp" alt="image.png"></p>
+<h2 id="Creating-a-working-environment"><a href="#Creating-a-working-environment" class="headerlink" title="Creating a working environment"></a>Creating a working environment</h2><p>At first we create a new directory in the explorer at <code>c:\beem</code><br>We will create a working environment:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd beem</span><br><span class="line"> C:\Python37-32\python.exe -m virtualenv env</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and activate it by<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\env\Scripts\activate</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmZNscead3KQtcdzKNwqRyNGaZc8Th5vvkrcmHXQoueV81" alt="image.png"></p>
+<h2 id="Install-beem"><a href="#Install-beem" class="headerlink" title="Install beem"></a>Install beem</h2><p>We are now able to install beem:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Additionally, we install cryptography to speed up signing:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install cryptography</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>We are now able to use beempy:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy --version</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://ipfs.busy.org/ipfs/QmRY1dnLEXiGeLxLHv4MJqdDbZmAaZjpWtRvQ77fwgTU5g" alt="image.png"></p>
+<h2 id="Create-a-shortcut"><a href="#Create-a-shortcut" class="headerlink" title="Create a shortcut"></a>Create a shortcut</h2><p>Do a rightclick on activate.ps1 in C:\beem\env\Scripts and select Create shortcut.<br>Rightclick on the shortcut and then click on properties.</p>
+<p>Change the target to:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoExit  &quot;C:\beem\env\Scripts\activate.ps1&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>You can now move it to your desktop and have a fast access to beempy.</p>
+<h2 id="Uninstall"><a href="#Uninstall" class="headerlink" title="Uninstall"></a>Uninstall</h2><p>Just delete <code>C:\beem\env</code>. Python itself can be uninstalled and <code>C:\Python37-32</code> deleted. This should clean everything.</p>
+<h2 id="Using-the-64-bit-version-of-python"><a href="#Using-the-64-bit-version-of-python" class="headerlink" title="Using the 64 bit version of python"></a>Using the 64 bit version of python</h2><p>Everything is also working with the 64 bit version. Just replace <code>C:\Python37-32</code> with <code>C:\Python37</code>.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/how-to-setup-a-minimal-python-for-using-beempy-on-windows" target="_blank" rel="noopener">&#x2018;How to setup a minimal python for using beempy on windows&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beempy/">beempy</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/windows/">windows</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/how-much-did-you-spent-receive-to-from-drugwars-steemmonsters/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">How much did you spent/receive to/from drugwars/steemmonsters</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/fixing-scrypt-for-windows-a-second-time-tester-needed/">
+                <span class="level-item">Fixing scrypt for windows a second time - tester needed</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

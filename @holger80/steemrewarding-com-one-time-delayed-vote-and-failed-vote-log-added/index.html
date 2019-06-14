@@ -1,0 +1,453 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steemrewarding.com - one time delayed vote and failed vote log added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#New-features">
+        <span class="has-mr-6">2</span>
+        <span>New features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Delayed-voting-without-creating-a-voting-rule">
+        <span class="has-mr-6">2.1</span>
+        <span>Delayed voting without creating a voting rule</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Failed-votes-are-stored-in-a-new-database">
+        <span class="has-mr-6">3</span>
+        <span>Failed votes are stored in a new database</span>
+        </a></li><li>
+        <a class="is-flex" href="#Database-connection-handling-is-improved-in-the-flask-site">
+        <span class="has-mr-6">4</span>
+        <span>Database connection handling is improved in the flask site</span>
+        </a></li><li>
+        <a class="is-flex" href="#vote-sbd-can-be-specified">
+        <span class="has-mr-6">5</span>
+        <span>vote_sbd can be specified</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">6</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Add-steemrewarding-icon-to-homepage">
+        <span class="has-mr-6">6.1</span>
+        <span>Add steemrewarding icon to homepage</span>
+        </a></li><li>
+        <a class="is-flex" href="#implement-vote-sbd-rule-parameter-can-be-set-to-upvote-in-STU">
+        <span class="has-mr-6">6.2</span>
+        <span>implement vote_sbd rule parameter, can be set to upvote in STU</span>
+        </a></li><li>
+        <a class="is-flex" href="#one-time-delayed-vote-and-failed-votel-added">
+        <span class="has-mr-6">6.3</span>
+        <span>one time delayed vote and failed votel added</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">6.4</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmcpQ5YGoRQ8rUP13ELUP5kDGKUVkqkEakbwkAPXd1gx73" alt="steemrewarding.com - one time delayed vote and failed vote log added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-01-25T16:35:03.000Z">2019-01-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 636 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steemrewarding.com - one time delayed vote and failed vote log added
+            
+        </h1>
+        <div class="content">
+            <center><br><img src="https://ipfs.busy.org/ipfs/QmcpQ5YGoRQ8rUP13ELUP5kDGKUVkqkEakbwkAPXd1gx73" alt="rewarding_batch.png"><br></center>
+
+<h3 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h3><p><a href="https://github.com/holgern/steemrewarding" target="_blank" rel="noopener">https://github.com/holgern/steemrewarding</a></p>
+<p>steemrewarding.com is a feature-rich automatic voting tool. It can be used to create voting rules at <a href="https://steemrewarding.com" target="_blank" rel="noopener">https://steemrewarding.com</a>, when posting authority was given to the @rewarding account. I created a discord server for all topics regarding steemrewarding.com: <a href="https://discord.gg/qpsR8hf" target="_blank" rel="noopener">https://discord.gg/qpsR8hf</a></p>
+<h2 id="New-features"><a href="#New-features" class="headerlink" title="New features"></a>New features</h2><h3 id="Delayed-voting-without-creating-a-voting-rule"><a href="#Delayed-voting-without-creating-a-voting-rule" class="headerlink" title="Delayed voting without creating a voting rule"></a>Delayed voting without creating a voting rule</h3><p>The steemrewarding.com site has a new tab <a href="https://steemrewarding.com/delayed_vote" target="_blank" rel="noopener">https://steemrewarding.com/delayed_vote</a>, in which a delayed vote can be triggered. This will not create a voting rule and will lead to a one-time vote at the given delay with the given vote weight.</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmWFDJpk9VoMGy3L3YKhVX4f6CYyBLJa4hBv7GoEpGrYo8" alt="image.png"></p>
+<p>The authorperm can be copy and paste from the URL or, it is also possible to replace steemit by steemrewarding.</p>
+<p>By replacing steemit in<br><img src="https://ipfs.busy.org/ipfs/QmYRZcuMr7DEs8Cpf7jVzHNatjvL36jTz7ff8Zx2AqPiNP" alt="image.png"><br>with steemrewarding<br><img src="https://ipfs.busy.org/ipfs/QmThKtihgqoVaJiRrh2jJ7yZ1HWnCrEgpY3MKSvWJdT44Q" alt="image.png"></p>
+<p>the authorperm is filled correctly and the upvote can be triggered:<br><img src="https://ipfs.busy.org/ipfs/QmXMPGYGtPhayioHnwVDxcTrT35A9eXXLGx3krudn48tdy" alt="image.png"></p>
+<p>A new entry in the pending vote database is now created and can be viewed at: <a href="https://steemrewarding.com/show_pending_votes" target="_blank" rel="noopener">https://steemrewarding.com/show_pending_votes</a>.</p>
+<h2 id="Failed-votes-are-stored-in-a-new-database"><a href="#Failed-votes-are-stored-in-a-new-database" class="headerlink" title="Failed votes are stored in a new database"></a>Failed votes are stored in a new database</h2><p>I created a new database <code>failed_vote_log</code> which is used to store failed votes.<br>For example, when a post is older than 6.5 days and cannot be upvoted, a new entry with a error message is created. Failed votes can be viewed under <a href="https://steemrewarding.com/show_failed_vote_log" target="_blank" rel="noopener">https://steemrewarding.com/show_failed_vote_log</a>.</p>
+<h2 id="Database-connection-handling-is-improved-in-the-flask-site"><a href="#Database-connection-handling-is-improved-in-the-flask-site" class="headerlink" title="Database connection handling is improved in the flask site"></a>Database connection handling is improved in the flask site</h2><p>The database connection is now opened only once in the beginning and not before every database call:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">db = dataset.connect(databaseConnector)</span><br><span class="line">voteRulesTrx = VoteRulesTrx(db)</span><br><span class="line">voteLogTrx = VoteLogTrx(db)</span><br><span class="line">failedVoteLogTrx = FailedVoteLogTrx(db)</span><br><span class="line">pendingVotesTrx = PendingVotesTrx(db)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>On each database access, it is checked if the database connection still works by using a try/exception call:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">try:</span><br><span class="line">    rules = voteRulesTrx.get_posts(name)</span><br><span class="line">except:</span><br><span class="line">    db = dataset.connect(databaseConnector)</span><br><span class="line">    voteRulesTrx = VoteRulesTrx(db)</span><br><span class="line">    rules = voteRulesTrx.get_posts(name)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>In case of a timeout, the database connection is recreated.</p>
+<h2 id="vote-sbd-can-be-specified"><a href="#vote-sbd-can-be-specified" class="headerlink" title="vote_sbd can be specified"></a>vote_sbd can be specified</h2><p>When <code>vote_sbd</code> is set and <code>vote_weight</code> is zero, the vote weight is calculated by:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if vote_weight &lt;= 0:        </span><br><span class="line">    vote_weight = voter_acc.get_vote_pct_for_SBD(pending_vote[&quot;vote_sbd&quot;]) / 100</span><br><span class="line">    if vote_weight &gt; 100:</span><br><span class="line">        vote_weight = 100</span><br></pre></td></tr></tbody></table></figure>
+<p>Is is now possible to always vote with 0.05$ for example. The vote weight is adapted to the current steem price (Of course this works only of the vote at 100% is sufficient high).</p>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="Add-steemrewarding-icon-to-homepage"><a href="#Add-steemrewarding-icon-to-homepage" class="headerlink" title="Add steemrewarding icon to homepage"></a>Add steemrewarding icon to homepage</h3><ul>
+<li><a href="https://github.com/holgern/steemrewarding/commit/070663fa3587dd4e6f74a2ad90a8cab6c5d41119" target="_blank" rel="noopener">commit 070663f</a><h3 id="implement-vote-sbd-rule-parameter-can-be-set-to-upvote-in-STU"><a href="#implement-vote-sbd-rule-parameter-can-be-set-to-upvote-in-STU" class="headerlink" title="implement vote_sbd rule parameter, can be set to upvote in STU"></a>implement vote_sbd rule parameter, can be set to upvote in STU</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/f577be3412041e63673e810423978430eca97cfc" target="_blank" rel="noopener">commit f577be3</a></li>
+<li>fix js path</li>
+<li>improve database connection handling in flask homepage</li>
+</ul>
+<h3 id="one-time-delayed-vote-and-failed-votel-added"><a href="#one-time-delayed-vote-and-failed-votel-added" class="headerlink" title="one time delayed vote and failed votel added"></a>one time delayed vote and failed votel added</h3><ul>
+<li><a href="https://github.com/holgern/steemrewarding/commit/a95683b989d81742b867a4ee78e2f94adcc11f72" target="_blank" rel="noopener">commit a95683b</a></li>
+<li>failed vote log entries with specific error message added for each possible case in upvote_post_comments.py</li>
+<li>site for displaying failed votes added and menu entry added for it</li>
+<li>one time vote site added and menu entry edded for it</li>
+<li>vote_delay_min is applyed when vote_when_vp_reached is True</li>
+</ul>
+<h3 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h3><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steemrewarding-com-one-time-delayed-vote-and-failed-vote-log-added" target="_blank" rel="noopener">&#x2018;steemrewarding.com - one time delayed vote and failed vote log added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/autovoter/">autovoter</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/rewarding/">rewarding</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/steemmonsters-tournament-list-at-beempy-com-is-updated-every-15-min-now/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Steemmonsters tournament list at beempy.com is updated every 15 min now</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemrewarding-com-a-new-feature-rich-auto-voter/">
+                <span class="level-item">steemrewarding.com - a new feature rich auto voter</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

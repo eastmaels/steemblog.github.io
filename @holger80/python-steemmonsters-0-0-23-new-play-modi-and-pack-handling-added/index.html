@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>python steemmonsters 0.0.23 - new play modi and pack handling added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#New-API-commands">
+        <span class="has-mr-6">2</span>
+        <span>New API commands</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#get-open-all-packs">
+        <span class="has-mr-6">2.1</span>
+        <span>get_open_all_packs</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-open-packs">
+        <span class="has-mr-6">2.2</span>
+        <span>get_open_packs</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-cards-packs">
+        <span class="has-mr-6">2.3</span>
+        <span>get_cards_packs</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-market-for-sale-by-card">
+        <span class="has-mr-6">2.4</span>
+        <span>get_market_for_sale_by_card</span>
+        </a></li><li>
+        <a class="is-flex" href="#get-market-for-sale-grouped">
+        <span class="has-mr-6">2.5</span>
+        <span>get_market_for_sale_grouped</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Command-line-tool">
+        <span class="has-mr-6">3</span>
+        <span>Command line tool</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#New-play-modi">
+        <span class="has-mr-6">3.1</span>
+        <span>New play modi</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-parameter-for-the-config-file">
+        <span class="has-mr-6">3.2</span>
+        <span>New parameter for the config file</span>
+        </a></li><li>
+        <a class="is-flex" href="#Creating-new-decks-based-on-already-played-teams-with-a-high-winning-rate">
+        <span class="has-mr-6">3.3</span>
+        <span>Creating new decks based on already played teams with a high winning rate.</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Show-open-and-gift-packs">
+        <span class="has-mr-6">4</span>
+        <span>Show, open and gift packs</span>
+        </a></li><li>
+        <a class="is-flex" href="#Account-switch-without-changing-the-config-file">
+        <span class="has-mr-6">5</span>
+        <span>Account switch without changing the config file</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">6</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Release-0-0-23">
+        <span class="has-mr-6">6.1</span>
+        <span>Release 0.0.23</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-0-22">
+        <span class="has-mr-6">6.2</span>
+        <span>Release 0.0.22</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-0-21">
+        <span class="has-mr-6">6.3</span>
+        <span>Release 0.0.21</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-0-20">
+        <span class="has-mr-6">6.4</span>
+        <span>Release 0.0.20</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-0-16">
+        <span class="has-mr-6">6.5</span>
+        <span>Release 0.0.16</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">6.5.1</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/Qme9sboXLViqez1coM2iC8yRLooEzRjN889Qa1cbyh5HDc" alt="python steemmonsters 0.0.23 - new play modi and pack handling added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-07T23:23:09.000Z">2018-11-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 851 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                python steemmonsters 0.0.23 - new play modi and pack handling added
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/steemmonsters" target="_blank" rel="noopener">https://github.com/holgern/steemmonsters</a></p>
+<p>steemmonsters is a python command line tool for playing steemmonsters without graphics. The newest version 0.0.23 can be downloaded <a href="https://github.com/holgern/steemmonsters/releases" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="New-API-commands"><a href="#New-API-commands" class="headerlink" title="New API commands"></a>New API commands</h2><h3 id="get-open-all-packs"><a href="#get-open-all-packs" class="headerlink" title="get_open_all_packs"></a>get_open_all_packs</h3><p>Opens all booster packs at once<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">response = api.get_open_all_packs(&quot;holger80&quot;, 1, token):</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="get-open-packs"><a href="#get-open-packs" class="headerlink" title="get_open_packs"></a>get_open_packs</h3><p>Opens an owned booster pack.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">response = api.get_open_packs(&quot;B-xxx&quot;, &quot;holger80&quot;, 1, token):</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="get-cards-packs"><a href="#get-cards-packs" class="headerlink" title="get_cards_packs"></a>get_cards_packs</h3><p>Returns the unopened packs of a player<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">import json</span><br><span class="line">from beembase import memo as Memo</span><br><span class="line">from beemgraphenebase.account import PrivateKey, PublicKey</span><br><span class="line">api = Api()</span><br><span class="line">account = &quot;holger80&quot;</span><br><span class="line">response = api.get_player_login(account)</span><br><span class="line">postingwif = &quot;5xx&quot;</span><br><span class="line">token = Memo.decode_memo(PrivateKey(postingwif), response[&quot;token&quot;])</span><br><span class="line">response = api.get_cards_packs(account, token)</span><br><span class="line">tx = json.dumps(response, indent=4)</span><br><span class="line">print(tx)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="get-market-for-sale-by-card"><a href="#get-market-for-sale-by-card" class="headerlink" title="get_market_for_sale_by_card"></a>get_market_for_sale_by_card</h3><p>Returns the currently available cards on the market<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">response = api.get_market_for_sale_by_card(10, &quot;true&quot;, 1)</span><br><span class="line">print(response[0])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="get-market-for-sale-grouped"><a href="#get-market-for-sale-grouped" class="headerlink" title="get_market_for_sale_grouped"></a>get_market_for_sale_grouped</h3><p>Shows the minimum and maximum prices for all cards.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">response = api.get_market_for_sale_grouped()</span><br><span class="line">print(response[0])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Command-line-tool"><a href="#Command-line-tool" class="headerlink" title="Command line tool"></a>Command line tool</h2><h3 id="New-play-modi"><a href="#New-play-modi" class="headerlink" title="New play modi"></a>New play modi</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play quest f1</span><br></pre></td></tr></tbody></table></figure>
+<p>Plays team <code>f1</code> until the quest is solved.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play mirror</span><br></pre></td></tr></tbody></table></figure>
+<p>Whenever the current team loses a defined number of times in a row, a new team from the last played teams of the top 100 is copied and used.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play t1,t2,t3</span><br></pre></td></tr></tbody></table></figure>
+<p>Play team <code>t1</code> until a defined number of loses in a row occurs. Then the team is switched to the next one. For the example, <code>&quot;switch_on_loosing_streak&quot;: 1</code> is set and <code>t1</code> has lost two times. The next match is then played with team <code>t2</code>. After  <code>t3</code>, <code>t1</code> is used.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; play random t1,t2,t3</span><br></pre></td></tr></tbody></table></figure>
+<p>Plays one of the three given teams. The team is randomly chosen. The team is switched whenever a pre-defined number of loses in a row occur.</p>
+<h3 id="New-parameter-for-the-config-file"><a href="#New-parameter-for-the-config-file" class="headerlink" title="New parameter for the config file"></a>New parameter for the config file</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;switch_on_loosing_streak&quot;: 1,</span><br></pre></td></tr></tbody></table></figure>
+<p>defines when the current team is switched. This plays only a role, when more than one team was defined.</p>
+<h3 id="Creating-new-decks-based-on-already-played-teams-with-a-high-winning-rate"><a href="#Creating-new-decks-based-on-already-played-teams-with-a-high-winning-rate" class="headerlink" title="Creating new decks based on already played teams with a high winning rate."></a>Creating new decks based on already played teams with a high winning rate.</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; splinter fire 2</span><br></pre></td></tr></tbody></table></figure>
+<p>Shows up to 15 fire splinter teams with summoner level 2.  One of the shown teams can be selected and stored under a given name.<br><img src="https://ipfs.busy.org/ipfs/Qme9sboXLViqez1coM2iC8yRLooEzRjN889Qa1cbyh5HDc" alt="image.png"></p>
+<h2 id="Show-open-and-gift-packs"><a href="#Show-open-and-gift-packs" class="headerlink" title="Show, open and gift packs"></a>Show, open and gift packs</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt;packs</span><br></pre></td></tr></tbody></table></figure>
+<p>shows all unopened packs of the currently selected player</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt;openpack</span><br></pre></td></tr></tbody></table></figure>
+<p>shows all available packs and let the user select one and opens it then. The open market value and card name of all cards are shown in a table.<br><img src="https://ipfs.busy.org/ipfs/QmdhhKosMGmJBpUwNWXgYESY8nCkAZ9yYXx9fwbhzXrsS7" alt="image.png"></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; giftpacks holger80</span><br></pre></td></tr></tbody></table></figure>
+<p>After starting the command, all available decks were shown and the user can set how many packs are sent.</p>
+<h2 id="Account-switch-without-changing-the-config-file"><a href="#Account-switch-without-changing-the-config-file" class="headerlink" title="Account switch without changing the config file"></a>Account switch without changing the config file</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; set_account holger80</span><br></pre></td></tr></tbody></table></figure>
+<p>Changes the currently selected player to holger80, without the need to change the config file and reload it.</p>
+<h2 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h2><h3 id="Release-0-0-23"><a href="#Release-0-0-23" class="headerlink" title="Release 0.0.23"></a>Release 0.0.23</h3><ul>
+<li><a href="https://github.com/holgern/steemmonsters/commit/e9bdae51f3d22a86689d8eeda6dc9a70e8ecc412" target="_blank" rel="noopener">commit e9bdae5</a></li>
+<li>Fix value calculation for openpack<h3 id="Release-0-0-22"><a href="#Release-0-0-22" class="headerlink" title="Release 0.0.22"></a>Release 0.0.22</h3></li>
+<li><a href="https://github.com/holgern/steemmonsters/commit/fc33cd52c3dbc0c4df8fbc60c51b806316d40f81" target="_blank" rel="noopener">commit fc33cd5</a></li>
+<li>Add get_market_for_sale_grouped api call</li>
+<li>Improve output for openpack</li>
+<li>Collection shows card names</li>
+</ul>
+<h3 id="Release-0-0-21"><a href="#Release-0-0-21" class="headerlink" title="Release 0.0.21"></a>Release 0.0.21</h3><ul>
+<li><a href="https://github.com/holgern/steemmonsters/commit/70c4ff3f2f36634d4a06a9a1b86087e73eb0a8dd" target="_blank" rel="noopener">commit 70c4ff3</a></li>
+<li>openpack added</li>
+<li><code>play random &lt;deck1&gt;,&lt;deck2&gt;,..</code> added</li>
+<li>play quest play_counter fixed</li>
+<li><code>get_open_packs</code> and <code>get_open_all_packs</code> API-calls improved<h3 id="Release-0-0-20"><a href="#Release-0-0-20" class="headerlink" title="Release 0.0.20"></a>Release 0.0.20</h3></li>
+<li><a href="https://github.com/holgern/steemmonsters/commit/d25cbaee4622e7bd2e1cc6576c8d2bc043a73bc8" target="_blank" rel="noopener">commit d25cbae</a></li>
+<li>Utility functions get_summoner_level, convert_team_id_to_string, expand_short_form,  convert_team_string_to_id and get_cards_collection added to prevent duplicated code</li>
+<li>set_account can be used  to switch an account</li>
+<li>packs shows the unopened packs</li>
+<li>giftpacks <player> moves unopened packs to an other player</player></li>
+<li><code>splinter &lt;plinter&gt; &lt;summoner_level&gt;</code> can be used to received often played decks and store them for later usage</li>
+<li><code>play quest &lt;team_name&gt;</code> - plays until the quest is solved</li>
+<li>play mirror - selects randomly a last played team for the op 100 and uses it, deck is switched when losing, or when <code>switch_on_loosing_streake</code> is set, when reached</li>
+<li><code>play &lt;deck1&gt;,&lt;deck2&gt;</code> plays the first deck and switches when loosing, when switch_on_loosing_streake is set, when <code>switch_on_loosing_streake</code> is reached.</li>
+</ul>
+<h3 id="Release-0-0-16"><a href="#Release-0-0-16" class="headerlink" title="Release 0.0.16"></a>Release 0.0.16</h3><ul>
+<li><a href="https://github.com/holgern/steemmonsters/commit/0ec9576c0476fbe795b65466cf584872c6c4e8b1" target="_blank" rel="noopener">commit 0ec9576c</a></li>
+<li>edition 2 added</li>
+<li>quests command improvement</li>
+</ul>
+<h4 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h4><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/python-steemmonsters-0-0-23-new-play-modi-and-pack-handling-added" target="_blank" rel="noopener">&#x2018;python steemmonsters 0.0.23 - new play modi and pack handling added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemmonsters/">steemmonsters</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemtank/">steemtank</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/python-steemmonsters-0-0-26-bug-fix-release/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">python steemmonsters 0.0.26 - bug fix release</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/rewarding-paid-out-posts-without-using-python/">
+                <span class="level-item">Rewarding paid-out posts without using python</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

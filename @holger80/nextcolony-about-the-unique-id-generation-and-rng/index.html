@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>NextColony - about the unique id generation and RNG - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Let&#x2019;s-check-if-this-works">
+        <span class="has-mr-6">1</span>
+        <span>Let&#x2019;s check if this works</span>
+        </a></li><li>
+        <a class="is-flex" href="#VOPS">
+        <span class="has-mr-6">2</span>
+        <span>VOPS</span>
+        </a></li><li>
+        <a class="is-flex" href="#Auction-is-still-running-and-game-will-start-soon">
+        <span class="has-mr-6">3</span>
+        <span>Auction is still running and game will start soon</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://files.steempeak.com/file/steempeak/rondras/c54NCLYc-NextColony-Teaser-1.jpg" alt="NextColony - about the unique id generation and RNG">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-15T08:57:24.000Z">2019-04-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/nextcolony/">nextcolony</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 641 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                NextColony - about the unique id generation and RNG
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://files.steempeak.com/file/steempeak/rondras/c54NCLYc-NextColony-Teaser-1.jpg" alt="NextColonyTeaser1.jpg"></p>
+<p>As you may know, I&#x2019;m part of the team working on <a href="https://nextcolony.io" target="_blank" rel="noopener">NextColony</a>, a true blockchain game on steem.  A true blockchain game means for us, that our internal database can be deleted and we will be able to reconstruct the exact same game state as before by replaying all broadcasted custom_json and transfer operations. This does also mean that every broadcasted custom_json will be excepted, as long as it is valid (correct syntax, sufficient resources, dependencies were met,&#x2026;).</p>
+<p>In order to allow replay and to have random events, the steem blocks itself will be used to generate a seed for the random generator. Every uid for planets, items, ships and missions will be generated from random numbers that have been seeded by the transaction id of the broadcasted transfer/custom_json. Thus, in a replay, the same random numbers will be generated and as the trx-id and other block ids are not predictable, random events and generated uids are not predictable.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line">import base36</span><br><span class="line">import math</span><br><span class="line">import hashlib</span><br><span class="line"></span><br><span class="line">def gererateSeed(block_trx, block_id, previous_id):</span><br><span class="line">    seed = hashlib.md5((trx_id + block_id + previous_id).encode()).hexdigest()</span><br><span class="line">    return seed</span><br><span class="line"></span><br><span class="line">def generateUid(length):</span><br><span class="line">    number = round((pow(36, length + 1) - random.random() * pow(36, length)))</span><br><span class="line">    return base36.dumps(number).upper()</span><br><span class="line"></span><br><span class="line">def set_seed(seed):</span><br><span class="line">    random.seed(a=seed, version=2)</span><br><span class="line"></span><br><span class="line">def get_random_range(start, end):</span><br><span class="line">    return math.floor((random.random() * (end-start + 1)) + start)</span><br><span class="line"></span><br><span class="line">def uid_from_seed(prefix):</span><br><span class="line">    return prefix+generateUid(10)</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Let&#x2019;s-check-if-this-works"><a href="#Let&#x2019;s-check-if-this-works" class="headerlink" title="Let&#x2019;s check if this works"></a>Let&#x2019;s check if this works</h2><p>Currently, we are doing some last tests before the official launch. The buy-able items are much cheaper in this test phase. So I&#x2019;m buying a chest and will gift it. As each item has a uid, I will use the broadcasted transfer in order to predict the uid of the chest.</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmVj4wwuw4QpkzpPQaZd5t5csD5f7Pe3p2FeWM6ZLpzgee" alt="image.png"></p>
+<p>The trx-id for the purchase is <code>e8d4bf45ba82b16c75fb777d90f2520089bfa5aa</code> and the block-number is <code>32060228</code>. We will use this information to predict the uid of the item:<br>The prefix of the Huge Chest is C2<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from beem.block import Block</span><br><span class="line">block = Block(32060228)</span><br><span class="line">trx_id = &quot;e8d4bf45ba82b16c75fb777d90f2520089bfa5aa&quot;</span><br><span class="line">prefix = &quot;C2-&quot;</span><br><span class="line">seed = gererateSeed(trx_id, block[&quot;block_id&quot;], block[&quot;previous&quot;])</span><br><span class="line">set_seed(seed)</span><br><span class="line">uid_item = uid_from_seed(prefix)</span><br><span class="line">print(uid_item)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The result is:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C2-ZDDAKHIXGYO</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmPJW6RB2KgfSEzvVok5z3LssckWzwmJnjHtQuSrSCxKgn" alt="image.png"></p>
+<p>The predicted uid is correct and equal to the uid the backend of nextcolony had calculated.</p>
+<p>All used random events in NextColony are based on these functions.</p>
+<h2 id="VOPS"><a href="#VOPS" class="headerlink" title="VOPS"></a>VOPS</h2><p>When unexplored space is explored during a mission, a new planet can be found. As the explorer has first to flight to the destination, which takes some time, the random numbers will be generated when the explorer will arrive. In nextcolony, we are doing this by using virtual operations. When the explorer is send, a VOPS is written to the database with a block timestamp. The VOPS is then triggered by the first block which has a timestamp which is higher then the stored one. The <code>block_id</code> and the <code>previous</code> ids are then taken from the block which is triggered by the VOPS.</p>
+<h2 id="Auction-is-still-running-and-game-will-start-soon"><a href="#Auction-is-still-running-and-game-will-start-soon" class="headerlink" title="Auction is still running and game will start soon"></a>Auction is still running and game will start soon</h2><p>Currently, it is possible to buy one of the last three legendary planets at our <a href="https://nextcolony.io/" target="_blank" rel="noopener">auction</a>. When the auction is finished, the game will start at</p>
+<p>April 21, 2019 20:00:00 UTC</p>
+<p>See you in the game :)</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/nextcolony-about-the-unique-id-generation-and-rng" target="_blank" rel="noopener">&#x2018;NextColony - about the unique id generation and RNG&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/dapp/">dapp</a>, <a class="has-link-grey -link" href="/@holger80/tags/game/">game</a>, <a class="has-link-grey -link" href="/@holger80/tags/nextcolony/">nextcolony</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/nextcolony-list-of-customjson-commands/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">NextColony -  list of custom_json commands</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-to-use-the-logger-class-to-filter-out-unwanted-messages-from-beem/">
+                <span class="level-item">How to use the logger class to filter out unwanted messages from beem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

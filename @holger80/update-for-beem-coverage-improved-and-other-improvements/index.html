@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Update for beem - coverage improved and other improvements - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Changes">
+        <span class="has-mr-6">1</span>
+        <span>Changes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Sync-changes-from-python-graphenelib">
+        <span class="has-mr-6">1.1</span>
+        <span>Sync changes from python-graphenelib</span>
+        </a></li><li>
+        <a class="is-flex" href="#Remove-register-api-and-api-id-calls">
+        <span class="has-mr-6">1.2</span>
+        <span>Remove register_api and api_id calls</span>
+        </a></li><li>
+        <a class="is-flex" href="#Import-Wallet-changes-from-bitshares-and-bug-fixes">
+        <span class="has-mr-6">1.3</span>
+        <span>Import Wallet changes from bitshares and bug fixes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Removed-not-used-classes">
+        <span class="has-mr-6">1.4</span>
+        <span>Removed not used classes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improved-test-coverage">
+        <span class="has-mr-6">1.5</span>
+        <span>Improved test coverage</span>
+        </a></li><li>
+        <a class="is-flex" href="#Several-changes-and-improvements">
+        <span class="has-mr-6">1.6</span>
+        <span>Several changes and improvements</span>
+        </a></li><li>
+        <a class="is-flex" href="#Update-test-steemnoderpc-py">
+        <span class="has-mr-6">1.7</span>
+        <span>Update test_steemnoderpc.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-depreated-function-warning">
+        <span class="has-mr-6">1.8</span>
+        <span>Fix depreated function warning</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improve-coverage-of-test-cli">
+        <span class="has-mr-6">1.9</span>
+        <span>Improve coverage of test_cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improve-coverage-for-Price">
+        <span class="has-mr-6">1.10</span>
+        <span>Improve coverage for Price</span>
+        </a></li><li>
+        <a class="is-flex" href="#Move-post-and-comment-options-to-steem-class">
+        <span class="has-mr-6">1.11</span>
+        <span>Move post and comment_options to steem class</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improve-coverage-for-steem">
+        <span class="has-mr-6">1.12</span>
+        <span>Improve coverage for steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Remove-steemitstage-and-improve-coverage-for-steemnoderpc">
+        <span class="has-mr-6">1.13</span>
+        <span>Remove steemitstage and improve coverage for steemnoderpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improvements-for-blockchain-parameter-reading-and-nodes-benchmark">
+        <span class="has-mr-6">1.14</span>
+        <span>Improvements for blockchain parameter reading and nodes benchmark</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#steem">
+        <span class="has-mr-6">1.14.1</span>
+        <span>steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#utils">
+        <span class="has-mr-6">1.14.2</span>
+        <span>utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Examples">
+        <span class="has-mr-6">1.14.3</span>
+        <span>Examples</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Speedup-wait-for-and-get-block">
+        <span class="has-mr-6">1.15</span>
+        <span>Speedup wait_for_and_get_block</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#blockchain">
+        <span class="has-mr-6">1.15.1</span>
+        <span>blockchain</span>
+        </a></li><li>
+        <a class="is-flex" href="#storage">
+        <span class="has-mr-6">1.15.2</span>
+        <span>storage</span>
+        </a></li><li>
+        <a class="is-flex" href="#steemnoderpc">
+        <span class="has-mr-6">1.15.3</span>
+        <span>steemnoderpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#graphenerpc">
+        <span class="has-mr-6">1.15.4</span>
+        <span>graphenerpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-test">
+        <span class="has-mr-6">1.15.5</span>
+        <span>Unit test</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#num-retries-improved">
+        <span class="has-mr-6">1.16</span>
+        <span>num_retries improved</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Steemnoderpc">
+        <span class="has-mr-6">1.16.1</span>
+        <span>Steemnoderpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#Graphenerpc">
+        <span class="has-mr-6">1.16.2</span>
+        <span>Graphenerpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#rpcutils">
+        <span class="has-mr-6">1.16.3</span>
+        <span>rpcutils</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests">
+        <span class="has-mr-6">1.16.4</span>
+        <span>Unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Add-option-to-set-block-numbers-as-start-and-stop-in-history-and-history-revers">
+        <span class="has-mr-6">1.17</span>
+        <span>Add option to set block_numbers as start and stop in history and history revers</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">1.17.1</span>
+        <span>Account</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Reduce-duplicate-code">
+        <span class="has-mr-6">1.18</span>
+        <span>Reduce duplicate code</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Wallet">
+        <span class="has-mr-6">1.18.1</span>
+        <span>Wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#operations">
+        <span class="has-mr-6">1.18.2</span>
+        <span>operations</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/@holger80/None" alt="Update for beem - coverage improved and other improvements">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-05T09:11:36.000Z">2018-04-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 932 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Update for beem - coverage improved and other improvements
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is  a python library for accessing the steem blockchain. I build beem from scratch using <a href="https://github.com/bitshares/python-bitshares" target="_blank" rel="noopener">python-bitshares</a> as template. At the moment, beem is not really used, as the github has around 1 unique visitor each day and thats maybe me. The newest version of beem is 0.19.19.</p>
+<p>I created a discord channel for answering question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a> </p>
+<p>beem is not a copy of python-steem, thus the classes and functions are different. beem is almost feature complete and should be able to do all things that python-steem can do. Differences to python-steem:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>beem</th>
+<th>python-steem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>websocket nodes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>native appbase calls</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>python 2.7 supportet</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>python 3.3 supportet</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>python 3.4 supportet</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>python 3.6 supportet</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>number of unit tests</td>
+<td>340</td>
+<td>70</td>
+</tr>
+<tr>
+<td>coverage</td>
+<td>75 % - 83%</td>
+<td>?</td>
+</tr>
+<tr>
+<td>can be used on android</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>I decided to create an own library for steem and not participating to python-steem by pull-requests for the following reasons:</p>
+<ul>
+<li>as python-steem is the official library, all changes have to be reviewed carfully. This takes a lot of time.</li>
+<li>python-steem is used by many, therefore it is not possible to change classes or functions easily.</li>
+<li>I like it to have my own repo, in which I can do what I want :).</li>
+</ul>
+<p>beem is open source, so my work may improve python-steem.</p>
+<h1 id="Changes"><a href="#Changes" class="headerlink" title="Changes"></a>Changes</h1><h2 id="Sync-changes-from-python-graphenelib"><a href="#Sync-changes-from-python-graphenelib" class="headerlink" title="Sync changes from python-graphenelib"></a>Sync changes from python-graphenelib</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/e9f07b48478c0f59ae625ef397c4a727d44723f0" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/e9f07b48478c0f59ae625ef397c4a727d44723f0</a><h2 id="Remove-register-api-and-api-id-calls"><a href="#Remove-register-api-and-api-id-calls" class="headerlink" title="Remove register_api and api_id calls"></a>Remove register_api and api_id calls</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/69948415b7fc403e11a3198066e3cc3d8f4100e2" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/69948415b7fc403e11a3198066e3cc3d8f4100e2</a></li>
+<li>All rpc calls are handled with direct api call. Register api was a relict from bitshares.<h2 id="Import-Wallet-changes-from-bitshares-and-bug-fixes"><a href="#Import-Wallet-changes-from-bitshares-and-bug-fixes" class="headerlink" title="Import Wallet changes from bitshares and bug fixes"></a>Import Wallet changes from bitshares and bug fixes</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/af565903fe916f35c15e28165a5efda48d9bc0f2" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/af565903fe916f35c15e28165a5efda48d9bc0f2</a></li>
+<li>Nodes can be given as ,or ; seperated string</li>
+<li>is_connected added in steem<h2 id="Removed-not-used-classes"><a href="#Removed-not-used-classes" class="headerlink" title="Removed not used classes"></a>Removed not used classes</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/f8f33b3426d76683d7ea38235e0c0a55fe8b2128" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/f8f33b3426d76683d7ea38235e0c0a55fe8b2128</a><h2 id="Improved-test-coverage"><a href="#Improved-test-coverage" class="headerlink" title="Improved test coverage"></a>Improved test coverage</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/8559d6da01907f8fe2bc348bf5cb7009fc1f64a2" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/8559d6da01907f8fe2bc348bf5cb7009fc1f64a2</a></li>
+<li>Fix vote tests</li>
+<li>improved transactionbuilder tests</li>
+<li>Improved detection of MissingRequiredActiveAuthority<h2 id="Several-changes-and-improvements"><a href="#Several-changes-and-improvements" class="headerlink" title="Several changes and improvements"></a>Several changes and improvements</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/cdd778096a04cf4b922b67a54b6028fa6f9299a1" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/cdd778096a04cf4b922b67a54b6028fa6f9299a1</a></li>
+<li>Fix blocks for threaded and batched calls</li>
+<li>add blockchain_version function on steem</li>
+<li>Fix node input on graphenerpc</li>
+<li>Improve benchmark_nodes</li>
+<li>Add unit tests for bateched and threaded blocks calls</li>
+<li>Use <a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a> as default appbase node<h2 id="Update-test-steemnoderpc-py"><a href="#Update-test-steemnoderpc-py" class="headerlink" title="Update test_steemnoderpc.py"></a>Update test_steemnoderpc.py</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/68cad02f65701c31a63472606824b906432f1fec" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/68cad02f65701c31a63472606824b906432f1fec</a><h2 id="Fix-depreated-function-warning"><a href="#Fix-depreated-function-warning" class="headerlink" title="Fix depreated function warning"></a>Fix depreated function warning</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/e3262e45bfa809381c7cc9422059e1165b3a71ee" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/e3262e45bfa809381c7cc9422059e1165b3a71ee</a></li>
+<li>Improve blockchain unittests<h2 id="Improve-coverage-of-test-cli"><a href="#Improve-coverage-of-test-cli" class="headerlink" title="Improve coverage of test_cli"></a>Improve coverage of test_cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/712a81745c2fe35cad05fc2447592cd06b362e9a" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/712a81745c2fe35cad05fc2447592cd06b362e9a</a><h2 id="Improve-coverage-for-Price"><a href="#Improve-coverage-for-Price" class="headerlink" title="Improve coverage for Price"></a>Improve coverage for Price</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/c3fb3fccde1866cc995a9c87663c378f5230937c" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/c3fb3fccde1866cc995a9c87663c378f5230937c</a><h2 id="Move-post-and-comment-options-to-steem-class"><a href="#Move-post-and-comment-options-to-steem-class" class="headerlink" title="Move post and comment_options to steem class"></a>Move post and comment_options to steem class</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/9fb1330590c25736adcbe74040a093a82d446189" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/9fb1330590c25736adcbe74040a093a82d446189</a></li>
+<li>RecentReplies improved</li>
+<li>Comment init improved</li>
+<li>test coverage for comment and steem improved.<h2 id="Improve-coverage-for-steem"><a href="#Improve-coverage-for-steem" class="headerlink" title="Improve coverage for steem"></a>Improve coverage for steem</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/de8527ffd04f6cac5698438b7929726ecb79d65c" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/de8527ffd04f6cac5698438b7929726ecb79d65c</a><h2 id="Remove-steemitstage-and-improve-coverage-for-steemnoderpc"><a href="#Remove-steemitstage-and-improve-coverage-for-steemnoderpc" class="headerlink" title="Remove steemitstage and improve coverage for steemnoderpc"></a>Remove steemitstage and improve coverage for steemnoderpc</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/988ff02990eccc42dfdd072ab9c772760bcbb96d" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/988ff02990eccc42dfdd072ab9c772760bcbb96d</a><h2 id="Improvements-for-blockchain-parameter-reading-and-nodes-benchmark"><a href="#Improvements-for-blockchain-parameter-reading-and-nodes-benchmark" class="headerlink" title="Improvements for blockchain parameter reading and nodes benchmark"></a>Improvements for blockchain parameter reading and nodes benchmark</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/582f3414cc9b6ac2e3fed8899acd8bb172b880af" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/582f3414cc9b6ac2e3fed8899acd8bb172b880af</a><h3 id="steem"><a href="#steem" class="headerlink" title="steem"></a>steem</h3></li>
+<li>Robustify reading of blockchain parameters<h3 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h3></li>
+<li>improve formatTimedelta output<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3></li>
+<li>improve benchmark_nodes by added account history<h2 id="Speedup-wait-for-and-get-block"><a href="#Speedup-wait-for-and-get-block" class="headerlink" title="Speedup wait_for_and_get_block"></a>Speedup wait_for_and_get_block</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/421627a93cb8f12f814aaea654919b7e19e9fc3f" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/421627a93cb8f12f814aaea654919b7e19e9fc3f</a><h3 id="blockchain"><a href="#blockchain" class="headerlink" title="blockchain"></a>blockchain</h3></li>
+<li>reduced times in which get_current_block_num is called</li>
+<li>when last_fetched_block_num is given, get_current_block_num is only called when block_number is greater than last_fetched_block_num<h3 id="storage"><a href="#storage" class="headerlink" title="storage"></a>storage</h3></li>
+<li>default nodes list enhanced<h3 id="steemnoderpc"><a href="#steemnoderpc" class="headerlink" title="steemnoderpc"></a>steemnoderpc</h3></li>
+<li>Service Temporarily Unavailable and Bad Gateway added to exception detection<h3 id="graphenerpc"><a href="#graphenerpc" class="headerlink" title="graphenerpc"></a>graphenerpc</h3></li>
+<li>check for Service Temporarily Unavailable and Bad Gateway</li>
+<li>Improved handling of Client returned invalid format. Expected JSON! when output is int<h3 id="Unit-test"><a href="#Unit-test" class="headerlink" title="Unit test"></a>Unit test</h3></li>
+<li>test_utils fixed<h2 id="num-retries-improved"><a href="#num-retries-improved" class="headerlink" title="num_retries improved"></a>num_retries improved</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/3ff0b8904bdf36acd8467fcf90cd2bd28e87f45e" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/3ff0b8904bdf36acd8467fcf90cd2bd28e87f45e</a><h3 id="Steemnoderpc"><a href="#Steemnoderpc" class="headerlink" title="Steemnoderpc"></a>Steemnoderpc</h3></li>
+<li>self.errror_cnt_call used instead of local variable doRetryCount<h3 id="Graphenerpc"><a href="#Graphenerpc" class="headerlink" title="Graphenerpc"></a>Graphenerpc</h3></li>
+<li>num_retries_call added for setting a max number of retries on a rpc call</li>
+<li>self.n_urls added for getting the number of given nodes</li>
+<li>sleep on retry removed, when switching over to the next node<br>self.error_cnt_call used for counting rpc call retries<h3 id="rpcutils"><a href="#rpcutils" class="headerlink" title="rpcutils"></a>rpcutils</h3></li>
+<li>sleep_and_check_retries improved<h3 id="Unit-tests"><a href="#Unit-tests" class="headerlink" title="Unit tests"></a>Unit tests</h3></li>
+<li>num_retries added</li>
+<li>test_golos reduced<h2 id="Add-option-to-set-block-numbers-as-start-and-stop-in-history-and-history-revers"><a href="#Add-option-to-set-block-numbers-as-start-and-stop-in-history-and-history-revers" class="headerlink" title="Add option to set block_numbers as start and stop in history and history revers"></a>Add option to set block_numbers as start and stop in history and history revers</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/8fc729be60c8c61439e70356f71304498d7eae27" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/8fc729be60c8c61439e70356f71304498d7eae27</a><h3 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h3></li>
+<li>add option use_block_num to history, history_reverse and get_account_history<h2 id="Reduce-duplicate-code"><a href="#Reduce-duplicate-code" class="headerlink" title="Reduce duplicate code"></a>Reduce duplicate code</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/8d6478e7eb2a9fc4e6d4e55359088e6dca431fc6" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/8d6478e7eb2a9fc4e6d4e55359088e6dca431fc6</a><h3 id="Wallet"><a href="#Wallet" class="headerlink" title="Wallet"></a>Wallet</h3></li>
+<li>reduce code duplication<h3 id="operations"><a href="#operations" class="headerlink" title="operations"></a>operations</h3></li>
+<li>reduce code duplication</li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/update-for-beem-coverage-improved-and-other-improvements" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-coverage-improved-and-other-improvements" target="_blank" rel="noopener">&#x2018;Update for beem - coverage improved and other improvements&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/appbase/">appbase</a>, <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/logo-request-for-beem-a-python-library-for-steem/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Logo request for beem - a python library for steem</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steem-full-node-statistics-with-beem/">
+                <span class="level-item">steem full node statistics with beem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

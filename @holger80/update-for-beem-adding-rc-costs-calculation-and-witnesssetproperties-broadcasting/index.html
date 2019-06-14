@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>update for beem - adding RC costs calculation and witness_set_properties broadcasting - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">2</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Implementing-witness-set-properties">
+        <span class="has-mr-6">2.1</span>
+        <span>Implementing witness_set_properties</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Adding-a-class-to-calculate-RC-costs-for-different-operation">
+        <span class="has-mr-6">3</span>
+        <span>Adding a class to calculate RC costs for different operation</span>
+        </a></li><li>
+        <a class="is-flex" href="#More-HF20-related-changes">
+        <span class="has-mr-6">4</span>
+        <span>More HF20 related changes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">5</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Release-0-20-5">
+        <span class="has-mr-6">5.1</span>
+        <span>Release 0.20.5</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-20-4">
+        <span class="has-mr-6">5.2</span>
+        <span>Release 0.20.4</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-of-0-20-3">
+        <span class="has-mr-6">5.3</span>
+        <span>Release of 0.20.3</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">5.3.1</span>
+        <span>Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#RC">
+        <span class="has-mr-6">5.3.2</span>
+        <span>RC</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Fix-witness-update-for-beempy-disablewitness-and-beempy-enablewitness">
+        <span class="has-mr-6">5.4</span>
+        <span>Fix witness update for beempy disablewitness and beempy enablewitness</span>
+        </a></li><li>
+        <a class="is-flex" href="#Implementation-of-a-RC-costs-calculation-class">
+        <span class="has-mr-6">5.5</span>
+        <span>Implementation of a RC costs calculation class</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#RC-1">
+        <span class="has-mr-6">5.5.1</span>
+        <span>RC</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#several-bug-fixes">
+        <span class="has-mr-6">5.6</span>
+        <span>several bug fixes</span>
+        </a></li><li>
+        <a class="is-flex" href="#release-of-0-20-2">
+        <span class="has-mr-6">5.7</span>
+        <span>release of 0.20.2</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-of-0-20-1">
+        <span class="has-mr-6">5.8</span>
+        <span>Release of 0.20.1</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-of-0-20-0">
+        <span class="has-mr-6">5.9</span>
+        <span>Release of 0.20.0</span>
+        </a></li><li>
+        <a class="is-flex" href="#Preparing-first-release-for-HF20-adapt-account-create-for-HF20">
+        <span class="has-mr-6">5.10</span>
+        <span>Preparing first release for HF20, adapt account create for HF20</span>
+        </a></li><li>
+        <a class="is-flex" href="#add-new-witness-set-properties-function">
+        <span class="has-mr-6">5.11</span>
+        <span>add new witness_set_properties function</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-bytes-representation-of-hex-strings-and-add-key-sorting-to-Witness-set-properties">
+        <span class="has-mr-6">5.12</span>
+        <span>Fix bytes representation of hex strings and add key sorting to Witness_set_properties</span>
+        </a></li><li>
+        <a class="is-flex" href="#Update-nodelist-and-add-not-working-parameter-to-get-nodes">
+        <span class="has-mr-6">5.13</span>
+        <span>Update nodelist and add not_working parameter to get_nodes()</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-unit-test-for-witness-set-properties">
+        <span class="has-mr-6">5.14</span>
+        <span>Add unit test for witness_set_properties</span>
+        </a></li><li>
+        <a class="is-flex" href="#Implementation-of-Witness-set-properties">
+        <span class="has-mr-6">5.15</span>
+        <span>Implementation of Witness_set_properties</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#objects-Amount">
+        <span class="has-mr-6">5.15.1</span>
+        <span>objects.Amount</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Add-missing-changes-to-transactionbuilder">
+        <span class="has-mr-6">5.16</span>
+        <span>Add missing changes to transactionbuilder</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-Witness-set-properties-to-operations-and-add-Offline-constructTx">
+        <span class="has-mr-6">5.17</span>
+        <span>Add Witness_set_properties to operations and add Offline constructTx</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="update for beem - adding RC costs calculation and witness_set_properties broadcasting">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-10-02T08:32:57.000Z">2018-10-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1802 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                update for beem - adding RC costs calculation and witness_set_properties broadcasting
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">https://github.com/holgern/beem</a></p><center><br><img src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="beem-logo.png"><br></center><br><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 489 unit tests and a coverage of 73 %. The current version is 0.20.5.<br>I created a discord channel for answering a question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a><p></p>
+<p>The newest beem version can be installed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>or when  using conda:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>beem can be updated by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>As utopian-io was not available for quite a long time, I could not post development updates for beem. Thus this post contains the changes for beem releases <code>0.19.57</code>, <code>0.20.0</code>, <code>0.20.1</code>, <code>0.20.2</code>, <code>0.20.3</code>, <code>0.20.4</code> and <code>0.20.5</code>. Hopefully, I will receive a utopian-io upvote this time. (<a href="https://steemit.com/utopian-io/@holger80/update-for-beem-preparing-beem-for-hf-20-and-delegate-added-to-beempy" target="_blank" rel="noopener">my last developement update</a> did not receive a vote).</p>
+<h2 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h2><h3 id="Implementing-witness-set-properties"><a href="#Implementing-witness-set-properties" class="headerlink" title="Implementing witness_set_properties"></a>Implementing <code>witness_set_properties</code></h3><p>Implementing this new operation was really hard work, as this operation uses a new and undocumented format. Finally after finding out:</p>
+<ul>
+<li>each parameter value must be transmitted as hex number (e.g. <code>(hexlify(Uint32(k[1]).__bytes__())).decode()</code>) - <a href="https://github.com/holgern/beem/commit/6cc303d1b0fdfb096da78d3ff331aaa79a18ad8f" target="_blank" rel="noopener">commit 6cc303d</a></li>
+<li>The map structure can be used for building the trx dict - <a href="https://github.com/holgern/beem/commit/6cc303d1b0fdfb096da78d3ff331aaa79a18ad8f" target="_blank" rel="noopener">commit 6cc303d</a></li>
+<li>all key have to sorted (<a href="https://github.com/holgern/beem/commit/f63c0ce368979bbb8dbc3ce161b60d3bf1647128" target="_blank" rel="noopener">commit f63c0ce3</a>)</li>
+<li>A new <code>HexString</code> class was implemented, as each hex value must be transformed to <code>bytes(unhexlify(bytes(self.data, &apos;ascii&apos;)))</code> for building the bytes field for signing - (<a href="https://github.com/holgern/beem/commit/f63c0ce368979bbb8dbc3ce161b60d3bf1647128" target="_blank" rel="noopener">commit f63c0ce3</a>)<br>The operation must be signed with the last set witness key and it is not possible to use this operation when a witness is disabled.</li>
+</ul>
+<p>After being able to broadcast, a new function <code>witness_set_properties</code> for building the operation dict was added to <code>witness_set_properties</code>.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">def witness_set_properties(self, wif, owner, props, use_condenser_api=True):</span><br><span class="line">    &quot;&quot;&quot; Set witness properties</span><br><span class="line">         :param privkey wif: Private signing key</span><br><span class="line">        :param dict props: Properties</span><br><span class="line">        :param str owner: witness account name</span><br><span class="line">         Properties:::</span><br><span class="line">             {</span><br><span class="line">                &quot;account_creation_fee&quot;: x,</span><br><span class="line">                &quot;account_subsidy_budget&quot;: x,</span><br><span class="line">                &quot;account_subsidy_decay&quot;: x,</span><br><span class="line">                &quot;maximum_block_size&quot;: x,</span><br><span class="line">                &quot;url&quot;: x,</span><br><span class="line">                &quot;sbd_exchange_rate&quot;: x,</span><br><span class="line">                &quot;sbd_interest_rate&quot;: x,</span><br><span class="line">                &quot;new_signing_key&quot;: x</span><br><span class="line">            }</span><br><span class="line">     &quot;&quot;&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p> A new command <code>witnessproperties</code> was then also added to <code>beempy</code>.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Usage: beempy witnessproperties [OPTIONS] WITNESS WIF</span><br><span class="line"></span><br><span class="line">  Update witness properties of witness WITNESS with the witness signing key WIF</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  --account_creation_fee TEXT    Account creation fee (float)</span><br><span class="line">  --account_subsidy_budget TEXT  Account subisidy per block</span><br><span class="line">  --account_subsidy_decay TEXT   Per block decay of the account subsidy pool</span><br><span class="line">  --maximum_block_size TEXT      Max block size</span><br><span class="line">  --sbd_interest_rate TEXT       SBD interest rate in percent</span><br><span class="line">  --new_signing_key TEXT         Set new signing key</span><br><span class="line">  --url TEXT                     Witness URL</span><br><span class="line">  --help                         Show this message and exit.</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Only the set parameter is changed, all other remain unchanged.</p>
+<h2 id="Adding-a-class-to-calculate-RC-costs-for-different-operation"><a href="#Adding-a-class-to-calculate-RC-costs-for-different-operation" class="headerlink" title="Adding a class to calculate RC costs for different operation"></a>Adding a class to calculate RC costs for different operation</h2><p>The RC costs depend on the four pools (resource_execution_time is not used yet):</p>
+<ul>
+<li>resource_history_bytes</li>
+<li>resource_market_bytes</li>
+<li>resource_new_accounts</li>
+<li>resource_state_bytes</li>
+</ul>
+<p>and the parameter from the <code>price_curve_params</code> field:</p>
+<ul>
+<li>coeff_a</li>
+<li>shift</li>
+<li>coeff_b</li>
+</ul>
+<p>as well as from</p>
+<ul>
+<li>rc_regen (is the same for all pools: <code>int(Amount(dyn_param[&quot;total_vesting_shares&quot;], steem_instance=self)) / (STEEM_RC_REGEN_TIME / config[&quot;STEEM_BLOCK_INTERVAL&quot;])</code></li>
+<li>resource_unit is stored in the <code>resource_dynamics_params</code> field</li>
+</ul>
+<p>There are rules to get the resource_count for each operation. For example for a comment it is:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">state_bytes_count = state_object_size_info[&quot;comment_object_base_size&quot;]</span><br><span class="line">state_bytes_count += state_object_size_info[&quot;comment_object_permlink_char_size&quot;] * permlink_length</span><br><span class="line">state_bytes_count += state_object_size_info[&quot;comment_object_parent_permlink_char_size&quot;] * parent_permlink_length</span><br><span class="line">resource_count = {&quot;resource_history_bytes&quot;: tx_size}</span><br><span class="line">resource_count[&quot;resource_state_bytes&quot;] = state_object_size_info[&quot;transaction_object_base_size&quot;]</span><br><span class="line">resource_count[&quot;resource_state_bytes&quot;] += state_object_size_info[&quot;transaction_object_byte_size&quot;] * tx_size</span><br><span class="line">resource_count[&quot;resource_state_bytes&quot;] += state_bytes_count</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>For a comment with:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tx_size=1000</span><br><span class="line">permlink_length=10</span><br><span class="line">parent_permlink_length=0</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>the <code>resource_count</code> dict is<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{&apos;resource_history_bytes&apos;: 1000,</span><br><span class="line"> &apos;resource_state_bytes&apos;: 2290090}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>These values can now be used to calculate the RC costs:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">total_cost = 0</span><br><span class="line">if rc_regen == 0:</span><br><span class="line">    return total_cost</span><br><span class="line">for resource_type in resource_count:</span><br><span class="line">    curve_params = params[resource_type][&quot;price_curve_params&quot;]</span><br><span class="line">    current_pool = int(pools[resource_type][&quot;pool&quot;])</span><br><span class="line">    count = resource_count[resource_type]</span><br><span class="line">    count *= params[resource_type][&quot;resource_dynamics_params&quot;][&quot;resource_unit&quot;]</span><br><span class="line">    cost = self._compute_rc_cost(curve_params, current_pool, count, rc_regen)</span><br><span class="line">    total_cost += cost</span><br></pre></td></tr></tbody></table></figure>
+<p>with<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">def _compute_rc_cost(self, curve_params, current_pool, resource_count, rc_regen):</span><br><span class="line">    &quot;&quot;&quot;Helper function for computing the RC costs&quot;&quot;&quot;</span><br><span class="line">    num = int(rc_regen)</span><br><span class="line">    num *= int(curve_params[&apos;coeff_a&apos;])</span><br><span class="line">    num = int(num) &gt;&gt; int(curve_params[&apos;shift&apos;])</span><br><span class="line">    num += 1</span><br><span class="line">    num *= int(resource_count)</span><br><span class="line">    denom = int(curve_params[&apos;coeff_b&apos;])</span><br><span class="line">    if int(current_pool) &gt; 0:</span><br><span class="line">        denom += int(current_pool)</span><br><span class="line">    num_denom = num / denom</span><br><span class="line">    return int(num_denom) + 1</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The function from the new RC class can also be used to calculate RC costs:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from beem.rc import RC</span><br><span class="line">rc = RC()</span><br><span class="line">comment_RC_costs = rc.comment(tx_size=1000, permlink_length=10, parent_permlink_length=0)</span><br><span class="line">print(&quot;RC costs for a comment: %.2f G RC&quot; % (comment_RC_costs  / 1e9))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>It is also possible to use a comment operation dict with the comment_dict function. RC costs are implemented for </p>
+<ul>
+<li>comment</li>
+<li>vote</li>
+<li>transfer</li>
+<li>custom_json</li>
+</ul>
+<p>As the RC values are really high, I use mainly <code>G RC</code> which is RC/1e9.</p>
+<h2 id="More-HF20-related-changes"><a href="#More-HF20-related-changes" class="headerlink" title="More HF20 related changes"></a>More HF20 related changes</h2><ul>
+<li>add get_resource_params(), get_resource_pool(), claim_account(), create_claimed_account() to Steem</li>
+<li>fix 30x fee for create_account</li>
+<li>add find_rc_accounts() to Blockchain</li>
+<li>get_rc(), get_rc_manabar(), get_manabar() added to Account</li>
+<li>get_voting_power() fixed</li>
+<li>get_manabar_recharge_time_str(), get_manabar_recharge_timedelta() and get_manabar_recharge_time() added</li>
+<li>get_api_methods() and get_apis() added to Steem</li>
+<li>get_effective_vesting_shares() added to calculated max_mana correctly</li>
+<li>comment_benefactor_reward adapted for snapshot</li>
+</ul>
+<h2 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h2><h3 id="Release-0-20-5"><a href="#Release-0-20-5" class="headerlink" title="Release 0.20.5"></a>Release 0.20.5</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/e1859a0b6aeedd4ea9a32634f65408f025ab1822" target="_blank" rel="noopener">commit e1859a0</a></li>
+<li>fix get_effective_vesting_shares()<h3 id="Release-0-20-4"><a href="#Release-0-20-4" class="headerlink" title="Release 0.20.4"></a>Release 0.20.4</h3></li>
+<li><a href="https://github.com/holgern/beem/commit/39476777d25e6bf6cd2337a10ff03f75c8cfe096" target="_blank" rel="noopener">commit 3947677</a></li>
+<li>get_effective_vesting_shares() added to calculated max_mana correctly</li>
+<li>dict key words adapted to steemd for get_manabar() and get_rc_manabar()</li>
+<li>Voting mana fixed for 0 SP accounts</li>
+<li>comment_benefactor_reward adapted for snapshot</li>
+<li>Custom_json RC costs added to print_info<h3 id="Release-of-0-20-3"><a href="#Release-of-0-20-3" class="headerlink" title="Release of 0.20.3"></a>Release of 0.20.3</h3></li>
+<li><a href="https://github.com/holgern/beem/commit/ca4162fc7c61c330b4e6dc13fccde61e5c1f245f" target="_blank" rel="noopener">commit ca4162f</a><h4 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h4></li>
+<li>add comment, vote, transfer RC costs in account.print_info() and beempy power</li>
+<li>Shows number of possible comments, votes, tranfers with available RCs in account.print_info() and beempy power</li>
+</ul>
+<h4 id="RC"><a href="#RC" class="headerlink" title="RC"></a>RC</h4><ul>
+<li>add possibility to specify tx_size instead of constructing a dict for comment, transfer, vote and custom_json</li>
+</ul>
+<h3 id="Fix-witness-update-for-beempy-disablewitness-and-beempy-enablewitness"><a href="#Fix-witness-update-for-beempy-disablewitness-and-beempy-enablewitness" class="headerlink" title="Fix witness update for beempy disablewitness and beempy enablewitness"></a>Fix witness update for beempy disablewitness and beempy enablewitness</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/78825f31f99eecd0a58823b6f671d10c00ea94f0" target="_blank" rel="noopener">commit 78825f3</a></li>
+</ul>
+<h3 id="Implementation-of-a-RC-costs-calculation-class"><a href="#Implementation-of-a-RC-costs-calculation-class" class="headerlink" title="Implementation of a RC costs calculation class"></a>Implementation of a RC costs calculation class</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/827f41cbac0131862f26414242a0f27256dc1514" target="_blank" rel="noopener">commit 827f41cb</a></li>
+<li>get_rc_cost was added to steem to calculation RC costs from resource count</li>
+</ul>
+<h4 id="RC-1"><a href="#RC-1" class="headerlink" title="RC"></a>RC</h4><ul>
+<li>get_tx_size(), get_resource_count(), comment(), vote(), transfer() and custom_json() added</li>
+</ul>
+<h3 id="several-bug-fixes"><a href="#several-bug-fixes" class="headerlink" title="several bug fixes"></a>several bug fixes</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/2c2ce6675aaafe871fb63f04cc1829a522acb4d9" target="_blank" rel="noopener">commit 2c2ce66</a></li>
+</ul>
+<h3 id="release-of-0-20-2"><a href="#release-of-0-20-2" class="headerlink" title="release of 0.20.2"></a>release of 0.20.2</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/3ba1b97ba0f29ac2c12064f70502cb6364702994" target="_blank" rel="noopener">commit 3ba1b97</a></li>
+<li>estimated_mana is now capped by estimated_max</li>
+<li>print_info fixed()</li>
+<li>get_api_methods() and get_apis() added to Steem</li>
+</ul>
+<h3 id="Release-of-0-20-1"><a href="#Release-of-0-20-1" class="headerlink" title="Release of 0.20.1"></a>Release of 0.20.1</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/a2ea86de08792f9e016c07ac6213f57383da21f1" target="_blank" rel="noopener">commit a2ea86d</a></li>
+<li>Improved get_rc_manabar(), get_manabar() output</li>
+<li>get_voting_power() fixed again</li>
+<li>print_info for account improved</li>
+<li>get_manabar_recharge_time_str(), get_manabar_recharge_timedelta() and get_manabar_recharge_time() added</li>
+<li><a href="https://steemd-appbase.steemit.com" target="_blank" rel="noopener">https://steemd-appbase.steemit.com</a> added to nodelist</li>
+</ul>
+<h3 id="Release-of-0-20-0"><a href="#Release-of-0-20-0" class="headerlink" title="Release of 0.20.0"></a>Release of 0.20.0</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/ebc508a12abd4b314697bbc998471dddfae40ec0" target="_blank" rel="noopener">commit ebc508a</a></li>
+<li>Fully supporting hf20</li>
+<li>add get_resource_params(), get_resource_pool(), claim_account(), create_claimed_account() to Steem</li>
+<li>fix 30x fee for create_account</li>
+<li>add find_rc_accounts() to Blockchain</li>
+<li>get_rc(), get_rc_manabar(), get_manabar() added to Account</li>
+<li>get_voting_power() fixed</li>
+</ul>
+<h3 id="Preparing-first-release-for-HF20-adapt-account-create-for-HF20"><a href="#Preparing-first-release-for-HF20-adapt-account-create-for-HF20" class="headerlink" title="Preparing first release for HF20, adapt account create for HF20"></a>Preparing first release for HF20, adapt account create for HF20</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/76021f36c6bbf2800cf8dc04456dba0bf59382bb" target="_blank" rel="noopener">commit 76021f3</a></li>
+</ul>
+<h3 id="add-new-witness-set-properties-function"><a href="#add-new-witness-set-properties-function" class="headerlink" title="add new witness_set_properties function"></a>add new witness_set_properties function</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/477139876cb6f77510d49437088b22ef4c3ffb76" target="_blank" rel="noopener">commit 4771398</a></li>
+<li>witnessproperties is added to beempy for setting new witness parameter </li>
+<li>witnessfeed uses the new witness_set_properties function when a wif is provided</li>
+</ul>
+<h3 id="Fix-bytes-representation-of-hex-strings-and-add-key-sorting-to-Witness-set-properties"><a href="#Fix-bytes-representation-of-hex-strings-and-add-key-sorting-to-Witness-set-properties" class="headerlink" title="Fix bytes representation of hex strings and add key sorting to Witness_set_properties"></a>Fix bytes representation of hex strings and add key sorting to Witness_set_properties</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/f63c0ce368979bbb8dbc3ce161b60d3bf1647128" target="_blank" rel="noopener">commit f63c0ce</a></li>
+</ul>
+<h3 id="Update-nodelist-and-add-not-working-parameter-to-get-nodes"><a href="#Update-nodelist-and-add-not-working-parameter-to-get-nodes" class="headerlink" title="Update nodelist and add not_working parameter to get_nodes()"></a>Update nodelist and add not_working parameter to get_nodes()</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/bad0ca393ca98023a1cce5c21ec7faeae114642d" target="_blank" rel="noopener">commit bad0ca3</a></li>
+</ul>
+<h3 id="Add-unit-test-for-witness-set-properties"><a href="#Add-unit-test-for-witness-set-properties" class="headerlink" title="Add unit test for witness_set_properties"></a>Add unit test for witness_set_properties</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/25926d5fc03b035272b1109736c1379d925e2ce1" target="_blank" rel="noopener">commit 25926d5</a></li>
+<li>RawString added to types</li>
+<li>Some improvements and fixes</li>
+</ul>
+<h3 id="Implementation-of-Witness-set-properties"><a href="#Implementation-of-Witness-set-properties" class="headerlink" title="Implementation of Witness_set_properties"></a>Implementation of Witness_set_properties</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/6cc303d1b0fdfb096da78d3ff331aaa79a18ad8f" target="_blank" rel="noopener">commit 6cc303d</a></li>
+<li>All parameter are packed now in a correct way</li>
+<li>Correct operationid for Witness_set_properties</li>
+</ul>
+<h4 id="objects-Amount"><a href="#objects-Amount" class="headerlink" title="objects.Amount"></a>objects.Amount</h4><ul>
+<li>naming of symbol and asset improved</li>
+</ul>
+<h3 id="Add-missing-changes-to-transactionbuilder"><a href="#Add-missing-changes-to-transactionbuilder" class="headerlink" title="Add missing changes to transactionbuilder"></a>Add missing changes to transactionbuilder</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/e1cea48a349c92cf2339ea8951858aae7996d3b2" target="_blank" rel="noopener">commit e1cea48</a></li>
+<li>Add parameter for enabling usage of condenser_api  for broadcasting</li>
+<li>Add ref_block_num and ref_block_prefix to constructTx for offline signing</li>
+</ul>
+<h3 id="Add-Witness-set-properties-to-operations-and-add-Offline-constructTx"><a href="#Add-Witness-set-properties-to-operations-and-add-Offline-constructTx" class="headerlink" title="Add Witness_set_properties to operations and add Offline constructTx"></a>Add Witness_set_properties to operations and add Offline constructTx</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/e61c802c4fc1e4fe9f6a6dad7e2abe0fb4a813ab" target="_blank" rel="noopener">commit e61c802</a></li>
+<li>Example for using offline signing is provided</li>
+<li>Next release prepared</li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-adding-rc-costs-calculation-and-witnesssetproperties-broadcasting" target="_blank" rel="noopener">&#x2018;update for beem - adding RC costs calculation and witness_set_properties broadcasting&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/beempy-com-witness-information-and-curation-information-added/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">beempy.com - witness information and curation information added</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-to-use-the-steem-vc-testnet-with-beem/">
+                <span class="level-item">How to use the steem.vc testnet with beem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

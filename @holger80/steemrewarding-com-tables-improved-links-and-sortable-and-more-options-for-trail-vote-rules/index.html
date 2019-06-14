@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Improved-table-layout-which-is-now-partly-sortable">
+        <span class="has-mr-6">2</span>
+        <span>Improved table layout which is now partly sortable</span>
+        </a></li><li>
+        <a class="is-flex" href="#Authorperm-and-authors-are-now-links">
+        <span class="has-mr-6">3</span>
+        <span>Authorperm and authors are now links</span>
+        </a></li><li>
+        <a class="is-flex" href="#vote-when-vp-reached-added-to-trail-vote-rules">
+        <span class="has-mr-6">4</span>
+        <span>vote_when_vp_reached added to trail vote rules</span>
+        </a></li><li>
+        <a class="is-flex" href="#exclude-all-authors-that-have-an-enabled-vote-rule">
+        <span class="has-mr-6">5</span>
+        <span>exclude all authors that have an enabled vote rule</span>
+        </a></li><li>
+        <a class="is-flex" href="#maximum-vote-delay-min-was-added-as-parameter-for-a-vote-rule">
+        <span class="has-mr-6">6</span>
+        <span>maximum_vote_delay_min was added as parameter for a vote rule</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">7</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#add-option-exclude-authors-with-vote-rule-that-exclude-authors-that-have-an-enabled-rule-for-trail-votes">
+        <span class="has-mr-6">7.1</span>
+        <span>add option exclude_authors_with_vote_rule that exclude authors that have an enabled rule for trail votes</span>
+        </a></li><li>
+        <a class="is-flex" href="#sql-database-improved-vote-sbd-fixed-and-new-parameter-added">
+        <span class="has-mr-6">7.2</span>
+        <span>sql database improved, vote_sbd fixed and new parameter added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Use-BoolCol-for-boolean-and-add-sortable-tables-to-vote-rules-and-trail-vote-rules">
+        <span class="has-mr-6">7.3</span>
+        <span>Use BoolCol for boolean and add sortable tables to vote rules and trail vote rules</span>
+        </a></li><li>
+        <a class="is-flex" href="#add-sortable-tables-and-add-hyperlinks-to-authorperm-and-author">
+        <span class="has-mr-6">7.4</span>
+        <span>add sortable tables and add hyperlinks to authorperm and author</span>
+        </a></li><li>
+        <a class="is-flex" href="#add-vote-when-vp-reached-and-vp-reached-order-to-trail-vote-rules">
+        <span class="has-mr-6">7.5</span>
+        <span>add vote_when_vp_reached and vp_reached_order to trail vote rules</span>
+        </a></li><li>
+        <a class="is-flex" href="#add-maximum-vote-delay-min-and-add-some-more-checks">
+        <span class="has-mr-6">7.6</span>
+        <span>add maximum_vote_delay_min and add some more checks</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">7.7</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmPhk8pRRbgjHqHpNpSuuFiWkDuKppxDpyzSPpMCGZwS8a" alt="steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-03T14:37:21.000Z">2019-04-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 927 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules
+            
+        </h1>
+        <div class="content">
+            <p></p><center><img src="https://ipfs.busy.org/ipfs/QmPhk8pRRbgjHqHpNpSuuFiWkDuKppxDpyzSPpMCGZwS8a" alt="rewarding_batch2.png"><br></center><p></p>
+<h3 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h3><p><a href="https://github.com/holgern/steemrewarding" target="_blank" rel="noopener">https://github.com/holgern/steemrewarding</a></p>
+<p>steemrewarding.com is a feature-rich automatic voting tool. It can be used to create voting rules at <a href="https://steemrewarding.com" target="_blank" rel="noopener">https://steemrewarding.com</a>, when posting authority was given to the @rewarding account. I created a discord server for all topics regarding steemrewarding.com: <a href="https://discord.gg/qpsR8hf" target="_blank" rel="noopener">discord invitation</a>.</p>
+<p>steemrewarding is currently used by 109 users which created 945 rules for posts, 70 rules for comments and 19 trail vote rules. In the last 7 days were 4381 time based votes and 865 vp based votes broadcasted through steemrewarding. </p>
+<h2 id="Improved-table-layout-which-is-now-partly-sortable"><a href="#Improved-table-layout-which-is-now-partly-sortable" class="headerlink" title="Improved table layout which is now partly sortable"></a>Improved table layout which is now partly sortable</h2><p><img src="https://ipfs.busy.org/ipfs/QmWg2GzQJ7GRi8YZUBVKgmJ2EUqGyHMtDTcTvwahs6Ntpi" alt="image.png"><br>The header are now links when the column is sortable. When clicking on it, it calls the same site with a <code>sort</code> and a <code>direction</code>parameter:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://steemrewarding.com/show_vote_log?sort=author&amp;direction=asc</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>These parameter are parsed:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sort = request.args.get(&apos;sort&apos;, &apos;timestamp&apos;)</span><br><span class="line">reverse = (request.args.get(&apos;direction&apos;, &apos;desc&apos;) == &apos;desc&apos;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and the array is sorted:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">try:</span><br><span class="line">    sorted_log = sorted(logs, key=lambda x: x[sort] or 0, reverse=reverse)</span><br><span class="line">except:</span><br><span class="line">    sorted_log = logs</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The try/except prevent a crash when a wrong sort parameter was given.</p>
+<p>The header links are created by implementing a sort_url function in the Table class:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class VotesLog(Table):</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">    allow_sort = True</span><br><span class="line">    def sort_url(self, col_key, reverse=False):</span><br><span class="line">        if col_key in [&quot;authorperm&quot;, &quot;author&quot;, &quot;vote_weight&quot;, &quot;vote_delay_min&quot;, &quot;voted_after_min&quot;]:</span><br><span class="line">            direction = &apos;asc&apos;</span><br><span class="line">        else:</span><br><span class="line">            direction = &apos;desc&apos;</span><br><span class="line">        return url_for(&apos;show_vote_log&apos;, sort=col_key, direction=direction)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Authorperm-and-authors-are-now-links"><a href="#Authorperm-and-authors-are-now-links" class="headerlink" title="Authorperm and authors are now links"></a>Authorperm and authors are now links</h2><p>A new class was defined:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class ExternalURLCol(Col):</span><br><span class="line">    def __init__(self, name, url_attr, **kwargs):</span><br><span class="line">        self.url_attr = url_attr</span><br><span class="line">        super(ExternalURLCol, self).__init__(name, **kwargs)</span><br><span class="line"></span><br><span class="line">    def td_contents(self, item, attr_list):</span><br><span class="line">        text = self.from_attr_list(item, attr_list)</span><br><span class="line">        url = self.from_attr_list(item, [self.url_attr])</span><br><span class="line">        return element(&apos;a&apos;, {&apos;href&apos;: &apos;https://steemit.com/&apos; + url, &apos;target&apos;: &quot;_blank&quot;, &apos;class&apos;: &apos;table&apos;}, content=text)</span><br><span class="line"></span><br><span class="line">class ExternalAuthorURLCol(Col):</span><br><span class="line">    def __init__(self, name, url_attr, **kwargs):</span><br><span class="line">        self.url_attr = url_attr</span><br><span class="line">        super(ExternalAuthorURLCol, self).__init__(name, **kwargs)</span><br><span class="line"></span><br><span class="line">    def td_contents(self, item, attr_list):</span><br><span class="line">        text = self.from_attr_list(item, attr_list)</span><br><span class="line">        url = self.from_attr_list(item, [self.url_attr])</span><br><span class="line">        return element(&apos;a&apos;, {&apos;href&apos;: &apos;https://steemit.com/@&apos; + url, &apos;target&apos;: &quot;_blank&quot;, &apos;class&apos;: &apos;table&apos;}, content=text)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>That can be used to create a field in the table by:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">author = ExternalAuthorURLCol(&apos;author&apos;, url_attr=&apos;author&apos;, attr=&apos;author&apos;, allow_sort = True)</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="vote-when-vp-reached-added-to-trail-vote-rules"><a href="#vote-when-vp-reached-added-to-trail-vote-rules" class="headerlink" title="vote_when_vp_reached added to trail vote rules"></a>vote_when_vp_reached added to trail vote rules</h2><p><img src="https://ipfs.busy.org/ipfs/QmRUm6XQSYwhvSj1bE17p9vZ58tfAmQdnRjNHkyDwhQXvA" alt="image.png"><br>It is now possible to vote posts that were upvoted by a certain voter, when the vote power reaches a defined percentage. A trail vote rule with enabled <code>vote_when_vp_reached</code> will create a pending vote, when the voter to follow upvotes something. This new created pending vote has a <code>min_vp</code> and an enabled <code>vote_when_vp_reached</code>, which will keep the vote in a pending state until the vote power is suffient high or <code>maximum_vote_delay_min</code> is reached.</p>
+<h2 id="exclude-all-authors-that-have-an-enabled-vote-rule"><a href="#exclude-all-authors-that-have-an-enabled-vote-rule" class="headerlink" title="exclude all authors that have an enabled vote rule"></a>exclude all authors that have an enabled vote rule</h2><p>It is possible to  exclude all authors that have an enabled vote rule when following a vote trail.<br><img src="https://ipfs.busy.org/ipfs/QmayasD9rdbRVeTev84WXnrjUSx2dZ9UpN6TRdyzi53PQo" alt="image.png"><br>When the followed voter upvotes a main post, it is checked if a vote rule for a main post from the author exists. When the followed voter upvotes a comment, it is checked if a vote rule for a comment from the author exists. When a rule exists, the post/comment is skipped.</p>
+<h2 id="maximum-vote-delay-min-was-added-as-parameter-for-a-vote-rule"><a href="#maximum-vote-delay-min-was-added-as-parameter-for-a-vote-rule" class="headerlink" title="maximum_vote_delay_min was added as parameter for a vote rule"></a><code>maximum_vote_delay_min</code> was added as parameter for a vote rule</h2><p>It is possible to define the maximum post/comment age. When defined, posts/comments are only upvoted when their age is younger than the defined one. The value is the maximum age in minutes.</p>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="add-option-exclude-authors-with-vote-rule-that-exclude-authors-that-have-an-enabled-rule-for-trail-votes"><a href="#add-option-exclude-authors-with-vote-rule-that-exclude-authors-that-have-an-enabled-rule-for-trail-votes" class="headerlink" title="add option exclude_authors_with_vote_rule that exclude authors that have an enabled rule for trail votes"></a>add option exclude_authors_with_vote_rule that exclude authors that have an enabled rule for trail votes</h3><ul>
+<li><a href="https://github.com/holgern/steemrewarding/commit/5352b0e567fde9d0ee8db48d3933dc2238c51410" target="_blank" rel="noopener">commit 5352b0e</a><h3 id="sql-database-improved-vote-sbd-fixed-and-new-parameter-added"><a href="#sql-database-improved-vote-sbd-fixed-and-new-parameter-added" class="headerlink" title="sql database improved, vote_sbd fixed and new parameter added"></a>sql database improved, vote_sbd fixed and new parameter added</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/ba4b6a01533a9493f6f1d3b1b1d4f0d426cc1b91" target="_blank" rel="noopener">commit ba4b6a0</a><h3 id="Use-BoolCol-for-boolean-and-add-sortable-tables-to-vote-rules-and-trail-vote-rules"><a href="#Use-BoolCol-for-boolean-and-add-sortable-tables-to-vote-rules-and-trail-vote-rules" class="headerlink" title="Use BoolCol for boolean and add sortable tables to vote rules and trail vote rules"></a>Use BoolCol for boolean and add sortable tables to vote rules and trail vote rules</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/c6600466f138d3cee7e74ce6842308b65685b6b4" target="_blank" rel="noopener">commit c660046</a><h3 id="add-sortable-tables-and-add-hyperlinks-to-authorperm-and-author"><a href="#add-sortable-tables-and-add-hyperlinks-to-authorperm-and-author" class="headerlink" title="add sortable tables and add hyperlinks to authorperm and author"></a>add sortable tables and add hyperlinks to authorperm and author</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/69d74d0a51930012bac0d937d9650179889a6e0d" target="_blank" rel="noopener">commit 69d74d0</a><h3 id="add-vote-when-vp-reached-and-vp-reached-order-to-trail-vote-rules"><a href="#add-vote-when-vp-reached-and-vp-reached-order-to-trail-vote-rules" class="headerlink" title="add vote_when_vp_reached and vp_reached_order to trail vote rules"></a>add vote_when_vp_reached and vp_reached_order to trail vote rules</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/55c833bb5abd23aeeed072650d2a7ce17552cb8c" target="_blank" rel="noopener">commit 55c833b</a><h3 id="add-maximum-vote-delay-min-and-add-some-more-checks"><a href="#add-maximum-vote-delay-min-and-add-some-more-checks" class="headerlink" title="add maximum_vote_delay_min and add some more checks"></a>add maximum_vote_delay_min and add some more checks</h3></li>
+<li><a href="https://github.com/holgern/steemrewarding/commit/d7201f128b1a58c594da7d81cc37206b624894d3" target="_blank" rel="noopener">commit d7201f1</a></li>
+<li>max_votes_per_day and max_votes_per_week is fixed</li>
+<li>get_account added in trail_vote_rule_storage.py</li>
+<li>get_voter added in vote_rule_storage.py</li>
+</ul>
+<h3 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h3><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steemrewarding-com-tables-improved-links-and-sortable-and-more-options-for-trail-vote-rules" target="_blank" rel="noopener">&#x2018;steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/autovote/">autovote</a>, <a class="has-link-grey -link" href="/@holger80/tags/bsuy/">bsuy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/rewarding/">rewarding</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/steem-scot-improved-token-distribution-by-comment-commands/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">steem-scot - improved token distribution by comment commands</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steem-scot-distributing-token-by-comment-command/">
+                <span class="level-item">steem-scot - distributing token by comment command</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

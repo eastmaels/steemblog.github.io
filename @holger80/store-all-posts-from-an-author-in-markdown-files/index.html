@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Store all posts from an author in markdown files - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Result-for-holger80">
+        <span class="has-mr-6">1</span>
+        <span>Result for holger80</span>
+        </a></li><li>
+        <a class="is-flex" href="#Storing-one-post-as-markdown-file">
+        <span class="has-mr-6">2</span>
+        <span>Storing one post as markdown file</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmQRi5odZ7Np5TmoUDEG4aRJ9JdjLw4bxu56LCPjv33b3C/image.png" alt="Store all posts from an author in markdown files">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-23T13:05:54.000Z">2018-11-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 492 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Store all posts from an author in markdown files
+            
+        </h1>
+        <div class="content">
+            <p>I would find it very convenient to have all my written posts in one folder on my hard drive. The content of each file should be identical to the blockchain data. I did not found a tool for this task, so I wrote a python script.</p>
+<p>The script does the following:</p>
+<ul>
+<li>it reads the blog section of the given author (limited to the newest 500 posts)</li>
+<li>skip resteemed posts</li>
+<li>extracts title, timestamp, permlink  and store them as YAML extension at top of the md file</li>
+<li>saves the content as markdown file</li>
+</ul>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line">from beem import Steem</span><br><span class="line">from beem.comment import Comment</span><br><span class="line">from beem.account import Account</span><br><span class="line">import os</span><br><span class="line">import io</span><br><span class="line">import argparse</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    parser = argparse.ArgumentParser()</span><br><span class="line">    parser.add_argument(&quot;author&quot;)</span><br><span class="line">    parser.add_argument(&quot;path&quot;)</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    author = args.author</span><br><span class="line">    path = args.path</span><br><span class="line">    stm = Steem(node=&quot;https://api.steemit.com&quot;)</span><br><span class="line">    account = Account(author, steem_instance=stm)</span><br><span class="line">    for comment in account.get_blog(limit=500):</span><br><span class="line">        if comment[&quot;author&quot;] != author:</span><br><span class="line">            continue</span><br><span class="line">        markdown_content = comment.body</span><br><span class="line">        title = comment.title</span><br><span class="line">        timestamp = comment.json()[&quot;created&quot;]</span><br><span class="line">        author = comment[&quot;author&quot;]</span><br><span class="line">        permlink = comment[&quot;permlink&quot;]</span><br><span class="line">        yaml_prefix = &apos;---\n&apos;</span><br><span class="line">        yaml_prefix += &apos;title: %s\n&apos; % title</span><br><span class="line">        yaml_prefix += &apos;date: %s\n&apos; % timestamp</span><br><span class="line">        yaml_prefix += &apos;permlink %s&apos; % permlink</span><br><span class="line">        yaml_prefix += &apos;author: %s\n---\n&apos; % author</span><br><span class="line">        filename = os.path.join(path, timestamp.split(&apos;T&apos;)[0] + &apos;_&apos; + permlink + &quot;.md&quot;)</span><br><span class="line">        </span><br><span class="line">        with io.open(filename, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:</span><br><span class="line">            f.write(yaml_prefix + markdown_content)</span><br></pre></td></tr></tbody></table></figure>
+<p>Store this file as <code>save_posts_as_md.py</code>. <code>beem</code> need to be installed. The script needs two parameter:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python save_posts_as_md.py &lt;author&gt; &lt;path&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>The posts from the author are stored in the given path. The filename consists of the date and the permlink.</p>
+<h3 id="Result-for-holger80"><a href="#Result-for-holger80" class="headerlink" title="Result for holger80"></a>Result for holger80</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python save_posts_as_md.py holger80 .</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://cdn.steemitimages.com/DQmQRi5odZ7Np5TmoUDEG4aRJ9JdjLw4bxu56LCPjv33b3C/image.png" alt=""></p>
+<p>Viewing the markdown files works best using the great <a href="https://typora.io/" target="_blank" rel="noopener">typora</a> editor.</p>
+<h3 id="Storing-one-post-as-markdown-file"><a href="#Storing-one-post-as-markdown-file" class="headerlink" title="Storing one post as markdown file"></a>Storing one post as markdown file</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python</span><br><span class="line">from beem import Steem</span><br><span class="line">from beem.comment import Comment</span><br><span class="line">from beem.account import Account</span><br><span class="line">import io</span><br><span class="line">import argparse</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    parser = argparse.ArgumentParser()</span><br><span class="line">    parser.add_argument(&quot;authorperm&quot;)</span><br><span class="line">    parser.add_argument(&quot;filename&quot;)</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line">    authorperm = args.authorperm</span><br><span class="line">    filename = args.filename</span><br><span class="line">    stm = Steem(node=&quot;https://api.steemit.com&quot;)</span><br><span class="line">    comment = Comment(authorperm, steem_instance=stm)</span><br><span class="line">    markdown_content = comment.body</span><br><span class="line">    title = comment.title</span><br><span class="line">    timestamp = comment[&quot;created&quot;]</span><br><span class="line">    author = comment[&quot;author&quot;]</span><br><span class="line">    yaml_prefix = &apos;---\n&apos;</span><br><span class="line">    yaml_prefix += &apos;title: %s\n&apos; % title</span><br><span class="line">    yaml_prefix += &apos;date: %s\n&apos; % str(timestamp)</span><br><span class="line">    yaml_prefix += &apos;author: %s\n---\n&apos; % author</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    with io.open(filename, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:</span><br><span class="line">        f.write(yaml_prefix + markdown_content)</span><br></pre></td></tr></tbody></table></figure>
+<p>This script works when a authorperm and filename was given:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python save_post_as_md.py @holger80/how-to-post-using-typora-and-beempy how-to-post-using-typora-and-beempy.md</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/store-all-posts-from-an-author-in-markdown-files" target="_blank" rel="noopener">&#x2018;Store all posts from an author in markdown files&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemtank/">steemtank</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/update-for-beem---beempy-post-improved-and-imageuploader-added/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">update for beem - beempy post improved and imageuploader added</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/execute-python-code-directly-from-a-steem-post/">
+                <span class="level-item">Execute python code directly from a steem post</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>code review of changes since 0.20.5 - resource delegations pool  objects were added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Assuring-that-mana-used-is-above-std-numeric-limits-lt-uint64-t-gt-min">
+        <span class="has-mr-6">1.1</span>
+        <span>Assuring that mana_used is above std::numeric_limits&lt; uint64_t &gt;::min()</span>
+        </a></li><li>
+        <a class="is-flex" href="#Resource-pool-parameters-are-changed">
+        <span class="has-mr-6">1.2</span>
+        <span>Resource pool parameters are changed</span>
+        </a></li><li>
+        <a class="is-flex" href="#Removing-of-the-old-bandwidth-code">
+        <span class="has-mr-6">1.3</span>
+        <span>Removing of the old bandwidth code</span>
+        </a></li><li>
+        <a class="is-flex" href="#RC-delegation-pool-objects-and-operation-were-added">
+        <span class="has-mr-6">1.4</span>
+        <span>RC delegation pool objects and operation were added</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#New-class-rc-delegation-pool-object">
+        <span class="has-mr-6">1.4.1</span>
+        <span>New class rc_delegation_pool_object</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-class-rc-indel-edge-object">
+        <span class="has-mr-6">1.4.2</span>
+        <span>New class rc_indel_edge_object</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-class-rc-outdel-drc-edge-object">
+        <span class="has-mr-6">1.4.3</span>
+        <span>New class rc_outdel_drc_edge_object</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-container-to-store-the-state-and-operation-of-the-RC-pool-delegation-has-been-added">
+        <span class="has-mr-6">1.4.4</span>
+        <span>New container to store the state and operation of the RC pool delegation has been added</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-operation-delegate-to-pool-operation-was-added">
+        <span class="has-mr-6">1.4.5</span>
+        <span>New operation delegate_to_pool_operation was added</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-operation-delegate-drc-from-pool-operation-was-added">
+        <span class="has-mr-6">1.4.6</span>
+        <span>New operation delegate_drc_from_pool_operation was added</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Changes-in-the-RC-cost-calculation">
+        <span class="has-mr-6">1.5</span>
+        <span>Changes in the RC cost calculation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#exec-time-for-custom-json-are-made-a-lot-cheaper">
+        <span class="has-mr-6">1.5.1</span>
+        <span>exec_time for custom_json are made a lot cheaper</span>
+        </a></li><li>
+        <a class="is-flex" href="#RC-costs-for-a-vote-is-reduced-by-factor-of-19">
+        <span class="has-mr-6">1.5.2</span>
+        <span>RC costs for a  vote is reduced by factor of 19</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#RC-changes-New-Maximum-negative-mana-added">
+        <span class="has-mr-6">1.6</span>
+        <span>RC changes - New Maximum negative mana added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Code-cleanup-improvements">
+        <span class="has-mr-6">1.7</span>
+        <span>Code cleanup/improvements</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Conclusion">
+        <span class="has-mr-6">2</span>
+        <span>Conclusion</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmTCD3bBNwVPNE4eLEPdVYoSqLcDgevdAKTccgVP9fgJGQ" alt="code review of changes since 0.20.5 - resource delegations pool  objects were added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-10-13T20:26:33.000Z">2018-10-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/witness-category/">witness-category</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1002 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                code review of changes since 0.20.5 - resource delegations pool  objects were added
+            
+        </h1>
+        <div class="content">
+            <p>This post is part of my witness duties to review all code changes made in <a href="https://github.com/steemit/steem/" target="_blank" rel="noopener">https://github.com/steemit/steem/</a>.</p>
+<p>I was checking the changes since 0.20.5, they can be found here: <a href="https://github.com/steemit/steem/compare/v0.20.5...master" target="_blank" rel="noopener">https://github.com/steemit/steem/compare/v0.20.5...master</a></p>
+<h2 id="Assuring-that-mana-used-is-above-std-numeric-limits-lt-uint64-t-gt-min"><a href="#Assuring-that-mana-used-is-above-std-numeric-limits-lt-uint64-t-gt-min" class="headerlink" title="Assuring that mana_used is above std::numeric_limits&lt; uint64_t &gt;::min()"></a>Assuring that mana_used is above <code>std::numeric_limits&lt; uint64_t &gt;::min()</code></h2><p>That&#x2019;s a useful and necessary change. They assure that <code>used_mana</code> will not jump to an unexpected value when used_mana goes below the numerical minimum.<br><img src="https://ipfs.busy.org/ipfs/QmTCD3bBNwVPNE4eLEPdVYoSqLcDgevdAKTccgVP9fgJGQ" alt="image.png"></p>
+<h2 id="Resource-pool-parameters-are-changed"><a href="#Resource-pool-parameters-are-changed" class="headerlink" title="Resource pool parameters are changed"></a>Resource pool parameters are changed</h2><p>The budget parameter of all pool is decreased and RC cost raise is prevented by changing <code>a_point_num</code> and <code>a_point_denom</code>.<br><img src="https://cdn.steemitimages.com/DQmdrhjn4dJRNwCYBa37Aj8NGfkA3AZLkfu3YSWvW9twqbL/image.png" alt=""></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmXZ8cZN1oBDJdz9oMwrJjPN51yznCE1PMpejp67VJ5cMj" alt="image.png"></p>
+<h2 id="Removing-of-the-old-bandwidth-code"><a href="#Removing-of-the-old-bandwidth-code" class="headerlink" title="Removing of the old bandwidth code"></a>Removing of the old bandwidth code</h2><p>The old bandwidth code is removed.</p>
+<ul>
+<li>witness_api_plugin is removed from the condenser_api build instructions</li>
+<li>#include <steem plugins="" witness_api="" witness_api_plugin.hpp=""> is removed from condenser_api.cpp</steem></li>
+<li>get_account_bandwidth is removed</li>
+<li>average_block_size, current_reserve_ratio , max_virtual_bandwidth  is removed</li>
+<li>average_bandwidth, lifetime_bandwidth, last_bandwidth_update, average_market_bandwidth, lifetime_market_bandwidth, last_market_bandwidth_update is removed from the account object</li>
+<li>witness_api files from <code>libraries/plugins/apis/witness_api</code> were removed</li>
+</ul>
+<h2 id="RC-delegation-pool-objects-and-operation-were-added"><a href="#RC-delegation-pool-objects-and-operation-were-added" class="headerlink" title="RC delegation pool objects and operation were added"></a>RC delegation pool objects and operation were added</h2><p>RC delegation pool objects and operation were added to the current master. This is the first step in implementing RC delegation pools.</p>
+<ul>
+<li>New objects rc_delegation_pool_object_type, rc_indel_edge_object_type, rc_outdel_drc_edge_object_type</li>
+</ul>
+<h3 id="New-class-rc-delegation-pool-object"><a href="#New-class-rc-delegation-pool-object" class="headerlink" title="New class rc_delegation_pool_object"></a>New class <code>rc_delegation_pool_object</code></h3><blockquote>
+<p>Represents a delegation pool.<br>A new class to handle each rc delegation pool was added. Parameter are:</p>
+<ul>
+<li>id_type                       id;</li>
+<li>account_name_type             account;</li>
+<li>steem::chain::util::manabar   rc_pool_manabar;</li>
+</ul>
+</blockquote>
+<h3 id="New-class-rc-indel-edge-object"><a href="#New-class-rc-indel-edge-object" class="headerlink" title="New class rc_indel_edge_object"></a>New class <code>rc_indel_edge_object</code></h3><blockquote>
+<p>Represents a delegation from a user to a pool.<br>Parameter:</p>
+<ul>
+<li>id_type                       id;</li>
+<li>account_name_type             from_account;</li>
+<li>account_name_type             to_pool;</li>
+<li>share_type                    amount;</li>
+</ul>
+</blockquote>
+<h3 id="New-class-rc-outdel-drc-edge-object"><a href="#New-class-rc-outdel-drc-edge-object" class="headerlink" title="New class rc_outdel_drc_edge_object"></a>New class <code>rc_outdel_drc_edge_object</code></h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">* Represents a delegation from a pool to a user based on delegated resource credits (DRC).</span><br><span class="line">*</span><br><span class="line">* In the case of a pool that is not under heavy load, DRC:RC has a 1:1 exchange rate.</span><br><span class="line">*</span><br><span class="line">* However, if the pool drops below STEEM_RC_DRC_FLOAT_LEVEL, DRC:RC exchange rate starts</span><br><span class="line">* to rise according to `f(x) = 1/(a+b*x)` where `x` is the pool level, and coefficients `a`,</span><br><span class="line">* `b` are set such that `f(STEEM_RC_DRC_FLOAT_LEVEL) = 1` and `f(0) = STEEM_RC_MAX_DRC_RATE`.</span><br><span class="line">*</span><br><span class="line">* This ensures the limited RC of oversubscribed pools under heavy load are</span><br><span class="line">* shared &quot;fairly&quot; among their users proportionally to DRC.  This logic</span><br><span class="line">* provides a smooth transition between the &quot;fiat regime&quot; (i.e. DRC represent</span><br><span class="line">* a direct allocation of RC) and the &quot;proportional regime&quot; (i.e. DRC represent</span><br><span class="line">* the fraction of RC that the user is allowed).</span><br></pre></td></tr></tbody></table></figure>
+<p>Parameter:</p>
+<ul>
+<li>id_type                       id;</li>
+<li>account_name_type             from_pool;</li>
+<li>account_name_type             to_account;</li>
+<li>steem::chain::util::manabar   drc_manabar;</li>
+<li>int64_t                       drc_max_mana = 0;</li>
+</ul>
+<h3 id="New-container-to-store-the-state-and-operation-of-the-RC-pool-delegation-has-been-added"><a href="#New-container-to-store-the-state-and-operation-of-the-RC-pool-delegation-has-been-added" class="headerlink" title="New container to store the state and operation of the RC pool delegation has been added"></a>New container to store the state and operation of the RC pool delegation has been added</h3><h3 id="New-operation-delegate-to-pool-operation-was-added"><a href="#New-operation-delegate-to-pool-operation-was-added" class="headerlink" title="New operation delegate_to_pool_operation was added"></a>New operation <code>delegate_to_pool_operation</code> was added</h3><p>This operation can be used to delegate RC from an account to a pool.</p>
+<p>Operation parameter: </p>
+<ul>
+<li>account_name_type     from_account;</li>
+<li>account_name_type     to_pool;</li>
+<li>share_type            amount;<h3 id="New-operation-delegate-drc-from-pool-operation-was-added"><a href="#New-operation-delegate-drc-from-pool-operation-was-added" class="headerlink" title="New operation delegate_drc_from_pool_operation was added"></a>New operation <code>delegate_drc_from_pool_operation</code> was added</h3>This operation can be used to allow account use RC from a pool. The operation has to be signed from the pool owner.</li>
+</ul>
+<p>Operation parameter:</p>
+<ul>
+<li>account_name_type      from_pool;</li>
+<li>account_name_type      to_account;</li>
+<li>int64_t                mana_change = 0;</li>
+<li>int64_t                drc_max_mana = 0;</li>
+</ul>
+<h2 id="Changes-in-the-RC-cost-calculation"><a href="#Changes-in-the-RC-cost-calculation" class="headerlink" title="Changes in the RC cost calculation"></a>Changes in the RC cost calculation</h2><p>The most important change is that <code>resource_execution_time</code> are now used for resource_count calculation. This is done by adding the missing<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">result.resource_count[ resource_execution_time ] += vtor.execution_time_count;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="exec-time-for-custom-json-are-made-a-lot-cheaper"><a href="#exec-time-for-custom-json-are-made-a-lot-cheaper" class="headerlink" title="exec_time for custom_json are made a lot cheaper"></a>exec_time for custom_json are made a lot cheaper</h3><p>The calculation time custom_operation_exec_time has been reduced from 228000 to 11400.<br>Rc costs for a follow remain high:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exec_time *= EXEC_FOLLOW_CUSTOM_OP_SCALE;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="RC-costs-for-a-vote-is-reduced-by-factor-of-19"><a href="#RC-costs-for-a-vote-is-reduced-by-factor-of-19" class="headerlink" title="RC costs for a  vote is reduced by factor of 19"></a>RC costs for a  vote is reduced by factor of 19</h3><ul>
+<li>comment_vote_object_base_size  is changed from <code>47 *STATE_BYTES_SCALE</code> to  <code>47     *STATE_COMMENT_VOTE_BYTE_SIZE</code></li>
+</ul>
+<h2 id="RC-changes-New-Maximum-negative-mana-added"><a href="#RC-changes-New-Maximum-negative-mana-added" class="headerlink" title="RC changes - New Maximum negative mana added"></a>RC changes - New Maximum negative mana added</h2><ul>
+<li><code>define STEEM_RC_MAX_NEGATIVE_PERCENT 166</code></li>
+<li><code>int64_t min_mana = -1 * ( STEEM_RC_MAX_NEGATIVE_PERCENT * mbparams.max_mana ) / STEEM_100_PERCENT;</code></li>
+</ul>
+<h2 id="Code-cleanup-improvements"><a href="#Code-cleanup-improvements" class="headerlink" title="Code cleanup/improvements"></a>Code cleanup/improvements</h2><ul>
+<li>Some code cleanup/improvements regarding handling of the first block</li>
+<li>Some code cleanup regarding the removed modifier for account creation</li>
+<li>SMT unit test were added</li>
+</ul>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>The code changes contain some uncritical code clean up regarding</p>
+<ul>
+<li>old bandwidth system is removed</li>
+<li>handling of the first block</li>
+<li>removed modifier for account creation</li>
+</ul>
+<p>The most important change is the adding of objects for resource pool  delegations . This is the first necessary step in implementing a fully working pool delegation. New objects, container and operation have been added to implement this feature. It will be possible to use <code>delegate_to_pool_operation</code> for creating a new RC pool. <code>delegate_drc_from_pool_operation</code> can be used to allow other accounts using the pool.</p>
+<p><img src="https://cdn.steemitimages.com/DQmeqQwtX7gEnRrvDQBcDVcrPFmar1EK6DKTxsXyu8f4v8u/image.png" alt=""></p>
+<p>The second most important change is the enabling of <code>resource_execution_time</code> for RC costs. The budget of all pools have been increased to compensate this. The cost of a vote has made 19x cheaper, custom_json operation was also made  20x cheaper (except of follow custom json operation).</p>
+<p>Some code improvements were made: </p>
+<ul>
+<li>New maximum negative mana have been defined (166 % of max_mana)</li>
+<li>Check added to assure that mana_used is above a defined minimum value</li>
+</ul>
+<p>The changes are looking promising to me.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/code-review-of-changes-since-0-20-5-resource-pool-delegations-were-added" target="_blank" rel="noopener">&#x2018;code review of changes since 0.20.5 - resource delegations pool  objects were added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/hf20/">hf20</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/witness-category/">witness-category</a>, <a class="has-link-grey -link" href="/@holger80/tags/witness-update/">witness-update</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/holger80-s-curation-league-week-14-steem-prizes-available/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">holger80`s Curation League - week 14 - STEEM prizes available!</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-to-encrypt-and-decrypt-memos-with-beem/">
+                <span class="level-item">How to encrypt and decrypt memos with beem</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

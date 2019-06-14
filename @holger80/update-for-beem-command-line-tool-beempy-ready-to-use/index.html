@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Update for beem - command line tool beempy ready to use - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">1.1</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#How-to-start-using-beempy-and-transfer-1-SBD-from-user-a-to-user-b-with-memo-hello">
+        <span class="has-mr-6">1.1.1</span>
+        <span>How to start using beempy and transfer 1 SBD from user_a to user_b with memo hello</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Complete-listing-of-all-available-commands">
+        <span class="has-mr-6">1.2</span>
+        <span>Complete listing of all available commands</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#New-commands-for-beempy-not-available-in-steempy">
+        <span class="has-mr-6">2</span>
+        <span>New commands for beempy (not available in steempy)</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#createwallet">
+        <span class="has-mr-6">2.1</span>
+        <span>createwallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#witnesses">
+        <span class="has-mr-6">2.2</span>
+        <span>witnesses</span>
+        </a></li><li>
+        <a class="is-flex" href="#openorders">
+        <span class="has-mr-6">2.3</span>
+        <span>openorders</span>
+        </a></li><li>
+        <a class="is-flex" href="#orderbook">
+        <span class="has-mr-6">2.4</span>
+        <span>orderbook</span>
+        </a></li><li>
+        <a class="is-flex" href="#claimreward">
+        <span class="has-mr-6">2.5</span>
+        <span>claimreward</span>
+        </a></li><li>
+        <a class="is-flex" href="#follower">
+        <span class="has-mr-6">2.6</span>
+        <span>follower</span>
+        </a></li><li>
+        <a class="is-flex" href="#following">
+        <span class="has-mr-6">2.7</span>
+        <span>following</span>
+        </a></li><li>
+        <a class="is-flex" href="#set-nodes">
+        <span class="has-mr-6">2.8</span>
+        <span>set nodes</span>
+        </a></li><li>
+        <a class="is-flex" href="#info">
+        <span class="has-mr-6">2.9</span>
+        <span>info</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Changes">
+        <span class="has-mr-6">3</span>
+        <span>Changes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#CLI-improved-and-extended">
+        <span class="has-mr-6">3.1</span>
+        <span>CLI improved and extended</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#account">
+        <span class="has-mr-6">3.1.1</span>
+        <span>account</span>
+        </a></li><li>
+        <a class="is-flex" href="#steem">
+        <span class="has-mr-6">3.1.2</span>
+        <span>steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#cli">
+        <span class="has-mr-6">3.1.3</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests">
+        <span class="has-mr-6">3.1.4</span>
+        <span>Unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#CLI-improved">
+        <span class="has-mr-6">3.2</span>
+        <span>CLI improved</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-1">
+        <span class="has-mr-6">3.2.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-test">
+        <span class="has-mr-6">3.2.2</span>
+        <span>unit_test</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#More-function-added-to-cli">
+        <span class="has-mr-6">3.3</span>
+        <span>More function added to cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#account-1">
+        <span class="has-mr-6">3.3.1</span>
+        <span>account</span>
+        </a></li><li>
+        <a class="is-flex" href="#cli-2">
+        <span class="has-mr-6">3.3.2</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#steemnoderpc">
+        <span class="has-mr-6">3.3.3</span>
+        <span>steemnoderpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#graphenerpc">
+        <span class="has-mr-6">3.3.4</span>
+        <span>graphenerpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#rpcutils">
+        <span class="has-mr-6">3.3.5</span>
+        <span>rpcutils</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests">
+        <span class="has-mr-6">3.3.6</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Improved-CLI-und-unit-tests">
+        <span class="has-mr-6">3.4</span>
+        <span>Improved CLI und unit tests</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#CLI">
+        <span class="has-mr-6">3.4.1</span>
+        <span>CLI</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-1">
+        <span class="has-mr-6">3.4.2</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#More-cli-functions-added">
+        <span class="has-mr-6">3.5</span>
+        <span>More cli functions added</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-3">
+        <span class="has-mr-6">3.5.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-2">
+        <span class="has-mr-6">3.5.2</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#More-cli-function-added">
+        <span class="has-mr-6">3.6</span>
+        <span>More cli function added</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#account-2">
+        <span class="has-mr-6">3.6.1</span>
+        <span>account</span>
+        </a></li><li>
+        <a class="is-flex" href="#cli-4">
+        <span class="has-mr-6">3.6.2</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#steem-1">
+        <span class="has-mr-6">3.6.3</span>
+        <span>steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#witness">
+        <span class="has-mr-6">3.6.4</span>
+        <span>witness</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-3">
+        <span class="has-mr-6">3.6.5</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Doku-for-cli-added">
+        <span class="has-mr-6">3.7</span>
+        <span>Doku for cli added</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-5">
+        <span class="has-mr-6">3.7.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#utils">
+        <span class="has-mr-6">3.7.2</span>
+        <span>utils</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-4">
+        <span class="has-mr-6">3.7.3</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Add-claimreward-to-cli">
+        <span class="has-mr-6">3.8</span>
+        <span>Add claimreward to cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-6">
+        <span class="has-mr-6">3.8.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-test-1">
+        <span class="has-mr-6">3.8.2</span>
+        <span>unit test</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Improved-coverage-for-cli-tool">
+        <span class="has-mr-6">3.9</span>
+        <span>Improved coverage for cli tool</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-price-prediction-for-buy-and-sell-of-cli">
+        <span class="has-mr-6">3.10</span>
+        <span>Add price prediction for buy and sell of cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-7">
+        <span class="has-mr-6">3.10.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#steemnoderpc-1">
+        <span class="has-mr-6">3.10.2</span>
+        <span>steemnoderpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#Exceptions">
+        <span class="has-mr-6">3.10.3</span>
+        <span>Exceptions</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-5">
+        <span class="has-mr-6">3.10.4</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Follower-and-following-added-to-cli">
+        <span class="has-mr-6">3.11</span>
+        <span>Follower and following added to cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-8">
+        <span class="has-mr-6">3.11.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#witness-1">
+        <span class="has-mr-6">3.11.2</span>
+        <span>witness</span>
+        </a></li><li>
+        <a class="is-flex" href="#Witnesses">
+        <span class="has-mr-6">3.11.3</span>
+        <span>Witnesses</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tests-6">
+        <span class="has-mr-6">3.11.4</span>
+        <span>unit tests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Some-improvements-for-cli">
+        <span class="has-mr-6">3.12</span>
+        <span>Some improvements for cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-9">
+        <span class="has-mr-6">3.12.1</span>
+        <span>cli</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Add-parsewif-to-cli">
+        <span class="has-mr-6">3.13</span>
+        <span>Add parsewif to cli</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="Update for beem - command line tool beempy ready to use">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-17T15:40:06.000Z">2018-04-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 minutes read (About 1319 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Update for beem - command line tool beempy ready to use
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="beem-logo.png"><br></center>
+
+<p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has 395 unit tests and a coverage of 84 %. The current version is 0.19.22. beem can be installed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels conda-forge</span><br><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>I created a discord channel for answering question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a></p>
+<h2 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h2><ul>
+<li>In this update, the command line tool <code>beempy</code> was completed. <code>beempy</code> has the now same syntax and functions as <code>steempy</code>, the command line tool from python-steem. </li>
+<li><code>beempy</code> is rewritten from scratch and contrary to <code>steempy</code> it uses the <a href="http://click.pocoo.org" target="_blank" rel="noopener">Click</a> library.</li>
+</ul>
+<p>The following new functions (not available in <code>steempy</code>) are added to <code>beempy</code></p>
+<ul>
+<li>witnesses </li>
+<li>createwallet</li>
+<li>walletinfo</li>
+<li>openorders</li>
+<li>orderbook</li>
+<li>claimreward</li>
+<li>follower</li>
+<li>following</li>
+<li>unit tests for all cli functions<h3 id="How-to-start-using-beempy-and-transfer-1-SBD-from-user-a-to-user-b-with-memo-hello"><a href="#How-to-start-using-beempy-and-transfer-1-SBD-from-user-a-to-user-b-with-memo-hello" class="headerlink" title="How to start using beempy and transfer 1 SBD from user_a to user_b with memo hello"></a>How to start using <code>beempy</code> and transfer <code>1 SBD</code> from <code>user_a</code> to <code>user_b</code> with memo <code>hello</code></h3>First create a new wallet and set a wallet password by:<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy createwallet</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>Set the default account:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy set default_account user_a</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Then enter your active wif<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy addkey</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Creating a wallet and entering private keys has to perform only once. The data are stored in a sql database on the PC. All private keys are encrypted with the wallet password.</p>
+<p>At first, the help of the transfer function is shown:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">beempy transfer --help</span><br><span class="line">Usage: beempy transfer [OPTIONS] TO AMOUNT ASSET [MEMO]</span><br><span class="line"></span><br><span class="line">  Transfer SBD/STEEM</span><br><span class="line"></span><br><span class="line">Options:</span><br><span class="line">  -a, --account TEXT  Transfer from this account</span><br><span class="line">  --help              Show this message and exit.</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now the syntax for a transfer is clear and a transfer can be performed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy transfer user_b 1 SBD hello</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>After entering the wallet password, 1 SBD is transfered to <code>user_b</code>. When <code>user_a</code> is not the default account, the command changes to:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy transfer --account user_a user_b 1 SBD hello</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Complete-listing-of-all-available-commands"><a href="#Complete-listing-of-all-available-commands" class="headerlink" title="Complete listing of all available commands"></a>Complete listing of all available commands</h2><ul>
+<li>output of <code>beempy --help</code><br><center><br><img src="https://cdn.utopian.io/posts/94b71017881fac51fc6aaeae7869c7eaa23cimage.png" alt="image.png"><br></center><h1 id="New-commands-for-beempy-not-available-in-steempy"><a href="#New-commands-for-beempy-not-available-in-steempy" class="headerlink" title="New commands for beempy (not available in steempy)"></a>New commands for beempy (not available in steempy)</h1><h2 id="createwallet"><a href="#createwallet" class="headerlink" title="createwallet"></a>createwallet</h2><code>beempy createwallet</code><br>wipes the wallet without knowing the old password. Asks then for a new password and creates a new wallet.<br><center><br><img src="https://cdn.utopian.io/posts/8e86089860b618cd03eefeef73dbe9e5724bimage.png" alt="image.png"><br></center><h2 id="witnesses"><a href="#witnesses" class="headerlink" title="witnesses"></a>witnesses</h2><code>beempy witnesses</code><br>lists all witnesses and shows their stats.</li>
+</ul>
+<p><code>beempy witnesses holger80</code><br>lists only witnesses which were voted by <code>holger80</code></p>
+<center><br><img src="https://cdn.utopian.io/posts/bef86bafc64c2d211a34108219845c010491image.png" alt="image.png"><br></center><br>## walletinfo<br><code>beempy walletinfo</code><br>Shows information about the wallet<br><center><br><img src="https://cdn.utopian.io/posts/b922ada0c389c66d9f66e628b7b9150880ebimage.png" alt="image.png"><br></center>
+
+<h2 id="openorders"><a href="#openorders" class="headerlink" title="openorders"></a>openorders</h2><p><code>beempy openorders beem</code><br>shows all open orders of account <code>beem</code></p>
+<center><br><img src="https://cdn.utopian.io/posts/12062d4c2b726e2d349c2f1491390b4d8cdfimage.png" alt="image.png"><br></center>
+
+<h2 id="orderbook"><a href="#orderbook" class="headerlink" title="orderbook"></a>orderbook</h2><p><code>beempy orderbook</code><br>shows the last orders, can be limit with <code>--limit 10</code></p>
+<center><br><img src="https://cdn.utopian.io/posts/62d13c0c19554906d014d740bf8e258950a1image.png" alt="image.png"><br></center>
+
+<h2 id="claimreward"><a href="#claimreward" class="headerlink" title="claimreward"></a>claimreward</h2><p><code>beempy claimreward holger80</code><br>claims all unclaimed rewards. Rewards to claim can be specified by <code>--reward_steem</code>,  <code>--reward_sbd</code> or  <code>--reward_vests</code>.</p>
+<h2 id="follower"><a href="#follower" class="headerlink" title="follower"></a>follower</h2><p><code>beempy follower holger80</code><br>shows statistics about the followers.</p>
+<center><br><img src="https://cdn.utopian.io/posts/aec2fc6418562d10ea560bf6cff08bf02c92image.png" alt="image.png"><br></center>
+
+<h2 id="following"><a href="#following" class="headerlink" title="following"></a>following</h2><p><code>beempy following holger80</code><br>shows statistics about following accounts.</p>
+<center><br><img src="https://cdn.utopian.io/posts/52ac38997adb17d0428cb0b6469ad8935a7cimage.png" alt="image.png"><br></center><br># Improved commands for beempy (also available in steempy but with limited function)<br>## buy and sell<br><code>beempy buy 1 STEEM</code> or <code>beempy sell 1 STEEM</code><br>can be called without price. The price is then taken from the last entry in the orderbook.<br><center><br><img src="https://cdn.utopian.io/posts/61d6e53d9c4b6f65e219adb3f6da8a24c39eimage.png" alt="image.png"><br></center>
+
+<h2 id="set-nodes"><a href="#set-nodes" class="headerlink" title="set nodes"></a>set nodes</h2><p><code>beempy set nodes &quot;&quot;</code> resets nodes to the standard node list.</p>
+<h2 id="info"><a href="#info" class="headerlink" title="info"></a>info</h2><p><code>beempy info -1</code> shows the last block. Transaction are not shown, only the number of transaction in the block.</p>
+<p><code>beempy info -1:1</code> shows the  first transaction of the last block together with stats about the block.</p>
+<h1 id="Changes"><a href="#Changes" class="headerlink" title="Changes"></a>Changes</h1><h2 id="CLI-improved-and-extended"><a href="#CLI-improved-and-extended" class="headerlink" title="CLI improved and extended"></a>CLI improved and extended</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/6fa269dfe030928d80f224228708870d81059406" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/6fa269dfe030928d80f224228708870d81059406</a><h3 id="account"><a href="#account" class="headerlink" title="account"></a>account</h3></li>
+<li>get_account_history is more robust against empty rpc returns<h3 id="steem"><a href="#steem" class="headerlink" title="steem"></a>steem</h3></li>
+<li>add functions to store default vote weight and nodes<h3 id="cli"><a href="#cli" class="headerlink" title="cli"></a>cli</h3></li>
+<li>Same parameter as in steempy are used</li>
+<li>main parameter improved</li>
+<li>set improved</li>
+<li>addkey improved</li>
+<li>delkey added</li>
+<li>listkeys improved</li>
+<li>info improved and info about a block, an account, post and a public key added<h3 id="Unit-tests"><a href="#Unit-tests" class="headerlink" title="Unit tests"></a>Unit tests</h3></li>
+<li>test_testnet improved</li>
+<li>test_cli adapted on changes<h2 id="CLI-improved"><a href="#CLI-improved" class="headerlink" title="CLI improved"></a>CLI improved</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/6acef303b3cb805c0952d81e5b17106aabd246fd" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/6acef303b3cb805c0952d81e5b17106aabd246fd</a><h3 id="cli-1"><a href="#cli-1" class="headerlink" title="cli"></a>cli</h3></li>
+<li>unlock_wallet and asset_callback added</li>
+<li>upvote and downvote improved</li>
+<li>transfer, powerup and powerdown added<h3 id="unit-test"><a href="#unit-test" class="headerlink" title="unit_test"></a>unit_test</h3></li>
+<li>missing commands added to test_cli<h2 id="More-function-added-to-cli"><a href="#More-function-added-to-cli" class="headerlink" title="More function added to cli"></a>More function added to cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/64b51c01ec8a9070358b2f3f4cb77a58262806df" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/64b51c01ec8a9070358b2f3f4cb77a58262806df</a><h3 id="account-1"><a href="#account-1" class="headerlink" title="account"></a>account</h3></li>
+<li>set_withdraw_vesting_route added<h3 id="cli-2"><a href="#cli-2" class="headerlink" title="cli"></a>cli</h3><ul>
+<li>powerdownroute, convert and interest added<h3 id="steemnoderpc"><a href="#steemnoderpc" class="headerlink" title="steemnoderpc"></a>steemnoderpc</h3></li>
+</ul>
+</li>
+<li>error messages improved</li>
+<li>_check_api_name added</li>
+<li>ApiNotSupported when Api is not supported by node but exists<h3 id="graphenerpc"><a href="#graphenerpc" class="headerlink" title="graphenerpc"></a>graphenerpc</h3></li>
+<li>error messages improved<h3 id="rpcutils"><a href="#rpcutils" class="headerlink" title="rpcutils"></a>rpcutils</h3></li>
+<li>error messages in sleep_and_check_retries improved<h3 id="unit-tests"><a href="#unit-tests" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>new function added<h2 id="Improved-CLI-und-unit-tests"><a href="#Improved-CLI-und-unit-tests" class="headerlink" title="Improved CLI und unit tests"></a>Improved CLI und unit tests</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/665befaa519beab35a45b3c8be545143a65e480e" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/665befaa519beab35a45b3c8be545143a65e480e</a><h3 id="CLI"><a href="#CLI" class="headerlink" title="CLI"></a>CLI</h3></li>
+<li>improved password handling and confirmation for changewalletpassphrase, delkey and createwallet<h3 id="unit-tests-1"><a href="#unit-tests-1" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>improved test_cli</li>
+<li>removed uneeded test for test_websocket<h2 id="More-cli-functions-added"><a href="#More-cli-functions-added" class="headerlink" title="More cli functions added"></a>More cli functions added</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/649f02af701c61469e2345ec15b7be9e1037d681" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/649f02af701c61469e2345ec15b7be9e1037d681</a><h3 id="cli-3"><a href="#cli-3" class="headerlink" title="cli"></a>cli</h3></li>
+<li>permissions, allow, disallow, updateMemoKey, approvewitness, disapprovewitness and witnesses added</li>
+<li>upvote and downvote improved<h3 id="unit-tests-2"><a href="#unit-tests-2" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>new functions added to test_cli</li>
+<li>test_upvote and test_downvote improved<h2 id="More-cli-function-added"><a href="#More-cli-function-added" class="headerlink" title="More cli function added"></a>More cli function added</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/717d1897fb1c0257de80e49dca95a7d4a558458e" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/717d1897fb1c0257de80e49dca95a7d4a558458e</a><h3 id="account-2"><a href="#account-2" class="headerlink" title="account"></a>account</h3></li>
+<li>follow and unfollow improved<h3 id="cli-4"><a href="#cli-4" class="headerlink" title="cli"></a>cli</h3></li>
+<li>newaccount, importaccount, orderbook, buy, sell, cancel, openorders, resteem, follow, unfollow, witnessupdate and witnesscreate added<h3 id="steem-1"><a href="#steem-1" class="headerlink" title="steem"></a>steem</h3></li>
+<li>witness_update added<h3 id="witness"><a href="#witness" class="headerlink" title="witness"></a>witness</h3></li>
+<li>update uses steem.witness_update<h3 id="unit-tests-3"><a href="#unit-tests-3" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>new cli functions added to unit tests test_cli<h2 id="Doku-for-cli-added"><a href="#Doku-for-cli-added" class="headerlink" title="Doku for cli added"></a>Doku for cli added</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/199d7b31fe0b691f42da04ca4b5aba20519959d8" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/199d7b31fe0b691f42da04ca4b5aba20519959d8</a></li>
+<li>Dokumentation for cli added</li>
+<li>Profile added<h3 id="cli-5"><a href="#cli-5" class="headerlink" title="cli"></a>cli</h3></li>
+<li>sign, broadcast, setprofile and delprofile added</li>
+<li>refactoring</li>
+<li>wallet password from UNLOCK environment variable works<h3 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h3></li>
+<li>detection of complete urls added<h3 id="unit-tests-4"><a href="#unit-tests-4" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>tests for profile added</li>
+<li>new functions tests added to test_cli</li>
+<li>unit tests for utils improved<h2 id="Add-claimreward-to-cli"><a href="#Add-claimreward-to-cli" class="headerlink" title="Add claimreward to cli"></a>Add claimreward to cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/ab9465eda8856b77f632518cb6ffebd70f6afced" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/ab9465eda8856b77f632518cb6ffebd70f6afced</a><h3 id="cli-6"><a href="#cli-6" class="headerlink" title="cli"></a>cli</h3></li>
+<li>add claimreward<h3 id="unit-test-1"><a href="#unit-test-1" class="headerlink" title="unit test"></a>unit test</h3></li>
+<li>add unit test for claimreward<h2 id="Improved-coverage-for-cli-tool"><a href="#Improved-coverage-for-cli-tool" class="headerlink" title="Improved coverage for cli tool"></a>Improved coverage for cli tool</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/2e82abf52a81bfe960949f16e453f171d4ea9ce4" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/2e82abf52a81bfe960949f16e453f171d4ea9ce4</a><h2 id="Add-price-prediction-for-buy-and-sell-of-cli"><a href="#Add-price-prediction-for-buy-and-sell-of-cli" class="headerlink" title="Add price prediction for buy and sell of cli"></a>Add price prediction for buy and sell of cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/5bbbaf487116dcf44f15d0c17599f024c09d3c8c" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/5bbbaf487116dcf44f15d0c17599f024c09d3c8c</a><h3 id="cli-7"><a href="#cli-7" class="headerlink" title="cli"></a>cli</h3></li>
+<li>Add price prediction for buy and sell of cli<h3 id="steemnoderpc-1"><a href="#steemnoderpc-1" class="headerlink" title="steemnoderpc"></a>steemnoderpc</h3></li>
+<li>refactoring<h3 id="Exceptions"><a href="#Exceptions" class="headerlink" title="Exceptions"></a>Exceptions</h3></li>
+<li>CallRetriesReached added<h3 id="unit-tests-5"><a href="#unit-tests-5" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>tests for test_cli added<h2 id="Follower-and-following-added-to-cli"><a href="#Follower-and-following-added-to-cli" class="headerlink" title="Follower and following added to cli"></a>Follower and following added to cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/b0fa7a9cb1a1b3cb7e4d56d97416423be2353aab" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/b0fa7a9cb1a1b3cb7e4d56d97416423be2353aab</a><h3 id="cli-8"><a href="#cli-8" class="headerlink" title="cli"></a>cli</h3></li>
+<li>follower and following added<h3 id="witness-1"><a href="#witness-1" class="headerlink" title="witness"></a>witness</h3></li>
+<li>is_active added<h3 id="Witnesses"><a href="#Witnesses" class="headerlink" title="Witnesses"></a>Witnesses</h3></li>
+<li>printAsTable improved<h3 id="unit-tests-6"><a href="#unit-tests-6" class="headerlink" title="unit tests"></a>unit tests</h3></li>
+<li>follower and following added to test_cli<h2 id="Some-improvements-for-cli"><a href="#Some-improvements-for-cli" class="headerlink" title="Some improvements for cli"></a>Some improvements for cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/edc35333d1a32f57ecd48afd2c98a2e47b23e69d" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/edc35333d1a32f57ecd48afd2c98a2e47b23e69d</a><h3 id="cli-9"><a href="#cli-9" class="headerlink" title="cli"></a>cli</h3></li>
+<li>some improvements and additions<h2 id="Add-parsewif-to-cli"><a href="#Add-parsewif-to-cli" class="headerlink" title="Add parsewif to cli"></a>Add parsewif to cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/c21d78471dee8589ec198b05db9bed29801892cd" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/c21d78471dee8589ec198b05db9bed29801892cd</a></li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/update-for-beem-command-line-tool-beempy-ready-to-use" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-command-line-tool-beempy-ready-to-use" target="_blank" rel="noopener">&#x2018;Update for beem - command line tool beempy ready to use&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/beempy/">beempy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/python-steem/">python-steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/how-to-install-steem-python-on-windows/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">How to install steem-python on windows</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-to-get-a-good-rating-for-your-utopian-io-contribution/">
+                <span class="level-item">How to get a good rating for your utopian-io contribution</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

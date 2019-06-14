@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>How much curation did my post voter earn? - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Results">
+        <span class="has-mr-6">1</span>
+        <span>Results</span>
+        </a></li><li>
+        <a class="is-flex" href="#Conclusion">
+        <span class="has-mr-6">2</span>
+        <span>Conclusion</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/@holger80/None" alt="How much curation did my post voter earn?">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-09-11T19:30:30.000Z">2018-09-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/curation/">curation</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 721 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                How much curation did my post voter earn?
+            
+        </h1>
+        <div class="content">
+            <p>I wanted to know how much my post curators did earn by voting my last 100 posts (If you also want to know this, just leave a short comment and I will reply with the script results).</p>
+<p>After fetching all my blog posts with <code>get_blog</code>, I&#x2019;m going through all votes and use the <code>beem</code> function <code>get_curation_rewards</code>. As I did not wanted to fetch all historic STEEM price data, I calculate all curation rewards in SBD. As the vote is also known in SBD, a curation performance can be calculated: <code>curation_SBD / vote_SBD * 100</code>.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">from beem import Steem</span><br><span class="line">from beem.account import Account</span><br><span class="line">from beem.comment import Comment</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    stm = Steem()</span><br><span class="line">    account = Account(&quot;holger80&quot;, steem_instance=stm)</span><br><span class="line">    all_received_votes = {}</span><br><span class="line">    all_received_replies = {}</span><br><span class="line">    blog = []</span><br><span class="line">    rows = []</span><br><span class="line">    sum_curation = {&quot;vote_sbd&quot;: 0, &quot;vote_panelty&quot;: 0, &quot;curation_sbd&quot;: 0}</span><br><span class="line">    for b in account.get_blog(limit=100):</span><br><span class="line">        if b[&quot;authorperm&quot;] != &apos;@/&apos;:</span><br><span class="line">            blog.append(b)</span><br><span class="line">            comment = Comment(b)</span><br><span class="line">            comment.refresh()</span><br><span class="line">            curation_rewards_SBD = comment.get_curation_rewards(pending_payout_SBD=True, pending_payout_value=None)</span><br><span class="line">            for vote in comment[&quot;active_votes&quot;]:</span><br><span class="line">                vote_sbd = stm.rshares_to_sbd(int(vote[&quot;rshares&quot;]))</span><br><span class="line">                curation_SBD = curation_rewards_SBD[&quot;active_votes&quot;][vote[&quot;voter&quot;]]</span><br><span class="line">                if vote_sbd &gt; 0:</span><br><span class="line">                    penalty = ((comment.get_curation_penalty(vote_time=vote[&quot;time&quot;])) * vote_sbd)</span><br><span class="line">                    performance = (float(curation_SBD) / vote_sbd * 100)</span><br><span class="line">                else:</span><br><span class="line">                    performance = 0</span><br><span class="line">                    penalty = 0</span><br><span class="line">                vote_time_min = (((vote[&quot;time&quot;]) - comment[&quot;created&quot;]).total_seconds() / 60)</span><br><span class="line">                sum_curation[&quot;vote_sbd&quot;] += vote_sbd</span><br><span class="line">                sum_curation[&quot;vote_panelty&quot;] += penalty</span><br><span class="line">                sum_curation[&quot;curation_sbd&quot;] += float(curation_SBD)</span><br><span class="line">                row = {&quot;voter&quot;: vote[&quot;voter&quot;],</span><br><span class="line">                       &quot;authorperm&quot;: comment[&quot;authorperm&quot;],</span><br><span class="line">                       &quot;vote_time_min&quot;:vote_time_min,</span><br><span class="line">                       &quot;vote_sbd&quot;: vote_sbd,</span><br><span class="line">                       &quot;vote_penalty&quot;: penalty,</span><br><span class="line">                       &quot;curation_sbd&quot;: float(curation_SBD),</span><br><span class="line">                       &quot;performance&quot;: performance}</span><br><span class="line">                rows.append(row)</span><br><span class="line">    </span><br><span class="line">    sorted_curation_perf = sorted(rows, key=lambda x: x[&apos;performance&apos;], reverse=True)</span><br><span class="line">    sorted_curation_cur = sorted(rows, key=lambda x: x[&apos;curation_sbd&apos;], reverse=True)</span><br><span class="line">    </span><br><span class="line">    print(&quot;Overall curation performance: %.2f %% earned from given votes with a total value of %.2f SBD&quot; % (sum_curation[&quot;curation_sbd&quot;] / sum_curation[&quot;vote_sbd&quot;] * 100, sum_curation[&quot;vote_sbd&quot;]))</span><br><span class="line">    print(&quot;The voter earned %.2f SBD curation rewards in the last 100 posts.&quot; % (sum_curation[&quot;curation_sbd&quot;]))</span><br><span class="line">    print(&quot;%.2f SBD were removed from the 25%% curation share by voting within the first 30 min. (%.2f %%)&quot; % (sum_curation[&quot;vote_panelty&quot;], sum_curation[&quot;vote_panelty&quot;] / sum_curation[&quot;vote_sbd&quot;] * 100))</span><br><span class="line">    curation_voter = {}</span><br><span class="line">    vote_sbd = []</span><br><span class="line">    curation_sbd = []</span><br><span class="line">    performance = []</span><br><span class="line">    for v in rows:</span><br><span class="line">        if v[&quot;vote_sbd&quot;] &gt; 0:</span><br><span class="line">            vote_sbd.append(v[&quot;vote_sbd&quot;])</span><br><span class="line">            curation_sbd.append(v[&quot;curation_sbd&quot;])</span><br><span class="line">            performance.append(v[&quot;curation_sbd&quot;]/v[&quot;vote_sbd&quot;] * 100)</span><br><span class="line">        if v[&quot;voter&quot;] not in curation_voter:</span><br><span class="line">            curation_voter[v[&quot;voter&quot;]] = {&quot;vote_sbd&quot;: v[&quot;vote_sbd&quot;],  &quot;vote_penalty&quot;: v[&quot;vote_penalty&quot;],  &quot;curation_sbd&quot;: v[&quot;curation_sbd&quot;]}</span><br><span class="line">        else:</span><br><span class="line">            curation_voter[v[&quot;voter&quot;]][&quot;vote_sbd&quot;] += v[&quot;vote_sbd&quot;]</span><br><span class="line">            curation_voter[v[&quot;voter&quot;]][&quot;vote_penalty&quot;] += v[&quot;vote_penalty&quot;]</span><br><span class="line">            curation_voter[v[&quot;voter&quot;]][&quot;curation_sbd&quot;] += v[&quot;curation_sbd&quot;]</span><br><span class="line"></span><br><span class="line">    if account[&quot;name&quot;] in curation_voter:</span><br><span class="line">        print(&quot;Self vote percentage %.2f %% (%.2f SBD)&quot; % (curation_voter[account[&quot;name&quot;]][&quot;vote_sbd&quot;] / sum_curation[&quot;vote_sbd&quot;], curation_voter[account[&quot;name&quot;]][&quot;vote_sbd&quot;]))</span><br><span class="line">    </span><br><span class="line">    print(&quot;%d different voter&quot; % len(curation_voter))</span><br><span class="line">    print(&quot;Maximum achieved curation performance %.2f %%&quot; % sorted_curation_perf[0][&quot;performance&quot;])</span><br><span class="line">    print(&quot;Maximum achieved curation reward %.2f SBD&quot; % sorted_curation_cur[0][&quot;curation_sbd&quot;])</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h2><p>Overall curation performance: 50.47 % earned from given votes with a total value of 2492.89 SBD.<br>The voter earned 1258.12 SBD curation rewards in the last 100 posts.<br>59.81 SBD were removed from the 25% curation share by voting within the first 30 min. (2.40 %).<br>Self vote percentage (SBD value) 0.01 % (13.64 SBD).</p>
+<p>5236 different voter.<br>Maximum achieved curation performance 8808.12 %.<br>Maximum achieved curation reward 50.55 SBD.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>The curation performance of my voter is quite high at 50%. As I stopped self-voting some time ago, I did not reduce the 25% curation share for my voters. My self-voting share across the last 100 posts is only 0.01%. It will not change much for me and my voters when HF20 is live. The 2.4% which is now removed from the curation rewards and added to my author rewards will then be moved back to the reward pool instead.</p>
+<p>The highest curation performance is achieved by small and early votes and the highest curation amount was achieved by utopian-io.</p>
+<hr>
+<p>I will run the script for everyone who asks in a comment and will print the result in a comment as reply.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/how-much-did-my-post-voter-earn-by-curation" target="_blank" rel="noopener">&#x2018;How much curation did my post voter earn?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/curation/">curation</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/which-active-accounts-do-my-follower-follow-that-i-m-not-following/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Which active accounts do my follower follow that I&#39;m not following?</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/holger80-s-curation-league-week-9/">
+                <span class="level-item">holger80`s Curation League - week 9</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

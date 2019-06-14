@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Status report for full rpc nodes - 25.05.2018 - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#What-is-a-full-RPC-node-and-why-it-is-necessary">
+        <span class="has-mr-6">1</span>
+        <span>What is a full RPC node and why it is necessary</span>
+        </a></li><li>
+        <a class="is-flex" href="#Complete-RPC-node-list">
+        <span class="has-mr-6">2</span>
+        <span>Complete RPC node list</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Working-RPC-node">
+        <span class="has-mr-6">2.1</span>
+        <span>Working RPC node</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Results-Small-fix-I-did-use-an-old-permlink-before">
+        <span class="has-mr-6">3</span>
+        <span>Results (Small fix, I did use an old permlink before)</span>
+        </a></li><li>
+        <a class="is-flex" href="#Set-fully-working-nodes-with-beempy">
+        <span class="has-mr-6">4</span>
+        <span>Set fully working nodes with beempy</span>
+        </a></li><li>
+        <a class="is-flex" href="#Comparison-with-last-month">
+        <span class="has-mr-6">5</span>
+        <span>Comparison with last month</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmRNxUzi5NTNsA7hUhazzUrAk3og19vzX94vgcUTeLvtjh" alt="Status report for full rpc nodes - 25.05.2018">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-24T21:22:48.000Z">2018-05-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 578 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Status report for full rpc nodes - 25.05.2018
+            
+        </h1>
+        <div class="content">
+            <p></p><center><img src="https://ipfs.busy.org/ipfs/QmRNxUzi5NTNsA7hUhazzUrAk3og19vzX94vgcUTeLvtjh" alt="image.png"><br><a href="https://pixabay.com/en/network-server-system-2402637/" target="_blank" rel="noopener">source</a><br></center><p></p>
+<h1 id="What-is-a-full-RPC-node-and-why-it-is-necessary"><a href="#What-is-a-full-RPC-node-and-why-it-is-necessary" class="headerlink" title="What is a full RPC node and why it is necessary"></a>What is a full RPC node and why it is necessary</h1><p>A full RPC node contains all STEEM blocks and several databases, in which e.g. account-related transactions, followers for an account, all posts of a blog from an account, &#x2026;. are stored. Without nodes, the steemit site would be down, there would be no bid-bots and services as steemauto.com or GINAbot would not work.</p>
+<h1 id="Complete-RPC-node-list"><a href="#Complete-RPC-node-list" class="headerlink" title="Complete RPC node list"></a>Complete RPC node list</h1><p>All nodes have support for <code>https://</code>. For nodes with websocket support (WSS is yes), <code>wss://</code> has to put in front. All which have websocket support are checked twice (1x https and 1x wss).<br>The node version was read out from the server itself, and when this was not possible (node did not respond) a question mark is shown instead.</p>
+<table>
+<thead>
+<tr>
+<th>Server</th>
+<th>WSS</th>
+<th>Ran By</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>steemd.privex.io</td>
+<td>yes</td>
+<td>privex</td>
+<td>0.19.2</td>
+</tr>
+<tr>
+<td>steemd.pevo.science</td>
+<td>yes</td>
+<td>pharesim</td>
+<td>0.19.2</td>
+</tr>
+<tr>
+<td>rpc.steemliberator.com</td>
+<td>yes</td>
+<td>netuoso</td>
+<td>?</td>
+</tr>
+<tr>
+<td>rpc.buildteam.io</td>
+<td>yes</td>
+<td>themarkymark</td>
+<td>0.19.3</td>
+</tr>
+<tr>
+<td>gtg.steem.house:8090</td>
+<td>yes</td>
+<td>gtg</td>
+<td>0.19.3</td>
+</tr>
+<tr>
+<td>rpc.steemviz.com</td>
+<td>yes</td>
+<td>ausbitbank</td>
+<td>0.19.3</td>
+</tr>
+<tr>
+<td>seed.bitcoiner.me</td>
+<td>yes</td>
+<td>bitcoiner</td>
+<td>?</td>
+</tr>
+<tr>
+<td>steemd.steemgigs.org</td>
+<td>yes</td>
+<td>steemgigs</td>
+<td>?</td>
+</tr>
+<tr>
+<td>steemd.minnowsupportproject.org</td>
+<td>yes</td>
+<td>followbtcnews</td>
+<td>?</td>
+</tr>
+<tr>
+<td>rpc.curiesteem.com</td>
+<td>no</td>
+<td>curie</td>
+<td>0.19.3</td>
+</tr>
+<tr>
+<td>api.steem.house</td>
+<td>no</td>
+<td>gtg</td>
+<td>0.19.4</td>
+</tr>
+<tr>
+<td>appbasetest.timcliff.com</td>
+<td>yes</td>
+<td>timcliff</td>
+<td>0.19.4</td>
+</tr>
+<tr>
+<td>api.steemit.com</td>
+<td>no</td>
+<td>Steemit Inc.</td>
+<td>0.19.4</td>
+</tr>
+<tr>
+<td>api.steemitstage.com</td>
+<td>no</td>
+<td>Steemit Inc.</td>
+<td>0.19.4</td>
+</tr>
+<tr>
+<td>api.steemitdev.com</td>
+<td>no</td>
+<td>Steemit Inc.</td>
+<td>0.19.4</td>
+</tr>
+</tbody>
+</table>
+<p><code>api.steemitstage.com</code> and  <code>api.steemitdev.com</code> may contain newer node versions and should be used only with care.</p>
+<h2 id="Working-RPC-node"><a href="#Working-RPC-node" class="headerlink" title="Working RPC node"></a>Working RPC node</h2><p>A node is working, when:</p>
+<ul>
+<li>returns data within 30 seconds,</li>
+<li>blocks can be streamed,</li>
+<li>account history is possible,</li>
+<li>votes, a comment, followers from an account and an account can successfully be fetched and are not empty.</li>
+</ul>
+<p>When a node is fully working the following measurements are shown:</p>
+<ul>
+<li><em>N blocks</em> is the number of blocks which can be received in 30 seconds.</li>
+<li><em>N acc hist</em> is the number of account transaction which can be received in 30 seconds. The batch call size is set to 100.</li>
+<li><em>Dur. call in s</em> is the mean duration to receive an account, a comment, all followers from an account and a vote from the node.</li>
+</ul>
+<h1 id="Results-Small-fix-I-did-use-an-old-permlink-before"><a href="#Results-Small-fix-I-did-use-an-old-permlink-before" class="headerlink" title="Results (Small fix, I did use an old permlink before)"></a>Results (Small fix, I did use an old permlink before)</h1><p>The following statistics were gained with <a href="https://github.com/holgern/beem/" target="_blank" rel="noopener">beem</a>.</p>
+<table>
+<thead>
+<tr>
+<th>node</th>
+<th>N blocks</th>
+<th>N acc hist</th>
+<th>dur. call in s</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>wss://steemd.privex.io</td>
+<td>122</td>
+<td>34644</td>
+<td>0.90</td>
+</tr>
+<tr>
+<td>wss://rpc.buildteam.io</td>
+<td>131</td>
+<td>34139</td>
+<td>1.23</td>
+</tr>
+<tr>
+<td>wss://gtg.steem.house:8090</td>
+<td>not work.</td>
+<td>25857</td>
+<td>1.20</td>
+</tr>
+<tr>
+<td><a href="https://rpc.buildteam.io" target="_blank" rel="noopener">https://rpc.buildteam.io</a></td>
+<td>31</td>
+<td>17575</td>
+<td>2.19</td>
+</tr>
+<tr>
+<td><a href="https://api.steemitstage.com" target="_blank" rel="noopener">https://api.steemitstage.com</a></td>
+<td>51</td>
+<td>10000</td>
+<td>2.29</td>
+</tr>
+<tr>
+<td><a href="https://api.steemitdev.com" target="_blank" rel="noopener">https://api.steemitdev.com</a></td>
+<td>50</td>
+<td>9798</td>
+<td>2.30</td>
+</tr>
+<tr>
+<td><a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a></td>
+<td>49</td>
+<td>9394</td>
+<td>3.14</td>
+</tr>
+<tr>
+<td><a href="https://api.steem.house" target="_blank" rel="noopener">https://api.steem.house</a></td>
+<td>27</td>
+<td>4445</td>
+<td>7.10</td>
+</tr>
+<tr>
+<td><a href="https://steemd.pevo.science" target="_blank" rel="noopener">https://steemd.pevo.science</a></td>
+<td>6</td>
+<td>1819</td>
+<td>28.72</td>
+</tr>
+<tr>
+<td>wss://appbasetest.timcliff.com</td>
+<td>135</td>
+<td>597</td>
+<td>0.94</td>
+</tr>
+<tr>
+<td><a href="https://appbasetest.timcliff.com" target="_blank" rel="noopener">https://appbasetest.timcliff.com</a></td>
+<td>9</td>
+<td>597</td>
+<td>20.01</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Set-fully-working-nodes-with-beempy"><a href="#Set-fully-working-nodes-with-beempy" class="headerlink" title="Set fully working nodes with beempy"></a>Set fully working nodes with beempy</h1><p><a href="https://api.steemitstage.com" target="_blank" rel="noopener">https://api.steemitstage.com</a>, <a href="https://api.steemitdev.com" target="_blank" rel="noopener">https://api.steemitdev.com</a> and nodes with not working results were excluded.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy set nodes [&apos;wss://steemd.privex.io&apos;, &apos;wss://rpc.buildteam.io&apos;, &apos;https://rpc.buildteam.io&apos;, &apos;https://api.steemit.com&apos;, &apos;https://api.steem.house&apos;, &apos;https://steemd.pevo.science&apos;, &apos;wss://appbasetest.timcliff.com&apos;, &apos;https://appbasetest.timcliff.com&apos;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h1 id="Comparison-with-last-month"><a href="#Comparison-with-last-month" class="headerlink" title="Comparison with last month"></a>Comparison with last month</h1><p>You can find my last post <a href="https://steemit.com/steemdev/@holger80/currently-only-6-full-rpc-nodes-are-working-without-errors" target="_blank" rel="noopener">here</a>.<br><code>wss://steemd.privex.io</code> is again the fastest node.<br>The Steemit Inc. nodes and <code>api.steem.house</code> are also in good shape.<br><code>rpc.buildteam.io</code> and <code>appbasetest.timcliff.com</code> are fully working now.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/status-report-for-full-rpc-nodes-25-05-2018" target="_blank" rel="noopener">&#x2018;Status report for full rpc nodes - 25.05.2018&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/dev/">dev</a>, <a class="has-link-grey -link" href="/@holger80/tags/full-nodes/">full-nodes</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/does-the-steem-blockchain-comply-with-the-gdpr-and-european-privacy-laws/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Does the steem blockchain comply with the GDPR and European privacy laws?</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/do-you-want-to-learn-to-code-an-eth-dapp/">
+                <span class="level-item">Do you want to learn to code an ETH-DApp?</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

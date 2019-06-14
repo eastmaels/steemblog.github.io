@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Protect your Windows PC against Meldown and Spectre - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Meltdown-CVE-2017-5754">
+        <span class="has-mr-6">1</span>
+        <span>Meltdown (CVE-2017-5754)</span>
+        </a></li><li>
+        <a class="is-flex" href="#Spectre-CVE-2017-5753-and-CVE-2017-5715">
+        <span class="has-mr-6">2</span>
+        <span>Spectre (CVE-2017-5753 and CVE-2017-5715)</span>
+        </a></li><li>
+        <a class="is-flex" href="#How-to-check-if-your-pc-is-vulnerable">
+        <span class="has-mr-6">3</span>
+        <span>How to check if your pc is vulnerable</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Open-powershell-as-admin">
+        <span class="has-mr-6">3.1</span>
+        <span>Open powershell as admin</span>
+        </a></li><li>
+        <a class="is-flex" href="#Install-the-PowerShell-Module">
+        <span class="has-mr-6">3.2</span>
+        <span>Install the PowerShell Module</span>
+        </a></li><li>
+        <a class="is-flex" href="#Run-the-PowerShell-module-to-validate-the-protections-are-enabled">
+        <span class="has-mr-6">3.3</span>
+        <span>Run the PowerShell module to validate the protections are enabled</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#What-to-do-if-you-are-not-protected-against-Spectre-like-me">
+        <span class="has-mr-6">4</span>
+        <span>What to do, if you are not protected against Spectre (like me)</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmcm2Zy98i27DGKaoci3kBfVDV4BsKF7enNrWrvCiPpgnR/image.png" alt="Protect your Windows PC against Meldown and Spectre">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-09T20:31:06.000Z">2018-01-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/cybersecurity/">cybersecurity</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 544 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Protect your Windows PC against Meldown and Spectre
+            
+        </h1>
+        <div class="content">
+            <h1 id="Meltdown-CVE-2017-5754"><a href="#Meltdown-CVE-2017-5754" class="headerlink" title="Meltdown (CVE-2017-5754)"></a>Meltdown (CVE-2017-5754)</h1><p><img src="https://steemitimages.com/DQmcm2Zy98i27DGKaoci3kBfVDV4BsKF7enNrWrvCiPpgnR/image.png" alt=""><br>Meltdown breaks the fundamental isolation between user applications and the operating system.</p>
+<h1 id="Spectre-CVE-2017-5753-and-CVE-2017-5715"><a href="#Spectre-CVE-2017-5753-and-CVE-2017-5715" class="headerlink" title="Spectre (CVE-2017-5753 and CVE-2017-5715)"></a>Spectre (CVE-2017-5753 and CVE-2017-5715)</h1><p><img src="https://steemitimages.com/DQmZQLAoni5M7zBAWBsk9Vyn1gYBQzDjLkpXCndo8Ac4EbE/image.png" alt=""><br>Spectre breaks the isolation between different applications.</p>
+<p>An attacker can use both vulnerabilities for stealing passworts and sensitive data. More information can be found at <a href="https://meltdownattack.com/" target="_blank" rel="noopener">https://meltdownattack.com/</a>.</p>
+<h1 id="How-to-check-if-your-pc-is-vulnerable"><a href="#How-to-check-if-your-pc-is-vulnerable" class="headerlink" title="How to check if your pc is vulnerable"></a>How to check if your pc is vulnerable</h1><p>Visit the official microsoft site for more information <a href="https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in" target="_blank" rel="noopener">https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in</a>.</p>
+<h2 id="Open-powershell-as-admin"><a href="#Open-powershell-as-admin" class="headerlink" title="Open powershell as admin"></a>Open powershell as admin</h2><p>Open the start-menu and write powershell. Right click and select  &#x201C;Run as Administrator&#x201D;. Click yes on the dialog for running as admin. </p>
+<h2 id="Install-the-PowerShell-Module"><a href="#Install-the-PowerShell-Module" class="headerlink" title="Install the PowerShell Module"></a>Install the PowerShell Module</h2><p>Typ the following into the powershell.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Install-Module SpeculationControl</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Press two times &#x2018;y&#x2019; for installing the module.</p>
+<h2 id="Run-the-PowerShell-module-to-validate-the-protections-are-enabled"><a href="#Run-the-PowerShell-module-to-validate-the-protections-are-enabled" class="headerlink" title="Run the PowerShell module to validate the protections are enabled"></a>Run the PowerShell module to validate the protections are enabled</h2><p>Enter the following commands (You can also copy the commands from <a href="https://support.microsoft.com/en-us/help/4073119/protect-against-speculative-execution-side-channel-vulnerabilities-in" target="_blank" rel="noopener">the official microsoft site</a>)<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$SaveExecutionPolicy = Get-ExecutionPolicy</span><br><span class="line">Set-ExecutionPolicy RemoteSigned -Scope Currentuser</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Press &#x2018;y&#x2019; for changing the Execution Policy<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Import-Module SpeculationControl</span><br><span class="line">Get-SpeculationControlSettings</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>After this enter<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-ExecutionPolicy $SaveExecutionPolicy -Scope Currentuser</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Press &#x2018;y&#x2019; for changing the Execution Policy to the original state</p>
+<p>Your are protected against meldown and spectre when you seeing only green-colored True&#x2019;s.<br>If you have an old motherboard as i have and not getting any bios or firmware upgrade, then it will look like this:<br><img src="https://steemitimages.com/DQmUFaHXBniFCQzrE3yTccUEir2UysNRASCLK1uUg1GTMX3/image.png" alt=""><br>This means that i am protected against meltdown but not against spectre.</p>
+<p>You can see Spectre in action using this small program from github <a href="https://github.com/stephanvandekerkhof/cpp-spectre-meltdown-vulnerability-windows-test" target="_blank" rel="noopener">https://github.com/stephanvandekerkhof/cpp-spectre-meltdown-vulnerability-windows-test</a><br>Download spectre-meltdown-vulnerability-windows-test.exe and excecute it:<br>If you see the following output (as i see on my PC)<br><img src="https://steemitimages.com/DQmb6LBnyR2LAUnPDofAgGFQw2UHJAkQ4ftGeAS945eUUwx/image.png" alt=""><br>then your are vulnerable against Spectre.</p>
+<p>This program creates a variable<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">char *secret = &quot;MELTDOWN/SPECTRE-POC by Stephan of EHVSN&quot;;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and uses Spectre to read its content.</p>
+<h1 id="What-to-do-if-you-are-not-protected-against-Spectre-like-me"><a href="#What-to-do-if-you-are-not-protected-against-Spectre-like-me" class="headerlink" title="What to do, if you are not protected against Spectre (like me)"></a>What to do, if you are not protected against Spectre (like me)</h1><ul>
+<li>Update your Browser and maybe use chrome.</li>
+<li>If you are using chrome, activate Strict site isolation by entering <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chrome://flags/#enable-site-per-process</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>into the address bar.</p>
+<ul>
+<li>Activate Strict site isolation and restart chrome. If it is activated, it should now look like this:<br><img src="https://steemitimages.com/DQmeNaAHAwS8kj7Z8Q72G4zW7VE2jEjAg1c8vDtLKrQBd6G/image.png" alt=""></li>
+</ul>
+<ul>
+<li>Chrome tries to prevent attacks with javascripts, as you can read here: <a href="https://sites.google.com/a/chromium.org/dev/Home/chromium-security/ssca" target="_blank" rel="noopener">https://sites.google.com/a/chromium.org/dev/Home/chromium-security/ssca</a></li>
+<li>Buy a new PC (?) as your old one will most likely not get any new BIOS upgrade. The last update for my BIOS was 2015. But lets hope and wait.</li>
+</ul>
+<p>Do you have also some usefull tips for windows user which are vulnerable against Spectre? Please let me know!</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/protect-your-windows-pc-against-meldown-and-spectre" target="_blank" rel="noopener">&#x2018;Protect your Windows PC against Meldown and Spectre&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/cybersecurity/">cybersecurity</a>, <a class="has-link-grey -link" href="/@holger80/tags/meltdown/">meltdown</a>, <a class="has-link-grey -link" href="/@holger80/tags/security/">security</a>, <a class="has-link-grey -link" href="/@holger80/tags/spectre/">spectre</a>, <a class="has-link-grey -link" href="/@holger80/tags/technology/">technology</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/how-to-check-if-your-cp-is-already-patched-against-meltdown-and-spectre/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">How to check if your PC is already patched against meltdown and spectre</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/best-faucets-for-mobile-phone-android/">
+                <span class="level-item">Best faucets for mobile phone (android)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

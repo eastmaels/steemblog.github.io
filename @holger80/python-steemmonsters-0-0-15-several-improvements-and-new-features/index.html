@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>python steemmonsters 0.0.15 - Several improvements and new features - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#New-API-comands">
+        <span class="has-mr-6">2</span>
+        <span>New API comands</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-Commands">
+        <span class="has-mr-6">3</span>
+        <span>New Commands</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#addteam">
+        <span class="has-mr-6">3.1</span>
+        <span>addteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#deleleteam">
+        <span class="has-mr-6">3.2</span>
+        <span>deleleteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#copyteam">
+        <span class="has-mr-6">3.3</span>
+        <span>copyteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#team">
+        <span class="has-mr-6">3.4</span>
+        <span>team</span>
+        </a></li><li>
+        <a class="is-flex" href="#lastteam">
+        <span class="has-mr-6">3.5</span>
+        <span>lastteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#copytopteam">
+        <span class="has-mr-6">3.6</span>
+        <span>copytopteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#lasttopteam">
+        <span class="has-mr-6">3.7</span>
+        <span>lasttopteam</span>
+        </a></li><li>
+        <a class="is-flex" href="#savedteams">
+        <span class="has-mr-6">3.8</span>
+        <span>savedteams</span>
+        </a></li><li>
+        <a class="is-flex" href="#startquest">
+        <span class="has-mr-6">3.9</span>
+        <span>startquest</span>
+        </a></li><li>
+        <a class="is-flex" href="#claimquest">
+        <span class="has-mr-6">3.10</span>
+        <span>claimquest</span>
+        </a></li><li>
+        <a class="is-flex" href="#conflict">
+        <span class="has-mr-6">3.11</span>
+        <span>conflict</span>
+        </a></li><li>
+        <a class="is-flex" href="#play">
+        <span class="has-mr-6">3.12</span>
+        <span>play</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">4</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#More-commands-added">
+        <span class="has-mr-6">4.1</span>
+        <span>More commands added</span>
+        </a></li><li>
+        <a class="is-flex" href="#Merged-changes-from-7-manually">
+        <span class="has-mr-6">4.2</span>
+        <span>Merged changes from #7 manually</span>
+        </a></li><li>
+        <a class="is-flex" href="#Release-0-0-15">
+        <span class="has-mr-6">4.3</span>
+        <span>Release 0.0.15</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-api-calls-and-improve-stream-and-play">
+        <span class="has-mr-6">4.4</span>
+        <span>Add api calls and improve stream and play</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#New-api-calls-added">
+        <span class="has-mr-6">4.4.1</span>
+        <span>New api calls added:</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">4.4.2</span>
+        <span>GitHub Account</span>
+        </a></li></ul></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmSmgBrJHwB6QDCqJ3YDbLoxgVgmc2ft3HQMuGDAPrqcS6" alt="python steemmonsters 0.0.15 - Several improvements and new features">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-02T15:24:06.000Z">2018-11-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 767 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                python steemmonsters 0.0.15 - Several improvements and new features
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/steemmonsters" target="_blank" rel="noopener">https://github.com/holgern/steemmonsters</a></p>
+<p>steemmonsters is a python command line tool for playing steemmonsters without graphics. The newest version 0.0.15 can be downloaded <a href="https://github.com/holgern/steemmonsters/releases" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="New-API-comands"><a href="#New-API-comands" class="headerlink" title="New API comands"></a>New API comands</h2><p><code>get_purchases_status</code> returns information about a purchased card pack:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">api.get_purchases_status(&quot;P-DTQ5OEKIVK&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>get_player_quests</code> returns information about the quest:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">api.get_player_quests(&quot;holger80&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>get_purchases_stats</code> returns how many packs were purchased:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; from steemmonsters.api import Api</span><br><span class="line">&gt;&gt;&gt; api = Api()</span><br><span class="line">&gt;&gt;&gt; api.get_purchases_stats()</span><br><span class="line">{&apos;packs&apos;: [{&apos;edition&apos;: 0, &apos;qty&apos;: &apos;300000&apos;}, {&apos;edition&apos;: 1, &apos;qty&apos;: &apos;181059&apos;}]}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>api.settings()</code> shows the current games settings.</p>
+<p><code>api.players_leaderboard()</code> shows the leaderboard.</p>
+<p><code>get_player_login</code> returns the encrypted token for login:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">from steemmonsters.api import Api</span><br><span class="line">api = Api()</span><br><span class="line">api.get_player_login(&quot;holger80&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><code>player_save_team( name, team, player, token, mana_cap)</code> can be used to store a new team, which then also available in the homepage. <code>token</code> is the decrypted token using the posting key from the <code>get_player_login</code> call.</p>
+<p><code>player_delete_team(name, player, token, mana_cap)</code> deletes deck <code>name</code>.</p>
+<p><code>get_player_saved_teams(player, token, mana_cap)</code> returns all saved teams.</p>
+<p><code>get_player_teams_last_used(player, mana_cap)</code> returns the last used team of a player.</p>
+<p><code>get_battle_history(player=&quot;%24top&quot;)</code> gets the last top battles. When settings <code>player=holger80</code> the last battles of the player are returned instead.</p>
+<h2 id="New-Commands"><a href="#New-Commands" class="headerlink" title="New Commands"></a>New Commands</h2><p><img src="https://ipfs.busy.org/ipfs/QmSmgBrJHwB6QDCqJ3YDbLoxgVgmc2ft3HQMuGDAPrqcS6" alt="image.png"></p>
+<h3 id="addteam"><a href="#addteam" class="headerlink" title="addteam"></a>addteam</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addteam  water_test Alric Stormbringer:2, Frost Giant:1, Spineback Turtle:2, Pirate Captain:3, Crustacean King:3</span><br></pre></td></tr></tbody></table></figure>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">addteam  water_test Alric Stormbringer, Frost Giant, Spineback Turtle, Pirate Captain, Crustacean King</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>adds the water_test team. The stored team can then be used for play:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">play water_test</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmTren5kpQhdWP1kuXiHoyhCm9fqxpg6j9Lsg3n8zCEX8p" alt="image.png"></p>
+<p>The team is also stored in the steemmonsters.com homepage:<br><img src="https://ipfs.busy.org/ipfs/QmZQJRCtaZiJKE952t82WDtCRrU32DZyZvE39zb7K2hTdX" alt="image.png"></p>
+<p>The token for modifing teams is decrypted by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">from beembase import memo as BtsMemo</span><br><span class="line">from beemgraphenebase.account import PrivateKey</span><br><span class="line">from steemmonsters.api import Api</span><br><span class="line"></span><br><span class="line">api = Api()</span><br><span class="line">response = api.get_player_login(&quot;holger80&quot;)</span><br><span class="line">wif = &quot;5xxx&quot; # posting key</span><br><span class="line">token = BtsMemo.decode_memo(PrivateKey(wif), response[&quot;token&quot;]).replace(&apos;\n&apos;, &apos;&apos;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="deleleteam"><a href="#deleleteam" class="headerlink" title="deleleteam"></a>deleleteam</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deleteteam water_test</span><br></pre></td></tr></tbody></table></figure>
+<p>removes a stored team.</p>
+<h3 id="copyteam"><a href="#copyteam" class="headerlink" title="copyteam"></a>copyteam</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copyteam clove71 test1</span><br></pre></td></tr></tbody></table></figure>
+<p>copies the last played team from clove71 and stores is as test1</p>
+<h3 id="team"><a href="#team" class="headerlink" title="team"></a>team</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">team test1</span><br></pre></td></tr></tbody></table></figure>
+<p>shows a stored team</p>
+<h3 id="lastteam"><a href="#lastteam" class="headerlink" title="lastteam"></a>lastteam</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lastteam</span><br></pre></td></tr></tbody></table></figure>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lastteam clove71</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>shows the last played team</p>
+<h3 id="copytopteam"><a href="#copytopteam" class="headerlink" title="copytopteam"></a>copytopteam</h3><p>Is the same command, but instead of a player name, the top100 position is used.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">copytopteam 4 test2</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>stores the last team from the top 4 player as test2</p>
+<h3 id="lasttopteam"><a href="#lasttopteam" class="headerlink" title="lasttopteam"></a>lasttopteam</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lasttopteam 4</span><br></pre></td></tr></tbody></table></figure>
+<p>shows the last played team from top 4 player</p>
+<h3 id="savedteams"><a href="#savedteams" class="headerlink" title="savedteams"></a>savedteams</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">savedteams</span><br></pre></td></tr></tbody></table></figure>
+<p>shows all saved teams</p>
+<h3 id="startquest"><a href="#startquest" class="headerlink" title="startquest"></a>startquest</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sm&gt; startquest</span><br><span class="line">sm_start_quest broadcasted!</span><br><span class="line">You have to solve the Stir the Volcano quest</span><br></pre></td></tr></tbody></table></figure>
+<p>can be used to start a new quest. In this example, 10 games using a fire deck will solve the quest.</p>
+<h3 id="claimquest"><a href="#claimquest" class="headerlink" title="claimquest"></a>claimquest</h3><p>When a quest is solved, this command can b e used to claim the reward.</p>
+<h3 id="conflict"><a href="#conflict" class="headerlink" title="conflict"></a>conflict</h3><p>Shows the current conflict</p>
+<h3 id="play"><a href="#play" class="headerlink" title="play"></a>play</h3><p><code>play</code> can now be used with stored teams from the homepage. At first the json is checked and when there is no such team, the stored teams are checked. When a team with the given name is found, it is used. <code>play random</code> works only with decks stored in the json file.</p>
+<p><code>mana_cap</code> and <code>ruleset</code> must not be defined in the json file, it  is now fetched on startup.</p>
+<h2 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h2><h3 id="More-commands-added"><a href="#More-commands-added" class="headerlink" title="More commands added"></a>More commands added</h3><ul>
+<li><a href="https://github.com/holgern/steemmonsters/commit/913b1577f65cddb271257460177bf2c7bb7e7ca6" target="_blank" rel="noopener">commit 913b1577</a></li>
+<li>conflict - shows the currect conflict</li>
+<li>team <name> - shows a stored team</name></li>
+<li>player - shows the information about the player</li>
+<li>lasttopteam <nr> - shows the last played team</nr></li>
+<li>copytopteam <nr> <new_deck_name> - copies the last played team<h3 id="Merged-changes-from-7-manually"><a href="#Merged-changes-from-7-manually" class="headerlink" title="Merged changes from #7 manually"></a>Merged changes from #7 manually</h3></new_deck_name></nr></li>
+<li><a href="https://github.com/holgern/steemmonsters/commit/18af8ed6c0582f4283afc2cbcbcebc7fc55dab9c" target="_blank" rel="noopener">commit 18af8ed</a><h3 id="Release-0-0-15"><a href="#Release-0-0-15" class="headerlink" title="Release 0.0.15"></a>Release 0.0.15</h3></li>
+<li><a href="https://github.com/holgern/steemmonsters/commit/acc7bc68721526fb16a527e0f4d06f3c5ba2b29d" target="_blank" rel="noopener">commit acc7bc6</a><h3 id="Add-api-calls-and-improve-stream-and-play"><a href="#Add-api-calls-and-improve-stream-and-play" class="headerlink" title="Add api calls and improve stream and play"></a>Add api calls and improve stream and play</h3></li>
+<li><a href="https://github.com/holgern/steemmonsters/commit/534cc06f58fb1f25829206775b055c74dbc11942" target="_blank" rel="noopener">commit 534cc06</a><h4 id="New-api-calls-added"><a href="#New-api-calls-added" class="headerlink" title="New api calls added:"></a>New api calls added:</h4></li>
+<li>get_purchases_status</li>
+<li><p>get_player_quests</p>
+</li>
+<li><p>quest command added for showing the current player quest</p>
+</li>
+<li>stream fixed</li>
+<li>play improved</li>
+</ul>
+<h4 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h4><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/python-steemmonsters-0-0-15-several-improvements-and-new-features" target="_blank" rel="noopener">&#x2018;python steemmonsters 0.0.15 - Several improvements and new features&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemmonsters/">steemmonsters</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemtank/">steemtank</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/steem-forever-rewarding-old-posts-with-beem/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">steem forever (rewarding old posts) with beem</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/python-steemmonsters-0-0-14-released/">
+                <span class="level-item">python steemmonsters 0.0.14 released </span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

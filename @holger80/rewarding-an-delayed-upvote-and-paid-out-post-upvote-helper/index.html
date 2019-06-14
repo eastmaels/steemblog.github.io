@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>rewarding - delayed upvote and paid-out post upvote helper - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Only-the-first-version-of-a-post-comment-is-parsed">
+        <span class="has-mr-6">1</span>
+        <span>Only the first version of a post / comment is parsed.</span>
+        </a></li><li>
+        <a class="is-flex" href="#Delayed-upvotes-of-pending-posts-comments">
+        <span class="has-mr-6">2</span>
+        <span>Delayed upvotes of pending posts / comments</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Command-in-a-post">
+        <span class="has-mr-6">2.1</span>
+        <span>Command in a post</span>
+        </a></li><li>
+        <a class="is-flex" href="#Command-in-a-comment">
+        <span class="has-mr-6">2.2</span>
+        <span>Command in a comment</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Upvoting-paid-out-posts">
+        <span class="has-mr-6">3</span>
+        <span>Upvoting paid-out posts</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Command-in-a-comment-1">
+        <span class="has-mr-6">3.1</span>
+        <span>Command in a comment</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Using-the-commands-without-giving-rewarding-posting-authority">
+        <span class="has-mr-6">4</span>
+        <span>Using the commands without giving rewarding posting authority</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Using-the-commands-without-giving-rewarding-posting-authority-on-paid-out-posts">
+        <span class="has-mr-6">4.1</span>
+        <span>Using the commands without giving rewarding posting authority on paid-out posts</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Transfer-0-001-STEEM-SBD-to-rewarding">
+        <span class="has-mr-6">5</span>
+        <span>Transfer 0.001 STEEM/SBD to rewarding</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Paid-out-post">
+        <span class="has-mr-6">5.1</span>
+        <span>Paid-out post</span>
+        </a></li><li>
+        <a class="is-flex" href="#When-posting-authority-is-given">
+        <span class="has-mr-6">5.2</span>
+        <span>When posting authority is given</span>
+        </a></li><li>
+        <a class="is-flex" href="#Thanks-to-all-Delegators-that-allow-me-to-run-this-project">
+        <span class="has-mr-6">5.3</span>
+        <span>Thanks to all Delegators that allow me to run this project:</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmNWhtsn5mhiHVTSQHonKYCJhoX1a7tvDK91Xi1afyPwzn" alt="rewarding - delayed upvote and paid-out post upvote helper">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-10T22:32:00.000Z">2018-11-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 682 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                rewarding - delayed upvote and paid-out post upvote helper
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmNWhtsn5mhiHVTSQHonKYCJhoX1a7tvDK91Xi1afyPwzn" alt="image.png"><br><a href="https://pixabay.com/de/update-upgrade-aktualisieren-1672363/" target="_blank" rel="noopener">source</a></p>
+<p>You probably saw me using the @rewarding bot for giving delayed upvotes. Always waiting until a post is 15 minutes old before I can finally give a vote, has annoyed me. Thus, I coded this little helper. It is open to everyone but works only when giving @rewarding the posting role. Giving rewarding the posting authority can be done by <a href="https://steemconnect.com/authorize/@rewarding" target="_blank" rel="noopener">https://steemconnect.com/authorize/@rewarding</a>.</p>
+<p>Giving the other account posting authority means that this account can broadcast all operation that need only posting authority as voting in the name of the account.</p>
+<p>In order to disable commands for a post/comment, I can add<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding skip</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>to the post/comment.</p>
+<h2 id="Only-the-first-version-of-a-post-comment-is-parsed"><a href="#Only-the-first-version-of-a-post-comment-is-parsed" class="headerlink" title="Only the first version of a post / comment is parsed."></a>Only the first version of a post / comment is parsed.</h2><p>Edited posts/comments are skipped and not parsed for commands.</p>
+<h2 id="Delayed-upvotes-of-pending-posts-comments"><a href="#Delayed-upvotes-of-pending-posts-comments" class="headerlink" title="Delayed upvotes of pending posts / comments"></a>Delayed upvotes of pending posts / comments</h2><h3 id="Command-in-a-post"><a href="#Command-in-a-post" class="headerlink" title="Command in a post"></a>Command in a post</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding 100% 15min</span><br></pre></td></tr></tbody></table></figure>
+<p>This command triggers a self-vote after 15 minutes with 100%.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding set account1:10%,account2:20%</span><br></pre></td></tr></tbody></table></figure>
+<p>This command tries to set beneficiaries for the post. The works only when no vote arrives before. The rewarding bot parses the head blocks for commands. When one is found, it is analyzed and a comment option operation is broadcasted in this case. Due to the parsing, there is some delay and setting beneficiaries may not work when there arrived a vote before.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding set account1:10%,account2:20% upvote 100% 15 min</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>This command sets beneficiaries and trigger a self-vote after 15 min with 100 %.</p>
+<h3 id="Command-in-a-comment"><a href="#Command-in-a-comment" class="headerlink" title="Command in a comment"></a>Command in a comment</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding 90% 14min</span><br></pre></td></tr></tbody></table></figure>
+<p>This command triggers a vote of the direct parent of the comment after 14 minutes (time is relative to creation time of the parent comment / post).</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding 90%</span><br></pre></td></tr></tbody></table></figure>
+<p>Triggers a vote after 15 minutes.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding set account1:10%,account2:20%</span><br></pre></td></tr></tbody></table></figure>
+<p>This command triggers a command_options command that tried to set beneficiaries for the comment in which the command was included. By this, I could give the post author something in return. As mentioned above, this works only when in the short delay until the operation is broadcasted no vote has arrived.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding set account1:10%,account2:20% upvote 100% 15 min</span><br></pre></td></tr></tbody></table></figure>
+<p>This command sets beneficiaries for the comment itself and triggers an upvote of the parent post / comment.</p>
+<h2 id="Upvoting-paid-out-posts"><a href="#Upvoting-paid-out-posts" class="headerlink" title="Upvoting paid-out posts"></a>Upvoting paid-out posts</h2><h3 id="Command-in-a-comment-1"><a href="#Command-in-a-comment-1" class="headerlink" title="Command in a comment"></a>Command in a comment</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$rewarding 90%</span><br></pre></td></tr></tbody></table></figure>
+<p>This command let @rewarding creates a comment in which beneficiaries are set 100% to the post author. In this case, the comment and the comment_options are broadcasted in the same block. Thus setting beneficiaries will always work. After 15 minutes, the created comment is upvoted with 90%. </p>
+<h2 id="Using-the-commands-without-giving-rewarding-posting-authority"><a href="#Using-the-commands-without-giving-rewarding-posting-authority" class="headerlink" title="Using the commands without giving rewarding posting authority"></a>Using the commands without giving rewarding posting authority</h2><p>When rewarding has not a posting authority, it will not upvote the post/comment but reply after the given time with a reminder comment which includes the name of the account that wrote the comment. When using a notification service as GINA this will lead to a reminder to upvote the post manually.</p>
+<h3 id="Using-the-commands-without-giving-rewarding-posting-authority-on-paid-out-posts"><a href="#Using-the-commands-without-giving-rewarding-posting-authority-on-paid-out-posts" class="headerlink" title="Using the commands without giving rewarding posting authority on paid-out posts"></a>Using the commands without giving rewarding posting authority on paid-out posts</h3><p>In this case a comment with 100% beneficiaries is created and after 15 min, the account is reminded to upvote by broadcasting a new reply comment with a account name mention.</p>
+<h2 id="Transfer-0-001-STEEM-SBD-to-rewarding"><a href="#Transfer-0-001-STEEM-SBD-to-rewarding" class="headerlink" title="Transfer 0.001 STEEM/SBD to rewarding"></a>Transfer 0.001 STEEM/SBD to rewarding</h2><h3 id="Paid-out-post"><a href="#Paid-out-post" class="headerlink" title="Paid-out post"></a>Paid-out post</h3><p>When the memo an authorperm of a paid-out post includes, a comment with 100% beneficiaries is created. </p>
+<h3 id="When-posting-authority-is-given"><a href="#When-posting-authority-is-given" class="headerlink" title="When posting authority is given"></a>When posting authority is given</h3><p>Sending a memo with the following content:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">100%,15min,authorperm</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>will trigger an upvote of the given authorperm.<br>When the given authorperm is a paid-out post, a comment is created with 100% beneficiaries and this comment is then upvoted with 100%</p>
+<h3 id="Thanks-to-all-Delegators-that-allow-me-to-run-this-project"><a href="#Thanks-to-all-Delegators-that-allow-me-to-run-this-project" class="headerlink" title="Thanks to all Delegators that allow me to run this project:"></a>Thanks to all Delegators that allow me to run this project:</h3><p>Incoming - 300.000 SP<br>50 SP delegated by @idikuci<br>50 SP delegated by @dimitrisp<br>50 SP delegated by @condeas<br>50 SP delegated by @dj123<br>50 SP delegated by @pechichemena</p>
+<hr>
+<p>Please let me know if you have ideas of other commands that I should implement or other suggestions. Please report also bugs.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/rewarding-an-delayed-upvote-and-paid-out-post-upvote-helper" target="_blank" rel="noopener">&#x2018;rewarding - delayed upvote and paid-out post upvote helper&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/rewarding/">rewarding</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemtank/">steemtank</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/rewarding-contribution-to-steem-business-plan-competition-from-aggroed/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">rewarding - Contribution to Steem Business Plan Competition from aggroed</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/update-for-beem-post-reply-and-beneficiaries-commands-added-to-beempy/">
+                <span class="level-item">update for beem - post, reply and beneficiaries commands added to beempy</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

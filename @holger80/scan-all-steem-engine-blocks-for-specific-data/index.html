@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Scan all steem-engine blocks for specific data - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/Qma3GE3M39cUtLTFppsCwqiFGzxjyRu457pZCziLhAv7hW" alt="Scan all steem-engine blocks for specific data">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-09T11:37:30.000Z">2019-04-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steem-engine/">steem-engine</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 974 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Scan all steem-engine blocks for specific data
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/Qma3GE3M39cUtLTFppsCwqiFGzxjyRu457pZCziLhAv7hW" alt="image.png"></p>
+<p>After reading the request of @rolandp (<a href="https://steemit.com/steem-engine/@roelandp/scammer-alert-roelandp-666-fake-toshi-selling-fake-btc-coins-111" target="_blank" rel="noopener">post</a>), I found that a small python script, which is able to scan all blocks from the steem-engine sidechain would be very helpfull.</p>
+<p>I&#x2019;m using my <a href="https://github.com/holgern/steemengine" target="_blank" rel="noopener">steemengine</a> toolbox and will go through all blocks. I will check all <code>market</code> contracts with <code>buy</code> and <code>sell</code> action of the <code>BTC</code> token.</p>
+<p>I&#x2019;m only interessted in sold token and not in action in which a order is put on the market. When the order was sucessfully, there are more than one entry in the attached logs. For a successful buy, there are:</p>
+<ul>
+<li>STEEMP transfer to the market</li>
+<li>token transfer from the market to the buyer</li>
+<li>STEEMP trasnfer to the seller</li>
+</ul>
+<p>For a successful sell, there are at least:</p>
+<ul>
+<li>token transfer to the market</li>
+<li>STEEMP transfer to the seller</li>
+<li>token transfer to the buyer</li>
+</ul>
+<p>For a placed order, there can only be either a successful buy or sell happen. The last placed order determine the type.</p>
+<p>In my script, I&#x2019;m only parsing buy/sell actions that have at least 3 BTC/STEEMP movements.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">import logging</span><br><span class="line">import json</span><br><span class="line">from steemengine.api import Api</span><br><span class="line">from beem.block import Block</span><br><span class="line">log = logging.getLogger(__name__)</span><br><span class="line">logging.basicConfig(level=logging.INFO)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    api = Api()</span><br><span class="line">    latest_block = api.get_latest_block_info()</span><br><span class="line"></span><br><span class="line">    scan_token = [&apos;BTC&apos;]</span><br><span class="line">    print(&quot;Scanning all blocks from 0 to %d...&quot; % latest_block[&apos;blockNumber&apos;])</span><br><span class="line">    steemp_payments = []</span><br><span class="line">    </span><br><span class="line">    for block_num in range(latest_block[&apos;blockNumber&apos;]):</span><br><span class="line">        block = api.get_block_info(block_num)</span><br><span class="line">        if block_num % 1000 == 0:</span><br><span class="line">            print(&quot;%.2f %%&quot; % (block[&quot;blockNumber&quot;]/latest_block[&apos;blockNumber&apos;] * 100))</span><br><span class="line">        for trx in block[&quot;transactions&quot;]:</span><br><span class="line">            </span><br><span class="line">            if trx[&quot;contract&quot;] not in [&apos;market&apos;]:</span><br><span class="line">                continue</span><br><span class="line">            if trx[&quot;action&quot;] not in [&apos;buy&apos;, &apos;sell&apos;]:</span><br><span class="line">                continue</span><br><span class="line"></span><br><span class="line">            </span><br><span class="line">            logs = json.loads(trx[&quot;logs&quot;])</span><br><span class="line">            sender = trx[&quot;sender&quot;]</span><br><span class="line">            payload = json.loads(trx[&quot;payload&quot;])</span><br><span class="line">            contract = trx[&quot;contract&quot;]</span><br><span class="line">            action = trx[&quot;action&quot;]            </span><br><span class="line">            </span><br><span class="line">            if action == &quot;sell&quot;:</span><br><span class="line">                if &quot;events&quot; not in logs:</span><br><span class="line">                    continue</span><br><span class="line">                elif len(logs[&quot;events&quot;]) == 1:</span><br><span class="line">                    continue</span><br><span class="line">                else:</span><br><span class="line">                    token_found = False</span><br><span class="line">                    for transfer in logs[&quot;events&quot;]:</span><br><span class="line">                        if transfer[&quot;data&quot;][&quot;symbol&quot;] in scan_token:</span><br><span class="line">                            token_found = True</span><br><span class="line">                    if token_found:</span><br><span class="line">                        steem_block = Block(block[&quot;refSteemBlockNumber&quot;])</span><br><span class="line">                        print(&quot;%d (%s) - %s:&quot; % (block[&quot;blockNumber&quot;], steem_block.json()[&quot;timestamp&quot;], trx[&apos;transactionId&apos;]))</span><br><span class="line">                        print(&quot;%s sold %s %s for %s&quot; % (trx[&quot;sender&quot;], payload[&quot;quantity&quot;], payload[&quot;symbol&quot;], payload[&quot;price&quot;]))</span><br><span class="line">                        for transfer in logs[&quot;events&quot;]:</span><br><span class="line">                            print(&quot;    - %s transfers %s %s to %s&quot; % (transfer[&quot;data&quot;][&quot;from&quot;], transfer[&quot;data&quot;][&quot;quantity&quot;], transfer[&quot;data&quot;][&quot;symbol&quot;], transfer[&quot;data&quot;][&quot;to&quot;]))                    </span><br><span class="line">                                </span><br><span class="line">            elif action == &quot;buy&quot;:</span><br><span class="line">                if &quot;events&quot; not in logs:</span><br><span class="line">                    continue</span><br><span class="line">                elif len(logs[&quot;events&quot;]) == 1:</span><br><span class="line">                    continue</span><br><span class="line">                else:</span><br><span class="line">                    token_found = False</span><br><span class="line">                    for transfer in logs[&quot;events&quot;]:</span><br><span class="line">                        if transfer[&quot;data&quot;][&quot;symbol&quot;] in scan_token:</span><br><span class="line">                            token_found = True</span><br><span class="line">                    if token_found:</span><br><span class="line">                        steem_block = Block(block[&quot;refSteemBlockNumber&quot;])</span><br><span class="line">                        print(&quot;%d (%s) - %s&quot; % (block[&quot;blockNumber&quot;], steem_block.json()[&quot;timestamp&quot;], trx[&apos;transactionId&apos;]))</span><br><span class="line">                        print(&quot;%s bought %s %s for %s&quot; % (trx[&quot;sender&quot;], payload[&quot;quantity&quot;], payload[&quot;symbol&quot;], payload[&quot;price&quot;]))</span><br><span class="line">                        for transfer in logs[&quot;events&quot;]:</span><br><span class="line">                            print(&quot;    - %s transfers %s %s to %s&quot; % (transfer[&quot;data&quot;][&quot;from&quot;], transfer[&quot;data&quot;][&quot;quantity&quot;], transfer[&quot;data&quot;][&quot;symbol&quot;], transfer[&quot;data&quot;][&quot;to&quot;]))</span><br></pre></td></tr></tbody></table></figure>
+<p>In order to run the script, steemengine must be install by<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install steemengine</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The script can than be stored as parse_steemengine_blocks.py and run by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python parse_steemengine_blocks.py</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The tokens for which the buys and sells should be printed, can be specified in this list:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan_token = [&apos;BTC&apos;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>for example<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scan_token = [&apos;BTCP&apos;, &apos;LTCP&apos;, &apos;DOGEP&apos;, &apos;BCHP&apos;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Here are the results f&#xFC;r the delisted <code>BTC</code> token:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">14875 (2019-03-09T06:30:39) - 86c034f0f5e40fdc66f6bfdf6809b57a75a5429a</span><br><span class="line">stealthtrader bought 0.0001125 BTC for 8888.88800</span><br><span class="line">    - stealthtrader transfers 1.000 STEEMP to market</span><br><span class="line">    - market transfers 0.0001125 BTC to stealthtrader</span><br><span class="line">    - market transfers 1.000 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">15719 (2019-03-09T19:49:27) - d76a62b335f23285d1c25dff9d787cf26e366600</span><br><span class="line">stealthtrader bought 0.001125 BTC for 8888.88800</span><br><span class="line">    - stealthtrader transfers 10.000 STEEMP to market</span><br><span class="line">    - market transfers 0.001125 BTC to stealthtrader</span><br><span class="line">    - market transfers 10.000 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">16485 (2019-03-11T06:00:33) - eff811cfac89920df2d9905cd1244f47a80964a2</span><br><span class="line">stealthtrader bought 0.00043 BTC for 8888.88800</span><br><span class="line">    - stealthtrader transfers 3.822 STEEMP to market</span><br><span class="line">    - market transfers 0.00043 BTC to stealthtrader</span><br><span class="line">    - market transfers 3.822 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">21673 (2019-03-20T05:14:39) - 8b7933590d035ad3a120db618f24c8e49b238440</span><br><span class="line">stealthtrader bought 0.0001126 BTC for 8888.88800</span><br><span class="line">    - stealthtrader transfers 1.001 STEEMP to market</span><br><span class="line">    - market transfers 0.0001126 BTC to stealthtrader</span><br><span class="line">    - market transfers 1.001 STEEMP to fake.toshi</span><br><span class="line">21954 (2019-03-20T15:06:24) - acddca352289141bf2298fa5b5f1e376326eaf87</span><br><span class="line">y-o-u-t-h-m-e bought 0.0000001 BTC for 8888.88800</span><br><span class="line">    - y-o-u-t-h-m-e transfers 0.001 STEEMP to market</span><br><span class="line">    - market transfers 0.0000001 BTC to y-o-u-t-h-m-e</span><br><span class="line">    - market transfers 0.001 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">32085 (2019-03-23T23:45:24) - c5fb770d009445ae40b39e91af35fb91bd4f425e</span><br><span class="line">profquax bought 0.000445 BTC for 8888.88800</span><br><span class="line">    - profquax transfers 3.956 STEEMP to market</span><br><span class="line">    - market transfers 0.000445 BTC to profquax</span><br><span class="line">    - market transfers 3.956 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">42019 (2019-04-03T00:02:36) - 6c83d6365ef021687b9c4fbca6dead5d1d311224</span><br><span class="line">stealthtrader bought 0.00107 BTC for 8888.88800</span><br><span class="line">    - stealthtrader transfers 9.511 STEEMP to market</span><br><span class="line">    - market transfers 0.000445 BTC to stealthtrader</span><br><span class="line">    - market transfers 3.954 STEEMP to profquax</span><br><span class="line">    - market transfers 0.00062500 BTC to stealthtrader</span><br><span class="line">    - market transfers 5.556 STEEMP to fake.toshi</span><br><span class="line">    - market transfers 0.001 STEEMP to stealthtrader</span><br><span class="line"></span><br><span class="line">42256 (2019-04-03T07:06:03) - 58999a6f09f91b353f1acf2a499a4dda05241709</span><br><span class="line">monsterbuster bought 0.0009 BTC for 8888.88800</span><br><span class="line">    - monsterbuster transfers 8.000 STEEMP to market</span><br><span class="line">    - market transfers 0.0009 BTC to monsterbuster</span><br><span class="line">    - market transfers 8.000 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">42771 (2019-04-03T22:27:54) - ab3fd0a09a0cad9de376665b1079cda3014c4378</span><br><span class="line">followbtcnews bought .005 BTC for 8888.88800</span><br><span class="line">    - followbtcnews transfers 44.444 STEEMP to market</span><br><span class="line">    - market transfers .005 BTC to followbtcnews</span><br><span class="line">    - market transfers 44.444 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">43207 (2019-04-04T08:35:27) - 944e3a5605d580bf0fe5723d7f497d855afbddf5</span><br><span class="line">monsterbuster bought 0.0005 BTC for 8888.88800</span><br><span class="line">    - monsterbuster transfers 4.444 STEEMP to market</span><br><span class="line">    - market transfers 0.0005 BTC to monsterbuster</span><br><span class="line">    - market transfers 4.444 STEEMP to fake.toshi</span><br><span class="line"></span><br><span class="line">44068 (2019-04-05T09:28:06) - 0e465651c89d58ad813f631f9003f01021c8db77</span><br><span class="line">elamental bought 0.01102 BTC for 8888.88800</span><br><span class="line">    - elamental transfers 97.956 STEEMP to market</span><br><span class="line">    - market transfers 0.01102 BTC to elamental</span><br><span class="line">    - market transfers 97.956 STEEMP to fake.toshi</span><br></pre></td></tr></tbody></table></figure><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/scan-all-steem-engine-blocks-for-specific-data" target="_blank" rel="noopener">&#x2018;Scan all steem-engine blocks for specific data&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-engine/">steem-engine</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/token/">token</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/how-to-use-the-logger-class-to-filter-out-unwanted-messages-from-beem/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">How to use the logger class to filter out unwanted messages from beem</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/update-for-beem-amount-in-the-amount-class-is-a-decimal-instead-of-a-float-and-bug-fix-for-account-getbalance/">
+                <span class="level-item">update for beem - amount in the Amount class is a Decimal instead of a float and bug-fix for account.get_balance()</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

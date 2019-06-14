@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steem-scot - improved token distribution by comment commands - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#New-features">
+        <span class="has-mr-6">2</span>
+        <span>New features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#More-than-one-scot-account-token-can-specified-and-more-options-are-available">
+        <span class="has-mr-6">2.1</span>
+        <span>More than one scot account/token can specified and more options are available</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#maximum-amount-and-user-can-specify-amount">
+        <span class="has-mr-6">2.1.1</span>
+        <span>maximum_amount and user_can_specify_amount</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#There-is-a-new-message-when-the-token-supply-from-the-token-sending-account-is-empty">
+        <span class="has-mr-6">2.2</span>
+        <span>There is a new message when the token supply from the token sending account is empty</span>
+        </a></li><li>
+        <a class="is-flex" href="#The-config-file-the-scot-account-and-the-scot-token-is-checked">
+        <span class="has-mr-6">2.3</span>
+        <span>The config file, the scot_account and the scot_token is checked</span>
+        </a></li><li>
+        <a class="is-flex" href="#Improved-logging">
+        <span class="has-mr-6">2.4</span>
+        <span>Improved logging</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">3</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#adapt-readme-to-chagnes">
+        <span class="has-mr-6">3.1</span>
+        <span>adapt readme to chagnes</span>
+        </a></li><li>
+        <a class="is-flex" href="#add-better-logging-it-is-possible-to-define-the-block-diff-at-which-a-new-logging-messaage-should-be-send">
+        <span class="has-mr-6">3.2</span>
+        <span>add better logging, it is possible to define the block diff at which a new logging messaage should be send</span>
+        </a></li><li>
+        <a class="is-flex" href="#check-configs-and-check-if-token-and-token-sender-account-exists">
+        <span class="has-mr-6">3.3</span>
+        <span>check configs and check if token and token_sender account exists</span>
+        </a></li><li>
+        <a class="is-flex" href="#It-is-possible-to-user-more-than-one-account-and-more-than-one-token-in-scot-by-comment">
+        <span class="has-mr-6">3.4</span>
+        <span>It is possible to user more than one account and more than one token in scot_by_comment</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">4</span>
+        <span>GitHub Account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmPGDMzbLsMnAF1T2bCAe7Cqg11CKjQxLoZzfr1ApiXVZL" alt="steem-scot - improved token distribution by comment commands">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-05T11:26:15.000Z">2019-04-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1122 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steem-scot - improved token distribution by comment commands
+            
+        </h1>
+        <div class="content">
+            <h2 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h2><p><a href="https://github.com/holgern/steem-scot" target="_blank" rel="noopener">https://github.com/holgern/steem-scot</a></p>
+<p><img src="https://ipfs.busy.org/ipfs/QmPGDMzbLsMnAF1T2bCAe7Cqg11CKjQxLoZzfr1ApiXVZL" alt="image.png"></p>
+<h2 id="New-features"><a href="#New-features" class="headerlink" title="New features"></a>New features</h2><h3 id="More-than-one-scot-account-token-can-specified-and-more-options-are-available"><a href="#More-than-one-scot-account-token-can-specified-and-more-options-are-available" class="headerlink" title="More than one scot account/token can specified and more options are available"></a>More than one scot account/token can specified and more options are available</h3><p>The config for <code>scot_by_comment</code> has now the following structure:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">        &quot;config&quot;: [{</span><br><span class="line">        &quot;scot_account&quot;: &quot;scotaccount&quot;,</span><br><span class="line">        &quot;scot_token&quot;: &quot;SCOT&quot;,</span><br><span class="line">        &quot;token_memo&quot;:&quot;Here is your token thanks to %s&quot;,</span><br><span class="line">        &quot;reply&quot;: true,</span><br><span class="line">        &quot;sucess_reply_body&quot;: &quot;Dear %s, The token are on its way!&quot;,</span><br><span class="line">        &quot;fail_reply_body&quot;: &quot;You need to stake 10 token, in order to use this service.&quot;,</span><br><span class="line">        &quot;no_token_left_body&quot;: &quot;Please retry later...&quot;,</span><br><span class="line">        &quot;comment_command&quot;: &quot;!SCOT&quot;,</span><br><span class="line">        &quot;user_can_specify_amount&quot;: true,</span><br><span class="line">        &quot;maximum_amount&quot;: 10,</span><br><span class="line">        &quot;min_staked_token&quot;: 50,</span><br><span class="line">        &quot;usage_upvote_percentage&quot;: 0</span><br><span class="line">        },</span><br><span class="line">        {</span><br><span class="line">        &quot;scot_account&quot;: &quot;token_issuer&quot;,</span><br><span class="line">        &quot;scot_token&quot;: &quot;TOKEN&quot;,</span><br><span class="line">        &quot;token_memo&quot;:&quot;You got a token&quot;,</span><br><span class="line">        &quot;reply&quot;: true,</span><br><span class="line">        &quot;sucess_reply_body&quot;: &quot;Here is your token&quot;,</span><br><span class="line">        &quot;fail_reply_body&quot;: &quot;Sorry, you need more token in order to use this service.&quot;,</span><br><span class="line">        &quot;no_token_left_body&quot;: &quot;Sorry, out of token, please retry later...&quot;,</span><br><span class="line">        &quot;comment_command&quot;: &quot;!TOKEN&quot;,</span><br><span class="line">        &quot;user_can_specify_amount&quot;: false,</span><br><span class="line">        &quot;maximum_amount&quot;: 1,</span><br><span class="line">        &quot;min_staked_token&quot;: 10,</span><br><span class="line">        &quot;usage_upvote_percentage&quot;: 0</span><br><span class="line">        }],</span><br><span class="line">        &quot;no_broadcast&quot;: false,</span><br><span class="line">        &quot;print_log_at_block&quot;: 300,</span><br><span class="line">        &quot;wallet_password&quot;: &quot;walletpass&quot;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Each comment is parsed and all specified commands are checked in a fore loop:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">token = None</span><br><span class="line">for key in self.token_config:</span><br><span class="line">    if op[&quot;body&quot;].find(self.token_config[key][&quot;comment_command&quot;]) &gt;= 0:</span><br><span class="line">        token = key</span><br><span class="line">if token is None:</span><br><span class="line">    continue</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>When a fitting config was found, a reply comment is broadcasted and the token are sent, when the user has sufficient (<code>min_staked_token</code>) tokens.</p>
+<p>There are more options available that can modify the behavior of the bot.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Option</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">scot_account</td>
+<td>steem account name, which should distribute the token</td>
+</tr>
+<tr>
+<td style="text-align:center">scot_token</td>
+<td>token symbol, which should be distributed</td>
+</tr>
+<tr>
+<td style="text-align:center">token_memo</td>
+<td>memo which is attached to each token transfer</td>
+</tr>
+<tr>
+<td style="text-align:center">reply</td>
+<td>when true, a reply comment is broadcasted</td>
+</tr>
+<tr>
+<td style="text-align:center">wallet_password</td>
+<td>Contains the beempy wallet password</td>
+</tr>
+<tr>
+<td style="text-align:center">no_broadcast</td>
+<td>When true, no transfer is made</td>
+</tr>
+<tr>
+<td style="text-align:center">min_staked_token</td>
+<td>Minimum amount of token a comment writer must have</td>
+</tr>
+<tr>
+<td style="text-align:center">maximum_amount</td>
+<td>Maximum Amount of token that will be send</td>
+</tr>
+<tr>
+<td style="text-align:center">user_can_specify_amount</td>
+<td>When true, the user can specify the amount to send up to maximum_amount, when false maximum_amount is always sent</td>
+</tr>
+<tr>
+<td style="text-align:center">sucess_reply_body</td>
+<td>Reply body, when token are send</td>
+</tr>
+<tr>
+<td style="text-align:center">fail_reply_body</td>
+<td>Reply body, when no token are sent (not min_staked_token available)</td>
+</tr>
+<tr>
+<td style="text-align:center">no_token_left_body</td>
+<td>Reply body, when no token are left to send</td>
+</tr>
+<tr>
+<td style="text-align:center">comment_command</td>
+<td>Command which must be included in a comment, to activate the bot</td>
+</tr>
+<tr>
+<td style="text-align:center">usage_upvote_percentage</td>
+<td>When set to a percentage higher than 0, the comment with the command will be upvoted by the scot_account</td>
+</tr>
+</tbody>
+</table>
+<h4 id="maximum-amount-and-user-can-specify-amount"><a href="#maximum-amount-and-user-can-specify-amount" class="headerlink" title="maximum_amount and user_can_specify_amount"></a><code>maximum_amount</code> and <code>user_can_specify_amount</code></h4><p>It is now possible to allow user who staked sufficient tokens specify the amount of token the parent author should receive.</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmZa1Lj1aAdriDre83hEPhhWAMu2cD6krL8cd8Y9FR5KhZ" alt="image.png"></p>
+<p>Here, <code>maximum_amount</code> is set to 100 and <code>user_can_specify_amount</code> was set to true.</p>
+<p>The amount is parsed be the following code:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># parse amount when user_can_specify_amount is true</span><br><span class="line">amount = self.token_config[token][&quot;maximum_amount&quot;]</span><br><span class="line">if self.token_config[token][&quot;user_can_specify_amount&quot;]:</span><br><span class="line">    start_index = c_comment[&quot;body&quot;].find(self.token_config[token][&quot;comment_command&quot;])</span><br><span class="line">    stop_index = c_comment[&quot;body&quot;][start_index:].find(&quot;\n&quot;)</span><br><span class="line">    if stop_index &gt;= 0:</span><br><span class="line">        command = c_comment[&quot;body&quot;][start_index + 1:start_index + stop_index]</span><br><span class="line">    else:</span><br><span class="line">        command = c_comment[&quot;body&quot;][start_index + 1:]</span><br><span class="line">    command_args = command.replace(&apos;  &apos;, &apos; &apos;).split(&quot; &quot;)[1:]          </span><br><span class="line">    if len(command_args) &gt; 0:</span><br><span class="line">        try:</span><br><span class="line">            amount = float(command_args[0])</span><br><span class="line">        except:</span><br><span class="line">            logger.info(&quot;Could not parse amount&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="There-is-a-new-message-when-the-token-supply-from-the-token-sending-account-is-empty"><a href="#There-is-a-new-message-when-the-token-supply-from-the-token-sending-account-is-empty" class="headerlink" title="There is a new message when the token supply from the token sending account is empty"></a>There is a new message when the token supply from the token sending account is empty</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Load scot token balance</span><br><span class="line">scot_wallet = Wallet(self.token_config[token][&quot;scot_account&quot;], steem_instance=self.stm)</span><br><span class="line">scot_token = scot_wallet.get_token(self.token_config[token][&quot;scot_token&quot;])</span><br><span class="line">.....</span><br><span class="line">elif float(scot_token[&quot;balance&quot;]) &lt; amount:</span><br><span class="line">    reply_body = self.token_config[token][&quot;no_token_left_body&quot;]</span><br></pre></td></tr></tbody></table></figure>
+<p>When not sufficient tokens are left, a reply with <code>no_token_left_body</code> is broadcasted.</p>
+<h3 id="The-config-file-the-scot-account-and-the-scot-token-is-checked"><a href="#The-config-file-the-scot-account-and-the-scot-token-is-checked" class="headerlink" title="The config file, the scot_account and the scot_token is checked"></a>The config file, the scot_account and the scot_token is checked</h3><p>The config file is now checked for missing parameters. It is also checked if the scot_account exists and if the token is valid:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">config_cnt = 0</span><br><span class="line">necessary_fields = [&quot;scot_account&quot;, &quot;scot_token&quot;, &quot;min_staked_token&quot;, &quot;comment_command&quot;,</span><br><span class="line">                    &quot;token_memo&quot;, &quot;reply&quot;, &quot;sucess_reply_body&quot;, &quot;fail_reply_body&quot;, &quot;no_token_left_body&quot;,</span><br><span class="line">                    &quot;user_can_specify_amount&quot;, &quot;maximum_amount&quot;, &quot;usage_upvote_percentage&quot;]</span><br><span class="line">for conf in self.config[&quot;config&quot;]:</span><br><span class="line">    config_cnt += 1</span><br><span class="line">    # check if all fields are set</span><br><span class="line">    all_fields_ok = True</span><br><span class="line">    for field in necessary_fields:</span><br><span class="line">        if field not in conf:</span><br><span class="line">            logger.warn(&quot;Error in %d. config: %s missing&quot; % (config_cnt, field))</span><br><span class="line">            all_fields_ok = False</span><br><span class="line">    if not all_fields_ok:</span><br><span class="line">        continue</span><br><span class="line">    # Check if scot_account exists (exception will be raised when not)</span><br><span class="line">    Account(conf[&quot;scot_account&quot;])</span><br><span class="line">    # Check if scot_token exists</span><br><span class="line">    if token_list.get_token(conf[&quot;scot_token&quot;]) is None:</span><br><span class="line">        logger.warn(&quot;Token %s does not exists&quot; % conf[&quot;scot_token&quot;])</span><br><span class="line">        continue</span><br><span class="line">    self.token_config[conf[&quot;scot_token&quot;]] = conf</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Improved-logging"><a href="#Improved-logging" class="headerlink" title="Improved logging"></a>Improved logging</h3><p>It can now be specified how often a logging message is printed by the <code>print_log_at_block</code> parameter. Every <code>print_log_at_block</code> block the following message will now be printed:<br><img src="https://ipfs.busy.org/ipfs/QmaX7J2eTXHZoRpnvVyZNF6SjmuqAfu2TDZwuXh8NazAg6" alt="image.png"></p>
+<p>The block number of the last log message is stored in a dict:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">self.log_data = {&quot;start_time&quot;: 0, &quot;last_block_num&quot;: None, &quot;new_commands&quot;: 0, &quot;stop_block_num&quot;: 0,</span><br><span class="line">                 &quot;stop_block_num&quot;: 0, &quot;time_for_blocks&quot;: 0}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>This allows it to print exactly after the same amount of blocks a new log message.</p>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="adapt-readme-to-chagnes"><a href="#adapt-readme-to-chagnes" class="headerlink" title="adapt readme to chagnes"></a>adapt readme to chagnes</h3><ul>
+<li><a href="https://github.com/holgern/steem-scot/commit/83c4a40a48a9b15897052a9496600158bcbb3c4f" target="_blank" rel="noopener">commit 83c4a40</a><h3 id="add-better-logging-it-is-possible-to-define-the-block-diff-at-which-a-new-logging-messaage-should-be-send"><a href="#add-better-logging-it-is-possible-to-define-the-block-diff-at-which-a-new-logging-messaage-should-be-send" class="headerlink" title="add better logging, it is possible to define the block diff at which a new logging messaage should be send"></a>add better logging, it is possible to define the block diff at which a new logging messaage should be send</h3></li>
+<li><a href="https://github.com/holgern/steem-scot/commit/95fd97d08b141f2ffd129903ee58c9f5814cd7ea" target="_blank" rel="noopener">commit 95fd97</a><h3 id="check-configs-and-check-if-token-and-token-sender-account-exists"><a href="#check-configs-and-check-if-token-and-token-sender-account-exists" class="headerlink" title="check configs and check if token and token_sender account exists"></a>check configs and check if token and token_sender account exists</h3></li>
+<li><a href="https://github.com/holgern/steem-scot/commit/8b9d07cf5677fc14c849e6820036d65498e2b6f8" target="_blank" rel="noopener">commit 8b9d07c</a></li>
+<li><ul>
+<li>add option to upvote token command user<h3 id="It-is-possible-to-user-more-than-one-account-and-more-than-one-token-in-scot-by-comment"><a href="#It-is-possible-to-user-more-than-one-account-and-more-than-one-token-in-scot-by-comment" class="headerlink" title="It is possible to user more than one account and more than one token in scot_by_comment"></a>It is possible to user more than one account and more than one token in scot_by_comment</h3></li>
+</ul>
+</li>
+<li><a href="https://github.com/holgern/steem-scot/commit/e65564bb09a97f5e98102a09af027c51f2e0dd08" target="_blank" rel="noopener">commit e65564b</a></li>
+<li>datadir can be specified</li>
+<li>token amount to sent can be specified</li>
+<li>new message when no token are left</li>
+</ul>
+<h2 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steem-scot-improved-token-distribution-by-comment-commands" target="_blank" rel="noopener">&#x2018;steem-scot - improved token distribution by comment commands&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/scot/">scot</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-engine/">steem-engine</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/i-m-rewriting-the-amount-class-in-beem-for-using-fixed-point-arithmetic/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">I&#39;m rewriting  the amount class in beem for using fixed-point arithmetic</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemrewarding-com-tables-improved-links-and-sortable-and-more-options-for-trail-vote-rules/">
+                <span class="level-item">steemrewarding.com - tables improved (links and sortable) and more options for trail vote rules</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

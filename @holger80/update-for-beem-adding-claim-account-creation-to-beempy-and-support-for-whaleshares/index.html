@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>update for beem - adding claim account creation to beempy and support for whaleshares - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">1.2</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#claim-account-and-create-claim-account-added-to-beempy">
+        <span class="has-mr-6">1.2.1</span>
+        <span>claim account and create claim account added to beempy</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#create-a-claimed-account">
+        <span class="has-mr-6">1.3</span>
+        <span>create a claimed account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Whaleshares-is-supported">
+        <span class="has-mr-6">1.4</span>
+        <span>Whaleshares is supported</span>
+        </a></li><li>
+        <a class="is-flex" href="#Better-testnet-and-3rd-party-chain-support">
+        <span class="has-mr-6">1.5</span>
+        <span>Better testnet and 3rd party chain support</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Commit-history">
+        <span class="has-mr-6">2</span>
+        <span>Commit history</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#All-constant-STEEM-and-SBD-strings-inside-beempy-are-replaced-by-steem-steem-symbol-steem-sbd-symbol-properties">
+        <span class="has-mr-6">2.1</span>
+        <span>All constant STEEM and SBD strings inside beempy are replaced by steem.steem_symbol steem.sbd_symbol properties</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-prefix-parameter-for-signedtransaction-init-function-and-improve-steem-refresh-data">
+        <span class="has-mr-6">2.2</span>
+        <span>Fix prefix parameter for signedtransaction init function and improve steem.refresh_data()</span>
+        </a></li><li>
+        <a class="is-flex" href="#Small-improvements">
+        <span class="has-mr-6">2.3</span>
+        <span>Small improvements</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-create-claimed-account-to-beempy-and-add-correct-operationids-for-WLS">
+        <span class="has-mr-6">2.4</span>
+        <span>Add create_claimed_account to beempy and add correct operationids for WLS</span>
+        </a></li><li>
+        <a class="is-flex" href="#Add-claimaccount-to-beempy-and-some-improvements-for-steem-sbd-symbol">
+        <span class="has-mr-6">2.5</span>
+        <span>Add claimaccount to beempy and some improvements for steem.sbd_symbol</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-typo-and-improved-handling-of-symbols-in-comment">
+        <span class="has-mr-6">2.6</span>
+        <span>Fix typo and improved handling of symbols in comment</span>
+        </a></li><li>
+        <a class="is-flex" href="#WLS-prefix-fixed-and-next-version-prepared">
+        <span class="has-mr-6">2.7</span>
+        <span>WLS prefix fixed and next version prepared</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-unit-tests-and-skip-not-working-tests-on-testnet">
+        <span class="has-mr-6">2.8</span>
+        <span>Fix unit tests and skip not working tests on testnet</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-timestamp">
+        <span class="has-mr-6">2.9</span>
+        <span>Fix timestamp</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-get-effective-vesting-shares-for-python-2-7">
+        <span class="has-mr-6">2.10</span>
+        <span>Fix get_effective_vesting_shares for python 2.7</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-unit-tests">
+        <span class="has-mr-6">2.11</span>
+        <span>Fix unit tests</span>
+        </a></li><li>
+        <a class="is-flex" href="#Several-improvements-and-fixes">
+        <span class="has-mr-6">2.12</span>
+        <span>Several improvements and fixes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">2.12.1</span>
+        <span>Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Graphenerpc">
+        <span class="has-mr-6">2.12.2</span>
+        <span>Graphenerpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem">
+        <span class="has-mr-6">2.12.3</span>
+        <span>Steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Comment">
+        <span class="has-mr-6">2.12.4</span>
+        <span>Comment</span>
+        </a></li><li>
+        <a class="is-flex" href="#chain">
+        <span class="has-mr-6">2.12.5</span>
+        <span>chain</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-test">
+        <span class="has-mr-6">2.12.6</span>
+        <span>Unit test</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Fix-unit-test-for-python2-7">
+        <span class="has-mr-6">2.13</span>
+        <span>Fix unit test for python2.7</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-unit-tests-for-new-amount-dict-format-in-test-transactions">
+        <span class="has-mr-6">2.14</span>
+        <span>Fix unit tests for new amount dict format in test_transactions</span>
+        </a></li><li>
+        <a class="is-flex" href="#Prepare-next-release">
+        <span class="has-mr-6">2.15</span>
+        <span>Prepare next release</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="update for beem - adding claim account creation to beempy and support for whaleshares">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-10-09T22:08:45.000Z">2018-10-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1034 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                update for beem - adding claim account creation to beempy and support for whaleshares
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">https://github.com/holgern/beem</a></p><center><br><img src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="beem-logo.png"><br></center><br><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 502 unit tests and a coverage of 72 %. The current version is 0.20.7.<br>I created a discord channel for answering a question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a><p></p>
+<p>The newest beem version can be installed by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>or when  using conda:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>beem can be updated by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h3><h4 id="claim-account-and-create-claim-account-added-to-beempy"><a href="#claim-account-and-create-claim-account-added-to-beempy" class="headerlink" title="claim account and create claim account added to beempy"></a>claim account and create claim account added to beempy</h4><p>A new command for claim accounts was added to beempy:<br><code>beempy claimaccount &lt;creator&gt;</code><br>where <code>&lt;creator&gt;</code> is the account name which pays for the account claiming with RC.<br><img src="https://ipfs.busy.org/ipfs/Qmf63BVoc1Nnicg5k5PQLQbwokyPqTyMNNKrCbiXFUVbb9" alt="image.png"></p>
+<p>When <code>--fee</code> is set to <code>--fee 3</code>, the account creation fee is paid with STEEM instead of being changed with RCs. The parameter <code>--number</code> or <code>-n</code> can be set to claim more than 1 account.</p>
+<h3 id="create-a-claimed-account"><a href="#create-a-claimed-account" class="headerlink" title="create a claimed account"></a>create a claimed account</h3><p><code>beempy newaccount -a &lt;creator&gt; &lt;newaccountname&gt;</code> was adapted to HF20.  When <code>--create-claimed-account&apos;</code> is set, a subsidized account with name <code>&lt;newaccountname&gt;</code> is created:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy newaccount -a &lt;creator&gt; --create-claimed-account &lt;newaccountname&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>creates a<br><img src="https://ipfs.busy.org/ipfs/QmY2taFsXU8q53Jo6kKYKMAbmgH7Tccd4bCY2iG1yVjQVz" alt="image.png"></p>
+<h3 id="Whaleshares-is-supported"><a href="#Whaleshares-is-supported" class="headerlink" title="Whaleshares is supported"></a>Whaleshares is supported</h3><p>Different steem blockchain with a different number of operations are supportet now. At the moment, only the operationids for the steem chain and for the whaleshares chain are stored in <code>beembase/operattionsids.py</code>. As the network prefix is now set in the init function of <code>Signed_transaction</code> and <code>Operation</code>, the correct operation-ids table can be loaded. A wrong operation id prevents an operation from being successfully broadcasted.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node = [&quot;wss://whaleshares.io/ws&quot;, &quot;https://rpc.wls.services/&quot;]</span><br><span class="line">wls = Steem(node=node)</span><br></pre></td></tr></tbody></table></figure>
+<p>beem will always fully support steem, supporting of other steem-based networks is only done when the functionality for interacting with steem is not disturbed. Supporting other networks will help to prevent that several beem forks are being created and will help that beem itself is further developed and improved.</p>
+<h3 id="Better-testnet-and-3rd-party-chain-support"><a href="#Better-testnet-and-3rd-party-chain-support" class="headerlink" title="Better testnet and 3rd party chain support"></a>Better testnet and 3rd party chain support</h3><p>All &#x201C;STEEM&#x201D;, &#x201C;SBD&#x201D; and &#x201C;VESTS&#x201D; strings are replaced by <code>steem.steem_symbol</code>, <code>steem.sbd_symbol</code> and <code>steem.vests_symbol</code> properties which adapt to the connected network thanks to @crokkon (<a href="https://steemit.com/utopian-io/@crokkon/improved-testnet-3rd-party-chain-support-in-beem-1539031672421" target="_blank" rel="noopener">utopian-io post</a>). </p>
+<p>I replaced also all fixed &#x201C;STEEM&#x201D;, &#x201C;SBD&#x201D; and &#x201C;VESTS&#x201D; strings in beempy. For networks which do not have a SBD currency as Whaleshares, the sbd_symbol is replaced by the steem_symbol:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@property</span><br><span class="line">def sbd_symbol(self):</span><br><span class="line">    &quot;&quot;&quot; get the current chains symbol for SBD (e.g. &quot;TBD&quot; on testnet) &quot;&quot;&quot;</span><br><span class="line">    # some networks (e.g. whaleshares) do not have SBD</span><br><span class="line">    try:</span><br><span class="line">        symbol = self._get_asset_symbol(0)</span><br><span class="line">    except KeyError:</span><br><span class="line">        symbol = self._get_asset_symbol(1)</span><br><span class="line">    return symbol</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Balances in the account class depend now on the number of available symbols:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">acc2.balances</span><br><span class="line">{&apos;available&apos;: [0.000 STEEM, 0.098 SBD, 10152.045284 VESTS],</span><br><span class="line"> &apos;rewards&apos;: [0.000 STEEM, 0.000 SBD, 0.000000 VESTS],</span><br><span class="line"> &apos;savings&apos;: [0.000 STEEM, 0.000 SBD],</span><br><span class="line"> &apos;total&apos;: [0.000 STEEM, 0.098 SBD, 10152.045284 VESTS]}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>becomes<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">acc.balances</span><br><span class="line">{&apos;available&apos;: [0.000 WLS, 0.009999 VESTS],</span><br><span class="line"> &apos;rewards&apos;: [0.000 WLS, 0.000000 VESTS],</span><br><span class="line"> &apos;savings&apos;: [],</span><br><span class="line"> &apos;total&apos;: [0.000 WLS, 0.009999 VESTS]}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>on whaleshares.io.</p>
+<h2 id="Commit-history"><a href="#Commit-history" class="headerlink" title="Commit history"></a>Commit history</h2><h3 id="All-constant-STEEM-and-SBD-strings-inside-beempy-are-replaced-by-steem-steem-symbol-steem-sbd-symbol-properties"><a href="#All-constant-STEEM-and-SBD-strings-inside-beempy-are-replaced-by-steem-steem-symbol-steem-sbd-symbol-properties" class="headerlink" title="All constant STEEM and SBD strings inside beempy are replaced by steem.steem_symbol steem.sbd_symbol properties"></a>All constant STEEM and SBD strings inside beempy are replaced by steem.steem_symbol steem.sbd_symbol properties</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/f2e47ecc4668d0fea754e6ec5b493fd640b8ed88" target="_blank" rel="noopener">commit f2e47ec</a><h3 id="Fix-prefix-parameter-for-signedtransaction-init-function-and-improve-steem-refresh-data"><a href="#Fix-prefix-parameter-for-signedtransaction-init-function-and-improve-steem-refresh-data" class="headerlink" title="Fix prefix parameter for signedtransaction init function and improve steem.refresh_data()"></a>Fix prefix parameter for signedtransaction init function and improve steem.refresh_data()</h3></li>
+<li><a href="https://github.com/holgern/beem/commit/f829f362a0a0923aa753c8b60fc1c19fac52f393" target="_blank" rel="noopener">commit f829f36</a></li>
+<li>Fix test_block unittest</li>
+<li>Adapt Changelog for next release</li>
+</ul>
+<h3 id="Small-improvements"><a href="#Small-improvements" class="headerlink" title="Small improvements"></a>Small improvements</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/be1452e1537bd611a35cddaf07bd926f6e2a9d7c" target="_blank" rel="noopener">commit be1452e</a></li>
+</ul>
+<h3 id="Add-create-claimed-account-to-beempy-and-add-correct-operationids-for-WLS"><a href="#Add-create-claimed-account-to-beempy-and-add-correct-operationids-for-WLS" class="headerlink" title="Add create_claimed_account to beempy and add correct operationids for WLS"></a>Add create_claimed_account to beempy and add correct operationids for WLS</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/1a2e229c4421abda8ca8c4d1f43d97ad7ec6a2f5" target="_blank" rel="noopener">commit 1a2e229</a></li>
+</ul>
+<h3 id="Add-claimaccount-to-beempy-and-some-improvements-for-steem-sbd-symbol"><a href="#Add-claimaccount-to-beempy-and-some-improvements-for-steem-sbd-symbol" class="headerlink" title="Add claimaccount to beempy and some improvements for steem.sbd_symbol"></a>Add claimaccount to beempy and some improvements for steem.sbd_symbol</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/b51f84d82eb2afe7fc6cb8a3ee2f53b8f0ccf802" target="_blank" rel="noopener">commit b51f84d</a></li>
+</ul>
+<h3 id="Fix-typo-and-improved-handling-of-symbols-in-comment"><a href="#Fix-typo-and-improved-handling-of-symbols-in-comment" class="headerlink" title="Fix typo and improved handling of symbols in comment"></a>Fix typo and improved handling of symbols in comment</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/d0abdfcc51e66f2ca7e369f6c81a7ecaec98961a" target="_blank" rel="noopener">commit d0abdfc</a></li>
+</ul>
+<h3 id="WLS-prefix-fixed-and-next-version-prepared"><a href="#WLS-prefix-fixed-and-next-version-prepared" class="headerlink" title="WLS prefix fixed and next version prepared"></a>WLS prefix fixed and next version prepared</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/d23629bc92960ce0a7eabbfe66c545d89ea1138a" target="_blank" rel="noopener">commit d23629b</a></li>
+</ul>
+<h3 id="Fix-unit-tests-and-skip-not-working-tests-on-testnet"><a href="#Fix-unit-tests-and-skip-not-working-tests-on-testnet" class="headerlink" title="Fix unit tests and skip not working tests on testnet"></a>Fix unit tests and skip not working tests on testnet</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/3e5965aa8a22ccca92b6a20ba6abe1cd8847d013" target="_blank" rel="noopener">commit 3e5965a</a></li>
+</ul>
+<h3 id="Fix-timestamp"><a href="#Fix-timestamp" class="headerlink" title="Fix timestamp"></a>Fix timestamp</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/de9c67e5bfd2cc37a745004088ea1d891de6a44c" target="_blank" rel="noopener">commit de9c67e</a></li>
+</ul>
+<h3 id="Fix-get-effective-vesting-shares-for-python-2-7"><a href="#Fix-get-effective-vesting-shares-for-python-2-7" class="headerlink" title="Fix get_effective_vesting_shares for python 2.7"></a>Fix get_effective_vesting_shares for python 2.7</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/4fbdab12d9cfb3981c7a80d671e06b56d0b1c0c5" target="_blank" rel="noopener">commit 4fbdab1</a></li>
+</ul>
+<h3 id="Fix-unit-tests"><a href="#Fix-unit-tests" class="headerlink" title="Fix unit tests"></a>Fix unit tests</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/9c42b2c83aa6aa91a62508fc1f565b858f7218f1" target="_blank" rel="noopener">commit 9c42b2c</a></li>
+</ul>
+<h3 id="Several-improvements-and-fixes"><a href="#Several-improvements-and-fixes" class="headerlink" title="Several improvements and fixes"></a>Several improvements and fixes</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/362eea7e3cd5e935c24927a6a9bdeef76fdaad6e" target="_blank" rel="noopener">commit 362eea7</a><h4 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h4></li>
+<li>some code improvements<h4 id="Graphenerpc"><a href="#Graphenerpc" class="headerlink" title="Graphenerpc"></a>Graphenerpc</h4></li>
+<li>small improvement in chain detection<h4 id="Steem"><a href="#Steem" class="headerlink" title="Steem"></a>Steem</h4></li>
+<li>replace_steemit_by_steem option removed from get_config</li>
+<li>witness_update fixed<h4 id="Comment"><a href="#Comment" class="headerlink" title="Comment"></a>Comment</h4></li>
+<li>Fix docu<h4 id="chain"><a href="#chain" class="headerlink" title="chain"></a>chain</h4></li>
+<li>Waleshares added<h4 id="Unit-test"><a href="#Unit-test" class="headerlink" title="Unit test"></a>Unit test</h4></li>
+<li>unit tests fixed</li>
+</ul>
+<h3 id="Fix-unit-test-for-python2-7"><a href="#Fix-unit-test-for-python2-7" class="headerlink" title="Fix unit test for python2.7"></a>Fix unit test for python2.7</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/82e438f6a64cb4b51cb6f3014824a794d92f4304" target="_blank" rel="noopener">commit 82e438f</a></li>
+</ul>
+<h3 id="Fix-unit-tests-for-new-amount-dict-format-in-test-transactions"><a href="#Fix-unit-tests-for-new-amount-dict-format-in-test-transactions" class="headerlink" title="Fix unit tests for new amount dict format in test_transactions"></a>Fix unit tests for new amount dict format in test_transactions</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/bfb125410cf7fb104d744b1b04c7452676df3a2e" target="_blank" rel="noopener">commit bfb1254</a></li>
+</ul>
+<h3 id="Prepare-next-release"><a href="#Prepare-next-release" class="headerlink" title="Prepare next release"></a>Prepare next release</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/433451f1706d4460acf890620f53c72f336a25a1" target="_blank" rel="noopener">commit 433451f</a></li>
+<li>add claim_account RC calculation</li>
+<li>fix Bytes type</li>
+<li>Improve testnet example</li>
+<li>test_types improved</li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-adding-claim-account-creation-to-beempy-and-support-for-whaleshares" target="_blank" rel="noopener">&#x2018;update for beem - adding claim account creation to beempy and support for whaleshares&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/get-a-list-of-the-most-played-deck-of-the-running-steemmonsters-test-tournament/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Get a list of the most played deck of the running steemmonsters test tournament</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/receive-desktop-notifications-for-every-played-steem-monsters-match/">
+                <span class="level-item">Receive desktop notifications for every played steem monsters match</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

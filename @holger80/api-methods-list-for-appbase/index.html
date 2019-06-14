@@ -1,0 +1,1646 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>API methods list for AppBase - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Assets">
+        <span class="has-mr-6">1</span>
+        <span>Assets</span>
+        </a></li><li>
+        <a class="is-flex" href="#Possible-values-for-the-&#x2018;order&#x2019;-argument-in-the-database-api">
+        <span class="has-mr-6">2</span>
+        <span>Possible values for the &#x2018;order&#x2019; argument in the database_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#account-by-key-api">
+        <span class="has-mr-6">3</span>
+        <span>account_by_key_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#account-history-api">
+        <span class="has-mr-6">4</span>
+        <span>account_history_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#account-history-api-get-transaction">
+        <span class="has-mr-6">4.1</span>
+        <span>account_history_api.get_transaction</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#block-api">
+        <span class="has-mr-6">5</span>
+        <span>block_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api">
+        <span class="has-mr-6">6</span>
+        <span>database_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#database-api-find-withdraw-vesting-routes">
+        <span class="has-mr-6">6.1</span>
+        <span>database_api.find_withdraw_vesting_routes</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#database-api-1">
+        <span class="has-mr-6">7</span>
+        <span>database_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#database-api-get-dynamic-global-properties">
+        <span class="has-mr-6">7.1</span>
+        <span>database_api.get_dynamic_global_properties</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-get-feed-history">
+        <span class="has-mr-6">7.2</span>
+        <span>database_api.get_feed_history</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-get-hardfork-properties">
+        <span class="has-mr-6">7.3</span>
+        <span>database_api.get_hardfork_properties</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#database-api-2">
+        <span class="has-mr-6">8</span>
+        <span>database_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#database-api-get-witness-schedule">
+        <span class="has-mr-6">8.1</span>
+        <span>database_api.get_witness_schedule</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-account-recovery-requests">
+        <span class="has-mr-6">8.2</span>
+        <span>database_api.list_account_recovery_requests</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-accounts">
+        <span class="has-mr-6">8.3</span>
+        <span>database_api.list_accounts</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-change-recovery-account-requests">
+        <span class="has-mr-6">8.4</span>
+        <span>database_api.list_change_recovery_account_requests</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-comments">
+        <span class="has-mr-6">8.5</span>
+        <span>database_api.list_comments</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-decline-voting-rights-requests">
+        <span class="has-mr-6">8.6</span>
+        <span>database_api.list_decline_voting_rights_requests</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-escrows">
+        <span class="has-mr-6">8.7</span>
+        <span>database_api.list_escrows</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-limit-orders">
+        <span class="has-mr-6">8.8</span>
+        <span>database_api.list_limit_orders</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-owner-histories">
+        <span class="has-mr-6">8.9</span>
+        <span>database_api.list_owner_histories</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-savings-withdrawals">
+        <span class="has-mr-6">8.10</span>
+        <span>database_api.list_savings_withdrawals</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-sbd-conversion-requests">
+        <span class="has-mr-6">8.11</span>
+        <span>database_api.list_sbd_conversion_requests</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-vesting-delegation-expirations">
+        <span class="has-mr-6">8.12</span>
+        <span>database_api.list_vesting_delegation_expirations</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-vesting-delegations">
+        <span class="has-mr-6">8.13</span>
+        <span>database_api.list_vesting_delegations</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-votes">
+        <span class="has-mr-6">8.14</span>
+        <span>database_api.list_votes</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-withdraw-vesting-routes">
+        <span class="has-mr-6">8.15</span>
+        <span>database_api.list_withdraw_vesting_routes</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-witness-votes">
+        <span class="has-mr-6">8.16</span>
+        <span>database_api.list_witness_votes</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-list-witnesses">
+        <span class="has-mr-6">8.17</span>
+        <span>database_api.list_witnesses</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-verify-account-authority">
+        <span class="has-mr-6">8.18</span>
+        <span>database_api.verify_account_authority</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-verify-authority">
+        <span class="has-mr-6">8.19</span>
+        <span>database_api.verify_authority</span>
+        </a></li><li>
+        <a class="is-flex" href="#database-api-verify-signatures">
+        <span class="has-mr-6">8.20</span>
+        <span>database_api.verify_signatures</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#follow-api">
+        <span class="has-mr-6">9</span>
+        <span>follow_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#jsonrpc">
+        <span class="has-mr-6">10</span>
+        <span>jsonrpc</span>
+        </a></li><li>
+        <a class="is-flex" href="#market-history-api">
+        <span class="has-mr-6">11</span>
+        <span>market_history_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#market-history-api-get-ticker">
+        <span class="has-mr-6">11.1</span>
+        <span>market_history_api.get_ticker</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#market-history-api-1">
+        <span class="has-mr-6">12</span>
+        <span>market_history_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#network-broadcast-api">
+        <span class="has-mr-6">13</span>
+        <span>network_broadcast_api</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#network-broadcast-api-broadcast-block">
+        <span class="has-mr-6">13.1</span>
+        <span>network_broadcast_api.broadcast_block</span>
+        </a></li><li>
+        <a class="is-flex" href="#network-broadcast-api-broadcast-transaction">
+        <span class="has-mr-6">13.2</span>
+        <span>network_broadcast_api.broadcast_transaction</span>
+        </a></li><li>
+        <a class="is-flex" href="#network-broadcast-api-broadcast-transaction-synchronous">
+        <span class="has-mr-6">13.3</span>
+        <span>network_broadcast_api.broadcast_transaction_synchronous</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#tags-api">
+        <span class="has-mr-6">14</span>
+        <span>tags_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#tags-api-get-discussion">
+        <span class="has-mr-6">15</span>
+        <span>tags_api.get_discussion</span>
+        </a></li><li>
+        <a class="is-flex" href="#tags-api-1">
+        <span class="has-mr-6">16</span>
+        <span>tags_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#tags-api-get-discussions-by-author-before-date">
+        <span class="has-mr-6">17</span>
+        <span>tags_api.get_discussions_by_author_before_date</span>
+        </a></li><li>
+        <a class="is-flex" href="#tags-api-2">
+        <span class="has-mr-6">18</span>
+        <span>tags_api</span>
+        </a></li><li>
+        <a class="is-flex" href="#witness-api">
+        <span class="has-mr-6">19</span>
+        <span>witness_api</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmUxXY5fsWaN5RPFya8q8uzyXVdiQZ2kMwzp8ayvhJZ2CW/image.png" alt="API methods list for AppBase">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-03-06T21:15:00.000Z">2018-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/appbase/">appbase</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1730 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                API methods list for AppBase
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://steemitimages.com/DQmUxXY5fsWaN5RPFya8q8uzyXVdiQZ2kMwzp8ayvhJZ2CW/image.png" alt=""><br><a href="https://pixabay.com/de/verkehr-autobahn-beleuchtung-nacht-332857/" target="_blank" rel="noopener">source</a></center>
+
+<p>As you might know, testing of AppBase has started on a large scale. The node  <code>https://api.steemitstage.com</code> runs version <code>v0.19.4</code> and is ready for testing. You can read more in this post <a href="https://steemit.com/steem/@steemitdev/appbase-the-next-step-forward-for-the-steem-blockchain-let-the-testing-begin" target="_blank" rel="noopener">AppBase: The next step forward for the Steem blockchain (let the testing begin)</a>. There is backward compatibility api which is called  <code>condenser_api</code>. Using this api you can use all old api calls. In the following, I show you a complete list of the new API calls (the list is generated with <code>jsonrpc.get_methods</code> and <code>jsonrpc.get_signature</code>).</p>
+<h2 id="Assets"><a href="#Assets" class="headerlink" title="Assets"></a>Assets</h2><table>
+<thead>
+<tr>
+<th>asset</th>
+<th>precision</th>
+<th>symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x201C;@@000000013&#x201D;</td>
+<td>3</td>
+<td>&#x201C;SBD&#x201D;</td>
+</tr>
+<tr>
+<td>&#x201C;@@000000021&#x201D;</td>
+<td>3</td>
+<td>&#x201C;STEEM&#x201D;</td>
+</tr>
+<tr>
+<td>&#x201C;@@000000037&#x201D;</td>
+<td>6</td>
+<td>&#x201C;VESTS&#x201D;</td>
+</tr>
+</tbody>
+</table>
+<p>Amounts are stored as list, e.g.: [&#x2018;1000&#x2019;, 3, &#x2018;@@000000021&#x2019;]. The float value can be calculated by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int(amount[0]) / (10 ** amount[1])</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Possible-values-for-the-&#x2018;order&#x2019;-argument-in-the-database-api"><a href="#Possible-values-for-the-&#x2018;order&#x2019;-argument-in-the-database-api" class="headerlink" title="Possible values for the &#x2018;order&#x2019; argument in the database_api"></a>Possible values for the &#x2018;order&#x2019; argument in the database_api</h2><p>I wrote all possible &#x2018;order&#x2019; combination in the table.</p>
+<h2 id="account-by-key-api"><a href="#account-by-key-api" class="headerlink" title="account_by_key_api"></a>account_by_key_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_key_reference</td>
+<td>{&#x2018;keys&#x2019;: []}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="account-history-api"><a href="#account-history-api" class="headerlink" title="account_history_api"></a>account_history_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_account_history</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start&#x2019;: &#x2018;18446744073709551615&#x2019;, &#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;history&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_ops_in_block</td>
+<td>{&#x2018;block_num&#x2019;: 0, &#x2018;only_virtual&#x2019;: False}</td>
+<td>{&#x2018;ops&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="account-history-api-get-transaction"><a href="#account-history-api-get-transaction" class="headerlink" title="account_history_api.get_transaction"></a>account_history_api.get_transaction</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;id&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: [], &#x2018;transaction_id&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;, &#x2018;block_num&#x2019;: 0, &#x2018;transaction_num&#x2019;: 0}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="block-api"><a href="#block-api" class="headerlink" title="block_api"></a>block_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_block</td>
+<td>{&#x2018;block_num&#x2019;: 0}</td>
+<td>{}</td>
+</tr>
+<tr>
+<td>get_block_header</td>
+<td>{&#x2018;block_num&#x2019;: 0}</td>
+<td>{}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="database-api"><a href="#database-api" class="headerlink" title="database_api"></a>database_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>find_account_recovery_requests</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_accounts</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_change_recovery_account_requests</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_comments</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_decline_voting_rights_requests</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_escrows</td>
+<td>{&#x2018;from&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;escrows&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_limit_orders</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;orders&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_owner_histories</td>
+<td>{&#x2018;owner&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;owner_auths&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_savings_withdrawals</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;withdrawals&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_sbd_conversion_requests</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_vesting_delegation_expirations</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;delegations&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_vesting_delegations</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;delegations&#x2019;: []}</td>
+</tr>
+<tr>
+<td>find_votes</td>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-find-withdraw-vesting-routes"><a href="#database-api-find-withdraw-vesting-routes" class="headerlink" title="database_api.find_withdraw_vesting_routes"></a>database_api.find_withdraw_vesting_routes</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;order&#x2019;: &#x2018;by_withdraw_route&#x2019;}</td>
+<td>{&#x2018;routes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;order&#x2019;: &#x2018;by_destination&#x2019;}</td>
+<td>{&#x2018;routes&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="database-api-1"><a href="#database-api-1" class="headerlink" title="database_api"></a>database_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>find_witnesses</td>
+<td>{&#x2018;owners&#x2019;: []}</td>
+<td>{&#x2018;witnesses&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_active_witnesses</td>
+<td>{}</td>
+<td>{&#x2018;witnesses&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_config</td>
+<td>{}</td>
+<td>{}</td>
+</tr>
+<tr>
+<td>get_current_price_feed</td>
+<td>{}</td>
+<td>{&#x2018;base&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;quote&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;]}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-get-dynamic-global-properties"><a href="#database-api-get-dynamic-global-properties" class="headerlink" title="database_api.get_dynamic_global_properties"></a>database_api.get_dynamic_global_properties</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{}</td>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;head_block_number&#x2019;: 0, &#x2018;head_block_id&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;, &#x2018;time&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;current_witness&#x2019;: &#x2018;&#x2019;, &#x2018;total_pow&#x2019;: &#x2018;18446744073709551615&#x2019;, &#x2018;num_pow_witnesses&#x2019;: 0, &#x2018;virtual_supply&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;current_supply&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;confidential_supply&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;current_sbd_supply&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000013&#x2019;], &#x2018;confidential_sbd_supply&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000013&#x2019;], &#x2018;total_vesting_fund_steem&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;total_vesting_shares&#x2019;: [&#x2018;0&#x2019;, 6, &#x2018;@@000000037&#x2019;], &#x2018;total_reward_fund_steem&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;total_reward_shares2&#x2019;: &#x2018;0&#x2019;, &#x2018;pending_rewarded_vesting_shares&#x2019;: [&#x2018;0&#x2019;, 6, &#x2018;@@000000037&#x2019;], &#x2018;pending_rewarded_vesting_steem&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;sbd_interest_rate&#x2019;: 0, &#x2018;sbd_print_rate&#x2019;: 10000, &#x2018;maximum_block_size&#x2019;: 0, &#x2018;current_aslot&#x2019;: 0, &#x2018;recent_slots_filled&#x2019;: &#x2018;0&#x2019;, &#x2018;participation_count&#x2019;: 0, &#x2018;last_irreversible_block_num&#x2019;: 0, &#x2018;vote_power_reserve_rate&#x2019;: 40}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-get-feed-history"><a href="#database-api-get-feed-history" class="headerlink" title="database_api.get_feed_history"></a>database_api.get_feed_history</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{}</td>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;current_median_history&#x2019;: {&#x2018;base&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;quote&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;]}, &#x2018;price_history&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-get-hardfork-properties"><a href="#database-api-get-hardfork-properties" class="headerlink" title="database_api.get_hardfork_properties"></a>database_api.get_hardfork_properties</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{}</td>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;processed_hardforks&#x2019;: [], &#x2018;last_hardfork&#x2019;: 0, &#x2018;current_hardfork_version&#x2019;: &#x2018;0.0.0&#x2019;, &#x2018;next_hardfork&#x2019;: &#x2018;0.0.0&#x2019;, &#x2018;next_hardfork_time&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="database-api-2"><a href="#database-api-2" class="headerlink" title="database_api"></a>database_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_order_book</td>
+<td>{&#x2018;limit&#x2019;: 0}</td>
+<td>{&#x2018;asks&#x2019;: [], &#x2018;bids&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_potential_signatures</td>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}}</td>
+<td>{&#x2018;keys&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_required_signatures</td>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}, &#x2018;available_keys&#x2019;: []}</td>
+<td>{&#x2018;keys&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_reward_funds</td>
+<td>{}</td>
+<td>{&#x2018;funds&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_transaction_hex</td>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}}</td>
+<td>{&#x2018;hex&#x2019;: &#x2018;&#x2019;}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-get-witness-schedule"><a href="#database-api-get-witness-schedule" class="headerlink" title="database_api.get_witness_schedule"></a>database_api.get_witness_schedule</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{}</td>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;current_virtual_time&#x2019;: &#x2018;0&#x2019;, &#x2018;next_shuffle_block_num&#x2019;: 0, &#x2018;current_shuffled_witnesses&#x2019;: [], &#x2018;num_scheduled_witnesses&#x2019;: 240, &#x2018;top19_weight&#x2019;: 189, &#x2018;timeshare_weight&#x2019;: 31, &#x2018;miner_weight&#x2019;: 3, &#x2018;witness_pay_normalization_factor&#x2019;: 0, &#x2018;median_props&#x2019;: {&#x2018;account_creation_fee&#x2019;: [&#x2018;1&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;maximum_block_size&#x2019;: 131072, &#x2018;sbd_interest_rate&#x2019;: 1000, &#x2018;account_subsidy_limit&#x2019;: 0}, &#x2018;majority_version&#x2019;: &#x2018;0.0.0&#x2019;, &#x2018;max_voted_witnesses&#x2019;: 240, &#x2018;max_miner_witnesses&#x2019;: 189, &#x2018;max_runner_witnesses&#x2019;: 31, &#x2018;hardfork_required_witnesses&#x2019;: 3}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-account-recovery-requests"><a href="#database-api-list-account-recovery-requests" class="headerlink" title="database_api.list_account_recovery_requests"></a>database_api.list_account_recovery_requests</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_expiration&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-accounts"><a href="#database-api-list-accounts" class="headerlink" title="database_api.list_accounts"></a>database_api.list_accounts</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_name&#x2019;}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_proxy&#x2019;}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_next_vesting_withdrawal&#x2019;}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-change-recovery-account-requests"><a href="#database-api-list-change-recovery-account-requests" class="headerlink" title="database_api.list_change_recovery_account_requests"></a>database_api.list_change_recovery_account_requests</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_effective_date&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-comments"><a href="#database-api-list-comments" class="headerlink" title="database_api.list_comments"></a>database_api.list_comments</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_cashout_time&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_permlink&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_root&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_parent&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_last_update&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_author_last_update&#x2019;}</td>
+<td>{&#x2018;comments&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-decline-voting-rights-requests"><a href="#database-api-list-decline-voting-rights-requests" class="headerlink" title="database_api.list_decline_voting_rights_requests"></a>database_api.list_decline_voting_rights_requests</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_effective_date&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-escrows"><a href="#database-api-list-escrows" class="headerlink" title="database_api.list_escrows"></a>database_api.list_escrows</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_from_id&#x2019;}</td>
+<td>{&#x2018;escrows&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_ratification_deadline&#x2019;}</td>
+<td>{&#x2018;escrows&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-limit-orders"><a href="#database-api-list-limit-orders" class="headerlink" title="database_api.list_limit_orders"></a>database_api.list_limit_orders</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_price&#x2019;}</td>
+<td>{&#x2018;orders&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account&#x2019;}</td>
+<td>{&#x2018;orders&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-owner-histories"><a href="#database-api-list-owner-histories" class="headerlink" title="database_api.list_owner_histories"></a>database_api.list_owner_histories</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0}</td>
+<td>{&#x2018;owner_auths&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-savings-withdrawals"><a href="#database-api-list-savings-withdrawals" class="headerlink" title="database_api.list_savings_withdrawals"></a>database_api.list_savings_withdrawals</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_from_id&#x2019;}</td>
+<td>{&#x2018;withdrawals&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_complete_from_id&#x2019;}</td>
+<td>{&#x2018;withdrawals&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_to_complete&#x2019;}</td>
+<td>{&#x2018;withdrawals&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-sbd-conversion-requests"><a href="#database-api-list-sbd-conversion-requests" class="headerlink" title="database_api.list_sbd_conversion_requests"></a>database_api.list_sbd_conversion_requests</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_conversion_date&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account&#x2019;}</td>
+<td>{&#x2018;requests&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-vesting-delegation-expirations"><a href="#database-api-list-vesting-delegation-expirations" class="headerlink" title="database_api.list_vesting_delegation_expirations"></a>database_api.list_vesting_delegation_expirations</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_expiration&#x2019;}</td>
+<td>{&#x2018;delegations&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account_expiration&#x2019;}</td>
+<td>{&#x2018;delegations&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-vesting-delegations"><a href="#database-api-list-vesting-delegations" class="headerlink" title="database_api.list_vesting_delegations"></a>database_api.list_vesting_delegations</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_delegation&#x2019;}</td>
+<td>{&#x2018;delegations&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-votes"><a href="#database-api-list-votes" class="headerlink" title="database_api.list_votes"></a>database_api.list_votes</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_comment_voter&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_voter_comment&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_voter_last_update&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_comment_weight_voter&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-withdraw-vesting-routes"><a href="#database-api-list-withdraw-vesting-routes" class="headerlink" title="database_api.list_withdraw_vesting_routes"></a>database_api.list_withdraw_vesting_routes</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_withdraw_route&#x2019;}</td>
+<td>{&#x2018;routes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_destination&#x2019;}</td>
+<td>{&#x2018;routes&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-witness-votes"><a href="#database-api-list-witness-votes" class="headerlink" title="database_api.list_witness_votes"></a>database_api.list_witness_votes</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_account_witness&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_witness_account&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-list-witnesses"><a href="#database-api-list-witnesses" class="headerlink" title="database_api.list_witnesses"></a>database_api.list_witnesses</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_name&#x2019;}</td>
+<td>{&#x2018;witnesses&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_vote_name&#x2019;}</td>
+<td>{&#x2018;witnesses&#x2019;: []}</td>
+</tr>
+<tr>
+<td>{&#x2018;start&#x2019;: None, &#x2018;limit&#x2019;: 0, &#x2018;order&#x2019;: &#x2018;by_schedule_time&#x2019;}</td>
+<td>{&#x2018;witnesses&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-verify-account-authority"><a href="#database-api-verify-account-authority" class="headerlink" title="database_api.verify_account_authority"></a>database_api.verify_account_authority</h3><table>
+<thead>
+<tr>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;signers&#x2019;: []}</td>
+<td>{&#x2018;valid&#x2019;: False}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-verify-authority"><a href="#database-api-verify-authority" class="headerlink" title="database_api.verify_authority"></a>database_api.verify_authority</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;valid&#x2019;: False}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="database-api-verify-signatures"><a href="#database-api-verify-signatures" class="headerlink" title="database_api.verify_signatures"></a>database_api.verify_signatures</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;hash&#x2019;: &#x2018;0000000000000000000000000000000000000000000000000000000000000000&#x2019;, &#x2018;signatures&#x2019;: [], &#x2018;required_owner&#x2019;: [], &#x2018;required_active&#x2019;: [], &#x2018;required_posting&#x2019;: [], &#x2018;required_other&#x2019;: []}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;valid&#x2019;: False}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="follow-api"><a href="#follow-api" class="headerlink" title="follow_api"></a>follow_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_account_reputations</td>
+<td>{&#x2018;account_lower_bound&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;reputations&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_blog</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start_entry_id&#x2019;: 0, &#x2018;limit&#x2019;: 500}</td>
+<td>{&#x2018;blog&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_blog_authors</td>
+<td>{&#x2018;blog_account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;blog_authors&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_blog_entries</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start_entry_id&#x2019;: 0, &#x2018;limit&#x2019;: 500}</td>
+<td>{&#x2018;blog&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_feed</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start_entry_id&#x2019;: 0, &#x2018;limit&#x2019;: 500}</td>
+<td>{&#x2018;feed&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_feed_entries</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start_entry_id&#x2019;: 0, &#x2018;limit&#x2019;: 500}</td>
+<td>{&#x2018;feed&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_follow_count</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;follower_count&#x2019;: 0, &#x2018;following_count&#x2019;: 0}</td>
+</tr>
+<tr>
+<td>get_followers</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start&#x2019;: &#x2018;&#x2019;, &#x2018;type&#x2019;: &#x2018;undefined&#x2019;, &#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;followers&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_following</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;start&#x2019;: &#x2018;&#x2019;, &#x2018;type&#x2019;: &#x2018;undefined&#x2019;, &#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;following&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_reblogged_by</td>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;accounts&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jsonrpc"><a href="#jsonrpc" class="headerlink" title="jsonrpc"></a>jsonrpc</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_methods</td>
+<td>{}</td>
+<td>[]</td>
+</tr>
+<tr>
+<td>get_signature</td>
+<td>{&#x2018;method&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;args&#x2019;: None, &#x2018;ret&#x2019;: None}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="market-history-api"><a href="#market-history-api" class="headerlink" title="market_history_api"></a>market_history_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_market_history</td>
+<td>{&#x2018;bucket_seconds&#x2019;: 0, &#x2018;start&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;end&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;}</td>
+<td>{&#x2018;buckets&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_market_history_buckets</td>
+<td>{}</td>
+<td>{&#x2018;bucket_sizes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_order_book</td>
+<td>{&#x2018;limit&#x2019;: 500}</td>
+<td>{&#x2018;bids&#x2019;: [], &#x2018;asks&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_recent_trades</td>
+<td>{&#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;trades&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="market-history-api-get-ticker"><a href="#market-history-api-get-ticker" class="headerlink" title="market_history_api.get_ticker"></a>market_history_api.get_ticker</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;latest&#x2019;: &#x2018;0.00000000000000000&#x2019;, &#x2018;lowest_ask&#x2019;: &#x2018;0.00000000000000000&#x2019;, &#x2018;highest_bid&#x2019;: &#x2018;0.00000000000000000&#x2019;, &#x2018;percent_change&#x2019;: &#x2018;0.00000000000000000&#x2019;, &#x2018;steem_volume&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;sbd_volume&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000013&#x2019;]}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="market-history-api-1"><a href="#market-history-api-1" class="headerlink" title="market_history_api"></a>market_history_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_trade_history</td>
+<td>{&#x2018;start&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;end&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;limit&#x2019;: 1000}</td>
+<td>{&#x2018;trades&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_volume</td>
+<td>{}</td>
+<td>{&#x2018;steem_volume&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;sbd_volume&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000013&#x2019;]}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="network-broadcast-api"><a href="#network-broadcast-api" class="headerlink" title="network_broadcast_api"></a>network_broadcast_api</h2><h3 id="network-broadcast-api-broadcast-block"><a href="#network-broadcast-api-broadcast-block" class="headerlink" title="network_broadcast_api.broadcast_block"></a>network_broadcast_api.broadcast_block</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;block&#x2019;: {&#x2018;previous&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;, &#x2018;timestamp&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;witness&#x2019;: &#x2018;&#x2019;, &#x2018;transaction_merkle_root&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;, &#x2018;extensions&#x2019;: [], &#x2018;witness_signature&#x2019;: &#x2018;000000000000000000000 000000000000000000000000000000 00000000000000000000000000000000 00000000000000000000000000000000000000000000000&#x2019;, &#x2018;transactions&#x2019;: []}}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-broadcast-api-broadcast-transaction"><a href="#network-broadcast-api-broadcast-transaction" class="headerlink" title="network_broadcast_api.broadcast_transaction"></a>network_broadcast_api.broadcast_transaction</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}, &#x2018;max_block_age&#x2019;: -1}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{}</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network-broadcast-api-broadcast-transaction-synchronous"><a href="#network-broadcast-api-broadcast-transaction-synchronous" class="headerlink" title="network_broadcast_api.broadcast_transaction_synchronous"></a>network_broadcast_api.broadcast_transaction_synchronous</h3><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;trx&#x2019;: {&#x2018;ref_block_num&#x2019;: 0, &#x2018;ref_block_prefix&#x2019;: 0, &#x2018;expiration&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;operations&#x2019;: [], &#x2018;extensions&#x2019;: [], &#x2018;signatures&#x2019;: []}, &#x2018;max_block_age&#x2019;: -1}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;id&#x2019;: &#x2018;0000000000000000000000000000000000000000&#x2019;, &#x2018;block_num&#x2019;: 0, &#x2018;trx_num&#x2019;: 0, &#x2018;expired&#x2019;: False}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tags-api"><a href="#tags-api" class="headerlink" title="tags_api"></a>tags_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_active_votes</td>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;votes&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_comment_discussions_by_payout</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_content_replies</td>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tags-api-get-discussion"><a href="#tags-api-get-discussion" class="headerlink" title="tags_api.get_discussion"></a>tags_api.get_discussion</h2><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;permlink&#x2019;: &#x2018;&#x2019;, &#x2018;category&#x2019;: &#x2018;&#x2019;, &#x2018;parent_author&#x2019;: &#x2018;&#x2019;, &#x2018;parent_permlink&#x2019;: &#x2018;&#x2019;, &#x2018;title&#x2019;: &#x2018;&#x2019;, &#x2018;body&#x2019;: &#x2018;&#x2019;, &#x2018;json_metadata&#x2019;: &#x2018;&#x2019;, &#x2018;last_update&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;created&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;active&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;last_payout&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;depth&#x2019;: 0, &#x2018;children&#x2019;: 0, &#x2018;net_rshares&#x2019;: 0, &#x2018;abs_rshares&#x2019;: 0, &#x2018;vote_rshares&#x2019;: 0, &#x2018;children_abs_rshares&#x2019;: 0, &#x2018;cashout_time&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;max_cashout_time&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;total_vote_weight&#x2019;: 0, &#x2018;reward_weight&#x2019;: 0, &#x2018;total_payout_value&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;curator_payout_value&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;author_rewards&#x2019;: 0, &#x2018;net_votes&#x2019;: 0, &#x2018;root_author&#x2019;: &#x2018;&#x2019;, &#x2018;root_permlink&#x2019;: &#x2018;&#x2019;, &#x2018;max_accepted_payout&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;percent_steem_dollars&#x2019;: 0, &#x2018;allow_replies&#x2019;: False, &#x2018;allow_votes&#x2019;: False, &#x2018;allow_curation_rewards&#x2019;: False, &#x2018;beneficiaries&#x2019;: [], &#x2018;url&#x2019;: &#x2018;&#x2019;, &#x2018;root_title&#x2019;: &#x2018;&#x2019;, &#x2018;pending_payout_value&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;total_pending_payout_value&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000021&#x2019;], &#x2018;active_votes&#x2019;: [], &#x2018;replies&#x2019;: [], &#x2018;author_reputation&#x2019;: 0, &#x2018;promoted&#x2019;: [&#x2018;0&#x2019;, 3, &#x2018;@@000000013&#x2019;], &#x2018;body_length&#x2019;: 0, &#x2018;reblogged_by&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tags-api-1"><a href="#tags-api-1" class="headerlink" title="tags_api"></a>tags_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_discussions_by_active</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tags-api-get-discussions-by-author-before-date"><a href="#tags-api-get-discussions-by-author-before-date" class="headerlink" title="tags_api.get_discussions_by_author_before_date"></a>tags_api.get_discussions_by_author_before_date</h2><table>
+<thead>
+<tr>
+<th>args</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;, &#x2018;start_permlink&#x2019;: &#x2018;&#x2019;, &#x2018;before_date&#x2019;: &#x2018;1970-01-01T00:00:00&#x2019;, &#x2018;limit&#x2019;: 100}</td>
+</tr>
+<tr>
+<td>return</td>
+</tr>
+<tr>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tags-api-2"><a href="#tags-api-2" class="headerlink" title="tags_api"></a>tags_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_discussions_by_blog</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_cashout</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_children</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_comments</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_created</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_feed</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_hot</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_promoted</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_trending</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_discussions_by_votes</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_post_discussions_by_payout</td>
+<td>{&#x2018;tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 0, &#x2018;filter_tags&#x2019;: [], &#x2018;select_authors&#x2019;: [], &#x2018;select_tags&#x2019;: [], &#x2018;truncate_body&#x2019;: 0}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_replies_by_last_update</td>
+<td>{&#x2018;start_parent_author&#x2019;: &#x2018;&#x2019;, &#x2018;start_permlink&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 100}</td>
+<td>{&#x2018;discussions&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_tags_used_by_author</td>
+<td>{&#x2018;author&#x2019;: &#x2018;&#x2019;}</td>
+<td>{&#x2018;tags&#x2019;: []}</td>
+</tr>
+<tr>
+<td>get_trending_tags</td>
+<td>{&#x2018;start_tag&#x2019;: &#x2018;&#x2019;, &#x2018;limit&#x2019;: 100}</td>
+<td>{&#x2018;tags&#x2019;: []}</td>
+</tr>
+</tbody>
+</table>
+<h2 id="witness-api"><a href="#witness-api" class="headerlink" title="witness_api"></a>witness_api</h2><table>
+<thead>
+<tr>
+<th>method</th>
+<th>args</th>
+<th>return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>get_account_bandwidth</td>
+<td>{&#x2018;account&#x2019;: &#x2018;&#x2019;, &#x2018;type&#x2019;: &#x2018;post&#x2019;}</td>
+<td>{}</td>
+</tr>
+<tr>
+<td>get_reserve_ratio</td>
+<td>{}</td>
+<td>{&#x2018;id&#x2019;: 0, &#x2018;average_block_size&#x2019;: 0, &#x2018;current_reserve_ratio&#x2019;: 1, &#x2018;max_virtual_bandwidth&#x2019;: &#x2018;0&#x2019;}</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/api-methods-list-for-appbase" target="_blank" rel="noopener">&#x2018;API methods list for AppBase&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/appbase/">appbase</a>, <a class="has-link-grey -link" href="/@holger80/tags/blockchain/">blockchain</a>, <a class="has-link-grey -link" href="/@holger80/tags/dev/">dev</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/beem-is-now-faster-than-ever-and-batched-rpc-calls-possible/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">beem is now faster than ever and batched rpc calls possible</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/beem-is-now-appbase-ready/">
+                <span class="level-item">beem is now AppBase ready</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

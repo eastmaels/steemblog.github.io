@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Validating the mining results of ENG token - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#How-does-this-work">
+        <span class="has-mr-6">1</span>
+        <span>How does this work</span>
+        </a></li><li>
+        <a class="is-flex" href="#Script-to-validate-the-most-recent-mining-operation">
+        <span class="has-mr-6">2</span>
+        <span>Script to validate the most recent mining operation</span>
+        </a></li><li>
+        <a class="is-flex" href="#Script-source">
+        <span class="has-mr-6">3</span>
+        <span>Script source</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmT7ARth1X9R4c1Unh8kjYku1SgDb82aXEQdaeHQ7XRytR/image.png" alt="Validating the mining results of ENG token">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-04T14:12:57.000Z">2019-06-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steem-engine/">steem-engine</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1270 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Validating the mining results of ENG token
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmT7ARth1X9R4c1Unh8kjYku1SgDb82aXEQdaeHQ7XRytR/image.png" alt=""></p>
+<p>I&#x2019;ve programmed a lot for the steem blockchain, thus I&#x2019;m currently not very active in writing posts. As you may know I&#x2019;m the developer behind scot and I have now also implemented Delegated Proof of Stake Mining for steem-engine tokens.</p>
+<p>Currently two token can be staked to participate in ENG mining:</p>
+<ul>
+<li>EM with a mining power of 1</li>
+<li>EMFOUR with a mining power of 4</li>
+</ul>
+<p>Every hour, the ENG token mining reward pool is send to 10 accounts which were randomly selected based on the staked mining power (in one round one account can be added more than once).</p>
+<h2 id="How-does-this-work"><a href="#How-does-this-work" class="headerlink" title="How does this work"></a>How does this work</h2><p>Every hour, all mining token staker are obtained from the steem-engine api. Then a custom_json with id <code>scot_create_claim</code>   and <code>{&quot;symbol&quot;:&quot;ENG&quot;,&quot;type&quot;:&quot;mining&quot;,&quot;N&quot;:10}</code> as content is broadcasted from the <code>engpool</code> account.<br><img src="https://ipfs.busy.org/ipfs/QmS2XM2hkSTuiuXDKkGu1cfkVzjZLv6Z6UcVaHBZNaAKCm" alt="image.png"></p>
+<p>The scot bot fetches this custom_json and uses the block number and the transaction id to calculate a seed. The seed is then used to initialize a random generator. </p>
+<p>Then 10 accounts are randomly selected by generating random numbers from 0 to the staked mining power sum. The staked mining power of all accounts are summed up and sorted by the staked mining power and the loki steem-api id.</p>
+<p>The results are broadcasted as a custom_json from the engpool account:<br><img src="https://ipfs.busy.org/ipfs/QmQ4ppySSPik5a5PsRnLjBVmXyhNMjnb8UDTBwDBUNjMyw" alt="image.png"></p>
+<p>Lets assume that we have 3 miner, <code>a</code> has staked 1 EMFOUR with loki 2, <code>b</code> has staked 1 EMFOUR with loki 3 and <code>c</code> has staked 3 EM token with loki 1.</p>
+<table>
+<thead>
+<tr>
+<th>index</th>
+<th>name</th>
+<th>staked mining power</th>
+<th>sum</th>
+<th>loki</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>c</code></td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>a</code></td>
+<td>4</td>
+<td>7</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>b</code></td>
+<td>4</td>
+<td>11</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<p>In the next step, we draw 5 times a random number between 0 and 11.<br>That account is selected which sum is closed above the random number.<br>Lets assume that the sequence is (I&#x2019;m using integer random number for this example):<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4, 2, 10, 7, 1</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>This means the winner are</p>
+<table>
+<thead>
+<tr>
+<th>random number</th>
+<th>winner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td><code>a</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>c</code></td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>b</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>b</code></td>
+</tr>
+<tr>
+<td>1</td>
+<td><code>c</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Script-to-validate-the-most-recent-mining-operation"><a href="#Script-to-validate-the-most-recent-mining-operation" class="headerlink" title="Script to validate the most recent mining operation"></a>Script to validate the most recent mining operation</h2><p>In order to run this script, beem and steemengine must be installed.</p>
+<p>The block number and the transaction id of the custom_json containing the mining outcome must be provided:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">block_num = 33505765  </span><br><span class="line">trx_id = &quot;98df419edbd76079d1991bc58c2ea6db5077e4bd&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>You can take a look at the custom_json here: <a href="https://steemd.com/tx/98df419edbd76079d1991bc58c2ea6db5077e4bd" target="_blank" rel="noopener">https://steemd.com/tx/98df419edbd76079d1991bc58c2ea6db5077e4bd</a></p>
+<p>Validation of the mining operation is only possible when:</p>
+<ul>
+<li>nobody unstaked their mining token</li>
+<li>nobody staked more mining token</li>
+<li>no new accounts staked mining token<br>As long these condition are true, any mining operation can be validated. The condition is check in the script by comparing <code>N_accounts</code> and <code>staked_mining_power</code> from the custom_json with the currently staked accounts.</li>
+</ul>
+<p>The staked mining power is obtained by using the steem-engine api:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">accounts_by_name = {}</span><br><span class="line">miner_tokens = {&quot;EM&quot;: 1, &quot;EMFOUR&quot;: 4}</span><br><span class="line">mining_power_sum = 0</span><br><span class="line">for miner_token in miner_tokens:</span><br><span class="line">    mining_power = miner_tokens[miner_token]</span><br><span class="line">    token_object = Token(miner_token)</span><br><span class="line">    token_holder = token_object.get_holder()</span><br><span class="line">    for holder in token_holder:</span><br><span class="line">        if float(holder[&quot;stake&quot;]) == 0:</span><br><span class="line">            continue</span><br><span class="line">        if holder[&quot;account&quot;] not in accounts_by_name:</span><br><span class="line">            accounts_by_name[holder[&quot;account&quot;]] = {&quot;name&quot;: holder[&quot;account&quot;], &quot;staked_mining_power&quot;: float(holder[&quot;stake&quot;]) * mining_power, &quot;loki&quot;: holder[&quot;$loki&quot;]}</span><br><span class="line">        else:</span><br><span class="line">            accounts_by_name[holder[&quot;account&quot;]][&quot;staked_mining_power&quot;] += float(holder[&quot;stake&quot;]) * mining_power</span><br><span class="line">            if accounts_by_name[holder[&quot;account&quot;]][&quot;loki&quot;] &gt; holder[&quot;$loki&quot;]:</span><br><span class="line">                accounts_by_name[holder[&quot;account&quot;]][&quot;loki&quot;] = holder[&quot;$loki&quot;]                  </span><br><span class="line">        mining_power_sum += float(holder[&quot;stake&quot;]) * mining_power</span><br><span class="line">      </span><br><span class="line">accounts = []</span><br><span class="line">for acc in accounts_by_name:</span><br><span class="line">    accounts.append(accounts_by_name[acc])</span><br><span class="line">sorted_accounts = sorted(accounts, key=lambda m: (m[&quot;staked_mining_power&quot;], m[&quot;loki&quot;]))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The accounts are firstly sorted by their staked mining power and secondly by the $loki id from the steem-engine account. This allows  it to validate a mining operation, as the accounts are sorted in the same way.</p>
+<p>The seed is set by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">def set_seed(seed):</span><br><span class="line">    random.seed(a=seed, version=2)</span><br><span class="line">block = Block(json_data[&quot;block_num&quot;])</span><br><span class="line">seed = hashlib.md5((json_data[&quot;trx_id&quot;] + block[&quot;block_id&quot;] + block[&quot;previous&quot;]).encode()).hexdigest()     </span><br><span class="line">set_seed(seed)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>where <code>block_num</code> and <code>trx_id</code> are provided from the custom_json.<br>Finally, winner can be obtained by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">def get_random_range(start, end):</span><br><span class="line">    return ((random.random() * (end-start + 1)) + start)</span><br><span class="line"></span><br><span class="line">N = int(json_data[&quot;N&quot;])</span><br><span class="line">mining_power_sum = float(json_data[&quot;staked_mining_power&quot;])</span><br><span class="line">winner_accs = []</span><br><span class="line">for i in range(N):</span><br><span class="line">    x = get_random_range(0, mining_power_sum)</span><br><span class="line">    sum_mining_power = 0</span><br><span class="line">    winner_found = False</span><br><span class="line">    for acc_data in sorted_accounts:</span><br><span class="line">        sum_mining_power += acc_data[&quot;staked_mining_power&quot;]</span><br><span class="line">        </span><br><span class="line">        if sum_mining_power &gt; x and not winner_found:</span><br><span class="line">            winner_accs.append(acc_data[&quot;name&quot;])</span><br><span class="line">            winner_found = True</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The output of the script for the last custom_json is:<br><img src="https://ipfs.busy.org/ipfs/QmbKyTEyr1yJ9SGCecsD5hGBc9SU7wmNWUE5TwwRrQsgD9" alt="image.png"></p>
+<h2 id="Script-source"><a href="#Script-source" class="headerlink" title="Script source"></a>Script source</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">import time </span><br><span class="line">import json</span><br><span class="line">import math</span><br><span class="line">import random</span><br><span class="line">from steemengine.tokenobject import Token</span><br><span class="line">from beem.block import Block</span><br><span class="line">import hashlib</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def set_seed(seed):</span><br><span class="line">    random.seed(a=seed, version=2)</span><br><span class="line"></span><br><span class="line">def get_random_range(start, end):</span><br><span class="line">    return ((random.random() * (end-start + 1)) + start)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    block_num = 33505765  </span><br><span class="line">    trx_id = &quot;98df419edbd76079d1991bc58c2ea6db5077e4bd&quot;</span><br><span class="line">    block = Block(block_num)</span><br><span class="line">    </span><br><span class="line">    data = None</span><br><span class="line">    for trx in block.transactions:</span><br><span class="line">        if trx[&quot;transaction_id&quot;] ==trx_id:</span><br><span class="line">            data = trx</span><br><span class="line"></span><br><span class="line">    trx = data[&quot;operations&quot;][0][&quot;value&quot;]</span><br><span class="line">    json_data = json.loads(trx[&quot;json&quot;])</span><br><span class="line">    </span><br><span class="line">    block = Block(json_data[&quot;block_num&quot;])</span><br><span class="line">    seed = hashlib.md5((json_data[&quot;trx_id&quot;] + block[&quot;block_id&quot;] + block[&quot;previous&quot;]).encode()).hexdigest()     </span><br><span class="line">    set_seed(seed)</span><br><span class="line">    accounts_by_name = {}</span><br><span class="line">    miner_tokens = {&quot;EM&quot;: 1, &quot;EMFOUR&quot;: 4}</span><br><span class="line">    mining_power_sum = 0</span><br><span class="line">    for miner_token in miner_tokens:</span><br><span class="line">        mining_power = miner_tokens[miner_token]</span><br><span class="line">        token_object = Token(miner_token)</span><br><span class="line">        token_holder = token_object.get_holder()</span><br><span class="line">        for holder in token_holder:</span><br><span class="line">            if float(holder[&quot;stake&quot;]) == 0:</span><br><span class="line">                continue</span><br><span class="line">            if holder[&quot;account&quot;] not in accounts_by_name:</span><br><span class="line">                accounts_by_name[holder[&quot;account&quot;]] = {&quot;name&quot;: holder[&quot;account&quot;], &quot;staked_mining_power&quot;: float(holder[&quot;stake&quot;]) * mining_power, &quot;loki&quot;: holder[&quot;$loki&quot;]}</span><br><span class="line">            else:</span><br><span class="line">                accounts_by_name[holder[&quot;account&quot;]][&quot;staked_mining_power&quot;] += float(holder[&quot;stake&quot;]) * mining_power</span><br><span class="line">                if accounts_by_name[holder[&quot;account&quot;]][&quot;loki&quot;] &gt; holder[&quot;$loki&quot;]:</span><br><span class="line">                    accounts_by_name[holder[&quot;account&quot;]][&quot;loki&quot;] = holder[&quot;$loki&quot;]                  </span><br><span class="line">            mining_power_sum += float(holder[&quot;stake&quot;]) * mining_power</span><br><span class="line">          </span><br><span class="line">    accounts = []</span><br><span class="line">    for acc in accounts_by_name:</span><br><span class="line">        accounts.append(accounts_by_name[acc])</span><br><span class="line">    sorted_accounts = sorted(accounts, key=lambda m: (m[&quot;staked_mining_power&quot;], m[&quot;loki&quot;]))</span><br><span class="line">    sum_mining_power = 0</span><br><span class="line">    for acc_data in sorted_accounts:</span><br><span class="line">        sum_mining_power += acc_data[&quot;staked_mining_power&quot;]</span><br><span class="line">    </span><br><span class="line">    if int(json_data[&quot;N_accounts&quot;]) != len(accounts_by_name) or abs(mining_power_sum - float(json_data[&quot;staked_mining_power&quot;])) &gt; 2 / 10 ** 6:</span><br><span class="line">        print(&quot;staked accounts have changed and the mining cannot be validated...&quot;)</span><br><span class="line">    else:</span><br><span class="line">        N = int(json_data[&quot;N&quot;])</span><br><span class="line">        mining_power_sum = float(json_data[&quot;staked_mining_power&quot;])</span><br><span class="line">        winner_accs = []</span><br><span class="line">        for i in range(N):</span><br><span class="line">            x = get_random_range(0, mining_power_sum)</span><br><span class="line">            sum_mining_power = 0</span><br><span class="line">            winner_found = False</span><br><span class="line">            </span><br><span class="line">            for acc_data in sorted_accounts:</span><br><span class="line">                sum_mining_power += acc_data[&quot;staked_mining_power&quot;]</span><br><span class="line">                </span><br><span class="line">                if sum_mining_power &gt; x and not winner_found:</span><br><span class="line">                    winner_accs.append(acc_data[&quot;name&quot;])</span><br><span class="line">                    winner_found = True    </span><br><span class="line">                    </span><br><span class="line">        print(&quot;%d winner found&quot; % len(winner_accs))</span><br><span class="line">        if (winner_accs) == (json_data[&quot;winner&quot;]):</span><br><span class="line">            print(&quot;custom_json with %s was sucessfully validated. Winner are:&quot; % trx_id)</span><br><span class="line">            print(str(winner_accs))</span><br><span class="line">        else:</span><br><span class="line">            print(&quot;Custom_json could not be validated&quot;)</span><br><span class="line">            print(&quot;winner from script:&quot;)</span><br><span class="line">            print(str(winner_accs))</span><br><span class="line">            print(&quot;winner from custom_json:&quot;)</span><br><span class="line">            print(str(json_data[&quot;winner&quot;]))</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/validating-the-mining-results-of-eng-token" target="_blank" rel="noopener">&#x2018;Validating the mining results of ENG token&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/mining/">mining</a>, <a class="has-link-grey -link" href="/@holger80/tags/smt/">smt</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-engine/">steem-engine</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/palnet-how-to-check-your-voting-power-and-your-pal-vote-value/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Palnet: How to check your voting power and your PAL vote value</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/update-for-scotbot-allowed-vote-window-can-be-limited-and-post-can-be-promoted-by-token-transfers/">
+                <span class="level-item">Update for scotbot - allowed vote window can be limited and post can be promoted by token transfers</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

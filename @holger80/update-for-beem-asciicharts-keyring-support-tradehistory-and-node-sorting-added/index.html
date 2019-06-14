@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Update for beem - AsciiCharts, keyring support, trade_history and node sorting added - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">1</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#AsciiChart-for-beempy">
+        <span class="has-mr-6">1.1</span>
+        <span>AsciiChart for beempy</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Price-history">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Price history</span>
+        </a></li><li>
+        <a class="is-flex" href="#Trade-history">
+        <span class="has-mr-6">1.1.2</span>
+        <span>Trade history</span>
+        </a></li><li>
+        <a class="is-flex" href="#Chart-for-orderbook">
+        <span class="has-mr-6">1.1.3</span>
+        <span>Chart for orderbook</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Sort-nodes-regarding-their-ping-times">
+        <span class="has-mr-6">1.2</span>
+        <span>Sort nodes regarding their ping times</span>
+        </a></li><li>
+        <a class="is-flex" href="#currentnode-and-nextnode-skip-not-working-nodes-now">
+        <span class="has-mr-6">1.3</span>
+        <span>currentnode and nextnode skip not working nodes now</span>
+        </a></li><li>
+        <a class="is-flex" href="#keyring-support-for-beempy-and-wallet">
+        <span class="has-mr-6">1.4</span>
+        <span>keyring support for beempy and wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#trade-history-added-to-market">
+        <span class="has-mr-6">1.5</span>
+        <span>trade_history added to market</span>
+        </a></li><li>
+        <a class="is-flex" href="#Memory-consumption-fer-requests-and-websocket-reduced-when-creating-more-instances-of-steem">
+        <span class="has-mr-6">1.6</span>
+        <span>Memory consumption fer requests and websocket reduced when creating more instances of steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Condenser-calls-from-appbase-nodes-now-possible">
+        <span class="has-mr-6">1.7</span>
+        <span>Condenser calls from appbase nodes now possible</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Changes">
+        <span class="has-mr-6">2</span>
+        <span>Changes</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Market-improved-and-keyring-support-added-to-wallet">
+        <span class="has-mr-6">2.1</span>
+        <span>Market improved and keyring support added to wallet</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#wallet">
+        <span class="has-mr-6">2.1.1</span>
+        <span>wallet</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#AsciiChart-added-and-charts-added-to-cli">
+        <span class="has-mr-6">2.2</span>
+        <span>AsciiChart added and charts added to cli</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#AsciiChart">
+        <span class="has-mr-6">2.2.1</span>
+        <span>AsciiChart</span>
+        </a></li><li>
+        <a class="is-flex" href="#CLI">
+        <span class="has-mr-6">2.2.2</span>
+        <span>CLI</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-test">
+        <span class="has-mr-6">2.2.3</span>
+        <span>Unit test</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Added-password-storage-to-config-for-managing-keyring-environment-for-walletpassword">
+        <span class="has-mr-6">2.3</span>
+        <span>Added password_storage to config for managing keyring/environment for walletpassword</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli">
+        <span class="has-mr-6">2.3.1</span>
+        <span>cli</span>
+        </a></li><li>
+        <a class="is-flex" href="#steem">
+        <span class="has-mr-6">2.3.2</span>
+        <span>steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#storage">
+        <span class="has-mr-6">2.3.3</span>
+        <span>storage</span>
+        </a></li><li>
+        <a class="is-flex" href="#wallet-1">
+        <span class="has-mr-6">2.3.4</span>
+        <span>wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#unit-tess">
+        <span class="has-mr-6">2.3.5</span>
+        <span>unit tess</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Add-sorting-nodes-by-ping-times">
+        <span class="has-mr-6">2.4</span>
+        <span>Add sorting nodes by ping times</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#cli-1">
+        <span class="has-mr-6">2.4.1</span>
+        <span>cli</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Memory-consumption-for-graphenerpc-reduced-and-other-improvements">
+        <span class="has-mr-6">2.5</span>
+        <span>Memory consumption for graphenerpc reduced and other improvements</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Memo">
+        <span class="has-mr-6">2.5.1</span>
+        <span>Memo</span>
+        </a></li><li>
+        <a class="is-flex" href="#Graphenerpc">
+        <span class="has-mr-6">2.5.2</span>
+        <span>Graphenerpc</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#New-asscii-char-set-for-asciichart">
+        <span class="has-mr-6">2.6</span>
+        <span>New asscii char set for asciichart</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Asciichart">
+        <span class="has-mr-6">2.6.1</span>
+        <span>Asciichart</span>
+        </a></li><li>
+        <a class="is-flex" href="#CLI-1">
+        <span class="has-mr-6">2.6.2</span>
+        <span>CLI</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Allow-condenser-api-calls-for-appbase-nodes">
+        <span class="has-mr-6">2.7</span>
+        <span>Allow condenser_api calls for appbase nodes</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="Update for beem - AsciiCharts, keyring support, trade_history and node sorting added">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-28T11:38:21.000Z">2018-04-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 minutes read (About 1411 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Update for beem - AsciiCharts, keyring support, trade_history and node sorting added
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://cdn.utopian.io/posts/d563a408c062506aed88befbe7781399184fbeem-logo.png" alt="beem-logo.png"><br></center>
+
+<p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 430 unit tests and a coverage of 83 %. The current version is 0.19.25.</p>
+<p>I created a discord channel for answering question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a></p>
+<h1 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h1><h2 id="AsciiChart-for-beempy"><a href="#AsciiChart-for-beempy" class="headerlink" title="AsciiChart for beempy"></a>AsciiChart for beempy</h2><p>A new class <code>AsciiChart</code> was added to beem. It switches automatically to ascii symbols, when using it with python 2.7.</p>
+<h3 id="Price-history"><a href="#Price-history" class="headerlink" title="Price history"></a>Price history</h3><p><code>beempy pricehistory</code> shows the price history and the current median price. Width and height can be changed by e.g. <code>beempy pricehistory --height 10 --width 10</code>.</p>
+<p><img src="https://cdn.utopian.io/posts/46dee9f3fa7993ac1eaf8c8b5a63244407daimage.png" alt="image.png"></p>
+<h3 id="Trade-history"><a href="#Trade-history" class="headerlink" title="Trade history"></a>Trade history</h3><p><code>beempy tradehistory</code> shows the market conversion of STEEM/SBD of the last 7 days. It uses the new <code>trade_history</code>  function. The default settings of the optional parameter are:<br><code>beempy tradehistory --days 7 --hours 2 --limit 100 --height 75 --width 15</code>. </p>
+<ul>
+<li><code>days</code> is the time horizont of trades to be included</li>
+<li><code>hour</code> is the intervall time from which <code>limit</code> trades are taken into account. E.g.  <code>--hours 1 --limit 25</code> means that every hour 25 trades are fetched from the node and the mean value is calcuated from it.<br>It is not possible to use all trades as this would take too long.</li>
+</ul>
+<p><img src="https://cdn.utopian.io/posts/9fedecbbe58e2c5be001c8ca7db0f2626b47image.png" alt="image.png"></p>
+<h3 id="Chart-for-orderbook"><a href="#Chart-for-orderbook" class="headerlink" title="Chart for orderbook"></a>Chart for orderbook</h3><p><code>beempy orderbook --chart</code> visualize the current open orders. The vertical line shows where bids and asks face each other. <code>--limit</code> can be used to include more openorders. <code>--height &lt;int&gt; --width &lt;int&gt;</code> can be used to change heigth and width of the chart.</p>
+<p><img src="https://cdn.utopian.io/posts/3eb3f4faa813f23890e7d2f8ca1f5e31645aimage.png" alt="image.png"></p>
+<h2 id="Sort-nodes-regarding-their-ping-times"><a href="#Sort-nodes-regarding-their-ping-times" class="headerlink" title="Sort nodes regarding their ping times"></a>Sort nodes regarding their ping times</h2><p><code>beempy pingnode --sort --remove</code> goes through all nodes in the lists and measures how long a <code>get_config</code> RPC call takes. The nodes are then sorted and all nodes which raise an exception are removed from the nodes list (inf is shown in the table). </p>
+<p><img src="https://cdn.utopian.io/posts/6aea21f6ba51d7e727fde20d0f3978a29c23image.png" alt="image.png"></p>
+<h2 id="currentnode-and-nextnode-skip-not-working-nodes-now"><a href="#currentnode-and-nextnode-skip-not-working-nodes-now" class="headerlink" title="currentnode and nextnode skip not working nodes now"></a>currentnode and nextnode skip not working nodes now</h2><p><code>beempy currentnode</code> and <code>beempy nextnode</code> skipping not working nodes and putting them at the end of the list. When calling   <code>beempy currentnode</code> the shown node is then the first node in the list.  <code>beempy nextnode</code> changes the  first entry in the node list to the next working node in the list.</p>
+<h2 id="keyring-support-for-beempy-and-wallet"><a href="#keyring-support-for-beempy-and-wallet" class="headerlink" title="keyring support for beempy and wallet"></a>keyring support for beempy and wallet</h2><p>In order to use keyring for storing the wallet password, the following steps are necessary:</p>
+<ul>
+<li>install <a href="https://pypi.org/project/keyring/" target="_blank" rel="noopener">keyring</a>: <code>pip install keyring</code></li>
+<li>Change <code>password_storage</code> to keyring: <code>beempy set password_storage keyring</code> and enter the wallet password.</li>
+<li>It also possible to change the password in the keyring by <code>python -m keyring set beem wallet</code></li>
+<li><code>python -m keyring get beem wallet</code> will show the set password in the terminal.</li>
+</ul>
+<p>When <code>keyring</code> is set as <code>password_storage</code>, <code>keyring.get_password(&quot;beem&quot;, &quot;wallet&quot;)</code> is called whenever  <code>beempy</code> needs to access the wallet.  If everything works can be tested with:<br><code>beempy walletinfo --test-unlock</code></p>
+<p><img src="https://cdn.utopian.io/posts/86d4e99fe99a13d75ce70d6a789ca930b845image.png" alt="image.png"></p>
+<p>This can also be used in scripts and unlocks the wallet automatically.</p>
+<p><img src="https://cdn.utopian.io/posts/b3933f10b1f7899063328084a128bb06702eimage.png" alt="image.png"></p>
+<h2 id="trade-history-added-to-market"><a href="#trade-history-added-to-market" class="headerlink" title="trade_history added to market"></a>trade_history added to market</h2><p> <code>trade_history</code> allows to recieve all trades from the market. It calls internally trades. At the moment it returns a list. I&#x2019;m thinking about a generator concept as in history from account. Parameter are:</p>
+<ul>
+<li><code>start</code> - datetime object - defines the Start date</li>
+<li><code>stop</code> - datetime object - defines the stop date, when set to None, the current date is taken.</li>
+<li><code>intervall</code> - timedelta object. When not None, only <code>limit</code> trades will be returned at each intervall time point</li>
+<li><code>limit</code> int - limits the batch call size and the number of trades which are fetched when <code>intervall</code> is set.</li>
+<li><code>raw_data</code> bool when true the jaw json data will be returned.</li>
+</ul>
+<p>The output is a list. When using intervall, each object in the list is a list width <code>limit</code> trades inside. </p>
+<h2 id="Memory-consumption-fer-requests-and-websocket-reduced-when-creating-more-instances-of-steem"><a href="#Memory-consumption-fer-requests-and-websocket-reduced-when-creating-more-instances-of-steem" class="headerlink" title="Memory consumption fer requests and websocket reduced when creating more instances of steem"></a>Memory consumption fer requests and websocket reduced when creating more instances of steem</h2><p>I used now request.Session for https nodes and created a singelton class for the websocket object. This reduces memory consumption when creating several <code>Steem()</code> objects without using shared_steem_instances.</p>
+<h2 id="Condenser-calls-from-appbase-nodes-now-possible"><a href="#Condenser-calls-from-appbase-nodes-now-possible" class="headerlink" title="Condenser calls from appbase nodes now possible"></a>Condenser calls from appbase nodes now possible</h2><p><code>Steem(node=&quot;https://api.steemit.com&quot;, use_condenser=True)</code>  will replace any api by <code>condenser_api</code> for all RPC calls. </p>
+<h1 id="Changes"><a href="#Changes" class="headerlink" title="Changes"></a>Changes</h1><h2 id="Market-improved-and-keyring-support-added-to-wallet"><a href="#Market-improved-and-keyring-support-added-to-wallet" class="headerlink" title="Market improved and keyring support added to wallet"></a>Market improved and keyring support added to wallet</h2><ul>
+<li><a href="https://github.com/holgern/beem/commit/3643d438496e7fe1a1544d63eaaf743886463b80" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/3643d438496e7fe1a1544d63eaaf743886463b80</a></li>
+<li>Dokumentation for several functions of market improved</li>
+<li>dict keys for ticker renamed to small names width underscore (identical to python-steem)</li>
+<li>trade_history added. This function allows to fetch a fixed number of trades at each intervall to reduce the time. E.g. it is possible to receive the from the last 7 days 100 trades each 6 hours.</li>
+<li>utc time transformation is added to trades<h3 id="wallet"><a href="#wallet" class="headerlink" title="wallet"></a>wallet</h3></li>
+<li>keyring can be used to unlock the wallet. Please store the masterpassword with  <code>python -m keyring set beem wallet</code><h2 id="AsciiChart-added-and-charts-added-to-cli"><a href="#AsciiChart-added-and-charts-added-to-cli" class="headerlink" title="AsciiChart added and charts added to cli"></a>AsciiChart added and charts added to cli</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/1ccf4f3281b9b70f5685b5c79ffdccfdc1e85c67" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/1ccf4f3281b9b70f5685b5c79ffdccfdc1e85c67</a><h3 id="AsciiChart"><a href="#AsciiChart" class="headerlink" title="AsciiChart"></a>AsciiChart</h3></li>
+<li>new ascii curve plot class created</li>
+<li>width and height can defined and plot() prints an ascii string, which can be interpreted as plot<h3 id="CLI"><a href="#CLI" class="headerlink" title="CLI"></a>CLI</h3></li>
+<li>keyring functionallity added</li>
+<li>walletinfo shows if UNLOCK env is set, keyring is installed and if it possible to unlock the wallet (&#x2013;test-unlock)</li>
+<li>ticker shows a table with the latest market prices</li>
+<li>pricehistory plots the history of the last 3 days together with the median price</li>
+<li>tradehistory shows the STEEM/SBD market price history</li>
+<li>orderbook has now a working chart option</li>
+<li>The sum of SBD and STEEM for open orders was added<h3 id="Unit-test"><a href="#Unit-test" class="headerlink" title="Unit test"></a>Unit test</h3></li>
+<li>tests for new cli function were added<h2 id="Added-password-storage-to-config-for-managing-keyring-environment-for-walletpassword"><a href="#Added-password-storage-to-config-for-managing-keyring-environment-for-walletpassword" class="headerlink" title="Added password_storage to config for managing keyring/environment for walletpassword"></a>Added password_storage to config for managing keyring/environment for walletpassword</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/ef61625893852ec83c4e4bcc93289b938f2f9428" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/ef61625893852ec83c4e4bcc93289b938f2f9428</a><h3 id="cli"><a href="#cli" class="headerlink" title="cli"></a>cli</h3></li>
+<li>set password_storage keyring or set password_storage environment added. password_storage = environment  is the default behavior and compatible with all old version.</li>
+<li>when keyring is used, the wallet password can be stored with the keyring module.</li>
+<li>nextnode when the first node and the current url not matches, will this command changes the nodes list, in way that the first node and the current url matches</li>
+<li>nextnode skipps now not working nodes</li>
+<li>createwallet improved and keyring added</li>
+<li>changewalletpassphrase improved<h3 id="steem"><a href="#steem" class="headerlink" title="steem"></a>steem</h3></li>
+<li>set_password_storage added to set the password_storage config</li>
+<li>move_current_node_to_front function added, which shifts the nodes  until current url and first node matches<h3 id="storage"><a href="#storage" class="headerlink" title="storage"></a>storage</h3></li>
+<li>add default for password_storage<h3 id="wallet-1"><a href="#wallet-1" class="headerlink" title="wallet"></a>wallet</h3></li>
+<li>password_storage is used<h3 id="unit-tess"><a href="#unit-tess" class="headerlink" title="unit tess"></a>unit tess</h3></li>
+<li>test_cli adapted</li>
+<li>test_market adapted on changes<h2 id="Add-sorting-nodes-by-ping-times"><a href="#Add-sorting-nodes-by-ping-times" class="headerlink" title="Add sorting nodes by ping times"></a>Add sorting nodes by ping times</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/167873a9f6b07d3652b60c57674969d80b8fd888" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/167873a9f6b07d3652b60c57674969d80b8fd888</a><h3 id="cli-1"><a href="#cli-1" class="headerlink" title="cli"></a>cli</h3></li>
+<li>nodes can be sorted by ping times with pingnode &#x2013;sort</li>
+<li>nodes with error can be removed by pingnode &#x2013;sort &#x2013;remove</li>
+<li>add wipe option for createwallet<h2 id="Memory-consumption-for-graphenerpc-reduced-and-other-improvements"><a href="#Memory-consumption-for-graphenerpc-reduced-and-other-improvements" class="headerlink" title="Memory consumption for graphenerpc reduced and other improvements"></a>Memory consumption for graphenerpc reduced and other improvements</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/8cc6342d07e3b113929a3579bdd64de5666bfa5a" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/8cc6342d07e3b113929a3579bdd64de5666bfa5a</a><h3 id="Memo"><a href="#Memo" class="headerlink" title="Memo"></a>Memo</h3></li>
+<li>make prefix changeble<br>Transationbuilder</li>
+<li>sign() return the signed struct now<h3 id="Graphenerpc"><a href="#Graphenerpc" class="headerlink" title="Graphenerpc"></a>Graphenerpc</h3></li>
+<li>Session are used for requests</li>
+<li>Singleton for websocket instance added</li>
+<li>Both measures reduce ram consumption when more than one Steem object is created.<br>Add missing scrypt package to dependency<h2 id="New-asscii-char-set-for-asciichart"><a href="#New-asscii-char-set-for-asciichart" class="headerlink" title="New asscii char set for asciichart"></a>New asscii char set for asciichart</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/9e401fd7ccde3d7978de0d47cc6457c02f1197ec" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/9e401fd7ccde3d7978de0d47cc6457c02f1197ec</a><h3 id="Asciichart"><a href="#Asciichart" class="headerlink" title="Asciichart"></a>Asciichart</h3></li>
+<li>added ascii charset for python 2.7<h3 id="CLI-1"><a href="#CLI-1" class="headerlink" title="CLI"></a>CLI</h3></li>
+<li>adapted to new charset<h2 id="Allow-condenser-api-calls-for-appbase-nodes"><a href="#Allow-condenser-api-calls-for-appbase-nodes" class="headerlink" title="Allow condenser_api calls for appbase nodes"></a>Allow condenser_api calls for appbase nodes</h2></li>
+<li><a href="https://github.com/holgern/beem/commit/fa98397a4d73a876c31f88a577cc5bfc51e1d628" target="_blank" rel="noopener">https://github.com/holgern/beem/commit/fa98397a4d73a876c31f88a577cc5bfc51e1d628</a><br>steem</li>
+<li>add option use_condenser<br>steemnoderpc</li>
+<li>refactoring<br>Graphenerpc</li>
+<li>condenser_api calls shen use_condenser=True is set.<br>unit tests</li>
+<li>test_comment and test_discussion uses 19.4 nodes now</li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/update-for-beem-asciicharts-keyring-support-tradehistory-and-node-sorting-added" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-asciicharts-keyring-support-tradehistory-and-node-sorting-added" target="_blank" rel="noopener">&#x2018;Update for beem - AsciiCharts, keyring support, trade_history and node sorting added&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/beempy/">beempy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/python-steem/">python-steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/currently-only-6-full-rpc-nodes-are-working-without-errors/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Currently only 6 full RPC nodes are working without errors</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/proof-that-cryptonite-from-metacert-really-works/">
+                <span class="level-item">Proof that Cryptonite from MetaCert really works!</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

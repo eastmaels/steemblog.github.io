@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>update for beem - get_blog, get_followers and get_following works for api.steemit.com - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#New-Features">
+        <span class="has-mr-6">2</span>
+        <span>New Features</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#public-keys-can-be-set-in-beempy-newaccount-for-account-creation">
+        <span class="has-mr-6">2.1</span>
+        <span>public keys can be set in beempy newaccount for account creation</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Nodelist-api-steemit-com-is-handled-as-limited-node">
+        <span class="has-mr-6">3</span>
+        <span>Nodelist - api.steemit.com is handled as limited node</span>
+        </a></li><li>
+        <a class="is-flex" href="#Bug-fixes">
+        <span class="has-mr-6">4</span>
+        <span>Bug fixes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Unit-tests-are-fixed">
+        <span class="has-mr-6">5</span>
+        <span>Unit tests are fixed</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commits">
+        <span class="has-mr-6">6</span>
+        <span>Commits</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#beempy-newaccount-possible-to-provide-owen-posting-active-and-memo-pub-key-to-create-a-new-account">
+        <span class="has-mr-6">6.1</span>
+        <span>beempy newaccount - possible to provide owen, posting, active, and memo pub_key to create a new account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-get-follower-and-get-following-for-api-steemit-com">
+        <span class="has-mr-6">6.2</span>
+        <span>Fix get_follower and get_following for api.steemit.com</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-get-blog-for-api-steemit-com">
+        <span class="has-mr-6">6.3</span>
+        <span>Fix get_blog for api.steemit.com</span>
+        </a></li><li>
+        <a class="is-flex" href="#Nodelist-udpated">
+        <span class="has-mr-6">6.4</span>
+        <span>Nodelist udpated</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-wrong-full-node-api-urls-in-unit-tests">
+        <span class="has-mr-6">6.5</span>
+        <span>Fix wrong full node api urls in unit tests</span>
+        </a></li><li>
+        <a class="is-flex" href="#Fix-unittests">
+        <span class="has-mr-6">6.6</span>
+        <span>Fix unittests</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Github-account">
+        <span class="has-mr-6">7</span>
+        <span>Github account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmcRrwLPSywSYMierfP6um6mejeMNGjN9Rxw7audJqTDgb/beem-logo" alt="update for beem - get_blog, get_followers and get_following works for api.steemit.com">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-01-31T22:54:45.000Z">2019-01-31</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 871 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                update for beem - get_blog, get_followers and get_following works for api.steemit.com
+            
+        </h1>
+        <div class="content">
+            <h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><p><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">https://github.com/holgern/beem</a></p><center><br><img src="https://cdn.steemitimages.com/DQmcRrwLPSywSYMierfP6um6mejeMNGjN9Rxw7audJqTDgb/beem-logo" alt="beem-logo"><br></center><br><a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> is a python library for steem. beem has now 495 unit tests and a coverage of 70 %. The current version is 0.20.18.<br>I created a discord channel for answering a question or discussing beem: <a href="https://discord.gg/4HM592V" target="_blank" rel="noopener">https://discord.gg/4HM592V</a><br>The newest beem version can be installed by:<p></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -U beem</span><br></pre></td></tr></tbody></table></figure>
+<p>or when  using conda:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>beem can be updated by:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda update beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h2><h3 id="public-keys-can-be-set-in-beempy-newaccount-for-account-creation"><a href="#public-keys-can-be-set-in-beempy-newaccount-for-account-creation" class="headerlink" title="public keys can be set in beempy newaccount for account creation"></a>public keys can be set in <code>beempy newaccount</code> for account creation</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy newaccount --owner OWNER_PUB --active ACTIVE_PUB --memo MEMO_PUB --posting POSTING_PUB -a CREATOR_ACCOUNT NEW_ACCOUNT</span><br></pre></td></tr></tbody></table></figure>
+<p>When the owner, active, memo and posting parameter are used and 4 public keys are set, a new account is created with these 4 keys. Public/private keys can be created by <code>beempy keygen</code></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">+-------------+-----------------------------------------------------------------------------------------------------------------+</span><br><span class="line"></span><br><span class="line">| Key         | Value                                                                                                           |</span><br><span class="line">+-------------+-----------------------------------------------------------------------------------------------------------------+</span><br><span class="line"></span><br><span class="line">| Brain Key   | CENTO NOVENA CHIAUS ICEBERG DRAPE ORDERER YUSDRUM APHYLLY TORNUS YAWROOT OBEAH RIT CATELLA SILESIA HUBBA CULTCH |</span><br><span class="line">| Private Key | 5JQZAHjvLf2Tncs6LU1P1nfwpvCaJWe8LKjbpworo5EUjdWL42G                                                             |</span><br><span class="line">| Public Key  | STM7Bq295nbY3sm3RWoSRmQv2pFJdiNcxZZiazKmJw2epY25946D1                                                           |</span><br><span class="line">+-------------+-----------------------------------------------------------------------------------------------------------------+</span><br></pre></td></tr></tbody></table></figure>
+<p>When now <code>STM7Bq295nbY3sm3RWoSRmQv2pFJdiNcxZZiazKmJw2epY25946D1</code> is set as one of the four public keys, the new account will have <code>5JQZAHjvLf2Tncs6LU1P1nfwpvCaJWe8LKjbpworo5EUjdWL42G</code> as one of the four private keys.</p>
+<p>By this, it is possible to create 4 public/private keys and give only the public keys to someone else, who can then claim a new account using these 4 public keys.</p>
+<h2 id="Nodelist-api-steemit-com-is-handled-as-limited-node"><a href="#Nodelist-api-steemit-com-is-handled-as-limited-node" class="headerlink" title="Nodelist - api.steemit.com is handled as limited node"></a>Nodelist - api.steemit.com is handled as limited node</h2><p>The <code>get_nodes</code>  function has now an <code>exclude_limited</code> parameter. When set to True, <a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a> is excluded. The reason for doing this, is that <a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a> is not a feature-complete full node anymore. Several API calls do not work anymore.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from beem.nodelist import NodeList</span><br><span class="line">nodelist = NodeList()</span><br><span class="line">nodelist.update_nodes()</span><br><span class="line">print(nodelist.get_nodes(exclude_limited=True))</span><br></pre></td></tr></tbody></table></figure>
+<p>returns nodes without api.steemit.com:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&apos;https://steemd.minnowsupportproject.org&apos;, &apos;https://rpc.steemviz.com&apos;, &apos;https://anyx.io&apos;, &apos;https://rpc.usesteem.com&apos;, &apos;https://appbasetest.timcliff.com&apos;, &apos;https://steemd.privex.io&apos;, &apos;https://api.steem.house&apos;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The <a href="https://rpc.usesteem.com" target="_blank" rel="noopener">https://rpc.usesteem.com</a> was added to the nodelist.</p>
+<h2 id="Bug-fixes"><a href="#Bug-fixes" class="headerlink" title="Bug fixes"></a>Bug fixes</h2><p>Issue <a href="https://github.com/holgern/beem/issues/146" target="_blank" rel="noopener">#146</a> was caused by moving several API calls to hivemind. By this, the return structure of some calls were changed. The issue was<br>fixed by improving<br><code>get_blog</code>, <code>get_followers</code> and <code>get_following</code> so that they works with api.steemit.com.<br>It was sufficient in this case to check of the returned object is a <code>dict</code> or a list.</p>
+<p>When the returned object is a dict, it is converted into  a list by returning the content in the <code>blog</code> field:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if isinstance(ret, dict) and &quot;blog&quot; in ret:</span><br><span class="line">    ret = ret[&quot;blog&quot;]</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>After doing this, both lists are similar and can be processed and returned.</p>
+<p>Example call:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from beem import Steem</span><br><span class="line">from beem.account import Account</span><br><span class="line">stm = Steem(node=&quot;https://api.steemit.com&quot;)</span><br><span class="line">acc = Account(&quot;holger80&quot;, steem_instance=stm)</span><br><span class="line">print(&quot;%d followers, %d following&quot; % (len(acc.get_followers()), len(acc.get_following())))</span><br><span class="line">print(&quot;Last blog: %s&quot; % (acc.get_blog(limit=1)[0][&quot;title&quot;]))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>returns<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1269 followers, 342 following</span><br><span class="line">Last blog: steemrewarding.com - curation performance is shown and other improvements</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Results for other nodes:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from beem import Steem</span><br><span class="line">from beem.account import Account</span><br><span class="line">stm = Steem(node=&quot;https://steemd.minnowsupportproject.org&quot;)</span><br><span class="line">acc = Account(&quot;holger80&quot;, steem_instance=stm)</span><br><span class="line">print(&quot;%d followers, %d following&quot; % (len(acc.get_followers()), len(acc.get_following())))</span><br><span class="line">print(&quot;Last blog: %s&quot; % (acc.get_blog(limit=1)[0][&quot;title&quot;]))</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>returns<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1272 followers, 342 following</span><br><span class="line">Last blog: steemrewarding.com - curation performance is shown and other improvements</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Unit-tests-are-fixed"><a href="#Unit-tests-are-fixed" class="headerlink" title="Unit tests are fixed"></a>Unit tests are fixed</h2><p>In all unit tests, the api.steemit.com node is excluded. This fixes all unit tests.</p>
+<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><h3 id="beempy-newaccount-possible-to-provide-owen-posting-active-and-memo-pub-key-to-create-a-new-account"><a href="#beempy-newaccount-possible-to-provide-owen-posting-active-and-memo-pub-key-to-create-a-new-account" class="headerlink" title="beempy newaccount - possible to provide owen, posting, active, and memo pub_key to create a new account"></a>beempy newaccount - possible to provide owen, posting, active, and memo pub_key to create a new account</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/5029b0834ee6908e5604f8c51b47bf00562ef7ab" target="_blank" rel="noopener">commit 5029b08</a></li>
+</ul>
+<h3 id="Fix-get-follower-and-get-following-for-api-steemit-com"><a href="#Fix-get-follower-and-get-following-for-api-steemit-com" class="headerlink" title="Fix get_follower and get_following for api.steemit.com"></a>Fix get_follower and get_following for api.steemit.com</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/0267cf1f0eb14a14d62e11968c3eb4ee24d476e8" target="_blank" rel="noopener">commit 0267cf1</a></li>
+</ul>
+<h3 id="Fix-get-blog-for-api-steemit-com"><a href="#Fix-get-blog-for-api-steemit-com" class="headerlink" title="Fix get_blog for api.steemit.com"></a>Fix get_blog for api.steemit.com</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/cf284bdcffd490463be19cbf518af02db8eaf4be" target="_blank" rel="noopener">commit cf284bd</a></li>
+<li>remove wss://steemd-appbase.steemit.com</li>
+</ul>
+<h3 id="Nodelist-udpated"><a href="#Nodelist-udpated" class="headerlink" title="Nodelist udpated"></a>Nodelist udpated</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/a9972c48729cb394dd44df6c0c598c6121314926" target="_blank" rel="noopener">commit a9972c4</a></li>
+<li>normal and appbase option for Nodelist are deprecated. </li>
+<li>exclude_limited added for getting a nodelist without api.steemit.com.</li>
+<li>full node server added</li>
+<li>unit tests adapted</li>
+</ul>
+<h3 id="Fix-wrong-full-node-api-urls-in-unit-tests"><a href="#Fix-wrong-full-node-api-urls-in-unit-tests" class="headerlink" title="Fix wrong full node api urls in unit tests"></a>Fix wrong full node api urls in unit tests</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/46f6a6985e12469678dabe95314f410484504237" target="_blank" rel="noopener">commit 46f6a69</a></li>
+</ul>
+<h3 id="Fix-unittests"><a href="#Fix-unittests" class="headerlink" title="Fix unittests"></a>Fix unittests</h3><ul>
+<li><a href="https://github.com/holgern/beem/commit/500f9a864aa184d591b7a8fc1dc15ae7a9f448af" target="_blank" rel="noopener">commit 500f9a8</a></li>
+<li>Remove not working steemitdev testnet</li>
+<li>exclude api.steemit.com from some tests</li>
+</ul>
+<h2 id="Github-account"><a href="#Github-account" class="headerlink" title="Github account"></a>Github account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/update-for-beem-getblog-getfollowers-and-getfollowing-works-for-api-steemit-com" target="_blank" rel="noopener">&#x2018;update for beem - get_blog, get_followers and get_following works for api.steemit.com&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/fixing-the-windows-version-of-the-scrypt-library/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Fixing the windows build of the scrypt library</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemrewarding-com-curation-performance-is-shown-and-other-improvements/">
+                <span class="level-item">steemrewarding.com - curation performance is shown and other improvements</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Witness update: new server with ubuntu 18.04 is running steem 0.20.9 - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Step-by-step-introduction-for-setting-up-a-witness-server-Ubuntu-18-04">
+        <span class="has-mr-6">1</span>
+        <span>Step by step introduction for setting up a witness server (Ubuntu 18.04)</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Install-a-firewall-ufw-and-failtoban">
+        <span class="has-mr-6">1.1</span>
+        <span>Install a firewall (ufw) and failtoban</span>
+        </a></li><li>
+        <a class="is-flex" href="#Create-a-new-user-and-disable-login-through-root">
+        <span class="has-mr-6">1.2</span>
+        <span>Create a new user and disable login through root</span>
+        </a></li><li>
+        <a class="is-flex" href="#Relogin-as-newuser">
+        <span class="has-mr-6">1.3</span>
+        <span>Relogin as newuser</span>
+        </a></li><li>
+        <a class="is-flex" href="#Install-ntp">
+        <span class="has-mr-6">1.4</span>
+        <span>Install ntp</span>
+        </a></li><li>
+        <a class="is-flex" href="#zram">
+        <span class="has-mr-6">1.5</span>
+        <span>zram</span>
+        </a></li><li>
+        <a class="is-flex" href="#swap">
+        <span class="has-mr-6">1.6</span>
+        <span>swap</span>
+        </a></li><li>
+        <a class="is-flex" href="#Mount-the-ramdisk">
+        <span class="has-mr-6">1.7</span>
+        <span>Mount the ramdisk</span>
+        </a></li><li>
+        <a class="is-flex" href="#Download-the-blockchain">
+        <span class="has-mr-6">1.8</span>
+        <span>Download the blockchain</span>
+        </a></li><li>
+        <a class="is-flex" href="#Create-a-steemd-directory-inside-the-newuser-home">
+        <span class="has-mr-6">1.9</span>
+        <span>Create a .steemd directory inside the newuser home</span>
+        </a></li><li>
+        <a class="is-flex" href="#Changing-the-config-file">
+        <span class="has-mr-6">1.10</span>
+        <span>Changing the .config file</span>
+        </a></li><li>
+        <a class="is-flex" href="#Create-a-systemd-service">
+        <span class="has-mr-6">1.11</span>
+        <span>Create a systemd service</span>
+        </a></li><li>
+        <a class="is-flex" href="#Starting-the-service-and-replaying">
+        <span class="has-mr-6">1.12</span>
+        <span>Starting the service and replaying</span>
+        </a></li><li>
+        <a class="is-flex" href="#Checking-the-log">
+        <span class="has-mr-6">1.13</span>
+        <span>Checking the log</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Pricefeed">
+        <span class="has-mr-6">2</span>
+        <span>Pricefeed</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Creating-a-simple-crontab-job-for-running-updating-the-feed-every-6-hours">
+        <span class="has-mr-6">2.1</span>
+        <span>Creating a simple crontab job for running updating the feed every 6 hours</span>
+        </a></li><li>
+        <a class="is-flex" href="#price-feed-was-sucessfully-updated">
+        <span class="has-mr-6">2.2</span>
+        <span>price feed was sucessfully updated</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmVnwwtCBjhz9hLt6uY4DsXrjrdqm3knLB6bTtmAj2YQRB" alt="Witness update: new server with ubuntu 18.04 is running steem 0.20.9">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-04T13:11:57.000Z">2019-03-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/witness-category/">witness-category</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 942 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Witness update: new server with ubuntu 18.04 is running steem 0.20.9
+            
+        </h1>
+        <div class="content">
+            <p>I had to rent a new server with a bigger hard drive, as the free disc space is shrinking by 0.2G a day and I had only 4G left.</p>
+<p>Yesterday, I switched my witness key and the new server is running and signing blocks.<br><img src="https://ipfs.busy.org/ipfs/QmVnwwtCBjhz9hLt6uY4DsXrjrdqm3knLB6bTtmAj2YQRB" alt="image.png"></p>
+<p>My old server had a 256G ssd which would be full in around 20 days, so I advice all witnesses who have a server with a 256G drive to check for free space.</p>
+<p>There was no Ubuntu 16.04. available f&#xFC;r the new server, so I had to patch the steem source code. You can find more information about it in this <a href="https://steemit.com/witness-category/@holger80/witness-update-new-server-with-512-gb-ssd-and-compile-steem-0-20-9-unter-ubuntu-18-04" target="_blank" rel="noopener">post</a>. I created a gist for my patch: <a href="https://gist.github.com/holgern/e38881ef79ce93006cd5d763869afb29" target="_blank" rel="noopener">https://gist.github.com/holgern/e38881ef79ce93006cd5d763869afb29</a></p>
+<h2 id="Step-by-step-introduction-for-setting-up-a-witness-server-Ubuntu-18-04"><a href="#Step-by-step-introduction-for-setting-up-a-witness-server-Ubuntu-18-04" class="headerlink" title="Step by step introduction for setting up a witness server (Ubuntu 18.04)"></a>Step by step introduction for setting up a witness server (Ubuntu 18.04)</h2><h3 id="Install-a-firewall-ufw-and-failtoban"><a href="#Install-a-firewall-ufw-and-failtoban" class="headerlink" title="Install a firewall (ufw) and failtoban"></a>Install a firewall (ufw) and failtoban</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br><span class="line">apt-get install -y ufw </span><br><span class="line">apt-get install -y fail2ban</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Create-a-new-user-and-disable-login-through-root"><a href="#Create-a-new-user-and-disable-login-through-root" class="headerlink" title="Create a new user and disable login through root"></a>Create a new user and disable login through root</h3><p>I will use <code>newuser</code> as user name in the following. You can chose a different name and replace all <code>newuser</code> with your username.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser newuser</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now we can edit the ssh config file and disable root login:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/ssh/sshd_config</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>by changing the following parameters:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Port 2020</span><br><span class="line">PermitRootLogin no</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>I changed also the ssh port, so that a standard port scan does not work.</p>
+<p>Restart the ssh service:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart sshd</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>and create a filewall rule:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ufw allow 2020</span><br><span class="line">ufw enable</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now, we need to add the user to the sudoers file:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano /etc/sudoers</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>by adding<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">newuser ALL=(ALL) ALL</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Relogin-as-newuser"><a href="#Relogin-as-newuser" class="headerlink" title="Relogin as newuser"></a>Relogin as newuser</h3><p>We can now logout and login as new user.<br>We need now sudo in front of each command.</p>
+<h3 id="Install-ntp"><a href="#Install-ntp" class="headerlink" title="Install ntp"></a>Install ntp</h3><p>We need a accurate clock:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo timedatectl set-ntp no</span><br><span class="line">sudo apt-get install ntp</span><br><span class="line">sudo ntpq -np</span><br><span class="line">sudo systemctl status ntp</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="zram"><a href="#zram" class="headerlink" title="zram"></a>zram</h3><p>I&#x2019;m using zram on my witness server,  it worked well for me.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install -y zram-config</span><br><span class="line">sudo sed -i &apos;s|/ 2 /|/ 1 /|g&apos; /usr/bin/init-zram-swapping</span><br><span class="line">sudo systemctl restart zram-config</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="swap"><a href="#swap" class="headerlink" title="swap"></a>swap</h3><p>I will also add a swap, so that the system has a fallback solution, when the RAM is not sufficient.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo dd if=/dev/zero of=/swapfile bs=1M count=4096</span><br><span class="line">mkswap /swapfile</span><br><span class="line">echo &quot;/swapfile swap swap defaults 0 0&quot; | sudo tee /etc/fstab</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Mount-the-ramdisk"><a href="#Mount-the-ramdisk" class="headerlink" title="Mount the ramdisk"></a>Mount the ramdisk</h3><p>I set the ram disk to <code>2*64 G + 4 -1 = 131 G</code><br>The size for the fstab is then <code>(131 + 0.5 ) * 1024 =</code>134656</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mount -o remount,size=134656 /dev/shm</span><br><span class="line">echo &quot;tmpfs   /dev/shm         tmpfs   defaults,noexec,nosuid,size=134656      0  0&quot; | sudo tee /etc/fstab</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Download-the-blockchain"><a href="#Download-the-blockchain" class="headerlink" title="Download the blockchain"></a>Download the blockchain</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://gtg.steem.house/get/blockchain/block_log</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Create-a-steemd-directory-inside-the-newuser-home"><a href="#Create-a-steemd-directory-inside-the-newuser-home" class="headerlink" title="Create a .steemd directory inside the newuser home"></a>Create a .steemd directory inside the newuser home</h3><p>I created the .steemd by running steemd as root<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">steemd</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>pressing strg+c and moving it to the new place:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mv /root/.steemd /home/newuser/</span><br><span class="line">sudo chown -R newuser:newuser /home/newuser/.steemd</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now we can move the blockchain file into it:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv ~/block_log ~/.steemd/blockchain/</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Changing-the-config-file"><a href="#Changing-the-config-file" class="headerlink" title="Changing the .config file"></a>Changing the .config file</h3><p>You can find my config.ini here:<br><a href="https://gist.github.com/holgern/26cebeab2882d4546c5e0d7a58c90b40" target="_blank" rel="noopener">https://gist.github.com/holgern/26cebeab2882d4546c5e0d7a58c90b40</a></p>
+<p>witness and private-key must be edited:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano .steemd/config.ini</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>with<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># name of witness controlled by this node (e.g. initwitness )</span><br><span class="line">witness = &quot;holger80&quot;</span><br><span class="line"></span><br><span class="line"># WIF PRIVATE KEY to be used by one or more witnesses or miners</span><br><span class="line">private-key = 5xxxx</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Create-a-systemd-service"><a href="#Create-a-systemd-service" class="headerlink" title="Create a systemd service"></a>Create a systemd service</h3><p>I&#x2019;m using a systemctl service for running steemd:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/steemd.service</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>with the following content:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line">Description=steemd_server</span><br><span class="line">After=network.target  zram-config.service</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">WorkingDirectory=/home/newuser/.steemd</span><br><span class="line">ExecStart=/usr/bin/steemd --data-dir=/home/newuser/.steemd</span><br><span class="line">Restart=on-failure</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>For the first run, a replay is necessary. Thus, I change the service file and replace:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ExecStart=/usr/bin/steemd --data-dir=/home/newuser/.steemd</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>by<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ExecStart=/usr/bin/steemd --data-dir=/home/newuser/.steemd --replay</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Starting-the-service-and-replaying"><a href="#Starting-the-service-and-replaying" class="headerlink" title="Starting the service and replaying"></a>Starting the service and replaying</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br><span class="line">sudo systemctl enable steemd.service</span><br><span class="line">sudo systemctl start steemd.service</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Checking-the-log"><a href="#Checking-the-log" class="headerlink" title="Checking the log"></a>Checking the log</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo journalctl -f -u steemd</span><br></pre></td></tr></tbody></table></figure>
+<p>which will result in the following output when everything is running and the blockchain is replayed:<br><img src="https://ipfs.busy.org/ipfs/QmTU9gH8vWY6sMXHnz4JL92hTak8rjkG8gZQp9qSJr56zh" alt="image.png"></p>
+<h2 id="Pricefeed"><a href="#Pricefeed" class="headerlink" title="Pricefeed"></a>Pricefeed</h2><p>I do not want my active key stored on my server. Thus, most of the price feed toolboxes can not be used.</p>
+<p>I will use  beempy pricefeed, which needs only the witness key, which is already stored in the config.ini file.</p>
+<p>At first, I create a new file <code>~/update_feed</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">/home/newuser/.local/bin/beempy updatenodes</span><br><span class="line">/home/newuser/.local/bin/beempy witnessfeed holger80 5xxx</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>where 5xx is my witness wif.<br>In order to be able to run this, I need beem to be installed:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python3-pip python3-dev build-essential libssl-dev</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Then I install beem locally:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip3 install beem</span><br><span class="line">pip3 install cryptography</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>After logout and login again, <code>`beempy</code> should be available:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">which beempy</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>should result in<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/home/newuser/.local/bin/beempy</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="Creating-a-simple-crontab-job-for-running-updating-the-feed-every-6-hours"><a href="#Creating-a-simple-crontab-job-for-running-updating-the-feed-every-6-hours" class="headerlink" title="Creating a simple crontab job for running updating the feed every 6 hours"></a>Creating a simple crontab job for running updating the feed every 6 hours</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crontab -e</span><br></pre></td></tr></tbody></table></figure>
+<p>and enter<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0 */6 * * * (sh  /home/newuser/update_feed) &gt;&gt; /tmp/crontab.log 2&gt;&amp;1</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h3 id="price-feed-was-sucessfully-updated"><a href="#price-feed-was-sucessfully-updated" class="headerlink" title="price feed was sucessfully updated"></a>price feed was sucessfully updated</h3><p><img src="https://ipfs.busy.org/ipfs/Qmdp1srGShaxSeBT353v8EBjWDZp9i3EJbuJUFBzyRyjU6" alt="image.png"></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/witness-update-new-server-with-ubuntu-18-04-is-running-steem-0-20-9" target="_blank" rel="noopener">&#x2018;Witness update: new server with ubuntu 18.04 is running steem 0.20.9&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/witness/">witness</a>, <a class="has-link-grey -link" href="/@holger80/tags/witness-category/">witness-category</a>, <a class="has-link-grey -link" href="/@holger80/tags/witness-update/">witness-update</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/which-cards-dominate-the-steemmonsters-tournaments/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Which cards dominate the steemmonsters tournaments?</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/steemmonster-tournament-player-ranking-at-beempy-com/">
+                <span class="level-item">Steemmonster tournament player ranking at beempy.com</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

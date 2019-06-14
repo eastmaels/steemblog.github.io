@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>steempy - a new python library for steem - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Important-links">
+        <span class="has-mr-6">1</span>
+        <span>Important links</span>
+        </a></li><li>
+        <a class="is-flex" href="#Installation">
+        <span class="has-mr-6">2</span>
+        <span>Installation</span>
+        </a></li><li>
+        <a class="is-flex" href="#Python-files-inside-steempy">
+        <span class="has-mr-6">3</span>
+        <span>Python files inside steempy</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Account">
+        <span class="has-mr-6">3.1</span>
+        <span>Account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Amount">
+        <span class="has-mr-6">3.2</span>
+        <span>Amount</span>
+        </a></li><li>
+        <a class="is-flex" href="#Block">
+        <span class="has-mr-6">3.3</span>
+        <span>Block</span>
+        </a></li><li>
+        <a class="is-flex" href="#Blockchain">
+        <span class="has-mr-6">3.4</span>
+        <span>Blockchain</span>
+        </a></li><li>
+        <a class="is-flex" href="#BlockchainObject">
+        <span class="has-mr-6">3.5</span>
+        <span>BlockchainObject</span>
+        </a></li><li>
+        <a class="is-flex" href="#Memo">
+        <span class="has-mr-6">3.6</span>
+        <span>Memo</span>
+        </a></li><li>
+        <a class="is-flex" href="#Notify">
+        <span class="has-mr-6">3.7</span>
+        <span>Notify</span>
+        </a></li><li>
+        <a class="is-flex" href="#Price">
+        <span class="has-mr-6">3.8</span>
+        <span>Price</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem">
+        <span class="has-mr-6">3.9</span>
+        <span>Steem</span>
+        </a></li><li>
+        <a class="is-flex" href="#Storage">
+        <span class="has-mr-6">3.10</span>
+        <span>Storage</span>
+        </a></li><li>
+        <a class="is-flex" href="#Transactionbuilder">
+        <span class="has-mr-6">3.11</span>
+        <span>Transactionbuilder</span>
+        </a></li><li>
+        <a class="is-flex" href="#Vote">
+        <span class="has-mr-6">3.12</span>
+        <span>Vote</span>
+        </a></li><li>
+        <a class="is-flex" href="#Wallet">
+        <span class="has-mr-6">3.13</span>
+        <span>Wallet</span>
+        </a></li><li>
+        <a class="is-flex" href="#Witness">
+        <span class="has-mr-6">3.14</span>
+        <span>Witness</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Python-files-inside-steempybase">
+        <span class="has-mr-6">4</span>
+        <span>Python files inside steempybase</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#account">
+        <span class="has-mr-6">4.1</span>
+        <span>account</span>
+        </a></li><li>
+        <a class="is-flex" href="#bip38">
+        <span class="has-mr-6">4.2</span>
+        <span>bip38</span>
+        </a></li><li>
+        <a class="is-flex" href="#memo">
+        <span class="has-mr-6">4.3</span>
+        <span>memo</span>
+        </a></li><li>
+        <a class="is-flex" href="#objects">
+        <span class="has-mr-6">4.4</span>
+        <span>objects</span>
+        </a></li><li>
+        <a class="is-flex" href="#operations">
+        <span class="has-mr-6">4.5</span>
+        <span>operations</span>
+        </a></li><li>
+        <a class="is-flex" href="#signedtransaction">
+        <span class="has-mr-6">4.6</span>
+        <span>signedtransaction</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Python-files-classes-inside-steempyapi">
+        <span class="has-mr-6">5</span>
+        <span>Python files/classes inside steempyapi</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#SteemNodeRPC">
+        <span class="has-mr-6">5.1</span>
+        <span>SteemNodeRPC</span>
+        </a></li><li>
+        <a class="is-flex" href="#SteemWebsocket">
+        <span class="has-mr-6">5.2</span>
+        <span>SteemWebsocket</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#How-does-steempy-work">
+        <span class="has-mr-6">6</span>
+        <span>How does steempy work</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Read-a-account">
+        <span class="has-mr-6">6.1</span>
+        <span>Read a account</span>
+        </a></li><li>
+        <a class="is-flex" href="#Access-the-Blockchain">
+        <span class="has-mr-6">6.2</span>
+        <span>Access the Blockchain</span>
+        </a></li><li>
+        <a class="is-flex" href="#Votes">
+        <span class="has-mr-6">6.3</span>
+        <span>Votes</span>
+        </a></li><li>
+        <a class="is-flex" href="#Stream-all-blocks">
+        <span class="has-mr-6">6.4</span>
+        <span>Stream all blocks</span>
+        </a></li><li>
+        <a class="is-flex" href="#Current-state">
+        <span class="has-mr-6">6.5</span>
+        <span>Current state</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">6.6</span>
+        <span>Roadmap</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#How-to-contribute">
+        <span class="has-mr-6">7</span>
+        <span>How to contribute</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/@holger80/None" alt="steempy - a new python library for steem">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-18T21:52:36.000Z">2018-02-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 768 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                steempy - a new python library for steem
+            
+        </h1>
+        <div class="content">
+            <p>We all know the official <a href="https://github.com/steemit/steem-python" target="_blank" rel="noopener">python library for steem</a>.</p>
+<p>I decided to write a new python library for steem, as steem-python do not uses synergies with the BitShares network. Furthermore, the source code of steem-python is in a bad shape and there are almost no unit-tests. In meantime, <a href="https://github.com/xeroc/python-graphenelib" target="_blank" rel="noopener">python-graphenelib</a> is actively developed and it is a obvious step to use this library for any Graphene 2.0 blockchain.</p>
+<p>So I present today a new python library for steem called <em>steempy</em>. This new library is at the beginning of its developement. <a href="https://github.com/holgern/steempy" target="_blank" rel="noopener">steempy</a> is based on <a href="https://github.com/xeroc/python-bitshares" target="_blank" rel="noopener">python-bitshares</a> and <a href="https://github.com/xeroc/python-graphenelib" target="_blank" rel="noopener">python-graphenelib</a>. steempy can be installed besides the official steem-python library. </p>
+<p>At the moment, steempy has a different API than steem-python. Unlike steem-python, steempy  uses a RPC-Websockt for connection with the steem nodes. So the node-address must start with wss, e.g. wss://gtg.steem.house:8090.</p>
+<h2 id="Important-links"><a href="#Important-links" class="headerlink" title="Important links"></a>Important links</h2><ul>
+<li><a href="https://github.com/holgern/steempy" target="_blank" rel="noopener">https://github.com/holgern/steempy</a></li>
+<li><a href="http://steempy.readthedocs.io/en/latest/" target="_blank" rel="noopener">http://steempy.readthedocs.io/en/latest/</a></li>
+<li><a href="https://pypi.python.org/pypi/steempy" target="_blank" rel="noopener">https://pypi.python.org/pypi/steempy</a><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install steempy</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>or<br> </p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/holgern/steempy.git</span><br><span class="line">cd steempy</span><br><span class="line">python setup.py build</span><br><span class="line">python setup.py install --user</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Python-files-inside-steempy"><a href="#Python-files-inside-steempy" class="headerlink" title="Python files inside steempy"></a>Python files inside steempy</h2><h3 id="Account"><a href="#Account" class="headerlink" title="Account"></a>Account</h3><ul>
+<li>Is a BlockchainObject class</li>
+<li>Contains information about one account </li>
+<li>history and balances functions<h3 id="Amount"><a href="#Amount" class="headerlink" title="Amount"></a>Amount</h3></li>
+<li>dict class with amount, symbol and asset</li>
+<li>regular mathematical expression possible<h3 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h3></li>
+<li>Is a BlockchainObject class</li>
+<li>Contains information about one block<h3 id="Blockchain"><a href="#Blockchain" class="headerlink" title="Blockchain"></a>Blockchain</h3></li>
+<li>Is a BlockchainObject class</li>
+<li>Contains information about the blockchain</li>
+<li>Stream function</li>
+<li>get_all_accounts, feed_history, current_median_history_price, get_current_block, block_time and more functions<h3 id="BlockchainObject"><a href="#BlockchainObject" class="headerlink" title="BlockchainObject"></a>BlockchainObject</h3></li>
+<li>dict class</li>
+<li>cache function<h3 id="Memo"><a href="#Memo" class="headerlink" title="Memo"></a>Memo</h3></li>
+<li>uses the wallet class for message encryption/decryption<h3 id="Notify"><a href="#Notify" class="headerlink" title="Notify"></a>Notify</h3></li>
+<li>Is a Events class and uses Websocket</li>
+<li>Can be used to stream all blocks<h3 id="Price"><a href="#Price" class="headerlink" title="Price"></a>Price</h3></li>
+<li>Is a dict class</li>
+<li>Can be used for things like  <code>Price(&quot;0.315 SBD/STEEM&quot;)</code><h3 id="Steem"><a href="#Steem" class="headerlink" title="Steem"></a>Steem</h3></li>
+<li>Connect to the Steem network.</li>
+<li>Uses the SteemNodeRPC class to send calls to the Steem network</li>
+<li>Functions for finalizes transaction and key management<h3 id="Storage"><a href="#Storage" class="headerlink" title="Storage"></a>Storage</h3></li>
+<li>Uses a sql3-database to store user keys<h3 id="Transactionbuilder"><a href="#Transactionbuilder" class="headerlink" title="Transactionbuilder"></a>Transactionbuilder</h3></li>
+<li>dict class</li>
+<li>Simplifies the creation of transactions<h3 id="Vote"><a href="#Vote" class="headerlink" title="Vote"></a>Vote</h3></li>
+<li>Represents a vote</li>
+<li>Is used by ActiveVotes (all votes from a post) and AccountVotes (all votes from an account)<h3 id="Wallet"><a href="#Wallet" class="headerlink" title="Wallet"></a>Wallet</h3></li>
+<li>Manages private keys for an account<h3 id="Witness"><a href="#Witness" class="headerlink" title="Witness"></a>Witness</h3></li>
+<li>Read data about a witness <h2 id="Python-files-inside-steempybase"><a href="#Python-files-inside-steempybase" class="headerlink" title="Python files inside steempybase"></a>Python files inside steempybase</h2><h3 id="account"><a href="#account" class="headerlink" title="account"></a>account</h3></li>
+<li>Wrapper for graphenebase.account <h3 id="bip38"><a href="#bip38" class="headerlink" title="bip38"></a>bip38</h3></li>
+<li>Wrapper for graphenebase.bip38<h3 id="memo"><a href="#memo" class="headerlink" title="memo"></a>memo</h3></li>
+<li>Function for encryption/decryption of a memo<h3 id="objects"><a href="#objects" class="headerlink" title="objects"></a>objects</h3></li>
+<li>Containts classes which represents objects, which are used in operations in the steem blockchain, as  Account, Amount, Operation, Permission, &#x2026;</li>
+<li>Used for signing a transaction<h3 id="operations"><a href="#operations" class="headerlink" title="operations"></a>operations</h3></li>
+<li>Contains classes which represents operations on the blockchain as Transfer, Vote, Account_create,&#x2026;</li>
+<li>Used for signing a transaction<h3 id="signedtransaction"><a href="#signedtransaction" class="headerlink" title="signedtransaction"></a>signedtransaction</h3></li>
+<li>Wrapper for graphenebase.signedtransactions<h2 id="Python-files-classes-inside-steempyapi"><a href="#Python-files-classes-inside-steempyapi" class="headerlink" title="Python files/classes inside steempyapi"></a>Python files/classes inside steempyapi</h2><h3 id="SteemNodeRPC"><a href="#SteemNodeRPC" class="headerlink" title="SteemNodeRPC"></a>SteemNodeRPC</h3></li>
+<li>Wrapper for grapheneapi.graphenewsrpc<h3 id="SteemWebsocket"><a href="#SteemWebsocket" class="headerlink" title="SteemWebsocket"></a>SteemWebsocket</h3></li>
+<li>Event class</li>
+<li>Create a websocket connection and request push notifications</li>
+<li>Can be used to stream each Block</li>
+</ul>
+<h2 id="How-does-steempy-work"><a href="#How-does-steempy-work" class="headerlink" title="How does steempy work"></a>How does steempy work</h2><h3 id="Read-a-account"><a href="#Read-a-account" class="headerlink" title="Read a account"></a>Read a account</h3> <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">from steempy.account import Account</span><br><span class="line">account = Account(&quot;holger80&quot;)</span><br><span class="line">print(account)</span><br><span class="line">&lt;Account holger80&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Access-the-Blockchain"><a href="#Access-the-Blockchain" class="headerlink" title="Access the Blockchain"></a>Access the Blockchain</h3> <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from steempy.blockchain import Blockchain</span><br><span class="line">b = Blockchain()</span><br><span class="line">b.get_all_accounts()</span><br><span class="line">b.get_current_block()</span><br><span class="line">b.current_median_history_price()</span><br><span class="line">b.feed_history()</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Votes"><a href="#Votes" class="headerlink" title="Votes"></a>Votes</h3> <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from steempy.vote import AccountVotes</span><br><span class="line">allVotes = AccountVotes(&quot;holger80&quot;)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Stream-all-blocks"><a href="#Stream-all-blocks" class="headerlink" title="Stream all blocks"></a>Stream all blocks</h3> <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> from pprint import pprint</span><br><span class="line"> from steempy.notify import Notify</span><br><span class="line"></span><br><span class="line">notify = Notify(  on_block=print  )</span><br><span class="line">notify.listen()</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Current-state"><a href="#Current-state" class="headerlink" title="Current state"></a>Current state</h3><ul>
+<li>The current version is 0.19.2</li>
+<li>Account, Amount, Asset, Block, Blockchain, Instance, Memo, Message, Notify, Price, Steem, Transactionbuilder, Vote, Witness are working</li>
+<li>Signed transactions are working</li>
+<li>At the moment, only transfer-transaction is implemented</li>
+<li>67 % coverage by unit tests</li>
+<li>Used CI-tools: travis, appveyor, circeci and codecov</li>
+<li>published to <a href="https://pypi.python.org/pypi/steempy" target="_blank" rel="noopener">pypi</a></li>
+<li><a href="http://steempy.readthedocs.io/en/latest/" target="_blank" rel="noopener">documentation</a> available</li>
+</ul>
+<h3 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h3><ul>
+<li>Add all missing transactions, as posts,comments, votes, &#x2026;</li>
+<li>Add more function regarding the account</li>
+<li>Add Post and Comment class</li>
+<li>Add CLI-programms</li>
+<li>Rename the library to beem, steempy is the name of the CLI tool from python-steem.</li>
+</ul>
+<h2 id="How-to-contribute"><a href="#How-to-contribute" class="headerlink" title="How to contribute"></a>How to contribute</h2><ul>
+<li>You are invited to fork my <a href="https://github.com/holgern/steempy" target="_blank" rel="noopener">repo</a> and submit pull requests</li>
+<li>If you have an issue, please let me know</li>
+</ul>
+<hr>
+<p>What do you think? Do you have suggestions? What do think about the name of my library? Is steempy a good name or should I change it?</p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@holger80/steempy-a-new-python-library-for-steem" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/steempy-a-new-python-library-for-steem" target="_blank" rel="noopener">&#x2018;steempy - a new python library for steem&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@holger80/tags/steem-python/">steem-python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steempy/">steempy</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/update-for-beem-former-steempy-the-new-a-python-library-for-steem/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Update for beem (former steempy) - the new python library for steem</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-to-keep-your-steemit-account-safe/">
+                <span class="level-item">How to keep your steemit account safe</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

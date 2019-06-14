@@ -1,0 +1,464 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Automation of Steem Basic Income - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#Steem-Basic-Income">
+        <span class="has-mr-6">2</span>
+        <span>Steem Basic Income</span>
+        </a></li><li>
+        <a class="is-flex" href="#Technology-Stack">
+        <span class="has-mr-6">3</span>
+        <span>Technology Stack</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#sbi-store-ops-db-py">
+        <span class="has-mr-6">3.1</span>
+        <span>sbi_store_ops_db.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-transfer-py">
+        <span class="has-mr-6">3.2</span>
+        <span>sbi_transfer.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-update-member-db-py">
+        <span class="has-mr-6">3.3</span>
+        <span>sbi_update_member_db.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-store-member-hist-py">
+        <span class="has-mr-6">3.4</span>
+        <span>sbi_store_member_hist.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-update-post-count-py">
+        <span class="has-mr-6">3.5</span>
+        <span>sbi_update_post_count.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-stream-post-comment-py">
+        <span class="has-mr-6">3.6</span>
+        <span>sbi_stream_post_comment.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-check-delegation-py">
+        <span class="has-mr-6">3.7</span>
+        <span>sbi_check_delegation.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#bi-upvote-post-comment-py">
+        <span class="has-mr-6">3.8</span>
+        <span>bi_upvote_post_comment.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#sbi-check-blacklist-py">
+        <span class="has-mr-6">3.9</span>
+        <span>sbi_check_blacklist.py</span>
+        </a></li><li>
+        <a class="is-flex" href="#Python-library-steembi">
+        <span class="has-mr-6">3.10</span>
+        <span>Python library steembi</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">4</span>
+        <span>Roadmap</span>
+        </a></li><li>
+        <a class="is-flex" href="#How-to-contribute">
+        <span class="has-mr-6">5</span>
+        <span>How to contribute</span>
+        </a></li><li>
+        <a class="is-flex" href="#GitHub-Account">
+        <span class="has-mr-6">6</span>
+        <span>GitHub Account</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmVhhf7x6ovMeN9qLV7HSPjNea7FM81rMB9Kkt7wu5sT9F/image.png" alt="Automation of Steem Basic Income">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-15T23:15:39.000Z">2018-12-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 769 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Automation of Steem Basic Income
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmVhhf7x6ovMeN9qLV7HSPjNea7FM81rMB9Kkt7wu5sT9F/image.png" alt=""></p>
+<h2 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h2><p><a href="https://github.com/holgern/steembasicincome" target="_blank" rel="noopener">https://github.com/holgern/steembasicincome</a></p>
+<h2 id="Steem-Basic-Income"><a href="#Steem-Basic-Income" class="headerlink" title="Steem Basic Income"></a>Steem Basic Income</h2><p>At the moment 6800 accounts have bought shares or were sponsored by others in the steem basic income program. Upvotes of member posts were handled by manually adjusted steemauto rules. This was a lot of work, as the upvote percentage has to be adjusted whenever the member gains more shares or when the member changes its posting frequency.</p>
+<p>The automation scripts handle all these steps by storing a rshares balance for each member. Every 144 minutes, the rshares balance is increased by 80,000,000 rshares for each share. Upvotes of posts from sbi related accounts will also increase the rshares balance. Whenever a member has written a post, it is upvoted by 20% of the rshares balance. The vote rshares are then subtracted from the rshares balance.</p>
+<p>The scripts detect when new shares are bought or sponsored. It checks also all  incoming delegations. In both cases, the share amount are updated. In the next 144 min cycle, more rshares will be added to the rshares balance. There is no waiting for enrollment anymore.</p>
+<p>You can read more here about the <a href="https://steemit.com/services/@steembasicincome/steem-basic-income-1-0-initial-automation-release" target="_blank" rel="noopener">Initial Automation Release</a>.</p>
+<h2 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h2><p>The scripts are using <a href="https://github.com/holgern/beem" target="_blank" rel="noopener">beem</a> for accessing the STEEM blockchain. Instruction for installation can be found in the readme.</p>
+<h3 id="sbi-store-ops-db-py"><a href="#sbi-store-ops-db-py" class="headerlink" title="sbi_store_ops_db.py"></a><code>sbi_store_ops_db.py</code></h3><p>This scripts stores new account history entries for all sbi accounts in the database for later usage.<br>All transfer operation of minnowbooster is also stored in the database.</p>
+<h3 id="sbi-transfer-py"><a href="#sbi-transfer-py" class="headerlink" title="sbi_transfer.py"></a><code>sbi_transfer.py</code></h3><p>New <code>transfer</code> and <code>delegate_vesting_shares</code> account operation are loaded from the database and analyzed for new delegations and STEEM transfer of enrolling new sbi shares. The processed transfer ops are stored in the <code>trx</code> database.</p>
+<h3 id="sbi-update-member-db-py"><a href="#sbi-update-member-db-py" class="headerlink" title="sbi_update_member_db.py"></a><code>sbi_update_member_db.py</code></h3><p>Every 144 minutes, this script adds 80,000,000 rshares for each sbi share to all sbi share holders.<br>The script calculates the total share days which indicates how long the sbi shares are hold. This is used for initially calculating the rshares balance for all accounts.</p>
+<p>This script checks also who upvoted posts from sbi accounts (steembasicincome to sbi10) and adds the upvote rshares multiplied by a factor to the balance.</p>
+<h3 id="sbi-store-member-hist-py"><a href="#sbi-store-member-hist-py" class="headerlink" title="sbi_store_member_hist.py"></a><code>sbi_store_member_hist.py</code></h3><p>This script streams all blocks for outgoing votes. The rshares balance is reduced by the rshares value of all outgoing votes.</p>
+<h3 id="sbi-update-post-count-py"><a href="#sbi-update-post-count-py" class="headerlink" title="sbi_update_post_count.py"></a><code>sbi_update_post_count.py</code></h3><p>The last checked member account is selected and the timestamp of its last post and comment is stored in the database.</p>
+<h3 id="sbi-stream-post-comment-py"><a href="#sbi-stream-post-comment-py" class="headerlink" title="sbi_stream_post_comment.py"></a><code>sbi_stream_post_comment.py</code></h3><p>This script fetches new posts and comments from all members and stores them in the database.</p>
+<h3 id="sbi-check-delegation-py"><a href="#sbi-check-delegation-py" class="headerlink" title="sbi_check_delegation.py"></a><code>sbi_check_delegation.py</code></h3><p>New delegations are checked if they are bought through minnowbooster by checking if a transfer to minnowbooster in the same time exists.</p>
+<h3 id="bi-upvote-post-comment-py"><a href="#bi-upvote-post-comment-py" class="headerlink" title="bi_upvote_post_comment.py"></a><code>bi_upvote_post_comment.py</code></h3><p>This script handles all upvotes of member posts/comments. It loads all not already upvoted posts/comments from the database and go throught them. When post was found and the member has a positive rshares balance, an upvote is casted with 20% of the rshares balance. It is automatically selected from which sbi account the upvote will be casted. It is always the sbi account selected that has the most mana and a sufficient high upvote value.</p>
+<h3 id="sbi-check-blacklist-py"><a href="#sbi-check-blacklist-py" class="headerlink" title="sbi_check_blacklist.py"></a><code>sbi_check_blacklist.py</code></h3><p>It is checked if a member is currently blacklisted by buildawhale or by steemcleaners. When this is the case, the member will not be upvoted until the flag is manually cleared or the blacklist state of buildawhale or steemcleaners changes.</p>
+<h3 id="Python-library-steembi"><a href="#Python-library-steembi" class="headerlink" title="Python library steembi"></a>Python library <code>steembi</code></h3><p>The scripts uses the provided library steembi. The library contains a class for memo parsing and classes for storing and accessing the different databases. The library contains unit tests for memo parsing. It has also a member class, which is used for calculating the share age and avg share age.</p>
+<h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h2><p>In the next release, a comment answer bot will be provided, so that every member can ask the shares  amount and how big the  next upvote will be.</p>
+<p>Then, a confirmation transfer to the share buyer will be added which shows the new shares count.</p>
+<h2 id="How-to-contribute"><a href="#How-to-contribute" class="headerlink" title="How to contribute"></a>How to contribute</h2><p>Please fork the repository and do a pull requests. It is also possible to open a new issue. You will also find help in the <a href="https://discord.gg/VpghTRz" target="_blank" rel="noopener">discord server</a>.</p>
+<h2 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h2><p><a href="https://github.com/holgern" target="_blank" rel="noopener">https://github.com/holgern</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/automation-of-steem-basic-income" target="_blank" rel="noopener">&#x2018;Automation of Steem Basic Income&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/development/">development</a>, <a class="has-link-grey -link" href="/@holger80/tags/steembasicincome/">steembasicincome</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>, <a class="has-link-grey -link" href="/@holger80/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/by-carefull-with-account-history-index-it-is-not-reliable/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">By carefull with account history index, it is not reliable</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/receive-a-desktop-notification-when-a-steemmonster-opponent-is-matched/">
+                <span class="level-item">Receive a  desktop notification when a steemmonster opponent is matched</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

@@ -1,0 +1,447 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>beem version 0.20.3 released - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Install-beem">
+        <span class="has-mr-6">1.1</span>
+        <span>Install beem</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#What-has-changed-in-the-last-releases">
+        <span class="has-mr-6">2</span>
+        <span>What has changed in the last releases:</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#0-20-3">
+        <span class="has-mr-6">2.1</span>
+        <span>0.20.3</span>
+        </a></li><li>
+        <a class="is-flex" href="#0-20-2">
+        <span class="has-mr-6">2.2</span>
+        <span>0.20.2</span>
+        </a></li><li>
+        <a class="is-flex" href="#0-20-1">
+        <span class="has-mr-6">2.3</span>
+        <span>0.20.1</span>
+        </a></li><li>
+        <a class="is-flex" href="#0-20-0">
+        <span class="has-mr-6">2.4</span>
+        <span>0.20.0</span>
+        </a></li><li>
+        <a class="is-flex" href="#Some-examples-what-is-possible-with-the-newest-beem">
+        <span class="has-mr-6">2.5</span>
+        <span>Some examples what is possible with the newest beem:</span>
+        </a></li><li>
+        <a class="is-flex" href="#Calculating-RC-values-of-a-post-and-vote">
+        <span class="has-mr-6">2.6</span>
+        <span>Calculating RC values of a post and vote</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmaMGH5GcZsUkNgYTM6eQrE4L37Zt98gPUQJTxMU4AUYMv" alt="beem version 0.20.3 released">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-09-28T11:45:48.000Z">2018-09-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/beem/">beem</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 462 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                beem version 0.20.3 released
+            
+        </h1>
+        <div class="content">
+            <h2 id="Install-beem"><a href="#Install-beem" class="headerlink" title="Install beem"></a>Install <a href="https://github.com/holgern/beem/" target="_blank" rel="noopener">beem</a></h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install beem -U</span><br></pre></td></tr></tbody></table></figure>
+<p>or<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install beem</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h1 id="What-has-changed-in-the-last-releases"><a href="#What-has-changed-in-the-last-releases" class="headerlink" title="What has changed in the last releases:"></a>What has changed in the last releases:</h1><h2 id="0-20-3"><a href="#0-20-3" class="headerlink" title="0.20.3"></a>0.20.3</h2><ul>
+<li>add RC class to calculate RC costs of operations</li>
+<li>add comment, vote, transfer RC costs in account.print_info() and beempy power</li>
+<li>Shows number of possible comments, votes, tranfers with available RCs in account.print_info() and beempy power</li>
+<li>get_rc_cost was added to steem to calculation RC costs from resource count</li>
+<li>bug regarding new amount format in witness update fixed (also for beempy witnessenable and witnessdisable)</li>
+</ul>
+<h2 id="0-20-2"><a href="#0-20-2" class="headerlink" title="0.20.2"></a>0.20.2</h2><ul>
+<li>estimated_mana is now capped by estimated_max</li>
+<li>print_info fixed()</li>
+<li>get_api_methods() and get_apis() added to Steem</li>
+</ul>
+<h2 id="0-20-1"><a href="#0-20-1" class="headerlink" title="0.20.1"></a>0.20.1</h2><ul>
+<li>Improved get_rc_manabar(), get_manabar() output</li>
+<li>get_voting_power() fixed again</li>
+<li>print_info for account improved</li>
+<li>get_manabar_recharge_time_str(), get_manabar_recharge_timedelta() and get_manabar_recharge_time() added</li>
+<li><a href="https://steemd-appbase.steemit.com" target="_blank" rel="noopener">https://steemd-appbase.steemit.com</a> added to nodelist</li>
+</ul>
+<h2 id="0-20-0"><a href="#0-20-0" class="headerlink" title="0.20.0"></a>0.20.0</h2><ul>
+<li>Fully supporting hf20</li>
+<li>add get_resource_params(), get_resource_pool(), claim_account(), create_claimed_account() to Steem</li>
+<li>fix 30x fee for create_account</li>
+<li>add find_rc_accounts() to Blockchain</li>
+<li>get_rc(), get_rc_manabar(), get_manabar() added to Account</li>
+<li>get_voting_power() fixed</li>
+</ul>
+<h2 id="Some-examples-what-is-possible-with-the-newest-beem"><a href="#Some-examples-what-is-possible-with-the-newest-beem" class="headerlink" title="Some examples what is possible with the newest beem:"></a>Some examples what is possible with the newest beem:</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy power holger80</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://ipfs.busy.org/ipfs/QmaMGH5GcZsUkNgYTM6eQrE4L37Zt98gPUQJTxMU4AUYMv" alt="image.png"></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">beempy witnessproperties --account_subsidy_budget 792 holger80 5xxxxx</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://ipfs.busy.org/ipfs/QmWv665xmF9x3aHvau1i5ae5xYVc6nNHC9qcZq6JTgVVUo" alt="image.png"></p>
+<h2 id="Calculating-RC-values-of-a-post-and-vote"><a href="#Calculating-RC-values-of-a-post-and-vote" class="headerlink" title="Calculating RC values of a post and vote"></a>Calculating RC values of a post and vote</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">from beem.comment import Comment</span><br><span class="line">from beem.rc import RC</span><br><span class="line">from beem.utils import resolve_authorperm</span><br><span class="line">acc = Account(&quot;holger80&quot;)</span><br><span class="line">authorperm = acc.get_blog(limit=1)[0][&quot;authorperm&quot;]</span><br><span class="line">c = Comment(authorperm)</span><br><span class="line">rc = RC()</span><br><span class="line">c_rc_cost = rc.comment_dict(c)</span><br><span class="line">rc_mana = acc.get_rc_manabar()</span><br><span class="line">print(&quot;Your last post costs now %.2f G RC (%.2f %% of your max RC)&quot; % (c_rc_cost / 1e9, c_rc_cost / rc_mana[&quot;estimated_max&quot;] * 100))</span><br><span class="line"></span><br><span class="line">last_vote = acc.get_account_votes()[-1]</span><br><span class="line">vote_dict = {}</span><br><span class="line">vote_dict[&quot;voter&quot;] = acc[&quot;name&quot;]</span><br><span class="line">vote_dict[&quot;author&quot;], vote_dict[&quot;permlink&quot;] = resolve_authorperm(last_vote[&quot;authorperm&quot;])</span><br><span class="line">vote_dict[&quot;weight&quot;] = 10000 # bug in api (weight is higher than 10000 and value does not matter for RC)</span><br><span class="line">v_rc_cost = rc.vote_dict(vote_dict)</span><br><span class="line">print(&quot;Your last vote costs now %.2f G RC (%.2f %% of your max RC)&quot; % (v_rc_cost / 1e9, v_rc_cost / rc_mana[&quot;estimated_max&quot;] * 100))</span><br></pre></td></tr></tbody></table></figure>
+<p>with the result:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Your last post costs now 28.17 G RC (0.34 % of your max RC)</span><br><span class="line">Your last vote costs now 3.39 G RC (0.04 % of your max RC)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<hr>
+<p>If you like what I&#x2019;m doing, please consider @holger80 as one of your witnesses (<a href="https://v2.steemconnect.com/sign/account-witness-vote?witness=holger80&amp;approve=1" target="_blank" rel="noopener">steemconnect</a>).</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/beem-version-0-20-3-released" target="_blank" rel="noopener">&#x2018;beem version 0.20.3 released&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/beem/">beem</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/release/">release</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/beempy-com-beempy-for-your-browser/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">beempy.com - beempy for your browser</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/how-strong-are-the-rc-costs-changing/">
+                <span class="level-item">How strong are the RC costs changing?</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+

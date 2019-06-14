@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>How long does it take to stream the entire steem blockchain? - Holger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@holger80/css/style.css">
+
+<link rel="stylesheet" href="/@holger80/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@holger80/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@holger80/">Home</a>
+                
+                <a class="navbar-item" href="/@holger80/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@holger80/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@holger80/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@holger80/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Setups">
+        <span class="has-mr-6">1.1</span>
+        <span>Setups</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#Results">
+        <span class="has-mr-6">2</span>
+        <span>Results</span>
+        </a></li><li>
+        <a class="is-flex" href="#Conclusions">
+        <span class="has-mr-6">3</span>
+        <span>Conclusions</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@holger80/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/Qmem4xyx72kLoqgMj4Rd4q5352C6poFhBoCy6o9QiKgHKJ" alt="How long does it take to stream the entire steem blockchain?">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-07-26T05:02:09.000Z">2018-07-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@holger80/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 715 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                How long does it take to stream the entire steem blockchain?
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/Qmem4xyx72kLoqgMj4Rd4q5352C6poFhBoCy6o9QiKgHKJ" alt="image.png"><br><a href="https://pixabay.com/en/blockchain-cryptocurrency-network-3277336/" target="_blank" rel="noopener">source</a></p>
+<p>I was asking me, how long does it take to stream the entire steem blockchain to my computer? In order to find out, I wrote the following script:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">from beem.blockchain import Blockchain</span><br><span class="line">from beem.nodelist import NodeList</span><br><span class="line">from beem import Steem</span><br><span class="line">from beem.instance import set_shared_steem_instance</span><br><span class="line">import time</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">    </span><br><span class="line">    # Update current node list from @fullnodeupdate</span><br><span class="line">    nodes = NodeList()</span><br><span class="line">    </span><br><span class="line">    setup = [{&quot;appbase&quot;: True, &quot;https&quot;: True, &quot;threading&quot;: False, &quot;max_batch_size&quot;: 50}, {&quot;appbase&quot;: True, &quot;https&quot;: False, &quot;threading&quot;: False, &quot;max_batch_size&quot;: 50},</span><br><span class="line">             {&quot;appbase&quot;: False, &quot;https&quot;: False, &quot;threading&quot;: True, &quot;max_batch_size&quot;: None}, {&quot;appbase&quot;: False, &quot;https&quot;: False, &quot;threading&quot;: False, &quot;max_batch_size&quot;: None},</span><br><span class="line">             {&quot;appbase&quot;: True, &quot;https&quot;: False, &quot;threading&quot;: True, &quot;max_batch_size&quot;: None}, {&quot;appbase&quot;: True, &quot;https&quot;: False, &quot;threading&quot;: False, &quot;max_batch_size&quot;: None},</span><br><span class="line">             {&quot;appbase&quot;: False, &quot;https&quot;: True, &quot;threading&quot;: True, &quot;max_batch_size&quot;: None}, {&quot;appbase&quot;: False, &quot;https&quot;: True, &quot;threading&quot;: False, &quot;max_batch_size&quot;: None},</span><br><span class="line">             {&quot;appbase&quot;: True, &quot;https&quot;: True, &quot;threading&quot;: True, &quot;max_batch_size&quot;: None}, {&quot;appbase&quot;: True, &quot;https&quot;: True, &quot;threading&quot;: False, &quot;max_batch_size&quot;: None}]</span><br><span class="line">    result_setup_days =[]</span><br><span class="line">    start_block_list = [1000, 10e6, 20e6]</span><br><span class="line">    for s in setup:</span><br><span class="line">        print(s)</span><br><span class="line">        nodes.update_nodes(weights={&quot;hist&quot;: 1})</span><br><span class="line">        stm = Steem(node=nodes.get_nodes(appbase=s[&quot;appbase&quot;], https=s[&quot;https&quot;], wss=not s[&quot;https&quot;]))</span><br><span class="line">        set_shared_steem_instance(stm)</span><br><span class="line">    </span><br><span class="line">        b = Blockchain()</span><br><span class="line">        end_block = b.get_current_block_num()</span><br><span class="line">        for start_block in start_block_list:</span><br><span class="line">            print(start_block)</span><br><span class="line">            last_block_num = None</span><br><span class="line">            block_diff = 1000</span><br><span class="line">            result_days = []</span><br><span class="line">            </span><br><span class="line">            print(&quot;Starting to stream at block %d.&quot; % start_block)</span><br><span class="line">            for op in b.stream(start=int(start_block), max_batch_size=s[&quot;max_batch_size&quot;], threading=s[&quot;threading&quot;], thread_num=8):</span><br><span class="line">                block_num = op[&quot;block_num&quot;]</span><br><span class="line">                if last_block_num is None:</span><br><span class="line">                    start_time = time.time()</span><br><span class="line">                    last_block_num = block_num</span><br><span class="line">        </span><br><span class="line">                if (block_num - last_block_num) &gt; block_diff:</span><br><span class="line">                    time_for_blocks = time.time() - start_time</span><br><span class="line">                    print(&quot;\n---------------------\n&quot;)</span><br><span class="line">                    running_days = (end_block - 1) * time_for_blocks / block_diff / 60 / 60 / 24</span><br><span class="line">                    print(&quot;Duration for %d blocks: %.2f s (%.3f s per block) -- %.2f days to go&quot; % (end_block, time_for_blocks, time_for_blocks / block_diff, running_days))</span><br><span class="line">                    start_time = time.time()</span><br><span class="line">                    last_block_num = block_num</span><br><span class="line">                    result_days.append(running_days)</span><br><span class="line">                    break</span><br><span class="line">        result_setup_days.append(result_days)</span><br></pre></td></tr></tbody></table></figure>
+<p>I&#x2019;m measuring for each setup three times 1000 blocks and I calculate based on this measurement, how long it would take.</p>
+<h2 id="Setups"><a href="#Setups" class="headerlink" title="Setups"></a>Setups</h2><ol>
+<li>https with 0.19.10 nodes,  max_batch_size=50</li>
+<li>wss with 0.19.10 nodes, max_batch_size=50</li>
+<li>wss with 0.19.5 nodes, 8 threads</li>
+<li>wss with 0.19.5 nodes</li>
+<li>wss with 0.19.10 nodes, 8 threads</li>
+<li>wss with 0.19.10 nodes</li>
+<li>https with 0.19.5 nodes, 8 threads</li>
+<li>https  with 0.19.5 nodes</li>
+<li>https with 0.19.10 nodes, 8 threads</li>
+<li>https with 0.19.10 nodes</li>
+</ol>
+<h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>This table should the mean duration calculated from the three block streaming durations.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>appbase</th>
+<th>https</th>
+<th>threading</th>
+<th>max_batch_size</th>
+<th>days</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>50</td>
+<td>1.837</td>
+</tr>
+<tr>
+<td>2</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>50</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>False</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>4.973</td>
+</tr>
+<tr>
+<td>4</td>
+<td>False</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>11.583</td>
+</tr>
+<tr>
+<td>5</td>
+<td>True</td>
+<td>False</td>
+<td>True</td>
+<td>None</td>
+<td>7.54</td>
+</tr>
+<tr>
+<td>6</td>
+<td>True</td>
+<td>False</td>
+<td>False</td>
+<td>None</td>
+<td>11.99</td>
+</tr>
+<tr>
+<td>7</td>
+<td>False</td>
+<td>True</td>
+<td>True</td>
+<td>None</td>
+<td>193.966</td>
+</tr>
+<tr>
+<td>8</td>
+<td>False</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>433.633</td>
+</tr>
+<tr>
+<td>9</td>
+<td>True</td>
+<td>True</td>
+<td>True</td>
+<td>None</td>
+<td>14.67</td>
+</tr>
+<tr>
+<td>10</td>
+<td>True</td>
+<td>True</td>
+<td>False</td>
+<td>None</td>
+<td>85.63</td>
+</tr>
+</tbody>
+</table>
+<p>In this table, the estimated duration to stream the entire blockchain was calculated based on the time duration to stream 1000 blocks starting at the given block numer.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Block: 1000</th>
+<th>Block: 10000000</th>
+<th>Block: 20000000</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0.96</td>
+<td>1.32</td>
+<td>3.23</td>
+</tr>
+<tr>
+<td>2</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3.36</td>
+<td>1.74</td>
+<td>9.82</td>
+</tr>
+<tr>
+<td>4</td>
+<td>7.96</td>
+<td>8.65</td>
+<td>18.14</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3.67</td>
+<td>1.52</td>
+<td>9.89</td>
+</tr>
+<tr>
+<td>6</td>
+<td>9.27</td>
+<td>8.90</td>
+<td>17.80</td>
+</tr>
+<tr>
+<td>7</td>
+<td>276.56</td>
+<td>145.90</td>
+<td>159.44</td>
+</tr>
+<tr>
+<td>8</td>
+<td>434.91</td>
+<td>430.40</td>
+<td>435.59</td>
+</tr>
+<tr>
+<td>9</td>
+<td>31.49</td>
+<td>5.82</td>
+<td>6.72</td>
+</tr>
+<tr>
+<td>10</td>
+<td>84.87</td>
+<td>85.05</td>
+<td>86.98</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Conclusions"><a href="#Conclusions" class="headerlink" title="Conclusions"></a>Conclusions</h1><p>The fastest way to stream the entire blockchain with beem is using batched calls on a 0.19.10 https node. It takes then only around 2 days. The result could be improved even more, by adding also threading to batched block streaming.</p>
+<p>Using https nodes without batch calls is not recommended, it takes at least 14.6 days (0.19.10 node with threading). </p>
+<p>Using Websocket nodes is also an alternative, using threading it takes 5 days on a 0.19.5 node and 7 days on a 0.19.10 node.</p>
+<p>Batch calls on a 0.19.10 Websocket node did not work, as fetching 1000 blocks did take more than several hours. I aborted this test run for this configuration.</p>
+<p>Streaming 1000 blocks around block 10 million takes less time and streaming around block 20 million takes longer. The reason for this is the increased block size over time. Sometimes, streaming blocks starting from 1000 takes longer, this could be caused by the fact that these old blocks were not cached in the nodes.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@holger80/how-long-does-it-take-to-stream-the-entire-steem-blockchain" target="_blank" rel="noopener">&#x2018;How long does it take to stream the entire steem blockchain?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@holger80/tags/benchmark/">benchmark</a>, <a class="has-link-grey -link" href="/@holger80/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@holger80/tags/fullnode/">fullnode</a>, <a class="has-link-grey -link" href="/@holger80/tags/python/">python</a>, <a class="has-link-grey -link" href="/@holger80/tags/steemdev/">steemdev</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@holger80/account-names-in-follow-operation-are-not-checked-by-design/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Account names in follow operation are not checked by design</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@holger80/holger80-s-curation-league-week-2/">
+                <span class="level-item">holger80`s Curation League - week 2</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@holger80/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Holger" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Holger&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@holger80/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@holger80/content.json"};</script>
+
+
+
+    
+<script src="/@holger80/js/bundle.js" defer></script></body>
+</html>
+
