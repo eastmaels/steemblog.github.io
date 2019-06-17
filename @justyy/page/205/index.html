@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 <title>justyy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -227,6 +227,91 @@
                 <script src="/@justyy/js/pjax-widget.js"></script>
 
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/steemsql-tutorial-finding-inactive-steemians-that-you-follow-steemsql-steem/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt="SteemSQL Tutorial - Finding Inactive Steemians that You Follow - SteemSQL 系列教程之 - 你的哪些好友已经好久没玩STEEM了？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-20T20:49:24.000Z">2017-10-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/steemstem/">steemstem</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 867 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemsql-tutorial-finding-inactive-steemians-that-you-follow-steemsql-steem/">SteemSQL Tutorial - Finding Inactive Steemians that You Follow - SteemSQL 系列教程之 - 你的哪些好友已经好久没玩STEEM了？</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>If you have a following list that you would like to unfollow if he/she is inactive for at least 7 days, you might run the following SQL query (thanks to @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a>). Being inactive means that he/she did not make a post or comment.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select author, datediff(day, T.last, GetUTCDate()) </span><br><span class="line">from </span><br><span class="line">(</span><br><span class="line">	select author, max(created) &quot;last&quot; </span><br><span class="line">	from Comments </span><br><span class="line">	where author in (&apos;followingid1&apos;, &apos;followingid2&apos; ...) </span><br><span class="line">	group by author</span><br><span class="line">) T </span><br><span class="line">where </span><br><span class="line">	datediff(day, T.last, GetUTCDate()) &gt; 7</span><br></pre></td></tr></tbody></table></figure>
+<p>The nested SQL groups the posts by author and returns the last activity time, store in column &#x201C;last&#x201D;. The main query then further filters out the active users by <code>datediff(day, T.last, GetUTCDate()) &gt; 7</code></p>
+<p>We can further optimise this SQL by storing the date columns in the inner SQL query. The following IDs can be fetched by query the <code>Followers</code> view. So the query becomes:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">select author, T.days</span><br><span class="line">from </span><br><span class="line">(</span><br><span class="line">	select author, max(created) &quot;last&quot;, datediff(day, max(created), GetUTCDate()) &quot;days&quot;</span><br><span class="line">	from Comments </span><br><span class="line">	where author in (</span><br><span class="line">		select </span><br><span class="line">			following</span><br><span class="line">		from</span><br><span class="line">			followers</span><br><span class="line">		where</span><br><span class="line">			follower = &apos;justyy&apos;		</span><br><span class="line">	) </span><br><span class="line">	group by author</span><br><span class="line">) T </span><br><span class="line">where </span><br><span class="line">	T.days &gt; 7</span><br><span class="line">order by</span><br><span class="line">	T.days desc</span><br></pre></td></tr></tbody></table></figure>
+<p>The above query will list @justyy &#x2018;s most inactive following user IDs, this gives results:</p>
+<p><img src="https://steemitimages.com/DQmZPVBc6EPoSHYX4zK6xSZddsziHB3SBhnNT8aTFttHBEy/image.png" alt=""></p>
+<p><img src="http://www.steemsql.com/STEEMSQL%20-%20A%20public%20SQL%20database%20with%20all%20blockchain%20data%20_files/image002.png" alt=""></p>
+<h2 id="Image-Credit-steemsql-com"><a href="#Image-Credit-steemsql-com" class="headerlink" title="Image Credit: steemsql.com"></a><em>Image Credit: steemsql.com</em></h2><p>&#x5047;&#x8BBE;&#x4F60;&#x60F3;&#x77E5;&#x9053;&#x4F60;&#x5173;&#x6CE8;&#x7684;&#x54EA;&#x4E9B;&#x597D;&#x53CB;&#x5F88;&#x4E45;&#x6CA1;&#x73A9;STEEM&#x4E86;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; @arcange &#x7684; <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> &#x6765;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x5B9A;&#x4E49;7&#x5929;&#x5185;&#x5982;&#x679C;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x53D1;&#x8868;&#x8BC4;&#x8BBA;&#x6216;&#x8005;&#x6587;&#x7AE0;&#x5C31;&#x7B97;&#x6CA1;&#x73A9;&#xFF08;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x673A;&#x5668;&#x4EBA;&#x81EA;&#x52A8;&#x70B9;&#x8D5E;&#xFF09;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select author, datediff(day, T.last, GetUTCDate()) </span><br><span class="line">from </span><br><span class="line">(</span><br><span class="line">	select author, max(created) &quot;last&quot; </span><br><span class="line">	from Comments </span><br><span class="line">	where author in (&apos;followingid1&apos;, &apos;followingid2&apos; ...) </span><br><span class="line">	group by author</span><br><span class="line">) T </span><br><span class="line">where </span><br><span class="line">	datediff(day, T.last, GetUTCDate()) &gt; 7</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5D4C;&#x5957;&#x7684;SQL&#x7528;&#x4E8E;&#x6309;&#x7528;&#x6237;&#x6392;&#x5E8F;&#x5E76;&#x8FD4;&#x56DE;&#x6700;&#x8FD1;&#x4E00;&#x6B21;&#x6D3B;&#x52A8;&#x65F6;&#x95F4; <code>last</code>&#x3002;&#x4E3B;SQL&#x5219;&#x628A;&#x8FD9;&#x65F6;&#x95F4;&#x518D;&#x4E00;&#x6B21;&#x8FC7;&#x6EE4;&#xFF0C;&#x53BB;&#x6389;7&#x5929;&#x5185;&#x6709;&#x6D3B;&#x52A8;&#x7684;&#x7528;&#x6237;&#x3002;<code>datediff(day, T.last, GetUTCDate()) &gt; 7</code></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x65F6;&#x95F4;&#x5929;&#x6570;&#x95F4;&#x9694;&#x4FDD;&#x5B58;&#x5728;&#x5D4C;&#x5957;&#x7684;SQL&#x91CC;&#x5F53;&#x6210;&#x4E00;&#x5B57;&#x6BB5;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4ECE;&#x89C6;&#x56FE; <code>Followers</code> &#x4E2D;&#x53D6;&#x5F97;&#x5173;&#x6CE8;&#x7684;&#x5217;&#x8868;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">select author, T.days</span><br><span class="line">from </span><br><span class="line">(</span><br><span class="line">	select author, max(created) &quot;last&quot;, datediff(day, max(created), GetUTCDate()) &quot;days&quot;</span><br><span class="line">	from Comments </span><br><span class="line">	where author in (</span><br><span class="line">		select </span><br><span class="line">			following</span><br><span class="line">		from</span><br><span class="line">			followers</span><br><span class="line">		where</span><br><span class="line">			follower = &apos;justyy&apos;		</span><br><span class="line">	) </span><br><span class="line">	group by author</span><br><span class="line">) T </span><br><span class="line">where </span><br><span class="line">	T.days &gt; 7</span><br><span class="line">order by</span><br><span class="line">	T.days desc</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4E0A;&#x9762;&#x7684;SQL&#x5C31;&#x8FD4;&#x56DE;&#x4E86;&#x6211;&#x5173;&#x6CE8;&#x7684;&#x8FD9;&#x7528;&#x6237;&#x4E2D;&#x5DF2;&#x7ECF;&#x4E0D;&#x73A9;STEEM&#x7684;&#xFF0C;&#x4F60;&#x4E5F;&#x8BD5;&#x8BD5;&#x770B;&#x5427;&#xFF1F;</p>
+<p><img src="https://steemitimages.com/DQmZPVBc6EPoSHYX4zK6xSZddsziHB3SBhnNT8aTFttHBEy/image.png" alt=""></p>
+<hr>
+<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;10%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+<li>&#x4ECA;&#x5929;(2017-10-20) <a href="https://steemit.com/cn/@justyy/daily-cn-updates-cn2017-10-20" target="_blank" rel="noopener">&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;</a></li>
+</ol>
+<ul>
+<li><a href="https://justyy.com/archives/5510" target="_blank" rel="noopener">&#x4F60;&#x7684;&#x54EA;&#x4E9B;&#x597D;&#x53CB;&#x5DF2;&#x7ECF;&#x597D;&#x4E45;&#x6CA1;&#x73A9;STEEM&#x4E86;&#xFF1F;</a></li>
+<li><a href="https://helloacm.com/steemsql-tutorial-finding-inactive-steemians-that-you-follow/" target="_blank" rel="noopener">Finding Inactive Steemians</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></li>
+<li><strong><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#xFF0C;API&#x63A5;&#x53E3;&#x548C;&#x6559;&#x7A0B;</a></strong></li>
+<li><strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Tools and APIs</a></strong></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemsql-tutorial-finding-inactive-steemians-that-you-follow-steemsql-steem" target="_blank" rel="noopener">SteemSQL Tutorial - Finding Inactive Steemians that You Follow - SteemSQL &#x7CFB;&#x5217;&#x6559;&#x7A0B;&#x4E4B; - &#x4F60;&#x7684;&#x54EA;&#x4E9B;&#x597D;&#x53CB;&#x5DF2;&#x7ECF;&#x597D;&#x4E45;&#x6CA1;&#x73A9;STEEM&#x4E86;&#xFF1F;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
     <div class="card">
     
     <div class="card-image">
@@ -981,92 +1066,6 @@
 </blockquote>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates-cn2017-10-19" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x53C2;&#x4E0E;&#x8005;&#x3011;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;(2017-10-19)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/steemsql-tutorial-count-total-interests-sent-steemsql/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt="STEEMSQL Tutorial - Count Total Interests Sent 办银行一个月共发了多少利息？(STEEMSQL 教程)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-10-18T23:23:33.000Z">2017-10-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 842 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/steemsql-tutorial-count-total-interests-sent-steemsql/">STEEMSQL Tutorial - Count Total Interests Sent 办银行一个月共发了多少利息？(STEEMSQL 教程)</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
-<p>@justyy  &#x2018;s <a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN Bank</a> has been running exactly a month now and it is giving out daily interests as SBD. I wonder how much interests I have sent out in the past 30 days.</p>
-<p>According to <a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">this powerful online tool</a> to check who have delegated SP to you,  as of today, there are 40 delegators who generously  delegate around 7200 SP to @justyy and @justyy sends them 14.6% APR daily interests and also try its best to upvote the delegator&#x2019;s content worth of 200% delegated SP.</p>
-<p>Here are a few examples of transactions:</p>
-<p><img src="https://steemitimages.com/DQmbwsgtCu6dXbjfyzPMjh6w8ez1JTRTpp8WGt4yEdqZmZg/image.png" alt=""></p>
-<p>So, let&#x2019;s list them out using @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> , which stores the transactions at table <code>TxTransfers</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	* </span><br><span class="line">from</span><br><span class="line">	TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot;=&apos;justyy&apos; and</span><br><span class="line">	memo like &apos;Thank you%&apos; and</span><br><span class="line">	datediff(day, timestamp, GetUTCDate()) between 0 and 30</span><br></pre></td></tr></tbody></table></figure>
-<p>the <code>like</code> operator matches the string according to pattern and the percentage % sign matches zero or more characters. </p>
-<p><img src="https://steemitimages.com/DQmTm1P9uVLLRmKnrCozn9WnCCngE9X3prVeVG3yVTn4hvb/image.png" alt=""></p>
-<p>If you replace <code>*</code> with <code>sum(amount)</code> which will print out the total SBD sent:</p>
-<p><img src="https://steemitimages.com/DQmT6PuafxfFF8uSM5FwFPp7vs45dw9ozLaaNt7MetmNVn8/image.png" alt=""></p>
-<p>I have sent out 76.564 SBD in the last 30 days! That is 2.55 SBD per day!</p>
-<p><img src="http://www.steemsql.com/STEEMSQL%20-%20A%20public%20SQL%20database%20with%20all%20blockchain%20data%20_files/image002.png" alt=""><br><em>Image Credit: steemsql.com</em></p>
-<p>@justyy <a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">&#x529E;&#x94F6;&#x884C;</a> &#x5DF2;&#x7ECF;&#x521A;&#x597D;&#x4E00;&#x4E2A;&#x6708;&#x4E86;&#xFF0C;&#x8FD9;&#x4E00;&#x4E2A;&#x6708;&#x4E00;&#x5171;&#x53D1;&#x4E86;&#x591A;&#x5C11;&#x5229;&#x606F;&#x5462;&#xFF1F;&#x5229;&#x606F;&#x662F;&#x6BCF;&#x5929;&#x82F1;&#x56FD;&#x65F6;&#x95F4;(UTC&#x65F6;&#x533A;)&#x51CC;&#x6668;&#x6309;&#x5E74;&#x5316;&#x7387;14.6%&#x53D1;&#x7684;&#x3002;</p>
-<p>&#x6839;&#x636E; <a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x8FD9;&#x4E2A;&#x4EE3;&#x7406;&#x67E5;&#x8BE2;&#x5DE5;&#x5177;</a> &#x5F97;&#x77E5;&#xFF0C;&#x4ECA;&#x5929;&#x4E00;&#x5171;&#x6709;40&#x4EBA;&#x4EE3;&#x7406;&#x4E86;7200 SP&#x7ED9; @justyy &#x3002;&#x6BCF;&#x5929;&#x6309;7200SP&#x9700;&#x8981;&#x652F;&#x4ED8; 2.88 SBD&#x3002;</p>
-<p>&#x8FD9;&#x662F;&#x51E0;&#x4E2A;&#x652F;&#x4ED8;&#x7684;&#x8BB0;&#x5F55;&#xFF1A;</p>
-<p><img src="https://steemitimages.com/DQmbwsgtCu6dXbjfyzPMjh6w8ez1JTRTpp8WGt4yEdqZmZg/image.png" alt=""></p>
-<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2; STEEMSQL &#x4E2D;&#x7684; <code>TxTransfers</code>&#x8868;&#x683C;&#x3002;&#x8FD9;&#x4E2A;&#x8868;&#x683C;&#x8BB0;&#x5F55;&#x4E86;&#x8F6C;&#x5E10;&#x7684;&#x8BB0;&#x5F55;&#x3002;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	* </span><br><span class="line">from</span><br><span class="line">	TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot;=&apos;justyy&apos; and</span><br><span class="line">	memo like &apos;Thank you%&apos; and</span><br><span class="line">	datediff(day, timestamp, GetUTCDate()) between 0 and 30</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x5176;&#x4E2D; <code>like</code>&#x7528;&#x4E8E;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x767E;&#x5206;&#x53F7;&#x662F;&#x901A;&#x914D;&#x7B26;&#xFF0C;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmTm1P9uVLLRmKnrCozn9WnCCngE9X3prVeVG3yVTn4hvb/image.png" alt=""></p>
-<p>&#x5982;&#x679C;&#x628A; <code>*</code>&#xFF08;&#x6240;&#x6709;&#xFF09; &#x66FF;&#x6362;&#x6210; <code>sum(amount)</code> &#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x5F97;&#x51FA;&#x8FD9;&#x4E2A;&#x6708;&#x4E00;&#x5171;&#x53D1;&#x4E86;&#x5229;&#x606F;&#x591A;&#x5C11;&#x94B1;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmT6PuafxfFF8uSM5FwFPp7vs45dw9ozLaaNt7MetmNVn8/image.png" alt=""></p>
-<p>76.564 SBD &#xFF01;&#x5E73;&#x5747;&#x6BCF;&#x5929;2.55 SBD&#x3002;</p>
-<hr>
-<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-</ol>
-<hr>
-<blockquote>
-<p><a href="https://justyy.com/archives/5503" target="_blank" rel="noopener">STEEMSQL &#x6559;&#x7A0B; &#x2013; &#x529E;&#x94F6;&#x884C;&#x4E00;&#x4E2A;&#x6708;&#x5171;&#x53D1;&#x4E86;&#x591A;&#x5C11;&#x5229;&#x606F;&#xFF1F;</a><br><a href="https://helloacm.com/steemsql-tutorial-count-total-interests-sent/" target="_blank" rel="noopener">STEEMSQL Tutorial &#x2013; Count Total Interests Sent</a><br><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a><br><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemsql-tutorial-count-total-interests-sent-steemsql" target="_blank" rel="noopener">STEEMSQL Tutorial - Count Total Interests Sent &#x529E;&#x94F6;&#x884C;&#x4E00;&#x4E2A;&#x6708;&#x5171;&#x53D1;&#x4E86;&#x591A;&#x5C11;&#x5229;&#x606F;&#xFF1F;(STEEMSQL &#x6559;&#x7A0B;)</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         

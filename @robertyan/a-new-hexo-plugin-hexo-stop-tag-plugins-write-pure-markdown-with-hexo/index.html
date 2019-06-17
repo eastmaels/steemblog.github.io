@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>a new Hexo plugin [hexo-stop-tag-plugins]  --  write pure markdown with Hexo - Civilization Thinker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@robertyan/css/style.css">
+
+<link rel="stylesheet" href="/@robertyan/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@robertyan/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Civilization Thinker" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@robertyan/">Home</a>
+                
+                <a class="navbar-item" href="/@robertyan/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@robertyan/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@robertyan/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@robertyan/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Repository">
+        <span class="has-mr-6">1.1.1</span>
+        <span>Repository</span>
+        </a></li><li>
+        <a class="is-flex" href="#Commit-History">
+        <span class="has-mr-6">1.1.2</span>
+        <span>Commit History</span>
+        </a></li></ul></ul><li>
+        <a class="is-flex" href="#a-new-Hexo-plugin-hexo-stop-tag-plugins">
+        <span class="has-mr-6">2</span>
+        <span>a new Hexo plugin: hexo-stop-tag-plugins</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Why-did-I-create-hexo-stop-tag-plugins">
+        <span class="has-mr-6">2.1</span>
+        <span>Why did I create hexo-stop-tag-plugins?</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1-Issue-when-building-blog-from-steem-with-steemblog">
+        <span class="has-mr-6">2.1.1</span>
+        <span>(1) Issue when building blog from steem with steemblog</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-A-common-painful-issue-in-hexo-community">
+        <span class="has-mr-6">2.1.2</span>
+        <span>(2) A common painful issue in hexo community</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#How-to-Use">
+        <span class="has-mr-6">2.2</span>
+        <span>How to Use</span>
+        </a></li><li>
+        <a class="is-flex" href="#Technology-Stack">
+        <span class="has-mr-6">2.3</span>
+        <span>Technology Stack</span>
+        </a></li><li>
+        <a class="is-flex" href="#Implementation">
+        <span class="has-mr-6">2.4</span>
+        <span>Implementation</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1-set-disableNunjucks-at-renderer-level">
+        <span class="has-mr-6">2.4.1</span>
+        <span>(1) set disableNunjucks at renderer level</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-fix-the-problem-with-the-disableNunjucks-property-in-hexo-project">
+        <span class="has-mr-6">2.4.2</span>
+        <span>(2) fix the problem with the disableNunjucks property in hexo project</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-publish-the-plugin-to-hexo-plugins-and-NPM">
+        <span class="has-mr-6">2.4.3</span>
+        <span>(3) publish the plugin to hexo/plugins and NPM</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#Retrospective">
+        <span class="has-mr-6">2.5</span>
+        <span>Retrospective</span>
+        </a></li><li>
+        <a class="is-flex" href="#Roadmap">
+        <span class="has-mr-6">2.6</span>
+        <span>Roadmap</span>
+        </a></li><li>
+        <a class="is-flex" href="#How-to-Contribute">
+        <span class="has-mr-6">2.7</span>
+        <span>How to Contribute</span>
+        </a></li><li>
+        <a class="is-flex" href="#Github-Account">
+        <span class="has-mr-6">2.8</span>
+        <span>Github Account</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@robertyan/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://avatars2.githubusercontent.com/u/6375567?s=200&amp;v=4" alt="a new Hexo plugin [hexo-stop-tag-plugins]  --  write pure markdown with Hexo">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-17T07:38:21.000Z">2019-06-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@robertyan/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1872 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                a new Hexo plugin [hexo-stop-tag-plugins]  --  write pure markdown with Hexo
+            
+        </h1>
+        <div class="content">
+            <p>This post will introduce the development of a Hexo plugin <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a>, which helps hexo users to disable built-in <a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">tag plugins</a> / <a href="https://mozilla.github.io/nunjucks/templating.html" target="_blank" rel="noopener">nunjucks syntax</a>, and write with pure markdown syntax. </p>
+<p>To be more precise, this post&#x2019;s contribution include:</p>
+<ol>
+<li>a new <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">hexo plugin</a> and NPM package <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a></li>
+<li>one defect fix to <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo</a> project, which is included in <a href="(https://github.com/hexojs/hexo/releases/tag/3.9.0">hexo 3.9.0 release</a>)</li>
+</ol>
+<h4 id="Repository"><a href="#Repository" class="headerlink" title="Repository"></a>Repository</h4><ol>
+<li>hexo plugin: <a href="https://github.com/think-in-universe/hexo-stop-tag-plugins" target="_blank" rel="noopener">https://github.com/think-in-universe/hexo-stop-tag-plugins</a></li>
+<li>submit plugin to hexo site: <a href="https://github.com/hexojs/site" target="_blank" rel="noopener">https://github.com/hexojs/site</a></li>
+<li>defect fixing of hexo: <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></li>
+</ol>
+<h4 id="Commit-History"><a href="#Commit-History" class="headerlink" title="Commit History"></a>Commit History</h4><p>You might want to check the below commit history and PR to understand the contribution. </p>
+<ol>
+<li>All the commits of <a href="https://github.com/think-in-universe/hexo-stop-tag-plugins" target="_blank" rel="noopener">https://github.com/think-in-universe/hexo-stop-tag-plugins</a>, and shipped 0.1.7 version to NPM <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a>, with success test results and code coverage.</li>
+<li>Add the plugin to hexo site with Pull Request: <a href="https://github.com/hexojs/site/pull/966" target="_blank" rel="noopener">https://github.com/hexojs/site/pull/966</a>, and now <code>hexo-stop-tag-plugins</code> is available on the hexo plugins page <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a></li>
+<li>Fixed the defect about <code>disableNunjucks</code> in the Pull Request: <a href="https://github.com/hexojs/hexo/pull/3573" target="_blank" rel="noopener">https://github.com/hexojs/hexo/pull/3573</a>, and released in <a href="https://github.com/hexojs/hexo/releases/tag/3.9.0" target="_blank" rel="noopener">hexo 3.9.0</a> yesterday (check release note for details)</li>
+</ol>
+<h2 id="a-new-Hexo-plugin-hexo-stop-tag-plugins"><a href="#a-new-Hexo-plugin-hexo-stop-tag-plugins" class="headerlink" title="a new Hexo plugin: hexo-stop-tag-plugins"></a>a new Hexo plugin: hexo-stop-tag-plugins</h2><center><br><img src="https://avatars2.githubusercontent.com/u/6375567?s=200&amp;v=4" alt="blog.png"><br><sub>Image Source: <a href="https://github.com/hexojs" target="_blank" rel="noopener">https://github.com/hexojs</a></sub><br></center>
+
+
+<h3 id="Why-did-I-create-hexo-stop-tag-plugins"><a href="#Why-did-I-create-hexo-stop-tag-plugins" class="headerlink" title="Why did I create hexo-stop-tag-plugins?"></a>Why did I create hexo-stop-tag-plugins?</h3><h4 id="1-Issue-when-building-blog-from-steem-with-steemblog"><a href="#1-Issue-when-building-blog-from-steem-with-steemblog" class="headerlink" title="(1) Issue when building blog from steem with steemblog"></a>(1) Issue when building blog from steem with steemblog</h4><p>In <a href="https://steemblog.github.io/@robertyan/steemblog-browsing-your-steem-posts-faster/">my last post</a>, I introduced <strong>steemblog</strong>, which is a blog service and tool built by @robertyan that synchronize your steem blogs into GitHub pages or other static site hosts, e.g. <a href="https://steemblog.github.io/@utopian-io/">https://steemblog.github.io/@utopian-io/</a> ,<br> <a href="https://steemblog.github.io/@robertyan/">https://steemblog.github.io/@robertyan/</a> </p>
+<p>During the creation of steemblog, we met issues such as <a href="https://github.com/steemblog/blog/issues/14" target="_blank" rel="noopener">Failed to build when markdown body contains special chars</a> when we&#x2019;re synchronizing some Steem user&#x2019;s posts in markdown into steemblog.</p>
+<p>For example, the <code>{%s}</code> string in the below code block from the post <a href="https://steemd.com/@oflyhigh/mfc-access" target="_blank" rel="noopener">https://steemd.com/@oflyhigh/mfc-access</a> , will break the conversion from post&#x2019;s source into html, with no html result returned. </p>
+<blockquote>
+<p>sConnect.Format(TEXT(&#x201C;ODBC;DRIVER={%s};DSN=&#x2019;&#x2019;;DBQ=%s;&#x201D;), sDriver, sDBInfo);</p>
+</blockquote>
+<p>This issue happens because hexo enables <a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">tag plugins</a> by default, which relies on the <a href="https://mozilla.github.io/nunjucks/templating.html" target="_blank" rel="noopener">nunjucks syntax</a>, and there&#x2019;s no settings to disable that by hexo users. </p>
+<p>To make steemblog function well, we need to fix this issue. </p>
+<h4 id="2-A-common-painful-issue-in-hexo-community"><a href="#2-A-common-painful-issue-in-hexo-community" class="headerlink" title="(2) A common painful issue in hexo community"></a>(2) A common painful issue in hexo community</h4><p>What&#x2019;s more, this is a quite common issue complaint by a lot of hexo users. You can checkout relevant links and examples from my PR and issues, and examples are:</p>
+<ol>
+<li><a href="https://github.com/hexojs/hexo/issues/2384" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/2384</a></li>
+<li><a href="https://github.com/hexojs/hexo/issues/1510" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/1510</a></li>
+<li><a href="https://github.com/hexojs/hexo/issues/1755" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues/1755</a></li>
+<li><a href="https://github.com/hexojs/hexo/pull/2593" target="_blank" rel="noopener">https://github.com/hexojs/hexo/pull/2593</a></li>
+</ol>
+<p>In order to overcome this pain for the hexo users who want to get more control over the <a href="https://hexo.io/docs/tag-plugins" target="_blank" rel="noopener">tag plugins</a> syntax, we implemented this hexo plugin <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a> for those who suffered from the common issue. </p>
+<h3 id="How-to-Use"><a href="#How-to-Use" class="headerlink" title="How to Use"></a>How to Use</h3><p>To use this plugin, you can check out the description in the NPM package: <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a></p>
+<p>It&#x2019;s as easy as install it with NPM.</p>
+<figure class="highlight bash hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-stop-tag-plugins --save</span><br></pre></td></tr></tbody></table></figure>
+<p>That&#x2019;s it. Then your post will be rendered by hexo as pure markdown, and you can use packages like <a href="https://github.com/markedjs/marked" target="_blank" rel="noopener">marked</a> as the renderer.</p>
+<h3 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h3><ul>
+<li>JavaScript (ES6) / NodeJS </li>
+</ul>
+<h3 id="Implementation"><a href="#Implementation" class="headerlink" title="Implementation"></a>Implementation</h3><p>Below we&#x2019;ll introduce how the plugin is implemented.</p>
+<h4 id="1-set-disableNunjucks-at-renderer-level"><a href="#1-set-disableNunjucks-at-renderer-level" class="headerlink" title="(1) set disableNunjucks at renderer level"></a>(1) set disableNunjucks at renderer level</h4><p>The implementation of the plugin is not complex if you&#x2019;re familiar with hexo&#x2019;s source code. In project <a href="https://github.com/think-in-universe/hexo-stop-tag-plugins" target="_blank" rel="noopener">https://github.com/think-in-universe/hexo-stop-tag-plugins</a>, we implemented the overrider.js to set the <code>disableNunjucks</code> property of renderer to <code>true</code>. Then hexo post renderer should skip the renderering with nunjucks. </p>
+<p>We come up with this idea by reading thorough the renderer process of hexo, and look at relevant issues and pull requests in hexo repostiory.</p>
+<p><a href="https://github.com/think-in-universe/hexo-stop-tag-plugins/blob/master/lib/overrider.js" target="_blank" rel="noopener">override.js</a></p>
+<figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/*</span></span><br><span class="line"><span class="hljs-comment">  The module is created to disable the tag plugins (https://hexo.io/docs/tag-plugins)</span></span><br><span class="line"><span class="hljs-comment">  and nunjucks syntax, which causes troubles in parsing markdown often</span></span><br><span class="line"><span class="hljs-comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&apos;use strict&apos;</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">const</span> extensions = [<span class="hljs-string">&apos;md&apos;</span>, <span class="hljs-string">&apos;markdown&apos;</span>, <span class="hljs-string">&apos;mkd&apos;</span>, <span class="hljs-string">&apos;mkdn&apos;</span>, <span class="hljs-string">&apos;mdwn&apos;</span>, <span class="hljs-string">&apos;mdtxt&apos;</span>, <span class="hljs-string">&apos;mdtext&apos;</span>];</span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">module</span>.exports = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">hexo</span>) </span>{</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">let</span> stop_tag_plugins = <span class="hljs-literal">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">if</span> (hexo.config.stop_tag_plugins === <span class="hljs-literal">undefined</span> || hexo.config.stop_tag_plugins === <span class="hljs-literal">true</span>) {</span><br><span class="line">    stop_tag_plugins = <span class="hljs-literal">true</span>;</span><br><span class="line">  } <span class="hljs-keyword">else</span> {</span><br><span class="line">    stop_tag_plugins = <span class="hljs-literal">false</span>;</span><br><span class="line">  }</span><br><span class="line">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> ext <span class="hljs-keyword">of</span> extensions) {</span><br><span class="line">    <span class="hljs-keyword">let</span> renderer = hexo.render.renderer.get(ext);</span><br><span class="line">    <span class="hljs-keyword">if</span> (renderer) {</span><br><span class="line">      renderer.disableNunjucks = stop_tag_plugins;</span><br><span class="line">      hexo.extend.renderer.register(ext, <span class="hljs-string">&apos;html&apos;</span>, renderer);</span><br><span class="line">    }</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p><a href="https://github.com/think-in-universe/hexo-stop-tag-plugins/blob/master/index.js" target="_blank" rel="noopener">index.js</a></p>
+<figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">/* global hexo */</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-meta">&apos;use strict&apos;</span>;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">var</span> overrider = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./lib/overrider&apos;</span>);</span><br><span class="line"></span><br><span class="line">overrider(hexo);</span><br></pre></td></tr></tbody></table></figure>
+<p>We also added sufficient test cases to test this plugin, which you can checkout in <a href="https://github.com/think-in-universe/hexo-stop-tag-plugins/tree/master/test" target="_blank" rel="noopener">test folder</a>.</p>
+<p>However, what makes us frustration is that the code blocks in markdown are not renderered correctly after we set the <code>disableNunjucks</code> property, and only placeholder of the code block are displayed. </p>
+<p>This should be an issue of hexo, and that leads us to fix the defect in hexo with <a href="https://github.com/hexojs/hexo/pull/3573" target="_blank" rel="noopener">PR #3573</a></p>
+<h4 id="2-fix-the-problem-with-the-disableNunjucks-property-in-hexo-project"><a href="#2-fix-the-problem-with-the-disableNunjucks-property-in-hexo-project" class="headerlink" title="(2) fix the problem with the disableNunjucks property in hexo project"></a>(2) fix the problem with the disableNunjucks property in hexo project</h4><p>To understand the issue, you can read more details in the PR: <a href="https://github.com/hexojs/hexo/pull/3573" target="_blank" rel="noopener">https://github.com/hexojs/hexo/pull/3573</a></p>
+<p>The property <code>disableNunjucks</code> was introduced in <a href="https://github.com/hexojs/hexo/pull/2593" target="_blank" rel="noopener">PR #2593</a> by one contributor. However, it&#x2019;s not added correctly and leads to problems. </p>
+<p>To fix that, we modified lib/hexo/post.js in hexojs/hexo repository, which returns content after the placeholders (like a code block) are replaced.</p>
+<p><a href="https://github.com/hexojs/hexo/pull/3573/files#diff-a4c942f8d1ce35f909fd1052e77a676eL273" target="_blank" rel="noopener">lib/hexo/post.js</a></p>
+<figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    <span class="hljs-comment">// Render with markdown or other renderer</span></span><br><span class="line">    <span class="hljs-keyword">return</span> ctx.render.render({</span><br><span class="line">      text: data.content,</span><br><span class="line">      path: source,</span><br><span class="line">      engine: data.engine,</span><br><span class="line">      toString: <span class="hljs-literal">true</span>,</span><br><span class="line">      onRenderEnd(content) {</span><br><span class="line">        <span class="hljs-comment">// Replace cache data with real contents</span></span><br><span class="line">        data.content = cacheObj.loadContent(content);</span><br><span class="line"></span><br><span class="line">        <span class="hljs-comment">// Return content after replace the placeholders</span></span><br><span class="line">        <span class="hljs-keyword">if</span> (disableNunjucks) <span class="hljs-keyword">return</span> data.content;</span><br><span class="line"></span><br><span class="line">        <span class="hljs-comment">// Render with Nunjucks</span></span><br><span class="line">        <span class="hljs-keyword">return</span> tag.render(data.content, data);</span><br><span class="line">      }</span><br><span class="line">}, options);</span><br></pre></td></tr></tbody></table></figure>
+<p><br></p>
+<p>The <a href="https://github.com/hexojs/hexo/pull/2593" target="_blank" rel="noopener">PR #2593</a> that introduced the<br><code>disableNunjucks</code> property didn&#x2019;t add tests. So, to assure the quality, added unit tests for the <code>disableNunjucks</code> property:</p>
+<p><a href="https://github.com/hexojs/hexo/pull/3573/files#diff-a4c942f8d1ce35f909fd1052e77a676eL273" target="_blank" rel="noopener">test/scripts/hexo/post.js</a></p>
+<figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="hljs-comment">// test for PR [#3573](https://github.com/hexojs/hexo/pull/3573)</span></span><br><span class="line">it(<span class="hljs-string">&apos;render() - (disableNunjucks === true)&apos;</span>, () =&gt; {</span><br><span class="line">  <span class="hljs-keyword">const</span> renderer = hexo.render.renderer.get(<span class="hljs-string">&apos;markdown&apos;</span>);</span><br><span class="line">  renderer.disableNunjucks = <span class="hljs-literal">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> post.render(<span class="hljs-literal">null</span>, {</span><br><span class="line">    content: fixture.content,</span><br><span class="line">    engine: <span class="hljs-string">&apos;markdown&apos;</span></span><br><span class="line">  }).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {</span><br><span class="line">    data.content.trim().should.eql(fixture.expected_disable_nunjucks);</span><br><span class="line">  }).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {</span><br><span class="line">    renderer.disableNunjucks = <span class="hljs-literal">false</span>;</span><br><span class="line">  });</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">// test for PR [#3573](https://github.com/hexojs/hexo/pull/3573)</span></span><br><span class="line">it(<span class="hljs-string">&apos;render() - (disableNunjucks === false)&apos;</span>, () =&gt; {</span><br><span class="line">  <span class="hljs-keyword">const</span> renderer = hexo.render.renderer.get(<span class="hljs-string">&apos;markdown&apos;</span>);</span><br><span class="line">  renderer.disableNunjucks = <span class="hljs-literal">false</span>;</span><br><span class="line"></span><br><span class="line">  <span class="hljs-keyword">return</span> post.render(<span class="hljs-literal">null</span>, {</span><br><span class="line">    content: fixture.content,</span><br><span class="line">    engine: <span class="hljs-string">&apos;markdown&apos;</span></span><br><span class="line">  }).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {</span><br><span class="line">    data.content.trim().should.eql(fixture.expected);</span><br><span class="line">  }).then(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {</span><br><span class="line">    renderer.disableNunjucks = <span class="hljs-literal">false</span>;</span><br><span class="line">  });</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<p><a href="https://github.com/hexojs/hexo/pull/3573/files#diff-788f4ce0c4583589bce9a335485f8da9R42" target="_blank" rel="noopener">test/fixtures/post_render.js</a></p>
+<figure class="highlight javascript hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">exports.expected_disable_nunjucks = [</span><br><span class="line">  <span class="hljs-string">&apos;&lt;h1 id=&quot;Title&quot;&gt;&lt;a href=&quot;#Title&quot; class=&quot;headerlink&quot; title=&quot;Title&quot;&gt;&lt;/a&gt;Title&lt;/h1&gt;&apos;</span>,</span><br><span class="line">  util.highlight(code, {<span class="hljs-attr">lang</span>: <span class="hljs-string">&apos;python&apos;</span>}),</span><br><span class="line">  <span class="hljs-string">&apos;\n\n&lt;p&gt;some content&lt;/p&gt;\n&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;&lt;h2 id=&quot;Another-title&quot;&gt;&lt;a href=&quot;#Another-title&quot; class=&quot;headerlink&quot; title=&quot;Another title&quot;&gt;&lt;/a&gt;Another title&lt;/h2&gt;&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;&lt;p&gt;{% blockquote %}&lt;br&gt;&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;quote content&lt;br&gt;&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;{% endblockquote %}&lt;/p&gt;\n&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;&lt;p&gt;{% quote Hello World %}&lt;br&gt;&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;quote content&lt;br&gt;&apos;</span>,</span><br><span class="line">  <span class="hljs-string">&apos;{% endquote %}&lt;/p&gt;&apos;</span></span><br><span class="line">].join(<span class="hljs-string">&apos;&apos;</span>);</span><br></pre></td></tr></tbody></table></figure>
+<p><br></p>
+<p>After this defect is fixed in hexo and released in hexo 3.9.0 version, we could say the hexo-stop-tags-plugin should work well for hexo users. </p>
+<h4 id="3-publish-the-plugin-to-hexo-plugins-and-NPM"><a href="#3-publish-the-plugin-to-hexo-plugins-and-NPM" class="headerlink" title="(3) publish the plugin to hexo/plugins and NPM"></a>(3) publish the plugin to hexo/plugins and NPM</h4><p>To make the plugin available to its users. We published it to <a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">NPM</a> and <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">hexo/plugins page</a>.</p>
+<p>The submission to hexo/plugins page is merged in PR: <a href="https://github.com/hexojs/site/pull/966" target="_blank" rel="noopener">https://github.com/hexojs/site/pull/966</a></p>
+<p><a href="https://github.com/hexojs/site/pull/966/files" target="_blank" rel="noopener">source/_data/plugins.yml</a></p>
+<figure class="highlight yaml hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">- name:</span> <span class="hljs-string">hexo-stop-tag-plugins</span></span><br><span class="line"><span class="hljs-attr">  description:</span> <span class="hljs-string">Disable</span> <span class="hljs-string">tag</span> <span class="hljs-string">plugins</span> <span class="hljs-string">for</span> <span class="hljs-string">all</span> <span class="hljs-string">markdown</span> <span class="hljs-string">posts</span></span><br><span class="line"><span class="hljs-attr">  link:</span> <span class="hljs-attr">https://github.com/think-in-universe/hexo-stop-tag-plugins</span></span><br><span class="line"><span class="hljs-attr">  tags:</span></span><br><span class="line"><span class="hljs-bullet">    -</span> <span class="hljs-string">markdown</span></span><br><span class="line"><span class="hljs-bullet">    -</span> <span class="hljs-string">tag_plugins</span></span><br><span class="line"><span class="hljs-bullet">    -</span> <span class="hljs-string">renderer</span></span><br></pre></td></tr></tbody></table></figure>
+<p>It takes a few days to have the plugin be reviewed and merged.</p>
+<h3 id="Retrospective"><a href="#Retrospective" class="headerlink" title="Retrospective"></a>Retrospective</h3><ol>
+<li>The hexo repository reviewers are not that active, and may need close follow-up from contributor to make PR to be reviewed and merged. </li>
+<li>May need more thoughts and actions on how to push this plugin to the users who met the same issues. </li>
+</ol>
+<h3 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h3><ol>
+<li>The <code>disableNunjucks</code> property is set at renderer level and applied to all the posts. User may need another setting to make it only applied to some of the posts, which is more flexible. </li>
+<li><a href="https://www.npmjs.com/package/hexo-stop-tag-plugins" target="_blank" rel="noopener">hexo-stop-tag-plugins</a> is quite useful if we want to bring more hexo blog writers onto Steem. It makes it easier for bi-directional integration between hexo and steem: hexo users can use the plugins to write posts that can be published onto Steem; Steem users can use the plugins to render and organize their steem posts with hexo.</li>
+<li>As a successor of this plugin, we may create another plugin that could make it easier for hexo users to share their posts onto Steem. And as a result, may introduce more developers and writers to Steem community.</li>
+<li>My long-term vision is to make better integration between Steem and GitHub features (such as GitHub pages), to make developers enjoy their work and life in blockchain era. </li>
+</ol>
+<center><br><img src="https://files.steempeak.com/file/steempeak/robertyan/7ki0A7YP-image.png" alt="image.png"><br><sub>picture made by me which combines GitHub and Steem logos</sub><br></center>
+
+<h3 id="How-to-Contribute"><a href="#How-to-Contribute" class="headerlink" title="How to Contribute"></a>How to Contribute</h3><p>For anyone who wants to contribute to this project, feel free to fork <a href="https://github.com/think-in-universe/hexo-stop-tag-plugins" target="_blank" rel="noopener">https://github.com/think-in-universe/hexo-stop-tag-plugins</a>, and submit Pull Requests. </p>
+<p>Or please directly contact me (@robertyan) on Steem if you have any questions to discuss. </p>
+<h3 id="Github-Account"><a href="#Github-Account" class="headerlink" title="Github Account"></a>Github Account</h3><ul>
+<li>my personal account: <a href="https://github.com/think-in-universe" target="_blank" rel="noopener">https://github.com/think-in-universe</a> (can be verified with the links in the profile)</li>
+</ul>
+<hr>
+<p><strong>To reviewers</strong>: this post is set to &#x201C;development&#x201D; category because it contains a new project (a hexo plugin), and defect fixing to &#x201C;hexo&#x201D; project contributed by myself. If you have any concern, feel free to reach out to me directly. </p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@robertyan/a-new-hexo-plugin-hexo-stop-tag-plugins-write-pure-markdown-with-hexo" target="_blank" rel="noopener">&#x2018;a new Hexo plugin [hexo-stop-tag-plugins]  &#x2013;  write pure markdown with Hexo&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@robertyan/tags/blog/">blog</a>, <a class="has-link-grey -link" href="/@robertyan/tags/development/">development</a>, <a class="has-link-grey -link" href="/@robertyan/tags/hexo/">hexo</a>, <a class="has-link-grey -link" href="/@robertyan/tags/steem/">steem</a>, <a class="has-link-grey -link" href="/@robertyan/tags/utopian-io/">utopian-io</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@robertyan/awesome-steem-0-or/">
+                <span class="level-item">Awesome Steem #0 | 你欣赏的人生感言或经验</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@robertyan/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Civilization Thinker" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Civilization Thinker&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@robertyan/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@robertyan/content.json"};</script>
+
+
+
+    
+<script src="/@robertyan/js/bundle.js" defer></script></body>
+</html>
+

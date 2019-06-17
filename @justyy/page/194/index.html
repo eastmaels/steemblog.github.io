@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 <title>justyy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -227,6 +227,113 @@
                 <script src="/@justyy/js/pjax-widget.js"></script>
 
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/r-tutorial-new-way-to-connect-to-steemsql-via-rstudio-r-rstudio-steemsql/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmUEvNQvXpFXFy6SvwGikLkkdS8FZidDJKeynu4cADHyED/image.png" alt="R Tutorial - New Way to Connect to SteemSQL via RStudio - R 教程之通过 RStudio 来快速连接SteemSQL">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-10T12:58:48.000Z">2017-11-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1104 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/r-tutorial-new-way-to-connect-to-steemsql-via-rstudio-r-rstudio-steemsql/">R Tutorial - New Way to Connect to SteemSQL via RStudio - R 教程之通过 RStudio 来快速连接SteemSQL</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmUEvNQvXpFXFy6SvwGikLkkdS8FZidDJKeynu4cADHyED/image.png" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>Last month, in my <a href="https://helloacm.com/r-tutorial-connecting-to-steemsql/" target="_blank" rel="noopener">R tutorial</a>, I <a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">showed you</a> how to connect to <a href="https://helloacm.com/steemsql-tutorial-count-total-interests-sent/" target="_blank" rel="noopener">SteemSQL</a> in R script. The latest R Studio has added a connection tab, which is a Database wizard that you can easily follow to connect to @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a></p>
+<p><img src="https://steemitimages.com/DQmV15YXmtwYZ7DKNB9h9qEMkrDsypPxkVjze616LdLkN2M/image.png" alt=""></p>
+<p>And, if we click the &#x2018;New Connection&#x2019;, choose <a href="https://helloacm.com/r-tutorial-connecting-to-steemsql/" target="_blank" rel="noopener">ODBC</a></p>
+<p><img src="https://steemitimages.com/DQmY7Xbt2wAGEhqNR4TEC8kmQvzzRrGTFNEC5odFxsj41L9/image.png" alt=""></p>
+<p>Most likely, you will have to install the package &#x2018;ODBC&#x2019; on the fly.</p>
+<p><img src="https://steemitimages.com/DQmSSr1pnmgkqZe7o4mfobgJLfkgT6mhFG68RnwvvDApTHC/image.png" alt=""></p>
+<p>You can either choose &#x2018;SQL Server&#x2019; or &#x2018;SQL Server Native Client 11.0&#x2019; from the &#x2018;Data Sources&#x2019;</p>
+<p><img src="https://steemitimages.com/DQmXibWgkD5adBDZCpzMwfTmFqt4X7MVP4EnrfnZ53Ctkmq/image.png" alt=""></p>
+<p>And enter the Parameters textbox as the following values:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://steemitimages.com/DQmTYmT94uU7EkaGhvV2eQ98coCxNLewM5adMCHaesGNFKH/image.png" alt=""></p>
+<p>You can test the connection before you proceed further.</p>
+<p><img src="https://steemitimages.com/DQmR4zseTrjp6cHMb3eLAnLCb6J54f6nDWJyytd1Av1urzE/image.png" alt=""></p>
+<p>If you connect from &#x2018;R Console&#x2019;, the DBSteem object from SteemSQL will immediately become available.</p>
+<p><img src="https://steemitimages.com/DQmR98kH3Aj5f9hTYVkFPSx8FgJZNoDY9tRmGshc5fBSEBH/image.png" alt=""></p>
+<hr>
+<p>&#x4E0A;&#x4E2A;&#x6708;&#xFF0C;&#x6211;&#x5728;&#x6211;&#x7684;<a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">R&#x6559;&#x7A0B;&#x91CC;</a>&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x901A;&#x8FC7;R&#x811A;&#x672C;&#x6765;&#x8FDE;&#x63A5;<a href="https://justyy.com/archives/5510" target="_blank" rel="noopener">STEEMSQL</a>&#x3002;&#x6700;&#x65B0;&#x7684;R STUDIO&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A; Connection (<a href="https://justyy.com/archives/5503" target="_blank" rel="noopener">SteemSQL</a>) &#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5FEB;&#x901F;&#x8FDE;&#x63A5;&#x5404;&#x79CD;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6BD4;&#x5982; @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a></p>
+<p><img src="https://steemitimages.com/DQmV15YXmtwYZ7DKNB9h9qEMkrDsypPxkVjze616LdLkN2M/image.png" alt=""></p>
+<p>&#x9009;&#x62E9; &#x2018;New Connection&#x2019;, - ODBC</p>
+<p><img src="https://steemitimages.com/DQmY7Xbt2wAGEhqNR4TEC8kmQvzzRrGTFNEC5odFxsj41L9/image.png" alt=""></p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x9700;&#x8981;&#x5B89;&#x88C5; ODBC&#x8FD9;&#x4E2A;&#x5305;</p>
+<p><img src="https://steemitimages.com/DQmSSr1pnmgkqZe7o4mfobgJLfkgT6mhFG68RnwvvDApTHC/image.png" alt=""></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x6570;&#x636E;&#x6E90; &#x2018;SQL Server&#x2019; &#x6216;&#x8005; &#x2018;SQL Server Native Client 11.0&#x2019; </p>
+<p><img src="https://steemitimages.com/DQmXibWgkD5adBDZCpzMwfTmFqt4X7MVP4EnrfnZ53Ctkmq/image.png" alt=""></p>
+<p>&#x7136;&#x540E;&#x5728;&#x53C2;&#x6570;&#x5217;&#x8868;&#x91CC;&#x6DFB;&#x52A0;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://steemitimages.com/DQmTYmT94uU7EkaGhvV2eQ98coCxNLewM5adMCHaesGNFKH/image.png" alt=""></p>
+<p>&#x6700;&#x597D;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x94FE;&#x63A5;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmR4zseTrjp6cHMb3eLAnLCb6J54f6nDWJyytd1Av1urzE/image.png" alt=""></p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9009;&#x62E9; &#x2018;R Console&#x2019;, &#x8FD9;&#x6837;&#x6570;&#x636E;&#x5E93;&#x5BF9;&#x8C61;&#x5C31;&#x80FD;&#x7ACB;&#x9A6C;&#x5728;&#x7A97;&#x53E3;&#x4E2D;&#x6D4F;&#x89C8;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmR98kH3Aj5f9hTYVkFPSx8FgJZNoDY9tRmGshc5fBSEBH/image.png" alt=""></p>
+<ul>
+<li><a href="https://helloacm.com/r-tutorial-how-to-connect-to-steemsql-via-rstudio/" target="_blank" rel="noopener">R Studio Connecting to SteemSQL</a></li>
+<li><a href="https://justyy.com/archives/5580" target="_blank" rel="noopener">R &#x6559;&#x7A0B;&#x4E4B;&#x901A;&#x8FC7; RStudio &#x6765;&#x5FEB;&#x901F;&#x8FDE;&#x63A5;SteemSQL</a></li>
+</ul>
+<hr>
+<blockquote>
+<p>@justyy &#x662F;&#x6709;&#x540D;&#x7684;<a href="https://steemit.com/cn/@justyy/photography-of-our-love-2017" target="_blank" rel="noopener">&#x6652;&#x5AB3;&#x5987;</a>&#x535A;&#x4E3B;&#xFF0C;&#x4E5F;&#x662F;&#x897F;&#x534A;&#x7403;&#x6700;&#x88C5;X&#x88C5;&#x571F;&#x8C6A; (<a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a>) &#x7684;&#x535A;&#x4E3B;&#x3002;@justyy &#x5B9A;&#x5C45;&#x82F1;&#x56FD;&#xFF0C;&#x4E00;&#x59BB;&#x4E24;&#x5A03;&#xFF0C;&#x5728;STEEMIT&#x4E0A;&#x5F00;&#x529E;&#x4E86;&#x5386;&#x53F2;&#x4E0A;&#x4E2D;&#x6587;&#x7B2C;&#x4E00;&#x5BB6;&#x94F6;&#x884C;&#xFF0C;&#x53F2;&#x79F0; YY&#x592E;&#x884C;&#xFF0C;&#x6BCF;&#x65E5;&#x8D54;&#x94B1;&#x5406;&#x559D;&#x3002;<br>@justyy &#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</p>
+<h2 id="justyy-&#x51E1;&#x4E8B;&#x559C;&#x6B22;&#x6298;&#x817E;&#xFF0C;&#x73B0;&#x5728;&#x5728;&#x4E00;&#x5BB6;&#x82F1;&#x56FD;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x91CC;&#x5F53;&#x7801;&#x519C;&#xFF0C;&#x597D;&#x542C;&#x4E00;&#x70B9;&#x53EB;&#x4F5C;&#x7B97;&#x6CD5;&#x653B;&#x57CE;&#x72EE;&#x3002;-justyy-&#x559C;&#x6B22;&#x7ED3;&#x4EA4;&#x5929;&#x4E0B;&#x597D;&#x53CB;&#xFF0C;&#x4E00;&#x8D77;YY&#x3002;"><a href="#justyy-&#x51E1;&#x4E8B;&#x559C;&#x6B22;&#x6298;&#x817E;&#xFF0C;&#x73B0;&#x5728;&#x5728;&#x4E00;&#x5BB6;&#x82F1;&#x56FD;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x91CC;&#x5F53;&#x7801;&#x519C;&#xFF0C;&#x597D;&#x542C;&#x4E00;&#x70B9;&#x53EB;&#x4F5C;&#x7B97;&#x6CD5;&#x653B;&#x57CE;&#x72EE;&#x3002;-justyy-&#x559C;&#x6B22;&#x7ED3;&#x4EA4;&#x5929;&#x4E0B;&#x597D;&#x53CB;&#xFF0C;&#x4E00;&#x8D77;YY&#x3002;" class="headerlink" title="@justyy &#x51E1;&#x4E8B;&#x559C;&#x6B22;&#x6298;&#x817E;&#xFF0C;&#x73B0;&#x5728;&#x5728;&#x4E00;&#x5BB6;&#x82F1;&#x56FD;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x91CC;&#x5F53;&#x7801;&#x519C;&#xFF0C;&#x597D;&#x542C;&#x4E00;&#x70B9;&#x53EB;&#x4F5C;&#x7B97;&#x6CD5;&#x653B;&#x57CE;&#x72EE;&#x3002; @justyy  &#x559C;&#x6B22;&#x7ED3;&#x4EA4;&#x5929;&#x4E0B;&#x597D;&#x53CB;&#xFF0C;&#x4E00;&#x8D77;YY&#x3002;"></a>@justyy &#x51E1;&#x4E8B;&#x559C;&#x6B22;&#x6298;&#x817E;&#xFF0C;&#x73B0;&#x5728;&#x5728;&#x4E00;&#x5BB6;&#x82F1;&#x56FD;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x91CC;&#x5F53;&#x7801;&#x519C;&#xFF0C;&#x597D;&#x542C;&#x4E00;&#x70B9;&#x53EB;&#x4F5C;&#x7B97;&#x6CD5;&#x653B;&#x57CE;&#x72EE;&#x3002; @justyy  &#x559C;&#x6B22;&#x7ED3;&#x4EA4;&#x5929;&#x4E0B;&#x597D;&#x53CB;&#xFF0C;&#x4E00;&#x8D77;YY&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;10%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+<li>&#x4ECA;&#x5929;(2017-11-10) <a href="https://steemit.com/cn/@justyy/daily-cn-updates-cnyy2017-11-10" target="_blank" rel="noopener">&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/cn--2017-11-09" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/cn-yy-2017-11-09" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x5E74;&#x5316;&#x7387;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;</a></li>
+</ol>
+<hr>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></li>
+<li><strong><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#xFF0C; API&#x63A5;&#x53E3;&#x548C;&#x6559;&#x7A0B;</a></strong></li>
+<li><strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></li>
+</ul>
+<p>AD &#x4E00;&#x6CE2;&#xFF0C;&#x542C;&#x8BF4;&#x6700;&#x8FD1; STEEM&#x6CA1;&#x6709;SBD&#x503C;&#x94B1;&#xFF0C;&#x90A3;&#x8D76;&#x7D27;&#x52A0;&#x5165; CN&#x533A;&#x4F4E;&#x4FDD;&#x94F6;&#x884C;&#xFF0C;&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#xFF0C;&#x6BCF;&#x5929;&#x6536;&#x83B7;&#x70B9;&#x8D5E;&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;10%&#x7684;&#x5229;&#x606F;&#xFF08;&#x53D1;&#x653E;SBD&#xFF09;&#xFF0C;<a href="https://steemit.com/cn/@justyy/daily-cn-updates-cnyy2017-11-10" target="_blank" rel="noopener">&#x4ECA;&#x65E5;&#x80A1;&#x4E1C;&#x5217;&#x8868;</a></p>
+</blockquote>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/r-tutorial-new-way-to-connect-to-steemsql-via-rstudio-r-rstudio-steemsql" target="_blank" rel="noopener">R Tutorial - New Way to Connect to SteemSQL via RStudio - R &#x6559;&#x7A0B;&#x4E4B;&#x901A;&#x8FC7; RStudio &#x6765;&#x5FEB;&#x901F;&#x8FDE;&#x63A5;SteemSQL</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
     <div class="card">
     
     <div class="card-image">
@@ -3664,144 +3771,6 @@
 <p><br></p><hr><em>Open Source Contribution posted via <a href="https://utopian.io/utopian-io/@justyy/bug-markdown-table-incomplete-for-a-wide-table" target="_blank" rel="noopener">Utopian.io</a></em><hr><p></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/bug-markdown-table-incomplete-for-a-wide-table" target="_blank" rel="noopener">Bug: Markdown Table Incomplete for a wide table</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-cn-updates-cnyy2017-11-09/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-11-09)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-09T10:01:24.000Z">2017-11-09</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1509 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates-cnyy2017-11-09/">Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-11-09)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>Thank you @arcange for creating <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a>!<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-11-09 10:10:10 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-11-05 10:10:10 (UTC) - 2017-11-06 10:10:10 (UTC)</p>
-<h2 id="2017-11-09-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-11-09-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-11-09 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-11-09 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @victorier | <a href="https://steemit.com/culture/@victorier/20171107t014839072z-post" target="_blank" rel="noopener">Beautiful Chinese Garden</a> |<br>| 2 | @nationalpark | <a href="https://steemit.com/cn/@nationalpark/from-ontario-to-quebec" target="_blank" rel="noopener">From Ontario to Quebec &#x4ECE;&#x5B89;&#x5927;&#x7565;&#x5230;&#x9B41;&#x5317;&#x514B; </a> |<br>| 3 | @xiaoshancun | <a href="https://steemit.com/cn/@xiaoshancun/h8mnv" target="_blank" rel="noopener">&#x7ACB;&#x51AC;&#x7B2C;&#x4E00;&#x5929;&#x5CB1;&#x5E99;&#x91CC;&#x968F;&#x610F;&#x62CD;&#x5230;&#x7684;</a> |<br>| 4 | @dancingapple | <a href="https://steemit.com/cn/@dancingapple/53hohf" target="_blank" rel="noopener">&#x8F15;&#x8B80;&#x300A;&#x4E95;&#x88E1;&#x7684;&#x6545;&#x4E8B;&#x300B;&#xFF08;&#x83EF;&#x8A9E;&#x8072;&#x97F3;&#xFF09;</a> |<br>| 5 | @guyverckw | <a href="https://steemit.com/steemit/@guyverckw/raspberry-pi-case-for-steempi-2" target="_blank" rel="noopener">Raspberry Pi Case for SteemPi (2)</a> |<br>| 6 | @aaronli | <a href="https://steemit.com/travel/@aaronli/hong-kong-art-gallery-7-bleeding-and-death-are-two-different-things-death-scenes-of-hk-films-7" target="_blank" rel="noopener">Hong Kong Art gallery(7) - &#x201C;Bleeding and Death are Two Different Things&#x201D; death scenes of HK Films&#x9999;&#x6E2F;&#x827A;&#x672F;&#x5C55;&#x89C8;(7) - &#x300A;&#x4E03;&#x5B54;&#x6D41;&#x8840;&#x300B;</a> |<br>| 8 | @travelgirl | <a href="https://steemit.com/food/@travelgirl/daily-food-photography-sweet-afternoon-tea-sydney-australia" target="_blank" rel="noopener">Daily Food Photography - Sweet Afternoon Tea @ Sydney, Australia  - &#x98DF;&#x7269;&#x651D;&#x5F71;&#x6BD4;&#x8CFD; -  &#x8C50;&#x5BCC;&#x7684;&#x4E0B;&#x5348;&#x8336; @ &#x6089;&#x5C3C;, &#x6FB3;&#x6D32;</a> |<br>| 9 | @nanosesame | <a href="https://steemit.com/cn/@nanosesame/draw-on-blockchain-time-to-choose-a-card-for-you-en-ch" target="_blank" rel="noopener">Draw on Blockchain : Time to choose a card for you &#x6E96;&#x5099;&#x8056;&#x8A95;&#x5361; [EN/CH]</a> |<br>| 10 | @wilkinshui | <a href="https://steemit.com/fun/@wilkinshui/20171107t001354359z-post" target="_blank" rel="noopener">Want to be a great trader</a> |<br>| 11 | @wangwenjing | <a href="https://steemit.com/cn/@wangwenjing/or-how-i-got-my-driver-s-license-in-china-and-canad" target="_blank" rel="noopener">&#x6211;&#x5728;&#x56FD;&#x5185;&#x548C;&#x52A0;&#x62FF;&#x5927;&#x7684;&#x8003;&#x9A7E;&#x7167;&#x7ECF;&#x5386;   How I got my driver&#x2019;s license in China and Canada</a> |<br>| 12 | @susanli3769 | <a href="https://steemit.com/work/@susanli3769/4vvnkx" target="_blank" rel="noopener">&#x5C06;&#x5728;&#x5916;&#xFF0C;&#x519B;&#x4EE4;&#x6709;&#x6240;&#x4E0D;&#x6388;</a> |<br>| 14 | @catwomanteresa | <a href="https://steemit.com/photography/@catwomanteresa/food-photography-contest-golden-wire-seafood-salad" target="_blank" rel="noopener">Food  Photography Contest: Golden Wire Seafood Salad  &#x98DF;&#x7269;&#x651D;&#x5F71;&#x6BD4;&#x8CFD;&#xFF1A;&#x91D1;&#x7D72;&#x6D77;&#x9BAE;&#x6C99;&#x62C9;</a> |<br>| 15 | @bxt | <a href="https://steemit.com/life/@bxt/enjoy-the-sunshine-on-the-city-government-square" target="_blank" rel="noopener">Enjoy the sunshine on the city government square !  &#x5468;&#x672B;&#x4F11;&#x95F2;&#x7684;&#x5E02;&#x5E9C;&#x5E7F;&#x573A;</a> | </p>
-<blockquote>
-<p>&#x672C;&#x5217;&#x8868;&#x652F;&#x6301;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x7ECF;&#x5E38;&#x53D1;&#x6C34;&#x6587;&#x7684;ID&#xFF0C;&#x6B22;&#x8FCE; report@justyy.com &#x4E3E;&#x62A5;&#x3002;</p>
-<h2 id="2017-11-09-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-11-09-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-11-09 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-11-09 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;<a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">&#x5C11;&#x91CF;&#x4FEE;&#x6539;</a>&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|:&#x2013;|:&#x2013;|:&#x2013;|:&#x2013;|:&#x2013;|:&#x2013;|<br>| 1| @chinadaily | 27 | 1850 | 881.37 |32.64 |<br>| 2| @deanliu | 7 | 1408 | 454.80 |64.97 |<br>| 3| @oflyhigh | 8 | 1601 | 440.93 |55.12 |<br>| 4| @htliao | 7 | 1220 | 257.69 |36.81 |<br>| 5| @sweetsssj | 1 | 1449 | 255.66 |255.66 |<br>| 6| @rivalhw | 7 | 841 | 239.21 |34.17 |<br>| 7| @ace108 | 26 | 2088 | 207.10 |7.97 |<br>| 8| @rosatravels | 20 | 1070 | 183.08 |9.15 |<br>| 9| @joythewanderer | 6 | 720 | 156.82 |26.14 |<br>| 10| @cryptogee | 3 | 150 | 122.78 |40.93 |<br>| 11| @blackbunny | 3 | 320 | 121.12 |40.37 |<br>| 12| @czechglobalhosts | 6 | 323 | 107.36 |17.89 |<br>| 13| @travelgirl | 13 | 768 | 98.55 |7.58 |<br>| 14| @justyy | 27 | 1206 | 97.82 |3.62 |<br>| 15| @bxt | 9 | 341 | 96.10 |10.68 |<br>| 16| @catwomanteresa | 7 | 476 | 77.04 |11.01 |<br>| 17| @guyverckw | 12 | 1159 | 69.79 |5.82 |<br>| 18| @nicolemoker | 3 | 567 | 64.94 |21.65 |<br>| 19| @aaronli | 6 | 1020 | 64.53 |10.75 |<br>| 20| @mcw | 2 | 293 | 58.88 |29.44 |<br>| 21| @tumutanzi | 4 | 505 | 55.93 |13.98 |<br>| 22| @livinguktaiwan | 3 | 211 | 55.75 |18.58 |<br>| 23| @stacee | 3 | 291 | 54.99 |18.33 |<br>| 24| @dapeng | 7 | 331 | 49.04 |7.01 |<br>| 25| @krischy | 4 | 487 | 47.11 |11.78 |<br>| 26| @winniex | 14 | 414 | 43.31 |3.09 |<br>| 27| @lydiachan | 5 | 240 | 42.60 |8.52 |<br>| 28| @btsabc | 4 | 223 | 42.39 |10.60 |<br>| 29| @dancingapple | 8 | 357 | 42.01 |5.25 |<br>| 30| @shieha | 7 | 386 | 40.08 |5.73 |</p>
-</blockquote>
-<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
-<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><blockquote>
-<p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x65F6;&#x95F4; Time</th>
-<th style="text-align:left">&#x4F5C;&#x8005; Author</th>
-<th style="text-align:left">&#x6587;&#x7AE0; Post</th>
-<th style="text-align:left">&#x6743;&#x91CD; Weighting %</th>
-<th style="text-align:left">VP %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2017-11-09 01:09:28</td>
-<td style="text-align:left">@aaronli</td>
-<td style="text-align:left"><a href="https://steemit.com/@aaronli/hong-kong-snapshot-40-blue-house-best-example-of-urban-conservation-in-the-world-40" target="_blank" rel="noopener">@aaronli</a></td>
-<td style="text-align:left">11.69</td>
-<td style="text-align:left">61.53</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-09 02:24:23</td>
-<td style="text-align:left">@oflyhigh</td>
-<td style="text-align:left"><a href="https://steemit.com/@oflyhigh/linode-vps-down" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:left">18.90</td>
-<td style="text-align:left">62.32</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-09 03:47:47</td>
-<td style="text-align:left">@guyverckw</td>
-<td style="text-align:left"><a href="https://steemit.com/@guyverckw/grasshoppers-live-goes-on-concert" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:left">11.87</td>
-<td style="text-align:left">62.66</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-09 04:56:13</td>
-<td style="text-align:left">@ace108</td>
-<td style="text-align:left"><a href="https://steemit.com/@ace108/more-sign-of-hong-kong-beckoning-or-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:left">16.31</td>
-<td style="text-align:left">62.88</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-09 05:02:28</td>
-<td style="text-align:left">@nationalpark</td>
-<td style="text-align:left"><a href="https://steemit.com/@nationalpark/observation-and-analysis-to-please-the-lord" target="_blank" rel="noopener">@nationalpark</a></td>
-<td style="text-align:left">15.36</td>
-<td style="text-align:left">63.61</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-09 06:31:25</td>
-<td style="text-align:left">@bxt</td>
-<td style="text-align:left"><a href="https://steemit.com/@bxt/colourful-photography-contest-the-chinese-cabbage-flowers-i-took" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:left">19.30</td>
-<td style="text-align:left">63.78</td>
-</tr>
-</tbody>
-</table>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 76&#x5929;&#x3002;<br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/cn-yy-2017-11-08" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;&#x3010;&#x70B9;&#x8D5E;&#x5E74;&#x5316;&#x7387;&#x3011;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn--2017-11-08" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;</a></li>
-</ul>
-<blockquote>
-<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(&#x5E74;&#x5316;&#x7387; 10%)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
-</blockquote>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ol>
-<h1 id="YY&#x94F6;&#x884C;&#x6709;-48&#x4F4D;&#x80A1;&#x4E1C;&#xFF0C;&#x4E00;&#x5171;&#x80A1;&#x6743;&#x603B;&#x91CF;&#x4E3A;-8804-36-SP"><a href="#YY&#x94F6;&#x884C;&#x6709;-48&#x4F4D;&#x80A1;&#x4E1C;&#xFF0C;&#x4E00;&#x5171;&#x80A1;&#x6743;&#x603B;&#x91CF;&#x4E3A;-8804-36-SP" class="headerlink" title="YY&#x94F6;&#x884C;&#x6709; 48&#x4F4D;&#x80A1;&#x4E1C;&#xFF0C;&#x4E00;&#x5171;&#x80A1;&#x6743;&#x603B;&#x91CF;&#x4E3A; 8804.36 SP"></a>YY&#x94F6;&#x884C;&#x6709; 48&#x4F4D;&#x80A1;&#x4E1C;&#xFF0C;&#x4E00;&#x5171;&#x80A1;&#x6743;&#x603B;&#x91CF;&#x4E3A; 8804.36 SP</h1><p>&#x67E5;&#x8BE2;&#x8C01;&#x90FD;&#x53C2;&#x4E8E;&#x4E86;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;<a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x5728;&#x7EBF;&#x5DE5;&#x5177;: Steemit &#x67E5;&#x770B;&#x8C01;&#x59D4;&#x6D3E;&#x4EE3;&#x7406;&#x7ED9;&#x4F60;Steem Power&#xFF1F;</a>&#x3002;<br>|Delegator| Steem Power| Vests|  DateTime|<br>|:&#x2013;|:&#x2013;|:&#x2013;|:&#x2013;|<br>|@bobdos|1000.79|2056264.13|2017-10-24 23:37:00|<br>|@eduter|923.15|1896743.76|2017-11-06 03:57:36|<br>|@herlife|600.72|1234249.59|2017-10-17 05:18:24|<br>|@htliao|531.0|1091019.80|2017-10-03 12:00:48|<br>|@daydayup|500.58|1028505.54|2017-10-17 21:39:27|<br>|@sunnyjolly|401.03|823973.51|2017-09-20 09:40:21|<br>|@mrpointp|400.86|823619.84|2017-09-28 14:09:36|<br>|@yellowbird|330.06|678143.56|2017-11-06 03:10:15|<br>|@breathewind|302.32|621150.45|2017-10-20 00:01:27|<br>|@zsilence|300.72|617872.78|2017-09-23 16:04:45|<br>|@mrspointm|300.64|617714.93|2017-09-28 14:07:18|<br>|@victory622|266.71|547985.69|2017-09-18 21:59:57|<br>|@coldhair|255.38|524713.00|2017-09-19 15:08:36|<br>|@luneknight|250.26|514192.78|2017-10-20 04:13:00|<br>|@berlin1997|200.44|411835.88|2017-09-27 08:55:06|<br>|@susanli3769|200.23|411400.20|2017-10-17 23:56:57|<br>|@oldman28|200.06|411050.66|2017-11-03 13:20:51|<br>|@liangfengyouren|130.05|267199.31|2017-11-02 08:44:12|<br>|@kangnajiang|117.19|240787.09|2017-10-08 10:12:12|<br>|@zhijun|100.68|206853.00|2017-09-19 03:18:57|<br>|@jessicameng|100.26|205993.57|2017-09-20 09:14:24|<br>|@fr3eze|100.23|205931.08|2017-09-26 03:17:24|<br>|@jiangchen|100.21|205895.44|2017-09-29 11:36:09|<br>|@drunkevil|100.21|205885.32|2017-09-30 10:23:51|<br>|@catwomanteresa|100.2|205883.35|2017-09-30 14:50:03|<br>|@joythewanderer|100.12|205714.60|2017-10-16 14:51:15|<br>|@shenchensucc|100.1|205666.15|2017-10-21 05:12:21|<br>|@nationalpark|100.01|205476.85|2017-11-08 03:15:06|<br>|@angelina6688|85.0|174646.94|2017-11-09 01:39:21|<br>|@xiaoshancun|68.04|139787.01|2017-10-30 09:51:18|<br>|@mumingduozi|60.32|123928.00|2017-09-19 00:25:12|<br>|@towardsthesun|50.13|102993.29|2017-09-21 00:33:18|<br>|@liumei|50.12|102983.93|2017-09-22 17:35:12|<br>|@tvb|50.1|102943.21|2017-09-30 07:54:27|<br>|@veronicazhu|50.09|102913.15|2017-10-06 00:26:30|<br>|@rosatravels|50.04|102821.70|2017-10-23 08:58:27|<br>|@speeding|40.05|82280.25|2017-10-17 22:45:06|<br>|@raywang|30.07|61779.27|2017-09-26 03:40:09|<br>|@bigbigfish|30.02|61670.08|2017-10-30 14:50:18|<br>|@feng1925|20.05|41198.84|2017-09-20 07:52:30|<br>|@mangoanddaddy|20.05|41189.47|2017-09-24 14:37:42|<br>|@jiba|20.01|41120.90|2017-10-27 01:25:36|<br>|@techlee|20.0|41098.79|2017-11-06 12:28:48|<br>|@wangwenjing|10.03|20598.79|2017-09-20 21:35:18|<br>|@lixing|10.02|20596.48|2017-09-23 00:14:33|<br>|@willwangfeng|10.01|20576.13|2017-10-12 04:24:57|<br>|@winniex|10.0|20547.82|2017-11-08 00:07:12|<br>|@keepup|6.01|12344.23|2017-10-14 11:06:12|<br>&#x4E00;&#x5171; 8804.36 SP, 18089740.14 VESTS&#x3002;</p>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;6 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x6559;&#x7A0B;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates-cnyy2017-11-09" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x4E03;&#x5929;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;&#x3011;(2017-11-09)</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
