@@ -77,6 +77,9 @@ widgets:
 
 </center>
 ------
+***Edit note.***
+
+*本篇文章太過樂觀，請亦參考最新一篇新聞：[臉書個資綁定 GlobalCoin 沒隱私？外媒：三家區塊鏈新創拒絕與 Facebook 合作開發臉書幣](https://www.blocktempo.com/three-blockchain-company-refused-partnership-with-facebook-due-to-its-dara-derailed/)，報導了這計畫許多可能的挑戰。*
 
 - - -
 
