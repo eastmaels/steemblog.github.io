@@ -14,7 +14,7 @@ tags:
 - cn-voice
 - cn-reader
 - whalepower
-- esteem-cn
+- busy
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/27586f927144ab8be39e4742ba9c8eac13e4e005.jpg'
 sidebar:
     right:
