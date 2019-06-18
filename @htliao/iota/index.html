@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>IOTA的基本介紹及背景資料整理 - HT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@htliao/css/style.css">
+
+<link rel="stylesheet" href="/@htliao/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@htliao/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="HT" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@htliao/">Home</a>
+                
+                <a class="navbar-item" href="/@htliao/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@htliao/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@htliao/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@htliao/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;">
+        <span class="has-mr-6">1</span>
+        <span>&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528;-cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;">
+        <span class="has-mr-6">2</span>
+        <span>&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528; #cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@htliao/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmeF74jU1PaQQ7VM7LuzAjc3VBGnXtyVW3MEBLLvmKQf3V/iota.png" alt="IOTA的基本介紹及背景資料整理">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-27T23:10:42.000Z">2017-09-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@htliao/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 940 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                IOTA的基本介紹及背景資料整理
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmeF74jU1PaQQ7VM7LuzAjc3VBGnXtyVW3MEBLLvmKQf3V/iota.png" alt="iota.png"></p>
+<p><a href="https://cryptoblog.tech/iota-will-change-internet-things-iot/" target="_blank" rel="noopener">Source</a></p>
+<p>&#x7E3D;&#x91CF;: </p>
+<p><img src="https://steemitimages.com/DQmccGHX19x9ht8kQ5WJ7R4xoUUAaZ9x43Cup9528MrzWzx/iota%20total.png" alt="iota total.png"></p>
+<p><a href="http://www.iotachina.com/iota" target="_blank" rel="noopener">Source</a></p>
+<p>&#x9019;&#x7E3D;&#x91CF;&#x6211;&#x90FD;&#x4E0D;&#x61C2;&#x6578;&#x7B97;&#x4E86;&#xFF0C;&#x53CD;&#x6B63;&#x5C0D;&#x6211;&#x4F86;&#x8AAA;&#x662F;&#x5929;&#x6587;&#x6578;&#x5B57;&#xFF0C;IOTA&#x662F;&#x6C92;&#x6709;&#x901A;&#x8CA8;&#x81A8;&#x6F32;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#x5B83;&#x7684;&#x7E3D;&#x91CF;&#x6C38;&#x9060;&#x6703;&#x7DAD;&#x6301;&#x5728;&#x9019;&#x500B;&#x6578;&#x5B57;&#xFF0C;&#x5728;Bitfinex&#x4E2D;&#xFF0C;IOTA&#x7684;&#x4EA4;&#x6613;&#x662F;&#x4EE5;Mi&#x70BA;&#x55AE;&#x4F4D;&#x7684;&#xFF0C;&#x4F60;&#x628A;IOTA&#x7684;i&#x770B;&#x6210;&#x6BD4;&#x7279;&#x5E63;&#x7684;&#x6700;&#x5C0F;&#x55AE;&#x4F4D;&#xFF0D;&#x8070;&#x53EF;&#x80FD;&#x6703;&#x8212;&#x670D;&#x9EDE;&#x3002;</p>
+<p>IOTA&#x662F;&#x91DD;&#x5C0D;&#x7269;&#x806F;&#x7DB2;(Internet of Things)&#x800C;&#x8A2D;&#x8A08;&#x7684;&#x5340;&#x584A;&#x93C8;&#x6280;&#x8853;&#x3002;&#x5E7E;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x96FB;&#x5B50;&#x7522;&#x54C1;&#x90FD;&#x80FD;&#x904B;&#x7528;&#x5230;IOTA&#xFF0C;&#x50CF;&#x96FB;&#x5B50;&#x66F8;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x53EA;&#x70BA;&#x4F60;&#x8B80;&#x904E;&#x7684;&#x9801;&#x6578;&#x4ED8;&#x6B3E;&#xFF0C;&#x50CF;&#x807D;&#x5728;&#x7DDA;&#x97F3;&#x6A02;&#xFF0C;&#x4F60;&#x80FD;&#x53EA;&#x70BA;&#x4F60;&#x807D;&#x904E;&#x7684;&#x79D2;&#x6578;&#x4ED8;&#x6B3E;&#xFF0C;&#x53EF;&#x4EE5;&#x8A08;&#x7B97;&#x5F97;&#x975E;&#x5E38;&#x6E96;&#x78BA;&#xFF0C;&#x80FD;&#x5920;&#x5728;&#x6240;&#x6709;&#x7684;&#x8A2D;&#x5099;&#x4E2D;&#x505A;&#x5230;&#x771F;&#x6B63;&#x7684;&#x4E92;&#x901A;&#xFF0C;&#x5728;&#x7269;&#x806F;&#x7DB2;&#x548C;&#x5171;&#x4EAB;&#x7D93;&#x6FDF;&#x65B9;&#x9762;&#x61C9;&#x8A72;&#x6703;&#x6709;&#x5341;&#x5206;&#x4E0D;&#x932F;&#x7684;&#x8868;&#x73FE;&#x3002;</p>
+<p>&#x5728;IOTA&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x5E63;&#x90FD;&#x662F;&#x5728;&#x5275;&#x751F;&#x4EA4;&#x6613;&#x4E2D;&#x7522;&#x751F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x6C92;&#x6709;&#x6316;&#x7926;&#x7684;&#x6982;&#x5FF5;&#x4E86;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmbSKgjQy3tAc13ejsSVFcuRKTBHGpXQ6HShr86zdxdhr6/communication-1927706_960_720.jpg" alt="communication-1927706_960_720.jpg"></p>
+<p>&#x7528;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li>&#x667A;&#x80FD;&#x96FB;&#x7DB2;</li>
+<li>&#x57FA;&#x790E;&#x8A2D;&#x65BD;</li>
+<li>&#x4F9B;&#x61C9;&#x93C8;</li>
+<li>&#x667A;&#x80FD;&#x57CE;&#x5E02;</li>
+<li>&#x904B;&#x8F38;</li>
+</ul>
+<p>&#x4EC0;&#x9EBD;&#x662F;Tangle?<br><img src="https://steemitimages.com/DQmXFiwBacPfmcweS4tJL693WxCPhsSJ1AYzZ3STeQWBHeN/tangle.jpg" alt="tangle.jpg"></p>
+<p><a href="http://www.iotachina.com/iota" target="_blank" rel="noopener">Source</a></p>
+<p>IOTA&#x63A1;&#x7528;&#x7684;&#x4E0D;&#x662F;&#x50B3;&#x7D71;&#x7684;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x7A2E;&#x53EB;&#x4F5C;Tangle&#x7684;&#x67B6;&#x69CB;&#xFF0C;&#x9019;&#x67B6;&#x69CB;&#x662F;&#x57FA;&#x65BC;DAG(&#x6709;&#x5411;&#x7121;&#x74B0;&#x5716;)&#x7684;&#x3002;&#x9019;&#x7A2E;&#x67B6;&#x69CB;&#x4EE4;&#x6BCF;&#x500B;&#x7BC0;&#x9EDE;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x5B58;&#x5132;&#x6574;&#x500B;&#x7DB2;&#x7D61;&#x7684;&#x6578;&#x64DA;&#xFF0C;&#x6BCF;&#x500B;&#x7BC0;&#x9EDE;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x78BA;&#x8A8D;&#x4EA4;&#x6613;&#x4E26;&#x9A57;&#x8B49;&#xFF0C;&#x5141;&#x8A31;&#x6BCF;&#x79D2;&#x6578;&#x5343;&#x6B21;&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x6C92;&#x6709;&#x4EA4;&#x6613;&#x624B;&#x7E8C;&#x3002;</p>
+<p>IOTA&#x63A1;&#x7528;&#x4E86;&#x6587;&#x683C;&#x5C3C;&#x8328;&#x7C3D;&#x540D;&#x4F86;&#x9054;&#x5230;&#x91CF;&#x5B50;&#x5B89;&#x5168;&#xFF0C;&#x76F8;&#x53CD;&#x548C;&#x5B83;&#x985E;&#x4F3C;&#x7684;Byteball&#x662F;&#x9054;&#x4E0D;&#x5230;&#x91CF;&#x5B50;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<p>&#x512A;&#x52E2;&#xFF1A;</p>
+<ul>
+<li>&#x6C92;&#x6709;&#x4EA4;&#x6613;&#x624B;&#x7E8C;&#x8CBB;</li>
+<li>&#x5F37;&#x5927;&#x7684;&#x64F4;&#x5C55;&#x6027;</li>
+<li>&#x8D85;&#x5FEB;&#x7684;&#x4EA4;&#x6613;&#x78BA;&#x8A8D;&#x901F;&#x5EA6;</li>
+<li>&#x80FD;&#x9032;&#x884C;&#x5C0F;&#x984D;&#x4EA4;&#x6613;</li>
+<li>&#x5B89;&#x5168;&#x7684;&#x6578;&#x64DA;&#x8F49;&#x79FB;&#x548C;&#x6578;&#x64DA;&#x9328;&#x5B9A;</li>
+</ul>
+<p>&#x8CB7;&#x8CE3;&#x5E73;&#x53F0;&#xFF1A;Bitfinex</p>
+<p>&#x56E0;&#x70BA;IOTA&#x7684;&#x6280;&#x8853;&#x662F;&#x6BD4;&#x8F03;&#x65B0;&#x7684;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x5176;&#x4ED6;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5C71;&#x585E;&#x7248;&#x6216;ERC 20&#x4EE4;&#x724C;&#xFF0C;&#x4EA4;&#x6613;&#x6240;&#x96C6;&#x6210;IOTA&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6642;&#x9593;&#xFF0C;&#x4E0D;&#x5C11;&#x4EA4;&#x6613;&#x6240;&#x597D;&#x50CF;&#x90FD;&#x5E0C;&#x671B;&#x4E0A;&#x67B6;IOTA&#xFF0C;&#x672A;&#x4F86;&#x76F8;&#x4FE1;IOTA&#x6703;&#x5728;&#x66F4;&#x591A;&#x7684;&#x4EA4;&#x6613;&#x6240;&#x4E0A;&#x67B6;&#x3002;</p>
+<p>&#x5230;&#x5E95;IOTA&#x5C07;&#x6703;&#x6539;&#x9769;&#x6574;&#x500B;&#x7269;&#x806F;&#x7DB2;&#x4E16;&#x754C;&#x55CE;&#xFF1F;&#x5C31;&#x8B93;&#x6211;&#x5011;&#x62ED;&#x76EE;&#x4EE5;&#x5F85;&#x4E86;&#x3002;&#x5148;&#x8AAA;&#x4E00;&#x4E0B;&#xFF0C;&#x6211;&#x53EF;&#x6C92;&#x6301;&#x6709;IOTA&#xFF0C;&#x56E0;&#x70BA;&#x6211;&#x6C92;&#x6709;Bitfinex&#x7684;&#x6236;&#x53E3;&#x3002;</p>
+<hr>
+
+<h1 id="&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;"><a href="#&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;" class="headerlink" title="&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;"></a>&#x9084;&#x8A18;&#x5F97;&#x6211;&#x4E0D;&#x4E45;&#x524D;&#x4ECB;&#x7D39;&#x7684;TenX&#xFF0C;Adex&#x548C;Neo&#x55CE;&#xFF1F;&#x9019;&#x4E9B;&#x5929;&#x9019;&#x4E09;&#x96BB;&#x5E63;&#x7684;&#x8868;&#x73FE;&#x53EF;&#x662F;&#x5341;&#x5206;&#x4E0D;&#x932F;&#xFF0C;&#x9060;&#x8D85;&#x5176;&#x4ED6;&#x5E63;&#x5462;&#x3002;</h1><p>&#x9019;&#x96BB;AdEx&#x55AE;&#x65E5;&#x5C31;&#x6F32;&#x4E86;&#x8D85;&#x904E;50%&#xFF0C;TenX&#x548C;Neo&#x9019;&#x76F8;&#x4FE1;&#x6211;&#x5C31;&#x4E0D;&#x7528;&#x8AAA;&#x4E86;&#xFF0C;&#x6709;&#x95DC;&#x6CE8;&#x5E63;&#x50F9;&#x7684;&#x670B;&#x53CB;&#x80AF;&#x5B9A;&#x7559;&#x610F;&#x5230;&#x7684;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmTptTZfm496joewbvjLv99KszJyw5annY6PnWBmm2Xj1R/Screen%20Shot%202017-09-28%20at%207.46.12%20am.png" alt="Screen Shot 2017-09-28 at 7.46.12 am.png"></p>
+<p>&#x6211;&#x505A;&#x4E8B;&#x6C38;&#x9060;&#x4E0D;&#x662F;&#x5634;&#x4E0A;&#x8AAA;&#x8AAA;&#x800C;&#x5DF2;&#xFF0C;&#x9019;&#x4E9B;&#x5C31;&#x662F;&#x6211;&#x6B63;&#x5728;&#x6301;&#x6709;&#x7684;&#x5E63;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmNjfZeXJPmNhvqTCh3BmqpAJS8K1XpP2yhgjYBBy9M2Nv/Screen%20Shot%202017-09-28%20at%207.47.02%20am.png" alt="Screen Shot 2017-09-28 at 7.47.02 am.png"></p>
+<h1 id="&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528;-cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;"><a href="#&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528;-cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;" class="headerlink" title="&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528; #cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;"></a>&#x9806;&#x9053;&#x5BA3;&#x50B3;&#x4E00;&#x4E0B;&#x4E2D;&#x6587;&#x5340;&#x52A0;&#x5BC6;&#x8CA8;&#x5E63;&#x7814;&#x7A76;&#x793E;&#xFF0C;&#x9F13;&#x52F5;&#x5927;&#x5BB6;&#x591A;&#x4F7F;&#x7528; #cn-cryptocurrency&#x6A19;&#x7C3D;&#xFF0C;&#x5E0C;&#x671B;&#x5927;&#x5BB6;&#x591A;&#x4E9B;&#x7FFB;&#x8B6F;&#x548C;&#x5BEB;&#x4F5C;&#x95DC;&#x65BC;&#x5E63;&#x754C;&#x7684;&#x8CC7;&#x8A0A;&#xFF0C;&#x70BA;&#x4E2D;&#x6587;&#x5340;&#x7684;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x591A;&#x865B;&#x64EC;&#x8CA8;&#x5E63;&#x8CC7;&#x8A0A;&#x3002;</h1><hr>
+
+<p><img src="https://steemitimages.com/DQmf5AG2bdGQHTgtDHMWmqzLxeMvgP493ndT9FMzYkqTEYM/newCover.png" alt="newCover.png"></p>
+<hr>
+
+<center><br><img src="https://steemitimages.com/DQmWpisRXDF56mV3DgzzPUxb3R2ozseR48YVr2YKtwtrBcV/upvotefollowresteem.gif" alt="upvotefollowresteem.gif"><br></center>
+
+<hr>
+
+<p><img src="https://steemitimages.com/DQmUZDtagcPK9Y1r4e4NKm4wd1uC8XECgY6PB4J2TmGhuJ4/HTLIAO%20cover%204%20(1" alt="HTLIAO cover 4 (1).png">.png)</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@htliao/iota" target="_blank" rel="noopener">&#x2018;IOTA&#x7684;&#x57FA;&#x672C;&#x4ECB;&#x7D39;&#x53CA;&#x80CC;&#x666F;&#x8CC7;&#x6599;&#x6574;&#x7406;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@htliao/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@htliao/tags/cn-cryptocurrency/">cn-cryptocurrency</a>, <a class="has-link-grey -link" href="/@htliao/tags/iota/">iota</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@htliao/5uadhw/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">談談我的點贊技巧</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@htliao/vk8xq/">
+                <span class="level-item">（原創分享）技術分析入門（８）技術指標（中）</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@htliao/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="HT" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 HT&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@htliao/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@htliao/content.json"};</script>
+
+
+
+    
+<script src="/@htliao/js/bundle.js" defer></script></body>
+</html>
+
