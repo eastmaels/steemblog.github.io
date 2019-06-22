@@ -230,6 +230,755 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511968951/bsijrxfqzj0amcjj7odt.png" alt="Inconsistent behavior of ScriptControl 64-bit to the msscript.ocx">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-29T15:24:00.000Z">2017-11-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 273 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx/">Inconsistent behavior of ScriptControl 64-bit to the msscript.ocx</a>
+            
+        </h1>
+        <div class="content">
+            <p>The Microsoft provides a 32-bit <code>msscript.ocx</code> which allows you to easily do some scripting inside your application, however, they do not have an official 64-bit version of ScriptControl and they are not planning to make one.</p>
+<p>64-bit computing and applications are gradually accepted and in an increasing demand recent years. I found <a href="https://github.com/tablacus/TablacusScriptControl" target="_blank" rel="noopener">tablacus/TablacusScriptControl</a>  is a very good alternative that provides the 64-bit Scripting Control and I use it quite a lot in my applications.</p>
+<p>As one can imagine, nowadays, usually the same source code can be compiled to both 32-bit and 64-bit, therefore, we have to make sure the behavior has to stay consistent in either mode. The <a href="https://helloacm.com/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx/" target="_blank" rel="noopener">behavior is somewhat different</a> between the 64-bit ScriptControl and the Microsoft&#x2019;s 32-bit <code>msscript.ocx</code>.</p>
+<h1 id="How-to-reproduce"><a href="#How-to-reproduce" class="headerlink" title="How to reproduce?"></a>How to reproduce?</h1><p>create two <a href="https://isvbscriptdead.com/" target="_blank" rel="noopener">vbs</a> files, with the 32-bit version:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dim SC</span><br><span class="line">Set SC = CreateObject(&quot;MSScriptControl.ScriptControl&quot;)</span><br><span class="line"></span><br><span class="line">SC.Reset </span><br><span class="line">WScript.Echo SC.Language</span><br></pre></td></tr></tbody></table></figure>
+<p>and 64-bit version:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Dim SC</span><br><span class="line">Set SC = CreateObject(&quot;ScriptControl&quot;)</span><br><span class="line"></span><br><span class="line">SC.Reset </span><br><span class="line">WScript.Echo SC.Language</span><br></pre></td></tr></tbody></table></figure>
+<p>If you run both, you will see the 32-bit version throws:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ScriptControl (4, 1) : The operation could not be completed because the script engine has not been initialized to a valid language.</span><br></pre></td></tr></tbody></table></figure>
+<p>but the 64-bit ScriptControl silently swallows the error.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511968951/bsijrxfqzj0amcjj7odt.png" alt="image.png"></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx" target="_blank" rel="noopener">Inconsistent behavior of ScriptControl 64-bit to the msscript.ocx</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/cn--2017-11-29/" class="image is-7by1">
+            <img class="thumbnail" src="https://helloacm.com/images/dailystats.jpg" alt="CN 中文区每日【财富总值】【活跃统计数据】 (2017-11-29)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-29T15:01:09.000Z">2017-11-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn-stats/">cn-stats</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1208 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/cn--2017-11-29/">CN 中文区每日【财富总值】【活跃统计数据】 (2017-11-29)</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>Thank you @arcange for creating <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a>!<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-11-29 15:03:02 (UTC)</p>
+<h2 id="2017-11-29-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"><a href="#2017-11-29-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;" class="headerlink" title="2017-11-29 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"></a>2017-11-29 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;</h2><p><img src="https://helloacm.com/images/dailystats.jpg" alt=""><br><em><a href="https://helloacm.com/images/dailystats.jpg" target="_blank" rel="noopener">Image Credit</a></em></p>
+<p>CN &#x5FAE;&#x4FE1;&#x7FA4;&#x4E00;&#x5171;&#x6709;: </p>
+<blockquote>
+<p><strong>234</strong>&#x4EBA;<br>&#x4E00;&#x5171; Total SP:<br><strong>476016.84</strong><br>&#x4E00;&#x5171; &#x6709;&#x6548;ESP Total ESP:<br><strong>1331356.51</strong><br>&#x4E00;&#x5171; &#x8D22;&#x5BCC;&#x603B;&#x503C; Total Values (SBD):<br><strong>554431.68</strong></p>
+</blockquote>
+<p>&#x6309;<em>10</em>&#x6B21;100%&#x70B9;&#x8D5E;&#x6765;&#x7B97;&#xFF0C;<strong>1331356.51</strong> SP &#x80FD;&#x5F97;&#x5230;&#x5927;&#x7EA6; <strong>1251.48</strong> SBD&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B; SP &#x90FD;&#x7528;&#x6765;&#x7ED9;CN&#x533A;&#x7684;&#x4EBA;&#x70B9;&#x8D5E;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4EBA;&#x6BCF;&#x5929;&#x5E73;&#x5747;&#x6536;&#x5165;&#x662F; <strong>5.35</strong> SBD&#x3002;</p>
+<ol>
+<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a> </li>
+<li><a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">Github &#x540D;&#x5355;</a></li>
+<li><a href="https://github.com/DoctorLai/steemit-wechat-group" target="_blank" rel="noopener">&#x52A0;&#x5165;&#x65B9;&#x6CD5;: wexin@justyy.com</a></li>
+<li>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">&#x6700;&#x5C0F;&#x503C; Min</th>
+<th style="text-align:left">&#x6700;&#x5927;&#x503C; Max</th>
+<th style="text-align:left">&#x5E73;&#x5747; Avg</th>
+<th style="text-align:left">&#x4E2D;&#x4F4D;&#x6570; Median</th>
+<th style="text-align:left">&#x6807;&#x51C6;&#x65B9;&#x5DEE; STD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">SBD</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1691.17</td>
+<td style="text-align:left">40.95</td>
+<td style="text-align:left">2.22</td>
+<td style="text-align:left">190.41</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x7B49;&#x7EA7; Reputation</td>
+<td style="text-align:left">3.52</td>
+<td style="text-align:left">75.27</td>
+<td style="text-align:left">50.85</td>
+<td style="text-align:left">52.65</td>
+<td style="text-align:left">13.07</td>
+</tr>
+<tr>
+<td style="text-align:left">Steem Power</td>
+<td style="text-align:left">0.0</td>
+<td style="text-align:left">101147.99</td>
+<td style="text-align:left">2033.47</td>
+<td style="text-align:left">128.45</td>
+<td style="text-align:left">7851.47</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6709;&#x6548; ESP</td>
+<td style="text-align:left">0.0</td>
+<td style="text-align:left">792383.24</td>
+<td style="text-align:left">5688.75</td>
+<td style="text-align:left">113.35</td>
+<td style="text-align:left">52314.09</td>
+</tr>
+<tr>
+<td style="text-align:left">STEEM</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1501.52</td>
+<td style="text-align:left">60.1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">213.56</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5E10;&#x53F7;&#x4EF7;&#x503C; $</td>
+<td style="text-align:left">0.22</td>
+<td style="text-align:left">115581.55</td>
+<td style="text-align:left">2367.83</td>
+<td style="text-align:left">162.51</td>
+<td style="text-align:left">8933.86</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6295;&#x7968;&#x80FD;&#x91CF; VP %</td>
+<td style="text-align:left">2.36</td>
+<td style="text-align:left">100</td>
+<td style="text-align:left">83.98</td>
+<td style="text-align:left">96.07</td>
+<td style="text-align:left">22.3</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5E10;&#x53F7;&#x5929;&#x6570; Days</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">584</td>
+<td style="text-align:left">167.81</td>
+<td style="text-align:left">128</td>
+<td style="text-align:left">131.08</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2017-11-29-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs"><a href="#2017-11-29-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs" class="headerlink" title="2017-11-29 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)"></a>2017-11-29 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)</h2><table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">Active User</th>
+<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09; Number of Posts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><a href="https://steemit.com/@ace108" target="_blank" rel="noopener">@ace108</a></td>
+<td style="text-align:left">33</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left"><a href="https://steemit.com/@angelina6688" target="_blank" rel="noopener">@angelina6688</a></td>
+<td style="text-align:left">30</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left"><a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a></td>
+<td style="text-align:left">29</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left"><a href="https://steemit.com/@kimzwarch" target="_blank" rel="noopener">@kimzwarch</a></td>
+<td style="text-align:left">26</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left"><a href="https://steemit.com/@cnbuddy" target="_blank" rel="noopener">@cnbuddy</a></td>
+<td style="text-align:left">25</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left"><a href="https://steemit.com/@joythewanderer" target="_blank" rel="noopener">@joythewanderer</a></td>
+<td style="text-align:left">18</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left"><a href="https://steemit.com/@winniex" target="_blank" rel="noopener">@winniex</a></td>
+<td style="text-align:left">18</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left"><a href="https://steemit.com/@chann" target="_blank" rel="noopener">@chann</a></td>
+<td style="text-align:left">17</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left"><a href="https://steemit.com/@stabilowl" target="_blank" rel="noopener">@stabilowl</a></td>
+<td style="text-align:left">17</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left"><a href="https://steemit.com/@bxt" target="_blank" rel="noopener">@bxt</a></td>
+<td style="text-align:left">16</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left"><a href="https://steemit.com/@fr3eze" target="_blank" rel="noopener">@fr3eze</a></td>
+<td style="text-align:left">15</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left"><a href="https://steemit.com/@dapeng" target="_blank" rel="noopener">@dapeng</a></td>
+<td style="text-align:left">14</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left"><a href="https://steemit.com/@xiaoshancun" target="_blank" rel="noopener">@xiaoshancun</a></td>
+<td style="text-align:left">14</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left"><a href="https://steemit.com/@dancingapple" target="_blank" rel="noopener">@dancingapple</a></td>
+<td style="text-align:left">13</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left"><a href="https://steemit.com/@aaronli" target="_blank" rel="noopener">@aaronli</a></td>
+<td style="text-align:left">13</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left"><a href="https://steemit.com/@drunkevil" target="_blank" rel="noopener">@drunkevil</a></td>
+<td style="text-align:left">13</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left"><a href="https://steemit.com/@magicmonk" target="_blank" rel="noopener">@magicmonk</a></td>
+<td style="text-align:left">13</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left"><a href="https://steemit.com/@shieha" target="_blank" rel="noopener">@shieha</a></td>
+<td style="text-align:left">12</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left"><a href="https://steemit.com/@yellowbird" target="_blank" rel="noopener">@yellowbird</a></td>
+<td style="text-align:left">12</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left"><a href="https://steemit.com/@victory622" target="_blank" rel="noopener">@victory622</a></td>
+<td style="text-align:left">11</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left"><a href="https://steemit.com/@catwomanteresa" target="_blank" rel="noopener">@catwomanteresa</a></td>
+<td style="text-align:left">11</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left"><a href="https://steemit.com/@wilburm" target="_blank" rel="noopener">@wilburm</a></td>
+<td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left"><a href="https://steemit.com/@lovemyson" target="_blank" rel="noopener">@lovemyson</a></td>
+<td style="text-align:left">10</td>
+</tr>
+<tr>
+<td style="text-align:left">24</td>
+<td style="text-align:left"><a href="https://steemit.com/@nanosesame" target="_blank" rel="noopener">@nanosesame</a></td>
+<td style="text-align:left">9</td>
+</tr>
+<tr>
+<td style="text-align:left">25</td>
+<td style="text-align:left"><a href="https://steemit.com/@nationalpark" target="_blank" rel="noopener">@nationalpark</a></td>
+<td style="text-align:left">9</td>
+</tr>
+<tr>
+<td style="text-align:left">26</td>
+<td style="text-align:left"><a href="https://steemit.com/@travelgirl" target="_blank" rel="noopener">@travelgirl</a></td>
+<td style="text-align:left">9</td>
+</tr>
+<tr>
+<td style="text-align:left">27</td>
+<td style="text-align:left"><a href="https://steemit.com/@deanliu" target="_blank" rel="noopener">@deanliu</a></td>
+<td style="text-align:left">9</td>
+</tr>
+<tr>
+<td style="text-align:left">28</td>
+<td style="text-align:left"><a href="https://steemit.com/@oflyhigh" target="_blank" rel="noopener">@oflyhigh</a></td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">29</td>
+<td style="text-align:left"><a href="https://steemit.com/@liuboya" target="_blank" rel="noopener">@liuboya</a></td>
+<td style="text-align:left">8</td>
+</tr>
+<tr>
+<td style="text-align:left">30</td>
+<td style="text-align:left"><a href="https://steemit.com/@jiangchen" target="_blank" rel="noopener">@jiangchen</a></td>
+<td style="text-align:left">7</td>
+</tr>
+<tr>
+<td style="text-align:left">31</td>
+<td style="text-align:left"><a href="https://steemit.com/@mrspointm" target="_blank" rel="noopener">@mrspointm</a></td>
+<td style="text-align:left">7</td>
+</tr>
+<tr>
+<td style="text-align:left">32</td>
+<td style="text-align:left"><a href="https://steemit.com/@skenan" target="_blank" rel="noopener">@skenan</a></td>
+<td style="text-align:left">7</td>
+</tr>
+<tr>
+<td style="text-align:left">33</td>
+<td style="text-align:left"><a href="https://steemit.com/@antone" target="_blank" rel="noopener">@antone</a></td>
+<td style="text-align:left">7</td>
+</tr>
+<tr>
+<td style="text-align:left">34</td>
+<td style="text-align:left"><a href="https://steemit.com/@htliao" target="_blank" rel="noopener">@htliao</a></td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:left">35</td>
+<td style="text-align:left"><a href="https://steemit.com/@liangfengyouren" target="_blank" rel="noopener">@liangfengyouren</a></td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:left">36</td>
+<td style="text-align:left"><a href="https://steemit.com/@tvb" target="_blank" rel="noopener">@tvb</a></td>
+<td style="text-align:left">6</td>
+</tr>
+<tr>
+<td style="text-align:left">37</td>
+<td style="text-align:left"><a href="https://steemit.com/@wangwenjing" target="_blank" rel="noopener">@wangwenjing</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">38</td>
+<td style="text-align:left"><a href="https://steemit.com/@tumutanzi" target="_blank" rel="noopener">@tumutanzi</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">39</td>
+<td style="text-align:left"><a href="https://steemit.com/@incrediblesnow" target="_blank" rel="noopener">@incrediblesnow</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">40</td>
+<td style="text-align:left"><a href="https://steemit.com/@daydayup" target="_blank" rel="noopener">@daydayup</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">41</td>
+<td style="text-align:left"><a href="https://steemit.com/@bring" target="_blank" rel="noopener">@bring</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">42</td>
+<td style="text-align:left"><a href="https://steemit.com/@chinadaily" target="_blank" rel="noopener">@chinadaily</a></td>
+<td style="text-align:left">5</td>
+</tr>
+<tr>
+<td style="text-align:left">43</td>
+<td style="text-align:left"><a href="https://steemit.com/@cifer" target="_blank" rel="noopener">@cifer</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">44</td>
+<td style="text-align:left"><a href="https://steemit.com/@berlin1997" target="_blank" rel="noopener">@berlin1997</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">45</td>
+<td style="text-align:left"><a href="https://steemit.com/@hag228" target="_blank" rel="noopener">@hag228</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">46</td>
+<td style="text-align:left"><a href="https://steemit.com/@keepup" target="_blank" rel="noopener">@keepup</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">47</td>
+<td style="text-align:left"><a href="https://steemit.com/@susanli3769" target="_blank" rel="noopener">@susanli3769</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">48</td>
+<td style="text-align:left"><a href="https://steemit.com/@rea" target="_blank" rel="noopener">@rea</a></td>
+<td style="text-align:left">4</td>
+</tr>
+<tr>
+<td style="text-align:left">49</td>
+<td style="text-align:left"><a href="https://steemit.com/@luneknight" target="_blank" rel="noopener">@luneknight</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">50</td>
+<td style="text-align:left"><a href="https://steemit.com/@shenchensucc" target="_blank" rel="noopener">@shenchensucc</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">51</td>
+<td style="text-align:left"><a href="https://steemit.com/@coldhair" target="_blank" rel="noopener">@coldhair</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">52</td>
+<td style="text-align:left"><a href="https://steemit.com/@daijia" target="_blank" rel="noopener">@daijia</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">53</td>
+<td style="text-align:left"><a href="https://steemit.com/@daviswu" target="_blank" rel="noopener">@daviswu</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">54</td>
+<td style="text-align:left"><a href="https://steemit.com/@ygern" target="_blank" rel="noopener">@ygern</a></td>
+<td style="text-align:left">3</td>
+</tr>
+<tr>
+<td style="text-align:left">55</td>
+<td style="text-align:left"><a href="https://steemit.com/@aafeng" target="_blank" rel="noopener">@aafeng</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">56</td>
+<td style="text-align:left"><a href="https://steemit.com/@kenchung" target="_blank" rel="noopener">@kenchung</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">57</td>
+<td style="text-align:left"><a href="https://steemit.com/@guyverckw" target="_blank" rel="noopener">@guyverckw</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">58</td>
+<td style="text-align:left"><a href="https://steemit.com/@veronicazhu" target="_blank" rel="noopener">@veronicazhu</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">59</td>
+<td style="text-align:left"><a href="https://steemit.com/@melaleuca" target="_blank" rel="noopener">@melaleuca</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">60</td>
+<td style="text-align:left"><a href="https://steemit.com/@mrpointp" target="_blank" rel="noopener">@mrpointp</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">61</td>
+<td style="text-align:left"><a href="https://steemit.com/@renzhichu" target="_blank" rel="noopener">@renzhichu</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">62</td>
+<td style="text-align:left"><a href="https://steemit.com/@rivalhw" target="_blank" rel="noopener">@rivalhw</a></td>
+<td style="text-align:left">2</td>
+</tr>
+<tr>
+<td style="text-align:left">63</td>
+<td style="text-align:left"><a href="https://steemit.com/@rosatravels" target="_blank" rel="noopener">@rosatravels</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">64</td>
+<td style="text-align:left"><a href="https://steemit.com/@nileelily" target="_blank" rel="noopener">@nileelily</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">65</td>
+<td style="text-align:left"><a href="https://steemit.com/@nuagnorab" target="_blank" rel="noopener">@nuagnorab</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">66</td>
+<td style="text-align:left"><a href="https://steemit.com/@lizhangwen" target="_blank" rel="noopener">@lizhangwen</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">67</td>
+<td style="text-align:left"><a href="https://steemit.com/@victorier" target="_blank" rel="noopener">@victorier</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">68</td>
+<td style="text-align:left"><a href="https://steemit.com/@waiyee422" target="_blank" rel="noopener">@waiyee422</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">69</td>
+<td style="text-align:left"><a href="https://steemit.com/@wilkinshui" target="_blank" rel="noopener">@wilkinshui</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">70</td>
+<td style="text-align:left"><a href="https://steemit.com/@syh7758520" target="_blank" rel="noopener">@syh7758520</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">71</td>
+<td style="text-align:left"><a href="https://steemit.com/@sportyfree" target="_blank" rel="noopener">@sportyfree</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">72</td>
+<td style="text-align:left"><a href="https://steemit.com/@peterchen145" target="_blank" rel="noopener">@peterchen145</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">73</td>
+<td style="text-align:left"><a href="https://steemit.com/@happyukgo" target="_blank" rel="noopener">@happyukgo</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">74</td>
+<td style="text-align:left"><a href="https://steemit.com/@fundurian" target="_blank" rel="noopener">@fundurian</a></td>
+<td style="text-align:left">1</td>
+</tr>
+<tr>
+<td style="text-align:left">75</td>
+<td style="text-align:left"><a href="https://steemit.com/@jubi" target="_blank" rel="noopener">@jubi</a></td>
+<td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days"><a href="#&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days" class="headerlink" title="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days"></a>&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days</h2><table>
+<thead>
+<tr>
+<th style="text-align:left">&#x65E5;&#x671F; Date</th>
+<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09;Number of Posts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2017-11-28</td>
+<td style="text-align:left">773</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-27</td>
+<td style="text-align:left">730</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-26</td>
+<td style="text-align:left">553</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-25</td>
+<td style="text-align:left">616</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-24</td>
+<td style="text-align:left">625</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-23</td>
+<td style="text-align:left">732</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-22</td>
+<td style="text-align:left">690</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-21</td>
+<td style="text-align:left">785</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-20</td>
+<td style="text-align:left">773</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-19</td>
+<td style="text-align:left">679</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-18</td>
+<td style="text-align:left">807</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-17</td>
+<td style="text-align:left">763</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-16</td>
+<td style="text-align:left">761</td>
+</tr>
+<tr>
+<td style="text-align:left">2017-11-15</td>
+<td style="text-align:left">780</td>
+</tr>
+</tbody>
+</table>
+<p><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
+<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 31&#x5929;&#x3002;<br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates-cnyy2017-11-29" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x4E03;&#x5929;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;&#x3011;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/cn-yy-2017-11-28" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;&#x3010;&#x70B9;&#x8D5E;&#x5E74;&#x5316;&#x7387;&#x3011;</a></li>
+</ul>
+<blockquote>
+<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(&#x5E74;&#x5316;&#x7387; 5%)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
+</blockquote>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
+</ol>
+<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
+<blockquote>
+<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></p>
+</blockquote>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn--2017-11-29" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011; (2017-11-29)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-29T11:14:36.000Z">2017-11-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 263 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/url-shortener-php-library-with-free-api/">URL Shortener PHP Library (Client) with Free API</a>
+            
+        </h1>
+        <div class="content">
+            <p> I&#x2019;ve decided to make PHP Library on Shortening URLs with API support, which is very easy to use and integrate in your own applications. Please note that <em>the actual shortening process is happening in a closed-source server</em> so this library is only the Client side.</p>
+<p>Here is the github project:  <a href="https://github.com/DoctorLai/URL-Shortener" target="_blank" rel="noopener">https://github.com/DoctorLai/URL-Shortener</a><br>Here is the web UI:  <a href="https://rot47.net/_url/" target="_blank" rel="noopener">https://rot47.net/_url/</a><br>And here is the sample code:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$obj = new URL();</span><br><span class="line">$response = $obj-&gt;shorten(&quot;https://steemit.com/@justyy&quot;, array(&quot;try&quot; =&gt; 1));</span><br><span class="line">var_dump($response);</span><br><span class="line">$response = $obj-&gt;shorten(&quot;https://steemit.com/@justyy&quot;, array(&quot;private&quot; =&gt; 1));</span><br><span class="line">var_dump($response);  </span><br><span class="line">echo $response-&gt;url;</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="URL-Shortening-API-endpoint"><a href="#URL-Shortening-API-endpoint" class="headerlink" title="URL Shortening API endpoint"></a>URL Shortening API endpoint</h1><p><code>https://uploadbeta.com/api/url/</code></p>
+<h2 id="Parameters-url-GET-or-POST"><a href="#Parameters-url-GET-or-POST" class="headerlink" title="Parameters - url (GET or POST)"></a>Parameters - url (GET or POST)</h2><p>Required: specified the URL to lookup or shorten. When URL is already shortened, it will return e.g.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{&quot;error&quot;:&quot;found&quot;,&quot;errorCode&quot;:3,&quot;data&quot;:{&quot;id&quot;:&quot;595&quot;,&quot;0&quot;:&quot;595&quot;,&quot;count&quot;:&quot;0&quot;,&quot;1&quot;:&quot;0&quot;,&quot;flag&quot;:&quot;7&quot;,&quot;2&quot;:&quot;7&quot;,&quot;created&quot;:&quot;1455395435&quot;,&quot;3&quot;:&quot;1455395435&quot;,&quot;last&quot;:&quot;1455395435&quot;,&quot;4&quot;:&quot;1455395435&quot;,&quot;search&quot;:&quot;0&quot;,&quot;5&quot;:&quot;0&quot;},&quot;url&quot;:&quot;https:\/\/rot47.net\/9B&quot;}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Parameter-try-GET-or-POST"><a href="#Parameter-try-GET-or-POST" class="headerlink" title="Parameter - try (GET or POST)"></a>Parameter - try (GET or POST)</h2><p>Optional - Default = False: Do not attempt to shorten the URL. Just to check if the URL has been shortened before.</p>
+<h2 id="Parameter-private-GET-or-POST"><a href="#Parameter-private-GET-or-POST" class="headerlink" title="Parameter - private (GET or POST)"></a>Parameter - private (GET or POST)</h2><p>Optioal - Default = False: Do not list the link in the Links Browser.<br>Return - errorCode and error</p>
+<ul>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;invalid url&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 4</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;found&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 3,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;added&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 0,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;success&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 0,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;$url should start with http or https&#x201D;, </li>
+<li>&#x201C;errorCode&#x201D; =&gt; 1            </li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;not found&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 2                                  </li>
+</ul>
+<p>Feel free to submit issues and PRs!</p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/url-shortener-php-library-with-free-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/url-shortener-php-library-with-free-api" target="_blank" rel="noopener">URL Shortener PHP Library (Client) with Free API</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cnyy2017-11-29/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-11-29)">
         </a>
@@ -3058,802 +3807,6 @@
 </blockquote>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn-yy-2017-11-28" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x5E74;&#x5316;&#x7387;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011; (2017-11-28)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/cn--2017-11-28/" class="image is-7by1">
-            <img class="thumbnail" src="https://helloacm.com/images/dailystats.jpg" alt="CN 中文区每日【财富总值】【活跃统计数据】 (2017-11-28)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-28T15:01:09.000Z">2017-11-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn-stats/">cn-stats</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1248 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/cn--2017-11-28/">CN 中文区每日【财富总值】【活跃统计数据】 (2017-11-28)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>Thank you @arcange for creating <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a>!<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-11-28 15:03:02 (UTC)</p>
-<h2 id="2017-11-28-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"><a href="#2017-11-28-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;" class="headerlink" title="2017-11-28 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"></a>2017-11-28 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;</h2><p><img src="https://helloacm.com/images/dailystats.jpg" alt=""><br><em><a href="https://helloacm.com/images/dailystats.jpg" target="_blank" rel="noopener">Image Credit</a></em></p>
-<p>CN &#x5FAE;&#x4FE1;&#x7FA4;&#x4E00;&#x5171;&#x6709;: </p>
-<blockquote>
-<p><strong>233</strong>&#x4EBA;<br>&#x4E00;&#x5171; Total SP:<br><strong>473767.21</strong><br>&#x4E00;&#x5171; &#x6709;&#x6548;ESP Total ESP:<br><strong>1328089.76</strong><br>&#x4E00;&#x5171; &#x8D22;&#x5BCC;&#x603B;&#x503C; Total Values (SBD):<br><strong>540257.82</strong></p>
-</blockquote>
-<p>&#x6309;<em>10</em>&#x6B21;100%&#x70B9;&#x8D5E;&#x6765;&#x7B97;&#xFF0C;<strong>1328089.76</strong> SP &#x80FD;&#x5F97;&#x5230;&#x5927;&#x7EA6; <strong>1248.4</strong> SBD&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B; SP &#x90FD;&#x7528;&#x6765;&#x7ED9;CN&#x533A;&#x7684;&#x4EBA;&#x70B9;&#x8D5E;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4EBA;&#x6BCF;&#x5929;&#x5E73;&#x5747;&#x6536;&#x5165;&#x662F; <strong>5.36</strong> SBD&#x3002;</p>
-<ol>
-<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a> </li>
-<li><a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">Github &#x540D;&#x5355;</a></li>
-<li><a href="https://github.com/DoctorLai/steemit-wechat-group" target="_blank" rel="noopener">&#x52A0;&#x5165;&#x65B9;&#x6CD5;: wexin@justyy.com</a></li>
-<li>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left">&#x6700;&#x5C0F;&#x503C; Min</th>
-<th style="text-align:left">&#x6700;&#x5927;&#x503C; Max</th>
-<th style="text-align:left">&#x5E73;&#x5747; Avg</th>
-<th style="text-align:left">&#x4E2D;&#x4F4D;&#x6570; Median</th>
-<th style="text-align:left">&#x6807;&#x51C6;&#x65B9;&#x5DEE; STD</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">SBD</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">1691.17</td>
-<td style="text-align:left">39.88</td>
-<td style="text-align:left">2.0</td>
-<td style="text-align:left">190.13</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x7B49;&#x7EA7; Reputation</td>
-<td style="text-align:left">3.52</td>
-<td style="text-align:left">75.27</td>
-<td style="text-align:left">50.93</td>
-<td style="text-align:left">52.67</td>
-<td style="text-align:left">13.0</td>
-</tr>
-<tr>
-<td style="text-align:left">Steem Power</td>
-<td style="text-align:left">0.0</td>
-<td style="text-align:left">101142.84</td>
-<td style="text-align:left">2033.09</td>
-<td style="text-align:left">126.31</td>
-<td style="text-align:left">7862.8</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x6709;&#x6548; ESP</td>
-<td style="text-align:left">0.0</td>
-<td style="text-align:left">792342.89</td>
-<td style="text-align:left">5721.16</td>
-<td style="text-align:left">113.39</td>
-<td style="text-align:left">52428.75</td>
-</tr>
-<tr>
-<td style="text-align:left">STEEM</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">1501.52</td>
-<td style="text-align:left">62.62</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">215.95</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x5E10;&#x53F7;&#x4EF7;&#x503C; $</td>
-<td style="text-align:left">0.21</td>
-<td style="text-align:left">110928.3</td>
-<td style="text-align:left">2287.1</td>
-<td style="text-align:left">156.32</td>
-<td style="text-align:left">8599.39</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x6295;&#x7968;&#x80FD;&#x91CF; VP %</td>
-<td style="text-align:left">1.98</td>
-<td style="text-align:left">100</td>
-<td style="text-align:left">83.73</td>
-<td style="text-align:left">96.04</td>
-<td style="text-align:left">22.28</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x5E10;&#x53F7;&#x5929;&#x6570; Days</td>
-<td style="text-align:left">4</td>
-<td style="text-align:left">583</td>
-<td style="text-align:left">167.5</td>
-<td style="text-align:left">127</td>
-<td style="text-align:left">130.94</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2017-11-28-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs"><a href="#2017-11-28-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs" class="headerlink" title="2017-11-28 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)"></a>2017-11-28 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)</h2><table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left">Active User</th>
-<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09; Number of Posts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left"><a href="https://steemit.com/@ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:left">81</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left"><a href="https://steemit.com/@superhardness" target="_blank" rel="noopener">@superhardness</a></td>
-<td style="text-align:left">38</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left"><a href="https://steemit.com/@lydiachan" target="_blank" rel="noopener">@lydiachan</a></td>
-<td style="text-align:left">36</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left"><a href="https://steemit.com/@angelina6688" target="_blank" rel="noopener">@angelina6688</a></td>
-<td style="text-align:left">35</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left"><a href="https://steemit.com/@deanliu" target="_blank" rel="noopener">@deanliu</a></td>
-<td style="text-align:left">32</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left"><a href="https://steemit.com/@lovemyson" target="_blank" rel="noopener">@lovemyson</a></td>
-<td style="text-align:left">32</td>
-</tr>
-<tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left"><a href="https://steemit.com/@victory622" target="_blank" rel="noopener">@victory622</a></td>
-<td style="text-align:left">27</td>
-</tr>
-<tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left"><a href="https://steemit.com/@cnbuddy" target="_blank" rel="noopener">@cnbuddy</a></td>
-<td style="text-align:left">27</td>
-</tr>
-<tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left"><a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a></td>
-<td style="text-align:left">26</td>
-</tr>
-<tr>
-<td style="text-align:left">10</td>
-<td style="text-align:left"><a href="https://steemit.com/@dancingapple" target="_blank" rel="noopener">@dancingapple</a></td>
-<td style="text-align:left">24</td>
-</tr>
-<tr>
-<td style="text-align:left">11</td>
-<td style="text-align:left"><a href="https://steemit.com/@fr3eze" target="_blank" rel="noopener">@fr3eze</a></td>
-<td style="text-align:left">22</td>
-</tr>
-<tr>
-<td style="text-align:left">12</td>
-<td style="text-align:left"><a href="https://steemit.com/@stabilowl" target="_blank" rel="noopener">@stabilowl</a></td>
-<td style="text-align:left">21</td>
-</tr>
-<tr>
-<td style="text-align:left">13</td>
-<td style="text-align:left"><a href="https://steemit.com/@bxt" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:left">20</td>
-</tr>
-<tr>
-<td style="text-align:left">14</td>
-<td style="text-align:left"><a href="https://steemit.com/@winniex" target="_blank" rel="noopener">@winniex</a></td>
-<td style="text-align:left">20</td>
-</tr>
-<tr>
-<td style="text-align:left">15</td>
-<td style="text-align:left"><a href="https://steemit.com/@xiaoshancun" target="_blank" rel="noopener">@xiaoshancun</a></td>
-<td style="text-align:left">20</td>
-</tr>
-<tr>
-<td style="text-align:left">16</td>
-<td style="text-align:left"><a href="https://steemit.com/@chann" target="_blank" rel="noopener">@chann</a></td>
-<td style="text-align:left">19</td>
-</tr>
-<tr>
-<td style="text-align:left">17</td>
-<td style="text-align:left"><a href="https://steemit.com/@kimzwarch" target="_blank" rel="noopener">@kimzwarch</a></td>
-<td style="text-align:left">19</td>
-</tr>
-<tr>
-<td style="text-align:left">18</td>
-<td style="text-align:left"><a href="https://steemit.com/@yellowbird" target="_blank" rel="noopener">@yellowbird</a></td>
-<td style="text-align:left">13</td>
-</tr>
-<tr>
-<td style="text-align:left">19</td>
-<td style="text-align:left"><a href="https://steemit.com/@catwomanteresa" target="_blank" rel="noopener">@catwomanteresa</a></td>
-<td style="text-align:left">11</td>
-</tr>
-<tr>
-<td style="text-align:left">20</td>
-<td style="text-align:left"><a href="https://steemit.com/@luneknight" target="_blank" rel="noopener">@luneknight</a></td>
-<td style="text-align:left">10</td>
-</tr>
-<tr>
-<td style="text-align:left">21</td>
-<td style="text-align:left"><a href="https://steemit.com/@mrspointm" target="_blank" rel="noopener">@mrspointm</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">22</td>
-<td style="text-align:left"><a href="https://steemit.com/@rea" target="_blank" rel="noopener">@rea</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">23</td>
-<td style="text-align:left"><a href="https://steemit.com/@dapeng" target="_blank" rel="noopener">@dapeng</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">24</td>
-<td style="text-align:left"><a href="https://steemit.com/@windowglass" target="_blank" rel="noopener">@windowglass</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">25</td>
-<td style="text-align:left"><a href="https://steemit.com/@drunkevil" target="_blank" rel="noopener">@drunkevil</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">26</td>
-<td style="text-align:left"><a href="https://steemit.com/@joythewanderer" target="_blank" rel="noopener">@joythewanderer</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">27</td>
-<td style="text-align:left"><a href="https://steemit.com/@susanli3769" target="_blank" rel="noopener">@susanli3769</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">28</td>
-<td style="text-align:left"><a href="https://steemit.com/@travelgirl" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">29</td>
-<td style="text-align:left"><a href="https://steemit.com/@jychbetter" target="_blank" rel="noopener">@jychbetter</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">30</td>
-<td style="text-align:left"><a href="https://steemit.com/@tvb" target="_blank" rel="noopener">@tvb</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">31</td>
-<td style="text-align:left"><a href="https://steemit.com/@htliao" target="_blank" rel="noopener">@htliao</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">32</td>
-<td style="text-align:left"><a href="https://steemit.com/@daydayup" target="_blank" rel="noopener">@daydayup</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">33</td>
-<td style="text-align:left"><a href="https://steemit.com/@tumutanzi" target="_blank" rel="noopener">@tumutanzi</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">34</td>
-<td style="text-align:left"><a href="https://steemit.com/@shenchensucc" target="_blank" rel="noopener">@shenchensucc</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">35</td>
-<td style="text-align:left"><a href="https://steemit.com/@mrpointp" target="_blank" rel="noopener">@mrpointp</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">36</td>
-<td style="text-align:left"><a href="https://steemit.com/@rivalhw" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">37</td>
-<td style="text-align:left"><a href="https://steemit.com/@rosatravels" target="_blank" rel="noopener">@rosatravels</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">38</td>
-<td style="text-align:left"><a href="https://steemit.com/@victorier" target="_blank" rel="noopener">@victorier</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">39</td>
-<td style="text-align:left"><a href="https://steemit.com/@gaixiaodan" target="_blank" rel="noopener">@gaixiaodan</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">40</td>
-<td style="text-align:left"><a href="https://steemit.com/@hag228" target="_blank" rel="noopener">@hag228</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">41</td>
-<td style="text-align:left"><a href="https://steemit.com/@chinadaily" target="_blank" rel="noopener">@chinadaily</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">42</td>
-<td style="text-align:left"><a href="https://steemit.com/@bring" target="_blank" rel="noopener">@bring</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">43</td>
-<td style="text-align:left"><a href="https://steemit.com/@antone" target="_blank" rel="noopener">@antone</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">44</td>
-<td style="text-align:left"><a href="https://steemit.com/@berlin1997" target="_blank" rel="noopener">@berlin1997</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">45</td>
-<td style="text-align:left"><a href="https://steemit.com/@guyverckw" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">46</td>
-<td style="text-align:left"><a href="https://steemit.com/@jubi" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">47</td>
-<td style="text-align:left"><a href="https://steemit.com/@nicolemoker" target="_blank" rel="noopener">@nicolemoker</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">48</td>
-<td style="text-align:left"><a href="https://steemit.com/@keepup" target="_blank" rel="noopener">@keepup</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">49</td>
-<td style="text-align:left"><a href="https://steemit.com/@liuboya" target="_blank" rel="noopener">@liuboya</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">50</td>
-<td style="text-align:left"><a href="https://steemit.com/@nanosesame" target="_blank" rel="noopener">@nanosesame</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">51</td>
-<td style="text-align:left"><a href="https://steemit.com/@veronicazhu" target="_blank" rel="noopener">@veronicazhu</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">52</td>
-<td style="text-align:left"><a href="https://steemit.com/@oflyhigh" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">53</td>
-<td style="text-align:left"><a href="https://steemit.com/@daijia" target="_blank" rel="noopener">@daijia</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">54</td>
-<td style="text-align:left"><a href="https://steemit.com/@fundurian" target="_blank" rel="noopener">@fundurian</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">55</td>
-<td style="text-align:left"><a href="https://steemit.com/@chaofanjun" target="_blank" rel="noopener">@chaofanjun</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">56</td>
-<td style="text-align:left"><a href="https://steemit.com/@wangwenjing" target="_blank" rel="noopener">@wangwenjing</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">57</td>
-<td style="text-align:left"><a href="https://steemit.com/@wilburm" target="_blank" rel="noopener">@wilburm</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">58</td>
-<td style="text-align:left"><a href="https://steemit.com/@ygern" target="_blank" rel="noopener">@ygern</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">59</td>
-<td style="text-align:left"><a href="https://steemit.com/@cifer" target="_blank" rel="noopener">@cifer</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">60</td>
-<td style="text-align:left"><a href="https://steemit.com/@daviswu" target="_blank" rel="noopener">@daviswu</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">61</td>
-<td style="text-align:left"><a href="https://steemit.com/@coldhair" target="_blank" rel="noopener">@coldhair</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">62</td>
-<td style="text-align:left"><a href="https://steemit.com/@hannahwu" target="_blank" rel="noopener">@hannahwu</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">63</td>
-<td style="text-align:left"><a href="https://steemit.com/@pakyeechan" target="_blank" rel="noopener">@pakyeechan</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">64</td>
-<td style="text-align:left"><a href="https://steemit.com/@pptx" target="_blank" rel="noopener">@pptx</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">65</td>
-<td style="text-align:left"><a href="https://steemit.com/@syh7758520" target="_blank" rel="noopener">@syh7758520</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">66</td>
-<td style="text-align:left"><a href="https://steemit.com/@waiyee422" target="_blank" rel="noopener">@waiyee422</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">67</td>
-<td style="text-align:left"><a href="https://steemit.com/@nationalpark" target="_blank" rel="noopener">@nationalpark</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">68</td>
-<td style="text-align:left"><a href="https://steemit.com/@feng1925" target="_blank" rel="noopener">@feng1925</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">69</td>
-<td style="text-align:left"><a href="https://steemit.com/@liumei" target="_blank" rel="noopener">@liumei</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">70</td>
-<td style="text-align:left"><a href="https://steemit.com/@liangfengyouren" target="_blank" rel="noopener">@liangfengyouren</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">71</td>
-<td style="text-align:left"><a href="https://steemit.com/@magicmonk" target="_blank" rel="noopener">@magicmonk</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">72</td>
-<td style="text-align:left"><a href="https://steemit.com/@mooninwater" target="_blank" rel="noopener">@mooninwater</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">73</td>
-<td style="text-align:left"><a href="https://steemit.com/@nileelily" target="_blank" rel="noopener">@nileelily</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">74</td>
-<td style="text-align:left"><a href="https://steemit.com/@nuagnorab" target="_blank" rel="noopener">@nuagnorab</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">75</td>
-<td style="text-align:left"><a href="https://steemit.com/@shieha" target="_blank" rel="noopener">@shieha</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">76</td>
-<td style="text-align:left"><a href="https://steemit.com/@speeding" target="_blank" rel="noopener">@speeding</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">77</td>
-<td style="text-align:left"><a href="https://steemit.com/@incrediblesnow" target="_blank" rel="noopener">@incrediblesnow</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">78</td>
-<td style="text-align:left"><a href="https://steemit.com/@cqf" target="_blank" rel="noopener">@cqf</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">79</td>
-<td style="text-align:left"><a href="https://steemit.com/@erye" target="_blank" rel="noopener">@erye</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">80</td>
-<td style="text-align:left"><a href="https://steemit.com/@daxiang" target="_blank" rel="noopener">@daxiang</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">81</td>
-<td style="text-align:left"><a href="https://steemit.com/@breathewind" target="_blank" rel="noopener">@breathewind</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">82</td>
-<td style="text-align:left"><a href="https://steemit.com/@acactus1013" target="_blank" rel="noopener">@acactus1013</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">83</td>
-<td style="text-align:left"><a href="https://steemit.com/@wilkinshui" target="_blank" rel="noopener">@wilkinshui</a></td>
-<td style="text-align:left">1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days"><a href="#&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days" class="headerlink" title="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days"></a>&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">&#x65E5;&#x671F; Date</th>
-<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09;Number of Posts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2017-11-27</td>
-<td style="text-align:left">730</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-26</td>
-<td style="text-align:left">553</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-25</td>
-<td style="text-align:left">616</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-24</td>
-<td style="text-align:left">625</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-23</td>
-<td style="text-align:left">732</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-22</td>
-<td style="text-align:left">690</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-21</td>
-<td style="text-align:left">785</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-20</td>
-<td style="text-align:left">773</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-19</td>
-<td style="text-align:left">679</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-18</td>
-<td style="text-align:left">807</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-17</td>
-<td style="text-align:left">763</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-16</td>
-<td style="text-align:left">761</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-15</td>
-<td style="text-align:left">780</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-11-14</td>
-<td style="text-align:left">908</td>
-</tr>
-</tbody>
-</table>
-<p><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 30&#x5929;&#x3002;<br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates-cnyy2017-11-28" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x4E03;&#x5929;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;&#x3011;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn-yy-2017-11-27" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;&#x3010;&#x70B9;&#x8D5E;&#x5E74;&#x5316;&#x7387;&#x3011;</a></li>
-</ul>
-<blockquote>
-<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(&#x5E74;&#x5316;&#x7387; 5%)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
-</blockquote>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ol>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn--2017-11-28" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011; (2017-11-28)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-28T14:09:45.000Z">2017-11-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 589 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/image-compressor-library-php/">Image Compressor Library (PHP)</a>
-            
-        </h1>
-        <div class="content">
-            <p>There are paid image compress APIs but this one is totally free because I &#x2018;ve decided to make one and provide it as free.</p>
-<p>All images (original and optimised) are kept by default on the server for 30 days. Upload Rate Limit is 1 upload per second. </p>
-<h1 id="Why-Bother"><a href="#Why-Bother" class="headerlink" title="Why Bother?"></a>Why Bother?</h1><p>Images are slow to load in webpages and we want them to be as small as possible and the load time is as fast as possible</p>
-<h1 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h1><p>You will need to get the APP_KEY and APP_SECRETE using the your email address (replace the [AT] below and your email):</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -d &quot;email=dr.zhihua.lai [AT] gmail.com&quot; &quot;https://helloacm.com/api/get-access-token/&quot;</span><br></pre></td></tr></tbody></table></figure>
-<p>Make sure you replace with your own email. The access tokens will be sent to your email box. You can also specify the parameter reset to force resetting the SECRET token. </p>
-<h1 id="Check-Access-Tokens"><a href="#Check-Access-Tokens" class="headerlink" title="Check Access Tokens"></a>Check Access Tokens</h1><p><code>/api/images-compressor/</code> check parameters - KEY and SECRET. </p>
-<p>Example:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -d &quot;key=YOUR-KEY&quot; -d &quot;secret=YOUR-SECRET&quot; &quot;https://helloacm.com/api/images-compressor/check/&quot;</span><br></pre></td></tr></tbody></table></figure>
-<p>Possible return:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{&quot;result&quot;:&quot;OK&quot;,&quot;errCode&quot;:0}</span><br><span class="line">{&quot;result&quot;:&quot;Access Denied&quot;,&quot;errCode&quot;:2}</span><br><span class="line">{&quot;result&quot;:&quot;Require KEY and SECRET&quot;,&quot;errCode&quot;:1}</span><br></pre></td></tr></tbody></table></figure><p></p>
-<h1 id="Upload-Images-and-Compress-Them"><a href="#Upload-Images-and-Compress-Them" class="headerlink" title="Upload Images and Compress Them"></a>Upload Images and Compress Them</h1><p>Once you have the APP_KEY and APP_SECRET (will be in the email), then you can use the following to upload:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -F &apos;file=@test.jpg&apos; -F &apos;key=YOUR_KEY&apos; -F &apos;secret=YOUR-SECRET&apos; &apos;https://helloacm.com/api/images-compressor/&apos;</span><br></pre></td></tr></tbody></table></figure>
-<p>You can also give parameter m (range from 0 to 100) indicating the optimization level. On sucess, if you return something like this:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{&quot;result&quot;:{&quot;id&quot;:&quot;25&quot;,&quot;key&quot;:&quot;0cdadf488169697a6293dcbf1f9e9356&quot;,&quot;ts&quot;:&quot;2016-01-29 03:13:07&quot;,&quot;original&quot;:&quot;https:\/\/helloacm.com\/upload\/images\/0cdadf488169697a6293dcbf1f9e9356\/33be0e6e19abcbec9a605c01ed559a68.jpg.original.jpg&quot;,&quot;optimize&quot;:&quot;https:\/\/helloacm.com\/upload\/images\/0cdadf488169697a6293dcbf1f9e9356\/33be0e6e19abcbec9a605c01ed559a68.jpg&quot;,&quot;expirydate&quot;:&quot;2018-02-29 03:13:07&quot;,&quot;quality&quot;:&quot;95&quot;,&quot;original_size&quot;:&quot;274092&quot;,&quot;optimize_size&quot;:&quot;274092&quot;},&quot;errCode&quot;:0}</span><br></pre></td></tr></tbody></table></figure>
-<p>The optimized URL will be given in the field optimize.<br>Possible error codes:</p>
-<ul>
-<li>Sucess - in this case upload succesful, check the field of id, key, ts (timestamp), original, optimize, expirydate (default 30 days), quality, original_size, optimize_size.</li>
-<li>Invalid quality parameter m given</li>
-<li>Require Key and Secret</li>
-<li>Access Denied</li>
-<li>Invalid Image Type</li>
-<li>Invalid Image Size</li>
-<li>Upload Rate Limit (1 second per upload)</li>
-<li>URL error</li>
-<li>Runtime Error</li>
-</ul>
-<p>You can specify the URL instead of file as well:  <code>curl -X POST -F &apos;url=URL&apos; -F &apos;key=YOUR_KEY&apos; -F &apos;secret=YOUR-SECRET&apos; &apos;https://helloacm.com/api/images-compressor/&apos;</code></p>
-<h1 id="Sample-Code"><a href="#Sample-Code" class="headerlink" title="Sample Code"></a>Sample Code</h1><p><a href="https://github.com/DoctorLai/images-compressor/blob/master/example.php" target="_blank" rel="noopener">https://github.com/DoctorLai/images-compressor/blob/master/example.php</a></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">  require(&apos;class-imagescompressor.php&apos;);</span><br><span class="line">  $app_key = &apos;YOUR_APP_KEY&apos;;</span><br><span class="line">  $app_secret = &apos;YOUR_APP_SECRET&apos;;</span><br><span class="line">  $obj = new ImagesCompressor($app_key, $app_secret);</span><br><span class="line">  print_r($obj-&gt;check());</span><br><span class="line">  $response = $obj-&gt;optimize(&quot;/var/www/imagerecycle/test.jpg&quot;);</span><br><span class="line">  echo ($response-&gt;errCode);</span><br><span class="line">  echo ($response-&gt;result-&gt;optimize);</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="List-All-Images"><a href="#List-All-Images" class="headerlink" title="List All Images"></a>List All Images</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST  -F &apos;key=YOUR_KEY&apos; -F &apos;secret=YOUR_SECRET&apos; &apos;https://helloacm.com/api/images-compressor/list/&apos;</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="List-A-Image-by-ID"><a href="#List-A-Image-by-ID" class="headerlink" title="List A Image by ID"></a>List A Image by ID</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST  -F &apos;key=YOUR_KEY&apos; -F &apos;secret=YOUR_SECRET&apos; -F &apos;id=IMAGE_ID&apos; &apos;https://helloacm.com/api/images-compressor/list/&apos;</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="Delete-Image-s"><a href="#Delete-Image-s" class="headerlink" title="Delete Image(s)"></a>Delete Image(s)</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST  -F &apos;key=YOUR_KEY&apos; -F &apos;secret=YOUR_SECRET&apos; -F &quot;id=ID&quot; &apos;https://helloacm.com/api/images-compressor/delete/&apos;</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="Project-pages"><a href="#Project-pages" class="headerlink" title="Project pages:"></a>Project pages:</h1><p>Github source: <a href="https://github.com/DoctorLai/images-compressor" target="_blank" rel="noopener">https://github.com/DoctorLai/images-compressor</a><br>Project page: <a href="https://helloacm.com/images-compressor/" target="_blank" rel="noopener">https://helloacm.com/images-compressor/</a></p>
-<p>Feel Free to submit your PRs!</p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/image-compressor-library-php" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/image-compressor-library-php" target="_blank" rel="noopener">Image Compressor Library (PHP)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/chrome-extension-show-ip-address/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511866523/vnpz4dqiuf5ljeerlpai.png" alt="Chrome Extension: Show IP Address">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-28T10:58:00.000Z">2017-11-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 278 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/chrome-extension-show-ip-address/">Chrome Extension: Show IP Address</a>
-            
-        </h1>
-        <div class="content">
-            <p>For Network Administrators, they sometimes need to know the IP addresses both internal and external. Therefore, I have developed a handy widget to the Chrome, so that you can easily get your own IP addresses with just one click.</p>
-<p>The github source repro is: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a><br>You can add to Chrome browser via  Chrome web store: <a href="https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj</a></p>
-<p>A screenshot of the chrome extension to show the IP address:</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511866523/vnpz4dqiuf5ljeerlpai.png" alt="image.png"></p>
-<p>What it does essentially is to invoke the show-ip-address API from 4 different API servers around the globe, although the internal IP address can be obtained via the following Javascript function:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">function getLocalIPs(callback) {</span><br><span class="line">    var ips = [];</span><br><span class="line"></span><br><span class="line">    var RTCPeerConnection = window.RTCPeerConnection ||</span><br><span class="line">        window.webkitRTCPeerConnection || window.mozRTCPeerConnection;</span><br><span class="line"></span><br><span class="line">    var pc = new RTCPeerConnection({</span><br><span class="line">        // Don&apos;t specify any stun/turn servers, otherwise you will</span><br><span class="line">        // also find your public IP addresses.</span><br><span class="line">        iceServers: []</span><br><span class="line">    });</span><br><span class="line">    // Add a media line, this is needed to activate candidate gathering.</span><br><span class="line">    pc.createDataChannel(&apos;&apos;);</span><br><span class="line">    </span><br><span class="line">    // onicecandidate is triggered whenever a candidate has been found.</span><br><span class="line">    pc.onicecandidate = function(e) {</span><br><span class="line">        if (!e.candidate) { // Candidate gathering completed.</span><br><span class="line">            pc.close();</span><br><span class="line">            callback(ips);</span><br><span class="line">            return;</span><br><span class="line">        }</span><br><span class="line">        var ip = /^candidate:.+ (\S+) \d+ typ/.exec(e.candidate.candidate)[1];</span><br><span class="line">        if (ips.indexOf(ip) == -1) // avoid duplicate entries (tcp/udp)</span><br><span class="line">            ips.push(ip);</span><br><span class="line">    };</span><br><span class="line">    pc.createOffer(function(sdp) {</span><br><span class="line">        pc.setLocalDescription(sdp);</span><br><span class="line">    }, function onerror() {});</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>Feel free to submit your Pull Requests at: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a></p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/chrome-extension-show-ip-address" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/chrome-extension-show-ip-address" target="_blank" rel="noopener">Chrome Extension: Show IP Address</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
