@@ -34,7 +34,7 @@ If you think of Cuba, what icons does it conjure up? The mojito? Classic cars? C
 ![d8jdl3mesd.jpg](https://img.esteem.ws/d8jdl3mesd.jpg)
 
 ## 
-Here I'm going to show you some images of another Cuban icon -  the cigars. To be exact, a tobacco farmer's rolling and smoking cigar. The head picture is my entry to the PeoplePhotography Contest by @worldcapture. 
+Here I'm going to show you some images of another Cuban icon -  the cigars. To be exact, a tobacco farmer's rolling and smoking cigar. The head picture is my entry to the PeoplePhotography Contest by @worldcapture and Qurator’s Photo Friday competition. 
 
 ## 
 Cigar is believed by many to be originated from Cuba. It's not uncommon to see locals smoking cigar on the streets. It's an interesting experience for me to visit a tobacco farm in the Viñales Valley, situated in the west of Cuba. 

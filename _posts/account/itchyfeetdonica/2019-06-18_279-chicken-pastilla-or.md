@@ -1,6 +1,6 @@
 
 ---
-title: '#279 Chicken Pastilla 🥙 🇲🇦 | 摩洛哥鸡肉馅饼'
+title: '#279 STEEM Food Tours #66 Kaowa - Marrakech 🥙 🇲🇦 | 摩洛哥鸡肉馅饼'
 permlink: 279-chicken-pastilla-or
 catalog: true
 toc_nav_num: true
@@ -12,9 +12,9 @@ categories:
 tags:
 - qurator
 - photocircle
-- cn
-- food
+- steemfoodtours
 - busy
+- palnet
 thumbnail: 'https://cdn.steemitimages.com/DQmcCg7rm9obXR4DmUjT8TF48HQd2aMcy4vZpDwGE4EqrNk/11A67ED3-45A9-4974-8094-E2680640CDFA.jpeg'
 sidebar:
     right:
@@ -29,14 +29,17 @@ widgets:
 ![11A67ED3-45A9-4974-8094-E2680640CDFA.jpeg](https://cdn.steemitimages.com/DQmcCg7rm9obXR4DmUjT8TF48HQd2aMcy4vZpDwGE4EqrNk/11A67ED3-45A9-4974-8094-E2680640CDFA.jpeg)
 
 ##
-Hey everyone, have you tried pastilla? Right, it’s that pie in my plate here! I tried a couple of different pastillas in Morocco, and this one was served in a cafe restaurant near the popular Jardin Majorelle in Marrakech. The food photo is my entry to Qurator’s Tasty Tuesday competition.
+Hey everyone, have you tried pastilla? Right, it’s that pie in my plate here! I tried a couple of different pastillas in Morocco, and this one was served in a snack & juice bar called Kaowa in Marrakech. The place is located right opposite  the popular garden - Yves Sant Laurent's Jardin Majorelle. 
+
+This cozy and contemporary space is designed by renowned architect Imaad Rahmouni. Except for serving a wide range of fresh meals and soft drinks, it's attached to a retail store that sells beautiful artworks. The staff here are warm and friendly, and the prices are quite reasonable considering its great location. 
+
 
 ##
 ![0B5327E4-B96B-4452-84DF-DAE7401943FA.jpeg](https://cdn.steemitimages.com/DQmYayYjMbSp7CCUkK4qNSkeKvWfWYTH27zkkGC6YXN2Jd2/0B5327E4-B96B-4452-84DF-DAE7401943FA.jpeg)
 
 
 ## 
-Pastilla is a traditional Moroccan pastry that are also commonly found in other countries of the Maghreb. 
+I ordered a pastilla dish for my lunch. Pastilla is a traditional Moroccan pastry that are also commonly found in other countries of the Maghreb. 
 
 This type of pie with a sugared crust is of Andalusian origin, typically filled with spiced pigeon meat and apricots. However, most of the pastillas I tried had chicken meat inside, like this one in my photo. They are usually pretty sweet. I personally preferred those more savory ones with seafood inside. 
 
@@ -64,6 +67,14 @@ Right next to my lunch table, there are fine design items, souvenirs and clothes
  Also ice cream: 🍨 😋
 ![2E3C6EDB-80F0-4ADB-BFE0-19AA202610C3.jpeg](https://cdn.steemitimages.com/DQmcNHuboCgxZfxsJYaNmiuwg7Hm7r1p33bkp5bxb175fAF/2E3C6EDB-80F0-4ADB-BFE0-19AA202610C3.jpeg)
 
+
+##
+**Address:**  33 Rue Yves Saint Laurent, Marrakesh 40000, Morocco
+
+![IMG_2320.JPG](https://cdn.steemitimages.com/DQmRGd9gb8Ust25oZTmSH5jaoYvLWdn3P7A7b3eyLerdVYD/IMG_2320.JPG)
+
+ ##
+If interested, you can check out their [Facebook page](https://www.facebook.com/pg/Kaowa.SnackAndJuiceBar/about) (I didn't find their website). 
 
 
 
@@ -107,4 +118,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#279 Chicken Pastilla 🥙 🇲🇦 | 摩洛哥鸡肉馅饼'](https://steemit.com/@itchyfeetdonica/279-chicken-pastilla-or)
+This page is synchronized from the post: ['#279 STEEM Food Tours #66 Kaowa - Marrakech 🥙 🇲🇦 | 摩洛哥鸡肉馅饼'](https://steemit.com/@itchyfeetdonica/279-chicken-pastilla-or)
