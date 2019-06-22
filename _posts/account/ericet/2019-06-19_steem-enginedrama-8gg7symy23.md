@@ -18,6 +18,7 @@ tags:
 - sct-ubi
 - sct-cn
 - cn-curation
+- steem-guides
 - whalepower
 thumbnail: 'https://ipfs.busy.org/ipfs/QmU9St7JHAWxG5dkr8CAADz5NZDPb1TknK9ptevG2kMvUb'
 sidebar:
