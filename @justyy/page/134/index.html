@@ -230,6 +230,103 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/python-script-to-transfer-sbd-to-exchange/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518553132/ku52ajih7pfqb7h95ih6.png" alt="Python Script to Transfer SBD to Exchange 通过程序来减少到交易所转帐出错的可能">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-02-13T20:38:42.000Z">2018-02-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 minutes read (About 1292 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/python-script-to-transfer-sbd-to-exchange/">Python Script to Transfer SBD to Exchange 通过程序来减少到交易所转帐出错的可能</a>
+            
+        </h1>
+        <div class="content">
+            <p>When transferring your SBD assets to exchange, you have to fill in the correct memo otherwise your money is likely to get lost.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518553132/ku52ajih7pfqb7h95ih6.png" alt="image.png"></p>
+<p>A few months ago, I accidentally transfered 100 SBD to @blocktrades but luckily a few hours later I got the refund.</p>
+<p>You don&#x2019;t get lucky everytime. Therefore I think it is less likely for things to go wrong if this can be done automatically via scripts.</p>
+<p>I have written a <a href="https://helloacm.com/interview-question-what-is-the-difference-between-list-and-dictionary-in-python/" target="_blank" rel="noopener">Python</a> script based on Steem-Python library and it works quite well for me.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from steem import Steem</span><br><span class="line">from steem.account import Account</span><br><span class="line">from keys import account_akey</span><br><span class="line">from nodes import steem_nodes</span><br><span class="line"></span><br><span class="line">id = &apos;justyy&apos;</span><br><span class="line">wif = {</span><br><span class="line">  &quot;active&quot;: account_akey[id]</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">steem = Steem(nodes = steem_nodes, keys = wif)  </span><br><span class="line">account = Account(id, steemd_instance=steem)</span><br><span class="line">balance = account.balances </span><br><span class="line">x = float(balance[&apos;total&apos;][&apos;SBD&apos;])</span><br><span class="line">print(&quot;@&quot; + id + &quot; has &quot; + str(x) + &quot; SBD&quot;)</span><br><span class="line"></span><br><span class="line">if x &gt;= 40:</span><br><span class="line">  y = 30</span><br><span class="line">  print(&quot;transfering &quot; + str(y) + &quot; SBD from @&quot; + id + &quot; to @bittrex&quot;)</span><br><span class="line">  steem.transfer(&quot;bittrex&quot;, amount = y, asset = &apos;SBD&apos;, memo = &quot;The MEMO key required by your exchange&quot;, account = id)</span><br></pre></td></tr></tbody></table></figure>
+<p>Let the script run once per hour via crontab. When account balance is larger than 40 SBD, automatically it transfers 30 to your exchange account.</p>
+<p>Advantages:</p>
+<ol>
+<li>Saves your time.</li>
+<li>Can&#x2019;t get wrong.</li>
+<li>Makes you feel that your are actually earning something on SteemIt.</li>
+</ol>
+<p>You don&#x2019;t need to use <a href="https://helloacm.com/interview-question-what-is-the-difference-between-list-and-dictionary-in-python/" target="_blank" rel="noopener">Python</a>, you can also use <a href="https://helloacm.com/add-steem-js-console-to-steemtools/" target="_blank" rel="noopener">steem</a>-js as long as you put in the correct MEMO.</p>
+<p>Reposted to my blog: <a href="https://helloacm.com/python-script-to-transfer-sbd-to-crytocurrency-exchange/" target="_blank" rel="noopener">https://helloacm.com/python-script-to-transfer-sbd-to-crytocurrency-exchange/</a></p>
+<p><img src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=20180213hotel22" alt=""><br><em>&#x56FE;&#x7247;&#x6765;&#x6E90;&#xFF1A; &#x6BCF;&#x65E5;BING&#x58C1;&#x7EB8; @superbing</em></p>
+<p>&#x867D;&#x7136;&#x73B0;&#x5728;&#x5728;<a href="https://justyy.com/archives/5989" target="_blank" rel="noopener">STEEMIT</a>&#x4E0A;&#x8F6C;&#x5E10;&#x5230;&#x4EA4;&#x6613;&#x6240;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x586B;&#x5199; MEMO&#xFF0C;&#x662F;&#x4F1A;&#x63D0;&#x793A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x624B;&#x5FEB;&#xFF0C;&#x53EF;&#x80FD;&#x628A;&#x4F60;&#x7684;&#x5E10;&#x53F7;&#x5730;&#x5740;&#x7ED9;&#x590D;&#x5236;&#x8FC7;&#x53BB;&#x7136;&#x540E;&#x5C31;&#x70B9;&#x53D1;&#x9001;&#x4E86;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x60B2;&#x5267;&#x4E86;&#x3002;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518553132/ku52ajih7pfqb7h95ih6.png" alt="image.png"></p>
+<p>&#x5F88;&#x4E45;&#x4E4B;&#x524D;&#xFF0C;<a href="https://justyy.com/archives/4849" target="_blank" rel="noopener">&#x6211;&#x8BEF;&#x64CD;&#x4F5C;100 SBD&#x5230;</a> @blocktrades &#x5C31;&#x662F;&#x628A;MEMO&#x586B;&#x6210;&#x5E10;&#x53F7;&#x5730;&#x5740;&#x4E86;&#xFF0C; &#x5E78;&#x8FD0;&#x7684;&#x662F;&#x901A;&#x8FC7;&#x5404;&#x65B9;&#x9014;&#x5F84;&#x8054;&#x7CFB;&#x4E86;&#x5B98;&#x65B9;&#xFF0C;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5185;&#x6536;&#x5230;&#x4E86;&#x9000;&#x6B3E;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x522B;&#x7684;&#x4EA4;&#x6613;&#x6240;&#xFF0C;&#x5982; bittrex &#x53EF;&#x80FD;&#x5C31;&#x4E0D;&#x662F;&#x8FD9;&#x4E48;&#x7684;&#x5E78;&#x8FD0;&#x4E86;&#xFF0C;&#x8F6C;&#x5E10;&#x8F6C;&#x9519;&#x4E86;&#x6709;&#x65F6;&#x5019;&#x6743;&#x5F53;&#x6350;&#x6B3E;&#x4E86;&#x3002;</p>
+<p>&#x662F;&#x4E0D;&#x662F;&#x6BCF;&#x6B21;&#x8F6C;&#x5E10;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x63D0;&#x5FC3;&#x540A;&#x80C6;&#xFF0C;&#x751F;&#x6015;&#x8F6C;&#x6CA1;&#x4E86;&#xFF1F;&#x5176;&#x5B9E;&#x4F60;&#x53EA;&#x8981;&#x61C2;&#x4E00;&#x70B9;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8F6C;&#x5E10;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EA;&#x8981;&#x8C03;&#x901A;&#x4E86;&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;&#x4E4B;&#x540E;&#x518D;&#x6267;&#x884C;&#x51FA;&#x9519;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x51E0;&#x4E4E;&#x6CA1;&#x6709;&#x4E86;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x7684;&#x81EA;&#x52A8;&#x8F6C;&#x5E10;&#x811A;&#x672C;&#x5982;&#x4E0B; &#xFF08;Python&#xFF09;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from steem import Steem</span><br><span class="line">from steem.account import Account</span><br><span class="line">from keys import account_akey</span><br><span class="line">from nodes import steem_nodes</span><br><span class="line"></span><br><span class="line">id = &apos;justyy&apos;</span><br><span class="line">wif = {</span><br><span class="line">  &quot;active&quot;: account_akey[id]</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">steem = Steem(nodes = steem_nodes, keys = wif)  </span><br><span class="line">account = Account(id, steemd_instance=steem)</span><br><span class="line">balance = account.balances </span><br><span class="line">x = float(balance[&apos;total&apos;][&apos;SBD&apos;])</span><br><span class="line">print(&quot;@&quot; + id + &quot; has &quot; + str(x) + &quot; SBD&quot;)</span><br><span class="line"></span><br><span class="line">if x &gt;= 40:</span><br><span class="line">  y = 30</span><br><span class="line">  print(&quot;transfering &quot; + str(y) + &quot; SBD from @&quot; + id + &quot; to @bittrex&quot;)</span><br><span class="line">  steem.transfer(&quot;bittrex&quot;, amount = y, asset = &apos;SBD&apos;, memo = &quot;&#x60A8;&#x7684;&#x4EA4;&#x6613;&#x6240;&#x8981;&#x6C42;&#x7684;MEMO KEY&quot;, account = id)</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x628A;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x653E;&#x5728; crontab &#x91CC;&#xFF0C;&#x4E00;&#x5C0F;&#x65F6;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x90A3;&#x4E48;&#x5F53;&#x5E10;&#x53F7;SBD&#x5927;&#x4E8E;40&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x81EA;&#x52A8; &#x8F6C; 30&#x5230;&#x4EA4;&#x6613;&#x6240;&#x3002;&#x7559;&#x4E0B;10&#x5757;&#x94B1;&#x662F;&#x4E3A;&#x4E86;&#x591F;&#x94F6;&#x884C;&#x53D1;&#x5229;&#x606F;&#x3002;</p>
+<p>&#x8FD0;&#x884C;&#x4E86;&#x597D;&#x51E0;&#x5929;&#xFF0C;&#x5F88;&#x723D;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x7701;&#x4E86;&#x4EBA;&#x5DE5;&#xFF0C;&#x6BCF;&#x6B21;&#x8F6C;&#x5E10;&#x90FD;&#x9700;&#x8981;&#x4EBA;&#x5DE5;&#x5904;&#x7406;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x65F6;&#x95F4;&#x6700;&#x5B9D;&#x8D35;&#x3002;</li>
+<li>&#x4E0D;&#x4F1A;&#x51FA;&#x9519;&#xFF0C;&#x4EBA;&#x5DE5;&#x8F6C;&#x5E10;&#x5B58;&#x5728;&#x8BEF;&#x64CD;&#x4F5C;&#xFF0C;&#x7A0B;&#x5E8F;&#x8F6C;&#x5E10;&#xFF0C;&#x6982;&#x7387;&#x5C0F;&#x5F88;&#x591A;&#x3002;</li>
+<li>&#x662F;&#x4E0D;&#x662F;&#x66F4;&#x80FD;&#x611F;&#x89C9;&#x5230;STEEM&#x4E0A;&#x53D1;&#x6587;&#x80FD;&#x6323;&#x94B1;&#xFF1F;SBD&#x8F6C;&#x5230;&#x4EA4;&#x6613;&#x6240;&#x662F;&#x4E0D;&#x662F;&#x611F;&#x89C9;&#x624D;&#x662F;&#x6323;&#x5230;&#x7684;&#xFF1F;^_^</li>
+</ol>
+<h2 id="&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x7528;PYTHON&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;-steem-js-&#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;"><a href="#&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x7528;PYTHON&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;-steem-js-&#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;" class="headerlink" title="&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x7528;PYTHON&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; steem-js &#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;"></a>&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x7528;PYTHON&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528; steem-js &#xFF0C;&#x6211;&#x76F8;&#x4FE1;&#x4EE3;&#x7801;&#x90FD;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;</h2><p>&#x540C;&#x6B65;&#x5230;&#x535A;&#x6587;: <a href="https://justyy.com/archives/6027" target="_blank" rel="noopener">https://justyy.com/archives/6027</a></p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit-300x200.png" alt=""></p>
+<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177; &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;</a>&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;<strong>5 SP</strong>&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;&#x7528;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x8F93;&#x5165;0&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x9000;&#x51FA;&#x80A1;&#x4E1C;&#x3002;&#x6765;&#x53BB;&#x81EA;&#x7531;&#xFF0C;&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x540E;&#x7CFB;&#x7EDF;&#x9700;&#x8981;7&#x5929;&#x624D;&#x80FD;&#x5C06;&#x60A8;&#x4EE3;&#x7406;&#x7684;SP&#x9000;&#x56DE;&#x5230;&#x60A8;&#x7684;&#x5E10;&#x53F7;&#x4E0A;&#x3002;&#x53CB;&#x60C5;&#x63D0;&#x793A;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x628A;&#x6240;&#x6709;SP&#x90FD;&#x4EE3;&#x7406;&#x7ED9;&#x94F6;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x9700;&#x8981;&#x7559;&#x4E00;&#x4E9B;&#x80FD;&#x91CF;&#x53D1;&#x8D34;&#x3002;</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/xi2jn-yy" target="_blank" rel="noopener">&#x5927;&#x5BB6;&#x597D;&#x624D;&#x662F;&#x771F;&#x7684;&#x597D;&#xFF0C;YY&#x94F6;&#x884C;&#x8DB3;&#x7403;&#x961F;&#xFF0C;&#x4F60;&#x8FD8;&#x6709;&#x5565;&#x7406;&#x7531;&#x4E0D;&#x52A0;&#x5165;&#x94F6;&#x884C;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x5F00;&#x542F;&#x4E92;&#x62B1;&#x5927;&#x817F;&#x6A21;&#x5F0F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/yy-100-5-sp" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x8FCE;&#x6765;&#x7B2C;100&#x4E2A;&#x80A1;&#x4E1C;&#xFF01;&#x611F;&#x8C22;&#x4E00;&#x8DEF;&#x4E0A;&#x6709;&#x4F60;&#x4EEC;&#xFF01;5 SP&#x5373;&#x53EF;&#x52A0;&#x76DF;&#xFF01;</a></li>
+<li>&#x52A0;&#x5165;&#x516C;&#x4F17;&#x53F7; <strong>justyyuk</strong> &#x5373;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2; <a href="https://justyy.com/archives/5685" target="_blank" rel="noopener">BTC</a>, SBD, STEEM, <a href="https://justyy.com/archives/5657" target="_blank" rel="noopener">YOYOW</a>, LTC, <a href="https://justyy.com/archives/5653" target="_blank" rel="noopener">ETH</a> &#x7B49;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x7684;&#x4EF7;&#x683C;.<br><img src="https://justyy.com/wp-content/uploads/2018/01/wechat-justyyuk.jpg" alt=""></li>
+</ul>
+<h2 id="&#x731C;&#x60A8;&#x559C;&#x6B22;"><a href="#&#x731C;&#x60A8;&#x559C;&#x6B22;" class="headerlink" title="&#x731C;&#x60A8;&#x559C;&#x6B22;"></a>&#x731C;&#x60A8;&#x559C;&#x6B22;</h2><ul>
+<li><a href="https://steemit.com/cn/@justyy/7wxt7l" target="_blank" rel="noopener">&#x90A3;&#x4E9B;&#x8001;&#x7167;&#x7247; Photography in the 1980&#x2019;s</a></li>
+<li><a href="https://steemit.com/cn/@justyy/14hwlv4b" target="_blank" rel="noopener">Happy Birthday to Ryan! &#x5F1F;&#x5F1F;4&#x5C81;&#x5566;&#xFF01;(&#x89C6;&#x9891;+&#x7167;&#x7247;)</a></li>
+<li><a href="https://steemit.com/cn/@justyy/6f5g7i" target="_blank" rel="noopener">&#x4E3A;&#x4E86;&#x6234;&#x4E0A;&#x7259;&#x5957;&#x6211;&#x4E5F;&#x662F;&#x62FC;&#x4E86;&#xFF1A;&#x62D4;&#x4E86;&#x4E24;&#x9897;&#x7259;&#xFF0C;&#x75DB;&#x4E86;&#x4E00;&#x4E0B;&#x5348;</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/python-script-to-transfer-sbd-to-exchange" target="_blank" rel="noopener">Python Script to Transfer SBD to Exchange &#x901A;&#x8FC7;&#x7A0B;&#x5E8F;&#x6765;&#x51CF;&#x5C11;&#x5230;&#x4EA4;&#x6613;&#x6240;&#x8F6C;&#x5E10;&#x51FA;&#x9519;&#x7684;&#x53EF;&#x80FD;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-02-13/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-02-13&amp;cn34" alt="【第 壹柒贰 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-02-13)">
         </a>
@@ -1533,107 +1630,6 @@
 <p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/introduction-to-cointools-a-cryptocurrency-chrome-extension" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/introduction-to-cointools-a-cryptocurrency-chrome-extension" target="_blank" rel="noopener">Introduction to CoinTools! A Cryptocurrency Chrome Extension</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/steemtools-v0-0-5-reveal-deleted-comments-load-and-save-steem-js/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518347212/xpwli2l6eawreegodcmx.png" alt="SteemTools v0.0.5 - Reveal Deleted Comments, Load &amp; Save Steem-Js!">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-11T11:17:24.000Z">2018-02-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 667 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/steemtools-v0-0-5-reveal-deleted-comments-load-and-save-steem-js/">SteemTools v0.0.5 - Reveal Deleted Comments, Load &amp; Save Steem-Js!</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="SteemTools"><a href="#SteemTools" class="headerlink" title="SteemTools"></a>SteemTools</h2><p>SteemTools is inspired by its sister project: <a href="https://helloacm.com/make-utopian-moderator-chrome-extension-perfect-by-adding-posts-and-tools-tab/" target="_blank" rel="noopener">Utopian Moderators &amp; Supervisors</a> and it provides a set of useful data, tools, statistics for SteemIt Users.</p>
-<p>SteemTools so far has got a few positive feedbacks, Thanks!  As its name suggests, SteemTools is a chrome extension that contains a few useful tools, a few useful data for SteemIt Users.</p>
-<h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1><p><a href="https://github.com/DoctorLai/SteemTools/" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemTools/</a></p>
-<h1 id="Previous-Contributions"><a href="#Previous-Contributions" class="headerlink" title="Previous Contributions"></a>Previous Contributions</h1><ul>
-<li><a href="https://helloacm.com/add-steem-js-console-to-steemtools/" target="_blank" rel="noopener">SteemTools v0.0.4 Add &#x2018;Steem-JS&#x2019; console to SteemTools!</a></li>
-<li><a href="https://helloacm.com/steemtools-v0-0-3-new-features-query-delegators-and-nodes-server-configuration/" target="_blank" rel="noopener">SteemTools v0.0.3 New Features: Query Delegators and Nodes/Server Configuration</a></li>
-<li><a href="https://helloacm.com/steemtools-v0-0-2-new-features-query-delegatees-and-basic-search-and-more/" target="_blank" rel="noopener">SteemTools v0.0.2 New Features: Query Delegatees and Basic Search and More</a></li>
-<li><a href="https://helloacm.com/chrome-extension-steemtools-v0-0-1/" target="_blank" rel="noopener">SteemTools v0.0.1</a></li>
-</ul>
-<h1 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h1><p>Javascript that runs in the Chrome Browser (Chrome Extension)</p>
-<h2 id="Chrome-Webstore"><a href="#Chrome-Webstore" class="headerlink" title="Chrome Webstore"></a>Chrome Webstore</h2><p>It is online, and you can install SteemTools via:<br><a href="https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn</a></p>
-<p>If you are using Firefox, you can still install this Extension by <a href="https://addons.mozilla.org/en-GB/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Extension Foxified</a></p>
-<h2 id="New-Features-of-v0-0-5"><a href="#New-Features-of-v0-0-5" class="headerlink" title="New Features of v0.0.5"></a>New Features of v0.0.5</h2><p><a href="https://helloacm.com/steemtools-v0-0-5-reveal-deleted-comments-load-save-steem-js/" target="_blank" rel="noopener">This version</a> has the following new features.</p>
-<ol>
-<li>Load &amp; Save Steem-JS source so you can save your prototyping code in the Chrome Extension and it will load it next time automatically when you launch the SteemTools</li>
-<li>Query buttons are disabled when API not return yet.</li>
-<li>You can now restore the comments in the steem block chain!</li>
-</ol>
-<h2 id="Commits"><a href="#Commits" class="headerlink" title="Commits"></a>Commits</h2><p><a href="https://github.com/DoctorLai/SteemTools/commit/2c70508803a9f57aef48abf4b13f7022fa8ab260" target="_blank" rel="noopener">Here</a></p>
-<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><p>Save the source for later during your prototyping<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518347212/xpwli2l6eawreegodcmx.png" alt="image.png"></p>
-<p>Query button is disabled.<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518347237/wfp7wvwa6xqw8kwuujvr.png" alt="image.png"></p>
-<p>Reveal Deleted Comments for a given Steem ID.<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1518347227/xaofghplodq2th8iwxrp.png" alt="image.png"></p>
-<h2 id="Some-code-in-the-Commit"><a href="#Some-code-in-the-Commit" class="headerlink" title="Some code in the Commit"></a>Some code in the Commit</h2><p>The following restores a full Steem URL given a <code>permlink</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// given a perm link restore its full Steem URL</span><br><span class="line">const restore = (url) =&gt; {</span><br><span class="line">    var pat = /(re-\w+-)*((\w+\-)*)/g;</span><br><span class="line">    var my = pat.exec(url);</span><br><span class="line">    if (my[1] &amp;&amp; my[2]) {       </span><br><span class="line">        var author = my[1].split(&apos;-&apos;)[1];</span><br><span class="line">        var link = my[2].slice(0, -1);</span><br><span class="line">        return &apos;https://steemit.com/@&apos; + author + &apos;/&apos; + link;</span><br><span class="line">    }</span><br><span class="line">    return null;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="Roadmap-of-Steem-Tools"><a href="#Roadmap-of-Steem-Tools" class="headerlink" title="Roadmap of Steem Tools"></a>Roadmap of Steem Tools</h1><ol>
-<li>UI Language Setting</li>
-<li>Add <a href="https://helloacm.com/tools/steemit/who-downvote-you/" target="_blank" rel="noopener">Downvote Checker</a></li>
-<li>Add <a href="https://helloacm.com/tools/steemit/delegators/" target="_blank" rel="noopener">Delegator</a>/<a href="https://helloacm.com/tools/steemit/delegatees/" target="_blank" rel="noopener">Delegatee</a> List Checker</li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/top-delegations/" target="_blank" rel="noopener">Top 100 Delegations</a></li>
-<li>SteemIt <a href="https://helloacm.com/tools/steemit/who-has-not-voted/" target="_blank" rel="noopener">Followers/Votes</a> Checker</li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/incoming/" target="_blank" rel="noopener">Incoming Votes</a> <a href="https://helloacm.com/tools/steemit/lastvotes/" target="_blank" rel="noopener">Report</a></li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/payout/" target="_blank" rel="noopener">Payout Report</a></li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/outgoing/" target="_blank" rel="noopener">Outgoing Votes</a> <a href="https://helloacm.com/tools/steemit/outgoing-votes/" target="_blank" rel="noopener">Report</a></li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/reblogs/" target="_blank" rel="noopener">Who Resteem</a> Your Posts?</li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/deleted-comments/" target="_blank" rel="noopener">Recover Deleted Posts/Comments</a></li>
-<li>Steemit <a href="https://helloacm.com/tools/steemit/powerdown/" target="_blank" rel="noopener">Powerdown Status</a></li>
-<li>and <a href="https://helloacm.com/tools/steemit" target="_blank" rel="noopener">more</a>&#x2026;</li>
-</ol>
-<h1 id="License"><a href="#License" class="headerlink" title="License"></a>License</h1><p><a href="https://github.com/DoctorLai/SteemTools/blob/master/LICENSE" target="_blank" rel="noopener">MIT</a></p>
-<h1 id="Contribution-Welcome"><a href="#Contribution-Welcome" class="headerlink" title="Contribution Welcome"></a>Contribution Welcome</h1><p>Github: <a href="https://github.com/DoctorLai/SteemTools/" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemTools/</a></p>
-<ol>
-<li>Fork it!</li>
-<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
-<li>Commit your changes: <code>git commit -am &apos;Add some feature&apos;</code></li>
-<li>Push to the branch: <code>git push origin my-new-feature</code></li>
-<li>Submit a pull request.</li>
-</ol>
-<h1 id="Chrome-Webstore-1"><a href="#Chrome-Webstore-1" class="headerlink" title="Chrome Webstore"></a>Chrome Webstore</h1><p>Install the <a href="https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn" target="_blank" rel="noopener">SteemTools Chrome Extension</a> Now!</p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/steemtools-v0-0-5-reveal-deleted-comments-load-and-save-steem-js" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemtools-v0-0-5-reveal-deleted-comments-load-and-save-steem-js" target="_blank" rel="noopener">SteemTools v0.0.5 - Reveal Deleted Comments, Load &amp; Save Steem-Js!</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
