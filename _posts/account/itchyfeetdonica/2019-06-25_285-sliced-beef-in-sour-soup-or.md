@@ -1,6 +1,6 @@
 
 ---
-title: '#285 Sliced Beef in Sour Soup 🍲| 偶遇酸汤肥牛'
+title: '#285 Sliced Beef in Sour Soup 🍲 | 偶遇酸汤肥牛'
 permlink: 285-sliced-beef-in-sour-soup-or
 catalog: true
 toc_nav_num: true
@@ -13,8 +13,8 @@ tags:
 - qurator
 - photocircle
 - cn
+- busy
 - palnet
-- food
 thumbnail: 'https://img.esteem.ws/hede5moiga.jpg'
 sidebar:
     right:
@@ -34,7 +34,7 @@ Sliced Beef in Sour Soup is a delicacy commonly found in Sichuan restaurants in 
 ![48xa5x3wvl.jpg](https://img.esteem.ws/48xa5x3wvl.jpg)
 
 ## 
-The thin beef slices are quickly boiled to keep them fresh and tender. Another main ingredient is the enoki mushroom. As it has a long and thin stem topped with small white buttons, we call it “golden needle mushroom” in Chinese. In the sour and spicy soup here, you can also find mung bean sprouts and rice noodles. 
+The thin beef slices are quickly boiled to keep them fresh and tender. Another main ingredient is the enoki mushroom. As it has a long and thin stem topped with small buttons, we call it “golden needle mushroom” in Chinese. In the sour and spicy soup here, you can also find mung bean sprouts and rice noodles. 
 
 ##
 ![wgx52f0udt.jpg](https://img.esteem.ws/wgx52f0udt.jpg)
@@ -76,7 +76,6 @@ Address:
 **更多吃货帖：**
 
 
-
 - [My Salad Recipe & More  | 来做地中海风味沙拉](https://steemit.com/wherein/@itchyfeetdonica/wherein-1561332543) 
 - [Chicken Pastilla @Marrakesh 🥙🇲🇦 | 摩洛哥鸡肉馅饼](https://steemit.com/qurator/@itchyfeetdonica/279-chicken-pastilla-or)
 - [Laksa!  | 叻沙!](https://steemit.com/qurator/@itchyfeetdonica/263-laksa-or)
@@ -116,4 +115,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#285 Sliced Beef in Sour Soup 🍲| 偶遇酸汤肥牛'](https://steemit.com/@itchyfeetdonica/285-sliced-beef-in-sour-soup-or)
+This page is synchronized from the post: ['#285 Sliced Beef in Sour Soup 🍲 | 偶遇酸汤肥牛'](https://steemit.com/@itchyfeetdonica/285-sliced-beef-in-sour-soup-or)
