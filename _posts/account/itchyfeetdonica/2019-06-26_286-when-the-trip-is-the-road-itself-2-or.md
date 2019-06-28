@@ -12,9 +12,9 @@ categories:
 tags:
 - qurator
 - photofeed
-- photocircle
-- cn
+- cn-reader
 - palnet
+- busy
 thumbnail: 'https://img.esteem.ws/pn9wdpupsd.jpg'
 sidebar:
     right:
@@ -31,25 +31,35 @@ widgets:
 ##
 Sometimes, the trip is the road itself, like this serpentine route on the way to Marrakech from Quarzazate in Morocco.  Driving along these hairpin bends is not easy, but oh so exhilarating. :) You will be awarded with breathtaking views at every turn and ascent. 
 
+##
+有时候，路途本身就是风景。比如，这条从撒哈拉沙漠地区通向摩洛哥名城马拉喀什的蜿蜒山路。沿着这九曲十八弯驾车前行需要非常小心，不像平坦大道上开得那么洒脱畅快。然而，它却在每一个转角处、每一次爬升中，给你带来景致变幻的美妙惊喜。=)
+
 ## 
 A panorama: 
+全景：
 ![dbe76gjcgy.jpg](https://img.esteem.ws/dbe76gjcgy.jpg)
 
 ##
 Location: 
+位置：
 ![u59ft93usb.jpg](https://img.esteem.ws/u59ft93usb.jpg)
 
 ##
 How it looks like from the map:
+地图上直观的弯道：
 ![ex37e1k1z8.jpg](https://img.esteem.ws/ex37e1k1z8.jpg)
 
 ## 
 More photos: 
+更多照片： 
 ![h2kkaqmyg6.jpg](https://img.esteem.ws/h2kkaqmyg6.jpg)
 
 ## 
 ![q2fyd9z3qj.jpg](https://img.esteem.ws/q2fyd9z3qj.jpg)
 
+
+##
+The head image is my entry to Qurator's Photo Friday competition. Feel free to join the fun if you also love photography! :)
 
 <br />
 
