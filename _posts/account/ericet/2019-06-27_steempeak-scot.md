@@ -11,10 +11,10 @@ categories:
 - cn
 tags:
 - cn
-- cn-reader
 - sct
 - whalepower
 - palnet
+- busy
 thumbnail: 'https://files.steempeak.com/file/steempeak/ericet/wfty5L1z-image.png'
 sidebar:
     right:
