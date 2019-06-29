@@ -230,6 +230,80 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/adding-water-vapour-attenuation-to-npm-library-attenuationbyatmosphericgases/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516486883/m0p1m3mgplwyz7vk0alj.png" alt="Adding Water Vapour Attenuation to NPM Library `AttenuationByAtmosphericGases`">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-20T22:27:15.000Z">2018-01-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 362 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/adding-water-vapour-attenuation-to-npm-library-attenuationbyatmosphericgases/">Adding Water Vapour Attenuation to NPM Library `AttenuationByAtmosphericGases`</a>
+            
+        </h1>
+        <div class="content">
+            <p>Previously, in <a href="https://propagationtools.com/wireless/npm-javascript-to-compute-attenuation-by-atmospheric-gases-itu-r-p-676-9/" target="_blank" rel="noopener">NPM Javascript to compute Attenuation By Atmospheric Gases ( ITU-R P.676-9)</a>, the Javascript Library is published on NPM that computes the attenuation (unit of dB loss per km) given the frequency, temperature and the atmospheric pressure (unit of hPa).</p>
+<p>with the latest commits to the package <code>AttenuationByAtmosphericGases</code> version 2.0.0, the library allows also computing the attenuation for <a href="https://propagationtools.com/wireless/adding-water-vapour-attenuation-to-npm-library-attenuationbyatmosphericgases/" target="_blank" rel="noopener">water vapour</a>. </p>
+<p>As referenced in Page 15 of <a href="https://www.itu.int/dms_pubrec/itu-r/rec/p/R-REC-P.676-9-201202-S!!PDF-E.pdf" target="_blank" rel="noopener">ITU-R P.676-9</a>, the water vapour attenuation regarding to frequency of the radiowave, temperature, atmospheric pressure (unit of hPa) and the water-vapour density (unit of g/m3) is given in the following formula:</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516486883/m0p1m3mgplwyz7vk0alj.png" alt="image.png"></p>
+<p>The latest commits:</p>
+<ul>
+<li><a href="https://github.com/DoctorLai/AttenuationByAtmosphericGases/commit/88702986bc025f30bf2d4ca3fa12e04b2661caaf#diff-910eb6f57886ca16c136101fb1699231" target="_blank" rel="noopener">index.js, sample.js, READMME.md and test/index.js</a></li>
+</ul>
+<h1 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var GetWaterAttenuation = require(&apos;attenuationbyatmosphericgases&apos;).GetWaterAttenuation;</span><br><span class="line">let frequency = 10;</span><br><span class="line">let temperature = 15;</span><br><span class="line">let pressure = 1013; // hpa</span><br><span class="line">let density = 7.5; // g/m3</span><br><span class="line">console.log(GetWaterAttenuation(frequency, temperature, pressure, density));</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Frequency-ranges"><a href="#Frequency-ranges" class="headerlink" title="Frequency ranges"></a>Frequency ranges</h1><p>This library supports from 0 to 350 GHz.</p>
+<h1 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h1><p>The library is built on Javascript and made public on NPM: <a href="https://www.npmjs.com/package/attenuationbyatmosphericgases" target="_blank" rel="noopener">https://www.npmjs.com/package/attenuationbyatmosphericgases</a></p>
+<h1 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h1><p><a href="https://github.com/DoctorLai/AttenuationByAtmosphericGases" target="_blank" rel="noopener">https://github.com/DoctorLai/AttenuationByAtmosphericGases</a><br>Contributions are welcome.</p>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: git checkout -b my-new-feature</li>
+<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
+<li>Push to the branch: git push origin my-new-feature</li>
+<li>Submit a pull request :D</li>
+</ol>
+<h1 id="Unit-Tests"><a href="#Unit-Tests" class="headerlink" title="Unit Tests"></a>Unit Tests</h1><p>Unit tests are built on <a href="https://mochajs.org" target="_blank" rel="noopener">mocha and chai</a> the Javascript unit testing framework, and you can run tests via <code>npm test</code></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">describe(&apos;water&apos;, function() {</span><br><span class="line">  it(&apos;water&apos;, function() {</span><br><span class="line">    GetWaterAttenuation(10, 15, 1013, 7.5).should.be.closeTo(0.28112047608612034, 1e-3);</span><br><span class="line">  }); </span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-water-vapour-attenuation-to-npm-library-attenuationbyatmosphericgases" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-water-vapour-attenuation-to-npm-library-attenuationbyatmosphericgases" target="_blank" rel="noopener">Adding Water Vapour Attenuation to NPM Library <code>AttenuationByAtmosphericGases</code></a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/old-photography-of-queen-in-1918/" class="image is-7by1">
             <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516467284/vt27wzaqc4rnutrj9uph.jpg" alt="(老照片)英国女皇百年前造访剑桥 - Old Photography of Queen in 1918">
         </a>
@@ -1887,81 +1961,6 @@
 <p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/comments-like-hello-can-t-be-previewed-and-displayed-in-busy-org" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/comments-like-hello-can-t-be-previewed-and-displayed-in-busy-org" target="_blank" rel="noopener">Comments like <code>&lt;Hello&gt;</code> can&#x2019;&#x2019;t be previewed and displayed in busy.org</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/npm-js-library-to-convert-integers-to-english/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516308136/jca6ap0wozvwznrqpcx0.png" alt="NPM Js Library to Convert Integers to English">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-01-18T20:45:15.000Z">2018-01-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 634 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/npm-js-library-to-convert-integers-to-english/">NPM Js Library to Convert Integers to English</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="int2english"><a href="#int2english" class="headerlink" title="int2english"></a>int2english</h1><p><code>int2english</code> is a NPM Javascript Library that converts Arabic Integers to English Words.</p>
-<h1 id="Supported-Data-Range"><a href="#Supported-Data-Range" class="headerlink" title="Supported Data Range"></a>Supported Data Range</h1><p>A valid 64-bit signed integer from -9223372036854775807 to 9223372036854775807.</p>
-<h1 id="Project-pages"><a href="#Project-pages" class="headerlink" title="Project pages"></a>Project pages</h1><p>NPM Package Page:  <a href="https://www.npmjs.com/package/int2english" target="_blank" rel="noopener">https://www.npmjs.com/package/int2english</a><br>Test <code>int2english</code> in the browser: <a href="https://npm.runkit.com/int2english" target="_blank" rel="noopener">https://npm.runkit.com/int2english</a><br>Github: <a href="https://github.com/DoctorLai/int2english" target="_blank" rel="noopener">https://github.com/DoctorLai/int2english</a></p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install int2english</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var IntegerToEnglish = require(&apos;int2english&apos;).IntegerToEnglish;</span><br><span class="line">console.log(IntegerToEnglish(0));</span><br><span class="line">console.log(IntegerToEnglish(1));</span><br><span class="line">console.log(IntegerToEnglish(11));</span><br><span class="line">console.log(IntegerToEnglish(1234));</span><br><span class="line">console.log(IntegerToEnglish(9999234));</span><br><span class="line">console.log(IntegerToEnglish(-9999234));</span><br></pre></td></tr></tbody></table></figure>
-<p>Output:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Zero</span><br><span class="line">One</span><br><span class="line">Eleven</span><br><span class="line">One Thousand Two Hundred Thirty Four</span><br><span class="line">Nine Million Nine Hundred Ninety Nine Thousand Two Hundred Thirty Four</span><br><span class="line">Negative Nine Million Nine Hundred Ninety Nine Thousand Two Hundred Thirty Four</span><br></pre></td></tr></tbody></table></figure><p></p>
-<h2 id="Tests"><a href="#Tests" class="headerlink" title="Tests"></a>Tests</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm test</span><br></pre></td></tr></tbody></table></figure>
-<p>Unit Tests are built on <a href="https://mochajs.org/" target="_blank" rel="noopener">mocha and chai</a>.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">var should = require(&apos;chai&apos;).should(),</span><br><span class="line">    module = require(&apos;../index&apos;),</span><br><span class="line">    IntegerToEnglish = module.IntegerToEnglish;</span><br><span class="line"></span><br><span class="line">describe(&apos;zero&apos;, function() {</span><br><span class="line">  it(&apos;0&apos;, function() {</span><br><span class="line">    IntegerToEnglish(0).should.equal(&apos;Zero&apos;);</span><br><span class="line">  });</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line">describe(&apos;positive&apos;, function() {</span><br><span class="line">  it(&apos;1&apos;, function() {</span><br><span class="line">    IntegerToEnglish(1).should.equal(&apos;One&apos;);</span><br><span class="line">  });  </span><br><span class="line">  it(&apos;123&apos;, function() {</span><br><span class="line">    IntegerToEnglish(123).should.equal(&apos;One Hundred Twenty Three&apos;);</span><br><span class="line">  });  </span><br><span class="line">});</span><br><span class="line"></span><br><span class="line">describe(&apos;negative&apos;, function() {</span><br><span class="line">  it(&apos;-1&apos;, function() {</span><br><span class="line">    IntegerToEnglish(-1).should.equal(&apos;Negative One&apos;);</span><br><span class="line">  });  </span><br><span class="line">  it(&apos;123&apos;, function() {</span><br><span class="line">    IntegerToEnglish(-123).should.equal(&apos;Negative One Hundred Twenty Three&apos;);</span><br><span class="line">  });  </span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516308136/jca6ap0wozvwznrqpcx0.png" alt="image.png"></p>
-<h1 id="Other-resources"><a href="#Other-resources" class="headerlink" title="Other resources"></a>Other resources</h1><ol>
-<li>I have written <a href="https://helloacm.com/tools/convert-arabic-numerals-to-english-words/" target="_blank" rel="noopener">this API and online tool</a> that does similar thing.</li>
-<li>C/C++ <a href="https://helloacm.com/c-coding-exercise-convert-integer-to-english-words/" target="_blank" rel="noopener">Source code</a> that does not support negative numbers.</li>
-</ol>
-<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><ol>
-<li>Fork it!</li>
-<li>Create your feature branch: git checkout -b my-new-feature</li>
-<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
-<li>Push to the branch: git push origin my-new-feature</li>
-<li>Submit a pull request :D</li>
-</ol>
-<h1 id="Full-JS-Source-Code"><a href="#Full-JS-Source-Code" class="headerlink" title="Full JS Source Code"></a>Full JS Source Code</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line">&apos;use strict&apos;;</span><br><span class="line"></span><br><span class="line">const IntegerToEnglish = (x) =&gt; {</span><br><span class="line">	if (x &lt; 0) {</span><br><span class="line">		return &quot;Negative &quot; + IntegerToEnglish(-x);</span><br><span class="line">	}</span><br><span class="line">    switch(x) {</span><br><span class="line">        case 0: return &quot;Zero&quot;;</span><br><span class="line">        case 1: return &quot;One&quot;;</span><br><span class="line">        case 2: return &quot;Two&quot;;</span><br><span class="line">        case 3: return &quot;Three&quot;;</span><br><span class="line">        case 4: return &quot;Four&quot;;</span><br><span class="line">        case 5: return &quot;Five&quot;;</span><br><span class="line">        case 6: return &quot;Six&quot;;</span><br><span class="line">        case 7: return &quot;Seven&quot;;</span><br><span class="line">        case 8: return &quot;Eight&quot;;</span><br><span class="line">        case 9: return &quot;Nine&quot;;</span><br><span class="line">        case 10: return &quot;Ten&quot;;</span><br><span class="line">        case 11: return &quot;Eleven&quot;;</span><br><span class="line">        case 12: return &quot;Twelve&quot;;</span><br><span class="line">        case 13: return &quot;Thirteen&quot;;</span><br><span class="line">        case 14: return &quot;Fourteen&quot;;</span><br><span class="line">        case 15: return &quot;Fifteen&quot;;</span><br><span class="line">        case 16: return &quot;Sixteen&quot;;</span><br><span class="line">        case 17: return &quot;Seventeen&quot;;</span><br><span class="line">        case 18: return &quot;Eighteen&quot;;</span><br><span class="line">        case 19: return &quot;Nineteen&quot;;</span><br><span class="line">        case 20: return &quot;Twenty&quot;;</span><br><span class="line">        case 30: return &quot;Thirty&quot;;</span><br><span class="line">        case 40: return &quot;Forty&quot;;</span><br><span class="line">        case 50: return &quot;Fifty&quot;;</span><br><span class="line">        case 60: return &quot;Sixty&quot;;</span><br><span class="line">        case 70: return &quot;Seventy&quot;;</span><br><span class="line">        case 80: return &quot;Eighty&quot;;</span><br><span class="line">        case 90: return &quot;Ninety&quot;;</span><br><span class="line">        case 100: return &quot;One Hundred&quot;;</span><br><span class="line">        case 1000: return &quot;One Thousand&quot;;</span><br><span class="line">        case 1000000: return &quot;One Million&quot;;</span><br><span class="line">        case 1000000000: return &quot;One Billion&quot;;</span><br><span class="line">    }</span><br><span class="line">    // less than 100</span><br><span class="line">    for (let i = 1; i &lt;= 9; i ++) {</span><br><span class="line">        let j = i * 10;</span><br><span class="line">        if ((x &gt;= j) &amp;&amp; (x &lt; j + 10)) {</span><br><span class="line">            let r = x - j;</span><br><span class="line">            return IntegerToEnglish(j) + (r &gt; 0 ? (&quot; &quot; + IntegerToEnglish(r)): &quot;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // less than 1000</span><br><span class="line">    for (let i = 1; i &lt;= 9; i ++) {</span><br><span class="line">        let j = i * 100;</span><br><span class="line">        if ((x &gt;= j) &amp;&amp; (x &lt; j + 100)) {</span><br><span class="line">            let r = x - j;</span><br><span class="line">            return IntegerToEnglish(i) + &quot; Hundred&quot; + (r &gt; 0 ? (&quot; &quot; + IntegerToEnglish(r)): &quot;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // less than 10000</span><br><span class="line">    for (let i = 1; i &lt;= 9; i ++) {</span><br><span class="line">        let j = i * 1000;</span><br><span class="line">        if ((x &gt;= j) &amp;&amp; (x &lt; j + 1000)) {</span><br><span class="line">            let r = x - j;</span><br><span class="line">            return IntegerToEnglish(i) + &quot; Thousand&quot; + (r &gt; 0 ? (&quot; &quot; + IntegerToEnglish(r)): &quot;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // Million</span><br><span class="line">    for (let i = 1; i &lt;= 9; i ++) {</span><br><span class="line">        let j = i * 1000000;</span><br><span class="line">        if ((x &gt;= j) &amp;&amp; (x &lt; j + 1000000)) {</span><br><span class="line">            let r = x - j;</span><br><span class="line">            return IntegerToEnglish(i) + &quot; Million&quot; + (r &gt; 0 ? (&quot; &quot; + IntegerToEnglish(r)): &quot;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // Billion</span><br><span class="line">    for (let i = 1; i &lt;= 4; i ++) {</span><br><span class="line">        let j = i * 1000000000;</span><br><span class="line">        if ((x &gt;= j) &amp;&amp; (x &lt; j + 1000000000)) {</span><br><span class="line">            let r = x - j;</span><br><span class="line">            return IntegerToEnglish(i) + &quot; Billion&quot; + (r &gt; 0 ? (&quot; &quot; + IntegerToEnglish(r)): &quot;&quot;);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // Divide the number into 3-digit groups from left to right</span><br><span class="line">    let output = &quot;&quot;;</span><br><span class="line">    let cnt = 0;</span><br><span class="line">    while (x &gt; 0) {</span><br><span class="line">        let y = x % 1000;</span><br><span class="line">        x = Math.floor(x / 1000);</span><br><span class="line">        if (y &gt; 0) { // skip middle-chunk zero</span><br><span class="line">            let t = &quot;&quot;;</span><br><span class="line">            if (cnt == 1) t = &quot; Thousand &quot;;</span><br><span class="line">            if (cnt == 2) t = &quot; Million &quot;;</span><br><span class="line">            if (cnt == 3) t = &quot; Billion &quot;;</span><br><span class="line">            output = IntegerToEnglish(y) + t + output;</span><br><span class="line">        }</span><br><span class="line">        cnt ++;</span><br><span class="line">    }</span><br><span class="line">    if (output[output.length - 1] == &apos; &apos;) { // &quot;Three Thousand &quot; == &gt; &quot;Three Thousand&quot;</span><br><span class="line">        return output.substr(0, output.length - 1);</span><br><span class="line">    }</span><br><span class="line">    return (output);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">module.exports = {</span><br><span class="line">	IntegerToEnglish </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/npm-js-library-to-convert-integers-to-english" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/npm-js-library-to-convert-integers-to-english" target="_blank" rel="noopener">NPM Js Library to Convert Integers to English</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         

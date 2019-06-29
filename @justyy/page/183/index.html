@@ -229,6 +229,76 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-29T11:14:36.000Z">2017-11-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 263 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/url-shortener-php-library-with-free-api/">URL Shortener PHP Library (Client) with Free API</a>
+            
+        </h1>
+        <div class="content">
+            <p> I&#x2019;ve decided to make PHP Library on Shortening URLs with API support, which is very easy to use and integrate in your own applications. Please note that <em>the actual shortening process is happening in a closed-source server</em> so this library is only the Client side.</p>
+<p>Here is the github project:  <a href="https://github.com/DoctorLai/URL-Shortener" target="_blank" rel="noopener">https://github.com/DoctorLai/URL-Shortener</a><br>Here is the web UI:  <a href="https://rot47.net/_url/" target="_blank" rel="noopener">https://rot47.net/_url/</a><br>And here is the sample code:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$obj = new URL();</span><br><span class="line">$response = $obj-&gt;shorten(&quot;https://steemit.com/@justyy&quot;, array(&quot;try&quot; =&gt; 1));</span><br><span class="line">var_dump($response);</span><br><span class="line">$response = $obj-&gt;shorten(&quot;https://steemit.com/@justyy&quot;, array(&quot;private&quot; =&gt; 1));</span><br><span class="line">var_dump($response);  </span><br><span class="line">echo $response-&gt;url;</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="URL-Shortening-API-endpoint"><a href="#URL-Shortening-API-endpoint" class="headerlink" title="URL Shortening API endpoint"></a>URL Shortening API endpoint</h1><p><code>https://uploadbeta.com/api/url/</code></p>
+<h2 id="Parameters-url-GET-or-POST"><a href="#Parameters-url-GET-or-POST" class="headerlink" title="Parameters - url (GET or POST)"></a>Parameters - url (GET or POST)</h2><p>Required: specified the URL to lookup or shorten. When URL is already shortened, it will return e.g.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{&quot;error&quot;:&quot;found&quot;,&quot;errorCode&quot;:3,&quot;data&quot;:{&quot;id&quot;:&quot;595&quot;,&quot;0&quot;:&quot;595&quot;,&quot;count&quot;:&quot;0&quot;,&quot;1&quot;:&quot;0&quot;,&quot;flag&quot;:&quot;7&quot;,&quot;2&quot;:&quot;7&quot;,&quot;created&quot;:&quot;1455395435&quot;,&quot;3&quot;:&quot;1455395435&quot;,&quot;last&quot;:&quot;1455395435&quot;,&quot;4&quot;:&quot;1455395435&quot;,&quot;search&quot;:&quot;0&quot;,&quot;5&quot;:&quot;0&quot;},&quot;url&quot;:&quot;https:\/\/rot47.net\/9B&quot;}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Parameter-try-GET-or-POST"><a href="#Parameter-try-GET-or-POST" class="headerlink" title="Parameter - try (GET or POST)"></a>Parameter - try (GET or POST)</h2><p>Optional - Default = False: Do not attempt to shorten the URL. Just to check if the URL has been shortened before.</p>
+<h2 id="Parameter-private-GET-or-POST"><a href="#Parameter-private-GET-or-POST" class="headerlink" title="Parameter - private (GET or POST)"></a>Parameter - private (GET or POST)</h2><p>Optioal - Default = False: Do not list the link in the Links Browser.<br>Return - errorCode and error</p>
+<ul>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;invalid url&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 4</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;found&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 3,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;added&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 0,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;success&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 0,</li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;$url should start with http or https&#x201D;, </li>
+<li>&#x201C;errorCode&#x201D; =&gt; 1            </li>
+<li>&#x201C;error&#x201D; =&gt; &#x201C;not found&#x201D;,</li>
+<li>&#x201C;errorCode&#x201D; =&gt; 2                                  </li>
+</ul>
+<p>Feel free to submit issues and PRs!</p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/url-shortener-php-library-with-free-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/url-shortener-php-library-with-free-api" target="_blank" rel="noopener">URL Shortener PHP Library (Client) with Free API</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cnyy2017-11-29/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-11-29)">
@@ -3794,66 +3864,6 @@
 <p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/image-compressor-library-php" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/image-compressor-library-php" target="_blank" rel="noopener">Image Compressor Library (PHP)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/chrome-extension-show-ip-address/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511866523/vnpz4dqiuf5ljeerlpai.png" alt="Chrome Extension: Show IP Address">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-28T10:58:00.000Z">2017-11-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 278 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/chrome-extension-show-ip-address/">Chrome Extension: Show IP Address</a>
-            
-        </h1>
-        <div class="content">
-            <p>For Network Administrators, they sometimes need to know the IP addresses both internal and external. Therefore, I have developed a handy widget to the Chrome, so that you can easily get your own IP addresses with just one click.</p>
-<p>The github source repro is: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a><br>You can add to Chrome browser via  Chrome web store: <a href="https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj</a></p>
-<p>A screenshot of the chrome extension to show the IP address:</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1511866523/vnpz4dqiuf5ljeerlpai.png" alt="image.png"></p>
-<p>What it does essentially is to invoke the show-ip-address API from 4 different API servers around the globe, although the internal IP address can be obtained via the following Javascript function:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">function getLocalIPs(callback) {</span><br><span class="line">    var ips = [];</span><br><span class="line"></span><br><span class="line">    var RTCPeerConnection = window.RTCPeerConnection ||</span><br><span class="line">        window.webkitRTCPeerConnection || window.mozRTCPeerConnection;</span><br><span class="line"></span><br><span class="line">    var pc = new RTCPeerConnection({</span><br><span class="line">        // Don&apos;t specify any stun/turn servers, otherwise you will</span><br><span class="line">        // also find your public IP addresses.</span><br><span class="line">        iceServers: []</span><br><span class="line">    });</span><br><span class="line">    // Add a media line, this is needed to activate candidate gathering.</span><br><span class="line">    pc.createDataChannel(&apos;&apos;);</span><br><span class="line">    </span><br><span class="line">    // onicecandidate is triggered whenever a candidate has been found.</span><br><span class="line">    pc.onicecandidate = function(e) {</span><br><span class="line">        if (!e.candidate) { // Candidate gathering completed.</span><br><span class="line">            pc.close();</span><br><span class="line">            callback(ips);</span><br><span class="line">            return;</span><br><span class="line">        }</span><br><span class="line">        var ip = /^candidate:.+ (\S+) \d+ typ/.exec(e.candidate.candidate)[1];</span><br><span class="line">        if (ips.indexOf(ip) == -1) // avoid duplicate entries (tcp/udp)</span><br><span class="line">            ips.push(ip);</span><br><span class="line">    };</span><br><span class="line">    pc.createOffer(function(sdp) {</span><br><span class="line">        pc.setLocalDescription(sdp);</span><br><span class="line">    }, function onerror() {});</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>Feel free to submit your Pull Requests at: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a></p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/chrome-extension-show-ip-address" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/chrome-extension-show-ip-address" target="_blank" rel="noopener">Chrome Extension: Show IP Address</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
