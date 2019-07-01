@@ -13,10 +13,8 @@ tags:
 - battle
 - sportstalk
 - sct
-- palnet
-- cn
 - jjm
-- partiko
+- busy
 thumbnail: 'https://cdn.steemitimages.com/DQmS1GNLmZ2mRkQTi1M2mAdD6RKqDJH2ZF55hsS6vRn5ZfC/image.png'
 sidebar:
     right:
