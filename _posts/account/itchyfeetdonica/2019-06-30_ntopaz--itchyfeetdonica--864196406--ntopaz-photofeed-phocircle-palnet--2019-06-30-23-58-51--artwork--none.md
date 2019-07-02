@@ -12,8 +12,8 @@ categories:
 tags:
 - ntopaz
 - photofeed
-- cn-reader
 - photocircle
+- cn-reader
 - palnet
 thumbnail: 'https://artisteem.io/media/4b0f0df9-2e4a-4300-bc4f-80ee76d46da5'
 sidebar:
@@ -52,7 +52,7 @@ Here's the original photo before it's cropped by the site:
 
 顺便提一下意大利北部名城都灵，离时尚之都米兰很近，曾是意大利历史上的第一个正式首都。城内随处可见雄伟庄严的巴洛克式建筑和规模宏大的广场。还有意大利文化中不可或缺的餐前酒aperitivo也是起源于这里。对于我这种路痴来说，它棋盘式的城市布局还是蛮容易找到方向的，呵呵。正好我最先去的意大利城市就是米兰和都灵，每天都可以轻松无压力地找回住处，还沾沾自喜一番，直到后来去了意大利南部的那些地方，才发现真是迷路没商量~。:) 
 
-今年的Lonely Planet评出的世界十大旅游地区的top 1就是都灵作为首府所在的意大利Piedmont区。下面我拍的书中插图就能看到雪山和都灵的地标 —— 安托内利尖塔（Mole Antonelliana），这座都灵塔以他的建筑师命名，建于19世纪晚期，高达167.5 米，曾是世界最高的砖石建筑，如今塔内的国家电影博物馆也是世界最高的博物馆。意大利欧元硬币2分的背后图案就是这座都灵塔，Steem上的朋友victory622的主页背景图也是都灵的这座地标。
+旅行圣经Lonely Planet今年评出的世界十大旅游地区的top 1就是都灵作为首府所在的Piedmont区。下面我拍的书中插图就能看到雪山和都灵的地标 —— 安托内利尖塔（Mole Antonelliana），这座塔以他的建筑师命名，建于19世纪晚期，高达167.5 米，曾是世界最高的砖石建筑，如今塔内的国家电影博物馆也是世界最高的博物馆。意大利欧元硬币2分的背后图案就是这座都灵塔，Steem上的朋友victory622的主页背景图里也有都灵的这个地标。
 
 
 ![IMG_2667.JPG](https://cdn.steemitimages.com/DQmNm56MpB2LDNPjZPU1hUzMLhkJJCq63mgHjiMWfK3BZNg/IMG_2667.JPG)
