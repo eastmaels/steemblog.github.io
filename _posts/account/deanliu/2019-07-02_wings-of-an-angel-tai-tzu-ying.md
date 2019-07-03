@@ -15,6 +15,9 @@ tags:
 - zann
 - busy
 - jjm
+- cn
+- badminton
+- partiko
 thumbnail: 'https://cdn.steemitimages.com/DQmVfaywFWzkewjnv1ypTi9mMPNxQNdbEuGMBDrRhpDEsst/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-07-02%20%E4%B8%8B%E5%8D%8810.10.20.png'
 sidebar:
     right:
@@ -31,7 +34,7 @@ widgets:
 日前，小戴在她的IG上發出一組她身體的照片，讓各方十分驚艷，紛紛轉傳！別想歪了，不是什麼性感艷照，而是運動員力與美的照片：她的背部肌肉線條！你看看，你看看，好驚人啊！小小身體，竟然能練出這樣的肌肉，難怪可以稱王女子羽壇！人稱其，天使翅膀！真是貼切啊～～～ ^_^
 
 ![螢幕快照 2019-07-02 下午10.10.20.png](https://cdn.steemitimages.com/DQmVfaywFWzkewjnv1ypTi9mMPNxQNdbEuGMBDrRhpDEsst/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-07-02%20%E4%B8%8B%E5%8D%8810.10.20.png)
-<sub>*source: https://www.instagram.com/p/BzZLxuYl9Zp/*</sub>
+<sub>_source: [https://www.instagram.com/p/BzZLxuYl9Zp/](https://www.instagram.com/p/BzZLxuYl9Zp/)_</sub>
 
 [Tai Tzu-ying](https://en.wikipedia.org/wiki/Tai_Tzu-ying) is currently World's No.1 Women Badminton player. She is only 25 years old and she has been world no 1 for 125 weeks, a historical record. She is from Taiwan and we are proud of her since in our impression, South East Asia and Europe are the places that produce Badminton champions.
 
