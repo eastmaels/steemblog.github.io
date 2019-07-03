@@ -12,9 +12,9 @@ categories:
 tags:
 - qurator
 - photocircle
-- cn
+- photofeed
+- cn-reader
 - palnet
-- busy
 thumbnail: 'https://files.steempeak.com/file/steempeak/itchyfeetdonica/7h6xv00l-hamemelon.JPG'
 sidebar:
     right:
@@ -29,23 +29,41 @@ widgets:
 ![hamemelon.JPG](https://files.steempeak.com/file/steempeak/itchyfeetdonica/7h6xv00l-hamemelon.JPG)
 
 ## 
-Greetings everyone! I'd like to share my Sunday brunch recipe in this post. I think it's perfect for the warm weather these days. It's a common antipasti from Italy - Prosciutto e Melone. It can't be more simple, as it only takes two ingredients to make: some Italian cured ham and a melon or two. :) Have you tried this popular refreshing treat too? 
+Greetings everyone! I'd like to share my Sunday brunch recipe in this post. I think it's perfect for the warm weather these days. It's a common antipasto from Italy - Prosciutto e Melone. 
+
+It can't be more simple, as it only takes two ingredients to make: some Italian cured ham (prosciutto) and a melon or two. :) 
 
 ##
-天气渐热，上周日做了清新爽口的brunch，很适合夏天享用。这道简单的火腿蜜瓜来自意大利，是那边典型的antipasti(餐前小吃)，充满夏日风情，在欧洲很受欢迎。我第一次吃到是在威尼斯，夏天的傍晚，坐在运河边，清风徐徐，甘甜多汁的蜜瓜和咸鲜干韧的火腿完美搭配，让人久久不能忘怀。:)  从那以后，就经常在天热没什么胃口的时候自己做着吃，买火腿，切瓜，覆盖、包裹或用牙签穿起来，快速便捷、抚慰人心。感谢发明这一吃法的意大利古代人民~ 
+上周日做了清新爽口的brunch，很适合热天享用。这道简单的火腿蜜瓜来自意大利，是那边典型的antipasti(餐前小吃)，充满夏日风情，在欧洲很受欢迎。
+
 
 ##
-Here's the 2 types of ham I used:
-这是我用的两种意大利火腿：
+Here are the 2 varieties of ham I normally use, both presliced:
+这是我用的两种意大利特产火腿 —— 帕尔马和圣丹尼火腿：
 
 ![Ham.JPG](https://ipfs.busy.org/ipfs/Qmdgiq3hA3M3M9XKKi7SksrM6nWuzWKRtehKmwmodqM1bS)
 
+##
+Prosciutto is made from the hind leg or thigh of a pig or wild boar. It requires a salting process and a long drying period up to 2 years. Prosciutto di San Daniele is slightly sweeter and darker than Prosciutto di Parma. They are both protected by the PDO (Protected Designation of Origin), so their quality is guaranteed. 
+
+The salty and buttery ham goes very well with the sweet and juicy melon. Such a refreshing treat for summer days! Have you tried this popular traditional Italian match before?  
 
 ##
-It's my entry to Qurator's Tasty Tuesday competition. Don't hesitate to join the fun if you also love food and photography! 
+这两种火腿都受到PDO欧盟原产地认证保护。PDO是英文Protected Designation of Origin的首字母缩写，是指“受保护的原产地名称”。源于法国法定葡萄酒产区（AOC）的保护政策，后来根据欧盟法，被认证对象又延伸到约500种其它农产品，包括橄榄油、火腿、啤酒、奶酪等。PDO保证这些优质产品全部在欧盟成员国原产地生产， 并符合严格的质量标准。
+
+火腿由猪腿肉先经海盐腌渍，经历这一过程中的除血杀菌吸潮后，再洗净风干约半年到一年半时间，最后得到的火腿切片肉质柔软、口感顺滑。
+
+第一次吃到这种火腿配蜜瓜是在威尼斯，夏天的傍晚，坐在运河边，清风徐徐，甘甜多汁的蜜瓜和咸鲜干韧的火腿完美搭配，让人久久不能忘怀。:)  
+
+从那以后，我就经常在天热没什么胃口的时候自己做着吃。这也是我热爱旅行的重要原因之一 —— 学习世界各地的美食配方，为我所用。做法很容易：买切片火腿（因为我实在没有勇气买只完整的巨大火腿，对自己切那种薄片的刀工也没有自信 ;p），切密瓜，将火腿片覆盖或包裹在瓜片上。也有些餐厅或家庭会把瓜切成小块，跟火腿片用牙签穿在一起，吃起来更加方便。
+
+做起来快速便捷，吃起来抚慰人心。有空也来试试吧！衷心感谢发明这一吃法的意大利古代人民~  =)
 
 ##
 ![Hamme.JPG](https://files.steempeak.com/file/steempeak/itchyfeetdonica/BQXLHTj5-Hamme.JPG)
+
+##
+It's my entry to Qurator's Tasty Tuesday competition. Don't hesitate to join the fun if you also love food and photography! 
 
 <br />
 **More Foodie Posts:**
