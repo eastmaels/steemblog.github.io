@@ -11,10 +11,10 @@ categories:
 - portraitcontest
 tags:
 - portraitcontest
-- cn-reader
 - travel
+- photocircle
 - palnet
-- busy
+- epicjourney
 thumbnail: 'https://img.esteem.ws/1pj0djrzyk.jpg'
 sidebar:
     right:
@@ -40,9 +40,9 @@ When I saw this keyword, the image of a happy woman in a flowery dress immediate
 *** 
 
 ##
-This sweet girl is my host in Yekaterinburg, and together we visited a forest nearby. Living in a place with a long harsh winter, she was extremely happy getting close to the Ural nature on a warm sunny day. She just couldn't stop singing and dancing all the time. :)   
+This sweet girl in the first photo was my host in Yekaterinburg, and together we visited a forest nearby. Living in a place with a long harsh winter, she was extremely happy getting close to the Ural nature on a warm sunny day. She just couldn't stop singing and dancing all the time. :)   
 
-When I'm going down the memory lane to my Trans-Siberian journey, many moments like this started to replay. They are unforgettable because of these lovely people I met on the way.  
+When I'm going down the memory lane to my Trans-Siberian journey, moments like this started to replay. They are unforgettable because of these lovely people I met on the way.  
 
 ## 
 ![ql8uvzkpdy.jpg](https://img.esteem.ws/ql8uvzkpdy.jpg)
@@ -67,7 +67,7 @@ https://cdn.steemitimages.com/DQmZ5aKtSoBDm6REfReJrZX9JLxtZRirMVLZ8pYCtm6nyzs/m1
 
 她是我西伯利亚之旅第二站 —— 叶卡捷琳堡的当地host，一个乐观自信、活泼开朗、人见人爱、花见花开的妹纸。;) 
 
-我们一起去城市附近乌拉尔山区的森林里玩耍。她一路上都在奔跑跳跃，不住地大喊：“夏天真美好啊~ 我爱夏天！”  每年都要熬过西伯利亚式漫长的寒冬，可以想见她对这短暂却温暖的夏天是有多期待和眷念。我也被她的兴奋所感染，给她拍下了很多快乐的瞬间。
+我们一起去城市附近乌拉尔山区的森林里玩耍。她一路上都在奔跑跳跃，不住地大喊：“夏天真美好啊~ 我爱夏天！”  每年都要熬过西伯利亚式漫长的寒冬，可以想见她对这短暂而温暖的夏天是有多期待和眷念。我也被她的兴奋所感染，给她拍下了很多快乐的瞬间。
 
 每次回想起自己漫长而美妙的穿越西伯利亚火车之旅，这些难忘的瞬间就会一幕幕在脑子里回放。夏天的乌拉尔森林风景很美吗？说实话，我觉得并没有什么特别，而最难忘的，却总是这些旅途中遇到的鲜活可爱的人们。
 
