@@ -230,6 +230,110 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit/" class="image is-7by1">
+            <img class="thumbnail" src="http://www.cazena.com/sites/default/files/Picture2_1.png" alt="R Tutorial - How rich is SteemIt Wechat Group? R 语言教程 - STEEMIT微信群有多少钱？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-15T21:58:06.000Z">2017-10-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 minutes read (About 1559 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit/">R Tutorial - How rich is SteemIt Wechat Group? R 语言教程 - STEEMIT微信群有多少钱？</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="http://www.cazena.com/sites/default/files/Picture2_1.png" alt=""></p>
+<p>There are current 211 members in the <a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">Steemit Wechat Group</a> and I want to know how rich we are as a group. <a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">Last tutorial</a>, we talked about how to connect to @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> via RODBC, and today, we are going to exercise this a little bit with a code example - How rich is SteemIt Wechat Group?</p>
+<p>The STEEMSQL we are looking for is something like this:</p>
+<p><code>select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name=&apos;justyy&apos;</code></p>
+<p><img src="https://steemitimages.com/DQmU6FzPkmpS6FiM9TBNz8fKKvRNFwFmHUMZzGYnuyHAvQC/image.png" alt=""></p>
+<p>The values of these four fields are not pure numbers, instead, they come with the unit either SBD or STEEM.  So it is sad that we cann&#x2019;t do this in pure SQL via aggregate function <code>sum</code>  But that is OK.</p>
+<p>The members of the wechat group can be found via Github where you can <a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">submit a pull request</a> if you believe you are not in the list. </p>
+<p><code>https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt</code></p>
+<p>Basically, it is a text file with each line containing the STEEMID. So in R, we can just use <code>readLines</code> to import the data into an array.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url = &quot;https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt&quot;</span><br><span class="line">members = readLines(url)</span><br></pre></td></tr></tbody></table></figure>
+<p>Now, we can then construct the SQL to explicitly limit the account names to be within the group,  namely,</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br></pre></td></tr></tbody></table></figure>
+<p>So the SQL will become something like this:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;justyy&apos;, &apos;tumutanzi&apos; ...)</span><br></pre></td></tr></tbody></table></figure>
+<p>It is better to save this in a R function:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">getsbd = function(members) {</span><br><span class="line">  conn &lt;- odbcDriverConnect(&quot;Driver=SQL Server Native Client 11.0;Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit&quot;)</span><br><span class="line">  x &lt;- sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br><span class="line">  close(conn)</span><br><span class="line">  return(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>Then, <code>arr &lt;- getsbd(members)</code> gets the data (four columns, i.e.  <code>&gt; dim(arr) [1] 211   4</code>) and we can process them individually.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">sum_sbd = 0.0</span><br><span class="line">sum_steem = 0.0</span><br><span class="line">sum_sbd_saving = 0.0</span><br><span class="line">sum_steem_saving = 0.0</span><br><span class="line"></span><br><span class="line">for(money in arr[,4]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd = sum_sbd + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,2]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd_saving = sum_sbd_saving + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,3]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem = sum_steem + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,1]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem_saving = sum_steem_saving + as.numeric(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><code>str_split</code> will split the string e.g. <code>1.00 SBD</code> or <code>2.00 STEEM</code> to vectors so that the value and unit are separated. And the final result is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; print(paste(&quot;Total SBD = &quot;, sum_sbd))</span><br><span class="line">&gt; print(paste(&quot;Total SBD Savings = &quot;, sum_sbd_saving))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM = &quot;, sum_steem))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM Savings = &quot;, sum_steem_saving))</span><br><span class="line">[1] &quot;Total SBD =  31739.145&quot;</span><br><span class="line">[1] &quot;Total SBD Savings =  597.972&quot;</span><br><span class="line">[1] &quot;Total STEEM =  16067.426&quot;</span><br><span class="line">[1] &quot;Total STEEM Savings =  0.01&quot;</span><br></pre></td></tr></tbody></table></figure>
+<p>Similarly, you can sum up the Steem Power, however, it is a bit tricky to convert the VESTS to SP.</p>
+<p><img src="https://cdn.pixabay.com/photo/2014/11/03/11/20/money-515058_960_720.jpg" alt=""></p>
+<h2 id="Image-Credit-Pixabay-com"><a href="#Image-Credit-Pixabay-com" class="headerlink" title="Image Credit: Pixabay.com"></a><em>Image Credit: Pixabay.com</em></h2><p>&#x5F53;&#x524D;&#xFF0C;<a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x7FA4;&#x540D;&#x5355;</a>&#x4E00;&#x5171;&#x6709;211&#x4EBA;&#xFF08;&#x6CA1;&#x6709;&#x4E0A;&#x699C;&#x7684;&#x8BF7;&#x706B;&#x901F;&#x8054;&#x7CFB; wexin@justyy.com  &#x597D;&#x5904;&#x591A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x61C2;&#x7684;&#xFF09;&#xFF0C; &#x6628;&#x5929;&#xFF0C;&#x6211;&#x4EEC;&#x8BB2;&#x4E86;&#x600E;&#x4E48;&#x5728;R&#x8BED;&#x8A00;&#x91CC;<a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">&#x901A;&#x8FC7;RODBC&#x8FDE;&#x63A5;STEEMSQL&#x6570;&#x636E;&#x5E93;</a>&#xFF0C;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x6E29;&#x6545;&#x800C;&#x77E5;&#x65B0;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x5B9E;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;STEEMIT&#x4E2D;&#x6587;&#x5FAE;&#x4FE1;&#x7FA4;&#x4E00;&#x5171;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</p>
+<p>&#x67E5;&#x8BE2; @justyy &#x7684;&#x5E10;&#x53F7;&#x5F88;&#x7B80;&#x5355;&#xFF0C;<a href="https://justyy.com/archives/5420" target="_blank" rel="noopener">STEEMSQL</a>&#x662F;&#xFF1A;</p>
+<p><code>select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name=&apos;justyy&apos;</code></p>
+<p><img src="https://steemitimages.com/DQmU6FzPkmpS6FiM9TBNz8fKKvRNFwFmHUMZzGYnuyHAvQC/image.png" alt=""></p>
+<p>&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x5E76;&#x4E0D;&#x662F;&#x6570;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD8;&#x6709;&#x5355;&#x4F4D;&#xFF0C;&#x8FD9;&#x5C31;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x5728;STEEMSQL&#x91CC;&#x76F4;&#x63A5;&#x7528;&#x805A;&#x7C7B;&#x51FD;&#x6570; <code>sum</code> &#x628A;&#x5B83;&#x4EEC;&#x76F8;&#x52A0;&#x8D77;&#x6765;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x628A;&#x6210;&#x5458;&#x5217;&#x8868;&#x8BFB;&#x8FDB;&#x6765;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x8868;&#x5728; github &#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x6CA1;&#x5728;&#x5217;&#x8868;&#x91CC;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;<a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">PR</a></p>
+<p><code>https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt</code></p>
+<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;STEEMIT &#x5E10;&#x53F7;ID&#xFF0C;&#x6211;&#x4EEC;&#x5728;<a href="https://justyy.com/archives/3457" target="_blank" rel="noopener">R</a>&#x91CC;&#x53EF;&#x4EE5;&#x7528; <code>readLines</code> &#x628A;&#x6587;&#x672C;&#x6570;&#x636E;&#x8BFB;&#x6210;&#x6570;&#x7EC4;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url = &quot;https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt&quot;</span><br><span class="line">members = readLines(url)</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x7C7B;&#x4F3C; join &#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x6784;&#x9020;&#x8FD9;&#x4E2A;SQL</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x751F;&#x6210;&#x7684;SQL&#x5927;&#x6982;&#x957F;&#x8FD9;&#x6837;&#x2026;&#x2026;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;justyy&apos;, &apos;tumutanzi&apos; ...)</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x628A;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x8FD9;&#x5757;&#x5199;&#x6210;&#x51FD;&#x6570;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">getsbd = function(members) {</span><br><span class="line">  conn &lt;- odbcDriverConnect(&quot;Driver=SQL Server Native Client 11.0;Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit&quot;)</span><br><span class="line">  x &lt;- sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br><span class="line">  close(conn)</span><br><span class="line">  return(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7136;&#x540E;, <code>arr &lt;- getsbd(members)</code> &#x5C31;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x542B;&#x6709;4&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x7EC4; <code>&gt; dim(arr) [1] 211   4</code>&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x597D;&#x529E;&#x4E86;&#xFF0C;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x76F8;&#x52A0;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">sum_sbd = 0.0</span><br><span class="line">sum_steem = 0.0</span><br><span class="line">sum_sbd_saving = 0.0</span><br><span class="line">sum_steem_saving = 0.0</span><br><span class="line"></span><br><span class="line">for(money in arr[,4]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd = sum_sbd + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,2]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd_saving = sum_sbd_saving + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,3]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem = sum_steem + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,1]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem_saving = sum_steem_saving + as.numeric(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><code>str_split</code> &#x51FD;&#x6570;&#x628A;&#x6570;&#x503C;&#x548C;&#x5355;&#x4F4D;&#x5206;&#x5F00;&#xFF0C;&#x65B9;&#x4FBF;&#x7D2F;&#x8BA1;&#x3002;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x7ED3;&#x679C;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; print(paste(&quot;Total SBD = &quot;, sum_sbd))</span><br><span class="line">&gt; print(paste(&quot;Total SBD Savings = &quot;, sum_sbd_saving))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM = &quot;, sum_steem))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM Savings = &quot;, sum_steem_saving))</span><br><span class="line">[1] &quot;Total SBD =  31739.145&quot;</span><br><span class="line">[1] &quot;Total SBD Savings =  597.972&quot;</span><br><span class="line">[1] &quot;Total STEEM =  16067.426&quot;</span><br><span class="line">[1] &quot;Total STEEM Savings =  0.01&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7C7B;&#x4F3C;&#x53EF;&#x4EE5;&#x7D2F;&#x8BA1; VESTS &#x7136;&#x540E;&#x518D;&#x8BA1;&#x7B97;SP&#xFF0C;&#x4E0D;&#x8FC7;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x5C55;&#x5F00;&#x7EC6;&#x8282;&#x4E86;&#x3002;</p>
+<hr>
+<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+</ol>
+<hr>
+<blockquote>
+<p><a href="https://helloacm.com/r-tutorial-how-rich-is-steemit-wechat-group/" target="_blank" rel="noopener">R Tutorial &#x2013; How rich is SteemIt Wechat Group? </a><br><a href="https://justyy.com/archives/5480" target="_blank" rel="noopener">R &#x8BED;&#x8A00;&#x6559;&#x7A0B; &#x2013; STEEMIT&#x5FAE;&#x4FE1;&#x7FA4;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</a><br><a href="https://justyy.com/archives/5478" target="_blank" rel="noopener">R &#x6559;&#x7A0B;&#x4E4B; &#x600E;&#x4E48;&#x6837;&#x8FDE;&#x63A5;&#x5230; STEEMSQL &#x6570;&#x636E;&#x5E93;</a><br><a href="https://helloacm.com/r-tutorial-connecting-to-steemsql/" target="_blank" rel="noopener">R Tutorial &#x2013; Connecting to STEEMSQL</a><br><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
+</blockquote>
+<p><img src="https://steemitimages.com/DQmeq8e5HKANWhkFqKj4XLFp9ifYt8EMvJahMZfLVj98oDY/image.png" alt=""></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit" target="_blank" rel="noopener">R Tutorial - How rich is SteemIt Wechat Group? R &#x8BED;&#x8A00;&#x6559;&#x7A0B; - STEEMIT&#x5FAE;&#x4FE1;&#x7FA4;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cn2017-10-15/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-15)">
         </a>
@@ -774,202 +878,6 @@
 </blockquote>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemit-javascript-function-to-get-original-post-from-comment-s-permlink-permlink" target="_blank" rel="noopener">SteemIt: Javascript Function to Get Original Post from Comment&#x2019;&#x2019;s PermLink - &#x5982;&#x4F55;&#x4ECE;&#x8BC4;&#x8BBA;&#x7684; PermLink &#x5F97;&#x5230;&#x539F;&#x6587;&#x7684;&#x94FE;&#x63A5;&#xFF1F;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-cn-updates-cn2017-10-13/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-13)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-10-13T11:06:00.000Z">2017-10-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    11 minutes read (About 1607 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates-cn2017-10-13/">Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-13)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com  (Thank you @arcange !)<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-10-13 11:11:09 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-10-09 11:11:09 (UTC) - 2017-10-10 11:11:09 (UTC)</p>
-<h2 id="2017-10-13-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-10-13-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-10-13 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-10-13 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @sunnyjolly | <a href="https://steemit.com/cn/@sunnyjolly/10-see-you-soon-guys" target="_blank" rel="noopener">&#x5341;&#x6708;&#x5341;&#x4E94; &#x4E0D;&#x89C1;&#x4E0D;&#x6563; &#x8C37;&#x6B4C;&#x70B9;&#x540D;#10 &#x8BA4;&#x771F; See you soon guys</a> |<br>| 2 | @acactus1013 | <a href="https://steemit.com/cn/@acactus1013/steemit-why-are-they-unwilling-to-use-steemit" target="_blank" rel="noopener">&#x4ED6;&#x4EEC;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x613F;&#x610F;&#x6765;Steemit&#xFF1F;/Why Are They Unwilling to Use Steemit</a> |<br>| 3 | @victory622 | <a href="https://steemit.com/cn/@victory622/or-or-schoenbrunn-palace-in-vienna-with-two-important-women" target="_blank" rel="noopener"> &#x7EF4;&#x4E5F;&#x7EB3;&#x7F8E;&#x6CC9;&#x5BAB;&#x2013;&#x4E24;&#x4E2A;&#x5973;&#x4EBA;&#x7684;&#x6770;&#x4F5C;  &#x2013; Sch&#xF6;nbrunn Palace in Vienna with two important women</a> |<br>| 4 | @travelgirl | <a href="https://steemit.com/cn/@travelgirl/traveling-the-world-65-europe-series-edinburgh-castle-edinburgh-scotland" target="_blank" rel="noopener">Traveling the World #65 (Europe Series) Edinburgh Castle @ Edinburgh, Scotland -  &#x611B;&#x4E01;&#x5821;&#x57CE;&#x5821; @ &#x611B;&#x4E01;&#x5821;&#xFF0C;&#x8607;&#x683C;&#x862D;</a> |<br>| 5 | @hannahwu | <a href="https://steemit.com/cn/@hannahwu/you-are-why-i-do-what-i-do" target="_blank" rel="noopener">&#x4F60;&#x5373;&#x662F;&#x6211;&#x7684;&#x610F;&#x4E49; You Are Why I Do What I Do</a> |<br>| 6 | @hqy | <a href="https://steemit.com/cn/@hqy/7uzwqz" target="_blank" rel="noopener">&#x6BCD;&#x4EB2;&#x4F20;&#x7565;&#xFF1A;&#x6CA1;&#x6709;&#x7891;&#x523B;&#x7684;&#x7891;&#x6587;</a> |<br>| 7 | @mrpointp | <a href="https://steemit.com/cn/@mrpointp/there-is-always-someone-keeping-working-out-part-37-original" target="_blank" rel="noopener">There is always someone keeping working out (part 37)(Original) /&#x603B;&#x6709;&#x4E00;&#x4E2A;&#x6BD4;&#x4F60;&#x5FD9;&#xFF0C;&#x6BD4;&#x4F60;&#x7A77;&#xFF0C;&#x6BD4;&#x4F60;&#x8001;&#x7684;&#x4EBA;&#x5728;&#x5065;&#x8EAB;&#xFF08;&#x4E09;&#x5341;&#x4E03;&#xFF09;</a> |<br>| 8 | @liflorence | <a href="https://steemit.com/cn/@liflorence/li-s-voyage-follow-me-to-the-romantic-city-venice2-2" target="_blank" rel="noopener">Li&#x2019;s Voyage# follow me to the romantic city&#x2014; Venice2&#x20E3;&#xFE0F; &#x6211;&#x7684;&#x65C5;&#x884C;&#x8BB0;&#x4E4B;&#x6D6A;&#x6F2B;&#x5A01;&#x5C3C;&#x65AF; 2&#x20E3;&#xFE0F;</a> |<br>| 9 | @shieha | <a href="https://steemit.com/photography/@shieha/2-corgis-and-6-poodles" target="_blank" rel="noopener"> 2 Corgis and 6 Poodles &#x53EF;&#x611B;&#x72D7;&#x72D7;&#xFF01;&#x5169;&#x96BB;&#x67EF;&#x57FA;&#xFF0C;&#x516D;&#x96BB;&#x8CB4;&#x8CD3;&#xFF01;</a> |<br>| 11 | @tvb | <a href="https://steemit.com/cn/@tvb/6jhkhx" target="_blank" rel="noopener">&#x6211;&#x6240;&#x5C45;&#x6211;&#x6240;&#x7231;&#x2014;&#x2014;&#x5927;&#x8FDE;&#x2014;&#x2014;&#x6211;&#x7684;&#x7B2C;&#x4E8C;&#x6545;&#x4E61;</a> |<br>| 12 | @guyverckw | <a href="https://steemit.com/cn/@guyverckw/entry-3-yellow-leaves-at-osaka-expo-commenoration-park" target="_blank" rel="noopener"> Steemitphotochallenge  - Entry 3 Yellow leaves at Osaka Expo Commenoration Park  &#x4F5C;&#x54C1;3 - &#x5927;&#x962A;&#x4E07;&#x535A;&#x7D00;&#x5FF5;&#x516C;&#x5712;&#x7684;&#x9EC3;&#x8449; (by @guyverckw)</a> |<br>| 13 | @susanli3769 | <a href="https://steemit.com/cn/@susanli3769/not-everybody-s-dish-chicken-feet-with-diced-hot-red-pepper-and-garlic" target="_blank" rel="noopener">Not everybody&#x2019;s dish- Chicken Feet with diced hot red pepper &amp; garlic &#x5982;&#x4F55;&#x5236;&#x4F5C;&#x5241;&#x6912;&#x51E4;&#x722A;</a> |<br>| 14 | @shenchensucc | <a href="https://steemit.com/cn/@shenchensucc/tony-s-daodao-happy-growing-16-sport-16" target="_blank" rel="noopener">Tony&#x2019;s (Daodao) Happy Growing #16 Sport &#x5200;&#x5200;&#x5F00;&#x5FC3;&#x6210;&#x957F; #16</a> |<br>| 15 | @victorier | <a href="https://steemit.com/cn/@victorier/or-10" target="_blank" rel="noopener">&#x8A8D;&#x771F;&#x4F60;&#x5C31;&#x8F38;&#x4E86; &#x8C37;&#x54E5;&#x9EDE;&#x540D;#10 &#x8A8D;&#x771F;</a> |<br>| 17 | @coldhair | <a href="https://steemit.com/cn/@coldhair/694zxa-steemit" target="_blank" rel="noopener">&#x4F60;&#x5199;&#x4E00;&#x7BC7;Steemit&#x6587;&#x7AE0;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x591A;&#x5C11;&#x65F6;&#x95F4;&#xFF1F;</a> | </p>
-<blockquote>
-<p>&#x672C;&#x5217;&#x8868;&#x652F;&#x6301;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x7ECF;&#x5E38;&#x53D1;&#x6C34;&#x6587;&#x7684;ID&#xFF0C;&#x6B22;&#x8FCE; report@justyy.com &#x4E3E;&#x62A5;&#x3002;</p>
-<h2 id="2017-10-13-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-10-13-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-10-13 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-10-13 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;<a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">&#x5C11;&#x91CF;&#x4FEE;&#x6539;</a>&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|&#x2014;:|&#x2014;:|<br>| 1| @oflyhigh | 8 | 2576 | 1464.07 |183.01 |<br>| 2| @deanliu | 7 | 1683 | 1085.06 |155.01 |<br>| 3| @rivalhw | 8 | 1240 | 1077.84 |134.73 |<br>| 4| @htliao | 8 | 1605 | 1031.44 |128.93 |<br>| 5| @sweetsssj | 2 | 2801 | 807.87 |403.93 |<br>| 6| @tumutanzi | 7 | 1130 | 776.28 |110.90 |<br>| 7| @someone | 6 | 987 | 758.92 |126.49 |<br>| 8| @jubi | 12 | 823 | 678.26 |56.52 |<br>| 9| @linuslee0216 | 6 | 889 | 627.34 |104.56 |<br>| 10| @joythewanderer | 6 | 902 | 526.70 |87.78 |<br>| 11| @guyverckw | 11 | 1011 | 508.11 |46.19 |<br>| 12| @travelgirl | 15 | 842 | 500.11 |33.34 |<br>| 13| @blackbunny | 6 | 600 | 477.43 |79.57 |<br>| 14| @aaronli | 6 | 770 | 471.35 |78.56 |<br>| 15| @twinkledrop | 7 | 404 | 462.31 |66.04 |<br>| 16| @stacee | 6 | 591 | 439.40 |73.23 |<br>| 17| @chinadaily | 14 | 757 | 439.15 |31.37 |<br>| 18| @ace108 | 29 | 1893 | 374.54 |12.92 |<br>| 19| @rea | 1 | 744 | 368.59 |368.59 |<br>| 20| @justyy | 18 | 1003 | 361.78 |20.10 |<br>| 21| @nicolemoker | 3 | 705 | 361.23 |120.41 |<br>| 22| @wilkinshui | 7 | 629 | 335.46 |47.92 |<br>| 23| @bxt | 6 | 290 | 313.90 |52.32 |<br>| 24| @btsabc | 6 | 285 | 301.44 |50.24 |<br>| 25| @lemooljiang | 9 | 481 | 301.43 |33.49 |<br>| 26| @mrspointm | 9 | 506 | 299.46 |33.27 |<br>| 27| @goodboyphilip | 8 | 554 | 296.64 |37.08 |<br>| 28| @victorier | 6 | 520 | 292.74 |48.79 |<br>| 29| @lydiachan | 3 | 273 | 273.49 |91.16 |<br>| 30| @susanli3769 | 8 | 287 | 262.39 |32.80 |</p>
-</blockquote>
-<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
-<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><blockquote>
-<p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">&#x65F6;&#x95F4; Time</th>
-<th style="text-align:right">&#x4F5C;&#x8005; Author</th>
-<th style="text-align:right">&#x6587;&#x7AE0; Post</th>
-<th style="text-align:right">&#x6743;&#x91CD; Weighting %</th>
-<th style="text-align:right">VP %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">2017-10-13 02:10:14</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/top-20-level-1-commenters-for-20171012-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">32.65</td>
-<td style="text-align:right">56.42</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 02:10:30</td>
-<td style="text-align:right">@aaronli</td>
-<td style="text-align:right"><a href="https://steemit.com/@aaronli/hong-kong-snapshot-35-with-video-sheung-wan-6-bridge-street-street-of-history-street-of-story-35-6" target="_blank" rel="noopener">@aaronli</a></td>
-<td style="text-align:right">32.65</td>
-<td style="text-align:right">56.42</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 02:39:38</td>
-<td style="text-align:right">@victorier</td>
-<td style="text-align:right"><a href="https://steemit.com/@victorier/ddos-or-what-is-ddos-attack" target="_blank" rel="noopener">@victorier</a></td>
-<td style="text-align:right">24.62</td>
-<td style="text-align:right">56.07</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 03:08:17</td>
-<td style="text-align:right">@bxt</td>
-<td style="text-align:right"><a href="https://steemit.com/@bxt/xiaoheishan-natural-oxygen-bar-relaxing-autumn-happy-trip" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:right">26.52</td>
-<td style="text-align:right">55.90</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 03:42:20</td>
-<td style="text-align:right">@oflyhigh</td>
-<td style="text-align:right"><a href="https://steemit.com/@oflyhigh/life-is-like-a-dream" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:right">30.52</td>
-<td style="text-align:right">56.09</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 04:17:12</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/monomad-week-no-14-3-clouds-from-the-train-or-14-3-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">32.44</td>
-<td style="text-align:right">55.99</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 05:01:19</td>
-<td style="text-align:right">@lemooljiang</td>
-<td style="text-align:right"><a href="https://steemit.com/@lemooljiang/208" target="_blank" rel="noopener">@lemooljiang</a></td>
-<td style="text-align:right">26.54</td>
-<td style="text-align:right">55.96</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 05:27:17</td>
-<td style="text-align:right">@hannahwu</td>
-<td style="text-align:right"><a href="https://steemit.com/@hannahwu/7lymbm" target="_blank" rel="noopener">@hannahwu</a></td>
-<td style="text-align:right">24.67</td>
-<td style="text-align:right">56.21</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 05:48:09</td>
-<td style="text-align:right">@deanliu</td>
-<td style="text-align:right"><a href="https://steemit.com/@deanliu/the-cafe-overlooking-tokyo-train-station-tokyo-cafe-lexcel" target="_blank" rel="noopener">@deanliu</a></td>
-<td style="text-align:right">30.59</td>
-<td style="text-align:right">56.24</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 07:10:11</td>
-<td style="text-align:right">@rivalhw</td>
-<td style="text-align:right"><a href="https://steemit.com/@rivalhw/2kyjhs" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:right">30.60</td>
-<td style="text-align:right">56.26</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 07:21:18</td>
-<td style="text-align:right">@travelgirl</td>
-<td style="text-align:right"><a href="https://steemit.com/@travelgirl/pappa-rich-malaysian-restaurant-sydney-australia-or-pappa-rich" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:right">37.49</td>
-<td style="text-align:right">56.26</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 08:43:12</td>
-<td style="text-align:right">@goodboyphilip</td>
-<td style="text-align:right"><a href="https://steemit.com/@goodboyphilip/eng-japan-gourmet-travel-guide-032-1050yen-for-16-types-of-sashimi-cp-goodboy-philip" target="_blank" rel="noopener">@goodboyphilip</a></td>
-<td style="text-align:right">23.73</td>
-<td style="text-align:right">53.52</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 09:43:19</td>
-<td style="text-align:right">@jubi</td>
-<td style="text-align:right"><a href="https://steemit.com/@jubi/or-11" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:right">36.61</td>
-<td style="text-align:right">53.12</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 10:41:17</td>
-<td style="text-align:right">@nicolemoker</td>
-<td style="text-align:right"><a href="https://steemit.com/@nicolemoker/study-design-with-nicole-12-how-to-create-your-watermark-or-png-12-png" target="_blank" rel="noopener">@nicolemoker</a></td>
-<td style="text-align:right">25.52</td>
-<td style="text-align:right">53.30</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-13 10:55:09</td>
-<td style="text-align:right">@stacee</td>
-<td style="text-align:right"><a href="https://steemit.com/@stacee/2ccb7j" target="_blank" rel="noopener">@stacee</a></td>
-<td style="text-align:right">31.12</td>
-<td style="text-align:right">53.30</td>
-</tr>
-</tbody>
-</table>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 49&#x5929;&#x3002;<br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
-<blockquote>
-<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
-</blockquote>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ol>
-<h1 id="CN-&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;37&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;"><a href="#CN-&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;37&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;" class="headerlink" title="CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;37&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;"></a>CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;37&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;</h1><p>&#x67E5;&#x8BE2;&#x8C01;&#x90FD;&#x53C2;&#x4E8E;&#x4E86;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;<a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x5728;&#x7EBF;&#x5DE5;&#x5177;: Steemit &#x67E5;&#x770B;&#x8C01;&#x59D4;&#x6D3E;&#x4EE3;&#x7406;&#x7ED9;&#x4F60;Steem Power&#xFF1F;</a>&#x3002;<br>|Delegator| Steem Power| Vests|  DateTime|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|<br>|@eduter|660.02|1357975.69|2017-10-12 21:10:21|<br>|@htliao|530.27|1091019.80|2017-10-03 12:00:48|<br>|@sunnyjolly|400.48|823973.51|2017-09-20 09:40:21|<br>|@mrpointp|400.31|823619.84|2017-09-28 14:09:36|<br>|@herlife|300.37|618006.65|2017-09-19 14:18:12|<br>|@zsilence|300.31|617872.78|2017-09-23 16:04:45|<br>|@mrspointm|300.23|617714.93|2017-09-28 14:07:18|<br>|@victory622|266.34|547985.69|2017-09-18 21:59:57|<br>|@coldhair|255.03|524713.00|2017-09-19 15:08:36|<br>|@luneknight|210.16|432399.70|2017-09-28 14:55:39|<br>|@berlin1997|200.17|411835.88|2017-09-27 08:55:06|<br>|@kangnajiang|117.03|240787.09|2017-10-08 10:12:12|<br>|@zhijun|100.54|206853.00|2017-09-19 03:18:57|<br>|@icedream|100.12|205996.82|2017-09-20 02:08:24|<br>|@yellowbird|100.12|205996.48|2017-09-20 02:52:51|<br>|@jessicameng|100.12|205993.57|2017-09-20 09:14:24|<br>|@fr3eze|100.09|205931.08|2017-09-26 03:17:24|<br>|@karasui|100.09|205926.99|2017-09-26 12:31:09|<br>|@jiangchen|100.07|205895.44|2017-09-29 11:36:09|<br>|@drunkevil|100.07|205885.32|2017-09-30 10:23:51|<br>|@catwomanteresa|100.07|205883.35|2017-09-30 14:50:03|<br>|@mumingduozi|60.23|123928.00|2017-09-19 00:25:12|<br>|@towardsthesun|50.06|102993.29|2017-09-21 00:33:18|<br>|@liumei|50.05|102983.93|2017-09-22 17:35:12|<br>|@tvb|50.03|102943.21|2017-09-30 07:54:27|<br>|@veronicazhu|50.02|102913.15|2017-10-06 00:26:30|<br>|@syh7758520|30.04|61802.26|2017-09-19 02:37:42|<br>|@raywang|30.03|61779.27|2017-09-26 03:40:09|<br>|@feng1925|20.02|41198.84|2017-09-20 07:52:30|<br>|@liangfengyouren|20.02|41192.83|2017-09-23 01:40:00|<br>|@mangoanddaddy|20.02|41189.47|2017-09-24 14:37:42|<br>|@speeding|20.02|41182.20|2017-09-28 00:34:57|<br>|@susanli3769|20.01|41176.13|2017-09-30 20:51:39|<br>|@jiba|15.65|32203.21|2017-09-19 01:04:06|<br>|@wangwenjing|10.01|20598.79|2017-09-20 21:35:18|<br>|@lixing|10.01|20596.48|2017-09-23 00:14:33|<br>|@willwangfeng|10.0|20576.13|2017-10-12 04:24:57|</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates-cn2017-10-13" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x53C2;&#x4E0E;&#x8005;&#x3011;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;(2017-10-13)</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
