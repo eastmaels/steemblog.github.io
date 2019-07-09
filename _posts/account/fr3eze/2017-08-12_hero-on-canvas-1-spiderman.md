@@ -1,0 +1,56 @@
+
+---
+title: 'Hero on canvas #1: Spiderman'
+permlink: hero-on-canvas-1-spiderman
+catalog: true
+toc_nav_num: true
+toc: true
+position: 9999
+date: 2017-08-12 03:18:33
+categories:
+- art
+tags:
+- art
+- painting
+- canvas
+- spiderman
+- hero
+thumbnail: 'https://lh3.googleusercontent.com/NVbWvfiRlP-iWK1ZWlIYsM_SBrMJBIMSdvbRbR2hmukj4wJuCPgw7saXxnQ_hStjtd-2O2nwqAU2XfFu86z5CH1GbX9CsbLDglli1kAyhWa6K2oza8z-fuXbk50l-AFZ6tHhpFcIkQfUE7YLO0nfM6PlvrdK4Gqez9OPWjn9VC2I-IpTAKgqRvcastJljLbo48BpE7F5KTVLtqRBTMkSbuXb7YpnPLuTj71ebVKvqyqW6Due9Z8oUIv4Le2zsxadX9od6Lk0kbPEA8w0K7SRYyLaBnBpGyUwSFNAWYPUmnsiybXxe8oQLLMuYd6bJJCZwlUFgYsk-yO7H1Ks0VleoVmfA71rFrP0_MXllc91YVflgmn50yY30Y8V4-qAzS89tL05DNgtFwh2x9JmkpXIVinEDTpLDq6p2EtMH3SYhm7tDPzUr8PU0bjzR-HMixZalgj0GG5SN9cjU7bKbRLYAqiJOv0CsflQhAOp_vRfIergFISeA5U1CrtP2kB6NCaNY_bG7szJG2qQtRWI0ikfhaE2Ppv4sTQAewrk3iXG38lzuSGy-0RVpfhc-Dqd2tQSInWtAPZw1uUsToE5Xb86OAZ5qjHXgr2FbqBzRoJotfkCz58nAUDNPw=w847-h1265-no'
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+![](https://lh3.googleusercontent.com/NVbWvfiRlP-iWK1ZWlIYsM_SBrMJBIMSdvbRbR2hmukj4wJuCPgw7saXxnQ_hStjtd-2O2nwqAU2XfFu86z5CH1GbX9CsbLDglli1kAyhWa6K2oza8z-fuXbk50l-AFZ6tHhpFcIkQfUE7YLO0nfM6PlvrdK4Gqez9OPWjn9VC2I-IpTAKgqRvcastJljLbo48BpE7F5KTVLtqRBTMkSbuXb7YpnPLuTj71ebVKvqyqW6Due9Z8oUIv4Le2zsxadX9od6Lk0kbPEA8w0K7SRYyLaBnBpGyUwSFNAWYPUmnsiybXxe8oQLLMuYd6bJJCZwlUFgYsk-yO7H1Ks0VleoVmfA71rFrP0_MXllc91YVflgmn50yY30Y8V4-qAzS89tL05DNgtFwh2x9JmkpXIVinEDTpLDq6p2EtMH3SYhm7tDPzUr8PU0bjzR-HMixZalgj0GG5SN9cjU7bKbRLYAqiJOv0CsflQhAOp_vRfIergFISeA5U1CrtP2kB6NCaNY_bG7szJG2qQtRWI0ikfhaE2Ppv4sTQAewrk3iXG38lzuSGy-0RVpfhc-Dqd2tQSInWtAPZw1uUsToE5Xb86OAZ5qjHXgr2FbqBzRoJotfkCz58nAUDNPw=w847-h1265-no)
+
+This painting is created a year ago when my artistic mood was feeling wild(hahaha). Couldn't remember how long I've spent on this from preparation to final product. May be a round a week with 2-3 hours every day. I'm satisfied with the end product after all. What Hero is the next?
+
+Theme: Spiderman
+Material: Acrylics on stretched canvas
+Size: 14" x 12"
+
+## Backstage 
+![](https://lh3.googleusercontent.com/SMk_E0sXO3tKVlmsz7t-E95_jaHTkTZLSogTQRfD5aKEK4d8uZcspWcZQeWkxb89TFFKAFOwzXyLBfGsXx_EAZGxaVl_Vjc38GRnuRnagP2_DDV7NL9QkGGssg8AYBF-3g6CQC_lLMD7R4GDDMYTgH82XbLziMCVn2rgQZRvncNfIl4aVOjvAWjGHi5P8j351ZHpkegwCEcuVIZzji9mNqGFfnSTOAZFoRr_HMtH6k8Zyp7cRUpayOfCdJa--5gnv-AunljAZgYtfIjPGtksbi8TEnAFZ9lfDP5DYjs6jeu-MOiAyKY-1tI5KOEJZtpH_VQE6bG1gZ0Ix0j6OfWbLLT_7_iZhlJfsK_aSXfIG0e2yHxwRCzhVFxPdgnkzmFdCfwcyawnkVcOVjLtHm2lZZYEP_KtVJLaWr9qlAFnlAkRRFzDENn3vIorhER0htjXjjXZBW5J3aE9irpYDAfPwfDE_rdf9JYdEdEtk1DhgIZli9LDC8aNh0Zy6rjJ8Ii21R7zQyqoay010WzxcwFFsiTuEWtp6Av70TTqcTcHeym7oOURRvcXzfYSNKDY-y2ts7rVh_8yBXvu1jWwwLSS0HMVUN1Sf-0C19UtDj6vp81aZMcuc18l=w1135-h451-no)
+
+All the preparation for an actual idea of how the real mask will look like. As the whole intention is to replicate a realistic Spiderman mask. Stage photos in films will be a great source. However, if you aren't a huge Spiderman fan, or you are going into the detail like I do, chances are you won't notice the designs those masks in actual films are evolving over the time. 
+
+![](https://lh3.googleusercontent.com/04ySyQBlJ66u-EKYL2NaBMDRpJ8ed2ZPayM_vwomTVwhfRn0-ONRgrcKZpZPxrpF6BjTTl9AGg4UFm6AOKYsrYYae9dxphlxllsVtHRinLjcJ3qS4TT8ldeasM7u0d9b-TAyPTkEY5O-uq5xqLpxyYBEoCsOaiw7tilseOQlveQSvgMhtwwQe2-cq0wz5ls1GJtWwCVSdQ8DP-Ur1JMMiiB844r-3vROAiu6IaG2tOeEhSxe8xXyEFrbs8C_jZjZ142nifjH4F9yuZa2bI3DN4I5c8LcyDmU7yWhNk1WxQpe_QxAyZomKF2JFAOm6tbvKbslLfHVX3dNt5xj0vmyfDHRhsEgqDZDxr7HIXxpt_z0ol1fuTZo12si7h7ILUm3gIcocpp6jB_3Z-4iLZ2gW07v5KYWnRXoPaWbocYx14MIbNiNE1VrshBgD3XFUQoXlKwMBcWa4fmnrMaKHeRFoam-twXWkT4p99tJ0m0BSipFat4H-rfV6dB6tI113wFA5eJwh23XQxxZKZOyiDr27oGD45fCveZSibh-ZJqZOaUAG2Wx6w2ZSwPBrz0I9JFeBjFE6L9poryEPl6vEf3Re0jipEAmVqJuuqK-UU780R_QbW-GJ7aA_Q=w1278-h719-no)
+
+The gray background on the canvas was painted as I was kind of bored of white background.
+
+![](https://lh3.googleusercontent.com/qhGYybACFrm8bGrtv2xMdbtsK8TKln36yGx1HmrYWffH5eSN6ilpZfAwa7lPESsYtjvaLRnh0Upu75t1F6By8RYR4O1z13VW274WcXzJDKDmRfpV-3fzM-SBNO_Y4Dl0tF_M52DTd_scZx1d3NNve6X-GxXD5yJ7QwsanEkcYCNUI_X9BT44Xcz_5ZlkZCUnBip0Ax0QmBqQArESoIE-FbjPNu7WnBcSwVGi-bLxT-hQ1RQWzt6R98RtVjFIh_Ka7N8PzALxC2fmZhfk2kDPpwo30V04PKqa581DzY7x4GCLA-tLtTnbkUPJhrGNbBxf-J4Pik_S3tElB0xGDHLiSMbhRNRwhc-zMJwtlkc866p0s82lzLh3Zm55P3blePARZ87bzH---EpOf7e10CHYRtnNG12EOzLAJAY1Fo2_Aq8EzcTbC5NbK2-e97Cb8JswLQr_1ofTqIYmVlxHPd10ehj0ED9qteNBX0xpUO-_lZwTPD3yIAaWfe7guR8Xuv-ljCfKRCY1dYeL7MgRHPbwlfo8Q2-QXWO_KnPGlzAH_OirDshtUBbof5gG4dOH7-3bI-1YwiOw67j46Y3cd7JnctMFpqyc_ABeaKFd7S5QWehTPyFvYdrz=w838-h1265-no)
+
+Taping technique was first used for a precise outline of the mask, a very effective trick.
+
+![](https://lh3.googleusercontent.com/aXsOcoJLGTvGpreQsh7zeZ6DNpDX92g6rlPET0Ef-CHU0aCeYu_mI1VNG0uqveP4IW2RnHgZE-sJ_Fuy29ni_MgFol0d8klz1bbrgY6PF8gOXeRwr71-dw-yPZG9t1OOgpoTfCp9vG36NRnAI9pII9DfbE0rGfP6OHVLwFHb8SBYfjdSRWzBeMIeN4XoFzKACnCfLG8F55i_EBhpmt7B28hd46ZheBYjRZrApLFbkRKTNrt-m1rQ2h_U1tjCXH1XYZsHjQvQMr_iYzZPFZEVx1SK_W8PiQ5o0EQ_OQfuWnI3AntOxbXQM03ubf4lQghIbBBTd2tW5LNvQhTHl-apgMavLNdehJwflodwjtXmbtuU3HDwfT0ZezAMl5FItMQPnXkrr5zWP3lzSfpW4fMrG5MkPr0FgNYuH71wtZ-HrG1VRm5JyD4h5ijpwYe9UZvbvALULeiIpRdbD3xMBFI4blYAxg0MYOUXCmwIUiOZ1J6d5xbTnqQT9LkkV5R_2AWlzEgVyYQCWPMrh9P2c5Zah7T44pRegnHMyb_bN2b0ZwG52sAl_ioPoVfGTioMHPBzhaYiRzOAW3QOfbTuHXGxee6JuDC8W34ZGzyt_kQbzvqeCP1c5Tob=w712-h1265-no)
+
+With tape on I can outline the mask with less tensed nerve. And I got to say the moment you peel that tape off, that smoothness gave me goosebumps!
+
+- - -
+
+This page is synchronized from the post: ['Hero on canvas #1: Spiderman'](https://steemit.com/@fr3eze/hero-on-canvas-1-spiderman)
