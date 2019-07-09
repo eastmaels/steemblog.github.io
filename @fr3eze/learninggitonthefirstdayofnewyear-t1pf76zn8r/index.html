@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>Learning Git on the first day of new year - fr3eze</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@fr3eze/css/style.css">
+
+<link rel="stylesheet" href="/@fr3eze/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@fr3eze/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="fr3eze" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@fr3eze/">Home</a>
+                
+                <a class="navbar-item" href="/@fr3eze/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@fr3eze/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@fr3eze/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@fr3eze/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1</span>
+        <span>Git client - GitKraken</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">2</span>
+        <span>Remote Git repository services</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">3</span>
+        <span>Git learning resources</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@fr3eze/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmRmjBBsk1BAzT5daJXTbAajZsx7cbs1k57W5FDvbZJZJz/chrome_2019-01-01_22-35-54.png" alt="Learning Git on the first day of new year">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-01-02T15:57:15.000Z">2019-01-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@fr3eze/categories/coding/">coding</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 497 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Learning Git on the first day of new year
+            
+        </h1>
+        <div class="content">
+            <p>I had a little experience dealing with Version Controlling tool in my day job and that is ClearCase by the IBM, but <strong>Git</strong> is something that I love to explore more since it is widely accepted in the world of developers. My little project with 3 team members collaboration allows(forces) me to pick this knowledge up or it would be a nightmare for me every time I need to pull or push stuff in and out the remote repository.</p>
+<p>I won&#x2019;t try to do all the explanation here but there are a few really useful resources that helped me get started with the Git and I will list them down below.</p>
+<hr>
+
+<h2>Git client - GitKraken</h2>
+
+<p><img src="https://cdn.steemitimages.com/DQmRmjBBsk1BAzT5daJXTbAajZsx7cbs1k57W5FDvbZJZJz/chrome_2019-01-01_22-35-54.png" alt="chrome_2019-01-01_22-35-54.png"><br></p>
+<p>In fact, all the git client are usable no matter what remote repository service you are using from the GitHub, GitLab, Bitbucket and so on, as long as they are using Git as the backend. <a href="https://www.gitkraken.com/" target="_blank" rel="noopener">GitKraken</a> is one of the most well-known git clients that is reputable in the community. Cross-platform, nice UI, solid features. Personal version is free. Head over to the nicely done <a href="https://support.gitkraken.com/" target="_blank" rel="noopener">tutorial</a> page if the interface is a little overwhelming.</p>
+<h2>Remote Git repository services</h2>
+
+<p><img src="https://cdn.steemitimages.com/DQmZHn5RSoE5G7nkw9RHmeKQUPWfZrNVBNkwakXQNwUpYyE/chrome_2019-01-02_00-08-03.png" alt="chrome_2019-01-02_00-08-03.png"><br></p>
+<p>Overall, <strong>GitHub</strong> is the winner generally for its reputation and adoption(our dear Utopian recognize open source work on Github only). Easy to use, lots of support from all over the places for the super huge userbase, and the free <a href="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> which allows the user to host any static page <strong>for free</strong> is one of the coolest features.</p>
+<p>However, to make a private repository on Github is not a free service. I go with the <a href="https://bitbucket.org/dashboard/overview" target="_blank" rel="noopener">Bitbucket</a>. Although it is not as straightforward as Github, it has the better UI and the designed workflow of Bitbucket will naturally push you to learn more about how Git works(and this is really inevitable) which leads us to the next section.</p>
+<h2>Git learning resources</h2>
+
+<p><img src="https://cdn.steemitimages.com/DQmVLfZDmX2yMTFmVysBMGwUBmpKzEBg9BSffGeGUQwYEZ9/chrome_2019-01-01_23-54-31.png" alt="chrome_2019-01-01_23-54-31.png"><br></p>
+<p>As a total beginner, <a href="https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud" target="_blank" rel="noopener">Learn Git with Bitbucket Cloud</a> is a really great start to get the concept of version control using Git. Although it is using Bitbucket as the remote repository the tutorial content can actually apply to any other Git repository services. Together with all the beginner-friendly language and illustration, one should be able to pick up Git quickly.</p>
+<p>If you wish to cut out all the BS and get straight to the point while a more technical guide is preferable, this <a href="https://blog.osteele.com/2008/05/my-git-workflow/" target="_blank" rel="noopener">Oliver Steele Blog</a> is a perfect choice.</p>
+<p>Yeah, basically there are cheat sheets for everything and they often come in handy. Pick up some quick reference for the commands from great sheets below:</p>
+<ul><br><li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf" target="_blank" rel="noopener">Git Cheat Sheet - GitHub Professional Services</a>- by GitHub</li><br><li><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" target="_blank" rel="noopener">Git cheat sheet</a> - by Atlassian Bitbucket</li><br></ul>
+
+<hr>
+
+<p>Happy coding! <br></p><center><hr><em>Posted from my blog with <a href="https://wordpress.org/plugins/steempress/" target="_blank" rel="noopener">SteemPress</a> : <a href="https://fr3eze.vornix.blog/learning-git-on-the-first-day-of-new-year/" target="_blank" rel="noopener">https://fr3eze.vornix.blog/learning-git-on-the-first-day-of-new-year/</a> </em><hr></center> <p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@fr3eze/learninggitonthefirstdayofnewyear-t1pf76zn8r" target="_blank" rel="noopener">&#x2018;Learning Git on the first day of new year&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@fr3eze/tags/coding/">coding</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/computer/">computer</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/developement/">developement</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/git/">git</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/technology/">technology</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@fr3eze/consofsurfacepro6-bgef23jxcq/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Cons of Surface Pro 6</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@fr3eze/vpnsaledealsarefake-88r2wnhwxw/">
+                <span class="level-item">VPN sale deals are FAKE</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@fr3eze/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="fr3eze" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 fr3eze&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@fr3eze/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@fr3eze/content.json"};</script>
+
+
+
+    
+<script src="/@fr3eze/js/bundle.js" defer></script></body>
+</html>
+

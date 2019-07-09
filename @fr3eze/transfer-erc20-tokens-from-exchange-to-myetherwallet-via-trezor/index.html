@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>Transfer ERC20 tokens from exchange to MyEtherWallet via Trezor - fr3eze</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@fr3eze/css/style.css">
+
+<link rel="stylesheet" href="/@fr3eze/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@fr3eze/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="fr3eze" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@fr3eze/">Home</a>
+                
+                <a class="navbar-item" href="/@fr3eze/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@fr3eze/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@fr3eze/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@fr3eze/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#What-Will-I-Learn">
+        <span class="has-mr-6">1</span>
+        <span>What Will I Learn?</span>
+        </a></li><li>
+        <a class="is-flex" href="#Requirements">
+        <span class="has-mr-6">2</span>
+        <span>Requirements</span>
+        </a></li><li>
+        <a class="is-flex" href="#Difficulty">
+        <span class="has-mr-6">3</span>
+        <span>Difficulty</span>
+        </a></li><li>
+        <a class="is-flex" href="#Tutorial-Contents">
+        <span class="has-mr-6">4</span>
+        <span>Tutorial Contents</span>
+        </a></li><li>
+        <a class="is-flex" href="#Summary">
+        <span class="has-mr-6">5</span>
+        <span>Summary</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@fr3eze/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://www.myetherwallet.com/images/myetherwallet-logo.png" alt="Transfer ERC20 tokens from exchange to MyEtherWallet via Trezor">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-23T09:08:30.000Z">2018-01-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@fr3eze/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 719 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Transfer ERC20 tokens from exchange to MyEtherWallet via Trezor
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://www.myetherwallet.com/images/myetherwallet-logo.png" alt="aa"><br><sub>Image from <a href="https://www.myetherwallet.com/" target="_blank" rel="noopener">myetherwallet</a></sub></center>
+
+<h4 id="What-Will-I-Learn"><a href="#What-Will-I-Learn" class="headerlink" title="What Will I Learn?"></a>What Will I Learn?</h4><ul>
+<li>How to add custom token in MyEtherWallet(MEW).</li>
+<li>How to transfer ERC20 tokens from exchange to MEW via Trezor. </li>
+</ul>
+<p>Recently I plan to hold Cindicator(CND) for long-term and an exchange is never a good place to hold your coins. I have a Trezor hardware wallet with a MEW tied to it, by using this combination I can secure my coin safety at maximum level. Hence, we will use CND token (one of the ERC20 tokens) to demonstrate the depositing process.</p>
+<h4 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h4><ul>
+<li>You have a MEW created.</li>
+<li>You have some ERC20 tokens to play with.</li>
+<li>You have a Trezor.</li>
+</ul>
+<p>OS: Windows 7<br>Browser: Google Chrome</p>
+<h4 id="Difficulty"><a href="#Difficulty" class="headerlink" title="Difficulty"></a>Difficulty</h4><p>Basic</p>
+<h4 id="Tutorial-Contents"><a href="#Tutorial-Contents" class="headerlink" title="Tutorial Contents"></a>Tutorial Contents</h4><p><img src="https://steemitimages.com/DQmUcXpssPVhZKr27Zyyymm2PYi3mA9ZRnt4nZU8cwragHt/1.png" alt="1.png"></p>
+<p>1) Connect Trezor to your PC. Open <a href="https://wallet.trezor.io/" target="_blank" rel="noopener">https://wallet.trezor.io/</a> and unlock the wallet. Select <code>Ethereum</code> from the top left drop-down menu.</p>
+<hr>
+<p><img src="https://steemitimages.com/DQmUujswzm55W4uSQUcXZ94Yo9Qw3WrSSd1SYtbEwtqqSzr/2.png" alt="2.png"></p>
+<p>2) Select <code>TREZOR</code> in the access list and select <code>Connect to TREZOR</code>. You can access the wallet according to your personal setup method, we will stick to Trezor in this method. </p>
+<hr>
+<p><img src="https://steemitimages.com/DQmYneTWDMwJmweBYG3exvS6p2G1c8x9bGXxsjPznH5xkvD/3.png" alt="3.png"></p>
+<p>3) Select the correct HD derivation path and you will see several addresses being listed in the bottom part. Simply choose any address you would send custom tokens to. In this case, I stick to my original ETH address. Press on <code>Unlock your wallet</code>.</p>
+<hr>
+<p><img src="https://steemitimages.com/DQmYdSvEfxBh5n9zAFfZtkEB9ExZiX4rx6VBQ1eNzw5EcWk/4.png" alt="4.png"></p>
+<p>4) Inside the wallet you will able to view your ETH balance and public address. A ERC20 token list is located at the right bottom part <code>Token Balances</code>. </p>
+<hr>
+<p><img src="https://steemitimages.com/DQma3bFrWJdLMwct8DZC3T5NqDoDvit7BRqXbTAyGSMfZJS/5.png" alt="5.png"></p>
+<p>5) First we have to add CND token to the list as it doesn&#x2019;t host it originally. Click on &#x2018;Add Custom Token&#x2019;.</p>
+<hr>
+<p><img src="https://steemitimages.com/DQmPdQJTd2x9N2rMArge3ShVTLJjZYqLRyVq8HX3oSyPhzc/6.png" alt="6.png"></p>
+<p>6) Fill in all the 3 fields. Put <code>0xd4c435F5B09F855C3317c8524Cb1F586E42795fa</code> in <code>Token Contract Address</code>. Refer to <a href="https://etherscan.io/address/0xd4c435f5b09f855c3317c8524cb1f586e42795fa#tokentxns" target="_blank" rel="noopener">etherscan.io</a> to verify the official contract address if in doubt, you can use this site to determine any other ERC20 token&#x2019;s contract address as well. Put <code>CND</code> into <code>Token Symbol</code> and <code>18</code> into <code>Decimals</code>. Save it.</p>
+<hr>
+<p><img src="https://steemitimages.com/DQmSbigmnLHRxuS9xd1NAKiLCp9AAReHpEaLiviAXpxVmx3/7.png" alt="7.png"></p>
+<p>7) Click on the <code>Show All Tokens</code> you will see the newly added CND tokens with zero balance. Click on the minus button beside it to remove if you want to, but the fund attaches to this address will still remain in the network. You can add it back anytime by redoing previous step.</p>
+<hr>
+<p><img src="https://steemitimages.com/DQmQH5N7YGFt1KsAHFqpXgN77XjKG56PSXdytDWNr3nxhqW/8.png" alt="8.png"></p>
+<p>8) Go to the exchange where you want to withdraw CND from. In my case it is Binance. <strong>Put your ETH address in the <code>CND Withdrawal Address</code></strong> as all the ERC20 tokens are using ETH address to receive transaction. Transfer any amount and click <code>Submit</code>. </p>
+<p><em>Tips: It is always a good habit to send the minimum amount to newly generated address just to make sure things are fine. For CND, the minimum sending amount is 400.</em></p>
+<hr>
+<p>9) Wait for a few minutes, the transfer speed depends on the network traffic as well. Check the status of your transaction using <a href="https://etherscan.io" target="_blank" rel="noopener">https://etherscan.io</a> by providing <strong>Transaction ID/Txid</strong>. As the transaction is confirmed, you should now see them appear in the custom token list in your MEW.</p>
+<hr>
+<h4 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h4><ul>
+<li><strong>Do not store coins on exchange where you don&#x2019;t own the private key.</strong></li>
+<li><strong>Use hardware wallet like Trezor or Ledger to host your MEW seed for maximum security.</strong></li>
+<li><strong>All ERC20 tokens using the ETH address as receiving address.</strong></li>
+<li><strong>Send minimum amount to try if the new destination wallet is working without problem.</strong> </li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@fr3eze/transfer-erc20-tokens-from-exchange-to-myetherwallet-via-trezor" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@fr3eze/transfer-erc20-tokens-from-exchange-to-myetherwallet-via-trezor" target="_blank" rel="noopener">&#x2018;Transfer ERC20 tokens from exchange to MyEtherWallet via Trezor&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@fr3eze/tags/cryptocurrency/">cryptocurrency</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/teammalaysia/">teammalaysia</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/tutorial/">tutorial</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/utopian-io/">utopian-io</a>, <a class="has-link-grey -link" href="/@fr3eze/tags/wallet/">wallet</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@fr3eze/which-way-is-more-profitable-in-getting-eos-trading-or-ico-eos/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Which way is more profitable in getting EOS, trading or ICO? 众筹和交易哪个可以得到更多 EOS</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@fr3eze/cindicator-another-undervalued-and-strong-project-like-old-day-s-steem/">
+                <span class="level-item">Cindicator, another undervalued and strong project like old day&#39;s Steem 发现黑马</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@fr3eze/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="fr3eze" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 fr3eze&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@fr3eze/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@fr3eze/content.json"};</script>
+
+
+
+    
+<script src="/@fr3eze/js/bundle.js" defer></script></body>
+</html>
+
