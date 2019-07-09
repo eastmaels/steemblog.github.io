@@ -12,9 +12,9 @@ categories:
 tags:
 - qurator
 - photocircle
+- photofeed
 - partiko
 - palnet
-- cityscape
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/040f3224109c967136d1357907a1d5bdffb34894.jpg'
 sidebar:
     right:
@@ -33,7 +33,7 @@ Have you heard of Concubine Lane? A unique name right? It's a lane in the old to
 
 Another 2 lanes nearby are called the Wife Lane and the First Concubine Lane. It's said that after a fire in Ipoh Old Town in 1892, the mining tycoon Yao Tet Shin gave away the rebuilt houses on these lanes to his 3 wives. That's how the 3 lanes got their names from the locals. Another legend has it that concubines of some wealthy men lived in these lanes. 
 
-I have no idea where the concubines are nowadays,  and this lane has been transformed into a lively place full of shops selling crafts, snacks and drinks. I took this picture with my phone when being caught in a sudden tropical shower there. 
+I have no idea where the concubines or their offsprings are nowadays, and this lane has been transformed into a lively place full of shops and restaurants. You can find all kinds of local crafts and food specialties on this street. I took this picture with my phone when being caught in a sudden tropical shower. 
 
 ## 
 ![IMG_2786.JPG](https://cdn.steemitimages.com/DQmcpqBY6tbGBBYtArEBYQSKmjhzffrkWSvDomhFPbKJSR2/IMG_2786.JPG)
