@@ -43,7 +43,7 @@ Image Source: [Wikipedia - Autonomous Car](https://en.wikipedia.org/wiki/Autonom
 
 ## 基本功能
 
-对于注册了服务的用户，每两小时自动领取 (PAL, SCT, ZZAN, etc.) 等 所有SCOT 代币
+对于注册了服务的用户，每小时自动领取 (PAL, SCT, ZZAN, etc.) 等 所有SCOT 代币
 
 ## 如何注册服务
 
@@ -77,7 +77,7 @@ Image Source: [Wikipedia - Autonomous Car](https://en.wikipedia.org/wiki/Autonom
 
 ### Current Features
 
-1. Automatically claim the SCOT tokens (PAL, SCT, ZZAN, etc.) for the users of this service every 2 hours
+1. Automatically claim the SCOT tokens (PAL, SCT, ZZAN, etc.) for the users of this service every hour
 
 
 ### How to Use
