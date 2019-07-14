@@ -15,7 +15,7 @@ tags:
 - tasteem
 - palnet
 - zzan
-thumbnail: 'https://artisteem.io/media/cb220eeb-0510-4741-a11f-a3972a395d2d'
+thumbnail: 'https://artisteem.io/media/768e7bf5-b6ed-4691-982d-64a44c34c29b'
 sidebar:
     right:
         sticky: true
@@ -26,7 +26,7 @@ widgets:
 ---
 
 
-![ntopaz-image-0](https://artisteem.io/media/cb220eeb-0510-4741-a11f-a3972a395d2d)![ntopaz-image-1](https://artisteem.io/media/09479946-f0ab-43a3-8ab9-59c34930fe7e)![ntopaz-image-2](https://artisteem.io/media/7e07fb36-6035-4550-a24e-5edf3baea93e)![ntopaz-image-3](https://artisteem.io/media/03e58af3-5f8b-4b55-9e9e-06219f8bce32)It's our family effort.
+![ntopaz-image-0](https://artisteem.io/media/768e7bf5-b6ed-4691-982d-64a44c34c29b)![ntopaz-image-1](https://artisteem.io/media/ecd44276-c70f-4034-a03e-3837fd657c0f)![ntopaz-image-2](https://artisteem.io/media/56c15c60-c15e-454d-a3b1-5bdd4572efdb)![ntopaz-image-3](https://artisteem.io/media/0ca58881-bbe0-455d-b323-a7c7e64a8e66)It's our family effort.
 
 Vegetables, fruits, meat slices, nuts, and salads are perfectly combined. It tastes delicious and healthy, and looks appetizing.
 
