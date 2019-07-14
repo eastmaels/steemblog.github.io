@@ -1,6 +1,6 @@
 
 ---
-title: '【新手村会客室#35】剛在Steem渡過兩週年的 @naugnorab'
+title: '【新手村会客室#35】剛在Steem渡過兩週年的 @nuagnorab'
 permlink: 35steemnaugnorab-sezff7i468
 catalog: true
 toc_nav_num: true
@@ -26,11 +26,11 @@ widgets:
 ---
 
 
-我一直以來也想多找一些香港區的Steem博主，今個星期機綠之下可以邀請一位新人青頭蛙 @carcarcar55699 ，另一位是剛過了兩週年的  @naugnorab。他的名字比較難記，更加難讀。但大家也會看到他很多不同的分享，特別最近一些 Steem Monsster 的分享。最近邀請  @naugnorab 進入新手村，大家十分熱烈地歡迎著他。能待在 Steem 兩年以上的香港區人士實在不多，今天的新手村會客室，請來  @naugnorab 與大家分享分享。
+我一直以來也想多找一些香港區的Steem博主，今個星期機綠之下可以邀請一位新人青頭蛙 @carcarcar55699 ，另一位是剛過了兩週年的  @nuagnorab。他的名字比較難記，更加難讀。但大家也會看到他很多不同的分享，特別最近一些 Steem Monsster 的分享。最近邀請  @nuagnorab 進入新手村，大家十分熱烈地歡迎著他。能待在 Steem 兩年以上的香港區人士實在不多，今天的新手村會客室，請來  @nuagnorab 與大家分享分享。
 
 &nbsp;
 
-<strong>問：@naugnorab 您居住在哪裡 ?</strong>
+<strong>問：@nuagnorab 您居住在哪裡 ?</strong>
 
 這個應該許多人都知道的，跟@honoru一樣啊 ，香港
 
@@ -98,7 +98,7 @@ widgets:
 &nbsp;
 
 <center><img class="aligncenter size-full wp-image-2993" src="http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/07/colorful-spider-web.jpg" alt="" width="300" height="300" /></center><br/>
-<p><center>(與 @naugnorab 傾談後，用了他的頭象圖作為代表，大家可以猜一猜為甚麼選這圖)</center></p>
+<p><center>(與 @nuagnorab 傾談後，用了他的頭象圖作為代表，大家可以猜一猜為甚麼選這圖)</center></p>
 &nbsp;
 
 &nbsp;
@@ -145,4 +145,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: ['【新手村会客室#35】剛在Steem渡過兩週年的 @naugnorab'](https://steemit.com/@team-cn/35steemnaugnorab-sezff7i468)
+This page is synchronized from the post: ['【新手村会客室#35】剛在Steem渡過兩週年的 @nuagnorab'](https://steemit.com/@team-cn/35steemnaugnorab-sezff7i468)
