@@ -230,6 +230,189 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/steemsql/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmYLCqyew8mnT9ZUWRtvuVfmQbFC2uTnqP7V1osNaYsANc/image.png" alt="第一次使用STEEMSQL查询谷哥点名数据">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-11T12:05:33.000Z">2017-08-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    15 minutes read (About 2214 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/steemsql/">第一次使用STEEMSQL查询谷哥点名数据</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmYLCqyew8mnT9ZUWRtvuVfmQbFC2uTnqP7V1osNaYsANc/image.png" alt=""></p>
+<p>&#x9996;&#x5148;&#x611F;&#x8C22; @arcange &#x63D0;&#x4F9B; SteemSQL&#x670D;&#x52A1;&#xFF0C;SteemSQL&#x662F;&#x4E00;&#x4E2A;&#x5305;&#x542B;STEEM&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x7684;&#x516C;&#x5171;MS-SQL&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>First thanks @arcange for providing SteemSQL services, SteemSQL is a public MS-SQL database with all the blockchain data in it.</p>
+<hr>
+<p>&#x5176;&#x5B9E;SteemSQL&#x4E0A;&#x7EBF;&#x4E4B;&#x521D;&#x6211;&#x9A6C;&#x4E0A;&#x8BD5;&#x7528;&#x8FC7;&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;&#x5F53;&#x65F6;&#x7B2C;&#x4E00;&#x7248;&#x53EA;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x533A;&#x5757;&#x94FE;&#x7684;transaction&#x6570;&#x636E;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x6709;&#x8BF8;&#x591A;&#x4E0D;&#x4FBF;&#xFF0C;&#x6240;&#x4EE5;&#x540E;&#x6765;SteemData&#x4E00;&#x4E0A;&#x7EBF;&#xFF0C;&#x6211;&#x5C31;&#x8F6C;&#x79FB;&#x6218;&#x573A;&#x4E86;&#xFF0C;&#x5C3D;&#x7BA1;&#x6211;&#x4ECE;&#x6765;&#x672A;&#x63A5;&#x89E6;&#x8FC7;MongoDB&#x3002;&#x4E4B;&#x540E;&#xFF0C;SteemData&#x4E00;&#x76F4;&#x80FD;&#x6EE1;&#x8DB3;&#x6211;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x61D2;&#x5F97;&#x8F6C;&#x6218;&#x56DE;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4F9D;&#x7136;&#x9ED8;&#x9ED8;&#x5173;&#x6CE8;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x770B;&#x7740;&#x5B83;&#x7ECF;&#x8FC7;&#x5341;&#x591A;&#x6B21;&#x5347;&#x7EA7;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x597D;&#xFF0C;&#x4E5F;&#x770B;&#x7740;&#x5F88;&#x591A;STEEMIT&#x7684;&#x670B;&#x53CB;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>&#x4ECA;&#x5929; @jubi &#x548C;&#x6211;&#x8BF4;&#x4F7F;&#x7528;SteemSQL &#x67E5;&#x8BE2;&#x4E2D;&#x6587;&#x6807;&#x9898;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x56F0;&#x96BE;&#xFF0C;&#x7528;<code>WHERE title like &apos;%&#x7B2C;&#x4E00;&#x6B21;%&apos;</code>&#x4F5C;&#x4E3A;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x67E5;&#x8BE2;&#x4E0D;&#x5230;&#x76F8;&#x5173;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x82F1;&#x6587;&#x5219;&#x53EF;&#x4EE5;&#x67E5;&#x8BE2;&#xFF0C;&#x6211;&#x7B54;&#x5E94;&#x5E2E;&#x4ED6;&#x770B;&#x770B;&#x3002;&#x8BDD;&#x8BF4;&#x6700;&#x8FD1;&#x4ED6;&#x5728;&#x4E2D;&#x6587;&#x533A;&#x4E3E;&#x529E;&#x4E24;&#x671F;<strong><em>&#x8C37;&#x54E5;&#x70B9;&#x540D;</em></strong>&#x6D3B;&#x52A8;&#xFF0C;&#x4EBA;&#x6C14;&#x706B;&#x7206;&#xFF0C;&#x800C;<strong><em>&#x7B2C;&#x4E00;&#x6B21;</em></strong>&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x671F;&#x6D3B;&#x52A8;&#x7684;&#x4E3B;&#x9898;&#x3002;&#x4F30;&#x8BA1;&#x592A;&#x706B;&#x7206;&#xFF0C;&#x53C2;&#x4E0E;&#x4EBA;&#x6570;&#x4F17;&#x591A;&#xFF0C;&#x5355;&#x7EAF;&#x5730;&#x9760;&#x4EBA;&#x5DE5;&#x770B;&#x5E16;&#x548C;&#x6574;&#x7406;&#x6709;&#x4E9B;&#x8F9B;&#x82E6;&#xFF0C;&#x4E8E;&#x662F;&#x4ED6;&#x60F3;&#x7740;&#x7528;&#x7A0B;&#x5E8F;&#x628A;&#x6574;&#x7406;&#x5E16;&#x5B50;&#x81EA;&#x52A8;&#x5316;&#x5427;&#x3002;&#x5927;&#x5BB6;&#x90FD;&#x5728;&#x6210;&#x957F;&#xFF0C;&#x8FD9;&#x975E;&#x5E38;&#x597D;&#x3002;&#x8BF4;&#x5230;SteemSQL&#x6700;&#x8FD1;&#xFF0C;&#x4E2D;&#x6587;&#x533A;&#x7684;&#x5F88;&#x591A;&#x670B;&#x53CB;&#x90FD;&#x5728;&#x7528;&#xFF0C;&#x6BD4;&#x5982; @ace108, &#x4EE5;&#x53CA; @joythewanderer, &#x4ED6;&#x4EEC;&#x8FD8;&#x51FA;&#x8FC7;&#x4E00;&#x4E9B;&#x5411;&#x5BFC;&#x8D34;&#xFF0C;&#x5927;&#x5BB6;&#x611F;&#x5174;&#x8DA3;&#x53EF;&#x4EE5;&#x53BB;&#x7FFB;&#x4E00;&#x7FFB;&#x3002;</p>
+<p>&#x53C8;&#x626F;&#x8FDC;&#x4E86;&#xFF0C;&#x8A00;&#x5F52;&#x6B63;&#x4F20;</p>
+<h1 id="&#x5B89;&#x88C5;pymssql"><a href="#&#x5B89;&#x88C5;pymssql" class="headerlink" title="&#x5B89;&#x88C5;pymssql"></a>&#x5B89;&#x88C5;pymssql</h1><p>&#x6211;&#x61D2;&#x5F97;&#x53BB;&#x4E0B;&#x684C;&#x9762;&#x8F6F;&#x4EF6;&#xFF0C;&#x8FD8;&#x662F;&#x76F4;&#x63A5;&#x7528;Python&#x5427;<br>Python&#x4E0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;pyodbc &#x4EE5;&#x53CA; pymssql&#x5565;&#x7684;&#xFF0C;&#x6211;&#x9009;&#x62E9;&#x7684;&#x662F;pymssql</p>
+<p>&#x76F4;&#x63A5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x76F4;&#x63A5;&#x5B89;&#x88C5;&#x6307;&#x4EE4;<br><code>pip3 install pymssql</code></p>
+<p>&#x560E;&#xFF0C;&#x62A5;&#x4E00;&#x5927;&#x5806;&#x9519;&#x8BEF;&#xFF0C; &#x5176;&#x5B83;&#x5565;&#x7684;&#x90FD;&#x4E0D;&#x8BA4;&#x8BC6;&#xFF0C;&#x6211;&#x5173;&#x6CE8;&#x7684;&#x5927;&#x6982;&#x4E09;&#x53E5;</p>
+<blockquote>
+<p>Running setup.py bdist_wheel for pymssql &#x2026; error<br>  setup.py: Not using bundled FreeTDS<br>_mssql.c:266:22: fatal error: sqlfront.h: No such file or directory</p>
+</blockquote>
+<p>&#x53BB;&#x5B98;&#x7F51;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;<br><a href="http://pymssql.org/en/stable/building_and_developing.html" target="_blank" rel="noopener">http://pymssql.org/en/stable/building_and_developing.html</a><br>&#x6709;&#x8FD9;&#x6837;&#x4E00;&#x53E5;</p>
+<blockquote>
+<p>FreeTDS &gt;= 0.91 including development files. Please research your OS usual software distribution channels, e.g, freetds-dev or freetds-devel packages.</p>
+</blockquote>
+<p>&#x7F3A;&#x5565;&#x8865;&#x5565;<br><code>sudo apt-get install freetds-dev</code><br><code>pip3 install pymssql</code></p>
+<p>&#x6210;&#x529F;&#xFF01;</p>
+<h1 id="&#x6267;&#x884C;"><a href="#&#x6267;&#x884C;" class="headerlink" title="&#x6267;&#x884C;"></a>&#x6267;&#x884C;</h1><p>SteemSQL &#x5B98;&#x7F51;&#x5730;&#x5740;&#xFF1A; <a href="http://steemsql.com/" target="_blank" rel="noopener">http://steemsql.com/</a><br>&#x4F46;&#x662F;&#x5F88;&#x9057;&#x61BE;&#x4E0A;&#x8FB9;&#x7684;&#x94FE;&#x63A5;&#x4FE1;&#x606F;&#x4E0D;&#x5168;&#xFF0C;&#x6CA1;&#x6709;Database&#x7684;&#x4FE1;&#x606F;<br>&#x6216;&#x8BB8;&#x8FDE;&#x4E0A;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x67E5;&#x51FA;&#x6765;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x5728;SteemSQL&#x53D1;&#x5E03;&#x7684;&#x5E16;&#x5B50;&#x4E2D;&#x627E;&#x5230;&#x4E86;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;</p>
+<blockquote>
+<p>Server: sql.steemsql.com<br>User: steemit<br>Password: steemit<br>Database name: DBSteem</p>
+</blockquote>
+<p><code>import pymssql</code><br><code>conn = pymssql.connect(host =&quot;sql.steemsql.com&quot;,database =&quot;DBSteem&quot;,user=&quot;steemit&quot;,password=&quot;steemit&quot;)</code><br>&#x5728;Python&#x91CC;&#x7528;&#x8FD9;&#x4E2A;&#x76F4;&#x63A5;&#x8FDE;&#x4E0A;&#x4E86;&#xFF0C;&#x5F88;&#x597D;&#x3002;</p>
+<p>&#x8BD5;&#x7740;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;<br><code>cur = conn.cursor()</code><br><code>cur.execute(&quot;SELECT title FROM Comments WHERE author= &apos;oflyhigh&apos; and title like &apos;%&#x533A;&#x5757;&#x94FE;%&apos;&quot;)</code></p>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x6628;&#x5929;&#x521A;&#x5199;&#x4E86;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;<br><a href="https://steemit.com/cn/@oflyhigh/php-steem-using-php-to-query-the-steem-blockchain" target="_blank" rel="noopener">&#x4F7F;&#x7528;PHP&#x67E5;&#x8BE2;STEEM&#x533A;&#x5757;&#x94FE; / Using PHP to query the STEEM blockchain</a></p>
+<p>&#x4E3A;&#x5565;&#x5C31;&#x67E5;&#x4E0D;&#x5230;&#x5462;&#xFF1F;</p>
+<p>&#x7136;&#x540E;&#x6362;&#x4E2A;&#x5173;&#x952E;&#x8BCD;<br><code>cur.execute(&quot;SELECT title FROM Comments WHERE author= &apos;oflyhigh&apos; and title like &apos;%PHP%&apos;&quot;)</code></p>
+<blockquote>
+<p>(&#x2018;How  to install Apache&#x3001;MYSQL&#x3001;PHP5 and run a Wordpress website on BananaPi&#x2019;,), (&#x2018;&#x62D6;&#x4E86;&#x5F88;&#x4E45;&#x7684;&#x4E8B;&#x60C5;&#x7EC8;&#x4E8E;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x5C06;PHP 5.4 &#x5347;&#x7EA7;&#x5230; PHP 5.6&#x2019;,), (&#x2018;&#x4F7F;&#x7528;PHP&#x67E5;&#x8BE2;STEEM&#x533A;&#x5757;&#x94FE; / Using PHP to query the STEEM blockchain&#x2019;,)</p>
+</blockquote>
+<p>&#x67E5;&#x51FA;&#x6765;&#x7684;&#x6587;&#x7AE0;&#x5305;&#x542B;&#x6211;&#x7684;&#x6700;&#x65B0;&#x6587;&#x7AE0;</p>
+<h1 id="&#x6392;&#x67E5;"><a href="#&#x6392;&#x67E5;" class="headerlink" title="&#x6392;&#x67E5;"></a>&#x6392;&#x67E5;</h1><p>&#x90A3;&#x4E48;&#x662F;&#x54EA;&#x91CC;&#x6709;&#x95EE;&#x9898;&#x5BFC;&#x81F4;&#x7684;&#x5462;&#xFF1F;<br>&#x6211;&#x7B2C;&#x4E00;&#x4E2A;&#x76F4;&#x89C9;&#x662F;&#x7F16;&#x7801;&#x95EE;&#x9898;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x628A;&#x94FE;&#x63A5;&#x6539;&#x6210;<br><code>conn = pymssql.connect(host =&quot;sql.steemsql.com&quot;,database =&quot;DBSteem&quot;,user=&quot;steemit&quot;,password=&quot;steemit&quot;, charset=&quot;utf8&quot;)</code><br>&#x7ED3;&#x679C;&#x4F9D;&#x65E7;</p>
+<p>&#x53C8;&#x53BB;&#x628A;FreeTDS&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x4E0A;&#x5B57;&#x7B26;&#x96C6;&#x8BBE;&#x7F6E;<br><code>sudo find / -name freetds.conf</code><br><code>sudo vi /etc/freetds/freetds.conf</code><br><code>sudo vi /usr/share/freetds/freetds.conf</code><br>&#x901A;&#x901A;&#x52A0;&#x4E0A;&#xFF1A;<br><code>client charset = UTF-8</code><br>&#x7ED3;&#x679C;&#x4F9D;&#x65E7;</p>
+<p>&#x5C3D;&#x7BA1;&#x6211;&#x89C9;&#x5F97;&#x6CA1;&#x5FC5;&#x8981;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x53C8;&#x5728;Python&#x6587;&#x4EF6;&#x4E2D;&#x52A0;&#x4E0A;<br><code>#-*- coding: utf-8 -*-</code><br>&#x7ED3;&#x679C;&#x4F9D;&#x65E7;</p>
+<p>&#x4ECE;&#x67E5;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x80FD;&#x6B63;&#x5E38;&#x663E;&#x793A;&#x6765;&#x770B;&#xFF0C;&#x6570;&#x636E;&#x5E94;&#x8BE5;&#x662F;&#x6309;UTF-8&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x90A3;&#x95EE;&#x9898;&#x51FA;&#x5728;&#x54EA;&#x91CC;&#x5462;&#xFF1F;&#x4E09;&#x628A;&#x677F;&#x65A7;&#x7528;&#x5B8C;&#x4E86;&#xFF0C;&#x6211;&#x7684;&#x627E;&#x65B0;&#x62DB;&#x6570;&#x4E86;&#x3002;</p>
+<p>&#x7814;&#x7A76;&#x534A;&#x5929;&#xFF0C;&#x53D1;&#x73B0;&#x4E2A;&#x65B0;&#x73A9;&#x610F;&#xFF0C;&#x5C31;&#x662F;<strong><em>&#x5728;&#x67E5;&#x8BE2;&#x5185;&#x5BB9;&#x524D;&#x52A0;&#x4E2A;N</em></strong><br>&#x8BE6;&#x60C5;&#x89C1;<br><a href="https://docs.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql</a></p>
+<blockquote>
+<p>Prefix Unicode character string constants with the letter N. Without the N prefix, the string is converted to the default code page of the database. This default code page may not recognize certain characters.</p>
+</blockquote>
+<p>&#x628A;&#x6211;&#x7684;&#x67E5;&#x8BE2;&#x6539;&#x6210;&#xFF1A;<br><code>cur.execute(&quot;SELECT title FROM Comments WHERE author= &apos;oflyhigh&apos; and title like N&apos;%&#x533A;&#x5757;&#x94FE;%&apos;&quot;)</code></p>
+<p>&#x67E5;&#x8BE2;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>&#x6211;&#x4E5F;&#x66FE;&#x7ECF;&#x6587;&#x9752;&#x8FC7;&#xFF0C;18&#x5E74;&#x524D;&#x5199;&#x7684;&#x5C0F;&#x8BD7; &#x300A;&#x82B1;&#x513F;&#x300B;&#xFF0C;&#x5B66;laoyao&#xFF0C;&#x54B1;&#x4E5F;&#x653E;&#x5230;&#x533A;&#x5757;&#x94FE;&#x4E0A;<br>&#x4F7F;&#x7528;PHP&#x67E5;&#x8BE2;STEEM&#x533A;&#x5757;&#x94FE; / Using PHP to query the STEEM blockchain<br>&#x73CD;&#x60DC;&#x7FBD;&#x6BDB; / STEEM&#x533A;&#x5757;&#x94FE;&#x5FE0;&#x5B9E;&#x7684;&#x8BB0;&#x5F55;&#x4F60;&#x7684;&#x64CD;&#x4F5C; / &#x83B7;&#x5F97;&#x5171;&#x540C;&#x64CD;&#x4F5C;&#x8D26;&#x6237;&#x7684;&#x771F;&#x5B9E;&#x64CD;&#x4F5C;&#x8005;<br>YY &#x4E00;&#x4E2A;&#x57FA;&#x4E8E;STEEM&#x533A;&#x5757;&#x94FE;&#x7684;&#x804A;&#x5929;&#x5DE5;&#x5177;<br>STEEM&#x533A;&#x5757;&#x94FE;&#x5FE0;&#x5B9E;&#x7684;&#x8BB0;&#x5F55;&#x4F60;&#x7684;&#x8A00;&#x884C;&amp;&#x64CD;&#x4F5C;</p>
+</blockquote>
+<p>&#x7EC8;&#x4E8E;&#x53EF;&#x884C;&#x4E86;</p>
+<h1 id="&#x518D;&#x67E5;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x8D34;"><a href="#&#x518D;&#x67E5;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x8D34;" class="headerlink" title="&#x518D;&#x67E5;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x8D34;"></a>&#x518D;&#x67E5;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x8D34;</h1><p>&#x73B0;&#x5728;&#x5728;&#x56DE;&#x5934;&#x67E5;&#x53C2;&#x52A0;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x7684;&#x7B2C;&#x4E8C;&#x6B21;&#x6D3B;&#x52A8;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x4E3B;&#x9898;&#x4E3A;<code>&#x7B2C;&#x4E00;&#x6B21;</code></p>
+<p><code>cur.execute(&quot;SELECT title,created FROM Comments WHERE title like N&apos;%&#x7B2C;&#x4E00;&#x6B21;%&apos; and created &gt; &apos;2017/08/01&apos; order by created&quot;)</code><br><code>rows = cur.fetchall()</code><br><code>for row in rows: print(&quot;{}\t{}&quot;.format(row[0], row[1]))</code></p>
+<p>&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p>Magic Clay &#x4F60;&#x7B2C;&#x4E00;&#x6B21;&#x7528;&#x9ECF;&#x571F;&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;   2017-08-01 14:13:45<br>&#x7B2C;&#x4E00;&#x6B21;&#x82B1;&#x8CBB;&#x5F9E;steemit&#x8CFA;&#x5230;&#x7684;&#x6536;&#x76CA; ! The first time I get the &#x2018;real&#x2019; money from steemit!     2017-08-02 06:11:21<br>&#x7B2C;&#x4E00;&#x6B21;&#x4E0E;&#x4F60;&#x4EEC;&#x7684;&#x5BF9;&#x8BDD;&#xFF0C;my first conversation with y&#x2019;all .  2017-08-03 18:32:51<br>&#x7B2C;&#x4E00;&#x6B21;&#x5728;steemit cn&#x53D1;&#x6587; &#x611F;&#x8C22;steemit&#x8BA9;&#x6211;&#x80FD;&#x63A5;&#x89E6;Bitcoin     2017-08-04 17:09:18<br>&#x7B2C;&#x4E00;&#x6B21;&#x4EBA;&#x4F53;&#x89E3;&#x5256;&#x8BFE;&#x4E0A;&#x7684;&#x60CA;&#x609A;&#x4E8B;&#x4EF6;    2017-08-07 11:30:48<br>&#x7B2C;&#x4E00;&#x6B21; - &#x96E2;&#x9109;&#x5225;&#x4E95; | &#x201C;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x201D;&#x6D3B;&#x52A8;      2017-08-09 07:10:30<br>&#x76F8;&#x7EA6;&#x5927;&#x7F8E;&#x65B0;&#x7586;,&#x7B2C;&#x4E00;&#x6B21;&#x5728;&#x7B2C;13&#x5C4A;&#x5168;&#x56FD;&#x51AC;&#x8FD0;&#x4F1A;&#x73B0;&#x573A;  Meet the beauty of Xinjiang,first time in China national winter games        2017-08-09 08:31:15<br>My first encounter with steemit/&#x6211;&#x4E0E;steemit&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x9082;&#x9005; | &#x8C37;&#x6B4C;&#x70B9;&#x540D;      2017-08-09 10:15:33<br>&#x6211;&#x4EBA;&#x751F;&#x7684;N&#x79CD;&#x7B2C;&#x4E00;&#x6B21;       2017-08-09 10:31:48<br>&#x7B2C;&#x4E00;&#x6B21;&#x8BA4;&#x8BC6;&#x8FD9;&#x4E2A;&#x4E16;&#x754C;      2017-08-09 10:52:12<br>&#x7B2C;&#x4E00;&#x6B21; - &#x82F1;&#x570B;&#x884C;&#x5C71;&#x7BC7; &#x201C;&#x8C37;&#x6B4C;&#x70B9;&#x540D;&#x201D;&#x6D3B;&#x52D5; Hiking South Downs Way England       2017-08-09 11:00:00<br>&#x3010;&#x53C2;&#x52A0;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x3011;&#x6211;&#x5728;Steemit&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x53D1;&#x5E16; 2017-08-09 13:07:39<br>&#x7B2C;&#x4E00;&#x6B21;&#x79BB;&#x5F00;&#x719F;&#x6089;&#x7684;&#x5730;&#x65B9;&#x5916;&#x51FA;&#x95EF;&#x8361;    2017-08-09 14:12:33<br>&#x6210;&#x5C31;&#x4EBA;&#x751F;&#x7684;&#x7B2C;&#x4E00;&#x6B21;        2017-08-09 14:26:54<br>&#x7B2C;&#x4E00;&#x6B21; // First Time    2017-08-09 17:11:42<br>&#x4EBA;&#x751F;&#x7B2C;&#x4E00;&#x6B21;&#x2014;&#x2014;&#x4E0D;&#x4EC5;&#x6709;&#x9178;&#x751C;&#x82E6;&#x8FA3;&#xFF0C;&#x66F4;&#x6709;&#x60B2;&#x6B22;&#x79BB;&#x5408;        2017-08-09 18:12:18<br>&#x7B2C;&#x4E00;&#x6B21; - The First Time (Chinese content only but feel free to comment in English if you understsand) - (by @ace108)    2017-08-10 00:34:03<br>&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;        &#x7EC6;&#x770B;&#x5988;&#x5988;&#x7684;&#x76B1;&#x7EB9;| &#x201C;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x201D;&#x6D3B;&#x52A8;  2017-08-10 01:11:24<br>&#x7231;&#x4E0A;&#x7B2C;&#x4E00;&#x6B21;&#x2013;First Exploration   2017-08-10 01:22:15<br>&#x5982;&#x4F55;&#x770B;&#x5F85;&#x4F60;&#x4EBA;&#x751F;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#xFF1F;      2017-08-10 01:24:48<br>?? &#x8001;&#x9053;&#x8336;&#x9928; ??&#xFF0D;&#x8ACB;&#x4E0A;&#x5750;&#xFF0C;&#x559D;&#x676F;&#x8336;&#xFF0C;&#x8AAA;&#x9EDE;&#x4E8B;&#xFF1B;&#x4ECA;&#x65E5;&#x8A71;&#x984C;&#xFF0D;&#x7B2C;&#x4E00;&#x6B21; &#xFF08;&#x8DE8;&#x57DF;&#x5408;&#x4F5C;&#xFF1A;&#x8336;&#x9928;&#xFF38;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#xFF09; ??  LAODR Tea House  ??  170810   2017-08-10 02:06:03</p>
+<p>#&#x96A8;&#x7B46;2 &#x7B2C;&#x4E00;&#x6B21; | &#x8C37;&#x54E5;&#x70B9;&#x540D;        2017-08-10 03:55:33<br>&#x7B2C;&#x4E00;&#x6B21;&#x5728;&#x661F;&#x7EA7;&#x5927;&#x9152;&#x5E97;&#x5403;&#x996D;  2017-08-10 04:09:12<br>&#x7B2C;&#x4E00;&#x6B21;&#x7EDD;&#x604B;&#x2013;&#x6700;&#x540E;&#x7684;&#x521D;&#x604B;  The first but also last love.   2017-08-10 04:37:30<br>&#x7B2C;&#x4E00;&#x6B21;&#x54C1;&#x5473;&#x4EBA;&#x751F;&#x767E;&#x6001; My First Time - Ups and Downs in Life        2017-08-10 05:10:51<br>&#x7B2C;&#x4E00;&#x6B21; &#x2500;&#x2500; &#x6211;&#x548C;&#x6211;&#x7684;&#x53CB;&#x751F;  2017-08-10 05:14:57<br>&#x7B2C;&#x4E00;&#x6B21;&#x62FF;&#x5230;&#x5728;steemit&#x4E0A;&#x5199;&#x4F5C;&#x7684;&#x94B1;   2017-08-10 05:44:24<br>&#x9886;&#x5BFC;&#xFF0C;&#x4ECA;&#x5929;&#x662F;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x559D;&#x9152;&#xFF0C;&#x53EF;&#x4E0D;&#x53EF;&#x4EE5;&#x3002;&#x3002;&#x3002;        2017-08-10 06:52:42<br>&#x7B2C;&#x4E00;&#x6B21;&#x53BB;&#x535A;&#x7269;&#x9986;&#x4E4B;&#x4E2D;&#x56FD;&#x53E4;&#x4EE3;&#x7684;&#x9152;&#x5177; The ancient wine cups of the Chinese history     2017-08-10 11:40:54<br>&#x7B2C;&#x4E00;&#x6B21;&#x53BB;&#x6CB9;&#x83DC;&#x82B1;&#x5730;&#x91CC;&#x73A9;&#xFF0C;&#x79CD;&#x4E0B;&#x4E86;&#x5FC3;&#x7075;&#x91CC;&#x7684;&#x6811;  2017-08-10 13:56:00<br>My first and long leave from my hometown // &#x7B2C;&#x4E00;&#x6B21;&#x96E2;&#x9109;&#x5225;&#x4E95;      2017-08-10 18:45:03<br>The  first time i made my rose steamed buns   &#x7B2C;&#x4E00;&#x6B21;&#x505A;&#x73AB;&#x7470;&#x82B1;&#x9992;&#x5934;&#xFF01;      2017-08-10 21:50:18<br>&#x7B2C;&#x4E00;&#x6B21; &#x2014; &#x4F4F;&#x5728;&#x5927;&#x5B66;&#x5BBF;&#x820D;&#x7ECF;&#x5386; / &#x8C37;&#x54E5;&#x70B9;&#x540D;&#x6D3B;&#x52A8; | My university life, my first time living in a university hostel      2017-08-10 23:03:06<br>&#x7B2C;&#x4E00;&#x6B21; - &#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x5BB6;&#x65CF;&#x65C5;&#x884C; - &#x53F0;&#x4E2D; (&#x5167;&#x6709;&#x5BB6;&#x65CF;&#x65C5;&#x884C;&#x7684;&#x5FC3;&#x5F97;&#xFF09;| The first time - My first family trip - Tai Chung       2017-08-11 01:16:42<br>&#x5F88;&#x591A;&#x7B2C;&#x4E00;&#x6B21;&#x7684;&#x7B2C;&#x4E00;&#x6B21; | &#x201C;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x201D; 2017-08-11 01:30:00<br>&#x7B2C;&#x4E00;&#x6B21;&#x201C;&#x4F53;&#x9A8C;&#x201D;&#x505A;&#x7236;&#x6BCD;&#x7684;&#x611F;&#x89C9; / The First Time for Being a &#x201C;Parent&#x201D; | &#x8C37;&#x6B4C;&#x70B9;&#x540D;       2017-08-11 04:10:27<br>&#x7B2C;&#x4E00;&#x6B21;&#x6765;&#x534E;&#x6587;&#x533A;&#x65F6;&#x7684;&#x60C5;&#x666F;&#x4E0E;&#x534E;&#x6587;&#x533A;&#x5982;&#x4F55;&#x53D1;&#x5C55;  2017-08-11 06:23:21<br>&#x7B2C;&#x4E00;&#x6B21;&#x6CE8;&#x518C;&#x57DF;&#x540D;  2017-08-11 08:18:54<br>&#x7B2C;&#x4E00;&#x6B21;&#xFF0C;&#x79D1;&#x5B78;&#x7814;&#x7A76;&#x7684;&#x7B2C;&#x4E00;&#x6B21;/ &#x201C;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x201D;&#x6D3B;&#x52A8; The First time: The Tirst Time for Scientific Research 2017-08-11 09:15:57<br>&#x7B2C;&#x4E00;&#x6B21;&#x53BB;&#x6D77;&#x8FB9; &#x2014;&#x2014; &#x201C;&#x6E29;&#x826F;&#x606D;&#x4FED;&#x8BA9;&#x201D;&#x7684;&#x5317;&#x5A01;&#x5C14;&#x58EB;&#x6D77;&#x6EE8;&#x5C0F;&#x9547;&#x5170;&#x8FEA;&#x5FB7;&#x8BFA;  2017-08-11 09:28:42<br>&#x7B2C;&#x4E8C;&#x671F;&#x201C;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x201D;&#x6D3B;&#x52D5;&#xFF1A; &#x7B2C;&#x4E00;&#x6B21; &#x96E2;&#x9109;&#x5225;&#x4E95;  2017-08-11 09:36:03<br>&#x6211;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x7684;&#x865B;&#x64EC;&#x4EBA;&#x751F;    2017-08-11 10:22:18<br>&#x4E00;&#x5929;&#x4E4B;&#x5185;&#x7684;&#x4E24;&#x4E2A;&#x7B2C;&#x4E00;&#x6B21;    2017-08-11 10:37:51</p>
+</blockquote>
+<p>&#x603B;&#x7B97;&#x6CA1;&#x8F9C;&#x8D1F; @jubi &#x5C0F;&#x53CB;&#x7684;&#x4FE1;&#x4EFB;</p>
+<h1 id="&#x8865;&#x5145;"><a href="#&#x8865;&#x5145;" class="headerlink" title="&#x8865;&#x5145;"></a>&#x8865;&#x5145;</h1><p>@jubi &#x7528;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;<br><code>WHERE contains(title, &apos;&#x7B2C;&#x4E00;&#x6B21;&apos;)</code><br>&#x53EF;&#x4EE5;&#x67E5;&#x51FA;&#x90E8;&#x5206;&#x6570;&#x636E;<br>&#x6211;&#x641C;&#x7D22;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;contains&#x662F;&#x57FA;&#x4E8E;&#x5168;&#x6587;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;<br>&#x4F46;&#x7ED3;&#x679C;&#x53EF;&#x80FD;&#x53D7;&#x7CFB;&#x7EDF;&#x5206;&#x8BCD;&#x65B9;&#x6CD5;&#x7684;&#x5F71;&#x54CD;&#x5BFC;&#x81F4;&#x4E0D;&#x5168;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x6211;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x7684;&#x7F18;&#x6545; &#x1F62D;</p>
+<hr>
+<p>&#x4E5F;&#x52A0;&#x4FE9;<strong><em>&#x7B2C;&#x4E00;&#x6B21;</em></strong>&#x5173;&#x952E;&#x5B57;&#x53C2;&#x8D5B;&#xFF0C;&#x91CD;&#x5728;&#x53C2;&#x4E0E;<br>&#x53E6;&#x5916;&#xFF0C;&#x4E07;&#x4E00;&#x4E2D;&#x5956;&#x5462;&#xFF0C;&#x54C8;&#x54C8;&#x54C8;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steemsql" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;STEEMSQL&#x67E5;&#x8BE2;&#x8C37;&#x54E5;&#x70B9;&#x540D;&#x6570;&#x636E;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/php-steem-using-php-to-query-the-steem-blockchain/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmaQT5AF2xEzBRHk4SZWFJyRe4CGP54mzuc2bkHTk1i5aN/image.png" alt="使用PHP查询STEEM区块链 / Using PHP to query the STEEM blockchain">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-10T12:56:54.000Z">2017-08-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 762 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/php-steem-using-php-to-query-the-steem-blockchain/">使用PHP查询STEEM区块链 / Using PHP to query the STEEM blockchain</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmaQT5AF2xEzBRHk4SZWFJyRe4CGP54mzuc2bkHTk1i5aN/image.png" alt=""></p>
+<p>&#x8BDD;&#x8BF4;&#xFF0C;PHP&#x662F;&#x4E16;&#x754C;&#x4E0A;&#x6700;&#x597D;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x54B3;&#x54B3;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x6700;&#x597D;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x6211;&#x5927;&#x6982;&#x6709;7-8&#x5E74;&#x6CA1;&#x6709;&#x53BB;&#x4F7F;&#x7528;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x4E0D;&#x4F1A;&#x7528;&#x5566;&#x3002;&#x4E4B;&#x524D;&#x5B66;&#x4E60;&#x548C;&#x5199;&#x7684;&#x548C;STEEM&#x533A;&#x5757;&#x94FE;&#x76F8;&#x5173;&#x7684;&#x7A0B;&#x5E8F;&#x90FD;&#x662F;&#x7528;&#x7684;Python&#x3002;&#x4ECA;&#x5929;&#x7A81;&#x7136;&#x5192;&#x51FA;&#x4E2A;&#x60F3;&#x6CD5;&#xFF0C;&#x5199;&#x4E2A;PHP&#x8BBF;&#x95EE;STEEM&#x533A;&#x5757;&#x94FE;&#x7684;&#x7B80;&#x5355;&#x7684;&#x4F8B;&#x5B50;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x5199;&#x7684;&#x65F6;&#x5019;&#x624D;&#x53D1;&#x73B0;&#xFF0C;&#x5404;&#x79CD;&#x4E0D;&#x4E60;&#x60EF;&#x3002;&#x5176;&#x5B9E;Python&#x6211;&#x4E5F;&#x6CA1;&#x6CA1;&#x5B66;&#x4E24;&#x5929;&#xFF0C;PHP&#x5219;&#x6B63;&#x7ECF;&#x516B;&#x767E;&#x7684;&#x7528;&#x8FC7;&#x597D;&#x957F;&#x65F6;&#x95F4;&#x5462;&#xFF0C;&#x7ED3;&#x679C;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x5B8C;&#x5168;&#x53D8;&#x6210;PHP&#x521D;&#x5B66;&#x8005;&#x4E86;&#x3002;&#x597D;&#x5728;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BED;&#x8A00;&#x8FD8;&#x7B97;&#x597D;&#x5B66;&#x3002;&#x4E8E;&#x662F;&#x78D5;&#x78D5;&#x7ECA;&#x7ECA;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x73B0;&#x5404;&#x79CD;&#x4E0D;&#x4F18;&#x96C5;&#xFF0C;&#x7B80;&#x5316;&#x7B80;&#x5316;&#x7B80;&#x5316;&#xFF0C;&#x7B80;&#x5316;&#x6210;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#x4E86;&#x3002;&#x4E3A;&#x4E86;&#x6F14;&#x793A;&#x6838;&#x5FC3;&#x6D41;&#x7A0B;&#xFF0C;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x4E4B;&#x7C7B;&#x7684;&#x3002;</p>
+<p>PHP is one of the popular programming languages&#xFF0C;today, I wrote a simple PHP script to query the STEEM blockchain.</p>
+<h4 id="PHP&#x7A0B;&#x5E8F;-The-Script"><a href="#PHP&#x7A0B;&#x5E8F;-The-Script" class="headerlink" title="PHP&#x7A0B;&#x5E8F; / The Script"></a>PHP&#x7A0B;&#x5E8F; / The Script</h4><p>&#x95F2;&#x8BDD;&#x5C11;&#x53D9;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x811A;&#x672C;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">&lt;?</span><br><span class="line">class Steemd</span><br><span class="line">{</span><br><span class="line">    private $ch;</span><br><span class="line">    function __construct(){</span><br><span class="line">      $this-&gt;ch = curl_init();</span><br><span class="line">      curl_setopt($this-&gt;ch, CURLOPT_URL, &apos;https://steemd.steemit.com&apos;);</span><br><span class="line">      curl_setopt($this-&gt;ch, CURLOPT_RETURNTRANSFER, TRUE);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    function __destruct() {</span><br><span class="line">      curl_close($this-&gt;ch);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    private function json_rpc_body($method, $params){</span><br><span class="line">        $request = array(</span><br><span class="line">            &quot;jsonrpc&quot; =&gt; &quot;2.0&quot;,</span><br><span class="line">            &quot;method&quot; =&gt; $method,</span><br><span class="line">            &quot;params&quot; =&gt; $params,</span><br><span class="line">            &quot;id&quot; =&gt; 0</span><br><span class="line">            );</span><br><span class="line">        return json_encode($request);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public function exec($method, $params = array()) {</span><br><span class="line">        $data = $this-&gt;json_rpc_body($method, $params);</span><br><span class="line">        curl_setopt($this-&gt;ch, CURLOPT_POSTFIELDS, $data);</span><br><span class="line">        $response = curl_exec($this-&gt;ch);</span><br><span class="line">        $response = json_decode($response, true);</span><br><span class="line">        if (array_key_exists(&apos;error&apos;, $response)) {</span><br><span class="line">          var_dump($response[&apos;error&apos;]);</span><br><span class="line">          die();</span><br><span class="line">        }</span><br><span class="line">        return $response[&apos;result&apos;];</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    public function get_account($account){</span><br><span class="line">        $result = $this-&gt;exec(&apos;get_accounts&apos;, [[$account]]);</span><br><span class="line">        return $result;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">$steemd = new Steemd;</span><br><span class="line">echo(&apos;&lt;pre&gt;&apos;);</span><br><span class="line">print_r($steemd-&gt;exec(get_chain_properties,[]));</span><br><span class="line">print_r($steemd-&gt;get_account(&apos;oflyhigh&apos;));</span><br><span class="line">echo(&apos;&lt;/pre&gt;&apos;);</span><br><span class="line"></span><br><span class="line">//unset($steemd);</span><br><span class="line">?&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="&#x7B80;&#x5355;&#x89E3;&#x91CA;-Explain"><a href="#&#x7B80;&#x5355;&#x89E3;&#x91CA;-Explain" class="headerlink" title="&#x7B80;&#x5355;&#x89E3;&#x91CA; / Explain"></a>&#x7B80;&#x5355;&#x89E3;&#x91CA; / Explain</h1><p>&#x7A0B;&#x5E8F;&#x5206;&#x6210;&#x4E24;&#x90E8;&#x5206; </p>
+<ul>
+<li>Steemd&#x7C7B;</li>
+<li>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</li>
+</ul>
+<p>This script is divided into two parts&#xFF0C; <strong><em>Steemd Class</em></strong> and <strong><em>some simple testing codes</em></strong></p>
+<h4 id="Steemd&#x7C7B;-Steemd-Class"><a href="#Steemd&#x7C7B;-Steemd-Class" class="headerlink" title="Steemd&#x7C7B; / Steemd Class"></a>Steemd&#x7C7B; / Steemd Class</h4><p>&#x4F7F;&#x7528;PHP curl &#x6765;&#x6267;&#x884C;HTTP&#x8BF7;&#x6C42;&#xFF0C; &#x4F7F;&#x7528;&#x2019;<a href="https://steemd.steemit.com&apos;&#x4F5C;&#x4E3A;&#x8BF7;&#x6C42;&#x8282;&#x70B9;&#x3002;" target="_blank" rel="noopener">https://steemd.steemit.com&apos;&#x4F5C;&#x4E3A;&#x8BF7;&#x6C42;&#x8282;&#x70B9;&#x3002;</a><br>I use curl to execute HTTP requests&#xFF0C; use &#x2018;<a href="https://steemd.steemit.com" target="_blank" rel="noopener">https://steemd.steemit.com</a>&#x2018; as RPC  node.</p>
+<p>Steemd Class &#x63D0;&#x4F9B;&#x4E24;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;<strong><em>exec</em></strong>&#x4EE5;&#x53CA;<strong><em>get_account</em></strong><br>There are two methods provided by Steemd Class , <strong><em>exec</em></strong> and <strong><em>get_account</em></strong>.</p>
+<p><strong><em>exec</em></strong>&#x662F;&#x5E95;&#x5C42;&#x63A5;&#x53E3;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x63A5;&#x53E3;&#x6765;&#x6267;&#x884C;steem blockchain API &#x64CD;&#x4F5C;&#x3002;<br><strong><em>exec</em></strong> is low level interface, you can call it directly to perform operations to query steem blockchain.</p>
+<p><strong><em>get_account</em></strong>&#x662F;&#x5BF9;<strong><em>exe</em></strong>&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x66F4;&#x52A0;&#x53CB;&#x597D;&#xFF0C;&#x5B83;&#x4EC5;&#x4EC5;&#x662F;&#x4E00;&#x4E2A;&#x5C01;&#x88C5;&#x793A;&#x4F8B;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C01;&#x88C5;&#x66F4;&#x591A;&#x7684;&#x529F;&#x80FD;&#x3002;<br><strong><em>get_account</em></strong> is a user friendly encapsulation for <strong><em>exe</em></strong>, it just a example, you can encapsulate more functions yourself.</p>
+<h4 id="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;-Testing-codes"><a href="#&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;-Testing-codes" class="headerlink" title="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801; / Testing codes"></a>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801; / Testing codes</h4><p>&#x5C31;&#x662F;&#x7B80;&#x5355;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x800C;&#x5DF2;&#xFF0C;&#x6CA1;&#x5565;&#x53EF;&#x4EE5;&#x8BF4;&#x7684;<br>&#x7528;print_r&#x8BA9;&#x7ED3;&#x679C;&#x770B;&#x8D77;&#x6765;&#x66F4;&#x597D;&#x770B;</p>
+<p>Some simple testing codes to test Steemd class and two interfaces  <strong><em>exec</em></strong> and <strong><em>get_account</em></strong><br>Use print_r to make the results look better.</p>
+<h1 id="&#x8FD0;&#x884C;&#x7ED3;&#x679C;-Results"><a href="#&#x8FD0;&#x884C;&#x7ED3;&#x679C;-Results" class="headerlink" title="&#x8FD0;&#x884C;&#x7ED3;&#x679C; / Results"></a>&#x8FD0;&#x884C;&#x7ED3;&#x679C; / Results</h1><p><img src="https://steemitimages.com/DQmPzr2irGRSVXmsWqHdCqQbyN4UjQUzC9J6MqztTMVN1Jg/image.png" alt=""></p>
+<hr>
+<p><img src="https://steemitimages.com/DQmdpjTzeVuSzSFZW1gpsN1zxynHrsJCCytLFmpQJjJUQkT/image.png" alt=""><br>&#x811A;&#x672C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#xFF0C;&#x4F7F;&#x7528;&#x98CE;&#x9669;&#x81EA;&#x8D1F;&#xFF01;<br>This script is for reference only, use it at your own risk.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/php-steem-using-php-to-query-the-steem-blockchain" target="_blank" rel="noopener">&#x4F7F;&#x7528;PHP&#x67E5;&#x8BE2;STEEM&#x533A;&#x5757;&#x94FE; / Using PHP to query the STEEM blockchain</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/72gkla/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmTgz3nKvRhkDBsquVJsHx77B33iXNBfynxcivY4AKcv7X/image.png" alt="三人行，必有我师焉">
         </a>
@@ -515,181 +698,15 @@ https://steemd.steemit.com</code></p>
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/radio-and-some-memories/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmPqxaYwhiUxT4dGTTiFaUxxZ1fTvLbFp9cyw46aDckVyf/image.png" alt="收音机以及回忆 / Radio and Some memories">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-05T09:13:12.000Z">2017-08-05</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    11 minutes read (About 1696 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/radio-and-some-memories/">收音机以及回忆 / Radio and Some memories</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="&#x542C;&#x8D77;&#x4E86;&#x6536;&#x97F3;&#x673A;"><a href="#&#x542C;&#x8D77;&#x4E86;&#x6536;&#x97F3;&#x673A;" class="headerlink" title="&#x542C;&#x8D77;&#x4E86;&#x6536;&#x97F3;&#x673A;"></a>&#x542C;&#x8D77;&#x4E86;&#x6536;&#x97F3;&#x673A;</h1><p>&#x4ECA;&#x5929;&#x5F00;&#x8F66;&#x51FA;&#x53BB;&#xFF0C;&#x4E0D;&#x5C0F;&#x5FC3;&#x522E;&#x5230;&#x4E86;FM&#x6309;&#x94AE;&#xFF0C;&#x4E8E;&#x662F;&#x5C06;&#x9519;&#x5C31;&#x9519;&#x7684;&#x542C;&#x8D77;&#x4E86;&#x6536;&#x97F3;&#x673A;&#xFF0C;&#x7ADF;&#x7136;&#x4E5F;&#x542C;&#x4E86;&#x4E00;&#x8DEF;&#x3002;</p>
-<p>&#x5148;&#x662F;&#x542C;&#x4E86;&#x4E2A;&#x5A31;&#x4E50;&#x5BF9;&#x5BF9;&#x78B0;&#x7684;&#x8282;&#x76EE;&#xFF0C;&#x7537;&#x5973;&#x4E3B;&#x6301;&#x4EBA;&#x8BF4;&#x8BDD;&#x7279;&#x522B;&#x9017;&#xFF0C;&#x6BD4;&#x5982;&#x5176;&#x4E2D;&#x4E00;&#x6BB5;&#xFF0C;&#x8BF4;&#x7537;&#x4E3B;&#x6301;&#x4EBA;</p>
-<blockquote>
-<p>&#x7EE9;&#x6548;&#x597D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x751F;&#x6D3B;&#x6C34;&#x51C6;&#x7279;&#x522B;&#x9AD8;&#xFF0C;&#x4ED6;&#x5403;&#x5565;&#x4ED6;&#x5BB6;&#x72D7;&#x5403;&#x5565;<br>&#x7EE9;&#x6548;&#x5DEE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x751F;&#x6D3B;&#x6C34;&#x51C6;&#x4F4E;&#x4E0B;&#xFF0C;&#x4ED6;&#x5BB6;&#x72D7;&#x5403;&#x5565;&#x4ED6;&#x5403;&#x5565;<br>&#x7136;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x6708;&#x7EE9;&#x6548;&#x5B9E;&#x5728;&#x592A;&#x5DEE;&#xFF0C;&#x5403;&#x4E0D;&#x8D77;&#x996D;&#x4E86;&#xFF0C;&#x53EA;&#x597D;&#x628A;&#x72D7;&#x5403;&#x4E86; &#x1F62D;</p>
-</blockquote>
-<p>&#x542C;&#x7684;&#x6211;&#x5DEE;&#x70B9;&#x7B11;&#x55B7;&#x3002;&#x7136;&#x540E;&#x53C8;&#x8BB2;&#x5230;&#x9F50;&#x767D;&#x77F3;&#x8001;&#x5148;&#x751F;</p>
-<blockquote>
-<p>&#x8001;&#x5148;&#x751F;&#x6709;&#x4E00;&#x6B21;&#x53BB;&#x83DC;&#x5E02;&#x573A;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x4EBA;&#x5356;&#x7684;&#x767D;&#x83DC;&#x7279;&#x522B;&#x597D;&#xFF0C;&#x60F3;&#x4E70;&#x4E24;&#x9897;&#x767D;&#x83DC;&#xFF0C;&#x7ED3;&#x679C;&#x53D1;&#x73B0;&#x6CA1;&#x5E26;&#x94B1;&#x3002;&#x5174;&#x81F4;&#x4E0A;&#x6765;&#x4E86;&#xFF0C;&#x5F53;&#x5373;&#x6325;&#x6BEB;&#x6CFC;&#x58A8;&#xFF0C;&#x753B;&#x4E86;&#x4E00;&#x9897;&#x6829;&#x6829;&#x5982;&#x751F;&#x7684;&#x5927;&#x767D;&#x83DC;&#xFF0C;&#x7136;&#x540E;&#x548C;&#x5356;&#x767D;&#x83DC;&#x7684;&#x6253;&#x5546;&#x91CF;&#xFF0C;&#x80FD;&#x4E0D;&#x80FD;&#x7528;&#x6211;&#x8FD9;&#x5E45;&#x753B;&#x6362;&#x4F60;&#x4E24;&#x9897;&#x767D;&#x83DC;&#x5462;&#xFF1F;&#x5356;&#x767D;&#x83DC;&#x7684;&#x8BF4;&#xFF1A; &#x4F60;&#x5F53;&#x6211;&#x662F;&#x50BB;&#x5B50;&#x90A3;&#xFF1F;&#x7528;&#x771F;&#x767D;&#x83DC;&#xFF0C;&#x6362;&#x4F60;&#x753B;&#x7684;&#x5047;&#x767D;&#x83DC;&#xFF1F;</p>
-</blockquote>
-<p>&#x5148;&#x4E0D;&#x8BF4;&#x8FD9;&#x4E2A;&#x6545;&#x4E8B;&#x7684;&#x771F;&#x5047;&#xFF0C;&#x8001;&#x5148;&#x751F;&#x4F1A;&#x4E0D;&#x4F1A;&#x53BB;&#x83DC;&#x5E02;&#x573A;&#x4E5F;&#x5E26;&#x7740;&#x7B14;&#x58A8;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x70B9;&#x4E5F;&#x4E0D;&#x51CF;&#x6545;&#x4E8B;&#x7684;&#x7CBE;&#x5F69;&#x548C;&#x5176;&#x4E2D;&#x7684;&#x8BBD;&#x523A;&#x610F;&#x5473;&#x3002;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x597D;&#x6BD4;&#x6545;&#x4E8B;&#x4E2D;&#x5356;&#x767D;&#x83DC;&#x7684;&#x4EBA;&#xFF0C;&#x6B7B;&#x5B88;&#x7740;&#x5E76;&#x4E0D;&#x503C;&#x94B1;&#x7684;&#x767D;&#x83DC;&#xFF0C;&#x800C;&#x9519;&#x5931;&#x591A;&#x5C11;&#x826F;&#x673A;&#x5462;&#xFF1F;</p>
-<p>&#x540E;&#x6765;&#x53C8;&#x542C;&#x4E86;&#x51E0;&#x6BB5;&#x76F8;&#x58F0;&#xFF0C;&#x4E00;&#x8DEF;&#x6B22;&#x7B11;&#x597D;&#x5FC3;&#x60C5;&#x3002;</p>
-<h1 id="&#x5976;&#x5976;&#x7684;&#x6536;&#x97F3;&#x673A;"><a href="#&#x5976;&#x5976;&#x7684;&#x6536;&#x97F3;&#x673A;" class="headerlink" title="&#x5976;&#x5976;&#x7684;&#x6536;&#x97F3;&#x673A;"></a>&#x5976;&#x5976;&#x7684;&#x6536;&#x97F3;&#x673A;</h1><p><img src="https://steemitimages.com/DQmPqxaYwhiUxT4dGTTiFaUxxZ1fTvLbFp9cyw46aDckVyf/image.png" alt=""><br>(Image <a href="http://pic.enorth.com.cn/0/09/04/09/9040913_999292.jpg" target="_blank" rel="noopener">source</a>)</p>
-<p>&#x8BB0;&#x5F97;&#x5C0F;&#x65F6;&#x5019;&#xFF0C;&#x5976;&#x5976;&#x5F88;&#x5C11;&#x770B;&#x7535;&#x89C6;&#xFF0C;&#x6574;&#x5929;&#x6367;&#x7740;&#x5979;&#x7684;&#x8001;&#x5F0F;&#x6536;&#x97F3;&#x673A;&#xFF0C;&#x90A3;&#x65F6;&#x5019;&#x88AB;&#x53EB;&#x505A;&#x7535;&#x5323;&#x5B50;&#xFF0C;&#x4E8E;&#x662F;&#x6211;&#x4E5F;&#x88AB;&#x8FD9;&#x4E2A;&#x7535;&#x5323;&#x5B50;&#x5438;&#x5F15;&#x3002;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BF4;&#x8BDD;&#x7684;&#x76D2;&#x5B50;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x7CBE;&#x5F69;&#x7684;&#x4E16;&#x754C;&#xFF0C;&#x6BD4;&#x5982;&#x201C;&#x5C0F;&#x5587;&#x53ED;&#x5F00;&#x59CB;&#x5E7F;&#x64AD;&#x5566;&#x201D;&#xFF0C;&#x8BB2;&#x4E00;&#x4E9B;&#x597D;&#x73A9;&#x7684;&#x6545;&#x4E8B;&#x548C;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x77E5;&#x8BC6;&#x3002;&#x8FD8;&#x6709;&#x300A;&#x767D;&#x7709;&#x5927;&#x4FA0;&#x300B;&#x548C;&#x300A;&#x4E09;&#x4FA0;&#x4E94;&#x4E49;&#x300B;&#x4E4B;&#x7C7B;&#x7684;&#x8BC4;&#x4E66;&#xFF0C;&#x8BA9;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x63A5;&#x89E6;&#x4E86;&#x6B66;&#x4FA0;&#x7684;&#x4E16;&#x754C;&#xFF0C;&#x77E5;&#x9053;&#x9ED1;&#x4E0E;&#x767D;&#xFF0C;&#x5584;&#x4E0E;&#x6076;&#xFF0C;&#x6BCF;&#x6BCF;&#x542C;&#x5230;&#x9AD8;&#x6F6E;&#x4E4B;&#x5904;&#xFF0C;&#x4E00;&#x53E5;<strong><em>&#x6B32;&#x77E5;&#x540E;&#x4E8B;&#x5982;&#x4F55;&#xFF0C;&#x4E14;&#x542C;&#x4E0B;&#x6587;&#x5206;&#x89E3;</em></strong>&#xFF0C;&#x8BA9;&#x6211;&#x4E3A;&#x8BC4;&#x4E66;&#x4E2D;&#x7684;&#x4EBA;&#x7269;&#x62C5;&#x5FE7;&#x4E0D;&#x5DF2;&#xFF0C;&#x671F;&#x76FC;&#x7740;&#x7B2C;&#x4E8C;&#x5929;&#x540C;&#x4E00;&#x65F6;&#x6BB5;&#x7684;&#x5C3D;&#x5FEB;&#x5230;&#x6765;&#x3002;</p>
-<h1 id="&#x6821;&#x56ED;&#x7684;&#x6536;&#x97F3;&#x673A;"><a href="#&#x6821;&#x56ED;&#x7684;&#x6536;&#x97F3;&#x673A;" class="headerlink" title="&#x6821;&#x56ED;&#x7684;&#x6536;&#x97F3;&#x673A;"></a>&#x6821;&#x56ED;&#x7684;&#x6536;&#x97F3;&#x673A;</h1><p>&#x540E;&#x6765;&#x7528;&#x81EA;&#x5DF1;&#x79EF;&#x6512;&#x7684;&#x96F6;&#x82B1;&#x94B1;&#x4E70;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x53F0;&#x5C0F;&#x5C0F;&#x7684;&#x8896;&#x73CD;&#x6536;&#x97F3;&#x673A;&#xFF0C;&#x7231;&#x4E0D;&#x91CA;&#x624B;&#xFF0C;&#x611F;&#x89C9;&#x4E00;&#x673A;&#x5728;&#x624B;&#xFF0C;&#x62E5;&#x6709;&#x4E86;&#x6574;&#x4E2A;&#x4E16;&#x754C;&#x3002;&#x8BFE;&#x95F4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x81EA;&#x5DF1;&#x542C;&#x542C;&#x6536;&#x97F3;&#x673A;&#x91CC;&#x7684;&#x7F8E;&#x5999;&#x97F3;&#x4E50;&#xFF0C;&#x8BA9;&#x540C;&#x5B66;&#x4EEC;&#x7FA1;&#x8273;&#x4E0D;&#x5DF2;&#x3002;</p>
-<p>&#x5927;&#x5B66;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B66;&#x6821;&#x7ED9;&#x6BCF;&#x4E2A;&#x65B0;&#x5165;&#x5B66;&#x7684;&#x4EBA;&#x90FD;&#x914D;&#x5907;&#x4E86;&#x6536;&#x97F3;&#x673A;&#x3002;&#x56E0;&#x4E3A;&#x6BCF;&#x9022;&#x82F1;&#x8BED;&#x8003;&#x8BD5;&#x5565;&#x7684;&#xFF0C;&#x542C;&#x529B;&#x90E8;&#x5206;&#x90FD;&#x8981;&#x9760;&#x6536;&#x97F3;&#x673A;&#x63A5;&#x6536;&#x3002;&#x5E76;&#x4E14;&#x6821;&#x56ED;&#x5E7F;&#x64AD;&#x7535;&#x53F0;&#x5728;&#x6307;&#x5B9A;&#x9891;&#x6BB5;&#x64AD;&#x51FA;&#xFF0C;&#x542C;&#x542C;&#x5927;&#x5E7F;&#x53F0;(&#x5927;&#x5B66;&#x751F;&#x5E7F;&#x64AD;&#x7535;&#x53F0;)&#xFF0C;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x5A31;&#x4E50;&#x9879;&#x76EE;&#x4E4B;&#x4E00;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6536;&#x97F3;&#x673A;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x662F;&#x5BA0;&#x513F;&#xFF0C;&#x795E;&#x9A6C;&#x4E0A;&#x5343;&#x5143;&#x7684;&#x7D22;&#x5C3C;WalkMan&#x624D;&#x662F;&#x65B0;&#x5BA0;&#xFF0C;&#x8D85;&#x8584;&#x3001;&#x9632;&#x9707;&#x3001;&#x751A;&#x81F3;&#x5E26;&#x4E00;&#x4E9B;&#x590D;&#x8BFB;&#x529F;&#x80FD;&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x542C;&#x6B4C;&#x3001;&#x5B66;&#x82F1;&#x8BED;&#x3001;&#x8FD8;&#x662F;&#x70AB;&#x8000;&#xFF0C;&#x90FD;&#x6B7B;&#x6B7B;&#x538B;&#x7740;&#x6536;&#x97F3;&#x673A;&#x4E00;&#x5934;&#x3002;&#x518D;&#x540E;&#x6765;&#xFF0C;&#x8D85;&#x8584;&#x4FBF;&#x643A;&#x7684;CD&#x968F;&#x8EAB;&#x542C;&#x5174;&#x8D77;&#xFF0C;&#x6536;&#x97F3;&#x673A;&#x9664;&#x4E86;&#x542C;&#x529B;&#x8003;&#x8BD5;&#x8FD8;&#x80FD;&#x6D3E;&#x4E0A;&#x7528;&#x573A;&#xFF0C;&#x5176;&#x5B83;&#x65F6;&#x5019;&#x4E00;&#x76F4;&#x5982;&#x540C;&#x88AB;&#x51B7;&#x843D;&#x5983;&#x5B50;&#x3002;</p>
-<h1 id="&#x624B;&#x673A;&#x542C;&#x6536;&#x97F3;&#x673A;"><a href="#&#x624B;&#x673A;&#x542C;&#x6536;&#x97F3;&#x673A;" class="headerlink" title="&#x624B;&#x673A;&#x542C;&#x6536;&#x97F3;&#x673A;"></a>&#x624B;&#x673A;&#x542C;&#x6536;&#x97F3;&#x673A;</h1><p>&#x540E;&#x6765;&#x5DE5;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#x79C1;&#x4E0B;&#x91CC;&#x548C;&#x8FBD;&#x5B81;&#x7535;&#x53F0;&#x4EE5;&#x53CA;&#x79FB;&#x52A8;&#x516C;&#x53F8;&#x5408;&#x4F5C;&#x8FC7;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x3002;&#x5927;&#x81F4;&#x5728;&#x8FBD;&#x5B81;&#x7535;&#x53F0;&#x7684;&#x673A;&#x623F;&#x5185;&#x653E;&#x7F6E;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x653E;&#x4E86;&#x4E00;&#x4E2A;&#x4E13;&#x4E1A;&#x7684;&#x58F0;&#x5361;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x7535;&#x53F0;&#x7684;&#x58F0;&#x6E90;&#x63A5;&#x5230;&#x58F0;&#x5361;&#x4E0A;&#xFF0C;&#x6211;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7684;Linux&#x7CFB;&#x7EDF;&#x4E2D;&#x91C7;&#x96C6;&#x4E0A;&#x6765;&#x5E76;&#x8F6C;&#x6362;&#x6210;vox&#x683C;&#x5F0F;&#xFF0C;&#x7136;&#x540E;&#x540C;&#x6B65;&#x5230;&#x79FB;&#x52A8;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x53BB;&#x3002;&#x5F53;&#x65F6;&#x7535;&#x53F0;&#x628A;&#x8FD9;&#x4E2A;&#x4F5C;&#x4E3A;&#x91CD;&#x70B9;&#x9879;&#x76EE;&#x5BA3;&#x4F20;&#xFF0C;&#x5728;&#x5E7F;&#x64AD;&#x5E7F;&#x544A;&#x4E2D;&#x5927;&#x8086;&#x63A8;&#x5E7F;&#xFF0C;&#x53EB;&#x505A;<strong><em>&#x624B;&#x673A;&#x4E5F;&#x80FD;&#x542C;&#x5E7F;&#x64AD;</em></strong>&#xFF0C;&#x5C31;&#x662F;&#x4F60;&#x62E8;&#x6253;&#x6307;&#x5B9A;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#xFF0C;&#x624B;&#x673A;&#x5C31;&#x81EA;&#x52A8;&#x53D1;&#x9001;&#x6211;&#x91C7;&#x96C6;&#x7684;&#x58F0;&#x6E90;&#x6587;&#x4EF6;&#x3002;&#x5BF9;&#xFF0C;&#x6CA1;&#x9519;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x91C7;&#x96C6;&#x7684;&#x3002;&#x867D;&#x7136;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x90FD;&#x662F;&#x6211;&#x6765;&#x505A;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x975E;&#x5E38;&#x4E0D;&#x770B;&#x597D;&#xFF0C;&#x5C3D;&#x7BA1;&#x90A3;&#x65F6;&#x5019;&#x79FB;&#x52A8;&#x4E92;&#x8054;&#x7F51;\WIFI\3G&#x4E4B;&#x7C7B;&#x7684;&#x8FD8;&#x6CA1;&#x5174;&#x8D77;&#xFF0C;&#x4F46;&#x662F;&#x6253;&#x7535;&#x8BDD;&#x542C;&#x5E7F;&#x64AD;&#xFF1F;&#x8FD9;&#x4E8B;&#x81F3;&#x5C11;&#x6211;&#x5E72;&#x4E0D;&#x51FA;&#x6765;&#x3002;&#x4E0D;&#x51FA;&#x6211;&#x6240;&#x6599;&#x7684;&#xFF0C;&#x6CA1;&#x8FC7;&#x51E0;&#x4E2A;&#x6708;&#x9879;&#x76EE;&#x5C31;&#x7834;&#x4EA7;&#x4E86;&#x3002;&#x1F62D;</p>
-<p>&#x518D;&#x4E4B;&#x540E;&#xFF0C;&#x79FB;&#x52A8;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x98CE;&#x66B4;&#x5E2D;&#x5377;&#x800C;&#x6765;&#xFF0C;GRPS/CDMA&#x4E0A;&#x7F51;&#x5230;&#x73B0;&#x5728;&#x7684;&#x51FA;&#x95E8;4G&#x4EE5;&#x53CA;&#x65E0;&#x5904;&#x4E0D;&#x5728;&#x7684;WIFI&#xFF0C;&#x65E0;&#x8BBA;&#x662F;&#x63A5;&#x53D7;&#x8BAF;&#x606F;&#x8FD8;&#x662F;&#x5A31;&#x4E50;&#xFF0C;&#x751A;&#x81F3;&#x5305;&#x62EC;&#x4EE5;&#x524D;&#x6700;&#x51A0;&#x5195;&#x5802;&#x7687;&#x7684;&#x501F;&#x53E3;<strong><em>&#x5B66;&#x82F1;&#x8BED;</em></strong>&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x667A;&#x80FD;&#x624B;&#x673A;/PAD&#x7684;&#x8BBE;&#x5907;&#x4E0A;&#x5B9E;&#x73B0;&#x4E86;&#x3002;&#x6536;&#x97F3;&#x673A;&#x65E9;&#x5DF2;&#x88AB;&#x4E22;&#x5165;&#x4E86;&#x5783;&#x573E;&#x5806;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x8F66;&#x4E0A;&#x7684;&#x63A7;&#x5236;&#x9762;&#x677F;&#x8FD8;&#x5728;&#x4E00;&#x4E2A;FM&#x6309;&#x94AE;&#xFF0C;&#x6211;&#x771F;&#x7684;&#x5FEB;&#x5FD8;&#x8BB0;&#x4E86;&#x8FD9;&#x4E16;&#x754C;&#x4E0A;&#x8FD8;&#x6709;&#x6536;&#x97F3;&#x673A;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x8BBE;&#x5907;&#x3002;&#x4E5F;&#x4E0D;&#x4F1A;&#x60F3;&#x5230;&#x5B83;&#x5C45;&#x7136;&#x4E00;&#x5982;&#x5341;&#x51E0;&#x5E74;&#x51E0;&#x5341;&#x5E74;&#x4E00;&#x6837;&#x8FD8;&#x80FD;&#x5E26;&#x7ED9;&#x6211;&#x4E00;&#x8DEF;&#x6B22;&#x4E50;&#x3002;</p>
-<h1 id="&#x6B4C;&#x66F2;&#x300A;&#x91CD;&#x65E5;&#x91CD;&#x73B0;&#x300B;"><a href="#&#x6B4C;&#x66F2;&#x300A;&#x91CD;&#x65E5;&#x91CD;&#x73B0;&#x300B;" class="headerlink" title="&#x6B4C;&#x66F2;&#x300A;&#x91CD;&#x65E5;&#x91CD;&#x73B0;&#x300B;"></a>&#x6B4C;&#x66F2;&#x300A;&#x91CD;&#x65E5;&#x91CD;&#x73B0;&#x300B;</h1><p><img src="https://steemitimages.com/DQme8rh4jLPBYKkQ6eP9BxD8dWLbrJvX9QqNjU4kw6ZCXqj/image.png" alt=""></p>
-<p>&#x7A81;&#x7136;&#x95F4;&#x9887;&#x6709;&#x79CD;&#x300A;&#x91CD;&#x65E5;&#x91CD;&#x73B0;&#x300B;&#x611F;&#x89C9;&#x3002;<br>Yesterday Once More &#x5361;&#x670B;&#x7279;</p>
-<blockquote>
-<p>When I was young I&#x2019;d listen to the radio<br>Waiting for my favorite songs<br>When they played I&#x2019;d sing along<br>It make me smile<br>Those were such happy times and not so long ago<br>How I wondered where they&#x2019;d gone<br>But they&#x2019;re back again just like a long lost friend<br>All the songs I love so well<br>Every shalala every wo&#x2019;wostill shines<br>Every shing-a-ling-a-ling that they&#x2019;re starting to sing so fine<br>When they get to the part<br>Where he&#x2019;s breaking her heart<br>It can really make me cry<br>Just like before<br>It&#x2019;s yesterday once more<br>(Shoobie do lang lang*)<br>(Shoobie do lang lang)<br>Looking back on how it was in years gone by<br>And the good times that I had<br>Makes today seem rather sad<br>So much has changed<br>It was songs of love that I would sing to them<br>And I&#x2019;d memories each word<br>Those old melodies still sound so good to me<br>As they melt the years away<br>Every shalala every wo&#x2019;wo still shines<br>Every shing-a-ling-a-ling that they&#x2019;re starting to sing so fine<br>All my best memories<br>Come back clearly to me<br>Some can even make me cry<br>Just like before<br>It&#x2019;s yesterday once more<br>(Shoobie do lang lang)<br>Every shalala every wo&#x2019;wo still shines<br>Every shing-a-ling-a-ling that they&#x2019;re starting to sing so fine<br>Every shalala every wo&#x2019;wo still shines<br>Every shing-a-ling-a-ling that they&#x2019;re starting to sing so fine</p>
-</blockquote>
-<p>&#x662F;&#x554A;&#xFF0C;<strong><em>So much has changed</em></strong></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/radio-and-some-memories" target="_blank" rel="noopener">&#x6536;&#x97F3;&#x673A;&#x4EE5;&#x53CA;&#x56DE;&#x5FC6; / Radio and Some memories</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/he-net-dynamic-dns/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmXDsZR3J2SDy58uT9uyBuNcr2vuPRLH6mihY3FTGWnyZM/image.png" alt="使用HE.NET的Dynamic DNS">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-04T12:16:15.000Z">2017-08-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1458 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/he-net-dynamic-dns/">使用HE.NET的Dynamic DNS</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6628;&#x5929;&#x8BF4;&#x4E86;Linksys WRT 1900ACS &#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x8BBE;&#x7F6E;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/linksys-wrt-1900acs-and" target="_blank" rel="noopener">Linksys WRT 1900ACS &#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x8BBE;&#x7F6E; &amp; &#x601D;&#x7EF4;&#x5B9A;&#x5F0F;</a></li>
-</ul>
-<p>&#x4ECA;&#x5929;&#x6765;&#x8BF4;&#x8BF4;&#x4F7F;&#x7528;HE.NET&#x7684;Dynamic DNS.</p>
-<p><img src="https://steemitimages.com/DQmXDsZR3J2SDy58uT9uyBuNcr2vuPRLH6mihY3FTGWnyZM/image.png" alt=""><br><a href="http://tse1.mm.bing.net/th?id=OIP.1P9YLyzpLZTFZGTIIaeZcQEsCZ&amp;pid=15.1" target="_blank" rel="noopener">Image Source</a></p>
-<h1 id="&#x4E3A;&#x4EC0;&#x4E48;&#x7528;HE-NET"><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x7528;HE-NET" class="headerlink" title="&#x4E3A;&#x4EC0;&#x4E48;&#x7528;HE.NET?"></a>&#x4E3A;&#x4EC0;&#x4E48;&#x7528;HE.NET?</h1><p>HE.NET&#x662F;&#x6211;&#x5728;2004&#x5E74;&#x524D;&#x540E;&#x5C31;&#x63A5;&#x89E6;&#x8FC7;&#x7684;&#x670D;&#x52A1;&#x5546;&#xFF0C;&#x540E;&#x6765;&#x6211;&#x7684;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x653E;&#x5230;Theplanet&#xFF0C;&#x7136;&#x540E;Theplanet&#x7684;&#x4E00;&#x6279;&#x5DE5;&#x7A0B;&#x5E08;&#x72EC;&#x7ACB;&#x521B;&#x5EFA;&#x4E86;Softlayer&#xFF0C;&#x518D;&#x4E4B;&#x540E;Softlayer&#x88AB;IBM&#x6536;&#x8D2D;&#xFF0C;&#x518D;&#x53CD;&#x8FC7;&#x6765;&#x6536;&#x8D2D;Theplanet&#xFF0C;&#x6211;&#x7684;N&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7EC8;&#x4E8E;&#x90FD;&#x96C6;&#x4E2D;&#x5230;&#x4E00;&#x5BB6;&#x4E86;&#x3002;&#x81F3;&#x59CB;&#x81F3;&#x7EC8;&#xFF0C;&#x548C;he.net&#x4EA4;&#x6D41;&#x8BE2;&#x4EF7;&#x8FC7;&#x65E0;&#x6570;&#x6B21;&#xFF0C;&#x4F46;&#x662F;&#x59CB;&#x7EC8;&#x6CA1;&#x80FD;&#x5408;&#x4F5C;&#x3002;</p>
-<p>2000&#x5E74;&#x524D;&#x540E;&#x65E0;&#x804A;&#x53BB;&#x505A;&#x4E00;&#x4E2A;DNS&#x5DE5;&#x5177;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6253;&#x7B97;&#x5728;Windows&#x4E0A;&#x5B8C;&#x5168;&#x4ECE;&#x96F6;&#x5F00;&#x59CB;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x5E26;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x7684;DNS&#x67E5;&#x8BE2;&#x5DE5;&#x5177;&#x3002;&#x5DF2;&#x53D1;&#x5E03;&#x7248;&#x672C;&#x652F;&#x6301;&#x4E86;&#x5F88;&#x591A;&#x5E38;&#x89C1;&#x7684;DNS&#x8BB0;&#x5F55;&#x7C7B;&#x578B;&#xFF0C;&#x65B0;&#x7248;&#x672C;&#x652F;&#x6301;&#x4E00;&#x4E9B;DNSSEC(Domain Name System Security Extensions)&#xFF0C;&#x4F46;&#x662F;&#x540E;&#x6765;&#x5FD9;&#x522B;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5C31;&#x6CA1;&#x53BB;&#x8010;&#x5FC3;&#x53BB;&#x505A;&#x53BB;&#x4E86;&#x3002;&#x505A;&#x7684;&#x8FC7;&#x7A0B;&#x8981;&#x6D4B;&#x8BD5;&#x554A;&#xFF0C;&#x6211;&#x5728;DNS&#x670D;&#x52A1;&#x5668;&#x91CC;&#x8BBE;&#x7F6E;&#x597D;&#x5BF9;&#x5E94;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x7528;&#x6211;&#x5B9E;&#x73B0;&#x7684;&#x5DE5;&#x5177;&#x53BB;&#x67E5;&#x8BE2;&#xFF0C;&#x85C9;&#x6B64;&#x5224;&#x65AD;&#x6211;&#x7684;&#x5DE5;&#x5177;&#x5B9E;&#x73B0;&#x7684;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x6211;&#x7684;&#x51E0;&#x53F0;&#x72EC;&#x7ACB;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x88C5;&#x7740;DNS&#x670D;&#x52A1;&#xFF0C;&#x4F46;&#x662F;&#x624B;&#x52A8;&#x53BB;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x592A;&#x9EBB;&#x70E6;&#xFF0C;&#x98CE;&#x9669;&#x4E5F;&#x9AD8;&#xFF0C;&#x4E07;&#x4E00;&#x641E;&#x6B7B;&#x4E86;&#x5C31;&#x4F1A;&#x6328;&#x9A82;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x5C31;&#x53BB;&#x627E;&#x4E00;&#x4E9B;DNS&#x670D;&#x52A1;&#x5546;&#x6D4B;&#x8BD5;&#xFF0C;&#x627E;&#x6765;&#x627E;&#x53BB;&#xFF0C;&#x53D1;&#x73B0;<strong>HE.NET&#x5BF9;&#x5404;&#x79CD;&#x8BB0;&#x5F55;&#x652F;&#x6301;&#x7684;&#x6700;&#x5168;&#x9762;*</strong>&#x3002;&#x4E8E;&#x662F;&#x5B83;&#x5C31;&#x6210;&#x4E86;&#x6211;&#x6D4B;&#x8BD5;DNS&#x7684;&#x9996;&#x9009;&#x670D;&#x52A1;&#x5546;&#x3002;</p>
-<p>Dynamic DNS &#x670D;&#x52A1;&#x5546;&#x597D;&#x591A;&#x5BB6;&#xFF0C;&#x4F46;&#x662F;&#x65E2;&#x7136;HE.NET&#x652F;&#x6301;&#xFF0C;&#x6211;&#x5C31;&#x4E0D;&#x820D;&#x8FD1;&#x6C42;&#x8FDC;&#x5566;&#x3002;</p>
-<h1 id="DNS&#x548C;-Dynamic-DNS"><a href="#DNS&#x548C;-Dynamic-DNS" class="headerlink" title="DNS&#x548C; Dynamic DNS"></a>DNS&#x548C; Dynamic DNS</h1><p>&#x8981;&#x8BF4;Dynamic DNS&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x63D0;<strong><em>DNS(&#x57DF;&#x540D;&#x89E3;&#x6790;&#x670D;&#x52A1;)</em></strong>&#xFF1B;&#x8981;&#x63D0;DNS&#xFF0C;&#x5C31;&#x4E0D;&#x5F97;&#x4E0D;&#x63D0;&#x57DF;&#x540D;&#x3002;</p>
-<p>&#x7B80;&#x5355;&#x7684;&#x8BB2;&#xFF0C;<strong><em>&#x4E92;&#x8054;&#x7F51;&#x7684;&#x4E3B;&#x673A;&#x9760;IP&#x6765;&#x533A;&#x5206;</em></strong>&#xFF0C;&#x8981;&#x8BBF;&#x95EE;&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x670D;&#x52A1;(HTTP&#x3001; FTP&#x3001;EMAIL&#x3001;DATABASE&#x7B49;)&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8981;&#x77E5;&#x9053;&#x5BF9;&#x65B9;&#x7684;IP&#x5730;&#x5740;&#x3002;&#x4F46;&#x662F;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x4E3B;&#x673A;&#x5343;&#x5343;&#x4E07;&#xFF0C;&#x62BD;&#x8C61;&#x7684;IP&#x5730;&#x5740;&#x6839;&#x672C;&#x65E0;&#x6CD5;&#x8BB0;&#x5FC6;&#xFF0C;&#x800C;<strong><em>&#x57DF;&#x540D;&#x5C31;&#x662F;&#x7ED9;&#x8FD9;&#x4E2A;&#x5730;&#x5740;&#x8D77;&#x4E00;&#x4E2A;&#x597D;&#x8BB0;&#x7684;&#x540D;&#x5B57;</em></strong>&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;www.baidu.com&#x8FD9;&#x6837;&#x7684;&#x57DF;&#x540D;&#x6765;&#x8BBF;&#x95EE;&#x5230;&#x767E;&#x5EA6;&#xFF0C;&#x901A;&#x8FC7;www.taobao.com&#x8FD9;&#x6837;&#x7684;&#x57DF;&#x540D;&#x6765;&#x8BBF;&#x95EE;&#x5230;&#x6DD8;&#x5B9D;&#x3002;</p>
-<p>&#x800C;&#x4ECE;<strong><em>&#x57DF;&#x540D;&#x5230;IP&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x662F;&#x57DF;&#x540D;&#x89E3;&#x6790;&#xFF0C;&#x662F;&#x7531;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x670D;&#x52A1;&#x5668;(Name Server)&#x6765;&#x5B8C;&#x6210;&#x7684;</em></strong>&#x3002;</p>
-<p>&#x800C;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x573A;&#x666F;&#x5C31;&#x662F;&#x5206;&#x914D;&#x7ED9;&#x4E3B;&#x673A;&#x7684;IP&#x4E0D;&#x65F6;&#x7684;&#x53D8;&#x5316;&#x3002;<br>&#x8FD9;&#x65F6;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x7684;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x670D;&#x52A1;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E0D;&#x65F6;&#x7684;&#x4FEE;&#x6539;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#xFF0C;&#x6765;&#x5C06;&#x57DF;&#x540D;&#x6307;&#x5411;&#x66F4;&#x65B0;&#x540E;&#x7684;IP&#x3002;&#x8FD9;&#x65F6;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x5B58;&#x5728;&#xFF0C;&#x6BD4;&#x5982;&#x53D8;&#x5316;&#x9891;&#x7E41;&#xFF0C;&#x4FEE;&#x6539;&#x5DE5;&#x4F5C;&#x91CF;&#x5927;&#xFF1B;&#x53D8;&#x5316;&#x65F6;&#x673A;&#x4E0D;&#x5B9A;&#xFF0C;&#x65E0;&#x6CD5;&#x786E;&#x5B9A;&#x4F55;&#x65F6;&#x4FEE;&#x6539;&#x3002;</p>
-<p>Dynamic DNS &#x5F88;&#x597D;&#x7684;&#x89E3;&#x51B3;&#x5982;&#x4E0A;&#x95EE;&#x9898;&#xFF0C;&#x5B83;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#x5C31;&#x662F;&#xFF0C;<strong><em>&#x5F53;&#x4E3B;&#x673A;&#x5173;&#x8054;&#x7684;IP&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x89E3;&#x6790;&#x8BB0;&#x5F55;</em></strong>&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#xFF0C;&#x5C4F;&#x853D;&#x6389;&#x4E00;&#x4E9B;&#x6280;&#x672F;&#x7EC6;&#x8282;&#xFF0C;&#x901A;&#x4FD7;&#x7684;&#x8BB2;&#xFF1A;</p>
-<ul>
-<li>&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x7684;&#x4E3B;&#x673A;&#x9760;IP&#x533A;&#x5206;&#x548C;&#x8BBF;&#x95EE;&#x3002;</li>
-<li>&#x57DF;&#x540D;&#x7ED9;IP&#x5730;&#x5740;&#x8D77;&#x4E86;&#x4E2A;&#x597D;&#x8BB0;&#x7684;&#x540D;&#xFF0C;&#x4ECE;&#x57DF;&#x540D;&#x5230;IP&#x7684;&#x8FC7;&#x7A0B;&#x5C31;&#x662F;&#x57DF;&#x540D;&#x89E3;&#x6790;&#x3002;</li>
-<li>Dynamic DNS&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#xFF0C;&#x9002;&#x5408;&#x5173;&#x8054;&#x5230;&#x4E3B;&#x673A;&#x7684;IP&#x4E0D;&#x65F6;&#x53D8;&#x5316;&#x7684;&#x573A;&#x666F;&#x3002;</li>
-</ul>
-<p>(&#x672C;&#x5C0F;&#x8282;&#x6587;&#x672C;&#x6765;&#x81EA;&#x6211;&#x4EE5;&#x524D;&#x5728;&#x5176;&#x5B83;&#x7F51;&#x7AD9;&#x53D1;&#x8868;&#x7684;&#x539F;&#x521B;&#x6587;&#x7AE0;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x627E;&#x5230;&#x96F7;&#x540C;&#x7684;&#xFF0C;&#x6CA1;&#x9519;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x6211;&#x5199;&#x7684; &#x1F600;&#xFF09;</p>
-<h1 id="HE-NET&#x7684;Dynamic-DNS"><a href="#HE-NET&#x7684;Dynamic-DNS" class="headerlink" title="HE.NET&#x7684;Dynamic DNS"></a>HE.NET&#x7684;Dynamic DNS</h1><p>&#x5173;&#x4E8E;&#x4ED6;&#x4EEC;&#x7684;DNS&#x670D;&#x52A1;&#x4EE5;&#x53CA;Dynamic DNS&#x7684;&#x4F7F;&#x7528;&#x7EC6;&#x8282;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#xFF1A;<a href="https://dns.he.net/" target="_blank" rel="noopener">https://dns.he.net/</a></p>
-<h4 id="&#x5927;&#x81F4;&#x6B65;&#x9AA4;"><a href="#&#x5927;&#x81F4;&#x6B65;&#x9AA4;" class="headerlink" title="&#x5927;&#x81F4;&#x6B65;&#x9AA4;"></a>&#x5927;&#x81F4;&#x6B65;&#x9AA4;</h4><p>&#x6CE8;&#x518C;&#x4E4B;&#x7C7B;&#x7684;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x5927;&#x5BB6;&#x6309;&#x63D0;&#x793A;&#x64CD;&#x4F5C;&#x5373;&#x53EF;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x8D58;&#x8FF0;&#x4E86;&#xFF0C;&#x53EA;&#x5217;&#x51FA;&#x4E00;&#x4E9B;&#x5173;&#x952E;&#x6B65;&#x9AA4;&#x3002;</p>
-<ul>
-<li>&#x5C06;&#x8981;&#x89E3;&#x6790;&#x7684;&#x57DF;&#x540D;DNS&#x8BBE;&#x7F6E;&#x4E3A;HE.NET&#x7684;DNS</li>
-<li>&#x5728;HE.NET&#x7684;DNS&#x9762;&#x677F;&#x4E2D;&#x6DFB;&#x52A0;&#x57DF;&#x540D;</li>
-<li>&#x6DFB;&#x52A0;&#x5BF9;&#x5E94;&#x7684;&#x89E3;&#x6790;&#x8BB0;&#x5F55;&#xFF08;&#x6BD4;&#x5982;A&#x8BB0;&#x5F55;&#xFF09;&#xFF0C;&#x5E76;&#x9009;&#x53D6;&#x201C;Enable entry for dynamic dns&#x201D;</li>
-<li>&#x751F;&#x6210;&#x7528;&#x4E8E;DDNS&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x5BC6;&#x7801;(Generate the key used for dynamic DNS updates)</li>
-<li>&#x5728;&#x4E3B;&#x673A;&#x4E0A;&#x4F7F;&#x7528;DDNS client&#x3002;(&#x8BBE;&#x7F6E;&#x5B9A;&#x65F6;&#x4EFB;&#x52A1;)</li>
-</ul>
-<h4 id="&#x64CD;&#x4F5C;&#x5B9E;&#x4F8B;"><a href="#&#x64CD;&#x4F5C;&#x5B9E;&#x4F8B;" class="headerlink" title="&#x64CD;&#x4F5C;&#x5B9E;&#x4F8B;"></a>&#x64CD;&#x4F5C;&#x5B9E;&#x4F8B;</h4><p>1) &#x5C06;&#x57DF;&#x540D;DNS&#x8BBE;&#x7F6E;&#x4E3A;HE.NET&#x7684;DNS<br><img src="https://steemitimages.com/DQmQdTqfLSENnGvz9AroxWx75UX9GptRHNLHBYyLRBQDwsH/image.png" alt=""></p>
-<p>2) &#x5728;HE.NET&#x7684;DNS&#x9762;&#x677F;&#x4E2D;&#x6DFB;&#x52A0;&#x57DF;&#x540D;<br><img src="https://steemitimages.com/DQmW5yoZxk1xye2NBnojtDkFqiSUMCK8i4aCdkERbxcpV8L/image.png" alt=""></p>
-<p>3) &#x6DFB;&#x52A0;&#x5BF9;&#x5E94;&#x7684;&#x89E3;&#x6790;&#x8BB0;&#x5F55;<br><img src="https://steemitimages.com/DQmNWEUF3ekWKEEFFmyfRcAZsGDhP874DxRvoz1eD8BgsJ5/image.png" alt=""></p>
-<p>4) &#x751F;&#x6210;&#x7528;&#x4E8E;DDNS client&#x7684;&#x5BC6;&#x7801;<br><img src="https://steemitimages.com/DQmRf5Eebnt9oFmXXpJaMDppr1S93xMzR93ZQ237DA8vXLs/image.png" alt=""></p>
-<p>5) &#x8BBE;&#x7F6E;DDNS client<br><code>crontab -e</code><br>&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;<br><code>*/5 * * * * curl &quot;https://dyn.dns.he.net/nic/update&quot; -d &quot;hostname=iot0.xxxx.com&quot; -d &quot;password=XXXXXX&quot; -k</code><br>&#x4EE3;&#x7801;&#x90E8;&#x5206;&#x53EF;&#x4EE5;&#x67E5;&#x9605;&#xFF1A; <a href="https://dns.he.net/" target="_blank" rel="noopener">https://dns.he.net/</a></p>
-<p>&#x597D;&#x5566;&#xFF0C;&#x5927;&#x529F;&#x544A;&#x6210;&#x554A;&#x3002;<br>&#x60F3;&#x6D4B;&#x8BD5;&#x662F;&#x5426;&#x6210;&#x529F;&#xFF0C;ping&#x4E00;&#x4E0B;&#x57DF;&#x540D;&#xFF0C;&#x770B;&#x770B;&#x663E;&#x793A;&#x7684;IP<br>&#x518D;&#x7528;&#x4E00;&#x4E9B;&#x67E5;&#x770B;&#x516C;&#x7F51;IP&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x770B;&#x4E00;&#x4E0B;&#x4E24;&#x8005;&#x662F;&#x5426;&#x4E00;&#x81F4;&#x5C31;&#x53EF;&#x4EE5;&#x5566;&#x3002;</p>
-<p>&#x6216;&#x8005;&#x4F60;&#x5DF2;&#x7ECF;&#x8BBE;&#x7F6E;&#x597D;&#x4E86;NAT&#x7684;&#x7AEF;&#x53E3;&#x8F6C;&#x53D1;&#x4EE5;&#x53CA;&#x5F00;&#x542F;&#x4E86;&#x5BF9;&#x5E94;&#x7684;HTTP&#x670D;&#x52A1;&#x4E4B;&#x7C7B;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x57DF;&#x540D;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x7F51;&#x7AD9;&#x55BD;&#x3002;&#x662F;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF01;</p>
-<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x672C;&#x6587;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E86;&#x57DF;&#x540D;&#x3001;DNS&#x3001;Dynamic DNS&#x7684;&#x539F;&#x7406;&#x3002;<br>&#x5E76;&#x4EE5;HE.NET&#x7684;DNS&#x670D;&#x52A1;&#x4E3A;&#x4F8B;&#xFF0C;&#x4E3A;iot0.xxxx.com&#x6DFB;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;Dynamic DNS&#x7684;A Record&#x3002;<br>&#x9650;&#x4E8E;&#x7BC7;&#x5E45;&#xFF0C;&#x5BF9;&#x4E00;&#x4E9B;&#x6280;&#x672F;&#x7EC6;&#x8282;&#x53EA;&#x505A;&#x901A;&#x4FD7;&#x7684;&#x89E3;&#x91CA;&#xFF0C;&#x60F3;&#x4E86;&#x89E3;&#x5BF9;&#x5E94;&#x77E5;&#x8BC6;&#x7684;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;&#x76F8;&#x5E94;&#x7684;&#x6280;&#x672F;&#x6587;&#x6863;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/he-net-dynamic-dns" target="_blank" rel="noopener">&#x4F7F;&#x7528;HE.NET&#x7684;Dynamic DNS</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/215/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/215/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/217/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/217/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -841,7 +858,7 @@ https://steemd.steemit.com</code></p>
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
 
 
 
