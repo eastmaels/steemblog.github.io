@@ -1,6 +1,6 @@
 
 ---
-title: '#300 Le Miroir d''eau | 水镜 My entry for the 🏝 WE LOVE SUMMER 2019 - PHOTO CONTEST 🏝'
+title: '#300 Le Miroir d''eau | 水镜 '
 permlink: 300-le-miroir-d-eau-or
 catalog: true
 toc_nav_num: true
@@ -12,9 +12,9 @@ categories:
 tags:
 - qurator
 - photocircle
-- summercontest
+- photofeed
 - palnet
-- busy
+- cn
 thumbnail: 'https://img.esteem.ws/rg705b8nsv.jpg'
 sidebar:
     right:
@@ -58,4 +58,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#300 Le Miroir d''eau | 水镜 My entry for the 🏝 WE LOVE SUMMER 2019 - PHOTO CONTEST 🏝'](https://steemit.com/@itchyfeetdonica/300-le-miroir-d-eau-or)
+This page is synchronized from the post: ['#300 Le Miroir d''eau | 水镜 '](https://steemit.com/@itchyfeetdonica/300-le-miroir-d-eau-or)
