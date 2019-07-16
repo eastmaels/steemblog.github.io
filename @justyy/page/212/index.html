@@ -230,6 +230,100 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/answer-mathematics-programming-competition-8/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmWpcJ5e7JF5v6A5Hy5foztZDb9v5adASXcpzq5aiVS7bu/image.png" alt="[Answer] Mathematics × Programming Competition #8 [答案] 數學 × 程式編寫比賽 (第八回)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-20T11:06:30.000Z">2017-10-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/contest/">contest</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 932 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/answer-mathematics-programming-competition-8/">[Answer] Mathematics × Programming Competition #8 [答案] 數學 × 程式編寫比賽 (第八回)</a>
+            
+        </h1>
+        <div class="content">
+            <p>@kenchung &#x2018;s <a href="https://steemit.com/contest/@kenchung/question-mathematics-programming-competition-8" target="_blank" rel="noopener">Contest</a> is fun, as always, thank you!</p>
+<p>This  puzzle is simple to understand.</p>
+<p><img src="https://steemitimages.com/DQmWpcJ5e7JF5v6A5Hy5foztZDb9v5adASXcpzq5aiVS7bu/image.png" alt=""></p>
+<p>If you flip this over 180 degree, you will get </p>
+<p><img src="https://steemitimages.com/DQmSB7WsnM5hqmoNHar5kNe3NmhNS4XBxYeRD3SnLA8Fvh8/image.png" alt=""></p>
+<p>So how many numbers do you need to represent from 0000 to 9999?</p>
+<p>First, we need a function to tell if a digit can be flipped&#x2026; if not, e.g. like 7, we need to return false.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function getRevDig(x) {</span><br><span class="line">	switch (x) {</span><br><span class="line">		case 0: return 0;</span><br><span class="line">		case 1: return 1;</span><br><span class="line">		case 2: return 2;</span><br><span class="line">		case 5: return 5;</span><br><span class="line">		case 6: return 9;</span><br><span class="line">		case 8: return 8;</span><br><span class="line">		case 9: return 6;</span><br><span class="line">		default: return false;</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>Now, given a four digit  number, we need to return its flipped version, to get each digit, you can use module operator and division.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function getRev(x) {</span><br><span class="line">	var a = x % 10;</span><br><span class="line">	a = getRevDig(a);</span><br><span class="line">	if (a === false) return false;</span><br><span class="line">	var b = Math.floor(x / 10) % 10;</span><br><span class="line">	b = getRevDig(b);</span><br><span class="line">	if (b === false) return false;</span><br><span class="line">	var c = Math.floor(x / 100) % 10;</span><br><span class="line">	c = getRevDig(c);</span><br><span class="line">	if (c === false) return false;	</span><br><span class="line">	var d = Math.floor(x / 1000);</span><br><span class="line">	d = getRevDig(d);</span><br><span class="line">	if (d === false) return false;	</span><br><span class="line">	return (a * 1000 + b * 100 + c * 10 + d);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The rest is straightforward, just to check and mark the number and its rotated version in a <a href="https://helloacm.com/interview-question-what-is-the-difference-between-list-and-dictionary-in-python/" target="_blank" rel="noopener">dictionary</a>-like data structure (or array).</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">var total = 0;</span><br><span class="line">var a = {};</span><br><span class="line">for (var i = 0; i &lt;= 9999; ++i) {</span><br><span class="line">	if (!(i in a)) {</span><br><span class="line">		total ++;</span><br><span class="line">		a[i] = 1;</span><br><span class="line">		var x = getRev(i);</span><br><span class="line">		if (x !== false) {</span><br><span class="line">			a[x] = 1;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line">console.log(total);</span><br></pre></td></tr></tbody></table></figure>
+<p>That should give you the correct answer.</p>
+<p><img src="https://steemitimages.com/DQmb33Qwu5vome8xQ2ZLcqFxZmFwV255hPGovzavXSUDtaX/math%26progLOGO-01-01.png" alt=""></p>
+<h2 id="Designed-by-nicolemoker"><a href="#Designed-by-nicolemoker" class="headerlink" title="Designed by @nicolemoker"></a><em>Designed by @nicolemoker</em></h2><p>@kenchung &#x7684; <a href="https://steemit.com/contest/@kenchung/question-mathematics-programming-competition-8" target="_blank" rel="noopener">&#x6570;&#x5B66;&#x53CA;&#x7F16;&#x7A0B;&#x6BD4;&#x8D5B;</a> &#x771F;&#x597D;&#x73A9;&#xFF0C;&#x53EF;&#x4EE5;&#x7EC3;&#x7EC3;&#x8111;&#xFF0C;&#x7EC3;&#x7EC3;&#x624B;&#xFF0C;&#x9632;&#x6B62;&#x8001;&#x5E74;&#x75F4;&#x5446;&#x3002;</p>
+<p>&#x8FD9;&#x6B21;<a href="https://justyy.com/archives/5381" target="_blank" rel="noopener">&#x6BD4;&#x8D5B;</a>&#x4E0D;&#x96BE;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x4E00;&#x4E2A;4&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x7535;&#x5B50;&#x5C4F;&#x5012;&#x8FC7;&#x6765;&#xFF0C;</p>
+<p><img src="https://steemitimages.com/DQmWpcJ5e7JF5v6A5Hy5foztZDb9v5adASXcpzq5aiVS7bu/image.png" alt=""></p>
+<p>&#x5C31;&#x6210;&#x8FD9;&#x6837;&#xFF1A;</p>
+<p><img src="https://steemitimages.com/DQmSB7WsnM5hqmoNHar5kNe3NmhNS4XBxYeRD3SnLA8Fvh8/image.png" alt=""></p>
+<p>&#x95EE;&#x9898;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x591A;&#x5C11;&#x5757;&#xFF08;&#x6BCF;&#x5757;&#x5012;&#x7740;&#x53EF;&#x4EE5;&#x7528;&#xFF09;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5199;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5012;&#x8FC7;&#x6765;&#xFF0C;&#x50CF;7&#x8FD9;&#x79CD;&#x5012;&#x8FC7;&#x6765;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;&#x5C31;&#x53EF;&#x4EE5;&#x8FD4;&#x56DE;FALSE&#x533A;&#x5206;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function getRevDig(x) {</span><br><span class="line">	switch (x) {</span><br><span class="line">		case 0: return 0;</span><br><span class="line">		case 1: return 1;</span><br><span class="line">		case 2: return 2;</span><br><span class="line">		case 5: return 5;</span><br><span class="line">		case 6: return 9;</span><br><span class="line">		case 8: return 8;</span><br><span class="line">		case 9: return 6;</span><br><span class="line">		default: return false;</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;4&#x4F4D;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x5012;&#x8FC7;&#x6765;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x5012;&#x8FC7;&#x6765;&#x65E0;&#x610F;&#x4E49;&#xFF0C;&#x8FD4;&#x56DE;FALSE&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function getRev(x) {</span><br><span class="line">	var a = x % 10;</span><br><span class="line">	a = getRevDig(a);</span><br><span class="line">	if (a === false) return false;</span><br><span class="line">	var b = Math.floor(x / 10) % 10;</span><br><span class="line">	b = getRevDig(b);</span><br><span class="line">	if (b === false) return false;</span><br><span class="line">	var c = Math.floor(x / 100) % 10;</span><br><span class="line">	c = getRevDig(c);</span><br><span class="line">	if (c === false) return false;	</span><br><span class="line">	var d = Math.floor(x / 1000);</span><br><span class="line">	d = getRevDig(d);</span><br><span class="line">	if (d === false) return false;	</span><br><span class="line">	return (a * 1000 + b * 100 + c * 10 + d);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7136;&#x540E;&#x5C31;&#x662F;&#x4ECE;0&#x5230;9999&#xFF0C;&#x6BCF;&#x6B21;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x4E86;&#xFF0C; &#x5426;&#x5219;&#x7EDF;&#x8BA1;&#x52A0;1&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5012;&#x8FC7;&#x6765;&#x7684;&#x6570;&#x5B57;&#x4E5F;&#x6807;&#x8BB0;&#x4E0A;&#x4E86;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">var total = 0;</span><br><span class="line">var a = {};</span><br><span class="line">for (var i = 0; i &lt;= 9999; ++i) {</span><br><span class="line">	if (!(i in a)) {</span><br><span class="line">		total ++;</span><br><span class="line">		a[i] = 1;</span><br><span class="line">		var x = getRev(i);</span><br><span class="line">		if (x !== false) {</span><br><span class="line">			a[x] = 1;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line">console.log(total);</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x80FD;&#x6253;&#x5370;&#x51FA;&#x6B63;&#x786E;&#x7684;&#x7B54;&#x6848;&#x4E86;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x83B7;&#x5956;&#xFF01;</p>
+<hr>
+<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;10%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+<li>&#x4ECA;&#x5929;(2017-10-20) <a href="https://steemit.com/cn/@justyy/daily-cn-updates-cn2017-10-20" target="_blank" rel="noopener">&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;</a></li>
+</ol>
+<hr>
+<ul>
+<li><a href="https://helloacm.com/answer-mathematics-x-programming-competition-8-four-digit-calculator/" target="_blank" rel="noopener">Four Digit Calculator</a></li>
+<li><a href="https://justyy.com/archives/5509" target="_blank" rel="noopener">&#x6570;&#x5B66; &#xD7; &#x7A0B;&#x5F0F;&#x7F16;&#x5199;&#x6BD4;&#x8D5B; (&#x7B2C;&#x516B;&#x56DE;)</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></li>
+<li><strong><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a></strong></li>
+<li><strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></strong></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/answer-mathematics-programming-competition-8" target="_blank" rel="noopener">[Answer] Mathematics &#xD7; Programming Competition #8 [&#x7B54;&#x6848;] &#x6578;&#x5B78; &#xD7; &#x7A0B;&#x5F0F;&#x7DE8;&#x5BEB;&#x6BD4;&#x8CFD; (&#x7B2C;&#x516B;&#x56DE;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cn2017-10-20/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【银行股东名单】(2017-10-20)">
         </a>
@@ -973,77 +1067,6 @@
 </blockquote>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemsql-tutorial-count-total-interests-sent-steemsql" target="_blank" rel="noopener">STEEMSQL Tutorial - Count Total Interests Sent &#x529E;&#x94F6;&#x884C;&#x4E00;&#x4E2A;&#x6708;&#x5171;&#x53D1;&#x4E86;&#x591A;&#x5C11;&#x5229;&#x606F;&#xFF1F;(STEEMSQL &#x6559;&#x7A0B;)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/jvnyf/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmeVRnRyBXXZX6CSJAnLvuKGMBq4XkRrob9RqUeT83SWeu/2017-07-21%2009.33.35-1.jpg" alt="在英国整牙也不是件容易的事 - 说说分期付款在英国整牙的计划">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-10-18T21:08:39.000Z">2017-10-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1259 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/jvnyf/">在英国整牙也不是件容易的事 - 说说分期付款在英国整牙的计划</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6211;&#x7684;&#x7259;&#x4E0D;&#x9F50;&#xFF0C;&#x6211;&#x59D0;&#x8BF4;&#x6211;&#x7684;&#x7259;&#x662F;&#x5706;&#x660E;&#x56ED;&#x7684;&#x65AD;&#x67F1;&#xFF0C;&#x8FD9;&#x53EF;&#x4E0D;&#x80FD;&#x5B8C;&#x5168;&#x602A;&#x6211;&#xFF0C;&#x5C0F;&#x65F6;&#x5019;&#x65E0;&#x6240;&#x8C13;&#x4E0D;&#x61C2;&#x4E8B;&#xFF0C;&#x6362;&#x7259;&#x7684;&#x65F6;&#x5019;&#x7231;&#x5403;&#x786C;&#x7CD6; &#x5C31;&#x6210;&#x8FD9;&#x6837;&#x4E86;&#xFF0C;&#x5728;&#x82F1;&#x56FD;&#x4E00;&#x76F4;&#x6709;&#x89C1;&#x79C1;&#x4EBA;&#x7259;&#x533B;&#x6BCF;&#x534A;&#x5E74;&#x68C0;&#x67E5;&#x4E00;&#x6B21;&#x7684;&#x4E60;&#x60EF;&#xFF0C;&#x4E5F;&#x542C;&#x4ECE;&#x7259;&#x533B;&#x7684;&#x6307;&#x5BFC;&#x7528;&#x7535;&#x52A8;&#x7259;&#x5237;&#xFF0C;&#x7528;&#x6E05;&#x7406;&#x7259;&#x9F7F;&#x7684;&#x8F6F;&#x7259;&#x7B7E;&#xFF0C;&#x4F46;&#x662F;&#x7259;&#x9F7F;&#x957F;&#x6B6A;&#x4E86;&#xFF0C;&#x6E05;&#x7406;&#x5DE5;&#x4F5C;&#x4E00;&#x76F4;&#x662F;&#x4E2A;&#x9EBB;&#x70E6;&#x4E8B;&#xFF0C;&#x4E00;&#x4E0D;&#x5C0F;&#x5FC3;&#x5C31;&#x7259;&#x9F88;&#x6D41;&#x8840;&#x3002;</p>
-<p>&#x8001;&#x5B9E;&#x8BF4;&#xFF0C;&#x6211;3&#x5E74;&#x591A;&#x524D;&#x8FD8;&#x5728;<a href="https://justyy.com/archives/4147" target="_blank" rel="noopener">&#x8C22;&#x83F2;&#x5C14;&#x5F97;</a>&#x7684;&#x65F6;&#x5019;&#x5C31;&#x548C;&#x6211;&#x5AB3;&#x5987;&#x4E0B;&#x5B9A;&#x51B3;&#x5FC3;&#x8981;&#x628A;&#x7259;&#x9F7F;&#x6574;&#x597D;&#x6765;&#xFF0C;&#x6211;&#x5AB3;&#x5987;&#x7259;&#x9F7F;&#x4E5F;&#x4E0D;&#x9F50;&#xFF0C;&#x751F;&#x8001;&#x5927;&#x540E;&#xFF0C;&#x7259;&#x9F7F;&#x72B6;&#x51B5;&#x66F4;&#x5DEE;&#x4E86;&#xFF0C;&#x5F53;&#x65F6;&#x6BCF;&#x6B21;&#x53BB;<a href="https://justyy.com/archives/4180" target="_blank" rel="noopener">&#x7259;&#x533B;</a>&#x68C0;&#x67E5;&#xFF0C;&#x7259;&#x533B;&#x603B;&#x662F;&#x8BF4;&#x518D;&#x89C2;&#x5BDF;&#x51E0;&#x4E2A;&#x6708;&#x7B49;&#x7259;&#x9F7F;&#x72B6;&#x51B5;&#x597D;&#x4E86;&#x518D;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x3002;&#x56E0;&#x4E3A;&#x7259;&#x533B;&#x8BA4;&#x4E3A;&#xFF0C;&#x6CA1;&#x517B;&#x6210;&#x7259;&#x9F7F;&#x6E05;&#x7406;&#x5E72;&#x51C0;&#x7684;&#x4E60;&#x60EF;&#x7B49;&#x6234;&#x4E0A;&#x7259;&#x5957;&#x540E;&#x6548;&#x679C;&#x4E0D;&#x597D;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x7259;&#x9F88;&#x53D1;&#x708E;&#xFF0C;&#x5F97;&#x4E0D;&#x507F;&#x5931;&#x3002;</p>
-<p>&#x4E00;&#x6765;&#x4E8C;&#x5F80;&#xFF0C;&#x4E00;&#x5E74;&#x8FC7;&#x53BB;&#x4E86;&#xFF0C;&#x5AB3;&#x5987;&#x53C8;&#x610F;&#x5916;<a href="https://justyy.com/archives/835" target="_blank" rel="noopener">&#x6000;&#x5B55;</a>&#x4E86;&#xFF0C;&#x8FD9;&#x4E0B;&#x8FD9;&#x8BA1;&#x5212;&#x53C8;&#x5F97;&#x5F80;&#x540E;&#x63A8;&#x63A8;&#xFF0C;&#x7136;&#x540E;&#x751F;&#x5B8C;&#x5B69;&#x5B50;&#x540E;&#xFF0C;&#x53C8;&#x9047;&#x4E0A;&#x516C;&#x53F8;&#x5F80;&#x5357;&#x90E8;&#x642C;&#x5230;&#x5251;&#x6865;&#xFF0C;&#x6240;&#x4EE5;&#x7D22;&#x6027;&#x7B49;&#x642C;&#x5BB6;&#x540E;&#x518D;&#x6574;&#x3002; &#x6765;&#x5230;&#x5251;&#x6865;&#x540E;&#x6CE8;&#x518C;&#x79C1;&#x4EBA;&#x7259;&#x533B;&#xFF0C;&#x7136;&#x540E;&#x7259;&#x533B;&#x4E5F;&#x662F;&#x8BF4;&#x5F97;&#x5148;&#x89C2;&#x5BDF;&#x51E0;&#x4E2A;&#x6708;&#xFF0C;&#x8FD9;&#x4E48;&#x4E00;&#x6765;&#x4E8C;&#x53BB;&#xFF0C;&#x5927;&#x6982;&#x4ECA;&#x5E74;&#x516D;&#x6708;&#x4EFD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7259;&#x533B; &#x603B;&#x7B97;&#x8BF4;&#x53EF;&#x4EE5;&#x6574;&#x7259;&#x4E86;&#xFF0C;&#x533B;&#x79D1;&#x8BCA;&#x6240;&#x628A;&#x6211;&#x4FE9;&#x7684;&#x8D44;&#x6599;&#x63A8;&#x8350;&#x5230;&#x53E6;&#x4E00;&#x4E13;&#x95E8;&#x7684;&#x7259;&#x9F7F;&#x6574;&#x5F62;&#x8BCA;&#x6240;&#xFF0C;&#x7136;&#x540E;&#x51E0;&#x6B21;&#x9884;&#x7EA6;&#x7167;X&#x5149;&#xFF0C;&#x8BA8;&#x8BBA;&#x8BA1;&#x5212;&#xFF0C;&#x8FD8;&#x6709;&#x5C31;&#x662F;&#x6572;&#x5B9A;&#x8D39;&#x7528;&#xFF0C;&#x4F30;&#x8BA1;&#x534A;&#x5E74;&#x5185;&#x5E94;&#x8BE5;&#x80FD;&#x6234;&#x4E0A;&#x7259;&#x5957;&#x3002;</p>
-<p><a href="https://justyy.com/archives/411" target="_blank" rel="noopener">&#x7259;&#x9F7F;</a>&#x6B63;&#x7578;&#x6CBB;&#x7597;&#x7684;&#x8D39;&#x7528;&#x4E0D;&#x4F4E;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x81EA;&#x8D39;&#x3002;&#x5982;&#x679C;&#x548C;&#x5065;&#x5EB7;&#x6709;&#x5173;&#xFF0C;&#x6BD4;&#x5982;&#x4E0D;&#x6574;&#x7684;&#x8BDD;&#x4F1A;&#x5F71;&#x54CD;&#x8EAB;&#x4F53;&#x5065;&#x5EB7;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x5C5E;&#x4E8E;&#x6CBB;&#x7597;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x987A;&#x5E26;&#x53EF;&#x4EE5;&#x6574;&#x597D;&#xFF0C;&#x90A3;&#x4E48;&#x82F1;&#x56FD;NHS&#x5168;&#x6C11;&#x533B;&#x4FDD;&#x4F1A;&#x652F;&#x4ED8;&#x5927;&#x90E8;&#x5206;&#x7684;&#x8D39;&#x7528;&#xFF0C;&#x60A3;&#x8005;&#x53EA;&#x9700;&#x8981;&#x652F;&#x4ED8;200&#x591A;&#x82F1;&#x9551;&#x3002;</p>
-<p>&#x6211;&#x7684;&#x6574;&#x5957;&#x6CBB;&#x7597;&#x8D39;&#x7528;&#x662F;4000&#x82F1;&#x9551;&#xFF0C;&#x5AB3;&#x5987;&#x7684;&#x662F;4500&#x82F1;&#x9551;&#xFF0C;&#x56E0;&#x4E3A;&#x7259;&#x533B;&#x8BF4;&#x5979;&#x7684;&#x60C5;&#x51B5;&#x8F83;&#x590D;&#x6742;&#xFF0C;&#x6709;&#x9897;&#x540E;&#x4E0A;&#x9762;&#x7684;&#x4E00;&#x9897;&#x7259;&#x9F7F;&#x8D8A;&#x957F;&#x8D8A;&#x957F;&#x6CA1;&#x6709;&#x963B;&#x6321;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x4E0B;&#x9762;&#x7684;&#x7259;&#x9F88;&#x3002;&#x4E00;&#x4E0B;&#x5B50;&#x62FF;&#x4E0D;&#x51FA;&#x8FD9;&#x4E48;&#x591A;&#x94B1;&#xFF0C;&#x5206;&#x671F;&#x4ED8;&#x6B3E;&#x662F;&#x4E2A;&#x597D;&#x4E3B;&#x610F;&#xFF0C;&#x7259;&#x79D1;&#x8BCA;&#x6240;&#x8054;&#x7CFB;&#x4E86;&#x7B2C;&#x4E09;&#x65B9;&#x7684;<a href="https://justyy.com/archives/3639" target="_blank" rel="noopener">&#x4FE1;&#x7528;&#x8D37;</a>&#xFF0C;&#x5F88;&#x5FEB;&#x4E24;&#x4EFD;&#x8D37;&#x6B3E;&#x5C31;&#x90FD;&#x4E0B;&#x6765;&#x4E86;&#xFF0C;&#x9996;&#x4ED8;&#x5404;1300&#x82F1;&#x9551;&#x5DE6;&#x53F3;&#xFF0C;&#x6BCF;&#x4EFD;&#x8D37;&#x6B3E;&#x6BCF;&#x4E2A;&#x6708;&#x8FD8;130&#x82F1;&#x9551;&#xFF0C;&#x8FD8;2&#x5E74;&#xFF0C;&#x65E0;&#x606F;&#x3002;</p>
-<p>&#x79C1;&#x4EBA;&#x7259;&#x533B;&#x5F88;&#x4E13;&#x4E1A;&#xFF0C;&#x6BCF;&#x4EBA;&#x7535;&#x8111;&#x90FD;&#x4F1A;&#x5EFA;&#x6863;&#xFF0C;&#x7167;X&#x5149;&#xFF0C;&#x5236;&#x4F5C;&#x7259;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x8FC7;&#x7A0B;&#x5F97;&#x5148;&#x5230;<a href="https://justyy.com/archives/3785" target="_blank" rel="noopener">NHS&#x8BCA;&#x6240;</a>&#x62D4;&#x6389;&#x51E0;&#x9897;&#x7259;&#xFF08;&#x8FD9;&#x4E9B;&#x8D39;&#x7528;&#x53E6;&#x7B97;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6234;&#x7259;&#x5957;&#xFF0C;&#x5B9A;&#x671F;&#xFF08;&#x6BCF;4&#x5230;6&#x5468;&#xFF09;&#x590D;&#x67E5;&#xFF0C;&#x4E3A;&#x671F;1&#x5E74;&#x534A;&#x5230;2&#x5E74;&#x3002;</p>
-<p>&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x5E76;&#x6CA1;&#x6709;&#x50CF; @tumutanzi <a href="https://steemit.com/cn/@tumutanzi/4awoz9" target="_blank" rel="noopener">&#x8D27;&#x6BD4;&#x4E09;&#x5BB6;</a>  &#x56E0;&#x4E3A;&#x7B49;&#x592A;&#x4E45;&#x4E86;&#xFF0C;&#x7F51;&#x4E0A;&#x505A;&#x4E86;&#x529F;&#x8BFE;&#xFF0C;&#x8BC4;&#x4EF7;&#x8FD8;&#x4E0D;&#x9519;&#xFF0C;&#x8FD8;&#x67E5;&#x4E86;&#x5927;&#x6982;&#x4EF7;&#x94B1;&#x5DEE;&#x4E0D;&#x591A;&#x5C31;&#x60F3;&#x5C3D;&#x7BA1;&#x6574;&#x597D;&#xFF0C;&#x8981;&#x4E0D;&#x7136;&#x8FD8;&#x5F97;&#x8BF7;&#x5047;&#xFF0C;&#x8DD1;&#x53E6;&#x4E00;&#x5BB6;&#x8BCA;&#x6240;&#xFF0C;&#x7EA6;&#x4E0A;&#x53EF;&#x80FD;&#x53C8;&#x5F97;&#x597D;&#x51E0;&#x4E2A;&#x6708;&#x4E4B;&#x540E;&#x7684;&#x4E8B;&#x60C5;&#x4E86;&#xFF0C;&#x65F6;&#x95F4;&#x4E5F;&#x662F;&#x79CD;&#x6210;&#x672C;&#xFF0C;&#x5728;&#x82F1;&#x56FD;&#x80FD;&#x8BA9;&#x4F60;&#x6574;&#x7259;&#x4E5F;&#x4E0D;&#x662F;&#x4EF6;&#x5BB9;&#x6613;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x7684;&#x6234;&#x7259;&#x5957;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x8BA9;&#x7259;&#x9F7F;&#x66F4;&#x6574;&#x9F50;&#xFF0C;&#x6E05;&#x7406;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x4F1A;&#x90A3;&#x4E48;&#x96BE;&#x4E8E;&#x6E05;&#x7406;&#xFF08;&#x6B6A;&#x7684;&#x7F1D;&#x91CC;&#x5F88;&#x96BE;&#x6E05;&#x7406;&#x5230;&#x6C61;&#x57A2;&#xFF09; &#xFF0C;&#x81F3;&#x4E8E;&#x6574;&#x5B8C;&#x7259;&#x540E;&#x4E5F;&#x8BB8;&#x80FD;&#x987A;&#x5E26;&#x53D8;&#x7F8E;&#x53D8;&#x5E05;&#x90A3;&#x4E5F;&#x662F;&#x6781;&#x597D;&#x7684;&#x3002;</p>
-<p>&#x7259;&#x533B;&#x5728;&#x53D6;&#x5AB3;&#x5987; @happyukgo &#x7684;&#x7259;&#x6A21;<br><img src="https://steemitimages.com/DQmeVRnRyBXXZX6CSJAnLvuKGMBq4XkRrob9RqUeT83SWeu/2017-07-21%2009.33.35-1.jpg" alt="2017-07-21 09.33.35-1.jpg"></p>
-<p>&#x6211;&#x7684;&#x6CBB;&#x7597;&#x65B9;&#x6848;&#x3002;&#x7259;&#x533B;&#x4F1A;&#x548C;&#x4F60;&#x5546;&#x91CF;&#x8BA8;&#x8BBA;&#x5404;&#x79CD;&#x65B9;&#x6848;&#x7684;&#x4F18;&#x7F3A;&#x70B9;&#x3002;<br><img src="https://steemitimages.com/DQmbWrL5QPcrAp51WGuuR12UdcvhE9tXFf4zYz5FhdNeNyD/2017-07-21%2009.26.26.jpg" alt="2017-07-21 09.26.26.jpg"></p>
-<hr>
-<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-</ol>
-<h2 id="gt-&#x82F1;&#x56FD;&#x6574;&#x7259;"><a href="#gt-&#x82F1;&#x56FD;&#x6574;&#x7259;" class="headerlink" title="&gt; &#x82F1;&#x56FD;&#x6574;&#x7259;"></a>&gt; <a href="https://justyy.com/archives/5498" target="_blank" rel="noopener">&#x82F1;&#x56FD;&#x6574;&#x7259;</a></h2><blockquote>
-<p><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a><br><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/jvnyf" target="_blank" rel="noopener">&#x5728;&#x82F1;&#x56FD;&#x6574;&#x7259;&#x4E5F;&#x4E0D;&#x662F;&#x4EF6;&#x5BB9;&#x6613;&#x7684;&#x4E8B; - &#x8BF4;&#x8BF4;&#x5206;&#x671F;&#x4ED8;&#x6B3E;&#x5728;&#x82F1;&#x56FD;&#x6574;&#x7259;&#x7684;&#x8BA1;&#x5212;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
