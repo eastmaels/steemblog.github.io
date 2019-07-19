@@ -1,6 +1,6 @@
 
 ---
-title: '#301 Summer Sports | 水上运动好去处 My entry for the 🏝 WE LOVE SUMMER 2019 - PHOTO CONTEST 🏝'
+title: '#301 Summer Sports | 水上运动好去处'
 permlink: 301-summer-sports
 catalog: true
 toc_nav_num: true
@@ -13,8 +13,8 @@ tags:
 - qurator
 - photocircle
 - photofeed
-- summercontest
 - palnet
+- travel
 thumbnail: 'https://img.esteem.ws/9x1v2pcysm.jpg'
 sidebar:
     right:
@@ -32,9 +32,9 @@ Today I'm sharing a photo I took at Hastings Point, an attractive coastal settle
 
 It’s one of our first stops on the road trip during the extended Christmas and New Year holiday, when it was the hottest time in this part of Straya. We enjoyed the sea and stayed one night at this venue among other caravans and tents. 
 
-This small hamlet is surrounded by a large national park, and it's nestled between the vast ocean and a delicate estuary. It's a popular place for various water sports. 
+This small hamlet is surrounded by a large national park, and it's nestled between the vast ocean and a delicate estuary. Offering a wide range of choices for various water sports, this area is popular among locals as well as visitors. 
 
-It’s my entry for the WE LOVE SUMMER 2019 - PHOTO CONTEST by @flamingirl. Don't hesitate to join the fun if you also have some summer shots to share! :)
+It’s my entry for Qurator’s Photo Friday Competition. Don't hesitate to join the fun if you also love photography! :)
 
 <br />
 <center><sup>All content by @itchyfeetdonica
@@ -58,4 +58,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#301 Summer Sports | 水上运动好去处 My entry for the 🏝 WE LOVE SUMMER 2019 - PHOTO CONTEST 🏝'](https://steemit.com/@itchyfeetdonica/301-summer-sports)
+This page is synchronized from the post: ['#301 Summer Sports | 水上运动好去处'](https://steemit.com/@itchyfeetdonica/301-summer-sports)
