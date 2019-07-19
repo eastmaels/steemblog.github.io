@@ -230,6 +230,69 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/wordpress-4-9-1-bug-of-customtags-throws-warning/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512076729/gcvsltd96iqef9xk8vca.jpg" alt="Wordpress 4.9.1  Bug of CUSTOM_TAGS throws Warning">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-30T21:21:18.000Z">2017-11-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 147 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/wordpress-4-9-1-bug-of-customtags-throws-warning/">Wordpress 4.9.1  Bug of CUSTOM_TAGS throws Warning</a>
+            
+        </h1>
+        <div class="content">
+            <p>The Wordpress 4.9.1. has just been released. I have tried to enable the customize tag e.g. script in my post, and it throws the following warning:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Warning: in_array() expects parameter 2 to be array, null given in wp-includes/kses.php on line 1416</span><br></pre></td></tr></tbody></table></figure>
+<p>Screenshot:</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512076729/gcvsltd96iqef9xk8vca.jpg" alt="wordpress-bug.jpg"></p>
+<h1 id="The-steps-to-reproduce"><a href="#The-steps-to-reproduce" class="headerlink" title="The steps to reproduce:"></a>The steps to reproduce:</h1><ol>
+<li>add <code>define(&apos;CUSTOM_TAGS&apos;, true);</code> in <code>wp_config.php</code> under your wordpress root directory.</li>
+<li>add the following to <code>functions.php</code> template </li>
+</ol>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function add_scriptfilter( $string ) {</span><br><span class="line">  global $allowedtags;</span><br><span class="line">  $allowedtags[&apos;script&apos;] = array( &apos;src&apos; =&gt; array () );</span><br><span class="line">  return $string;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">add_filter( &apos;pre_kses&apos;, &apos;add_scriptfilter&apos; );</span><br></pre></td></tr></tbody></table></figure>
+<p>and then the warning will be thrown on all pages/posts.</p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/wordpress-4-9-1-bug-of-customtags-throws-warning" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/wordpress-4-9-1-bug-of-customtags-throws-warning" target="_blank" rel="noopener">Wordpress 4.9.1  Bug of CUSTOM_TAGS throws Warning</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/cn-yy-2017-11-30/" class="image is-7by1">
             <img class="thumbnail" src="https://helloacm.com/images/yybank.jpg" alt="CN 中文区每日【点赞收益年化率】【YY银行利息统计】 (2017-11-30)">
         </a>
@@ -6436,92 +6499,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/69/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmWWBPwyUpNiMnVEmBMobMKdPCBhqenTx23G14K8RUpeWf/image.png" alt="写在第69级">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-29T19:54:27.000Z">2017-11-29</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1019 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/69/">写在第69级</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x8FD9;&#x4E24;&#x5929;&#x5C31;&#x6709;&#x9884;&#x611F;<a href="https://justyy.com/archives/5640" target="_blank" rel="noopener">&#x8981;&#x5347;&#x7EA7;&#x4E86;</a>&#xFF0C;&#x867D;&#x7136;&#x524D;&#x51E0;&#x5929; steemd.com &#x5C31;&#x5DF2;&#x7ECF;&#x663E;&#x793A;69&#x7EA7;&#xFF0C;&#x4F46;&#x662F;&#x5728; steemit.com &#x8FD8;&#x662F;68&#x7EA7;&#xFF0C;&#x4ECA;&#x5929;&#x5728;&#x5403;&#x4E86; @utopian-io &#x9001;&#x51FA;&#x7684;&#x8611;&#x83C7;&#x540E;&#xFF0C;&#x5C31;&#x5347;&#x7EA7;&#x4E86;(&#x611F;&#x8C22;&#x8FD9;&#x4E2A;<a href="https://justyy.com/archives/5520" target="_blank" rel="noopener">&#x5927;&#x817F;</a>)&#xFF1A;</p>
-<p><img src="https://steemitimages.com/DQmWWBPwyUpNiMnVEmBMobMKdPCBhqenTx23G14K8RUpeWf/image.png" alt=""></p>
-<p>&#x7528;  @arcange &#x7684; <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> &#x786E;&#x8BA4;&#x4E86;<a href="https://justyy.com/archives/5619" target="_blank" rel="noopener">&#x4E00;&#x4E0B;</a>&#xFF1A;</p>
-<p><img src="https://steemitimages.com/DQmNxCXH9nHFcWvEKTGwdqdtUMiVBEenK39eS9EKV8uZAUR/image.png" alt=""></p>
-<p>&#x4ECE;68&#x7EA7;&#x5230;69&#x7EA7;&#x597D;&#x50CF;&#x7ECF;&#x5386;&#x4E86;&#x4E09;&#x56DB;&#x4E2A;&#x6708;&#x7684;&#x52AA;&#x529B;&#x3002;&#x4F30;&#x8BA1;&#x5230;70&#x7EA7;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x660E;&#x5E74;&#x51AC;&#x5929;&#x4E86;&#x3002;</p>
-<p>&#x6536;&#x76CA;&#x5C11;&#x4E86;&#xFF0C;&#x7559;&#x4E0B;&#x7684;&#x624D;&#x662F;&#x771F;&#x7231;&#x3002;&#x522B;&#x4EBA;&#x4E0D;&#x5199;&#x4E86;&#xFF0C;&#x8FD9;&#x662F;&#x8D76;&#x8D85;&#x7684;&#x597D;&#x673A;&#x4F1A;&#x3002;&#x6211;&#x628A;STEEM&#x5F53;&#x6210;&#x662F;&#x4E00;&#x4E2A;&#x9A6C;&#x62C9;&#x677E;&#x6BD4;&#x8D5B;&#xFF0C;&#x6BCF;&#x5347;&#x4E00;&#x6B21;&#x7EA7;&#x5C31;&#x597D;&#x6BD4;&#x591A;&#x8DD1;&#x4E86;&#x4E00;&#x5708;&#xFF0C;&#x4E00;&#x5708;&#x6BD4;&#x4E00;&#x5708;&#x96BE;&#xFF0C;&#x90A3;&#x79CD;&#x611F;&#x89C9;&#x662F;&#x5F88;&#x6109;&#x60A6;&#x7684;&#x3002;</p>
-<p>&#x6211;&#x4E0D;&#x592A;&#x5EFA;&#x8BAE;&#x5E73;&#x5747;&#x6BCF;&#x5929;&#x82B1;&#x5728;STEEM&#x4E0A;&#x7684;&#x65F6;&#x95F4;&#x8D85;&#x8FC7;1&#x5C0F;&#x65F6;&#x3002;STEEM&#x53EA;&#x80FD;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;&#x8BA9;&#x4F60;&#x6323;&#x4E9B;&#x96F6;&#x82B1;&#x94B1;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6781;&#x5C11;&#x60C5;&#x51B5;&#x4E0B;&#x80FD;&#x5F53;&#x6210;&#x4E3B;&#x4E1A;&#x751A;&#x81F3;&#x662F;&#x4E8B;&#x4E1A;&#x8BA9;&#x4F60;&#x53D1;&#x5927;&#x8D22;&#x3002;&#x6211;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x4E0D;&#x5EFA;&#x8BAE; &#x5728;utopian &#x4E0A;&#x5F04;&#x7FFB;&#x8BD1;&#xFF0C;&#x56E0;&#x4E3A;&#x82B1;&#x7684;&#x65F6;&#x95F4;&#x5F80;&#x5F80;&#x548C;&#x56DE;&#x62A5;&#x4E0D;&#x6210;&#x6B63;&#x6BD4;&#x3002;&#x5BB9;&#x6613;&#x60A3;&#x5F97;&#x60A3;&#x5931;&#x3002;&#x800C;&#x4E14;&#x5728; utopian &#x4E0A;&#x8D21;&#x732E;&#x7FFB;&#x8BD1;&#x5BF9;&#x4F60;&#x7684;&#x4E8B;&#x4E1A;&#x51E0;&#x4E4E;&#x5E2E;&#x52A9;&#x4E0D;&#x5927;&#xFF0C;&#x5B8C;&#x5168;&#x5C31;&#x662F;&#x6D6A;&#x8D39;&#x65F6;&#x95F4;&#x3001;&#x6D6A;&#x8D39;&#x751F;&#x547D;&#x3002;&#x4E3A;&#x4E86;&#x5341;&#x51E0;&#x4E8C;&#x5341;&#x7F8E;&#x5143;&#xFF0C;&#x82B1;&#x4E86;&#x4E00;&#x4E24;&#x5C0F;&#x65F6;&#x7FFB;&#x8BD1;&#xFF0C;&#x4E0D;&#x8D5A;&#x94B1;&#x53C8;&#x4E0D;&#x600E;&#x4E48;&#x597D;&#x73A9;&#x7684;&#x4E8B;&#x60C5;&#x5C3D;&#x91CF;&#x5C11;&#x505A;&#x3002;</p>
-<p><a href="https://justyy.com/archives/5640" target="_blank" rel="noopener">&#x65F6;&#x95F4;&#x7BA1;&#x7406;</a>&#x662F;&#x95E8;&#x827A;&#x672F;&#xFF0C;&#x5F88;&#x591A;&#x4EBA;&#x6BCF;&#x5929;&#x6709;&#x5F88;&#x591A;&#x788E;&#x7247;&#x65F6;&#x95F4;&#xFF0C;&#x4F60;&#x662F;&#x5426;&#x6709;&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#xFF08;&#x6BD4;&#x5982;&#x5B66;&#x4E60;&#xFF09;&#x800C;&#x4E0D;&#x662F;&#x62FF;&#x6765;&#x5237;&#x5237; STEEM&#xFF1F;</p>
-<hr>
-<p>@justyy &#x662F;&#x6709;&#x540D;&#x7684;&#x6652;&#x5AB3;&#x5987;&#x535A;&#x4E3B;&#xFF1A;</p>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/photography-of-our-love-2017" target="_blank" rel="noopener">Photography of Our Love &#x5199;&#x5728;2017&#x5E74;&#x4E03;&#x5915;: &#x7231;&#x60C5;&#x4EB2;&#x60C5;&#xFF0C;&#x90A3;&#x4E9B;&#x7F8E;&#x597D;&#x7684;&#x56DE;&#x5FC6;(&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x4EFB;&#x6027;&#x7684;&#x6492;&#x72D7;&#x7CAE;)</a></li>
-<li><a href="https://steemit.com/cn/@justyy/jvnyf" target="_blank" rel="noopener">&#x5728;&#x82F1;&#x56FD;&#x6574;&#x7259;&#x4E5F;&#x4E0D;&#x662F;&#x4EF6;&#x5BB9;&#x6613;&#x7684;&#x4E8B; - &#x8BF4;&#x8BF4;&#x5206;&#x671F;&#x4ED8;&#x6B3E;&#x5728;&#x82F1;&#x56FD;&#x6574;&#x7259;&#x7684;&#x8BA1;&#x5212;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/50mm-f1-8" target="_blank" rel="noopener">Picnic Photography using Canon 50mm F1.8 &#x5165;&#x624B; &#x52A0;&#x80FD;50mm&#x5B9A;&#x7126;&#x955C;&#x5934; F1.8</a></li>
-<li><a href="https://justyy.com/archives/3491" target="_blank" rel="noopener">&#x7ED9;&#x8001;&#x5A46;&#x5F04;&#x4E86;&#x8F86;&#x5C0F;&#x5954;&#x5F00;&#x5F00;</a></li>
-<li><a href="https://justyy.com/archives/5555" target="_blank" rel="noopener">&#x795D;&#x81EA;&#x5DF1;33&#x5C81;&#x751F;&#x65E5;&#x5FEB;&#x4E50; Happy 33rd Birthday to myself!</a></li>
-<li><a href="https://justyy.com/archives/4820" target="_blank" rel="noopener">&#x7ED3;&#x5A5A;5&#x5E74;&#x7EAA;&#x5FF5;&#x65E5;</a></li>
-</ol>
-<blockquote>
-<p>&#x4E5F;&#x662F;&#x897F;&#x534A;&#x7403;&#x6700;&#x88C5;X&#x88C5;&#x571F;&#x8C6A; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#x3002; @justyy &#x5B9A;&#x5C45;&#x82F1;&#x56FD;&#xFF0C;&#x4E00;&#x59BB;&#x4E24;&#x5A03;&#xFF0C;&#x5728;STEEMIT&#x4E0A;&#x5F00;&#x529E;&#x4E86;&#x5386;&#x53F2;&#x4E0A;&#x4E2D;&#x6587;&#x7B2C;&#x4E00;&#x5BB6;&#x94F6;&#x884C;&#xFF0C;&#x53F2;&#x79F0; YY&#x592E;&#x884C;&#xFF0C;&#x6BCF;&#x65E5;&#x8D54;&#x94B1;&#x5406;&#x559D;&#x3002; @justyy &#x51E1;&#x4E8B;&#x559C;&#x6B22;&#x6298;&#x817E;&#xFF0C;&#x73B0;&#x5728;&#x5728;&#x4E00;&#x5BB6;&#x82F1;&#x56FD;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x91CC;&#x5F53;&#x7801;&#x519C;&#xFF0C;&#x597D;&#x542C;&#x4E00;&#x70B9;&#x53EB;&#x4F5C;&#x7B97;&#x6CD5;&#x653B;&#x57CE;&#x72EE;&#x3002; @justyy &#x559C;&#x6B22;&#x7ED3;&#x4EA4;&#x5929;&#x4E0B;&#x597D;&#x53CB;&#xFF0C;&#x4E00;&#x8D77;YY&#x3002;</p>
-</blockquote>
-<p>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;&#x5E74;&#x5316;&#x7387;5%&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#x3002;</p>
-<h2 id="YY&#x94F6;&#x884C;"><a href="#YY&#x94F6;&#x884C;" class="headerlink" title="YY&#x94F6;&#x884C;"></a>YY&#x94F6;&#x884C;</h2><ul>
-<li><a href="https://steemit.com/cn/@justyy/cnbuddy-yy" target="_blank" rel="noopener">cnbuddy &#x548C; YY &#x94F6;&#x884C;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x54EA;&#x4E2A;&#x66F4;&#x9002;&#x5408;&#x4F60;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a></li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a><h2 id="&#x65E5;&#x62A5;"><a href="#&#x65E5;&#x62A5;" class="headerlink" title="&#x65E5;&#x62A5;"></a>&#x65E5;&#x62A5;</h2></li>
-<li><a href="https://steemit.com/cn-stats/@justyy/daily-cn-updates-cnyy2017-11-29" target="_blank" rel="noopener">&#x4ECA;&#x5929;(2017-11-29) &#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;</a></li>
-<li><a href="https://steemit.com/cn-stats/@justyy/cn--2017-11-29" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011;</a></li>
-<li><a href="https://steemit.com/cn-stats/@justyy/cn-yy-2017-11-29" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x5E74;&#x5316;&#x7387;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;</a><h2 id="&#x5DE5;&#x5177;"><a href="#&#x5DE5;&#x5177;" class="headerlink" title="&#x5DE5;&#x5177;"></a>&#x5DE5;&#x5177;</h2></li>
-<li><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></li>
-<li><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#xFF0C; API&#x63A5;&#x53E3;&#x548C;&#x6559;&#x7A0B;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></li>
-</ul>
-<p>&#x8D76;&#x7D27;&#x52A0;&#x5165;CN&#x533A;&#x4F4E;&#x4FDD;&#x94F6;&#x884C;&#x3001;&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#x3001;&#x597D;&#x5904;&#x591A;&#x591A;&#x3001;&#x6BCF;&#x5929;&#x6536;&#x83B7;&#x70B9;&#x8D5E;&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;5%&#x7684;&#x5229;&#x606F;&#xFF08;&#x53D1;&#x653E;SBD&#xFF09;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/69" target="_blank" rel="noopener">&#x5199;&#x5728;&#x7B2C;69&#x7EA7;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -6546,7 +6523,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/273/">273</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/274/">274</a></li>
             
         </ul>
     </nav>
