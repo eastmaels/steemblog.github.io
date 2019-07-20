@@ -1,6 +1,6 @@
 
 ---
-title: '#302 Inspiring Prints (1) 💡 | 文案分享（一）'
+title: '#302 Inspiring Prints (1) 💡 | 文案随拍（一）'
 permlink: ntopaz--itchyfeetdonica--325246471--ntopaz--2019-07-16-23-59-24--artwork--none
 catalog: true
 toc_nav_num: true
@@ -12,8 +12,8 @@ categories:
 tags:
 - ntopaz
 - photocircle
-- cn-reader
 - photofeed
+- creativecoin
 - palnet
 thumbnail: 'https://artisteem.io/media/0c88a85b-1d35-4130-ad01-73368714742f'
 sidebar:
@@ -77,4 +77,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#302 Inspiring Prints (1) 💡 | 文案分享（一）'](https://steemit.com/@itchyfeetdonica/ntopaz--itchyfeetdonica--325246471--ntopaz--2019-07-16-23-59-24--artwork--none)
+This page is synchronized from the post: ['#302 Inspiring Prints (1) 💡 | 文案随拍（一）'](https://steemit.com/@itchyfeetdonica/ntopaz--itchyfeetdonica--325246471--ntopaz--2019-07-16-23-59-24--artwork--none)

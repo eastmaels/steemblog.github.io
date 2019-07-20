@@ -1,6 +1,6 @@
 
 ---
-title: '#300 Le Miroir d''eau | 水镜 '
+title: '#300 Le Miroir d''eau 🇫🇷  | 水镜'
 permlink: 300-le-miroir-d-eau-or
 catalog: true
 toc_nav_num: true
@@ -14,7 +14,7 @@ tags:
 - photocircle
 - photofeed
 - palnet
-- cn
+- summerfun
 thumbnail: 'https://img.esteem.ws/rg705b8nsv.jpg'
 sidebar:
     right:
@@ -32,7 +32,7 @@ It was a hot summer day in Bordeaux, France. People were chilling at the big poo
 ![rg705b8nsv.jpg](https://img.esteem.ws/rg705b8nsv.jpg)
 
 ## 
-This place is called Le Miroir d'eau (The Water Mirror). It's one of the world's largest reflecting pool, covering 3,450 square metres. These granite slabs are covered by only 2 cm of water, but it's enough for locals as well as visitors to have fun (and splashes) on hot summer days. 
+This place is called Le Miroir d'eau (The Water Mirror). It's one of the world's largest reflecting pools, covering 3,450 square metres. These granite slabs are covered by only 2 cm of water, but it's enough for locals as well as visitors to have fun (and splashes) on hot summer days. 
 
 It's My entry for the 🏝 WE LOVE SUMMER 2019 - PHOTO CONTEST 🏝 by @flamingirl. Don't hesitate to join the fun if you also have some summer shots to share! :)
 
@@ -58,4 +58,4 @@ https://steemitimages.com/DQmWSyM6PcNQJ9LL5UciWHWdZjHvcKQwP63HHMyJzvzvobB/4.jpg
 
 - - -
 
-This page is synchronized from the post: ['#300 Le Miroir d''eau | 水镜 '](https://steemit.com/@itchyfeetdonica/300-le-miroir-d-eau-or)
+This page is synchronized from the post: ['#300 Le Miroir d''eau 🇫🇷  | 水镜'](https://steemit.com/@itchyfeetdonica/300-le-miroir-d-eau-or)
