@@ -230,6 +230,154 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/some-interesting-things-about-reputation-score/" class="image is-7by1">
+            <img class="thumbnail" src="https://www.steemimg.com/images/2016/08/19/oflyhigh017b2.png" alt="Some interesting things about reputation score/关于信用分，一些有趣的事">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-08-19T16:22:09.000Z">2016-08-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemit/">steemit</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 455 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/some-interesting-things-about-reputation-score/">Some interesting things about reputation score/关于信用分，一些有趣的事</a>
+            
+        </h1>
+        <div class="content">
+            <p>Yesterday, I wrote an article about how to calculate reputation score.<br>You can find it here : </p>
+<ul>
+<li><a href="https://steemit.com/steemit/@oflyhigh/how-to-calculate-credit-score-reputation-score-i-tell-you" target="_blank" rel="noopener">How to calculate reputation score? I tell you.</a></li>
+</ul>
+<p><img src="https://www.steemimg.com/images/2016/08/19/oflyhigh017b2.png" alt="oflyhigh017b2.png"></p>
+<p>Today, I continue work on it, and found some interesting things about it.<br>I&#x2019;m glad to share them with you.</p>
+<h1 id="The-first-one&#xFF1A;Reputation-score-is-25-for-many-users"><a href="#The-first-one&#xFF1A;Reputation-score-is-25-for-many-users" class="headerlink" title="The first one&#xFF1A;Reputation score is 25 for many users"></a>The first one&#xFF1A;Reputation score is 25 for many users</h1><p>There are a lot of user whose  reputation score is 25.<br>Why?  Let&#x2019;s look at the code.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">export const repLog10 = rep2 =&gt; {</span><br><span class="line">    if(rep2 == null) return rep2</span><br><span class="line">    let rep = String(rep2)</span><br><span class="line">    const neg = rep.charAt(0) === &apos;-&apos;</span><br><span class="line">    rep = neg ? rep.substring(1) : rep</span><br><span class="line"></span><br><span class="line">    let out = log10(rep)</span><br><span class="line">    if(isNaN(out)) out = 0</span><br><span class="line">    out = Math.max(out - 9, 0); // @ -9, $0.50 earned is approx magnitude 1</span><br><span class="line">    out = (neg ? -1 : 1) * out</span><br><span class="line">    out = (out * 9) + 25 // 9 points per magnitude. center at 25</span><br><span class="line">    // base-line 0 to darken and &lt; 0 to auto hide (grep rephide)</span><br><span class="line">    out = parseInt(out)</span><br><span class="line">    return out</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>We use absolute value to calculate the score.<br>And the select the max one between <code>out-9</code> and <code>0</code>.<br><code>out = Math.max(out - 9, 0); // @ -9, $0.50 earned is approx magnitude 1</code><br>Let&#x2019;s check which number will get <code>9</code> for  <code>log10(rep)?</code><br>It should be <code>pow(10,9)</code>, that is  <code>1000000000</code></p>
+<p>So for the  users who have reputation between <code>-1000000000</code> and <code>1000000000</code> will get  reputation score <code>25</code>.</p>
+<h1 id="The-second&#xFF1A;-The-users-&#x201C;Never-post&#x201D;-also-have-reputation-score-25"><a href="#The-second&#xFF1A;-The-users-&#x201C;Never-post&#x201D;-also-have-reputation-score-25" class="headerlink" title="The second&#xFF1A;  The users &#x201C;Never post&#x201D; also have reputation score 25"></a>The second&#xFF1A;  The users &#x201C;Never post&#x201D; also have reputation score <code>25</code></h1><p>According to the above conclusion,<br>The users who never post on steemit , so they can never got upvote or downvote, and the reputation of them should be <code>0</code>.<br>And also between <code>-1000000000</code> and <code>1000000000</code>, so it should be <code>25</code> for reputation score .</p>
+<p>For example,<br>The No.11 big whale @mottler, who&#x2019;s <code>Estimated Account Value $1,955,738.88</code><br><img src="https://www.steemimg.com/images/2016/08/19/mottler9f42f.png" alt="mottler9f42f.png"></p>
+<p>The No.13 big whale @poloniex, who&#x2019;s <code>Estimated Account Value  $1,651,234.09</code><br><img src="https://www.steemimg.com/images/2016/08/19/poloniex73523.png" alt="poloniex73523.png"></p>
+<h1 id="The-Third&#xFF1A;-who-will-got-0-for-for-reputation-score"><a href="#The-Third&#xFF1A;-who-will-got-0-for-for-reputation-score" class="headerlink" title="The Third&#xFF1A; who will got 0 for for reputation score"></a>The Third&#xFF1A; who will got <code>0</code> for for reputation score</h1><p>Let&#x2019;s try to finger out it.<br>The absolute value of it  should be <code>pow(10,25/9 + 9)</code>.<br>So  the result is: <code>-599484250318</code><br>It should be <code>50</code> for <code>599484250318</code> but <code>0</code> for <code>-599484250318</code>.</p>
+<p>And whose  reputation between <code>-599484250318</code> and <code>1000000000</code> will got reputation score  <code>0</code> to <code>25</code>.</p>
+<h1 id="The-Fourth&#xFF1A;-Who-have-negative-reputation-score"><a href="#The-Fourth&#xFF1A;-Who-have-negative-reputation-score" class="headerlink" title="The Fourth&#xFF1A; Who have negative reputation score"></a>The Fourth&#xFF1A; Who have negative reputation score</h1><p>@wang has <code>Reputation    -37,567,003,387,648</code>.<br>And his reputation score is <code>-16.17325898615303</code><br><img src="https://www.steemimg.com/images/2016/08/19/wang90fcf.png" alt="wang90fcf.png"></p>
+<p>The reputation score should be<code>66.17325898615303</code> if @wang have positive reputation <code>37,567,003,387,648</code>.<br>Should be No.43 in  top  reputation score list.</p>
+<h1 id="The-Fifth-My-Reputation-score-is-57-500554714686565"><a href="#The-Fifth-My-Reputation-score-is-57-500554714686565" class="headerlink" title="The Fifth:  My Reputation score is 57.500554714686565"></a>The Fifth:  My Reputation score is <code>57.500554714686565</code></h1><p>No.446  in  top  reputation score list.</p>
+<h1 id="I-need-your-upvote-to-make-it-forward-Thank-you"><a href="#I-need-your-upvote-to-make-it-forward-Thank-you" class="headerlink" title="I need your upvote to make it forward, Thank you."></a>I need your upvote to make it forward, Thank you.</h1><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/some-interesting-things-about-reputation-score" target="_blank" rel="noopener">Some interesting things about reputation score/&#x5173;&#x4E8E;&#x4FE1;&#x7528;&#x5206;&#xFF0C;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x7684;&#x4E8B;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/cn-august-19/" class="image is-7by1">
+            <img class="thumbnail" src="https://www.steemimg.com/images/2016/08/17/hota939d.jpg" alt="📌 👾大嘴蛙点评：CN区今日热帖附点评，排名不分先后（August 19 第五期 ）">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-08-19T13:47:06.000Z">2016-08-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    14 minutes read (About 2138 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/cn-august-19/">📌 👾大嘴蛙点评：CN区今日热帖附点评，排名不分先后（August 19 第五期 ）</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x670B;&#x53CB;&#x4EEC;&#x597D;&#xFF0C;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#x53C8;&#x6765;&#x4E86;&#x3002;<br>&#x9274;&#x4E8E;&#x4E2A;&#x4EBA;&#x7CBE;&#x529B;&#x548C;&#x80FD;&#x529B;&#x6709;&#x9650;&#xFF0C;&#x70B9;&#x8BC4;&#x96BE;&#x514D;&#x7247;&#x9762;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x8D77;&#x4E86;&#x4E2A;&#x65B0;&#x6807;&#x9898;&#xFF1A;??&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;<br>&#x7EAF;&#x5C5E;&#x5927;&#x5634;&#x86D9;&#x80E1;&#x54A7;&#x54A7;&#xFF0C;&#x5404;&#x4F4D;&#x770B;&#x5B98;&#x89C9;&#x5F97;&#x597D;&#x5C31;&#x8D5E;&#x4E00;&#x4E0B;&#xFF0C;&#x89C9;&#x5F97;&#x4E0D;&#x597D;&#x4E5F;&#x53EF;&#x4EE5;&#x8E29;&#xFF0C;&#x6743;&#x5F53;&#x5A31;&#x4E50;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/hota939d.jpg" alt="hota939d.jpg"></p>
+<h1 id="&#x5F80;&#x671F;&#x5185;&#x5BB9;"><a href="#&#x5F80;&#x671F;&#x5185;&#x5BB9;" class="headerlink" title="&#x5F80;&#x671F;&#x5185;&#x5BB9;"></a>&#x5F80;&#x671F;&#x5185;&#x5BB9;</h1><p><a href="https://steemit.com/cn/@oflyhigh/cn-august-18" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 18 &#x7B2C;&#x56DB;&#x671F; &#xFF09;</a><br><a href="https://steemit.com/cn/@oflyhigh/cn-august-17" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 17 &#x7B2C;&#x4E09;&#x671F; &#xFF09;</a><br><a href="https://steemit.com/cn/@oflyhigh/cn-august-16" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 16 &#x7B2C;&#x4E8C;&#x671F; &#xFF09;</a><br><a href="https://steemit.com/cn/@oflyhigh/cn" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 17 &#x7B2C;&#x4E00;&#x671F; &#xFF09;</a></p>
+<h1 id="&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;"><a href="#&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;" class="headerlink" title="&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;"></a>&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;</h1><hr>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/life/@sweetsssj/i-m-a-film-fanatic-so-is-china" target="_blank" rel="noopener">I&#x2019;m a film fanatic, so is China. &#x6211;&#x662F;&#x4E00;&#x4E2A;&#x7535;&#x5F71;&#x8FF7;&#x3002;</a><br>&#x4F5C;&#x8005;&#xFF1A; @sweetsssj<br>&#x70B9;&#x8BC4;&#xFF1A; &#x606D;&#x559C;&#xFF0C;&#x7F51;&#x7EA2;&#x59B9;&#x59B9;&#x53C8;&#x91CD;&#x65B0;&#x593A;&#x56DE;&#x699C;&#x9996;&#xFF0C;CN&#x533A;&#x5B9E;&#x529B;&#x6D3E;&#x5199;&#x624B;&#xFF0C;&#x80FD;&#x529B;&#x6BCB;&#x5EB8;&#x7F6E;&#x7591;&#x3002;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF1A;&#x4EBA;&#x5BB6;&#x6709;&#x597D;&#x8138;&#x86CB;&#x597D;&#x8EAB;&#x6750;&#xFF0C;&#x4EBA;&#x5BB6;&#x6709;&#x597D;&#x8138;&#x86CB;&#x597D;&#x8EAB;&#x6750;&#xFF0C;&#x4EBA;&#x5BB6;&#x6709;&#x597D;&#x8138;&#x86CB;&#x597D;&#x8EAB;&#x6750;&#x3002;&#x4E0D;&#x8FC7;&#x6211;&#x8FD8;&#x662F;&#x559C;&#x6B22;&#x4E0A;&#x7BC7;&#x5E16;&#x5B50;&#x4E2D;&#x7684;&#x84DD;&#x8863;&#x670D;&#x59B9;&#x59B9;&#xFF0C;&#x6216;&#x8005;5&#x5E74;&#x524D;&#x5C3C;&#x6CCA;&#x5C14;&#x90A3;&#x4E2A;&#x59B9;&#x59B9;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x559C;&#x6B22;&#x54EA;&#x4E2A;&#x53C8;&#x80FD;&#x5982;&#x4F55;&#x5462;&#xFF1F;&#x987A;&#x4FBF;&#x8BF4;&#x4E00;&#x53E5;&#xFF0C;&#x6211;&#x4E5F;&#x662F;&#x4E2A;&#x7535;&#x5F71;&#x8FF7;&#xFF0C;&#x4EC0;&#x4E48;&#x5B59;&#x609F;&#x7A7A;&#x5927;&#x6218;&#x846B;&#x82A6;&#x5A03;&#x5565;&#x7684;&#x90FD;&#x6CA1;&#x5C11;&#x770B;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/travel/@myfirst/the-chinese-elements-mandarin-duck-cny" target="_blank" rel="noopener">The Chinese Elements - Mandarin Duck / &#x4E2D;&#x56FD;&#x5143;&#x7D20; - &#x9E33;&#x9E2F;</a><br>&#x4F5C;&#x8005;&#xFF1A; @myfirst<br>&#x70B9;&#x8BC4;&#xFF1A; &#x5927;&#x897F;&#x74DC;&#x4E00;&#x7BC7;&#x4E2D;&#x56FD;&#x5143;&#x7D20;-&#x9E33;&#x9E2F;&#xFF0C;&#x518D;&#x6B21;&#x4E0A;&#x699C;&#xFF0C;&#x4EC5;&#x4EC5;&#x4E24;&#x4E2A;&#x5C0F;&#x65F6;&#x5C31;&#x6398;&#x91D1;380&#x591A;&#x7F8E;&#x5143;&#x3002;&#x5982;&#x679C;&#x6211;&#x518D;&#x665A;&#x4E9B;&#x5199;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#xFF0C;&#x5927;&#x897F;&#x74DC;&#x6709;&#x671B;&#x5360;&#x636E;&#x699C;&#x9996;&#x554A;&#x3002;&#x5927;&#x897F;&#x74DC;&#x4E3A;&#x4E86;&#x4E0A;&#x699C;&#x4E5F;&#x662F;&#x62FC;&#x4E86;&#xFF0C;&#x6652;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x9E33;&#x9E2F;&#x7167;&#xFF0C;&#x8FD8;&#x6709;&#x9E33;&#x9E2F;&#x6D74;&#x54E6;&#x3002;&#x5FEB;&#x53BB;&#x770B;&#x5427;&#x3002;&#x8981;&#x4E0D;&#xFF0C;&#x6539;&#x5929;&#x6211;&#x4E5F;&#x6652;&#x4E9B;&#x4E2D;&#x56FD;&#x5143;&#x7D20;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x6BD4;&#x5982;&#x4E2D;&#x56FD;&#x9F99;&#xFF1F;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@anwenbaumeister/propagation-techniques-for-hydroponic-tomatoes-cuttings-and-cloning-start-a-new-plant-from-a-growing-plant-featuring-jed78-as" target="_blank" rel="noopener">&#x6C34;&#x57F9;&#x756A;&#x8304;&#x7684;&#x57F9;&#x80B2;&#x6280;&#x672F;-&#x526A;&#x679D;&#x548C;&#x514B;&#x9686;-&#x5728;&#x751F;&#x957F;&#x7684;&#x690D;&#x682A;&#x4E0A;&#x518D;&#x957F;&#x4E00;&#x9897;&#x65B0;&#x690D;&#x682A; // Propagation Techniques For Hydroponic Tomatoes -&#xAD; Cuttings and Cloning &#xAD; - Start a New Plant From a Growing Plant (featuring @jed78 as author)</a><br>&#x4F5C;&#x8005;&#xFF1A; @anwenbaumeister<br>&#x70B9;&#x8BC4;&#xFF1A; &#x6211;&#x53EA;&#x80FD;&#x8BF4;&#x7FA1;&#x6155;&#x4FE1;&#x7528;&#x5206;&#x9AD8;&#x7684;&#x571F;&#x8C6A;&#x554A;&#x3002;&#x5F85;&#x5230;&#x79CB;&#x6765;&#x4E5D;&#x6708;&#x516B;&#xFF0C;&#x6211;&#x82B1;&#x5F00;&#x540E;&#x767E;&#x82B1;&#x6740;&#x3002;&#x54E6;&#xFF0C;&#x4E0D;&#x5BF9;&#xFF0C;&#x5F85;&#x5230;&#x6211;&#x4E5F;60&#x591A;&#x5206;&#x2014;-&#x90A3;&#x522B;&#x4EBA;&#x90FD;70&#x591A;&#x5206;&#x4E86;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/life/@sweetsssj/food-friday-japanese-foods-help-to-refresh-the-taste-buds-in-the-mouth" target="_blank" rel="noopener">Food Friday! Japanese foods help to refresh the taste buds in the mouth. &#x65E5;&#x672C;&#x83DC;&#x662F;&#x4F26;&#x6566;&#x590F;&#x5929;&#x91CC;&#x7684;&#x4E00;&#x9635;&#x6E05;&#x98CE;&#x3002;</a><br>&#x4F5C;&#x8005;&#xFF1A; @sweetsssj<br>&#x70B9;&#x8BC4;&#xFF1A; &#x7F51;&#x7EA2;&#x59B9;&#x59B9;&#x7B14;&#x8015;&#x4E0D;&#x8F8D;&#xFF0C;&#x548B;&#x8BF4;&#x7684;&#x6765;&#x7740;&#xFF0C;&#x6BD4;&#x4F60;&#x6709;&#x94B1;&#x3001;&#x8FD8;&#x6BD4;&#x4F60;&#x989C;&#x503C;&#x9AD8;&#x7684;&#x4EBA;&#x8FD8;&#x6BD4;&#x4F60;&#x52AA;&#x529B;&#x3002;&#x8FD9;&#x8FD9;&#x8FD9;&#xFF0C;&#x5565;&#x4E5F;&#x4E0D;&#x8BF4;&#x4E86;&#xFF0C;&#x52AA;&#x529B;&#x5199;&#x5E16;&#x5B50;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/photography/@xianjun/can-you-tolerate-a-girl-sitting-like-this" target="_blank" rel="noopener">Can you tolerate a girl sitting like this? &#x2013; &#x59D0;&#x4EEC;&#x4F60;&#x7684;&#x5750;&#x59FF;&#x592A;&#x9500;&#x9B42;&#x5566;&#xFF01;</a><br>&#x4F5C;&#x8005;&#xFF1A; @xianjun<br>&#x70B9;&#x8BC4;&#xFF1A; &#x6211;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#x4E0D;&#x592A;&#x4F18;&#x96C5;&#xFF0C;&#x4E0D;&#x8FC7;&#x7ED9;steemit&#x4E0A;&#x4E2A;&#x5404;&#x4F4D;&#x59D0;&#x59B9;&#x4EEC;&#x63D0;&#x4E2A;&#x9192;&#x4E5F;&#x597D;&#xFF0C;&#x51FA;&#x884C;&#x6CE8;&#x610F;&#x5F62;&#x8C61;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@laoyao/3fqyx8-by-laoyao" target="_blank" rel="noopener">&#x8FD9;&#x4E9B;&#x5E74;&#x6211;&#x5199;&#x8FC7;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x73B0;&#x5728;&#x628A;&#x5B83;&#x653E;&#x5728;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF08;&#x4E8C;&#xFF09; by laoyao</a><br>&#x4F5C;&#x8005;&#xFF1A; @laoyao<br>&#x70B9;&#x8BC4;&#xFF1A; &#x6587;&#x9752;&#x8001;&#x5996;&#x53C8;&#x6765;&#x4E86;&#xFF0C;&#x5565;&#x53EB;&#x79EF;&#x7D2F;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#xFF01;&#x6211;&#x8FD8;&#x5728;&#x62FC;&#x6B7B;&#x62FC;&#x6D3B;&#x6253;&#x5B57;&#xFF0C;&#x8001;&#x5996;&#x62FF;&#x51FA;&#x4E00;&#x7EB8;&#x76D2;&#x7BB1;&#x7684;&#x5B58;&#x7A3F;&#xFF0C;&#x8BF4;&#x6765;&#x6765;&#x6765;&#xFF0C;&#x6211;&#x6162;&#x6162;&#x53D1;&#xFF0C;&#x4F30;&#x8BA1;&#x8981;&#x53D1;&#x51E0;&#x5E74;&#x3002;&#x4E0D;&#x8FC7;&#x6587;&#x9752;&#x771F;&#x597D;&#xFF0C;&#x636E;&#x8BF4;&#x80FD;&#x9A97;&#x5230;&#x6F02;&#x4EAE;&#x59B9;&#x7EB8;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/steemit/@xianjun/this-is-the-darkest-day-in-olympic-history-rio-olympic-games-is-awful" target="_blank" rel="noopener">This is the darkest day in Olympic history. Rio Olympic Games is awful! &#x2014;&#x8FD9;&#x662F;&#x5965;&#x8FD0;&#x53F2;&#x4E0A;&#x6700;&#x9ED1;&#x6697;&#x7684;&#x4E00;&#x5929;&#x3002;&#x8FD9;&#x5C4A;&#x5965;&#x8FD0;&#x4F1A;&#x7CDF;&#x900F;&#x4E86;&#xFF01;</a><br>&#x4F5C;&#x8005;&#xFF1A; @xianjun<br>&#x70B9;&#x8BC4;&#xFF1A; &#x672C;&#x6765;&#x5C31;&#x662F;&#x4E2A;&#x6E38;&#x620F;&#xFF0C;&#x4F55;&#x5FC5;&#x8BA4;&#x771F;&#x3002;&#x4E2D;&#x56FD;&#x5982;&#x679C;&#x5404;&#x65B9;&#x9762;&#x90FD;&#x6BD4;&#x7F8E;&#x56FD;&#x5F3A;&#x5927;&#xFF0C;&#x4E5F;&#x8BB8;&#x5C31;&#x4E0D;&#x8FD9;&#x4E48;&#x5224;&#x4E86;&#x3002;&#x540C;&#x6837;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x73B0;&#x5728;&#x6709;100&#x4E07;&#x7F8E;&#x5143;&#x7684;SP&#xFF0C;&#x4F30;&#x8BA1;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x4EBA;&#x9876;&#x6211;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#x5427;&#xFF0C;&#x54ED;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/introduceyourself/@axolotl/the-hunt-for-an-national-identity" target="_blank" rel="noopener">&#x5BFB;&#x6839;&#x60C5;&#x601D; // The Hunt for an (National) Identity</a><br>&#x4F5C;&#x8005;&#xFF1A; @axolotl<br>&#x70B9;&#x8BC4;&#xFF1A; &#x5728;&#x4EBA;&#x6C11;&#x65E5;&#x62A5;&#x53D1;&#x8868;&#x8FC7;&#x6587;&#x7AE0;&#x7684;&#x5DE8;&#x795E;&#x54E6;&#xFF0C;&#x5F88;&#x9AD8;&#x5174;&#x4F60;&#x8BF4;&#x51FA;&#x4E86;&#x4F60;&#x771F;&#x5B9E;&#x7684;&#x611F;&#x53D7;&#xFF0C;&#x6709;&#x6CA1;&#x6709;&#x89C9;&#x5F97;&#x201C;&#x80F8;&#x524D;&#x7684;&#x7EA2;&#x9886;&#x5DFE;&#x66F4;&#x52A0;&#x9C9C;&#x8273;&#x4E86;&#x201D;&#xFF1F;&#x5F00;&#x4E2A;&#x73A9;&#x7B11;&#x5566;&#xFF0C;&#x8EAB;&#x4EFD;&#x5565;&#x65E0;&#x6240;&#x8C13;&#x4E86;&#xFF0C;&#x5730;&#x7403;&#x6751;&#x561B;&#xFF0C;98&#x5E74;&#x5C31;&#x90A3;&#x4E48;&#x706B;&#x70ED;&#x7684;&#x53E3;&#x53F7;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@myfirst/the-first-naked-photos-on-steemit" target="_blank" rel="noopener">The Women of Our Home</a><br><a href="https://steemit.com/food/@myfirst/delicious-shrimp" target="_blank" rel="noopener">Delicious shrimp / &#x7F8E;&#x5473;&#x7684;&#x6EAA;&#x6C34;&#x867E;</a><br>&#x4F5C;&#x8005;&#xFF1A;  @myfirst<br>&#x70B9;&#x8BC4;&#xFF1A; &#x5927;&#x897F;&#x74DC;&#x7684;&#x751F;&#x6D3B;&#x73AF;&#x5883;&#x771F;&#x597D;&#xFF0C;&#x559D;&#x7740;&#x77FF;&#x6CC9;&#x6C34;&#xFF0C;&#x5403;&#x7740;&#x6EAA;&#x6C34;&#x867E;&#x3002;&#x5957;&#x7528;&#x4E00;&#x53E5;&#x8BDD;&#xFF0C;&#x5730;&#x6770;&#x4EBA;&#x7075;&#x554A;&#xFF0C;&#x96BE;&#x602A;&#x5927;&#x897F;&#x74DC;&#x7684;&#x5E16;&#x5B50;&#x8FD9;&#x4E48;&#x9AD8;&#x4EA7;&#x3002;&#x6211;&#x5C31;&#x60F3;&#x95EE;&#x95EE;&#xFF0C;&#x53EF;&#x4EE5;&#x53BB;&#x4F60;&#x90A3;&#x4F4F;&#x51E0;&#x5929;&#x4E0D;&#xFF1F;&#x6CBE;&#x6CBE;&#x7075;&#x6C14;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@minfon/steem-100" target="_blank" rel="noopener">STEEM &#x9605;&#x89C8;&#x91CF;&#x7684;&#x52A0;&#x901F;&#x5668;&#x6765;&#x4E86;, &#x6CE8;&#x518C;&#x9001;100&#x70B9;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x6709;&#x9650;</a><br>&#x4F5C;&#x8005;&#xFF1A; @minfon<br>&#x70B9;&#x8BC4;&#xFF1A; &#x4F60;&#x662F;&#x5426;&#x5728;&#x7EA0;&#x7ED3;&#x8F9B;&#x82E6;&#x5199;&#x4E86;&#x5E16;&#x5B50;&#xFF0C;&#x6CA1;&#x4EBA;&#x770B;&#x3001;&#x6CA1;&#x4EBA;&#x9876;&#xFF1B; &#x4F60;&#x662F;&#x5426;&#x2026;? &#x54E6;&#xFF0C;&#x4E0D;&#x662F;&#x5E7F;&#x544A;&#x65F6;&#x95F4;&#x3002; &#x5176;&#x5B9E;&#x4F9D;&#x6258;steemit&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x51FA;&#x5F88;&#x591A;&#x597D;&#x73A9;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x601D;&#x8DEF;&#xFF0C;&#x6233;&#x5230;&#x5F88;&#x591A;&#x4EBA;&#x5E16;&#x5B50;&#x6CA1;&#x4EBA;&#x9876;&#x7684;&#x75DB;&#x70B9;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/ceremonies/@alina1/chinese-wedding-traditions-matchmaking" target="_blank" rel="noopener">Chinese Wedding Traditions. Matchmaking./&#x4E2D;&#x56FD;&#x4F20;&#x7EDF;&#x5A5A;&#x793C;&#x3002;&#x5A5A;&#x4ECB;</a><br>&#x4F5C;&#x8005;&#xFF1A;@alina1<br>&#x70B9;&#x8BC4;&#xFF1A; &#x53C8;&#x89C1;&#x4E2D;&#x56FD;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x800C;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x5E16;&#x5B50;&#x7565;&#x663E;&#x5355;&#x8584;&#x554A;&#x3002;&#x6574;&#x70B9;&#x4EC0;&#x4E48;&#x9A91;&#x5927;&#x9A6C;&#x7684;&#x65B0;&#x90CE;&#xFF0C;&#x505A;&#x82B1;&#x8F7F;&#x7684;&#x65B0;&#x5A18;&#xFF0C;&#x518D;&#x5F04;&#x70B9;&#x4E0A;&#x767E;&#x684C;&#x9732;&#x5929;&#x9152;&#x5E2D;&#x7684;&#x7167;&#x7247;&#x624D;&#x591F;&#x5473;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@minfon/chopsticks-in-china-diet-culture" target="_blank" rel="noopener">Chopsticks in China diet culture &#x7B77;&#x5B50;:&#x4E2D;&#x56FD;&#x7684;&#x996E;&#x98DF;&#x6587;&#x5316;</a><br>&#x4F5C;&#x8005;&#xFF1A; @minfon<br>&#x70B9;&#x8BC4;&#xFF1A; &#x4E2D;&#x56FD;&#x5143;&#x7D20;&#x4E4B;&#x53C8;&#x53C8;&#x89C1;&#x4E2D;&#x56FD;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x4E2A;&#x7B77;&#x5B50;&#x5927;&#x5BB6;&#x90FD;&#x5F88;&#x719F;&#x6089;&#x5566;&#xFF0C;&#x8BA9;&#x6211;&#x548B;&#x8BC4;&#x597D;&#x5462;&#xFF1F;&#x4E0D;&#x8FC7;&#x4F5C;&#x8005;&#x6316;&#x51FA;&#x4E86;&#x5468;&#x6069;&#x6765;&#x548C;&#x5C3C;&#x514B;&#x677E;&#x7528;&#x7B77;&#x5B50;&#x7684;&#x7167;&#x7247;&#x8FD8;&#x662F;&#x633A;&#x6709;&#x610F;&#x601D;&#x7684;&#xFF0C;&#x7528;&#x5FC3;&#x5566;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@sophiachan/5yjvjw-caveman-life-in-nh-u-s-25" target="_blank" rel="noopener">Caveman life in NH, U.S.&#x4F4F;&#x5728;&#x7F8E;&#x56FD;&#x65B0;&#x7F55;&#x5E03;&#x4EC0;&#x5C14;&#x5DDE;&#x4E00;&#x4E2A;&#x6CA1;&#x6C34;&#x6CA1;&#x7535;&#x6CA1;&#x7F51;&#x6CA1;&#x5395;&#x6240;&#xFF0C;&#x4E0D;&#x5230;25&#x5E73;&#x7C73;&#x7684;&#x623F;&#x5B50;&#x3002;</a><br>&#x4F5C;&#x8005;&#xFF1A; @sophiachan<br>&#x70B9;&#x8BC4;&#xFF1A; &#x62BD;&#x8C61;&#x6D3E;&#x7684;&#x6587;&#x5B57;&#x4F5C;&#x54C1;&#xFF0C;&#x4E0D;&#x7BA1;&#x5982;&#x4F55;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x7530;&#x56ED;&#x751F;&#x6D3B;&#x4F30;&#x8BA1;&#x8981;&#x88AB;&#x5F88;&#x591A;&#x4EBA;&#x5411;&#x5F80;&#x5427;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@sophiachan/caveman-life-in-nh-u-s-25" target="_blank" rel="noopener">&#x4E00;&#x4E9B;&#x56DE;&#x4E0D;&#x53BB;&#x7684;&#x6545;&#x4E8B;</a><br>&#x4F5C;&#x8005;&#xFF1A;  @sophiachan<br>&#x70B9;&#x8BC4;&#xFF1A; &#x201C;&#x65F6;&#x5149;&#x4E00;&#x53BB;&#x6C38;&#x4E0D;&#x56DE;&#xFF0C;&#x5F80;&#x4E8B;&#x53EA;&#x80FD;&#x56DE;&#x5473;&#x201D;&#xFF0C;&#x5443;&#xFF0C;&#x4E0D;&#x5C0F;&#x5FC3;&#x5C31;&#x5531;&#x4E0A;&#x4E86;&#x3002;</p>
+<p><img src="https://www.steemimg.com/images/2016/08/17/flog_small491d1.png" alt="flog_small491d1.png"><br><a href="https://steemit.com/cn/@abc1621043211/4kaz96" target="_blank" rel="noopener">&#x4E00;&#x5207;&#x56E0;&#x4E3A;&#x6218;&#x4E89;</a><br>&#x4F5C;&#x8005;&#xFF1A; @abc1621043211<br>&#x70B9;&#x8BC4;&#xFF1A; &#x4E0D;&#x77E5;&#x9053;&#x8BE5;&#x8BF4;&#x5565;&#xFF0C;&#x5F15;&#x7528;&#x4E00;&#x9996;&#x8BD7;&#x5427;<br><code>&#x6CFD;&#x56FD;&#x6C5F;&#x5C71;&#x5165;&#x6218;&#x56FE;&#xFF0C;&#x751F;&#x6C11;&#x4F55;&#x8BA1;&#x4E50;&#x6A35;&#x82CF;&#x3002;
+&#x51ED;&#x541B;&#x83AB;&#x8BDD;&#x5C01;&#x4FAF;&#x4E8B;&#xFF0C;&#x4E00;&#x5C06;&#x529F;&#x6210;&#x4E07;&#x9AA8;&#x67AF;&#x3002;</code></p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x6574;&#x7406;&#x8FD9;&#x4E48;&#x591A;&#x4E86;&#x3002;</p>
+<hr>
+<h1 id="&#x5E7F;&#x544A;&#x65F6;&#x95F4;"><a href="#&#x5E7F;&#x544A;&#x65F6;&#x95F4;" class="headerlink" title="&#x5E7F;&#x544A;&#x65F6;&#x95F4;"></a>&#x5E7F;&#x544A;&#x65F6;&#x95F4;</h1><p>&#x4E0D;&#x591A;&#x4ECB;&#x7ECD;&#x4E86;&#xFF0C;&#x4E24;&#x7BC7;&#x5E16;&#x5B50;&#x9644;&#x4E0A;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@oflyhigh/steemit" target="_blank" rel="noopener">&#x673A;&#x5668;&#x4EBA;&#x662F;&#x5426;&#x4F1A;&#x7834;&#x574F;steemit&#x4E0A;&#x7684;&#x751F;&#x6001;&#x5E73;&#x8861;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/3dg396" target="_blank" rel="noopener">&#x4E5F;&#x5B66;&#x8001;&#x5996;&#x6000;&#x65E7;: &#x300A;&#x7F8E;&#x5973;&#x8001;&#x5E08;&#x4E8C;&#x4E09;&#x4E8B;&#x300B;</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/cn-august-19" target="_blank" rel="noopener">&#x1F4CC; &#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 19 &#x7B2C;&#x4E94;&#x671F; &#xFF09;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/3dg396/" class="image is-7by1">
             <img class="thumbnail" src="https://www.steemimg.com/images/2016/08/19/girl723fb.md.jpg" alt="也学老妖怀旧:  《美女老师二三事》">
         </a>
@@ -505,200 +653,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/myfirst/" class="image is-7by1">
-            <img class="thumbnail" src="https://www.steemimg.com/images/2016/07/26/stock-vector-robot-the-voter-vote-on-election-day-3774354469b440.th.jpg" alt="我的机器人投票实验， 机器人的第一次给了@myfirst">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2016-08-18T06:49:48.000Z">2016-08-18</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 578 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/myfirst/">我的机器人投票实验， 机器人的第一次给了@myfirst</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://www.steemimg.com/images/2016/07/26/stock-vector-robot-the-voter-vote-on-election-day-3774354469b440.th.jpg" alt=""></p>
-<p>&#x5B66;&#x4E60;&#x4E86;&#x4E24;&#x5929;&#xFF0C;&#x7814;&#x7A76;&#x4E86;&#x4E00;&#x4E0B;&#x548B;&#x6295;&#x7968;</p>
-<p>&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x8E69;&#x811A;&#x7684;&#x811A;&#x672C;&#x6765;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E24;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x539F;&#x5219;&#xFF1A;</p>
-<ul>
-<li>&#x53EA;&#x6295;&#x4E3B;&#x8D34;&#xFF0C;&#x8BC4;&#x8BBA;&#x4E4B;&#x7C7B;&#x7684;&#x4E0D;&#x6295;</li>
-<li>&#x53EA;&#x6295;&#x4FE1;&#x7528;&#x8BC4;&#x5206;&#x5927;&#x4E8E;50&#x7684; </li>
-</ul>
-<p>&#x7814;&#x7A76;&#x4E86;&#x534A;&#x5929;&#x4FE1;&#x7528;&#x8BC4;&#x5206;&#xFF0C;&#x5927;&#x81F4;&#x641E;&#x660E;&#x767D;&#x4E86;&#x548B;&#x8BA1;&#x7B97;&#x4E86;&#x3002;<br>&#x4F46;&#x662F;&#x8FD8;&#x6CA1;&#x5B8C;&#x5168;&#x5904;&#x7406;&#x91CC;&#x8FB9;&#x7684;&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x3002;</p>
-<h1 id="&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E86;-myfirst"><a href="#&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E86;-myfirst" class="headerlink" title="&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E86; @myfirst"></a>&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E86; @myfirst</h1><p>&#x6267;&#x884C;&#x811A;&#x672C;<br>&#x5C45;&#x7136;&#x7B2C;&#x4E00;&#x6761;&#x5C31;&#x662F;@myfirst &#x7684;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@myfirst/my-photography-the-chinese-elements-cny-part2</span><br><span class="line">6584191808274</span><br><span class="line">59.366522266872316</span><br><span class="line">upvoted!!</span><br><span class="line">-----------------</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>&#x8FD9;&#x5C31;&#x662F;&#x7F18;&#x5206;&#x5417;&#xFF1F;&#x6211;&#x7684;&#x673A;&#x5668;&#x4EBA;&#x8FD8;&#x6CA1;&#x5F00;&#x59CB;&#x7279;&#x610F;&#x9009;&#x7528;&#x6237;&#x5462;&#xFF01;</p>
-<h1 id="&#x6210;&#x4E5F;&#x5927;&#x897F;&#x74DC;&#x8D25;&#x4E5F;&#x5927;&#x5927;&#x897F;&#x74DC;"><a href="#&#x6210;&#x4E5F;&#x5927;&#x897F;&#x74DC;&#x8D25;&#x4E5F;&#x5927;&#x5927;&#x897F;&#x74DC;" class="headerlink" title="&#x6210;&#x4E5F;&#x5927;&#x897F;&#x74DC;&#x8D25;&#x4E5F;&#x5927;&#x5927;&#x897F;&#x74DC;"></a>&#x6210;&#x4E5F;&#x5927;&#x897F;&#x74DC;&#x8D25;&#x4E5F;&#x5927;&#x5927;&#x897F;&#x74DC;</h1><p>&#x521A;&#x521A;&#x5E86;&#x5E78;&#x673A;&#x5668;&#x4EBA;&#x80FD;&#x6295;&#x7968;&#x5462;<br>&#x5B83;&#x4E2B;&#x7684;&#x5C31;&#x5D29;&#x6E83;&#x4E86;<br>&#x7136;&#x540E;&#x6211;&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x771F;&#x662F;&#x6210;&#x4E5F;&#x5927;&#x897F;&#x74DC;&#x8D25;&#x4E5F;&#x5927;&#x897F;&#x74DC;<br><code>Changing your vote requires actually changing you vote.</code><br>&#x7814;&#x7A76;&#x4E86;&#x534A;&#x5929;&#xFF0C;&#x53D1;&#x73B0;&#x539F;&#x6765;&#x662F;&#x5927;&#x897F;&#x74DC;&#x7F16;&#x8F91;&#x4E86;&#x539F;&#x6765;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x811A;&#x672C;&#x5F53;&#x6210;&#x65B0;&#x5E16;&#x4E86;&#xFF0C;&#x53C8;&#x53BB;&#x6295;&#x7968;&#xFF0C;&#x7136;&#x540E;&#x5D29;&#x6E83;&#x4E86;</p>
-<p>&#x770B;&#x6765;&#x8981;&#x533A;&#x5206;&#x4E00;&#x4E0B;&#x4E3B;&#x8D34;&#x548C;&#x7F16;&#x8F91;&#x7684;&#x5E16;&#x5B50;</p>
-<h1 id="&#x90FD;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x5728;&#x62A2;&#x6295;&#xFF1F;"><a href="#&#x90FD;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x5728;&#x62A2;&#x6295;&#xFF1F;" class="headerlink" title="&#x90FD;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x5728;&#x62A2;&#x6295;&#xFF1F;"></a>&#x90FD;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x5728;&#x62A2;&#x6295;&#xFF1F;</h1><p>&#x770B;&#x4E86;&#x6295;&#x51FA;&#x53BB;&#x7684;&#x51E0;&#x7968;<br>&#x6211;&#x4E00;&#x822C;&#x90FD;&#x5728;1-2&#x5206;&#x949F;&#x5185;&#x6295;&#x7968;&#xFF0C;&#x800C;&#x53D1;&#x73B0;&#x5728;&#x6211;&#x4E4B;&#x524D;&#xFF0C;&#x90FD;&#x6709;&#x597D;&#x591A;&#x4EBA;&#x6295;&#x7968;<br>&#x5C3D;&#x7BA1;steemit&#x4E0A;&#x6D3B;&#x8DC3;&#x7528;&#x6237;&#x5F88;&#x591A;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x4FE1;&#x8A89;&#x9AD8;&#x7684;&#x88AB;&#x4EBA;&#x5173;&#x6CE8;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x77ED;&#x65F6;&#x95F4;&#x7684;&#x6295;&#x7968;&#x6570;&#x91CF;&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x53EF;&#x7591;<br>&#x6240;&#x4EE5;&#x6211;&#x7684;&#x7ED3;&#x8BBA;&#x90FD;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x5728;&#x6295;</p>
-<h1 id="&#x5F0A;&#x7AEF;"><a href="#&#x5F0A;&#x7AEF;" class="headerlink" title="&#x5F0A;&#x7AEF;"></a>&#x5F0A;&#x7AEF;</h1><p>&#x5C3D;&#x7BA1;&#x6211;&#x5728;&#x505A;&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x6295;&#x7968;&#x7684;&#x811A;&#x672C;&#x5B9E;&#x9A8C;&#x3002;<br>&#x4F46;&#x662F;&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#xFF0C;&#x673A;&#x5668;&#x4EBA;&#x62A2;&#x6295;&#x4F1A;&#x5BFC;&#x81F4;&#x4E0D;&#x516C;&#x5E73;&#x73B0;&#x8C61;&#x7684;&#x53D1;&#x751F;&#x3002;<br>&#x4FE1;&#x8A89;&#x5206;&#x8D85;&#x9AD8;&#x7684;&#xFF0C;&#x968F;&#x4FBF;&#x53D1;&#x4E2A;&#x5E16;&#x5B50;&#x5C31;&#x4F1A;&#x6709;&#x5927;&#x91CF;&#x7684;&#x6295;&#x7968;&#xFF0C;&#x5C31;&#x7B97;&#x6295;&#x7968;&#x4E0D;&#x4EA7;&#x751F;&#x4EF7;&#x503C;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x8BA9;&#x5E16;&#x5B50;&#x4FDD;&#x6301;&#x6D3B;&#x8DC3;&#x548C;&#x70ED;&#x5EA6;&#xFF0C;&#x8FDB;&#x800C;&#x5438;&#x5F15;&#x5927;&#x9CB8;&#x9C7C;&#x7684;&#x5173;&#x6CE8;&#x3002;</p>
-<h1 id="&#x5176;&#x5B83;"><a href="#&#x5176;&#x5B83;" class="headerlink" title="&#x5176;&#x5B83;"></a>&#x5176;&#x5B83;</h1><p>@myfirst &#x6211;&#x53D1;&#x73B0; @laonie &#x4EE5;&#x53CA; @xiaohui &#x90FD;&#x662F;&#x7231;&#x4F60;&#x7684;&#x3002;&#x5C24;&#x5176;&#x662F; @laonie &#xFF0C;&#x5206;&#x8EAB;&#x65E0;&#x6570;&#xFF0C;&#x53EA;&#x4E3A;&#x8868;&#x8FBE;&#x5BF9;&#x4F60;&#x7684;&#x771F;&#x7231;&#x3002;<br>@myfirst &#x5927;&#x897F;&#x74DC;&#x4F60;&#x4E3A;&#x4F55;&#x603B;&#x7F16;&#x8F91;&#x4F60;&#x7684;&#x5E16;&#x5B50;&#xFF1F;&#x83AB;&#x975E;&#x662F;&#x673A;&#x5668;&#x4EBA;&#x53D1;&#x5E16;&#xFF1F;</p>
-<p>&#x5176;&#x4E0A;&#x4FE1;&#x606F;&#x6743;&#x5F53;&#x5A31;&#x4E50;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/myfirst" target="_blank" rel="noopener">&#x6211;&#x7684;&#x673A;&#x5668;&#x4EBA;&#x6295;&#x7968;&#x5B9E;&#x9A8C;&#xFF0C; &#x673A;&#x5668;&#x4EBA;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x7ED9;&#x4E86;@myfirst</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/the-glass-ceiling-dilemma-for-chinese-community/" class="image is-7by1">
-            <img class="thumbnail" src="https://www.steemimg.com/images/2016/08/17/blm0182287cad6.md.jpg" alt="The glass ceiling dilemma for Chinese community/中文社区的玻璃天花板困局">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2016-08-17T15:22:45.000Z">2016-08-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    11 minutes read (About 1704 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/the-glass-ceiling-dilemma-for-chinese-community/">The glass ceiling dilemma for Chinese community/中文社区的玻璃天花板困局</a>
-            
-        </h1>
-        <div class="content">
-            <p><a href="https://www.steemimg.com/image/40zLB" target="_blank" rel="noopener"><img src="https://www.steemimg.com/images/2016/08/17/blm0182287cad6.md.jpg" alt="blm0182287cad6.md.jpg"></a></p>
-<p>&#x6765;steemit&#x4E2D;&#x6587;&#x793E;&#x533A;&#x5DF2;&#x7ECF;&#x5F88;&#x4E45;&#x3002;</p>
-<p>&#x4E3A;&#x4E86;&#x5C3D;&#x5FEB;&#x878D;&#x5165;&#x8FD9;&#x4E2A;&#x5927;&#x5BB6;&#x5EAD;</p>
-<ul>
-<li>&#x79EF;&#x6781;&#x521B;&#x4F5C;&#xFF0C;&#x5C1D;&#x8BD5;&#x4E86;&#x5404;&#x79CD;&#x98CE;&#x683C;&#x7684;&#x53D1;&#x5E16;&#xFF0C; &#x8BE6;&#x60C5;&#x89C1;&#x9644;&#x5F55;&#x4E00;</li>
-<li>&#x8BA4;&#x771F;&#x9605;&#x8BFB;&#x6BCF;&#x4E2A;&#x670B;&#x53CB;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x79EF;&#x6781;&#x70B9;&#x8D5E;&#xFF0C;&#x70ED;&#x60C5;&#x56DE;&#x590D;</li>
-<li>&#x8BA4;&#x771F;&#x5B66;&#x4E60;&#xFF0C;&#x52AA;&#x529B;&#x601D;&#x8003;&#x5E76;&#x79EF;&#x6781;&#x5171;&#x4EAB;&#xFF0C;&#x8BE6;&#x89C1;&#x6211;&#x7684;&#x6559;&#x5B66;&#x8D34;&#x7B49;</li>
-<li>&#x5728;QQ&#x7FA4;&#x548C;&#x5FAE;&#x4FE1;&#x7FA4;&#x4FDD;&#x6301;&#x6D3B;&#x8DC3;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x5404;&#x79CD;&#x51B7;&#x573A;</li>
-<li>&#x7B49;&#x7B49;&#x7B49;&#x7B49;</li>
-</ul>
-<p>&#x5982;&#x6B64;&#xFF0C;&#x53D1;&#x5E16;&#x5E94;&#x8BE5;&#x6536;&#x83B7;&#x4E0D;&#x5C11;&#x5427;&#xFF1F;&#x54EA;&#x6015;&#x662F;&#x6CA1;&#x6709;&#x591A;&#x5C11;&#x8D4F;&#x91D1;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x5F88;&#x591A;&#x8D5E;&#x4E5F;&#x597D;&#x3002;<br>&#x54EA;&#x6015;&#x6CA1;&#x6709;&#x5F88;&#x591A;&#x8D5E;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x5F88;&#x591A;&#x56DE;&#x590D;&#x548C;&#x4E92;&#x52A8;&#x4E5F;&#x597D;&#x3002;</p>
-<p>&#x603B;&#x662F;&#x611F;&#x89C9;&#x5728;&#x81EA;&#x8BF4;&#x81EA;&#x8BDD;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x5728;&#x81EA;&#x8BF4;&#x81EA;&#x8BDD;&#x3002;<br>&#x4E2D;&#x6587;&#x793E;&#x533A;&#x6B63;&#x5904;&#x4E8E;&#x73BB;&#x7483;&#x5929;&#x82B1;&#x677F;&#x56F0;&#x5C40;&#x4E4B;&#x5185;&#xFF01;&#x4E0D;&#x662F;&#x6211;&#x5371;&#x8A00;&#x8038;&#x542C;&#xFF1A;</p>
-<ul>
-<li>&#x4EBA;&#x6C14;&#x4E0A;&#x4E0D;&#x53BB;</li>
-<li>&#x8D4F;&#x91D1;&#x4E0A;&#x4E0D;&#x53BB;</li>
-<li>&#x5E16;&#x5B50;&#x8D28;&#x91CF;&#x4E0A;&#x4E0D;&#x53BB;</li>
-</ul>
-<p><strong>&#x4EBA;&#x6C14;&#x65B9;&#x9762;&#xFF1A;</strong> &#x59CB;&#x7EC8;&#x662F;&#x8FD9;&#x4E9B;&#x719F;&#x9762;&#x5B54;&#x3002;&#x5F88;&#x5C11;&#x6709;&#x65B0;&#x9C9C;&#x8840;&#x6DB2;&#x6CE8;&#x5165;&#x3002;</p>
-<p><strong>&#x8D4F;&#x91D1;&#x65B9;&#x9762;&#xFF1A;</strong> &#x8D4F;&#x91D1;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x662F;0-10$&#xFF0C;&#x800C;&#x5927;&#x51E1;&#x83B7;&#x5F97;$10&#x5DE6;&#x53F3;&#x6536;&#x76CA;&#x7684;&#xFF0C;&#x90FD;&#x662F;&#x56E0;&#x4E3A;&#x6709; @abit &#x5927;&#x795E;&#x5728;&#x9ED8;&#x9ED8;&#x70B9;&#x8D5E;<br>&#x5982;&#x679C;&#x6CA1;&#x6709;@abit &#x7684;&#x9ED8;&#x9ED8;&#x652F;&#x6301;&#xFF0C;&#x4F30;&#x8BA1;&#x5305;&#x62EC;&#x6211;&#x5728;&#x5185;&#x7684;&#x5927;&#x591A;&#x6570;CN&#x533A;&#x4F5C;&#x8005;&#x53EA;&#x80FD;&#x62FF;0.1-1$&#x7684;&#x6536;&#x5165;&#x3002;</p>
-<p><strong>&#x5E16;&#x5B50;&#x8D28;&#x91CF;&#xFF1A;</strong> &#x60F3;&#x5FC5;&#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;/&#x8BA2;&#x9605;&#x53F7;&#xFF0C;&#x4E5F;&#x77E5;&#x9053;&#x91CC;&#x8FB9;&#x6709;&#x4E00;&#x79CD;&#x673A;&#x5236;&#x53EB;&#x6253;&#x8D4F;&#xFF0C;&#x516C;&#x4F17;&#x53F7;/&#x8BA2;&#x9605;&#x53F7;&#x7684;&#x4F18;&#x79C0;&#x6587;&#x7AE0;&#x4F1A;&#x6536;&#x5230;&#x8BFB;&#x8005;&#x7684;&#x6253;&#x8D4F;&#x3002;&#x8FD9;&#x70B9;&#x4E0E;steemit&#x6709;&#x4E9B;&#x7C7B;&#x4F3C;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x8BFB;&#x8FC7;&#x516C;&#x4F17;&#x53F7;/&#x8BA2;&#x9605;&#x53F7;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x5C31;&#x4F1A;&#x77E5;&#x9053;CN&#x6587;&#x7AE0;&#x4E0E;&#x4E4B;&#x7684;&#x5DEE;&#x5F02;&#x3002;CN&#x597D;&#x6587;&#x7AE0;&#x4E5F;&#x6709;&#xFF0C;&#x4F46;&#x662F;&#x51E4;&#x6BDB;&#x9E9F;&#x89D2;&#x3002;</p>
-<p>&#x4E3A;&#x4E86;&#x6253;&#x7834;&#x8D4F;&#x91D1;&#x65B9;&#x9762;&#x7B49;&#x969C;&#x788D;&#xFF0C;&#x4E00;&#x4E9B;&#x4F5C;&#x8005;&#x5F00;&#x59CB;&#x5C1D;&#x8BD5;&#x53CC;&#x8BED;&#x521B;&#x4F5C;&#x6216;&#x8005;&#x82F1;&#x6587;&#x521B;&#x4F5C;&#x3002;<br>&#x4F46;&#x662F;&#x53EA;&#x6709;&#x5F88;&#x5C11;&#x4E00;&#x90E8;&#x5206;&#x83B7;&#x5F97;&#x4E86;&#x4E00;&#x70B9;&#x6210;&#x529F;&#x3002;</p>
-<p>&#x4E2D;&#x6587;&#x533A;&#x7684;&#x56F0;&#x5883;&#x8BE5;&#x5982;&#x4F55;&#x6253;&#x7834;&#xFF1F;<br>&#x5982;&#x4F55;&#x8BA9;&#x767E;&#x5143;&#x5E16;&#x5B50;&#x6216;&#x8005;&#x5343;&#x5143;&#x5E16;&#x5B50;&#x6210;&#x4E3A;&#x5E38;&#x6001;&#xFF1F;<br>&#x5982;&#x679C;&#x8BA9;&#x6BCF;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x8D28;&#x91CF;&#x582A;&#x6BD4;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x4E2D;&#x7684;&#x7ECF;&#x5178;&#x4F5C;&#x54C1;&#xFF1F;</p>
-<p>&#x5982;&#x679C; @abit &#x4E0D;&#x518D;&#x70B9;&#x8D5E;&#xFF0C;&#x4E2D;&#x6587;&#x533A;&#x5C06;&#x4F55;&#x53BB;&#x4F55;&#x4ECE;&#xFF1F;<br>&#x96BE;&#x9053;&#x653E;&#x5F03;&#x6211;&#x4EEC;&#x6700;&#x64C5;&#x957F;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x53BB;&#x6B7B;&#x62A0;&#x82F1;&#x8BED;&#x53BB;&#x548C;&#x8001;&#x5916;&#x6DF7;&#x719F;&#x5417;&#xFF1F;&#x8C8C;&#x4F3C;&#x8FD9;&#x4E2A;&#x6709;&#x4E9B;&#x56F0;&#x96BE;&#x3002;<br>&#x6291;&#x6216;&#x53BB;&#x7814;&#x7A76;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x9760;&#x4E00;&#x4E9B;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x624B;&#x6BB5;&#x6765;&#x5B9E;&#x73B0;&#x548C;&#x4F53;&#x73B0;&#x4EF7;&#x503C;&#xFF1F;</p>
-<p>&#x5F53;&#x521D;&#xFF0C;&#x6211;&#x66FE;&#x9884;&#x8A00;&#xFF1A; &#x53D1;&#x5E16;&#x8D5A;&#x94B1;&#x4E0D;&#x662F;steemit&#x7684;&#x7CBE;&#x9AD3;&#xFF0C;&#x793E;&#x4EA4;&#x624D;&#x662F;&#x3002;<br>&#x800C;&#x81EA;&#x8BF4;&#x81EA;&#x8BDD;&#x7684;&#x73B0;&#x5B9E;&#xFF0C;&#x5F88;&#x660E;&#x663E;&#x8DDD;&#x79BB;&#x793E;&#x4EA4;&#x8FD8;&#x6709;&#x5F88;&#x8FDC;&#x7684;&#x8DDD;&#x79BB;&#x3002;</p>
-<p>&#x90A3;&#x4E48;&#x65E2;&#x4E0D;&#x8D5A;&#x94B1;&#xFF0C;&#x53C8;&#x65E0;&#x793E;&#x4EA4;&#xFF0C;&#x524D;&#x8DEF;&#x5982;&#x4F55;&#xFF1F;<br>&#x7B97;&#x4E86;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x8FD8;&#x662F;&#x53BB;&#x7814;&#x7A76;&#x673A;&#x5668;&#x4EBA;&#x5427;&#xFF1A;&#xFF09;</p>
-<hr>
-<h1 id="&#x9644;&#x4E00;&#xFF1A;-&#x5404;&#x79CD;&#x5E16;&#x5B50;"><a href="#&#x9644;&#x4E00;&#xFF1A;-&#x5404;&#x79CD;&#x5E16;&#x5B50;" class="headerlink" title="&#x9644;&#x4E00;&#xFF1A; &#x5404;&#x79CD;&#x5E16;&#x5B50;"></a>&#x9644;&#x4E00;&#xFF1A; &#x5404;&#x79CD;&#x5E16;&#x5B50;</h1><h1 id="&#x6559;&#x5B66;&#x8D34;"><a href="#&#x6559;&#x5B66;&#x8D34;" class="headerlink" title="&#x6559;&#x5B66;&#x8D34;"></a>&#x6559;&#x5B66;&#x8D34;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/howto-guide-to-insert-pictures-in-the-steemit-articles-the-most-popular-picture-of-china-in-this-summer" target="_blank" rel="noopener">[howto] Guide to insert pictures in the steemit articles. (The most popular picture of China in this summer)</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/markdown" target="_blank" rel="noopener">&#x4F7F;&#x7528;Markdown&#x6765;&#x8BA9;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#x66F4;&#x6613;&#x4E8E;&#x9605;&#x8BFB;&#x3001;&#x66F4;&#x7F8E;&#x89C2;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/jvzjs" target="_blank" rel="noopener">&#x5C0F;&#x5FC3;&#xFF0C;&#x522B;&#x4E3A;&#x4ED6;&#x4EBA;&#x505A;&#x5AC1;&#x8863;&#x88F3;&#xFF01;&#xFF08;&#x5173;&#x4E8E;&#x5BC6;&#x7801;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x77E5;&#x9053;&#x7684;&#x4E8B;&#x60C5;&#xFF09;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/3o4ytr" target="_blank" rel="noopener">&#x3299;&#x4F7F;&#x7528;&#x8868;&#x60C5;&#x7B26;&#x53F7;&#x1F4A1;&#xFF0C;&#x8BA9;&#x4F60;&#x7684;&#x5E16;&#x5B50;&#x66F4;&#x5438;&#x5F15;&#x4EBA;&#x6C14;&#x1F4AF;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/follow-me-follow-me" target="_blank" rel="noopener">Follow me, Follow me &#x6559;&#x4F60;&#x5982;&#x4F55;&#x5173;&#x6CE8;&#x522B;&#x4EBA;(&#x56DE;&#x5E16;&#x6211;&#x5C31;&#x5173;&#x6CE8;&#x4F60;&#xFF09;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/followers-followed-mute" target="_blank" rel="noopener">&#x8BE6;&#x89E3;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&#x7684;Followers&#x3001;Followed&#x529F;&#x80FD;&#xFF0C;&#x4EE5;&#x53CA;MUTE &#xFF08;&#x8C01;&#x662F;&#x4F60;&#x7684;&#x8FFD;&#x968F;&#x8005;&#xFF0C;&#x4F60;&#x8FFD;&#x968F;&#x4E86;&#x8C01;&#xFF0C;&#x4EE5;&#x53CA;&#x5C4F;&#x853D;&#x529F;&#x80FD;&#xFF09;</a></li>
-</ul>
-<h1 id="&#x70B9;&#x8BC4;&#x8D34;"><a href="#&#x70B9;&#x8BC4;&#x8D34;" class="headerlink" title="&#x70B9;&#x8BC4;&#x8D34;"></a>&#x70B9;&#x8BC4;&#x8D34;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/cn-august-17" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 16 &#x7B2C;&#x4E09;&#x671F; &#xFF09;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/cn-august-16" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 16 &#x7B2C;&#x4E8C;&#x671F; &#xFF09;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/cn" target="_blank" rel="noopener">&#x1F47E;&#x5927;&#x5634;&#x86D9;&#x70B9;&#x8BC4;&#xFF1A;CN&#x533A;&#x4ECA;&#x65E5;&#x70ED;&#x5E16;&#x9644;&#x70B9;&#x8BC4;&#xFF0C;&#x6392;&#x540D;&#x4E0D;&#x5206;&#x5148;&#x540E;&#xFF08;August 17 &#x7B2C;&#x4E00;&#x671F; &#xFF09;</a></li>
-</ul>
-<h1 id="BUG&#x6C47;&#x62A5;&#x548C;&#x5206;&#x6790;"><a href="#BUG&#x6C47;&#x62A5;&#x548C;&#x5206;&#x6790;" class="headerlink" title="BUG&#x6C47;&#x62A5;&#x548C;&#x5206;&#x6790;"></a>BUG&#x6C47;&#x62A5;&#x548C;&#x5206;&#x6790;</h1><ul>
-<li><a href="https://steemit.com/steemit/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap" target="_blank" rel="noopener">Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/steem-com-node003-167-114-34-68" target="_blank" rel="noopener">Steem.com &#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x8282;&#x70B9; node003(167.114.34.68) , &#x88AB;&#x9ED1;&#x8FD8;&#x662F;&#x7EF4;&#x62A4;? &#x5E0C;&#x671B;&#x5C3D;&#x5FEB;&#x4FEE;&#x590D;.</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/bug-100-bug" target="_blank" rel="noopener">&#x1F387;&#x65E0;&#x5173;&#x75DB;&#x75D2;&#x7684;&#x5C0F;BUG&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;100%&#x662F;BUG</a></li>
-</ul>
-<h1 id="&#x5EFA;&#x8BAE;"><a href="#&#x5EFA;&#x8BAE;" class="headerlink" title="&#x5EFA;&#x8BAE;"></a>&#x5EFA;&#x8BAE;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/suggestion-balances-steem-dollars-locked" target="_blank" rel="noopener">Suggestion: &#x5728; BALANCES&#x4E0B;&#x589E;&#x52A0;&#x6761;&#x76EE;&#x201D;STEEM DOLLARS(Locked)&#x201D;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/suggestion-add-steem-dollars-locked-item-under-balances" target="_blank" rel="noopener">Suggestion: Add &#x201C;STEEM DOLLARS(Locked)&#x201D; item under BALANCES</a></li>
-</ul>
-<h1 id="&#x6652;&#x56FE;&#x3001;&#x6652;&#x6545;&#x4E8B;&#x3001;&#x6652;&#x5A03;"><a href="#&#x6652;&#x56FE;&#x3001;&#x6652;&#x6545;&#x4E8B;&#x3001;&#x6652;&#x5A03;" class="headerlink" title="&#x6652;&#x56FE;&#x3001;&#x6652;&#x6545;&#x4E8B;&#x3001;&#x6652;&#x5A03;"></a>&#x6652;&#x56FE;&#x3001;&#x6652;&#x6545;&#x4E8B;&#x3001;&#x6652;&#x5A03;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/my-favorite-photos-travel-of-hainan" target="_blank" rel="noopener">&#x6211;&#x6700;&#x559C;&#x6B22;&#x7684;&#x7167;&#x7247;-&#x6D77;&#x5357;&#x4E4B;&#x65C5; / My favorite photos-Travel Of Hainan</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/3woadh" target="_blank" rel="noopener">&#x4E00;&#x5341;&#x4E8C;&#x5E74;&#x8FC7;&#x53BB;&#xFF0C;&#x5F39;&#x6307;&#x4E00;&#x6325;&#x95F4;</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/the-flowers-remain-the-same-year-after-year-while-people-change-year-by-year" target="_blank" rel="noopener">&#x5E74;&#x5E74;&#x5C81;&#x5C81;&#x82B1;&#x76F8;&#x4F3C;&#xFF0C;&#x5C81;&#x5C81;&#x5E74;&#x5E74;&#x4EBA;&#x4E0D;&#x540C;&#x3002;/The flowers remain the same year after year while people change year by year.</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/n" target="_blank" rel="noopener">&#x6211;&#x5DE5;&#x4F5C;N&#x5E74;&#x7684;&#x5730;&#x65B9;</a><br><a href="https://steemit.com/cn/@oflyhigh/the-big-bag-full-of-love" target="_blank" rel="noopener">&#x5927;&#x5927;&#x7684;&#x4E66;&#x5305;&#xFF0C;&#x6EE1;&#x6EE1;&#x7684;&#x7231;!/The big bag, full of love!</a></li>
-</ul>
-<h1 id="&#x7FFB;&#x8BD1;"><a href="#&#x7FFB;&#x8BD1;" class="headerlink" title="&#x7FFB;&#x8BD1;"></a>&#x7FFB;&#x8BD1;</h1><ul>
-<li><a href="https://steemit.com/steemit/@oflyhigh/steemit-30-translate-steemit-in-the-last-30-days-some-stats" target="_blank" rel="noopener">&#x7FFB;&#x8BD1;&#xFF1A; Steemit&#x8FD1;30&#x5929;&#x7684;&#x4E00;&#x4E9B;&#x7EDF;&#x8BA1;&#x6570;&#x636E;/Translate&#xFF1A;Steemit In The Last 30 Days, Some Stats.</a></li>
-</ul>
-<h1 id="steemit&#x76F8;&#x5173;"><a href="#steemit&#x76F8;&#x5173;" class="headerlink" title="steemit&#x76F8;&#x5173;"></a>steemit&#x76F8;&#x5173;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/wang-wang-vote-for-who" target="_blank" rel="noopener">@wang &#x90FD;&#x7ED9;&#x8C01;&#x6295;&#x7968;&#x5566;&#xFF1F; /@wang vote for who?</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/steem-1-55" target="_blank" rel="noopener">&#x8D85;&#x7EA7;&#x5927;&#x5356;&#x5355;&#x4E00;&#x4E0B;&#x5B50;&#x628A;STEEM&#x4EF7;&#x683C;&#x62C9;&#x5230;&#x4E86;1.55</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/steem-steem" target="_blank" rel="noopener">STEEM&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x8DCC;&#x5417;&#xFF0C;STEEM &#x4ECA;&#x5929;&#x4F60;&#x4E70;&#x4E86;&#x5417;&#xFF1F;</a></li>
-</ul>
-<h1 id="&#x786C;&#x4EF6;&#x76F8;&#x5173;"><a href="#&#x786C;&#x4EF6;&#x76F8;&#x5173;" class="headerlink" title="&#x786C;&#x4EF6;&#x76F8;&#x5173;"></a>&#x786C;&#x4EF6;&#x76F8;&#x5173;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/oled-steem-use-the-oled-screen-to-display-your-steem-assets-in-real-time" target="_blank" rel="noopener">&#x4F7F;&#x7528;OLED&#x6DB2;&#x6676;&#x5C4F;&#x5B9E;&#x65F6;&#x663E;&#x793A;&#x4F60;&#x7684;STEEM&#x8D44;&#x4EA7;/Use the OLED screen to display your STEEM assets in real time</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/arduino-steemit-dan" target="_blank" rel="noopener">&#x7528;Arduino&#x8BA1;&#x7B97;&#x4F60;&#x5728;steemit&#x672A;&#x6765;&#x7684;&#x8D22;&#x5BCC;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8D76;&#x8D85; @dan</a></li>
-<li><a href="https://steemit.com/steemit/@oflyhigh/calculate-your-future-wealth-with-arduino-let-s-keep-up-with-dan" target="_blank" rel="noopener">Calculate your future wealth with Arduino, let&#x2019;s keep up with @dan !</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/what-will-you-make-intel-edison" target="_blank" rel="noopener">What will you make? &#x79C0;&#x4E00;&#x4E0B;Intel Edison&#x5957;&#x4EF6;&#xFF0C;&#x8BA1;&#x5212;&#x505A;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x6D47;&#x82B1;&#x88C5;&#x7F6E;</a></li>
-</ul>
-<h1 id="&#x80E1;&#x601D;&#x4E71;&#x60F3;"><a href="#&#x80E1;&#x601D;&#x4E71;&#x60F3;" class="headerlink" title="&#x80E1;&#x601D;&#x4E71;&#x60F3;"></a>&#x80E1;&#x601D;&#x4E71;&#x60F3;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/reputation-scores" target="_blank" rel="noopener">&#x4E0D;&#x4FE1;&#x4E0D;&#x7ACB;&#xFF0C;&#x4E0D;&#x8BDA;&#x4E0D;&#x884C;! &#x4E5F;&#x8C08; &#x4FE1;&#x8A89;&#x8BC4;&#x5206;&#xFF08;Reputation Scores&#xFF09;</a></li>
-<li><a href="https://steemit.com/steemit/@oflyhigh/steemit-v" target="_blank" rel="noopener">Steemit &#x601D;&#x8003;&#xFF1A; &#x81EA;&#x5A92;&#x4F53;&#x3001;&#x5927;V&#x3001;&#x660E;&#x661F;&#x6765;&#x88AD;&#xFF0C;&#x5C0F;&#x4F5C;&#x8005;&#x8BE5;&#x4F55;&#x53BB;&#x4F55;&#x4ECE;?</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/how-to-generate-valuable-content" target="_blank" rel="noopener">How to generate valuable content? (&#x5982;&#x4F55;&#x751F;&#x4EA7;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x601D;&#x8003;)</a></li>
-</ul>
-<h1 id="&#x5176;&#x5B83;&#x7C7B;&#x522B;"><a href="#&#x5176;&#x5B83;&#x7C7B;&#x522B;" class="headerlink" title="&#x5176;&#x5B83;&#x7C7B;&#x522B;"></a>&#x5176;&#x5B83;&#x7C7B;&#x522B;</h1><p>&#x8FD8;&#x6709;&#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x5E16;&#x5B50;&#x5C31;&#x4E0D;&#x4E00;&#x4E00;&#x5217;&#x51FA;&#x4E86;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/the-glass-ceiling-dilemma-for-chinese-community" target="_blank" rel="noopener">The glass ceiling dilemma for Chinese community/&#x4E2D;&#x6587;&#x793E;&#x533A;&#x7684;&#x73BB;&#x7483;&#x5929;&#x82B1;&#x677F;&#x56F0;&#x5C40;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -723,7 +677,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/273/">273</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/274/">274</a></li>
             
         </ul>
     </nav>
