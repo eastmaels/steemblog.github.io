@@ -230,6 +230,92 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/simple-video-downloader-3-0-4-webpack-es6-unit-tests-and-more/" class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmQE23ep76rNaZbw7NVZEsFzE7JEETqk5KZuxYVUhnJuBF" alt="Simple Video Downloader 3.0.4 - Webpack, ES6, Unit Tests and more!">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-15T00:58:27.000Z">2018-11-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 924 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/simple-video-downloader-3-0-4-webpack-es6-unit-tests-and-more/">Simple Video Downloader 3.0.4 - Webpack, ES6, Unit Tests and more!</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Introducing-to-Simple-Video-Downloader"><a href="#Introducing-to-Simple-Video-Downloader" class="headerlink" title="Introducing to Simple Video Downloader"></a>Introducing to Simple Video Downloader</h1><p>The <a href="https://helloacm.com/videodownloader-update-vip-feature-of-server-video-parser/" target="_blank" rel="noopener">Video Downloader</a> is a Chrome Extension that helps you save your favorite videos. It can be installed via Chrome Webstore:<br><a href="https://chrome.google.com/webstore/detail/ilcdiicigjaccgipndigcenjieedjohj/" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/ilcdiicigjaccgipndigcenjieedjohj/</a></p>
+<h1 id="Total-Number-of-Current-Users"><a href="#Total-Number-of-Current-Users" class="headerlink" title="Total Number of Current Users"></a>Total Number of Current Users</h1><p><img src="https://ipfs.busy.org/ipfs/QmQE23ep76rNaZbw7NVZEsFzE7JEETqk5KZuxYVUhnJuBF" alt="image.png"></p>
+<h1 id="Install-on-Firefox-or-other-browsers"><a href="#Install-on-Firefox-or-other-browsers" class="headerlink" title="Install on Firefox or other browsers?"></a>Install on Firefox or other browsers?</h1><p>It should work, but not fully tested on Firefox via <a href="https://addons.mozilla.org/en-GB/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Extension Foxified</a></p>
+<h1 id="Changes-v3-0-4"><a href="#Changes-v3-0-4" class="headerlink" title="Changes v3.0.4"></a>Changes v3.0.4</h1><p>Pull Requests Merged: <a href="https://github.com/DoctorLai/VideoDownloadHelper/pull/4" target="_blank" rel="noopener">https://github.com/DoctorLai/VideoDownloadHelper/pull/4</a></p>
+<ol>
+<li>using ES6 and webpack - <code>npm run build</code><br><img src="https://ipfs.busy.org/ipfs/QmaxQxZSHwBjvaLdgvAfjQ3aMcwZsAS7KAdzwRUyNMufmp" alt="image.png"></li>
+<li>unit tests via mocha and chai - <code>npm run test</code><br><img src="https://ipfs.busy.org/ipfs/QmdoEe16FHivZveRQmFPaTDnDDAQvpRkAZ8NUHEUASJFKx" alt="image.png"></li>
+<li>adding ParseVideo class that analyses HTML</li>
+<li>handles pearvideo.com</li>
+<li>handles miaopai.com</li>
+</ol>
+<h1 id="Class-of-ParseVideo"><a href="#Class-of-ParseVideo" class="headerlink" title="Class of ParseVideo"></a>Class of ParseVideo</h1><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">/* jshint -W097 */</span><br><span class="line">/* jshint -W117 */</span><br><span class="line">&quot;use strict&quot;;</span><br><span class="line"></span><br><span class="line">const { ValidURL, extractDomain, FixURL } = require( &apos;../js/functions&apos; )  ;</span><br><span class="line"></span><br><span class="line">class ParseVideo {</span><br><span class="line">    constructor(url, html = &quot;&quot;) {</span><br><span class="line">        // e.g. https://www.dailymotion.com/video/x2bu0q2</span><br><span class="line">        this.url = url;</span><br><span class="line">        // e.g. &lt;html&gt;....&lt;/html&gt;</span><br><span class="line">        this.html = html;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // entry of video parser</span><br><span class="line">    Parse() {</span><br><span class="line">        let domain = extractDomain(this.url);</span><br><span class="line">        let video_url = &quot;&quot;;</span><br><span class="line">        if (domain.includes(&quot;miaopai.com&quot;)) {</span><br><span class="line">            video_url = ParseVideo.parse_miaopai_com(this.url, this.html);</span><br><span class="line">            if (ValidURL(video_url)) {</span><br><span class="line">                return video_url;</span><br><span class="line">            }</span><br><span class="line">        }        </span><br><span class="line">        if (domain.includes(&quot;pearvideo.com&quot;)) {</span><br><span class="line">            video_url = ParseVideo.parse_pearvideo_com(this.url, this.html);</span><br><span class="line">            if (ValidURL(video_url)) {</span><br><span class="line">                return video_url;</span><br><span class="line">            }            </span><br><span class="line">        }</span><br><span class="line">        video_url = ParseVideo.extract_all_video_urls(this.url, this.html);</span><br><span class="line">        if (video_url !== null) {</span><br><span class="line">            return video_url;</span><br><span class="line">        }</span><br><span class="line">        video_url = ParseVideo.extract_all_mp4_urls(this.url, this.html);</span><br><span class="line">        if (video_url !== null) {</span><br><span class="line">            return video_url;</span><br><span class="line">        }</span><br><span class="line">        return null;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // parse miaopai.com video e.g. https://miaopai.com/show/abcde.html</span><br><span class="line">    // this is one of the simplest form and we can get it from URL</span><br><span class="line">    static parse_miaopai_com(url, html) {</span><br><span class="line">        let re = /.*miaopai\.com\/show\/(.*)\.html?$/i;</span><br><span class="line">        let found = re.exec(url);</span><br><span class="line">        if (found !== null) {</span><br><span class="line">            return &quot;http://gslb.miaopai.com/stream/&quot; + found[1] + &quot;.mp4&quot;;</span><br><span class="line">        } </span><br><span class="line">        return null;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // extract all video_url in html e.g. &quot;video_url&quot;: &quot;https://aaaabbb.com/&quot;</span><br><span class="line">    static extract_all_video_urls(url, html) {</span><br><span class="line">        let re = /[&apos;&quot;]?video_url[&apos;&quot;]?:\s*([&apos;&quot;])(https?:[^\s&apos;&quot;,]+)\1/ig;</span><br><span class="line">        let found = re.exec(html);</span><br><span class="line">        let video_url = [];</span><br><span class="line">        while (found !== null) {  </span><br><span class="line">            let url = FixURL(found[2]);</span><br><span class="line">            if (ValidURL(url)) {</span><br><span class="line">                video_url.push(url);</span><br><span class="line">            }</span><br><span class="line">            found = re.exec(html);</span><br><span class="line">        }</span><br><span class="line">        return (video_url.length === 0) ? null :</span><br><span class="line">               ( (video_url.length === 1) ? video_url[0] : video_url);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // parse pearvideo.com e.g. http://www.pearvideo.com/video_1050733</span><br><span class="line">    static parse_pearvideo_com(url, html) {</span><br><span class="line">        let video_url = [];</span><br><span class="line">        let re = /([hsl]d|src)Url\s*=\s*[\&quot;\&apos;]([^\&quot;\&apos;]+)[\&apos;\&quot;]/ig;</span><br><span class="line">        let found = re.exec(html);</span><br><span class="line">        while (found !== null) {</span><br><span class="line">            let tmp_url = FixURL(found[2]); </span><br><span class="line">            if (ValidURL(tmp_url)) {</span><br><span class="line">                video_url.push(tmp_url);</span><br><span class="line">            }</span><br><span class="line">            found = re.exec(html);</span><br><span class="line">        }        </span><br><span class="line">        return (video_url.length === 0) ? null :</span><br><span class="line">               ( (video_url.length === 1) ? video_url[0] : video_url);        </span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // extract all MP4 in html e.g. &quot;mp4&quot;,&quot;url&quot;:&quot;https://aabb.com&quot;</span><br><span class="line">    static extract_all_mp4_urls(url, html) {</span><br><span class="line">        let re = /mp4[\&apos;\&quot;]\s*,\s*[\&apos;\&quot;]url[\&apos;\&quot;]\s*:\s*[\&apos;\&quot;]([^\&quot;\&apos;]+)[\&apos;\&quot;]/ig;</span><br><span class="line">        let found = re.exec(html);</span><br><span class="line">        let video_url = [];</span><br><span class="line">        while (found !== null) {  </span><br><span class="line">            let url = FixURL(found[1]);</span><br><span class="line">            if (ValidURL(url)) {</span><br><span class="line">                video_url.push(url);</span><br><span class="line">            }</span><br><span class="line">            found = re.exec(html);</span><br><span class="line">        }</span><br><span class="line">        return (video_url.length === 0) ? null :</span><br><span class="line">               ( (video_url.length === 1) ? video_url[0] : video_url);</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">if (typeof module !== &apos;undefined&apos; &amp;&amp; typeof module.exports !== &apos;undefined&apos;) {</span><br><span class="line">	module.exports = {</span><br><span class="line">		ParseVideo</span><br><span class="line">	};</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h1><p><img src="https://ipfs.busy.org/ipfs/QmbRYKtyV658oZN5opRABjF6nHRufUaww5d8LhpG4QRJCK" alt="image.png"></p>
+<h1 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h1><ol>
+<li>Use async/await to replace Promise/Then</li>
+<li>Fix broken video parser due to video site changes e.g. ted.com</li>
+<li>Add more unit tests (increase code coverage)</li>
+<li>Support vimeo and other video sites</li>
+<li>Merge video segments (ts)</li>
+</ol>
+<h1 id="VIP-Key-Exclusive-to-Utopian"><a href="#VIP-Key-Exclusive-to-Utopian" class="headerlink" title="VIP Key Exclusive to Utopian"></a>VIP Key Exclusive to Utopian</h1><p>Please note, you can enter the VIP Key which allows you to call the <a href="https://weibomiaopai.com" target="_blank" rel="noopener">server API</a> in case the client video parser fails locally - this greatly unlocks video parser to many many other video sites. </p>
+<p><img src="https://ipfs.busy.org/ipfs/QmcDoZyZpEYoa7JeVEU16bVPeyMA7SSYRir7fNgfHt5Z28" alt="image.png"></p>
+<p>The KEY is <strong>iamutopian</strong></p>
+<hr>
+<p><strong>Enjoy and Steem On!</strong></p>
+<h2 id="Vote-for-me-or-Set-me-as-a-witness-Proxy-Every-vote-counts-Thank-you"><a href="#Vote-for-me-or-Set-me-as-a-witness-Proxy-Every-vote-counts-Thank-you" class="headerlink" title="Vote for me or Set me as a witness Proxy - Every vote counts! - Thank you!"></a><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">Vote for me</a> or <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">Set me as a witness Proxy</a> - Every vote counts! - Thank you!</h2><h2 id="Your-Vote-is-much-appreciated-and-every-vote-counts"><a href="#Your-Vote-is-much-appreciated-and-every-vote-counts" class="headerlink" title="Your Vote is much appreciated, and every vote counts."></a>Your Vote is much appreciated, and every vote counts.</h2><p>Check out <a href="https://steemyy.com/witness-data/justyy" target="_blank" rel="noopener">My Witness Page</a></p>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">my work</a> as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a witness proxy</a> - let @justyy represent you.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://steemyy.com/" target="_blank" rel="noopener">SteemYY.com - SteemIt Tutorials, Robots, Tools and APIs</a></strong> and <a href="https://anothervps.com/vps-database/" target="_blank" rel="noopener">VPS Search Tool</a></p>
+<p></p><h3>Relevant Video Download Posts</h3><p></p>
+<ul><br><li><a href="https://helloacm.com/videodownloader-update-new-ui-d-tube-and-steemit-video-url-parser-code-refactoring/" target="_blank" rel="noopener">VideoDownloader Update: New UI, d.tube and steemit video URL parser, code refactoring!</a></li><br><li><a href="https://helloacm.com/videodownloader-update-vip-feature-of-server-video-parser/" target="_blank" rel="noopener">VideoDownloader Update: VIP Feature of Server Video Parser</a></li><br><li><a href="https://helloacm.com/how-to-download-tumblr-video-with-php-script-chrome-extensions-online-tool/" target="_blank" rel="noopener">How to Download Tumblr Posts?</a></li><br><li><a href="https://helloacm.com/a-home-made-video-download-helper-client-server/" target="_blank" rel="noopener">A Home-made Video Download Helper (Client + Server)</a></li><br><li><a href="https://helloacm.com/the-simple-video-m3u8-downloaderparser-in-php-javascript/" target="_blank" rel="noopener">The Simple Video .m3u8 Downloader/Parser in PHP and Javascript</a></li><br><li><a href="https://helloacm.com/how-to-download-instagram-videos-using-php-and-javascript/" target="_blank" rel="noopener">How to Download Instagram Videos using PHP and Javascript?</a></li><br><li><a href="https://helloacm.com/how-to-download-video-via-workflow/" target="_blank" rel="noopener">How to Download Video via Workflow APP?</a></li><br><li><a href="https://helloacm.com/how-to-download-video-from-ted-com-in-javascript/" target="_blank" rel="noopener">The TED Video Downloader</a></li><br><li><a href="https://helloacm.com/adding-image-download-list-to-the-popular-videodownloadhelper-chrome-extension/" target="_blank" rel="noopener">Adding <code>Image Download List</code> to the Popular <code>VideoDownloadHelper</code> Chrome Extension</a></li><br></ul>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/simple-video-downloader-3-0-4-webpack-es6-unit-tests-and-more" target="_blank" rel="noopener">&#x2018;Simple Video Downloader 3.0.4 - Webpack, ES6, Unit Tests and more!&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-11-14/" class="image is-7by1">
             <img class="thumbnail" src="http://www.bing.com/az/hprichbg/rb/WaterLilyLeaves_ROW11873213283_1920x1080.jpg" alt="【第 肆肆陆 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-11-14)">
         </a>
@@ -11428,61 +11514,6 @@
 <p>Thank you! <strong>Some of My Contributions: <a href="https://steemyy.com/" target="_blank" rel="noopener">SteemYY.com - SteemIt Tutorials, Robots, Tools and APIs</a></strong> and <a href="https://anothervps.com/vps-database/" target="_blank" rel="noopener">VPS Search Tool</a></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/justyy-s-weekly-witness-report-11-nov-2018" target="_blank" rel="noopener">&#x2018;@justyy &#x2018;&#x2019;s Weekly Witness Report - 11/Nov/2018&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/transfering-to-yourself-works/" class="image is-7by1">
-            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmcJHLb5KWLPYxYztYVW3zViqfrp6PCVk2hxQ6B7KN5SoC" alt="Transfering to Yourself - works!">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-11-10T11:57:36.000Z">2018-11-10</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/busy/">busy</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a few seconds read (About 71 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/transfering-to-yourself-works/">Transfering to Yourself - works!</a>
-            
-        </h1>
-        <div class="content">
-            <p><a href="https://steemd.com/b/27559857#155f6189ecd27868b0c43102b09705d2a9f25059" target="_blank" rel="noopener">#Block 27559857</a></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmcJHLb5KWLPYxYztYVW3zViqfrp6PCVk2hxQ6B7KN5SoC" alt="image.png"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmRVT26BLNetg9MoKYggyJxf5ezjLmyKmJcf1d7hHzbde2" alt="image.png"></p>
-<h2 id="Apparently-you-can-transfer-to-yourself-Is-this-kinda-a-BUG"><a href="#Apparently-you-can-transfer-to-yourself-Is-this-kinda-a-BUG" class="headerlink" title="Apparently, you can transfer to yourself! - Is this kinda a BUG?"></a>Apparently, you can transfer to yourself! - Is this kinda a BUG?</h2><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/transfering-to-yourself-works" target="_blank" rel="noopener">&#x2018;Transfering to Yourself - works!&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
