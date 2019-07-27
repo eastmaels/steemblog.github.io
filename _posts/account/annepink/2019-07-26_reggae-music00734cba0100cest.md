@@ -25,6 +25,7 @@ tags:
 - busy
 - jahm
 - whalepower
+- cn-voice
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/39f08bc4b84ac647d109ec473e07e83d119b294a.jpg'
 sidebar:
     right:
@@ -38,7 +39,7 @@ widgets:
 
 ![](https://d1vof77qrk4l5q.cloudfront.net/img/39f08bc4b84ac647d109ec473e07e83d119b294a.jpg)
 
-[《半壶纱》](https://node.kg.qq.com/play?s=TVNRO-T3RMOHsT5N&shareuid=6399948027243e833c&topsource=a0_pn201001006_z11_u149529988_l1_t1564121507__)是一首中国风的歌曲喔...也是在雷鬼歌单里噢，看上面截图写了hip-hop雷鬼~~ 哈哈... 太棒了👍这首歌前年也很火的!充满禅意的一首歌，那时第一次听就喜欢上了中国风歌曲，跟李玉刚的曲风差不多，属于中国古风歌曲，在中国也算是小众的爱好了，这类古风歌都是民族乐吧，非常清新脱俗!很好听喔🌺
+[《半壶纱》](https://node.kg.qq.com/play?s=TVNRO-T3RMOHsT5N&shareuid=6399948027243e833c&topsource=a0_pn201001006_z11_u149529988_l1_t1564121507__)是首中国风的歌曲喔...也是在雷鬼歌单里噢，看上面截图写了hip-hop雷鬼~~ 哈哈... 太棒了👍这首歌前年也很火的!充满禅意的一首歌，那时第一次听就喜欢上了中国风歌曲，跟李玉刚的曲风差不多，属于中国古风歌曲，在中国也算是小众的爱好了，这类古风歌都是民族乐吧，非常清新脱俗!很好听喔🌺
 
 > 墨已入水 渡一池青花
 揽五分红霞 采竹回家
