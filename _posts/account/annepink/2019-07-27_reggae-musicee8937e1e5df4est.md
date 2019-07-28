@@ -8,8 +8,9 @@ toc: true
 position: 9999
 date: 2019-07-27 07:50:18
 categories:
-- palnet
+- creativecoin
 tags:
+- creativecoin
 - palnet
 - lassecash
 - mediaofficials
@@ -25,7 +26,6 @@ tags:
 - busy
 - jahm
 - whalepower
-- creativecoin
 - cn-voice
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/095f65e4e60a961e24943993afe079ce7e036f7c.jpg'
 sidebar:
@@ -45,7 +45,7 @@ widgets:
 > 在阳光温暖的春天
 走在这城市的人群中
 在不知不觉的一瞬间
-又想 起你
+又想  起你
 你是记忆中最美的春天
 是我难以再回去的昨天
 你像鲜花那样地绽放
