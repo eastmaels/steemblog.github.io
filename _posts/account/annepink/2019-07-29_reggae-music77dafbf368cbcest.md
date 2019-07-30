@@ -8,8 +8,9 @@ toc: true
 position: 9999
 date: 2019-07-29 09:52:18
 categories:
-- palnet
+- creativecoin
 tags:
+- creativecoin
 - palnet
 - lassecash
 - mediaofficials
@@ -19,12 +20,11 @@ tags:
 - zzan
 - cn-voice
 - actnearn
-- neoxian
 - reggaesteem
+- neoxian
 - busy
 - jahm
 - whalepower
-- creativecoin
 - cn
 thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/37a90b502971a8fcbf732548a5eba7f5ce0da9a2.jpg'
 sidebar:
@@ -84,7 +84,7 @@ Oh 逆战 逆战狂野
 捍卫世界的勇士
 Fighting 再一决
 
-它是首枪战网游主题曲，张杰也因这款腾讯网游主题曲一炮而红!逆战代表的不仅仅是游戏歌曲，更是是一种信仰，一种奋斗的方式，鼓舞着人心的歌曲，狠值得我们去理解!
+它是首枪战网游主题曲，张杰也因这款腾讯网游主题曲一炮而红!逆战代表的不仅仅是游戏歌曲，更是一种信仰，一种奋斗的方式，鼓舞着人心的歌曲，狠值得我们去理解!
 
 我记得我当初玩游戏，迷上的第一部网游是穿越火线，那时我就是稀饭戴耳机🎧边听逆战，边打穿越火线😜感觉逆战帅呆啦!👻想起逆战我就超爽...哈哈心里充满希望似的~
 
