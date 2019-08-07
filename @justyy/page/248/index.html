@@ -230,6 +230,114 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" class="image is-7by1">
+            <img class="thumbnail" src="https://helloacm.com/wp-content/uploads/2016/07/KNN.png" alt="[机器学习] 用 MySQL 来演示 KNN算法  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-11T13:55:24.000Z">2017-08-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1017 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/">[机器学习] 用 MySQL 来演示 KNN算法  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a>
+            
+        </h1>
+        <div class="content">
+            <br><p><a href="https://justyy.com/archives/2887" target="_blank" rel="noopener">&#x673A;&#x5668;&#x5B66;&#x4E60;</a>&#x8FD9;&#x51E0;&#x5E74;&#x8D8A;&#x6765;&#x8D8A;&#x706B;, &#x7279;&#x522B;&#x662F;&#x76F8;&#x5173;&#x7B97;&#x6CD5;&#x4E94;&#x82B1;&#x516B;&#x95E8;, &#x4F46;&#x6700;&#x6709;&#x540D;&#x7684;&#x5C31;&#x90A3;&#x4E48;&#x51E0;&#x79CD;, &#x800C;&#x5728;&#x8FD9;&#x51E0;&#x79CD;&#x4E2D;, &#x8981;&#x6570;KNN&#x7B97;&#x6CD5;&#x6700;&#x4E3A;&#x7B80;&#x5355;, &#x9AD8;&#x6548;&#x5E76;&#x4E14;&#x6709;&#x9C81;&#x68D2;&#x6027; (Robustness).&#xA0;</p><br><p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x95EE;&#x9898;: &#x5DF2;&#x77E5;&#x6B63;&#x65B9;&#x5F62;&#x548C;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5F52;&#x7C7B;, &#x8BF7;&#x95EE;&#x7EFF;&#x8272;&#x7684;&#x5706;&#x662F;&#x5C5E;&#x4E8E;&#x4E09;&#x89D2;&#x8FD8;&#x662F;&#x5C5E;&#x4E8E;&#x6B63;&#x65B9;&#x5F62;?&#xA0;</p><br><p>The <a href="https://helloacm.com/a-short-introduction-to-k-nearest-neighbors-algorithm/" target="_blank" rel="noopener">K Nearest Neighbor</a> (KNN) Algorithm is well known by its simplicity and robustness in the domain of data mining and <a href="https://helloacm.com/the-machine-learning-case-study-how-to-predict-weight-over-heightgender-using-linear-regression/" target="_blank" rel="noopener">machine learning</a>. It is actually a method based on the statistics. It can be easily described as the following diagram.&#xA0;</p><br><p><img src="https://helloacm.com/wp-content/uploads/2016/07/KNN.png" width="220" height="199"></p><br><p><em>// Image </em><a href="https://helloacm.com/the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" target="_blank" rel="noopener"><em>credited</em></a><em>.&#xA0;</em></p><br><p>Known blue squares and red triangles, you are asked to predict if the green circle belongs to the squares or the triangles. If we choose K=3, then the minimal distances (closest) to the green circle are 2 triangles and 1 square, therefore, the circle belongs to the triangles. However, if we choose K=5, then we have 3 squares and 2 triangles, which will vote the cirlce to the squares group.&#xA0;</p><br><p>&#xA0;&#x8FD9;&#x91CC;&#x7684;KNN &#x6307;&#x7684;&#x662F; K-nearest neighbour &#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F; K&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x90BB;&#x5C45;, &#x5982;&#x679C;&#x6211;&#x4EEC;&#x6307;&#x5B9A;K=3, &#x90A3;&#x4E48;&#x548C;&#x7EFF;&#x8272;&#x5706;&#x6700;&#x8FD1;&#x7684;&#x662F;2&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x548C;1&#x4E2A;&#x6B63;&#x65B9;&#x5F62;, &#x6240;&#x4EE5;&#x6309;&#x591A;&#x6570;&#x4E3A;&#x4E3B;&#x7684;&#x6807;&#x51C6;, &#x6211;&#x4EEC;&#x9884;&#x6D4B;&#x8FD9;&#x4E2A;&#x5706;&#x5C5E;&#x4E8E;&#x4E09;&#x89D2;, &#x76F8;&#x53CD;, &#x5982;&#x679C;K=5&#x7684;&#x60C5;&#x51B5;, &#x548C;&#x5706;&#x6700;&#x8FD1;&#x7684;&#x6709;3&#x4E2A;&#x6B63;&#x65B9;&#x5F62;&#x548C;2&#x4E2A;&#x4E09;&#x89D2;&#x5F62;, &#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x6309;&#x591A;&#x6570;&#x6295;&#x6B63;&#x65B9;&#x5F62;. &#xA0;</p><br><h3>&#x7528; MYSQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5; &#xA0;USING KNN AS PREDICTION ALGORITHM DEMONSTRATION BY MYSQL</h3><br><p>&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8868;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;x&#x548C;y,&#xA0;</p><br><p>&#xA0;By the similar principle, KNN can be used to make predictions by averaging (or with weights by <a href="https://helloacm.com/how-to-compute-minkowski-euclidean-and-cityblock-distance-in-c/" target="_blank" rel="noopener">distance</a>) the closest candidates. For example, if we have the following data (<a href="https://helloacm.com/how-to-generate-100k-test-data-to-mysql-database/" target="_blank" rel="noopener">MySQL</a> table <em>test1</em>): &#xA0;</p><br><pre><code>mysql&gt; select * from test1;<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| x &#xA0;&#xA0;&#xA0;| y &#xA0;&#xA0;&#xA0;|<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| &#xA0;&#xA0;&#xA0;1 | &#xA0;&#xA0;23 |<br><br>| &#xA0;1.2 | &#xA0;&#xA0;17 |<br><br>| &#xA0;3.2 | &#xA0;&#xA0;12 |<br><br>| &#xA0;&#xA0;&#xA0;4 | &#xA0;&#xA0;27 |<br><br>| &#xA0;5.1 | &#xA0;&#xA0;&#xA0;8 |<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>5 rows in set (0.04 sec)</code></pre><br><p>&#xA0;&#x5047;&#x8BBE;&#x5DF2;&#x77E5;&#x4E00;&#x4E2A;&#x65B0;&#x70B9;x=6.5, &#x6211;&#x4EEC;&#x60F3;&#x901A;&#x8FC7;KNN (K=2)&#x6765;&#x9884;&#x6D4B;y&#x7684;&#x503C;, &#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;SQL&#x8BED;&#x53E5;&#x6765;&#x67E5;&#x627E;&#x548C;6.5&#x6700;&#x8FD1;&#x7684;&#x4E24;&#x4E2A;&#x70B9;:&#xA0;</p><br><p>&#xA0;We want to predict when x=6.5, the value of y. First of all, for simplicity, we choose K=2, we need to find two points that have the shortest distance to 6.5, so the SQL will be: &#xA0;</p><br><pre><code>mysql&gt; select x,y from test1 order by abs(6.5-x) limit 2;<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| x &#xA0;&#xA0;&#xA0;| y &#xA0;&#xA0;&#xA0;|<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| &#xA0;5.1 | &#xA0;&#xA0;&#xA0;8 |<br><br>| &#xA0;&#xA0;&#xA0;4 | &#xA0;&#xA0;27 |<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>2 rows in set (0.00 sec)</code></pre><br><p>&#xA0;&#x7136;&#x540E;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5E73;&#x5747;&#x8FD9;&#x4E24;&#x4E2A;&#x70B9;&#x7684;y&#x503C;, &#x7528;&#x4E00;&#x4E2A;&#x5D4C;&#x5957;SQL&#x8BED;&#x53E5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;:&#xA0;</p><br><p>&#xA0;Now, the task is just to average their corresponding y values. So using a nested SQL statement is trivial: &#xA0;</p><br><pre><code>mysql&gt; select avg(y) as predicted from (select y from test1 order by abs(6.5-x) limit 2) as KNN;<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>| predicted |<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>| &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;17.5 |<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>1 row in set (0.00 sec)</code></pre><br><p>&#xA0;KNN&#x7B97;&#x6CD5;&#x7B80;&#x5355; &#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5927;&#x7684;&#x95EE;&#x9898;&#x662F;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x662F;&#x5C5E;&#x4E8E; lazy <a href="https://justyy.com/archives/1626" target="_blank" rel="noopener">&#x7B97;&#x6CD5;</a>, &#x610F;&#x601D;&#x662F;&#x62FF;&#x5230;&#x6570;&#x636E; (training set) &#x540E;&#x5E76;&#x4E0D;&#x662F;&#x9A6C;&#x4E0A;&#x8BAD;&#x7EC3;(&#x751A;&#x81F3;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x8BAD;&#x7EC3;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;)&#x800C;&#x662F;&#x7B49;&#x9700;&#x8981;&#x9884;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#x5B9E;&#x65F6;&#x53BB;&#x627E;&#x6700;&#x8FD1;&#x7684;K&#x4E2A;&#x90BB;&#x5C45;, &#x6240;&#x4EE5;&#x5F53;&#x6570;&#x636E;&#x91CF;&#x5927;&#x7684;&#x65F6;&#x5019; &#x6548;&#x7387;&#x5C31;&#x6BD4;&#x8F83;&#x4F4E;&#x4E86;.&#xA0;</p><br><p>&#xA0;KNN is lazy, meaning that it does not train dataset immediately (actually there is no training). When the input is given to the KNN model, it will look for K nearest neighbours at real time, which is slow and inefficient if the dataset is large.&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" width="1200" height="628"></p><br><p>Originally published at <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> which motivates me to create more quality posts.</p><br><p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#xA0;&#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.&#xA0;&#xA0;&#xA0;&#xA0;// &#x5DF2;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com/" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2; </a>&#x548C;<a href="https://justyy.com/" target="_blank" rel="noopener"> </a><a href="https://helloacm.com" target="_blank" rel="noopener">&#x82F1;&#x6587;&#x7B97;&#x6CD5;&#x535A;&#x5BA2;</a>&#x3002;&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://justyy.com/archives/5043" target="_blank" rel="noopener">[&#x673A;&#x5668;&#x5B66;&#x4E60;] &#x7528; MySQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5;</a></li><br>  <li>&#xA0;<a href="https://helloacm.com/the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" target="_blank" rel="noopener">The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a></li><br></ul><br><p><strong>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</strong>&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01; </a>&#xA0;</li><br>  <li><a href="https://steemit.com/cn/@justyy/the-fox" target="_blank" rel="noopener">The Fox &#x82F1;&#x5F0F;&#x5348;&#x9910;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/4cqkxe" target="_blank" rel="noopener">&#x5982;&#x679C;&#x5927;&#x5BB6;&#x8981;&#x662F;&#x4E00;&#x76F4;&#x751F;&#x4E00;&#x76F4;&#x751F;&#x76F4;&#x5230;&#x751F;&#x5230;&#x5973;&#x513F;, &#x5C82;&#x4E0D;&#x662F;&#x7537;&#x5973;&#x6BD4;&#x4F8B;&#x5931;&#x8C03;&#x554A;?&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/adsense-steemit" target="_blank" rel="noopener">&#x4ECE;&#x4E92;&#x8054;&#x7F51;&#x5E7F;&#x544A;(Adsense)&#x6765;&#x8C08;&#x8C08; &#x5F71;&#x54CD; SteemIt &#x7684;&#x6536;&#x5165;&#x56E0;&#x7D20;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/how-to-claim-bcc-btc-hard-fork-via-c-program-linux-bcc-bitcoin-cash" target="_blank" rel="noopener">How to Claim BCC? BTC Hard-Fork via C program (Linux) &#x5C0F;&#x767D;&#x6559;&#x7A0B;: &#x600E;&#x4E48;&#x9886;&#x53D6; BCC (Bitcoin Cash) ?&#xA0;</a></li><br></ul><br>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql" target="_blank" rel="noopener">[&#x673A;&#x5668;&#x5B66;&#x4E60;] &#x7528; MySQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5;  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/the-fox/" class="image is-7by1">
+            <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/08/IMG_1485.jpg" alt="The Fox 英式午餐">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-11T07:25:33.000Z">2017-08-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 535 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/the-fox/">The Fox 英式午餐</a>
+            
+        </h1>
+        <div class="content">
+            <br><p>&#xA0;Bar Hill &#x8DDD;&#x79BB;&#x5BB6;&#x91CC;&#x5F00;&#x8F66;7&#x5206;&#x949F;, &#x5F88;&#x8FD1;, &#x5AB3;&#x5987;&#x6BCF;&#x5929;&#x5C31;&#x662F;&#x5230;&#x90A3;&#x91CC;&#x53BB;&#x4E0A;&#x73ED;, &#x5F88;&#x4E45;&#x4E4B;&#x524D;&#x5979;&#x544A;&#x8BC9;&#x6211;&#x8BF4;&#x8D85;&#x5E02;&#x8FB9;&#x4E0A;&#x6709;&#x4E00;&#x4E2A;&#x82F1;&#x5F0F;&#x9152;&#x5DF4; The Fox, &#x770B;&#x8D77;&#x6765;&#x4E0D;&#x9519;; &#x4E8E;&#x662F;&#x8D81;&#x7740;&#x5B69;&#x5B50;&#x4EEC;&#x90FD;&#x4E0A;&#x5B66;&#x6211;&#x548C;&#x5AB3;&#x5987; @happyukgo &#x5C31;&#x8FC7;&#x53BB;&#x5C1D;&#x5C1D;&#x4E86;.&#xA0;</p><br><p>&#xA0;&#x82F1;&#x56FD;&#x7684;<a href="https://justyy.com/archives/4920" target="_blank" rel="noopener">&#x9152;&#x5DF4;</a>&#x98DF;&#x7269;&#x5176;&#x5B9E;&#x5728;&#x54EA;&#x513F;&#x90FD;&#x5DEE;&#x4E0D;&#x591A;, &#x65E0;&#x975E;&#x90A3;&#x51E0;&#x6837;, &#x9C7C;&#x8089;&#x85AF;&#x6761;, &#x9E21;&#x8089;&#x85AF;&#x6761;, &#x725B;&#x6392;&#x85AF;&#x6761;, &#x82F1;&#x5F0F;&#x65E9;&#x9910;&#x5E26;&#x85AF;&#x6761;, &#x53CD;&#x6B63;&#x85AF;&#x6761;&#x5C31;&#x662F;&#x82F1;&#x56FD;&#x4EBA;&#x7684;&#x4E3B;&#x98DF;, &#x5565;&#x83DC;&#x52A0;&#x4E2A;&#x85AF;&#x6761;&#x6765;&#x676F;&#x996E;&#x6599;&#x5C31;&#x662F;&#x4E00;&#x9053;&#x9910;&#x4E86;.&#xA0;</p><br><p>&#xA0;&#x65E9;&#x9910;&#x65E0;&#x9650; 4.29&#x7684;&#x62DB;&#x724C;&#x5728;&#x516C;&#x8DEF;&#x8FB9;&#x4E0A;&#x5F88;&#x9192;&#x76EE;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_1485.jpg" width="1600" height="1067"></p><br><p>&#xA0;The Fox &#x9152;&#x5DF4; &#x65E0;&#x9650;&#x65E9;&#x9910; 4.29&#x82F1;&#x9551;&#xA0;</p><br><p>&#xA0;SteemIt &#x5FAE;&#x4FE1;&#x7FA4;&#x91CC;&#x5728;&#x8BA8;&#x8BBA;&#x600E;&#x4E48;&#x8FFD;&#x5973;&#x5B69;&#x7684;&#x7EDD;&#x62DB;, &#x5176;&#x5B9E;&#x5F88;&#x7B80;&#x5355;: &#x80C6;&#x5927;&#x5FC3;&#x7EC6;&#x8138;&#x76AE;&#x539A;, &#x6CA1;&#x4E8B;&#x9001;&#x4E2A;&#x82B1;&#x9001;&#x4E2A;&#x5C0F;&#x793C;&#x7269;&#x4EC0;&#x4E48;&#x7684;.&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_1383.jpg" width="1600" height="1088"></p><br><p>&#xA0;&#x4E00;&#x6837;&#x5C0F;&#x793C;&#x7269;&#x5C31;&#x80FD;&#x54C4;&#x5F97;&#x5F88;&#x5F00;&#x5FC3;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_1424.jpg" width="1600" height="1067"></p><br><p>&#xA0;&#x9152;&#x5DF4;&#x6B63;&#x95E8;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_1464.jpg" width="1600" height="1193"></p><br><p>&#xA0;&#x9152;&#x5DF4;&#x95E8;&#x53E3;&#x514D;&#x8D39;&#x505C;&#x8F66;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_1484.jpg" width="1296" height="864"></p><br><p>&#xA0;The Fox &#x9152;&#x5DF4;</p><br><p>2&#x4EFD;&#x624D;10&#x82F1;&#x9551;, &#x597D;&#x4FBF;&#x5B9C;, &#x8981;&#x662F;&#x5728;&#x6751;&#x53E3;&#x7684;&#x9152;&#x5DF4;&#x5927;&#x6982;&#x4E00;&#x4EFD;&#x5C31;&#x5F97;10&#x82F1;&#x9551;&#x5DE6;&#x53F3;&#x4E86;. &#x82F1;&#x56FD;&#x9152;&#x5DF4;&#x9910;&#x5356;&#x76F8;&#x4E0D;&#x600E;&#x4E48;&#x6837;, &#x4F46;&#x662F;&#x5F53;&#x4F60;&#x809A;&#x5B50;&#x997F;&#x7684;&#x65F6;&#x5019;&#x7EDD;&#x5BF9;&#x7BA1;&#x4E0D;&#x4E86;&#x90A3;&#x4E48;&#x591A;. &#x82F1;&#x56FD;&#x4EBA;&#x6CA1;&#x5565;&#x5403;&#x7684;&#x4E5F;&#x662F;&#x7ECF;&#x5E38;&#x88AB;&#x5410;&#x69FD;&#x7684;.&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/2017-07-21-12.48.14.jpg" width="1512" height="2016"></p><br><p>&#xA0;&#x82F1;&#x56FD;&#x6700;&#x6709;&#x540D;&#x7684;&#x9C7C;&#x8089;&#x85AF;&#x6761;&#x548C; Gammon Steak&#xA0;</p><br><p>Gammon Steak &#x5C31;&#x662F;&#x732A;&#x8098;&#x5B50;&#x5207;&#x7247; &#x718F;&#x8FC7;&#x7684; &#x6709;&#x70B9;&#x54B8;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" width="1200" height="628"></p><br><p>Originally published at <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> which motivates me to create more quality posts.</p><br><p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#xA0;&#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.&#xA0;&#xA0;&#xA0;&#xA0;</p><br><p>// &#x5DF2;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com/" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x3002;&#xA0;</p><br><ul><br>  <li><a href="https://justyy.com/archives/5029" target="_blank" rel="noopener">The Fox &#x82F1;&#x5F0F;&#x5348;&#x9910;</a></li><br></ul><br><p>&#xA0;<strong>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</strong>&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01; </a>&#xA0;</li><br>  <li><a href="https://steemit.com/cn/@justyy/4cqkxe" target="_blank" rel="noopener">&#x5982;&#x679C;&#x5927;&#x5BB6;&#x8981;&#x662F;&#x4E00;&#x76F4;&#x751F;&#x4E00;&#x76F4;&#x751F;&#x76F4;&#x5230;&#x751F;&#x5230;&#x5973;&#x513F;, &#x5C82;&#x4E0D;&#x662F;&#x7537;&#x5973;&#x6BD4;&#x4F8B;&#x5931;&#x8C03;&#x554A;?&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/how-to-claim-bcc-btc-hard-fork-via-c-program-linux-bcc-bitcoin-cash" target="_blank" rel="noopener">How to Claim BCC? BTC Hard-Fork via C program (Linux) &#x5C0F;&#x767D;&#x6559;&#x7A0B;: &#x600E;&#x4E48;&#x9886;&#x53D6; BCC (Bitcoin Cash) ?&#xA0;</a></li><br></ul><br>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/the-fox" target="_blank" rel="noopener">The Fox &#x82F1;&#x5F0F;&#x5348;&#x9910;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/4cqkxe/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/08/IMG_3024.jpg" alt="如果大家要是一直生一直生直到生到女儿, 岂不是男女比例失调啊?">
         </a>
@@ -428,114 +536,6 @@
 
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/chrome-extension-to-switch-between-simplified-chinese-and-traditional-chinese-automatically-steemit-chrome" target="_blank" rel="noopener">&#x4E3A;&#x4E86; SteemIt &#x5F00;&#x53D1;&#x4E86;&#x4E00;&#x4E2A; &#x4E2D;&#x6587;&#x7B80;&#x4F53;&#x548C;&#x7E41;&#x4F53;&#x81EA;&#x52A8;&#x5207;&#x6362;&#x7684;Chrome&#x6D4F;&#x89C8;&#x5668;&#x63D2;&#x4EF6; Chrome Extension to Switch between Simplified Chinese and Traditional Chinese Automatically</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/xy-xy-yzz/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/justyy-steemit.jpg" alt="XY + XY = YZZ  大白 + 大白 = 白胖胖">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-08T12:12:09.000Z">2017-08-08</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 477 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/xy-xy-yzz/">XY + XY = YZZ  大白 + 大白 = 白胖胖</a>
-            
-        </h1>
-        <div class="content">
-            <br><p>XXX&#x539F;&#x6587;: <a href="https://justyy.com/archives/2047" target="_blank" rel="noopener">https://justyy.com/archives/2047</a></p><br><p>XXX&#x539F;&#x6587;: <a href="https://justyy.com/" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2; </a>&#x548C; <a href="https://helloacm.com/" target="_blank" rel="noopener">&#x82F1;&#x6587; &#x535A;&#x5BA2;</a><a href="https://justyy.com/" target="_blank" rel="noopener">&#x4E2D;</a>&#x3002;&#xA0;&#xA0;</p><br><p><a href="https://justyy.com/archives/296" target="_blank" rel="noopener">&#x6570;&#x5B66;</a>&#x9898;&#x76EE;:<strong>&#x5927;&#x767D; + &#x5927;&#x767D; = &#x767D;&#x80D6;&#x80D6;</strong><br><br>&#x5176;&#x4E2D; &#x5927;, &#x767D;, &#x80D6; &#x5404;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57; &#x4E5F;&#x5C31;&#x662F; 0 &#x5230; 9&#xA0;</p><br><p>&#xA0;<a href="https://justyy.com/archives/1043" target="_blank" rel="noopener">PowerShell</a> &#xA0;</p><br><p><br></p><br><p><img src="https://justyy.com/justyy-steemit.jpg" width="509" height="184"></p><br><p>Originally published at <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> which motivates me to create more quality posts.</p><br><p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#xA0;&#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.&#xA0;&#xA0;</p><br><p>&#xA0;// &#x5DF2;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2; </a>&#x548C; <a href="https://helloacm.com" target="_blank" rel="noopener">&#x82F1;&#x6587; &#x535A;&#x5BA2;</a><a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;</a>&#x3002;&#xA0;</p><br><ul><br>  <li><a href="https://justyy.com/archives/2047" target="_blank" rel="noopener">&#x5927;&#x767D; + &#x5927;&#x767D; = &#x767D;&#x80D6;&#x80D6;</a></li><br>  <li>&#xA0;<a href="https://helloacm.com/how-to-solve-math-puzzle-using-powershell-script-with-bruteforce-algorithm/" target="_blank" rel="noopener">How to Solve Math Puzzle using PowerShell script with Bruteforce Algorithm?</a></li><br></ul><br><p><strong>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</strong>&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01; </a>&#xA0;</li><br>  <li><a href="https://steemit.com/cn/@justyy/early-autumn-2017-cambridge-uk-photography" target="_blank" rel="noopener">Early Autumn 2017, Cambridge, UK (Photography) &#x82F1;&#x56FD;&#x6162;&#x8282;&#x594F;&#x7684;&#x6751;&#x5E84;&#x751F;&#x6D3B; &#x2013; &#x6BCF;&#x65E5;&#x6563;&#x6B65;&#x6751;&#x53E3;&#x6E9C;&#x5A03;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-how-to-improve-dynamic-programming-space-complexity" target="_blank" rel="noopener">Software Engineer Interview Question &#x2013; How to Improve Dynamic Programming Space Complexity? &#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x8FDB;&#x52A8;&#x6001;&#x89C4;&#x5316;&#x7684;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/24-poker-game-24" target="_blank" rel="noopener">24 Poker Game 24&#x70B9;&#x6251;&#x514B;&#x6E38;&#x620F;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-dynamic-programming-integer-break" target="_blank" rel="noopener">Software Engineer Interview Question - Dynamic Programming - Integer Break &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x52A8;&#x6001;&#x89C4;&#x5316; - &#x6574;&#x6570;&#x62C6;&#x5206;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/how-to-claim-bcc-btc-hard-fork-via-c-program-linux-bcc-bitcoin-cash" target="_blank" rel="noopener">How to Claim BCC? BTC Hard-Fork via C program (Linux) &#x5C0F;&#x767D;&#x6559;&#x7A0B;: &#x600E;&#x4E48;&#x9886;&#x53D6; BCC (Bitcoin Cash) ?&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/i-wrote-a-chinese-chess-program-chinese-chess" target="_blank" rel="noopener">I wrote a Chinese Chess Program &#x8F6F;&#x4EF6;&#x5206;&#x4EAB;: &#x667A;&#x6167;&#x4E2D;&#x56FD;&#x8C61;&#x68CB; (Chinese Chess)</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/planning-cards-agile-poker-game" target="_blank" rel="noopener">Planning Cards &#x2013; Agile Poker Game! &#x654F;&#x6377;&#x5F00;&#x53D1;&#x6251;&#x514B;&#x6E38;&#x620F;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-how-to-check-valid-sudoku-in-c-c" target="_blank" rel="noopener">Software Engineer Interview Question - How to Check Valid Sudoku in C/C++? &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x5982;&#x4F55;&#x68C0;&#x67E5;&#x6570;&#x72EC;&#x7684;&#x6709;&#x6548;&#x6027;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/google-interview-question-print-message-google" target="_blank" rel="noopener">Google Interview Question &#x2013; Print Message - &#x53BB;&#x5E74; Google &#x7684;&#x9762;&#x8BD5;&#x9898; - &#x6253;&#x5370;&#x6D88;&#x606F;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-tips-using-hashtable-to-reduce-runtime-complexity" target="_blank" rel="noopener">Software Engineer Interview Tips - Using Hashtable to Reduce Runtime Complexity &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x4F7F;&#x7528;&#x54C8;&#x5E0C;&#x8868;&#x964D;&#x590D;&#x6742;&#x5EA6;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/30" target="_blank" rel="noopener">Technology-driven or Business-model-driven? &#x6280;&#x672F;&#x4F18;&#x5148;&#x8FD8;&#x662F;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x4F18;&#x5148; &#x2013; &#x732E;&#x7ED9;&#x5728;30&#x591A;&#x5C81;&#x8FD8;&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x670B;&#x53CB;&#x4EEC;&#xA0;</a></li><br>  <li>&#x8BB0;&#x5F55;&#x90A3;&#x4E9B;&#x503C;&#x5F97;&#x56DE;&#x5FC6;&#x7684;<a href="https://steemit.com/cn/@justyy/5hgpar" target="_blank" rel="noopener">&#x7CBE;&#x5F69;&#x77AC;&#x95F4;</a> &#xA0;&#xA0;&#xA0;</li><br></ul><br>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/xy-xy-yzz" target="_blank" rel="noopener">XY + XY = YZZ  &#x5927;&#x767D; + &#x5927;&#x767D; = &#x767D;&#x80D6;&#x80D6;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/early-autumn-2017-cambridge-uk-photography/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/08/IMG_3086.jpg" alt="Early Autumn 2017, Cambridge, UK  (Photography) 英国慢节奏的村庄生活 – 每日散步村口溜娃">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-07T23:50:03.000Z">2017-08-07</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 787 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/early-autumn-2017-cambridge-uk-photography/">Early Autumn 2017, Cambridge, UK  (Photography) 英国慢节奏的村庄生活 – 每日散步村口溜娃</a>
-            
-        </h1>
-        <div class="content">
-            <br><p>Does the British have summer? really? It is August, but I feel that the summer is already gone in 2017&#x2026; According to Chinese luna calendar, it was the &#x2018;Early Autumn&#x2019; two days ago&#x2026;</p><br><p>So&#x2026; say bye bye to 2017 Autumn and hope the next summer last longer&#x2026;</p><br><p>A few photography were taken yesterday, where we took kids to the village playground.</p><br><p>&#x6211;&#x59D0;&#x8BF4;, &#x4F60;&#x8FD9;&#x4F4F;&#x7684;&#x5730;&#x65B9;&#x592A;&#x504F;&#x4E86;, &#x592A;&#x8FC7;&#x4E8E;&#x5B89;&#x9038;. &#x53EA;&#x9002;&#x5408;&#x517B;&#x8001; (&#x7279;&#x522B;&#x50CF;&#x6211;&#x4EEC;&#x7684;&#x6545;&#x4E61; &#x53A6;&#x95E8;&#x9F13;&#x6D6A;&#x5C7F;). &#x5979;&#x8BF4;&#x7684;&#x5BF9;, &#x5728;&#x8FD9;&#x4E2A;&#x7834;&#x5730;&#x65B9;&#x771F;&#x7684;&#x4F1A;&#x8BA9;&#x4EBA;&#x5931;&#x53BB;&#x6597;&#x5FD7;, &#x771F;&#x662F;&#x4E2A;&#x519C;&#x6751;, &#x4E5F;&#x6CA1;&#x6CD5;&#x7092;&#x623F;(&#x5174;&#x5BB6;&#x4E4B;&#x4E3E;), &#x751F;&#x6D3B;&#x8282;&#x594F;&#x6162;, &#x6751;&#x91CC;&#x53EA;&#x6709;&#x4E00;&#x4E2A;<a href="https://justyy.com/archives/4920" target="_blank" rel="noopener">&#x9152;&#x5DF4;</a>&#x548C;&#x4E00;&#x4E2A;&#x8F66;&#x5382;. &#x4E0B;&#x5348;5&#x70B9;&#x4E4B;&#x540E;&#x5C31;&#x5F88;&#x5B89;&#x9759;.&#xA0;</p><br><p>&#x4F46;, &#x4F4F;&#x6751;&#x91CC;&#x7684;&#x597D;&#x5904;&#x662F;: &#x7A7A;&#x6C14;&#x597D;, &#x5B89;&#x9759;, &#x6751;&#x91CC;&#x6709;&#x51E0;&#x4E2A;<a href="https://justyy.com/archives/4729" target="_blank" rel="noopener">&#x519C;&#x573A;</a>(&#x60F3;&#x770B;&#x732A;&#x554A;&#x725B;&#x554A;&#x90FD;&#x5F88;&#x65B9;&#x4FBF;&#x4E0D;&#x7528;&#x95E8;&#x7968;), &#x800C;&#x4E14;&#x6751;&#x4E2D;&#x5FC3; &#x6709;&#x5B69;&#x5B50;&#x73A9;&#x7684;&#x5C0F;&#x578B;&#x6E38;&#x4E50;&#x573A; (playground). &#x4E0D;&#x7F3A;&#x8349;&#x5730;, &#x4E0D;&#x7F3A;&#x84DD;&#x5929;&#x767D;&#x4E91;. &#x7ACB;&#x79CB;&#x521A;&#x8FC7;, &#x8FD9;&#x4E24;&#x5929;&#x7684;&#x6E29;&#x5EA6;10&#x51E0;&#x5EA6;, &#x4E0D;&#x70ED;&#x4E0D;&#x51B7;, &#x6B63;&#x6B63;&#x597D;.&#xA0;</p><br><p>&#x4E0B;&#x5348;5&#x70B9;&#x5C31;&#x5403;&#x8FC7;&#x996D;&#x4E86;, &#x82F1;&#x56FD;&#x590F;&#x5929;&#x5929;9&#x70B9;&#x624D;&#x80FD;&#x6697;&#x4E0B;&#x6765;, &#x4E8E;&#x662F;&#x6751;&#x53E3;&#x6E9C;&#x6E9C;&#x5A03;.&#xA0;</p><br><p>&#x8BB0;&#x5F97;&#x521A;&#x642C;&#x8FDB;&#x6751;&#x91CC;<a href="https://justyy.com/archives/1482" target="_blank" rel="noopener">&#x65B0;&#x623F;</a>&#x7684;&#x65F6;&#x5019;&#x8BF7;&#x670B;&#x53CB;&#x6765;&#x5BB6;&#x91CC;&#x5750;&#x5BA2;, &#x4E00;&#x670B;&#x53CB;&#x5F00;&#x73A9;&#x7B11;&#x8BF4;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x4E86;&#x6211;&#x4E8C;&#x4E09;&#x5341;&#x5E74;&#x540E;&#x7684;&#x6837;&#x5B50;, &#x4E0D;&#x77E5;&#x4E0D;&#x89C9;&#x5DF2;&#x7ECF;&#x8FC7;&#x53BB;2&#x5E74;&#x4E86;, &#x6211;&#x611F;&#x89C9;&#x8D8A;&#x6765;&#x8D8A;&#x9002;&#x5E94;&#x4E86;&#x82F1;&#x56FD;&#x7684;&#x6162;&#x8282;&#x594F;, &#x5FC3;&#x5374;&#x6709;&#x70B9;&#x614C;.&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_3086.jpg" width="1600" height="1067"></p><br><p>&#xA0;&#x5954;&#x8DD1;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_3072.jpg" width="1600" height="1088"></p><br><p>&#xA0;&#x4E00;&#x8D77;&#x8361;&#x79CB;&#x5343; &#x5B69;&#x5B50;&#x7B11;&#x62BD;&#x4E86;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/IMG_3024.jpg" width="1600" height="1067"></p><br><p>&#xA0;&#x5728;&#x6751;&#x91CC;&#x957F;&#x5927;&#x7684;&#x4EB2;&#x5144;&#x5F1F;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/2017-08-06-19.06.56.jpg" width="1600" height="1067"></p><br><p>&#xA0;&#x82F1;&#x56FD;8&#x6708;&#x4EFD;&#x5DF2;&#x7ECF;&#x8FDB;&#x5165;&#x79CB;&#x5929;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/2017-08-06-18.55.32.jpg" width="1210" height="1613"></p><br><p>&#xA0;&#x5AB3;&#x5987; @happyukgo &#x5F04;&#x4E86;&#x4E2A;&#x8DDF;&#x4F30;&#x8BA1;1&#x7C73;9&#x4E86;&#x90FD;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/08/2017-08-06-18.37.05.jpg" width="1210" height="1613"></p><br><p>&#xA0;&#x5AB3;&#x5987; @happyukgo &#x7ED9;&#x8001;&#x4E8C;&#x8361;&#x79CB;&#x5343;&#xA0;</p><br><p><img src="https://justyy.com/justyy-steemit.jpg" width="509" height="184"></p><br><p>Originally published at <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> which motivates me to create more quality posts.</p><br><p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#xA0;&#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.&#xA0;&#xA0;&#xA0;&#xA0;</p><br><p>// &#x5DF2;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com/archives/5006" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x4E2D;&#x3002;</p><br><p><strong>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</strong>&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01; </a>&#xA0;</li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-how-to-improve-dynamic-programming-space-complexity" target="_blank" rel="noopener">Software Engineer Interview Question &#x2013; How to Improve Dynamic Programming Space Complexity? &#x8FDB;&#x4E00;&#x6B65;&#x6539;&#x8FDB;&#x52A8;&#x6001;&#x89C4;&#x5316;&#x7684;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/24-poker-game-24" target="_blank" rel="noopener">24 Poker Game 24&#x70B9;&#x6251;&#x514B;&#x6E38;&#x620F;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-dynamic-programming-integer-break" target="_blank" rel="noopener">Software Engineer Interview Question - Dynamic Programming - Integer Break &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x52A8;&#x6001;&#x89C4;&#x5316; - &#x6574;&#x6570;&#x62C6;&#x5206;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/how-to-claim-bcc-btc-hard-fork-via-c-program-linux-bcc-bitcoin-cash" target="_blank" rel="noopener">How to Claim BCC? BTC Hard-Fork via C program (Linux) &#x5C0F;&#x767D;&#x6559;&#x7A0B;: &#x600E;&#x4E48;&#x9886;&#x53D6; BCC (Bitcoin Cash) ?&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/i-wrote-a-chinese-chess-program-chinese-chess" target="_blank" rel="noopener">I wrote a Chinese Chess Program &#x8F6F;&#x4EF6;&#x5206;&#x4EAB;: &#x667A;&#x6167;&#x4E2D;&#x56FD;&#x8C61;&#x68CB; (Chinese Chess)</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/planning-cards-agile-poker-game" target="_blank" rel="noopener">Planning Cards &#x2013; Agile Poker Game! &#x654F;&#x6377;&#x5F00;&#x53D1;&#x6251;&#x514B;&#x6E38;&#x620F;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-question-how-to-check-valid-sudoku-in-c-c" target="_blank" rel="noopener">Software Engineer Interview Question - How to Check Valid Sudoku in C/C++? &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x5982;&#x4F55;&#x68C0;&#x67E5;&#x6570;&#x72EC;&#x7684;&#x6709;&#x6548;&#x6027;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/google-interview-question-print-message-google" target="_blank" rel="noopener">Google Interview Question &#x2013; Print Message - &#x53BB;&#x5E74; Google &#x7684;&#x9762;&#x8BD5;&#x9898; - &#x6253;&#x5370;&#x6D88;&#x606F;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/software-engineer-interview-tips-using-hashtable-to-reduce-runtime-complexity" target="_blank" rel="noopener">Software Engineer Interview Tips - Using Hashtable to Reduce Runtime Complexity &#x8F6F;&#x4EF6;&#x5DE5;&#x7A0B;&#x5E08;&#x9762;&#x8BD5;&#x6280;&#x5DE7;&#x4E4B; &#x4F7F;&#x7528;&#x54C8;&#x5E0C;&#x8868;&#x964D;&#x590D;&#x6742;&#x5EA6;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/30" target="_blank" rel="noopener">Technology-driven or Business-model-driven? &#x6280;&#x672F;&#x4F18;&#x5148;&#x8FD8;&#x662F;&#x5546;&#x4E1A;&#x6A21;&#x5F0F;&#x4F18;&#x5148; &#x2013; &#x732E;&#x7ED9;&#x5728;30&#x591A;&#x5C81;&#x8FD8;&#x5728;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x670B;&#x53CB;&#x4EEC;&#xA0;</a></li><br>  <li>&#x8BB0;&#x5F55;&#x90A3;&#x4E9B;&#x503C;&#x5F97;&#x56DE;&#x5FC6;&#x7684;<a href="https://steemit.com/cn/@justyy/5hgpar" target="_blank" rel="noopener">&#x7CBE;&#x5F69;&#x77AC;&#x95F4;</a>&#xA0;</li><br></ul><br>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/early-autumn-2017-cambridge-uk-photography" target="_blank" rel="noopener">Early Autumn 2017, Cambridge, UK  (Photography) &#x82F1;&#x56FD;&#x6162;&#x8282;&#x594F;&#x7684;&#x6751;&#x5E84;&#x751F;&#x6D3B; &#x2013; &#x6BCF;&#x65E5;&#x6563;&#x6B65;&#x6751;&#x53E3;&#x6E9C;&#x5A03;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
