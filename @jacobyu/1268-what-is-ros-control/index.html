@@ -1,0 +1,430 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>What is ros-control - Jacob</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@jacobyu/css/style.css">
+
+<link rel="stylesheet" href="/@jacobyu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@jacobyu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Jacob" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@jacobyu/">Home</a>
+                
+                <a class="navbar-item" href="/@jacobyu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@jacobyu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@jacobyu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@jacobyu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1</span>
+        <span>ros-control</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.1</span>
+        <span>Controller</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.2</span>
+        <span>Controller_manager</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.3</span>
+        <span>RQT_GRAPH</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.4</span>
+        <span>How to connect real robot</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.5</span>
+        <span>Example</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.5.1</span>
+        <span>1) Head Controller</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.6</span>
+        <span>2) Other robot</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.7</span>
+        <span>3) Simple pan title model</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.8</span>
+        <span>Why it is need?</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1.9</span>
+        <span>Reference</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@jacobyu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="http://wiki.ros.org/ros_control?action=AttachFile&amp;do=get&amp;target=gazebo_ros_control.png" alt="What is ros-control">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-11-17T11:01:51.000Z">2018-11-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@jacobyu/categories/dev/">dev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 574 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                What is ros-control
+            
+        </h1>
+        <div class="content">
+            <p>I wrote summary about ros control.<br>What is ros-control?<br>How to use ros-control?<br>Thank you.</p>
+<p></p><h1>ros-control</h1><p></p>
+<p></p><blockquote><p><a href="http://wiki.ros.org/ros_control" target="_blank" rel="noopener">http://wiki.ros.org/ros_control</a></p></blockquote><p></p>
+<p> </p><br><blockquote><br><ul><br><li>A set of packages that include controller interfaces, controller managers, transmissions and hardware_interfaces.</li><br><li>The ros_control packages are a rewrite of the <a href="http://wiki.ros.org/pr2_mechanism" target="_blank" rel="noopener">pr2_mechanism</a> packages to make controllers generic to all robots beyond just the PR2.</li><br><li>The ros_control packages takes as <strong>input the joint state data</strong> from your robot&#x2019;s actuator&#x2019;s encoders and an input set point. It uses a generic control loop feedback mechanism, typically a PID controller, to control the output, typically effort, sent to your actuators. ros_control gets more complicated for physical mechanisms that do not have one-to-one mappings of joint positions, efforts, etc but these scenarios are accounted for using transmissions.</li><br></ul><br></blockquote><br><p> </p><br><p>There are some modules.</p><br><ul><br><li>Controller manager</li><br><li>Controller</li><br><li>Hardware interface</li><br></ul><br><p><img src="http://wiki.ros.org/ros_control?action=AttachFile&amp;do=get&amp;target=gazebo_ros_control.png" alt="ros control"></p>
+
+<p><img src="https://bitbucket.org/osrf/gazebo_tutorials/raw/default/ros_control/Gazebo_ros_transmission.png"></p><br><p><a href="http://gazebosim.org/tutorials/?tut=ros_control" target="_blank" rel="noopener">http://gazebosim.org/tutorials/?tut=ros_control</a></p><br><p>Controller don&#x2019;t care which module (simulation or hardware) provide data.</p><br><p>Controller needs <strong>joint state info</strong> and <strong>joint command info</strong>.</p><br><p> </p><br><hr><br><h2>Controller</h2><br><p><img class="alignnone wp-image-1269 size-large" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-10-44-13-1024x631.png" alt="" width="640" height="394" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-10-44-13-1024x631.png 1024w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-10-44-13-300x185.png 300w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-10-44-13-768x473.png 768w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-10-44-13.png 1241w" sizes="(max-width: 640px) 100vw, 640px"></p><br><p>There are many controller on ros-control.</p><br><p>I used <strong>joint state_controller</strong> and<strong> joint_trajectory_controller</strong> for head control.</p><br><p>You need to set control parameter (PID gain, velocity_ff, etc.)</p><br><p>In control.yaml, head_controller has two joint (pan_joint and tilt_joint) and make trajectories.</p><br><blockquote><p>Trajectories are specified as a set of waypoints to be reached at specific time instants, which the controller attempts to execute as well as the mechanism allows. Waypoints consist of positions, and optionally velocities and accelerations.</p></blockquote><br><p> </p><br><p><img class="alignnone wp-image-1271 size-full" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-44-07.png" alt="" width="835" height="546" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-44-07.png 835w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-44-07-300x196.png 300w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-44-07-768x502.png 768w" sizes="(max-width: 835px) 100vw, 835px"></p><br><hr><br><h2>Controller_manager</h2><br><p>controller_manager manages some controllers</p><br><p>controller_manager needs to load controllers.</p><br><blockquote><p>&lt;!&#x2013; Load joint controller configurations from YAML file to parameter server &#x2013;&gt;<br><br><rosparam file="&#x201D;$(find" cam_pan_tilt)="" config="" control.yaml”="" command="&#x201D;load&#x201D;/"></rosparam></p><br><p>&lt;node name=&#x201D;controller_spawner&#x201D; pkg=&#x201D;controller_manager&#x201D; type=&#x201D;spawner&#x201D; respawn=&#x201D;false&#x201D;<br><br>output=&#x201D;screen&#x201D; ns=&#x201D;/gretchen&#x201D; args=&#x201D;joint_state_controller<br><br>head_controller&#x201D;/&gt;</p></blockquote><br><hr><br><h2>RQT_GRAPH</h2><br><p><img class="alignnone wp-image-1274 size-large" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-47-06-1024x385.png" alt="" width="640" height="241" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-47-06-1024x385.png 1024w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-47-06-300x113.png 300w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-47-06-768x289.png 768w" sizes="(max-width: 640px) 100vw, 640px"></p><br><p><img class="alignnone wp-image-1281 " src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-25-26-e1542346016674.png" alt="" width="631" height="529" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-25-26-e1542346016674.png 812w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-25-26-e1542346016674-300x252.png 300w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-25-26-e1542346016674-768x644.png 768w" sizes="(max-width: 631px) 100vw, 631px"></p><br><p> </p><br><p> </p><br><hr><br><h2>How to connect real robot</h2><br><p>need to costruct hardware_inferface</p><br><p>It is hardware_interface example.</p><br><ul><br><li><a href="https://github.com/ros-controls/ros_control/wiki/hardware_interface" target="_blank" rel="noopener">https://github.com/ros-controls/ros_control/wiki/hardware_interface</a></li><br></ul><br><p>ROBOTICS made hardware_interface of dynamixel motor for ros-control.</p><br><hr><br><h2>Example</h2><br><h3>1) Head Controller</h3><br><p>Head controller control pan and tilt. input of the controller is tf, joint_states, head_controller/state</p><br><ul><br><li>tf<br><ul><br><li>tf is relationship between frames</li><br><li><br><blockquote><p>tf is a package that lets the user keep track of multiple coordinate frames over time. tf maintains the relationship between coordinate frames in a tree structure buffered in time, and lets the user transform points, vectors, etc between any two coordinate frames at any desired point in time.</p></blockquote><br></li><br></ul><br></li><br></ul><br><p><img class="alignnone size-medium wp-image-1280" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-07-47-300x212.png" alt="" width="300" height="212" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-07-47-300x212.png 300w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-07-47-768x544.png 768w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-07-47-1024x725.png 1024w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-07-47.png 1100w" sizes="(max-width: 300px) 100vw, 300px"></p><br><ul><br><li>joint_states<br><ul><br><li>it is raw data from motor controller</li><br></ul><br></li><br></ul><br><p><img class="alignnone size-full wp-image-1278" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-04-40.png" alt="" width="542" height="174" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-04-40.png 542w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-14-04-40-300x96.png 300w" sizes="(max-width: 542px) 100vw, 542px"></p><br><ul><br><li>head_controller/state<br><ul><br><li>desired, actual, error check for control</li><br><li>it is calculated by controller.</li><br></ul><br></li><br></ul><br><p><img class="alignnone size-full wp-image-1277" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-59-44.png" alt="" width="584" height="554" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-59-44.png 584w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-59-44-300x285.png 300w" sizes="(max-width: 584px) 100vw, 584px"></p><br><p>output</p><br><ul><br><li>head_controller/command<br><ul><br><li>set radian postion at each joint</li><br></ul><br></li><br></ul><br><p><img class="alignnone wp-image-1276 size-full" src="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-54-31-e1542344179497.png" alt="" width="651" height="328" srcset="https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-54-31-e1542344179497.png 651w, https://passionbull.net/wp-content/uploads/2018/11/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2018-11-16-13-54-31-e1542344179497-300x151.png 300w" sizes="(max-width: 651px) 100vw, 651px"></p><br><h2>2) Other robot</h2><br><p>You can easily control the robot manipulator using ros-control and moveit.</p><br><p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/NTrmUOY083Y?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" allowfullscreen="true" style="border:0;"></iframe></span></p><br><h2>3) Simple pan title model</h2><br><p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class="youtube-player" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/J3A2fBVVQjI?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" allowfullscreen="true" style="border:0;"></iframe></span></p><br><p>1. User click a point</p><br><p>2. make target_line using the point</p><br><p>Target_line consist of those</p><br><ul><br><li>geometry_msgs/PointStamped target</li><br><li>geometry_msgs/Vector3 pointing_axis</li><br><li>string pointing_frame</li><br><li>duration min_duration</li><br><li>float64 max_velocity</li><br></ul><br><p>3. calculate inverse kinematics for getting joint angles</p><br><p>4. publish angle on each joint</p><br><p>5. move</p><br><hr><br><h2>Why it is need?</h2><br><p>Once control part constructed using ros-package.</p><br><p>Perception part focus recognition and just publish u,v.</p><br><h2>Reference</h2><br><ul><br><li><a href="http://wiki.ros.org/ros_control" target="_blank" rel="noopener">http://wiki.ros.org/ros_control</a></li><br><li><a href="http://gazebosim.org/tutorials/?tut=ros_control" target="_blank" rel="noopener">http://gazebosim.org/tutorials/?tut=ros_control</a></li><br><li><a href="http://wiki.ros.org/joint_trajectory_controller" target="_blank" rel="noopener">http://wiki.ros.org/joint_trajectory_controller</a></li><br><li><a href="https://pinkwink.kr/1013" target="_blank" rel="noopener">https://pinkwink.kr/1013</a></li><br><li><a href="https://github.com/ros-controls/ros_control/wiki/hardware_interface" target="_blank" rel="noopener">https://github.com/ros-controls/ros_control/wiki/hardware_interface</a></li><br></ul><br><p> </p>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/1268-what-is-ros-control" target="_blank" rel="noopener">&#x2018;What is ros-control&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@jacobyu/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/dev/">dev</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/jjangjjangman/">jjangjjangman</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/robot/">robot</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/ros/">ros</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@jacobyu/1289-english-opic-test/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[일기] 오픽 후기</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@jacobyu/1264-git-svn-often-use-command/">
+                <span class="level-item">Git, SVN 자주 사용하는 명령어 정리</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@jacobyu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Jacob" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Jacob&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@jacobyu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
+
+
+
+    
+<script src="/@jacobyu/js/bundle.js" defer></script></body>
+</html>
+

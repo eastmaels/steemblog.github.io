@@ -1,0 +1,463 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>쉽게 설명하는 자율 주행 기술, 로봇은 어떻게 자기의 위치를 아는가? - Jacob</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@jacobyu/css/style.css">
+
+<link rel="stylesheet" href="/@jacobyu/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@jacobyu/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Jacob" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@jacobyu/">Home</a>
+                
+                <a class="navbar-item" href="/@jacobyu/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@jacobyu/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@jacobyu/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@jacobyu/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1</span>
+        <span>&#xBCF8;&#xB860;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">2</span>
+        <span>&#xC26C;&#xC6B4; &#xBB38;&#xC81C;&#xB97C; &#xD480;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;.</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">3</span>
+        <span>&#xACB0;&#xB860;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@jacobyu/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="http://stuffedsuitcase.com/wp-content/uploads/2016/11/Dyson-360-eye-robot-vacuum-4.jpg" alt="쉽게 설명하는 자율 주행 기술, 로봇은 어떻게 자기의 위치를 아는가?">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-11T14:19:09.000Z">2018-01-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-dev/">kr-dev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1200 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                쉽게 설명하는 자율 주행 기술, 로봇은 어떻게 자기의 위치를 아는가?
+            
+        </h1>
+        <div class="content">
+            <p>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.</p>
+<p>&#xC624;&#xB298;&#xC740; &#xC790;&#xC728; &#xC8FC;&#xD589; &#xAE30;&#xC220;&#xC5D0; &#xB300;&#xD574; &#xC27D;&#xAC8C;, &#xC81C;&#xAC00; &#xC544;&#xB294; &#xC120;&#xC5D0;&#xC11C; &#xC124;&#xBA85;&#xD574;&#xBCF4;&#xB824;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC800;&#xB294; &#xC11D;&#xC0AC; 2&#xB144;&#xB3D9;&#xC548; &#xC790;&#xC728;&#xC8FC;&#xD589;&#xBD84;&#xC57C;&#xC5D0;&#xC11C; &#xC5F0;&#xAD6C;&#xD588;&#xC5C8;&#xB294;&#xB370;&#xC694;.</p>
+<p>&#xC81C;&#xAC00; &#xC544;&#xB294; &#xAC83;, &#xC81C;&#xAC00; &#xD558;&#xB294; &#xAC83;, &#xC81C;&#xAC00; &#xC18D;&#xD574; &#xC788;&#xB294; &#xBD84;&#xC57C;&#xC5D0; &#xB300;&#xD574; &#xC798; &#xC124;&#xBA85;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC911;&#xC694;&#xD55C;&#xB370;</p>
+<p>&#xC2A4;&#xD300;&#xC787;&#xC5D0;&#xC11C; &#xC5F0;&#xC2B5;&#xD558;&#xB824;&#xACE0;&#xC694;!</p>
+<p>&#xCC38;! @stella12, @tradingideas &#xAE00;&#xC744; &#xCD5C;&#xADFC;&#xC5D0; &#xBD24;&#xB294;&#xB370; &#xC7AC;&#xBC0C;&#xAC8C; &#xBD24;&#xC2B5;&#xB2C8;&#xB2E4; &#x314E;&#x314E;</p>
+<p>@stella12&#xB2D8; &#xD3EC;&#xC2A4;&#xD305; </p>
+<ul>
+<li><a href="https://steemit.com/kr/@stella12/4-1" target="_blank" rel="noopener">4&#xCC28; &#xC0B0;&#xC5C5;&#xD601;&#xBA85;&#xC758; &#xCD5C;&#xB300; &#xC218;&#xD61C;&#xC790;</a></li>
+<li><a href="https://steemit.com/kr/@stella12/kr-jp-4-3-4-3" target="_blank" rel="noopener">&#xC790;&#xC728;&#xC8FC;&#xD589; &#xC790;&#xB3D9;&#xCC28;&#xD3B8;</a></li>
+</ul>
+<p>@tradingideas&#xB2D8; &#xD3EC;&#xC2A4;&#xD305; <a href="https://steemit.com/kr/@tradingideas/kiva-in-amazon" target="_blank" rel="noopener">&#xC544;&#xB9C8;&#xC874; &#xBB3C;&#xB958; &#xC13C;&#xD130;&#xC5D0; &#xC788;&#xB294; &#xB85C;&#xBD07; &#xD0A4;&#xBC14;</a></p>
+<hr>
+
+<p></p><h4>&#xBCF8;&#xB860;</h4><br>&#xC0DD;&#xAC01;&#xBCF4;&#xB2E4; &#xC790;&#xC728; &#xC8FC;&#xD589; &#xAE30;&#xC220;&#xC740; &#xC6B0;&#xB9AC; &#xC0DD;&#xD65C;&#xACFC; &#xAC00;&#xAE4C;&#xC774; &#xC788;&#xACE0; &#xB2E4;&#xAC00;&#xC624;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<p></p>
+<p><strong>&#xB85C;&#xBD07; &#xCCAD;&#xC18C;&#xAE30;</strong></p>
+<p>&#xACF5;&#xC7A5; &#xBB3C;&#xB958; &#xB85C;&#xBD07;</p>
+<p>&#xC790;&#xC728;&#xC8FC;&#xD589;&#xCC28;!</p>
+<p>&#xD2B9;&#xD788; &#xCD5C;&#xADFC; &#xB85C;&#xBD07;&#xCCAD;&#xC18C;&#xAE30;&#xB294; &#x314B;&#x314B;</p>
+<p>&#xC9D1; &#xAD6C;&#xC870;&#xB97C; &#xD30C;&#xC545;&#xD558;&#xACE0; &#xB3CC;&#xC544;&#xB2E4;&#xB2CC;&#xB2E4;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xB9C8;&#xD2B8;&#xD3F0;&#xC73C;&#xB85C; &#xC9D1; &#xD3C9;&#xBA74;&#xB3C4;&#xB97C; &#xBCFC; &#xC218; &#xC788;&#xC5B4;&#xC694;!</p>
+<p><img src="http://stuffedsuitcase.com/wp-content/uploads/2016/11/Dyson-360-eye-robot-vacuum-4.jpg" alt="&#xAD00;&#xB828; &#xC774;&#xBBF8;&#xC9C0;"></p>
+<p style="text-align: center;">&lt;Dyson 360&gt;</p>
+
+
+<hr>
+
+<p>&#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xC790;&#xC728; &#xC8FC;&#xD589; &#xAE30;&#xC220;&#xC774; &#xB3C4;&#xB300;&#xCCB4; &#xBB58;&#xAE4C;&#xC694;?</p>
+<p>&#xC81C;&#xAC00; &#xC0DD;&#xAC01;&#xD558;&#xB294; &#xC790;&#xC728;&#xC8FC;&#xD589;&#xC740; &#xC774;&#xB807;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB85C;&#xBD07;&#xC774; &#xC790;&#xAE30; &#xC8FC;&#xBCC0;&#xC758; &#xD658;&#xACBD;&#xC744; &#xC54C;&#xACE0;, (Mapping)</p>
+<p>&#xD2B9;&#xC815; &#xD658;&#xACBD;&#xC5D0;&#xC11C; &#xC790;&#xAE30; &#xC704;&#xCE58;&#xAC00; &#xC5B4;&#xB514;&#xC788;&#xB294;&#xC9C0; &#xC54C;&#xACE0;, (Localization)</p>
+<p>&#xC7A5;&#xC560;&#xBB3C;&#xC744; &#xD53C;&#xD558;&#xBA74;&#xC11C;, (Obstacle avoidance)</p>
+<p>&#xBAA9;&#xC801;&#xC9C0;&#xAE4C;&#xC9C0; &#xCD5C;&#xC801;&#xC758; &#xACBD;&#xB85C;&#xB85C; &#xAC00;&#xB294; &#xAC83; (Path planning)</p>
+<p>&#xC774;&#xAC8C; &#xC790;&#xC728;&#xC8FC;&#xD589; &#xAE30;&#xC220;&#xC774;&#xB77C;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><img class="alignnone size-full wp-image-671" src="http://128.134.57.131/wordpress/wp-content/uploads/2018/01/&#xCEA1;&#xCC98;4.png" alt="" width="325" height="322"></p>
+<p>&lt;Autonomous naviation system on simulation&gt;</p>
+<hr>
+
+<p>&#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xBA74; &#xC0AC;&#xB78C;&#xACFC; &#xBE44;&#xC2B7;&#xD558;&#xC9C0; &#xC54A;&#xB098;&#xC694;?</p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xC81C;&#xAC00; &#xCF54;&#xC5D1;&#xC2A4;&#xC5D0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC800;&#xB294; &#xCF54;&#xC5D1;&#xC2A4;&#xC5D0; &#xC788;&#xB294; &#xBA54;&#xAC00;&#xBC15;&#xC2A4;&#xB97C; &#xAC00;&#xACE0; &#xC2F6;&#xC5B4;&#xC694;.</p>
+<p>&#xC5B4;&#xB5BB;&#xAC8C; &#xCC3E;&#xC544;&#xAC08;&#xAE4C;&#xC694;?</p>
+<p></p><ol><br>     <li>&#xBA3C;&#xC800; &#xC9C0;&#xB3C4;&#xB97C; &#xBD10;&#xC57C;&#xACA0;&#xC8E0;. &#xCF54;&#xC5D1;&#xC2A4;&#xC5D0;&#xB294; &#xC9C0;&#xB3C4;&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xB514;&#xC2A4;&#xD50C;&#xB808;&#xC774;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>(&#xB85C;&#xBD07;&#xC740; &#xD2B9;&#xC815; &#xD658;&#xACBD;&#xC758; &#xC9C0;&#xB3C4;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB2E4;. &#xC5C6;&#xB2E4;&#xBA74; &#xB9CC;&#xB4E4;&#xC5B4;&#xC57C; &#xD55C;&#xB2E4;. &#xC774;&#xAC83;&#xC774; Mapping)</li><br>     <li>&#xB2E4;&#xC74C;&#xC73C;&#xB85C; &#xB0B4;&#xAC00; &#xADF8; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC5B4;&#xB514;&#xC788;&#xB294;&#xC9C0; &#xD30C;&#xC545;&#xD558;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xAC00;&#xACE0;&#xC790; &#xD558;&#xB294; &#xBA54;&#xAC00;&#xBC15;&#xC2A4;&#xAC00; &#xC5B4;&#xB514;&#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xC744; &#xD574;&#xC57C;&#xACA0;&#xC8E0;.<br>(&#xB85C;&#xBD07;&#xC740; &#xC9C0;&#xB3C4; &#xC0C1;&#xC5D0;&#xC11C; &#xC790;&#xC2E0;&#xC774; &#xC5B4;&#xB514; &#xC788;&#xB294;&#xC9C0; &#xD30C;&#xC545;&#xD55C;&#xB2E4;. &#xC774;&#xAC83;&#xC774; Localization)</li><br>     <li>&#xADF8; &#xB2E4;&#xC74C;&#xC5D0;&#xB294; &#xC0AC;&#xB78C;&#xB4E4;&#xC744; &#xD53C;&#xD574;&#xAC00;&#xBA70; &#xBA54;&#xAC00;&#xBC15;&#xC2A4;&#xB85C; &#xAC11;&#xB2C8;&#xB2E4;.<br>(&#xBAA9;&#xC801;&#xC9C0;&#xAE4C;&#xC9C0; &#xCD5C;&#xC801;&#xC758; &#xACBD;&#xB85C;&#xB97C; &#xB9CC;&#xB4E4;&#xACE0; &#xC7A5;&#xC560;&#xBB3C;&#xC744; &#xD53C;&#xD574;&#xAC11;&#xB2C8;&#xB2E4;. Obstacle avoidance or Path planning)</li><br>     <li>&#xC911;&#xAC04;&#xC5D0; &#xAE38;&#xC744; &#xC783;&#xC744; &#xB54C;&#xB3C4; &#xC788;&#xC8E0;. &#xC65C;&#xB0D0;&#xD558;&#xBA74; &#xCF54;&#xC5D1;&#xC2A4;&#xB294; &#xB113;&#xC73C;&#xB2C8;&#xAE50;&#xC694;! &#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xC9C0;&#xB3C4;&#xB97C; &#xB2E4;&#xC2DC; &#xBCF4;&#xACE0; &#xB0B4;&#xAC00; &#xC5B4;&#xB514;&#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xACE0; &#xBE60;&#xB978; &#xAE38;&#xB85C; &#xAC11;&#xB2C8;&#xB2E4;.<br>(&#xB85C;&#xBD07;&#xB3C4; &#xAE38;&#xC744; &#xC783;&#xC744;&#xAE4C;&#xC694;? &#xC790;&#xC2E0;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xC783;&#xC5B4;&#xBC84;&#xB9B4; &#xC218; &#xC788;&#xC744;&#xAE4C;&#xC694;? &#xD034;&#xC988;&#xC785;&#xB2C8;&#xB2E4;!)</li><br>     <li>&#xBA54;&#xAC00;&#xBC15;&#xC2A4;&#xC5D0; &#xB3C4;&#xCC29;&#xD588;&#xB2E4;!</li><br></ol><br>&#xC5B4;&#xB5A4;&#xAC00;&#xC694;?<p></p>
+<p>&#xC0AC;&#xB78C;&#xACFC; &#xB85C;&#xBD07;&#xC774; &#xBAA9;&#xC801;&#xC9C0;&#xAE4C;&#xC9C0; &#xCC3E;&#xC544;&#xAC00;&#xB294; &#xBC29;&#xBC95;&#xC774; &#xBE44;&#xC2B7;&#xD574;&#xBCF4;&#xC774;&#xC9C0; &#xC54A;&#xB098;&#xC694;?</p>
+<hr>
+
+<p></p><h4>&#xC26C;&#xC6B4; &#xBB38;&#xC81C;&#xB97C; &#xD480;&#xC5B4;&#xBD05;&#xC2DC;&#xB2E4;.</h4><br>&#xB85C;&#xBD07;&#xC740; &#xC9C0;&#xB3C4;&#xAC00; &#xC788;&#xB2E4;&#xB294; &#xAC00;&#xC815; &#xD558;&#xC5D0;,<p></p>
+<p>&#xADF8; &#xC9C0;&#xB3C4;&#xC5D0;&#xC11C; &#xC790;&#xC2E0;&#xC774; &#xC5B4;&#xB514;&#xC5D0; &#xC788;&#xB294;&#xC9C0; &#xC5B4;&#xB5BB;&#xAC8C; &#xC54C; &#xC218; &#xC788;&#xC744;&#xAE4C;&#xC694;?</p>
+<p>&#xB85C;&#xBD07;&#xC758; &#xC704;&#xCE58; &#xCD94;&#xC815;&#xC5D0; &#xC9D1;&#xC911;&#xD574;&#xBCF4;&#xB824;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<hr>
+
+<p>&#xC0AC;&#xB78C;&#xC73C;&#xB85C; &#xC608;&#xB97C; &#xD558;&#xB098; &#xB4E4;&#xC5B4;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB9CC;&#xC57D; &#xC0AC;&#xB78C;&#xC774; &#xB208;&#xC744; &#xAC10;&#xACE0; &#xCF54;&#xC5D1;&#xC2A4;&#xC758; &#xBA54;&#xAC00;&#xBC15;&#xC2A4;&#xB97C; &#xCC3E;&#xC544;&#xC57C; &#xD55C;&#xB2E4;&#xBA74; &#xCC3E;&#xC544;&#xAC08; &#xC218; &#xC788;&#xC744;&#xAE4C;&#xC694;?</p>
+<p>&#xCF54;&#xC5D1;&#xC2A4;&#xB97C; &#xBA87; &#xBC88; &#xAC00;&#xBD24;&#xB358; &#xC0AC;&#xB78C;&#xC774;&#xB77C;&#xACE0; &#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<p>&#xB208; &#xAC10;&#xACE0; &#xAC78;&#xC73C;&#xBA74; &#xC790;&#xC2E0;&#xC774; &#xC0DD;&#xAC01;&#xD55C; &#xC774;&#xB3D9; &#xAC70;&#xB9AC;&#xC640; &#xC2E4;&#xC81C; &#xC774;&#xB3D9; &#xAC70;&#xB9AC;&#xAC00; &#xB2EC;&#xB77C;&#xC9C8; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0; &#xC624;&#xB798; &#xB208; &#xAC10;&#xACE0; &#xAC78;&#xC744;&#xC218;&#xB85D; &#xADF8; &#xC624;&#xCC28;&#xB294; &#xCEE4;&#xC9C0;&#xACA0;&#xC8E0;.</p>
+<p>&#xADF8;&#xB7EC;&#xB2E4;&#xAC00; &#xB208;&#xC744; &#xB728;&#xBA74; &#xC21C;&#xAC04; &#xC5B4;&#xB514; &#xC788;&#xB294;&#xC9C0; &#xBAA8;&#xB97C; &#xC218; &#xC788;&#xC9C0;&#xB9CC;</p>
+<p>&#xC774;&#xC804;&#xC5D0; &#xBD24;&#xB358; &#xC74C;&#xC2DD;&#xC810;&#xB4E4;&#xC744; &#xBCF4;&#xACE0; &#xC790;&#xC2E0;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xD30C;&#xC545;&#xD560; &#xC218; &#xC788;&#xC8E0;.</p>
+<hr>
+
+<p>&#xB85C;&#xBD07;&#xB3C4; &#xB9C8;&#xCC2C;&#xAC00;&#xC9C0;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC13C;&#xC11C;&#xAC00; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;. &#xC989;, &#xC8FC;&#xBCC0; &#xD658;&#xACBD;&#xC744; &#xD30C;&#xC545;&#xD560; &#xC13C;&#xC11C; &#xB9D0;&#xC774;&#xC8E0;. &#xB208;&#xC774;&#xB098; &#xADC0;&#xCC98;&#xB7FC;&#xC694;!</p>
+<p>&#xB85C;&#xBD07;&#xC740; &#xC5EC;&#xB7EC; &#xC13C;&#xC11C;&#xB4E4;&#xC744; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xD604;&#xC7AC; &#xAD00;&#xCE21;&#xD558;&#xB294; &#xB370;&#xC774;&#xD130;&#xC640; &#xC9C0;&#xB3C4; (&#xAE30;&#xC874;&#xC5D0; &#xD2B9;&#xC815; &#xC7A5;&#xC18C;&#xC5D0; &#xB300;&#xD55C; &#xB370;&#xC774;&#xD130;, &#xC774;&#xC804;&#xC5D0; &#xBD24;&#xB358; &#xB79C;&#xB4DC;&#xB9C8;&#xD06C;, &#xD2B9;&#xC9D5;)&#xC744; &#xB9E4;&#xCE6D;&#xC2DC;&#xCF1C;&#xBCF4;&#xBA74;&#xC11C; &#xB85C;&#xBD07;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xCD94;&#xC815;&#xD569;&#xB2C8;&#xB2E4;. &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xBC29;&#xBC95;&#xC73C;&#xB85C;&#xC694;!</p>
+<p><img class="alignnone size-full wp-image-673" src="http://128.134.57.131/wordpress/wp-content/uploads/2018/01/&#xADF8;&#xB9BC;3.png" alt="" width="830" height="288"></p>
+<p style="text-align: center;">&lt;Lidar, RGB-D camera, camera&gt;</p>
+
+
+<hr>
+
+<p></p><h4>&#xACB0;&#xB860;</h4><br>&#xCD5C;&#xB300;&#xD55C; &#xC27D;&#xAC8C; &#xC124;&#xBA85;&#xD558;&#xB824;&#xACE0; &#xD588;&#xB294;&#xB370; &#xC7AC;&#xBC0C;&#xAC8C; &#xC77D;&#xC73C;&#xC168;&#xB294;&#xC9C0;&#xC694;.<p></p>
+<p>&#xC5B4;&#xB5A4;&#xC9C0; &#xC798; &#xBAA8;&#xB974;&#xACA0;&#xC5B4;&#xC694;.</p>
+<p>&#xC5B8;&#xC820;&#xAC00; &#xAC01; &#xC9D1;&#xB9C8;&#xB2E4; &#xC790;&#xC728;&#xC8FC;&#xD589;&#xAE30;&#xC220;&#xC774; &#xB4E4;&#xC5B4;&#xAC04; &#xB85C;&#xBD07;&#xC774; &#xD558;&#xB098;&#xC529; &#xAC16;&#xAC8C;&#xB420; &#xAC83;&#xC744; &#xAFC8;&#xAFB8;&#xBA70;</p>
+<p>&#xAE00;&#xC744; &#xB9C8;&#xCE58;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC77D;&#xC5B4;&#xC8FC;&#xC154;&#xC11C; &#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;!</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/7edaxv" target="_blank" rel="noopener">&#x2018;&#xC27D;&#xAC8C; &#xC124;&#xBA85;&#xD558;&#xB294; &#xC790;&#xC728; &#xC8FC;&#xD589; &#xAE30;&#xC220;, &#xB85C;&#xBD07;&#xC740; &#xC5B4;&#xB5BB;&#xAC8C; &#xC790;&#xAE30;&#xC758; &#xC704;&#xCE58;&#xB97C; &#xC544;&#xB294;&#xAC00;?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@jacobyu/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/jiwon25/">jiwon25</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/kr/">kr</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/kr-dev/">kr-dev</a>, <a class="has-link-grey -link" href="/@jacobyu/tags/kr-newbie/">kr-newbie</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@jacobyu/7-day-black-and-white-photo-challenge-day-3/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">7 DAY BLACK &amp; WHITE PHOTO CHALLENGE: Day 3</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@jacobyu/7-day-black-and-white-photo-challenge-day-2/">
+                <span class="level-item">7 DAY BLACK &amp; WHITE PHOTO CHALLENGE: Day 2</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@jacobyu/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="Jacob" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 Jacob&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@jacobyu/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
+
+
+
+    
+<script src="/@jacobyu/js/bundle.js" defer></script></body>
+</html>
+
