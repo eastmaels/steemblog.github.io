@@ -15,6 +15,7 @@ tags:
 - palnet
 - zzan
 - photography
+- ccc
 thumbnail: 'https://artisteem.io/media/133453b5-c748-4a7c-a2c2-95bd5b07c67c'
 sidebar:
     right:
