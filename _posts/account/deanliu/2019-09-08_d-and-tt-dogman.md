@@ -8,17 +8,13 @@ toc: true
 position: 9999
 date: 2019-09-08 14:37:48
 categories:
-- sct
+- creativecoin
 tags:
-- sct
-- cn
 - creativecoin
 - art
-- lifestyle
-- marlians
-- busy
-- jjm
+- cn
 - deantt
+- sct
 thumbnail: 'https://cdn.steemitimages.com/DQmZLKQjdXjvhCqSovFVFaxBd1mMtT4cbq7AW2PLpW84R3Q/image.png'
 sidebar:
     right:
@@ -50,7 +46,7 @@ widgets:
 ![photo6316428439258769644.jpg](https://cdn.steemitimages.com/DQmRH3BLCir6MzXWdh1uDf4BQhKKAjvt4ipa5t5bTnXqPFc/photo6316428439258769644.jpg)
 
 
-_**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談當年生兒，談媽媽懷孕時，談家庭形成，談生命意義，談我兒TT的好笑，可愛，可憎，或記錄他的生活，我們的生活，三個人的，兩兩的.... Anything about TT。_![photo6316376985550563655.jpg](https://cdn.steemitimages.com/DQmRk5j3iLE5qwa6gRwyyF6xbqoDccmz1Co7YwEzMnG6cNx/photo6316376985550563655.jpg)![photo6316428439258769645.jpg](https://cdn.steemitimages.com/DQmbJUhqwgaMc1duuRrYdMH4JwAeJKgJgGsRMvj6CRJpHjF/photo6316428439258769645.jpg)![photo6316428439258769644.jpg](https://cdn.steemitimages.com/DQmRH3BLCir6MzXWdh1uDf4BQhKKAjvt4ipa5t5bTnXqPFc/photo6316428439258769644.jpg)
+_**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談當年生兒，談媽媽懷孕時，談家庭形成，談生命意義，談我兒TT的好笑，可愛，可憎，或記錄他的生活，我們的生活，三個人的，兩兩的.... Anything about TT。_!
 
 - - -
 
