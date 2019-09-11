@@ -1,0 +1,64 @@
+
+---
+title: '【Vicky''s 影评】《我是大哥大》：主配角都是表情包？拜托，他们每个都是颜神好吗#5'
+permlink: vickys5-pz8xut4lov
+catalog: true
+toc_nav_num: true
+toc: true
+position: 9999
+date: 2019-09-10 20:00:15
+categories:
+- steempress
+tags:
+- steempress
+- cn
+- aaa
+- cn-movie
+- zzan
+thumbnail: 'https://s2.ax1x.com/2019/08/30/mXvxSg.jpg'
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+<a href="https://imgchr.com/i/mXvxSg"><img src="https://s2.ax1x.com/2019/08/30/mXvxSg.jpg" alt="mXvxSg.jpg" /><br/></a>
+<div class="markdown-here-wrapper">
+<p style="margin: 0px 0px 1.2em !important"><a href="https://movie.douban.com/photos/photo/2537155015/">All Image Source</a></p>
+<p style="margin: 0px 0px 1.2em !important">三桥扶着满身是血的伊藤微微颤颤地走在回家的路上，不料迎面又杀出了四个不良少年。大概是因为三桥和伊藤最近实在是太高调，其他学校/帮派的不良少年们总想干掉他们来成就自己的名声。</p>
+<p style="margin: 0px 0px 1.2em !important">就在这时候，本片的第二个女主角<strong>赤坂理子</strong>（清野菜名 饰）出场了。她是隔壁班的学习委员，父亲经营着一家武馆（这里请划重点）。</p>
+<p style="margin: 0px 0px 1.2em !important">四个小混混看到理子是女生，就轻蔑地说“是女人就实相点走开”。这话还没说完，就见理子手起刀落就把这四人直接撂倒了。</p>
+<p style="margin: 0px 0px 1.2em !important">本剧大概最大的亮点就是，女主都很能打。</p>
+<p style="margin: 0px 0px 1.2em !important">明明可以靠脸吃饭，为啥偏偏靠拳头。</p>
+<p style="margin: 0px 0px 1.2em !important">绑走京子的混混头头咽不下这口气，将三桥和伊藤的事如数上报给了混混头头。</p>
+<p style="margin: 0px 0px 1.2em !important">来客串的城田优简直帅裂苍穹，这颜值、这身高、这声线…以下省略N句赞美。</p>
+<p style="margin: 0px 0px 1.2em !important">他喊来了另一所高中开久的不良少年头头<strong>片桐智司</strong>（铃木伸之 饰）和二把手<strong>相良猛</strong>（矶村勇斗 饰），让他们找机会狠狠教训一下三桥。</p>
+<p style="margin: 0px 0px 1.2em !important">至于这群不（sha）良（diao）青年之间会有怎样的故事展开，冰冰就交给大家自己去观看啦。</p>
+<p style="margin: 0px 0px 1.2em !important">这部沙雕神剧真的是全程高能，四十分钟的剧集几乎可以让观众从头笑到尾。</p>
+<p style="margin: 0px 0px 1.2em !important">如果你错过了《热血高校》和《极道鲜师》，就一定不要再错过《我是大哥大》！每一帧暂停都是一张表情包，相信我！</p>
+&nbsp;
+<p style="margin: 0px 0px 1.2em !important;text-align: center">（本篇完）</p>
+
+<ul style="margin: 1.2em 0px;padding-left: 2em">
+ <li style="margin: 0.5em 0px">Movie URL: (<a href="https://movie.douban.com/subject/30183785/">https://movie.douban.com/subject/30183785/</a>)</li>
+ <li style="margin: 0.5em 0px">Critic: AAA</li>
+ <li style="margin: 0.5em 0px">영화 URL: (<a href="https://movie.douban.com/subject/30183785/">https://movie.douban.com/subject/30183785/</a>)</li>
+ <li style="margin: 0.5em 0px">별점: AAA</li>
+</ul>
+
+<hr />
+<p style="margin: 0px 0px 1.2em !important">由于平台对于图片的审查，我不得不缩减配图以减少风险。如果您有兴趣阅读完整版的话，欢迎前往我的<a href="https://www.douban.com/people/nostalgic1212/">豆瓣</a>或<a href="https://www.jianshu.com/u/09dd85f07cdc">简书</a>账户<strong>「冰冰的小城堡」</strong>，或是关注我的微信公众号：冰冰的小城堡</p>
+<p style="margin: 0px 0px 1.2em !important">本文首发于<a href="https://www.toutiao.com/i6731298627236397579/">今日头条</a>。谢谢大家来看我的文章，如果您喜欢的话，请转发、留言或是点赞。你们的支持是我继续努力的最大动力，再次感谢～</p>
+<p style="margin: 0px 0px 1.2em !important">This post has been published on <a href="https://www.toutiao.com/i6731298627236397579/">toutiao</a>. Thank you for reading my articles. If you like my post, please resteem and upvote the articles or leave your comments. Thank you again!</p>
+<p style="margin: 0px 0px 1.2em !important"><a href="https://i.loli.net/2019/07/22/5d3561a23de7772095.png"><img src="https://i.loli.net/2019/07/22/5d3561a23de7772095.png" alt="" /><br/></a></p>
+
+<div style="height: 0;width: 0;max-height: 0;max-width: 0;overflow: hidden;font-size: 0em;padding: 0;margin: 0" title="MDH:PHA+WyFbbVh2eFNnLmpwZ10oaHR0cHM6Ly9zMi5heDF4LmNvbS8yMDE5LzA4LzMwL21YdnhTZy5q cGcpXShodHRwczovL2ltZ2Noci5jb20vaS9tWHZ4U2cpPGJyPltBbGwgSW1hZ2UgU291cmNlXSho dHRwczovL21vdmllLmRvdWJhbi5jb20vcGhvdG9zL3Bob3RvLzI1MzcxNTUwMTUvKTwvcD48cD7k uInmoaXmibbnnYDmu6HouqvmmK/ooYDnmoTkvIrol6Tlvq7lvq7poqTpoqTlnLDotbDlnKjlm57l rrbnmoTot6/kuIrvvIzkuI3mlpnov47pnaLlj4jmnYDlh7rkuoblm5vkuKrkuI3oia/lsJHlubTj gILlpKfmpoLmmK/lm6DkuLrkuInmoaXlkozkvIrol6TmnIDov5Hlrp7lnKjmmK/lpKrpq5josIPv vIzlhbbku5blrabmoKEv5biu5rS+55qE5LiN6Imv5bCR5bm05Lus5oC75oOz5bmy5o6J5LuW5Lus 5p2l5oiQ5bCx6Ieq5bex55qE5ZCN5aOw44CCPC9wPjxwPuWwseWcqOi/meaXtuWAme+8jOacrOeJ h+eahOesrOS6jOS4quWls+S4u+inkioq6LWk5Z2C55CG5a2QKirvvIjmuIXph47oj5zlkI0g6aWw 77yJ5Ye65Zy65LqG44CC5aW55piv6ZqU5aOB54+t55qE5a2m5Lmg5aeU5ZGY77yM54i25Lqy57uP 6JCl552A5LiA5a625q2m6aaG77yI6L+Z6YeM6K+35YiS6YeN54K577yJ44CCPC9wPjxwPuWbm+S4 quWwj+a3t+a3t+eci+WIsOeQhuWtkOaYr+Wls+eUn++8jOWwsei9u+iUkeWcsOivtOKAnOaYr+Wl s+S6uuWwseWunuebuOeCuei1sOW8gOKAneOAgui/meivnei/mOayoeivtOWujO+8jOWwseingeeQ huWtkOaJi+i1t+WIgOiQveWwseaKiui/meWbm+S6uuebtOaOpeaSguWAkuS6huOAgjwvcD48cD7m nKzliaflpKfmpoLmnIDlpKfnmoTkuq7ngrnlsLHmmK/vvIzlpbPkuLvpg73lvojog73miZPjgII8 L3A+PHA+5piO5piO5Y+v5Lul6Z2g6IS45ZCD6aWt77yM5Li65ZWl5YGP5YGP6Z2g5ouz5aS044CC PC9wPjxwPue7kei1sOS6rOWtkOeahOa3t+a3t+WktOWktOWSveS4jeS4i+i/meWPo+awlO+8jOWw huS4ieahpeWSjOS8iuiXpOeahOS6i+WmguaVsOS4iuaKpee7meS6hua3t+a3t+WktOWktOOAgjwv cD48cD7mnaXlrqLkuLLnmoTln47nlLDkvJjnroDnm7TluIXoo4Loi43nqbnvvIzov5npopzlgLzj gIHov5nouqvpq5jjgIHov5nlo7Dnur/igKbku6XkuIvnnIHnlaVO5Y+l6LWe576O44CCPC9wPjxw PuS7luWWiuadpeS6huWPpuS4gOaJgOmrmOS4reW8gOS5heeahOS4jeiJr+WwkeW5tOWktOWktCoq 54mH5qGQ5pm65Y+4KirvvIjpk4PmnKjkvLjkuYsg6aWw77yJ5ZKM5LqM5oqK5omLKirnm7joia/n jJsqKu+8iOeftuadkeWLh+aWlyDppbDvvInvvIzorqnku5bku6zmib7mnLrkvJrni6Dni6DmlZno rq3kuIDkuIvkuInmoaXjgII8L3A+PHA+6Iez5LqO6L+Z576k5LiN77yIc2hh77yJ6Imv77yIZGlh b++8iemdkuW5tOS5i+mXtOS8muacieaAjuagt+eahOaVheS6i+WxleW8gO+8jOWGsOWGsOWwseS6 pOe7meWkp+WutuiHquW3seWOu+ingueci+WVpuOAgjwvcD48cD7ov5npg6jmspnpm5XnpZ7liafn nJ/nmoTmmK/lhajnqIvpq5jog73vvIzlm5vljYHliIbpkp/nmoTliafpm4blh6DkuY7lj6/ku6Xo rqnop4LkvJfku47lpLTnrJHliLDlsL7jgII8L3A+PHA+5aaC5p6c5L2g6ZSZ6L+H5LqG44CK54Ot 6KGA6auY5qCh44CL5ZKM44CK5p6B6YGT6bKc5biI44CL77yM5bCx5LiA5a6a5LiN6KaB5YaN6ZSZ 6L+H44CK5oiR5piv5aSn5ZOl5aSn44CL77yB5q+P5LiA5bin5pqC5YGc6YO95piv5LiA5byg6KGo 5oOF5YyF77yM55u45L+h5oiR77yBPC9wPjxwPjxicj7vvIjmnKznr4flrozvvIk8L3A+PHA+PGJy PiogTW92aWUgVVJMOiAoaHR0cHM6Ly9tb3ZpZS5kb3ViYW4uY29tL3N1YmplY3QvMzAxODM3ODUv KTxicj4qIENyaXRpYzogQUFBPC9wPjxwPiog7JiB7ZmUIFVSTDogKGh0dHBzOi8vbW92aWUuZG91 YmFuLmNvbS9zdWJqZWN0LzMwMTgzNzg1Lyk8YnI+KiDrs4TsoJA6IEFBQTwvcD48cD48YnI+LS0t LS0tLTwvcD48cD48YnI+55Sx5LqO5bmz5Y+w5a+55LqO5Zu+54mH55qE5a6h5p+l77yM5oiR5LiN 5b6X5LiN57yp5YeP6YWN5Zu+5Lul5YeP5bCR6aOO6Zmp44CC5aaC5p6c5oKo5pyJ5YW06Laj6ZiF 6K+75a6M5pW054mI55qE6K+d77yM5qyi6L+O5YmN5b6A5oiR55qEW+ixhueTo10oaHR0cHM6Ly93 d3cuZG91YmFuLmNvbS9wZW9wbGUvbm9zdGFsZ2ljMTIxMi8p5oiWW+eugOS5pl0oaHR0cHM6Ly93 d3cuamlhbnNodS5jb20vdS8wOWRkODVmMDdjZGMp6LSm5oi3KirjgIzlhrDlhrDnmoTlsI/ln47l oKHjgI0qKu+8jOaIluaYr+WFs+azqOaIkeeahOW+ruS/oeWFrOS8l+WPt++8muWGsOWGsOeahOWw j+WfjuWgoTwvcD48cD7mnKzmlofpppblj5Hkuo5b5LuK5pel5aS05p2hXShodHRwczovL3d3dy50 b3V0aWFvLmNvbS9pNjczMTI5ODYyNzIzNjM5NzU3OS8p44CC6LCi6LCi5aSn5a625p2l55yL5oiR 55qE5paH56ug77yM5aaC5p6c5oKo5Zac5qyi55qE6K+d77yM6K+36L2s5Y+R44CB55WZ6KiA5oiW 5piv54K56LWe44CC5L2g5Lus55qE5pSv5oyB5piv5oiR57un57ut5Yqq5Yqb55qE5pyA5aSn5Yqo 5Yqb77yM5YaN5qyh5oSf6LCi772ePC9wPjxwPlRoaXMgcG9zdCBoYXMgYmVlbiBwdWJsaXNoZWQg b24gW3RvdXRpYW9dKGh0dHBzOi8vd3d3LnRvdXRpYW8uY29tL2k2NzMxMjk4NjI3MjM2Mzk3NTc5 LykuIFRoYW5rIHlvdSBmb3IgcmVhZGluZyBteSBhcnRpY2xlcy4gSWYgeW91IGxpa2UgbXkgcG9z dCwgcGxlYXNlIHJlc3RlZW0gYW5kIHVwdm90ZSB0aGUgYXJ0aWNsZXMgb3IgbGVhdmUgeW91ciBj b21tZW50cy4gVGhhbmsgeW91IGFnYWluITwvcD48cD5bIVtdKGh0dHBzOi8vaS5sb2xpLm5ldC8y MDE5LzA3LzIyLzVkMzU2MWEyM2RlNzc3MjA5NS5wbmcpXShodHRwczovL2kubG9saS5uZXQvMjAx OS8wNy8yMi81ZDM1NjFhMjNkZTc3NzIwOTUucG5nKTwvcD4=">​</div>
+</div> <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : http://cnstm.org/blog/2019/09/11/from-today-its-my-turn-5/ </em><hr/></center>          
+
+- - -
+
+This page is synchronized from the post: ['【Vicky''s 影评】《我是大哥大》：主配角都是表情包？拜托，他们每个都是颜神好吗#5'](https://steemit.com/@nostalgic1212/vickys5-pz8xut4lov)
