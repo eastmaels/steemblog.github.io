@@ -13,9 +13,9 @@ tags:
 - ntopaz
 - jjm
 - zzan
-- palnet
-- picture
-thumbnail: 'https://artisteem.io/media/2fae91d6-4bcb-4048-aa27-0cb8d90dd837'
+- photography
+- skyline
+thumbnail: 'https://artisteem.io/media/00f9afaa-bb78-40bf-98b6-7f6c271d0263'
 sidebar:
     right:
         sticky: true
@@ -26,7 +26,7 @@ widgets:
 ---
 
 
-![ntopaz-image-0](https://artisteem.io/media/2fae91d6-4bcb-4048-aa27-0cb8d90dd837)This photo was taken while I was touring haihe river in tianjin on a boat in the winter of 2013.
+![ntopaz-image-0](https://artisteem.io/media/00f9afaa-bb78-40bf-98b6-7f6c271d0263)This photo was taken while I was touring haihe river in tianjin on a boat in the winter of 2013.
 
 
 Haihe is famous not only for its distinctive Bridges, but also for its historical buildings on both sides.
