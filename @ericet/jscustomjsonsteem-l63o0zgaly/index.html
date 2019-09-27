@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>怎么用JS发送Custom Json到STEEM区块链上？ - ericet</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@ericet/css/style.css">
+
+<link rel="stylesheet" href="/@ericet/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@ericet/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="ericet" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@ericet/">Home</a>
+                
+                <a class="navbar-item" href="/@ericet/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@ericet/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@ericet/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@ericet/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#Custom-Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;">
+        <span class="has-mr-6">1</span>
+        <span>Custom Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</span>
+        </a></li><li>
+        <a class="is-flex" href="#Custom-Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;">
+        <span class="has-mr-6">2</span>
+        <span>Custom Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@ericet/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmSkEEwkmkMmstNtFK9XJ17LdHK3frbtGuu4QRnAvaCYWm/image.png" alt="怎么用JS发送Custom Json到STEEM区块链上？">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-27T01:28:57.000Z">2019-09-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@ericet/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 788 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                怎么用JS发送Custom Json到STEEM区块链上？
+            
+        </h1>
+        <div class="content">
+            <p>&#x524D;&#x51E0;&#x5929;&#x963F;John @john371911 &#x5728;&#x6751;&#x91CC;&#x8BE2;&#x95EE;&#x6709;&#x4EC0;&#x4E48;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x53D1;Custom Json&#xFF1F;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x6CA1;&#x770B;&#x5230;&#x4EFB;&#x4F55;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x53D1;&#x9001;Custom Json&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x597D;&#x7684;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x81EA;&#x5DF1;&#x5199;&#x4E00;&#x4E2A;&#x3002;</p>
+<h2 id="Custom-Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;"><a href="#Custom-Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;" class="headerlink" title="Custom Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;"></a>Custom Json&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</h2><p>&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x628A;&#x4E00;&#x4E9B;&#x81EA;&#x5DF1;&#x60F3;&#x5199;&#x7684;&#x4FE1;&#x606F;&#x5199;&#x5230;&#x533A;&#x5757;&#x94FE;&#x4E0A;&#x3002;&#x8FD9;&#x4E2A;Custom Json&#x7528;&#x7684;&#x6700;&#x591A;&#x7684;&#x662F;&#x57FA;&#x4E8E;STEEM&#x7684;DApps&#x3002;&#x6BD4;&#x5982;Steemmonsters&#xFF0C;Steem-engine&#x7B49;&#x7B49;</p>
+<p>Steemmonsters&#x4F1A;&#x628A;&#x6BCF;&#x6B21;&#x7684;&#x5BF9;&#x6218;&#x4FE1;&#x606F;&#xFF0C;&#x83B7;&#x5F97;&#x7684;&#x5956;&#x52B1;&#x5361;&#x7B49;&#x4FE1;&#x606F;&#x4EE5;Custom Json&#x7684;&#x683C;&#x5F0F;&#x53D1;&#x9001;&#x5230;STEEM&#x533A;&#x5757;&#x94FE;&#x4E0A;</p>
+<p>&#x800C;Steem-engine&#x4F1A;&#x628A;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;&#xFF0C;&#x8F6C;&#x8D26;&#xFF0C;&#x9886;&#x53D6;&#x5956;&#x52B1;&#x7B49;&#x4FE1;&#x606F;&#x90FD;&#x4EE5;Custom Json&#x7684;&#x683C;&#x5F0F;&#x5199;&#x5165;&#x5230;STEEM&#x533A;&#x5757;&#x94FE;</p>
+<h2 id="Custom-Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;"><a href="#Custom-Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;" class="headerlink" title="Custom Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;"></a>Custom Json&#x957F;&#x4EC0;&#x4E48;&#x6837;&#x5B50;&#x5462;&#xFF1F;</h2><p><img src="https://cdn.steemitimages.com/DQmSkEEwkmkMmstNtFK9XJ17LdHK3frbtGuu4QRnAvaCYWm/image.png" alt=""></p>
+<p>Custom Json&#x5305;&#x542B;&#xFF1A;id,json,required_auths,&#x548C;required_posting_auths &#x8FD9;4&#x4E2A;&#x5143;&#x7D20;</p>
+<ul>
+<li>id: &#x8FD9;&#x4E2A;custom json&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x5199;&#x4E2A;custom json&#x547D;&#x540D;&#x4E3A;&#x201D;ericet_json&#x201D;</li>
+<li>json: &#x8FD9;&#x4E2A;&#x662F;&#x4F60;&#x60F3;&#x5199;&#x5165;&#x7684;&#x4FE1;&#x606F;&#x4EE5;json&#x683C;&#x5F0F;&#x4FDD;&#x5B58;</li>
+<li>required_auths: &#x6D3B;&#x52A8;&#x5BC6;&#x94A5;&#x8BA4;&#x8BC1;&#x3002;&#x6BD4;&#x5982;&#x4F60;&#x60F3;&#x7528;custom json&#x505A;DApp&#x7684;&#x8F6C;&#x8D26;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x9700;&#x8981;&#x6D3B;&#x52A8;&#x5BC6;&#x94A5;&#x8BA4;&#x8BC1;&#x4E86;&#x3002;</li>
+<li>required_posting_auths&#xFF1A;&#x53D1;&#x5E16;&#x5BC6;&#x94A5;&#x8BA4;&#x8BC1;&#x3002;&#x9886;&#x53D6;&#x5956;&#x52B1;&#xFF0C;&#x53D1;&#x8D77;&#x5BF9;&#x6218;&#x8FD9;&#x4E9B;&#x5BF9;&#x4F60;&#x94B1;&#x5305;&#x6CA1;&#x5565;&#x5F71;&#x54CD;&#x7684;&#xFF0C;&#x53EA;&#x9700;&#x53D1;&#x5E16;&#x5BC6;&#x94A5;&#x8BA4;&#x8BC1;&#x5C31;&#x597D;&#x4E86;&#x3002;</li>
+</ul>
+<p>&#x4E86;&#x89E3;&#x4E86;Custom Json&#x7684;&#x57FA;&#x672C;&#x7ED3;&#x6784;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x5199;&#x4E86;&#x3002;</p>
+<p>steemjs&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;function&#x7528;&#x4E8E;&#x53D1;&#x9001;Custom Json&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">steem.broadcast.customJson(</span><br><span class="line">  &quot;&quot;,//&#x5BC6;&#x94A5;</span><br><span class="line">  [], // Required_auths</span><br><span class="line">  [], // Required Posting Auths</span><br><span class="line">  &apos;&apos;, // Id</span><br><span class="line">  json, //json</span><br><span class="line">  function(err, result) {</span><br><span class="line">    console.log(err, result);</span><br><span class="line">  }</span><br><span class="line">);</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x6BD4;&#x5982;&#x4F60;&#x60F3;&#x5199;&#x4E2A;&#x7A0B;&#x5E8F;&#x81EA;&#x52A8;&#x9886;&#x53D6;SCT&#x7684;&#x6536;&#x76CA;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const steemid = &apos;ericet&apos;;</span><br><span class="line">const postingKey=&apos;xxxxxxxxxxxxxxxx&apos;;</span><br><span class="line">let json = JSON.stringify({</span><br><span class="line">		symbol: &apos;SCT&apos;</span><br><span class="line">	});</span><br><span class="line"></span><br><span class="line">steem.broadcast.customJson(postingKey, [], [steemid], &apos;scot_claim_token&apos;, json, (err, result) =&gt; {</span><br><span class="line">	if (err)</span><br><span class="line">		console.log(err);</span><br><span class="line">	else</span><br><span class="line">		console.log(steemid + &quot; just claimed SCT token&quot;);</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x4E2A;&#x81EA;&#x52A8;&#x9886;&#x53D6;&#x6536;&#x76CA;&#x7A0B;&#x5E8F;&#x4E00;&#x6B21;&#x53EA;&#x80FD;&#x9886;&#x53D6;&#x4E00;&#x4E2A;&#x5E01;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x4E00;&#x6B21;&#x9886;&#x53D6;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x5E01;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;<a href="https://www.steemcn.org/cn/@ericet/jsscot-8shgjxo27y" target="_blank" rel="noopener">JS&#x7248;&#x4E00;&#x6B21;&#x9886;&#x53D6;&#x6240;&#x6709;&#x4EE3;&#x9886;&#x53D6;SCOT&#x4EE3;&#x5E01;</a></p>
+<p>&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;Custom Json&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const steem = require(&apos;steem&apos;);</span><br><span class="line">const steemid = &apos;ericet&apos;;</span><br><span class="line">const postingKey=&apos;xxxxxxxxxxxxxx&apos;;</span><br><span class="line"></span><br><span class="line">let json = JSON.stringify({</span><br><span class="line">		random: &apos;&#x53EA;&#x662F;&#x968F;&#x673A;&#x7684;&#x4E00;&#x4E2A;Custom Json&apos;,</span><br><span class="line">		author: &apos;&#x65B0;&#x624B;&#x6751;&#x6751;&#x957F;&apos;</span><br><span class="line">	});</span><br><span class="line"></span><br><span class="line">steem.broadcast.customJson(postingKey, [], [steemid], &apos;ericet_json&apos;, json, (err, result) =&gt; {</span><br><span class="line">	if (err)</span><br><span class="line">		console.log(err);</span><br><span class="line">	else</span><br><span class="line">		console.log(result);</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x8FD0;&#x884C;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x53D1;&#x9001;&#x4EE5;&#x4E0B;custom json&#x5230;STEEM&#x94FE;&#x4E0A;&#x3002;&#x8FD9;&#x4E2A;custom json&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x7528;&#x9014;&#x3002;</p>
+<p><img src="https://files.steempeak.com/file/steempeak/ericet/7HjBciUy-image.png" alt="image.png"></p>
+<p>&#x73B0;&#x5728;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;DApps&#x5728;&#x4F7F;&#x7528;Custom Json&#x6765;&#x4FDD;&#x5B58;&#x4FE1;&#x606F;&#xFF0C;&#x4F60;&#x53EA;&#x9700;&#x4E86;&#x89E3;&#x4ED6;&#x4EEC;&#x7684;json&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4E0D;&#x767B;&#x9646;steemmonsters&#x6E38;&#x620F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;custom json&#x53D1;&#x8D77;&#x5BF9;&#x6218;&#x3002;</p>
+<p>Custom Json&#x7684;&#x73A9;&#x6CD5;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#xFF0C;&#x6BD4;&#x5982;&#x901A;&#x8FC7;custom json&#x9501;&#x4ED3;/&#x4EE3;&#x7406;/&#x8F6C;&#x8D26;/&#x51FA;&#x552E;/&#x8D2D;&#x4E70;SCOT&#x4EE3;&#x5E01;&#x3002;&#x8FD9;&#x4E9B;&#x5C31;&#x7559;&#x7740;&#x4F60;&#x4EEC;&#x81EA;&#x5DF1;&#x53BB;&#x63A2;&#x7D22;&#x3002;</p>
+<hr>
+<p>STEEM&#x7F16;&#x7A0B;&#x7CFB;&#x5217;&#xFF1A;</p>
+<ul>
+<li><a href="https://www.steemcn.org/cn/@ericet/js" target="_blank" rel="noopener">&#x600E;&#x4E48;&#x7528;JS&#x5199;&#x4E2A;&#x81EA;&#x52A8;&#x70B9;&#x8D5E;&#x7A0B;&#x5E8F;&#xFF1F;</a></li>
+<li><a href="https://www.steemcn.org/cn/@ericet/js-nddsi4obip" target="_blank" rel="noopener">&#x600E;&#x4E48;&#x7528;JS&#x5199;&#x4E2A;&#x53EC;&#x5524;&#x673A;&#x5668;&#x4EBA;&#xFF1F;</a></li>
+<li><a href="https://www.steemcn.org/cn/@ericet/jssteem-gnsdaiwklj" target="_blank" rel="noopener">&#x600E;&#x4E48;&#x7528;JS&#x5199;&#x4E2A;STEEM&#x8F6C;&#x8D26;&#x7A0B;&#x5E8F;&#xFF1F;</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@ericet/jscustomjsonsteem-l63o0zgaly" target="_blank" rel="noopener">&#x2018;&#x600E;&#x4E48;&#x7528;JS&#x53D1;&#x9001;Custom Json&#x5230;STEEM&#x533A;&#x5757;&#x94FE;&#x4E0A;&#xFF1F;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@ericet/tags/actnearn/">actnearn</a>, <a class="has-link-grey -link" href="/@ericet/tags/build-it/">build-it</a>, <a class="has-link-grey -link" href="/@ericet/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@ericet/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@ericet/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@ericet/tags/cn-reader/">cn-reader</a>, <a class="has-link-grey -link" href="/@ericet/tags/cn-stem/">cn-stem</a>, <a class="has-link-grey -link" href="/@ericet/tags/jjm/">jjm</a>, <a class="has-link-grey -link" href="/@ericet/tags/lassecash/">lassecash</a>, <a class="has-link-grey -link" href="/@ericet/tags/marlians/">marlians</a>, <a class="has-link-grey -link" href="/@ericet/tags/mediaofficials/">mediaofficials</a>, <a class="has-link-grey -link" href="/@ericet/tags/neoxian/">neoxian</a>, <a class="has-link-grey -link" href="/@ericet/tags/palnet/">palnet</a>, <a class="has-link-grey -link" href="/@ericet/tags/sct/">sct</a>, <a class="has-link-grey -link" href="/@ericet/tags/sct-cn/">sct-cn</a>, <a class="has-link-grey -link" href="/@ericet/tags/sct-freeboard/">sct-freeboard</a>, <a class="has-link-grey -link" href="/@ericet/tags/steemleo/">steemleo</a>, <a class="has-link-grey -link" href="/@ericet/tags/steemstem/">steemstem</a>, <a class="has-link-grey -link" href="/@ericet/tags/upfundme/">upfundme</a>, <a class="has-link-grey -link" href="/@ericet/tags/whalepower/">whalepower</a>, <a class="has-link-grey -link" href="/@ericet/tags/zzan/">zzan</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@ericet/esteem-10-3/">
+                <span class="level-item">Esteem降低帖子抽成（10%-&gt;3%)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@ericet/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="ericet" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2019 ericet&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@ericet/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@ericet/content.json"};</script>
+
+
+
+    
+<script src="/@ericet/js/bundle.js" defer></script></body>
+</html>
+
