@@ -1,6 +1,6 @@
 
 ---
-title: '生花，生金，妙笔何在？ Where Is the Magic Pen?'
+title: '生花，生金，妙笔何处寻？ Where Is the Magic Pen?'
 permlink: where-is-the-magic-pen
 catalog: true
 toc_nav_num: true
@@ -101,4 +101,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: ['生花，生金，妙笔何在？ Where Is the Magic Pen?'](https://steemit.com/@bring/where-is-the-magic-pen)
+This page is synchronized from the post: ['生花，生金，妙笔何处寻？ Where Is the Magic Pen?'](https://steemit.com/@bring/where-is-the-magic-pen)
