@@ -22,6 +22,14 @@ tags:
 - zzan
 - marlians
 - busy
+- sct
+- sct-cn
+- sct-freeboard
+- mediaofficials
+- neoxian
+- lassecash
+- upfundme
+- actnearn
 thumbnail: 'https://cdn.steemitimages.com/DQmehhTHjc6u2mFKyeWg2CkixRErF4oJ64ajE8fVkAyaXqo/image.png'
 sidebar:
     right:
@@ -33,7 +41,7 @@ widgets:
 ---
 
 
-Love Bangkok. People, food, culture, massage... all good. Traffic isn't not good though...
+Love Bangkok. People, food, culture, massage... all good. Traffic is not good though...
 
 It was about 6 years ago. I was still young, relatively... :(
 
