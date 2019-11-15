@@ -1,0 +1,140 @@
+
+---
+title: '【新手村计划#126】@andyhsia 一位来自广州的男装设计师'
+permlink: 126andyhsia-mwj6ygv8yn
+catalog: true
+toc_nav_num: true
+toc: true
+position: 9999
+date: 2019-11-15 13:41:39
+categories:
+- cn
+tags:
+- cn
+- cn-interview
+- cn-reader
+- cn-curation
+- whalepower
+- cc
+- sct
+- sct-cn
+- sct-freeboard
+- palnet
+- zzan
+- dblog
+- mediaofficials
+- marlians
+- neoxian
+- lassecash
+- upfundme
+- busy
+- actnearn
+thumbnail: 'http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/11/1715575615.png'
+sidebar:
+    right:
+        sticky: true
+widgets:
+    -
+        type: toc
+        position: right
+---
+
+
+Andy其实加入STEEM有段时间了，但是一直潜伏着，才慢慢的活跃起来。
+
+他的大号@andyhsia会研究一些关于STEEM的入门，而小号@real3earch会教一些绘画。欢迎大家关注Andy的大小号~
+
+&nbsp;
+
+&nbsp;
+
+<strong>问: @andyhsia您居住在哪里?</strong>
+
+我现在居住在广东广州。
+
+&nbsp;
+
+<strong>问: 您的职业?</strong>
+
+我是一名男装设计师。
+
+&nbsp;
+
+<strong>问: 希望大家怎么称呼您?</strong>
+
+我刚进新手村那会，我有个外号叫皮皮虾？好像是美丽取的。
+只是个称呼罢了，大家也可以叫我安迪。
+
+&nbsp;
+
+<strong>问: 什么原因让您加入Steemit?</strong>
+
+加入Steem的缘由，我在这篇post有提到过：https://staging.busy.org/@andyhsia/steem-178fmqwyks。简单说，刚开始只是看看是否有利可图，中间因为忙于其他项目，好一段时间没有更新，现在重新拾起，只是单纯的为了记录与分享。
+
+&nbsp;
+
+<strong>问: 您主要分享什么类别的内容?</strong>
+
+我有两个号。主号很久以前就在村里了，欢迎大家关注@andyhsia，它主要通过steempress跟我的博客同步，平时更多的会更新一些个人生活的记录和博客文章。
+
+另一个号是前段时间才注册，最近开始更新并被大家所知晓的@real3earch，这是一个画画号，目前的方向是画我朋友圈里的好友，并通过文字向大家介绍所画之人是怎样的，我觉得很有趣。
+
+&nbsp;
+
+<strong>问: 您想什么类似的朋友关注您?</strong>
+
+.两个号，背后仍然有很大的内容空间需要grow，我希望是我的内容是大家感兴趣的，这样来关注我。目前来看，@real3earch的价值是很明显的，之后的一段日子里，我希望更新一些绘画教程，来帮助对绘画有兴趣的朋友。
+
+&nbsp;
+
+<strong>问: 您有什么爱好?</strong>
+
+我的爱好比较宽泛，可能是因为我的好奇心很重，很多新事物愿意去尝试。但随之而来的是，我缺乏耐心，所以这也是我打算重拾起steem的缘故。具体的说，电影，音乐，小说，游戏，博客，健身，骑行，爬山等等。
+
+&nbsp;
+
+<strong>问：能谈谈你的steemit ID的由来吧？</strong>
+
+名称的由来，@andyhsia是我的英文名。至于@real3earch，3earch是我本来想注册的名字，它是我取的一个brand名称，但是占用了注册不下来，后来我想起川普的推特命名，就照着前面也加了个real。
+
+<center><img class="aligncenter size-full wp-image-3681" src="http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/11/1715575615.png" alt="" width="500" height="497" /></center><br/>
+
+&nbsp;
+
+本篇文章由 @ericet 整理编写
+
+2019年份新人回顾：
+<a href="https://steemit.com/@team-cn/84hktraveler-zttlpw1qtk">【新手村计划#84】@hktraveler 一位来自香港的科技公司客服</a>
+<a href="https://steemit.com/@team-cn/85chloe1-0nvbft6g8k">【新手村计划#85】@chloe1 一位来自天津的学生</a>
+<a href="https://steemit.com/@team-cn/86robertyanit-rtgi71ssxx">【新手村计划#86】@robertyan 一位世代居住在江南的IT从业者</a>
+<a href="https://busy.org/@team-cn/87honeyday-5mca7www8x">【新手村计划#87】@honeyday 一位现居德国的自由业者</a>
+<a href="https://busy.org/@team-cn/88xiaoxiangyun-6fll7kzyfi">【新手村计划#88】@xiaoxiangyun 一位现居江西南昌的保险代理人</a>
+<a href="https://busy.org/@team-cn/89miniu-6ac5k7cvxt">【新手村计划#89】@miniu 一位来自马国美里的美女大学助教</a>
+<a href="https://busy.org/@team-cn/90devyleona-ucoz4hkkro">【新手村计划#90】@devyleona 一位来自印度尼西亚的银行从业员</a>
+<a href="https://busy.org/@team-cn/91lucindago-64erp8gmgu">【新手村计划#91】@lucindago 一位来自香港的证券公司的接待员</a>
+<a href="https://busy.org/@team-cn/92lovelemon-0ymvt4mzvp">【新手村计划#92】@lovelemon 一位来自马来西亚的赌场荷官主管</a>
+<a href="https://busy.org/@team-cn/93zmx-ulhdp6tcoe" target="_blank" rel="noopener">【新手村计划#93】@zmx 一位来自四川成都的土木工程师</a>
+<a href="https://busy.org/@team-cn/htdp5w4t">【新手村计划#94】@rainyrainy 一位来自四川成都的职业摄影师</a>
+<a href="https://busy.org/@team-cn/95serendip1ty-ybrzu6z2vi">【新手村计划#95】@serendip1ty 一位来自上海的金融/撰稿人</a>
+<a href="https://busy.org/@team-cn/96olymim-8v2follxmh">【新手村计划#96】@olymim 一位来自上海的新媒体撰稿人/手工皮匠</a>
+<a href="https://busy.org/@team-cn/97doraemon526joice-mvtjrg3vsr">【新手村计划#97】@doraemon526joice 一位来自马来西亚的森美兰州的机械工程师</a>
+<a href="https://busy.org/@team-cn/98mylord1992-56ch4jh68q">【新手村计划#98】@mylord1992 一位来自台湾的自由业者</a>
+<a href="https://busy.org/@team-cn/99liushuaidi-vlzmig049z">【新手村计划#99】@liushuaidi 一位现居北京的在校学生</a>
+<a href="https://busy.org/@team-cn/100llh0519-cn0u00mgrz">【新手村计划#100】@llh0519 一位来自江苏常州的自由职业者</a>
+<a href="https://busy.org/@team-cn/101zhongyefu-3rlb2xomeh">【新手村计划#101】@zhongyefu 一位来自上海的基金公司后勤</a>
+<a href="https://busy.org/@team-cn/102windenchanter-uqfhulpb4t">【新手村计划#102】@windenchanter一位来自加拿大的博士后</a>
+<a href="https://busy.org/@team-cn/103doveyan-2jfok5tpn9">【新手村计划#103】@doveyan 一位来自湖南从事产品检测员</a>
+<a href="https://busy.org/@team-cn/104zerofive-x77bgq1k8g">【新手村计划#104】@zerofive 一位来自广东深圳的数据分析师</a>
+<a href="https://busy.org/@team-cn/105lucienyoung-4q0y0cvheo">【新手村计划#105】@lucienyoung 一位来自河北现居北京的电子工程师</a>
+<a href="https://busy.org/@team-cn/106hertz300-4p4le0civu">【新手村计划#106】@hertz300 一位来自广州的产品摄影师</a>
+<a href="https://busy.org/@team-cn/107tiny4-ltfiy21px8">【新手村计划#107】@tiny4 一位来自香港的待业者</a>
+<a href="https://busy.org/@team-cn/108chocolatecat-pnkati0y8c">【新手村计划#108】@chocolatecat 一位来自杭州的血液疾控中心员工</a>
+<a href="https://busy.org/@team-cn/109fsome-j1undjc0r3">【新手村计划#109】@fsome 一位来自西安的自由业者</a>
+<a href="https://busy.org/@team-cn/110ying82-6097v1qgsn">【新手村计划#110】@ying82 一位来自深圳的商场专柜柜长</a>
+<a href="https://busy.org/@team-cn/111brucejamlover-bal6i0wuaz">【新手村计划#111】@brucejamlover 一位来自广东中山的音乐老师和水电安装工人</a>
+<blockquote>【新手村计划】是由 @honoru @ericet @softmetal 发起，目的是访谈一些新人，问他/她一些加入Steemit的问题，然后我们总结一下使用team-cn这个账户发帖。帖子得到的SBD收益将全部归访谈的新人所有。如果您对这个计划有兴趣，可以在帖子下面回复或者发邮件到：steemit.teamcn@gmail.com 需要了解详细计划内容请查看： https://steemit.com/cn/@team-cn/steemit-cn
+</blockquote> <br /><center><hr/><em>Posted from my blog with <a href='https://wordpress.org/plugins/steempress/'>SteemPress</a> : http://cnstm.org/team-cn/2019/11/15/%e3%80%90%e6%96%b0%e6%89%8b%e6%9d%91%e8%ae%a1%e5%88%92126%e3%80%91andyhsia-%e4%b8%80%e4%bd%8d%e6%9d%a5%e8%87%aa%e5%b9%bf%e5%b7%9e%e7%9a%84%e7%94%b7%e8%a3%85%e8%ae%be%e8%ae%a1%e5%b8%88/ </em><hr/></center>
+
+- - -
+
+This page is synchronized from the post: ['【新手村计划#126】@andyhsia 一位来自广州的男装设计师'](https://steemit.com/@team-cn/126andyhsia-mwj6ygv8yn)
