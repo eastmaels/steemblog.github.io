@@ -1,6 +1,6 @@
 
 ---
-title: 'Steem Engine Trading list 20191114'
+title: 'Steem Engine Trading list 20191115'
 permlink: 35qfkq-steem-engine-trading-list-20191114
 catalog: true
 toc_nav_num: true
@@ -122,4 +122,4 @@ https://steem-engine.com/?p=tokens  			2019/11/15				![](https://cdn.steemitimag
 
 - - -
 
-This page is synchronized from the post: ['Steem Engine Trading list 20191114'](https://steemit.com/@m18207319997/35qfkq-steem-engine-trading-list-20191114)
+This page is synchronized from the post: ['Steem Engine Trading list 20191115'](https://steemit.com/@m18207319997/35qfkq-steem-engine-trading-list-20191114)
