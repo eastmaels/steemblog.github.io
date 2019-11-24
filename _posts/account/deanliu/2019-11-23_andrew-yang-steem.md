@@ -8,20 +8,15 @@ toc: true
 position: 9999
 date: 2019-11-23 07:33:36
 categories:
-- cn
-tags:
-- cn
 - dblog
-- jjm
+tags:
+- dblog
+- andrewyang
 - yanggang
-- onboarding
 - steem
 - ubi
 - iwantfreedomdividendtoo
 - sct
-- sct-cn
-- sct-freeboard
-- busy
 thumbnail: None
 sidebar:
     right:
