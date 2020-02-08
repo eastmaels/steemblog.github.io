@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-02-07 14:28:24
 categories:
-- sct
+- sct-en
 tags:
-- sct
 - sct-en
 - sct-freeboard
 - lifestyle
@@ -18,8 +17,6 @@ tags:
 - marlians
 - neoxian
 - jjm
-- coronavirus
-- busy
 thumbnail: 'https://cdn.steemitimages.com/DQmTDYAtb8KvrLtEQ1FGqSXKerQUUgMdcUbnffj5scsP3iw/photo6190229909121640961.jpg'
 sidebar:
     right:
@@ -31,7 +28,7 @@ widgets:
 ---
 
 
-My wife bought these pair of luggage a few days ago.
+My wife bought these pair of luggage labels a few days ago.
 
 They are cute and nice, yes. She could have tones of good reasons to buy them. After all, kids love cartoon characters and luggage labels are quite useful too...
 
