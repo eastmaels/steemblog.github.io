@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>None</title>
+<title>justyy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -81,7 +81,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/@justyy/">
             
-                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="None" height="28">
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
             
             </a>
         </div>
@@ -227,6 +227,793 @@
                 <script src="/@justyy/js/pjax-widget.js"></script>
 
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/naive-bayes-applying-naive-bayes-algorithm-in-rock-sissor-paper-game/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmdFxj6nWrDGfocgznQvFwweD5BoMhVytDd4sDzRkbcMi8/image.png" alt="浅谈 Naive Bayes 算法在石头剪刀布游戏的应用 Applying Naive Bayes Algorithm in Rock-Sissor-Paper Game">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-19T14:57:06.000Z">2017-09-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    11 minutes read (About 1709 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/naive-bayes-applying-naive-bayes-algorithm-in-rock-sissor-paper-game/">浅谈 Naive Bayes 算法在石头剪刀布游戏的应用 Applying Naive Bayes Algorithm in Rock-Sissor-Paper Game</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmdFxj6nWrDGfocgznQvFwweD5BoMhVytDd4sDzRkbcMi8/image.png" alt=""><br><em>Image Credit: pixabay.com</em></p>
+<p>Last Friday, @justyy hosted a rock-sissors-papers wechat group contest for CN community and the contest is going on fire!  </p>
+<p>The robot player just plays randomly without any intelligence at all and I am planing to add the basic intelligence to it by applying the Naive Bayes algorithm.</p>
+<p>The <a href="https://helloacm.com/how-to-use-naive-bayes-to-make-prediction-demonstration-via-sql/" target="_blank" rel="noopener">Naives Bayes</a> model is basically the following formula to compute the probability:</p>
+<p><img src="https://steemitimages.com/DQmfDBAi1CFKCNZE1GnDv7Uv65p4wNqf9Zs5sNwodKJEXRv/image.png" alt=""></p>
+<p>Known the probability of P(A), P(B), and the condition probability of P(A|B), then we can compute the P(B|A). How to apply this to the rock-sissors-papers game?</p>
+<ol>
+<li>Assume the game has been going on for a few turns and the robot has collected enough sampling data (data set)</li>
+<li>We need to compute the P(rock), P(paper), and P(sissors) for both player and the robot.</li>
+<li>Assume the player had X, then we need to compute winning probability of P(scissor | X), P(paper | X) and P(rock | X)</li>
+<li>Pick the one has the largest probability. </li>
+</ol>
+<p>Let&#x2019;s hope this is fun.</p>
+<p>@justyy &#x4E0A;&#x5468;&#x4E94;&#x7684;  <a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">STEEM&#x4E2D;&#x6587;&#x533A;&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;&#x5927;&#x8D5B; - &#x7B2C;&#x4E00;&#x671F; &#xFF08;&#x5956;&#x91D1;30 SBD + &#x5E16;&#x5B50;SBD&#x6536;&#x76CA;&#xFF09; - Rock-Paper-Scissors Gaming Contest for SteemIt CN Community</a> &#x770B;&#x6765;&#x5F88;&#x53D7;&#x6B22;&#x8FCE;&#xFF0C;&#x624D;&#x8FC7;&#x4E00;&#x534A;&#xFF0C;&#x524D;6&#x540D;&#x5DF2;&#x7ECF;&#x7ADE;&#x4E89;&#x7684;&#x4E0D;&#x8981;&#x4E0D;&#x8981;&#x7684;&#x4E86;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmXeAzvZ6Wbk1g4m1iXnwU3PAsHGwub3N5hHtErpx3fGPZ/image.png" alt=""></p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x8981;&#x5F88;&#x8D1F;&#x8D23;&#x7684;&#x544A;&#x8BC9;&#x5927;&#x5BB6;&#xFF0C;&#x73B0;&#x5728;&#x7684;&#x7B97;&#x6CD5;&#x5C31;&#x662F;&#x968F;&#x673A;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x63E3;&#x6D4B;&#x673A;&#x5668;&#x4EBA;&#x7684;&#x667A;&#x5546;&#xFF0C;&#x56E0;&#x4E3A;&#x6839;&#x672C;&#x5C31;&#x6CA1;&#x6709;&#x3002;&#x81F3;&#x4E8E;&#x5934;&#x51E0;&#x540D;&#x600E;&#x4E48;&#x73A9;&#x5230;&#x51E0;&#x5343;&#x5206;&#x7684;&#xFF0C;&#x6211;&#x53EA;&#x80FD;&#x8BF4;&#xFF0C;&#x6211;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x6280;&#x5DE7;&#x662F;&#x5565;&#xFF0C;&#x4E5F;&#x8BB8;&#x771F;&#x7684;&#x662F;&#x95F2;&#x5F97;&#x86CB;&#x75BC;&#xFF0C;&#x54C8;&#x54C8;&#xFF08;&#x6211;&#x81EA;&#x5DF1;&#x4EE5;&#x524D;&#x73A9;&#x8FC7;&#xFF0C;&#x6700;&#x591A;100&#x591A;&#x5206;&#xFF09;</p>
+<p>&#x597D;&#x5427;&#xFF0C;&#x5728;&#x8FD9;&#x671F;&#x7ED3;&#x675F;&#x540E;&#x6211;&#x4F1A;&#x4FEE;&#x6539;&#x7B97;&#x6CD5;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x9650;&#x5236;&#x548C;&#x5206;&#x6570;&#x5956;&#x60E9;&#x60C5;&#x51B5;&#xFF0C;&#x6BD4;&#x5982;&#x6BCF;&#x5929;&#x9650;&#x73A9;&#x6B21;&#x6570;&#x5565;&#x7684;&#xFF0C;&#x9632;&#x6B62;&#x8FD9;&#x6E38;&#x620F;&#x5F71;&#x54CD;&#x5927;&#x5BB6;&#x5B66;&#x4E60;&#x5DE5;&#x4F5C;&#x548C;&#x751F;&#x6D3B;&#x3002;</p>
+<p>&#x5176;&#x4E2D;&#x7B97;&#x6CD5;&#x90E8;&#x5206;&#xFF0C;&#x6211;&#x6253;&#x7B97;&#x7528;  Naive Bayes &#x7B97;&#x6CD5;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x6982;&#x7387;&#x578B;&#x6A21;&#x578B;&#xFF0C;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5C31;&#x662F;:</p>
+<p><img src="https://steemitimages.com/DQmfDBAi1CFKCNZE1GnDv7Uv65p4wNqf9Zs5sNwodKJEXRv/image.png" alt=""></p>
+<p>&#x5DF2;&#x77E5; &#x6982;&#x7387;&#x4E8B;&#x4EF6; P(A), P(B) &#x548C;&#x6761;&#x4EF6;&#x6982;&#x7387; &#x5728;B&#x53D1;&#x751F;&#x540E;A&#x7684;&#x6982;&#x7387; P(A|B)&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x80FD;&#x6C42;&#x51FA; &#x5728; A&#x4E0B; B&#x7684;&#x6982;&#x7387; P(B|A)</p>
+<p>&#x600E;&#x4E48;&#x5E94;&#x7528;&#x5230;<a href="https://justyy.com/archives/3171" target="_blank" rel="noopener">&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;</a>&#x4E0A;&#x5462;&#xFF1F;&#x5F88;&#x7B80;&#x5355;&#x3002;</p>
+<ol>
+<li>&#x5047;&#x8BBE;&#x673A;&#x5668;&#x4EBA;&#x5DF2;&#x7ECF;&#x6536;&#x96C6;&#x5230;&#x4E86;&#x8DB3;&#x591F;&#x7684;&#x6837;&#x672C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x73A9;&#x5BB6;&#x5DF2;&#x7ECF;&#x548C;&#x673A;&#x5668;&#x4EBA;&#x73A9;&#x4E86; 10&#x5C40;&#x5DE6;&#x53F3;&#x3002;</li>
+<li>&#x7EDF;&#x8BA1;&#x51FA; &#x73A9;&#x5BB6;&#x548C;&#x673A;&#x5668;&#x4EBA; &#x51FA; P(&#x526A;&#x5200;)&#x3001;P(&#x77F3;&#x5934;)&#x548C;P(&#x5E03;) &#x5206;&#x522B;&#x7684;&#x6982;&#x7387;&#x3002;</li>
+<li>&#x5047;&#x8BBE;&#x6700;&#x540E;&#x4E00;&#x5C40;&#x73A9;&#x5BB6;&#x51FA;&#x7684;&#x662F; X&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x7B97;&#x51FA; &#x673A;&#x5668;&#x4EBA; P(&#x526A;&#x5200;|X)&#x3001;P(&#x5E03;|X)&#x3001;P(&#x77F3;&#x5934;|X)&#x7684;&#x80DC;&#x7387;&#x3002;</li>
+<li>&#x7136;&#x540E;&#x53D6;&#x6700;&#x5927;&#x7684;&#x90A3;&#x4E2A;&#x80DC;&#x7387;&#x51FA;&#x5373;&#x53EF;&#x3002;</li>
+</ol>
+<p>&#x6548;&#x679C;&#x5982;&#x4F55;&#x5462;&#xFF1F;&#x8BA9;&#x6211;&#x4EEC;&#x62ED;&#x76EE;&#x4EE5;&#x5F85;&#x5427;&#x3002;</p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<p>STEEMIT &#x4E2D;&#x6587;&#x533A; RSS &#x5DE5;&#x5177;&#x548C;&#x540D;&#x5355;:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6587;&#x7AE0;&#x5217;&#x8868;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/comments/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x8BC4;&#x8BBA;&#x5217;&#x8868;</a></li>
+</ul>
+<p>Chrome &#x63D2;&#x4EF6;:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5269" target="_blank" rel="noopener">&#x9690;&#x85CF;&#x6536;&#x76CA;&#xFF0C;&#x4E13;&#x6CE8;&#x5199;&#x4F5C;&#xFF01;</a></li>
+<li><a href="https://justyy.com/archives/5016" target="_blank" rel="noopener">&#x7B80;&#x7E41;&#x4F53;&#x81EA;&#x52A8;&#x8F6C;&#x6362;</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5241" target="_blank" rel="noopener">&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458;&#x5173;&#x6CE8;&#x548C;&#x7C89;&#x4E1D;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5070" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5063" target="_blank" rel="noopener">&#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account</a></li>
+</ul>
+<p>&#x6700;&#x8FD1;&#x5E16;&#x5B50;:</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-19" target="_blank" rel="noopener">CN &#x6BCF;&#x65E5;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://justyy.com/archives/5340" target="_blank" rel="noopener">&#x6D45;&#x8C08; Naive Bayes &#x7B97;&#x6CD5;&#x5728;&#x77F3;&#x5934;&#x526A;&#x5200;&#x5E03;&#x6E38;&#x620F;&#x7684;&#x5E94;&#x7528;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/logic-tests-series-2-decr-decr" target="_blank" rel="noopener">&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217;&#x4E4B;&#x4E8C; - DECR</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x6253;&#x7B97;&#x6362;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x6BCF;&#x5E74;&#x4E5F;&#x5F97;&#x53BB;&#x9762;&#x8BD5;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">STEEM&#x4E2D;&#x6587;&#x533A;&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;&#x5927;&#x8D5B; - &#x7B2C;&#x4E00;&#x671F; &#xFF08;&#x5956;&#x91D1;30 SBD + &#x5E16;&#x5B50;SBD&#x6536;&#x76CA;&#xFF09;</a></li>
+</ul>
+<p>STEEMIT CN RSS Tools:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">SteemIt Daily Wechat Group Ranking </a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/" target="_blank" rel="noopener">SteemIt CN RSS for Posts</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/comments/" target="_blank" rel="noopener">SteemIt CN RSS for Comments</a></li>
+</ul>
+<p>Chrome Extensions:</p>
+<ul>
+<li><a href="https://helloacm.com/hide-steemit-payout/" target="_blank" rel="noopener">Hide Steemit Payout</a></li>
+<li><a href="https://helloacm.com/chrome-extension-to-switch-between-simplified-chinese-and-traditional-chinese-automatically/" target="_blank" rel="noopener">Simplified to Traditional Switch</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://helloacm.com/steemit-api-two-apis-to-get-the-followers-and-following-list-in-the-wechat-group/" target="_blank" rel="noopener">Two APIs to get the followers and following list in the Wechat Group</a></li>
+<li><a href="https://helloacm.com/how-to-get-transfer-history-of-steemit-accounts-via-steemit-apitransfer-history/" target="_blank" rel="noopener">SteemIt API/transfer-history</a></li>
+<li><a href="https://helloacm.com/how-to-retrieve-steemit-account-information-via-api-steemitaccount/" target="_blank" rel="noopener">steemit/account</a></li>
+</ul>
+<p>Recent Posts:</p>
+<ul>
+<li><a href="https://steemit.com/stats/@dailystats/daily-top-30-authors-pending-payout-in-the-last-7-days-2017-09-19" target="_blank" rel="noopener">Daily Top 30 Authors by Pending Payout in Last 7 Days</a></li>
+<li><a href="https://helloacm.com/applying-naive-bayes-algorithm-in-rock-scissor-paper-game/" target="_blank" rel="noopener">Applying Naive Bayes Algorithm in Rock-Scissor-Paper Game</a></li>
+<li><a href="https://steemit.com/cn/@justyy/logic-tests-series-2-decr-decr" target="_blank" rel="noopener">Logic Tests Series (2) - DECR</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">Go to an Interview even if you are not changing your job.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">Rock-Paper-Scissors Gaming Contest for SteemIt CN Community</a></li>
+</ul>
+<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
+<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
+<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A; <a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></strong></p>
+<p><img src="https://justyy.com/gif/justyy-php-is-the-best.gif" alt=""><br>&#x6B22;&#x8FCE;&#x4F60;&#x53D1;&#x8868;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#x548C;&#x770B;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x610F;&#x601D;&#x7684;&#x8BC4;&#x8BBA;&#x6211;&#x53EF;&#x80FD;&#x4F1A;&#x5956;&#x52B1;&#x4F60;1 SBD&#x54E6;&#x3002;<br>Interesting Comments might be rewarded with 1 SBD.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/naive-bayes-applying-naive-bayes-algorithm-in-rock-sissor-paper-game" target="_blank" rel="noopener">&#x6D45;&#x8C08; Naive Bayes &#x7B97;&#x6CD5;&#x5728;&#x77F3;&#x5934;&#x526A;&#x5200;&#x5E03;&#x6E38;&#x620F;&#x7684;&#x5E94;&#x7528; Applying Naive Bayes Algorithm in Rock-Sissor-Paper Game</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/daily-cn-updates---cn72017-09-19/" class="image is-7by1">
+            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-19)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-19T11:00:15.000Z">2017-09-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1782 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates---cn72017-09-19/">Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-19)</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-09-19 11:11:03 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-09-15 11:11:03 (UTC) to 2017-09-16 11:11:03 (UTC)</p>
+<h2 id="2017-09-19-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-09-19-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-09-19 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-09-19 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @susanli3769 | <a href="https://steemit.com/work-bully/@susanli3769/bully-at-work-hard-to-understand-and-guess-boss-s-mind" target="_blank" rel="noopener">&#x804C;&#x573A;&#x9738;&#x51CC;- &#x8001;&#x677F;&#x7684;&#x5FC3;&#x4E8B;&#x5F88;&#x96BE;&#x731C;  Bully at work- hard to understand and guess boss&#x2019;s mind</a> |<br>| 2 | @incrediblesnow | <a href="https://steemit.com/cn/@incrediblesnow/15-9-2017-cn-abuse-report-for-cn-abuse-on-15-9-2017" target="_blank" rel="noopener">15/9/2017 Cn-abuse &#x7684;&#x62A5;&#x544A; &#xFF08; Report for Cn-abuse on 15/9/2017&#xFF09;</a> |<br>| 3 | @travelgirl | <a href="https://steemit.com/travel/@travelgirl/traveling-the-world-55-asia-series-harbin-international-ice-and-snow-sculpture-festival-harbin-china-2-55" target="_blank" rel="noopener">Traveling the World #55 (Asia Series) Harbin International Ice and Snow Sculpture Festival - Harbin @ China ????  (2) - &#x5411;&#x4E16;&#x754C;&#x51FA;&#x767C; #55 (&#x4E9E;&#x6D32;&#x7CFB;&#x5217;) - &#x54C8;&#x723E;&#x6FF1;&#x5BD2;&#x51B7;&#x4E4B;&#x65C5; - &#x54C8;&#x723E;&#x6FF1;&#x570B;&#x969B;&#x51B0;&#x96EA;&#x7BC0; @ &#x54C8;&#x723E;&#x6FF1;, &#x4E2D;&#x570B; ???? (&#x4E0B;&#xFF09;</a> |<br>| 4 | @mrspointm | <a href="https://steemit.com/drawingchallenge/@mrspointm/drawing-challenge-5-my-right-hand-and-winners-for-the-quiz-5-and-sbd" target="_blank" rel="noopener">Drawing Challenge #5&#xFF1A; My Right Hand &amp;&#xFF08;Winners for the Quiz&#xFF09;/&#x7ED8;&#x753B;&#x6311;&#x6218;&#x8D5B; #5&#xFF1A;&#x6211;&#x7684;&#x53F3;&#x624B; &amp; &#x6709;&#x5956;&#x7ADE;&#x731C;&#x83B7;&#x5956;SBD&#x516C;&#x5E03;</a> |<br>| 5 | @liflorence | <a href="https://steemit.com/travel/@liflorence/follow-me-to-the-fantastic-island-stone-town-zanzibar" target="_blank" rel="noopener">Follow me to the fantastic island#Stone town, Zanzibar&#x8DDF;&#x6211;&#x53BB;&#x9B45;&#x529B;&#x4E4B;&#x5C9B;&#x6851;&#x7ED9;&#x5DF4;&#x5C14;&#x5C9B;&#x77F3;&#x5934;&#x57CE;</a> |<br>| 6 | @mrpointp | <a href="https://steemit.com/cn/@mrpointp/4iuky2-original" target="_blank" rel="noopener">&#x751F;&#x6D3B;&#x4E0D;&#x6613;&#xFF0C;&#x8BF7;&#x7ED9;&#x5916;&#x5356;&#x5C0F;&#x54E5;&#x591A;&#x4E00;&#x70B9;&#x5BBD;&#x5BB9; (Original)</a> |<br>| 7 | @liangfengyouren | <a href="https://steemit.com/cn/@liangfengyouren/or-7" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x771F;&#x6B63;&#x7684;&#x5174;&#x8DA3;&#xFF1F;  &#x8C37;&#x54E5;&#x70B9;&#x540D;#7</a> |<br>| 8 | @magicmonk | <a href="https://steemit.com/cn/@magicmonk/60-25-60-things-that-didn-t-exist-25-years-ago" target="_blank" rel="noopener">60&#x4EF6;25&#x5E74;&#x524D;&#x6C92;&#x6709;&#x7684;&#x6771;&#x897F; 60 things that didn&#x2019;t exist 25 years ago</a> |<br>| 9 | @lymichale | <a href="https://steemit.com/cn/@lymichale/delicious-foods-in-hometown-1-and" target="_blank" rel="noopener">Delicious foods in hometown/&#x5609;&#x5DDE;&#x7F8E;&#x98DF;#1&#x2014;&#x2014;&#x82CF;&#x7A3D;&#x7C73;&#x82B1;&#x7CD6;&#xFF0C;&#x9999;&#x751C;&#x4E86;&#x8C01;&#x7684;&#x56DE;&#x5FC6;&#xFF1F;&amp;&#x6709;&#x5956;&#x7ADE;&#x731C;&#x83B7;&#x5956;&#x7ED3;&#x679C;</a> |<br>| 10 | @jychbetter | <a href="https://steemit.com/cn/@jychbetter/finally-sign-up-successfully-first-must-be-introduce-myself" target="_blank" rel="noopener">Finally sign up successfully&#xFF01;First must be introduce myself &#x7EC8;&#x4E8E;&#x6709;&#x81EA;&#x5DF1;&#x8D26;&#x53F7;&#x4E86;&#xFF01;&#x9996;&#x53D1;&#x81EA;&#x6211;&#x4ECB;&#x7ECD;&#xFF01;</a> |<br>&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x6587;&#x7AE0;&#x603B;&#x6570;: 13</p>
+<h2 id="2017-09-19-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-09-19-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-09-19 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-09-19 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;&#x5C11;&#x91CF;&#x4FEE;&#x6539;&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|&#x2014;:|&#x2014;:|<br>| 1| @oflyhigh | 7 | 2561 | 1621.00 |231.57 |<br>| 2| @deanliu | 6 | 1673 | 1094.92 |182.49 |<br>| 3| @tumutanzi | 7 | 1210 | 1058.50 |151.21 |<br>| 4| @htliao | 7 | 1358 | 1040.65 |148.66 |<br>| 5| @rivalhw | 6 | 1288 | 1014.78 |169.13 |<br>| 6| @justyy | 18 | 2010 | 848.73 |47.15 |<br>| 7| @jubi | 12 | 1183 | 809.91 |67.49 |<br>| 8| @blackbunny | 7 | 991 | 798.20 |114.03 |<br>| 9| @guyverckw | 11 | 1160 | 794.10 |72.19 |<br>| 10| @linuslee0216 | 6 | 1072 | 780.45 |130.07 |<br>| 11| @elfkitchen | 8 | 1242 | 764.63 |95.58 |<br>| 12| @nicolemoker | 5 | 1008 | 739.89 |147.98 |<br>| 13| @stacee | 6 | 995 | 738.77 |123.13 |<br>| 14| @bxt | 9 | 880 | 713.99 |79.33 |<br>| 15| @wilkinshui | 8 | 1122 | 676.35 |84.54 |<br>| 16| @aaronli | 7 | 881 | 628.92 |89.85 |<br>| 17| @kitcat | 6 | 818 | 606.14 |101.02 |<br>| 18| @hannahwu | 9 | 837 | 591.69 |65.74 |<br>| 19| @myfirst | 4 | 680 | 583.51 |145.88 |<br>| 20| @twinkledrop | 5 | 513 | 568.04 |113.61 |<br>| 21| @joythewanderer | 8 | 950 | 565.67 |70.71 |<br>| 22| @ace108 | 25 | 2407 | 554.13 |22.17 |<br>| 23| @dapeng | 8 | 717 | 539.11 |67.39 |<br>| 24| @rea | 2 | 650 | 442.52 |221.26 |<br>| 25| @tvb | 6 | 454 | 420.19 |70.03 |<br>| 26| @susanlo | 2 | 654 | 408.84 |204.42 |<br>| 27| @mrspointm | 6 | 813 | 404.58 |67.43 |<br>| 28| @goodboyphilip | 10 | 335 | 399.90 |39.99 |<br>| 29| @bring | 15 | 919 | 397.42 |26.49 |<br>| 30| @lemooljiang | 10 | 769 | 376.28 |37.63 |</p>
+<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
+<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
+<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~<br>The quality-content-upvoting-bot motivates for more good contents in [CN], however, I will also upvote other authors if good content are produced.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">&#x65F6;&#x95F4; Time</th>
+<th style="text-align:right">&#x4F5C;&#x8005; Author</th>
+<th style="text-align:right">&#x6587;&#x7AE0; Post</th>
+<th style="text-align:right">&#x6743;&#x91CD; Weighting %</th>
+<th style="text-align:right">VP %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">2017-09-18 00:23:23</td>
+<td style="text-align:right">@kitcat</td>
+<td style="text-align:right"><a href="https://steemit.com/@kitcat/movie-review-a-beautiful-mind" target="_blank" rel="noopener">@kitcat</a></td>
+<td style="text-align:right">13.96</td>
+<td style="text-align:right">84.64</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 00:24:44</td>
+<td style="text-align:right">@travelgirl</td>
+<td style="text-align:right"><a href="https://steemit.com/@travelgirl/steemitphotochallenge-entry-2-theme-futuristic-back-to-the-future-car-osaka-japan-or-steemitphotochallenge-2" target="_blank" rel="noopener">@travelgirl</a></td>
+<td style="text-align:right">8.86</td>
+<td style="text-align:right">84.41</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 01:23:11</td>
+<td style="text-align:right">@blackbunny</td>
+<td style="text-align:right"><a href="https://steemit.com/@blackbunny/2eejca" target="_blank" rel="noopener">@blackbunny</a></td>
+<td style="text-align:right">18.76</td>
+<td style="text-align:right">83.37</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 04:23:16</td>
+<td style="text-align:right">@jubi</td>
+<td style="text-align:right"><a href="https://steemit.com/@jubi/drawing-challenge-5-upvote" target="_blank" rel="noopener">@jubi</a></td>
+<td style="text-align:right">19.25</td>
+<td style="text-align:right">85.54</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 05:00:24</td>
+<td style="text-align:right">@lemooljiang</td>
+<td style="text-align:right"><a href="https://steemit.com/@lemooljiang/196" target="_blank" rel="noopener">@lemooljiang</a></td>
+<td style="text-align:right">9.00</td>
+<td style="text-align:right">85.73</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 05:23:13</td>
+<td style="text-align:right">@htliao</td>
+<td style="text-align:right"><a href="https://steemit.com/@htliao/tenx" target="_blank" rel="noopener">@htliao</a></td>
+<td style="text-align:right">20.61</td>
+<td style="text-align:right">85.88</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 05:46:33</td>
+<td style="text-align:right">@hannahwu</td>
+<td style="text-align:right"><a href="https://steemit.com/@hannahwu/ivan-in-heshan-park-photography" target="_blank" rel="noopener">@hannahwu</a></td>
+<td style="text-align:right">11.59</td>
+<td style="text-align:right">85.83</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 06:00:12</td>
+<td style="text-align:right">@stacee</td>
+<td style="text-align:right"><a href="https://steemit.com/@stacee/by47q" target="_blank" rel="noopener">@stacee</a></td>
+<td style="text-align:right">19.31</td>
+<td style="text-align:right">85.82</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 09:00:24</td>
+<td style="text-align:right">@ace108</td>
+<td style="text-align:right"><a href="https://steemit.com/@ace108/improved-top-20-level-1-commenters-for-20170917-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
+<td style="text-align:right">14.52</td>
+<td style="text-align:right">87.97</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 09:46:24</td>
+<td style="text-align:right">@elfkitchen</td>
+<td style="text-align:right"><a href="https://steemit.com/@elfkitchen/steamed-bun-with-brown-sugar" target="_blank" rel="noopener">@elfkitchen</a></td>
+<td style="text-align:right">19.88</td>
+<td style="text-align:right">88.35</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 10:46:09</td>
+<td style="text-align:right">@deanliu</td>
+<td style="text-align:right"><a href="https://steemit.com/@deanliu/one-hutong-in-beijing-a-travel-in-time" target="_blank" rel="noopener">@deanliu</a></td>
+<td style="text-align:right">20.20</td>
+<td style="text-align:right">84.18</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 11:23:16</td>
+<td style="text-align:right">@guyverckw</td>
+<td style="text-align:right"><a href="https://steemit.com/@guyverckw/u-pot-hot-pot-dinner" target="_blank" rel="noopener">@guyverckw</a></td>
+<td style="text-align:right">16.54</td>
+<td style="text-align:right">84.82</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 11:24:29</td>
+<td style="text-align:right">@bxt</td>
+<td style="text-align:right"><a href="https://steemit.com/@bxt/what-kidnapped-you-in-your-life" target="_blank" rel="noopener">@bxt</a></td>
+<td style="text-align:right">16.39</td>
+<td style="text-align:right">84.06</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 11:24:48</td>
+<td style="text-align:right">@nicolemoker</td>
+<td style="text-align:right"><a href="https://steemit.com/@nicolemoker/travel-with-nicole-8-hong-kong-van-gogh-senses-van-gogh-senses" target="_blank" rel="noopener">@nicolemoker</a></td>
+<td style="text-align:right">13.82</td>
+<td style="text-align:right">83.78</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 11:25:17</td>
+<td style="text-align:right">@yyyy</td>
+<td style="text-align:right"><a href="https://steemit.com/@yyyy/5fb9y-because-of-love" target="_blank" rel="noopener">@yyyy</a></td>
+<td style="text-align:right">8.77</td>
+<td style="text-align:right">83.55</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 12:46:17</td>
+<td style="text-align:right">@oflyhigh</td>
+<td style="text-align:right"><a href="https://steemit.com/@oflyhigh/9-18" target="_blank" rel="noopener">@oflyhigh</a></td>
+<td style="text-align:right">19.49</td>
+<td style="text-align:right">81.19</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 13:00:40</td>
+<td style="text-align:right">@tumutanzi</td>
+<td style="text-align:right"><a href="https://steemit.com/@tumutanzi/4jcv7d" target="_blank" rel="noopener">@tumutanzi</a></td>
+<td style="text-align:right">19.45</td>
+<td style="text-align:right">81.06</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 13:01:20</td>
+<td style="text-align:right">@dapeng</td>
+<td style="text-align:right"><a href="https://steemit.com/@dapeng/markdown-steemit-tips-the-best-markdown-editors" target="_blank" rel="noopener">@dapeng</a></td>
+<td style="text-align:right">10.90</td>
+<td style="text-align:right">80.74</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 13:47:09</td>
+<td style="text-align:right">@joythewanderer</td>
+<td style="text-align:right"><a href="https://steemit.com/@joythewanderer/trip-report-trekking-in-condoriri-the-cordillera-real-of-bolivia" target="_blank" rel="noopener">@joythewanderer</a></td>
+<td style="text-align:right">13.13</td>
+<td style="text-align:right">79.57</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 13:47:42</td>
+<td style="text-align:right">@aaronli</td>
+<td style="text-align:right"><a href="https://steemit.com/@aaronli/hong-kong-style-1-hong-kong-local-craft-beer-moonzen-brewery-style-1" target="_blank" rel="noopener">@aaronli</a></td>
+<td style="text-align:right">10.75</td>
+<td style="text-align:right">79.66</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 13:48:59</td>
+<td style="text-align:right">@goodboyphilip</td>
+<td style="text-align:right"><a href="https://steemit.com/@goodboyphilip/eng-014-japan-gourmet-travel-guide-fellows-upstairs-and-upstairs-hamburger-philip-goodboy-philip-tokyo" target="_blank" rel="noopener">@goodboyphilip</a></td>
+<td style="text-align:right">8.35</td>
+<td style="text-align:right">79.50</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 14:46:19</td>
+<td style="text-align:right">@rivalhw</td>
+<td style="text-align:right"><a href="https://steemit.com/@rivalhw/2qwafy-steemit" target="_blank" rel="noopener">@rivalhw</a></td>
+<td style="text-align:right">19.24</td>
+<td style="text-align:right">80.16</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 14:46:49</td>
+<td style="text-align:right">@tvb</td>
+<td style="text-align:right"><a href="https://steemit.com/@tvb/9-18" target="_blank" rel="noopener">@tvb</a></td>
+<td style="text-align:right">8.35</td>
+<td style="text-align:right">79.54</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 14:47:09</td>
+<td style="text-align:right">@bring</td>
+<td style="text-align:right"><a href="https://steemit.com/@bring/steemit-three-brothers-on-steemit" target="_blank" rel="noopener">@bring</a></td>
+<td style="text-align:right">8.34</td>
+<td style="text-align:right">79.40</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 16:10:11</td>
+<td style="text-align:right">@linuslee0216</td>
+<td style="text-align:right"><a href="https://steemit.com/@linuslee0216/4sepnb" target="_blank" rel="noopener">@linuslee0216</a></td>
+<td style="text-align:right">17.61</td>
+<td style="text-align:right">78.28</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 16:33:56</td>
+<td style="text-align:right">@krischy</td>
+<td style="text-align:right"><a href="https://steemit.com/@krischy/pet-beauty-competition" target="_blank" rel="noopener">@krischy</a></td>
+<td style="text-align:right">8.06</td>
+<td style="text-align:right">76.75</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-18 23:40:15</td>
+<td style="text-align:right">@wilkinshui</td>
+<td style="text-align:right"><a href="https://steemit.com/@wilkinshui/5-bts" target="_blank" rel="noopener">@wilkinshui</a></td>
+<td style="text-align:right">13.28</td>
+<td style="text-align:right">80.51</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 01:50:14</td>
+<td style="text-align:right">@ace108</td>
+<td style="text-align:right"><a href="https://steemit.com/@ace108/improved-top-20-level-1-commenters-for-20170918-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
+<td style="text-align:right">10.65</td>
+<td style="text-align:right">78.87</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 02:01:31</td>
+<td style="text-align:right">@twinkledrop</td>
+<td style="text-align:right"><a href="https://steemit.com/@twinkledrop/travel-with-rainie-in-star-wars-themed-lego-scene-of-legoland-windsor-part-2-my-dream-come-true-part-2" target="_blank" rel="noopener">@twinkledrop</a></td>
+<td style="text-align:right">10.64</td>
+<td style="text-align:right">78.85</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 02:20:21</td>
+<td style="text-align:right">@blackbunny</td>
+<td style="text-align:right"><a href="https://steemit.com/@blackbunny/7jzwwb" target="_blank" rel="noopener">@blackbunny</a></td>
+<td style="text-align:right">17.76</td>
+<td style="text-align:right">78.93</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 02:21:10</td>
+<td style="text-align:right">@bring</td>
+<td style="text-align:right"><a href="https://steemit.com/@bring/where-ever-are-you" target="_blank" rel="noopener">@bring</a></td>
+<td style="text-align:right">8.26</td>
+<td style="text-align:right">78.65</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 02:50:28</td>
+<td style="text-align:right">@mrspointm</td>
+<td style="text-align:right"><a href="https://steemit.com/@mrspointm/explore-taikoo-li-6-line-friends-cafe-and-store-and-fast-food-in-taikoo-li-6" target="_blank" rel="noopener">@mrspointm</a></td>
+<td style="text-align:right">8.30</td>
+<td style="text-align:right">79.06</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 03:20:17</td>
+<td style="text-align:right">@guyverckw</td>
+<td style="text-align:right"><a href="https://steemit.com/@guyverckw/or-sodastream-sparkling-water-maker" target="_blank" rel="noopener">@guyverckw</a></td>
+<td style="text-align:right">17.85</td>
+<td style="text-align:right">79.32</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 03:30:36</td>
+<td style="text-align:right">@jubi</td>
+<td style="text-align:right"><a href="https://steemit.com/@jubi/pageviews-how-to-increase-pageviews" target="_blank" rel="noopener">@jubi</a></td>
+<td style="text-align:right">17.81</td>
+<td style="text-align:right">79.17</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 05:40:21</td>
+<td style="text-align:right">@bxt</td>
+<td style="text-align:right"><a href="https://steemit.com/@bxt/speaking-of-crabs-in-autumn" target="_blank" rel="noopener">@bxt</a></td>
+<td style="text-align:right">15.73</td>
+<td style="text-align:right">80.68</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 05:55:25</td>
+<td style="text-align:right">@goodboyphilip</td>
+<td style="text-align:right"><a href="https://steemit.com/@goodboyphilip/eng-015-japan-gourmet-travel-guide-hill-like-warship-sushi-goodboy-philip-tokyo" target="_blank" rel="noopener">@goodboyphilip</a></td>
+<td style="text-align:right">8.47</td>
+<td style="text-align:right">80.63</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 06:40:22</td>
+<td style="text-align:right">@elfkitchen</td>
+<td style="text-align:right"><a href="https://steemit.com/@elfkitchen/homemade-nougat" target="_blank" rel="noopener">@elfkitchen</a></td>
+<td style="text-align:right">15.82</td>
+<td style="text-align:right">81.10</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 07:05:12</td>
+<td style="text-align:right">@stacee</td>
+<td style="text-align:right"><a href="https://steemit.com/@stacee/better-than-any-restaurant-mom-s-cooking-part-7" target="_blank" rel="noopener">@stacee</a></td>
+<td style="text-align:right">13.40</td>
+<td style="text-align:right">81.18</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 08:30:28</td>
+<td style="text-align:right">@dapeng</td>
+<td style="text-align:right"><a href="https://steemit.com/@dapeng/three-lies-on-steemit" target="_blank" rel="noopener">@dapeng</a></td>
+<td style="text-align:right">11.07</td>
+<td style="text-align:right">82.00</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 10:00:18</td>
+<td style="text-align:right">@htliao</td>
+<td style="text-align:right"><a href="https://steemit.com/@htliao/party-room" target="_blank" rel="noopener">@htliao</a></td>
+<td style="text-align:right">18.38</td>
+<td style="text-align:right">76.59</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 10:40:24</td>
+<td style="text-align:right">@rea</td>
+<td style="text-align:right"><a href="https://steemit.com/@rea/a-stroll-through-the-streets-of-paris-part-1" target="_blank" rel="noopener">@rea</a></td>
+<td style="text-align:right">10.39</td>
+<td style="text-align:right">76.98</td>
+</tr>
+<tr>
+<td style="text-align:right">2017-09-19 10:46:26</td>
+<td style="text-align:right">@deanliu</td>
+<td style="text-align:right"><a href="https://steemit.com/@deanliu/a-7-mins-and-345-km-ride-on-taiwan-high-speed-rail-x" target="_blank" rel="noopener">@deanliu</a></td>
+<td style="text-align:right">18.59</td>
+<td style="text-align:right">77.45</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<h2 id="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;"><a href="#&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;" class="headerlink" title="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:"></a>&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:</h2><ul>
+<li>&#x53D6;&#x7684;&#x662F;&#x53D1;&#x8D34;&#x5728;3 &#x5230;4&#x5929;&#x524D;&#x7684; 10&#x4E2A;&#x8F83;&#x5C11;&#x6536;&#x76CA;&#xFF08;&#x8F83;&#x5C11;&#x88AB;&#x5173;&#x6CE8;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x8D28;&#x91CF;&#x53C8;&#x8F83;&#x4E0D;&#x9519;&#xFF09;&#x7684;&#x5E16;&#x5B50;&#x3002;</li>
+<li>&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x53BB;&#x6389;&#x4E86; &#x6211;&#x81EA;&#x5DF1;&#x7684;&#x5E16;&#x5B50; @justyy</li>
+<li>&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5FAE;&#x8C03;&#x53C2;&#x6570;&#x8BA9;&#x7ED3;&#x679C;&#x66F4;&#x5408;&#x7406;&#x3002;</li>
+<li>&#x67E5;&#x8BE2;SQL&#x8BED;&#x53E5;&#x548C;&#x53C2;&#x6570;&#x6682;&#x65F6;&#x4E0D;&#x516C;&#x5F00;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4F1A;&#x66F4;&#x516C;&#x5E73;&#x4E00;&#x4E9B;&#x3002;<br><img src="https://justyy.com/gif/steemit.gif" alt=""></li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 25&#x5929;&#x3002; i.e. <a href="https://steemit.com/cn/@justyy/2017-08-25" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E00;&#x5929;</a>, <a href="https://steemit.com/ranking/@justyy/2017-08-26-cn" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E8C;&#x5929;</a><br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em><br>Tags: #cn</p>
+<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A; <a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></strong></p>
+<p><img src="https://justyy.com/gif/justyy-php-is-the-best.gif" alt=""><br>&#x6B22;&#x8FCE;&#x4F60;&#x53D1;&#x8868;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#x548C;&#x770B;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x610F;&#x601D;&#x7684;&#x8BC4;&#x8BBA;&#x6211;&#x53EF;&#x80FD;&#x4F1A;&#x5956;&#x52B1;&#x4F60;1 SBD&#x54E6;&#x3002;<br>Interesting Comments might be rewarded with 1 SBD.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates---cn72017-09-19" target="_blank" rel="noopener">Daily #CN Updates - CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;&#x3010;&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;(2017-09-19)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmXLJ3f8LrpDSp1eto3ewY5W5a97eAviGi9LJuw9QajLti/image.png" alt="cn区最低保障系统 上线了！ Introduction to the CN Wechat Group Voting Robot @justyy">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-18T15:58:06.000Z">2017-09-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    14 minutes read (About 2106 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy/">cn区最低保障系统 上线了！ Introduction to the CN Wechat Group Voting Robot @justyy</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmXLJ3f8LrpDSp1eto3ewY5W5a97eAviGi9LJuw9QajLti/image.png" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>@shenchensucc  12&#x5929;&#x524D;&#x5199;&#x4E86; <a href="https://steemit.com/cn/@shenchensucc/yy-cn" target="_blank" rel="noopener">YY&#x4E00;&#x4E2A;cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF;</a> &#x8001;&#x5B9E;&#x8BF4;&#xFF0C;&#x89C4;&#x5219;&#x592A;&#x590D;&#x6742;&#xFF0C;&#x5B9E;&#x73B0;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x96BE;&#x5EA6;&#xFF08;&#x4E0D;&#x4EC5;&#x662F;&#x7A0B;&#x5E8F;&#xFF0C;&#x800C;&#x4E14;&#x8FD8;&#x8981;&#x8003;&#x8651;&#x5230; @justyy &#x673A;&#x5668;&#x4EBA;&#x7684;&#x8D44;&#x6E90; VP, SP&#xFF09;&#x3002;</p>
+<p>&#x4ECA;&#x5929; YY&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x96CF;&#x5F62;&#xFF0C;&#x5F53;&#x7136;&#x89C4;&#x5219;&#x8FD8;&#x9700;&#x8981;&#x8FDB;&#x4E00;&#x6B65;&#x7EC6;&#x5316;&#xFF0C;&#x73B0;<a href="https://justyy.com/archives/5260" target="_blank" rel="noopener">&#x673A;&#x5668;&#x4EBA;</a>&#x5DF2;&#x7ECF;&#x4E0A;&#x7EBF;&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x53CA;&#x89C4;&#x5219;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h1 id="&#x8C01;&#x80FD;&#x4F7F;&#x7528;"><a href="#&#x8C01;&#x80FD;&#x4F7F;&#x7528;" class="headerlink" title="&#x8C01;&#x80FD;&#x4F7F;&#x7528;"></a>&#x8C01;&#x80FD;&#x4F7F;&#x7528;</h1><p>&#x9700;&#x8981;&#x662F; CN &#x533A; &#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458; &#x5E76;&#x5728;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x4E0A;&#xFF1A; <a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit/wechat/</a></p>
+<h1 id="&#x600E;&#x4E48;&#x4F7F;&#x7528;"><a href="#&#x600E;&#x4E48;&#x4F7F;&#x7528;" class="headerlink" title="&#x600E;&#x4E48;&#x4F7F;&#x7528;"></a>&#x600E;&#x4E48;&#x4F7F;&#x7528;</h1><p>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x53EA;&#x9700;&#x8981; &#x4EE3;&#x7406;&#x7ED9; @justyy &#x4EFB;&#x610F;&#x91CF;&#x7684;SP&#xFF0C;&#x4FE1;&#x4EFB;&#x53EF;&#x4EE5;&#x4ECE;&#x6700;&#x57FA;&#x672C;&#x7684;&#x6BD4;&#x5982;  20 SP&#x505A;&#x8D77;&#x3002;</p>
+<h2 id="&#x600E;&#x4E48;&#x4EE3;&#x7406;&#xFF1F;"><a href="#&#x600E;&#x4E48;&#x4EE3;&#x7406;&#xFF1F;" class="headerlink" title="&#x600E;&#x4E48;&#x4EE3;&#x7406;&#xFF1F;"></a>&#x600E;&#x4E48;&#x4EE3;&#x7406;&#xFF1F;</h2><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="https://justyy.com/archives/5106" target="_blank" rel="noopener">vessel</a> &#x94B1;&#x5305;(  &#x4F5C;&#x8005;&#xFF1A; @jesta  &#x5F00;&#x6E90;steemit&#x94B1;&#x5305;  ):  <a href="https://steemit.com/steem-project/@jesta/vessel-006-steem-power-delegation" target="_blank" rel="noopener">https://steemit.com/steem-project/@jesta/vessel-006-steem-power-delegation</a></p>
+<p>&#x6216;&#x8005;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; steemconnect &#x6BD4;&#x5982;&#x4E0B;&#x9762;URL&#x4EE3;&#x7406;20SP&#x7ED9; @justyy &#x673A;&#x5668;&#x4EBA;</p>
+<p><a href="https://v2.steemconnect.com/sign/delegateVestingShares?delegator=YOUR_STEEM_ID&amp;delegatee=justyy&amp;vesting_shares=20" target="_blank" rel="noopener">https://v2.steemconnect.com/sign/delegateVestingShares?delegator=YOUR_STEEM_ID&amp;delegatee=justyy&amp;vesting_shares=20</a> SP  (<strong>20&#x540E;&#x9762;&#x6709;&#x4E2A;&#x7A7A;&#x683C;</strong>)</p>
+<p>&#x8BB0;&#x5F97;&#x66FF;&#x6362;&#x6389;&#x4E0A;&#x9762;&#x7684; YOUR_STEEM_ID.</p>
+<h1 id="&#x6709;&#x5565;&#x597D;&#x5904;&#xFF1F;"><a href="#&#x6709;&#x5565;&#x597D;&#x5904;&#xFF1F;" class="headerlink" title="&#x6709;&#x5565;&#x597D;&#x5904;&#xFF1F;"></a>&#x6709;&#x5565;&#x597D;&#x5904;&#xFF1F;</h1><p>&#x6BCF;&#x5929;&#x82F1;&#x56FD;&#x65F6;&#x95F4;0&#x70B9;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6839;&#x636E;&#x4F60;&#x4EE3;&#x7406;&#x7684;SP&#x7ED9;&#x4E00;&#x4E9B;&#x5229;&#x606F;&#x8868;&#x793A;&#x611F;&#x8C22; &#xFF08;CNU&#x6211;&#x8BA4;&#x4E3A;&#x662F; CN Upvoting &#x7684;&#x610F;&#x601D;&#xFF09;&#xFF1A;</p>
+<p>&#x6BD4;&#x5982;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Thank you for supporting CNU! Your 10.64 SP gives you interests of 0.004 SBD.</span><br><span class="line">Thank you for supporting CNU! Your 15.84 SP gives you interests of 0.006 SBD.</span><br><span class="line">Thank you for supporting CNU! Your 20.01 SP gives you interests of 0.008 SBD.</span><br><span class="line">Thank you for supporting CNU! Your 35.06 SP gives you interests of 0.014 SBD.</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x5F53;&#x7136;&#x6700;&#x91CD;&#x8981;&#x7684;&#x597D;&#x5904;&#x662F;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; @justyy &#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A; <a href="https://justyy.com/archives/5217" target="_blank" rel="noopener">Python</a>  &#x51FD;&#x6570;:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def getScore(sp, total_esp, vp):</span><br><span class="line">  bonus = 2 + min(sp, 1000) / 1000  </span><br><span class="line">  ratio = min(100, sp / total_esp * bonus * 100 / (vp / 100))</span><br><span class="line">  return ratio</span><br></pre></td></tr></tbody></table></figure>
+<p>sp &#x662F;&#x4F60;&#x7ED9; @justyy &#x4EE3;&#x7406;&#x7684; SP&#xFF0C; total_esp &#x662F;&#x73B0;&#x5728; @justyy &#x7684;&#x6709;&#x6548;&#x603B;SP&#xFF0C;&#x7136;&#x540E; VP&#x662F; &#x73B0;&#x5728;&#x673A;&#x5668;&#x4EBA;&#x7684;&#x6295;&#x7968;&#x80FD;&#x91CF;&#x3002;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x503C;&#x5C31;&#x662F;  @justyy &#x4F1A;&#x7ED9;&#x4F60;&#x6700;&#x65B0;&#x6587;&#x7AE0;&#xFF08;&#x53D1;&#x8868;&#x65F6;&#x95F4;&#x5927;&#x4E8E;&#x534A;&#x5C0F;&#x65F6;&#x5C0F;&#x4E8E;24&#x5C0F;&#x65F6;&#xFF09; &#x70B9;&#x8D5E;&#x7684;&#x6BD4;&#x91CD;&#x3002;</p>
+<p>sp / total_esp * 100 &#x5C31;&#x662F;&#x4F60;&#x4EE3;&#x7406;&#x7684;SP&#x5360;&#x7684;&#x6574;&#x4E2A; ESP&#x7684;&#x6BD4;&#x91CD;&#xFF0C;&#x7136;&#x540E;&#x5956;&#x52B1;&#x4FDD;&#x5E95;&#x662F;2&#x500D;&#xFF0C;&#x5E76;&#x4E14;&#x6309;&#x6BCF;&#x591A; 100 SP (&#x5C01;&#x5E95;1000)&#x591A; 10% &#x8FD9;&#x4E5F;&#x5C31;&#x662F; bonus &#x7684;&#x6C42;&#x6CD5;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x8FD8;&#x5F97;&#x770B;&#x5F53;&#x524D;&#x7684;VP&#x6295;&#x7968;&#x80FD;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E5F;&#x5C31;&#x662F;&#x540E;&#x9762; / (vp/100) &#x7684;&#x610F;&#x601D;&#x3002;&#x6BD4;&#x5982;&#x73B0;&#x5728; @justyy &#x7684; &#x6709;&#x6548;ESP&#x662F; 2000&#xFF0C;&#x6295;&#x7968;&#x80FD;&#x91CF;&#x662F; 50%&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD9;&#x65F6;&#x5019;&#x4EE3;&#x7406; 100 SP&#xFF0C;&#x90A3;&#x4E48;&#x5C06;&#x83B7;&#x5F97; &#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x7684;&#x6BD4;&#x4F8B;&#x662F;:</p>
+<p>bonus = 2 + 100/1000 = 2.1<br>ratio = min(100, 100/(2000+100) X 2.1 X 100/(50/100)) = 20%</p>
+<p>&#x90A3;&#x4E48;&#x8FD9;&#x4E00;&#x6B21;&#x8D5E;&#x4F60;&#x5C06;&#x5F97;&#x5230;  2100 X 0.2 X 0.5=210 SP &#x7684;&#x8D5E;&#xFF0C;&#x662F;&#x5212;&#x7B97;&#x7684;&#xFF0C;<strong>&#x8FD9;&#x8FD8;&#x4E0D;&#x7B97;&#x4E0A;67&#x7EA7;&#x7ED9;&#x4F60;&#x70B9;&#x8D5E;&#xFF0C;&#x7B49;&#x7EA7;&#x7684;&#x4F20;&#x9012;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x6709;&#x5229;&#x4E8E;&#x5C0F;&#x9C7C;&#x7684;&#x5347;&#x7EA7;</strong>&#x3002;</p>
+<h1 id="&#x70B9;&#x8D5E;&#x6B21;&#x6570;"><a href="#&#x70B9;&#x8D5E;&#x6B21;&#x6570;" class="headerlink" title="&#x70B9;&#x8D5E;&#x6B21;&#x6570;"></a>&#x70B9;&#x8D5E;&#x6B21;&#x6570;</h1><p>&#x6839;&#x636E;&#x6BD4;&#x4F8B;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x7684;  sp/total_esp &#x6BD4;&#x4F8B;&#x5927;&#x4E8E; 80%&#xFF0C;&#x6BCF;&#x5929;&#x5C06;&#x5F97;&#x5230; &#x6700;&#x591A;3&#x6B21;&#x70B9;&#x8D5E;&#xFF1B;&#x5982;&#x679C;&#x5927;&#x4E8E;40%&#x5C0F;&#x4E8E;80% &#x5C06;&#x5F97;&#x5230;2&#x6B21;&#x70B9;&#x8D5E;&#xFF0C;&#x5426;&#x5219;&#x5C31;&#x662F;1&#x6B21;&#x70B9;&#x8D5E;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E4B;&#x524D;&#x4E0A;&#x7EBF;&#x7684; <a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x673A;&#x5668;&#x4EBA;</a>&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x5C06;&#x5927;&#x5E45;&#x4E0B;&#x8C03;&#xFF0C;&#x5E76;&#x4E14;&#x5DF2;&#x7ECF;&#x9650;&#x5236;&#x4E3A;&#x4E00;&#x5929;&#x6700;&#x591A;&#x4E00;&#x6B21;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x53D1;&#x8868;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x5E76;&#x4E14;&#x5DF2;&#x7ECF;&#x52A0;&#x5165;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;&#xFF0C;&#x800C;&#x4E14;&#x53C8;&#x5728;<a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-18" target="_blank" rel="noopener">&#x6392;&#x540D;&#x524D;30</a>&#xFF0C;&#x90A3;&#x4E48;&#x4F1A;&#x4F18;&#x5148;&#x8003;&#x8651; &#x8FD9;&#x4E2A;&#x8BA1;&#x5212;&#x7684;&#x70B9;&#x8D5E;&#x6BD4;&#x4F8B;&#x3002;</p>
+<h1 id="&#x4FE1;&#x4EFB;&#x53EF;&#x4EE5;&#x4ECE;-&#x5C11;&#x91CF;-SP&#x5F00;&#x59CB;"><a href="#&#x4FE1;&#x4EFB;&#x53EF;&#x4EE5;&#x4ECE;-&#x5C11;&#x91CF;-SP&#x5F00;&#x59CB;" class="headerlink" title="&#x4FE1;&#x4EFB;&#x53EF;&#x4EE5;&#x4ECE; &#x5C11;&#x91CF; SP&#x5F00;&#x59CB;"></a>&#x4FE1;&#x4EFB;&#x53EF;&#x4EE5;&#x4ECE; &#x5C11;&#x91CF; SP&#x5F00;&#x59CB;</h1><ol>
+<li>&#x8BB0;&#x4F4F;&#xFF0C;&#x6211;&#x662F;&#x7528; @justyy (&#x6CA1;&#x6709;&#x4E13;&#x95E8;&#x7684;&#x673A;&#x5668;&#x4EBA;&#x53F7;)  &#x6765;&#x4E3A;&#x4F60;&#x70B9;&#x8D5E;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x7528;&#x4E0A; @justyy 2000&#x7684; ESP&#x3002;</li>
+<li>&#x6211;&#x4E0D;&#x4F1A;&#x56E0;&#x4E3A;&#x8FD9;&#x4E48;&#x70B9;&#x4E8B;&#x60C5;&#x800C; &#x6BC1;&#x574F;&#x6211; 67&#x7EA7;&#x7684;&#x540D;&#x8A89;&#x3002;</li>
+<li>&#x4EE3;&#x7406;&#x540E;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x7528;&#x7684;&#x662F; <a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">steemsql</a> &#x53EF;&#x80FD;&#x6709;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5EF6;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x7ED9;&#x6211;&#x7559;&#x8A00;&#xFF0C;&#x6211;&#x4E00;&#x5B9A;&#x4F1A;&#x8865;&#x4E0A;&#xFF08;&#x70B9;&#x8D5E;&#x548C;&#x6BCF;&#x65E5;&#x5229;&#x606F;&#xFF09;</li>
+<li>&#x5982;&#x679C;&#x53D6;&#x6D88;&#x8BA1;&#x5212;&#xFF0C;&#x53EA;&#x9700;&#x8981; undelegate &#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C; &#x4F46;&#x4EE3;&#x7406;&#x51FA;&#x7684; SP &#x7CFB;&#x7EDF;&#x9700;&#x8981;7&#x5929;&#x624D;&#x80FD;&#x8FD8;&#x5230;&#x4F60;&#x5E10;&#x53F7;&#x4E0A;&#x3002;</li>
+<li>&#x4EE3;&#x7406; SP&#x53EA;&#x662F;&#x501F;&#x7ED9; @justyy  &#x6240;&#x4EE5;&#x5404;&#x4F4D;&#x53EF;&#x4EE5;&#x653E;&#x5FC3;&#xFF0C;7&#x5929;&#x968F;&#x65F6;&#x53EF;&#x4EE5;&#x62FF;&#x56DE;&#x3002;</li>
+</ol>
+<p>&#x6709;&#x5176;&#x5B83;&#x5EFA;&#x8BAE;&#x53EF;&#x4EE5;&#x5728;&#x4E0B;&#x9762;&#x7559;&#x8A00;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<p>STEEMIT &#x4E2D;&#x6587;&#x533A; RSS &#x5DE5;&#x5177;&#x548C;&#x540D;&#x5355;:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6587;&#x7AE0;&#x5217;&#x8868;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/comments/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x8BC4;&#x8BBA;&#x5217;&#x8868;</a></li>
+</ul>
+<p>Chrome &#x63D2;&#x4EF6;:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5269" target="_blank" rel="noopener">&#x9690;&#x85CF;&#x6536;&#x76CA;&#xFF0C;&#x4E13;&#x6CE8;&#x5199;&#x4F5C;&#xFF01;</a></li>
+<li><a href="https://justyy.com/archives/5016" target="_blank" rel="noopener">&#x7B80;&#x7E41;&#x4F53;&#x81EA;&#x52A8;&#x8F6C;&#x6362;</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5241" target="_blank" rel="noopener">&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458;&#x5173;&#x6CE8;&#x548C;&#x7C89;&#x4E1D;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5070" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5063" target="_blank" rel="noopener">&#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account</a></li>
+</ul>
+<p>&#x6700;&#x8FD1;&#x5E16;&#x5B50;:</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-18" target="_blank" rel="noopener">CN &#x6BCF;&#x65E5;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/logic-tests-series-2-decr-decr" target="_blank" rel="noopener">&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217;&#x4E4B;&#x4E8C; - DECR</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x6253;&#x7B97;&#x6362;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x6BCF;&#x5E74;&#x4E5F;&#x5F97;&#x53BB;&#x9762;&#x8BD5;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">STEEM&#x4E2D;&#x6587;&#x533A;&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;&#x5927;&#x8D5B; - &#x7B2C;&#x4E00;&#x671F; &#xFF08;&#x5956;&#x91D1;30 SBD + &#x5E16;&#x5B50;SBD&#x6536;&#x76CA;&#xFF09;</a></li>
+</ul>
+<p>STEEMIT CN RSS Tools:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">SteemIt Daily Wechat Group Ranking </a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/" target="_blank" rel="noopener">SteemIt CN RSS for Posts</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/comments/" target="_blank" rel="noopener">SteemIt CN RSS for Comments</a></li>
+</ul>
+<p>Chrome Extensions:</p>
+<ul>
+<li><a href="https://helloacm.com/hide-steemit-payout/" target="_blank" rel="noopener">Hide Steemit Payout</a></li>
+<li><a href="https://helloacm.com/chrome-extension-to-switch-between-simplified-chinese-and-traditional-chinese-automatically/" target="_blank" rel="noopener">Simplified to Traditional Switch</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://helloacm.com/steemit-api-two-apis-to-get-the-followers-and-following-list-in-the-wechat-group/" target="_blank" rel="noopener">Two APIs to get the followers and following list in the Wechat Group</a></li>
+<li><a href="https://helloacm.com/how-to-get-transfer-history-of-steemit-accounts-via-steemit-apitransfer-history/" target="_blank" rel="noopener">SteemIt API/transfer-history</a></li>
+<li><a href="https://helloacm.com/how-to-retrieve-steemit-account-information-via-api-steemitaccount/" target="_blank" rel="noopener">steemit/account</a></li>
+</ul>
+<p>Recent Posts:</p>
+<ul>
+<li><a href="https://steemit.com/stats/@dailystats/daily-top-30-authors-pending-payout-in-the-last-7-days-2017-09-17" target="_blank" rel="noopener">Daily Top 30 Authors by Pending Payout in Last 7 Days</a></li>
+<li><a href="https://steemit.com/cn/@justyy/logic-tests-series-2-decr-decr" target="_blank" rel="noopener">Logic Tests Series (2) - DECR</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">Go to an Interview even if you are not changing your job.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">Rock-Paper-Scissors Gaming Contest for SteemIt CN Community</a></li>
+</ul>
+<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
+<ul>
+<li><a href="https://justyy.com/archives/5337" target="_blank" rel="noopener">STEEMIT cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;&#xFF01;</a></li>
+<li><a href="https://justyy.com/archives/5322" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
+<li><a href="https://helloacm.com/the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a-robot-python-script-up-running/" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
+</ul>
+<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
+<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A; <a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> &#x548C; <a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></strong></p>
+<p><img src="https://justyy.com/gif/justyy-php-is-the-best.gif" alt=""><br>&#x6B22;&#x8FCE;&#x4F60;&#x53D1;&#x8868;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#x548C;&#x770B;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x610F;&#x601D;&#x7684;&#x8BC4;&#x8BBA;&#x6211;&#x53EF;&#x80FD;&#x4F1A;&#x5956;&#x52B1;&#x4F60;1 SBD&#x54E6;&#x3002;<br>Interesting Comments might be rewarded with 1 SBD.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;&#xFF01; Introduction to the CN Wechat Group Voting Robot @justyy</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/logic-tests-series-2-decr-decr/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Logic Tests Series (2) - DECR 逻辑测试系列之二 - DECR">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-18T11:30:42.000Z">2017-09-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1240 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/logic-tests-series-2-decr-decr/">Logic Tests Series (2) - DECR 逻辑测试系列之二 - DECR</a>
+            
+        </h1>
+        <div class="content">
+            <p>@justyy &#x2018;s series of Logits Tests:</p>
+<ul>
+<li><a href="https://helloacm.com/introduction-to-logic-tests-series/" target="_blank" rel="noopener">Introduction to Logic Tests Series</a></li>
+</ul>
+<p>What you can do with this tiny programming language with only 4 instructions? Today, we are going to implement the DECR function which decrements the variable by one, for example, DECR(X) where X=5 will make X=4.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DECR(X) {</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The only 4 instructions are: INCR, LOOP, ZERO and ASGN. And all variables hold non-negative integers. To make X decremented by 1, we can increment a temp variable by (X-1) times..</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">DECR(X) {</span><br><span class="line">   ZERO(V1)</span><br><span class="line">   LOOP(X) {</span><br><span class="line">     ASGN(X, V1)</span><br><span class="line">     INCR(V1)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>We translate this to <a href="https://helloacm.com/c-coding-exercise-use-hashtablepriority-queue-to-compute-the-relative-ranks/" target="_blank" rel="noopener">C++</a>, which might be a bit easy to understand.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">void decr(unsigned int &amp;x) {</span><br><span class="line">   int v1 = 0;</span><br><span class="line">   int xx = x;</span><br><span class="line">   for (; x &gt; 0; -- x) {</span><br><span class="line">      xx = v1;</span><br><span class="line">      v1 ++;</span><br><span class="line">   }</span><br><span class="line">   x = xx;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>If you change the value of the loop variable x, the loop iteration count may be altered. Therefore, we declare a temp variable xx and assign the xx to X after loop when it gets incremented (x-1) times.</p>
+<p><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt=""><br><em>Image Credit: pixabay.com</em></p>
+<p>@justyy &#x7684;&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217;:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5320" target="_blank" rel="noopener">&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217; - &#x4E00;&#x79CD;&#x53EA;&#x6709;4&#x79CD;&#x8BED;&#x53E5;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00; - &#xFF08;1&#xFF09;</a></li>
+</ul>
+<p>&#x8FD9;&#x79CD;&#x53EA;&#x6709;4&#x6761;&#x8BED;&#x53E5;&#x7684;&#x8BED;&#x8A00;&#x80FD;&#x505A;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x6765;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;DECR&#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x628A; &#x53D8;&#x91CF; X &#x51CF;&#x4E00;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DECR(X) {</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8981;&#x6C42;&#x586B;&#x5199;&#x51FD;&#x6570;&#x4F53;&#xFF0C;&#x4F7F;&#x7528; INCR&#x3001;LOOP&#x3001;ZERO&#x3001;&#x548C; ASGN &#x4EC5;&#x6709;&#x7684;4&#x4E2A;&#x8BED;&#x53E5;&#x3002;&#x6211;&#x4EEC;&#x4E0D;&#x59A8;&#x60F3;&#x4E00;&#x4E0B;&#xFF0C;&#x5DF2;&#x77E5;&#x53D8;&#x91CF; X &#x662F;&#x975E;&#x8D1F;&#x6574;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981; &#x5FAA;&#x73AF; X-1&#x6B21;&#xFF0C;&#x6BCF;&#x6B21;&#x628A;X&#x4ECE;0&#x52A0;1&#x5373;&#x53EF;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">DECR(X) {</span><br><span class="line">   ZERO(V1)</span><br><span class="line">   LOOP(X) {</span><br><span class="line">     ASGN(X, V1)</span><br><span class="line">     INCR(V1)</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x6211;&#x4EEC;&#x7FFB;&#x8BD1;&#x6210; <a href="https://justyy.com/archives/2257" target="_blank" rel="noopener">C++</a>, &#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x597D;&#x61C2;&#x4E00;&#x4E9B;:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">void decr(unsigned int &amp;x) {</span><br><span class="line">   int v1 = 0;</span><br><span class="line">   int xx = x;</span><br><span class="line">   for (; x &gt; 0; -- x) {</span><br><span class="line">      xx = v1;</span><br><span class="line">      v1 ++;</span><br><span class="line">   }</span><br><span class="line">   x = xx;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7531;&#x4E8E;C++&#x7684; for &#x91CC;&#x6539;&#x53D8; x &#x503C;&#x4F1A;&#x6539;&#x53D8;&#x5FAA;&#x73AF;&#x6B21;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x53D8;&#x91CF; xx&#x3002;</p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<p>STEEMIT &#x4E2D;&#x6587;&#x533A; RSS &#x5DE5;&#x5177;&#x548C;&#x540D;&#x5355;:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6587;&#x7AE0;&#x5217;&#x8868;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat/rss/comments/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x8BC4;&#x8BBA;&#x5217;&#x8868;</a></li>
+</ul>
+<p>Chrome &#x63D2;&#x4EF6;:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5269" target="_blank" rel="noopener">&#x9690;&#x85CF;&#x6536;&#x76CA;&#xFF0C;&#x4E13;&#x6CE8;&#x5199;&#x4F5C;&#xFF01;</a></li>
+<li><a href="https://justyy.com/archives/5016" target="_blank" rel="noopener">&#x7B80;&#x7E41;&#x4F53;&#x81EA;&#x52A8;&#x8F6C;&#x6362;</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://justyy.com/archives/5241" target="_blank" rel="noopener">&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458;&#x5173;&#x6CE8;&#x548C;&#x7C89;&#x4E1D;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5070" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
+<li><a href="https://justyy.com/archives/5063" target="_blank" rel="noopener">&#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account</a></li>
+</ul>
+<p>&#x6700;&#x8FD1;&#x5E16;&#x5B50;:</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-18" target="_blank" rel="noopener">CN &#x6BCF;&#x65E5;&#x6392;&#x884C;&#x699C;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x6253;&#x7B97;&#x6362;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x6BCF;&#x5E74;&#x4E5F;&#x5F97;&#x53BB;&#x9762;&#x8BD5;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">STEEM&#x4E2D;&#x6587;&#x533A;&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;&#x5927;&#x8D5B; - &#x7B2C;&#x4E00;&#x671F; &#xFF08;&#x5956;&#x91D1;30 SBD + &#x5E16;&#x5B50;SBD&#x6536;&#x76CA;&#xFF09;</a></li>
+</ul>
+<p>STEEMIT CN RSS Tools:</p>
+<ul>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">SteemIt Daily Wechat Group Ranking </a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/" target="_blank" rel="noopener">SteemIt CN RSS for Posts</a></li>
+<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/comments/" target="_blank" rel="noopener">SteemIt CN RSS for Comments</a></li>
+</ul>
+<p>Chrome Extensions:</p>
+<ul>
+<li><a href="https://helloacm.com/hide-steemit-payout/" target="_blank" rel="noopener">Hide Steemit Payout</a></li>
+<li><a href="https://helloacm.com/chrome-extension-to-switch-between-simplified-chinese-and-traditional-chinese-automatically/" target="_blank" rel="noopener">Simplified to Traditional Switch</a></li>
+</ul>
+<p>Steem API:</p>
+<ul>
+<li><a href="https://helloacm.com/steemit-api-two-apis-to-get-the-followers-and-following-list-in-the-wechat-group/" target="_blank" rel="noopener">Two APIs to get the followers and following list in the Wechat Group</a></li>
+<li><a href="https://helloacm.com/how-to-get-transfer-history-of-steemit-accounts-via-steemit-apitransfer-history/" target="_blank" rel="noopener">SteemIt API/transfer-history</a></li>
+<li><a href="https://helloacm.com/how-to-retrieve-steemit-account-information-via-api-steemitaccount/" target="_blank" rel="noopener">steemit/account</a></li>
+</ul>
+<p>Recent Posts:</p>
+<ul>
+<li><a href="https://steemit.com/stats/@dailystats/daily-top-30-authors-pending-payout-in-the-last-7-days-2017-09-17" target="_blank" rel="noopener">Daily Top 30 Authors by Pending Payout in Last 7 Days</a></li>
+<li><a href="https://steemit.com/cn/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">Go to an Interview even if you are not changing your job.</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">Rock-Paper-Scissors Gaming Contest for SteemIt CN Community</a></li>
+</ul>
+<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
+<ul>
+<li><a href="https://justyy.com/archives/5339" target="_blank" rel="noopener">&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217;&#x4E4B;&#x4E8C; &#x2013; DECR</a></li>
+<li><a href="https://helloacm.com/logic-tests-series-2-decr/" target="_blank" rel="noopener">Logic Tests Series (2) &#x2013; DECR</a></li>
+<li><a href="https://justyy.com/archives/5322" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
+<li><a href="https://helloacm.com/the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a-robot-python-script-up-running/" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
+</ul>
+<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
+<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/logic-tests-series-2-decr-decr" target="_blank" rel="noopener">Logic Tests Series (2) - DECR &#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217;&#x4E4B;&#x4E8C; - DECR</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
     <div class="card">
     
     <div class="card-image">
@@ -522,803 +1309,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-cn-updates---cn72017-09-17/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-17)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-17T11:00:15.000Z">2017-09-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1198 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates---cn72017-09-17/">Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-17)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-09-17 11:11:03 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-09-13 11:11:03 (UTC) to 2017-09-14 11:11:03 (UTC)</p>
-<h2 id="2017-09-17-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-09-17-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-09-17 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-09-17 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @wangwenjing | <a href="https://steemit.com/cn/@wangwenjing/1" target="_blank" rel="noopener">&#x98CE;&#x96E8;&#x82B1;&#x2014;&#x2014;&#x7A0E;&#x90ED;&#x4E2D;&#x5B66;&#x5F80;&#x4E8B;</a> |<br>| 2 | @superhardness | <a href="https://steemit.com/cn/@superhardness/3qyv22" target="_blank" rel="noopener">&#x6211;&#x4EEC;&#x662F;&#x7528;&#x5FC3;&#x5728;&#x4EA4;&#x6D41;</a> |<br>| 3 | @travelgirl | <a href="https://steemit.com/food/@travelgirl/food-sharing-14-cakes-and-pastries-at-merchants-of-ultimo-sydney-australia-or-14-merchants-of-ultimo" target="_blank" rel="noopener">Food Sharing #14 - Cakes and Pastries at Merchants of Ultimo @ Sydney,  Australia ????   &#x4ECA;&#x5929;&#x5403;&#x4EC0;&#x9EBC; #14 - &#x4E00;&#x8D77;&#x5403;&#x751C;&#x9EDE; Merchants of Ultimo @ &#x6089;&#x5C3C;, &#x6FB3;&#x6D32; ????</a> |<br>| 4 | @bring | <a href="https://steemit.com/cn/@bring/reading-repays-you-with-a-wonderful-life" target="_blank" rel="noopener">&#x8BFB;&#x4E66;&#x8FD8;&#x4F60;&#x7CBE;&#x5F69;&#x4EBA;&#x751F; Reading Repays You with a Wonderful Life</a> |<br>| 5 | @mrpointp | <a href="https://steemit.com/cn/@mrpointp/original-or" target="_blank" rel="noopener">&#x6211;&#x7684;&#x5973;&#x53CB;&#x201C;&#x5BA0;&#x7269;&#x201D; (Original) &#x4E2D;&#x6587;&#x793E;&#x533A;&#x5BA0;&#x7269;&#x9009;&#x7F8E;&#x5927;&#x8D5B;</a> |<br>| 6 | @xiaoshancun | <a href="https://steemit.com/cn/@xiaoshancun/or-7" target="_blank" rel="noopener">&#x79CB;&#x9AD8;&#x6C14;&#x723D;&#x6B63;&#x5F53;&#x65F6; &#x8C37;&#x6B4C;&#x70B9;&#x540D;#7&#x5174;&#x8DA3;</a> |<br>| 7 | @joythewanderer | <a href="https://steemit.com/travel/@joythewanderer/favorite-cities-12-timisoara-city-of-colorful-squares-orthodox-churches-and-parks" target="_blank" rel="noopener">[Favorite Cities] # 12 Timisoara -  City of Colorful Squares, Orthodox Churches and Green Parks     &#x591A;&#x5F69;&#x7684;&#x8482;&#x7C73;&#x4EC0;&#x74E6;&#x62C9;</a> |<br>| 8 | @hannahwu | <a href="https://steemit.com/cn/@hannahwu/3ehrpp-2002" target="_blank" rel="noopener">&#x8BF7;&#x56DE;&#x7B54;2002 &#x7B2C;&#x4E8C;&#x96C6;&#xFF1A;&#x6211;&#x613F;&#x505A;&#x5584;&#x826F;&#x7684;&#x4EBA;</a> |<br>| 9 | @sunnyjolly | <a href="https://steemit.com/cn/@sunnyjolly/sometimes-ever-sometimes-never" target="_blank" rel="noopener">&#x76F8;&#x805A;&#x6709;&#x65F6;&#xFF0C;&#x540E;&#x4F1A;&#x65E0;&#x671F; Sometimes ever, sometimes never</a> |<br>| 10 | @hannahwu | <a href="https://steemit.com/cn/@hannahwu/qiuqiu-beauty-contest-or" target="_blank" rel="noopener">&#x6211;&#x5BB6;&#x7684;&#x9AD8;&#x51B7;&#x55B5;&#x55B5;&#x732B;-&#x7403;&#x7403; Qiuqiu Beauty Contest    &#x4E2D;&#x6587;&#x793E;&#x533A;&#x5BA0;&#x7269;&#x9009;&#x7F8E;&#x5927;&#x8D5B;</a> |<br>&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x6587;&#x7AE0;&#x603B;&#x6570;: 15</p>
-<h2 id="2017-09-17-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-09-17-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-09-17 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-09-17 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;&#x5C11;&#x91CF;&#x4FEE;&#x6539;&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|&#x2014;:|&#x2014;:|<br>| 1| @oflyhigh | 6 | 2200 | 1398.42 |233.07 |<br>| 2| @rivalhw | 6 | 1435 | 1136.41 |189.40 |<br>| 3| @tumutanzi | 6 | 1140 | 958.94 |159.82 |<br>| 4| @htliao | 6 | 1330 | 941.65 |156.94 |<br>| 5| @blackbunny | 7 | 1054 | 911.46 |130.21 |<br>| 6| @deanliu | 4 | 1336 | 868.49 |217.12 |<br>| 7| @linuslee0216 | 6 | 1023 | 814.54 |135.76 |<br>| 8| @nicolemoker | 6 | 1136 | 798.17 |133.03 |<br>| 9| @myfirst | 5 | 907 | 768.49 |153.70 |<br>| 10| @jubi | 10 | 1050 | 760.18 |76.02 |<br>| 11| @elfkitchen | 7 | 1038 | 743.05 |106.15 |<br>| 12| @bxt | 7 | 761 | 711.75 |101.68 |<br>| 13| @guyverckw | 8 | 884 | 686.64 |85.83 |<br>| 14| @kitcat | 6 | 900 | 679.15 |113.19 |<br>| 15| @justyy | 19 | 1882 | 675.28 |35.54 |<br>| 16| @joythewanderer | 9 | 1066 | 631.18 |70.13 |<br>| 17| @twinkledrop | 5 | 511 | 572.12 |114.42 |<br>| 18| @stacee | 4 | 696 | 566.47 |141.62 |<br>| 19| @aaronli | 6 | 758 | 540.58 |90.10 |<br>| 20| @wilkinshui | 6 | 802 | 531.66 |88.61 |<br>| 21| @dapeng | 7 | 554 | 500.92 |71.56 |<br>| 22| @ace108 | 23 | 2125 | 476.55 |20.72 |<br>| 23| @rea | 2 | 696 | 470.86 |235.43 |<br>| 24| @hannahwu | 8 | 624 | 428.10 |53.51 |<br>| 25| @susanlo | 2 | 610 | 408.45 |204.23 |<br>| 26| @tvb | 6 | 470 | 399.82 |66.64 |<br>| 27| @birds90 | 5 | 611 | 377.60 |75.52 |<br>| 28| @krischy | 3 | 630 | 376.72 |125.57 |<br>| 29| @travelgirl | 12 | 993 | 368.09 |30.67 |<br>| 30| @someone | 2 | 458 | 356.25 |178.13 |</p>
-<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
-<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~<br>The quality-content-upvoting-bot motivates for more good contents in [CN], however, I will also upvote other authors if good content are produced.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">&#x65F6;&#x95F4; Time</th>
-<th style="text-align:right">&#x4F5C;&#x8005; Author</th>
-<th style="text-align:right">&#x6587;&#x7AE0; Post</th>
-<th style="text-align:right">&#x6743;&#x91CD; Weighting %</th>
-<th style="text-align:right">VP %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">2017-09-16 00:01:39</td>
-<td style="text-align:right">@kitcat</td>
-<td style="text-align:right"><a href="https://steemit.com/@kitcat/drawing-challenge-5-draw-a-hand" target="_blank" rel="noopener">@kitcat</a></td>
-<td style="text-align:right">14.64</td>
-<td style="text-align:right">75.07</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:02:53</td>
-<td style="text-align:right">@travelgirl</td>
-<td style="text-align:right"><a href="https://steemit.com/@travelgirl/steemitphotochallenge-entry-1-dancing-house-prague-czech-republic-or-steemitphotochallenge-1" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:right">7.86</td>
-<td style="text-align:right">74.86</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:25:29</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/improved-top-20-level-1-commenters-for-20170915-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">10.13</td>
-<td style="text-align:right">75.06</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:46:21</td>
-<td style="text-align:right">@htliao</td>
-<td style="text-align:right"><a href="https://steemit.com/@htliao/69twws" target="_blank" rel="noopener">@htliao</a></td>
-<td style="text-align:right">17.33</td>
-<td style="text-align:right">72.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:46:52</td>
-<td style="text-align:right">@twinkledrop</td>
-<td style="text-align:right"><a href="https://steemit.com/@twinkledrop/my-experience-about-visiting-legoland-windsor" target="_blank" rel="noopener">@twinkledrop</a></td>
-<td style="text-align:right">11.90</td>
-<td style="text-align:right">72.13</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 01:46:41</td>
-<td style="text-align:right">@guyverckw</td>
-<td style="text-align:right"><a href="https://steemit.com/@guyverckw/this-is-not-a-ghost-story-2" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:right">16.42</td>
-<td style="text-align:right">72.96</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 02:24:28</td>
-<td style="text-align:right">@bxt</td>
-<td style="text-align:right"><a href="https://steemit.com/@bxt/7-interest-talk-about-my-little-collection-7" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:right">12.05</td>
-<td style="text-align:right">73.05</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 02:47:42</td>
-<td style="text-align:right">@wilkinshui</td>
-<td style="text-align:right"><a href="https://steemit.com/@wilkinshui/3ccfwv" target="_blank" rel="noopener">@wilkinshui</a></td>
-<td style="text-align:right">14.27</td>
-<td style="text-align:right">73.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 04:46:12</td>
-<td style="text-align:right">@jubi</td>
-<td style="text-align:right"><a href="https://steemit.com/@jubi/or-7" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:right">16.79</td>
-<td style="text-align:right">74.63</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 06:23:08</td>
-<td style="text-align:right">@blackbunny</td>
-<td style="text-align:right"><a href="https://steemit.com/@blackbunny/2vfe6g" target="_blank" rel="noopener">@blackbunny</a></td>
-<td style="text-align:right">18.17</td>
-<td style="text-align:right">75.71</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 08:00:45</td>
-<td style="text-align:right">@linuslee0216</td>
-<td style="text-align:right"><a href="https://steemit.com/@linuslee0216/or-7" target="_blank" rel="noopener">@linuslee0216</a></td>
-<td style="text-align:right">17.27</td>
-<td style="text-align:right">76.78</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 09:23:12</td>
-<td style="text-align:right">@tumutanzi</td>
-<td style="text-align:right"><a href="https://steemit.com/@tumutanzi/6sx6un" target="_blank" rel="noopener">@tumutanzi</a></td>
-<td style="text-align:right">18.64</td>
-<td style="text-align:right">77.65</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 10:23:17</td>
-<td style="text-align:right">@rivalhw</td>
-<td style="text-align:right"><a href="https://steemit.com/@rivalhw/6apkrp-steemit" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:right">18.77</td>
-<td style="text-align:right">78.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 10:25:17</td>
-<td style="text-align:right">@lemooljiang</td>
-<td style="text-align:right"><a href="https://steemit.com/@lemooljiang/v" target="_blank" rel="noopener">@lemooljiang</a></td>
-<td style="text-align:right">8.21</td>
-<td style="text-align:right">78.22</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 11:24:17</td>
-<td style="text-align:right">@rea</td>
-<td style="text-align:right"><a href="https://steemit.com/@rea/my-visit-to-the-world-renowned-home-decor-show-maison-and-objet-maison-and-objet" target="_blank" rel="noopener">@rea</a></td>
-<td style="text-align:right">10.65</td>
-<td style="text-align:right">78.91</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 12:00:34</td>
-<td style="text-align:right">@deanliu</td>
-<td style="text-align:right"><a href="https://steemit.com/@deanliu/culture-vulture-for-cners-issue-02-2" target="_blank" rel="noopener">@deanliu</a></td>
-<td style="text-align:right">18.68</td>
-<td style="text-align:right">77.81</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 12:46:25</td>
-<td style="text-align:right">@lingfei</td>
-<td style="text-align:right"><a href="https://steemit.com/@lingfei/how-to-make-pickled-radish" target="_blank" rel="noopener">@lingfei</a></td>
-<td style="text-align:right">8.21</td>
-<td style="text-align:right">78.15</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 13:23:28</td>
-<td style="text-align:right">@tvb</td>
-<td style="text-align:right"><a href="https://steemit.com/@tvb/7nrthu" target="_blank" rel="noopener">@tvb</a></td>
-<td style="text-align:right">8.25</td>
-<td style="text-align:right">78.52</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 13:46:45</td>
-<td style="text-align:right">@aaronli</td>
-<td style="text-align:right"><a href="https://steemit.com/@aaronli/travel-video-tutorial-1-which-camera-is-suitable-for-travel-videos-1" target="_blank" rel="noopener">@aaronli</a></td>
-<td style="text-align:right">12.99</td>
-<td style="text-align:right">78.71</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 14:46:15</td>
-<td style="text-align:right">@oflyhigh</td>
-<td style="text-align:right"><a href="https://steemit.com/@oflyhigh/w8z1u" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:right">19.04</td>
-<td style="text-align:right">79.32</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 16:00:35</td>
-<td style="text-align:right">@elfkitchen</td>
-<td style="text-align:right"><a href="https://steemit.com/@elfkitchen/hand-made-moon-cake" target="_blank" rel="noopener">@elfkitchen</a></td>
-<td style="text-align:right">15.61</td>
-<td style="text-align:right">80.03</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 23:00:32</td>
-<td style="text-align:right">@myfirst</td>
-<td style="text-align:right"><a href="https://steemit.com/@myfirst/steem" target="_blank" rel="noopener">@myfirst</a></td>
-<td style="text-align:right">16.06</td>
-<td style="text-align:right">82.37</td>
-</tr>
-</tbody>
-</table>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<h2 id="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;"><a href="#&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;" class="headerlink" title="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:"></a>&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:</h2><ul>
-<li>&#x53D6;&#x7684;&#x662F;&#x53D1;&#x8D34;&#x5728;3 &#x5230;4&#x5929;&#x524D;&#x7684; 10&#x4E2A;&#x8F83;&#x5C11;&#x6536;&#x76CA;&#xFF08;&#x8F83;&#x5C11;&#x88AB;&#x5173;&#x6CE8;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x8D28;&#x91CF;&#x53C8;&#x8F83;&#x4E0D;&#x9519;&#xFF09;&#x7684;&#x5E16;&#x5B50;&#x3002;</li>
-<li>&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x53BB;&#x6389;&#x4E86; &#x6211;&#x81EA;&#x5DF1;&#x7684;&#x5E16;&#x5B50; @justyy</li>
-<li>&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5FAE;&#x8C03;&#x53C2;&#x6570;&#x8BA9;&#x7ED3;&#x679C;&#x66F4;&#x5408;&#x7406;&#x3002;</li>
-<li>&#x67E5;&#x8BE2;SQL&#x8BED;&#x53E5;&#x548C;&#x53C2;&#x6570;&#x6682;&#x65F6;&#x4E0D;&#x516C;&#x5F00;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4F1A;&#x66F4;&#x516C;&#x5E73;&#x4E00;&#x4E9B;&#x3002;<br><img src="https://justyy.com/gif/steemit.gif" alt=""></li>
-</ul>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 23&#x5929;&#x3002; i.e. <a href="https://steemit.com/cn/@justyy/2017-08-25" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E00;&#x5929;</a>, <a href="https://steemit.com/ranking/@justyy/2017-08-26-cn" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E8C;&#x5929;</a><br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em><br>Tags: #cn</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates---cn72017-09-17" target="_blank" rel="noopener">Daily #CN Updates - CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;&#x3010;&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;(2017-09-17)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmPRP7n7FwL1rwqqWc8wsedgMVtCasFSNmNbWNspuhRkXG/2017-09-15%2014.40.22.png" alt="记一次通过手机TeamViewer远程登陆家里服务器再远程登陆VPS敲命令在STEEMIT上发贴的经历 - The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-17T09:37:48.000Z">2017-09-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1489 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a/">记一次通过手机TeamViewer远程登陆家里服务器再远程登陆VPS敲命令在STEEMIT上发贴的经历 - The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a>
-            
-        </h1>
-        <div class="content">
-            <p><em>Abstract</em>: One of the <a href="https://helloacm.com/simple-profiling-in-python/" target="_blank" rel="noopener">Python</a> scripts stopped working last Friday when I was AWAY_FROM_KEYBOARD. That script is used to automate (via the Linux <a href="https://helloacm.com/crontab-generator/" target="_blank" rel="noopener">crontab</a>) the CN Daily Ranking table and relevant information. I used <a href="https://helloacm.com/does-teamviewer-support-multi-screens-monitors/" target="_blank" rel="noopener">Teamviewer</a> to login to my desktop at home, where I opened the SSH terminal to connect to VPS remotely. I typed in the command manually and re-run the Python script.</p>
-<p>However, there are SSH client terminals on both Android or IOS (iPhone) smart phones, so it might be quicker to SSH to remote servers using <a href="https://helloacm.com/the-ultimate-vps-from-quickhostuk/" target="_blank" rel="noopener">SSH</a> clients but there is still a risk to enter your account credentials of VPS account on your smart phones.</p>
-<p>&#x6628;&#x5929; &#x5728;&#x548C;&#x597D;&#x57FA;&#x53CB;&#xFF08;&#x524D;&#x7FA4;&#x4E3B;&#xFF09;  @tumutanzi  &#x7535;&#x8BDD;&#x65F6;&#xFF0C;&#x5C31;&#x8C08;&#x5230;&#x4E86;&#x6211;&#x90A3;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3002;&#x6211;&#x8BF4;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x57FA;&#x672C;&#x4E0A;&#x5B9E;&#x73B0;&#x5168;&#x81EA;&#x52A8;&#x5316;&#x4E86;&#xFF1A;&#x6211;&#x5199;&#x4E86;&#x51E0;&#x4E2A;<a href="https://justyy.com/archives/5217" target="_blank" rel="noopener">PYTHON</a>&#x811A;&#x672C;&#xFF0C;&#x6BCF;&#x65E5;&#x901A;&#x8FC7; steemsql &#x751F;&#x6210;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#xFF0C;&#x751F;&#x6210;&#x6BCF;&#x65E5;&#x524D;30&#x540D;&#x699C;&#x5355;&#xFF0C;&#x7136;&#x540E;&#x6BCF;10&#x5206;&#x949F;&#x6839;&#x636E;&#x699C;&#x5355;&#x5B9E;&#x73B0;&#x81EA;&#x52A8;&#x70B9;&#x8D5E;&#xFF0C;&#x8BB0;&#x5F55;&#x5230;&#x65E5;&#x5B50;&#x4E2D;&#xFF0C;&#x901A;&#x8FC7; crontab &#x8BBE;&#x7F6E;&#xFF1A;&#x6BCF;&#x65E5;&#x82F1;&#x56FD;&#x6B63;&#x5348;12&#x70B9;&#x51C6;&#x65F6;&#x53D1;&#x5E03;&#x5E16;&#x5B50;&#x3002;</p>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x7A0B;&#x5E8F;&#x5E76;&#x4E0D;&#x5B8C;&#x7F8E;&#xFF0C;&#x6709;&#x65F6;&#x5019; &#x4F7F;&#x7528;&#x7684;PYTHON&#x5E93;&#x4F1A;&#x62BD;&#x98CE;&#xFF0C;&#x5C31;&#x662F;&#x4F1A;&#x6709;&#x5F02;&#x5E38;&#x629B;&#x51FA;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x91CD;&#x590D;&#x53D1;&#x8D34;&#xFF0C;&#x6211;&#x5E76;&#x6CA1;&#x6709;&#x505A;&#x76F8;&#x5E94;&#x7684;&#x5F02;&#x5E38;&#x5904;&#x7406;&#x3002;&#x5B9E;&#x9645;&#x4E0A;&#x91CD;&#x590D;&#x53D1;&#x8D34;&#x4E5F;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#xFF0C;&#x56E0;&#x4E3A;&#xFF1A;<a href="https://justyy.com/archives/5301" target="_blank" rel="noopener">STEEMIT</a> &#x8FDE;&#x7EED;2&#x6B21;&#x53D1;&#x8D34;&#x5FC5;&#x987B;&#x95F4;&#x9694;&#x6700;&#x5C11;5&#x5206;&#x949F;&#xFF0C;&#x5E76;&#x4E14;&#x7A0B;&#x5E8F;&#x672C;&#x5730;&#x505A;&#x4E86;&#x8BB0;&#x5F55;&#xFF08;&#x6210;&#x529F;&#x53D1;&#x8D34;&#x505A;&#x4E86;&#x76F8;&#x5E94;&#x7684;&#x6807;&#x8BB0;&#xFF09;</p>
-<p>&#x5F53;&#x65F6;&#xFF0C;&#x6211;&#x4EBA;&#x5728;&#x5916;&#x9762;&#xFF0C;&#x5927;&#x6982;2&#x70B9;&#x591A;&#x7684;&#x65F6;&#x5019;&#x6211;&#x5237;&#x4E86;&#x4E00;&#x4E0B;&#x624B;&#x673A;&#xFF0C;&#x53D1;&#x73B0;&#x5E16;&#x5B50;&#x5E76;&#x6CA1;&#x6709;&#x6210;&#x529F;&#x53D1;&#x51FA;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x5C31;&#x6709;&#x70B9;&#x7126;&#x8651;&#x4E86;&#x3002;&#x867D;&#x7136;&#x6211;&#x53EF;&#x4EE5;&#x7B49;&#x5230;&#x665A;&#x4E0A;&#x56DE;&#x5BB6;&#x518D;&#x8865;&#x4E0A;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x660E;&#x663E;&#x5E76;&#x4E0D;&#x662F;&#x6211;&#x7684;&#x98CE;&#x683C;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x60F3;&#x5230;&#x4E86; <a href="https://justyy.com/archives/1445" target="_blank" rel="noopener">TeamViewer</a>, &#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x514D;&#x8D39;&#xFF08;&#x4EC5;&#x9650;&#x4E8E;&#x4E2A;&#x4EBA;&#x76EE;&#x7684;&#xFF09;&#x4F7F;&#x7528;&#x7684;&#x8DE8;&#x5E73;&#x53F0;&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x7684;&#x8F6F;&#x4EF6;&#x3002;</p>
-<p>&#x6211;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x88C5;&#x4E86; Teamviewer, &#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x7136;&#x540E;&#x5728; <a href="https://justyy.com/archives/4081" target="_blank" rel="noopener">iphone se</a> &#x5C0F;&#x5C4F;&#x5E55;&#x4E0A;&#x6253;&#x5F00; SSH &#x7EC8;&#x7AEF;&#xFF0C;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#xFF0C;&#x5E76;&#x4E14;&#x624B;&#x52A8;&#x6572;&#x5165;&#x547D;&#x4EE4;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmPRP7n7FwL1rwqqWc8wsedgMVtCasFSNmNbWNspuhRkXG/2017-09-15%2014.40.22.png" alt="2017-09-15 14.40.22.png"></p>
-<p><img src="https://steemitimages.com/DQmTszBUp2Hpd3JVVoEAzyniVq2jpeJkXZ88x8N4HHmPHFU/2017-09-15%2014.40.26.png" alt="2017-09-15 14.40.26.png"></p>
-<p>&#x6210;&#x529F;&#x4E86;&#xFF01;&#x5237;&#x65B0;&#x4E00;&#x4E0B;STEEM &#x9875;&#x9762;&#xFF0C;&#x5E16;&#x5B50;&#x53D1;&#x5E03;&#x4E86;&#xFF0C;&#x6BCF;&#x65E5;&#x4E00;&#x8D34;&#xFF0C;&#x4E3A;&#x5927;&#x5BB6;&#x63D0;&#x4F9B;&#x66F4;&#x65B0;&#xFF0C;&#x9F13;&#x52B1;&#x5927;&#x5BB6;&#x521B;&#x4F5C;&#xFF08;<a href="https://justyy.com/archives/5239" target="_blank" rel="noopener">&#x4F18;&#x8D28;&#x673A;&#x5668;&#x4EBA;</a> @justyy &#x6839;&#x636E;&#x524D;30&#x540D;&#x70B9;&#x8D5E;&#xFF09;&#x4ECE;&#x4E0D;&#x95F4;&#x65AD;&#x3002;</p>
-<p>&#x5176;&#x5B9E;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x88C5; SSH &#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x624B;&#x673A;&#x4E0A;SSH&#x76F4;&#x63A5;&#x8FDE;&#x63A5;VPS&#x670D;&#x52A1;&#x5668;&#x5373;&#x53EF;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x65F6;&#x53EA;&#x60F3;&#x7740;&#x8FDE;&#x63A5;&#x5BB6;&#x91CC;&#x7684;&#x7535;&#x8111;&#x66F4;&#x5B89;&#x5168;&#x4E00;&#x4E9B;&#xFF08;&#x56E0;&#x4E3A;&#x4E0D;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x5728;&#x624B;&#x673A;&#x4E0A;&#x8F93;&#x5165;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#xFF09;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x5728;&#x82F9;&#x679C;&#x624B;&#x673A;IOS&#x7CFB;&#x7EDF;&#x4E0A;&#x88C5;&#x7684;&#x4E00;&#x4E2A;SSH&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmVHRsTbFLa3xJWE1kuZSRGFxk69bAg4TNBLBNwuW65mVV/2017-09-17%2012.32.14.png" alt="2017-09-17 12.32.14.png"></p>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<p>STEEMIT &#x4E2D;&#x6587;&#x533A; RSS &#x5DE5;&#x5177;&#x548C;&#x540D;&#x5355;:</p>
-<ul>
-<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/wechat/rss/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6587;&#x7AE0;&#x5217;&#x8868;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/wechat/rss/comments/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x8BC4;&#x8BBA;&#x5217;&#x8868;</a></li>
-</ul>
-<p>Chrome &#x63D2;&#x4EF6;:</p>
-<ul>
-<li><a href="https://justyy.com/archives/5269" target="_blank" rel="noopener">&#x9690;&#x85CF;&#x6536;&#x76CA;&#xFF0C;&#x4E13;&#x6CE8;&#x5199;&#x4F5C;&#xFF01;</a></li>
-<li><a href="https://justyy.com/archives/5016" target="_blank" rel="noopener">&#x7B80;&#x7E41;&#x4F53;&#x81EA;&#x52A8;&#x8F6C;&#x6362;</a></li>
-</ul>
-<p>Steem API:</p>
-<ul>
-<li><a href="https://justyy.com/archives/5241" target="_blank" rel="noopener">&#x83B7;&#x53D6;&#x5FAE;&#x4FE1;&#x7FA4;&#x6210;&#x5458;&#x5173;&#x6CE8;&#x548C;&#x7C89;&#x4E1D;&#x7684;API</a></li>
-<li><a href="https://justyy.com/archives/5070" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
-<li><a href="https://justyy.com/archives/5063" target="_blank" rel="noopener">&#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account</a></li>
-</ul>
-<p>&#x6700;&#x8FD1;&#x5E16;&#x5B50;:</p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-16" target="_blank" rel="noopener">CN &#x6BCF;&#x65E5;&#x6392;&#x884C;&#x699C;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x6253;&#x7B97;&#x6362;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x6BCF;&#x5E74;&#x4E5F;&#x5F97;&#x53BB;&#x9762;&#x8BD5;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">STEEM&#x4E2D;&#x6587;&#x533A;&#x526A;&#x5200;&#x77F3;&#x5934;&#x5E03;&#x5927;&#x8D5B; - &#x7B2C;&#x4E00;&#x671F; &#xFF08;&#x5956;&#x91D1;30 SBD + &#x5E16;&#x5B50;SBD&#x6536;&#x76CA;&#xFF09;</a></li>
-</ul>
-<p>STEEMIT CN RSS Tools:</p>
-<ul>
-<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">SteemIt Daily Wechat Group Ranking </a></li>
-<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/" target="_blank" rel="noopener">SteemIt CN RSS for Posts</a></li>
-<li><a href="https://helloacm.com/tools/steemit/wechat-ranking/rss/comments/" target="_blank" rel="noopener">SteemIt CN RSS for Comments</a></li>
-</ul>
-<p>Chrome Extensions:</p>
-<ul>
-<li><a href="https://helloacm.com/hide-steemit-payout/" target="_blank" rel="noopener">Hide Steemit Payout</a></li>
-<li><a href="https://helloacm.com/chrome-extension-to-switch-between-simplified-chinese-and-traditional-chinese-automatically/" target="_blank" rel="noopener">Simplified to Traditional Switch</a></li>
-</ul>
-<p>Steem API:</p>
-<ul>
-<li><a href="https://helloacm.com/steemit-api-two-apis-to-get-the-followers-and-following-list-in-the-wechat-group/" target="_blank" rel="noopener">Two APIs to get the followers and following list in the Wechat Group</a></li>
-<li><a href="https://helloacm.com/how-to-get-transfer-history-of-steemit-accounts-via-steemit-apitransfer-history/" target="_blank" rel="noopener">SteemIt API/transfer-history</a></li>
-<li><a href="https://helloacm.com/how-to-retrieve-steemit-account-information-via-api-steemitaccount/" target="_blank" rel="noopener">steemit/account</a></li>
-</ul>
-<p>Recent Posts:</p>
-<ul>
-<li><a href="https://steemit.com/stats/@dailystats/daily-top-30-authors-pending-payout-in-the-last-7-days-2017-09-16" target="_blank" rel="noopener">Daily Top 30 Authors by Pending Payout in Last 7 Days</a></li>
-<li><a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">Go to an Interview even if you are not changing your job.</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steem-50-sbd" target="_blank" rel="noopener">Rock-Paper-Scissors Gaming Contest for SteemIt CN Community</a></li>
-</ul>
-<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
-<ul>
-<li><a href="https://justyy.com/archives/5322" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386;</a></li>
-<li><a href="https://helloacm.com/the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a-robot-python-script-up-running/" target="_blank" rel="noopener">The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></li>
-</ul>
-<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
-<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/teamviewer-vps-steemit-the-experience-of-using-teamviewer-on-iphone-se-connecting-to-desktop-and-ssh-to-vps-in-order-to-make-a" target="_blank" rel="noopener">&#x8BB0;&#x4E00;&#x6B21;&#x901A;&#x8FC7;&#x624B;&#x673A;TeamViewer&#x8FDC;&#x7A0B;&#x767B;&#x9646;&#x5BB6;&#x91CC;&#x670D;&#x52A1;&#x5668;&#x518D;&#x8FDC;&#x7A0B;&#x767B;&#x9646;VPS&#x6572;&#x547D;&#x4EE4;&#x5728;STEEMIT&#x4E0A;&#x53D1;&#x8D34;&#x7684;&#x7ECF;&#x5386; - The experience of using Teamviewer on iPhone SE, connecting to desktop, and SSH to VPS, in order to make a Robot Python script up running.</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/introduction-to-logic-tests-series-4-1/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Introduction to Logic Tests Series 逻辑测试系列 - 一种只有4种语句的编程语言 - （1）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-16T16:05:24.000Z">2017-09-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1015 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/introduction-to-logic-tests-series-4-1/">Introduction to Logic Tests Series 逻辑测试系列 - 一种只有4种语句的编程语言 - （1）</a>
-            
-        </h1>
-        <div class="content">
-            <p>Many companies have IQ tests or logics tests as one of the <a href="https://steemit.com/cn/@justyy/go-to-an-interview-even-if-you-are-not-changing-your-job" target="_blank" rel="noopener">interviewing</a> methods. These questions are not intended to test interviewee candidates for the specific programming knowledge, rather, they are to testing the if the candidates are &#x2018;intelligent enough&#x2019;.  For programming jobs, the <a href="https://helloacm.com/go-to-an-interview-even-if-you-are-not-changing-your-job/" target="_blank" rel="noopener">candidates</a> are often required to solve problems (puzzles) in analytic manners. </p>
-<p>It is a bias to pick any programming languages simply for this purpose. Solving puzzles do not require specific knowledge of any programming languages. And how are we going to test the candidates?</p>
-<p>Luckily, here is a programming language that consists of four instructions. The variables hold non-negative integers. You don&#x2019;t need to explicitly define variables but you have to zero or assign the values before using them, similar as <a href="https://helloacm.com/interview-question-what-is-the-difference-between-list-and-dictionary-in-python/" target="_blank" rel="noopener">Python</a>.</p>
-<ul>
-<li>ZERO<br>Use ZERO instruction to clear a variable i.e. <code>X=0</code></li>
-</ul>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZERO(X)</span><br></pre></td></tr></tbody></table></figure>
-<ul>
-<li><p>Assign a variable<br>You can&#x2019;t assign arbitrary values (constants) to a variable, however, you can use ASGN(X, Y) to assign value of Y variable to X, which is equal to  <code>X=Y</code></p>
-</li>
-<li><p>INCR<br><code>X++</code> is implemented via <code>INCR(X)</code></p>
-</li>
-<li><p>LOOP<br>Use  <code>LOOP(X) {}</code> to start a Loop of X times. Inside the loop, you can change the X value however the loop still goes X times.</p>
-</li>
-</ul>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (; x &gt; 0; -- x) {</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>I am going to start a series of using this tiny programming language, and you will see even with four instructions, this language can be very powerful.</p>
-<p>First example is to define a ADD procedure that takes two parameters X and Y and it will perform <code>X += Y</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ADD(X, Y) {</span><br><span class="line">    LOOP(Y) {   // Loop Y times</span><br><span class="line">       INCR(X)    // Increment X</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>Do you get this?</p>
-<p><img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt=""><br><em>Image Credit: pixabay.com</em></p>
-<p>&#x4E00;&#x822C;<a href="https://justyy.com/archives/5317" target="_blank" rel="noopener">&#x5927;&#x516C;&#x53F8;</a>&#x90FD;&#x4F1A;&#x6709;&#x7C7B;&#x4F3C;&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x6216;&#x8005;IQ&#x6D4B;&#x8BD5;&#x9898;&#xFF0C;&#x8FD9;&#x4E9B;&#x9898;&#x8003;&#x7684;&#x5E76;&#x4E0D;&#x662F;&#x4F60;&#x5BF9;&#x67D0;&#x79CD;&#x6280;&#x80FD;&#xFF08;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF09;&#x7684;&#x638C;&#x63E1;&#x60C5;&#x51B5;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x8FC7;&#x6EE4;&#x6389;&#x6BD4;&#x8F83;&#x7B28;&#x7684;&#x4EBA;&#xFF0C;&#x56E0;&#x4E3A;&#x2026;&#x2026;&#x6211;&#x89C9;&#x5F97;&#x592A;&#x7B28;&#x7684;&#x4EBA;&#x5199;&#x4E0D;&#x4E86;&#x7A0B;&#x5E8F;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#xFF0C;&#x4F60;&#x9009;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x90FD;&#x662F;&#x5E26;&#x6709;&#x504F;&#x89C1;&#x7684;&#xFF0C;&#x78B0;&#x5DE7;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#xFF0C;&#x53EA;&#x6709;4&#x6761;&#x6307;&#x4EE4;&#xFF0C;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x90FD;&#x662F;&#x975E;&#x8D1F;&#x6574;&#x6570;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x91CC;&#xFF0C;&#x53D8;&#x91CF;&#x4E0D;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528;&#x524D;&#x9700;&#x8981;&#x50CF; <a href="https://justyy.com/archives/5217" target="_blank" rel="noopener">PYTHON</a> &#x4E00;&#x6837;&#x8D4B;&#x503C;&#xFF08;&#x6216;&#x8005;&#x6E05;&#x7A7A;&#xFF09;&#xFF0C;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x4E5F;&#x80FD;&#x62FF;&#x6765;&#x5F53;&#x9762;&#x8BD5;&#x9898;&#x3002;</p>
-<ul>
-<li>&#x6E05;&#x7A7A;<br>&#x7528; ZERO(X) &#x6765;&#x628A;X&#x53D8;&#x91CF;&#x6E05;&#x7A7A;&#xFF0C;&#x6BD4;&#x5982;&#x4EE5;&#x4E0B; &#x76F8;&#x5F53;&#x4E8E; <code>X=0</code></li>
-</ul>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZERO(X)</span><br></pre></td></tr></tbody></table></figure>
-<ul>
-<li><p>&#x8D4B;&#x503C;<br>&#x7528; ASGN(X, Y) &#x628A; Y &#x53D8;&#x91CF;&#x8D4B;&#x503C;&#x4E8E;X&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>X=Y</code> &#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4E8B;&#xFF0C;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x80FD;&#x628A;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5E38;&#x6570;&#x503C;&#x8D4B;&#x4E8E;&#x53D8;&#x91CF;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4; Y &#x5FC5;&#x987B;&#x662F;&#x53D8;&#x91CF;&#x800C;&#x4E0D;&#x662F;&#x5E38;&#x91CF;&#x3002;</p>
-</li>
-<li><p>&#x589E;&#x52A0;1<br>&#x7528; INCR(X) &#x628A; X &#x53D8;&#x91CF;&#x589E;&#x52A0;1&#xFF0C;&#x76F8;&#x5F53;&#x4E8E; <code>X++</code></p>
-</li>
-<li><p>&#x5FAA;&#x73AF;<br>&#x7528; LOOP(X) {} &#x6765;&#x5FAA;&#x73AF; X &#x6B21; &#x82B1;&#x62EC;&#x53F7;&#x91CC;&#x7684;&#x5185;&#x5BB9;&#xFF0C;X&#x53EF;&#x4EE5;&#x5728;&#x5FAA;&#x73AF;&#x91CC;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x4E0D;&#x8FC7;&#x5FAA;&#x73AF;&#x8FD8;&#x662F;&#x6267;&#x884C;X&#x6B21;&#x3002; &#x76F8;&#x5F53;&#x4E8E;&#xFF1A;</p>
-</li>
-</ul>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for (; x &gt; 0; -- x) {</span><br><span class="line"></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x6211;&#x5C06;&#x4F1A;&#x5F00;&#x542F;&#x8FD9;&#x4E2A;&#x903B;&#x8F91;&#x7F16;&#x7A0B;&#x7CFB;&#x5217;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5C3D;&#x7BA1;&#x53EA;&#x6709;4&#x6761;&#x8BED;&#x53E5;&#xFF0C;&#x4F46;&#x662F;&#x53EF;&#x4EE5;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5B9E;&#x5728;&#x662F;&#x5F88;&#x5F3A;&#x5927;&#x3002;</p>
-<p>&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x4F55;&#x5B9A;&#x4E49; <code>ADD(X, Y)</code> &#x4F7F;&#x5F97;  <code>X += Y</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ADD(X, Y) {</span><br><span class="line">    LOOP(Y) {   &#x5FAA;&#x73AF; Y &#x6B21;</span><br><span class="line">       INCR(X)    &#x6BCF;&#x6B21;&#x628A;X&#x52A0;&#x4E00;</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x6709;&#x610F;&#x601D;&#xFF1F;</p>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
-<ul>
-<li><a href="https://helloacm.com/introduction-to-logic-tests-series/" target="_blank" rel="noopener">Introduction to Logic Tests Series</a></li>
-<li><a href="https://justyy.com/archives/5320" target="_blank" rel="noopener">&#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217; &#x2013; &#x4E00;&#x79CD;&#x53EA;&#x6709;4&#x79CD;&#x8BED;&#x53E5;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00; &#x2013; &#xFF08;1&#xFF09;</a></li>
-<li><a href="https://justyy.com/archives/5317" target="_blank" rel="noopener">&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x6253;&#x7B97;&#x6362;&#x5DE5;&#x4F5C;&#xFF0C;&#x4F60;&#x6BCF;&#x5E74;&#x4E5F;&#x5F97;&#x53BB;&#x9762;&#x8BD5;</a></li>
-<li><a href="https://helloacm.com/go-to-an-interview-even-if-you-are-not-changing-your-job/" target="_blank" rel="noopener">Go to an Interview even if you are not changing your job.</a></li>
-</ul>
-<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
-<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/introduction-to-logic-tests-series-4-1" target="_blank" rel="noopener">Introduction to Logic Tests Series &#x903B;&#x8F91;&#x6D4B;&#x8BD5;&#x7CFB;&#x5217; - &#x4E00;&#x79CD;&#x53EA;&#x6709;4&#x79CD;&#x8BED;&#x53E5;&#x7684;&#x7F16;&#x7A0B;&#x8BED;&#x8A00; - &#xFF08;1&#xFF09;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-cn-updates---cn72017-09-16/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-16)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-16T11:00:09.000Z">2017-09-16</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 minutes read (About 1410 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates---cn72017-09-16/">Daily #CN Updates - CN社区每日榜单【优质内容机器人点赞记录】【过去7天潜在收益排行榜】【那些优秀被错过的文章】(2017-09-16)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-09-16 11:11:02 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-09-12 11:11:02 (UTC) to 2017-09-13 11:11:02 (UTC)</p>
-<h2 id="2017-09-16-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-09-16-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-09-16 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-09-16 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @shieha | <a href="https://steemit.com/photography/@shieha/i-finally-got-a-new-phone-thanks-to-steemit-steemit" target="_blank" rel="noopener">I Finally Got A New Phone Thanks To Steemit! &#x6211;&#x7D42;&#x65BC;&#x63DB;&#x4E86;&#x4E00;&#x96BB;&#x65B0;&#x7684;&#x624B;&#x6A5F;&#xFF0C;&#x8B1D;&#x8B1D;Steemit&#xFF01;</a> |<br>| 2 | @liflorence | <a href="https://steemit.com/travel/@liflorence/my-southeast-asia-trip-a-wonderland-inle-lake-myanmar-1-1" target="_blank" rel="noopener">My Southeast Asia trip# a wonderland Inle lake, Myanmar 1&#x20E3;&#xFE0F;&#x6211;&#x7684;&#x4E1C;&#x5357;&#x4E9A;&#x4E4B;&#x65C5;&#x4E4B;&#x795E;&#x5947;&#x7684;&#x7F05;&#x7538;&#x83B1;&#x8335;&#x6E56; 1&#x20E3;&#xFE0F; ??????</a> |<br>| 3 | @nationalpark | <a href="https://steemit.com/cn/@nationalpark/one-day-in-lisbon" target="_blank" rel="noopener">One Day in Lisbon &#x91CC;&#x65AF;&#x672C;&#x4E00;&#x65E5; ??</a> |<br>| 4 | @travelgirl | <a href="https://steemit.com/yourcityvibez/@travelgirl/yourcityvibez-entry-1-urban-osaka-japan-or-yourcityvibez-1" target="_blank" rel="noopener">YourCityVibez Entry #1 - Urban - Osaka @ Japan    YourCityVibez &#x651D;&#x5F71;&#x6BD4;&#x8CFD; #1 - &#x5927;&#x962A; @ &#x65E5;&#x672C;</a> |<br>| 5 | @aafeng | <a href="https://steemit.com/cn/@aafeng/a-great-family-day-in-laoniu-children-centre-bejing" target="_blank" rel="noopener">&#x5317;&#x4EAC;&#x8001;&#x725B;&#x4F53;&#x9A8C;&#x9986;&#x4EB2;&#x5B50;&#x4F53;&#x9A8C; / A great family day in Laoniu children discovery museum, Bejing</a> |<br>| 6 | @aafeng | <a href="https://steemit.com/cn/@aafeng/5hl12q" target="_blank" rel="noopener">&#x4E5F;&#x6765;&#x8BF4;&#x8BF4;&#x6211;&#x7684;&#x5174;&#x8DA3;&#xFF1A;&#x4E52;&#x4E53;&#x7403;</a> |<br>| 7 | @fundurian | <a href="https://steemit.com/cn/@fundurian/ico-event" target="_blank" rel="noopener">&#x5206;&#x4EAB;&#x6628;&#x665A;&#x53C2;&#x52A0;&#x7684;&#x5982;&#x4F55;&#x53D1;&#x5E03;ICO event</a> |<br>| 8 | @mrpointp | <a href="https://steemit.com/cn/@mrpointp/original-or" target="_blank" rel="noopener">&#x6211;&#x7684;&#x5973;&#x53CB;&#x201C;&#x5BA0;&#x7269;&#x201D; (Original) &#x4E2D;&#x6587;&#x793E;&#x533A;&#x5BA0;&#x7269;&#x9009;&#x7F8E;&#x5927;&#x8D5B;</a> |<br>| 9 | @superhardness | <a href="https://steemit.com/cn/@superhardness/5ivukr" target="_blank" rel="noopener">&#x4EBA;&#x751F;&#x7684;&#x7B2C;&#x4E00;&#x6B21;&#x63A2;&#x9669;</a> |<br>| 10 | @bring | <a href="https://steemit.com/cn/@bring/steemit-small-fish-of-steemit-watching-the-dragon-gate" target="_blank" rel="noopener">Steemit&#x4E0A;&#x7684;&#x5C0F;&#x9C7C;&#x671B;&#x9F99;&#x95E8; Small fish of Steemit watching the Dragon Gate</a> |<br>&#x7B26;&#x5408;&#x6761;&#x4EF6;&#x7684;&#x6587;&#x7AE0;&#x603B;&#x6570;: 15</p>
-<h2 id="2017-09-16-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-09-16-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-09-16 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-09-16 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;&#x5C11;&#x91CF;&#x4FEE;&#x6539;&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|&#x2014;:|&#x2014;:|<br>| 1| @oflyhigh | 7 | 2561 | 1664.02 |237.72 |<br>| 2| @rivalhw | 7 | 1522 | 1271.83 |181.69 |<br>| 3| @htliao | 7 | 1537 | 1087.98 |155.43 |<br>| 4| @tumutanzi | 7 | 1275 | 990.15 |141.45 |<br>| 5| @blackbunny | 7 | 1041 | 911.27 |130.18 |<br>| 6| @linuslee0216 | 7 | 1171 | 908.43 |129.78 |<br>| 7| @deanliu | 4 | 1373 | 876.22 |219.05 |<br>| 8| @jubi | 11 | 1159 | 864.71 |78.61 |<br>| 9| @nicolemoker | 6 | 1124 | 821.28 |136.88 |<br>| 10| @guyverckw | 9 | 997 | 784.37 |87.15 |<br>| 11| @elfkitchen | 7 | 1046 | 779.71 |111.39 |<br>| 12| @kitcat | 7 | 995 | 773.45 |110.49 |<br>| 13| @myfirst | 5 | 899 | 771.00 |154.20 |<br>| 14| @bxt | 7 | 796 | 735.09 |105.01 |<br>| 15| @joythewanderer | 10 | 1138 | 685.41 |68.54 |<br>| 16| @stacee | 5 | 869 | 684.30 |136.86 |<br>| 17| @justyy | 20 | 1948 | 644.63 |32.23 |<br>| 18| @wilkinshui | 7 | 947 | 638.85 |91.26 |<br>| 19| @twinkledrop | 5 | 502 | 571.12 |114.22 |<br>| 20| @ace108 | 26 | 2473 | 564.83 |21.72 |<br>| 21| @someone | 3 | 688 | 556.74 |185.58 |<br>| 22| @aaronli | 6 | 783 | 550.02 |91.67 |<br>| 23| @krischy | 4 | 871 | 543.35 |135.84 |<br>| 24| @dapeng | 8 | 611 | 517.86 |64.73 |<br>| 25| @travelgirl | 14 | 1160 | 416.08 |29.72 |<br>| 26| @birds90 | 5 | 649 | 413.54 |82.71 |<br>| 27| @susanlo | 2 | 580 | 409.40 |204.70 |<br>| 28| @lingfei | 6 | 488 | 395.52 |65.92 |<br>| 29| @lemooljiang | 9 | 800 | 388.05 |43.12 |<br>| 30| @tvb | 7 | 533 | 379.22 |54.17 |</p>
-<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
-<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~<br>The quality-content-upvoting-bot motivates for more good contents in [CN], however, I will also upvote other authors if good content are produced.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">&#x65F6;&#x95F4; Time</th>
-<th style="text-align:right">&#x4F5C;&#x8005; Author</th>
-<th style="text-align:right">&#x6587;&#x7AE0; Post</th>
-<th style="text-align:right">&#x6743;&#x91CD; Weighting %</th>
-<th style="text-align:right">VP %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">2017-09-15 00:02:10</td>
-<td style="text-align:right">@guyverckw</td>
-<td style="text-align:right"><a href="https://steemit.com/@guyverckw/lucky-or-lucky-the-cat" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:right">15.64</td>
-<td style="text-align:right">69.51</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 00:04:01</td>
-<td style="text-align:right">@travelgirl</td>
-<td style="text-align:right"><a href="https://steemit.com/@travelgirl/traveling-the-world-54-asia-series-harbin-international-ice-and-snow-sculpture-festival-harbin-china-1-54" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:right">7.28</td>
-<td style="text-align:right">69.31</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 01:24:32</td>
-<td style="text-align:right">@victorier</td>
-<td style="text-align:right"><a href="https://steemit.com/@victorier/liskcoin-or-update-on-getting-liskcoin-dividend" target="_blank" rel="noopener">@victorier</a></td>
-<td style="text-align:right">9.12</td>
-<td style="text-align:right">67.53</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 02:00:40</td>
-<td style="text-align:right">@rivalhw</td>
-<td style="text-align:right"><a href="https://steemit.com/@rivalhw/how-to-increase-your-posts-popularity-part-2" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:right">16.30</td>
-<td style="text-align:right">67.90</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 02:01:07</td>
-<td style="text-align:right">@bxt</td>
-<td style="text-align:right"><a href="https://steemit.com/@bxt/braised-duck-leg-with-secret-sauce" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:right">13.20</td>
-<td style="text-align:right">67.68</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 02:24:25</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/improved-top-21-level-1-commenters-for-20170914-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">9.16</td>
-<td style="text-align:right">67.82</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 03:23:19</td>
-<td style="text-align:right">@htliao</td>
-<td style="text-align:right"><a href="https://steemit.com/@htliao/4bafx5" target="_blank" rel="noopener">@htliao</a></td>
-<td style="text-align:right">16.44</td>
-<td style="text-align:right">68.50</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 06:00:30</td>
-<td style="text-align:right">@blackbunny</td>
-<td style="text-align:right"><a href="https://steemit.com/@blackbunny/2benjz" target="_blank" rel="noopener">@blackbunny</a></td>
-<td style="text-align:right">16.91</td>
-<td style="text-align:right">70.44</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 06:24:21</td>
-<td style="text-align:right">@nicolemoker</td>
-<td style="text-align:right"><a href="https://steemit.com/@nicolemoker/introduction-of-nicole-s-pet-1-ms-oreo-or-ms-oreo" target="_blank" rel="noopener">@nicolemoker</a></td>
-<td style="text-align:right">11.64</td>
-<td style="text-align:right">70.53</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 06:46:28</td>
-<td style="text-align:right">@stacee</td>
-<td style="text-align:right"><a href="https://steemit.com/@stacee/better-than-any-restaurant-mom-s-cooking-part-6" target="_blank" rel="noopener">@stacee</a></td>
-<td style="text-align:right">13.78</td>
-<td style="text-align:right">70.66</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 08:46:51</td>
-<td style="text-align:right">@lingfei</td>
-<td style="text-align:right"><a href="https://steemit.com/@lingfei/52qfbn" target="_blank" rel="noopener">@lingfei</a></td>
-<td style="text-align:right">9.54</td>
-<td style="text-align:right">70.68</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 09:23:33</td>
-<td style="text-align:right">@joythewanderer</td>
-<td style="text-align:right"><a href="https://steemit.com/@joythewanderer/steemit-meetup-barcelona-during-la-merce-festival-23-26-september" target="_blank" rel="noopener">@joythewanderer</a></td>
-<td style="text-align:right">13.89</td>
-<td style="text-align:right">71.24</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 10:01:55</td>
-<td style="text-align:right">@dapeng</td>
-<td style="text-align:right"><a href="https://steemit.com/@dapeng/or-7" target="_blank" rel="noopener">@dapeng</a></td>
-<td style="text-align:right">9.69</td>
-<td style="text-align:right">71.77</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 10:02:26</td>
-<td style="text-align:right">@krischy</td>
-<td style="text-align:right"><a href="https://steemit.com/@krischy/explore-hong-kong-with-me-9-authentic-thai-restaurant-and-rose-gelato-in-wan-chai" target="_blank" rel="noopener">@krischy</a></td>
-<td style="text-align:right">7.50</td>
-<td style="text-align:right">71.44</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 10:46:22</td>
-<td style="text-align:right">@deanliu</td>
-<td style="text-align:right"><a href="https://steemit.com/@deanliu/one-catfe-in-beijing-faith-coffee-offers-specialty-coffee-and-something-that-melts-your-heart" target="_blank" rel="noopener">@deanliu</a></td>
-<td style="text-align:right">17.26</td>
-<td style="text-align:right">71.94</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 11:24:11</td>
-<td style="text-align:right">@myfirst</td>
-<td style="text-align:right"><a href="https://steemit.com/@myfirst/68ys2j" target="_blank" rel="noopener">@myfirst</a></td>
-<td style="text-align:right">16.25</td>
-<td style="text-align:right">72.21</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 11:47:23</td>
-<td style="text-align:right">@jubi</td>
-<td style="text-align:right"><a href="https://steemit.com/@jubi/5wmwgs" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:right">11.93</td>
-<td style="text-align:right">72.28</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 12:47:18</td>
-<td style="text-align:right">@wilkinshui</td>
-<td style="text-align:right"><a href="https://steemit.com/@wilkinshui/4-tenx" target="_blank" rel="noopener">@wilkinshui</a></td>
-<td style="text-align:right">11.79</td>
-<td style="text-align:right">71.48</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 13:01:41</td>
-<td style="text-align:right">@yyyy</td>
-<td style="text-align:right"><a href="https://steemit.com/@yyyy/4t2c9t-because-of-love" target="_blank" rel="noopener">@yyyy</a></td>
-<td style="text-align:right">7.51</td>
-<td style="text-align:right">71.50</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 13:24:15</td>
-<td style="text-align:right">@someone</td>
-<td style="text-align:right"><a href="https://steemit.com/@someone/old-summer-palace---the-eternal-memory---by-seastar" target="_blank" rel="noopener">@someone</a></td>
-<td style="text-align:right">11.83</td>
-<td style="text-align:right">71.70</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 14:02:41</td>
-<td style="text-align:right">@aaronli</td>
-<td style="text-align:right"><a href="https://steemit.com/@aaronli/hong-kong-snapshot-25-with-video-tang-lung-chau-market-a-half-ruined-market-26" target="_blank" rel="noopener">@aaronli</a></td>
-<td style="text-align:right">11.89</td>
-<td style="text-align:right">72.06</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 14:47:01</td>
-<td style="text-align:right">@linuslee0216</td>
-<td style="text-align:right"><a href="https://steemit.com/@linuslee0216/5wnh17-steemit" target="_blank" rel="noopener">@linuslee0216</a></td>
-<td style="text-align:right">15.98</td>
-<td style="text-align:right">71.04</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 14:47:23</td>
-<td style="text-align:right">@elfkitchen</td>
-<td style="text-align:right"><a href="https://steemit.com/@elfkitchen/roadside-breakfast" target="_blank" rel="noopener">@elfkitchen</a></td>
-<td style="text-align:right">13.81</td>
-<td style="text-align:right">70.81</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-15 15:02:18</td>
-<td style="text-align:right">@oflyhigh</td>
-<td style="text-align:right"><a href="https://steemit.com/@oflyhigh/2tgvdr" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:right">17.00</td>
-<td style="text-align:right">70.82</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:01:39</td>
-<td style="text-align:right">@kitcat</td>
-<td style="text-align:right"><a href="https://steemit.com/@kitcat/drawing-challenge-5-draw-a-hand" target="_blank" rel="noopener">@kitcat</a></td>
-<td style="text-align:right">14.64</td>
-<td style="text-align:right">75.07</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:02:53</td>
-<td style="text-align:right">@travelgirl</td>
-<td style="text-align:right"><a href="https://steemit.com/@travelgirl/steemitphotochallenge-entry-1-dancing-house-prague-czech-republic-or-steemitphotochallenge-1" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:right">7.86</td>
-<td style="text-align:right">74.86</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:25:29</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/improved-top-20-level-1-commenters-for-20170915-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">10.13</td>
-<td style="text-align:right">75.06</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:46:21</td>
-<td style="text-align:right">@htliao</td>
-<td style="text-align:right"><a href="https://steemit.com/@htliao/69twws" target="_blank" rel="noopener">@htliao</a></td>
-<td style="text-align:right">17.33</td>
-<td style="text-align:right">72.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 00:46:52</td>
-<td style="text-align:right">@twinkledrop</td>
-<td style="text-align:right"><a href="https://steemit.com/@twinkledrop/my-experience-about-visiting-legoland-windsor" target="_blank" rel="noopener">@twinkledrop</a></td>
-<td style="text-align:right">11.90</td>
-<td style="text-align:right">72.13</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 01:46:41</td>
-<td style="text-align:right">@guyverckw</td>
-<td style="text-align:right"><a href="https://steemit.com/@guyverckw/this-is-not-a-ghost-story-2" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:right">16.42</td>
-<td style="text-align:right">72.96</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 02:24:28</td>
-<td style="text-align:right">@bxt</td>
-<td style="text-align:right"><a href="https://steemit.com/@bxt/7-interest-talk-about-my-little-collection-7" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:right">12.05</td>
-<td style="text-align:right">73.05</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 02:47:42</td>
-<td style="text-align:right">@wilkinshui</td>
-<td style="text-align:right"><a href="https://steemit.com/@wilkinshui/3ccfwv" target="_blank" rel="noopener">@wilkinshui</a></td>
-<td style="text-align:right">14.27</td>
-<td style="text-align:right">73.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 04:46:12</td>
-<td style="text-align:right">@jubi</td>
-<td style="text-align:right"><a href="https://steemit.com/@jubi/or-7" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:right">16.79</td>
-<td style="text-align:right">74.63</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 06:23:08</td>
-<td style="text-align:right">@blackbunny</td>
-<td style="text-align:right"><a href="https://steemit.com/@blackbunny/2vfe6g" target="_blank" rel="noopener">@blackbunny</a></td>
-<td style="text-align:right">18.17</td>
-<td style="text-align:right">75.71</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 08:00:45</td>
-<td style="text-align:right">@linuslee0216</td>
-<td style="text-align:right"><a href="https://steemit.com/@linuslee0216/or-7" target="_blank" rel="noopener">@linuslee0216</a></td>
-<td style="text-align:right">17.27</td>
-<td style="text-align:right">76.78</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 09:23:12</td>
-<td style="text-align:right">@tumutanzi</td>
-<td style="text-align:right"><a href="https://steemit.com/@tumutanzi/6sx6un" target="_blank" rel="noopener">@tumutanzi</a></td>
-<td style="text-align:right">18.64</td>
-<td style="text-align:right">77.65</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 10:23:17</td>
-<td style="text-align:right">@rivalhw</td>
-<td style="text-align:right"><a href="https://steemit.com/@rivalhw/6apkrp-steemit" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:right">18.77</td>
-<td style="text-align:right">78.19</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-09-16 10:25:17</td>
-<td style="text-align:right">@lemooljiang</td>
-<td style="text-align:right"><a href="https://steemit.com/@lemooljiang/v" target="_blank" rel="noopener">@lemooljiang</a></td>
-<td style="text-align:right">8.21</td>
-<td style="text-align:right">78.22</td>
-</tr>
-</tbody>
-</table>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<h2 id="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;"><a href="#&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019;-&#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;" class="headerlink" title="&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:"></a>&#x6BCF;&#x65E5;&#x2019;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x2019; &#x6392;&#x884C;&#x699C;&#x51E0;&#x70B9;&#x8BF4;&#x660E;:</h2><ul>
-<li>&#x53D6;&#x7684;&#x662F;&#x53D1;&#x8D34;&#x5728;3 &#x5230;4&#x5929;&#x524D;&#x7684; 10&#x4E2A;&#x8F83;&#x5C11;&#x6536;&#x76CA;&#xFF08;&#x8F83;&#x5C11;&#x88AB;&#x5173;&#x6CE8;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x8D28;&#x91CF;&#x53C8;&#x8F83;&#x4E0D;&#x9519;&#xFF09;&#x7684;&#x5E16;&#x5B50;&#x3002;</li>
-<li>&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x53BB;&#x6389;&#x4E86; &#x6211;&#x81EA;&#x5DF1;&#x7684;&#x5E16;&#x5B50; @justyy</li>
-<li>&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x5FAE;&#x8C03;&#x53C2;&#x6570;&#x8BA9;&#x7ED3;&#x679C;&#x66F4;&#x5408;&#x7406;&#x3002;</li>
-<li>&#x67E5;&#x8BE2;SQL&#x8BED;&#x53E5;&#x548C;&#x53C2;&#x6570;&#x6682;&#x65F6;&#x4E0D;&#x516C;&#x5F00;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6837;&#x4F1A;&#x66F4;&#x516C;&#x5E73;&#x4E00;&#x4E9B;&#x3002;<br><img src="https://justyy.com/gif/steemit.gif" alt=""></li>
-</ul>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 22&#x5929;&#x3002; i.e. <a href="https://steemit.com/cn/@justyy/2017-08-25" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E00;&#x5929;</a>, <a href="https://steemit.com/ranking/@justyy/2017-08-26-cn" target="_blank" rel="noopener">&#x53D1;&#x5E03;&#x7684;&#x7B2C;&#x4E8C;&#x5929;</a><br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em><br>Tags: #cn</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates---cn72017-09-16" target="_blank" rel="noopener">Daily #CN Updates - CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;&#x3010;&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;(2017-09-16)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -1343,7 +1333,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/278/">278</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/279/">279</a></li>
             
         </ul>
     </nav>
@@ -1358,11 +1348,11 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/@justyy/">
                 
-                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="None" height="28">
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="justyy" height="28">
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 None&nbsp;
+                &copy; 2020 justyy&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
                 </p>
