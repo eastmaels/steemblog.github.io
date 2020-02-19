@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>升级本地EOS节点至v2.0.2 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x5347;&#x7EA7;">
+        <span class="has-mr-6">1</span>
+        <span>&#x5347;&#x7EA7;</span>
+        </a></li><li>
+        <a class="is-flex" href="#EOS&#x884C;&#x60C5;">
+        <span class="has-mr-6">2</span>
+        <span>EOS&#x884C;&#x60C5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x5176;&#x5B83;">
+        <span class="has-mr-6">3</span>
+        <span>&#x5176;&#x5B83;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">4</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmPbpmVUoJUHtV6YxkBEKQcjfhnpdExy4ZZcfVAHZYeEh2/image.png" alt="升级本地EOS节点至v2.0.2">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-02-10T08:20:24.000Z">2020-02-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 526 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                升级本地EOS节点至v2.0.2
+            
+        </h1>
+        <div class="content">
+            <p>&#x76F8;&#x6BD4;&#x4E8E;STEEM&#x8717;&#x725B;&#x1F40C;&#x4E00;&#x6837;&#x7684;&#x66F4;&#x65B0;&#x901F;&#x5EA6;&#xFF0C;EOS&#x7684;&#x66F4;&#x65B0;&#x6362;&#x4EE3;&#x53EF;&#x8C13;&#x662F;&#x706B;&#x901F;&#x3002;&#x521A;&#x5347;&#x7EA7;&#x5B8C;v2.0.1&#x6CA1;&#x591A;&#x4E45;&#xFF0C;v2.0.2&#x5C31;&#x6765;&#x4E86;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x636E;&#x8BF4;&#x8FD9;&#x4E5F;&#x662F;&#x65E0;&#x5948;&#x4E4B;&#x4E3E;&#xFF0C;&#x56E0;&#x4E3A;EOS&#x4E3B;&#x7F51;&#x4E00;&#x76F4;&#x4E0D;&#x7A33;&#x5B9A;&#xFF0C;&#x54D7;&#x54D7;&#x54D7;&#x54D7;&#x54D7;&#x54D7;&#x4E22;&#x5757;&#xFF0C;&#x6240;&#x4EE5;B1&#x5C31;&#x66F4;&#x65B0;&#x7A0B;&#x5E8F;&#xFF0C;&#x671F;&#x671B;&#x80FD;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x867D;&#x7136;&#x4E22;&#x4E0D;&#x4E22;&#x5757;&#x5565;&#x7684;&#x548C;&#x6211;&#x5173;&#x7CFB;&#x4E0D;&#x5927;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x5347;&#x7EA7;&#x770B;&#x770B;&#x55BD;&#x3002;</p>
+<h1 id="&#x5347;&#x7EA7;"><a href="#&#x5347;&#x7EA7;" class="headerlink" title="&#x5347;&#x7EA7;"></a>&#x5347;&#x7EA7;</h1><p>&#x5C3D;&#x7BA1;&#x7F16;&#x8BD1;&#x65F6;&#x95F4;&#x4E00;&#x5982;&#x65E2;&#x5F80;&#x5730;&#x6F2B;&#x957F;&#xFF0C;&#x4E0D;&#x8FC7;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x6807;&#x81F4;&#x51FA;&#x6765;&#x8FD8;&#x662F;&#x633A;&#x6B23;&#x6170;&#x7684;&#xFF1A;</p>
+<p><img src="https://cdn.steemitimages.com/DQmPbpmVUoJUHtV6YxkBEKQcjfhnpdExy4ZZcfVAHZYeEh2/image.png" alt=""></p>
+<p>&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#x540E;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x7248;&#x672C;&#x53F7;&#xFF1A;</p>
+<blockquote>
+<p><code>nodeos --version</code></p>
+</blockquote>
+<p>&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF0C;&#x7248;&#x672C;&#x53F7;v2.0.1&#xFF0C;&#x770B;&#x6765;&#x6CA1;&#x641E;&#x9519;&#x3002;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmUtGcBBj3hvHds5fS1ULx8zcxFmBrDZTaUeEJq3VK2uSd/image.png" alt=""></p>
+</blockquote>
+<p>&#x56E0;&#x4E3A;&#x4E4B;&#x524D;&#x5DF2;&#x7ECF;&#x5347;&#x7EA7;&#x5230;v2.0.1&#xFF0C;&#x6240;&#x4EE5;&#x66FF;&#x6362;nodeos&#x7A0B;&#x5E8F;&#x5373;&#x53EF;&#xFF0C;&#x4E00;&#x5207;&#x1F197;&#xFF01;</p>
+<h1 id="EOS&#x884C;&#x60C5;"><a href="#EOS&#x884C;&#x60C5;" class="headerlink" title="EOS&#x884C;&#x60C5;"></a>EOS&#x884C;&#x60C5;</h1><p>&#x8DDD;&#x79BB;2&#x6708;14&#x65E5;&#xFF0C;voice beta&#x7248;&#x53D1;&#x5E03;&#x7684;&#x65E5;&#x671F;&#x8D8A;&#x6765;&#x8D8A;&#x8FD1;&#x4E86;&#xFF0C;EOS&#x4E5F;&#x987A;&#x52BF;&#x62C9;&#x4E86;&#x4E00;&#x6CE2;&#xFF0C;&#x4EF7;&#x683C;&#x4E00;&#x5EA6;&#x7A81;&#x7834;&#x4E86;5&#x7F8E;&#x5143;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E3B;&#x8981;&#x6211;&#x89C9;&#x5F97;&#x8FD8;&#x662F;BTC&#x51CF;&#x534A;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x6BD5;&#x7ADF;&#x6700;&#x8FD1;&#x666E;&#x6DA8;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmRTvLQ97HaWaTcmmzH5VvbY5PHmgHPNrti8Ui8YPGEe2k/image.png" alt=""></p>
+<p>&#x60F3;&#x8D77;&#x6211;&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#x5728;3&#x7F8E;&#x5143;&#x51FA;&#x5934;&#x6E05;&#x6389;&#x4E86;&#x597D;&#x591A;EOS&#xFF0C;&#x5C31;&#x6B32;&#x54ED;&#x65E0;&#x6CEA;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6BCF;&#x6B21;&#x6211;&#x90FD;&#x5356;&#x5728;&#x9ECE;&#x660E;&#x524D;&#xFF1F;</p>
+<h1 id="&#x5176;&#x5B83;"><a href="#&#x5176;&#x5B83;" class="headerlink" title="&#x5176;&#x5B83;"></a>&#x5176;&#x5B83;</h1><p>BM&#x7ADF;&#x7136;&#x5728;&#x63A8;&#x7279;&#x4E0A;&#x5BF9;&#x65B0;&#x51A0;&#x80BA;&#x708E;&#x75AB;&#x60C5;&#x53D1;&#x8A00;&#x4E86;&#xFF01;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x81EA;&#x5DF1;&#x53BB;&#x770B;&#x5427;&#xFF0C;&#x6211;&#x5C31;&#x4E0D;&#x8F6C;&#x4E86;&#x3002;</p>
+<p>&#x4ED6;&#x4EE5;&#x4E3A;&#x4ED6;&#x662F;&#x5168;&#x80FD;&#x7684;&#x4EBA;&#x5417;&#xFF1F;&#x4EC0;&#x4E48;&#x90FD;&#x61C2;&#xFF1F;&#x4E5F;&#x662F;&#x9189;&#x4E86;&#xFF0C;&#x6709;&#x90A3;&#x65F6;&#x95F4;&#x8D76;&#x7D27;&#x628A;EOS&#x597D;&#x597D;&#x5F04;&#x5F04;&#x3002;&#x770B;&#x770B;&#x90FD;&#x6210;&#x5565;&#x6837;&#x4E86;&#xFF1F;</p>
+<p><img src="https://cdn.steemitimages.com/DQmUFcwXkdsRLeSwfFnyYc9JmrMQjy6sR4KwL3GKpp8sXCH/image.png" alt=""></p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://github.com/EOSIO/eos/releases/tag/v2.0.2" target="_blank" rel="noopener">EOSIO v2.0.2 Release Notes</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/eosv2-0-26208c4bff2" target="_blank" rel="noopener">&#x2018;&#x5347;&#x7EA7;&#x672C;&#x5730;EOS&#x8282;&#x70B9;&#x81F3;v2.0.2&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/eos/">eos</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/life/">life</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/8f9d4cfde8/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">加了满满的一箱油</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/050f2d9735/">
+                <span class="level-item">现在才知道快递上门的日子是多么幸福</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+

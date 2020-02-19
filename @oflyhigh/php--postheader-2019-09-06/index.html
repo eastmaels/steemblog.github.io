@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>每天进步一点点：PHP  POST以及设置Header的一点探索 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x56DE;&#x663E;Header">
+        <span class="has-mr-6">1</span>
+        <span>&#x56DE;&#x663E;Header</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x53D1;&#x9001;Header">
+        <span class="has-mr-6">2</span>
+        <span>&#x53D1;&#x9001;Header</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">3</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：PHP  POST以及设置Header的一点探索">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-06T10:37:15.000Z">2019-09-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 728 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                每天进步一点点：PHP  POST以及设置Header的一点探索
+            
+        </h1>
+        <div class="content">
+            <p>&#x6700;&#x8FD1;&#x5199;&#x4E2A;PHP&#x811A;&#x672C;&#xFF0C;POST&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x7ED9;&#x6307;&#x5B9A;&#x811A;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x8BBE;&#x7F6E;Header&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x8BBE;&#x7F6E;&#x7684;Header&#x4E0D;&#x751F;&#x6548;&#xFF0C;&#x4E3A;&#x4E86;&#x641E;&#x660E;&#x767D;&#x5230;&#x5E95;&#x54EA;&#x91CC;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x505A;&#x4E86;&#x4E00;&#x70B9;&#x5B66;&#x4E60;&#xFF0C;&#x8BB0;&#x5F55;&#x5982;&#x4E0B;&#xFF0C;&#x5907;&#x5FD8;&#x5E76;&#x4F9B;&#x9047;&#x5230;&#x540C;&#x6837;&#x95EE;&#x9898;&#x7684;&#x670B;&#x53CB;&#x53C2;&#x8003;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x56DE;&#x663E;Header"><a href="#&#x56DE;&#x663E;Header" class="headerlink" title="&#x56DE;&#x663E;Header"></a>&#x56DE;&#x663E;Header</h1><p>&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x6211;&#x8BBE;&#x7F6E;&#x6210;Header&#x662F;&#x5426;&#x6210;&#x529F;&#x53D1;&#x9001;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x6765;&#x56DE;&#x663E;Header&#x8BBE;&#x7F6E;&#xFF0C;&#x7ECF;&#x8FC7;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x53D1;&#x73B0;PHP&#x81EA;&#x5E26;&#x4E00;&#x4E2A;&#x51FD;&#x6570;<a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a>&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8F7B;&#x6613;&#x83B7;&#x53D6;Header&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x7684;&#x793A;&#x4F8B;&#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">foreach (getallheaders() as $name =&gt; $value) {</span><br><span class="line">    echo &quot;$name: $value</span><br><span class="line">&quot;;</span><br><span class="line">}</span><br><span class="line">?&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x4E0A;&#x8FF0;&#x811A;&#x672C;&#xFF0C;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmZzua2L11t52CukbZFBdpxUuFhWKqz1rhgva15es6LvNB/image.png" alt=""></p>
+</blockquote>
+<p>&#x53EF;&#x89C1;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x5DE5;&#x4F5C;&#x826F;&#x597D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x8F85;&#x52A9;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;<a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a>&#x5176;&#x5B9E;&#x662F;<a href="https://www.php.net/manual/en/function.apache-request-headers.php" target="_blank" rel="noopener">apache_request_headers()</a>&#x7684;&#x522B;&#x540D;&#xFF0C;&#x4E24;&#x8005;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<h1 id="&#x53D1;&#x9001;Header"><a href="#&#x53D1;&#x9001;Header" class="headerlink" title="&#x53D1;&#x9001;Header"></a>&#x53D1;&#x9001;Header</h1><p>&#x6211;&#x4F7F;&#x7528;PHP&#x7684;<a href="https://www.php.net/manual/en/ref.curl.php" target="_blank" rel="noopener">curl &#x51FD;&#x6570;</a>&#x6765;&#x5B8C;&#x6210;POST&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    $ch = curl_init(); </span><br><span class="line">    </span><br><span class="line">    $url = &quot;http://serviceuptime.net/header_echo.php&quot;;</span><br><span class="line">    $headers = &quot;Accept-Encoding: gzip, deflate&quot;;</span><br><span class="line">    $data = &quot;Hello!&quot;;</span><br><span class="line">    </span><br><span class="line">    curl_setopt($ch, CURLOPT_URL,$url); </span><br><span class="line">    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); </span><br><span class="line">    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers); </span><br><span class="line">    </span><br><span class="line">    curl_setopt($ch, CURLOPT_POST, 1); </span><br><span class="line">    curl_setopt($ch, CURLOPT_POSTFIELDS, $data); </span><br><span class="line"></span><br><span class="line">    $resp= curl_exec($ch); </span><br><span class="line">    print_r($resp);</span><br><span class="line">?&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4EE3;&#x7801;&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF0C;&#x4F46;&#x662F;&#x6267;&#x884C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x4EE3;&#x7801;&#x4E2D;&#x5E76;&#x6CA1;&#x6709;&#x542B;&#x6709;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x7684;&#x5185;&#x5BB9;&#xFF1A;<br><img src="https://cdn.steemitimages.com/DQmT9qq3YuxvC76RfSpoDUfsYmKwrG2K3bLjE1eKWgMrspj/image.png" alt=""></p>
+<p>&#x90A3;&#x4E48;&#x54EA;&#x91CC;&#x51FA;&#x9519;&#x4E86;&#x5462;&#xFF1F;&#x901A;&#x8FC7;&#x67E5;&#x770B;<a href="https://www.php.net/manual/en/function.curl-setopt.php" target="_blank" rel="noopener">curl_setopt()</a>&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#x4F20;&#x9012;&#x7ED9;<code>CURLOPT_HTTPHEADER</code>&#x9009;&#x9879;&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmQ7nWRzVAtRGHnkHeaitprGpEuTxpSBV96Hk1jBCx8STw/image.png" alt=""></p>
+</blockquote>
+<p>&#x6240;&#x4EE5;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x5199;&#x6CD5;&#x5E94;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p><code>$headers = array(&quot;Accept-Encoding: gzip, deflate&quot;);</code></p>
+</blockquote>
+<p>&#x518D;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x540E;&#xFF0C;&#x679C;&#x7136;&#x8FD4;&#x56DE;&#x4E86;&#x6211;&#x8981;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8BC1;&#x660E;Header&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmQBGHkfaLjigmvTi46VmPETiqYx2zpKBGJN2PomYsFcTZ/image.png" alt=""></p>
+</blockquote>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x65E2;&#x7136;&#x662F;array&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x591A;&#x6761;Header&#x4E86;&#xFF0C;&#x8FD9;&#x6070;&#x6070;&#x8BF4;&#x660E;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x76F4;&#x63A5;&#x4F20;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x3002;</p>
+<p><strong><em>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;</em></strong></p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a></li>
+<li><a href="https://www.php.net/manual/en/function.apache-request-headers.php" target="_blank" rel="noopener">apache_request_headers()</a></li>
+<li><a href="https://www.php.net/manual/en/ref.curl.php" target="_blank" rel="noopener">cURL Functions</a></li>
+<li><a href="https://www.php.net/manual/en/function.curl-setopt.php" target="_blank" rel="noopener">curl_setopt()</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/php--postheader-2019-09-06" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;PHP  POST&#x4EE5;&#x53CA;&#x8BBE;&#x7F6E;Header&#x7684;&#x4E00;&#x70B9;&#x63A2;&#x7D22;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/header/">header</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/php/">php</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/post/">post</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/-2019-09-07/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">继续发世博园的照片</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/kjrwj/">
+                <span class="level-item">吉野家的火锅</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+
