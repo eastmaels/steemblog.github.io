@@ -11,8 +11,8 @@ categories:
 - kr-dev
 tags:
 - kr-dev
-- busy
-- jjm
+- setting
+- aws
 thumbnail: None
 sidebar:
     right:

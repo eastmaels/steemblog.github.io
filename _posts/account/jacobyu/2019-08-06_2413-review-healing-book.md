@@ -1,6 +1,6 @@
 
 ---
-title: '[책 추천] 쓰가루 백년식당'
+title: '[독서일기] 쓰가루 백년식당'
 permlink: 2413-review-healing-book
 catalog: true
 toc_nav_num: true
@@ -15,7 +15,7 @@ tags:
 - kr-book
 - zzan
 - jjm
-thumbnail: 'http://image.kyobobook.co.kr/images/book/xlarge/615/x9788946418615.jpg'
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -31,7 +31,7 @@ widgets:
 《무지개 곶의 찻집》《당신에게》의 저자 모리사와 아키오가 펴낸 『쓰가루 백년 식당』. 평범한 사람들의 일상과 인생을 잔잔하고도 가슴 찡한 이야기로 만들어내는 저자가 이번에는 순수한 젊은이들의 사랑과 방황, 오랜 시간이 지나도 변함없는 가치와 소중한 인연을 그려 보인다. 벚꽃 잎이 흩날리는 쓰가루에서 1800년 중반 메이지 시대에 시작된 오모리 식당 창업주의 정겨운 사랑과 4대째 후손의 아기자기하고 위태로운 사랑을 만나볼 수 있다.</p>
 <p>가업으로 이어온 고향의 메밀국수집 ‘오모리 식당’을 떠나 고독한 대도시 도쿄에서 아르바이트로 살아가는 요이치. 사진작가의 꿈을 품고 상경해 성장해나가는 나나미. 같은 고향 출신의 두 사람은 우연히 만나 운명처럼 사랑에 빠지고 고독한 도시에서 서로의 존재를 통해 위로받는다. 그러나 언젠가 고향에 돌아가 가업을 이어야 할지도 모르는 요이치와 도시에서 사진작가로 활동해야 할 나나미는 서로 다른 미래를 그리며 갈등과 오해가 깊어 가는데…….</p></blockquote>
 <hr />
-<p><img class="" src="http://image.kyobobook.co.kr/images/book/xlarge/615/x9788946418615.jpg" width="226" height="332" /></p>
+
 <p>이 책은 힐링소설이다. 따뜻하다. 이책을 읽으면서 들었던 생각을 적어본다.</p>
 <p>살면서 힘든일도 있다. 내가하고있는일이 나한테 맞는 일인가. 내가 잘살고있는건가. 이런 힘든 일상속에서, 가족, 친구들 안에서 행복을 찾을 수 있다. 100년 전이나, 지금이나 우리가 친구에게 힘을 얻는것, 가족이기 때문에 서로 믿어주는 것, 걱정하는 것 그거 하나는 100년이 지나도 바뀌지 않을 것이다. 또 사랑에 대해서도 바뀌는건 없을것이다. 왜 좋냐고 하면 그냥 좋다고 하는것도 100년 후에도 똑같을거다.</p>
 <p>책에 여러 이야기가 있었다.</p>
@@ -43,6 +43,9 @@ widgets:
 <p>감사합니다~~</p>
 
 
+***
+<center><sup>Originally posted on [독서모임](http://book.dblog.org/2413-review-healing-book). Steem blog powered by [ENGRAVE](https://engrave.website).</sup></center>
+
 - - -
 
-This page is synchronized from the post: ['[책 추천] 쓰가루 백년식당'](https://steemit.com/@jacobyu/2413-review-healing-book)
+This page is synchronized from the post: ['[독서일기] 쓰가루 백년식당'](https://steemit.com/@jacobyu/2413-review-healing-book)
