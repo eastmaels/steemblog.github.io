@@ -230,6 +230,157 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/r-r-6/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：R的6大基本数据类型(原子向量)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-28T01:30:00.000Z">2018-05-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 781 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/r-r-6/">继续学R：R的6大基本数据类型(原子向量)</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x5B66;&#x4E00;&#x95E8;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x65F6;&#xFF0C;&#x907F;&#x514D;&#x4E0D;&#x4E86;&#x8981;&#x548C;&#x6570;&#x636E;&#x6253;&#x4EA4;&#x9053;&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5728;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x4E2D;&#x662F;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x5462;&#xFF1F;&#x8FD9;&#x5C31;&#x6D89;&#x53CA;&#x5230;&#x4E86;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
+<h1 id="R&#x5BF9;&#x8C61;-amp-&#x539F;&#x5B50;&#x5411;&#x91CF;"><a href="#R&#x5BF9;&#x8C61;-amp-&#x539F;&#x5B50;&#x5411;&#x91CF;" class="headerlink" title="R&#x5BF9;&#x8C61; &amp; &#x539F;&#x5B50;&#x5411;&#x91CF;"></a>R&#x5BF9;&#x8C61; &amp; &#x539F;&#x5B50;&#x5411;&#x91CF;</h1><p>R&#x8BED;&#x8A00;&#x4E2D;&#x4F7F;&#x7528;<strong><code>R&#x5BF9;&#x8C61;(R-object)</code></strong>&#x6765;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x5E38;&#x89C1;&#x7684;R&#x5BF9;&#x8C61;&#x6709;&#xFF1A;</p>
+<ul>
+<li>&#x5411;&#x91CF; / Vectors</li>
+<li>&#x5217;&#x8868; / Lists</li>
+<li>&#x77E9;&#x9635; / Matrices</li>
+<li>&#x6570;&#x7EC4; / Arrays</li>
+<li>&#x56E0;&#x5B50; / Factors</li>
+<li>&#x6570;&#x636E;&#x5E27; / Data Frames</li>
+</ul>
+<p>&#x5176;&#x4E2D;&#x5411;&#x91CF; / Vectors&#x662F;&#x6700;&#x57FA;&#x672C;&#x7684;R&#x5BF9;&#x8C61;&#xFF0C;&#x6709;&#x516D;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x539F;&#x5B50;&#x5411;&#x91CF;(atomic vectors)&#xFF0C;&#x5206;&#x522B;&#x662F;&#xFF1A; &#x903B;&#x8F91;&#x578B;/logical&#x3001;&#x6574;&#x578B;/ integer&#x3001;&#x6570;&#x5B57;/numeric&#x3001;&#x590D;&#x6570;/complex&#x3001;&#x5B57;&#x7B26;/character&#x3001;&#x539F;&#x751F;/raw</p>
+<h1 id="&#x539F;&#x5B50;&#x5411;&#x91CF;&#x5BF9;&#x6BD4;"><a href="#&#x539F;&#x5B50;&#x5411;&#x91CF;&#x5BF9;&#x6BD4;" class="headerlink" title="&#x539F;&#x5B50;&#x5411;&#x91CF;&#x5BF9;&#x6BD4;"></a>&#x539F;&#x5B50;&#x5411;&#x91CF;&#x5BF9;&#x6BD4;</h1><p>&#x6211;&#x4E2A;&#x4EBA;&#x7406;&#x89E3;&#x539F;&#x5B50;&#x5411;&#x91CF;&#x5C31;&#x597D;&#x6BD4;&#x5176;&#x5B83;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x9664;&#x4E86;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4EE5;&#x5916;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6784;&#x9020;&#x5176;&#x5B83;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x5148;&#x4E0D;&#x7814;&#x7A76;&#x90A3;&#x4E9B;&#x590D;&#x6742;&#x7684;&#x7C7B;&#x578B;&#x90FD;&#x548B;&#x73A9;&#xFF0C;&#x5148;&#x6765;&#x5BF9;&#x6BD4;&#x4E00;&#x4E9B;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x5427;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x51FD;&#x6570;<strong><code>class()</code></strong>&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x662F;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x5927;&#x6982;&#x548C;Python&#x4E2D;&#x7684;<strong><code>type()</code></strong>&#x7C7B;&#x4F3C;&#x5427;&#xFF0C;&#x6BD4;&#x5982;<code>print(class(1))</code>&#x4F1A;&#x8FD4;&#x56DE;</p>
+<blockquote>
+<p>[1] &#x201C;numeric&#x201D;</p>
+</blockquote>
+<p>&#x4E0B;&#x8FB9;&#x6211;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x8868;&#x683C;&#x6765;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#x8FD9;6&#x5927;&#x539F;&#x5B50;&#x7C7B;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x6807;&#x6CE8;&#x51FA;&#x5BF9;&#x5E94;&#x7684;Python&#x8BED;&#x8A00;&#x4E2D;&#x7684;&#x7C7B;&#x578B;<br>&#x7C7B;&#x578B;|&#x4F8B;&#x5B50;|&#x4EE3;&#x7801;|&#x8F93;&#x51FA;|Python&#x7C7B;&#x578B;<br>&#x2014;-|&#x2014;-|&#x2014;-|&#x2014;-|&#x2014;-<br>&#x6574;&#x578B;/ integer|1L, 100L|<code>v&lt;-100L; print(class(v));</code>|[1] &#x201C;integer&#x201D;|int<br>&#x6570;&#x5B57;/numeric|123, 123.45|<code>v&lt;-123.45; print(class(v));</code>|[1] &#x201C;numeric&#x201D;|float<br>&#x590D;&#x6570;/complex|3 + 2i|<code>v&lt;-3 + 2i; print(class(v));</code>|[1] &#x201C;integer&#x201D;|complex<br>&#x903B;&#x8F91;&#x578B;/logical|TRUE,  FALSE|<code>v&lt;-TRUE; print(class(v));</code>|[1] &#x201C;logical&#x201D;|bool<br>&#x5B57;&#x7B26;/character|&#x2019;a&#x2019;, &#x201C;abc&#x201D;, &#x2018;abc&#x2019;|<code>v&lt;-&quot;abc&quot;; print(class(v));</code>|[1] &#x201C;character&#x201D;|str<br>&#x539F;&#x751F;/raw|&#x201D;Hello&#x201D; is stored as 48 65 6c 6c 6f|<code>v&lt;-charToRaw(&quot;Hello&quot;); print(class(v));</code>|[1] &#x201C;raw&#x201D;|bytes</p>
+<p>&#x7531;&#x6B64;&#x770B;&#x6765;&#xFF0C;R&#x4E2D;&#x7684;6&#x5927;&#x539F;&#x5B50;&#x7C7B;&#x578B;&#x548C;Python&#x4E2D;&#x7684;&#x7C7B;&#x578B;&#x4E5F;&#x5DEE;&#x4E0D;&#x591A;&#x5566;&#xFF08;&#x8BF7;&#x53EB;&#x6211;&#x5DEE;&#x4E0D;&#x591A;&#x5148;&#x751F;&#xFF09;&#x3002;</p>
+<h1 id="&#x8D4B;&#x503C;"><a href="#&#x8D4B;&#x503C;" class="headerlink" title="&#x8D4B;&#x503C;"></a>&#x8D4B;&#x503C;</h1><p>&#x56E0;&#x4E3A;&#x4F8B;&#x5B50;&#x4EE3;&#x7801;&#x4E2D;&#x7528;&#x5230;&#x4E86;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#xFF0C;&#x6240;&#x4EE5;&#x591A;&#x5570;&#x55E6;&#x4E24;&#x53E5;&#xFF0C;&#x5F88;&#x591A;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x8BF8;&#x5982;&#xFF1A;<code>var = 1</code> &#x7C7B;&#x4F3C;&#x7684;&#x8D4B;&#x503C;&#x65B9;&#x5F0F;&#x3002;R&#x8BED;&#x8A00;&#x7684;&#x8D4B;&#x503C;&#x8BA9;&#x6211;&#x597D;&#x4E00;&#x901A;&#x8FF7;&#x7CCA;&#xFF1A;&#x4E00;&#x662F;&#x597D;&#x591A;&#x8D4B;&#x503C;&#x7B26;&#x53F7;&#xFF1B;&#x4E8C;&#x662F;&#x652F;&#x6301;&#x5411;&#x53F3;&#x8D4B;&#x503C;&#x3002;</p>
+<h4 id="&#x5411;&#x5DE6;&#x8D4B;&#x503C;"><a href="#&#x5411;&#x5DE6;&#x8D4B;&#x503C;" class="headerlink" title="&#x5411;&#x5DE6;&#x8D4B;&#x503C;"></a>&#x5411;&#x5DE6;&#x8D4B;&#x503C;</h4><p>&#x5411;&#x5DE6;&#x8D4B;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<br><code>=</code><br><code>&lt;-</code><br><code>&lt;&lt;-</code></p>
+<h4 id="&#x5411;&#x53F3;&#x8D4B;&#x503C;"><a href="#&#x5411;&#x53F3;&#x8D4B;&#x503C;" class="headerlink" title="&#x5411;&#x53F3;&#x8D4B;&#x503C;"></a>&#x5411;&#x53F3;&#x8D4B;&#x503C;</h4><p>&#x5411;&#x53F3;&#x8D4B;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<br><code>-&gt;</code><br><code>-&gt;&gt;</code></p>
+<p>&#x81F3;&#x4E8E;&#x8FD9;&#x4E9B;&#x7B26;&#x53F7;&#x6709;&#x5565;&#x533A;&#x522B;&#xFF0C;&#x6211;&#x627E;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x627E;&#x5230;&#x4E00;&#x4E9B;&#x76F8;&#x5173;&#x6587;&#x7AE0;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x8BE6;&#x7EC6;&#x53BB;&#x7814;&#x8BFB;&#xFF0C;&#x7528;&#x5230;&#x7684;&#x65F6;&#x5019;&#x518D;&#x8BF4;&#x5427;&#xFF0C;&#x5217;&#x5230;&#x76F8;&#x5173;&#x94FE;&#x63A5;&#x91CC;&#x4E86;&#xFF0C;&#x53CD;&#x6B63;&#x73B0;&#x5728;&#x6211;&#x77E5;&#x9053;&#x7684;&#x8FD9;&#x4E9B;&#x5DF2;&#x7ECF;&#x591F;&#x6211;&#x7528;&#x7684;&#x5566;&#x1F600;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
+<li><a href="https://www.tutorialspoint.com/r/r_data_types.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_data_types.htm</a></li>
+<li><a href="https://www.tutorialspoint.com/r/r_vectors.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_vectors.htm</a></li>
+<li><a href="https://google.github.io/styleguide/Rguide.xml#assignment" target="_blank" rel="noopener">Google&#x2019;s R Style Guide #assignment</a></li>
+<li><a href="http://stat.ethz.ch/R-manual/R-patched/library/base/html/assignOps.html" target="_blank" rel="noopener">Assignment Operators</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/5czvxu/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmYH3khexZeXc9UvW34UonTur7Tt7ekfuJViHgqt7eMStX/image.png" alt="我上辈子一定是个瓦匠">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-27T14:50:03.000Z">2018-05-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1180 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/5czvxu/">我上辈子一定是个瓦匠</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x4E2D;&#x5348;&#x5348;&#x7761;&#x4E86;&#x4E00;&#x5C0F;&#x4F1A;&#xFF0C;&#x539F;&#x672C;&#x662F;&#x6253;&#x7B97;&#x4F11;&#x606F;&#x4E00;&#x4E0B;&#xFF0C;&#x7ED3;&#x679C;&#x7761;&#x9192;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#x75B2;&#x5026;&#x65E0;&#x6BD4;&#xFF0C;&#x6D51;&#x8EAB;&#x9178;&#x75DB;&#xFF0C;&#x4E8E;&#x662F;&#x4E0D;&#x7531;&#x5730;&#x56DE;&#x60F3;&#x4E86;&#x4E00;&#x4E0B;&#x68A6;&#x91CC;&#x6211;&#x90FD;&#x5E72;&#x4E86;&#x4E9B;&#x4EC0;&#x4E48;&#xFF0C;&#x8FD8;&#x522B;&#x8BF4;&#x8FD9;&#x4E00;&#x60F3;&#xFF0C;&#x8FD8;&#x771F;&#x56DE;&#x60F3;&#x8D77;&#x4E86;&#x68A6;&#x91CC;&#x7684;&#x5927;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x3002;</p>
+<center><img src="https://cdn.steemitimages.com/DQmYH3khexZeXc9UvW34UonTur7Tt7ekfuJViHgqt7eMStX/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://bing.com" target="_blank" rel="noopener">Bing.com</a>)</center>
+
+<p>&#x5728;&#x68A6;&#x91CC;&#xFF0C;&#x6211;&#x4E0D;&#x518D;&#x662F;&#x4E00;&#x4E2A;&#x534A;&#x540A;&#x5B50;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x5B85;&#x7537;&#xFF0C;&#x4E5F;&#x4E0D;&#x662F;&#x6709;&#x7740;&#x4F53;&#x9762;&#x5DE5;&#x4F5C;&#x7684;&#x767D;&#x9886;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#x66F4;&#x4E0D;&#x662F;&#x5927;&#x8179;&#x4FBF;&#x4FBF;&#x7684;&#x5B98;&#x5458;&#x653F;&#x8981;&#x3002;&#x6211;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x4ECE;&#x672A;&#x4F53;&#x9A8C;&#x8FC7;&#x7684;&#x5D2D;&#x65B0;&#x804C;&#x4E1A;&#xFF1A;&#x74E6;&#x5320;&#x3002;</p>
+<p>&#x5728;&#x68A6;&#x91CC;&#x6211;&#x6709;&#x4E86;&#x4E00;&#x5757;&#x7A7A;&#x5730;&#xFF0C;&#x6211;&#x7A81;&#x7136;&#x8BB0;&#x4E0D;&#x5F97;&#x8FD9;&#x5757;&#x7A7A;&#x5730;&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x8FD8;&#x662F;&#x6211;&#x7684;&#x96C7;&#x4E3B;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x5C31;&#x4E0D;&#x662F;&#x74E6;&#x5320;&#x4E86;&#x800C;&#x662F;&#x5730;&#x4E3B;&#x4E86;&#x1F60D;&#x3002;&#x597D;&#x5427;&#xFF0C;&#x4E0D;&#x7EA0;&#x7ED3;&#x7A7A;&#x5730;&#x6240;&#x6709;&#x6743;&#x7684;&#x95EE;&#x9898;&#x4E86;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x662F;&#x8981;&#x5728;&#x7A7A;&#x5730;&#x4E0A;&#x76D6;&#x4E00;&#x680B;&#x623F;&#x5B50;&#x3002;</p>
+<p>&#x7A7A;&#x5730;&#x7684;&#x5730;&#x57FA;&#x5DF2;&#x7ECF;&#x6253;&#x597D;&#x4E86;&#xFF08;&#x54A6;&#xFF0C;&#x8C01;&#x5E2E;&#x6211;&#x6253;&#x597D;&#x7684;&#xFF1F;&#xFF09;&#x7136;&#x540E;&#x6211;&#x5728;&#x5730;&#x57FA;&#x4E0A;&#x5F00;&#x59CB;&#x780C;&#x5899;&#x3002;&#x6DF7;&#x51DD;&#x571F;&#x4E5F;&#x6709;&#x4EBA;&#x7ED9;&#x6211;&#x51C6;&#x5907;&#x597D;&#x4E86;&#xFF08;&#x4EBA;&#x5462;&#xFF1F;&#xFF09;&#x7816;&#x5934;&#x4E00;&#x579B;&#x579B;&#x5730;&#x7801;&#x653E;&#x5F97;&#x6574;&#x6574;&#x9F50;&#x9F50;&#xFF08;&#x8FD9;&#x4E48;&#x8BF4;&#x6211;&#x4E0D;&#x7528;&#x5E72;&#x642C;&#x7816;&#x7684;&#x4F53;&#x529B;&#x6D3B;&#x4E86;&#xFF1F;&#xFF09;&#x6709;&#x4E86;&#x8FD9;&#x4E48;&#x597D;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x6211;&#x780C;&#x5899;&#x780C;&#x7684;&#x90A3;&#x53EB;&#x4E00;&#x4E2A;&#x6B22;&#x5FEB;&#x554A;&#x3002;</p>
+<p>&#x5F88;&#x5FEB;&#x6211;&#x5C31;&#x5728;&#x7A7A;&#x5730;&#x4E0A;&#x780C;&#x8D77;&#x4E86;4&#x9762;&#x7EA6;1&#x7C73;&#x9AD8;&#x7684;&#x56F4;&#x5899;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x7684;&#x56F4;&#x5899;&#x780C;&#x5F97;&#x6B6A;&#x6B6A;&#x626D;&#x626D;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x7B14;&#x76F4;&#x5462;&#xFF1F;&#x8FD9;&#x6837;&#x53EF;&#x4E0D;&#x884C;&#xFF0C;&#x8BA9;&#x522B;&#x4EBA;&#x770B;&#x5230;&#x6211;&#x8FD9;&#x6B6A;&#x6B6A;&#x626D;&#x626D;&#x7684;&#x56F4;&#x5899;&#xFF0C;&#x5C82;&#x4E0D;&#x662F;&#x6709;&#x6709;&#x635F;&#x6211;&#x7684;&#x4E00;&#x4E16;&#x82F1;&#x540D;&#x554A;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x628A;&#x56F4;&#x5899;&#x53C8;&#x7EDF;&#x7EDF;&#x62C6;&#x9664;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x60F3;&#x4E86;&#x4E00;&#x4E2A;&#x529E;&#x6CD5;&#xFF0C;&#x5728;&#x6BCF;&#x9762;&#x56F4;&#x5899;&#x7684;&#x4E24;&#x7AEF;&#x626F;&#x4E0A;&#x4E00;&#x6839;&#x7EBF;&#xFF0C;&#x7136;&#x540E;&#x6CBF;&#x7740;&#x7EBF;&#x780C;&#x3002;</p>
+<p>&#x6211;&#x54FC;&#x7740;&#x6B22;&#x5FEB;&#x7684;&#x6B4C;&#x66F2;&#xFF0C;&#x5F88;&#x5FEB;&#x6709;&#x780C;&#x8D77;&#x4E86;4&#x9762;&#x7EA6;1&#x7C73;&#x9AD8;&#x7684;&#x56F4;&#x5899;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x53C8;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x56F4;&#x5899;&#x867D;&#x7136;&#x7B14;&#x76F4;&#xFF0C;&#x53EF;&#x662F;&#x56DB;&#x9762;&#x56F4;&#x5899;&#x88AB;&#x6211;&#x780C;&#x6210;&#x4E86;&#x5E73;&#x884C;&#x56DB;&#x8FB9;&#x5F62;&#xFF0C;&#x758F;&#x5FFD;&#x5440;&#x3002;&#x4E8E;&#x662F;&#x62C6;&#x6389;&#xFF0C;&#x8FD9;&#x6B21;&#x6211;&#x8FD0;&#x7528;&#x6211;&#x638C;&#x63E1;&#x7684;&#x6570;&#x5B66;&#x77E5;&#x8BC6;&#x52FE;&#x80A1;&#x5B9A;&#x7406;&#xFF0C;&#x52FE;&#x4E09;&#x80A1;&#x56DB;&#x5F26;&#x4E94;&#xFF0C;&#x4E00;&#x4E2A;&#x5B8C;&#x7F8E;&#x7684;&#x76F4;&#x89D2;&#x51FA;&#x6765;&#x4E86;&#x3002;&#x7EE7;&#x7EED;&#xFF0C;&#x4E00;&#x4E2A;&#x957F;&#x65B9;&#x5F62;&#x7684;&#x56F4;&#x5899;&#x5E95;&#x5B50;&#x6253;&#x597D;&#x4E86;&#x3002;</p>
+<p>&#x6211;&#x54FC;&#x7740;&#x6B22;&#x5FEB;&#x7684;&#x6B4C;&#x66F2;&#xFF0C;&#x5F88;&#x5FEB;&#x6709;&#x780C;&#x8D77;&#x4E86;4&#x9762;&#x7EA6;1&#x7C73;&#x9AD8;&#x7684;&#x56F4;&#x5899;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x53C8;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C3D;&#x7BA1;&#x6211;&#x7684;&#x623F;&#x5B50;&#x8F6E;&#x5ED3;&#x662F;&#x957F;&#x65B9;&#x5F62;&#xFF0C;&#x76F4;&#x89D2;&#x7CBE;&#x786E;&#x5230;90&#xB0;&#xFF0C;&#x7136;&#x800C;&#x6211;&#x8FD9;&#x4E2A;&#x957F;&#x65B9;&#x5F62;&#x548C;&#x90BB;&#x5C45;&#x4EEC;&#x7684;&#x623F;&#x5B50;&#x671D;&#x5411;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x4EBA;&#x5BB6;&#x90FD;&#x662F;&#x671D;&#x5357;&#x5411;&#x7684;&#xFF0C;&#x6211;&#x7684;&#x5374;&#x662F;&#x671D;&#x5357;&#x504F;&#x897F;&#x4E86;10&#x591A;&#x5EA6;&#xFF0C;&#x4F46;&#x770B;&#x6CA1;&#x5565;&#xFF0C;&#x4F46;&#x662F;&#x548C;&#x90BB;&#x5C45;&#x4EEC;&#x4E00;&#x6392;&#x623F;&#x5B50;&#x653E;&#x4E00;&#x8D77;&#x770B;&#xFF0C;&#x5C31;&#x4E0D;&#x534F;&#x8C03;&#x4E86;&#xFF0C;&#x54CE;&#xFF0C;&#x62C6;&#x6389;&#x91CD;&#x5EFA;&#x3002;</p>
+<p>&#x6211;&#x54FC;&#x7740;&#x6B22;&#x5FEB;&#x7684;&#x6B4C;&#x66F2;&#xFF0C;&#x5F88;&#x5FEB;&#x6709;&#x780C;&#x8D77;&#x4E86;4&#x9762;&#x7EA6;1&#x7C73;&#x9AD8;&#x7684;&#x56F4;&#x5899;&#x3002;&#x7136;&#x540E;&#x6211;&#x53C8;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x5F88;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x5FD8;&#x8BB0;&#x7559;&#x95E8;&#x7684;&#x4F4D;&#x7F6E;&#x4E86;&#x3002;&#x8FD8;&#x597D;&#x8FD9;&#x6B21;&#x4E0D;&#x7528;&#x5B8C;&#x5168;&#x62C6;&#x6389;&#x4E86;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x95E8;&#x53E3;&#x4F4D;&#x7F6E;&#x62C6;&#x9664;&#x4E00;&#x90E8;&#x5206;&#x7816;&#x5373;&#x53EF;&#xFF0C;&#x4E8E;&#x662F;&#x5F00;&#x5DE5;&#x62C6;&#x9664;&#x3002;</p>
+<p>&#x62C6;&#x554A;&#x62C6;&#x554A;&#xFF0C;&#x6211;&#x7D2F;&#x5F97;&#x8170;&#x9178;&#x80CC;&#x75DB;&#xFF0C;&#x4E5F;&#x54FC;&#x4E0D;&#x51FA;&#x6765;&#x6B22;&#x5FEB;&#x7684;&#x6B4C;&#x66F2;&#x4E86;&#xFF0C;&#x54CE;&#xFF0C;&#x8FD9;&#x780C;&#x7816;&#x76D6;&#x623F;&#x5B50;&#x539F;&#x6765;&#x4E5F;&#x4E0D;&#x662F;&#x4EF6;&#x7B80;&#x5355;&#x7684;&#x4E8B;&#x554A;&#xFF0C;&#x60F3;&#x60F3;&#x8FD8;&#x8981;&#x7EE7;&#x7EED;&#x780C;&#x4E0B;&#x53BB;&#xFF0C;&#x8FD8;&#x6709;&#x6309;&#x95E8;&#x7A97;&#xFF0C;&#x8FD8;&#x8981;&#x505A;&#x5C4B;&#x9876;&#xFF0C;&#x8FD8;&#x8981;&#x5728;&#x5899;&#x9762;&#x8D34;&#x74F7;&#x7816;&#xFF0C;&#x8FD8;&#x8981;&#x5728;&#x5BA4;&#x5185;&#x8FDB;&#x884C;&#x88C5;&#x4FEE;&#x7B49;&#x7B49;&#x3002;&#x54CE;&#xFF0C;&#x600E;&#x4E48;&#x8FD9;&#x4E48;&#x9EBB;&#x70E6;&#xFF0C;&#x611F;&#x89C9;&#x6BD4;&#x7F16;&#x7A0B;&#x5E8F;&#x8FD8;&#x9EBB;&#x70E6;&#x5462;&#xFF1F;</p>
+<p>&#x7B49;&#x7B49;&#xFF0C;&#x7F16;&#x7A0B;&#x5E8F;&#xFF1F;&#x7F16;&#x7A0B;&#x5E8F;&#x662F;&#x4EC0;&#x4E48;&#x4E1C;&#x4E1C;&#xFF1F;&#x6211;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x74E6;&#x5320;&#x5417;&#xFF1F;&#x53EF;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x89C9;&#x5F97;&#x7F16;&#x7A0B;&#x8FD9;&#x4E2A;&#x8BCD;&#x8BED;&#x8FD9;&#x4E48;&#x8033;&#x719F;&#x5462;&#xFF1F;&#x6211;&#x4F7F;&#x52B2;&#x60F3;&#x554A;&#x60F3;&#x554A;&#xFF0C;&#x54A6;&#xFF0C;&#x6211;&#x7684;&#x7A7A;&#x5730;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x623F;&#x5B50;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x6DF7;&#x51DD;&#x571F;&#x5462;&#xFF1F;&#x6211;&#x7684;&#x7816;&#x5462;&#xFF1F;&#x6211;&#x600E;&#x4E48;&#x8EBA;&#x5728;&#x5E8A;&#x4E0A;&#x5462;&#xFF1F;&#x8D77;&#x6765;&#x63C9;&#x63C9;&#x592A;&#x9633;&#x7A74;&#xFF0C;&#x770B;&#x7740;&#x7535;&#x8111;&#x684C;&#x4E0A;&#x8FD8;&#x5728;&#x4EAE;&#x7740;&#x7684;&#x5C4F;&#x5E55;&#xFF0C;&#x4EE5;&#x53CA;&#x4E66;&#x67B6;&#x4E0A;&#x7684;&#x7F16;&#x7A0B;&#x4E66;&#xFF0C;&#x600E;&#x4E48;&#x611F;&#x89C9;&#x604D;&#x7136;&#x5982;&#x68A6;&#x5462;&#xFF1F;</p>
+<center><img src="https://cdn.steemitimages.com/DQmNszGgwwkJpPphcC69h1YWr4iNkezp68EvdXefbYsXy97/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://bing.com" target="_blank" rel="noopener">Bing.com</a>)</center>
+
+<p>&#x5F7B;&#x5E95;&#x6E05;&#x9192;&#x8FC7;&#x6765;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x5750;&#x5728;&#x7535;&#x8111;&#x684C;&#x524D;&#xFF0C;&#x7EE7;&#x7EED;&#x7801;&#x6211;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x54A6;&#xFF0C;&#x8FD9;&#x4E48;&#x6709;&#x8FD9;&#x4E48;&#x5927;&#x4E00;&#x4E2A;BUG&#x5462;&#xFF1F;&#x54CE;&#xFF0C;&#x5220;&#x6389;&#x91CD;&#x5199;&#x5427;&#x3002;&#x5348;&#x7761;&#x6CA1;&#x4F11;&#x606F;&#x597D;&#xFF0C;&#x780C;&#x5899;&#x597D;&#x7D2F;&#x554A;&#x1F61F;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/5czvxu" target="_blank" rel="noopener">&#x6211;&#x4E0A;&#x8F88;&#x5B50;&#x4E00;&#x5B9A;&#x662F;&#x4E2A;&#x74E6;&#x5320;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/r-r/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：另一款在线R环境">
         </a>
@@ -564,164 +715,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/jussi/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="JUSSI： 想说爱你并不是很容易的事">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-25T11:32:27.000Z">2018-05-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/jussi/">jussi</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1063 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/jussi/">JUSSI： 想说爱你并不是很容易的事</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4F7F;&#x7528;&#x8FC7;steem JSON API&#x7684;&#x90FD;&#x77E5;&#x9053;&#x6211;&#x4EEC;&#x8C03;&#x7528;JSON API&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;&#x4EE5;&#x5F80;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x8FD1;&#x9047;&#x5230;&#x4E00;&#x4E2A;API&#xFF0C;&#x5DE5;&#x4F5C;&#x4E0D;&#x6B63;&#x5E38;&#xFF0C;&#x6240;&#x4EE5;&#x63A2;&#x7A76;&#x4E86;&#x4E00;&#x4E0B;&#x5230;&#x5E95;&#x662F;&#x54EA;&#x91CC;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<h1 id="&#x8C03;&#x7528;&#x65B9;&#x5F0F;"><a href="#&#x8C03;&#x7528;&#x65B9;&#x5F0F;" class="headerlink" title="&#x8C03;&#x7528;&#x65B9;&#x5F0F;"></a>&#x8C03;&#x7528;&#x65B9;&#x5F0F;</h1><p>&#x8BF4;&#x5230;&#x4E24;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x4EE5;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;JSON&#x4E3A;&#x4F8B;&#xFF1A;</p>
-<p>&#x65B9;&#x5F0F;&#x4E00;</p>
-<blockquote>
-<p><code>{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;database_api&quot;, &quot;get_accounts&quot;, [[&quot;oflyhigh&quot;]]], &quot;id&quot;: 1}</code></p>
-</blockquote>
-<p>&#x65B9;&#x5F0F;&#x4E8C;</p>
-<blockquote>
-<p><code>{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;database_api.get_accounts&quot;, &quot;params&quot;: [[&quot;oflyhigh&quot;]], &quot;id&quot;: 1}</code></p>
-</blockquote>
-<p>&#x5728;&#x65E9;&#x4E9B;&#x65F6;&#x5019;&#x8FD9;&#x4E24;&#x79CD;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x4F7F;&#x7528;<strong><code>https://api.steemit.com</code></strong>&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x6765;&#x8C03;&#x7528;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;API&#xFF0C;&#x5219;&#x4F1A;&#x53D1;&#x73B0;&#x65B9;&#x5F0F;&#x4E8C;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#xFF1A;</p>
-<p><img src="https://cdn.steemitimages.com/DQmSMDfNsssnkhVNFhNtt5MJm3vqUShDtvtYDxNz63QpZsF/image.png" alt=""></p>
-<p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;get_accounts&#x5DF2;&#x7ECF;&#x4ECE;database_api&#x79FB;&#x5230;condenser_api&#x4E2D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;<strong>&#x7B2C;&#x4E8C;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x7684;&#x8FD4;&#x56DE;&#x624D;&#x662F;&#x6B63;&#x786E;&#x7684;</strong>&#x3002;</p>
-<h1 id="&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;"><a href="#&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;" class="headerlink" title="&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;"></a>&#x5904;&#x7406;&#x65B9;&#x5F0F;&#x7684;&#x533A;&#x522B;</h1><p>&#x90A3;&#x4E48;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x4E00;&#x548C;&#x65B9;&#x5F0F;&#x4E8C;&#xFF0C;steem&#x8282;&#x70B9;&#x90FD;&#x662F;&#x5982;&#x4F55;&#x5904;&#x7406;&#x7684;&#x5462;&#xFF1F;</p>
-<p>&#x8FD9;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#x5728;<a href="https://github.com/steemit/steem/blob/master/libraries/plugins/json_rpc/json_rpc_plugin.cpp" target="_blank" rel="noopener">json_rpc_plugin.cpp</a>&#x4E2D;</p>
-<p>&#x5904;&#x7406;rpc&#x7684;&#x8BF7;&#x6C42;&#x4F1A;&#x653E;&#x7F6E;&#x5230;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#x4E2D;</p>
-<blockquote>
-<p><code>void json_rpc_plugin_impl::rpc_jsonrpc( const fc::variant_object&amp; request, json_rpc_response&amp; response )</code></p>
-</blockquote>
-<p>&#x8FDB;&#x53BB;&#x4E4B;&#x540E;&#x4F1A;&#x6839;&#x636E;JSON&#x7684;&#x6784;&#x6210;&#x8FDB;&#x884C;&#x89E3;&#x6790;<code>process_params</code><br><img src="https://cdn.steemitimages.com/DQmfFR1tuEZ9usxgem9YDCiqiBs4Z7JaL3Ugvt9oi6NYdAJ/image.png" alt=""></p>
-<p>&#x4ECE;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E2D;&#x4E0D;&#x96BE;&#x770B;&#x51FA;&#xFF0C;<strong>&#x5C3D;&#x7BA1;JSON&#x7684;&#x683C;&#x5F0F;&#x6709;&#x6240;&#x533A;&#x522B;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x7EC8;&#x90FD;&#x662F;&#x63D0;&#x53D6;&#x51FA;<code>api&#x3001;method&#x3001;args</code>&#x7136;&#x540E;&#x518D;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#x5904;&#x7406;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6B8A;&#x9014;&#x540C;&#x5F52;</strong>&#x3002;</p>
-<h1 id="JUSSI"><a href="#JUSSI" class="headerlink" title="JUSSI"></a>JUSSI</h1><p>&#x65E2;&#x7136;&#x5C3D;&#x7BA1;JSON&#x7684;&#x6784;&#x6210;&#x6709;&#x6240;&#x5DEE;&#x5F02;&#xFF0C;&#x4F46;&#x662F;&#x6700;&#x7EC8;&#x5904;&#x7406;&#x662F;&#x6B8A;&#x9014;&#x540C;&#x5F52;&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x8FF0;&#x4E24;&#x4E2A;&#x8C03;&#x7528;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x679C;&#x624D;&#x5BF9;&#x5462;&#xFF1F;&#x8981;&#x4E48;&#x662F;&#x90FD;&#x597D;&#x7528;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x901A;&#x901A;&#x4E0D;&#x597D;&#x7528;&#xFF0C;&#x4E3A;&#x4F55;&#x65B9;&#x5F0F;&#x4E00;&#x597D;&#x7528;&#x800C;&#x65B9;&#x5F0F;&#x4E8C;&#x4E0D;&#x597D;&#x7528;&#x5462;&#xFF1F;&#xFF08;&#x786E;&#x5207;&#x5730;&#x8BF4;&#x65B9;&#x5F0F;&#x4E8C;&#x8FD4;&#x56DE;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x624D;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF09;</p>
-<p>&#x7B54;&#x6848;&#x5728;&#x4E8E;JUSSI&#xFF0C;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5B83;&#x662F;steemd&#x4E4B;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x7F13;&#x5B58;&#x5C42;&#xFF0C;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x7ED9;steemd&#x4E4B;&#x524D;&#x90FD;&#x5728;&#x8FD9;&#x91CC;&#x9884;&#x5904;&#x7406;&#x4E00;&#x904D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x53D1;&#x9001;&#x7ED9;steemd.</p>
-<p>&#x5BF9;&#x5E94; RPC&#x800C;&#x8A00;&#xFF0C;&#x5B83;&#x5BF9;&#x7C7B;&#x4F3C;&#x65B9;&#x5F0F;&#x4E00;&#x7684;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x4E86;&#x5904;&#x7406;&#xFF0C;&#x4E0D;&#x8FC7;&#x628A;api&#x90E8;&#x5206;&#x5904;&#x7406;&#x6210;<code>condenser_api</code>&#xFF0C;&#x7F8E;&#x5176;&#x540D;&#x66F0;&#xFF1A;<code>translate_to_appbase</code>&#xFF0C;&#x6240;&#x4EE5;&#x4E24;&#x8005;&#x7684;&#x8C03;&#x7528;&#x7ED3;&#x679C;&#x5927;&#x76F8;&#x5F84;&#x5EAD;&#x3002;</p>
-<h1 id="&#x597D;&#x5904;-vs-&#x574F;&#x5904;"><a href="#&#x597D;&#x5904;-vs-&#x574F;&#x5904;" class="headerlink" title="&#x597D;&#x5904; vs &#x574F;&#x5904;"></a>&#x597D;&#x5904; vs &#x574F;&#x5904;</h1><p>&#x5BF9;&#x5E94;&#x6211;&#x4EEC;&#x4ECE;&#x8001;&#x65E7;&#x7684;API&#x6784;&#x6210;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#x8001;&#x65E7;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x800C;&#x8A00;&#xFF0C;JUSSI&#x81EA;&#x52A8;&#x5E2E;&#x6211;&#x4EEC;&#x5904;&#x7406;&#x4E86;&#x8F6C;&#x6362;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4E00;&#x76F4;&#x4F7F;&#x7528;&#x8BF8;&#x5982;&#x65B9;&#x5F0F;&#x4E00;&#x7684;&#x8C03;&#x7528;&#xFF0C;&#x5C3D;&#x7BA1;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x56E0;&#x4E3A;JUSSI&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x6211;&#x7684;&#x9519;&#x8BEF;&#x8C03;&#x7528;&#x53CD;&#x800C;&#x80FD;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x9887;&#x4E3A;&#x795E;&#x5947;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;&#x5217;JSON:</p>
-<blockquote>
-<p><code>{&quot;jsonrpc&quot;: &quot;2.0&quot;, &quot;method&quot;: &quot;call&quot;, &quot;params&quot;: [&quot;tags_api&quot;, &quot;get_discussion&quot;, []], &quot;id&quot;: 1}</code></p>
-</blockquote>
-<p>&#x5FFD;&#x7565;&#x53C2;&#x6570;&#x90E8;&#x5206;&#xFF0C;&#x8FD9;&#x4E2A;JSON&#x7ED3;&#x6784;&#x662F;&#x6B63;&#x786E;&#x7684;&#xFF0C;&#x8C03;&#x7528;&#x540E;&#x5E94;&#x8BE5;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF08;&#x8868;&#x793A;&#x6211;&#x4EEC;&#x6CA1;&#x7ED9;&#x5BF9;&#x53C2;&#x6570;&#xFF09;&#xFF1A;</p>
-<blockquote>
-<p>&#x2018;message&#x2019;: &#x201C;Bad Cast:Invalid cast from type &#x2018;array_type&#x2019; to Object&#x201D;},</p>
-</blockquote>
-<p>&#x4F46;&#x662F;&#x4E0A;&#x8FF0;&#x8C03;&#x7528;&#x5374;&#x8FD4;&#x56DE;</p>
-<blockquote>
-<p>&#x2018;message&#x2019;: &#x2018;Assert Exception:method_itr != api_itr-&gt;second.end(): &#x2018;<br>                      &#x2018;Could not find method get_discussion&#x2019;},</p>
-</blockquote>
-<p>&#x4E5F;&#x5C31;&#x8BF4;&#x56E0;&#x4E3A;JUSSI&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x7ED9;&#x51FA;&#x4E86;&#x5B8C;&#x5168;&#x9519;&#x8BEF;&#x7684;&#x51FA;&#x9519;&#x4FE1;&#x606F;&#xFF0C;&#x771F;&#x662F;&#x6210;&#x4E5F;&#x8427;&#x4F55;&#x8D25;&#x4E5F;&#x8427;&#x4F55;&#x5440;&#x3002;</p>
-<h1 id="&#x7ED3;&#x8BBA;"><a href="#&#x7ED3;&#x8BBA;" class="headerlink" title="&#x7ED3;&#x8BBA;"></a>&#x7ED3;&#x8BBA;</h1><p>&#x5C3D;&#x7BA1;JUSSI&#x589E;&#x52A0;&#x4E86;&#x5BB9;&#x9519;&#x6027;&#xFF0C;&#x4F7F;&#x5F97;&#x8001;&#x65E7;&#x7684;API&#x8C03;&#x7528;&#x4F9D;&#x65E7;&#x53EF;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x5374;&#x8499;&#x853D;&#x4E86;&#x6211;&#x4EEC;&#x7684;&#x53CC;&#x773C;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x4E0D;&#x77E5;&#x9053;&#x81EA;&#x5DF1;&#x4F7F;&#x7528;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x6216;&#x8005;&#x8BF4;&#x8C03;&#x7528;&#x4E86;&#x9519;&#x8BEF;&#x7684;API&#x3002;&#x540C;&#x65F6;&#x56E0;&#x4E3A;JUSSI&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4F7F;&#x5F97;&#x4E00;&#x4E9B;&#x6B63;&#x5E38;&#x7684;&#x8C03;&#x7528;&#x53CD;&#x800C;&#x51FA;&#x9519;&#x3002;&#x6240;&#x4EE5;&#x4ECE;API&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x89D2;&#x5EA6;&#x800C;&#x8A00;&#xFF0C;JUSSI&#x771F;&#x7684;&#x8BA9;&#x4EBA;&#x7231;&#x4E0D;&#x8D77;&#x6765;&#x53C8;&#x6068;&#x4E0D;&#x8D77;&#x6765;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x901A;&#x8FC7;&#x8FD9;&#x6B21;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x81F3;&#x5C11;&#x77E5;&#x9053;&#x4E86;STEEMD&#x7684;API&#x53D8;&#x52A8;&#x633A;&#x5927;&#xFF0C;&#x4EE5;&#x540E;&#x5E94;&#x8BE5;&#x628A;&#x7A0B;&#x5E8F;&#x4E2D;&#x9519;&#x8BEF;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x90FD;&#x5207;&#x6362;&#x5230;&#x6B63;&#x786E;&#x7684;&#x65B9;&#x5F0F;&#x4E0A;&#x6765;&#xFF0C;&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;JUSSI&#x7684;&#x5BB9;&#x9519;&#x6027;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/jussi" target="_blank" rel="noopener">JUSSI&#xFF1A; &#x60F3;&#x8BF4;&#x7231;&#x4F60;&#x5E76;&#x4E0D;&#x662F;&#x5F88;&#x5BB9;&#x6613;&#x7684;&#x4E8B;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/vps/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmQm9AxqMTFLUJ1bDip5Xv4FEai7FvCVkd7SewmbbhncP4/image.png" alt="停掉一台服务器和两个VPS，美滋滋">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-24T13:12:00.000Z">2018-05-24</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/life/">life</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 808 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/vps/">停掉一台服务器和两个VPS，美滋滋</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5341;&#x591A;&#x5929;&#x524D;&#x7684;&#x5E16;&#x5B50;&#x4E2D;&#x6211;&#x63D0;&#x5230;&#x4E86;<a href="https://steemit.com/cn/@oflyhigh/4i8rok" target="_blank" rel="noopener">&#x8981;&#x5B66;&#x4F1A;&#x7701;&#x94B1;&#xFF0C;&#x51CF;&#x5C11;&#x7761;&#x540E;&#x652F;&#x51FA;</a>&#x3002;&#x5E76;&#x63D0;&#x5230;&#x201C;&#x6709;&#x51E0;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x548C;VPS&#x4E0A;&#x8FB9;&#x53EA;&#x8DD1;&#x7740;&#x5C11;&#x91CF;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x4E00;&#x4E0B;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x6BCF;&#x6708;&#x5C31;&#x53EF;&#x4EE5;&#x8282;&#x7701;&#x597D;&#x51E0;&#x767E;&#x7F8E;&#x5143;&#x7684;&#x7761;&#x540E;&#x652F;&#x51FA;&#x4E86;&#x3002;&#x201D;</p>
-<p><img src="https://cdn.steemitimages.com/DQmQm9AxqMTFLUJ1bDip5Xv4FEai7FvCVkd7SewmbbhncP4/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x5176;&#x5B9E;&#x670D;&#x52A1;&#x5668;&#x95F2;&#x7F6E;&#x7684;&#x95EE;&#x9898;&#x7531;&#x6765;&#x5DF2;&#x4E45;&#x5566;&#xFF0C;&#x5927;&#x6982;&#x4ECE;&#x53BB;&#x5E74;8&#x6708;&#x4EFD;&#x8D77;&#x6211;&#x5C31;&#x8BA1;&#x5212;&#x505A;&#x5408;&#x5E76;&#x5DE5;&#x4F5C;&#x4E86;&#x3002;&#x56E0;&#x4E3A;&#x5408;&#x5E76;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x7528;&#x6237;&#x9700;&#x8981;&#x8FC1;&#x79FB;&#x6570;&#x636E;&#x3001;&#x4FEE;&#x6539;DNS&#x3001;&#x4E0E;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x7B49;&#x8BF8;&#x591A;&#x7E41;&#x7410;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x62D6;&#x518D;&#x62D6;&#xFF0C;&#x4E00;&#x8F6C;&#x773C;&#x90FD;&#x5FEB;&#x5230;&#x4E00;&#x5E74;&#x4E86;&#xFF0C;&#x518D;&#x62D6;&#x4E0B;&#x53BB;&#x4E0D;&#x5B9A;&#x5230;&#x7334;&#x5E74;&#x9A6C;&#x6708;&#x4E86;&#x3002;</p>
-<p>&#x5176;&#x5B9E;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x5E76;&#x4E0D;&#x662F;&#x4E8B;&#x60C5;&#x6709;&#x591A;&#x56F0;&#x96BE;&#x591A;&#x9EBB;&#x70E6;&#xFF0C;&#x800C;&#x662F;&#x6211;&#x4EEC;&#x5C06;&#x4E8B;&#x60C5;&#x60F3;&#x8C61;&#x7684;&#x592A;&#x8FC7;&#x4E8E;&#x56F0;&#x96BE;&#x548C;&#x9EBB;&#x70E6;&#x4E86;&#x3002;&#x6216;&#x8005;&#x6362;&#x4E2A;&#x89D2;&#x5EA6;&#xFF0C;&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x8001;&#x4E86;&#x3001;&#x61D2;&#x60F0;&#x4E86;&#xFF0C;&#x56F0;&#x96BE;&#x4E0D;&#x8FC7;&#x662F;&#x81EA;&#x5DF1;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;&#x62D6;&#x5EF6;&#x627E;&#x7684;&#x501F;&#x53E3;&#x3002;&#x597D;&#x591A;&#x5E74;&#x524D;&#x7C7B;&#x4F3C;&#x8FC1;&#x79FB;&#x5DE5;&#x4F5C;&#x505A;&#x8FC7;&#x65E0;&#x6570;&#x6B21;&#xFF0C;&#x90A3;&#x65F6;&#x5019;&#x5E74;&#x8F7B;&#x7CBE;&#x529B;&#x65FA;&#x76DB;&#xFF0C;&#x5E76;&#x4E0D;&#x89C9;&#x5F97;&#x6709;&#x4EC0;&#x4E48;&#x514B;&#x670D;&#x4E0D;&#x4E86;&#x7684;&#x3002;</p>
-<p>&#x65E2;&#x7136;&#x610F;&#x8BC6;&#x5230;&#x81EA;&#x5DF1;&#x7684;&#x62D6;&#x5EF6;&#xFF0C;&#x6211;&#x5C31;&#x7ED9;&#x81EA;&#x5DF1;&#x5B9A;&#x4E0B;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#xFF0C;&#x52A1;&#x5FC5;&#x5728;&#x672C;&#x6708;&#x5185;&#x5B8C;&#x6210;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5408;&#x5E76;&#x3002;&#x5B9A;&#x4E0B;&#x6765;&#x76EE;&#x6807;&#x4E4B;&#x540E;&#xFF0C;&#x518D;&#x61D2;&#x60F0;&#x6211;&#x4E5F;&#x6BCF;&#x5929;&#x4E5F;&#x8981;&#x5904;&#x7406;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x4E4B;&#x7C7B;&#x4EE5;&#x53CA;&#x4E0E;&#x7528;&#x6237;&#x786E;&#x8BA4;&#x4E4B;&#x7C7B;&#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x7ED3;&#x679C;&#x5374;&#x662F;&#x51FA;&#x4E4E;&#x610F;&#x6599;&#x7684;&#x987A;&#x5229;&#xFF0C;&#x4E0D;&#x5230;10&#x5929;&#xFF0C;&#x6211;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#x5168;&#x90E8;&#x4EFB;&#x52A1;&#x3002;</p>
-<p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x8FD9;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x7684;START DATE&#xFF0C;&#x5F00;&#x59CB;&#x4E8E;2014-06-05&#xFF0C;&#x4E00;&#x8F6C;&#x773C;&#x5DF2;&#x7ECF;4&#x5E74;&#x5566;&#xFF0C;&#x5F53;&#x521D;&#x770B;&#x4F3C;&#x9886;&#x5148;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x843D;&#x4F0D;&#x5566;&#x3002;&#x800C;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x914D;&#x7F6E;&#xFF0C;SOFTLAYER&#x7167;&#x65E7;&#x6BCF;&#x6708;&#x6536;&#x6211;&#x51E0;&#x767E;&#x7F8E;&#x5143;&#x7684;&#x8D39;&#x7528;&#xFF0C;&#x771F;&#x5FC3;&#x5FC3;&#x75BC;&#x3002;</p>
-<p>&#x5C3D;&#x7BA1;&#x5DF2;&#x7ECF;&#x5B8C;&#x6210;&#x8FC1;&#x79FB;&#x548C;&#x6570;&#x636E;&#x6E05;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x670D;&#x52A1;&#x5668;&#x76F4;&#x5230;&#x6708;&#x5E95;&#x624D;&#x4F1A;&#x88AB;&#x53D6;&#x6D88;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x65E0;&#x8BBA;&#x4F60;&#x7528;&#x6216;&#x8005;&#x4E0D;&#x7528;&#xFF0C;SOFTLAYER&#x4E5F;&#x4E0D;&#x4F1A;&#x7ED9;&#x4F60;&#x63D0;&#x524D;&#x53D6;&#x6D88;&#x9000;&#x6B3E;&#xFF0C;&#x4E0D;&#x8FC7;&#x5341;&#x51E0;&#x5E74;&#x4E00;&#x76F4;&#x90FD;&#x662F;&#x8FD9;&#x6837;&#xFF0C;&#x5DF2;&#x7ECF;&#x4E60;&#x60EF;&#x4E86;&#x3002;&#x81F3;&#x5C11;&#x5904;&#x7406;&#x73A9;&#x53D6;&#x6D88;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6D41;&#x7A0B;&#xFF0C;&#x603B;&#x7B97;&#x677E;&#x4E86;&#x53E3;&#x6C14;&#xFF0C;&#x62D6;&#x5EF6;&#x4E86;&#x5FEB;&#x4E00;&#x5E74;&#x7684;&#x4E8B;&#x60C5;&#x7EC8;&#x4E8E;&#x5B8C;&#x6210;&#x4E86;&#x3002;</p>
-<p>&#x770B;&#x7740;&#x8FD8;&#x6709;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x4E00;&#x5806;VPS&#xFF0C;&#x767B;&#x9646;&#x4E0A;&#x53BB;&#x770B;&#x770B;&#x6709;&#x4E9B;VPS&#x4E0A;&#x8FB9;&#x6839;&#x672C;&#x6CA1;&#x5565;&#x91CD;&#x8981;&#x5185;&#x5BB9;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x65F6;&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#xFF0C;&#x653E;&#x4E86;&#x70B9;&#x7A0B;&#x5E8F;&#x5728;&#x4E0A;&#x8FB9;&#x3002;&#x987A;&#x624B;&#x6E05;&#x7406;&#x51FA;&#x6765;&#x4E24;&#x4E2A;&#x4E5F;&#x53D6;&#x6D88;&#x6389;&#xFF0C;&#x52A0;&#x4E0A;&#x53D6;&#x6D88;&#x670D;&#x52A1;&#x5668;&#x8282;&#x7701;&#x7684;&#x5F00;&#x652F;&#xFF0C;&#x6BCF;&#x6708;&#x51CF;&#x5C11;&#x4E86;&#x6570;&#x767E;&#x7F8E;&#x5143;&#x7684;&#x7761;&#x540E;&#x652F;&#x51FA;&#xFF0C;&#x7F8E;&#x6ECB;&#x6ECB;&#x554A;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmcsGMnHfooH947FYqN3wSFFovBfKoFG9UZjjT7VDhEyU6/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x5176;&#x5B9E;&#x66F4;&#x7F8E;&#x6ECB;&#x6ECB;&#x7684;&#x662F;&#x7528;&#x5B9E;&#x9645;&#x884C;&#x52A8;&#x514B;&#x670D;&#x4E86;&#x62D6;&#x5EF6;&#xFF0C;&#x53EA;&#x8981;&#x53BB;&#x505A;&#xFF0C;&#x5F88;&#x591A;&#x56F0;&#x96BE;&#x548C;&#x9EBB;&#x70E6;&#x4E5F;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x514B;&#x670D;&#x7684;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/4i8rok" target="_blank" rel="noopener">&#x7761;&#x540E;&#x6536;&#x5165;&#x4E0E;&#x7761;&#x540E;&#x652F;&#x51FA;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/vps" target="_blank" rel="noopener">&#x505C;&#x6389;&#x4E00;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x548C;&#x4E24;&#x4E2A;VPS&#xFF0C;&#x7F8E;&#x6ECB;&#x6ECB;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -746,7 +739,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/330/">330</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/331/">331</a></li>
             
         </ul>
     </nav>
