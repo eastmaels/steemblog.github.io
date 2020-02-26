@@ -8,17 +8,14 @@ toc: true
 position: 9999
 date: 2020-02-22 08:41:24
 categories:
-- hive-101145
+- cn
 tags:
-- hive-101145
+- cn
 - sct-cn
 - sct-freeboard
-- cn
 - deantt
 - jjm
 - dblog
-- busy
-- sct
 thumbnail: 'https://cdn.steemitimages.com/DQmNvyVTa88eWPwQt1NtEMTt71Jx1imeZ5k2AnLsCCLmoqF/photo6228675638856886699.jpg'
 sidebar:
     right:

@@ -8,18 +8,15 @@ toc: true
 position: 9999
 date: 2020-02-23 13:56:45
 categories:
-- hive-101145
+- cn
 tags:
-- hive-101145
+- cn
 - sct-cn
 - sct-game
 - sct-freeboard
 - jjm
-- dblog
 - steemcity
 - gaming
-- busy
-- sct
 thumbnail: 'https://cdn.steemitimages.com/DQmbzAESwbr2nP2GC9jS24aUbXszsNEP7u47HoitPVx8MSm/image.png'
 sidebar:
     right:
