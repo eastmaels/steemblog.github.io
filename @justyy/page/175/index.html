@@ -230,6 +230,65 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/adding-ipify-api-support-in-chrome-extension-what-is-my-ip/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1513862191/cm2opnlptgtlh5mp4kem.png" alt="Adding ipify API support in Chrome Extension - What Is My IP">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-12-21T13:18:45.000Z">2017-12-21</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 352 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/adding-ipify-api-support-in-chrome-extension-what-is-my-ip/">Adding ipify API support in Chrome Extension - What Is My IP</a>
+            
+        </h1>
+        <div class="content">
+            <p>Previously, the Chrome Extension <a href="https://utopian.io/utopian-io/@justyy/chrome-extension-show-ip-address" target="_blank" rel="noopener">Show My IP</a> has been both accepted by utopian.io and Chrome Webstore. Today I have spent some time adding support for using ipify API to get the IP Address. Therefore, the chrome extension supports 5 API servers which makes it more robust.</p>
+<p>Chrome Webstore: <a href="https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/show-my-ip-addresses-exte/opljiobgnagdjikipnagigiacllolpaj</a><br>Github: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a><br>This commit: <a href="https://github.com/DoctorLai/what-is-my-ip/commit/13a5fc8b9074651d36573bae061ae6ed6896134e#diff-77a711c4c2c9fd1e7125ed653dc9e3ab" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip/commit/13a5fc8b9074651d36573bae061ae6ed6896134e#diff-77a711c4c2c9fd1e7125ed653dc9e3ab</a></p>
+<p>The code:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">function callThirdParty(server, name) {</span><br><span class="line">    var api = server;</span><br><span class="line">    logit(&quot;Connecting &quot; + server + &quot; ...&quot;);</span><br><span class="line">    $.ajax({</span><br><span class="line">        type: &quot;GET&quot;,</span><br><span class="line">        url: api,</span><br><span class="line">        success: function(data) {</span><br><span class="line">            if (data &amp;&amp; data[&apos;ip&apos;]) {</span><br><span class="line">                current_ip = data[&apos;ip&apos;];</span><br><span class="line">                $(&apos;pre#ip&apos;).append(current_ip + &quot;\n&quot;);</span><br><span class="line">            }</span><br><span class="line">        },</span><br><span class="line">        error: function(request, status, error) {</span><br><span class="line">            logit(&apos;Response: &apos; + request.responseText);</span><br><span class="line">            logit(&apos;Error: &apos; + error );</span><br><span class="line">            logit(&apos;Status: &apos; + status);</span><br><span class="line">        },</span><br><span class="line">        complete: function(data) {</span><br><span class="line">            logit(&apos;API Finished: &apos; + name + &quot; Server!&quot;);</span><br><span class="line">        }             </span><br><span class="line">    });    </span><br><span class="line">}</span><br><span class="line">document.addEventListener(&apos;DOMContentLoaded&apos;, function() {</span><br><span class="line">    getLocalIPs(function(ips) { // &lt;!-- ips is an array of local IP addresses.</span><br><span class="line">        ipaddress = ips.join(&apos;\n&apos;);</span><br><span class="line">        $(&apos;pre#ip2&apos;).html(ipaddress);</span><br><span class="line">        var manifest = chrome.runtime.getManifest();</span><br><span class="line">        logit(manifest.name);</span><br><span class="line">        logit(&quot;Version: &quot; + manifest.version);        </span><br><span class="line">        logit(&quot;Chrome Version: &quot; + getChromeVersion());</span><br><span class="line">        logit(&quot;May you do good, not evil.&quot;);</span><br><span class="line">        callServer(&quot;helloacm&quot;, &quot;East USA&quot;);</span><br><span class="line">        callServer(&quot;uploadbeta&quot;, &quot;UK&quot;);</span><br><span class="line">        callServer(&quot;happyukgo&quot;, &quot;Tokyo Japan&quot;);  </span><br><span class="line">        callServer(&quot;steakovercooked&quot;, &quot;West USA&quot;);  </span><br><span class="line">        callThirdParty(&quot;https://api.ipify.org?format=json&quot;, &quot;ipify.org&quot;);</span><br><span class="line">    });</span><br><span class="line">}, false);</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>It has been also integrated in this <a href="https://helloacm.com/what-is-my-ip/" target="_blank" rel="noopener">online tool to get the IP</a>.</p>
+<h1 id="It-works"><a href="#It-works" class="headerlink" title="It works!"></a>It works!</h1><p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1513862191/cm2opnlptgtlh5mp4kem.png" alt="image.png"></p>
+<h1 id="Proof-of-Work"><a href="#Proof-of-Work" class="headerlink" title="Proof of Work"></a>Proof of Work</h1><p><code>doctorlai</code> is my github ID and you can see my steemit URL listed on my profile page:<br>Feel free to submit your Pull Requests at: <a href="https://github.com/DoctorLai/what-is-my-ip" target="_blank" rel="noopener">https://github.com/DoctorLai/what-is-my-ip</a></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-ipify-api-support-in-chrome-extension-what-is-my-ip" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-ipify-api-support-in-chrome-extension-what-is-my-ip" target="_blank" rel="noopener">Adding ipify API support in Chrome Extension - What Is My IP</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cnyy2017-12-21/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-12-21)">
         </a>
@@ -4254,83 +4313,6 @@
 </blockquote>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn--2017-12-20" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011; (2017-12-20)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/coinbase-bch/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmbmKVaPd1t17PwyvSteEVuyf4pheSQTrUEFwfsvve2U3c/image.png" alt="Coinbase 支持 BCH的交易了！">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-12-20T11:24:45.000Z">2017-12-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 663 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/coinbase-bch/">Coinbase 支持 BCH的交易了！</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x867D;&#x7136;<a href="https://justyy.com/archives/3734" target="_blank" rel="noopener">&#x94B1;&#x5305;</a>&#x4E00;&#x4E2A;&#x5E01;&#x90FD;&#x6CA1;&#x6709;&#xFF0C;&#x4F46;&#x662F;&#x6BCF;&#x5929;&#x8FD8;&#x662F;&#x4F1A;&#x767B;&#x9646; <a href="https://justyy.com/out/coinbase" target="_blank" rel="noopener">coinbase</a> &#x770B;&#x770B;&#x5E01;&#x7684;&#x8D8B;&#x52BF;&#x56FE;&#x3002;&#x4ECA;&#x5929;&#x4E00;&#x767B;&#x9646; <a href="https://justyy.com/out/coinbase" target="_blank" rel="noopener">coinbase</a> &#x53D1;&#x73B0;&#x5DF2;&#x7ECF;&#x652F;&#x6301; <a href="https://justyy.com/archives/4993" target="_blank" rel="noopener">bitcoin cash</a> &#x4E86;&#xFF0C;&#x96BE;&#x9053;&#x8FD9;&#x4E5F;&#x662F;&#x770B;&#x597D; BCH&#x7684;&#x4E00;&#x5927;&#x4FE1;&#x53F7;&#xFF1F;</p>
-<p><img src="https://steemitimages.com/DQmbmKVaPd1t17PwyvSteEVuyf4pheSQTrUEFwfsvve2U3c/image.png" alt=""></p>
-<p><a href="https://justyy.com/out/coinbase" target="_blank" rel="noopener">coinbase</a> &#x652F;&#x6301;&#x7F8E;&#x5143;&#x3001;&#x82F1;&#x9551;&#x3001;&#x6B27;&#x5143;&#x7B49;&#xFF08;&#x6839;&#x636E;&#x6CE8;&#x518C;&#x6240;&#x5728;&#x5730;&#xFF09;&#x5BF9; &#x6BD4;&#x7279;&#x5E01;&#x3001;&#x4EE5;&#x592A;&#x3001;&#x83B1;&#x7279;&#x5E01;&#x548C; &#x6BD4;&#x7279;&#x5E01;&#x73B0;&#x91D1;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x6700;&#x65B9;&#x4FBF;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x652F;&#x6301;&#x4FE1;&#x7528;&#x5361;&#x4E70;&#x5E01;&#x3002;&#x5F53;&#x7136;&#x6211;&#x6BD4;&#x8F83;&#x559C;&#x6B22;&#x7684;&#x8FD8;&#x6709;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p>
-<ol>
-<li>&#x652F;&#x6301;&#x8BBE;&#x7F6E;&#x4EF7;&#x683C;&#x63D0;&#x9192;&#xFF0C;&#x6BD4;&#x5982;&#x5F53;<a href="https://justyy.com/archives/5653" target="_blank" rel="noopener">BTC</a>&#x964D;&#x5230;1000&#x5757;&#x7684;&#x65F6;&#x5019; all in.</li>
-<li>&#x652F;&#x6301; API&#xFF0C;&#x61C2;&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x4EE5;&#x5F04;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x9AD8;&#x5356;&#x4F4E;&#x4E70;&#x3002;</li>
-<li>&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x4ECE;&#x4F60;&#x7684;&#x82F1;&#x9551;&#x6216;&#x8005;&#x6B27;&#x5143;&#x94B1;&#x5305;&#x63D0;&#x73B0;&#x5230;&#x4F60;&#x7684;&#x94F6;&#x884C;&#x5E10;&#x53F7;&#x4E0A;&#xFF0C;&#x6211;&#x524D;&#x4E24;&#x5468;&#x63D0;&#x8FC7;&#x4E00;&#x6B21;&#xFF0C;3&#x5929;&#x5230;&#x5E10;&#x3002;</li>
-</ol>
-<p><a href="https://justyy.com/out/coinbase" target="_blank" rel="noopener">coinbase</a> &#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x4E2A;&#x5C0F;&#x578B;&#x4EA4;&#x6613;&#x6240;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x4E0D;&#x592A;&#x5EFA;&#x8BAE;&#x628A;&#x5B83;&#x5F53;&#x6210;&#x94B1;&#x5305;&#x6765;&#x7528;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5B83;&#x6BD4;&#x8F83;&#x9002;&#x5408;&#x6211;&#x8FD9;&#x79CD;&#x6CA1;&#x6709; RMB&#x5728;&#x82F1;&#x56FD;&#x5C45;&#x4F4F;&#x5F88;&#x4E45;&#x7684;&#x7528;&#x6237;&#x3002;</p>
-<p>&#x5BF9;&#x4E86;&#xFF0C; &#x901A;&#x8FC7;<a href="https://justyy.com/out/coinbase" target="_blank" rel="noopener">&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#x6CE8;&#x518C; coinbase</a> &#x5F53;&#x4EA4;&#x6613;&#x8D85;&#x8FC7;100&#x7F8E;&#x5143;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x6211;&#x5404;&#x5F97;10&#x7F8E;&#x5143;&#x3002;</p>
-<blockquote>
-<p>AD &#x4E00;&#x6CE2;&#xFF0C;&#x6700;&#x8FD1;SBD&#x6DA8;&#x5230;10&#x51E0;&#x5757;&#x94B1;&#xFF0C;1 SBD=5 SP&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x628A;&#x94B1;&#x5B58;&#x5728;<a href="https://steemit.com/cn-stats/@justyy/daily-cn-updates-cnyy2017-12-15" target="_blank" rel="noopener">YY&#x94F6;&#x884C;</a>&#x662F;&#x5F88;&#x5212;&#x7B97;&#x7684;&#xFF0C;YY&#x94F6;&#x884C;&#x5403;&#x7684;&#x662F;&#x8349;&#xFF0C;&#x6324;&#x7684;&#x662F;&#x5976;&#x554A;&#xFF0C; &#x6BCF;&#x65E5;&#x53D1; SBD&#x5229;&#x606F;&#xFF0C;&#x4ECE;&#x4E0D;&#x95F4;&#x65AD;&#xFF0C;&#x63D0;&#x524D;&#x795D;YY&#x80A1;&#x4E1C;&#x4EEC;&#x5723;&#x8BDE;&#x5FEB;&#x4E50;&#xFF01;</p>
-</blockquote>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></p>
-</blockquote>
-<h1 id="&#x8FD1;&#x671F;&#x5E16;&#x5B50;"><a href="#&#x8FD1;&#x671F;&#x5E16;&#x5B50;" class="headerlink" title="&#x8FD1;&#x671F;&#x5E16;&#x5B50;"></a>&#x8FD1;&#x671F;&#x5E16;&#x5B50;</h1><ul>
-<li><a href="https://steemit.com/cn/@justyy/2017-christmas-s-dinner-2017-merry-christmas-to-you" target="_blank" rel="noopener">2017&#x5E74;&#x516C;&#x53F8;&#x5723;&#x8BDE;&#x805A;&#x9910; (&#x5251;&#x6865;&#x5927;&#x5B66; &#x5723;&#x51EF;&#x745F;&#x7433;&#x5B66;&#x9662;)</a></li>
-<li><a href="https://steemit.com/cn/@justyy/2a8u7f" target="_blank" rel="noopener">&#x5728;&#x516C;&#x53F8;&#x641E;&#x4E2A;&#x9E21;&#x86CB;&#x7FB9;&#x771F;&#x662F;&#x7F8E;&#x5473;&#x554A;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/6cpvwv-or" target="_blank" rel="noopener">&#x5C45;&#x5B89;&#x601D;&#x5371; | &#x6708;&#x65E6;&#x8BC4;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/2ggkgt" target="_blank" rel="noopener">&#x5728;&#x82F1;&#x56FD;&#x5F00;&#x8F66;&#x7684;&#x6210;&#x672C;&#x662F;&#x5F88;&#x4F4E;&#x7684;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/bts-bch-bcg" target="_blank" rel="noopener">&#x516C;&#x4F17;&#x53F7;&#x652F;&#x6301; &#x5B9E;&#x65F6;&#x67E5;&#x8BE2; BTS&#x3001;BCH&#x548C;BCG&#x7684;&#x4EF7;&#x683C;&#x5566;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/m5bey" target="_blank" rel="noopener">&#x82F1;&#x56FD;&#x7684;&#x8F66;&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x4E48;&#x4FBF;&#x5B9C;&#xFF1F; - &#x6708;&#x65E6;&#x8BC4;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/coinbase-bch" target="_blank" rel="noopener">Coinbase &#x652F;&#x6301; BCH&#x7684;&#x4EA4;&#x6613;&#x4E86;&#xFF01;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
