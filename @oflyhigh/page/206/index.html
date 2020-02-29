@@ -230,6 +230,72 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/vector-cny/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="被坑到吐血，vector 元素地址会变！">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-07T03:06:24.000Z">2018-05-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn-programming/">cn-programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 798 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/vector-cny/">被坑到吐血，vector 元素地址会变！</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x6211;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x6211;&#x7528;&#x5230;&#x4E00;&#x4E2A;Combo-Box&#x63A7;&#x4EF6;&#xFF0C;&#x63A7;&#x4EF6;&#x91CC;&#x7684;&#x6570;&#x636E;&#x662F;&#x5728;&#x52A8;&#x6001;&#x63D2;&#x5165;&#x7684;&#x3002;&#x4E3A;&#x4E86;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;Combo-Box&#x63A7;&#x4EF6;&#x9009;&#x4E2D;&#x9879;&#x76EE;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x7ED9;&#x5BF9;&#x8BDD;&#x6846;&#x8BBE;&#x7F6E;&#x4E86;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x53D8;&#x91CF;<code>vector &lt;string&gt; m_str;</code>&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x6240;&#x6709;&#x5F85;&#x9009;&#x6761;&#x76EE;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;pixabay)</p>
+<h1 id="&#x6545;&#x969C;"><a href="#&#x6545;&#x969C;" class="headerlink" title="&#x6545;&#x969C;"></a>&#x6545;&#x969C;</h1><p>&#x5728;&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x7684;&#x4EE3;&#x7801;&#x4EE3;&#x7801;&#x6BB5;&#x4E2D;&#xFF0C;&#x6211;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6BB5;(1)&#x6DFB;&#x52A0;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">while (!recset.IsEOF())</span><br><span class="line">{</span><br><span class="line">	......</span><br><span class="line">	int index = m_pComboBox-&gt;InsertString(-1, CA2T(str));</span><br><span class="line">	m_str.push_back(str);</span><br><span class="line">	m_pComboBox-&gt;SetItemDataPtr(index, (void *)&amp;m_str[index]);</span><br><span class="line">	......</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7136;&#x540E;&#x5728;&#x7A0B;&#x5E8F;&#x5176;&#x5B83;&#x90E8;&#x5206;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4F7F;&#x7528;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x8BFB;&#x56DE;&#x6570;&#x636E;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int index = m_pComboBox-&gt;GetCurSel();</span><br><span class="line">str = *(string *)m_pComboBox-&gt;GetItemDataPtr(index);</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7ED3;&#x679C;&#x8FD9;&#x7A0B;&#x5E8F;&#x884C;&#x4E3A;&#x65F6;&#x800C;&#x6B63;&#x5E38;&#xFF0C;&#x65F6;&#x800C;&#x5D29;&#x6E83;&#xFF0C;&#x6211;&#x610F;&#x8BC6;&#x5230;&#x6211;&#x7684;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x54EA;&#x91CC;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x662F;&#x54EA;&#x91CC;&#x7684;&#x95EE;&#x9898;&#x5462;&#xFF1F;</p>
+<h1 id="&#x539F;&#x56E0;"><a href="#&#x539F;&#x56E0;" class="headerlink" title="&#x539F;&#x56E0;"></a>&#x539F;&#x56E0;</h1><p>&#x56E0;&#x4E3A;&#x5D29;&#x6E83;&#x65F6;&#x90FD;&#x662F;&#x5185;&#x5B58;&#x8BFB;&#x5199;&#x9519;&#x8BEF;&#xFF0C;&#x51FA;&#x5728;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x4E0A;&#xFF1A;<code>str = *(string *)m_pComboBox-&gt;GetItemDataPtr(index);</code>&#x6240;&#x4EE5;&#x6211;&#x60F3;&#x5230;&#x53EF;&#x80FD;&#x662F;&#x6211;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x5BF9;&#xFF0C;&#x5BFC;&#x81F4;&#x8BFB;&#x51FA;&#x4E0D;&#x6B63;&#x5E38;&#x3002;</p>
+<p>&#x4E8E;&#x662F;&#x6211;&#x5C06;&#x4EE3;&#x7801;&#x6BB5;(1)&#x4FEE;&#x6539;&#x6210;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF0C;&#x5C31;&#x662F;&#x5199;&#x5165;&#x4E4B;&#x540E;&#x9A6C;&#x4E0A;&#x8BFB;&#x56DE;&#x6821;&#x9A8C;&#x4E00;&#x4E0B;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">while (!recset.IsEOF())</span><br><span class="line">{</span><br><span class="line">	......</span><br><span class="line">	int index = m_pComboBox-&gt;InsertString(-1, CA2T(str));</span><br><span class="line">	m_str.push_back(str);</span><br><span class="line">	m_pComboBox-&gt;SetItemDataPtr(index, (void *)&amp;m_str[index]);</span><br><span class="line">	str = *(string *)m_pComboBox-&gt;GetItemDataPtr(index);</span><br><span class="line">	......</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x4E8B;&#x5B9E;&#x8BC1;&#x660E;&#x5728;&#x6B64;&#x5904;&#x5199;&#x5165;&#x548C;&#x8BFB;&#x51FA;&#x7684;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x4E00;&#x70B9;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#x95EE;&#x9898;&#x4F1A;&#x51FA;&#x5728;&#x54EA;&#x91CC;&#x5462;&#xFF1F;&#x6211;&#x60F3;&#x6765;&#x60F3;&#x53BB;&#xFF0C;&#x60F3;&#x5230;&#x4E00;&#x79CD;&#x53EF;&#x80FD;&#xFF0C;&#x6211;&#x7684;&#x7A0B;&#x5E8F;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x7684;&#x662F;vertor&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5982;&#x679C;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;&#x53D8;&#x5316;&#x4E86;&#x5462;&#xFF1F;&#x4F46;&#x662F;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;&#x4F1A;&#x53D8;&#x5316;&#x5417;&#xFF1F;&#x4E8E;&#x662F;&#x6211;&#x5199;&#x4E86;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;string&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void add_data(vector &lt;string&gt; &amp;v, vector &lt;string *&gt; &amp;v_p, int count)</span><br><span class="line">{</span><br><span class="line">	for (int i = 0; i &lt; count; i++)</span><br><span class="line">	 {</span><br><span class="line">		v.push_back(&quot;test&quot; + to_string(i));</span><br><span class="line">		v_p.push_back(&amp;v[i]);</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">{</span><br><span class="line">	vector &lt;string&gt; v_str;</span><br><span class="line">	vector &lt;string *&gt; v_str_p;</span><br><span class="line">	add_data(v_str, v_str_p, 10);</span><br><span class="line">	for (int i = 0; i &lt; v_str.size(); i++)	</span><br><span class="line">	{</span><br><span class="line">		cout &lt;&lt; i &lt;&lt; &quot;:&quot; &lt;&lt; v_str[i] &lt;&lt; &quot;:&quot; &lt;&lt; v_str_p[i] &lt;&lt; &quot;:&quot; &lt;&lt; &amp;v_str[i] &lt;&lt; endl;</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmXAWCJkp7EvzUHH9Cd2GDHphGbGi1zj3tZE8RV4UWaXV1/image.png" alt=""><br>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x9664;&#x4E86;&#x6700;&#x540E;&#x6DFB;&#x52A0;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5176;&#x5B83;&#x5143;&#x7D20;&#x5730;&#x5740;&#x5747;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x8FD9;&#x4E5F;&#x89E3;&#x91CA;&#x4E86;&#x4E3A;&#x4F55;&#x6211;&#x7684;&#x7A0B;&#x5E8F;&#x6709;&#x65F6;&#x5019;&#x597D;&#x7528;&#x6709;&#x65F6;&#x5019;&#x5D29;&#x6E83;&#xFF08;&#x9009;&#x62E9;&#x6700;&#x540E;&#x7684;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x56E0;&#x4E3A;&#x5730;&#x5740;&#x6CA1;&#x53D8;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x8BFB;&#x51FA;&#x6570;&#x636E;&#xFF09;</p>
+<h1 id="&#x89E3;&#x51B3;"><a href="#&#x89E3;&#x51B3;" class="headerlink" title="&#x89E3;&#x51B3;"></a>&#x89E3;&#x51B3;</h1><p>&#x77E5;&#x9053;&#x4E86;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x539F;&#x56E0;&#x6240;&#x5728;&#xFF0C;&#x89E3;&#x51B3;&#x8D77;&#x6765;&#x5C31;&#x597D;&#x529E;&#x591A;&#x5566;&#x3002;&#x6211;&#x53EF;&#x4EE5;&#x5C06;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4FEE;&#x6539;&#x4E3A;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">while (!recset.IsEOF())</span><br><span class="line">{</span><br><span class="line">    ......</span><br><span class="line">    int index = m_pComboBox-&gt;InsertString(-1, CA2T(str));</span><br><span class="line">    m_str.push_back(str);</span><br><span class="line">    ......</span><br><span class="line">}</span><br><span class="line">for (int i = 0; i &lt; m_pComboBox&gt;GetCount(); i++)</span><br><span class="line">{</span><br><span class="line">	m_pComboBox-&gt;SetItemDataPtr(i, (void *)&amp;m_str[i]);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5176;&#x5B9E;&#x6211;&#x8FD8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x5E8F;&#x53F7;&#xFF0C;&#x4E0D;&#x7528;&#x6765;&#x56DE;&#x4F20;&#x9012;&#x6307;&#x9488;&#x3002;</p>
+<h1 id="&#x7ED3;&#x8BBA;"><a href="#&#x7ED3;&#x8BBA;" class="headerlink" title="&#x7ED3;&#x8BBA;"></a>&#x7ED3;&#x8BBA;</h1><p>&#x770B;&#x4F3C;&#x5F88;&#x7B80;&#x5355;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5374;&#x53C8;&#x6D6A;&#x8D39;&#x6211;&#x5C0F;&#x534A;&#x5929;&#x65F6;&#x95F4;&#x3002;&#x770B;&#x6765;&#x57FA;&#x672C;&#x529F;&#x4E0D;&#x624E;&#x5B9E;&#x5C31;&#x662F;&#x8981;&#x53CD;&#x590D;&#x505A;&#x65E0;&#x7528;&#x529F;&#x5440;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/vector-cny" target="_blank" rel="noopener">&#x88AB;&#x5751;&#x5230;&#x5410;&#x8840;&#xFF0C;vector &#x5143;&#x7D20;&#x5730;&#x5740;&#x4F1A;&#x53D8;&#xFF01;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/6bew7q-and/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmbFHCGeEw9H5ChArQGAjnVNuqPLnQLiNgHgJNevVenEF5/20180428_074547.jpg" alt="读书 &amp; 《去年今日此门中》">
         </a>
@@ -636,83 +702,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/vc/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：VC中不同编码间字符串转换">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-04T05:07:54.000Z">2018-05-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/encoding/">encoding</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1229 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/vc/">每天进步一点点：VC中不同编码间字符串转换</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4E4B;&#x524D;&#x7528;&#x4E24;&#x7BC7;&#x6587;&#x7AE0;&#x590D;&#x4E60;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x7F16;&#x7801;&#x7684;&#x76F8;&#x5173;&#x77E5;&#x8BC6;&#x5E76;&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x9A8C;&#x8BC1;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x77E5;&#x8BC6;&#x7684;&#x76EE;&#x7684;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x5730;&#x4F7F;&#x7528;&#xFF0C;&#x5426;&#x5219;&#x9664;&#x4E86;&#x5360;&#x7528;&#x8111;&#x7EC6;&#x80DE;&#x5C31;&#x6CA1;&#x5565;&#x5176;&#x5B83;&#x610F;&#x4E49;&#x4E86;&#xFF08;&#x597D;&#x50CF;&#x5360;&#x4E0D;&#x5230;&#x6211;&#x7684;&#x8111;&#x7EC6;&#x80DE;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4F1A;&#x5F88;&#x5FEB;&#x5730;&#x5FD8;&#x6389;&#xFF09;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x56E0;&#x4E3A;&#x6709;&#x4E0D;&#x540C;&#x7F16;&#x7801;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x7F16;&#x7A0B;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x96BE;&#x514D;&#x4F1A;&#x9047;&#x5230;&#x7F16;&#x7801;&#x8F6C;&#x6362;&#x7684;&#x95EE;&#x9898;&#x3002;&#x6BD4;&#x5982;&#x8BF4;&#x6211;&#x7684;&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x4F7F;&#x7528;Unicode&#x7F16;&#x7801;&#xFF0C;&#x4F46;&#x662F;&#x7A0B;&#x5E8F;&#x4E2D;&#x8BFB;&#x53D6;&#x5230;&#x4E00;&#x6BB5;&#x6587;&#x5B57;&#x5374;&#x4F7F;&#x7528;&#x4E86;GB2312&#x7F16;&#x7801;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8981;&#x5C06;&#x8FD9;&#x6BB5;&#x6587;&#x5B57;POST&#x7ED9;&#x67D0;&#x4E2A;&#x7F51;&#x9875;&#x5904;&#x7406;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x53C8;&#x8981;&#x4F7F;&#x7528;UTF-8&#x7F16;&#x7801;&#xFF0C;&#x8FD9;&#x771F;&#x662F;&#x8BA9;&#x4EBA;&#x5934;&#x6655;&#x751A;&#x81F3;&#x5934;&#x5927;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
-<p>&#x5E78;&#x597D;&#xFF0C;&#x5FAE;&#x8F6F;&#x7ED9;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x51FD;&#x6570;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5F88;&#x65B9;&#x4FBF;&#x7684;&#x5904;&#x7406;&#x8BF8;&#x5982;&#x6B64;&#x7C7B;&#x7684;&#x8F6C;&#x6362;&#x3002;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x51FD;&#x6570;&#x83AB;&#x8FC7;&#x4E8E;<code>WideCharToMultiByte</code>&#x4EE5;&#x53CA;<code>MultiByteToWideChar</code>&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x524D;&#x8005;&#x5C06;&#x5BBD;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x591A;&#x5B57;&#x8282;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x540E;&#x8005;&#x505A;&#x76F8;&#x53CD;&#x7684;&#x5DE5;&#x4F5C;&#x3002;</p>
-<h1 id="WideCharToMultiByte"><a href="#WideCharToMultiByte" class="headerlink" title="WideCharToMultiByte"></a>WideCharToMultiByte</h1><p>&#x4EE5;<code>WideCharToMultiByte</code>&#x4E3A;&#x4F8B;&#xFF0C;&#x5B83;&#x7684;&#x8BED;&#x6CD5;&#xFF08;&#x51FD;&#x6570;&#x58F0;&#x660E;&#xFF09;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmNRw6SjsQbVcQ2TCgFFq7neAnMdgZXgWpTvxmZHBQbvcs/image.png" alt=""></p>
-<p>&#x5494;&#x5494;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5934;&#x66F4;&#x5927;&#x4E86;&#xFF1F;&#x5176;&#x5B9E;&#x4E5F;&#x6CA1;&#x591A;&#x590D;&#x6742;&#xFF0C;&#x6709;&#x5173;&#x53C2;&#x6570;&#x7684;&#x8BF4;&#x660E;&#xFF0C;&#x53C2;&#x8003;<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd374130(v=vs.85" target="_blank" rel="noopener">&#x6B64;&#x5904;&#x5373;&#x53EF;</a>.aspx)&#xFF08;&#x826F;&#x5FC3;&#x5462;&#xFF1F;&#x826F;&#x5FC3;&#x75BC;&#x4E0D;&#x75BC;&#xFF1F;&#xFF09;</p>
-<p>&#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x95EE;&#x9898;&#xFF0C;<code>_Out_opt_ LPSTR   lpMultiByteStr,</code>&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x63A5;&#x6536;&#x8F6C;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5F88;&#x96BE;&#x9884;&#x4F30;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4F1A;&#x5360;&#x7528;&#x591A;&#x5C11;&#x5B57;&#x8282;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x957F;&#x7684;buf&#xFF0C;&#x6216;&#x8005;&#x4F7F;&#x7528;&#x5185;&#x5B58;&#x5206;&#x914D;&#x51FD;&#x6570;&#x5206;&#x914D;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x90FD;&#x662F;&#x4E0D;&#x9002;&#x5F53;&#x7684;&#x3002;</p>
-<p>&#x4E00;&#x822C;&#x7684;&#x505A;&#x6CD5;&#x662F;&#x5148;&#x8C03;&#x7528;&#x4E00;&#x904D;<code>WideCharToMultiByte</code>&#x8FD9;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x628A;&#x8F93;&#x51FA;&#x5B57;&#x7B26;&#x7684;&#x6307;&#x9488;&#x4EE5;&#x53CA;&#x8F93;&#x51FA;&#x5B57;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A;NULL&#x548C;0&#xFF0C;&#x8FD9;&#x6837;&#x8C03;&#x7528;&#x4F1A;&#x8FD4;&#x56DE;&#x76EE;&#x6807;&#x5B57;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x3002;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x8FD4;&#x56DE;&#x7684;&#x957F;&#x5EA6;&#x5206;&#x914D;&#x5185;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x8C03;&#x7528;&#x8F6C;&#x6362;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x76EE;&#x6807;&#x5B57;&#x4E32;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x4F7F;&#x7528;&#x5B8C;&#x76EE;&#x6807;&#x5B57;&#x4E32;&#x540E;&#xFF0C;&#x8981;&#x8BB0;&#x5F97;&#x91CA;&#x653E;&#x5185;&#x5B58;&#x3002;</p>
-<p><code>MultiByteToWideChar</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x7528;&#x6CD5;&#x548C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5185;&#x5BB9;&#x4E0E;<code>WideCharToMultiByte</code>&#x5927;&#x540C;&#x5C0F;&#x5F02;&#xFF0C;&#x5C31;&#x4E0D;&#x989D;&#x5916;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;</p>
-<h1 id="CW2A-amp-CA2W"><a href="#CW2A-amp-CA2W" class="headerlink" title="CW2A &amp; CA2W"></a>CW2A &amp; CA2W</h1><p>&#x5C3D;&#x7BA1;<code>WideCharToMultiByte</code>&#x4E0E;<code>MultiByteToWideChar</code> &#x53EF;&#x4EE5;&#x5F88;&#x597D;&#x5730;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x7F16;&#x7801;&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#xFF0C;&#x4F46;&#x662F;&#x7528;&#x8D77;&#x6765;&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x7684;&#x3002;&#x5148;&#x8981;&#x8C03;&#x7528;&#x4E00;&#x904D;&#x6765;&#x6D4B;&#x8BD5;&#x76EE;&#x6807;&#x4E32;&#x957F;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5206;&#x914D;&#x5185;&#x5B58;&#xFF0C;&#x518D;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#xFF0C;&#x7528;&#x5B8C;&#x8FD8;&#x662F;&#x8BB0;&#x5F97;&#x91CA;&#x653E;&#x5185;&#x5B58;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x8FD8;&#x6709;&#x4E00;&#x5806;&#x53C2;&#x6570;&#x8981;&#x586B;&#x3002;</p>
-<p><code>CW2A &amp; CA2W</code>&#x7684;&#x51FA;&#x73B0;&#x5F7B;&#x5E95;&#x5C06;&#x6211;&#x4EEC;&#x4ECE;&#x8FD9;&#x4E9B;&#x7E41;&#x91CD;&#x7684;&#x52B3;&#x52A8;&#x4E2D;&#x89E3;&#x653E;&#x51FA;&#x6765;&#x3002;</p>
-<p>&#x4F60;&#x53EF;&#x80FD;&#x5F88;&#x597D;&#x5947;&#xFF0C;&#x5B83;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#x5462;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#xFF0C;&#x5C3D;&#x7BA1;<code>CW2A &amp; CA2W</code>&#x770B;&#x8D77;&#x6765;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5B83;&#x5185;&#x90E8;&#x53BB;&#x505A;&#x4E0A;&#x8FF0;&#x7E41;&#x590D;&#x7684;&#x5DE5;&#x4F5C;&#x1F635;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmYMTyhqrdimb87cWTQNpC4knboupXmBXg7kMC27wbhaAJ/image.png" alt=""></p>
-<p>&#x4EE5;&#x4E0A;&#x662F;CW2AEX&#x7C7B;&#x7684;&#x90E8;&#x5206;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x89C1;&#x5B83;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x4E86;<code>WideCharToMultiByte</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
-<p>&#x53E6;&#x5916;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>AtlConvAllocMemory(&amp;m_psz,nLengthA,m_szBuffer,t_nBufferLength);</code>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5F88;&#x6709;&#x610F;&#x601D;&#x3002;&#x7ED3;&#x5408;CW2AEX&#x7C7B;&#xFF0C;&#x5927;&#x81F4;&#x601D;&#x8DEF;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#xFF0C;&#x5982;&#x679C;&#x76EE;&#x6807;&#x5B57;&#x4E32;&#x7684;&#x957F;&#x5EA6;&#x5927;&#x4E8E;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x90A3;&#x4E48;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x5185;&#x5B58;&#xFF0C;&#x5426;&#x5219;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5B57;&#x8282;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x63A5;&#x6536;&#x533A;&#x3002;</p>
-<h1 id="CW2A-amp-CA2W-&#x4F5C;&#x7528;&#x57DF;"><a href="#CW2A-amp-CA2W-&#x4F5C;&#x7528;&#x57DF;" class="headerlink" title="CW2A &amp; CA2W &#x4F5C;&#x7528;&#x57DF;"></a>CW2A &amp; CA2W &#x4F5C;&#x7528;&#x57DF;</h1><p>&#x56E0;&#x4E3A;&#x5728;CW2AEX&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x4E2D;&#x4F1A;&#x91CA;&#x653E;&#x5185;&#x5B58;&#xFF0C;&#x6240;&#x4EE5;&#x4F7F;&#x7528;CW2A &amp; CA2W &#x7B49;&#x51FD;&#x6570;&#x65F6;&#x8981;&#x6CE8;&#x610F;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x7528;&#x7C7B;&#x4F3C;&#xFF1A;<code>LPTSTR p = CA2W(str1);</code>&#x6765;&#x4FDD;&#x5B58;&#x7ED3;&#x679C;&#xFF0C;&#x90A3;&#x4E48;&#x518D;&#x6B21;&#x4F7F;&#x7528;p&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x56E0;&#x4E3A;p&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5B58;&#x5DF2;&#x7ECF;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x80FD;&#x5F97;&#x5230;&#x4E00;&#x4E9B;&#x5783;&#x573E;&#x6570;&#x636E;&#x6216;&#x8005;&#x610F;&#x60F3;&#x4E0D;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#x4E86;&#x3002;</p>
-<h1 id="&#x53C2;&#x8003;&#x8D44;&#x6599;"><a href="#&#x53C2;&#x8003;&#x8D44;&#x6599;" class="headerlink" title="&#x53C2;&#x8003;&#x8D44;&#x6599;"></a>&#x53C2;&#x8003;&#x8D44;&#x6599;</h1><ul>
-<li><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd374130(v=vs.85" target="_blank" rel="noopener">WideCharToMultiByte function</a>.aspx)</li>
-<li><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd319072(v=vs.85" target="_blank" rel="noopener">MultiByteToWideChar function</a>.aspx)</li>
-<li><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd374085(v=vs.85" target="_blank" rel="noopener">Unicode and Character Set Functions</a>.aspx)</li>
-<li><a href="https://docs.microsoft.com/en-us/cpp/atl/reference/cw2aex-class" target="_blank" rel="noopener">CW2AEX Class</a></li>
-<li><a href="https://docs.microsoft.com/en-us/cpp/atl/reference/ca2wex-class" target="_blank" rel="noopener">CA2WEX Class</a></li>
-<li><a href="https://steemit.com/encoding/@oflyhigh/ascii-gb2312-unicode-utf-8" target="_blank" rel="noopener">&#x6E29;&#x6545;&#x800C;&#x77E5;&#x65B0;&#xFF1A;&#x590D;&#x4E60;&#x4E00;&#x4E0B;&#x5B57;&#x7B26;&#x7F16;&#x7801;(ASCII&#x3001;GB2312&#x3001;Unicode&#x3001;UTF-8&#x3001;&#x533A;&#x4F4D;&#x7801;)</a></li>
-<li><a href="https://steemit.com/encoding/@oflyhigh/hydbr" target="_blank" rel="noopener">&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF1A;&#x6765;&#x9A8C;&#x8BC1;&#x4E00;&#x4E0B;&#x7F16;&#x7801;&#x7684;&#x95EE;&#x9898;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/vc" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;VC&#x4E2D;&#x4E0D;&#x540C;&#x7F16;&#x7801;&#x95F4;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -737,7 +726,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/331/">331</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/332/">332</a></li>
             
         </ul>
     </nav>
