@@ -229,6 +229,365 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-image">
+        <a href="/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap/" class="image is-7by1">
+            <img class="thumbnail" src="https://www.steemimg.com/images/2016/07/31/steemit_error0fdef.png" alt="Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-31T08:03:33.000Z">2016-07-31</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemit/">steemit</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 505 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap/">Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.</a>
+            
+        </h1>
+        <div class="content">
+            <p>Today, I just tried to visit steemit.com site as usual, but I found that I can&#x2019;t access it normally.</p>
+<p>I got following response when I visited <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> in browser:<br><img src="https://www.steemimg.com/images/2016/07/31/steemit_error0fdef.png" alt="steemit_error0fdef.png"><br>Oh, there seems something wrong about steemit.com:(</p>
+<p>I tried again after a nap, and got:<br><img src="https://www.steemimg.com/images/2016/07/31/steemit_error278cb2.png" alt="steemit_error278cb2.png"></p>
+<p> I discussed it with my friends at QQ group.<br>Some of them said that steemit.com works normally,  but others can&#x2019;t work with it.</p>
+<p>So I try to finger out what happen?</p>
+<hr>
+<ul>
+<li>First I ping the domain of steemit.com at the command prompt:<br><img src="https://www.steemimg.com/images/2016/07/31/steem_ping_windowsa6d06.png" alt="steem_ping_windowsa6d06.png"><br>As you can see, the ping worked fine,  and the IP address is 167.114.34.68<hr>
+</li>
+<li>When I tried to use the IP address directly at browser, I got the same error as I access  it with the domain.<br><img src="https://www.steemimg.com/images/2016/07/31/steem_68b809d.png" alt="steem_68b809d.png"><br>But why some of my friends can worked with the site?<hr>
+</li>
+<li>I try to finger it out use EzDig tool:<br>Here are results:<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> ; &lt;&lt;&gt;&gt; EzDig 3.0 &lt;&lt;&gt;&gt; @198.153.194.1 steemit.com A</span><br><span class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 24734</span><br><span class="line">;;  flags: qr rd ra; QUERY:1, ANSWER:4, AUTHORITY:2, ADDITIONAL:1</span><br><span class="line"></span><br><span class="line">;; OPT PSEUDOSECTION:</span><br><span class="line">; EDNS: version: 0, flags:; udp: 4096</span><br><span class="line"></span><br><span class="line">;; QUESTION SECTION:</span><br><span class="line">steemit.com		IN	A	</span><br><span class="line"></span><br><span class="line">;; ANSWER SECTION:</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.68</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.59</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.89</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.81</span><br><span class="line"></span><br><span class="line">;; AUTHORITY SECTION:</span><br><span class="line">steemit.com	3600	IN	NS	ns38.domaincontrol.com</span><br><span class="line">steemit.com	3600	IN	NS	ns37.domaincontrol.com</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>As you can see <strong>there are FOUR addresses</strong> for A record.</p>
+<hr>
+<ul>
+<li><p>I tried to use the IP address directly at browser <a href="https://167.114.34.59" target="_blank" rel="noopener">https://167.114.34.59</a><br>It works fine for me!<br><img src="https://www.steemimg.com/images/2016/07/31/Capture_13a7ce.png" alt="Capture_13a7ce.png"></p>
+<hr>
+<p>Then I tested those IPs with a server which located at softlayer DC.</p>
+</li>
+<li><p>For 167.114.34.68</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> wget https://167.114.34.68 --no-check-certificate</span><br><span class="line">--2016-07-31 06:57:50--  https://167.114.34.68/</span><br><span class="line">Connecting to 167.114.34.68:443... connected.</span><br><span class="line">    WARNING: certificate common name &#x201C;steemit.com&#x201D; doesn&apos;t match requested host name &#x201C;167.114.34.68&#x201D;.</span><br><span class="line">HTTP request sent, awaiting response... 502 Bad Gateway</span><br><span class="line">2016-07-31 06:57:51 ERROR 502: Bad Gateway.</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+</li>
+<li>For 167.114.34.59<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">wget https://167.114.34.59 --no-check-certificate</span><br><span class="line">--2016-07-31 06:57:35--  https://167.114.34.59/</span><br><span class="line">Connecting to 167.114.34.59:443... connected.</span><br><span class="line">    WARNING: certificate common name &#x201C;steemit.com&#x201D; doesn&apos;t match requested host name &#x201C;167.114.34.59&#x201D;.</span><br><span class="line">HTTP request sent, awaiting response... 200 OK</span><br><span class="line">Length: 272853 (266K) [text/html]</span><br><span class="line">Saving to: &#x201C;index.html&#x201D;</span><br><span class="line"></span><br><span class="line">100%[===================================================================================================================================================================================================&gt;] 272,853     1.16M/s   in 0.2s</span><br><span class="line"></span><br><span class="line">2016-07-31 06:57:36 (1.16 MB/s) - &#x201C;index.html&#x201D; saved [272853/272853]</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>And I tested PTR of 167.114.34.68<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> ; &lt;&lt;&gt;&gt; EzDig 3.0 &lt;&lt;&gt;&gt; @208.67.222.222 68.34.114.167.in-addr.arpa PTR</span><br><span class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 24734</span><br><span class="line">;;  flags: qr rd ra; QUERY:1, ANSWER:1, AUTHORITY:0, ADDITIONAL:1</span><br><span class="line"></span><br><span class="line">;; OPT PSEUDOSECTION:</span><br><span class="line">; EDNS: version: 0, flags:; udp: 4096</span><br><span class="line"></span><br><span class="line">;; QUESTION SECTION:</span><br><span class="line">68.34.114.167.in-addr.arpa		IN	PTR	</span><br><span class="line"></span><br><span class="line">;; ANSWER SECTION:</span><br><span class="line">68.34.114.167.in-addr.arpa	86400	IN	PTR	node003.steem.house</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h1 id="The-results"><a href="#The-results" class="headerlink" title="The results:"></a>The results:</h1><p><strong>There is something wrong with node003(167.114.34.68)</strong><br>Hope this issue be fixed ASAP.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap" target="_blank" rel="noopener">Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/how-to-generate-valuable-content/" class="image is-7by1">
+            <img class="thumbnail" src="http://steemit.serviceuptime.net/images/20160730_dollars.jpg" alt="How to generate valuable content? (如何生产有价值的内容的思考)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-30T07:46:18.000Z">2016-07-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    12 minutes read (About 1778 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-generate-valuable-content/">How to generate valuable content? (如何生产有价值的内容的思考)</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="http://steemit.serviceuptime.net/images/20160730_dollars.jpg" alt="dollars"></p>
+<p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x793E;&#x4EA4;&#x5A92;&#x4F53;&#x5E73;&#x53F0;&#xFF0C;&#x5185;&#x5BB9;&#x6BEB;&#x65E0;&#x7591;&#x95EE;&#x662F;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5143;&#x7D20;&#x3002;<br>&#x60F3;&#x8C61;<strong>&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x5E73;&#x53F0;&#x5145;&#x65A5;&#x7740;&#x5E7F;&#x544A;&#x3001;&#x6C34;&#x8D34;&#x3001;&#x8272;&#x60C5;&#x4E0E;&#x66B4;&#x529B;&#x7B49;&#x5783;&#x573E;&#x4FE1;&#x606F;&#xFF0C;&#x90A3;&#x4E48;&#x60F3;&#x5FC5;&#x79BB;&#x6B7B;&#x4EA1;&#x975E;&#x5E38;&#x63A5;&#x8FD1;&#x4E86;&#x3002;</strong></p>
+<p>&#x4F5C;&#x4E3A;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x5C3D;&#x7BA1;&#x9876;&#x8D34;&#xFF08;&#x70B9;&#x8D5E;&#xFF09;&#x7B49;&#x673A;&#x5236;&#x4F1A;&#x5C3D;&#x91CF;&#x7B5B;&#x9009;&#x51FA;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x5448;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x773C;&#x524D;&#xFF0C;&#x4F46;&#x4F5C;&#x4E3A;&#x53C2;&#x4E0E;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x4E2A;&#x4F53;&#xFF0C;&#x90FD;&#x5E94;&#x5F53;&#x5C3D;&#x91CF;&#x53BB;&#x751F;&#x4EA7;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x5185;&#x5BB9;&#x3002;<strong>&#x5982;&#x679C;&#x53C2;&#x4E0E;&#x8005;&#x4E0D;&#x4F46;&#x4F1A;&#x4ECE;&#x53D1;&#x6587;&#x3001;&#x70B9;&#x8D5E;&#x7B49;&#x884C;&#x4E3A;&#x83B7;&#x5F97;&#x56DE;&#x62A5;&#xFF0C;&#x800C;&#x4E14;&#x4F1A;&#x4ECE;&#x5E73;&#x53F0;&#x7684;&#x5176;&#x5B83;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x6C72;&#x53D6;&#x517B;&#x5206;&#x3001;&#x5B66;&#x4E60;&#x77E5;&#x8BC6;&#x3001;&#x89E3;&#x51B3;&#x56F0;&#x60D1;&#xFF0C;&#x8FD9;&#x6837;&#x5E73;&#x53F0;&#x624D;&#x4F1A;&#x826F;&#x597D;&#x53D1;&#x5C55;&#x3002;</strong></p>
+<p>&#x90A3;&#x4E48;&#x600E;&#x6837;&#x624D;&#x80FD;&#x4EA7;&#x751F;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x5185;&#x5BB9;&#x5462;&#xFF1F;<br>&#x9605;&#x8BFB;&#x4E86;&#x8FD1;&#x671F;&#x5927;&#x90E8;&#x5206;CN&#x6807;&#x7B7E;&#x4E0B;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x5E76;&#x7ED3;&#x5408;&#x81EA;&#x5DF1;&#x7684;&#x7406;&#x89E3;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x53EF;&#x4EE5;&#x4ECE;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x65B9;&#x5411;&#x6765;&#x8003;&#x8651;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;</li>
+<li>&#x6709;&#x76CA;&#x6709;&#x8DA3;&#x7684;&#x5185;&#x5BB9;</li>
+<li>&#x6709;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#x5185;&#x5BB9;</li>
+<li>&#x6709;&#x4EF7;&#x503C;&#x7684;&#x95EE;&#x9898;</li>
+<li>&#x539F;&#x521B;&#x6587;&#x5B66;&#x4F5C;&#x54C1;</li>
+<li>&#x5176;&#x5B83;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x5185;&#x5BB9;</li>
+</ul>
+</blockquote>
+<h1 id="&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;"><a href="#&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;" class="headerlink" title="&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;"></a>&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;</h1><p>&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x5174;&#x7684;&#x5E73;&#x53F0;&#xFF0C;&#x96BE;&#x514D;&#x6709;&#x5F88;&#x591A;&#x4EBA;&#x4E0D;&#x4E86;&#x89E3;&#x3002;<br>&#x5305;&#x62EC;&#x4F46;&#x4E0D;&#x9650;&#x4E8E;Steemit&#x662F;&#x4EC0;&#x4E48;&#x3001;&#x5982;&#x4F55;&#x6CE8;&#x518C;&#x3001;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7B49;&#xFF0C;&#x6BD5;&#x7ADF;&#x5F88;&#x591A;&#x4EBA;&#x6CA1;&#x6709;&#x7CBE;&#x529B;&#x53BB;&#x7814;&#x7A76;&#x767D;&#x76AE;&#x4E66;&#x4E4B;&#x7C7B;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x7B80;&#x5355;&#x660E;&#x4E86;&#x7684;&#x6307;&#x5BFC;&#x6027;&#x5E16;&#x5B50;&#x5C31;&#x975E;&#x5E38;&#x6709;&#x5FC5;&#x8981;&#x4E86;&#x3002;</p>
+<p>&#x5F97;&#x76CA;&#x4E8E;&#x5728;&#x4E00;&#x4E2A;&#x793E;&#x533A;&#x5185;&#x8BA4;&#x8BC6;&#x7684;&#x4E00;&#x4E9B;&#x5E03;&#x9053;&#x8005;&#xFF0C;&#x4ED6;&#x4EEC;&#x8F9B;&#x82E6;&#x521B;&#x4F5C;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6307;&#x5BFC;&#x8D34;&#x3002;&#x4E5F;&#x662F;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x52AA;&#x529B;&#xFF0C;&#x6211;&#x77E5;&#x9053;&#x4E86;Steem&#xFF0C;&#x5E76;&#x5BF9;&#x6B64;&#x4EA7;&#x751F;&#x4E86;&#x5174;&#x8DA3;&#xFF0C;&#x4E5F;&#x662F;&#x56E0;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x6307;&#x5BFC;&#x5E16;&#xFF0C;&#x89E3;&#x51B3;&#x4E86;&#x6211;&#x5728;&#x6CE8;&#x518C;&#x548C;&#x4F7F;&#x7528;&#x4E2D;&#x7684;&#x8BB8;&#x591A;&#x56F0;&#x60D1;&#x3002;<br>@xiaohui, @laonie, @somebody, @noodles.pan, &#x2026;<br>&#xFF08;&#x70B9;&#x51FB;&#x94FE;&#x63A5;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5927;&#x795E;&#x4EEC;&#x7684;&#x6307;&#x5BFC;&#x8D34;&#xFF09;</p>
+<p>&#x4E5F;&#x8BB8;&#x4F60;&#x8BF4;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x4EBA;&#xFF0C;&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x5E73;&#x53F0;&#x8FD8;&#x6CA1;&#x6709;&#x5B8C;&#x5168;&#x4E86;&#x89E3;&#xFF0C;&#x66F4;&#x522B;&#x63D0;&#x521B;&#x4F5C;&#x51FA;&#x4EC0;&#x4E48;&#x6307;&#x5BFC;&#x6027;&#x5185;&#x5BB9;&#x4E86;&#x3002;<br>&#x8FD9;&#x79CD;&#x62C5;&#x5FC3;&#x662F;&#x5B8C;&#x5168;&#x6CA1;&#x6709;&#x5FC5;&#x8981;&#x7684;&#x3002;&#x4F7F;&#x7528;&#x8FC7;&#x7A0B;&#x7684;&#x70B9;&#x6EF4;&#x7ECF;&#x9A8C;&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x5206;&#x4EAB;&#x7684;&#xFF0C;&#x5373;&#x4FBF;&#x7406;&#x89E3;&#x6709;&#x8BEF;&#x4E5F;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x795E;&#x4EEC;&#x4F1A;&#x70ED;&#x5FC3;&#x6307;&#x51FA;&#x4F60;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x4E0D;&#x65AD;&#x7684;&#x6539;&#x8FDB;&#x548C;&#x63D0;&#x9AD8;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x5B9E;&#x8DF5;&#xFF0C;&#x6211;&#x53D1;&#x4E86;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;:</p>
+<blockquote>
+<ul>
+<li>&#x5982;&#x4F55;&#x5728;Steemit&#x6587;&#x7AE0;&#x4E2D;&#x63D2;&#x5165;&#x56FE;&#x7247;&#xFF1F;&#xFF08;&#x8FD9;&#x4E2A;&#x590F;&#x5929;&#x4E2D;&#x56FD;&#x6700;&#x6D41;&#x884C;&#x7684;&#x56FE;&#x7247;&#xFF09;<br><a href="https://steemit.com/cn/@oflyhigh/howto-guide-to-insert-pictures-in-the-steemit-articles-the-most-popular-picture-of-china-in-this-summer" target="_blank" rel="noopener">[howto] Guide to insert pictures in the steemit articles. (The most popular picture of China in this summer)</a></li>
+</ul>
+</blockquote>
+<h1 id="&#x6709;&#x76CA;&#x6709;&#x8DA3;&#x7684;&#x5185;&#x5BB9;"><a href="#&#x6709;&#x76CA;&#x6709;&#x8DA3;&#x7684;&#x5185;&#x5BB9;" class="headerlink" title="&#x6709;&#x76CA;&#x6709;&#x8DA3;&#x7684;&#x5185;&#x5BB9;"></a>&#x6709;&#x76CA;&#x6709;&#x8DA3;&#x7684;&#x5185;&#x5BB9;</h1><p>&#x751F;&#x6D3B;&#x4E2D;&#x603B;&#x4F1A;&#x53D1;&#x751F;&#x4E00;&#x4E9B;&#x6709;&#x8DA3;&#x6709;&#x76CA;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6216;&#x8005;&#x4EE4;&#x4EBA;&#x611F;&#x52A8;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<blockquote>
+<ul>
+<li>&#x6BD4;&#x5982; @xiaohui  &#x7684;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;<br><a href="https://steemit.com/cn/@xiaohui/my-9-years-old-daughter-just-wrote-her-first-post-in-steemit-9-steemit" target="_blank" rel="noopener">My 9-years old daughter just wrote her first post in steemit / &#x6211;9&#x5C81;&#x7684;&#x5973;&#x513F;&#x5728; steemit &#x53D1;&#x8868;&#x4E86;&#x5979;&#x7684;&#x7B2C;&#x4E00;&#x7BC7;&#x5E16;&#x5B50;</a></li>
+<li>&#x8FD8;&#x6709; @wjm &#x7684;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;<br><a href="https://steemit.com/cn/@wjm/my-son-s-primary-school-composition-dad-really-hard" target="_blank" rel="noopener">&#x6211;&#x513F;&#x5B50;&#x5199;&#x7684;&#x5C0F;&#x5B66;&#x4F5C;&#x6587;: &#x7238;&#x7238;&#x771F;&#x8F9B;&#x82E6; / My son&#x2019;s primary school composition: Dad really hard</a></li>
+</ul>
+</blockquote>
+<p>&#x4E00;&#x7BC7;&#x628A;&#x4E00;&#x4E2A;&#x7236;&#x4EB2;&#x5BF9;&#x5973;&#x5B69;&#x7684;&#x7231;&#x5C55;&#x73B0;&#x7684;&#x6DCB;&#x6DCB;&#x5C3D;&#x81F4;&#x3002;&#x53E6;&#x4E00;&#x7BC7;&#x5219;&#x662F;&#x513F;&#x5B50;&#x5BF9;&#x7236;&#x4EB2;&#x6EE1;&#x6EE1;&#x7684;&#x5173;&#x5FC3;&#x3002;&#x4E24;&#x4E2A;&#x90FD;&#x662F;&#x6210;&#x529F;&#x7236;&#x4EB2;&#x7684;&#x5178;&#x8303;&#x554A;&#x3002;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x5E16;&#x5B50;&#xFF0C;&#x65E2;&#x6709;&#x8DA3;&#x5473;&#x6027;&#x53C8;&#x6709;&#x6559;&#x80B2;&#x6027;&#xFF0C;&#x6211;&#x770B;&#x5B8C;&#x4E0D;&#x7981;&#x601D;&#x8003;&#xFF0C;&#x5728;&#x57F9;&#x517B;&#x548C;&#x6559;&#x80B2;&#x5B69;&#x5B50;&#x4E0A;&#xFF0C;&#x6211;&#x505A;&#x7684;&#x8FD8;&#x6709;&#x90A3;&#x4E9B;&#x4E0D;&#x8DB3;&#xFF0C;&#x8BE5;&#x5982;&#x4F55;&#x6539;&#x8FDB;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x8BA4;&#x4E3A;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;</p>
+<blockquote>
+<ul>
+<li>@mudiaiwai &#x7684;&#x8FD9;&#x7BC7;&#x5E16;&#x5B50;&#xFF0C;&#x6211;&#x4E5F;&#x89C9;&#x5F97;&#x662F;&#x597D;&#x5E16;&#x5B50;<br><a href="https://steemit.com/cn/@mudiaiwai/the-plan-of-self-driving-travelling-to-xilin-gol-league-and-hexigten-banner-of-inner-mongolia" target="_blank" rel="noopener">The plan of self-driving travelling to Xilin Gol League and Hexigten Banner of Inner Mongolia &#x9521;&#x76DF;&#x514B;&#x65D7;&#x81EA;&#x9A7E;&#x884C;&#x7A0B;&#x8BA1;&#x5212;</a></li>
+</ul>
+</blockquote>
+<p>&#x4F5C;&#x4E3A;&#x81F3;&#x4ECA;&#x9A7E;&#x7A0B;&#x4E0D;&#x8FC7;&#x4E07;&#x91CC;&#x7684;&#x201C;&#x8001;&#x53F8;&#x673A;&#x201D;&#xFF0C;&#x662F;&#x5F88;&#x60F3;&#x6765;&#x4E00;&#x573A;&#x8BF4;&#x8D70;&#x5C31;&#x8D70;&#x7684;&#x957F;&#x9014;&#x81EA;&#x9A7E;&#x6E38;&#x7684;&#x3002;&#x5948;&#x4F55;&#x8EAB;&#x4E0D;&#x7531;&#x5DF1;&#xFF0C;&#x770B;&#x770B;&#x522B;&#x4EBA;&#x7684;&#x5E16;&#x5B50;&#x89E3;&#x998B;&#x4E5F;&#x662F;&#x4E0D;&#x9519;&#x7684;&#x3002;&#x611F;&#x8C22; @mudiaiwai &#x671F;&#x5F85;&#x4F60;&#x65C5;&#x9014;&#x4E2D;&#x591A;&#x53D1;&#x5E03;&#x7CBE;&#x5F69;&#x5185;&#x5BB9;&#xFF0C;&#x987A;&#x795D;&#x65C5;&#x9014;&#x6109;&#x5FEB;&#xFF0C;&#x4E00;&#x5207;&#x987A;&#x5229;&#x3002;</p>
+<h1 id="&#x6709;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#x5185;&#x5BB9;"><a href="#&#x6709;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#x5185;&#x5BB9;" class="headerlink" title="&#x6709;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#x5185;&#x5BB9;"></a>&#x6709;&#x6280;&#x672F;&#x542B;&#x91CF;&#x7684;&#x5185;&#x5BB9;</h1><p>&#x4F5C;&#x4E3A;&#x4E00;&#x679A;&#x201C;&#x641E;&#x6280;&#x672F;&#x201D;&#x7684;IT&#x4EBA;&#x58EB;&#xFF0C;&#x554A;&#x54C8;&#xFF0C;&#x4E0D;&#x8981;&#x5632;&#x7B11;&#x6211;&#x81EA;&#x5DF1;&#x52A0;&#x4E86;&#x4E2A;&#x201D;&#x641E;&#x6280;&#x672F;&#x201C;&#x5934;&#x8854;&#xFF0C;&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x662F;&#x5404;&#x884C;&#x5404;&#x4E1A;&#x641E;&#x6280;&#x672F;&#x7684;&#x4E0D;&#x662F;&#x5417;&#xFF1F;OK&#xFF0C;&#x5982;&#x679C;&#x5BF9;&#x6B64;&#x6CA1;&#x6709;&#x5F02;&#x8BAE;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x4EEC;&#x61C2;&#x7684;&#x3001;&#x5728;&#x5B66;&#x7684;&#x3001;&#x8BA1;&#x5212;&#x53BB;&#x4E86;&#x89E3;&#x7684;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x548C;&#x4ED6;&#x4EBA;&#x5206;&#x4EAB;&#x3002;</p>
+<blockquote>
+<ul>
+<li>@abit<br><a href="https://steemit.com/cn/@abit/ubuntu-steem" target="_blank" rel="noopener">Ubuntu &#x4E0B; Steem &#x7F16;&#x8BD1;&#x6559;&#x7A0B;</a></li>
+<li>@xiaohui<br><a href="https://steemit.com/cn/@xiaohui/easy-compile-and-install-steemd-on-ubuntu-16-04-by-one-command-install-steemd-sh-steem-install-steemd-sh-ubuntu-16-04-steem" target="_blank" rel="noopener">&#x4E2D;&#x82F1;&#x6559;&#x7A0B;: Easy Compile &amp; install steemd on Ubuntu 16.04 by one command: install-steemd.sh / Steem &#x4E00;&#x952E;&#x5B89;&#x88C5;&#x811A;&#x672C; install-steemd.sh: &#x5728; Ubuntu 16.04 &#x4E0A;&#x5B89;&#x88C5; steem</a></li>
+</ul>
+</blockquote>
+<p>&#x600E;&#x4E48;&#x8BF4;&#x5462;&#xFF1F;&#x4E0D;&#x660E;&#x89C9;&#x5389;&#x554A;&#x3002;<br>&#x4F46;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x603B;&#x4F1A;&#x6709;&#x9700;&#x8981;&#x7684;&#x4EBA;&#x4ECE;&#x4E2D;&#x83B7;&#x76CA;&#x3002;&#x4ECA;&#x5929;&#x4E5F;&#x8BB8;&#x6211;&#x8FD8;&#x4E0D;&#x61C2;&#xFF0C;&#x7B49;&#x54EA;&#x5929;&#x5B66;&#x4E60;&#x5230;&#x8FD9;&#x4E2A;&#x6B65;&#x9AA4;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D1;&#x73B0;&#xFF0C;&#x554A;&#xFF0C;&#x6709;&#x4EBA;&#x7ED9;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x6280;&#x672F;&#x8D34;&#xFF0C;&#x662F;&#x591A;&#x4E48;&#x5E78;&#x798F;&#x7684;&#x4E8B;&#x60C5;&#x554A;&#x3002;</p>
+<p>&#x6700;&#x8FD1;&#x6211;&#x5728;&#x73A9;Arduino&#x3001;Intel Edison&#x3001;Raspberry Pi&#x3001;&#x9999;&#x8549;&#x6D3E;&#x7B49;&#x5F00;&#x6E90;&#x786C;&#x4EF6;&#xFF0C;&#x56DE;&#x5934;&#x6211;&#x4F1A;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4E9B;&#x5FC3;&#x5F97;&#x5206;&#x4EAB;&#x7ED9;&#x5927;&#x5BB6;&#x3002;</p>
+<h1 id="&#x6709;&#x4EF7;&#x503C;&#x7684;&#x95EE;&#x9898;"><a href="#&#x6709;&#x4EF7;&#x503C;&#x7684;&#x95EE;&#x9898;" class="headerlink" title="&#x6709;&#x4EF7;&#x503C;&#x7684;&#x95EE;&#x9898;"></a>&#x6709;&#x4EF7;&#x503C;&#x7684;&#x95EE;&#x9898;</h1><p>&#x751F;&#x6D3B;&#x4E2D;&#x3001;&#x5DE5;&#x4F5C;&#x4E2D;&#x3001;&#x5B66;&#x4E60;&#x4E2D;&#xFF0C;&#x96BE;&#x514D;&#x9047;&#x5230;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x4F5C;&#x4E3A;IT&#x4EBA;&#xFF0C;&#x53EF;&#x80FD;&#x5E38;&#x5E38;&#x8981;&#x63A5;&#x89E6; <a href="http://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a>&#xFF0C;&#x81F3;&#x5C11;&#x6211;&#x4ECE;&#x4E0A;&#x8FB9;&#x83B7;&#x5F97;&#x8FC7;&#x4E0D;&#x5C11;&#x5E2E;&#x52A9;&#xFF08;&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x5019;&#x662F;&#x641C;&#x7D22;&#xFF09;&#x3002;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x65E0;&#x79C1;&#x56DE;&#x7B54;&#x522B;&#x4EBA;&#x95EE;&#x9898;&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x6211;&#x59CB;&#x7EC8;&#x5FC3;&#x6000;&#x656C;&#x610F;&#xFF0C;&#x4E5F;&#x89C9;&#x5F97;&#x4ED6;&#x4EEC;&#x5E94;&#x8BE5;&#x83B7;&#x5F97;&#x62A5;&#x916C;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x628A;Steemit&#x548C; <a href="http://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a>&#x7ED3;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x60F3;&#x5FC5;&#x662F;&#x6781;&#x597D;&#x7684;&#x3002;</p>
+<h1 id="&#x539F;&#x521B;&#x6587;&#x5B66;&#x4F5C;&#x54C1;"><a href="#&#x539F;&#x521B;&#x6587;&#x5B66;&#x4F5C;&#x54C1;" class="headerlink" title="&#x539F;&#x521B;&#x6587;&#x5B66;&#x4F5C;&#x54C1;"></a>&#x539F;&#x521B;&#x6587;&#x5B66;&#x4F5C;&#x54C1;</h1><p>&#x56FD;&#x5185;&#x5404;&#x79CD;&#x6587;&#x5B66;&#x7F51;&#x7AD9;&#xFF0C;&#x8D77;&#x70B9;&#x7B49;&#x90FD;&#x4EA7;&#x751F;&#x4E86;&#x4E0D;&#x5C11;&#x5927;&#x795E;&#x548C;&#x5BCC;&#x8C6A;&#x3002;&#x90A3;&#x4E48;&#x628A;&#x6587;&#x5B66;&#x4F5C;&#x54C1;&#x642C;&#x5230;Steem&#x4E0A;&#x6765;&#x4F1A;&#x5982;&#x4F55;&#x5462;&#xFF1F;</p>
+<blockquote>
+<ul>
+<li>&#x5341;&#x5206;&#x671F;&#x5F85; @xiaohui &#x7684;&#x8868;&#x73B0;&#x3002;<br><a href="https://steemit.com/cn/@xiaohui/i-m-ready-to-write-a-continued-story-on-streemit-steemit" target="_blank" rel="noopener">I have a plan to write a novel on streemit/ &#x6211;&#x51C6;&#x5907;&#x5728; Steemit &#x4E0A;&#x5199;&#x4E00;&#x4E2A;&#x8FDE;&#x8F7D;&#x5C0F;&#x8BF4;&#xFF0C;&#x9F99;&#x5957;&#x89D2;&#x8272;&#x6B22;&#x8FCE;&#x62A5;&#x540D;</a></li>
+</ul>
+</blockquote>
+<h1 id="&#x5176;&#x5B83;"><a href="#&#x5176;&#x5B83;" class="headerlink" title="&#x5176;&#x5B83;"></a>&#x5176;&#x5B83;</h1><p>&#x7B14;&#x8005;&#x5B66;&#x8BC6;&#x548C;&#x89C6;&#x91CE;&#x6709;&#x9650;&#xFF0C;&#x4E00;&#x5B9A;&#x6709;&#x65E0;&#x6570;&#x6709;&#x4EF7;&#x503C;&#x503C;&#x5F97;&#x5206;&#x4EAB;&#x7684;&#x5185;&#x5BB9;&#x672A;&#x80FD;&#x5728;&#x672C;&#x6587;&#x4E00;&#x4E00;&#x63CF;&#x8FF0;&#x3002;<br>&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x5728;&#x56DE;&#x590D;&#x91CC;&#x6279;&#x8BC4;&#x6307;&#x6B63;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x6210;&#x4E3A;&#x6709;&#x4EF7;&#x503C;&#x5185;&#x5BB9;&#x7684;&#x521B;&#x4F5C;&#x8005;&#x3002;<br>&#x8BA9;Steemit&#x6210;&#x4E3A;&#x6211;&#x4EEC;&#x5B8C;&#x7F8E;&#x7684;&#x7F51;&#x7EDC;&#x5BB6;&#x56ED;&#x3002;</p>
+<blockquote>
+<p>&#x6211;&#x662F; @oflyhigh&#xFF0C;Steemit&#x5E73;&#x53F0;&#x5C0F;&#x767D;&#x4E00;&#x679A;&#x3002;<br>&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x5173;&#x6CE8;&#xFF0C;&#x52AA;&#x529B;&#x4E0E;&#x5927;&#x5BB6;&#x5171;&#x540C;&#x6210;&#x957F;&#x3002;<br><a href="https://steemit.com/@oflyhigh" target="_blank" rel="noopener">https://steemit.com/@oflyhigh</a></p>
+</blockquote>
+<p>&#x987A;&#x4FBF;&#x611F;&#x8C22;&#x5404;&#x4F4D;&#x5927;&#x795E;&#x5E26;&#x6211;&#x5165;&#x95E8;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-generate-valuable-content" target="_blank" rel="noopener">How to generate valuable content? (&#x5982;&#x4F55;&#x751F;&#x4EA7;&#x6709;&#x4EF7;&#x503C;&#x7684;&#x5185;&#x5BB9;&#x7684;&#x601D;&#x8003;)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/howto-guide-to-insert-pictures-in-the-steemit-articles-the-most-popular-picture-of-china-in-this-summer/" class="image is-7by1">
+            <img class="thumbnail" src="http://steemit.serviceuptime.net/images/geyou_20160729.jpg" alt="[howto] Guide to insert pictures in the steemit articles. (The most popular picture of China in this summer)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-29T13:47:48.000Z">2016-07-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 679 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/howto-guide-to-insert-pictures-in-the-steemit-articles-the-most-popular-picture-of-china-in-this-summer/">[howto] Guide to insert pictures in the steemit articles. (The most popular picture of China in this summer)</a>
+            
+        </h1>
+        <div class="content">
+            <p>Almost all of the articles are illustrated on Steemit.<br>So I try to figure out <strong>how to insert pictures in steemit articles</strong>?</p>
+<p>Then I found two ways: (Maybe more)</p>
+<ul>
+<li><strong>Use the Editor to insert images</strong></li>
+<li><strong>Insert images with Markdown</strong></li>
+</ul>
+<p>But before you can insert images in article, <strong>you MUST have the images URL first</strong>.<br>In other words,  you must upload your images to the images host.<br>Maybe there are a lot of images host providers you can choose, select the one you like.</p>
+<p>For me, I upload them to my personal host.<br>And then, I got the URL of images I upload, for example:<br><a href="http://steemit.serviceuptime.net/images/geyou_20160729.jpg" target="_blank" rel="noopener">http://steemit.serviceuptime.net/images/geyou_20160729.jpg</a></p>
+<p><strong>The first way: Use the Editor to insert images</strong></p>
+<ol>
+<li>Open the post page by click the link &#x201C;Submit a Story&#x201D;  at upper right corner of steemit.</li>
+<li>And click the &#x201C;Editor&#x201D; link at upper right corner of the 2nd  text area.</li>
+<li>More tools will appeared at the top of the 2nd  text area.</li>
+<li>Click the image icon, and input the image URL you got, and click the checkmark to insert it.</li>
+</ol>
+<p>A bit cumbersome? I think so!</p>
+<p><strong>The Second way: Insert images with Markdown.</strong></p>
+<p>The syntax to insert images:<br><code>![GitHub Logo](/images/logo.png)</code><br><code>Format: ![Alt Text](url)</code></p>
+<p>So for the images I want to insert, the syntax:<br><code>![most popular picture of China in this summer](http://steemit.serviceuptime.net/images/geyou_20160729.jpg)</code></p>
+<p>The result:<br> <img src="http://steemit.serviceuptime.net/images/geyou_20160729.jpg" alt="most popular picture of China in this summer"></p>
+<p>&#x4E2D;&#x6587;&#x7248;&#xFF1A;<br>&#x5982;&#x4F55;&#x5728;Steemit&#x6587;&#x7AE0;&#x4E2D;&#x63D2;&#x5165;&#x56FE;&#x7247;&#xFF1F;&#xFF08;&#x8FD9;&#x4E2A;&#x590F;&#x5929;&#x4E2D;&#x56FD;&#x6700;&#x6D41;&#x884C;&#x7684;&#x56FE;&#x7247;&#xFF09;</p>
+<p>&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;Steemit&#x6587;&#x7AE0;&#x90FD;&#x662F;&#x56FE;&#x6587;&#x5E76;&#x8302;&#x5440;&#x3002;<br>&#x6240;&#x4EE5;&#x6211;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#x5982;&#x4F55;&#x5728;Steemit&#x6587;&#x7AE0;&#x4E2D;&#x63D2;&#x5165;&#x56FE;&#x7247;&#x3002;</p>
+<p>&#x6700;&#x7EC8;&#x6211;&#x53D1;&#x73B0;&#x4E86;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;&#xFF08;&#x6216;&#x8BB8;&#x66F4;&#x591A;&#xFF09;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x7F16;&#x8F91;&#x5668;&#x63D2;&#x5165;&#x56FE;&#x50CF;</li>
+<li>&#x4F7F;&#x7528;Markdown&#x63D2;&#x5165;&#x56FE;&#x50CF;</li>
+</ul>
+<p>&#x5728;&#x63D2;&#x5165;&#x56FE;&#x50CF;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x9996;&#x5148;&#x6709;&#x56FE;&#x50CF;&#x7684;URL&#x3002;<br>&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x5C06;&#x4F60;&#x7684;&#x56FE;&#x50CF;&#x4E0A;&#x4F20;&#x5230;&#x56FE;&#x50CF;&#x4E3B;&#x673A;&#x3002;<br>&#x6216;&#x8BB8;&#x6709;&#x5F88;&#x591A;&#x56FE;&#x50CF;&#x4E3B;&#x673A;&#x63D0;&#x4F9B;&#x5546;&#x4F9B;&#x4F60;&#x9009;&#x62E9;&#xFF0C;&#x9009;&#x4E00;&#x4E2A;&#x4F60;&#x559C;&#x6B22;&#x7684;&#x3002;</p>
+<p>&#x6211;&#x5C06;&#x56FE;&#x50CF;&#x4E0A;&#x4F20;&#x5230;&#x4E86;&#x6211;&#x7684;&#x4E2A;&#x4EBA;&#x7AD9;&#x70B9;&#x4E0A;&#x3002;<br>&#x7136;&#x540E;&#x83B7;&#x5F97;&#x4E86;&#x4E0A;&#x4F20;&#x7684;&#x56FE;&#x50CF;&#x7684;URL&#xFF0C;&#x4F8B;&#x5982;<br><a href="http://steemit.serviceuptime.net/images/geyou_20160729.jpg" target="_blank" rel="noopener">http://steemit.serviceuptime.net/images/geyou_20160729.jpg</a></p>
+<p><strong>&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#xFF1A;&#x4F7F;&#x7528;&#x7F16;&#x8F91;&#x5668;&#x63D2;&#x5165;&#x56FE;&#x50CF;</strong></p>
+<ol>
+<li>&#x70B9;&#x51FB;Steemit&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x201D;Submit a Story&#x201D;&#x6253;&#x5F00;&#x53D1;&#x5E16;&#x9875;&#x9762;</li>
+<li>&#x70B9;&#x51FB;&#x7B2C;&#x4E8C;&#x4E2A;&#x6587;&#x672C;&#x6846;&#x53F3;&#x4E0A;&#x89D2;&#x7684;&#x201D;Editor&#x201D;&#x94FE;&#x63A5;.</li>
+<li>&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x6587;&#x672C;&#x6846;&#x4E0A;&#x90E8;&#x51FA;&#x73B0;&#x4E00;&#x5806;&#x5DE5;&#x5177;&#x6309;&#x94AE;.</li>
+<li>&#x70B9;&#x51FB;&#x56FE;&#x50CF;&#x6309;&#x94AE;, &#x8F93;&#x5165;&#x4F60;&#x7684;&#x56FE;&#x50CF;URL, &#x70B9;&#x51FB;&#x5BF9;&#x53F7;&#x63D2;&#x5165;&#x56FE;&#x50CF;.</li>
+</ol>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x9EBB;&#x70E6;&#xFF1F;&#x6211;&#x4E5F;&#x89C9;&#x5F97;&#xFF01;</p>
+<p><strong>&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;: &#x4F7F;&#x7528;Markdown&#x63D2;&#x5165;&#x56FE;&#x50CF;.</strong></p>
+<p>&#x63D2;&#x5165;&#x56FE;&#x50CF;&#x7684;&#x8BED;&#x6CD5;:<br><code>![GitHub Logo](/images/logo.png)</code><br><code>Format: ![Alt Text](url)</code></p>
+<p>&#x5BF9;&#x4E8E;&#x6211;&#x8981;&#x63D2;&#x5165;&#x7684;&#x56FE;&#x50CF;:<br><code>![most popular picture of China in this summer](http://steemit.serviceuptime.net/images/geyou_20160729.jpg)</code></p>
+<p>&#x7ED3;&#x679C;&#x5982;&#x4E0B;:<br> <img src="http://steemit.serviceuptime.net/images/geyou_20160729.jpg" alt="most popular picture of China in this summer"></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/howto-guide-to-insert-pictures-in-the-steemit-articles-the-most-popular-picture-of-china-in-this-summer" target="_blank" rel="noopener">[howto] Guide to insert pictures in the steemit articles. (The most popular picture of China in this summer)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-29T03:47:48.000Z">2016-07-29</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 721 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/oflyhigh-steemit-com/">&#34;oflyhigh“ steemit.com学习实践贴</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5F53;&#x5E74;&#x9519;&#x5931;&#x53C2;&#x4E0E;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x5927;&#x597D;&#x65F6;&#x673A;&#xFF0C;&#x65F6;&#x4E5F;&#x547D;&#x4E5F;&#xFF01;</p>
+<h2 id="&#x5F80;&#x8005;&#x4E0D;&#x53EF;&#x8C0F;&#xFF0C;&#x6765;&#x8005;&#x72B9;&#x53EF;&#x8FFD;&#x3002;"><a href="#&#x5F80;&#x8005;&#x4E0D;&#x53EF;&#x8C0F;&#xFF0C;&#x6765;&#x8005;&#x72B9;&#x53EF;&#x8FFD;&#x3002;" class="headerlink" title="&#x5F80;&#x8005;&#x4E0D;&#x53EF;&#x8C0F;&#xFF0C;&#x6765;&#x8005;&#x72B9;&#x53EF;&#x8FFD;&#x3002;"></a>&#x5F80;&#x8005;&#x4E0D;&#x53EF;&#x8C0F;&#xFF0C;&#x6765;&#x8005;&#x72B9;&#x53EF;&#x8FFD;&#x3002;</h2><p>&#x6309;&#x7167;X&#x7F51;&#x51E0;&#x4F4D;&#x6BD4;&#x7279;&#x5E01;&#x548C;&#x533A;&#x5757;&#x94FE;&#x6280;&#x672F;&#x7684;&#x5E03;&#x9053;&#x8005;&#xFF0C;steemit.com&#x6709;&#x671B;&#x6210;&#x4E3A;&#x65B0;&#x7684;&#x4E00;&#x8F6E;&#x9769;&#x547D;&#x3002;</p>
+<p>&#x4F5C;&#x4E3A;&#x4E00;&#x679A;&#x61D2;&#x6563;&#x7684;&#x5B85;&#x7537;&#xFF0C;&#x662F;&#x62D2;&#x7EDD;&#x63A5;&#x53D7;&#x65B0;&#x4E8B;&#x7269;&#x7684;&#xFF08;&#x5176;&#x5B9E;&#x672C;&#x8D28;&#x662F;&#x61D2;&#xFF09;<br>&#x4F46;&#x662F;&#x773C;&#x89C1;&#x7740;&#x94FA;&#x5929;&#x76D6;&#x5730;&#x7684;&#x8BA8;&#x8BBA;&#xFF0C;&#x5404;&#x79CD;&#x524D;&#x666F;&#x5C55;&#x671B;&#xFF0C;&#x5185;&#x5FC3;&#x65E0;&#x6CD5;&#x4FDD;&#x6301;&#x6CE2;&#x6F9C;&#x4E0D;&#x60CA;&#x4E86;&#x3002;</p>
+<p>&#x5BF9;&#x8D5A;&#x94B1;&#x7684;&#x671F;&#x671B;&#x6709;&#xFF0C;&#x4F46;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x5F3A;&#x70C8;&#xFF0C;&#x6216;&#x8005;&#x81F3;&#x5C11;&#x89C9;&#x5F97;&#x4E0D;&#x4F1A;&#x90A3;&#x4E48;&#x7B80;&#x5355;&#x7684;&#x53D1;&#x5E16;&#x5C31;&#x80FD;&#x8D5A;&#x94B1;&#xFF08;&#x4E94;&#x6BDB;&#x515A;&#x7684;&#x804C;&#x4E1A;&#xFF0C;&#x54C8;&#x54C8;&#xFF09;<br>&#x65E0;&#x8BBA;&#x5728;&#x54EA;&#x91CC;&#xFF0C;&#x4E00;&#x5206;&#x8015;&#x8018;&#x4E00;&#x5206;&#x6536;&#x83B7;&#xFF0C;&#x603B;&#x662F;&#x771F;&#x7406;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x8015;&#x8018;&#x4E86;&#xFF0C;&#x6CA1;&#x6709;&#x6536;&#x83B7;&#x3002;</p>
+<p>&#x66F4;&#x591A;&#x7684;&#x662F;&#x6709;&#x7740;&#x6781;&#x5927;&#x7684;&#x597D;&#x5947;<br>&#x6BD4;&#x7279;&#x5E01;&#x3001;&#x533A;&#x5757;&#x94FE;&#x3001;steemit.com&#x5230;&#x5E95;&#x9B45;&#x529B;&#x4F55;&#x5728;&#xFF1F;<br>&#x5B83;&#x4EEC;&#x5982;&#x4F55;&#x8BA9;&#x65E0;&#x6570;&#x7684;&#x4E2A;&#x4EBA;&#x548C;&#x516C;&#x53F8;&#x75F4;&#x8FF7;&#x5176;&#x4E2D;&#xFF1F;<br>&#x4ED6;&#x4EEC;&#x8FD0;&#x4F5C;&#x7684;&#x539F;&#x7406;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;<br>&#x8FD9;&#x4E9B;&#x6280;&#x672F;&#x9664;&#x4E86;&#x6316;&#x77FF;&#xFF08;&#x53D1;&#x5E16;&#xFF09;&#x8D5A;&#x94B1;&#xFF0C;&#x8FD8;&#x6709;&#x54EA;&#x4E9B;&#x5E7F;&#x9614;&#x524D;&#x666F;&#xFF1F;<br>&#x7B49;&#x7B49;&#x7B49;&#x7B49;</p>
+<p>&#x800C;&#x5355;&#x5355;&#x7684;&#x9605;&#x8BFB;&#x4E00;&#x4E9B;&#x5E03;&#x9053;&#x8D34;&#xFF0C;&#x627E;&#x4E00;&#x4E9B;&#x79D1;&#x666E;&#x6587;&#xFF0C;&#x8C8C;&#x4F3C;&#x65E0;&#x6CD5;&#x771F;&#x6B63;&#x7684;&#x89E3;&#x51B3;&#x6211;&#x4EE5;&#x4E0A;&#x56F0;&#x60D1;&#x3002;</p>
+<h2 id="&#x201C;&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF0C;&#x7EDD;&#x77E5;&#x6B64;&#x4E8B;&#x8981;&#x8EAC;&#x884C;&#x3002;&#x201D;"><a href="#&#x201C;&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF0C;&#x7EDD;&#x77E5;&#x6B64;&#x4E8B;&#x8981;&#x8EAC;&#x884C;&#x3002;&#x201D;" class="headerlink" title="&#x201C;&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF0C;&#x7EDD;&#x77E5;&#x6B64;&#x4E8B;&#x8981;&#x8EAC;&#x884C;&#x3002;&#x201D;"></a>&#x201C;&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF0C;&#x7EDD;&#x77E5;&#x6B64;&#x4E8B;&#x8981;&#x8EAC;&#x884C;&#x3002;&#x201D;</h2><p>&#x90A3;&#x4E48;&#x5C31;&#x62FF;&#x8FD9;&#x4E2A;steemit.com&#x6765;&#x5B66;&#x4E60;&#x5B9E;&#x8DF5;&#x4E00;&#x4E0B;&#x5427;&#x3002;<br>&#x6B63;&#x597D;&#x61D2;&#x9AA8;&#x5934;&#x4E5F;&#x8BE5;&#x52A8;&#x52A8;&#x4E86;&#x3002;</p>
+<ul>
+<li><p>&#x6CE8;&#x518C;<br>&#x5927;&#x6982;4-5&#x5929;&#x524D;&#x6CE8;&#x518C;&#x4E86;steemit.com<br><a href="https://steemit.com/@oflyhigh" target="_blank" rel="noopener">https://steemit.com/@oflyhigh</a></p>
+<ul>
+<li><p>&#x7B2C;&#x4E00;&#x5E16;<br>&#x6CE8;&#x518C;&#x5B8C;&#x4E8B;&#xFF0C;&#x611F;&#x89C9;&#x4E00;&#x5934;&#x96FE;&#x6C34;&#xFF0C;&#x53D1;&#x4E86;&#x4E2A;&#x5E16;&#x5B50;&#xFF0C;&#x548B;&#x73A9;&#x3002;&#x70B9;&#x8D5E;&#x4E24;&#x4EBA;&#xFF0C;&#x6536;&#x5165;0<br><a href="https://steemit.com/howto/@oflyhigh/btgpq" target="_blank" rel="noopener">https://steemit.com/howto/@oflyhigh/btgpq</a></p>
+</li>
+<li><p>&#x8D5A;&#x94B1;&#x5566;<br>&#x56E0;&#x4E3A;&#x504F;&#x5934;&#x75DB;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x627E;&#x4E86;&#x672C;&#x5341;&#x591A;&#x5E74;&#x524D;&#x7684;&#x5165;&#x95E8;&#x4E66;&#x7C4D;&#x6765;&#x8BFB;&#xFF0C;&#x5199;&#x4E86;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8BFB;&#x540E;&#x611F;<br>&#x50CF;&#x53D1;&#x535A;&#x5BA2;&#x4E00;&#x6837;&#x53D1;&#x5230;steemit.com&#x3002;21&#x4EBA;&#x70B9;&#x8D5E;&#xFF0C;&#x6536;&#x5165;&#xFF0C;$40<br>&#xFF08;&#x6CE8;&#xFF1A;&#x611F;&#x8C22;&#x732A;&#x7F51;&#x7684;&#x5404;&#x4F4D;&#x5927;&#x795E;&#xFF0C;&#x4F30;&#x8BA1;&#x90FD;&#x662F;&#x732A;&#x7F51;&#x5927;&#x795E;&#x7ED9;&#x70B9;&#x7684;&#xFF09;<br><a href="https://steemit.com/cn/@oflyhigh/unix-unbounded-a-beginning-approach" target="_blank" rel="noopener">https://steemit.com/cn/@oflyhigh/unix-unbounded-a-beginning-approach</a></p>
+</li>
+<li><p>&#x8C01;&#x52A8;&#x4E86;&#x6211;&#x7684;Money&#xFF1F;<br>&#x5237;&#x65B0;&#x4E0A;&#x8FB9;&#x7684;&#x6587;&#x7AE0;&#x94FE;&#x63A5;&#xFF0C;&#x53D1;&#x73B0;&#x70B9;&#x8D5E;&#x7684;&#x4EBA;&#x6CA1;&#x5C11;<br>&#x4F46;&#x662F;&#x5E95;&#x4E0B;&#x7684;&#x91D1;&#x989D;&#x53D8;&#x5C11;&#x4E86;&#x3002;<br>&#x8C01;&#x52A8;&#x4E86;&#x6211;&#x7684;Money&#xFF1F;&#x6216;&#x8005;&#x6709;&#x4EBA;&#x70B9;&#x8D5E;&#x540E;&#x53D6;&#x6D88;&#x4E86;&#xFF0C;&#x6263;&#x94B1;&#x4E86;&#xFF1F;<br>&#x8FDB;&#x94B1;&#x5305;&#x4E00;&#x770B;&#xFF0C;&#x539F;&#x6765;&#x662F;&#x5176;&#x4E2D;&#x4E00;&#x90E8;&#x5206;&#x91D1;&#x989D;&#x53D1;&#x5230;&#x94B1;&#x5305;&#x91CC;&#x4E86;&#x3002;<br>&#x8FD8;&#x662F;&#x50BB;&#x50BB;&#x7684;&#x641E;&#x4E0D;&#x6E05;&#x695A;&#xFF0C;&#x94B1;&#x5305;&#x91CC;&#x5404;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x533A;&#x522B;&#x548C;&#x5173;&#x7CFB;&#x3002;</p>
+</li>
+<li><p>&#x626C;&#x5E06;&#x8D77;&#x822A;&#xFF0C;&#x65B0;&#x8D77;&#x70B9;<br>7/29/2016<br>&#x64B0;&#x5199;&#x6B64;&#x6587;&#xFF0C;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x5F00;&#x7AEF;&#x3002;<br>&#x4EE5;&#x540E;&#x4F1A;&#x5728;&#x672C;&#x5E16;&#x5185;&#x66F4;&#x65B0;&#x5B66;&#x4E60;&#x5B9E;&#x8DF5;&#x7684;&#x8FDB;&#x7A0B;&#x3002;<br>&#x7ED9;&#x81EA;&#x5DF1;&#x4E00;&#x70B9;&#x538B;&#x529B;&#x548C;&#x4E00;&#x70B9;&#x52A8;&#x529B;&#x3002;<br>&#x4E5F;&#x5E0C;&#x671B;&#x80FD;&#x7ED9;&#x522B;&#x4EBA;&#x4E00;&#x4E01;&#x70B9;&#x53C2;&#x8003;&#x3002;</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x4E00;&#x8D77;&#x626C;&#x5E06;&#x8D77;&#x822A;&#x5427;&#xFF01;steemit.com &#x6211;&#x6765;&#x4E86;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/oflyhigh-steemit-com" target="_blank" rel="noopener">&#x201C;oflyhigh&#x201C; steemit.com&#x5B66;&#x4E60;&#x5B9E;&#x8DF5;&#x8D34;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
