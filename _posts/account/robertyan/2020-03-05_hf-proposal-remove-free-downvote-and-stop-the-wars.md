@@ -25,6 +25,9 @@ tags:
 - upfundme
 - busy
 - actnearn
+- sct
+- sct-cn
+- sct-freeboard
 thumbnail: 'https://cdn.pixabay.com/photo/2017/05/29/19/13/fire-and-water-2354583_1280.jpg'
 sidebar:
     right:
@@ -45,7 +48,7 @@ While we think "downvote" is a necessary mechanism in a Proof of Brain community
 
 
 
-## Vote this proposal if you support "Remove Daily Free Downvote"
+## [Vote this proposal](https://steemproposals.com/proposal/73) if you support "Remove Daily Free Downvote"
 
 ### Proposal Voting platforms:
 
@@ -53,7 +56,33 @@ While we think "downvote" is a necessary mechanism in a Proof of Brain community
 - https://steempeak.com/proposals
 - https://steemitwallet.com/proposals
 
+or you can vote the proposal directly with steemconnect:
+
+- https://beta.steemconnect.com/sign/update-proposal-votes?proposal_ids=%5B73%5D&approve=true
+
 Please read the reasoning in the post in order to make an informed decision and feel free to contribute to the discussion.
+
+### 中文用户可以按以下方法投票
+
+- 墙内用户请使用：https://steemconnect.cocozl.cn/sign/update-proposal-votes?proposal_ids=%5B73%5D&approve=true
+- 墙外用户请使用：https://beta.steemconnect.com/sign/update-proposal-votes?proposal_ids=%5B73%5D&approve=true
+
+或者到 SPS 平台投票：
+
+- https://steemproposals.com/proposal/73
+- https://steempeak.com/proposals
+- https://steemitwallet.com/proposals
+
+
+### 한국 사용자는 다음과 같이 투표 할 수 있습니다
+
+- 방문 https://steemproposals.com/proposal/73 
+또는 https://beta.steemconnect.com/sign/update-proposal-votes?proposal_ids=%5B73%5D&approve=true 
+투표하기
+- 또는 다음 플랫폼에서 투표하십시오.
+  - https://steempeak.com/proposals
+  - https://steemitwallet.com/proposals
+
 
 
 <hr>
@@ -109,7 +138,20 @@ Downvote always happens on Steem. There's no need to emphasize more about how fr
 
 However, as predictable when the EIP was proposed, with the arrival of "free downvote", we're seeing more and more downvote abuse, retaliation and battles within and among communities. Quite some users will downvote because they don't want to WASTE their daily "free downvotes". These fights split the communities and enforce more users to leave Steem. 
 
-We love collaobration and competition on Steem, but we never need "wars" in the community. Remove "free downvote" definitely reduce the occurences of fights. From a survey by @proxy.token, we see more witnesses want to remove "free downvote" / "downvote pool", than those who want to keep it. ([Survey: Do you agree to remove downvote pool in Hardfork23 as a witness? -- by @proxy.token](https://steemit.com/dpoll/@proxy.token/do-you-agree-to-remove-downvote-pool-in-hardfork23-as-a-witness) ==> [Vote Result](https://dpoll.io/detail/@proxy.token/do-you-agree-to-remove-downvote-pool-in-hardfork23-as-a-witness/))
+From the graph below, it's obvious the number of downvotes have increased hugely by 50% to 100% after HF21. You can see that the **total downvote have DOUBLED**: from 100K before Sep 2019 (before HF21) , to over 200K in Jan 2020. And please don't forget the number of **active users have dropped by 25%~50%** after Aug 2019 (HF21) in the same period of time, if you have looked at the visualization of active user count in the above section. This means the frequency of downvote have **increased by 2~3 times on average to each active user** after HF21. If you used to receive 1 downvote on average each day before HF21, now you're receiving 3 ~ 4 downvotes every day. This is a bit crazy and ridiculous. Isn't it? 
+
+<center>
+![](https://cdn.steemitimages.com/DQmZCPv3VWZt2jUcKqGKrZvL4FMTskoHSekmNmJRrwpcZkN/WechatIMG2516.png)
+<sup>Graph: monthly downvote count, with data queried from SteemSQL </sup>
+</center>
+
+
+
+Then why did everyone got more downvotes on average??? Does it mean there're 2~3 times more self-vote, vote-selling, plagiarism or spam which need to be downvoted now, if we compare to the situation before HF21? 
+
+The answer is apparently **NO**. We already have less self-vote and vote selling as we observed. We didn't see much more new comers who may not know the rules. We didn't see more naive users who are increasing the misbehaviors of plagiarism or spam than what it is before HF21. So what are the guys downvoting for today?? **Nothing else, but more battles and abuse, therefore more victims and more people who leave Steem.** 
+
+We love collaboration and competition on Steem, but we never need "wars" in the community. Remove "free downvote" definitely reduce the occurence of fights. From a survey by @proxy.token, we see more witnesses want to remove "free downvote" / "downvote pool", than those who want to keep it. ([Survey: Do you agree to remove downvote pool in Hardfork23 as a witness? -- by @proxy.token](https://steemit.com/dpoll/@proxy.token/do-you-agree-to-remove-downvote-pool-in-hardfork23-as-a-witness) ==> [Vote Result](https://dpoll.io/detail/@proxy.token/do-you-agree-to-remove-downvote-pool-in-hardfork23-as-a-witness/))
 
 <center>
 ![](https://i.imgur.com/bOHBpCW.png)
@@ -175,9 +217,7 @@ shaka](https://steemit.com/dpoll/@shaka/what-keeps-you-from-using-your-daily-fre
 
 <hr>
 
-### Everyone who support this change please kindly vote this proposal. 
-
-
+### Finally, everyone who support this change please kindly [vote this proposal](https://steemproposals.com/proposal/73). 
 
 ### Proposal Recipient Disclaimer: The proposal recipient will be @steem.dao, funds will be returned to the SPS pool, the purpose of the proposal is to achieve voting consensus either IN FAVOUR or AGAINST the "daily free downvote".  
 
