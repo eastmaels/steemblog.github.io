@@ -230,6 +230,181 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/sbd-hf21-22-sbd-bug/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmeVm93KUum8euLRFcMuvqXXYDxX5RHcM8mJ5sjZCp5Vdp/image.png" alt="讨厌的SBD零头不见啦——HF21/22中已经修复了SBD 发行率的BUG">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-08T03:42:15.000Z">2019-09-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 771 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/sbd-hf21-22-sbd-bug/">讨厌的SBD零头不见啦——HF21/22中已经修复了SBD 发行率的BUG</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x786C;&#x53C9;20(HF20)&#x65F6;&#xFF0C;&#x5173;&#x4E8E;<code>SBD_PRINT_RATE</code>&#x6709;&#x4E00;&#x4E2A;&#x5C0F;BUG&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x8BBA;SBD&#x7684;&#x5360;&#x6BD4;&#x6709;&#x591A;&#x9AD8;&#xFF0C;<code>SBD_PRINT_RATE</code>&#x4E5F;&#x4E0D;&#x4F1A;&#x5230;&#x8FBE;0%&#xFF0C;&#x5F53;SBD&#x5360;&#x6BD4;&#x65E0;&#x9650;&#x8D8B;&#x4E8E;10%&#x65F6;&#xFF0C;<code>SBD_PRINT_RATE</code>&#x503C;&#x4E3A;1%&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmeVm93KUum8euLRFcMuvqXXYDxX5RHcM8mJ5sjZCp5Vdp/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://www.pexels.com/" target="_blank" rel="noopener">pexels.com</a>)</p>
+<p>&#x867D;&#x7136;&#x8FD9;&#x4E2A;&#x5C0F;BUG&#x65E0;&#x4F24;&#x5927;&#x96C5;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x53D1;&#x653E;&#x6587;&#x7AE0;&#x5956;&#x52B1;&#x65F6;&#xFF0C;&#x770B;&#x7740;&#x90A3;&#x4E2A;0.00x SBD&#x7684;&#x96F6;&#x5934;&#x88AB;&#x6BCF;&#x5929;&#x53D1;&#x653E;&#xFF0C;&#x5BF9;&#x5F3A;&#x8FEB;&#x75C7;&#x800C;&#x8A00;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x95F9;&#x5FC3;&#x7684;&#x3002;</p>
+<p>&#x597D;&#x6D88;&#x606F;&#x662F;&#xFF0C;HF21/HF22&#x4E4B;&#x540E;&#xFF0C;&#x5C3D;&#x7BA1;SBD&#x7684;&#x5360;&#x6BD4;&#x8FD8;&#x662F;&#x65E0;&#x9650;&#x8D8B;&#x8FD1;10%&#xFF0C;&#x4F46;&#x662F;<code>SBD_PRINT_RATE</code>&#x5DF2;&#x7ECF;&#x53D8;&#x6210;&#x4E86;0&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x7684;&#x6587;&#x7AE0;&#x5956;&#x52B1;&#x4E2D;&#x770B;&#x4E0D;&#x5230;&#x90A3;&#x4E9B;SBD&#x96F6;&#x5934;&#x5566;&#x3002;</p>
+<h1 id="&#x4EE3;&#x7801;"><a href="#&#x4EE3;&#x7801;" class="headerlink" title="&#x4EE3;&#x7801;"></a>&#x4EE3;&#x7801;</h1><p>&#x90A3;&#x4E48;&#x8FD9;&#x4E2A;&#x5C0F;BUG&#x662F;&#x5982;&#x4F55;&#x88AB;&#x4FEE;&#x590D;&#x7684;&#x5462;&#xFF1F;&#x6211;&#x7279;&#x610F;&#x53BB;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>&#x8BA1;&#x7B97;<code>SBD_PRINT_RATE</code>&#x7684;&#x5173;&#x952E;&#xFF0C;&#x5728;&#x4E8E;&#x8BA1;&#x7B97;SBD&#x7684;&#x5360;&#x6BD4;&#xFF0C;HF21/22&#x4E2D;&#xFF0C;&#x8BA1;&#x7B97;SBD&#x7684;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmeb3Y4LYD4tFf5doZhoHWxALBJJ5KUjXSCN1YrYxh99YT/image.png" alt=""></p>
+<p><code>percent_sbd = uint16_t( ( ( fc::uint128_t( ( dgp.current_sbd_supply * get_feed_history().current_median_history ).amount.value ) * STEEM_100_PERCENT + dgp.virtual_supply.amount.value/2 )
+            / dgp.virtual_supply.amount.value ).to_uint64() );</code></p>
+</blockquote>
+<h1 id="&#x903B;&#x8F91;&#x5DEE;&#x5F02;"><a href="#&#x903B;&#x8F91;&#x5DEE;&#x5F02;" class="headerlink" title="&#x903B;&#x8F91;&#x5DEE;&#x5F02;"></a>&#x903B;&#x8F91;&#x5DEE;&#x5F02;</h1><p>&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x4E71;&#xFF0C;&#x6211;&#x62BD;&#x53D6;&#x4E3B;&#x8981;&#x903B;&#x8F91;&#x7B80;&#x5316;&#x63CF;&#x8FF0;&#x4E00;&#x4E0B;&#xFF0C;HF21/22&#x4E2D;&#xFF0C;&#x903B;&#x8F91;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>percent_sbd = int((sbd_steem*STEEM_100_PERCENT + virtual_supply/2)/ virtual_supply)</code></p>
+</blockquote>
+<p>&#x800C;&#x5728;&#x4E4B;&#x524D;&#x786C;&#x5206;&#x53C9;&#x7248;&#x672C;&#x4E2D;(HF20&#x7B49;)&#xFF0C;&#x903B;&#x8F91;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>percent_sbd = int((sbd_steem*STEEM_100_PERCENT)/ virtual_supply)</code></p>
+</blockquote>
+<p>&#x5176;&#x4E2D;<code>STEEM_100_PERCENT</code>&#x7684;&#x503C;&#x4E3A;10000</p>
+<blockquote>
+<p><code>#define STEEM_100_PERCENT                     10000</code></p>
+</blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;SBD&#x7684;&#x5360;&#x6BD4;&#x8BA1;&#x7B97;&#xFF1A;</p>
+<ul>
+<li>HF21&#x4E4B;&#x524D;&#x662F;&#x6298;&#x7B97;&#x6210;STEEM&#x7684;SBD&#x5360;&#x603B;&#x4F9B;&#x5E94;&#x91CF;&#x7684;&#x6BD4;&#x4F8B;&#x4E58;&#x4EE5;10000</li>
+<li><strong><em>&#x73B0;&#x5728;&#x5219;&#x662F;&#x5728;&#x4E0A;&#x8FF0;&#x6570;&#x503C;&#x57FA;&#x7840;&#x4E0A;&#x52A0;&#x4E0A;0.5</em></strong></li>
+</ul>
+<p>&#x6309;&#x7167;&#x4E4B;&#x524D;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#xFF0C;&#x5C3D;&#x7BA1;&#x5B9E;&#x9645;&#x6BD4;&#x4F8B;&#x65E0;&#x9650;&#x8D8B;&#x8FD1;&#x4E8E;10%&#xFF08;1000&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x5582;&#x4EF7;&#x673A;&#x5236;&#x4EE5;&#x53CA;&#x53D6;&#x6574;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x90FD;&#x4E0D;&#x53EF;&#x80FD;&#x7B49;&#x4E8E;10%&#xFF08;1000&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x5BFC;&#x81F4;&#x4E86;<code>SBD_PRINT_RATE</code>&#x6700;&#x4F4E;&#x503C;&#x53EA;&#x80FD;&#x662F;1%&#xFF0C;&#x800C;&#x4E0D;&#x53EF;&#x80FD;&#x662F;0%&#x3002;</p>
+<p>&#x800C;&#x73B0;&#x5728;&#xFF0C;&#x5F53;&#x5B9E;&#x9645;&#x6BD4;&#x4F8B;&#x8D8B;&#x8FD1;&#x4E8E;10%&#xFF08;9.995%&#xFF09;&#x65F6;&#xFF0C;&#x56E0;&#x4E3A;&#x52A0;&#x4E0A;&#x4E86;0.005%(0.5/10000)&#xFF0C;&#x6240;&#x4EE5;&#x8BA1;&#x7B97;&#x51FA;&#x6765;<code>percent_sbd</code>&#x4E3A;10%&#xFF0C;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;<code>SBD_PRINT_RATE</code>&#x4E3A;&#x96F6;&#x3002;</p>
+<h1 id="&#x6A21;&#x62DF;&#x9A8C;&#x8BC1;"><a href="#&#x6A21;&#x62DF;&#x9A8C;&#x8BC1;" class="headerlink" title="&#x6A21;&#x62DF;&#x9A8C;&#x8BC1;"></a>&#x6A21;&#x62DF;&#x9A8C;&#x8BC1;</h1><p>&#x8BA9;&#x6211;&#x4EEC;&#x6A21;&#x62DF;HF20&#x4EE5;&#x53CA;HF21/22&#x7684;&#x673A;&#x5236;&#x5206;&#x522B;&#x5B9E;&#x9645;&#x8BA1;&#x7B97;&#x4E00;&#x4E0B;SBD&#x7684;&#x5360;&#x6BD4;&#x3002;</p>
+<p>HF20</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmb3x92fTMmokD1HZUjfhTqcSysXPR5dxCT66LWxpXGC7P/image.png" alt=""></p>
+</blockquote>
+<p>HF21/22</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmb5mkqG6xmXQqLenSN7GNsyBDNs2MNpr2VZke9tQB4Kzr/image.png" alt=""></p>
+</blockquote>
+<p>&#x53EF;&#x89C1;&#x6309;&#x7167;&#x65B0;&#x673A;&#x5236;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x4F1A;&#x53BB;&#x6389;<code>SBD_PRINT_RATE</code>&#x4E2D;&#x7684;&#x6BDB;&#x523A;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x66F4;&#x52A0;&#x53CB;&#x597D;&#x3002;&#x66F4;&#x591A;&#x8BE6;&#x60C5;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;&#x6587;&#x672B;&#x94FE;&#x63A5;&#x5427;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://github.com/steemit/steem/blob/v0.22.1/libraries/chain/database.cpp" target="_blank" rel="noopener">https://github.com/steemit/steem/blob/v0.22.1/libraries/chain/database.cpp</a></li>
+<li><a href="https://github.com/steemit/steem/pull/3415" target="_blank" rel="noopener">Fix sbd print rate #3415</a></li>
+<li><a href="https://github.com/steemit/steem/issues/3409" target="_blank" rel="noopener"><code>sbd_print_rate</code> is 1% in the haircut #3409</a></li>
+<li><a href="https://github.com/steemit/steem/issues/3184" target="_blank" rel="noopener">1% SBD print rate despite the haircut #3184</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/sbd-hf21-22-sbd-bug" target="_blank" rel="noopener">&#x2018;&#x8BA8;&#x538C;&#x7684;SBD&#x96F6;&#x5934;&#x4E0D;&#x89C1;&#x5566;&#x2014;&#x2014;HF21/22&#x4E2D;&#x5DF2;&#x7ECF;&#x4FEE;&#x590D;&#x4E86;SBD &#x53D1;&#x884C;&#x7387;&#x7684;BUG&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/-2019-09-07/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZmTqLZ3AKQrEQQhVKx1Vmu3zj9njvFk8nU64VdU3MfYy/image.png" alt="继续发世博园的照片">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-07T13:17:45.000Z">2019-09-07</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 302 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/-2019-09-07/">继续发世博园的照片</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmZmTqLZ3AKQrEQQhVKx1Vmu3zj9njvFk8nU64VdU3MfYy/image.png" alt=""></p>
+<p>&#x7EE7;&#x7EED;&#x5206;&#x4EAB;&#x4E16;&#x535A;&#x56ED;&#x7684;&#x7167;&#x7247;&#x3002;</p>
+<p>&#x4E16;&#x535A;&#x56ED;&#x4E4B;&#x7F8E;&#xFF0C;&#x5728;&#x4E8E;&#x6BCF;&#x4E00;&#x5904;&#x666F;&#x81F4;&#x90FD;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x5F80;&#x5F80;&#x8F6C;&#x4E2A;&#x62D0;&#x89D2;&#xFF0C;&#x5C31;&#x4F1A;&#x770B;&#x5230;&#x4E0D;&#x540C;&#x98CE;&#x5149;&#xFF0C;&#x538C;&#x5026;&#x4E86;&#x5C71;&#x6C34;&#x7530;&#x56ED;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x4EAD;&#x53F0;&#x697C;&#x9601;&#x3002;</p>
+<p>&#x6709;&#x53E5;&#x8BD7;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>&#x821F;&#x884C;&#x78A7;&#x6CE2;&#x4E0A;&#xFF0C;&#x4EBA;&#x5728;&#x753B;&#x4E2D;&#x6E38;&#x3002;</p>
+</blockquote>
+<p>&#x4F46;&#x662F;&#x5728;&#x4E16;&#x535A;&#x56ED;&#x91CC;&#x89C2;&#x5149;&#xFF0C;&#x5C3D;&#x7BA1;&#x6CA1;&#x6709;&#x6CDB;&#x821F;&#x78A7;&#x6CE2;&#xFF0C;&#x4F46;&#x662F;&#x771F;&#x7684;&#x662F;&#x4EBA;&#x5728;&#x753B;&#x4E2D;&#x6E38;&#x554A;&#x3002;</p>
+<hr>
+<p><img src="https://cdn.steemitimages.com/DQmR4mMQ5TxGCVPn1NoMKrisb2RR4oo6TKnh1LrCYgk6o3e/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmbUsdxCT8Qz9J96PKMke6kBzhXbyGeKZjGNAhs94m8KzX/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmX1GZTJJswy7pYDLTsSry78JTwMxaqm87hX4vdAT8aKXT/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmUKUCXRBCkyEkwsFQCKynEGXkusPw9dsrTiBa1hWhfDMr/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmSc9DQWWvXBG6qrGmv8gVSxn6TGSQPhH2FPjdK96pmpmn/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmUCsSdANhSpBRWeejLSmSdwxVzs2TKVG6g585qumLrmcj/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmbrAbp4vTbBC1LvyDZMJayfDYN1uafKiHncMnKdgAyDXz/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmVKp4NwYPpeuxcKpKufvBaHfYn7raj9iS62cJ4UWJRQo9/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmQxDXsvyHgyxAGM7eDbC1va1YoGeL5Bx3orvaCCSzRaR6/image.png" alt=""></p>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/-2019-09-07" target="_blank" rel="noopener">&#x2018;&#x7EE7;&#x7EED;&#x53D1;&#x4E16;&#x535A;&#x56ED;&#x7684;&#x7167;&#x7247;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/php--postheader-2019-09-06/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：PHP  POST以及设置Header的一点探索">
         </a>
@@ -534,168 +709,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/-1-2019-09-04/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmXUP85eURqXcpViu72oQe8bebi8M6giw3fCQDGYK9yfX1/image.png" alt="世博园风景照 (1)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T08:37:24.000Z">2019-09-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 392 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/-1-2019-09-04/">世博园风景照 (1)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x524D;&#x4E24;&#x5929;&#x770B;&#x5230;&#x65B0;&#x95FB;&#x8BF4;&#x6C88;&#x9633;&#x4E16;&#x535A;&#x56ED;&#xFF08;&#x6C88;&#x9633;&#x5E02;&#x690D;&#x7269;&#x56ED;&#xFF09;&#x4ECE;9&#x6708;2&#x65E5;&#x8D77;&#x4E34;&#x65F6;&#x95ED;&#x56ED;&#xFF0C;&#x9884;&#x8BA1;&#x5230;&#x5341;&#x4E00;&#x671F;&#x95F4;&#x624D;&#x4F1A;&#x91CD;&#x65B0;&#x5F00;&#x653E;&#xFF0C;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x53BB;&#x4E16;&#x535A;&#x56ED;&#x6E38;&#x73A9;&#x7684;&#x670B;&#x53CB;&#x4F30;&#x8BA1;&#x8981;&#x6251;&#x7A7A;&#x5566;&#x3002;</p>
-<p>&#x6211;&#x60F3;&#x8D77;&#x6765;&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#x53BB;&#x4E16;&#x535A;&#x56ED;&#x62CD;&#x6444;&#x7684;&#x98CE;&#x666F;&#x7167;&#xFF0C;&#x8FD8;&#x6CA1;&#x6709;&#x6574;&#x7406;&#x5462;&#xFF0C;&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x62BD;&#x7A7A;&#x6574;&#x7406;&#x4E00;&#x4E0B;&#xFF0C;&#x5206;&#x4EAB;&#x7ED9;&#x5927;&#x5BB6;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmXUP85eURqXcpViu72oQe8bebi8M6giw3fCQDGYK9yfX1/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmZBaRYnFFLEb35NMnwKKE12cwuCYB2ZeTGCFsKGKpzDdF/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmXfpqa9PSVQ7yuhUTJMkxRy4iukgdittCJyhFg68c1M8T/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmXSd1XPGbqvXgQqhtiLi9zTuhS1JuDCw7oKqpqeQQj5L7/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmVafQ8jsvwtnDpFPwQiGjGstV1ZbsBVACah1gtgVJurCg/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmaZnD3nwRSSYd3kuxyznF8vZyr4nRdXteDrPDqePNjCUc/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmPuHpjp6CFnwZauuz5kjNQc18v2fNsxewN4vXxdf9AbBL/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmdVUNE165MWUHHAPjnVWeAwZbzPt4tjuWPSYZUNLXxyRK/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmaHzha72B5gFq6xZahNYdMcUsyEoRCuwfDqKxqS66YkEA/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmcwY2GBq1unBCJTJbg41CYwhEuKqLQpZwRbdoeEhC4aKa/image.png" alt=""></p>
-<p>&#x6C88;&#x9633;&#x4E16;&#x535A;&#x56ED;&#x5185;&#x5EFA;&#x6709;53&#x4E2A;&#x56FD;&#x5185;&#x5C55;&#x56ED;&#xFF0C;23&#x4E2A;&#x56FD;&#x9645;&#x5C55;&#x56ED;&#x548C;24&#x4E2A;&#x4E13;&#x7C7B;&#x5C55;&#x56ED;&#xFF0C;&#x662F;&#x8FC4;&#x4ECA;&#x4E16;&#x754C;&#x5386;&#x5C4A;&#x56ED;&#x827A;&#x535A;&#x89C8;&#x4F1A;&#x4E2D;&#x5360;&#x5730;&#x9762;&#x79EF;&#x6700;&#x5927;&#x7684;&#x4E00;&#x5C4A;&#x3002;</p>
-<p>&#x4E0A;&#x8FB9;&#x8FD9;&#x4E9B;&#x56FE;&#x5C31;&#x662F;&#x56FD;&#x5185;&#x5C55;&#x56ED;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x60DC;&#x65F6;&#x95F4;&#x548C;&#x7CBE;&#x529B;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4E0D;&#x80FD;&#x8D70;&#x904D;&#x6BCF;&#x4E00;&#x4E2A;&#x56ED;&#x3002;</p>
-<p>&#x4ECA;&#x5929;&#x5148;&#x5206;&#x4EAB;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x6539;&#x5929;&#x7EE7;&#x7EED;&#x6574;&#x7406;&#x548C;&#x5206;&#x4EAB;&#x3002;</p>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/-1-2019-09-04" target="_blank" rel="noopener">&#x2018;&#x4E16;&#x535A;&#x56ED;&#x98CE;&#x666F;&#x7167; (1)&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/steemdv0-22-1-2019-09-04/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZMtDUCsp7ZeExTNxHoib2itH8RA2iteghmLg5WX7SN4N/image.png" alt="升级steemd程序至v0.22.1">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-04T00:55:03.000Z">2019-09-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 455 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/steemdv0-22-1-2019-09-04/">升级steemd程序至v0.22.1</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6628;&#x665A;&#x4E34;&#x7761;&#x524D;1&#x5206;&#x949F;&#xFF0C;&#x53D1;&#x73B0;steemit&#x7684;&#x5B98;&#x65B9;github&#x4E0A;&#x91CA;&#x51FA;&#x4E86;steem&#x7684;v0.22.1&#x7248;&#x672C;&#xFF0C;&#x5413;&#x5F97;&#x9A6C;&#x4E0A;&#x7CBE;&#x795E;&#x4E86;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmZMtDUCsp7ZeExTNxHoib2itH8RA2iteghmLg5WX7SN4N/image.png" alt=""></p>
-<p>&#x4E0D;&#x8FC7;&#x53BB;&#x5BF9;&#x6BD4;&#x4E86;&#x4E00;&#x4E0B;&#x4FEE;&#x6539;&#xFF0C;&#x53D1;&#x73B0;&#x53EA;&#x4E0D;&#x8FC7;&#x662F;&#x5728;&#x539F;&#x6765;&#x4FEE;&#x590D;BUG&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E0B;&#x7248;&#x672C;&#x53F7;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x8981;&#x6211;&#x4EEC;&#x8FD0;&#x884C;&#x7684;&#x7A0B;&#x5E8F;&#x662F;<a href="https://github.com/steemit/steem/commits/20190901-fix-curation-weight" target="_blank" rel="noopener">20190901-fix-curation-weight</a>&#x52A0;&#x4E86;&#x8FD9;&#x4E2A;&#x8865;&#x4E01;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x529F;&#x80FD;&#x4E0A;&#x548C;v0.22.1&#x662F;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x7684;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x5BF9;&#x4E8E;&#x5F3A;&#x8FEB;&#x75C7;&#x800C;&#x8A00;&#xFF0C;&#x8FD9;&#x5C31;&#x4E0D;&#x4E00;&#x6837;&#x4E86;&#xFF0C;&#x6BD5;&#x7ADF;&#x663E;&#x793A;&#x7684;&#x7248;&#x672C;&#x53F7;&#x662F;&#x6709;&#x533A;&#x522B;&#x7684;&#x561B;&#x3002;&#x6240;&#x4EE5;&#x5F53;&#x7136;&#x8981;Builld&#x4E00;&#x4E0B;&#x5566;&#xFF01;</p>
-<p>&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x7248;&#x672C;&#x53F7;&#x5565;&#x7684;&#x662F;&#x4E2A;&#x597D;&#x4E60;&#x60EF;&#xFF0C;&#x4E07;&#x4E00;&#x7F16;&#x8BD1;&#x4E86;&#x9519;&#x8BEF;&#x7684;&#x7248;&#x672C;&#x5462;&#xFF1F;</p>
-<blockquote>
-<p><code>programs/steemd/steemd --version</code></p>
-</blockquote>
-<p>&#x8FD8;&#x597D;&#x4E00;&#x5207;&#x6B63;&#x5E38;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmSiXkbgDYzpvm1he7ydKQnq8yWE6MfqZy2otdzqANbCFW/image.png" alt=""></p>
-</blockquote>
-<p>&#x5C3D;&#x7BA1;&#x5B98;&#x65B9;&#x8BF4;&#x4ECE;0.22.0&#x5230;0.22.1&#x9700;&#x8981;&#x91CD;&#x64AD;(Replay)</p>
-<blockquote>
-<p>Steem 0.22.1 <strong><em><code>does</code></em></strong> require reindexing from 0.22.0</p>
-</blockquote>
-<p>&#x5982;&#x679C;&#x4F60;&#x8FD0;&#x884C;&#x7684;&#x539F;&#x59CB;&#x7684;0.22.0&#xFF0C;&#x90A3;&#x4E48;&#x5FC5;&#x987B;&#x91CD;&#x64AD;(Replay)&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x8FD9;&#x4E9B;&#x6253;&#x8FC7;&#x8865;&#x4E01;&#xFF0C;&#x5E76;&#x4E14;&#x5DF2;&#x7ECF;&#x91CD;&#x64AD;(Replay)&#x8FC7;&#x7684;&#x9009;&#x624B;&#x6765;&#x8BB2;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x6539;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x6839;&#x672C;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x64AD;&#x7684;&#x5566;&#x3002;</p>
-<p>&#x53EA;&#x9700;&#x66FF;&#x6362;&#x539F;&#x6709;&#x7684;steemd&#xFF0C;&#x5E76;&#x91CD;&#x542F;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5566;&#x3002;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmPWq9rH1YuSEMjbSJMA5fSVgrvrp7JszbS9rcDfzdu8YL/image.png" alt=""></p>
-</blockquote>
-<p>&#x8FD9;&#x6837;&#x4E0D;&#x9700;&#x8981;replay&#x7684;&#x5347;&#x7EA7;&#x8FD8;&#x662F;&#x86EE;&#x8212;&#x670D;&#x7684;&#xFF0C;&#x4F46;&#x613F;&#x8FD9;&#x7248;&#x7A33;&#x5B9A;&#x4E0B;&#x6765;&#x5427;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://github.com/steemit/steem/releases/tag/v0.22.1" target="_blank" rel="noopener">Steem 0.22.1 Release Notes</a></li>
-</ul>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steemdv0-22-1-2019-09-04" target="_blank" rel="noopener">&#x2018;&#x5347;&#x7EA7;steemd&#x7A0B;&#x5E8F;&#x81F3;v0.22.1&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/45/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/45/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/47/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/47/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -804,7 +826,7 @@
     
     
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -847,7 +869,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
 
 
 

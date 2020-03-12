@@ -230,6 +230,182 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/how-to-set-up-a-user-friendly-password-for-the-posting-private-key-posting-private-key/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmQ8MNrQvx74YnVh2jQqnowAffC5qoNB1hJB671ns3EYvY/image.png" alt="How to set up a user-friendly password for the posting private key? / 如何为posting private key 设置个友好的密码？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-11T14:23:18.000Z">2017-11-11</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 794 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-set-up-a-user-friendly-password-for-the-posting-private-key-posting-private-key/">How to set up a user-friendly password for the posting private key? / 如何为posting private key 设置个友好的密码？</a>
+            
+        </h1>
+        <div class="content">
+            <p>Everybody knows that <strong><em>the <code>master password</code> and <code>owner key</code> are very important for our steem account, the same goes for the <code>active private key</code>.</em></strong></p>
+<p>So it should be more security if we only use <strong><em><code>posting private key</code></em></strong> to <strong><em>login, post, comment and vote</em></strong> on steemit.com and other third party sites. </p>
+<p>But It is impossible to remember a such long posting private key  and it&#x2019;s very annoying thing to copy&amp;paste posting private key every time when we login steemit.com or other sites, for example, busy.org.</p>
+<p><img src="https://steemitimages.com/DQmQ8MNrQvx74YnVh2jQqnowAffC5qoNB1hJB671ns3EYvY/image.png" alt=""><br>So is there a way  to use posting private key just like the password? Or in other words, <strong><em>how to set up a user-friendly password for posting private key?</em></strong></p>
+<p>I try to figure out it then I found out a way to do so. </p>
+<h1 id="Steps"><a href="#Steps" class="headerlink" title="Steps"></a>Steps</h1><ul>
+<li><p>First, you must have steem-python installed on your machine or other computer you can access.<br>Check <a href="https://github.com/steemit/steem-python" target="_blank" rel="noopener">github</a> to find out how to install and more details information about it</p>
+</li>
+<li><p>Check your active private key at steemit.com.<br><strong><em><code>Wallet-&gt;Permissions-&gt;ACTIVE-&gt;SHOW PRIVATE KEY</code></em></strong></p>
+</li>
+<li><p>Import the active private key to the local wallet of steem-python use following command.<br><strong><em><code>steempy addkey</code></em></strong><br><img src="https://steemitimages.com/DQmPHLgB1GS8jySYFYCcq3NjmBeds9BqGW8Ssvd2sgKRfEM/image.png" alt=""><br>Pasted your active private key according to the prompt.</p>
+</li>
+<li><p>Write a simple script to generate <strong><em><code>posting private key &amp; posting public key</code></em></strong> from password<br><img src="https://steemitimages.com/DQmU4rTr6WZVCewkPtw1k1amnyRU1PKcQbR1pdw7gTPQoRR/image.png" alt=""><br>(Replace the <strong><em><code>account, passwd</code></em></strong> with your account and the password you want to use.)</p>
+</li>
+<li><p>Run the script<br><img src="https://steemitimages.com/DQme6xF9uZ67WrhNn4cuD3FMhnAu9GgKUqDyiw9h5uXoVEr/image.png" alt=""><br>(Now we got  the <strong><em><code>posting private key &amp; posting public key</code></em></strong>)</p>
+</li>
+<li><p>Now we will use <strong><em><code>steempy</code></em></strong> the command line tool for steem to finalize our operation.<br><strong><em><code>steempy allow --account oflyhigh.test STM8WgLmubC1KgbDiUgBuXeLuEzJYnkz8q8vnEmGapqCH4KWWuf6h</code></em></strong></p>
+</li>
+<li><p>The result<br><img src="https://steemitimages.com/DQmRce9VXzAZJc5xCWfJ6dagAVHZyraxgjeLFUY83wQ7DQv/image.png" alt=""></p>
+</li>
+<li><p>Let&#x2019;s we check the account oflyhigh.test on steemd.com.<br><img src="https://steemitimages.com/DQmb8So4tmwdSkyqvGqgS5SQ2vSbMFiwUKZWKaEWwGqKsi6/image.png" alt=""><br>And here:<br><img src="https://steemitimages.com/DQmc3g5LTDpZmDbc3g7KgDkcoe1Fu4qm8T4kbCCamAykims/image.png" alt=""><br>Everything is correct.</p>
+</li>
+</ul>
+<h1 id="Check-Login"><a href="#Check-Login" class="headerlink" title="Check Login"></a>Check Login</h1><p>Now, It&#x2019;s time to check on what we&#x2019;ve done!</p>
+<ul>
+<li>Logout from steemit, and open <a href="https://steemit.com/login.html" target="_blank" rel="noopener">the login page</a></li>
+<li>Input the account name <strong><em><code>oflyhigh.test</code></em></strong> and the password <strong><em><code>mypasswd</code></em></strong><br><img src="https://steemitimages.com/DQmcJDVKN3VLjvjs9hR1muF5t9xkeYywuhV1EENFPrHSDCv/image.png" alt=""></li>
+<li>Click the LOGIN button, Now we login successfully and the welcome page shows.<br><img src="https://steemitimages.com/DQmV5e3wU5xrFyu1WuRZ4U8FmSKso1rZSDgY6obfRdaSkty/image.png" alt=""></li>
+<li>Check our profile, all things right.<br><img src="https://steemitimages.com/DQmNZb9zVmt5nJVcdfbEi69ZyeqqVwSipfRFNRConQ7SmpK/image.png" alt=""></li>
+<li>You can also login with the new posting private key we generated in above step, but it is not necessary.</li>
+</ul>
+<h1 id="Conclusions"><a href="#Conclusions" class="headerlink" title="Conclusions"></a>Conclusions</h1><p>It&#x2019;s very tedious to log in steemit.com with the posting private key.</p>
+<p>In this article, I had introduced you a method to <strong><em>set up a user-friendly password for posting private key</em></strong>. Now, we can use this password to log in steemit and other third party sites, It just works as same as the posting private key.</p>
+<h1 id="CAUTION"><a href="#CAUTION" class="headerlink" title="CAUTION!!"></a>CAUTION!!</h1><p><img src="https://steemitimages.com/DQmaNeccZV3pv85xsPFrDyYqgJkUNJ8G5M63s6XoQiCBc54/image.png" alt=""><br><strong><em>Use this script unless you really know what you&#x2019;re doing!  Improper operation may cause your account to be locked</em></strong></p>
+<hr>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;&#x4E3B;&#x5BC6;&#x7801;&#x3001;&#x6240;&#x6709;&#x8005;KEY&#x3001;active&#x79C1;&#x94A5;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x8D77;&#x89C1;&#xFF0C;&#x5EFA;&#x8BAE;&#x5927;&#x5BB6;&#x7528;Posting&#x79C1;&#x94A5;&#x767B;&#x9646;&#x7F51;&#x7AD9;&#x3001;&#x53D1;&#x5E16;&#x3001;&#x56DE;&#x590D;&#x3001;&#x6295;&#x7968;&#x7B49;&#x3002;</p>
+<p>&#x4F46;&#x662F;Post&#x79C1;&#x94A5;&#x5F88;&#x957F;&#x6839;&#x672C;&#x8BB0;&#x4E0D;&#x4F4F;&#xFF0C;&#x6BCF;&#x6B21;&#x590D;&#x5236;&#x7C98;&#x8D34;&#x8FD8;&#x633A;&#x9EBB;&#x70E6;&#xFF0C;&#x6709;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x50CF;&#x4F7F;&#x7528;&#x5BC6;&#x7801;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#x5462;&#xFF1F;<strong><em>&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x4E3A;posting&#x79C1;&#x94A5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;</em></strong>&#x3002;&#x8BE6;&#x7EC6;&#x6B65;&#x9AA4;&#x53C2;&#x89C1;&#x82F1;&#x6587;&#x90E8;&#x5206;&#x3002;</p>
+<p><strong><em>&#x6CE8;&#x610F;&#xFF1A;&#x9664;&#x975E;&#x4F60;&#x660E;&#x786E;&#x77E5;&#x9053;&#x4F60;&#x5728;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x5426;&#x5219;&#x8BF7;&#x614E;&#x91CD;&#x64CD;&#x4F5C;&#x3002;</em></strong></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-set-up-a-user-friendly-password-for-the-posting-private-key-posting-private-key" target="_blank" rel="noopener">How to set up a user-friendly password for the posting private key? / &#x5982;&#x4F55;&#x4E3A;posting private key &#x8BBE;&#x7F6E;&#x4E2A;&#x53CB;&#x597D;&#x7684;&#x5BC6;&#x7801;&#xFF1F;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/bts-usd-usd-bts-feed-price/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmTEHh1Xx4kTBpKG2or4h7tSGV3dBbhV52mVYSUybiqtk1/money-2724241_960_720.jpg" alt="微信公众号增加BTS价格(USD)以及USD/BTS喂价(Feed price)查询功能啦">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-11-10T06:16:12.000Z">2017-11-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/bitshares/">bitshares</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 829 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/bts-usd-usd-bts-feed-price/">微信公众号增加BTS价格(USD)以及USD/BTS喂价(Feed price)查询功能啦</a>
+            
+        </h1>
+        <div class="content">
+            <p>BTS&#x6DA8;&#x52BF;&#x559C;&#x4EBA;&#x554A;&#xFF0C;&#x540C;&#x5FD7;&#x4EEC;&#x90FD;&#x4E0A;&#x8F66;&#x6CA1;&#xFF1F;&#xFF08;&#x8FD9;&#x53E5;&#x8BDD;&#x600E;&#x4E48;&#x542C;&#x8D77;&#x6765;&#x8FD9;&#x4E2A;&#x8033;&#x719F;&#x5462;&#xFF1F;&#xFF09;</p>
+<p>&#x8BDD;&#x8BF4;&#xFF0C;&#x4E4B;&#x524D;&#x5728;&#x516C;&#x4F17;&#x53F7;&#x91CC;&#x6DFB;&#x52A0;&#x4E86;<strong><em>BTS&#x4EF7;&#x683C;(CNY)&#x67E5;&#x8BE2;&#x529F;&#x80FD;</em></strong>&#xFF0C;&#x6015;&#x7206;&#x4ED3;&#x53C8;&#x589E;&#x52A0;&#x4E86;<strong><em>CNY/BTS&#x5582;&#x4EF7;(Feed price)&#x67E5;&#x8BE2;</em></strong></p>
+<p>&#x8BE6;&#x60C5;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/bts-cny" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;BTS&#x4EF7;&#x683C;(CNY)&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x5566;&#xFF01;</a></li>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/cny-bts-feed-price" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;CNY/BTS&#x5582;&#x4EF7;(Feed price)&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x5566;&#xFF01; / &#x9632;&#x6B62;&#x7206;&#x4ED3;&#x554A;&#x1F631;</a></li>
+</ul>
+<p><img src="https://steemitimages.com/DQmTEHh1Xx4kTBpKG2or4h7tSGV3dBbhV52mVYSUybiqtk1/money-2724241_960_720.jpg" alt="money-2724241_960_720.jpg"></p>
+<p>&#x4E4B;&#x540E;&#x6709;&#x4E00;&#x4E9B;&#x670B;&#x53CB;&#x5C31;&#x62B1;&#x6028;&#x4E86;&#xFF0C;<strong><em>&#x4F60;&#x4EE5;&#x4E3A;&#x5927;&#x5BB6;&#x90FD;&#x7528;CNY&#x5417;&#xFF1F;&#xFF0C;&#x8FD9;&#x4E16;&#x754C;&#x4E0A;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x8D27;&#x5E01;&#x53EB;USD&#xFF01;</em></strong></p>
+<p>&#x597D;&#x5427;&#xFF0C;&#x662F;&#x6211;&#x758F;&#x5FFD;&#x4E86;&#xFF0C;&#x6211;&#x4EE5;&#x4E3A;&#x81F3;&#x5C11;&#x7528;&#x6211;&#x516C;&#x4F17;&#x53F7;&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x7528;CNY&#x7684;&#x5C45;&#x591A;&#x5462;&#x3002;&#x4E0D;&#x8FC7;<strong><em>&#x65E2;&#x7136;&#x670B;&#x53CB;&#x4EEC;&#x6709;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x90A3;&#x4E48;<del>&#x4E0A;&#x5200;&#x5C71;&#x4E0B;&#x706B;&#x6D77;&#x5728;&#x6240;&#x4E0D;&#x8F9E;</del>&#x52A0;&#x4E0A;&#x5C31;&#x662F;&#x4E86;&#x3002;</em></strong></p>
+<h1 id="&#x5982;&#x4F55;&#x67E5;&#x8BE2;"><a href="#&#x5982;&#x4F55;&#x67E5;&#x8BE2;" class="headerlink" title="&#x5982;&#x4F55;&#x67E5;&#x8BE2;"></a>&#x5982;&#x4F55;&#x67E5;&#x8BE2;</h1><p>&#x5F15;&#x7528;&#x4E00;&#x53E5;&#x5E7F;&#x544A;&#x8BED;&#xFF1A;<strong><em>&#x8FD8;&#x662F;&#x719F;&#x6089;&#x7684;&#x914D;&#x65B9;&#xFF0C;&#x8FD8;&#x662F;&#x719F;&#x6089;&#x7684;&#x5473;&#x9053;</em></strong></p>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF0C;&#x5C06;BTS&#x7684;<strong><em>CNY&#x4EF7;&#x683C;&#x3001; USD&#x4EF7;&#x683C;&#x3001;CNY&#x5582;&#x4EF7;&#x3001;USD&#x5582;&#x4EF7;</em></strong>&#x7EDF;&#x7EDF;&#x96C6;&#x6210;&#x5230;&#x4E00;&#x6761;&#x6307;&#x4EE4;&#x4E2D;&#x53BB;&#x3002;</p>
+<p>&#x516C;&#x4F17;&#x53F7;&#x8F93;&#x5165;<strong><em><code>?bts</code></em></strong>&#x6307;&#x4EE4;&#xFF0C;&#x5C31;&#x53EF;&#x4E0A;&#x8FF0;&#x6240;&#x6709;&#x4FE1;&#x606F;&#x5566;&#x3002;<br><strong><em>&#xFF08;&#x6CE8;&#xFF1A;&#x4EF7;&#x683C;&#x4FE1;&#x606F;&#x6765;&#x81EA;&#x4E8E;&#x6BD4;&#x7279;&#x80A1;&#x5185;&#x76D8;&#xFF09;</em></strong></p>
+<p>&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;<br><img src="https://steemitimages.com/DQmbwiFafiovEqwu4Sg9tgMApZLntPbUimL7YF2bEwD2K15/image.png" alt=""><br>&#x662F;&#x4E0D;&#x662F;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x5B9E;&#x7528;&#x5440;&#xFF1F;</p>
+<p>&#x4EF7;&#x683C;&#x53C8;&#x6DA8;&#x4E86;&#xFF0C;&#x597D;&#x5F00;&#x5FC3;&#x3002;&#x1F600;</p>
+<p>BTS&#x4E0A;&#x8F66;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5FEB;&#x6765;&#x8BD5;&#x8BD5;&#x5427;&#xFF0C;&#x65E0;&#x804A;&#x7684;&#x65F6;&#x5019;&#x8FD8;&#x53EF;&#x4EE5;<a href="https://steemit.com/cn/@oflyhigh/turing-chat-robot" target="_blank" rel="noopener">&#x8C03;&#x620F;&#x673A;&#x5668;&#x4EBA;</a>&#xFF0C;&#x8BA9;&#x4ED6;&#x9017;&#x4F60;&#x5F00;&#x5FC3;&#x54E6;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x6587;&#x7AE0;"><a href="#&#x76F8;&#x5173;&#x6587;&#x7AE0;" class="headerlink" title="&#x76F8;&#x5173;&#x6587;&#x7AE0;"></a>&#x76F8;&#x5173;&#x6587;&#x7AE0;</h1><ul>
+<li><a href="https://steemit.com/blocktrades/@oflyhigh/blocktrades-steem-sbd-bts-how-to-buy-bts-with-steem-or-sbd-via-blocktrades" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x901A;&#x8FC7;blocktrades&#x4F7F;&#x7528;STEEM&#x6216;&#x8005;SBD&#x8D2D;&#x4E70;BTS? / How to buy BTS with STEEM or SBD via blocktrades?</a></li>
+<li><a href="https://steemit.com/openledger/@oflyhigh/openledger-steem-sbd-bts-how-to-buy-bts-with-steem-or-sbd-via-openledger" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x901A;&#x8FC7;Openledger&#x4F7F;&#x7528;STEEM&#x6216;&#x8005;SBD&#x8D2D;&#x4E70;BTS? / How to buy BTS with STEEM or SBD via Openledger?</a></li>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/bts-learn-the-remote-procedure-call-of-bts" target="_blank" rel="noopener">&#x5B66;&#x4E60;&#x4E00;&#x4E0B;BTS&#x7684;&#x8FDC;&#x7A0B;&#x8FC7;&#x7A0B;&#x8C03;&#x7528; / Learn the remote procedure call of BTS</a></li>
+<li><a href="https://steemit.com/cn/@oflyhigh/turing-chat-robot" target="_blank" rel="noopener">&#x4F60;&#x65E0;&#x804A;&#x5417;&#xFF1F;&#x65E0;&#x804A;&#x7684;&#x8BDD;&#x6765;&#x8C03;&#x620F;&#x673A;&#x5668;&#x4EBA;&#x73A9;&#x5427; ( &#x840C;&#x86CB;&#x56DE;&#x6765;&#x4E86;) / Turing chat robot</a></li>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/bts-cny" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;BTS&#x4EF7;&#x683C;(CNY)&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x5566;&#xFF01;</a></li>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/bts" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x62B5;&#x62BC;BTS&#x501F;&#x51FA;&#x514D;&#x606F;&#x4EBA;&#x6C11;&#x5E01;&#xFF1F;&#xFF08;&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#xFF0C;&#x5982;&#x4F55;&#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;&#xFF0C;&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;&#xFF1F;&#xFF09;</a></li>
+<li><a href="https://steemit.com/bitshares/@oflyhigh/cny-bts-feed-price" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;CNY/BTS&#x5582;&#x4EF7;(Feed price)&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x5566;&#xFF01; / &#x9632;&#x6B62;&#x7206;&#x4ED3;&#x554A;&#x1F631;</a></li>
+</ul>
+<h1 id="&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"><a href="#&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;" class="headerlink" title="&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;"></a>&#x516C;&#x4F17;&#x53F7;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</h1><p>&#x516C;&#x4F17;&#x53F7;&#x5728;&#x4E0D;&#x65AD;&#x5B8C;&#x5584;&#x4E2D;&#xFF0C;&#x4F1A;&#x63D0;&#x4F9B;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x529F;&#x80FD;&#x548C;&#x4FBF;&#x5229;</p>
+<ul>
+<li><p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;<br>&#x8FDB;&#x5165;&#x5FAE;&#x4FE1;&#x901A;&#x8BAF;&#x5F55;-&gt;&#x70B9;&#x51FB;&#x516C;&#x4F17;&#x53F7;-&gt;&#x70B9;&#x53F3;&#x4E0A;&#x89D2;&#x52A0;&#x53F7;-&gt;&#x641C;&#x7D22;steemit&#xFF0C;&#x5173;&#x6CE8;&#x5373;&#x53EF;&#x3002;</p>
+</li>
+<li><p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;<br>&#x76F4;&#x63A5;&#x626B;&#x63CF;&#x4EE5;&#x4E0B;&#x4E8C;&#x7EF4;&#x7801;&#xFF1A;<br><img src="https://steemitimages.com/DQmPH3g5AFW9v9bTGhiMGSUHZL6zdUbPoZpqFEvoH1dCHd2/qrcode_for_gh_9f88179d5c6a_344.jpg" alt="qrcode_for_gh_9f88179d5c6a_344.jpg"></p>
+</li>
+</ul>
+<p>(&#x5C01;&#x9762;&#x56FE;&#x6E90; &#xFF1A;pixabay)</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/bts-usd-usd-bts-feed-price" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x589E;&#x52A0;BTS&#x4EF7;&#x683C;(USD)&#x4EE5;&#x53CA;USD/BTS&#x5582;&#x4EF7;(Feed price)&#x67E5;&#x8BE2;&#x529F;&#x80FD;&#x5566;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/linode-vps-down/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmcPJTJD5Dw2rvfnHKj9rmtvihRhuwdP5A5P5xPEZvnZ4A/home-2910647_960_720.jpg" alt="体验Linode VPS Down机">
         </a>
@@ -604,160 +780,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/ssh/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmNvxkqz3kxsnRvwNBPJNWcdLnsCXxWpd7x89bfoBVXr7m/image.png" alt="SSH服务指定其它端口，指定多个端口">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-05T01:50:15.000Z">2017-11-05</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/ssh/">ssh</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 677 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/ssh/">SSH服务指定其它端口，指定多个端口</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6211;&#x6709;&#x51E0;&#x53F0;&#x670D;&#x52A1;&#x5668;&#x4EE5;&#x53CA;&#x51E0;&#x53F0;VPS&#xFF0C;&#x5E73;&#x65E5;&#x90FD;&#x662F;&#x4F7F;&#x7528;SSH&#x6765;&#x7BA1;&#x7406;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BB2;&#x6CA1;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x5076;&#x5C14;&#x6709;&#x65F6;&#x5019;&#x4E00;&#x4E24;&#x53F0;&#x767B;&#x9646;&#x4E0D;&#x4E0A;&#x53BB;&#xFF0C;&#x6211;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x5B83;&#x80FD;&#x8FDE;&#x63A5;&#x7684;&#x670D;&#x52A1;&#x5668;&#x505A;&#x8DF3;&#x677F;&#x94FE;&#x63A5;&#xFF0C;&#x61D2;&#x60F0;&#x7684;&#x4EBA;&#x603B;&#x662F;&#x6709;&#x61D2;&#x60F0;&#x7684;&#x529E;&#x6CD5;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x6700;&#x8FD1;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x8FDE;&#x4E0D;&#x4E0A;&#x7684;&#x60C5;&#x51B5;&#x8D8A;&#x6765;&#x8D8A;&#x4E25;&#x91CD;&#xFF0C;&#x6211;&#x8DF3;&#x554A;&#x8DF3;&#x554A;&#x7684;&#xFF0C;&#x7D2F;&#x7684;&#x4E0D;&#x884C;&#x4E86;&#x3002;</p>
-<p>&#x6211;&#x4E00;&#x76F4;&#x4EE5;&#x4E3A;&#x662F;ISP&#x548C;&#x8C10;&#x4E86;&#x6211;&#x670D;&#x52A1;&#x5668;/VPS&#x7684;IP&#xFF0C;&#x6BD5;&#x7ADF;&#x6211;&#x7684;SSH&#x670D;&#x52A1;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x4E0D;&#x5E38;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;&#x6CA1;&#x9053;&#x7406;&#x548C;&#x8C10;&#x554A;&#x3002;&#x76F4;&#x5230;&#x6709;&#x4E00;&#x5929;SSH&#x59CB;&#x7EC8;&#x8FDE;&#x4E0D;&#x4E0A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x65E0;&#x610F;&#x4E4B;&#x4E2D;ping&#x4E86;&#x4E00;&#x4E0B;IP&#xFF0C;OMG&#xFF0C;&#x7ADF;&#x7136;&#x80FD;ping&#x901A;&#x3002;<br><img src="https://steemitimages.com/DQmNvxkqz3kxsnRvwNBPJNWcdLnsCXxWpd7x89bfoBVXr7m/image.png" alt=""><br>&#x867D;&#x7136;&#x5EF6;&#x8FDF;&#x5927;&#x4E86;&#x70B9;&#xFF0C;&#x4F46;&#x662F;&#x81F3;&#x5C11;&#x8BF4;&#x660E;IP&#x6CA1;&#x6709;&#x88AB;&#x5C01;&#x9501;&#x3002;</p>
-<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;SSH&#x670D;&#x52A1;&#x4F7F;&#x7528;&#x5176;&#x5B83;&#x7AEF;&#x53E3;&#x554A;&#xFF0C;&#x5C31;&#x65E0;&#x9700;&#x7528;&#x5176;&#x5B83;&#x670D;&#x52A1;&#x5668;&#x505A;&#x8DF3;&#x677F;&#x4E86;&#x3002;</p>
-<h1 id="SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;"><a href="#SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;" class="headerlink" title="SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;"></a>SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;</h1><p>&#x5176;&#x5B9E;&#x6211;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x8003;&#x8651;&#xFF0C;&#x6211;&#x7684;SSH&#x670D;&#x52A1;&#x7981;&#x7528;&#x4E86;22&#x7AEF;&#x53E3;&#xFF0C;&#x800C;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x5F88;&#x4E0D;&#x5E38;&#x7528;&#x7684;&#x7AEF;&#x53E3;&#x53F7;,&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;&#x7684;&#x64CD;&#x4F5C;&#x5F88;&#x7B80;&#x5355;&#x3002;</p>
-<p>&#x4EE5;&#x6211;&#x7528;&#x7684;Ubuntu 16.04 LTS&#x4E3A;&#x4F8B;&#xFF0C;putty&#x767B;&#x9646;&#x540E;&#xFF1A;<br><code>sudo vi /etc/ssh/sshd_config</code></p>
-<p>&#x5C06;&#x4E0B;&#x5217;&#x5185;&#x5BB9;<br><code># What ports, IPs and protocols we listen for</code><br><code>Port 22</code><br>&#x4FEE;&#x6539;&#x4E3A;<br><code># What ports, IPs and protocols we listen for</code><br><code>Port 56789</code></p>
-<p>&#x7136;&#x540E;&#x91CD;&#x542F;sshd&#x670D;&#x52A1;&#xFF1A;<br><code>sudo service ssh  restart</code></p>
-<p>&#x5F00;&#x542F;&#x65B0;&#x7684;putty&#x7A97;&#x53E3;&#xFF0C;&#x8F93;&#x5165;<strong><em>IP</em></strong>&#x548C;&#x65B0;&#x7684;&#x7AEF;&#x53E3;&#x53F7;<strong><em><code>56789</code></em></strong>&#xFF0C;&#x70B9;&#x51FB;<strong><em>OPEN</em></strong><br><img src="https://steemitimages.com/DQmY3y6B8JnR54DzkB3i97tToii9WxxcR7N1yHg9ckHF5iZ/image.png" alt=""></p>
-<p>&#x70B9;&#x51FB;<strong><em>Yes</em></strong><br><img src="https://steemitimages.com/DQmP2LVZPsQ5QxKGcYrVqryCVwtQt29ZNoLfhJD4rFnnW2S/image.png" alt=""></p>
-<p>&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x6B63;&#x5E38;&#x7684;&#x767B;&#x9646;&#x7A97;&#x53E3;&#x4E86;&#xFF0C;&#x8BF4;&#x660E;&#x6211;&#x4EEC;&#x7684;&#x8BBE;&#x7F6E;&#x751F;&#x6548;&#x4E86;&#x3002;</p>
-<h1 id="SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;"><a href="#SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;" class="headerlink" title="SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;"></a>SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;</h1><p>&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x53C8;&#x7ED9;SSH&#x670D;&#x52A1;&#x6362;&#x4E86;&#x4E00;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x4F46;&#x662F;&#x9B3C;&#x77E5;&#x9053;ISP&#x5565;&#x65F6;&#x5019;&#x62BD;&#x98CE;&#x53C8;&#x7ED9;&#x5C01;&#x6389;&#x5462;&#x3002;&#x4E00;&#x65E6;&#x5C01;&#x6389;&#xFF0C;&#x53C8;&#x5F97;&#x7528;&#x8DF3;&#x677F;&#x4E86;&#x3002;</p>
-<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x4F55;&#x4E0D;&#x4E00;&#x4E0B;&#x5B50;&#x591A;&#x52A0;&#x4E00;&#x4E9B;&#x7AEF;&#x53E3;&#x5462;&#xFF1F;<strong><em>&#x636E;&#x8BF4;&#x6709;&#x94B1;&#x4EBA;&#x4E70;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x4E00;&#x4E0B;&#x5B50;&#x4E70;&#x4E24;&#x4E2A;&#x7684;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x6254;&#x4E00;&#x4E2A;&#xFF01;</em></strong>&#x6211;&#x4EEC;&#x6CA1;&#x94B1;&#x4E70;&#x4E1C;&#x897F;&#xFF0C;&#x4F46;&#x662F;&#x7ED9;SSH&#x670D;&#x52A1;&#x591A;&#x52A0;&#x51E0;&#x4E2A;&#x7AEF;&#x53E3;&#xFF0C;&#x7528;&#x4E00;&#x4E2A;&#x95F2;&#x7F6E;&#x51E0;&#x4E2A;&#xFF0C;&#x4E5F;&#x4F53;&#x9A8C;&#x4E00;&#x628A;&#x6709;&#x94B1;&#x4EBA;&#x7684;&#x611F;&#x89C9;&#xFF01;</p>
-<p>&#x5176;&#x5B9E;&#x591A;&#x52A0;&#x51E0;&#x4E2A;&#x7AEF;&#x53E3;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x554A;&#xFF0C;&#x548C;&#x4E0A;&#x8FB9;&#x5B8C;&#x5168;&#x4E00;&#x6837;</p>
-<p><code># What ports, IPs and protocols we listen for</code><br><code>Port 56789</code><br><code>Port 12345</code><br><code>Port 88888</code></p>
-<p>&#x628A;Port&#x591A;&#x52A0;&#x51E0;&#x884C;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x1F62D;<br>&#x597D;&#x4E86;&#xFF0C;&#x5F00;&#x59CB;&#x505A;&#x4E2A;&#x6709;&#x94B1;&#x4EBA;&#x5427;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/ssh" target="_blank" rel="noopener">SSH&#x670D;&#x52A1;&#x6307;&#x5B9A;&#x5176;&#x5B83;&#x7AEF;&#x53E3;&#xFF0C;&#x6307;&#x5B9A;&#x591A;&#x4E2A;&#x7AEF;&#x53E3;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/bts/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmfDTEZoc6ZU9JtU3FYsdMZ8DNasSEhHmLx7ZnKNpppJcd/image.png" alt="如何抵押BTS借出免息人民币？（如何归还，如何调整保证金，如何避免爆仓？）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-11-04T11:47:33.000Z">2017-11-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/bitshares/">bitshares</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 minutes read (About 1288 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/bts/">如何抵押BTS借出免息人民币？（如何归还，如何调整保证金，如何避免爆仓？）</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x8FD9;&#x4E24;&#x5929;&#x8D8A;&#x662F;&#x6DF1;&#x5165;&#x4E86;&#x89E3;BTS&#xFF0C;&#x8D8A;&#x89C9;&#x5F97;&#x6BD4;&#x7279;&#x80A1;&#x771F;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x4F1F;&#x5927;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x8BA9;&#x4EBA;&#x4E0D;&#x7981;&#x5145;&#x6EE1;&#x656C;&#x754F;&#x554A;&#x3002;</p>
-<p>&#x62E5;&#x6709;&#x4E86;&#x6BD4;&#x7279;&#x80A1;&#x8D44;&#x4EA7;&#xFF0C;&#x4F60;&#x4E0D;&#x4F46;&#x80FD;&#x5750;&#x4EAB;&#x8D44;&#x4EA7;&#x5347;&#x503C;&#x5E26;&#x6765;&#x7684;&#x798F;&#x5229;&#xFF08;&#x4F60;&#x95EE;&#x6211;&#x4E0B;&#x8DCC;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x6211;&#x4E0A;&#x8F66;&#x4E86;&#x5B83;&#x8FD8;&#x600E;&#x4E48;&#x53EF;&#x80FD;&#x8DCC;&#x5462;&#xFF1F;&#xFF09;&#xFF0C;&#x800C;&#x4E14;<strong><em>&#x8FD8;&#x80FD;&#x901A;&#x8FC7;&#x62B5;&#x62BC;&#x65B9;&#x5F0F;&#x501F;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;&#xFF0C;&#x6700;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x90E8;&#x5206;&#x4EBA;&#x6C11;&#x5E01;&#x662F;&#x6CA1;&#x6709;&#x5229;&#x606F;&#x7684;&#xFF01;</em></strong></p>
-<p>&#x8FD9;&#x542C;&#x8D77;&#x6765;&#x6709;&#x4E9B;&#x4E0D;&#x53EF;&#x601D;&#x8BAE;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#xFF1F;&#x6211;&#x4E4B;&#x524D;&#x6709;&#x4E86;&#x89E3;&#x8FC7;&#x94F6;&#x884C;&#x7684;&#x62B5;&#x62BC;&#x8D37;&#x6B3E;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x623F;&#x4EA7;&#x6216;&#x8005;&#x5F53;&#x524D;&#x6301;&#x6709;&#x7684;&#x5B58;&#x6B3E;&#x7406;&#x8D22;&#x7B49;&#x8D44;&#x4EA7;&#xFF0C;&#x6309;&#x4E00;&#x5B9A;&#x6BD4;&#x4F8B;&#x62B5;&#x62BC;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;&#x8D37;&#x6B3E;&#x3002;&#x5047;&#x8BBE;&#x6211;&#x6709;&#x4E00;&#x7B14;500W&#x7684;&#x7406;&#x8D22;&#x4EA7;&#x54C1;&#xFF0C;&#x90A3;&#x4E48;&#x5927;&#x81F4;&#x53EF;&#x4EE5;&#x8D37;&#x51FA;400W&#x7684;&#x4EBA;&#x6C11;&#x5E01;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x90E8;&#x5206;&#x8D37;&#x6B3E;&#x662F;&#x6709;&#x5229;&#x606F;&#x7684;&#xFF0C;&#x6211;&#x6D4B;&#x7B97;&#x4E00;&#x4E0B;&#xFF0C;&#x5E74;&#x5316;&#x5229;&#x7387;&#x5927;&#x6982;&#x5728;6%-7%&#x4E4B;&#x95F4;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<strong><em>&#x901A;&#x8FC7;&#x94F6;&#x884C;&#x62B5;&#x62BC;&#xFF0C;&#x5982;&#x679C;&#x8D37;&#x51FA;400W&#xFF0C;&#x6211;&#x6BCF;&#x5E74;&#x81F3;&#x5C11;&#x8981;&#x4ED8;&#x51FA;24W&#x7684;&#x5229;&#x606F;&#x3002;</em></strong></p>
-<p>&#x90A3;&#x4E48;&#x5982;&#x679C;&#x4F60;&#x6301;&#x6709;&#x4EF7;&#x503C;&#x51E0;&#x767E;&#x4E07;&#x4EBA;&#x6C11;&#x5E01;&#x7684;&#x6BD4;&#x7279;&#x80A1;&#x8D44;&#x4EA7;&#x5462;&#xFF1F;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x501F;&#x51FA;&#x603B;&#x4EF7;&#x503C;&#x4E8C;&#x5206;&#x4E4B;&#x4E00;&#x4EE5;&#x4E0A;&#x7684;&#x4EBA;&#x6C11;&#x5E01;&#x8D44;&#x4EA7;&#xFF0C;&#xFF08;<strong><em>&#x6CE8;&#xFF1A;&#x8FD9;&#x6837;&#x5F88;&#x5371;&#x9669;&#xFF0C;&#x7A0D;&#x540E;&#x8BE6;&#x89E3;</em></strong>&#xFF09;&#xFF0C;&#x8FD8;&#x6CA1;&#x6709;&#x5229;&#x606F;&#xFF0C;<strong><em>&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x90E8;&#x5206;&#x94B1;&#x6362;&#x6210;&#x6CD5;&#x5E01;&#xFF0C;&#x62FF;&#x51FA;&#x53BB;&#x8D2D;&#x623F;&#x3001;&#x4E70;&#x8F66;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x62FF;&#x7740;&#x8FD9;&#x90E8;&#x5206;&#x94B1;&#x7EE7;&#x7EED;&#x8D2D;&#x4E70;&#x6BD4;&#x7279;&#x80A1;&#xFF0C;&#x5750;&#x7B49;&#x5347;&#x503C;&#x3002;</em></strong></p>
-<h1 id="&#x5982;&#x4F55;&#x501F;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;"><a href="#&#x5982;&#x4F55;&#x501F;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;" class="headerlink" title="&#x5982;&#x4F55;&#x501F;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;"></a>&#x5982;&#x4F55;&#x501F;&#x51FA;&#x4EBA;&#x6C11;&#x5E01;</h1><p>&#x4EE5;&#x7F51;&#x9875;&#x94B1;&#x5305;&#x4E3A;&#x4F8B;&#xFF1A;<br>&#x8FDB;&#x5165;<strong><em><code>&#x94B1;&#x5305;-&gt;&#x8D26;&#x6237;-&gt;&#x62B5;&#x62BC;&#x503A;&#x4ED3;</code></em></strong><br><img src="https://steemitimages.com/DQmfDTEZoc6ZU9JtU3FYsdMZ8DNasSEhHmLx7ZnKNpppJcd/image.png" alt=""><br>&#x6CE8;&#x610F;&#x7EA2;&#x6846;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x597D;&#x591A;&#x8D44;&#x4EA7;&#x7C7B;&#x578B;&#x53EF;&#x4EE5;&#x501F;&#x5165;&#x5462;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x501F;&#x5165;&#x6BD4;&#x7279;&#x5E01;&#xFF0C;&#x7136;&#x540E;&#x5750;&#x7B49;&#x6BD4;&#x7279;&#x5E01;&#x6DA8;&#x5230;&#x4E00;&#x5E01;&#x4E00;&#x522B;&#x5885;&#xFF0C;&#x8C8C;&#x4F3C;&#x4E5F;&#x5F88;&#x4E0D;&#x9519;&#x3002;&#x672C;&#x6587;&#x4EE5;&#x4EBA;&#x6C11;&#x5E01;&#x4E3A;&#x4F8B;&#x8BB2;&#x89E3;&#xFF0C;&#x5176;&#x5B83;&#x7C7B;&#x578B;&#x5927;&#x540C;&#x5C0F;&#x5F02;&#x4E86;&#x3002;</p>
-<p>&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x8D44;&#x4EA7;&#xFF08;&#x672C;&#x4F8B;&#x4E2D;&#x4E3A;bitCNY&#xFF09;&#x53F3;&#x4FA7;&#x5BF9;&#x5E94;&#x7684;ADJUST&#x7BAD;&#x5934;<img src="https://steemitimages.com/DQmSxF34FH6mhFEn3f4rFvLio2dhjUQ8XG3vJUUK9MXMTTS/image.png" alt="">&#xFF0C;&#x8C03;&#x51FA;&#x501F;&#x6B3E;&#x5BF9;&#x8BDD;&#x6846;&#xFF1A;<br><img src="https://steemitimages.com/DQmZTwVc5aV2Gro5inb7UUEbV2UM2b7cTgHTSZdFtEcS2B5/image.png" alt=""></p>
-<p>&#x8F93;&#x5165;&#x4F60;&#x8981;<strong>*<code>&#x501F;&#x5165;&#x91D1;&#x989D;</code></strong>&#x4EE5;&#x53CA;<strong><em><code>&#x4FDD;&#x8BC1;&#x91D1;&#x6570;&#x76EE;</code></em></strong><br><img src="https://steemitimages.com/DQmQpy24H5EseFzKv8vLNVfYtwj6Rcb21m2Piiaa8LTVMaL/image.png" alt=""></p>
-<p>&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x4E00;&#x4E0B;<strong><em><code>&#x5582;&#x4EF7;</code></em></strong>&#x548C;<strong><em><code>&#x5F3A;&#x5E73;&#x5904;&#x53D1;&#x4EF7;</code></em></strong>&#xFF0C;&#x4E00;&#x65E6;&#x5582;&#x4EF7;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;&#x5F3A;&#x5E73;&#x89E6;&#x53D1;&#x4EF7;&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x5F3A;&#x5236;&#x5E73;&#x4ED3;&#xFF0C;&#x597D;&#x50CF;&#x5C31;&#x662F;&#x4ED6;&#x4EEC;&#x8BF4;&#x7684;<strong><em>&#x7206;&#x4ED3;</em></strong>&#x3002;&#x4F60;&#x62B5;&#x62BC;&#x7684;BTS&#x4FDD;&#x8BC1;&#x91D1;&#x5C31;&#x4F1A;&#x88AB;&#x4F4E;&#x4EF7;&#x5356;&#x6389;&#x7528;&#x4E8E;&#x507F;&#x8FD8;&#x4F60;&#x6B20;&#x7684;CNY&#x503A;&#x52A1;&#x3002;&#x5177;&#x4F53;&#x6D41;&#x7A0B;&#x5565;&#x7684;&#x6211;&#x8FD8;&#x4E0D;&#x662F;&#x5F88;&#x4E86;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x603B;&#x5F52;&#x4E0D;&#x662F;&#x597D;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x5566;&#x3002;</p>
-<p>&#x70B9;&#x51FB;<strong><em><code>&#x8C03;&#x6574;&#x5934;&#x5BF8;</code></em></strong>&#x6309;&#x94AE;&#xFF0C;&#x5E76;&#x6309;&#x63D0;&#x793A;&#x8F93;&#x5165;&#x5BC6;&#x7801;&#x5E76;&#x786E;&#x8BA4;&#x4EA4;&#x6613;<br><img src="https://steemitimages.com/DQmWw21x5pvWBnbw5RG5CqQnxgxLQA2vcT6wcakitXwiuEj/image.png" alt=""><br>&#x4E00;&#x4F46;&#x5E7F;&#x64AD;&#x6210;&#x529F;&#xFF0C;&#x501F;&#x6B3E;&#x5C31;&#x4F1A;&#x5230;&#x51FA;&#x73B0;&#x5728;&#x8D26;&#x6237;&#x7684;<strong><em><code>bitCNY</code></em></strong>&#x8D44;&#x4EA7;&#x4E0B;</p>
-<h1 id="&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#x501F;&#x6B3E;-amp-&#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;"><a href="#&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#x501F;&#x6B3E;-amp-&#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;" class="headerlink" title="&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#x501F;&#x6B3E; &amp; &#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;"></a>&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#x501F;&#x6B3E; &amp; &#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;</h1><p>&#x4FD7;&#x8BDD;&#x8BF4;&#xFF1A;<strong><em>&#x597D;&#x501F;&#x597D;&#x8FD8;&#xFF0C;&#x518D;&#x501F;&#x4E0D;&#x96BE;</em></strong>&#xFF0C;&#x989D;&#xFF0C;&#x597D;&#x50CF;&#x7528;&#x5728;&#x8FD9;&#x91CC;&#x4E0D;&#x592A;&#x9002;&#x5408;&#x3002;</p>
-<p>&#x603B;&#x4E4B;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x9700;&#x8981;&#x4EBA;&#x6C11;&#x5E01;&#x4E86;&#xFF08;<strong><em>&#x8FD8;&#x6709;&#x8FD9;&#x79CD;&#x53EF;&#x80FD;&#xFF1F;</em></strong>&#xFF09;&#x6216;&#x8005;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x7206;&#x4ED3;&#xFF0C;&#x603B;&#x662F;&#x8981;&#x77E5;&#x9053;&#x5982;&#x4F55;&#x8FD8;&#x7684;&#x3002;</p>
-<p>&#x5176;&#x5B9E;&#xFF0C;&#x8FD8;&#x6B3E;&#x4EE5;&#x53CA;&#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;&#x548C;&#x501F;&#x6B3E;&#x64CD;&#x4F5C;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;<strong><em>&#x5C06;&#x501F;&#x5165;&#x91D1;&#x989D;&#x8C03;&#x4F4E;&#x5C31;&#x662F;&#x8FD8;&#x6B3E;&#xFF0C;&#x8C03;&#x9AD8;&#x5C31;&#x662F;&#x501F;&#x6B3E;&#x3002;</em></strong>&#xFF0C;<strong><em>&#x4FDD;&#x8BC1;&#x91D1;&#x4F60;&#x8C03;&#x5230;&#x591A;&#x5C11;&#x5C31;&#x662F;&#x591A;&#x5C11;</em></strong>&#x3002;&#x662F;&#x4E0D;&#x662F;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x554A;&#xFF1F;</p>
-<h1 id="&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;"><a href="#&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;" class="headerlink" title="&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;"></a>&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;</h1><p>&#x524D;&#x6587;&#x8BF4;&#x8FC7;&#x4E86;&#xFF0C;<strong><em>&#x7206;&#x4ED3;&#x53EF;&#x4E0D;&#x662F;&#x4E2A;&#x597D;&#x73A9;&#x7684;&#x4E8B;&#x60C5;&#x3002;</em></strong> </p>
-<p>&#x56E0;&#x4E3A;&#x6211;&#x5BF9;&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x7684;&#x673A;&#x5236;&#x8FD8;&#x4E0D;&#x662F;&#x5F88;&#x4E86;&#x89E3;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4E2A;&#x4EBA;&#x8BA4;&#x4E3A;&#x505A;&#x5230;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x7206;&#x4ED3;&#x3002;</p>
-<ul>
-<li><p><strong><em>&#x8C03;&#x9AD8;<code>&#x4FDD;&#x8BC1;&#x91D1;&#x6BD4;&#x4F8B;</code></em></strong><br>&#x4FDD;&#x8BC1;&#x91D1;&#x6BD4;&#x4F8B;&#x8D8A;&#x9AD8;&#xFF0C;&#x540C;&#x6837;&#x7684;BTS&#x8D44;&#x4EA7;&#x4F60;&#x80FD;&#x501F;&#x51FA;&#x7684;&#x4EBA;&#x6C11;&#x5E01;&#x8D44;&#x4EA7;&#x8D8A;&#x5C11;&#xFF0C;&#x7206;&#x4ED3;&#x7684;&#x98CE;&#x9669;&#x4E5F;&#x5C31;&#x8D8A;&#x4F4E;&#x3002;</p>
-</li>
-<li><p>&#x5173;&#x6CE8;<strong><em><code>&#x5582;&#x4EF7;</code></em></strong>&#x4E0E;<strong><em><code>&#x5F3A;&#x5E73;&#x89E6;&#x53D1;&#x4EF7;</code></em></strong><br>&#x5F53;<strong><em><code>&#x5582;&#x4EF7;</code></em></strong>&#x4E0E;<strong><em><code>&#x5F3A;&#x5E73;&#x89E6;&#x53D1;&#x4EF7;</code></em></strong>&#x76F8;&#x63A5;&#x8FD1;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8D76;&#x7D27;&#x8FD8;&#x6B3E;&#x6216;&#x8005;&#x589E;&#x52A0;&#x4FDD;&#x8BC1;&#x91D1;&#x3002;</p>
-</li>
-<li><p>&#x5982;&#x65E0;&#x5FC5;&#x8981;&#xFF0C;&#x5C31;&#x4E0D;&#x8981;&#x501F;&#x6B3E;&#x4E86;<br>&#x5982;&#x679C;&#x4F60;&#x624B;&#x5934;&#x73B0;&#x91D1;&#x8DB3;&#x591F;&#x5BBD;&#x88D5;&#xFF0C;&#x5E76;&#x4E14;&#x501F;&#x51FA;&#x6765;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x548B;&#x7528;&#x548B;&#x73A9;&#xFF0C;&#x90A3;&#x4E48;&#x8FD8;&#x662F;&#x4E0D;&#x8981;&#x501F;&#x6B3E;&#x4E86;&#xFF0C;<del>&#x6CA1;&#x6709;&#x4E70;&#x5356;&#x5C31;&#x6CA1;&#x6709;&#x4F24;&#x5BB3;</del>&#x6CA1;&#x6709;&#x501F;&#x6B3E;&#x5C31;&#x4E0D;&#x4F1A;&#x7206;&#x4ED3;&#x4E86;&#x3002;</p>
-</li>
-</ul>
-<h1 id="&#x603B;&#x7ED3;"><a href="#&#x603B;&#x7ED3;" class="headerlink" title="&#x603B;&#x7ED3;"></a>&#x603B;&#x7ED3;</h1><p>&#x770B;&#x7740;&#x81EA;&#x5DF1;&#x8D26;&#x6237;&#x7684;&#x4F59;&#x989D;&#xFF0C;&#x6709;&#x4E9B;&#x5FC3;&#x9178;&#xFF0C;&#x5C31;&#x7B97;&#x80FD;&#x90FD;&#x501F;&#x51FA;&#x6765;&#x4E5F;&#x5E72;&#x4E0D;&#x4E86;&#x4EC0;&#x4E48;&#x5927;&#x4E8B;&#x60C5;&#x554A;&#x3002;&#x1F62D;</p>
-<p>&#x4F46;&#x662F;&#x4F5C;&#x4E3A;&#x4E00;&#x540D;&#x5408;&#x683C;&#x7684;&#x73A9;&#x5BB6;&#xFF0C;&#x603B;&#x5F52;&#x662F;&#x8981;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x90FD;&#x4E0D;&#x597D;&#x610F;&#x601D;&#x548C;&#x4EBA;&#x5BB6;&#x8BF4;&#x4E5F;&#x73A9;&#x6BD4;&#x7279;&#x80A1;&#x5462;&#x3002;</p>
-<p><strong><em>&#x4EE5;&#x4E0A;&#x64CD;&#x4F5C;&#x548C;&#x7ED3;&#x8BBA;&#x4EC5;&#x4EC5;&#x4E3A;&#x4E2A;&#x4EBA;&#x5B66;&#x4E60;&#x5FC3;&#x5F97;&#xFF0C;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;&#xFF0C;&#x5982;&#x56E0;&#x91C7;&#x7EB3;&#x6211;&#x7684;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x5EFA;&#x8BAE;&#x5BFC;&#x81F4;&#x635F;&#x5931;&#xFF0C;&#x672C;&#x4EBA;&#x6982;&#x4E0D;&#x8D1F;&#x8D23;&#x3002;</em></strong>&#xFF0C;&#x522B;&#x4E22;&#x897F;&#x7EA2;&#x67FF;&#x548C;&#x9E21;&#x86CB;&#x7ED9;&#x6211;&#x554A;&#xFF0C;&#x6211;&#x95EA;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/bts" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x62B5;&#x62BC;BTS&#x501F;&#x51FA;&#x514D;&#x606F;&#x4EBA;&#x6C11;&#x5E01;&#xFF1F;&#xFF08;&#x5982;&#x4F55;&#x5F52;&#x8FD8;&#xFF0C;&#x5982;&#x4F55;&#x8C03;&#x6574;&#x4FDD;&#x8BC1;&#x91D1;&#xFF0C;&#x5982;&#x4F55;&#x907F;&#x514D;&#x7206;&#x4ED3;&#xFF1F;&#xFF09;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/263/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/263/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/265/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/265/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -866,7 +897,7 @@
     
     
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -909,7 +940,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
 
 
 
