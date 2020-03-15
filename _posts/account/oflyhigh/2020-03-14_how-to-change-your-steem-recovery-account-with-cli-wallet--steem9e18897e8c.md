@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-03-14 13:31:36
 categories:
-- cn
+- wallet
 tags:
-- cn
 - wallet
 - phishing
 - accountrecovery
@@ -24,7 +23,6 @@ widgets:
         type: toc
         position: right
 ---
-
 
 
 Steem Recovery Account （账户恢复账户）顾名思义，就是当你的账户被盗时，用来恢复你账户的账户（有点拗口啊），一般来讲如果你是通过https://steemit.com注册话，这个recovery_account就是@steem。
@@ -64,13 +62,16 @@ Steem Recovery Account （账户恢复账户）顾名思义，就是当你的账
 
 好了，就介绍到这里，有了cli_wallet，是不是觉得做什么都变得非常简单了啊？
 
+# 相关链接
+
+* [测试使用STEEM命令行钱包（Steem CLI wallet）：cli_wallet](https://steemit.com/cn/@oflyhigh/steemsteem-cli-walletcli-walletfa5deda8b2)
+
 ----
 <center><strong>Vote For Me As Witness</strong>
 https://steemit.com/~witnesses type in **`oflyhigh`** and click ***`VOTE`***
 [![](https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png)](https://steemit.com/~witnesses)
 [Vote @oflyhigh via Steemconnect](https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&approve=1)
 <strong>Thank you!</strong></center>
-
 
 - - -
 
