@@ -230,6 +230,95 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/data-structures-and-algorithms-series-majority-number-or-acm-o-n/" class="image is-7by1">
+            <img class="thumbnail" src="https://gateway.ipfs.io/ipfs/QmdnBXWWyeBTrqQW2i6KFc9TfTaKQAUNwtjPBDtkkkREm3" alt="Data Structures &amp; Algorithms Series - Majority Number | ACM 解题报告 - O(n)找多数算法">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-02T19:14:51.000Z">2018-04-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1171 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/data-structures-and-algorithms-series-majority-number-or-acm-o-n/">Data Structures &amp; Algorithms Series - Majority Number | ACM 解题报告 - O(n)找多数算法</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://gateway.ipfs.io/ipfs/QmdnBXWWyeBTrqQW2i6KFc9TfTaKQAUNwtjPBDtkkkREm3" alt="image.png"></p>
+<blockquote>
+<p>Given an array of integers, the majority number is the number that occurs more than half of the size of the array. Find it in O(n) time and O(1) space complexity.</p>
+</blockquote>
+<p>A simple example: Given [1, 1, 1, 1, 2, 2, 2], return 1 because the number 1 has appeared 4 times which is bigger than half size i.e. 3.5 times.</p>
+<p>The very straightforward approach will be using a <a href="https://helloacm.com/coding-exercise-cjava-leetcode-online-judge-two-sum-hashmap/" target="_blank" rel="noopener">hashmap</a> to record the number of occurrences for each number, and return the majority once its counter exceeds half size.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    /*</span><br><span class="line">     * @param nums: a list of integers</span><br><span class="line">     * @return: find a  majority number</span><br><span class="line">     */</span><br><span class="line">    int majorityNumber(vector&lt;int&gt; &amp;nums) {</span><br><span class="line">        unordered_map&lt;int, int&gt; counter;</span><br><span class="line">        int half = nums.size() / 2;</span><br><span class="line">        for (auto n: nums) {</span><br><span class="line">            if (counter.count(n) == 0) {</span><br><span class="line">                counter[n] = 0;</span><br><span class="line">            } </span><br><span class="line">            counter[n] ++;</span><br><span class="line">            if (counter[n] &gt;= half) {</span><br><span class="line">                return n;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return -1; // not found</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>The <code>unordered_map</code> has complexity of O(1) in inserting and querying (worst case O(n)) and the above algorithm O(n) time complexity but O(n) space complexity.</p>
+<h2 id="Boyer&#x2013;Moore-majority-vote-algorithm"><a href="#Boyer&#x2013;Moore-majority-vote-algorithm" class="headerlink" title="Boyer&#x2013;Moore majority vote algorithm"></a>Boyer&#x2013;Moore majority vote algorithm</h2><p>The <a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm" target="_blank" rel="noopener">Boyer&#x2013;Moore majority vote algorithm</a> is a O(N) one-pass algorithm that only needs O(1) constant space.</p>
+<p>It works by only recording the counter for the current majority candidate. If there exists a majority, the algorithm guarantees to find it, otherwise it will output one of the sequence numbers as it finds it. A second pass is required to check if there is a majority. Let&#x2019;s take [1 1 1 2 2 3 1] for example, <code>m</code> is the current majority candidate and <code>c</code> is the counter. When <code>c</code> is zero in the next round, the <code>m</code> is set to the current number in the iteration.</p>
+<p>When the current number is the same as &#x2018;candidate&#x2019;, we increment the counter (vote) otherwise, we decrement the counter (de-vote).</p>
+<p>[<em>1 1 1 2 2 3 1]   m = 1,  c = 1<br>[1 </em>1 1 2 2 3 1]   m = 1,  c = 2<br>[1 1 <em>1 2 2 3 1]   m = 1,  c = 3<br>[1 1 1 </em>2 2 3 1]   m = 1,  c = 2<br>[1 1 1 2 <em>2 3 1]   m = 1,  c = 1<br>[1 1 1 2 2 </em>3 1]   m = 1,  c = 0<br>[1 1 1 2 2 3 *1]   m = 1,  c = 1</p>
+<p>The second pass we know that <code>m=1</code> is the majority.  The entire process is illustrated in the <a href="https://helloacm.com/data-structures-algorithms-series-majority-number-boyer-moore-majority-vote-algorithm/" target="_blank" rel="noopener">following C++ code</a>.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    /*</span><br><span class="line">     * @param nums: a list of integers</span><br><span class="line">     * @return: find a  majority number</span><br><span class="line">     */</span><br><span class="line">    int majorityNumber(vector&lt;int&gt; &amp;nums) {</span><br><span class="line">        int c = 0, m = nums[0];</span><br><span class="line">        for (int i = 0; i &lt; nums.size(); ++ i) {</span><br><span class="line">            if (c == 0) {</span><br><span class="line">                m = nums[i];</span><br><span class="line">                c ++;</span><br><span class="line">            } else if (m == nums[i]) {</span><br><span class="line">                c ++;</span><br><span class="line">            } else {</span><br><span class="line">                c --;   </span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        // check if there is a majority</span><br><span class="line">        int counter = 0;</span><br><span class="line">        for (int i : nums) {</span><br><span class="line">            if (i == m) counter++;</span><br><span class="line">        }</span><br><span class="line">        if (counter &lt; (nums.size() + 1) / 2) return -1;        </span><br><span class="line">        return m;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Support-me-and-my-work-as-a-witness-by"><a href="#Support-me-and-my-work-as-a-witness-by" class="headerlink" title="Support me and my work as a witness by"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
+</ol>
+<hr>
+<blockquote>
+<p>&#x7ED9;&#x5B9A;&#x4E00;&#x4E9B;&#x6574;&#x6570;&#xFF0C;&#x8BF7;&#x627E;&#x51FA;&#x5B83;&#x4EEC;&#x4E2D;&#x7684;&#x7684;&#x201C;&#x591A;&#x6570;&#x201D;&#x3002; &#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x4E86;&#x4E00;&#x534A;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x5C31;&#x662F;&#x591A;&#x6570;&#x3002;&#x5047;&#x5B9A;&#x8FD9;&#x6837;&#x7684;&#x6570;&#x662F;&#x5B58;&#x5728;&#x7684;&#x3002;</p>
+</blockquote>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x7ED9;&#x5B9A; [1, 1, 1, 1, 2, 2, 2], &#x60A8;&#x7684;&#x7B97;&#x6CD5;&#x5C06;&#x7ED9;&#x51FA; &#x7B54;&#x6848; 1 &#x56E0;&#x4E3A;1&#x51FA;&#x73B0;&#x4E86;4&#x6B21;&#x8D85;&#x8FC7;&#x4E86;&#x4E00;&#x534A;&#xFF08;3.5&#x6B21;&#xFF09;</p>
+<p>&#x6700;&#x76F4;&#x63A5;&#x7684;&#x7B97;&#x6CD5;&#x5C31;&#x662F;&#x901A;&#x8FC7; &#x5B57;&#x5178;&#xFF08;&#x6216;&#x8005;<a href="https://justyy.com/archives/4992" target="_blank" rel="noopener">HASHMAP</a>&#xFF09;&#x8BB0;&#x5F55;&#x6BCF;&#x4E2A;&#x51FA;&#x73B0;&#x6570;&#x5B57;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x53EA;&#x8981;&#x5224;&#x65AD;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x51FA;&#x73B0;&#x8D85;&#x8FC7;&#x4E00;&#x534A;&#x4E86;&#xFF0C;&#x5C31;&#x8FD4;&#x56DE;&#x5B83;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    /*</span><br><span class="line">     * @param nums: a list of integers</span><br><span class="line">     * @return: find a  majority number</span><br><span class="line">     */</span><br><span class="line">    int majorityNumber(vector&lt;int&gt; &amp;nums) {</span><br><span class="line">        unordered_map&lt;int, int&gt; counter;</span><br><span class="line">        int half = nums.size() / 2;</span><br><span class="line">        for (auto n: nums) {</span><br><span class="line">            if (counter.count(n) == 0) {</span><br><span class="line">                counter[n] = 0;</span><br><span class="line">            } </span><br><span class="line">            counter[n] ++;</span><br><span class="line">            if (counter[n] &gt;= half) {</span><br><span class="line">                return n;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return -1; // &#x6CA1;&#x6709;&#x627E;&#x5230;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>C++&#x4E2D;&#x7684;<code>unordered_map</code>&#x63D2;&#x5165;&#x590D;&#x6742;&#x5EA6;&#x662F;&#x5E38;&#x6570; O(1)&#xFF0C;&#x5E73;&#x5747;&#x60C5;&#x51B5;&#x4E0B;&#x67E5;&#x627E;&#x4E5F;&#x662F;O(1) - &#x6CE8;&#x610F;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E0B;&#x662F; O(n). &#x4E0A;&#x9762;&#x7684;&#x7B97;&#x6CD5; &#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; O(n) &#x4F46;&#x662F;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; O(n) - &#x56E0;&#x4E3A;&#x7528;&#x4E86; <code>unordered_map</code></p>
+<h2 id="Boyer&#x2013;Moore-&#x591A;&#x6570;&#x6295;&#x7968;&#x7B97;&#x6CD5;"><a href="#Boyer&#x2013;Moore-&#x591A;&#x6570;&#x6295;&#x7968;&#x7B97;&#x6CD5;" class="headerlink" title="Boyer&#x2013;Moore &#x591A;&#x6570;&#x6295;&#x7968;&#x7B97;&#x6CD5;"></a>Boyer&#x2013;Moore &#x591A;&#x6570;&#x6295;&#x7968;&#x7B97;&#x6CD5;</h2><p><a href="https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm" target="_blank" rel="noopener">Boyer&#x2013;Moore &#x591A;&#x6570;&#x6295;&#x7968;&#x7B97;&#x6CD5;</a> &#x53EA;&#x9700;&#x8981;&#x5E38;&#x6570;O(1) &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x51B5;&#x4E14;&#xFF0C;&#x5047;&#x5B9A;&#x591A;&#x6570;&#x5B58;&#x5728;&#x7684;&#x8BDD;&#xFF0C;&#x4E5F;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x904D;&#x5FAA;&#x73AF; O(n) &#x5373;&#x53EF;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x539F;&#x7406;&#x5C31;&#x662F;&#xFF1A;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x6700;&#x591A;&#x6570;&#x7684;&#x60C5;&#x51B5;&#x5373;&#x53EF;&#x3002;&#x5982;&#x679C;&#x5B58;&#x5728;&#x591A;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x7B97;&#x6CD5;&#x4E00;&#x5B9A;&#x4F1A;&#x627E;&#x5230;&#x5B83;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x8BE5;&#x7B97;&#x6CD5;&#x8FD4;&#x56DE;&#x987A;&#x5E8F;&#x6570;&#x5B57;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6570;&#x3002;&#x5F80;&#x5F80;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7B2C;&#x4E8C;&#x6B21;&#x5FAA;&#x73AF;&#x7528;&#x4E8E;&#x786E;&#x8BA4;&#x6709;&#x4E00;&#x4E2A;&#x591A;&#x6570;&#x3002;</p>
+<p>&#x62FF;&#x8F93;&#x5165; [1 1 1 2 2 3 1]  &#x4E3A;&#x4F8B;&#xFF0C; <code>m</code> &#x8BB0;&#x5F55;&#x7740;&#x5F53;&#x524D;&#x7684;&#x6700;&#x591A;&#x6570;&#xFF0C; <code>c</code> &#x662F;&#x8BA1;&#x6570;&#x3002;&#x5F53; <code>c</code> &#x53D8;&#x6210;0&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5219;&#x4E0B;&#x4E00;&#x8F6E;&#x5C31;&#x5F97;&#x66F4;&#x65B0;<code>m</code> &#x4E3A;&#x4E0B;&#x4E00;&#x8F6E;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+<p>&#x5F53;&#x8FD9;&#x4E00;&#x8F6E;&#x7684;&#x6570;&#x5B57;&#x548C; <code>m</code> &#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x589E;&#x52A0;&#x6295;&#x7968;&#x6570; <code>c</code> &#x5426;&#x5219;&#x5C31;&#x628A; <code>c</code> &#x51CF;&#x6389;&#x4E00;&#x3002;</p>
+<p>[<em>1 1 1 2 2 3 1]   m = 1,  c = 1<br>[1 </em>1 1 2 2 3 1]   m = 1,  c = 2<br>[1 1 <em>1 2 2 3 1]   m = 1,  c = 3<br>[1 1 1 </em>2 2 3 1]   m = 1,  c = 2<br>[1 1 1 2 <em>2 3 1]   m = 1,  c = 1<br>[1 1 1 2 2 </em>3 1]   m = 1,  c = 0<br>[1 1 1 2 2 3 *1]   m = 1,  c = 1</p>
+<p>&#x7B2C;&#x4E00;&#x6B21;&#x5FAA;&#x73AF;&#xFF0C;&#x6211;&#x4EEC;&#x77E5;&#x9053; <code>m=1</code> &#x8D85;&#x8FC7;&#x4E86;&#x4E00;&#x534A;&#x3002; &#x6574;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B; <a href="https://justyy.com/archives/6178" target="_blank" rel="noopener">C++ &#x4EE3;&#x7801;&#x6765;&#x6F14;&#x793A;</a>&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    /*</span><br><span class="line">     * @param nums: a list of integers</span><br><span class="line">     * @return: find a  majority number</span><br><span class="line">     */</span><br><span class="line">    int majorityNumber(vector&lt;int&gt; &amp;nums) {</span><br><span class="line">        int c = 0, m = nums[0];</span><br><span class="line">        for (int i = 0; i &lt; nums.size(); ++ i) {</span><br><span class="line">            if (c == 0) {</span><br><span class="line">                m = nums[i];</span><br><span class="line">                c ++;</span><br><span class="line">            } else if (m == nums[i]) {</span><br><span class="line">                c ++;</span><br><span class="line">            } else {</span><br><span class="line">                c --;   </span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        // check if there is a majority</span><br><span class="line">        int counter = 0;</span><br><span class="line">        for (int i : nums) {</span><br><span class="line">            if (i == m) counter++;</span><br><span class="line">        }</span><br><span class="line">        if (counter &lt; (nums.size() + 1) / 2) return -1;        </span><br><span class="line">        return m;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
+</ol>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/data-structures-and-algorithms-series-majority-number-or-acm-o-n" target="_blank" rel="noopener">Data Structures &amp; Algorithms Series - Majority Number | ACM &#x89E3;&#x9898;&#x62A5;&#x544A; - O(n)&#x627E;&#x591A;&#x6570;&#x7B97;&#x6CD5;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-04-02/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-04-02&amp;cn34" alt="【第 贰贰零 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-04-02)">
         </a>
@@ -1379,85 +1468,6 @@
 </ul>
 <h2 id="Support-me-and-my-work-as-a-witness-by-voting-for-me-here"><a href="#Support-me-and-my-work-as-a-witness-by-voting-for-me-here" class="headerlink" title="Support me and my work as a witness by voting for me here!"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by voting for me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here!</a></h2><hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-04-01" target="_blank" rel="noopener">&#x3010;&#x7B2C; &#x8D30;&#x58F9;&#x7396; &#x671F;&#x3011;Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;CN&#x533A;&#x8C01;&#x5728;POWER DOWN&#xFF1F;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x3011;(2018-04-01)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/jobtools-update-adding-pagination-and-show-job-details/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.utopian.io/posts/56fbc8741ad95079978a44e7608129bf8d71image.png" alt="JobTools Update: Adding Pagination and Show Job Details">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-03-31T17:05:06.000Z">2018-03-31</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 317 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/jobtools-update-adding-pagination-and-show-job-details/">JobTools Update: Adding Pagination and Show Job Details</a>
-            
-        </h1>
-        <div class="content">
-            <h1 id="Job-Seeking-using-JobTools"><a href="#Job-Seeking-using-JobTools" class="headerlink" title="Job Seeking using JobTools"></a>Job Seeking using JobTools</h1><h3 id="What-is-the-project-about"><a href="#What-is-the-project-about" class="headerlink" title="What is the project about?"></a>What is the project about?</h3><p><a href="https://helloacm.com/jobtools-update-adding-pagination-and-show-job-details/" target="_blank" rel="noopener">JobTools</a> is the first Job Seeking Chrome Extension that is based on <a href="https://helloacm.com/php-job-searching-using-zip-recruiter-api/" target="_blank" rel="noopener">ZipRecruiter API</a>.  I have previously implemented a PHP Wrapper API for <a href="https://github.com/DoctorLai/ZipRecruiter" target="_blank" rel="noopener">job searching</a> and it is integrated in the <a href="https://helloacm.com/software-engineering-jobs/" target="_blank" rel="noopener">online tool</a> but I think  Chrome Extension is a perfect application entry point that users can easily access.</p>
-<h2 id="Previous-Contributions"><a href="#Previous-Contributions" class="headerlink" title="Previous Contributions:"></a>Previous Contributions:</h2><ul>
-<li><a href="https://helloacm.com/the-first-job-seeking-chrome-extension-based-on-ziprecruiter-api/" target="_blank" rel="noopener">JobTools v0.0.1</a>: The First Job Seeking Chrome Extension based on ZipRecruiter API</li>
-</ul>
-<h2 id="Version-0-0-2"><a href="#Version-0-0-2" class="headerlink" title="Version 0.0.2"></a>Version 0.0.2</h2><p><a href="https://github.com/DoctorLai/JobTools/commit/01ad148f712fcb4c5c60308648df7c2855cc6866" target="_blank" rel="noopener">This Commit</a> has the following changes:</p>
-<ol>
-<li>Adding Job Search Pagination</li>
-<li>Fixing table to show Job Details e.g. location, job title</li>
-</ol>
-<h3 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h3><p><img src="https://cdn.utopian.io/posts/56fbc8741ad95079978a44e7608129bf8d71image.png" alt="image.png"></p>
-<h3 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h3><p>Any applications that can be written in <a href="https://helloacm.com/the-weird-thing-about-javascript-part-i/" target="_blank" rel="noopener">Javascript</a> will eventually be re-written in Javascript. Chrome Extension is an ideal place to host your Javascript applications.</p>
-<h3 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h3><ul>
-<li>FilterJobsBySalaryRange</li>
-<li>FilterJobsByIndustry</li>
-<li>Integrated with Google Maps</li>
-<li>Add Jobs to Favorite </li>
-</ul>
-<h3 id="How-to-contribute"><a href="#How-to-contribute" class="headerlink" title="How to contribute?"></a>How to contribute?</h3><p>Github: <a href="https://github.com/DoctorLai/JobTools" target="_blank" rel="noopener">https://github.com/DoctorLai/JobTools</a></p>
-<ol>
-<li>Fork it!</li>
-<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
-<li>Commit your changes: <code>git commit -am &apos;Add some feature&apos;</code></li>
-<li>Push to the branch: <code>git push origin my-new-feature</code></li>
-<li>Submit a pull request. </li>
-</ol>
-<h2 id="Find-Your-Perfect-Job-by-using-JobTools"><a href="#Find-Your-Perfect-Job-by-using-JobTools" class="headerlink" title="Find Your Perfect Job by using JobTools:"></a>Find Your Perfect Job by using JobTools:</h2><p>Install via Google Webstore: <a href="https://chrome.google.com/webstore/detail/job-tools/ghclpimmbjepihhlnklkiemncamklkii" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/job-tools/ghclpimmbjepihhlnklkiemncamklkii</a></p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/jobtools-update-adding-pagination-and-show-job-details" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/jobtools-update-adding-pagination-and-show-job-details" target="_blank" rel="noopener">JobTools Update: Adding Pagination and Show Job Details</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
