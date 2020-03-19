@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>[SPS] SMT하드포크 관련 사전 테스트, 코드리뷰, 문서화 작업 관련 제안서 소개 - 디온</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@donekim/css/style.css">
+
+<link rel="stylesheet" href="/@donekim/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@donekim/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@donekim/">Home</a>
+                
+                <a class="navbar-item" href="/@donekim/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@donekim/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@donekim/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@donekim/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-&#xAC04;&#xB2E8;-&#xC694;&#xC57D;-TL-DR">
+        <span class="has-mr-6">1</span>
+        <span>#1. &#xAC04;&#xB2E8; &#xC694;&#xC57D;(TL;DR)</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-&#xC81C;&#xC548;&#xC11C;-&#xB0B4;&#xC6A9;">
+        <span class="has-mr-6">2</span>
+        <span>#2. &#xC81C;&#xC548;&#xC11C; &#xB0B4;&#xC6A9;</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#1-&#xD14C;&#xC2A4;&#xD305;">
+        <span class="has-mr-6">2.1</span>
+        <span>(1) &#xD14C;&#xC2A4;&#xD305;</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-&#xCF54;&#xB4DC;-&#xB9AC;&#xBDF0;">
+        <span class="has-mr-6">2.2</span>
+        <span>(2) &#xCF54;&#xB4DC; &#xB9AC;&#xBDF0;</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-&#xBB38;&#xC11C;&#xD654;-&#xC791;&#xC5C5;">
+        <span class="has-mr-6">2.3</span>
+        <span>(2) &#xBB38;&#xC11C;&#xD654; &#xC791;&#xC5C5;</span>
+        </a></li></ul></li><li>
+        <a class="is-flex" href="#3-&#xAC1C;&#xC778;&#xC801;&#xC778;-&#xC0DD;&#xAC01;">
+        <span class="has-mr-6">3</span>
+        <span>#3. &#xAC1C;&#xC778;&#xC801;&#xC778; &#xC0DD;&#xAC01;</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-&#xCC38;&#xC5EC;&#xBC29;&#xBC95;">
+        <span class="has-mr-6">4</span>
+        <span>#4. &#xCC38;&#xC5EC;&#xBC29;&#xBC95;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@donekim/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmYEeyL97fNy5PeyRdHTXRhseEH63yiB2PzLyzBDEX7Jkh/thumbnail.png" alt="[SPS] SMT하드포크 관련 사전 테스트, 코드리뷰, 문서화 작업 관련 제안서 소개">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-19T14:41:54.000Z">2019-10-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@donekim/categories/sct/">sct</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1219 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                [SPS] SMT하드포크 관련 사전 테스트, 코드리뷰, 문서화 작업 관련 제안서 소개
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmYEeyL97fNy5PeyRdHTXRhseEH63yiB2PzLyzBDEX7Jkh/thumbnail.png" alt="thumbnail.png"></p>
+<p>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;, &#xB514;&#xC628;(@donekim)&#xC785;&#xB2C8;&#xB2E4;. &#xC2A4;&#xD300;&#xD504;&#xB808;&#xC2A4;(Steempress)&#xC758; &#xACF5;&#xB3D9;&#xCC3D;&#xC5C5;&#xC790;&#xC778; @howo&#xAC00; <strong>&#xC2A4;&#xD300; &#xC791;&#xC5C5;&#xC790; &#xC81C;&#xC548;&#xC81C;&#xB3C4;(SPS)&#xC5D0; SMT &#xD558;&#xB4DC;&#xD3EC;&#xD06C;&#xC640; &#xAD00;&#xB828;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; &#xC81C;&#xC548;&#xC11C;</strong>&#xB97C; &#xC62C;&#xB838;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xAC1C;&#xC778;&#xC801;&#xC73C;&#xB85C; &#xAF64;&#xB098; &#xC911;&#xC694;&#xD558;&#xBA74;&#xC11C;&#xB3C4; &#xD544;&#xC694;&#xD55C; &#xC791;&#xC5C5; &#xC911; &#xD558;&#xB098;&#xB77C;&#xB3C4; &#xC0DD;&#xAC01;&#xD558;&#xACE0; &#xC788;&#xB294; &#xAD00;&#xACC4;&#xB85C;, &#xD574;&#xB2F9; &#xC81C;&#xC548;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xAC04;&#xB7B5;&#xD558;&#xAC8C; &#xC18C;&#xAC1C;&#xB97C; &#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xC6D0;&#xBB38; &#xB9C1;&#xD06C; : <a href="https://steempeak.com/@howo/testing-reviewing-and-documenting-the-smt-hard-fork" target="_blank" rel="noopener">Testing reviewing and documenting the SMT hard fork</a></li>
+</ul>
+<h2 id="1-&#xAC04;&#xB2E8;-&#xC694;&#xC57D;-TL-DR"><a href="#1-&#xAC04;&#xB2E8;-&#xC694;&#xC57D;-TL-DR" class="headerlink" title="#1. &#xAC04;&#xB2E8; &#xC694;&#xC57D;(TL;DR)"></a>#1. &#xAC04;&#xB2E8; &#xC694;&#xC57D;(TL;DR)</h2><hr>
+<p>&#xD574;&#xB2F9; &#xC81C;&#xC548;&#xC11C;&#xB294; 5&#xC77C; &#xB4A4;&#xBD80;&#xD130; &#xC2DC;&#xC791;&#xC774; &#xB420; &#xC608;&#xC815;&#xC774;&#xBA70;, SMT &#xD558;&#xB4DC;&#xD3EC;&#xD06C;&#xAC00; &#xD070; &#xBB38;&#xC81C;&#xC5C6;&#xC774; &#xC9C4;&#xD589;&#xB420; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC0AC;&#xC804;&#xC5D0; &#xD14C;&#xC2A4;&#xD2B8;, &#xCF54;&#xB4DC; &#xB9AC;&#xBDF0;, &#xBB38;&#xC11C;&#xD654;(documenting) &#xB4F1;&#xC744; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xAC83;&#xC5D0; &#xB300;&#xD55C; &#xC81C;&#xC548;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xC791;&#xC5C5; &#xAE30;&#xAC04; : 2019&#xB144; 10&#xC6D4; 24&#xC77C; ~ 2020&#xB144; 1&#xC6D4; 24&#xC77C; (3&#xAC1C;&#xC6D4;)</li>
+<li>&#xD380;&#xB529; &#xAE08;&#xC561;: 180 SBD / &#xC77C;</li>
+</ul>
+<h2 id="2-&#xC81C;&#xC548;&#xC11C;-&#xB0B4;&#xC6A9;"><a href="#2-&#xC81C;&#xC548;&#xC11C;-&#xB0B4;&#xC6A9;" class="headerlink" title="#2. &#xC81C;&#xC548;&#xC11C; &#xB0B4;&#xC6A9;"></a>#2. &#xC81C;&#xC548;&#xC11C; &#xB0B4;&#xC6A9;</h2><hr>
+<p><img src="https://cdn.steemitimages.com/DQmSvMjCui7tjzxr6gdfCZrtXnwFpMS4SM7rXdF65nNdVEy/smt.jpg" alt="smt.jpg"></p>
+<p>&#xD604;&#xC7AC; SMTs &#xD14C;&#xC2A4;&#xD2B8;&#xB137;&#xC774; &#xCD9C;&#xC2DC;&#xB41C; &#xC0C1;&#xD0DC;&#xC774;&#xBA70; &#xAC00;&#xC7A5; &#xCD5C;&#xADFC;&#xC5D0; &#xC9C4;&#xD589;&#xB418;&#xC5C8;&#xB358; HF21&#xACFC; &#xAC19;&#xC774; &#xD558;&#xB4DC;&#xD3EC;&#xD06C; &#xC774;&#xD6C4; &#xC608;&#xC0C1;&#xCE58; &#xBABB;&#xD55C; &#xBB38;&#xC81C; &#xBC1C;&#xC0DD; &#xAC00;&#xB2A5;&#xC131;&#xC744; &#xCD5C;&#xC18C;&#xD654;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; &#xD14C;&#xC2A4;&#xD2B8;&#xB137; &#xC0C1;&#xD0DC;&#xC5D0;&#xC11C; SMT &#xC815;&#xC2DD; &#xB7F0;&#xCE6D; &#xC804;&#xC5D0; &#xD558;&#xB4DC;&#xD3EC;&#xD06C;&#xB97C; &#xC798; &#xC900;&#xBE44;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>@howo&#xAC00; &#xC81C;&#xC548;&#xC11C;&#xC5D0; &#xC81C;&#xC2DC;&#xD55C; &#xC791;&#xC5C5;&#xB4E4;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h4 id="1-&#xD14C;&#xC2A4;&#xD305;"><a href="#1-&#xD14C;&#xC2A4;&#xD305;" class="headerlink" title="(1) &#xD14C;&#xC2A4;&#xD305;"></a>(1) &#xD14C;&#xC2A4;&#xD305;</h4><p>&#xC774;&#xBBF8; &#xC2E4;&#xD589; &#xC911;&#xC778; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC00; &#xC788;&#xC9C0;&#xB9CC; &#xAC00;&#xB2A5;&#xD55C; &#xB9CE;&#xC740; SMT&#xBC0F; &#xAE30;&#xD0C0; &#xAD6C;&#xC131;&#xC694;&#xC18C;&#xB4E4;&#xC744; &#xD14C;&#xC2A4;&#xD2B8;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC790;&#xB3D9;&#xD654;&#xB41C; &#xD14C;&#xC2A4;&#xD2B8;&#xB97C; &#xC9C4;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. &#xBAA8;&#xB4E0; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xD558;&#xB098;&#xC529; &#xD14C;&#xC2A4;&#xD2B8;&#xD558;&#xACE0; &#xB204;&#xAD6C;&#xB4E0;&#xC9C0; &#xC2E4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB294; test suites&#xB97C; &#xC791;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8; &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xAC00; &#xCD5C;&#xC2E0; &#xC0C1;&#xD0DC;&#xC778;&#xC9C0;&#xB97C; &#xD14C;&#xC2A4;&#xD2B8;&#xD574;&#xC57C; &#xB418;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC0C8;&#xB85C;&#xC6B4; &#xC5D4;&#xB4DC;&#xD3EC;&#xC778;&#xD2B8;&#xB97C; &#xC2E4;&#xD589;&#xD560; &#xB54C; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xAC00; &#xC911;&#xB2E8;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xC9C0;&#xB3C4; &#xD14C;&#xC2A4;&#xD2B8;&#xD569;&#xB2C8;&#xB2E4;. </p>
+<p>&#xB610;&#xD55C; &#xAC00;&#xC7A5; &#xB9CE;&#xC774; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD14C;&#xC2A4;&#xD2B8;&#xD558;&#xACE0; &#xC7A6;&#xC740; &#xBC84;&#xADF8;&#xB97C; &#xC218;&#xC815;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD480; &#xB9AC;&#xD018;&#xC2A4;&#xD2B8;(pull request)&#xB97C; &#xC81C;&#xCD9C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h4 id="2-&#xCF54;&#xB4DC;-&#xB9AC;&#xBDF0;"><a href="#2-&#xCF54;&#xB4DC;-&#xB9AC;&#xBDF0;" class="headerlink" title="(2) &#xCF54;&#xB4DC; &#xB9AC;&#xBDF0;"></a>(2) &#xCF54;&#xB4DC; &#xB9AC;&#xBDF0;</h4><p>&#xCF54;&#xB4DC;&#xB97C; &#xAC80;&#xD1A0;&#xD558;&#xB294; &#xC0AC;&#xB78C;&#xC740; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xB294; &#xC0AC;&#xB78C;&#xACFC; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xC774;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;. &#xCF54;&#xB529; &#xC791;&#xC5C5;&#xC744; &#xD560; &#xB54C; &#xBE44;&#xC804;&#xC744; &#xD130;&#xB110;&#xB9C1;&#xD558;&#xB294; &#xACBD;&#xD5A5;&#xC774; &#xC788;&#xACE0; &#xCCB4;&#xC778; &#xC804;&#xCCB4;&#xC640; &#xCDA9;&#xB3CC;&#xC744; &#xC77C;&#xC73C;&#xD0AC; &#xC218; &#xC788;&#xB294; &#xAC00;&#xC7A5; &#xC911;&#xC694;&#xD55C; &#xBB38;&#xC81C;&#xB97C; &#xB193;&#xCE60; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<h4 id="2-&#xBB38;&#xC11C;&#xD654;-&#xC791;&#xC5C5;"><a href="#2-&#xBB38;&#xC11C;&#xD654;-&#xC791;&#xC5C5;" class="headerlink" title="(2) &#xBB38;&#xC11C;&#xD654; &#xC791;&#xC5C5;"></a>(2) &#xBB38;&#xC11C;&#xD654; &#xC791;&#xC5C5;</h4><p>&#xD14C;&#xC2A4;&#xD2B8;&#xC758; &#xAC00;&#xC7A5; &#xC911;&#xC694;&#xD55C; &#xBD80;&#xBD84;&#xC740; &#xBAA8;&#xB4E0; &#xC5D4;&#xB4DC;&#xD3EC;&#xC778;&#xD2B8;&#xB97C; &#xC9C1;&#xC811; &#xACBD;&#xD5D8;&#xD560; &#xC218; &#xC788;&#xB2E4;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xC124;&#xBA85;&#xC11C;&#xAC00; &#xC5C6;&#xC73C;&#xBA74; &#xB9CE;&#xC740; &#xAE30;&#xB2A5;&#xB4E4;&#xC774; &#xC0AC;&#xC6A9;&#xB418;&#xC9C0; &#xC54A;&#xAC70;&#xB098; &#xC0AC;&#xC6A9;&#xBC29;&#xBC95;&#xC744; &#xCC3E;&#xC744; &#xC218; &#xC5C6;&#xC5B4; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xB3C4; &#xD574;&#xB2F9; &#xAE30;&#xB2A5;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xBABB;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xBAA8;&#xB4E0; &#xAC1C;&#xBC1C;&#xC790;&#xB4E4;&#xC774; STEEM&#xC774;&#xB098; SMT&#xB97C; &#xCD5C;&#xB300;&#xD55C; &#xC27D;&#xAC8C; &#xAD6C;&#xCD95;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xBB38;&#xC11C;&#xD654; &#xC791;&#xC5C5;&#xC744; &#xD558;&#xB294; &#xAC83;&#xC740; SMT&#xC758; &#xC131;&#xACF5;&#xC744; &#xC704;&#xD574; &#xB9E4;&#xC6B0; &#xC911;&#xC694;&#xD55C; &#xC694;&#xC18C;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<h2 id="3-&#xAC1C;&#xC778;&#xC801;&#xC778;-&#xC0DD;&#xAC01;"><a href="#3-&#xAC1C;&#xC778;&#xC801;&#xC778;-&#xC0DD;&#xAC01;" class="headerlink" title="#3. &#xAC1C;&#xC778;&#xC801;&#xC778; &#xC0DD;&#xAC01;"></a>#3. &#xAC1C;&#xC778;&#xC801;&#xC778; &#xC0DD;&#xAC01;</h2><hr>
+<p>@howo&#xAC00; &#xADF8;&#xC758; &#xC81C;&#xC548;&#xC11C;&#xC5D0;&#xC11C; &#xC5B8;&#xAE09;&#xD558;&#xAE30;&#xB3C4; &#xD588;&#xC73C;&#xB098;, <strong>&#xD558;&#xB4DC;&#xD3EC;&#xD06C; &#xD14C;&#xC2A4;&#xD2B8;&#xB294; &#xC99D;&#xC778;(Witness)&#xB9CC;&#xC758; &#xC5ED;&#xD560;&#xC774;&#xB77C;&#xACE0; &#xB2E8;&#xC815;</strong>&#xC9D3;&#xACE0; &#xCEE4;&#xBBA4;&#xB2C8;&#xD2F0;&#xC5D0;&#xC11C; &#xB098;&#xBAB0;&#xB77C;&#xB77C; &#xD558;&#xACE0; &#xC788;&#xC744; &#xC218; &#xB9CC;&#xC740; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC0AC;&#xC2E4; &#xBAA8;&#xB4E0; &#xC99D;&#xC778;&#xB4E4;&#xC774; &#xAE30;&#xC220;&#xC801;&#xC778; &#xB2A5;&#xB825;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xAC70;&#xB098;&#xC2DC;&#xAC04;&#xC774; &#xB9CE;&#xC740; &#xAC83;&#xC740; &#xC544;&#xB2C8;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<p>SMT&#xAD00;&#xB828; &#xD558;&#xB4DC;&#xD3EC;&#xD06C;&#xAC00; &#xB2E4;&#xC74C; &#xD558;&#xB4DC;&#xD3EC;&#xD06C;&#xC778; HF23&#xC5D0; &#xBC18;&#xC601;&#xC774; &#xB420;&#xC9C0;&#xB294; &#xC544;&#xC9C1; &#xC815;&#xD655;&#xD788; &#xC54C; &#xC218; &#xC5C6;&#xC9C0;&#xB9CC;, &#xAE30;&#xC874;&#xC758; HF21 &#xC0AC;&#xD0DC;&#xCC98;&#xB7FC; &#xBAA8;&#xB4E0; &#xB178;&#xB4DC;&#xAC00; &#xB2E4;&#xC6B4;&#xB418;&#xC5B4; &#xBC84;&#xB9AC;&#xB294; &#xBD88;&#xC0C1;&#xC0AC;&#xB97C; &#xB9C9;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB77C;&#xB3C4; &#xADF8;&#xB9AC;&#xACE0; SMT&#xC758; &#xC131;&#xACF5;&#xC801;&#xC778; &#xB7F0;&#xCE6D;&#xC744; &#xC704;&#xD574;&#xC11C;&#xB77C;&#xB3C4; &#xC774;&#xBC88; &#xC81C;&#xC548;&#xC740; &#xAD49;&#xC7A5;&#xD788; &#xC911;&#xC694;&#xD558;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="4-&#xCC38;&#xC5EC;&#xBC29;&#xBC95;"><a href="#4-&#xCC38;&#xC5EC;&#xBC29;&#xBC95;" class="headerlink" title="#4. &#xCC38;&#xC5EC;&#xBC29;&#xBC95;"></a>#4. &#xCC38;&#xC5EC;&#xBC29;&#xBC95;</h2><hr>
+<p><img src="https://cdn.steemitimages.com/DQmVXwMehHDB9TLcGfkA7yMtePoNNBDrkWNoSKfQGzmSBJa/proposals.png" alt="proposals.png"></p>
+<p>&#xD574;&#xB2F9; &#xC81C;&#xC548;&#xC11C;&#xC5D0; &#xD22C;&#xD45C;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; &#xAD49;&#xC7A5;&#xD788; &#xAC04;&#xB2E8;&#xD569;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xC758; &#xB9C1;&#xD06C; &#xC911;&#xC5D0;&#xC11C; &#xD558;&#xB098;&#xB97C; &#xC120;&#xD0DD;&#xD574;&#xC11C; &#xC9C1;&#xC811; &#xD22C;&#xD45C;&#xC5D0; &#xCC38;&#xC5EC;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xC2A4;&#xD300;&#xD504;&#xB85C;&#xD3EC;&#xC808;&#xC2A4;&#xB2F7;&#xCEF4; : <a href="https://steemproposals.com/proposals" target="_blank" rel="noopener">https://steemproposals.com/proposals</a></li>
+<li>&#xC2A4;&#xD300;&#xD53D;(SteemPeak) : <a href="https://steempeak.com/proposals" target="_blank" rel="noopener">https://steempeak.com/proposals</a></li>
+<li>&#xC2A4;&#xD2F0;&#xBC0B;&#xC6D4;&#xB81B; : <a href="https://steemitwallet.com/proposals" target="_blank" rel="noopener">https://steemitwallet.com/proposals</a></li>
+</ul>
+<p>&#xD639;&#xC2DC;&#xB77C;&#xB3C4; SPS&#xD22C;&#xD45C; &#xCC38;&#xC5EC;&#xBC29;&#xBC95;&#xC5D0; &#xB300;&#xD55C; &#xC0C1;&#xC138;&#xD55C; &#xB0B4;&#xC6A9;&#xC774; &#xAD81;&#xAE08;&#xD558;&#xC2E0; &#xBD84;&#xB4E4;&#xC740; &#xC774;&#xC804;&#xC5D0; &#xC81C;&#xAC00; &#xC791;&#xC131;&#xD574;&#xB193;&#xC740; &#xAC00;&#xC774;&#xB4DC; &#xD3EC;&#xC2A4;&#xD305;&#xC744; &#xCC38;&#xACE0;&#xD574;&#xC8FC;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><p>SteemPeak SPS Guide : <a href="https://www.steemcoinpan.com/sct/@donekim/4cw7w2" target="_blank" rel="noopener">&#xBC14;&#xB85C;&#xAC00;&#xAE30;</a></p>
+</li>
+<li><p>SteemProposals.com SPS Guide : <a href="https://www.steemcoinpan.com/sct/@donekim/steem-proposals" target="_blank" rel="noopener">&#xBC14;&#xB85C;&#xAC00;&#xAE30;</a></p>
+</li>
+<li><p>SteemitWallet.com SPS Guide : <a href="https://www.steemcoinpan.com/sct/@donekim/sps-ui" target="_blank" rel="noopener">&#xBC14;&#xB85C;&#xAC00;&#xAE30;</a></p>
+</li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@donekim/sps-smt" target="_blank" rel="noopener">&#x2018;[SPS] SMT&#xD558;&#xB4DC;&#xD3EC;&#xD06C; &#xAD00;&#xB828; &#xC0AC;&#xC804; &#xD14C;&#xC2A4;&#xD2B8;, &#xCF54;&#xB4DC;&#xB9AC;&#xBDF0;, &#xBB38;&#xC11C;&#xD654; &#xC791;&#xC5C5; &#xAD00;&#xB828; &#xC81C;&#xC548;&#xC11C; &#xC18C;&#xAC1C;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@donekim/tags/dblog/">dblog</a>, <a class="has-link-grey -link" href="/@donekim/tags/liv/">liv</a>, <a class="has-link-grey -link" href="/@donekim/tags/palnet/">palnet</a>, <a class="has-link-grey -link" href="/@donekim/tags/peakreview/">peakreview</a>, <a class="has-link-grey -link" href="/@donekim/tags/s/">s</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct/">sct</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct-freeboard/">sct-freeboard</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct-kr/">sct-kr</a>, <a class="has-link-grey -link" href="/@donekim/tags/union/">union</a>, <a class="has-link-grey -link" href="/@donekim/tags/zzan/">zzan</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@donekim/g92l2/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[스팀엔진] 노드 크래시로 인해 스팀엔진이 다운된 상태이며 복구 작업 중입니다</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@donekim/steempeak/">
+                <span class="level-item">[SteemPeak] 스팀엔진 월렛 및 익스플로러가 문제인 경우 대처방법</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@donekim/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 디온&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@donekim/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@donekim/content.json"};</script>
+
+
+
+    
+<script src="/@donekim/js/bundle.js" defer></script></body>
+</html>
+

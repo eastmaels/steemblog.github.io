@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>[EOS Inside] 이오스 계정 오너키 변경방법 가이드 - 디온</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@donekim/css/style.css">
+
+<link rel="stylesheet" href="/@donekim/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@donekim/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@donekim/">Home</a>
+                
+                <a class="navbar-item" href="/@donekim/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@donekim/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@donekim/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@donekim/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">1</span>
+        <span>&#xC544;&#xB798;&#xC758; &#xC124;&#xBA85;&#xC740; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1; &#xCD5C;&#xC2E0; &#xBC84;&#xC804;(v10.1.2)&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD569;&#xB2C8;&#xB2E4;.</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">2</span>
+        <span>#1. &#xC624;&#xB108;&#xD0A4; &#xBCC0;&#xACBD;&#xD558;&#xAE30;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">3</span>
+        <span>#2. &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD558;&#xAE30;</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">4</span>
+        <span>#3. &#xADF8; &#xB2E4;&#xC74C; &#xB2E8;&#xACC4;&#xB294;?</span>
+        </a></li><li>
+        <a class="is-flex" href="#undefined">
+        <span class="has-mr-6">5</span>
+        <span>#4. &#xADF8;&#xB798;&#xB3C4; &#xC0C8;&#xB85C; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xC758; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xC54C;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74;?</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@donekim/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn-images-1.medium.com/max/800/1*AJZ98MxX88C530WmY8naKw.jpeg" alt="[EOS Inside] 이오스 계정 오너키 변경방법 가이드">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-03-25T13:17:18.000Z">2019-03-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@donekim/categories/eosio/">eosio</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    18 minutes read (About 2708 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                [EOS Inside] 이오스 계정 오너키 변경방법 가이드
+            
+        </h1>
+        <div class="content">
+            <center><img src="https://cdn-images-1.medium.com/max/800/1*AJZ98MxX88C530WmY8naKw.jpeg" alt=""></center><br><center><sup></sup></center><br><br>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;, &#xC774;&#xC624;&#xC2DC;&#xC2A4; &#xC11C;&#xD3EC;&#xD130;&#xC988; &#xB514;&#xC628;(@donekim)&#xC785;&#xB2C8;&#xB2E4;. &#xC5F0;&#xC77C; &#xACC4;&#xC18D;&#xD574;&#xC11C; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4; &#xC720;&#xCD9C; &#xC0AC;&#xACE0;&#xAC00; &#xACC4;&#xC18D;&#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB798;&#xC11C; &#xC624;&#xB298;&#xC740; <strong>&#xACC4;&#xC815;&#xC758; &#xBCF4;&#xC548;&#xC744; &#xAC15;&#xD654;&#xD558;&#xC5EC; &#xC790;&#xC0B0;&#xC744; &#xBCF4;&#xB2E4; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xAD00;&#xB9AC;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC561;&#xD2F0;&#xBE0C;&#xD0A4;(Active key)&#xC640; &#xC624;&#xB108;&#xD0A4;(Owner)&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBC29;&#xBC95;</strong>&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xC124;&#xBA85;&#xC744; &#xB4DC;&#xB9AC;&#xB3C4;&#xB85D; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br><strong>&#xC774;&#xC624;&#xC2A4; &#xBA54;&#xC778;&#xB137;&#xC5D0;&#xC11C;&#xB294; &#xACC4;&#xC815;&#xC758; &#xAD8C;&#xD55C;&#xC744; &#xC561;&#xD2F0;&#xBE0C; &#xAD8C;&#xD55C;(Active permission), &#xC624;&#xB108; &#xAD8C;&#xD55C;(Owner permission)&#xC73C;&#xB85C; &#xBD84;&#xB958;&#xD558;&#xC5EC; &#xBCF4;&#xB2E4; &#xAC15;&#xD654;&#xB41C; &#xBCF4;&#xC548;&#xCCB4;&#xACC4;&#xB97C; &#xC81C;&#xACF5;</strong>&#xD558;&#xACE0; &#xC788;&#xC9C0;&#xB9CC;, &#xADF8;&#xB7FC;&#xC5D0;&#xB3C4; &#xBD88;&#xAD6C;&#xD558;&#xACE0; &#xAC01; &#xAD8C;&#xD55C;&#xC5D0; &#xB9DE;&#xB294; &#xD0A4;&#xC30D; &#xAD00;&#xB9AC; &#xBC0F; &#xBCC0;&#xACBD;&#xBC29;&#xBC95;&#xC5D0; &#xC5B4;&#xB824;&#xC6C0;&#xC744; &#xB290;&#xB07C;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC774; &#xB9CE;&#xC544;&#xC11C; &#xC81C;&#xB300;&#xB85C; &#xD65C;&#xC6A9;&#xC774; &#xB418;&#xACE0; &#xC788;&#xC9C0; &#xBABB;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br>&gt; &#xD2B9;&#xD788;, &#xCD5C;&#xADFC; &#xD574;&#xD0B9; &#xC0AC;&#xB840;&#xB4E4;&#xC744; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xCF00;&#xC774;&#xC2A4;&#xB85C; &#xD55C;&#xC815;&#xB429;&#xB2C8;&#xB2E4;.<br><br><br>&gt; &#x2460; &#xC774;&#xBA54;&#xC77C;, &#xCE74;&#xCE74;&#xC624;&#xD1A1;, &#xD734;&#xB300;&#xD3F0; &#xBA54;&#xBAA8;, &#xD074;&#xB77C;&#xC6B0;&#xB4DC; &#xB4F1;&#xC5D0; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xBCF4;&#xAD00;&#xD558;&#xB2E4;&#xAC00; &#xACC4;&#xC815; &#xD574;&#xD0B9;&#xC73C;&#xB85C; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xAC00; &#xC720;&#xCD9C;&#xB418;&#xB294; &#xACBD;&#xC6B0;<br><br><br>&gt; &#x2461; &#xC2A4;&#xCEA0;&#xC0AC;&#xC774;&#xD2B8;&#xC5D0; &#xC0AC;&#xC6A9;&#xC790; &#xBCF8;&#xC778;&#xC774; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xC9C1;&#xC811; &#xC785;&#xB825;&#xD558;&#xB294; &#xACBD;&#xC6B0;<br><br><br>&gt; &#x2462; &#xC2A4;&#xCEA0;&#xC0AC;&#xC774;&#xD2B8;&#xC758; &#xD53C;&#xC2F1; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC2B9;&#xC778;&#xD558;&#xB294; &#xACBD;&#xC6B0;<br><br><br><br><br><br><strong>&#xC704;&#xC640; &#xAC19;&#xC740; &#xC0C1;&#xD669;&#xC774; &#xBC1C;&#xC0DD;&#xD558;&#xB354;&#xB77C;&#xB3C4; &#xD3C9;&#xC18C;&#xC5D0; &#xC561;&#xD2F0;&#xBE0C;&#xD0A4;&#xC640; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xBD84;&#xB9AC;&#xD558;&#xC5EC; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xD53C;&#xD574;&#xB97C; &#xB9C9;&#xC744; &#xC218; &#xC788;&#xB294; &#xC5EC;&#xC9C0;</strong>&#xAC00; &#xC0DD;&#xAE30;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC5B4;&#xB835;&#xACE0;, &#xADC0;&#xCC2E;&#xAC8C; &#xB290;&#xAEF4;&#xC9C0;&#xC2DC;&#xB354;&#xB77C;&#xB3C4; &#xBC18;&#xB4DC;&#xC2DC; &#xC544;&#xB798;&#xC758; &#xB0B4;&#xC6A9;&#xC744; &#xB530;&#xB77C;&#xD574;&#xBCF4;&#xC2DC;&#xAE30;&#xB97C; &#xCD94;&#xCC9C;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.<br><br>&#xCD08;&#xC2EC;&#xC790;&#xBD84;&#xB4E4;&#xB3C4; &#xC27D;&#xAC8C; &#xB530;&#xB77C;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xCD5C;&#xB300;&#xD55C; &#xC790;&#xC138;&#xD788; &#xC124;&#xBA85;&#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br><br><br><center><img src="https://i.imgur.com/bmm4IPr.png" alt=""></center><br><center><img src="https://cdn-images-1.medium.com/max/800/1*KJGtct_r3zYyrau-WfRfTg.png" alt=""></center><br><center><sup></sup></center><br><br>&#xBA3C;&#xC800; &#xB4E4;&#xC5B4;&#xAC00;&#xAE30;&#xC5D0; &#xC55E;&#xC11C; &#xC624;&#xB108;&#xD0A4;(Owner key)&#xB97C; &#xBC14;&#xAFB8;&#xB294; &#xBC29;&#xBC95;&#xC744; &#xC124;&#xBA85;&#xB4DC;&#xB9AC;&#xB294; &#xC774;&#xC720;&#xB97C; &#xAC04;&#xB2E8;&#xD788; &#xB9D0;&#xC500;&#xB4DC;&#xB9AC;&#xC790;&#xBA74;,<br><br><strong>&#x2460; &#xC624;&#xB108;&#xD0A4;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC778; &#xC0AC;&#xC6A9;&#xC790;&#xB4E4;&#xC774; &#xD3C9;&#xC18C;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xC77C;&#xC774; &#xAC70;&#xC758; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</strong><br><br><strong>&#x2461; &#xD604;&#xC7AC; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC774;&#xB098; &#xBAA8;&#xBC14;&#xC77C; &#xC6D4;&#xB81B;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9; &#xC911;&#xC778; &#xACC4;&#xC815;&#xC744; &#xC544;&#xBB34; &#xBD88;&#xD3B8;&#xD568; &#xC5C6;&#xC774; &#xADF8;&#xB300;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</strong><br><br><strong>&#x2462; &#xCD94;&#xD6C4;&#xC5D0; &#xB9CC;&#xC57D; &#xD574;&#xD0B9; &#xC0AC;&#xACE0;&#xAC00; &#xBC1C;&#xC0DD;&#xD558;&#xB294; &#xACBD;&#xC6B0;, &#xADF8;&#xB54C; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xAEBC;&#xB0B4;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</strong><br><br><h3><i>&#xC544;&#xB798;&#xC758; &#xC124;&#xBA85;&#xC740; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1; &#xCD5C;&#xC2E0; &#xBC84;&#xC804;(v10.1.2)&#xC744; &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD569;&#xB2C8;&#xB2E4;.</i></h3><br><br><br><br><center><img src="https://i.imgur.com/bmm4IPr.png" alt=""></center><br><h3>#1. &#xC624;&#xB108;&#xD0A4; &#xBCC0;&#xACBD;&#xD558;&#xAE30;</h3><br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*LdfZkr5pfbFVelxeKPT4pA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2460; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1; &#xB85C;&#xADF8;&#xC778; &#xD6C4;&#xC5D0; <strong>Add Keys&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*XKGZ7GzxYWylxwZAwYzYLg.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2461; &#xADF8; &#xB2E4;&#xC74C; <strong>Create Key&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*8L1tD-azseNXI_OXxq8upg.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2462; &#xC88C;&#xCE21;&#xC5D0; &#xBCF4;&#xC774;&#xB294; <strong>&#xC5F4;&#xC1E0; &#xBAA8;&#xC591;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*4hL5X8IGaGMS6x_uuHFyTA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2463; &#xC704;&#xC640; &#xAC19;&#xC774; &#xC0C8;&#xB85C;&#xC6B4; &#xD0A4;&#xAC00; &#xC0DD;&#xC131;&#xB41C; &#xAC83;&#xC774; &#xD655;&#xC778;&#xB418;&#xC168;&#xC73C;&#xBA74;, <strong>&#xD654;&#xBA74; &#xC0C1;&#xB2E8;&#xC5D0; &#xBCF4;&#xC774;&#xB294; Back&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*1pxvENVKzPfA7HHIHvoijw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2464; &#xC704;&#xC5D0;&#xC11C; &#xBCF4;&#xC774;&#xB294; <strong>Key Name&#xC740; &#xC0C8;&#xB86D;&#xAC8C; &#xBCC0;&#xACBD;&#xD560; &#xC624;&#xB108;&#xD0A4;(Owner key)&#xB97C; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC5D0; &#xC5B4;&#xB5A4; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xC800;&#xC7A5;&#xD560; &#xAC83;&#xC778;&#xC9C0;&#xB97C; &#xC124;&#xC815;&#xD558;&#xB294; &#xD654;&#xBA74;</strong>&#xC785;&#xB2C8;&#xB2E4;. &#xBCF8;&#xC778;&#xC774; &#xC54C;&#xC544;&#xBCF4;&#xC2DC;&#xAE30; &#xC26C;&#xC6B4; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC8FC;&#xC138;&#xC694;. &#xC800;&#xB294; &#x201C;&#xC0C8;&#xB85C;&#xC6B4; &#xC624;&#xB108;&#xD0A4;&#x201D;&#xB77C;&#xACE0; &#xC785;&#xB825;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8; &#xB2E4;&#xC74C; &#xC544;&#xB798;&#xC5D0; &#xBCF4;&#xC774;&#xB294; <strong>&#x201C;Keys &amp; Blockchains&#x201D;&#xB77C;&#xB294; &#xD0ED;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*A21dKEP8YcqKV8qPOd3CMQ.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2465; &#xC704;&#xC640; &#xAC19;&#xC774; EOSIO&#xD0ED; &#xD558;&#xB2E8;&#xC5D0; EOS&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; 53&#xC790;&#xB9AC;&#xC758; &#xC0C8;&#xB85C;&#xC6B4; &#xD0A4;&#xAC00; &#xC800;&#xC7A5;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xAC83;&#xC744; &#xBCF4;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <strong>&#xC6B0;&#xCE21;&#xC5D0; &#xBCF4;&#xC774;&#xB294; Copy&#xB77C;&#xB294; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD574;&#xC11C; &#xD574;&#xB2F9; &#xD0A4;&#xB97C; &#xBCF5;&#xC0AC;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*w7K0cpw2H0h858FmOgPQkw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2466; <a href="https://bloks.io/wallet/permissions" target="_blank" rel="noopener">https://bloks.io/wallet/permissions</a> &#xC0AC;&#xC774;&#xD2B8;&#xC5D0; &#xC811;&#xC18D;&#xD558;&#xC2E0; &#xB2E4;&#xC74C; &#xC6B0;&#xCE21; &#xC0C1;&#xB2E8;&#xC5D0; &#xBCF4;&#xC774;&#xB294; Login&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*yM-CqKGDpm5blHS82BHrJw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2467; &#xC2A4;&#xCE90;&#xD130; &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*bT8ysTW9O-YlkAmPWrWCZQ.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2468; &#xC704;&#xC640; &#xAC19;&#xC740; &#xB85C;&#xADF8;&#xC778; &#xCC3D;&#xC774; &#xB098;&#xD0C0;&#xB098;&#xBA74; <strong>&#x201C;Show All&#x201D;&#xC774;&#xB77C;&#xB294; &#xAE00;&#xC790;&#xB97C; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*S4RMtHw2UfmFwj-1d7E6Pw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2469; &#xC0C8;&#xB85C;&#xC6B4; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xB4F1;&#xB85D;&#xD558;&#xAE30; &#xC704;&#xD574; <strong>@owner &#xB77C;&#xB294; &#xBB38;&#xAD6C;&#xAC00; &#xBD99;&#xC5B4;&#xC788;&#xB294; &#xACC4;&#xC815;&#xC744; &#xC120;&#xD0DD;&#xD558;&#xC5EC; &#xB85C;&#xADF8;&#xC778;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694; (@active &#xACC4;&#xC815;&#xC73C;&#xB85C; &#xB85C;&#xADF8;&#xC778;&#xD558;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xC8FC;&#xC758;&#xD558;&#xC138;&#xC694;)<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*axkZK-i7HsqHi08sgbcxIQ.png" alt=""></center><br><center><sup></sup></center><br><br>&#x246A; &#xB85C;&#xADF8;&#xC778;&#xC774; &#xC644;&#xB8CC;&#xB418;&#xC5C8;&#xC73C;&#xBA74; &#xC704;&#xC640; &#xAC19;&#xC774;<strong> &#x201C;New Owner Key&#x201D;&#xB77C;&#xB294; &#xCCAB; &#xBC88;&#xC9F8; &#xBE48;&#xCE78;&#xC5D0; &#x2465;&#xBC88; &#xC808;&#xCC28;&#xC5D0;&#xC11C; &#xBCF5;&#xC0AC;&#xD588;&#xB358; EOS&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; 53&#xC790;&#xB9AC; &#xD0A4;&#xB97C; &#xBD99;&#xC5EC;&#xB123;&#xAE30;</strong> &#xD574;&#xC8FC;&#xC138;&#xC694; (&#xC544;&#xB798;&#xC5D0; &#xBCF4;&#xC774;&#xB294; New Active Key&#xB77C;&#xB294; &#xCE78;&#xC740; &#xADF8;&#xB300;&#xB85C; &#xBE48;&#xCE78;&#xC73C;&#xB85C; &#xB450;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;). &#xADF8; &#xB2E4;&#xC74C;&#xC5D0;&#xB294; <strong>Change Permissions&#xB77C;&#xB294; &#xD30C;&#xB780;&#xC0C9; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*mZy9XrZd7OqlMbhhWBCBtw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x246B; &#xC704;&#xC640; &#xAC19;&#xC740; &#xD654;&#xBA74;&#xC774; &#xB098;&#xD0C0;&#xB098;&#xBA74; <strong>Allow&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;. (&#xCC38;&#xACE0;: &#xAD8C;&#xD55C;&#xC744; &#xBCC0;&#xACBD;&#xD558;&#xB294; &#xAC83;&#xC740; &#xAD49;&#xC7A5;&#xD788; &#xC911;&#xC694;&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC704;&#xC640; &#xAC19;&#xC774; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC758; &#xD31D;&#xC5C5;&#xCC3D;&#xC774; &#xBD89;&#xC740;&#xC0C9;&#xC73C;&#xB85C; &#xACBD;&#xACE0;&#xD558;&#xB294; &#xD654;&#xBA74;&#xC774; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;)<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*9Dq3oy2lOTPf4-hFPkOTdQ.png" alt=""></center><br><center><sup></sup></center><br><br>&#x246C; &#xC704;&#xC640; &#xAC19;&#xC774; Success&#xB77C;&#xB294; &#xD654;&#xBA74;&#xC774; &#xB098;&#xD0C0;&#xB098;&#xBA74; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC624;&#xB108;&#xD0A4;(Owner key)&#xAC00; &#xBCC0;&#xACBD;&#xB41C; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.<br><br><br><br><center><img src="https://i.imgur.com/bmm4IPr.png" alt=""></center><br><h3>#2. &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD558;&#xAE30;</h3><br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*vLxwpnCc3RsbpqzmprtZxQ.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2460; &#xC774;&#xC81C; &#xB2E4;&#xC2DC; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC73C;&#xB85C; &#xB3CC;&#xC544;&#xC640;&#xC11C; <strong>&#xC704;&#xC640; &#xAC19;&#xC740; &#xD654;&#xBA74;&#xC5D0;&#xC11C; &#x201C;Refresh&#x201D;&#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*nXlq-YIcUsnYBDUK1WdjLA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2461; &#xADF8; &#xB2E4;&#xC74C; <strong>Linked Accounts&#xB77C;&#xB294; &#xD0ED;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xBA74;, &#xC704;&#xC640; &#xAC19;&#xC774; &#xC0C8;&#xB85C; &#xC0DD;&#xC131;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xAC00; &#xB0B4; &#xACC4;&#xC815;&#xC5D0; &#xC5F0;&#xACB0;&#xB418;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778;</strong>&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*uB-W17SXp1Dvw_T6pwdIjA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2462;<a href="https://bloks.io/" target="_blank" rel="noopener">https://bloks.io/</a> &#xC5D0; &#xC811;&#xC18D;&#xD574;&#xC11C; &#xBCF8;&#xC778;&#xC758; &#xACC4;&#xC815;&#xC744; &#xC870;&#xD68C;&#xD574;&#xBCF4;&#xC2DC;&#xBA74; &#xC704;&#xC640; &#xAC19;&#xC774; &#xBC29;&#xAE08; &#xB4F1;&#xB85D;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xB85C; &#xBCC0;&#xACBD;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xB294; &#xAC83;&#xC744; &#xB2E4;&#xC2DC; &#xD55C; &#xBC88; &#xD655;&#xC778;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br><br><br><center><img src="https://i.imgur.com/bmm4IPr.png" alt=""></center><br><h3>#3. &#xADF8; &#xB2E4;&#xC74C; &#xB2E8;&#xACC4;&#xB294;?</h3><br><br><strong>&#xBCC4;&#xB3C4;&#xB85C; &#xC544;&#xBB34;&#xAC83;&#xB3C4; &#xD558;&#xC2E4; &#xAC8C; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</strong><br><br>&#xD574;&#xB2F9; &#xACC4;&#xC815;&#xC744; &#xC774;&#xBBF8; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC774;&#xB098; &#xBAA8;&#xBC14;&#xC77C; &#xC6D4;&#xB81B;&#xC5D0; &#xB4F1;&#xB85D;&#xD574;&#xC11C; &#xC0AC;&#xC6A9; &#xC911;&#xC774;&#xC168;&#xB2E4;&#xBA74;, &#xADF8;&#xB300;&#xB85C; &#xACC4;&#xC18D; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.<br><br>&#xC65C;&#xB0D0;&#xD558;&#xBA74; <strong>&#xD1A0;&#xD070; &#xC804;&#xC1A1;, &#xAC8C;&#xC784;&#xD558;&#xAE30;, &#xD1A0;&#xD070; &#xC5D0;&#xC5B4;&#xADF8;&#xB7A9;&#xC774;&#xB098; &#xD074;&#xB808;&#xC784; &#xB4F1; &#xC77C;&#xC0C1; &#xC18D;&#xC5D0;&#xC11C; &#xD558;&#xC2DC;&#xB294; &#xB300;&#xBD80;&#xBD84;&#xC758; &#xD65C;&#xB3D9;&#xC740; &#xC774;&#xBBF8; &#xC785;&#xB825;&#xB418;&#xC5B4; &#xC788;&#xB294; &#xC561;&#xD2F0;&#xBE0C;&#xD0A4;(Active key)&#xB85C; &#xC2B9;&#xC778;</strong>&#xC774; &#xB418;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xC9C0;&#xAE08; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xC0C8;&#xB85C; &#xBAA8;&#xBC14;&#xC77C; &#xC6D4;&#xB81B;&#xC5D0; &#xB4F1;&#xB85D;&#xD558;&#xC2E4; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;.<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*LrRYN-IVHyV6hmQ1a-gCag.png" alt=""></center><br><center><sup></sup></center><br><br>&#xB354;&#xBD88;&#xC5B4;, <strong>&#xC0C8;&#xB85C; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xC758; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xB0B4;&#xAC00; &#xD655;&#xC778;&#xD558;&#xC9C0;&#xB294; &#xBABB;&#xD588;&#xC9C0;&#xB9CC; &#xD574;&#xB2F9; &#xD0A4; &#xC815;&#xBCF4;&#xB294; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC5D0; &#xC774;&#xBBF8; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xC798; &#xC800;&#xC7A5;</strong>&#xC774; &#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC704;&#xC640; &#xAC19;&#xC774; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC758; &#xBA54;&#xC778;&#xD654;&#xBA74;&#xC5D0; &#xAC00;&#xBCF4;&#xC2DC;&#xBA74; &#xC774;&#xBBF8; &#xC798; &#xB4F1;&#xB85D;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB098;&#xC911;&#xC5D0; &#xD544;&#xC694;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.<br><br><br><br><center><img src="https://i.imgur.com/bmm4IPr.png" alt=""></center><br><h3>#4. &#xADF8;&#xB798;&#xB3C4; &#xC0C8;&#xB85C; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xC758; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xC54C;&#xACE0; &#xC2F6;&#xB2E4;&#xBA74;?</h3><br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*xKb-QUyT_GELJUygmQtOhw.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2460; &#xD574;&#xB2F9; &#xACC4;&#xC815;&#xC744; &#xD074;&#xB9AD;&#xD55C; &#xB4A4;&#xC5D0; &#xC704;&#xC640; &#xAC19;&#xC740; &#xD654;&#xBA74;&#xC5D0;&#xC11C; <strong>&#x201C;Export&#x201D;&#xB77C;&#xB294; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*p3T07nkmVgTNgvWlIcXnJA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2461; &#xADF8; &#xB2E4;&#xC74C; <strong>&#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1; &#xB85C;&#xADF8;&#xC778; &#xBE44;&#xBC00;&#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*gusK1XWhJjoAMTlrXXlTXg.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2462; &#xD654;&#xBA74; &#xC88C;&#xCE21;&#xC5D0; &#xBCF4;&#xC774;&#xB294; <strong>&#xC5F4;&#xC1E0; &#xBAA8;&#xC591;&#xC758; &#xC544;&#xC774;&#xCF58;&#xC744; &#xD074;&#xB9AD;</strong>&#xD574;&#xC8FC;&#xC138;&#xC694;<br><br><center><img src="https://cdn-images-1.medium.com/max/800/1*QZSTxg-pK3nC05cillngTA.png" alt=""></center><br><center><sup></sup></center><br><br>&#x2463; &#xADF8; &#xB2E4;&#xC74C;<strong> &#x201C;Reveal&#x201D;&#xC774;&#xB77C;&#xB294; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC2DC;&#xBA74;, &#xC22B;&#xC790; 5&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xD574;&#xB2F9; &#xC624;&#xB108; &#xAD8C;&#xD55C;&#xC5D0; &#xC5F0;&#xACB0;&#xB41C; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xD655;&#xC778;</strong>&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br>&#xC0AC;&#xC2E4;, &#xACC4;&#xC815;&#xC744; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xC6A9;&#xB3C4;&#xB85C; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xBCC0;&#xACBD;&#xD558;&#xC2E0; &#xAC83;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC774;&#xB807;&#xAC8C; &#xAD73;&#xC774; &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xC758; &#xD504;&#xB77C;&#xC774;&#xBE57;&#xD0A4;&#xB97C; &#xD655;&#xC778;&#xD558;&#xC2DC;&#xC9C0; &#xC54A;&#xB294; &#xD3B8;&#xC774; &#xB354; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC560;&#xCD08;&#xC5D0; &#xC5B4;&#xB514;&#xC5D0; &#xBCF5;&#xC0AC;&#xD574;&#xC11C; &#xBD99;&#xC5EC;&#xB123;&#xC744; &#xC77C;&#xB3C4; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC2A4;&#xCE90;&#xD130; &#xB370;&#xC2A4;&#xD06C;&#xD0D1;&#xC774; &#xAE54;&#xB824; &#xC788;&#xB294; &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC783;&#xC5B4;&#xBC84;&#xB9AC;&#xAC70;&#xB098;, &#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC783;&#xC5B4;&#xBC84;&#xB9AC;&#xC9C0; &#xC54A;&#xB294; &#xC774;&#xC0C1; &#xADF8;&#xB0E5; &#xADF8;&#xB300;&#xB85C; &#xB450;&#xC2DC;&#xB294; &#xD3B8;&#xC774; &#xD6E8;&#xC52C; &#xB354; &#xC548;&#xC804;&#xD569;&#xB2C8;&#xB2E4;.<br><br>&#xC774;&#xB807;&#xAC8C; &#xACC4;&#xC815;&#xC758; &#xC624;&#xB108;&#xD0A4;&#xB97C; &#xBCC0;&#xACBD;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xC744; &#xD558;&#xC2DC;&#xB2E4;&#xAC00; &#xD639;&#xC2DC;&#xB77C;&#xB3C4; &#xAE30;&#xC874;&#xC5D0; &#xC0AC;&#xC6A9; &#xC911;&#xC774;&#xB358; &#xC561;&#xD2F0;&#xBE0C;&#xD0A4;&#xAC00; &#xC720;&#xCD9C;&#xC774; &#xB418;&#xC5B4; &#xB204;&#xAD70;&#xAC00;&#xAC00; &#xB098;&#xC758; &#xACC4;&#xC815;&#xC5D0;&#xC11C; &#xC5B8;&#xC2A4;&#xD14C;&#xC774;&#xD0B9;&#xC744; &#xC2DC;&#xB3C4;&#xD558;&#xBA74;, &#xBCC0;&#xACBD;&#xD55C; &#xC624;&#xB108;&#xD0A4;&#xB85C; &#xB4E4;&#xC5B4;&#xAC00;&#xC11C; &#xC561;&#xD2F0;&#xBE0C;&#xD0A4;&#xB97C; &#xB2E4;&#xC2DC; &#xBC14;&#xAFD4;&#xBC84;&#xB9AC;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.<br><br>&#xC5B4;&#xB5A4;&#xAC00;&#xC694;? &#xC0DD;&#xAC01;&#xBCF4;&#xB2E4; &#xAD49;&#xC7A5;&#xD788; &#xAC04;&#xB2E8;&#xD558;&#xACE0; &#xC27D;&#xC9C0; &#xC54A;&#xB098;&#xC694;?<br><br>&#xADC0;&#xCC2E;&#xC73C;&#xC2DC;&#xB354;&#xB77C;&#xB3C4; &#xC18C;&#xC911;&#xD55C; &#xB098;&#xC758; &#xC790;&#xC0B0;&#xC744; &#xC548;&#xC804;&#xD558;&#xAC8C; &#xBCF4;&#xAD00;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xC774;&#xCC38;&#xC5D0; &#xAF2D; &#xD0A4; &#xBCC0;&#xACBD;&#xC744; &#xC2DC;&#xB3C4;&#xD574;&#xBCF4;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4; :)<br><br><br><br><center><img src="https://i.imgur.com/SAXfzqa.png"></center><br><br><br><br>&#xBCF8; &#xD3EC;&#xC2A4;&#xD305;&#xC740; &#xBBF8;&#xB514;&#xC5C4;&#xC5D0;&#xC11C; &#xC250;&#xC5B4;&#xD22C;&#xC2A4;&#xD300;(@share2steem)&#xC744; &#xD1B5;&#xD574; &#xC791;&#xC131;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.<br><center><sup>Posted from <a href="https://medium.com/@donekim/eos-inside-&#xC774;&#xC624;&#xC2A4;-&#xACC4;&#xC815;-&#xC624;&#xB108;&#xD0A4;-&#xBCC0;&#xACBD;&#xBC29;&#xBC95;-&#xAC00;&#xC774;&#xB4DC;-bf74a3310c74" target="_blank" rel="noopener">Medium</a> via <a href="https://share2steem.io/?ref=donekim" target="_blank" rel="noopener">Share2Steem</a></sup></center>
+
+
+
+<blockquote>
+<p><strong>[&#xC250;&#xC5B4;&#xD22C;&#xC2A4;&#xD300;(Share2steem)&#xC774;&#xB780;?]</strong><br>&#xC250;&#xC5B4;&#xD22C;&#xC2A4;&#xD300;&#xC740; &#xD2B8;&#xC704;&#xD130;, &#xC778;&#xC2A4;&#xD0C0;&#xADF8;&#xB7A8;, &#xBBF8;&#xB514;&#xC5C4;, &#xC720;&#xD29C;&#xBE0C;, &#xD2B8;&#xC704;&#xCE58; &#xB4F1; &#xC2A4;&#xD2F0;&#xBC0B;&#xC758; &#xACC4;&#xC815;&#xACFC; &#xC5F0;&#xACB0;&#xB41C; &#xB2E4;&#xB978; SNS&#xC758; &#xAE00;&#xC774;&#xB098; &#xC601;&#xC0C1;, &#xC0AC;&#xC9C4; &#xB4F1;&#xC758; &#xD3EC;&#xC2A4;&#xD305;&#xC744; &#xC2A4;&#xD2F0;&#xBC0B; &#xD53C;&#xB4DC;&#xB85C; &#xC5C5;&#xB85C;&#xB4DC;&#xD560; &#xC218; &#xC788;&#xB294; &#xC368;&#xB4DC;&#xD30C;&#xD2F0;&#xC571;&#xB2C8;&#xB2E4;. &#xC0AC;&#xC804;&#xC5D0; &#xC250;&#xC5B4;&#xD22C;&#xC2A4;&#xD300;&#xC744; &#xD1B5;&#xD574; &#xB2E4;&#xB978; SNS&#xCC44;&#xB110;&#xC758; &#xACC4;&#xC815;&#xC744; &#xC5F0;&#xACB0;&#xC2DC;&#xCF1C; &#xB193;&#xC740; &#xC0C1;&#xD0DC;&#xB77C;&#xBA74;, &#xC5B8;&#xC81C;&#xB4E0;&#xC9C0; &#xAC04;&#xB2E8;&#xD55C; &#xD574;&#xC2DC;&#xD0DC;&#xADF8; &#xC785;&#xB825;&#xB9CC;&#xC73C;&#xB85C; &#xB2E4;&#xB978; SNS&#xC5D0; &#xC5C5;&#xB85C;&#xB4DC;&#xD55C; &#xAE00;&#xC744; &#xADF8; &#xC989;&#xC2DC; &#xC2A4;&#xD2F0;&#xBC0B;&#xC5D0;&#xB3C4; &#xC5C5;&#xB85C;&#xB4DC;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p>&#xC544;&#xB798;&#xC758; &#xBC30;&#xB108;&#xB97C; &#xD074;&#xB9AD;&#xD558;&#xC2DC;&#xBA74; &#xC250;&#xC5B4;&#xD22C;&#xC2A4;&#xD300;&#xC744; &#xD1B5;&#xD574; &#xD2B8;&#xC704;&#xD130;, &#xC778;&#xC2A4;&#xD0C0;&#xADF8;&#xB7A8;, &#xBBF8;&#xB514;&#xC5C4;, &#xC720;&#xD29C;&#xBE0C;, &#xD2B8;&#xC704;&#xCE58;&#xC5D0; &#xC5C5;&#xB85C;&#xB4DC;&#xD55C; &#xCF58;&#xD150;&#xCE20;&#xB4E4;&#xC744; &#xC2A4;&#xD2F0;&#xBC0B;&#xC5D0; &#xD568;&#xAED8; &#xACF5;&#xC720;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;!</p>
+<center><a href="https://share2steem.io/?ref=donekim" target="_blank" rel="noopener"><img src="https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmQzyrdWXdbzg4hPf1GdAyFxa7DWKDsCKejdB2DXFZdNbX/IMG_9388.JPG"></a></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@donekim/1553519832890-eos-inside-----" target="_blank" rel="noopener">&#x2018;[EOS Inside] &#xC774;&#xC624;&#xC2A4; &#xACC4;&#xC815; &#xC624;&#xB108;&#xD0A4; &#xBCC0;&#xACBD;&#xBC29;&#xBC95; &#xAC00;&#xC774;&#xB4DC;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@donekim/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@donekim/tags/eosio/">eosio</a>, <a class="has-link-grey -link" href="/@donekim/tags/jjm/">jjm</a>, <a class="has-link-grey -link" href="/@donekim/tags/kr-series/">kr-series</a>, <a class="has-link-grey -link" href="/@donekim/tags/share2steem/">share2steem</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@donekim/2evmnf/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[스티밋 이야기] 스티밋 애드에 이어 이제는 크립토차트까지?</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@donekim/donekim-1553490322901---------/">
+                <span class="level-item">스팀 블록체인과 스티밋 관련 글로벌 텔레그램 그룹 생성 소식</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@donekim/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 디온&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@donekim/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@donekim/content.json"};</script>
+
+
+
+    
+<script src="/@donekim/js/bundle.js" defer></script></body>
+</html>
+

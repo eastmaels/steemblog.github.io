@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>[EOS Inside] 리소스나 GAS수수료 걱정 없이 토큰 전송하기 - 디온</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@donekim/css/style.css">
+
+<link rel="stylesheet" href="/@donekim/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@donekim/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@donekim/">Home</a>
+                
+                <a class="navbar-item" href="/@donekim/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@donekim/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@donekim/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@donekim/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-&#xC2E0;&#xADDC;&#xAC00;&#xC785;-&#xC774;&#xBCA4;&#xD2B8;">
+        <span class="has-mr-6">1</span>
+        <span>#1. &#xC2E0;&#xADDC;&#xAC00;&#xC785; &#xC774;&#xBCA4;&#xD2B8;</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;&#xD558;&#xAE30;">
+        <span class="has-mr-6">2</span>
+        <span>#2. &#xD1A0;&#xD070; &#xC804;&#xC1A1;&#xD558;&#xAE30;</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;-&#xC6D0;&#xB9AC;">
+        <span class="has-mr-6">3</span>
+        <span>#3. &#xD1A0;&#xD070; &#xC804;&#xC1A1; &#xC6D0;&#xB9AC;</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-&#xC9C0;&#xC6D0;&#xD558;&#xB294;-&#xD1A0;&#xD070;&#xB4E4;">
+        <span class="has-mr-6">4</span>
+        <span>#4. &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xD1A0;&#xD070;&#xB4E4;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@donekim/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmVm26PGDskLrfYCXe2P54NBB6BAutepz4Q4hygkzo4H5S/1.png" alt="[EOS Inside] 리소스나 GAS수수료 걱정 없이 토큰 전송하기">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-05T06:35:36.000Z">2020-03-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@donekim/categories/hive-101145/">hive-101145</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    13 minutes read (About 2016 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                [EOS Inside] 리소스나 GAS수수료 걱정 없이 토큰 전송하기
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmVm26PGDskLrfYCXe2P54NBB6BAutepz4Q4hygkzo4H5S/1.png" alt="1.png"></p>
+<p>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB514;&#xC628;&#xC785;&#xB2C8;&#xB2E4;. &#xC9C0;&#xB09C; &#xD3EC;&#xC2A4;&#xD305;&#xC5D0; &#xC774;&#xC5B4;&#xC11C; &#xC624;&#xB298;&#xC740; <strong>MYKEY&#xC6D4;&#xB81B;&#xC5D0;&#xC11C; CPU&#xC640; &#xAC19;&#xC740; &#xB9AC;&#xC18C;&#xC2A4; &#xAC71;&#xC815;&#xC5C6;&#xC774;, &#xD504;&#xB77C;&#xC774;&#xBE57; &#xD0A4;&#xC758; &#xAD8C;&#xD55C;&#xC5D0; &#xB300;&#xD55C; &#xACE0;&#xBBFC;&#xC5C6;&#xC774; EOS&#xD1A0;&#xD070;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xB294; &#xBC29;&#xBC95;</strong>&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xC0B4;&#xD3B4;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xD639;&#xC2DC;&#xB77C;&#xB3C4; &#xC9C0;&#xB09C; &#xD3EC;&#xC2A4;&#xD305;&#xB4E4;&#xC744; &#xC77D;&#xC5B4;&#xBCF4;&#xC9C0; &#xBABB;&#xD558;&#xC2E0; &#xBD84;&#xB4E4;&#xC740; &#xC544;&#xB798;&#xC758; &#xB9C1;&#xD06C;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>[1&#xD3B8;] : <a href="https://steemit.com/hive-101145/@donekim/eos-inside-mykey" target="_blank" rel="noopener">&#xCD08;&#xBCF4;&#xC790;&#xB3C4; &#xC27D;&#xAC8C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB294; &#xBA40;&#xD2F0;&#xCCB4;&#xC778; &#xC6D4;&#xB81B; MYKEY &#xC18C;&#xAC1C;</a><br>[2&#xD3B8;] : <a href="https://steemit.com/hive-101145/@donekim/3r9ghh-eos-inside-mykey" target="_blank" rel="noopener">MYKEY &#xC6D4;&#xB81B; &#xC124;&#xCE58; &#xBC0F; &#xAC00;&#xC785;&#xBC29;&#xBC95; &#xAC00;&#xC774;&#xB4DC;</a></li>
+</ul>
+<h2 id="1-&#xC2E0;&#xADDC;&#xAC00;&#xC785;-&#xC774;&#xBCA4;&#xD2B8;"><a href="#1-&#xC2E0;&#xADDC;&#xAC00;&#xC785;-&#xC774;&#xBCA4;&#xD2B8;" class="headerlink" title="#1. &#xC2E0;&#xADDC;&#xAC00;&#xC785; &#xC774;&#xBCA4;&#xD2B8;"></a>#1. &#xC2E0;&#xADDC;&#xAC00;&#xC785; &#xC774;&#xBCA4;&#xD2B8;</h2><hr>
+<p>&#xD604;&#xC7AC; MYKEY&#xD300;&#xACFC; &#xACF5;&#xB3D9; &#xB9C8;&#xCF00;&#xD305; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xC9C4;&#xD589; &#xC911;&#xC785;&#xB2C8;&#xB2E4;. <strong>&#xC81C; &#xB808;&#xD37C;&#xB7F4; &#xB9C1;&#xD06C;&#xB97C; &#xD1B5;&#xD574; &#xC2E0;&#xADDC; &#xAC00;&#xC785;&#xD558;&#xC2DC;&#xB294; &#xC0AC;&#xC6A9;&#xC790;&#xBD84;&#xB4E4;&#xAED8;&#xB294; 0.5 EOS&#xB97C; &#xCD94;&#xAC00;&#xB85C; &#xC9C0;&#xAE09;</strong>&#xD574;&#xB4DC;&#xB9AC;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. MYKEY&#xB294; &#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC; &#xC0AC;&#xC6A9;&#xC790;&#xB9CC; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;&#xAC00; &#xAC00;&#xB2A5;&#xD558;&#xBA70;, &#xBC18;&#xB4DC;&#xC2DC; &#xC544;&#xB798;&#xC758; &#xB9C1;&#xD06C;&#xB97C; &#xD1B5;&#xD574; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xBC0F; &#xD68C;&#xC6D0;&#xAC00;&#xC785;&#xC744; &#xC9C4;&#xD589;&#xD558;&#xC154;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xB9C1;&#xD06C; : <a href="https://mykey.org/i/U7ZVGF" target="_blank" rel="noopener">MYKEY&#xC6D4;&#xB81B; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;(&#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC;)</a></li>
+</ul>
+<center><img src="https://cdn.steemitimages.com/DQmes5CW4WX1bN9sAB9j3rnmbWM7KoYQMpF5whEpVYLqbcV/2.jpeg" alt="2.jpeg"></center>
+
+<p>&#xC704;&#xC758; &#xB9C1;&#xD06C;&#xB85C; &#xC811;&#xC18D; &#xD6C4; MYKEY Android &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xBC84;&#xD2BC;&#xC744; &#xD074;&#xB9AD;&#xD558;&#xC5EC; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC; &#xD6C4; &#xD68C;&#xC6D0;&#xAC00;&#xC785;&#xC744; &#xC9C4;&#xD589;&#xD558;&#xC2DC;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. &#xD574;&#xB2F9; &#xB9C1;&#xD06C;&#xB97C; &#xD1B5;&#xD574; &#xACC4;&#xC815;&#xC744; &#xC0DD;&#xC131;&#xD558;&#xC2DC;&#xB294; &#xACBD;&#xC6B0; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD61C;&#xD0DD;&#xC744; &#xBC1B;&#xC73C;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>**(1) MYKEY&#xC6D4;&#xB81B;&#xC5D0;&#xC11C; &#xC774;&#xB354;&#xB9AC;&#xC6C0; GAS &#xC218;&#xC218;&#xB8CC;, EOS&#xBA54;&#xC778;&#xB137; &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xBE44;&#xC6A9; &#xC9C0;&#xBD88;&#xC5D0; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; 1.5&#xBD88; &#xC0C1;&#xB2F9;&#xC758; MYKEY&#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xBE44;&#xC6A9; &#xC9C0;&#xC6D0;</p>
+<p><strong>2) &#xD574;&#xB2F9; &#xB9C1;&#xD06C;&#xB85C; &#xAC00;&#xC785; &#xD6C4; EOS&#xACC4;&#xC815;&#xC744; &#xB0A8;&#xACA8;&#xC8FC;&#xC2DC;&#xB294; &#xACBD;&#xC6B0; 0.5 EOS&#xC529; &#xCD94;&#xAC00; &#xC9C0;&#xC6D0;</strong></p>
+<blockquote>
+<p>EOS &#xACC4;&#xC815;&#xC740; &#xBCF8; &#xD3EC;&#xC2A4;&#xD305;&#xC5D0; &#xB313;&#xAE00;&#xC744; &#xB0A8;&#xACA8;&#xC8FC;&#xC2DC;&#xAC70;&#xB098;, &#xACC4;&#xC815; &#xACF5;&#xAC1C;&#xAC00; &#xAEBC;&#xB824;&#xC9C0;&#xC2DC;&#xB294; &#xACBD;&#xC6B0; &#xC544;&#xB798;&#xC758; &#xD154;&#xB808;&#xADF8;&#xB7A8;, &#xCE74;&#xCE74;&#xC624;&#xD1A1;&#xC73C;&#xB85C; &#xBA54;&#xC2DC;&#xC9C0;&#xB97C; &#xB0A8;&#xACA8;&#xC8FC;&#xC154;&#xB3C4; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xD154;&#xB808;&#xADF8;&#xB7A8; : @donekim</li>
+<li>&#xCE74;&#xCE74;&#xC624;&#xD1A1; : <a href="https://open.kakao.com/o/sfOFcstb" target="_blank" rel="noopener">&#xC624;&#xD508;&#xCC44;&#xD305;&#xBC29; &#xBC14;&#xB85C;&#xAC00;&#xAE30;</a></li>
+</ul>
+</blockquote>
+<h2 id="2-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;&#xD558;&#xAE30;"><a href="#2-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;&#xD558;&#xAE30;" class="headerlink" title="#2. &#xD1A0;&#xD070; &#xC804;&#xC1A1;&#xD558;&#xAE30;"></a>#2. &#xD1A0;&#xD070; &#xC804;&#xC1A1;&#xD558;&#xAE30;</h2><hr>
+<p><img src="https://cdn.steemitimages.com/DQmPWCA3bQmVuzsnmVzHAiw8dimR7LV4oEzMgdGqPyrF26B/3.png" alt="3.png"></p>
+<p>&#xC77C;&#xB2E8; MYKEY&#xC5D0;&#xC11C;&#xC758; &#xBA54;&#xB274; &#xAD6C;&#xC131;&#xC740; &#xAD49;&#xC7A5;&#xD788; &#xB2E8;&#xC21C;&#xD558;&#xACE0; &#xC9C1;&#xAD00;&#xC801;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xCD08;&#xBCF4;&#xC790;&#xB4E4;&#xB3C4; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;&#xC5D0; &#xC5B4;&#xB835;&#xC9C0;&#xB294; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmYWBH3wXw4jZDYkMSrRE36duUpPLEkfBZ4f9cdA1mkB3M/4.png" alt="4.png"></p>
+<p>(1) &#xAC00;&#xC6B4;&#xB370;&#xC5D0; &#xBCF4;&#xC774;&#xB294; Send &#xBC84;&#xD2BC;&#xC744; &#xD130;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;</p>
+<p><img src="https://cdn.steemitimages.com/DQmX1KSQfZDybk6jBRc4nx7LHqkCH8xNxJgJssMyHUmopsC/5.png" alt="5.png"></p>
+<p>(2) &#xC67C;&#xCABD;&#xC5D0; &#xBCF4;&#xC774;&#xB294; To Account &#xC544;&#xC774;&#xCF58;&#xC744; &#xD130;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;</p>
+<p><img src="https://cdn.steemitimages.com/DQmNrASeeX1zewUG7La2xi1uCEZUVUkFy8q9KKRQsbHDj8X/6.png" alt="6.png"></p>
+<p>(3) &#xC704;&#xC640; &#xAC19;&#xC740; &#xD654;&#xBA74;&#xC774; &#xB098;&#xC624;&#xBA74; Recipient Account(&#xBC1B;&#xC744;&#xACC4;&#xC815;&#xBA85;) / Amount(&#xC218;&#xB7C9;) / Memo(&#xBA54;&#xBAA8;) &#xC21C;&#xC73C;&#xB85C; &#xC801;&#xC5B4;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p><strong>[&#xCC38;&#xACE0;&#xC0AC;&#xD56D;]</strong><br>Memo&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; &#xAC70;&#xB798;&#xC18C;&#xB85C; &#xBCF4;&#xB0BC; &#xB54C;&#xB294; &#xD544;&#xC218;&#xC801;&#xC73C;&#xB85C; &#xC785;&#xB825;&#xD574;&#xC57C; &#xD558;&#xB294; &#xC911;&#xC694; &#xC815;&#xBCF4;&#xC9C0;&#xB9CC;, &#xC774;&#xC624;&#xC2A4; &#xACC4;&#xC815;&#xB07C;&#xB9AC; &#xC804;&#xC1A1;&#xD560; &#xB54C;&#xB294; &#xC815;&#xB9D0; &#xBA54;&#xBAA8;&#xC758; &#xC6A9;&#xB3C4;(&#xD544;&#xC694;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0; &#xC544;&#xBB34;&#xAC83;&#xB3C4; &#xC4F0;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xB428;)&#xB85C;&#xB9CC; &#xC0AC;&#xC6A9;&#xD558;&#xC154;&#xB3C4; &#xB429;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmSzYn9Cemygh3yAE89gSyaWQJ9x6rccnPtTyAuUJDGTP5/7.png" alt="7.png"></p>
+<p>(4) &#xC608;&#xC2DC;&#xB85C; steemdonekim&#xC774;&#xB77C;&#xB294; &#xACC4;&#xC815;&#xC73C;&#xB85C; 0.1 EOS&#xB97C; &#xC804;&#xC1A1;&#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmWRjsqA6wvjopirF7dMS2SBAErYhDZb7v83JhXTj81C7k/8.png" alt="8.png"></p>
+<p>(5) &#xC785;&#xB825;&#xC774; &#xBAA8;&#xB450; &#xC644;&#xB8CC;&#xB418;&#xC5C8;&#xC73C;&#xBA74; Next&#xB97C; &#xD130;&#xCE58;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmV8cHBqKS1MceZ6d9m548raKS1V1b3PhQfwc7rCqWFAwG/9.png" alt="9.png"></p>
+<p>(6) &#xC9C0;&#xBB38;&#xC778;&#xC99D; &#xB610;&#xB294; &#xD328;&#xC2A4;&#xC6CC;&#xB4DC; &#xC785;&#xB825;&#xC744; &#xD1B5;&#xD574; &#xD574;&#xB2F9; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC744; &#xC2B9;&#xC778;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmXMru7qKUdbya6viTi58JotK8DiJMVAZMjLBNuEkYU7Ye/10.png" alt="10.png"></p>
+<p>(7) &#xC2B9;&#xC778;&#xC744; &#xC644;&#xB8CC;&#xD558;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; 0.1 EOS&#xAC00; steemdonekim &#xACC4;&#xC815;&#xC73C;&#xB85C; &#xC804;&#xC1A1;&#xB41C; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="3-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;-&#xC6D0;&#xB9AC;"><a href="#3-&#xD1A0;&#xD070;-&#xC804;&#xC1A1;-&#xC6D0;&#xB9AC;" class="headerlink" title="#3. &#xD1A0;&#xD070; &#xC804;&#xC1A1; &#xC6D0;&#xB9AC;"></a>#3. &#xD1A0;&#xD070; &#xC804;&#xC1A1; &#xC6D0;&#xB9AC;</h2><hr>
+<p><img src="https://cdn.steemitimages.com/DQmPdP13HVs69pD3pkVbBYFkMLY7AhgFQgPDMjohfLVUmaX/11.png" alt="11.png"></p>
+<p>&#xD1A0;&#xD070;&#xC774; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC804;&#xC1A1;&#xB41C; &#xAC83;&#xC744; &#xBCF4;&#xACE0; &#xC758;&#xBB38;&#xC744; &#xAC00;&#xC9C0;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC774; &#xC788;&#xC744; &#xAC83; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74; <strong>&#xC774;&#xC624;&#xC2A4; &#xBA54;&#xC778;&#xB137;&#xC5D0;&#xC11C; &#xD1A0;&#xD070;&#xC744; &#xC804;&#xC1A1;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C;&#xB294; CPU&#xB77C;&#xB294; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xCDA9;&#xBD84;&#xD788; &#xC788;&#xC5B4;&#xC57C; &#xB41C;&#xB2E4;&#xACE0; &#xB4E4;&#xC5C8;&#xB294;&#xB370;, &#xBD84;&#xBA85;&#xD788; &#xB098;&#xB294; &#xBC29;&#xAE08; &#xB9CC;&#xB4E0; &#xACC4;&#xC815;&#xC5D0;&#xC11C; &#xC2A4;&#xD14C;&#xC774;&#xD0B9;&#xB3C4; &#xD558;&#xC9C0; &#xC54A;&#xC558;&#xACE0; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xBE4C;&#xB9B0; &#xC801;&#xB3C4; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;</strong>&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmVGhrfpWjefgaYdDd78LqGkvTNd5JeAMVL31RdJCSMJ9u/12.png" alt="12.png"></p>
+<p>&#xD604;&#xC7AC; &#xB0B4; &#xACC4;&#xC815; &#xC0C1;&#xD0DC;&#xAC00; &#xC5B4;&#xB5A4;&#xC9C0; &#xC870;&#xD68C;&#xB97C; &#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p><img src="https://cdn.steemitimages.com/DQmeiZ9iC6ePKesknHsYN2pKmAw3ygkMNgwk3uHUYMVWfYT/13.png" alt="13.png"></p>
+<p>&#xBD84;&#xBA85;&#xD788; EOS&#xD1A0;&#xD070;&#xC740; &#xC815;&#xC0C1;&#xC801;&#xC73C;&#xB85C; &#xC804;&#xC1A1;&#xC774; &#xC644;&#xB8CC;&#xB418;&#xC5C8;&#xC9C0;&#xB9CC;, CPU&#xB098; NET&#xC790;&#xC6D0;&#xC740; &#xD558;&#xB098;&#xB3C4; &#xC5C6;&#xB294; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmQMX3JVuBRy1QmZBrtNNA4qWGHC6At7cUSieckyQFzUXr/14.png" alt="14.png"></p>
+<p>&#xAC8C;&#xB2E4;&#xAC00; Permission&#xB3C4; &#xAE30;&#xC874;&#xC5D0; &#xBCF4;&#xB358; &#xAC83;&#xACFC;&#xB294; &#xBB54;&#xAC00; &#xB2E4;&#xB974;&#xAC8C; EOS&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xBB38;&#xAD6C;&#xAC00; &#xC544;&#xB2C8;&#xB77C; 12&#xC790;&#xB9AC; &#xACC4;&#xC815;&#xC774;&#xB984; + @active &#xB85C; &#xC124;&#xC815;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://cdn.steemitimages.com/DQmZxwm2fSk8SAWCGoQtddXL3dfDkRthy1pV4y3En5eFY18/15.png" alt="15.png"></p>
+<blockquote>
+<p> &lt;&#xCC38;&#xACE0;&gt; &#xC77C;&#xBC18;&#xC801;&#xC778; Permission&#xC758; &#xBAA8;&#xC2B5;</p>
+</blockquote>
+<p>&#xAD73;&#xC774; &#xC5EC;&#xAE30;&#xC11C; &#xD37C;&#xBBF8;&#xC158;&#xAE4C;&#xC9C0; &#xC54C; &#xD544;&#xC694;&#xB294; &#xC5C6;&#xC73C;&#xB2C8;, &#xD574;&#xB2F9; &#xB0B4;&#xC6A9;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xB098;&#xC911;&#xC5D0; &#xC790;&#xC138;&#xD788; &#xD55C; &#xBC88; &#xC124;&#xBA85;&#xC744; &#xB4DC;&#xB9AC;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. (&#xC800;&#xB807;&#xAC8C; &#xD37C;&#xBBF8;&#xC158;&#xC774; &#xBB54;&#xAC00; &#xB2E4;&#xB978; &#xAC83; &#xB54C;&#xBB38;&#xC5D0; &#xC0AC;&#xC6A9;&#xC790;&#xB4E4;&#xC774; &#xD504;&#xB77C;&#xC774;&#xBE57; &#xD0A4; &#xBCF4;&#xAD00;&#xACFC; &#xD574;&#xD0B9; &#xBB38;&#xC81C;&#xC5D0;&#xC11C; &#xC790;&#xC720;&#xB85C;&#xC6CC;&#xC9C8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;)</p>
+<p><img src="https://cdn.steemitimages.com/DQmVcD8fFAnArAdaC9uDxKSVfGG11wewT2XvqBoRSJxsKnc/16.png" alt="16.png"></p>
+<p>&#xC0AC;&#xC2E4; MYKEY&#xC5D0;&#xC11C; &#xD1A0;&#xD070; &#xC804;&#xC1A1; &#xD560; &#xB54C; &#xD654;&#xBA74;&#xC744; &#xC798; &#xC0B4;&#xD3B4;&#xBCF4;&#xBA74; &#xC704;&#xC640; &#xAC19;&#xC774; Estimated Network Fee&#xAC00; 0.0002 &#xC18C;&#xBAA8;&#xB41C;&#xB2E4;&#xACE0; &#xD558;&#xB294; &#xAC83;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xD604;&#xC7AC; <strong>MYKEY&#xC5D0;&#xC11C;&#xB294; &#xC544;&#xC8FC; &#xC18C;&#xB7C9;&#xC758; &#xB124;&#xD2B8;&#xC6CC;&#xD06C; &#xC0AC;&#xC6A9;&#xB8CC;&#xB97C; &#xBC1B;&#xACE0; &#xC774;&#xC624;&#xC2A4; &#xACC4;&#xC815;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xB9AC;&#xC18C;&#xC2A4;&#xB97C; &#xB300;&#xC2E0; &#xBD80;&#xB2F4;&#xD568;&#xC73C;&#xB85C;&#xC368;, &#xC0AC;&#xC6A9;&#xC790;&#xB4E4;&#xC774; &#xD3B8;&#xB9AC;&#xD558;&#xAC8C; &#xD1A0;&#xD070;&#xC744; &#xC8FC;&#xACE0; &#xBC1B;&#xC744; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xC9C0;&#xC6D0;</strong>&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<blockquote>
+<p>&#xC800; &#xC704;&#xC5D0; &#xBCF4;&#xC774;&#xB294; &#xC218;&#xC218;&#xB8CC;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xAE08;&#xC561;&#xC740; <strong>&#xC77C;&#xB2E8; MYKEY&#xC6D4;&#xB81B;&#xC5D0; &#xAC00;&#xC785;&#xB9CC; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xC218; &#xCC9C;&#xBC88;&#xC740; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAC8C; &#xC9C0;&#xAE09;&#xC744; &#xD574;&#xC8FC;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC0AC;&#xC2E4;&#xC0C1; &#xACF5;&#xC9DC;</strong>&#xB77C;&#xACE0; &#xC0DD;&#xAC01;&#xD558;&#xC154;&#xB3C4; &#xB429;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmakQ1Fpywpg18mL9SdgtJv649BahzndYMt2voPa7uuPsa/17.png" alt="17.png"></p>
+<p>&#xC0AC;&#xC2E4; &#xBC29;&#xAE08; &#xC81C;&#xAC00; 0.1 EOS&#xB97C; &#xC804;&#xC1A1;&#xD55C; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC5D0;&#xB294;, <strong>&#xD1A0;&#xD070;&#xC744; &#xC804;&#xC1A1;&#xD560; &#xB54C; mykeymanager&#xB77C;&#xB294; &#xACC4;&#xC815;&#xC5D0;&#xC11C; CPU&#xB97C; &#xB300;&#xC2E0; &#xBD80;&#xB2F4;&#xD558;&#xB294; &#xD2B8;&#xB79C;&#xC7AD;&#xC158;&#xC774; &#xB3D9;&#xC2DC;</strong>&#xC5D0; &#xC77C;&#xC5B4;&#xB098;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xB0B4; &#xACC4;&#xC815;&#xC5D0; &#xB9AC;&#xC18C;&#xC2A4;&#xAC00; &#xC544;&#xC608; &#xC5C6;&#xB354;&#xB77C;&#xB3C4; &#xC544;&#xBB34;&#xB7F0; &#xC0C1;&#xAD00;&#xC774; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#xB530;&#xB77C;&#xC11C; &#xD1A0;&#xD070;&#xC744; &#xC790;&#xC8FC; &#xC8FC;&#xACE0;&#xBC1B;&#xACE0; &#xD560; &#xD544;&#xC694;&#xAC00; &#xC788;&#xB294; &#xBD84;&#xB4E4;&#xC740; &#xC77C;&#xB2E8; MYKEY&#xC6D4;&#xB81B;&#xC5D0; &#xB4F1;&#xB85D;&#xD55C; &#xACC4;&#xC815;&#xC73C;&#xB85C; &#xD1A0;&#xD070;&#xC744; &#xBCF4;&#xB0B4;&#xB193;&#xACE0; &#xC0AC;&#xC6A9;</strong>&#xD558;&#xC2DC;&#xBA74;, CPU&#xC0C1;&#xD0DC;&#xAC00; &#xC5B4;&#xB5A4;&#xC9C0;&#xC5D0; &#xAD00;&#xACC4;&#xC5C6;&#xC774; &#xC5B8;&#xC81C;&#xB4E0;&#xC9C0; &#xD1A0;&#xD070;&#xC744; &#xC8FC;&#xACE0;&#xBC1B;&#xC744; &#xC218; &#xC788;&#xAC8C; &#xB418;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<h2 id="4-&#xC9C0;&#xC6D0;&#xD558;&#xB294;-&#xD1A0;&#xD070;&#xB4E4;"><a href="#4-&#xC9C0;&#xC6D0;&#xD558;&#xB294;-&#xD1A0;&#xD070;&#xB4E4;" class="headerlink" title="#4. &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xD1A0;&#xD070;&#xB4E4;"></a>#4. &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xD1A0;&#xD070;&#xB4E4;</h2><hr>
+<p><img src="https://cdn.steemitimages.com/DQmNkPE2oShvT1iiyEPZhJF19BSP9mVuo4AELZenma6cSpH/18.png" alt="18.png"></p>
+<p>&#xC704;&#xC5D0;&#xC11C;&#xB294; EOS&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB9CC; &#xC124;&#xBA85;&#xD588;&#xC9C0;&#xB9CC;, MYKEY&#xB294; &#xC774;&#xB354;&#xB9AC;&#xC6C0;(ETH)&#xACFC; &#xC774;&#xB354;&#xB9AC;&#xC6C0; &#xAE30;&#xBC18;&#xC758; ERC-20&#xD1A0;&#xD070;&#xB4E4;&#xC758; &#xBCF4;&#xAD00; &#xBC0F; &#xC804;&#xC1A1; &#xAE30;&#xB2A5;&#xB3C4; &#xC9C0;&#xC6D0;&#xD569;&#xB2C8;&#xB2E4;. <strong>&#xC2EC;&#xC9C0;&#xC5B4; ETH&#xB098; ERC20 &#xD1A0;&#xD070;&#xB4E4;&#xC758; &#xC804;&#xC1A1; &#xC2DC;&#xC5D0;&#xB3C4; GAS&#xC218;&#xC218;&#xB8CC;&#xB97C; ETH&#xB85C; &#xC9C0;&#xBD88;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBA54;&#xD0C0;&#xB9C8;&#xC2A4;&#xD06C;&#xB098; &#xC77C;&#xBC18; &#xBAA8;&#xBC14;&#xC77C; &#xC9C0;&#xAC11;&#xC5D0; &#xBE44;&#xD574; &#xD6E8;&#xC52C; &#xC0AC;&#xC6A9;&#xC774; &#xD3B8;&#xB9AC;</strong>&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCC98;&#xC74C; &#xD68C;&#xC6D0;&#xAC00;&#xC785;&#xD560; &#xB54C;&#xB294; KYC &#xB54C;&#xBB38;&#xC5D0; &#xC870;&#xAE08; &#xAEBC;&#xB824;&#xC9C0;&#xC2E4; &#xC218;&#xB3C4; &#xC788;&#xACA0;&#xC9C0;&#xB9CC;, &#xD655;&#xC2E4;&#xD788; <strong>MYKEY&#xC6D4;&#xB81B;&#xC740; EOS&#xBA54;&#xC778;&#xB137;&#xC758; &#xB9AC;&#xC18C;&#xC2A4;&#xB098; &#xC774;&#xB354;&#xB9AC;&#xC6C0;&#xC758; Gas&#xC218;&#xC218;&#xB8CC; &#xAC71;&#xC815; &#xC5C6;&#xC774; &#xD1A0;&#xD070; &#xC804;&#xC1A1;&#xC774; &#xC27D;&#xACE0; &#xAC04;&#xD3B8;&#xD558;&#xAC8C; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;&#xB294; &#xC810;&#xC5D0;&#xC11C; &#xB9CE;&#xC740; &#xBA54;&#xB9AC;&#xD2B8;</strong>&#xB97C; &#xAC00;&#xC9C4;&#xB2E4;&#xACE0; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p><strong>&#xD2B9;&#xD788;&#xB098; &#xCD08;&#xBCF4;&#xC790;&#xB4E4;&#xC774; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;&#xC5D0; &#xC815;&#xB9D0; &#xD3B8;&#xB9AC;</strong>&#xD558;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;, &#xADF8;&#xB3D9;&#xC548; &#xC6D4;&#xB81B;&#xC774;&#xB098; &#xACC4;&#xC815; &#xC0AC;&#xC6A9;&#xC5D0; &#xC5B4;&#xB824;&#xC6C0;&#xC744; &#xACAA;&#xC73C;&#xC168;&#xB2E4;&#xBA74; &#xC774; &#xAE30;&#xD68C;&#xC5D0; &#xD55C; &#xBC88; <strong>MYKEY&#xC6D4;&#xB81B;&#xC744; &#xC368;&#xBCF4;&#xC2DC;&#xB294; &#xAC83;&#xC744; &#xAC15;&#xB825; &#xCD94;&#xCC9C;</strong>&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@donekim/eos-inside-gas" target="_blank" rel="noopener">&#x2018;[EOS Inside] &#xB9AC;&#xC18C;&#xC2A4;&#xB098; GAS&#xC218;&#xC218;&#xB8CC; &#xAC71;&#xC815; &#xC5C6;&#xC774; &#xD1A0;&#xD070; &#xC804;&#xC1A1;&#xD558;&#xAE30;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@donekim/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@donekim/tags/hive-101145/">hive-101145</a>, <a class="has-link-grey -link" href="/@donekim/tags/liv/">liv</a>, <a class="has-link-grey -link" href="/@donekim/tags/mini/">mini</a>, <a class="has-link-grey -link" href="/@donekim/tags/palnet/">palnet</a>, <a class="has-link-grey -link" href="/@donekim/tags/s/">s</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct/">sct</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct-coin/">sct-coin</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct-kr/">sct-kr</a>, <a class="has-link-grey -link" href="/@donekim/tags/steemleo/">steemleo</a>, <a class="has-link-grey -link" href="/@donekim/tags/union/">union</a>, <a class="has-link-grey -link" href="/@donekim/tags/zzan/">zzan</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@donekim/gopax-15-000/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">[GOPAX] 고팍스 거래소 가입하고 15,000원 받아가세요!</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@donekim/2wizg5-steem/">
+                <span class="level-item">[STEEM] 내 맘대로 막 써내려간 증인 평가</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@donekim/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 디온&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@donekim/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@donekim/content.json"};</script>
+
+
+
+    
+<script src="/@donekim/js/bundle.js" defer></script></body>
+</html>
+

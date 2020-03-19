@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>스마트미디어토큰(SMT) 발행 및 운영 관련 아이디어 제안 - 디온</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@donekim/css/style.css">
+
+<link rel="stylesheet" href="/@donekim/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@donekim/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@donekim/">Home</a>
+                
+                <a class="navbar-item" href="/@donekim/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@donekim/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@donekim/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@donekim/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catálogo" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catálogo
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#1-SMT-&#xBC1C;&#xD589;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;">
+        <span class="has-mr-6">1</span>
+        <span>#1. SMT &#xBC1C;&#xD589;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-SMT-&#xC6B4;&#xC601;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;">
+        <span class="has-mr-6">2</span>
+        <span>#2. SMT &#xC6B4;&#xC601;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-SMT&#xB97C;-&#xD1B5;&#xD574;-ICO&#xB97C;-&#xC9C4;&#xD589;&#xD558;&#xB294;-&#xACBD;&#xC6B0;">
+        <span class="has-mr-6">3</span>
+        <span>#3. SMT&#xB97C; &#xD1B5;&#xD574; ICO&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xACBD;&#xC6B0;</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-SMT-&#xC790;&#xCCB4;-&#xAC70;&#xB798;&#xC18C;&#xC758;-&#xC0C1;&#xC7A5;&#xC815;&#xCC45;-&#xBC0F;-&#xC81C;&#xD55C;">
+        <span class="has-mr-6">4</span>
+        <span>#4. SMT &#xC790;&#xCCB4; &#xAC70;&#xB798;&#xC18C;&#xC758; &#xC0C1;&#xC7A5;&#xC815;&#xCC45; &#xBC0F; &#xC81C;&#xD55C;</span>
+        </a></li><li>
+        <a class="is-flex" href="#5-SMT-&#xD1A0;&#xD070;-&#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;">
+        <span class="has-mr-6">5</span>
+        <span>#5. SMT &#xD1A0;&#xD070; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;</span>
+        </a></li><li>
+        <a class="is-flex" href="#1-Qualification-of-SMT-token-issuer">
+        <span class="has-mr-6">6</span>
+        <span>#1. Qualification of SMT token issuer</span>
+        </a></li><li>
+        <a class="is-flex" href="#2-Qualification-of-SMT-token-operators">
+        <span class="has-mr-6">7</span>
+        <span>#2. Qualification of SMT token operators</span>
+        </a></li><li>
+        <a class="is-flex" href="#3-In-case-of-conducting-ICO">
+        <span class="has-mr-6">8</span>
+        <span>#3. In case of conducting ICO</span>
+        </a></li><li>
+        <a class="is-flex" href="#4-SMT-exchange-listing-fee">
+        <span class="has-mr-6">9</span>
+        <span>#4. SMT exchange listing fee</span>
+        </a></li><li>
+        <a class="is-flex" href="#5-SMT-token-trading-fee">
+        <span class="has-mr-6">10</span>
+        <span>#5. SMT token trading fee</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@donekim/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://files.steempeak.com/file/steempeak/donekim/ioa7Ks3t-thumbnail.png" alt="스마트미디어토큰(SMT) 발행 및 운영 관련 아이디어 제안">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-26T22:30:18.000Z">2019-08-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@donekim/categories/sct/">sct</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    17 minutes read (About 2571 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                스마트미디어토큰(SMT) 발행 및 운영 관련 아이디어 제안
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://files.steempeak.com/file/steempeak/donekim/ioa7Ks3t-thumbnail.png" alt="thumbnail.png"></p>
+<p>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;, &#xB514;&#xC628;(@donekim)&#xC785;&#xB2C8;&#xB2E4;. &#xD604;&#xC7AC; &#xC2A4;&#xD300;&#xCF54;&#xC778;&#xD310;&#xC5D0;&#xC11C;&#xB294; <a href="https://www.steemcoinpan.com/sct/@sct/smt-250-sctm" target="_blank" rel="noopener">SMT &#xBC1C;&#xD589; &#xBC0F; &#xC6B4;&#xC601; &#xC815;&#xCC45; &#xAD00;&#xB828; &#xC2A4;&#xD300; &#xC218;&#xC694; &#xCD09;&#xC9C4; &#xBC0F; &#xC18C;&#xAC01; &#xBC29;&#xC548; &#xC544;&#xC774;&#xB514;&#xC5B4; &#xACBD;&#xC5F0;&#xB300;&#xD68C;(&#xC0C1;&#xAE08; 250 SCTM)</a>&#xAC00; &#xC9C4;&#xD589;&#xB418;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xAC1C;&#xC778;&#xC801;&#xC73C;&#xB85C;&#xB3C4; &#xC2A4;&#xD300; &#xBE14;&#xB85D;&#xCCB4;&#xC778;&#xACFC; &#xC2A4;&#xD2F0;&#xBC0B;&#xC5D0; &#xAD00;&#xC2EC;&#xC744; &#xAC00;&#xC9C0;&#xAE30; &#xC2DC;&#xC791;&#xD588;&#xB358; &#xB54C;&#xBD80;&#xD130; SMT&#xC758; &#xB4F1;&#xC7A5;&#xC744; &#xBAA9;&#xC774; &#xBE60;&#xC9C0;&#xAC8C; &#xAE30;&#xB2E4;&#xB824;&#xC654;&#xB358; &#xC720;&#xC800; &#xC911; &#xD558;&#xB098;&#xB85C;&#xC11C; &#xC55E;&#xC73C;&#xB85C; &#xB2E4;&#xAC00;&#xC62C; MVP &#xB610;&#xB294; Lite &#xBC84;&#xC804;&#xC740; &#xC5B4;&#xB5A0;&#xD560;&#xC9C0;, &#xADF8;&#xB9AC;&#xACE0; &#xC5B4;&#xB5BB;&#xAC8C; &#xC6B4;&#xC601;&#xC744; &#xD558;&#xC5EC; Steemit Inc&#xC758; &#xC6B4;&#xC601;&#xC790;&#xAE08; &#xB9C8;&#xB828;&#xC774;&#xB77C;&#xB294; &#xB9E4;&#xB3C4;&#xC758; &#xB2AA;&#xC5D0;&#xC11C; &#xBC97;&#xC5B4;&#xB098; &#xB300;&#xADDC;&#xBAA8; &#xC218;&#xC694;&#xB97C; &#xC774;&#xB04C;&#xC5B4; &#xC62C; &#xC218; &#xC788;&#xB294; &#xACAC;&#xC778;&#xCC28;&#xAC00; &#xB418;&#xC5B4;&#xC904; &#xC218; &#xC788;&#xC744;&#xC9C0; &#xB9CE;&#xC740; &#xAE30;&#xB300;&#xB97C; &#xD558;&#xACE0; &#xC788;&#xB294; &#xC785;&#xC7A5;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC544;&#xC9C1;&#xAE4C;&#xC9C0;&#xB294; <a href="https://smt.steem.com/smt-whitepaper.pdf" target="_blank" rel="noopener">SMT&#xBC31;&#xC11C;</a>&#xC5D0;&#xC11C;&#xB3C4; &#xAC1C;&#xB7B5;&#xC801;&#xC778; &#xADF8;&#xB9BC;&#xB9CC; &#xADF8;&#xB9AC;&#xACE0; &#xC788;&#xC744; &#xBFD0; &#xC5B4;&#xB5A4; &#xC6D0;&#xCE59;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC6B4;&#xC601;&#xC744; &#xD560;&#xC9C0;&#xC5D0; &#xB300;&#xD55C; &#xBA85;&#xD655;&#xD55C; &#xB0B4;&#xC6A9;&#xB4E4;&#xC744; &#xCC3E;&#xC544;&#xBCFC; &#xC218;&#xAC00; &#xC5C6;&#xC5C8;&#xB358; &#xAD00;&#xACC4;&#xB85C;, &#xAC1C;&#xC778;&#xC801;&#xC73C;&#xB85C; &#xC0DD;&#xAC01;&#xD574;&#xBCF4;&#xACE0; &#xC81C;&#xC548;&#xD558;&#xACE0; &#xC2F6;&#xC5C8;&#xB358; &#xB0B4;&#xC6A9;&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xD3EC;&#xC2A4;&#xD305;&#xC73C;&#xB85C; &#xACF5;&#xC720;&#xB97C; &#xD574; &#xBD05;&#xB2C8;&#xB2E4;. </p>
+<p>&#xD639;&#xC2DC;&#xB77C;&#xB3C4; &#xB2E4;&#xB978; &#xC758;&#xACAC;&#xC774;&#xB098; &#xB354; &#xC2E0;&#xBC15;&#xD55C; &#xC544;&#xC774;&#xB514;&#xC5B4;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xACC4;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC740; &#xC704;&#xC5D0;&#xC11C; &#xB9D0;&#xC500;&#xB4DC;&#xB9B0; &#xACBD;&#xC5F0;&#xB300;&#xD68C; &#xACF5;&#xC9C0; &#xD3EC;&#xC2A4;&#xD305;&#xC5D0; &#xB313;&#xAE00; &#xCC38;&#xC5EC;&#xB97C; &#xD1B5;&#xD574; &#xC801;&#xADF9;&#xC801;&#xC778; &#xC758;&#xACAC;&#xC744; &#xB0B4;&#xC8FC;&#xC2DC;&#xBA74; &#xB354;&#xB354;&#xC6B1; &#xC88B;&#xC744; &#xAC83; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xC800;&#xC758; &#xAC1C;&#xC778;&#xC801;&#xC778; &#xC758;&#xACAC;&#xACFC; &#xC81C;&#xC548;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<h3 id="1-SMT-&#xBC1C;&#xD589;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;"><a href="#1-SMT-&#xBC1C;&#xD589;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;" class="headerlink" title="#1. SMT &#xBC1C;&#xD589;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;"></a>#1. SMT &#xBC1C;&#xD589;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;</h3><p><strong>&#x2460; &#xC2A4;&#xD300;&#xD30C;&#xC6CC; : &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xC5D0; &#xBCC4;&#xB3C4; &#xC81C;&#xD55C;&#xC740; &#xC5C6;&#xC74C;</strong> <code>(&#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB294; &#xC544;&#xB798;&#xC5D0;&#xC11C; &#xCD94;&#xAC00;&#xB85C; &#xB2E4;&#xB8E8;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;)</code></p>
+<p><strong>&#x2461; &#xBA85;&#xC131;&#xB3C4; : 60&#xC774;&#xC0C1;</strong></p>
+<ul>
+<li>&#xC678;&#xBD80;&#xC5D0;&#xC11C; SMT&#xB85C; &#xCEE4;&#xBBA4;&#xB2C8;&#xD2F0;&#xB97C; &#xAD6C;&#xCD95;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xAE30;&#xC874; &#xC2A4;&#xD2F0;&#xBBF8;&#xC5B8; &#xC911; &#xB204;&#xAD70;&#xAC00;&#xB97C; &#xACE0;&#xBB38;&#xC774;&#xB098; &#xD300;&#xC6D0;&#xC73C;&#xB85C; &#xC601;&#xC785;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. </li>
+<li>&#xC2A4;&#xD2F0;&#xBC0B;&#xC5D0;&#xC11C;&#xC758; &#xBA85;&#xC131;&#xB3C4;(&#xD3C9;&#xD310;)&#xAC00; &#xAC00;&#xCE58;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xAE30;&#xB2A5;&#xC744; &#xD560; &#xC218; &#xC788;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p><strong>&#x2462; &#xBC1C;&#xD589;&#xBE44;&#xC6A9; : 300 &#xB2EC;&#xB7EC;</strong></p>
+<ul>
+<li><strong>SMT&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD1A0;&#xD070;&#xC744; &#xBC1C;&#xD589;&#xD558;&#xACE0;&#xC790; &#xD558;&#xB294; &#xACE0;&#xAC1D;&#xB4E4;&#xC758; &#xC608;&#xCE21;&#xAC00;&#xB2A5;&#xC131;&#xC744; &#xC704;&#xD574; &#xAC00;&#xACA9;&#xC740; USD&#xAE30;&#xC900;&#xC73C;&#xB85C; &#xC124;&#xC815;</strong></li>
+<li>&#xBC1C;&#xD589;&#xBE44;&#xC6A9;&#xC740; STEEM &#xB610;&#xB294; SBD&#xB85C;&#xB9CC; &#xC9C0;&#xBD88; &#xAC00;&#xB2A5;</li>
+<li>&#xC9C0;&#xBD88;&#xB41C; &#xBC1C;&#xD589; &#xBE44;&#xC6A9;&#xC740; &#xC804;&#xC561; &#xC18C;&#xAC01;&#xC5D0; &#xC0AC;&#xC6A9;</li>
+</ul>
+<blockquote>
+<p>@morning&#xB2D8;&#xC758; &#xB9D0;&#xC500;&#xCC98;&#xB7FC; &#xC2A4;&#xD300; &#xAC00;&#xACA9;&#xC758; &#xB192;&#xC740; &#xBCC0;&#xB3D9;&#xC131;&#xC774; SMT&#xC758; &#xC9C4;&#xC785;&#xC7A5;&#xBCBD;&#xC774; &#xB420; &#xC218; &#xC788;&#xB294; &#xC18C;&#xC9C0;&#xAC00; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBC1C;&#xD589;&#xBE44;&#xC6A9;&#xC758; &#xAE30;&#xC900;&#xC740; USD&#xB2EC;&#xB7EC;&#xC5D0; &#xD398;&#xAE45;&#xB418;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xC744; &#xAC83; &#xAC19;&#xC544; &#xC218;&#xC815;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><code>&#xC77C;&#xB2E8; &#xBC1C;&#xD589;&#xC790;&#xC758; &#xBB38;&#xD131;&#xC740; &#xB0AE;&#xC744;&#xC218;&#xB85D; &#xC88B;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB9CC; &#xC6B4;&#xC601;&#xACFC; &#xC0C1;&#xC7A5;&#xC758; &#xC694;&#xAC74;&#xC744; &#xAC15;&#xB825;&#xD558;&#xAC8C; &#xADDC;&#xC81C;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;</code></p>
+<hr>
+<h3 id="2-SMT-&#xC6B4;&#xC601;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;"><a href="#2-SMT-&#xC6B4;&#xC601;&#xC790;&#xC758;-&#xC790;&#xACA9;&#xC870;&#xAC74;" class="headerlink" title="#2. SMT &#xC6B4;&#xC601;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;"></a>#2. SMT &#xC6B4;&#xC601;&#xC790;&#xC758; &#xC790;&#xACA9;&#xC870;&#xAC74;</h3><p><strong>&#x2460; &#xD300;&#xC73C;&#xB85C;&#xC11C;&#xC758; &#xC6B4;&#xC601; &#xC870;&#xAC74;</strong></p>
+<ul>
+<li><strong>&#xBC18;&#xB4DC;&#xC2DC; 3&#xC778; &#xC774;&#xC0C1;&#xC758; &#xD300;&#xC73C;&#xB85C; &#xAD6C;&#xC131;&#xD560; &#xAC83;</strong> </li>
+<li>SMT&#xB294; &#xC0AC;&#xC6A9;&#xC790; 1&#xC778;&#xC774; &#xC6B4;&#xC601;&#xD558;&#xB294; &#xC7A5;&#xB09C;&#xC2A4;&#xB7EC;&#xC6B4; B2C&#xBAA8;&#xB378;&#xC740; &#xB418;&#xC9C0; &#xC54A;&#xC558;&#xC73C;&#xBA74; &#xD569;&#xB2C8;&#xB2E4;. </li>
+<li>&#xAC00;&#xAE09;&#xC801; &#xC2E4;&#xC9C8;&#xC801; &#xC720;&#xD2F8;&#xB9AC;&#xD2F0;&#xB97C; &#xAC00;&#xC9C8; &#xC218; &#xC788;&#xB294; B2B &#xBE44;&#xC988;&#xB2C8;&#xC2A4; &#xBAA8;&#xB378;&#xC744; &#xCD94;&#xAD6C;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p><strong>&#x2461; &#xC2E0;&#xADDC; &#xACC4;&#xC815; &#xC0DD;&#xC131; &#xB2A5;&#xB825;</strong>. </p>
+<ul>
+<li>&#xC678;&#xBD80; &#xC720;&#xC800;&#xB4E4;&#xC758; &#xC9C4;&#xC785;&#xC744; &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xC9C0;&#xC6D0;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC2E0;&#xADDC; &#xACC4;&#xC815; &#xC0DD;&#xC131;&#xB2A5;&#xB825;&#xC744; &#xBCF4;&#xC720;&#xD558;&#xACE0; &#xC788;&#xC74C;&#xC744; &#xC99D;&#xBA85;&#xD574;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xB2E4;&#xB9CC; &#xC544;&#xB798;&#xC758; &#xC635;&#xC158; &#xC911;&#xC5D0; &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xC120;&#xD0DD;<br>(1) &#xC77C;&#xC815; &#xC218;&#xB7C9; &#xC774;&#xC0C1;&#xC758; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB97C; &#xC790;&#xCCB4;&#xC801;&#xC73C;&#xB85C; &#xBCF4;&#xC720;<br>(2) &#xC77C;&#xC815; &#xC218;&#xB7C9; &#xC774;&#xC0C1;&#xC758; RC&#xB97C; &#xC784;&#xB300;<br>(3) &#xC77C;&#xC815; &#xC218;&#xB7C9; &#xC774;&#xC0C1;&#xC758; INV&#xD1A0;&#xD070;&#xC744; &#xAD6C;&#xB9E4; </li>
+</ul>
+<h3 id="3-SMT&#xB97C;-&#xD1B5;&#xD574;-ICO&#xB97C;-&#xC9C4;&#xD589;&#xD558;&#xB294;-&#xACBD;&#xC6B0;"><a href="#3-SMT&#xB97C;-&#xD1B5;&#xD574;-ICO&#xB97C;-&#xC9C4;&#xD589;&#xD558;&#xB294;-&#xACBD;&#xC6B0;" class="headerlink" title="#3. SMT&#xB97C; &#xD1B5;&#xD574; ICO&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xACBD;&#xC6B0;"></a>#3. SMT&#xB97C; &#xD1B5;&#xD574; ICO&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xACBD;&#xC6B0;</h3><p>ICO&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xB97C; &#xC5C4;&#xACA9;&#xD558;&#xAC8C; &#xAD00;&#xB9AC;&#xD558;&#xC9C0; &#xC54A;&#xC73C;&#xBA74;, SMT&#xB294; &#xC774;&#xB354;&#xB9AC;&#xC6C0;&#xC758; &#xC0AC;&#xB840;&#xCC98;&#xB7FC; &#xCD94;&#xD6C4;&#xC5D0; &#xC624;&#xD788;&#xB824; &#xC2A4;&#xD300; &#xC0DD;&#xD0DC;&#xACC4;&#xC758; &#xBC1C;&#xBAA9;&#xC744; &#xC7A1;&#xB294; &#xC704;&#xD611;&#xC694;&#xC18C;&#xAC00; &#xB420; &#xC218; &#xC788;&#xC73C;&#xBBC0;&#xB85C; &#xAC15;&#xB825;&#xD55C; &#xADDC;&#xC81C;&#xAC00; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><strong>&#x2460; &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5; &#xC9C0;&#xBD88; &#xC218;&#xB2E8;&#xC758; &#xAD6C;&#xBD84;</strong></p>
+<ul>
+<li><strong>&#xC2A4;&#xD300;(STEEM) &#xB610;&#xB294; &#xC2A4;&#xD300;&#xB2EC;&#xB7EC;(SBD)&#xB85C;&#xB9CC; &#xBAA8;&#xC9D1;</strong>&#xD558;&#xB294; &#xACBD;&#xC6B0;, &#xADF8;&#xB9AC;&#xACE0; <strong>&#xB2E4;&#xB978; &#xD06C;&#xB9BD;&#xD1A0;(BTC/ETH/EOS)&#xAE4C;&#xC9C0; &#xD3EC;&#xD568;</strong>&#xD558;&#xB294; &#xACBD;&#xC6B0;&#xB85C; &#xAD6C;&#xBD84;<br>(1) &#xC2A4;&#xD300;/&#xC2A4;&#xB2EC;&#xB85C; &#xBAA8;&#xC9D1;&#xD558;&#xB294; &#xACBD;&#xC6B0; : &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5; &#xAE08;&#xC561; &#xC911; 10%&#xB97C; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB85C; &#xC804;&#xD658;&#xD558;&#xACE0; &#xBCF4;&#xC720;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBB34;&#xD654;<br>(2) &#xB2E4;&#xB978; &#xD06C;&#xB9BD;&#xD1A0;&#xB3C4; &#xD3EC;&#xD568;&#xD558;&#xB294; &#xACBD;&#xC6B0; : &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5; &#xAE08;&#xC561; &#xC911; 20%&#xB97C; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB85C; &#xC804;&#xD658;&#xD558;&#xACE0; &#xBCF4;&#xC720;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBB34;&#xD654;</li>
+</ul>
+<blockquote>
+<p>SMT&#xC758; &#xBC31;&#xC11C; &#xC0C1;&#xC5D0;&#xC11C;&#xB294; STEEM&#xC73C;&#xB85C;&#xB9CC; &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5;&#xC774; &#xB418;&#xB294; &#xAC83;&#xCC98;&#xB7FC; &#xD45C;&#xD604;&#xC774; &#xB418;&#xC5B4; &#xC788;&#xAE30;&#xB294; &#xD558;&#xC9C0;&#xB9CC;, &#xB2E4;&#xB978; &#xD06C;&#xB9BD;&#xD1A0;&#xB97C; &#xBC1B;&#xC9C0; &#xBABB;&#xD560; &#xAE30;&#xC220;&#xC801;&#xC778; &#xD55C;&#xACC4;&#xB098; &#xC774;&#xC720;&#xB294; &#xC5C6;&#xC744; &#xAC83;&#xC73C;&#xB85C; &#xBCF4;&#xC785;&#xB2C8;&#xB2E4;. SMT&#xD50C;&#xB7AB;&#xD3FC; &#xC790;&#xCCB4;&#xC5D0;&#xC11C; &#xC2A4;&#xD300; &#xB610;&#xB294; &#xC2A4;&#xD300;&#xB2EC;&#xB7EC;&#xB85C; &#xC81C;&#xD55C;&#xC744; &#xD55C;&#xB2E4;&#xACE0; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xD574;&#xB2F9; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC6B4;&#xC601;&#xC9C4;&#xB4E4;&#xC774; &#xBCC4;&#xB3C4;&#xC758; &#xCC44;&#xB110;&#xC744; &#xD1B5;&#xD574; &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5;&#xC744; &#xD560; &#xAC00;&#xB2A5;&#xC131;&#xB3C4; &#xC788;&#xAD6C;&#xC694;.</p>
+</blockquote>
+<p><strong>&#x2461; &#xC989;, &#xD380;&#xB4DC;&#xB808;&#xC774;&#xC9D5; &#xAE08;&#xC561;&#xC758; &#xCD5C;&#xC18C; 10% &#xC774;&#xC0C1;&#xC740; &#xC6B4;&#xC601;&#xC9C4; &#xACC4;&#xC815;&#xC5D0; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB85C; &#xBCF4;&#xC720;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBB34;&#xD654;</strong></p>
+<blockquote>
+<p>&#xAE30;&#xC874; &#xC774;&#xB354; &#xBCA0;&#xC774;&#xC2A4;&#xC758; ICO&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB3C4; &#xC6B4;&#xC601;&#xC9C4;&#xC774;&#xB098; &#xD300;, &#xC7AC;&#xB2E8; &#xBB3C;&#xB7C9;&#xC740; 1&#xB144;~2&#xB144; &#xB3D9;&#xC548;&#xC758; &#xB77D;&#xC5C5;&#xC744; &#xC870;&#xAC74;&#xC73C;&#xB85C; &#xD558;&#xACE0; &#xC788;&#xB294;&#xB370;, SMT&#xC5D0;&#xC11C;&#xB294; &#xC774;&#xB97C; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;(SP)&#xB85C; &#xBCF4;&#xC5EC;&#xC918;&#xC57C; &#xD568;&#xC774; &#xB9DE;&#xC73C;&#xBA70;, &#xAC1C;&#xC778;&#xC801;&#xC73C;&#xB85C;&#xB294; 10%&#xBCF4;&#xB2E4; &#xB354; &#xC0C1;&#xD5A5;&#xC744; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xBB38;&#xC81C;&#xAC00; &#xC5C6;&#xC9C0; &#xC54A;&#xC744;&#xAE4C; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<h3 id="4-SMT-&#xC790;&#xCCB4;-&#xAC70;&#xB798;&#xC18C;&#xC758;-&#xC0C1;&#xC7A5;&#xC815;&#xCC45;-&#xBC0F;-&#xC81C;&#xD55C;"><a href="#4-SMT-&#xC790;&#xCCB4;-&#xAC70;&#xB798;&#xC18C;&#xC758;-&#xC0C1;&#xC7A5;&#xC815;&#xCC45;-&#xBC0F;-&#xC81C;&#xD55C;" class="headerlink" title="#4. SMT &#xC790;&#xCCB4; &#xAC70;&#xB798;&#xC18C;&#xC758; &#xC0C1;&#xC7A5;&#xC815;&#xCC45; &#xBC0F; &#xC81C;&#xD55C;"></a>#4. SMT &#xC790;&#xCCB4; &#xAC70;&#xB798;&#xC18C;&#xC758; &#xC0C1;&#xC7A5;&#xC815;&#xCC45; &#xBC0F; &#xC81C;&#xD55C;</h3><p>SMT&#xB85C; &#xBC1C;&#xD589;&#xC790;&#xC758; &#xC9C4;&#xC785;&#xC7A5;&#xBCBD;&#xC740; &#xB0AE;&#xC544;&#xC57C; &#xD558;&#xB294; &#xAC83;&#xC774; &#xB9DE;&#xC9C0;&#xB9CC;, &#xD1A0;&#xD070;&#xC744; &#xBC1C;&#xD589;&#xD588;&#xB2E4;&#xACE0; &#xD558;&#xC5EC; &#xBAA8;&#xB4E0; &#xD1A0;&#xD070;&#xC774; &#xACE7;&#xBC14;&#xB85C; SMT &#xAC70;&#xB798;&#xC18C;&#xC5D0;&#xC11C; &#xAC70;&#xB798;&#xAC00; &#xAC00;&#xB2A5;&#xD574;&#xC838;&#xC11C;&#xB294; &#xC548;&#xB429;&#xB2C8;&#xB2E4;. <strong>&#xD574;&#xB2F9; &#xD1A0;&#xD070;&#xC774; SMT &#xC790;&#xCCB4; &#xAC70;&#xB798;&#xC18C;&#xC5D0; &#xC0C1;&#xC7A5;&#xB418;&#xB294; &#xAC83;&#xC5D0;&#xB294; &#xC9C4;&#xC785;&#xC7A5;&#xBCBD;&#xC774; &#xC874;&#xC7AC;&#xD574;&#xC57C; &#xD568;</strong>&#xC774; &#xB9DE;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p><strong>&#x2460; &#xC0C1;&#xC7A5;&#xC218;&#xC218;&#xB8CC;</strong></p>
+<ul>
+<li>ICO&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0; : 10,000 &#xC2A4;&#xD300;</li>
+<li>ICO&#xB97C; &#xC9C4;&#xD589;&#xD55C; &#xACBD;&#xC6B0; : 100,000 &#xC2A4;&#xD300; </li>
+</ul>
+<blockquote>
+<ul>
+<li>&#xC0C1;&#xC7A5;&#xC218;&#xC218;&#xB8CC;&#xB294; &#xC804;&#xC561; &#xC18C;&#xAC01;</li>
+<li>&#xC0C1;&#xC7A5;&#xC218;&#xC218;&#xB8CC;&#xB294; &#xAD73;&#xC774; USD&#xC758; &#xAC00;&#xCE58;&#xB85C; &#xD398;&#xAE45;&#xB420; &#xD544;&#xC694;&#xB294; &#xC5C6;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+</blockquote>
+<p><strong>&#x2461; &#xC790;&#xACA9;&#xC694;&#xAC74;</strong></p>
+<ul>
+<li>&#xD1A0;&#xD070; &#xD640;&#xB354; &#xC694;&#xAC74; : 100&#xBA85; &#xC774;&#xC0C1;</li>
+<li>&#xC2A4;&#xD300;&#xD30C;&#xC6CC; &#xBCF4;&#xC720;&#xC694;&#xAC74; : &#xD1A0;&#xD070; &#xD640;&#xB354; &#xC218; x 100 &#xB9CC;&#xD07C;&#xC758; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xB97C; &#xC6B4;&#xC601;&#xACC4;&#xC815;&#xC5D0; &#xBCF4;&#xC720;</li>
+</ul>
+<blockquote>
+<p>&#xB530;&#xB77C;&#xC11C; &#xCD5C;&#xC18C; 100&#xBA85;&#xC758; &#xD1A0;&#xD070;&#xD640;&#xB354;&#xC640; 10,000 SP &#xC774;&#xC0C1;&#xC744; &#xC6B4;&#xC601;&#xACC4;&#xC815;&#xC5D0; &#xBCF4;&#xC720;&#xD558;&#xACE0; &#xC788;&#xC5B4;&#xC57C;&#xB9CC; &#xCD5C;&#xC18C; &#xC790;&#xACA9;&#xC694;&#xAC74;&#xC744; &#xAC16;&#xCD94;&#xAC8C; &#xB418;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<p><strong>&#x2462; &#xC0C1;&#xC7A5;&#xD3D0;&#xC9C0;&#xC694;&#xAC74;</strong></p>
+<ul>
+<li>&#xC704;&#xC5D0;&#xC11C;&#xC758; &#xC2A4;&#xD300;&#xD30C;&#xC6CC; &#xBCF4;&#xC720;&#xC694;&#xAC74;&#xC758; 60% &#xC774;&#xD558;&#xB85C; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xAC00; &#xB5A8;&#xC5B4;&#xC9C0;&#xB294; &#xACBD;&#xC6B0; &#xAC70;&#xB798;&#xC815;&#xC9C0;</li>
+<li>&#xC608;&#xB97C; &#xB4E4;&#xC5B4; &#xD1A0;&#xD070; &#xD640;&#xB354;&#xAC00; 2,000&#xBA85;&#xC778; &#xACBD;&#xC6B0;, 200,000SP(=2,000&#xBA85; x 100)&#xC758; 60%&#xC778; 120,000SP&#xB85C; &#xC6B4;&#xC601;&#xACC4;&#xC815;&#xC758; &#xBCF4;&#xC720; &#xC2A4;&#xD300;&#xD30C;&#xC6CC;&#xAC00; &#xB5A8;&#xC5B4;&#xC9C0;&#xB294; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xD574;&#xB2F9; &#xD1A0;&#xD070;&#xC758; &#xAC70;&#xB798;&#xC815;&#xC9C0;</li>
+</ul>
+<blockquote>
+<p>&#xB2A5;&#xB825; &#xC788;&#xB294; &#xD300;&#xB4E4;&#xC774;&#xB77C;&#xBA74; &#xC5B4;&#xB5BB;&#xAC8C;&#xB4E0; &#xC678;&#xBD80; &#xC911;&#xC559;&#xD654;&#xB41C; &#xAC70;&#xB798;&#xC18C;&#xC5D0; &#xC0C1;&#xC7A5;&#xC744; &#xD558;&#xAC70;&#xB098;, &#xBCC4;&#xB3C4;&#xC758; DEX&#xB97C; &#xAD6C;&#xCD95;&#xD560; &#xC218;&#xB3C4; &#xC788;&#xC744;&#xAC81;&#xB2C8;&#xB2E4;. &#xADF8;&#xB807;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xB2E4;&#xC591;&#xD55C; &#xBC29;&#xBC95;&#xC744; &#xD1B5;&#xD574; SMT DEX&#xC5D0; &#xC0C1;&#xC7A5;&#xC694;&#xAC74;&#xC744; &#xCDA9;&#xC871;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xD300;&#xB4E4;&#xC774; &#xB178;&#xB825;&#xC744; &#xD558;&#xB3C4;&#xB85D; &#xB098;&#xB984;&#xC758; &#xC778;&#xC13C;&#xD2F0;&#xBE0C;&#xC640; &#xC9C4;&#xC785;&#xC7A5;&#xBCBD;&#xC744; &#xB450;&#xB294; &#xAC83;&#xC774; &#xB9DE;&#xC9C0; &#xC54A;&#xB098; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<h3 id="5-SMT-&#xD1A0;&#xD070;-&#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;"><a href="#5-SMT-&#xD1A0;&#xD070;-&#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;" class="headerlink" title="#5. SMT &#xD1A0;&#xD070; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;"></a>#5. SMT &#xD1A0;&#xD070; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;</h3><p>&#xD604;&#xD589; &#xC2A4;&#xD300;&#xC5D4;&#xC9C4; &#xB9C8;&#xCF13;&#xC740; &#xBCC4;&#xB3C4;&#xC758; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;&#xB294; &#xC5C6;&#xC73C;&#xB098;, STEEM&#xC758; &#xD398;&#xAE45; &#xD1A0;&#xD070;&#xC778; STEEMP&#xB85C;&#xC758; &#xC785;&#xCD9C;&#xAE08; &#xC2DC;&#xC5D0; &#xC591;&#xBC29;&#xD5A5;&#xC5D0;&#xC11C; &#xAC01;&#xAC01; 1%&#xC758; &#xC785;&#xCD9C;&#xAE08; &#xC218;&#xC218;&#xB8CC;&#xB97C; &#xBD80;&#xACFC;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC544;&#xB9C8;&#xB3C4; <strong>SMT&#xAC70;&#xB798;&#xC18C;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xC2A4;&#xD300; &#xACC4;&#xC815;&#xC744; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xC989;&#xC2DC; &#xAC70;&#xB798;&#xAC00; &#xAC00;&#xB2A5;&#xD560; &#xAC83;&#xC73C;&#xB85C; &#xC608;&#xCE21;&#xB418;&#xB294; &#xAD00;&#xACC4;&#xB85C; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;&#xB97C; &#xBD80;&#xACFC;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC81C;&#xC548;</strong>&#xD569;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><p>&#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC; : &#xBA54;&#xC774;&#xCEE4;&#xC640; &#xD14C;&#xC774;&#xCEE4;&#xB85C; &#xAD6C;&#xBD84;&#xD558;&#xC5EC; &#xC218;&#xC218;&#xB8CC; &#xBD80;&#xACFC;<br>(1) &#xBA54;&#xC774;&#xCEE4; : &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC; &#xC5C6;&#xC74C;<br>(2) &#xD14C;&#xC774;&#xCEE4; : 0.05%</p>
+</li>
+<li><p><strong>&#xD14C;&#xC774;&#xCEE4;&#xB85C;&#xBD80;&#xD130; &#xC9D5;&#xC218;&#xB418;&#xB294; &#xAC70;&#xB798;&#xC218;&#xC218;&#xB8CC;&#xB294; &#xC804;&#xC561; &#xC18C;&#xAC01;</strong></p>
+</li>
+</ul>
+<hr>
+<p>English translation below</p>
+<h3 id="1-Qualification-of-SMT-token-issuer"><a href="#1-Qualification-of-SMT-token-issuer" class="headerlink" title="#1. Qualification of SMT token issuer"></a>#1. Qualification of SMT token issuer</h3><p><strong>&#x2460; Steem Power : There is no limit of SP</strong></p>
+<p><strong>&#x2461; Reputation : At least 60</strong> (=account of issuer)</p>
+<ul>
+<li>Reputation in Steemit should be able to function with value</li>
+<li>If someone outside Steemit wants to build a new community through SMT, you can contact of hire Steemian as a team member or advisor.</li>
+</ul>
+<p><strong>&#x2462; Issuance fee : 300 USD</strong></p>
+<ul>
+<li>Issuance fee should be fixed at USD price for predictability.</li>
+<li>Issuer can choose to pay in STEEM or SBD</li>
+<li>Issuance fees are used to burn STEEM </li>
+</ul>
+<h3 id="2-Qualification-of-SMT-token-operators"><a href="#2-Qualification-of-SMT-token-operators" class="headerlink" title="#2. Qualification of SMT token operators"></a>#2. Qualification of SMT token operators</h3><p>We need to distinguish between the concept of token issuers and project operating group. The token operation group must meet the following conditions and share a brief introduction and profile via Steemit.</p>
+<p><strong>&#x2460; Operating as a Group</strong></p>
+<ul>
+<li>SMT, operated by one individual, can add no value to the Steem blockchain and the community.</li>
+<li>From SMT, we should pursue B2B BM instead of B2C.</li>
+<li>Must be composed of team of 3 or more people</li>
+</ul>
+<p><strong>&#x2461; Ability to create a new account on Steem</strong></p>
+<ul>
+<li>The operating group of SMT must have the ability to create a new account on Steem.</li>
+<li>The operating group may choose one of the following options<br>(1) Have a certain level of SP own.<br>(2) Lease RC from witnesses of other accounts.<br>(3) Purchase more than a certain amount of INV tokens.</li>
+</ul>
+<h3 id="3-In-case-of-conducting-ICO"><a href="#3-In-case-of-conducting-ICO" class="headerlink" title="#3. In case of conducting ICO"></a>#3. In case of conducting ICO</h3><p>If the ICO is not strictly managed, SMT can be a threat to the Steem ecosystem in the future, as in the case of Ethereum.</p>
+<p><strong>&#x2460; Cryptocurrency accepted</strong></p>
+<ul>
+<li>There are 2 options for fundraising via SMT<br>(1) STEEM or SBD only : Obligation to convert 10% of the funds to Steem Power<br>(2) include other Cryptocurrency (ex: BTC / ETH / EOS) : Obligation to convert 20% of funds to Steem Power</li>
+</ul>
+<p><strong>&#x2461; Minimum Steem Power conversion standard</strong></p>
+<ul>
+<li>In the case of an ICO, 10% of the funds must be retained in the form of Steem Power in the operation account.</li>
+<li>This SP is a minimum deposit.</li>
+</ul>
+<h3 id="4-SMT-exchange-listing-fee"><a href="#4-SMT-exchange-listing-fee" class="headerlink" title="#4. SMT exchange listing fee"></a>#4. SMT exchange listing fee</h3><p>While entry barriers for token issuance based on SMT must be low. But entry barriers must be exist for the token to be listed on the SMT Exchange.</p>
+<p><strong>&#x2460; Exchange listing fee</strong></p>
+<ul>
+<li>Basic(no ICO project) : 10,000 STEEM</li>
+<li>Advanced(ICO project) : 100,000 STEEM<blockquote>
+<p>All of Exchange listing fees are buned.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>&#x2461; Qualification for listing</strong></p>
+<ul>
+<li>Number of token holders : more than 100</li>
+<li>Own SP holding requirement for operating account : [Numbers of token holders x 100]<blockquote>
+<p>For example, if there are 100 token holders of A token 10,000 SP(=100 x 100) is needed.</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>&#x2462; Delisting conditions</strong></p>
+<ul>
+<li>Suspension of trade if SP falls below 60% of SP holding requirement above.</li>
+<li>For example, if there are 2,000 token holders of A token and if the SP of operating account drops to 120,000 SP which is 60% of 200,000 SP (=2,000 x 100), the token will be delisted from the SMT exchange.</li>
+</ul>
+<p><strong>Entry into the SMT ecosystem is free, but operation need to be managed to ensure strong accountability.</strong></p>
+<h3 id="5-SMT-token-trading-fee"><a href="#5-SMT-token-trading-fee" class="headerlink" title="#5. SMT token trading fee"></a>#5. SMT token trading fee</h3><ul>
+<li>Maker : no fee</li>
+<li>Taker : 0.05% (in STEEM)</li>
+<li>Trading fees from taker are used to burn STEEM </li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@donekim/5xcxbt-smt" target="_blank" rel="noopener">&#x2018;&#xC2A4;&#xB9C8;&#xD2B8;&#xBBF8;&#xB514;&#xC5B4;&#xD1A0;&#xD070;(SMT) &#xBC1C;&#xD589; &#xBC0F; &#xC6B4;&#xC601; &#xAD00;&#xB828; &#xC544;&#xC774;&#xB514;&#xC5B4; &#xC81C;&#xC548;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@donekim/tags/busy/">busy</a>, <a class="has-link-grey -link" href="/@donekim/tags/jjm/">jjm</a>, <a class="has-link-grey -link" href="/@donekim/tags/liv/">liv</a>, <a class="has-link-grey -link" href="/@donekim/tags/palnet/">palnet</a>, <a class="has-link-grey -link" href="/@donekim/tags/s/">s</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct/">sct</a>, <a class="has-link-grey -link" href="/@donekim/tags/sct-kr/">sct-kr</a>, <a class="has-link-grey -link" href="/@donekim/tags/steemleo/">steemleo</a>, <a class="has-link-grey -link" href="/@donekim/tags/union/">union</a>, <a class="has-link-grey -link" href="/@donekim/tags/upfundme/">upfundme</a>, <a class="has-link-grey -link" href="/@donekim/tags/zzan/">zzan</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@donekim/snax-steem-engine-snaxp/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">SNAX토큰 스팀엔진(Steem-Engine) 마켓 상장소식 + SNAXP 입금 방법 안내</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@donekim/eos-inside-eosio-sov/">
+                <span class="level-item">[EOS Inside] EOSIO 프로토콜 기반 최초의 자체 디플레이션형 토큰으로 설계된 SOV (+에어그랩 방법)</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@donekim/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="디온" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 디온&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@donekim/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@donekim/content.json"};</script>
+
+
+
+    
+<script src="/@donekim/js/bundle.js" defer></script></body>
+</html>
+
