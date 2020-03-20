@@ -23,6 +23,9 @@ tags:
 - lassecash
 - upfundme
 - actnearn
+- sct
+- sct-cn
+- sct-freeboard
 thumbnail: 'https://steemitimages.com/p/2KZBmxPkTzbu9c1XG5NDMMax6H2b33KD4CRaDz7r52e5GrZEVVKZxtUUFMJ2jMKY4Cuc756ZWU3Cf4Rr8PUxZdW8epCwCFMgszrQHMzB6rynwzHTGNhW8So8YARvVJQGv4i5yE9CCad3sU7zDXgp1SRWg9LS8RDM5H1hwJn2yFxxu2AMhsWztkaQEKhkWW4EgMXD?format=match&mode=fit'
 sidebar:
     right:
@@ -59,7 +62,7 @@ widgets:
 
 | Steem名称 | Hive名称 | 是否在Steem | 是否在Hive | Steem 网站/App | Hive 网站/App | 相关文章 | 备注 |
 | :-- | :-- | -- | -- | :-- | :-- | :-- | :-- |
-| SteemPeak | | 否 | 是 |  |  |  |  |
+| SteemPeak | | 是 | 是 |  |  |  |  |
 | Steem Engine | | 是 | 未知 |  |  |  |  |
 | SteemAuto | Hive.vote | 是（待定） | 是 | http://steemauto.com/ | https://hive.vote | [Hive.vote: Steemauto on the new chain 2020/03/18](https://steempeak.com/steemauto/@steemauto/hive-vote-or-steemauto-on-the-new-chain) |  |
 | Splinterlands | | 是 | 是 |  |  | [Splinterlands' Plans for the Upcoming Hive Fork 2020/03/19](https://steem.buzz/splinterlands/@splinterlands/splinterlands-plans-for-the-upcoming-hive-fork) |  |
