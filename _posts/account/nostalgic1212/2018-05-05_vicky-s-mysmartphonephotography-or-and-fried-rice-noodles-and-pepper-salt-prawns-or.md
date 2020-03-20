@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 炒河粉 & 椒盐皮皮虾  Fried Rice Noodles & Pepper Salt Prawns | 大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 炒河粉 & 椒盐皮皮虾  Fried Rice Noodles & Pepper Salt Prawns | 大马美食'
 permlink: vicky-s-mysmartphonephotography-or-and-fried-rice-noodles-and-pepper-salt-prawns-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-05 05:56:48
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - teammalaysia
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmWtCLFaf7o1cVN8RKh7R9jKJrnknzNcUo4XuJVCDyiMvd
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmWtCLFaf7o1cVN8RKh7R9jKJrnknzNcUo4XuJVCDyiMvd'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 炒河粉 & 椒盐皮皮虾  Fried Rice Noodles & Pepper Salt Prawns | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-and-fried-rice-noodles-and-pepper-salt-prawns-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 炒河粉 & 椒盐皮皮虾  Fried Rice Noodles & Pepper Salt Prawns | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-and-fried-rice-noodles-and-pepper-salt-prawns-or)

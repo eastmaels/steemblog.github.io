@@ -1,10 +1,11 @@
 
 ---
-title: "《生门》This is Life：我没有一点感动，有的只是震惊"
+title: '《生门》This is Life：我没有一点感动，有的只是震惊'
 permlink: this-is-life
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-04 07:27:30
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - movie
 - life
-thumbnail: https://steemitimages.com/DQmU62pn7PJAGm4XZhN1FsZcQQqArzuj2gayQMu7z2NmKkk/WX20180104-150746%402x.png
+thumbnail: 'https://steemitimages.com/DQmU62pn7PJAGm4XZhN1FsZcQQqArzuj2gayQMu7z2NmKkk/WX20180104-150746%402x.png'
 sidebar:
     right:
         sticky: true
@@ -290,4 +291,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [《生门》This is Life：我没有一点感动，有的只是震惊](https://steemit.com/@nostalgic1212/this-is-life)
+This page is synchronized from the post: ['《生门》This is Life：我没有一点感动，有的只是震惊'](https://steemit.com/@nostalgic1212/this-is-life)

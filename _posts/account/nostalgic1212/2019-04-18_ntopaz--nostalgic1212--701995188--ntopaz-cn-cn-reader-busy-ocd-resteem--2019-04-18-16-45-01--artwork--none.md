@@ -1,10 +1,11 @@
 
 ---
-title: "Handmade Crafts「The Koujin Bag」20190418"
+title: 'Handmade Crafts「The Koujin Bag」20190418'
 permlink: ntopaz--nostalgic1212--701995188--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-18-16-45-01--artwork--none
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-18 08:45:03
 categories:
 - ntopaz
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - ocd-resteem
-thumbnail: https://artisteem.io/media/664e9ebb-cf76-474b-98b5-c221dd8936b9
+thumbnail: 'https://artisteem.io/media/664e9ebb-cf76-474b-98b5-c221dd8936b9'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ Mom likes to carry this small bag to go out very much in Summer. Besides, I also
 
 - - -
 
-This page is synchronized from the post: [Handmade Crafts「The Koujin Bag」20190418](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--701995188--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-18-16-45-01--artwork--none)
+This page is synchronized from the post: ['Handmade Crafts「The Koujin Bag」20190418'](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--701995188--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-18-16-45-01--artwork--none)

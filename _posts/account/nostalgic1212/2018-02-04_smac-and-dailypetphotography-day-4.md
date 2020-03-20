@@ -1,10 +1,11 @@
 
 ---
-title: "📷SMAC&Dailypetphotography - Day 4 猫咪乐园"
+title: '📷SMAC&Dailypetphotography - Day 4 猫咪乐园'
 permlink: smac-and-dailypetphotography-day-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-04 00:23:12
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - busy
 - cn
 - blog
-thumbnail: https://steemitimages.com/DQmXyrxnjdfrudmLAJYz4AnVSeShEidPovhuwasrd4cii1m/IMG_4756.JPG
+thumbnail: 'https://steemitimages.com/DQmXyrxnjdfrudmLAJYz4AnVSeShEidPovhuwasrd4cii1m/IMG_4756.JPG'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [📷SMAC&Dailypetphotography - Day 4 猫咪乐园](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-4)
+This page is synchronized from the post: ['📷SMAC&Dailypetphotography - Day 4 猫咪乐园'](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-4)

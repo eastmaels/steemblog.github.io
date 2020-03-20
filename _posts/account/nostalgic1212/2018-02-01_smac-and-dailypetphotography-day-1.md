@@ -1,10 +1,11 @@
 
 ---
-title: "📷SMAC&Dailypetphotography - Day 1 带着鼓励师去上班"
+title: '📷SMAC&Dailypetphotography - Day 1 带着鼓励师去上班'
 permlink: smac-and-dailypetphotography-day-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-01 06:44:48
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - photography
-thumbnail: https://steemitimages.com/DQmUamKsNWSBxzDUgaPW7z4V7KYawmMhKwnTH4pCi2j7NZo/fullsizeoutput_3.jpeg
+thumbnail: 'https://steemitimages.com/DQmUamKsNWSBxzDUgaPW7z4V7KYawmMhKwnTH4pCi2j7NZo/fullsizeoutput_3.jpeg'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ That's it. Join the fun and enjoy the ride.
 
 - - -
 
-This page is synchronized from the post: [📷SMAC&Dailypetphotography - Day 1 带着鼓励师去上班](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-1)
+This page is synchronized from the post: ['📷SMAC&Dailypetphotography - Day 1 带着鼓励师去上班'](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-1)

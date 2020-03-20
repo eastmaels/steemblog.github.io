@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの讀書筆記】天衣有风《凤囚凰》| 月旦评 | 品乐书会"
+title: '【Vickyの讀書筆記】天衣有风《凤囚凰》| 月旦评 | 品乐书会'
 permlink: 3aurfi-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-20 03:42:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-book
 - cn-art
 - cn-31
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1519097485/xukvuhi47vp6df6gfasf.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1519097485/xukvuhi47vp6df6gfasf.jpg'
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの讀書筆記】天衣有风《凤囚凰》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/3aurfi-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの讀書筆記】天衣有风《凤囚凰》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/3aurfi-vicky-or-or)

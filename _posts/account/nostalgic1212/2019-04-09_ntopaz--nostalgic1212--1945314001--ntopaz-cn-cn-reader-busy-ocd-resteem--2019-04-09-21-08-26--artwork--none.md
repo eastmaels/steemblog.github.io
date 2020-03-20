@@ -1,10 +1,11 @@
 
 ---
-title: "Handmade Crafts「Embroidery of Lotus」20190409"
+title: 'Handmade Crafts「Embroidery of Lotus」20190409'
 permlink: ntopaz--nostalgic1212--1945314001--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-09-21-08-26--artwork--none
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-09 13:08:30
 categories:
 - ntopaz
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - ocd-resteem
-thumbnail: https://artisteem.io/media/4029a97c-849b-441c-b732-05c89bd41390
+thumbnail: 'https://artisteem.io/media/4029a97c-849b-441c-b732-05c89bd41390'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ This is my first work, the embroidery part is not particularly smooth. I hope it
 
 - - -
 
-This page is synchronized from the post: [Handmade Crafts「Embroidery of Lotus」20190409](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--1945314001--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-09-21-08-26--artwork--none)
+This page is synchronized from the post: ['Handmade Crafts「Embroidery of Lotus」20190409'](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--1945314001--ntopaz-cn-cn-reader-busy-ocd-resteem--2019-04-09-21-08-26--artwork--none)

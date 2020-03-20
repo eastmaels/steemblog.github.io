@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】嘉年华Angels Wear White"
+title: '【Vicky’s电影/电视剧推荐】嘉年华Angels Wear White'
 permlink: vicky-s-angels-wear-white
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-28 02:41:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - movie
 - blog
-thumbnail: https://steemitimages.com/DQmTxGawFeffsXLStwf4LtEP4xbtCQAfRyqqE64efwx2vi6/p2509127302.jpg
+thumbnail: 'https://steemitimages.com/DQmTxGawFeffsXLStwf4LtEP4xbtCQAfRyqqE64efwx2vi6/p2509127302.jpg'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】嘉年华Angels Wear White](https://steemit.com/@nostalgic1212/vicky-s-angels-wear-white)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】嘉年华Angels Wear White'](https://steemit.com/@nostalgic1212/vicky-s-angels-wear-white)

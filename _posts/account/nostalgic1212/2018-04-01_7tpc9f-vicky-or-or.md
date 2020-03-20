@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの读书笔记】东野圭吾《沉睡的人鱼之家》| 月旦评 | 品乐书会"
+title: '【Vickyの读书笔记】东野圭吾《沉睡的人鱼之家》| 月旦评 | 品乐书会'
 permlink: 7tpc9f-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-01 23:01:06
 categories:
 - cn-book
@@ -14,7 +15,7 @@ tags:
 - monthlyauthorchallenge
 - busy
 - novel
-thumbnail: https://gateway.ipfs.io/ipfs/QmdGkY4PginxVRojwugXpuGc8p4NtfoGYj1zY29ofETb1A
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmdGkY4PginxVRojwugXpuGc8p4NtfoGYj1zY29ofETb1A'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの读书笔记】东野圭吾《沉睡的人鱼之家》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/7tpc9f-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの读书笔记】东野圭吾《沉睡的人鱼之家》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/7tpc9f-vicky-or-or)

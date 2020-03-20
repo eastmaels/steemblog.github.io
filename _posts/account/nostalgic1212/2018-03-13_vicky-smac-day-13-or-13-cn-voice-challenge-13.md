@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC- Day 13 王心凌 《花的嫁纱》| 第13届“华语好声音” CN-Voice challenge #13"
+title: '【Vicky参加の活动】SMAC- Day 13 王心凌 《花的嫁纱》| 第13届“华语好声音” CN-Voice challenge #13'
 permlink: vicky-smac-day-13-or-13-cn-voice-challenge-13
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-13 10:52:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-voice
 - busy
 - music
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520938230/rvyewhlxotda38hp4q44.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520938230/rvyewhlxotda38hp4q44.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC- Day 13 王心凌 《花的嫁纱》| 第13届“华语好声音” CN-Voice challenge #13](https://steemit.com/@nostalgic1212/vicky-smac-day-13-or-13-cn-voice-challenge-13)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC- Day 13 王心凌 《花的嫁纱》| 第13届“华语好声音” CN-Voice challenge #13'](https://steemit.com/@nostalgic1212/vicky-smac-day-13-or-13-cn-voice-challenge-13)

@@ -1,10 +1,11 @@
 
 ---
-title: "Hi, I'm a freshman on Steemit 迟到萌新的报道帖～"
+title: 'Hi, I''m a freshman on Steemit 迟到萌新的报道帖～'
 permlink: hi-i-m-a-freshman-on-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-05 07:24:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - introducemyself
-thumbnail: https://s26.postimg.org/msz975pxl/IMG_3987.jpg
+thumbnail: 'https://s26.postimg.org/msz975pxl/IMG_3987.jpg'
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Hi, I'm a freshman on Steemit 迟到萌新的报道帖～](https://steemit.com/@nostalgic1212/hi-i-m-a-freshman-on-steemit)
+This page is synchronized from the post: ['Hi, I''m a freshman on Steemit 迟到萌新的报道帖～'](https://steemit.com/@nostalgic1212/hi-i-m-a-freshman-on-steemit)

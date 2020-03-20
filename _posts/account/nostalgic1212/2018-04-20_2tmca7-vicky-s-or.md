@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 影评】《血观音》：世界上最可怕的不是眼前的刑罚，而是那无爱的未来| 月旦评（中）"
+title: '【Vicky’s 影评】《血观音》：世界上最可怕的不是眼前的刑罚，而是那无爱的未来| 月旦评（中）'
 permlink: 2tmca7-vicky-s-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-20 06:29:09
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - teammalaysia
 - movie
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmNx8p6U14bung3cLq6DMheNNQwX7ar1CUKk3maGQyMv6e
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmNx8p6U14bung3cLq6DMheNNQwX7ar1CUKk3maGQyMv6e'
 sidebar:
     right:
         sticky: true
@@ -96,4 +97,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 影评】《血观音》：世界上最可怕的不是眼前的刑罚，而是那无爱的未来| 月旦评（中）](https://steemit.com/@nostalgic1212/2tmca7-vicky-s-or)
+This page is synchronized from the post: ['【Vicky’s 影评】《血观音》：世界上最可怕的不是眼前的刑罚，而是那无爱的未来| 月旦评（中）'](https://steemit.com/@nostalgic1212/2tmca7-vicky-s-or)

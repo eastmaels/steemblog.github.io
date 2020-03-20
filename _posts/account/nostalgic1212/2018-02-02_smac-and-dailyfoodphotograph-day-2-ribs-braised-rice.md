@@ -1,10 +1,11 @@
 
 ---
-title: "📷SMAC&Dailyfoodphotograph - Day 2 排骨焖饭 Ribs braised rice"
+title: '📷SMAC&Dailyfoodphotograph - Day 2 排骨焖饭 Ribs braised rice'
 permlink: smac-and-dailyfoodphotograph-day-2-ribs-braised-rice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-02 03:03:21
 categories:
 - dailyfoodphotography
@@ -14,7 +15,7 @@ tags:
 - cn
 - food
 - photography
-thumbnail: https://steemitimages.com/DQmf8MP2xKKyXXugq6Ey7X1mpyJ8yuEYqkTQiqAnFJWgyQM/IMG_4668.jpg
+thumbnail: 'https://steemitimages.com/DQmf8MP2xKKyXXugq6Ey7X1mpyJ8yuEYqkTQiqAnFJWgyQM/IMG_4668.jpg'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [📷SMAC&Dailyfoodphotograph - Day 2 排骨焖饭 Ribs braised rice](https://steemit.com/@nostalgic1212/smac-and-dailyfoodphotograph-day-2-ribs-braised-rice)
+This page is synchronized from the post: ['📷SMAC&Dailyfoodphotograph - Day 2 排骨焖饭 Ribs braised rice'](https://steemit.com/@nostalgic1212/smac-and-dailyfoodphotograph-day-2-ribs-braised-rice)

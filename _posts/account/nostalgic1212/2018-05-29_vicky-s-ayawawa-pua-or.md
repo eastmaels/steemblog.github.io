@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】关于Ayawawa和PUA泡学 | 月旦评"
+title: '【Vicky''s 碎碎念】关于Ayawawa和PUA泡学 | 月旦评'
 permlink: vicky-s-ayawawa-pua-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-29 01:48:36
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - life
 - cn-reader
-thumbnail: https://ipfs.busy.org/ipfs/QmZpxuSqXeAp2fJv2Y99DnhEcZCDXtVnAxU6yQSiTjhvGG
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZpxuSqXeAp2fJv2Y99DnhEcZCDXtVnAxU6yQSiTjhvGG'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】关于Ayawawa和PUA泡学 | 月旦评](https://steemit.com/@nostalgic1212/vicky-s-ayawawa-pua-or)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】关于Ayawawa和PUA泡学 | 月旦评'](https://steemit.com/@nostalgic1212/vicky-s-ayawawa-pua-or)

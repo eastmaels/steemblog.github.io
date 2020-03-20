@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】爱的成人式  Initiation Love"
+title: '【Vicky’s电影/电视剧推荐】爱的成人式  Initiation Love'
 permlink: vicky-s-initiation-love
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-09 03:11:36
 categories:
 - cn-literature
@@ -14,7 +15,7 @@ tags:
 - busy
 - movie
 - monthlyauthorchallenge
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520565011/eymqzsh4be6mne7wa4j8.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520565011/eymqzsh4be6mne7wa4j8.jpg'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】爱的成人式  Initiation Love](https://steemit.com/@nostalgic1212/vicky-s-initiation-love)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】爱的成人式  Initiation Love'](https://steemit.com/@nostalgic1212/vicky-s-initiation-love)

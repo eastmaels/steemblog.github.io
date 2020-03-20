@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】黄焖鸡米饭 Braised Chicken Rice"
+title: '【Vicky''s 小确幸】黄焖鸡米饭 Braised Chicken Rice'
 permlink: vicky-s-braised-chicken-rice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-20 11:38:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - food
 - busy
-thumbnail: https://steemitimages.com/DQmQPMzy34YQePE6FP9cQnC3xoi5nRdJeo7kSb2YEQPXufq/IMG_4928.JPG
+thumbnail: 'https://steemitimages.com/DQmQPMzy34YQePE6FP9cQnC3xoi5nRdJeo7kSb2YEQPXufq/IMG_4928.JPG'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】黄焖鸡米饭 Braised Chicken Rice](https://steemit.com/@nostalgic1212/vicky-s-braised-chicken-rice)
+This page is synchronized from the post: ['【Vicky''s 小确幸】黄焖鸡米饭 Braised Chicken Rice'](https://steemit.com/@nostalgic1212/vicky-s-braised-chicken-rice)

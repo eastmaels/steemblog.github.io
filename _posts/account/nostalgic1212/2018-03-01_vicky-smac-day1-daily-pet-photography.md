@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day1 Daily Pet Photography 主子驾到！"
+title: '【Vicky参加の活动】SMAC-Day1 Daily Pet Photography 主子驾到！'
 permlink: vicky-smac-day1-daily-pet-photography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-01 11:55:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - busy
 - photography
-thumbnail: https://steemitimages.com/DQmZRpYVTMmWs3pJ4m2BkTBofQq56yCCa9hmUiry7pChQgW/IMG_5004.JPG
+thumbnail: 'https://steemitimages.com/DQmZRpYVTMmWs3pJ4m2BkTBofQq56yCCa9hmUiry7pChQgW/IMG_5004.JPG'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day1 Daily Pet Photography 主子驾到！](https://steemit.com/@nostalgic1212/vicky-smac-day1-daily-pet-photography)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day1 Daily Pet Photography 主子驾到！'](https://steemit.com/@nostalgic1212/vicky-smac-day1-daily-pet-photography)

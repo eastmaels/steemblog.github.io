@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの讀書筆記】《长歌行》| 月旦评 | 品乐书会"
+title: '【Vickyの讀書筆記】《长歌行》| 月旦评 | 品乐书会'
 permlink: vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-16 05:29:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - book
 - cn-reader
 - busy
-thumbnail: https://steemitimages.com/DQmU5dwNPbvTQUmjujiLnPWSm3K9cqSD6xgA7G4ySSyFXjb/IMG_4853.JPG
+thumbnail: 'https://steemitimages.com/DQmU5dwNPbvTQUmjujiLnPWSm3K9cqSD6xgA7G4ySSyFXjb/IMG_4853.JPG'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの讀書筆記】《长歌行》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/vicky-or-or)
+This page is synchronized from the post: ['【Vickyの讀書筆記】《长歌行》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/vicky-or-or)

@@ -15,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/06/03/5cf51b48703e467684.jpg
+thumbnail: 'https://i.loli.net/2019/06/03/5cf51b48703e467684.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky''s电影/电视剧推荐】让人不寒而栗的7分钟短片：《芝加哥》（下）](https://steemit.com/@nostalgic1212/vickys7-tlszvftynn)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】让人不寒而栗的7分钟短片：《芝加哥》（下）'](https://steemit.com/@nostalgic1212/vickys7-tlszvftynn)

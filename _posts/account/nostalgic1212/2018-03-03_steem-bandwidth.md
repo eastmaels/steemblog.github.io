@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小科普】如何对宝塔面板/Wordpress/Vultr/shadowsocks重置密码"
+title: '【Vicky''s 小科普】如何对宝塔面板/Wordpress/Vultr/shadowsocks重置密码'
 permlink: steem-bandwidth
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-03 14:42:51
 categories:
 - steem-guides
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - password
 - security
-thumbnail: https://steemitimages.com/DQmR64Q2TG5qNt9ChHLoQCvidMH1wNEWPZ8jtyVvGhy7QQZ/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-09%2019.16.19.png
+thumbnail: 'https://steemitimages.com/DQmR64Q2TG5qNt9ChHLoQCvidMH1wNEWPZ8jtyVvGhy7QQZ/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-09%2019.16.19.png'
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小科普】如何对宝塔面板/Wordpress/Vultr/shadowsocks重置密码](https://steemit.com/@nostalgic1212/steem-bandwidth)
+This page is synchronized from the post: ['【Vicky''s 小科普】如何对宝塔面板/Wordpress/Vultr/shadowsocks重置密码'](https://steemit.com/@nostalgic1212/steem-bandwidth)

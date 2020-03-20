@@ -1,10 +1,11 @@
 
 ---
-title: "月旦评｜一部豆瓣6.0的国产爱情片是如何10天斩获12亿票房的？---How did a domestic love movie with a douban 6.0 hit $1.2 billion in 10 days?"
+title: '月旦评｜一部豆瓣6.0的国产爱情片是如何10天斩获12亿票房的？---How did a domestic love movie with a douban 6.0 hit $1.2 billion in 10 days?'
 permlink: 6-0-10-12-how-did-a-domestic-love-movie-with-a-douban-6-0-hit-usd1-2-billion-in-10-days
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-08 08:31:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - movie
 - review
-thumbnail: https://steemitimages.com/DQmSCc2hNE5932HJH9Lk4VcxM662RQ5zZUP6pHkuWEFH7nf/p2508926717.jpg
+thumbnail: 'https://steemitimages.com/DQmSCc2hNE5932HJH9Lk4VcxM662RQ5zZUP6pHkuWEFH7nf/p2508926717.jpg'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ After the middle period, the plot is rather slow. I don't know whether it is pop
 
 - - -
 
-This page is synchronized from the post: [月旦评｜一部豆瓣6.0的国产爱情片是如何10天斩获12亿票房的？---How did a domestic love movie with a douban 6.0 hit $1.2 billion in 10 days?](https://steemit.com/@nostalgic1212/6-0-10-12-how-did-a-domestic-love-movie-with-a-douban-6-0-hit-usd1-2-billion-in-10-days)
+This page is synchronized from the post: ['月旦评｜一部豆瓣6.0的国产爱情片是如何10天斩获12亿票房的？---How did a domestic love movie with a douban 6.0 hit $1.2 billion in 10 days?'](https://steemit.com/@nostalgic1212/6-0-10-12-how-did-a-domestic-love-movie-with-a-douban-6-0-hit-usd1-2-billion-in-10-days)

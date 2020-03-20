@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 到达仙本那的第一天💪"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 到达仙本那的第一天💪'
 permlink: 652rhm-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-01 15:59:36
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - cn-green
 - beautifulsunday
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmfMBeJGNqg6TSBHKUyph4Q2ME6WwPfJ1CiKGY89LVKuc2
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmfMBeJGNqg6TSBHKUyph4Q2ME6WwPfJ1CiKGY89LVKuc2'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 到达仙本那的第一天💪](https://steemit.com/@nostalgic1212/652rhm-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 到达仙本那的第一天💪'](https://steemit.com/@nostalgic1212/652rhm-vicky-s-mysmartphonephotography-or)

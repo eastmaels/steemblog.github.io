@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】Smile Challenge - give yourself a big big smile | 微笑挑战"
+title: '【Vicky参加の活动】Smile Challenge - give yourself a big big smile | 微笑挑战'
 permlink: smile-challenge-give-yourself-a-big-bigsmile-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-19 04:10:33
 categories:
 - smilechallenge
@@ -14,7 +15,7 @@ tags:
 - busy
 - life
 - contest
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ https://steemitimages.com/DQmTdRT2HKuyrw5ZGbGyb27x78wmM7sZm13oVuE9w26x367/IMG_45
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】Smile Challenge - give yourself a big big smile | 微笑挑战](https://steemit.com/@nostalgic1212/smile-challenge-give-yourself-a-big-bigsmile-or)
+This page is synchronized from the post: ['【Vicky参加の活动】Smile Challenge - give yourself a big big smile | 微笑挑战'](https://steemit.com/@nostalgic1212/smile-challenge-give-yourself-a-big-bigsmile-or)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《忌日快乐》：100分钟内死N次，一段坏女孩的另类成长之旅（上）"
+title: '【Vicky''s 影评】《忌日快乐》：100分钟内死N次，一段坏女孩的另类成长之旅（上）'
 permlink: vickys100n-vup8gwt8am
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-27 21:01:09
 categories:
 - steempress
@@ -12,7 +13,7 @@ tags:
 - steempress
 - cnstm
 - cn
-thumbnail: https://i.loli.net/2019/03/18/5c8faa3f7bf48.png
+thumbnail: 'https://i.loli.net/2019/03/18/5c8faa3f7bf48.png'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《忌日快乐》：100分钟内死N次，一段坏女孩的另类成长之旅（上）](https://steemit.com/@nostalgic1212/vickys100n-vup8gwt8am)
+This page is synchronized from the post: ['【Vicky''s 影评】《忌日快乐》：100分钟内死N次，一段坏女孩的另类成长之旅（上）'](https://steemit.com/@nostalgic1212/vickys100n-vup8gwt8am)

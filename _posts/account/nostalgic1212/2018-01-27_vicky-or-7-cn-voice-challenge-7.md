@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】经典老歌 丁当 《亲人》| 第7届“华语好声音” CN-Voice challenge #7"
+title: '【Vicky参加の活动】经典老歌 丁当 《亲人》| 第7届“华语好声音” CN-Voice challenge #7'
 permlink: vicky-or-7-cn-voice-challenge-7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-27 09:51:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - music
 - busy
 - blog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ https://steemitimages.com/DQmcg6n1M4SasHRzygdm9CcKRcSdiMUNtfDfyZnU6nGmvrV/IMG_46
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】经典老歌 丁当 《亲人》| 第7届“华语好声音” CN-Voice challenge #7](https://steemit.com/@nostalgic1212/vicky-or-7-cn-voice-challenge-7)
+This page is synchronized from the post: ['【Vicky参加の活动】经典老歌 丁当 《亲人》| 第7届“华语好声音” CN-Voice challenge #7'](https://steemit.com/@nostalgic1212/vicky-or-7-cn-voice-challenge-7)

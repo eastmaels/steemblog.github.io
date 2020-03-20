@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 三色奶茶 Three Layer Tea | 大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 三色奶茶 Three Layer Tea | 大马美食'
 permlink: vicky-s-mysmartphonephotography-or-three-layer-tea-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-26 02:51:45
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - dailyfoodphotography
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmSaV58jofeVmAj9tQGZGTDEHgcsgRYdmE4f4rEXBWa8R5
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSaV58jofeVmAj9tQGZGTDEHgcsgRYdmE4f4rEXBWa8R5'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 三色奶茶 Three Layer Tea | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-three-layer-tea-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 三色奶茶 Three Layer Tea | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-three-layer-tea-or)

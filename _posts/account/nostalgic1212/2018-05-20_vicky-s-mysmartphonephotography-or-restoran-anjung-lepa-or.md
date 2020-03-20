@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 海丰海鲜餐厅 Restoran Anjung Lepa | 大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 海丰海鲜餐厅 Restoran Anjung Lepa | 大马美食'
 permlink: vicky-s-mysmartphonephotography-or-restoran-anjung-lepa-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-20 00:53:18
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - beautifulsunday
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmYvG25CWauqAN7wDLUS7gULj6EwoULDAzU55NC44m5Eb9
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmYvG25CWauqAN7wDLUS7gULj6EwoULDAzU55NC44m5Eb9'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 海丰海鲜餐厅 Restoran Anjung Lepa | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-restoran-anjung-lepa-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 海丰海鲜餐厅 Restoran Anjung Lepa | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-restoran-anjung-lepa-or)

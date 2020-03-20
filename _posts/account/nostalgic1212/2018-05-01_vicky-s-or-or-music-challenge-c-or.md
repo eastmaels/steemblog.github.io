@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】矮油，女汉子也会玻璃心泛滥😂 | 四五好声音 |Music Challenge C | 三个一"
+title: '【Vicky''s 碎碎念】矮油，女汉子也会玻璃心泛滥😂 | 四五好声音 |Music Challenge C | 三个一'
 permlink: vicky-s-or-or-music-challenge-c-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-01 01:19:36
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - musicchallenge
 - cn-voice
 - cn-reader
-thumbnail: https://gateway.ipfs.io/ipfs/QmeitpV631DJjFkEc5oXSQuUjbY7f5nRR8fAphgRRthKGf
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmeitpV631DJjFkEc5oXSQuUjbY7f5nRR8fAphgRRthKGf'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】矮油，女汉子也会玻璃心泛滥😂 | 四五好声音 |Music Challenge C | 三个一](https://steemit.com/@nostalgic1212/vicky-s-or-or-music-challenge-c-or)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】矮油，女汉子也会玻璃心泛滥😂 | 四五好声音 |Music Challenge C | 三个一'](https://steemit.com/@nostalgic1212/vicky-s-or-or-music-challenge-c-or)

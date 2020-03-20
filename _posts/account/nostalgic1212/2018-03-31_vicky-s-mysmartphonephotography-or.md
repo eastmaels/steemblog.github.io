@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 杭州到马来西亚炒鸡颠簸的一天😫"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 杭州到马来西亚炒鸡颠簸的一天😫'
 permlink: vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-31 11:09:51
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - travel
 - cn
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmSxkTCLPDeaFE4KkNNAvC7N1BbuooAWpw97RDJJ6z2B3u
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmSxkTCLPDeaFE4KkNNAvC7N1BbuooAWpw97RDJJ6z2B3u'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 杭州到马来西亚炒鸡颠簸的一天😫](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 杭州到马来西亚炒鸡颠簸的一天😫'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or)

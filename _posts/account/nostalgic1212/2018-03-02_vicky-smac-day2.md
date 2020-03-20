@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day2 我看了雷剧《将军在上》>..<!!!"
+title: '【Vicky参加の活动】SMAC-Day2 我看了雷剧《将军在上》>..<!!!'
 permlink: vicky-smac-day2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-02 11:23:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - cn-funny
 - movie
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1519989805/semnjow9ott5pgllv9ss.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1519989805/semnjow9ott5pgllv9ss.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day2 我看了雷剧《将军在上》>..<!!!](https://steemit.com/@nostalgic1212/vicky-smac-day2)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day2 我看了雷剧《将军在上》>..<!!!'](https://steemit.com/@nostalgic1212/vicky-smac-day2)

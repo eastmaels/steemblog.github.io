@@ -1,10 +1,11 @@
 
 ---
-title: "【Free Talk】How to Stake/Withdraw the SCT Tokens （Detailed Procedure）#1 / 如何Stake和提现SCT（内附详细图文）-1"
+title: '【Free Talk】How to Stake/Withdraw the SCT Tokens （Detailed Procedure）#1 / 如何Stake和提现SCT（内附详细图文）-1'
 permlink: free-talk-how-to-stake-withdraw-the-sct-tokens-detailed-procedure-1-stake-sct-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-21 16:07:42
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-reader
 - whalepower
-thumbnail: https://i.loli.net/2019/05/21/5ce40ae97a5fe58664.jpg
+thumbnail: 'https://i.loli.net/2019/05/21/5ce40ae97a5fe58664.jpg'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Free Talk】How to Stake/Withdraw the SCT Tokens （Detailed Procedure）#1 / 如何Stake和提现SCT（内附详细图文）-1](https://steemit.com/@nostalgic1212/free-talk-how-to-stake-withdraw-the-sct-tokens-detailed-procedure-1-stake-sct-1)
+This page is synchronized from the post: ['【Free Talk】How to Stake/Withdraw the SCT Tokens （Detailed Procedure）#1 / 如何Stake和提现SCT（内附详细图文）-1'](https://steemit.com/@nostalgic1212/free-talk-how-to-stake-withdraw-the-sct-tokens-detailed-procedure-1-stake-sct-1)

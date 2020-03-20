@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの杭州印象】八卦田遗址 Park of Site of Eight Diagram Field"
+title: '【Vickyの杭州印象】八卦田遗址 Park of Site of Eight Diagram Field'
 permlink: vickyparkofsiteofeightdiagramfield-xgvz5e1z9q
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-30 12:32:15
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - archisteem
 - travelfeed
 - steemitworldmap
-thumbnail: https://i.loli.net/2018/08/28/5b8518ce72561.jpeg
+thumbnail: 'https://i.loli.net/2018/08/28/5b8518ce72561.jpeg'
 sidebar:
     right:
         sticky: true
@@ -107,4 +108,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの杭州印象】八卦田遗址 Park of Site of Eight Diagram Field](https://steemit.com/@nostalgic1212/vickyparkofsiteofeightdiagramfield-xgvz5e1z9q)
+This page is synchronized from the post: ['【Vickyの杭州印象】八卦田遗址 Park of Site of Eight Diagram Field'](https://steemit.com/@nostalgic1212/vickyparkofsiteofeightdiagramfield-xgvz5e1z9q)

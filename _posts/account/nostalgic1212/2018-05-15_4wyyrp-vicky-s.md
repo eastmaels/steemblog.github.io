@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】我的奇葩大学室友"
+title: '【Vicky''s 碎碎念】我的奇葩大学室友'
 permlink: 4wyyrp-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-15 01:24:33
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - cn-malaysia
 - life
 - cn-reader
-thumbnail: https://gateway.ipfs.io/ipfs/QmYvQrtgSMRdUwPL74qmC1Uj4ehkPQTSFnnBUscjWShFgQ
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmYvQrtgSMRdUwPL74qmC1Uj4ehkPQTSFnnBUscjWShFgQ'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】我的奇葩大学室友](https://steemit.com/@nostalgic1212/4wyyrp-vicky-s)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】我的奇葩大学室友'](https://steemit.com/@nostalgic1212/4wyyrp-vicky-s)

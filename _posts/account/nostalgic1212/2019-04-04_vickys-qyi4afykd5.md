@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《李茶的姑妈》：我们何时才能从一炮变真爱的春梦中醒来？（上）"
+title: '【Vicky''s 影评】《李茶的姑妈》：我们何时才能从一炮变真爱的春梦中醒来？（上）'
 permlink: vickys-qyi4afykd5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-04 00:15:24
 categories:
 - steempress
@@ -13,7 +14,7 @@ tags:
 - cnstm
 - cn
 - busy
-thumbnail: https://i.loli.net/2019/02/04/5c584d9c0e7ef.jpg
+thumbnail: 'https://i.loli.net/2019/02/04/5c584d9c0e7ef.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《李茶的姑妈》：我们何时才能从一炮变真爱的春梦中醒来？（上）](https://steemit.com/@nostalgic1212/vickys-qyi4afykd5)
+This page is synchronized from the post: ['【Vicky''s 影评】《李茶的姑妈》：我们何时才能从一炮变真爱的春梦中醒来？（上）'](https://steemit.com/@nostalgic1212/vickys-qyi4afykd5)

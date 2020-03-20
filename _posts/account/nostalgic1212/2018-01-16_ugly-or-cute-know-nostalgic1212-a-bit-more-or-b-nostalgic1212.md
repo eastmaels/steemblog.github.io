@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】Ugly Or Cute? + Know @nostalgic1212 A Bit More | 醜小鴨還是可愛 B? + 認識 @nostalgic1212 多一點"
+title: '【Vicky参加の活动】Ugly Or Cute? + Know @nostalgic1212 A Bit More | 醜小鴨還是可愛 B? + 認識 @nostalgic1212 多一點'
 permlink: ugly-or-cute-know-nostalgic1212-a-bit-more-or-b-nostalgic1212
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-16 14:15:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - introduceyourself
 - photography
 - busy
-thumbnail: https://s26.postimg.org/4ygtx6svt/IMG_4566.jpg
+thumbnail: 'https://s26.postimg.org/4ygtx6svt/IMG_4566.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】Ugly Or Cute? + Know @nostalgic1212 A Bit More | 醜小鴨還是可愛 B? + 認識 @nostalgic1212 多一點](https://steemit.com/@nostalgic1212/ugly-or-cute-know-nostalgic1212-a-bit-more-or-b-nostalgic1212)
+This page is synchronized from the post: ['【Vicky参加の活动】Ugly Or Cute? + Know @nostalgic1212 A Bit More | 醜小鴨還是可愛 B? + 認識 @nostalgic1212 多一點'](https://steemit.com/@nostalgic1212/ugly-or-cute-know-nostalgic1212-a-bit-more-or-b-nostalgic1212)

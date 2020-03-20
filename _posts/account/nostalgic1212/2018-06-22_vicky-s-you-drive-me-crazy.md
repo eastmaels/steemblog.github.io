@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】疯了，因为你！ You Drive Me Crazy"
+title: '【Vicky’s电影/电视剧推荐】疯了，因为你！ You Drive Me Crazy'
 permlink: vicky-s-you-drive-me-crazy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-22 12:53:27
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - movie
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmVnjvJLdZ6Roc9CJH8ZWSHGkQ7ByaBf51uYmQ5DTfBRvx
+thumbnail: 'https://ipfs.busy.org/ipfs/QmVnjvJLdZ6Roc9CJH8ZWSHGkQ7ByaBf51uYmQ5DTfBRvx'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】疯了，因为你！ You Drive Me Crazy](https://steemit.com/@nostalgic1212/vicky-s-you-drive-me-crazy)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】疯了，因为你！ You Drive Me Crazy'](https://steemit.com/@nostalgic1212/vicky-s-you-drive-me-crazy)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの读书笔记】明晓溪《烈火如歌》| 月旦评 | 品乐书会"
+title: '【Vickyの读书笔记】明晓溪《烈火如歌》| 月旦评 | 品乐书会'
 permlink: 5e7qpz-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-02 01:52:21
 categories:
 - cn-book
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - novel
-thumbnail: https://gateway.ipfs.io/ipfs/QmdMJQWzu5xZt4dp1jsmPJpPSALoCJ2rP7gZUVFN39TP6J
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmdMJQWzu5xZt4dp1jsmPJpPSALoCJ2rP7gZUVFN39TP6J'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの读书笔记】明晓溪《烈火如歌》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/5e7qpz-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの读书笔记】明晓溪《烈火如歌》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/5e7qpz-vicky-or-or)

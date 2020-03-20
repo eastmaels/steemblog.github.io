@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小科普】自己动手给iPhone换电池及Geekbench跑分测试"
+title: '【Vicky''s 小科普】自己动手给iPhone换电池及Geekbench跑分测试'
 permlink: vicky-s-iphone-geekbench
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-23 03:39:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - monthlyauthorchallenge
 - iphone
-thumbnail: https://ipfs.busy.org/ipfs/QmYwahCPeMBSnuRc7nzR4GDvzu9yHCUEYBT17MibbX6TXN
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYwahCPeMBSnuRc7nzR4GDvzu9yHCUEYBT17MibbX6TXN'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小科普】自己动手给iPhone换电池及Geekbench跑分测试](https://steemit.com/@nostalgic1212/vicky-s-iphone-geekbench)
+This page is synchronized from the post: ['【Vicky''s 小科普】自己动手给iPhone换电池及Geekbench跑分测试'](https://steemit.com/@nostalgic1212/vicky-s-iphone-geekbench)

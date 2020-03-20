@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day5 天猫超市买水果"
+title: '【Vicky参加の活动】SMAC-Day5 天猫超市买水果'
 permlink: vicky-smac-day5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-05 11:31:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - busy
 - food
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520248788/yfti5rp1x5jec1bg94he.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520248788/yfti5rp1x5jec1bg94he.jpg'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day5 天猫超市买水果](https://steemit.com/@nostalgic1212/vicky-smac-day5)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day5 天猫超市买水果'](https://steemit.com/@nostalgic1212/vicky-smac-day5)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】记第一次“偶遇”steemcleaners的经历-2"
+title: '【Vicky''s 碎碎念】记第一次“偶遇”steemcleaners的经历-2'
 permlink: vicky-s-steemcleaners-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-05 13:53:42
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - esteem-cn
 - steem-guides
-thumbnail: https://i.loli.net/2019/04/02/5ca359e1c7bd7.jpg
+thumbnail: 'https://i.loli.net/2019/04/02/5ca359e1c7bd7.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】记第一次“偶遇”steemcleaners的经历-2](https://steemit.com/@nostalgic1212/vicky-s-steemcleaners-2)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】记第一次“偶遇”steemcleaners的经历-2'](https://steemit.com/@nostalgic1212/vicky-s-steemcleaners-2)

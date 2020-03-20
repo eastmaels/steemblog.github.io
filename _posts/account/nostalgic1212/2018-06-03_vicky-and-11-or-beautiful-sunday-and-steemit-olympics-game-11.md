@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】美丽星期天 & 第11届奥林匹克 （城市定向赛）| Beautiful Sunday & Steemit Olympics Game #11"
+title: '【Vickyの活动】美丽星期天 & 第11届奥林匹克 （城市定向赛）| Beautiful Sunday & Steemit Olympics Game #11'
 permlink: vicky-and-11-or-beautiful-sunday-and-steemit-olympics-game-11
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-03 01:38:27
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - beautifulsunday
 - cn-sport
 - healthchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmNrW8dTvJiZ2mPLBgxYiKN6nBp1uXSDbHHh2KnqXWGNT3
+thumbnail: 'https://ipfs.busy.org/ipfs/QmNrW8dTvJiZ2mPLBgxYiKN6nBp1uXSDbHHh2KnqXWGNT3'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】美丽星期天 & 第11届奥林匹克 （城市定向赛）| Beautiful Sunday & Steemit Olympics Game #11](https://steemit.com/@nostalgic1212/vicky-and-11-or-beautiful-sunday-and-steemit-olympics-game-11)
+This page is synchronized from the post: ['【Vickyの活动】美丽星期天 & 第11届奥林匹克 （城市定向赛）| Beautiful Sunday & Steemit Olympics Game #11'](https://steemit.com/@nostalgic1212/vicky-and-11-or-beautiful-sunday-and-steemit-olympics-game-11)

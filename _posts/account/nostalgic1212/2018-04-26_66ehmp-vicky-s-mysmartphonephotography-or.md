@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 从今以后我多了个身份：潜水员，带证的那种唷📄（内附有奖竞猜+彩蛋）"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 从今以后我多了个身份：潜水员，带证的那种唷📄（内附有奖竞猜+彩蛋）'
 permlink: 66ehmp-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-26 04:07:03
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - busy
 - colourfulphotography
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmNRP3uNxbf28jVvhSQSwnwVunPH5b8ynKsuKbuhhjcbju
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmNRP3uNxbf28jVvhSQSwnwVunPH5b8ynKsuKbuhhjcbju'
 sidebar:
     right:
         sticky: true
@@ -155,4 +156,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 从今以后我多了个身份：潜水员，带证的那种唷📄（内附有奖竞猜+彩蛋）](https://steemit.com/@nostalgic1212/66ehmp-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 从今以后我多了个身份：潜水员，带证的那种唷📄（内附有奖竞猜+彩蛋）'](https://steemit.com/@nostalgic1212/66ehmp-vicky-s-mysmartphonephotography-or)

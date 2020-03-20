@@ -1,10 +1,11 @@
 
 ---
-title: "【Free Talk】As a Movie Review Writer I Determined to Buy Some AAA / 作为影评作者我决定购入AAA"
+title: '【Free Talk】As a Movie Review Writer I Determined to Buy Some AAA / 作为影评作者我决定购入AAA'
 permlink: free-talk-as-a-movie-review-writer-i-determined-to-buy-some-aaa-aaa
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-26 06:07:51
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-reader
 - whalepower
-thumbnail: https://i.loli.net/2019/05/26/5ce9ed5d62ece34337.jpg
+thumbnail: 'https://i.loli.net/2019/05/26/5ce9ed5d62ece34337.jpg'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Free Talk】As a Movie Review Writer I Determined to Buy Some AAA / 作为影评作者我决定购入AAA](https://steemit.com/@nostalgic1212/free-talk-as-a-movie-review-writer-i-determined-to-buy-some-aaa-aaa)
+This page is synchronized from the post: ['【Free Talk】As a Movie Review Writer I Determined to Buy Some AAA / 作为影评作者我决定购入AAA'](https://steemit.com/@nostalgic1212/free-talk-as-a-movie-review-writer-i-determined-to-buy-some-aaa-aaa)

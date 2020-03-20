@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの读书笔记】唐七公子《华胥引》| 月旦评 | 品乐书会"
+title: '【Vickyの读书笔记】唐七公子《华胥引》| 月旦评 | 品乐书会'
 permlink: 2km5g8-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-16 12:33:18
 categories:
 - cn-book
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - novel
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521203470/g9s0e6qnyltymqfgjifm.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521203470/g9s0e6qnyltymqfgjifm.jpg'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの读书笔记】唐七公子《华胥引》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/2km5g8-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの读书笔记】唐七公子《华胥引》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/2km5g8-vicky-or-or)

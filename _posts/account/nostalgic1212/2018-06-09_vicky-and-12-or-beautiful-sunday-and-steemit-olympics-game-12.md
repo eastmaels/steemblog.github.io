@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】美丽星期天 & 第12届奥林匹克 （万人毅行嘉年华）| Beautiful Sunday & Steemit Olympics Game #12"
+title: '【Vickyの活动】美丽星期天 & 第12届奥林匹克 （万人毅行嘉年华）| Beautiful Sunday & Steemit Olympics Game #12'
 permlink: vicky-and-12-or-beautiful-sunday-and-steemit-olympics-game-12
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-09 22:17:48
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - beautifulsunday
 - cn-sport
 - healthchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmSpo3XcwQGNkHNtA5WJEuUCSJ57avB9gTFMR4r1bhMPzh
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSpo3XcwQGNkHNtA5WJEuUCSJ57avB9gTFMR4r1bhMPzh'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】美丽星期天 & 第12届奥林匹克 （万人毅行嘉年华）| Beautiful Sunday & Steemit Olympics Game #12](https://steemit.com/@nostalgic1212/vicky-and-12-or-beautiful-sunday-and-steemit-olympics-game-12)
+This page is synchronized from the post: ['【Vickyの活动】美丽星期天 & 第12届奥林匹克 （万人毅行嘉年华）| Beautiful Sunday & Steemit Olympics Game #12'](https://steemit.com/@nostalgic1212/vicky-and-12-or-beautiful-sunday-and-steemit-olympics-game-12)

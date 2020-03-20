@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】Ten facts one lie challenge – About Me |十真一假挑战@nostalgic1212（有奖游戏）"
+title: '【Vickyの活动】Ten facts one lie challenge – About Me |十真一假挑战@nostalgic1212（有奖游戏）'
 permlink: vicky-ten-facts-one-lie-challenge-about-me-or-nostalgic1212
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-23 04:28:54
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - tenfactsonelie
 - teammalaysia
 - cn-guess
-thumbnail: https://gateway.ipfs.io/ipfs/QmYn5MwreigWDbF1GiWv89sdGPuiSmG7t1qx8SNLpipnr9
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmYn5MwreigWDbF1GiWv89sdGPuiSmG7t1qx8SNLpipnr9'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】Ten facts one lie challenge – About Me |十真一假挑战@nostalgic1212（有奖游戏）](https://steemit.com/@nostalgic1212/vicky-ten-facts-one-lie-challenge-about-me-or-nostalgic1212)
+This page is synchronized from the post: ['【Vickyの活动】Ten facts one lie challenge – About Me |十真一假挑战@nostalgic1212（有奖游戏）'](https://steemit.com/@nostalgic1212/vicky-ten-facts-one-lie-challenge-about-me-or-nostalgic1212)

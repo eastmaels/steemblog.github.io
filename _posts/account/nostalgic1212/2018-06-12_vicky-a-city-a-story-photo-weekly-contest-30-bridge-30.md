@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの杭州印象】【Vickyの杭州印象】MySmartphonePhotography | 京杭大运河上的拱宸桥 （上）Gongchen Bridge on Beijing-Hangzhou Grand Canal"
+title: '【Vickyの杭州印象】【Vickyの杭州印象】MySmartphonePhotography | 京杭大运河上的拱宸桥 （上）Gongchen Bridge on Beijing-Hangzhou Grand Canal'
 permlink: vicky-a-city-a-story-photo-weekly-contest-30-bridge-30
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-12 01:42:54
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - placestoremember
 - archisteem
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmdqiNHwjE1iiescq2zjpjGQHV9UxxQJTtgF9SHzcoTTZb
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdqiNHwjE1iiescq2zjpjGQHV9UxxQJTtgF9SHzcoTTZb'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの杭州印象】【Vickyの杭州印象】MySmartphonePhotography | 京杭大运河上的拱宸桥 （上）Gongchen Bridge on Beijing-Hangzhou Grand Canal](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-30-bridge-30)
+This page is synchronized from the post: ['【Vickyの杭州印象】【Vickyの杭州印象】MySmartphonePhotography | 京杭大运河上的拱宸桥 （上）Gongchen Bridge on Beijing-Hangzhou Grand Canal'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-30-bridge-30)

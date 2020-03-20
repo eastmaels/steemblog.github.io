@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】你遇到过道德绑架吗？ | 月旦评"
+title: '【Vicky''s 碎碎念】你遇到过道德绑架吗？ | 月旦评'
 permlink: 1vhhf-vicky-s-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-26 04:25:51
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - blog
 - life
 - cn-reader
-thumbnail: https://ipfs.busy.org/ipfs/QmRqzHymrB3qDusaVBAWEERU2ZFiPec6WyzdYwpWXe3Qnp
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRqzHymrB3qDusaVBAWEERU2ZFiPec6WyzdYwpWXe3Qnp'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】你遇到过道德绑架吗？ | 月旦评](https://steemit.com/@nostalgic1212/1vhhf-vicky-s-or)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】你遇到过道德绑架吗？ | 月旦评'](https://steemit.com/@nostalgic1212/1vhhf-vicky-s-or)

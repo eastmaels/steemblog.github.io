@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's电影/电视剧推荐】王国 킹덤（李尸朝鲜/ Kingdom）-1"
+title: '【Vicky''s电影/电视剧推荐】王国 킹덤（李尸朝鲜/ Kingdom）-1'
 permlink: vickyskingdom-1-luumahnlpm
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-12 20:01:06
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/02/03/5c56fcfd3d191.jpg
+thumbnail: 'https://i.loli.net/2019/02/03/5c56fcfd3d191.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's电影/电视剧推荐】王国 킹덤（李尸朝鲜/ Kingdom）-1](https://steemit.com/@nostalgic1212/vickyskingdom-1-luumahnlpm)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】王国 킹덤（李尸朝鲜/ Kingdom）-1'](https://steemit.com/@nostalgic1212/vickyskingdom-1-luumahnlpm)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's电影/电视剧推荐】罩袍之下的神秘巨星---Mysterious Superstar under the Robe"
+title: '【Vicky''s电影/电视剧推荐】罩袍之下的神秘巨星---Mysterious Superstar under the Robe'
 permlink: mysterious-superstar-under-the-robe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-20 09:25:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - movie
 - blog
-thumbnail: https://steemitimages.com/DQmbvaUPJxVMgEkRs331cksCyHfPdLmoaDAowFuYC41HHVE/p2502182396.jpg
+thumbnail: 'https://steemitimages.com/DQmbvaUPJxVMgEkRs331cksCyHfPdLmoaDAowFuYC41HHVE/p2502182396.jpg'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ https://steemitimages.com/DQmS2mbuHAUC6GyKQwPzviGABZydsQQ7CpLSacQ16FJUUAE/IMG_46
 
 - - -
 
-This page is synchronized from the post: [【Vicky's电影/电视剧推荐】罩袍之下的神秘巨星---Mysterious Superstar under the Robe](https://steemit.com/@nostalgic1212/mysterious-superstar-under-the-robe)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】罩袍之下的神秘巨星---Mysterious Superstar under the Robe'](https://steemit.com/@nostalgic1212/mysterious-superstar-under-the-robe)

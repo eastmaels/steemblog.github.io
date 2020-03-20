@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】经典老歌 蔡依林 《倒带》| 第5届“华语好声音” CN-Voice challenge #5"
+title: '【Vicky参加の活动】经典老歌 蔡依林 《倒带》| 第5届“华语好声音” CN-Voice challenge #5'
 permlink: or-5-cn-voice-challenge-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-17 10:43:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - song
 - busy
 - blog
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1516185776/avskmfmre8btdr30nkon.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1516185776/avskmfmre8btdr30nkon.jpg'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ https://kg3.qq.com/node/play?s=GkbS66Gz_o984Gh3&shareuid=649f948126243f8d35&tops
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】经典老歌 蔡依林 《倒带》| 第5届“华语好声音” CN-Voice challenge #5](https://steemit.com/@nostalgic1212/or-5-cn-voice-challenge-5)
+This page is synchronized from the post: ['【Vicky参加の活动】经典老歌 蔡依林 《倒带》| 第5届“华语好声音” CN-Voice challenge #5'](https://steemit.com/@nostalgic1212/or-5-cn-voice-challenge-5)

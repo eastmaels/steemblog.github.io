@@ -15,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - whalepower
-thumbnail: https://i.loli.net/2019/02/22/5c6f92f7e9656.jpg
+thumbnail: 'https://i.loli.net/2019/02/22/5c6f92f7e9656.jpg'
 sidebar:
     right:
         sticky: true
@@ -71,4 +71,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Vicky''s 美妆】攒了一箱子空瓶，就为了告诉你这些美妆Qiao好用/难用！（8）](https://steemit.com/@nostalgic1212/vicky-s-qiao-8)
+This page is synchronized from the post: ['【Vicky''s 美妆】攒了一箱子空瓶，就为了告诉你这些美妆Qiao好用/难用！（8）'](https://steemit.com/@nostalgic1212/vicky-s-qiao-8)

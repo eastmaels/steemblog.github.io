@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #3|大马美食"
+title: '【Vicky''s Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #3|大马美食'
 permlink: vicky-s-flowers-mysmartphonephotography-or-3-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-11 02:33:03
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - fruit
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmaSvwUe2pSBYVHaMGCKa6QdaFBo7nwTGHD2ZwYPN34xBc
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmaSvwUe2pSBYVHaMGCKa6QdaFBo7nwTGHD2ZwYPN34xBc'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #3|大马美食](https://steemit.com/@nostalgic1212/vicky-s-flowers-mysmartphonephotography-or-3-or)
+This page is synchronized from the post: ['【Vicky''s Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #3|大马美食'](https://steemit.com/@nostalgic1212/vicky-s-flowers-mysmartphonephotography-or-3-or)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 影评】《老娘叫谭雅》：关于原生家庭的思考｜月旦评"
+title: '【Vicky’s 影评】《老娘叫谭雅》：关于原生家庭的思考｜月旦评'
 permlink: 4dwbcq-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-06 13:36:33
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - family
 - photography
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 影评】《老娘叫谭雅》：关于原生家庭的思考｜月旦评](https://steemit.com/@nostalgic1212/4dwbcq-vicky-s)
+This page is synchronized from the post: ['【Vicky’s 影评】《老娘叫谭雅》：关于原生家庭的思考｜月旦评'](https://steemit.com/@nostalgic1212/4dwbcq-vicky-s)

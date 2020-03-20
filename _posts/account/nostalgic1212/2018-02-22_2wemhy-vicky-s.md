@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】什么，比特币都成日剧题材了？"
+title: '【Vicky’s 碎碎念】什么，比特币都成日剧题材了？'
 permlink: 2wemhy-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-22 02:57:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-malaysia
 - teammalaysia
 - cn-reader
-thumbnail: https://steemitimages.com/DQmXy9wxFDRC7KtBqLWY4aSbYiB4bewjM6RawDAmncP2DBi/WechatIMG149.jpeg
+thumbnail: 'https://steemitimages.com/DQmXy9wxFDRC7KtBqLWY4aSbYiB4bewjM6RawDAmncP2DBi/WechatIMG149.jpeg'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】什么，比特币都成日剧题材了？](https://steemit.com/@nostalgic1212/2wemhy-vicky-s)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】什么，比特币都成日剧题材了？'](https://steemit.com/@nostalgic1212/2wemhy-vicky-s)

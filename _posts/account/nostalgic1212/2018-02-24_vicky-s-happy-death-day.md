@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】忌日快乐 Happy Death Day"
+title: '【Vicky’s电影/电视剧推荐】忌日快乐 Happy Death Day'
 permlink: vicky-s-happy-death-day
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-24 06:23:30
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - movie
 - cn-malaysia
 - whalepower
-thumbnail: https://steemitimages.com/DQmQUhCDXxThmuFXABkCnaTrG8E52tyTqBKocauP2fJovdZ/p2503700088.jpg
+thumbnail: 'https://steemitimages.com/DQmQUhCDXxThmuFXABkCnaTrG8E52tyTqBKocauP2fJovdZ/p2503700088.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】忌日快乐 Happy Death Day](https://steemit.com/@nostalgic1212/vicky-s-happy-death-day)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】忌日快乐 Happy Death Day'](https://steemit.com/@nostalgic1212/vicky-s-happy-death-day)

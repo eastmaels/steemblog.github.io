@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】大叔之爱 Ossan's Love"
+title: '【Vicky’s电影/电视剧推荐】大叔之爱 Ossan''s Love'
 permlink: vicky-s-ossan-s-love
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-11 01:11:42
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - teammalaysia
 - movie
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmeY9RsRYYmG87h9R97tKRG2qjt11LdLGmQLYBpmJi133p
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmeY9RsRYYmG87h9R97tKRG2qjt11LdLGmQLYBpmJi133p'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】大叔之爱 Ossan's Love](https://steemit.com/@nostalgic1212/vicky-s-ossan-s-love)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】大叔之爱 Ossan''s Love'](https://steemit.com/@nostalgic1212/vicky-s-ossan-s-love)

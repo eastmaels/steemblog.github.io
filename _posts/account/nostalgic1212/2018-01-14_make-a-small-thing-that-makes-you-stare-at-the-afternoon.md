@@ -1,10 +1,11 @@
 
 ---
-title: "做个可以让你发呆看一下午的小东西吧---Make a small thing that makes you stare at the afternoon"
+title: '做个可以让你发呆看一下午的小东西吧---Make a small thing that makes you stare at the afternoon'
 permlink: make-a-small-thing-that-makes-you-stare-at-the-afternoon
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-14 09:01:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - steemit
 - blog
-thumbnail: https://steemitimages.com/DQmPLMtaKvNdDeqB1NToQNJi2DYnVfAkqwBuLoZqCvxwpye/IMG_4542.jpg
+thumbnail: 'https://steemitimages.com/DQmPLMtaKvNdDeqB1NToQNJi2DYnVfAkqwBuLoZqCvxwpye/IMG_4542.jpg'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ If you feel the article is good，plz upvote me or leave ur comment. THX～
 
 - - -
 
-This page is synchronized from the post: [做个可以让你发呆看一下午的小东西吧---Make a small thing that makes you stare at the afternoon](https://steemit.com/@nostalgic1212/make-a-small-thing-that-makes-you-stare-at-the-afternoon)
+This page is synchronized from the post: ['做个可以让你发呆看一下午的小东西吧---Make a small thing that makes you stare at the afternoon'](https://steemit.com/@nostalgic1212/make-a-small-thing-that-makes-you-stare-at-the-afternoon)

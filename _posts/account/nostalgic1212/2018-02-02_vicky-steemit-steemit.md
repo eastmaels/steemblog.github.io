@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyのsteemit小感悟】关于steemit上的肖像权和隐私权问题｜月旦评"
+title: '【Vickyのsteemit小感悟】关于steemit上的肖像权和隐私权问题｜月旦评'
 permlink: vicky-steemit-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-02 11:46:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - life
 - privacy
-thumbnail: https://steemitimages.com/DQmdCkDcQ1RudUMqZVHCNqUi5bV5P6MiyuR2kZ9Hb55M5gw/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B63.jpg
+thumbnail: 'https://steemitimages.com/DQmdCkDcQ1RudUMqZVHCNqUi5bV5P6MiyuR2kZ9Hb55M5gw/%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E4%BB%B63.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyのsteemit小感悟】关于steemit上的肖像权和隐私权问题｜月旦评](https://steemit.com/@nostalgic1212/vicky-steemit-steemit)
+This page is synchronized from the post: ['【Vickyのsteemit小感悟】关于steemit上的肖像权和隐私权问题｜月旦评'](https://steemit.com/@nostalgic1212/vicky-steemit-steemit)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《名侦探柯南·零的执行人》：变成科技动作片的《柯南》还是你爱的那一款吗？（中）"
+title: '【Vicky''s 影评】《名侦探柯南·零的执行人》：变成科技动作片的《柯南》还是你爱的那一款吗？（中）'
 permlink: vickys-kd4f1sbrzf
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-24 20:21:39
 categories:
 - steempress
@@ -13,7 +14,7 @@ tags:
 - cnstm
 - cn
 - busy
-thumbnail: https://i.loli.net/2019/02/28/5c77f19d0681a.jpg
+thumbnail: 'https://i.loli.net/2019/02/28/5c77f19d0681a.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《名侦探柯南·零的执行人》：变成科技动作片的《柯南》还是你爱的那一款吗？（中）](https://steemit.com/@nostalgic1212/vickys-kd4f1sbrzf)
+This page is synchronized from the post: ['【Vicky''s 影评】《名侦探柯南·零的执行人》：变成科技动作片的《柯南》还是你爱的那一款吗？（中）'](https://steemit.com/@nostalgic1212/vickys-kd4f1sbrzf)

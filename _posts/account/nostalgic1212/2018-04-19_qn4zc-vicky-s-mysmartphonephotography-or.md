@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 我完成了第一次下潜🎉"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 我完成了第一次下潜🎉'
 permlink: qn4zc-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-19 02:34:48
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - teammalaysia
 - colourfulphotography
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmUNJTXmswHb3FoVnN2wQjJZTwsEHA9CHhBoHMJt5R8KF4
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmUNJTXmswHb3FoVnN2wQjJZTwsEHA9CHhBoHMJt5R8KF4'
 sidebar:
     right:
         sticky: true
@@ -114,4 +115,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 我完成了第一次下潜🎉](https://steemit.com/@nostalgic1212/qn4zc-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 我完成了第一次下潜🎉'](https://steemit.com/@nostalgic1212/qn4zc-vicky-s-mysmartphonephotography-or)

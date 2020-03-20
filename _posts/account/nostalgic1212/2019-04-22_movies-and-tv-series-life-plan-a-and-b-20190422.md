@@ -1,10 +1,11 @@
 
 ---
-title: "Movies & TV Series「荼靡 / Life Plan A and B」20190422"
+title: 'Movies & TV Series「荼靡 / Life Plan A and B」20190422'
 permlink: movies-and-tv-series-life-plan-a-and-b-20190422
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-22 01:07:33
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/04/21/5cbc283c97f2f.jpg
+thumbnail: 'https://i.loli.net/2019/04/21/5cbc283c97f2f.jpg'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [Movies & TV Series「荼靡 / Life Plan A and B」20190422](https://steemit.com/@nostalgic1212/movies-and-tv-series-life-plan-a-and-b-20190422)
+This page is synchronized from the post: ['Movies & TV Series「荼靡 / Life Plan A and B」20190422'](https://steemit.com/@nostalgic1212/movies-and-tv-series-life-plan-a-and-b-20190422)

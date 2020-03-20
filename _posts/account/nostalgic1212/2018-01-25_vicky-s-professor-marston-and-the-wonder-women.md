@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】马斯顿教授与神奇女侠 Professor Marston & the Wonder Women"
+title: '【Vicky’s电影/电视剧推荐】马斯顿教授与神奇女侠 Professor Marston & the Wonder Women'
 permlink: vicky-s-professor-marston-and-the-wonder-women
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-25 03:37:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - movie
 - busy
 - blog
-thumbnail: https://steemitimages.com/DQmUntkkKeGpCZo4vH32E65jV6cTPg2nZGDD481TstwRBLQ/640.jpg
+thumbnail: 'https://steemitimages.com/DQmUntkkKeGpCZo4vH32E65jV6cTPg2nZGDD481TstwRBLQ/640.jpg'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】马斯顿教授与神奇女侠 Professor Marston & the Wonder Women](https://steemit.com/@nostalgic1212/vicky-s-professor-marston-and-the-wonder-women)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】马斯顿教授与神奇女侠 Professor Marston & the Wonder Women'](https://steemit.com/@nostalgic1212/vicky-s-professor-marston-and-the-wonder-women)

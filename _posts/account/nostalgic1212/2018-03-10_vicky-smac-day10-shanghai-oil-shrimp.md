@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day10 上海油爆虾 Shanghai Oil shrimp"
+title: '【Vicky参加の活动】SMAC-Day10 上海油爆虾 Shanghai Oil shrimp'
 permlink: vicky-smac-day10-shanghai-oil-shrimp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-10 12:28:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - busy
 - food
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520684872/psjeibjtuutn31i2ynqr.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520684872/psjeibjtuutn31i2ynqr.jpg'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day10 上海油爆虾 Shanghai Oil shrimp](https://steemit.com/@nostalgic1212/vicky-smac-day10-shanghai-oil-shrimp)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day10 上海油爆虾 Shanghai Oil shrimp'](https://steemit.com/@nostalgic1212/vicky-smac-day10-shanghai-oil-shrimp)

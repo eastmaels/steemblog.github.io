@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】SMAC-Day15 这个仰望星空的人，最终成为了星空"
+title: '【Vicky’s 碎碎念】SMAC-Day15 这个仰望星空的人，最终成为了星空'
 permlink: vicky-s-smac-day15
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-15 02:15:03
 categories:
 - cn-literature
@@ -14,7 +15,7 @@ tags:
 - busy
 - life
 - monthlyauthorchallenge
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521079970/wcjcznhdzfyefvs4zigb.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521079970/wcjcznhdzfyefvs4zigb.jpg'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】SMAC-Day15 这个仰望星空的人，最终成为了星空](https://steemit.com/@nostalgic1212/vicky-s-smac-day15)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】SMAC-Day15 这个仰望星空的人，最终成为了星空'](https://steemit.com/@nostalgic1212/vicky-s-smac-day15)

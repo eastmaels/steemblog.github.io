@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《我的老板每天死一次》：以沙雕剧情揭露了职场潜规则（下）"
+title: '【Vicky''s 影评】《我的老板每天死一次》：以沙雕剧情揭露了职场潜规则（下）'
 permlink: vickys-g8mu8fnltb
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-31 21:00:18
 categories:
 - steempress
@@ -13,7 +14,7 @@ tags:
 - cnstm
 - cn
 - busy
-thumbnail: https://i.loli.net/2019/03/17/5c8dfdbd82734.jpg
+thumbnail: 'https://i.loli.net/2019/03/17/5c8dfdbd82734.jpg'
 sidebar:
     right:
         sticky: true
@@ -86,4 +87,4 @@ src="https://i.loli.net/2019/03/17/5c8dfdbd82734.jpg" alt="p2543248973.jpg" /><b
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《我的老板每天死一次》：以沙雕剧情揭露了职场潜规则（下）](https://steemit.com/@nostalgic1212/vickys-g8mu8fnltb)
+This page is synchronized from the post: ['【Vicky''s 影评】《我的老板每天死一次》：以沙雕剧情揭露了职场潜规则（下）'](https://steemit.com/@nostalgic1212/vickys-g8mu8fnltb)

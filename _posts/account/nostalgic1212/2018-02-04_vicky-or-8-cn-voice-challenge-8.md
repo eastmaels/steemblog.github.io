@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】经典老歌 梁静茹 《失忆》| 第8届“华语好声音” CN-Voice challenge #8"
+title: '【Vicky参加の活动】经典老歌 梁静茹 《失忆》| 第8届“华语好声音” CN-Voice challenge #8'
 permlink: vicky-or-8-cn-voice-challenge-8
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-04 11:45:42
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - music
 - busy
 - blog
-thumbnail: https://steemitimages.com/DQmXYgBh6yJFXggPZFeuawBD9JTbaVCdwZ5wLG8Pxe9W9g9/WechatIMG72.jpeg
+thumbnail: 'https://steemitimages.com/DQmXYgBh6yJFXggPZFeuawBD9JTbaVCdwZ5wLG8Pxe9W9g9/WechatIMG72.jpeg'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】经典老歌 梁静茹 《失忆》| 第8届“华语好声音” CN-Voice challenge #8](https://steemit.com/@nostalgic1212/vicky-or-8-cn-voice-challenge-8)
+This page is synchronized from the post: ['【Vicky参加の活动】经典老歌 梁静茹 《失忆》| 第8届“华语好声音” CN-Voice challenge #8'](https://steemit.com/@nostalgic1212/vicky-or-8-cn-voice-challenge-8)

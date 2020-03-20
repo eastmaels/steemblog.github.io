@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's电影/电视剧推荐】BIG 빅 ：这样的开放式结局你是否能够接受？-6"
+title: '【Vicky''s电影/电视剧推荐】BIG 빅 ：这样的开放式结局你是否能够接受？-6'
 permlink: vickysbig-6-vc38xxbvtu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-20 20:01:00
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/05/22/5ce4cc9ae514042366.jpg
+thumbnail: 'https://i.loli.net/2019/05/22/5ce4cc9ae514042366.jpg'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's电影/电视剧推荐】BIG 빅 ：这样的开放式结局你是否能够接受？-6](https://steemit.com/@nostalgic1212/vickysbig-6-vc38xxbvtu)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】BIG 빅 ：这样的开放式结局你是否能够接受？-6'](https://steemit.com/@nostalgic1212/vickysbig-6-vc38xxbvtu)

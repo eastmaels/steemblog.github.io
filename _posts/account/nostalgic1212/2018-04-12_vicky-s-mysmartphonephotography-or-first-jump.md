@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 失败的First Jump😫"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 失败的First Jump😫'
 permlink: vicky-s-mysmartphonephotography-or-first-jump
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-12 06:25:30
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - travel
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmThjfyyK3YcTVaPMKt2uRxdfb5eXo7GkbiemUds76FbLe
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmThjfyyK3YcTVaPMKt2uRxdfb5eXo7GkbiemUds76FbLe'
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 失败的First Jump😫](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-first-jump)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 失败的First Jump😫'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-first-jump)

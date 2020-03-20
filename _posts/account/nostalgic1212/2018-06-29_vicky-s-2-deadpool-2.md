@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】死侍2 Deadpool 2"
+title: '【Vicky’s电影/电视剧推荐】死侍2 Deadpool 2'
 permlink: vicky-s-2-deadpool-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-29 03:24:45
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - busy
 - ocd-resteem
 - movie
-thumbnail: https://s22.postimg.cc/u6kwtd1pt/p2513514720.jpg
+thumbnail: 'https://s22.postimg.cc/u6kwtd1pt/p2513514720.jpg'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】死侍2 Deadpool 2](https://steemit.com/@nostalgic1212/vicky-s-2-deadpool-2)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】死侍2 Deadpool 2'](https://steemit.com/@nostalgic1212/vicky-s-2-deadpool-2)

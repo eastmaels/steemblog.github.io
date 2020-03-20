@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】Daily Pet Photography 见惯大世面的猫猫们🐈"
+title: '【Vicky参加の活动】Daily Pet Photography 见惯大世面的猫猫们🐈'
 permlink: 5use1m-vicky-daily-pet-photography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-09 11:50:48
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - animalphotography
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/Qmam7bZJTCjcBMoMGpN8TxG5xG45bCPtwofGLkJD1eZWGF
+thumbnail: 'https://gateway.ipfs.io/ipfs/Qmam7bZJTCjcBMoMGpN8TxG5xG45bCPtwofGLkJD1eZWGF'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】Daily Pet Photography 见惯大世面的猫猫们🐈](https://steemit.com/@nostalgic1212/5use1m-vicky-daily-pet-photography)
+This page is synchronized from the post: ['【Vicky参加の活动】Daily Pet Photography 见惯大世面的猫猫们🐈'](https://steemit.com/@nostalgic1212/5use1m-vicky-daily-pet-photography)

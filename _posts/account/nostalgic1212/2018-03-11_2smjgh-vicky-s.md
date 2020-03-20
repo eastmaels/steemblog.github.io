@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】我们在恋爱中究竟应该注意些什么| 月旦评"
+title: '【Vicky’s 碎碎念】我们在恋爱中究竟应该注意些什么| 月旦评'
 permlink: 2smjgh-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-11 03:39:21
 categories:
 - cn-literature
@@ -14,7 +15,7 @@ tags:
 - busy
 - love
 - psychology
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520739366/mcxnads5wx1bgtpcn5e7.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520739366/mcxnads5wx1bgtpcn5e7.jpg'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】我们在恋爱中究竟应该注意些什么| 月旦评](https://steemit.com/@nostalgic1212/2smjgh-vicky-s)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】我们在恋爱中究竟应该注意些什么| 月旦评'](https://steemit.com/@nostalgic1212/2smjgh-vicky-s)

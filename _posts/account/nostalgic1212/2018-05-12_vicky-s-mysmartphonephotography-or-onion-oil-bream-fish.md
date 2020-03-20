@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 葱油鳊鱼 Onion Oil Bream Fish"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 葱油鳊鱼 Onion Oil Bream Fish'
 permlink: vicky-s-mysmartphonephotography-or-onion-oil-bream-fish
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-12 12:42:51
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotograghy
 - cn-reader
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmYWgETTMdZXumS4Nmq8pTMgNUjvbmqnUPCmqVpJ325Ydy
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmYWgETTMdZXumS4Nmq8pTMgNUjvbmqnUPCmqVpJ325Ydy'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 葱油鳊鱼 Onion Oil Bream Fish](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-onion-oil-bream-fish)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 葱油鳊鱼 Onion Oil Bream Fish'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-onion-oil-bream-fish)

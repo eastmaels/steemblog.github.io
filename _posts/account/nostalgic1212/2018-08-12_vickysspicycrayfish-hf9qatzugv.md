@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】Spicy Crayfish 麻辣小龙虾"
+title: '【Vicky''s 小确幸】Spicy Crayfish 麻辣小龙虾'
 permlink: vickysspicycrayfish-hf9qatzugv
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-12 03:01:24
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - food
 - ocd-resteem
 - cn-reader
-thumbnail: https://s1.ax1x.com/2018/08/12/Pc3Fj1.md.jpg
+thumbnail: 'https://s1.ax1x.com/2018/08/12/Pc3Fj1.md.jpg'
 sidebar:
     right:
         sticky: true
@@ -115,4 +116,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】Spicy Crayfish 麻辣小龙虾](https://steemit.com/@nostalgic1212/vickysspicycrayfish-hf9qatzugv)
+This page is synchronized from the post: ['【Vicky''s 小确幸】Spicy Crayfish 麻辣小龙虾'](https://steemit.com/@nostalgic1212/vickysspicycrayfish-hf9qatzugv)

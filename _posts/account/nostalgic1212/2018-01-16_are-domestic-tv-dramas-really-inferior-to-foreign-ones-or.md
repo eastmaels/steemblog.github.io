@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky‘s 碎碎念】国产电视剧是否真的不如国外的？---Are domestic TV dramas really inferior to foreign ones?| 月旦评"
+title: '【Vicky‘s 碎碎念】国产电视剧是否真的不如国外的？---Are domestic TV dramas really inferior to foreign ones?| 月旦评'
 permlink: are-domestic-tv-dramas-really-inferior-to-foreign-ones-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-16 00:56:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - drama
 - blog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ BTW: Unofficially, our "Journey to the West" "My Fair Princess" and "Empresses i
 
 - - -
 
-This page is synchronized from the post: [【Vicky‘s 碎碎念】国产电视剧是否真的不如国外的？---Are domestic TV dramas really inferior to foreign ones?| 月旦评](https://steemit.com/@nostalgic1212/are-domestic-tv-dramas-really-inferior-to-foreign-ones-or)
+This page is synchronized from the post: ['【Vicky‘s 碎碎念】国产电视剧是否真的不如国外的？---Are domestic TV dramas really inferior to foreign ones?| 月旦评'](https://steemit.com/@nostalgic1212/are-domestic-tv-dramas-really-inferior-to-foreign-ones-or)

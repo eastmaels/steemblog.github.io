@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】罪途  The Way of Sin"
+title: '【Vicky’s电影/电视剧推荐】罪途  The Way of Sin'
 permlink: vicky-s-the-way-of-sin
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-06 04:39:30
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - movie
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmZn6MnpQFerYnruGApXczD6re79nXyvG3b2FRnLk3YV5c
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZn6MnpQFerYnruGApXczD6re79nXyvG3b2FRnLk3YV5c'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】罪途  The Way of Sin](https://steemit.com/@nostalgic1212/vicky-s-the-way-of-sin)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】罪途  The Way of Sin'](https://steemit.com/@nostalgic1212/vicky-s-the-way-of-sin)

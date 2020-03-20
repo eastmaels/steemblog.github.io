@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day7 移动啊，放开中老年人冲我们来吧"
+title: '【Vicky参加の活动】SMAC-Day7 移动啊，放开中老年人冲我们来吧'
 permlink: vicky-smac-day7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-07 12:18:39
 categories:
 - cn-literature
@@ -14,7 +15,7 @@ tags:
 - monthlyauthorchallenge
 - life
 - steemit
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520425037/xhhbj46s7yinazcfyvum.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520425037/xhhbj46s7yinazcfyvum.jpg'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day7 移动啊，放开中老年人冲我们来吧](https://steemit.com/@nostalgic1212/vicky-smac-day7)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day7 移动啊，放开中老年人冲我们来吧'](https://steemit.com/@nostalgic1212/vicky-smac-day7)

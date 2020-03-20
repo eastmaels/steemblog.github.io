@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】经典老歌 戴佩妮 《爱疯了》| 第6届“华语好声音” CN-Voice challenge #6"
+title: '【Vicky参加の活动】经典老歌 戴佩妮 《爱疯了》| 第6届“华语好声音” CN-Voice challenge #6'
 permlink: or-6-cn-voice-challenge-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-21 05:15:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - music
 - busy
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ https://steemitimages.com/DQmaHqJ98QL9MYqzE7GJfzf8PTsd7RqFPqAfVGx515BYtfy/_MG_65
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】经典老歌 戴佩妮 《爱疯了》| 第6届“华语好声音” CN-Voice challenge #6](https://steemit.com/@nostalgic1212/or-6-cn-voice-challenge-6)
+This page is synchronized from the post: ['【Vicky参加の活动】经典老歌 戴佩妮 《爱疯了》| 第6届“华语好声音” CN-Voice challenge #6'](https://steemit.com/@nostalgic1212/or-6-cn-voice-challenge-6)

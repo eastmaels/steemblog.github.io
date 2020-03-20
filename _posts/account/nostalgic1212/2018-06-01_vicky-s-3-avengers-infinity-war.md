@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】复仇者联盟3：无限战争 Avengers: Infinity War"
+title: '【Vicky’s电影/电视剧推荐】复仇者联盟3：无限战争 Avengers: Infinity War'
 permlink: vicky-s-3-avengers-infinity-war
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-01 01:17:57
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - movie
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmTAvditbRabYLLJGe1dC7Ad2idnYJB1rGoHSeFEW3ngAr
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTAvditbRabYLLJGe1dC7Ad2idnYJB1rGoHSeFEW3ngAr'
 sidebar:
     right:
         sticky: true
@@ -106,4 +107,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】复仇者联盟3：无限战争 Avengers: Infinity War](https://steemit.com/@nostalgic1212/vicky-s-3-avengers-infinity-war)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】复仇者联盟3：无限战争 Avengers: Infinity War'](https://steemit.com/@nostalgic1212/vicky-s-3-avengers-infinity-war)

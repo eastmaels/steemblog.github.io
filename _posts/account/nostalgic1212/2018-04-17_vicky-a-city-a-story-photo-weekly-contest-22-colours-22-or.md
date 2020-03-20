@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】A City A Story Photo Weekly Contest#22 -【COLOURS】~小城故事相片比賽#22-【色彩】| 月旦评"
+title: '【Vickyの活动】A City A Story Photo Weekly Contest#22 -【COLOURS】~小城故事相片比賽#22-【色彩】| 月旦评'
 permlink: vicky-a-city-a-story-photo-weekly-contest-22-colours-22-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-17 06:32:12
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - cn-green
 - busy
 - cn-reader
-thumbnail: https://gateway.ipfs.io/ipfs/QmVV6FEaCGp1X1vN2mBr9A92zJjtbVfGPR3pHMaEXRFbeW
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmVV6FEaCGp1X1vN2mBr9A92zJjtbVfGPR3pHMaEXRFbeW'
 sidebar:
     right:
         sticky: true
@@ -117,4 +118,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】A City A Story Photo Weekly Contest#22 -【COLOURS】~小城故事相片比賽#22-【色彩】| 月旦评](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-22-colours-22-or)
+This page is synchronized from the post: ['【Vickyの活动】A City A Story Photo Weekly Contest#22 -【COLOURS】~小城故事相片比賽#22-【色彩】| 月旦评'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-22-colours-22-or)

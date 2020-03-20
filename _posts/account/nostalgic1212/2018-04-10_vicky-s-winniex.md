@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】我和@winniex的第一次合唱🎤|Music Challenge A"
+title: '【Vicky''s 碎碎念】我和@winniex的第一次合唱🎤|Music Challenge A'
 permlink: vicky-s-winniex
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-10 03:39:45
 categories:
 - musicchallenge
@@ -14,7 +15,7 @@ tags:
 - steemitnamechallenge
 - monthlyauthorchallenge
 - cn-reader
-thumbnail: https://gateway.ipfs.io/ipfs/QmbgC8Z4vNoCkC1LtsGNcsvs9A2KwkYxFVbmhgFWBEpZpZ
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmbgC8Z4vNoCkC1LtsGNcsvs9A2KwkYxFVbmhgFWBEpZpZ'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】我和@winniex的第一次合唱🎤|Music Challenge A](https://steemit.com/@nostalgic1212/vicky-s-winniex)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】我和@winniex的第一次合唱🎤|Music Challenge A'](https://steemit.com/@nostalgic1212/vicky-s-winniex)

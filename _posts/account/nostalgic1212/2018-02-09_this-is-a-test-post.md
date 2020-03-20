@@ -1,16 +1,17 @@
 
 ---
-title: "测试测试，大家不用在意 this is a test post"
+title: '测试测试，大家不用在意 this is a test post'
 permlink: this-is-a-test-post
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-09 13:07:48
 categories:
 - cn
 tags:
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -25,4 +26,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [测试测试，大家不用在意 this is a test post](https://steemit.com/@nostalgic1212/this-is-a-test-post)
+This page is synchronized from the post: ['测试测试，大家不用在意 this is a test post'](https://steemit.com/@nostalgic1212/this-is-a-test-post)

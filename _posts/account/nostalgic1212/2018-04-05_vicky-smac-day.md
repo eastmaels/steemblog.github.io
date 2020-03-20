@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC- Day 环保小活动自检表♻️"
+title: '【Vicky参加の活动】SMAC- Day 环保小活动自检表♻️'
 permlink: vicky-smac-day
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-05 08:26:15
 categories:
 - cn-green
@@ -14,7 +15,7 @@ tags:
 - life
 - cn
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/Qmc7b3xnFD2Qh9bvTGxivVjQfLowwp4AgeEZcTCa6RoiSi
+thumbnail: 'https://gateway.ipfs.io/ipfs/Qmc7b3xnFD2Qh9bvTGxivVjQfLowwp4AgeEZcTCa6RoiSi'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC- Day 环保小活动自检表♻️](https://steemit.com/@nostalgic1212/vicky-smac-day)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC- Day 环保小活动自检表♻️'](https://steemit.com/@nostalgic1212/vicky-smac-day)

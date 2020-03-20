@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】啤酒炸鸡 Beer & Fried Chicken"
+title: '【Vicky''s 小确幸】啤酒炸鸡 Beer & Fried Chicken'
 permlink: vicky-s-beer-and-fried-chicken
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-18 11:05:21
 categories:
 - beautifulsunday
@@ -14,7 +15,7 @@ tags:
 - mysmartphonephotography
 - dailyfoodphotography
 - busy
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521371066/txjenjuqbzyxgpxh7rmr.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521371066/txjenjuqbzyxgpxh7rmr.jpg'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】啤酒炸鸡 Beer & Fried Chicken](https://steemit.com/@nostalgic1212/vicky-s-beer-and-fried-chicken)
+This page is synchronized from the post: ['【Vicky''s 小确幸】啤酒炸鸡 Beer & Fried Chicken'](https://steemit.com/@nostalgic1212/vicky-s-beer-and-fried-chicken)

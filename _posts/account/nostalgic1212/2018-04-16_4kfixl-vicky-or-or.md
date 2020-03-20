@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの读书笔记】杨柳松《北方的空地》| 月旦评 | 品乐书会"
+title: '【Vickyの读书笔记】杨柳松《北方的空地》| 月旦评 | 品乐书会'
 permlink: 4kfixl-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-16 14:55:51
 categories:
 - cn-book
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - mysmartphonephotography
-thumbnail: https://gateway.ipfs.io/ipfs/QmYuKfN9sw95pFMHBSc4kYRcqMfGgA9QD7tX4Njsx2HxZb
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmYuKfN9sw95pFMHBSc4kYRcqMfGgA9QD7tX4Njsx2HxZb'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの读书笔记】杨柳松《北方的空地》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/4kfixl-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの读书笔记】杨柳松《北方的空地》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/4kfixl-vicky-or-or)

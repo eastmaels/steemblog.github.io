@@ -1,10 +1,11 @@
 
 ---
-title: "一个抑郁症患者写给十年后自己的一封信---A patient with depression wrote a letter to herself ten years later"
+title: '一个抑郁症患者写给十年后自己的一封信---A patient with depression wrote a letter to herself ten years later'
 permlink: a-patient-with-depression-wrote-a-letter-to-herself-ten-years-later
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-10 07:21:09
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - busy
 - cn-writing
-thumbnail: https://steemitimages.com/DQmcU5tAF2xExcGdmYMYHPSKaaSSkGbtToJrzgmiQsdf7uV/IMG_4510.JPG
+thumbnail: 'https://steemitimages.com/DQmcU5tAF2xExcGdmYMYHPSKaaSSkGbtToJrzgmiQsdf7uV/IMG_4510.JPG'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Ten years after, I hope you have become what I said above. If you have a chance 
 
 - - -
 
-This page is synchronized from the post: [一个抑郁症患者写给十年后自己的一封信---A patient with depression wrote a letter to herself ten years later](https://steemit.com/@nostalgic1212/a-patient-with-depression-wrote-a-letter-to-herself-ten-years-later)
+This page is synchronized from the post: ['一个抑郁症患者写给十年后自己的一封信---A patient with depression wrote a letter to herself ten years later'](https://steemit.com/@nostalgic1212/a-patient-with-depression-wrote-a-letter-to-herself-ten-years-later)

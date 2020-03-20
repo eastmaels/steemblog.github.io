@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】Daily Pet Photography 小松鼠和鹦鹉君也来拜年啦"
+title: '【Vicky参加の活动】Daily Pet Photography 小松鼠和鹦鹉君也来拜年啦'
 permlink: vicky-daily-pet-photography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-17 10:17:33
 categories:
 - dailypetphotography
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - animal
 - photography
-thumbnail: https://steemitimages.com/DQmepaxHKbRVJjDoSAUSMyQQg7abcvghfoqfiazoet1Jiy4/IMG_4897.JPG
+thumbnail: 'https://steemitimages.com/DQmepaxHKbRVJjDoSAUSMyQQg7abcvghfoqfiazoet1Jiy4/IMG_4897.JPG'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】Daily Pet Photography 小松鼠和鹦鹉君也来拜年啦](https://steemit.com/@nostalgic1212/vicky-daily-pet-photography)
+This page is synchronized from the post: ['【Vicky参加の活动】Daily Pet Photography 小松鼠和鹦鹉君也来拜年啦'](https://steemit.com/@nostalgic1212/vicky-daily-pet-photography)

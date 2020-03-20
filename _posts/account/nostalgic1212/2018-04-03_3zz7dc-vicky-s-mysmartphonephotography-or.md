@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 学习潜水理论课程📖"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 学习潜水理论课程📖'
 permlink: 3zz7dc-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-03 13:56:45
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - cn-green
 - beautifulsunday
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmfSq1ty1zP9K8GVKS5JwPJ3R72QWHdHJ32asu4fBcQtgH
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmfSq1ty1zP9K8GVKS5JwPJ3R72QWHdHJ32asu4fBcQtgH'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 学习潜水理论课程📖](https://steemit.com/@nostalgic1212/3zz7dc-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 学习潜水理论课程📖'](https://steemit.com/@nostalgic1212/3zz7dc-vicky-s-mysmartphonephotography-or)

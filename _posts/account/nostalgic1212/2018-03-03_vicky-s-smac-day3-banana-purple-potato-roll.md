@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】SMAC-Day3 香蕉紫薯卷 Banana purple potato roll"
+title: '【Vicky''s 小确幸】SMAC-Day3 香蕉紫薯卷 Banana purple potato roll'
 permlink: vicky-s-smac-day3-banana-purple-potato-roll
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-03 11:46:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - busy
 - food
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520077448/zs8c0mxlpfbz4dlwelpw.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520077448/zs8c0mxlpfbz4dlwelpw.jpg'
 sidebar:
     right:
         sticky: true
@@ -72,4 +73,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】SMAC-Day3 香蕉紫薯卷 Banana purple potato roll](https://steemit.com/@nostalgic1212/vicky-s-smac-day3-banana-purple-potato-roll)
+This page is synchronized from the post: ['【Vicky''s 小确幸】SMAC-Day3 香蕉紫薯卷 Banana purple potato roll'](https://steemit.com/@nostalgic1212/vicky-s-smac-day3-banana-purple-potato-roll)

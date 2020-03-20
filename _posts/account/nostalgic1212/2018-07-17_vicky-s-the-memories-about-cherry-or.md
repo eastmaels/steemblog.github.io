@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】那些关于樱桃的记忆🍒 The Memories about Cherry | 月旦评"
+title: '【Vicky''s 碎碎念】那些关于樱桃的记忆🍒 The Memories about Cherry | 月旦评'
 permlink: vicky-s-the-memories-about-cherry-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-17 01:06:36
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - busy
 - blog
 - life
-thumbnail: https://ipfs.busy.org/ipfs/QmWsqPiiopSt8RD3SJGsPdxjiaET2X4xgcjVFL7EhMD6CS
+thumbnail: 'https://ipfs.busy.org/ipfs/QmWsqPiiopSt8RD3SJGsPdxjiaET2X4xgcjVFL7EhMD6CS'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】那些关于樱桃的记忆🍒 The Memories about Cherry | 月旦评](https://steemit.com/@nostalgic1212/vicky-s-the-memories-about-cherry-or)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】那些关于樱桃的记忆🍒 The Memories about Cherry | 月旦评'](https://steemit.com/@nostalgic1212/vicky-s-the-memories-about-cherry-or)

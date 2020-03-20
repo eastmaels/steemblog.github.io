@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの杭州印象】The Time-honored TCM Pharmacies 历史悠久的中医药房——Hu Qing Yu Tang 胡庆余堂"
+title: '【Vickyの杭州印象】The Time-honored TCM Pharmacies 历史悠久的中医药房——Hu Qing Yu Tang 胡庆余堂'
 permlink: vicky-a-city-a-story-photo-weekly-contest-29-old-shop-29
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-04 02:43:18
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - placestoremember
 - archisteem
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmSr5fpQfsrqteLLaze6kUZZrNYgrknKPjRTrGa431T6Go
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSr5fpQfsrqteLLaze6kUZZrNYgrknKPjRTrGa431T6Go'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの杭州印象】The Time-honored TCM Pharmacies 历史悠久的中医药房——Hu Qing Yu Tang 胡庆余堂](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-29-old-shop-29)
+This page is synchronized from the post: ['【Vickyの杭州印象】The Time-honored TCM Pharmacies 历史悠久的中医药房——Hu Qing Yu Tang 胡庆余堂'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-29-old-shop-29)

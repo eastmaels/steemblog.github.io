@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-5（人物篇）"
+title: '【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-5（人物篇）'
 permlink: vickys-5-hqv32kgbxk
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-20 14:11:51
 categories:
 - steempress
@@ -12,7 +13,7 @@ tags:
 - steempress
 - cnstm
 - cn
-thumbnail: https://i.loli.net/2019/02/18/5c6ab9febc43a.jpg
+thumbnail: 'https://i.loli.net/2019/02/18/5c6ab9febc43a.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-5（人物篇）](https://steemit.com/@nostalgic1212/vickys-5-hqv32kgbxk)
+This page is synchronized from the post: ['【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-5（人物篇）'](https://steemit.com/@nostalgic1212/vickys-5-hqv32kgbxk)

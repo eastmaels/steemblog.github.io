@@ -1,10 +1,11 @@
 
 ---
-title: "Handmade Crafts「Pindou of Hearts」20190415"
+title: 'Handmade Crafts「Pindou of Hearts」20190415'
 permlink: ntopaz--nostalgic1212--461794451--ntopaz-cn-cn-reader-ocd-resteem-busy--2019-04-15-21-14-09--artwork--none
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-15 13:14:00
 categories:
 - ntopaz
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - ocd-resteem
 - busy
-thumbnail: https://artisteem.io/media/2ae1989c-10af-4163-9511-b6c0e83df929
+thumbnail: 'https://artisteem.io/media/2ae1989c-10af-4163-9511-b6c0e83df929'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ They're considerably cute, aren't they?
 
 - - -
 
-This page is synchronized from the post: [Handmade Crafts「Pindou of Hearts」20190415](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--461794451--ntopaz-cn-cn-reader-ocd-resteem-busy--2019-04-15-21-14-09--artwork--none)
+This page is synchronized from the post: ['Handmade Crafts「Pindou of Hearts」20190415'](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--461794451--ntopaz-cn-cn-reader-ocd-resteem-busy--2019-04-15-21-14-09--artwork--none)

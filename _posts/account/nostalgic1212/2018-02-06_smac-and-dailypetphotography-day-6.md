@@ -1,10 +1,11 @@
 
 ---
-title: "📷SMAC&Dailypetphotography - Day 6 给流浪的猫猫一个温暖的家吧"
+title: '📷SMAC&Dailypetphotography - Day 6 给流浪的猫猫一个温暖的家吧'
 permlink: smac-and-dailypetphotography-day-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-06 01:22:42
 categories:
 - dailypetphotography
@@ -14,7 +15,7 @@ tags:
 - cn
 - cat
 - photography
-thumbnail: https://steemitimages.com/DQmWs5Accd8hGC4Rw5ZrdtW8txQ9ku9JMqhVHwjzZVw6fPo/IMG_4763.JPG
+thumbnail: 'https://steemitimages.com/DQmWs5Accd8hGC4Rw5ZrdtW8txQ9ku9JMqhVHwjzZVw6fPo/IMG_4763.JPG'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [📷SMAC&Dailypetphotography - Day 6 给流浪的猫猫一个温暖的家吧](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-6)
+This page is synchronized from the post: ['📷SMAC&Dailypetphotography - Day 6 给流浪的猫猫一个温暖的家吧'](https://steemit.com/@nostalgic1212/smac-and-dailypetphotography-day-6)

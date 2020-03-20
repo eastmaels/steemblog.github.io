@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】A City A Story Photo Weekly Contest#26 -【Places to Remember】~小城故事相片比賽#26-【让你不能忘怀的地方】"
+title: '【Vicky参加の活动】A City A Story Photo Weekly Contest#26 -【Places to Remember】~小城故事相片比賽#26-【让你不能忘怀的地方】'
 permlink: vicky-a-city-a-story-photo-weekly-contest-26-places-to-remember-26
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-14 01:39:45
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - placestoremember
 - archisteem
 - ocd-resteem
-thumbnail: https://gateway.ipfs.io/ipfs/QmZbmTRLWKxBYEgJETc4DqgLj7mTRxPpx4nB2UdD2o6miN
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmZbmTRLWKxBYEgJETc4DqgLj7mTRxPpx4nB2UdD2o6miN'
 sidebar:
     right:
         sticky: true
@@ -135,4 +136,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】A City A Story Photo Weekly Contest#26 -【Places to Remember】~小城故事相片比賽#26-【让你不能忘怀的地方】](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-26-places-to-remember-26)
+This page is synchronized from the post: ['【Vicky参加の活动】A City A Story Photo Weekly Contest#26 -【Places to Remember】~小城故事相片比賽#26-【让你不能忘怀的地方】'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-26-places-to-remember-26)

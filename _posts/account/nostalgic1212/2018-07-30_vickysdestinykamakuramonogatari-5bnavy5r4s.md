@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 影评 】《镰仓物语》Destiny: Kamakura Monogatari"
+title: '【Vicky’s 影评 】《镰仓物语》Destiny: Kamakura Monogatari'
 permlink: vickysdestinykamakuramonogatari-5bnavy5r4s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-30 15:36:33
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - creativecrypto
 - ocd-resteem
-thumbnail: https://s1.ax1x.com/2018/07/30/PdwG0U.md.jpg
+thumbnail: 'https://s1.ax1x.com/2018/07/30/PdwG0U.md.jpg'
 sidebar:
     right:
         sticky: true
@@ -147,4 +148,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 影评 】《镰仓物语》Destiny: Kamakura Monogatari](https://steemit.com/@nostalgic1212/vickysdestinykamakuramonogatari-5bnavy5r4s)
+This page is synchronized from the post: ['【Vicky’s 影评 】《镰仓物语》Destiny: Kamakura Monogatari'](https://steemit.com/@nostalgic1212/vickysdestinykamakuramonogatari-5bnavy5r4s)

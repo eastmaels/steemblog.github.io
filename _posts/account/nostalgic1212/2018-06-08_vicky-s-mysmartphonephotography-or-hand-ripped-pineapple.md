@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography |  手撕菠萝 Hand-Ripped Pineapple"
+title: '【Vicky''s 小确幸】MySmartphonePhotography |  手撕菠萝 Hand-Ripped Pineapple'
 permlink: vicky-s-mysmartphonephotography-or-hand-ripped-pineapple
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-08 23:45:36
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - dailyfoodphotography
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmRyEsxKUm17FJMSv4LXP89u2bvqaoifFo4bE9XevyftXo
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRyEsxKUm17FJMSv4LXP89u2bvqaoifFo4bE9XevyftXo'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography |  手撕菠萝 Hand-Ripped Pineapple](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-hand-ripped-pineapple)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography |  手撕菠萝 Hand-Ripped Pineapple'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-hand-ripped-pineapple)

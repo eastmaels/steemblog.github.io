@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】漫步在西藏 Wandering in Tibet"
+title: '【Vicky''s 旅行】漫步在西藏 Wandering in Tibet'
 permlink: vickyacityastoryphotoweeklycontest36-empty36--sxsvm2n2mt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-31 14:22:42
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - placestoremember
 - archisteem
 - travel
-thumbnail: https://s1.ax1x.com/2018/07/31/Pwigaj.jpg
+thumbnail: 'https://s1.ax1x.com/2018/07/31/Pwigaj.jpg'
 sidebar:
     right:
         sticky: true
@@ -170,4 +171,4 @@ b3R+PGJyPjwvcD4=">​</div>
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】漫步在西藏 Wandering in Tibet](https://steemit.com/@nostalgic1212/vickyacityastoryphotoweeklycontest36-empty36--sxsvm2n2mt)
+This page is synchronized from the post: ['【Vicky''s 旅行】漫步在西藏 Wandering in Tibet'](https://steemit.com/@nostalgic1212/vickyacityastoryphotoweeklycontest36-empty36--sxsvm2n2mt)

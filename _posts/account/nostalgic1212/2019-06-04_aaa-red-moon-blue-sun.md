@@ -5,6 +5,7 @@ permlink: aaa-red-moon-blue-sun
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-04 04:30:51
 categories:
 - aaa
@@ -15,7 +16,7 @@ tags:
 - sct-cn
 - cn-reader
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf5edf12bc4667511.png
+thumbnail: 'https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf5edf12bc4667511.png'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun （2019）](https://steemit.com/@nostalgic1212/aaa-red-moon-blue-sun)
+This page is synchronized from the post: ['【AAA】赤月青日 붉은달 푸른해 Red Moon, Blue Sun （2019）'](https://steemit.com/@nostalgic1212/aaa-red-moon-blue-sun)

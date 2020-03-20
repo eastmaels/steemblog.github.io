@@ -1,10 +1,11 @@
 
 ---
-title: "【N&N's Castle】Ghost Festival 中元节"
+title: '【N&N''s Castle】Ghost Festival 中元节'
 permlink: nnscastleghostfestival-7hox2rcqwk
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-27 12:48:54
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - art
 - story
 - creativity
-thumbnail: https://i.loli.net/2018/08/27/5b83dcb24f468.jpg
+thumbnail: 'https://i.loli.net/2018/08/27/5b83dcb24f468.jpg'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ This is a column jointly produced by @nanosesame and @nostalgic1212. In this col
 
 - - -
 
-This page is synchronized from the post: [【N&N's Castle】Ghost Festival 中元节](https://steemit.com/@nostalgic1212/nnscastleghostfestival-7hox2rcqwk)
+This page is synchronized from the post: ['【N&N''s Castle】Ghost Festival 中元节'](https://steemit.com/@nostalgic1212/nnscastleghostfestival-7hox2rcqwk)

@@ -1,17 +1,18 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】第三度嫌疑人  The Third Murder"
+title: '【Vicky’s电影/电视剧推荐】第三度嫌疑人  The Third Murder'
 permlink: vickysthethirdmurder-vnvttth8b7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-14 01:20:21
 categories:
 - steempress
 tags:
 - steempress
 - steem
-thumbnail: https://s1.ax1x.com/2018/08/13/PgM62R.md.jpg
+thumbnail: 'https://s1.ax1x.com/2018/08/13/PgM62R.md.jpg'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】第三度嫌疑人  The Third Murder](https://steemit.com/@nostalgic1212/vickysthethirdmurder-vnvttth8b7)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】第三度嫌疑人  The Third Murder'](https://steemit.com/@nostalgic1212/vickysthethirdmurder-vnvttth8b7)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Handmade】Let's Make A Dolphin/Whale 我们来做只小海豚/鲸鱼吧 🐬 🐳"
+title: '【Vicky''s Handmade】Let''s Make A Dolphin/Whale 我们来做只小海豚/鲸鱼吧 🐬 🐳'
 permlink: vickyshandmadeletsmakeadolphinwhale-iod8869xi6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-08 11:43:27
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - creativity
 - ocd-resteem
 - art
-thumbnail: https://s1.ax1x.com/2018/08/08/Psvaf1.md.png
+thumbnail: 'https://s1.ax1x.com/2018/08/08/Psvaf1.md.png'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Handmade】Let's Make A Dolphin/Whale 我们来做只小海豚/鲸鱼吧 🐬 🐳](https://steemit.com/@nostalgic1212/vickyshandmadeletsmakeadolphinwhale-iod8869xi6)
+This page is synchronized from the post: ['【Vicky''s Handmade】Let''s Make A Dolphin/Whale 我们来做只小海豚/鲸鱼吧 🐬 🐳'](https://steemit.com/@nostalgic1212/vickyshandmadeletsmakeadolphinwhale-iod8869xi6)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《单身指南》：适时的学会独处能让我们拥抱更好的自己-3"
+title: '【Vicky''s 影评】《单身指南》：适时的学会独处能让我们拥抱更好的自己-3'
 permlink: vickys-3-yebyfbuckv
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-25 14:11:30
 categories:
 - steempress
@@ -12,7 +13,7 @@ tags:
 - steempress
 - cnstm
 - cn
-thumbnail: https://i.loli.net/2019/03/04/5c7cd2f7741a4.jpg
+thumbnail: 'https://i.loli.net/2019/03/04/5c7cd2f7741a4.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《单身指南》：适时的学会独处能让我们拥抱更好的自己-3](https://steemit.com/@nostalgic1212/vickys-3-yebyfbuckv)
+This page is synchronized from the post: ['【Vicky''s 影评】《单身指南》：适时的学会独处能让我们拥抱更好的自己-3'](https://steemit.com/@nostalgic1212/vickys-3-yebyfbuckv)

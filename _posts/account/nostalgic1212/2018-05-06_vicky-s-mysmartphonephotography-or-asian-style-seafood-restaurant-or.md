@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 亚洲风味海鲜楼 Asian Style Seafood Restaurant | 大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 亚洲风味海鲜楼 Asian Style Seafood Restaurant | 大马美食'
 permlink: vicky-s-mysmartphonephotography-or-asian-style-seafood-restaurant-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-06 07:09:54
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - beautifulsunday
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmWLqagyPC77yVUfUBLcRTRKhAWZ6fMkta6oLM1gRAHqEL
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmWLqagyPC77yVUfUBLcRTRKhAWZ6fMkta6oLM1gRAHqEL'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 亚洲风味海鲜楼 Asian Style Seafood Restaurant | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-asian-style-seafood-restaurant-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 亚洲风味海鲜楼 Asian Style Seafood Restaurant | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-asian-style-seafood-restaurant-or)

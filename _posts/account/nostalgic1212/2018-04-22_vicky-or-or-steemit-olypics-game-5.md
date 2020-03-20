@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】弱不经风的旱鸭子学潜水？| 第五届奥林匹克 | Steemit Olypics Game #5"
+title: '【Vickyの活动】弱不经风的旱鸭子学潜水？| 第五届奥林匹克 | Steemit Olypics Game #5'
 permlink: vicky-or-or-steemit-olypics-game-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-22 08:15:51
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - beautifulsunday
 - cn-sport
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmbPtb1XjFw9KPT8sFhKEMaN6sVt5LyMbPTVodpGgmtfA2
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmbPtb1XjFw9KPT8sFhKEMaN6sVt5LyMbPTVodpGgmtfA2'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】弱不经风的旱鸭子学潜水？| 第五届奥林匹克 | Steemit Olypics Game #5](https://steemit.com/@nostalgic1212/vicky-or-or-steemit-olypics-game-5)
+This page is synchronized from the post: ['【Vickyの活动】弱不经风的旱鸭子学潜水？| 第五届奥林匹克 | Steemit Olypics Game #5'](https://steemit.com/@nostalgic1212/vicky-or-or-steemit-olypics-game-5)

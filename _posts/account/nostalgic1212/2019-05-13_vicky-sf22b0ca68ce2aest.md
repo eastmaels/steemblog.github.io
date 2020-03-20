@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】多平台运营的困扰（中）"
+title: '【Vicky''s 碎碎念】多平台运营的困扰（中）'
 permlink: vicky-sf22b0ca68ce2aest
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-13 06:12:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - whalepower
-thumbnail: https://i.loli.net/2019/05/09/5cd43ea491b8b.png
+thumbnail: 'https://i.loli.net/2019/05/09/5cd43ea491b8b.png'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】多平台运营的困扰（中）](https://steemit.com/@nostalgic1212/vicky-sf22b0ca68ce2aest)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】多平台运营的困扰（中）'](https://steemit.com/@nostalgic1212/vicky-sf22b0ca68ce2aest)

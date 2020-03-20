@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 旅程的最后一日🔚"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 旅程的最后一日🔚'
 permlink: 6fy1hl-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-10 01:28:30
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - ocd-resteem
 - mysmartphonephotography
-thumbnail: https://gateway.ipfs.io/ipfs/QmaYXu7x4jvZb8wQhkHWQLZyCq3cWG83iz39Kx3kFjm87w
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmaYXu7x4jvZb8wQhkHWQLZyCq3cWG83iz39Kx3kFjm87w'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 旅程的最后一日🔚](https://steemit.com/@nostalgic1212/6fy1hl-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 旅程的最后一日🔚'](https://steemit.com/@nostalgic1212/6fy1hl-vicky-s-mysmartphonephotography-or)

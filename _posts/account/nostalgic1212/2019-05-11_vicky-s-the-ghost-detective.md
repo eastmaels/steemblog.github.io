@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's电影/电视剧推荐】今天的侦探 The Ghost Detective（下）"
+title: '【Vicky''s电影/电视剧推荐】今天的侦探 The Ghost Detective（下）'
 permlink: vicky-s-the-ghost-detective
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-11 03:29:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-m
-thumbnail: https://i.loli.net/2019/05/09/5cd3e1fd6e815.jpg
+thumbnail: 'https://i.loli.net/2019/05/09/5cd3e1fd6e815.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's电影/电视剧推荐】今天的侦探 The Ghost Detective（下）](https://steemit.com/@nostalgic1212/vicky-s-the-ghost-detective)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】今天的侦探 The Ghost Detective（下）'](https://steemit.com/@nostalgic1212/vicky-s-the-ghost-detective)

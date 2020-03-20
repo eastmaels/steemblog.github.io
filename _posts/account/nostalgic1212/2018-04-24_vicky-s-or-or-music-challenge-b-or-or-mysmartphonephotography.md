@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】关于旅行的那些事 | 大自然好声音 |Music Challenge B | 旅游吐槽大会 | Mysmartphonephotography"
+title: '【Vicky''s 碎碎念】关于旅行的那些事 | 大自然好声音 |Music Challenge B | 旅游吐槽大会 | Mysmartphonephotography'
 permlink: vicky-s-or-or-music-challenge-b-or-or-mysmartphonephotography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-24 05:04:36
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - musicchallenge
 - cn-voice
 - cn-funny
-thumbnail: https://gateway.ipfs.io/ipfs/QmekKjZNA3f4SdBN15v66yvA9r7Rgn49D7hjANAQCzNsJq
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmekKjZNA3f4SdBN15v66yvA9r7Rgn49D7hjANAQCzNsJq'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】关于旅行的那些事 | 大自然好声音 |Music Challenge B | 旅游吐槽大会 | Mysmartphonephotography](https://steemit.com/@nostalgic1212/vicky-s-or-or-music-challenge-b-or-or-mysmartphonephotography)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】关于旅行的那些事 | 大自然好声音 |Music Challenge B | 旅游吐槽大会 | Mysmartphonephotography'](https://steemit.com/@nostalgic1212/vicky-s-or-or-music-challenge-b-or-or-mysmartphonephotography)

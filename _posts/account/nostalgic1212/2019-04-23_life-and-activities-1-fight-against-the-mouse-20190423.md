@@ -1,10 +1,11 @@
 
 ---
-title: "「Life & Activities」与老鼠斗智斗勇-1 / Fight Against the Mouse 20190423"
+title: '「Life & Activities」与老鼠斗智斗勇-1 / Fight Against the Mouse 20190423'
 permlink: life-and-activities-1-fight-against-the-mouse-20190423
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-23 12:31:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-malaysia
-thumbnail: https://i.loli.net/2019/04/21/5cbc50be4713a.jpeg
+thumbnail: 'https://i.loli.net/2019/04/21/5cbc50be4713a.jpeg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [「Life & Activities」与老鼠斗智斗勇-1 / Fight Against the Mouse 20190423](https://steemit.com/@nostalgic1212/life-and-activities-1-fight-against-the-mouse-20190423)
+This page is synchronized from the post: ['「Life & Activities」与老鼠斗智斗勇-1 / Fight Against the Mouse 20190423'](https://steemit.com/@nostalgic1212/life-and-activities-1-fight-against-the-mouse-20190423)

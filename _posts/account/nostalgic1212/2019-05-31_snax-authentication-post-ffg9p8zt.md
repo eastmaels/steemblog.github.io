@@ -1,17 +1,18 @@
 
 ---
-title: "Snax authentication post"
+title: 'Snax authentication post'
 permlink: snax-authentication-post-ffg9p8zt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-31 13:17:42
 categories:
 - free-snaxaccount
 tags:
 - free-snaxaccount
 - partiko
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -30,4 +31,4 @@ Posted using [Partiko iOS](https://partiko.app/referral/nostalgic1212)
 
 - - -
 
-This page is synchronized from the post: [Snax authentication post](https://steemit.com/@nostalgic1212/snax-authentication-post-ffg9p8zt)
+This page is synchronized from the post: ['Snax authentication post'](https://steemit.com/@nostalgic1212/snax-authentication-post-ffg9p8zt)

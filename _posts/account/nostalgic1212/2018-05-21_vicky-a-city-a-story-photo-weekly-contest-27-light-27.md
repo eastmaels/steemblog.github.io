@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】A City A Story Photo Weekly Contest#27 -【LIGHT】~小城故事相片比賽#27-【光】"
+title: '【Vickyの活动】A City A Story Photo Weekly Contest#27 -【LIGHT】~小城故事相片比賽#27-【光】'
 permlink: vicky-a-city-a-story-photo-weekly-contest-27-light-27
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-21 01:45:03
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - placestoremember
 - archisteem
 - foodphotography
-thumbnail: https://gateway.ipfs.io/ipfs/QmUM5cE1zJWMcYmXooczGzzbgm5mHZRjNG4AQioH5QskyL
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmUM5cE1zJWMcYmXooczGzzbgm5mHZRjNG4AQioH5QskyL'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】A City A Story Photo Weekly Contest#27 -【LIGHT】~小城故事相片比賽#27-【光】](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-27-light-27)
+This page is synchronized from the post: ['【Vickyの活动】A City A Story Photo Weekly Contest#27 -【LIGHT】~小城故事相片比賽#27-【光】'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-27-light-27)

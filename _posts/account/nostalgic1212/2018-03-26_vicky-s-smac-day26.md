@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】SMAC- Day26我的坑爹闺蜜👭（内附仙本那潜水前期准备）"
+title: '【Vicky''s 碎碎念】SMAC- Day26我的坑爹闺蜜👭（内附仙本那潜水前期准备）'
 permlink: vicky-s-smac-day26
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-26 07:35:12
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - travel
 - cn
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmUnawtipgDETFjKGCzwFeyxQth1JTxoX4zwqfH2MjFvtY
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUnawtipgDETFjKGCzwFeyxQth1JTxoX4zwqfH2MjFvtY'
 sidebar:
     right:
         sticky: true
@@ -116,4 +117,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】SMAC- Day26我的坑爹闺蜜👭（内附仙本那潜水前期准备）](https://steemit.com/@nostalgic1212/vicky-s-smac-day26)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】SMAC- Day26我的坑爹闺蜜👭（内附仙本那潜水前期准备）'](https://steemit.com/@nostalgic1212/vicky-s-smac-day26)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】写到满“60岁”之时 The Moment I Reached Rep.60"
+title: '【Vicky''s 碎碎念】写到满“60岁”之时 The Moment I Reached Rep.60'
 permlink: vicky-s-60-the-moment-i-reached-rep-60
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-09 15:10:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - esteem-cn
 - busy
 - whalepower
-thumbnail: https://i.loli.net/2019/04/09/5cac8e07b0efc.jpg
+thumbnail: 'https://i.loli.net/2019/04/09/5cac8e07b0efc.jpg'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】写到满“60岁”之时 The Moment I Reached Rep.60](https://steemit.com/@nostalgic1212/vicky-s-60-the-moment-i-reached-rep-60)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】写到满“60岁”之时 The Moment I Reached Rep.60'](https://steemit.com/@nostalgic1212/vicky-s-60-the-moment-i-reached-rep-60)

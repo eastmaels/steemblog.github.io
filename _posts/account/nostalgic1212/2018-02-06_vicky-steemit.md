@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyのsteemit小感悟】小白恶补密码知识"
+title: '【Vickyのsteemit小感悟】小白恶补密码知识'
 permlink: vicky-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-06 07:25:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - safe
 - password
-thumbnail: https://steemitimages.com/DQmXWLZ1RG95AkNLRXcfUWnmVpwdsa9RfFK2DHoAxesVq1b/IMG_4786.PNG
+thumbnail: 'https://steemitimages.com/DQmXWLZ1RG95AkNLRXcfUWnmVpwdsa9RfFK2DHoAxesVq1b/IMG_4786.PNG'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyのsteemit小感悟】小白恶补密码知识](https://steemit.com/@nostalgic1212/vicky-steemit)
+This page is synchronized from the post: ['【Vickyのsteemit小感悟】小白恶补密码知识'](https://steemit.com/@nostalgic1212/vicky-steemit)

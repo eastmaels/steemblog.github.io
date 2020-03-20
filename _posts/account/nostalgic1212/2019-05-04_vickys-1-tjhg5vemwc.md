@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《赤月青日》：孩子不是物品，父母更不是所有者-1"
+title: '【Vicky''s 影评】《赤月青日》：孩子不是物品，父母更不是所有者-1'
 permlink: vickys-1-tjhg5vemwc
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-04 20:03:00
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/01/18/5c4183c39ac30.jpg
+thumbnail: 'https://i.loli.net/2019/01/18/5c4183c39ac30.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《赤月青日》：孩子不是物品，父母更不是所有者-1](https://steemit.com/@nostalgic1212/vickys-1-tjhg5vemwc)
+This page is synchronized from the post: ['【Vicky''s 影评】《赤月青日》：孩子不是物品，父母更不是所有者-1'](https://steemit.com/@nostalgic1212/vickys-1-tjhg5vemwc)

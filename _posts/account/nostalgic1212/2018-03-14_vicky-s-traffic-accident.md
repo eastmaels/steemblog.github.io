@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】交通事故合集 Traffic Accident"
+title: '【Vicky’s电影/电视剧推荐】交通事故合集 Traffic Accident'
 permlink: vicky-s-traffic-accident
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-14 02:59:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - safe
 - traffic
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520996180/jd72nuqi4fpsns60iodm.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520996180/jd72nuqi4fpsns60iodm.jpg'
 sidebar:
     right:
         sticky: true
@@ -91,4 +92,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】交通事故合集 Traffic Accident](https://steemit.com/@nostalgic1212/vicky-s-traffic-accident)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】交通事故合集 Traffic Accident'](https://steemit.com/@nostalgic1212/vicky-s-traffic-accident)

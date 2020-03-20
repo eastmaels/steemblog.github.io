@@ -5,6 +5,7 @@ permlink: aaa-pokemon-detective-pikachu-2019
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-05 01:02:48
 categories:
 - aaa
@@ -15,7 +16,7 @@ tags:
 - sct-cn
 - cn-movie
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf66c0a9726674242.png
+thumbnail: 'https://steemitimages.com/0x0/https://i.loli.net/2019/06/04/5cf66c0a9726674242.png'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ If you have become numb in your daily life, _Pokémon Detective Pikachu_ is a gr
 
 - - -
 
-This page is synchronized from the post: [【AAA】 大侦探皮卡丘 명탐정 피카츄 Pokémon Detective Pikachu（2019）](https://steemit.com/@nostalgic1212/aaa-pokemon-detective-pikachu-2019)
+This page is synchronized from the post: ['【AAA】 大侦探皮卡丘 명탐정 피카츄 Pokémon Detective Pikachu（2019）'](https://steemit.com/@nostalgic1212/aaa-pokemon-detective-pikachu-2019)

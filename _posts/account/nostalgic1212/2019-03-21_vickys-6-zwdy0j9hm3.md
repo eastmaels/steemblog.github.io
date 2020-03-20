@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-6（吐槽篇）"
+title: '【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-6（吐槽篇）'
 permlink: vickys-6-zwdy0j9hm3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-21 14:11:09
 categories:
 - steempress
@@ -12,7 +13,7 @@ tags:
 - steempress
 - cnstm
 - cn
-thumbnail: https://i.loli.net/2019/02/18/5c6a540dc9d58.jpg
+thumbnail: 'https://i.loli.net/2019/02/18/5c6a540dc9d58.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-6（吐槽篇）](https://steemit.com/@nostalgic1212/vickys-6-zwdy0j9hm3)
+This page is synchronized from the post: ['【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-6（吐槽篇）'](https://steemit.com/@nostalgic1212/vickys-6-zwdy0j9hm3)

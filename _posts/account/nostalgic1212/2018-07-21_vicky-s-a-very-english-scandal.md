@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】英国式丑闻 A Very English Scandal"
+title: '【Vicky’s电影/电视剧推荐】英国式丑闻 A Very English Scandal'
 permlink: vicky-s-a-very-english-scandal
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-21 09:14:21
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - busy
 - ocd-resteem
 - movie
-thumbnail: https://ipfs.busy.org/ipfs/QmbPc3vJns9sPx8wyVherCk3dRU72JXBAe8AtdQ71TsgB4
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbPc3vJns9sPx8wyVherCk3dRU72JXBAe8AtdQ71TsgB4'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】英国式丑闻 A Very English Scandal](https://steemit.com/@nostalgic1212/vicky-s-a-very-english-scandal)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】英国式丑闻 A Very English Scandal'](https://steemit.com/@nostalgic1212/vicky-s-a-very-english-scandal)

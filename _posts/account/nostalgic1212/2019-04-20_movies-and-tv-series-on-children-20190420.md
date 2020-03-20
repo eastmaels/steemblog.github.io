@@ -1,10 +1,11 @@
 
 ---
-title: "Movies & TV Series「你的孩子不是你的孩子 / On Children」20190420"
+title: 'Movies & TV Series「你的孩子不是你的孩子 / On Children」20190420'
 permlink: movies-and-tv-series-on-children-20190420
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-20 01:02:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - ocd-resteem
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/04/20/5cba6f59aa52b.jpg
+thumbnail: 'https://i.loli.net/2019/04/20/5cba6f59aa52b.jpg'
 sidebar:
     right:
         sticky: true
@@ -85,4 +86,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [Movies & TV Series「你的孩子不是你的孩子 / On Children」20190420](https://steemit.com/@nostalgic1212/movies-and-tv-series-on-children-20190420)
+This page is synchronized from the post: ['Movies & TV Series「你的孩子不是你的孩子 / On Children」20190420'](https://steemit.com/@nostalgic1212/movies-and-tv-series-on-children-20190420)

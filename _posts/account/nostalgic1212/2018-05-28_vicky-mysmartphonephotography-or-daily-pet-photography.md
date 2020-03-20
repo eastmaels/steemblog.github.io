@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】MySmartphonePhotography | Daily Pet Photography 淡定喵我们走🐈（文末有惊喜🎉）"
+title: '【Vicky参加の活动】MySmartphonePhotography | Daily Pet Photography 淡定喵我们走🐈（文末有惊喜🎉）'
 permlink: vicky-mysmartphonephotography-or-daily-pet-photography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-28 06:25:15
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - animalphotography
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmS2iqb9ELPSLr3skDiSWAdPya3gkhHqrJgcnBsUW8v25p
+thumbnail: 'https://ipfs.busy.org/ipfs/QmS2iqb9ELPSLr3skDiSWAdPya3gkhHqrJgcnBsUW8v25p'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】MySmartphonePhotography | Daily Pet Photography 淡定喵我们走🐈（文末有惊喜🎉）](https://steemit.com/@nostalgic1212/vicky-mysmartphonephotography-or-daily-pet-photography)
+This page is synchronized from the post: ['【Vicky参加の活动】MySmartphonePhotography | Daily Pet Photography 淡定喵我们走🐈（文末有惊喜🎉）'](https://steemit.com/@nostalgic1212/vicky-mysmartphonephotography-or-daily-pet-photography)

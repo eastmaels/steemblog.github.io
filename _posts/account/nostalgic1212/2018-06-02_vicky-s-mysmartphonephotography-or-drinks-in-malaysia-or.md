@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 马来西亚的那些饮料们 Drinks in Malaysia | 大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 马来西亚的那些饮料们 Drinks in Malaysia | 大马美食'
 permlink: vicky-s-mysmartphonephotography-or-drinks-in-malaysia-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-02 08:29:24
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - malaysia-food
 - dailyfoodphotography
 - monthlyauthorchallenge
-thumbnail: https://s33.postimg.cc/rn8ggnnfj/IMG_5644.jpg
+thumbnail: 'https://s33.postimg.cc/rn8ggnnfj/IMG_5644.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 马来西亚的那些饮料们 Drinks in Malaysia | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-drinks-in-malaysia-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 马来西亚的那些饮料们 Drinks in Malaysia | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-drinks-in-malaysia-or)

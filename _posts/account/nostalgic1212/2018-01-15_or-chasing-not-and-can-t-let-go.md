@@ -1,10 +1,11 @@
 
 ---
-title: "求不得，放不下|月旦评---chasing not and can't let go"
+title: '求不得，放不下|月旦评---chasing not and can''t let go'
 permlink: or-chasing-not-and-can-t-let-go
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-15 02:04:09
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-31
 - busy
 - blog
-thumbnail: https://steemitimages.com/DQmeFotM9a6PqEPaacjTWujQoK3Ewbqf12PYvdTrXXXf9rk/IMG_3790.jpeg
+thumbnail: 'https://steemitimages.com/DQmeFotM9a6PqEPaacjTWujQoK3Ewbqf12PYvdTrXXXf9rk/IMG_3790.jpeg'
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ If you feel the article is good，plz upvote me or leave ur comments. THX～
 
 - - -
 
-This page is synchronized from the post: [求不得，放不下|月旦评---chasing not and can't let go](https://steemit.com/@nostalgic1212/or-chasing-not-and-can-t-let-go)
+This page is synchronized from the post: ['求不得，放不下|月旦评---chasing not and can''t let go'](https://steemit.com/@nostalgic1212/or-chasing-not-and-can-t-let-go)

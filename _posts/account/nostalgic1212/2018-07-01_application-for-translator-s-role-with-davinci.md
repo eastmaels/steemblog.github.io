@@ -1,10 +1,11 @@
 
 ---
-title: "Application for translator's role with DaVinci"
+title: 'Application for translator''s role with DaVinci'
 permlink: application-for-translator-s-role-with-davinci
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-01 03:21:12
 categories:
 - davinci-application
@@ -14,7 +15,7 @@ tags:
 - whalepower
 - translation
 - blog
-thumbnail: https://ipfs.busy.org/ipfs/QmaRrWfbPX8WG5xAQxoeUEEExGa48V3YeiKok4SNaaBqYY
+thumbnail: 'https://ipfs.busy.org/ipfs/QmaRrWfbPX8WG5xAQxoeUEEExGa48V3YeiKok4SNaaBqYY'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ A URL link for identity verification: [Application for translator's role with Da
 
 - - -
 
-This page is synchronized from the post: [Application for translator's role with DaVinci](https://steemit.com/@nostalgic1212/application-for-translator-s-role-with-davinci)
+This page is synchronized from the post: ['Application for translator''s role with DaVinci'](https://steemit.com/@nostalgic1212/application-for-translator-s-role-with-davinci)

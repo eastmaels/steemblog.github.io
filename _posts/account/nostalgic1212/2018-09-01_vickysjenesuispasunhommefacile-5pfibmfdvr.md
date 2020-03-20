@@ -1,17 +1,18 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】男人要自爱 Je ne suis pas un homme facile"
+title: '【Vicky’s电影/电视剧推荐】男人要自爱 Je ne suis pas un homme facile'
 permlink: vickysjenesuispasunhommefacile-5pfibmfdvr
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-01 13:47:42
 categories:
 - steempress
 tags:
 - steempress
 - steem
-thumbnail: https://i.loli.net/2018/08/30/5b8798bc96f9a.jpg
+thumbnail: 'https://i.loli.net/2018/08/30/5b8798bc96f9a.jpg'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】男人要自爱 Je ne suis pas un homme facile](https://steemit.com/@nostalgic1212/vickysjenesuispasunhommefacile-5pfibmfdvr)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】男人要自爱 Je ne suis pas un homme facile'](https://steemit.com/@nostalgic1212/vickysjenesuispasunhommefacile-5pfibmfdvr)

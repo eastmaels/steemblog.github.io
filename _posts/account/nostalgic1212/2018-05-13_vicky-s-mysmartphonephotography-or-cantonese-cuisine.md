@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 新桂枝 Cantonese Cuisine"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 新桂枝 Cantonese Cuisine'
 permlink: vicky-s-mysmartphonephotography-or-cantonese-cuisine
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-13 10:05:00
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotograghy
 - beautifulsunday
 - monthlyauthorchallenge
-thumbnail: https://steemitimages.com/DQmPDmq7M7FRXsvmFBbAS8mHtCn13JD9gPK7L89Q7ycZUWG/IMG_6124.JPG
+thumbnail: 'https://steemitimages.com/DQmPDmq7M7FRXsvmFBbAS8mHtCn13JD9gPK7L89Q7ycZUWG/IMG_6124.JPG'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 新桂枝 Cantonese Cuisine](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-cantonese-cuisine)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 新桂枝 Cantonese Cuisine'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-cantonese-cuisine)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】SMAC-Day11 日式蛋包饭 Japanese-style Omelet Rice"
+title: '【Vicky参加の活动】SMAC-Day11 日式蛋包饭 Japanese-style Omelet Rice'
 permlink: vicky-smac-day11-japanese-style-omelet-rice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-11 12:01:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - beautifulsunday
 - dailyfoodphotography
 - busy
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520769451/fduorarnc8nejqng1d2t.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520769451/fduorarnc8nejqng1d2t.jpg'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】SMAC-Day11 日式蛋包饭 Japanese-style Omelet Rice](https://steemit.com/@nostalgic1212/vicky-smac-day11-japanese-style-omelet-rice)
+This page is synchronized from the post: ['【Vicky参加の活动】SMAC-Day11 日式蛋包饭 Japanese-style Omelet Rice'](https://steemit.com/@nostalgic1212/vicky-smac-day11-japanese-style-omelet-rice)

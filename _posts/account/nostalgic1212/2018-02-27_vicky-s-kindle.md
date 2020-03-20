@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】Kindle：我超爱的阅读神器"
+title: '【Vicky’s 碎碎念】Kindle：我超爱的阅读神器'
 permlink: vicky-s-kindle
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-27 02:51:45
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - blog
 - book
-thumbnail: https://steemitimages.com/DQmQG454LS6sWC1cz5EZhmwvu9rCxgYfz52JSs4nZpxsPZx/IMG_5018.JPG
+thumbnail: 'https://steemitimages.com/DQmQG454LS6sWC1cz5EZhmwvu9rCxgYfz52JSs4nZpxsPZx/IMG_5018.JPG'
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】Kindle：我超爱的阅读神器](https://steemit.com/@nostalgic1212/vicky-s-kindle)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】Kindle：我超爱的阅读神器'](https://steemit.com/@nostalgic1212/vicky-s-kindle)

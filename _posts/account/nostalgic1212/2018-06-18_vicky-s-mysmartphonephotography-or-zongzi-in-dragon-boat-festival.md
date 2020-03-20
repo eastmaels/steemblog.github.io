@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 端午节粽子 Zongzi in Dragon Boat Festival"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 端午节粽子 Zongzi in Dragon Boat Festival'
 permlink: vicky-s-mysmartphonephotography-or-zongzi-in-dragon-boat-festival
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-18 01:33:09
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - food
 - ocd-resteem
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmTSCp6wd2LXXveXvLydJP2UXxSCxCny1aJSXFvB5YZqcc
+thumbnail: 'https://ipfs.busy.org/ipfs/QmTSCp6wd2LXXveXvLydJP2UXxSCxCny1aJSXFvB5YZqcc'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 端午节粽子 Zongzi in Dragon Boat Festival](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-zongzi-in-dragon-boat-festival)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 端午节粽子 Zongzi in Dragon Boat Festival'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-zongzi-in-dragon-boat-festival)

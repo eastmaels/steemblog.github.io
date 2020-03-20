@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】香辣猪脚 Spicy Pig Feet"
+title: '【Vicky''s 小确幸】香辣猪脚 Spicy Pig Feet'
 permlink: vicky-s-spicy-pig-feet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-24 11:15:57
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmU2RAufbPvAxYxv22aEHWuMHChxdPftWt7ChSjaUWu6SB
+thumbnail: 'https://ipfs.busy.org/ipfs/QmU2RAufbPvAxYxv22aEHWuMHChxdPftWt7ChSjaUWu6SB'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】香辣猪脚 Spicy Pig Feet](https://steemit.com/@nostalgic1212/vicky-s-spicy-pig-feet)
+This page is synchronized from the post: ['【Vicky''s 小确幸】香辣猪脚 Spicy Pig Feet'](https://steemit.com/@nostalgic1212/vicky-s-spicy-pig-feet)

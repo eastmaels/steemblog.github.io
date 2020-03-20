@@ -1,10 +1,11 @@
 
 ---
-title: "📷SMAC&Dailyfoodphotography - Day 5 什么？星巴克竟然也卖包？！"
+title: '📷SMAC&Dailyfoodphotography - Day 5 什么？星巴克竟然也卖包？！'
 permlink: smac-and-dailyfoodphotography-day-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-05 02:20:15
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - cn
 - food
-thumbnail: https://steemitimages.com/DQmW69QobFK3C56b3xWvCvM9V2jqcKPFvrZYLrN6kNtcqYT/IMG_4654.JPG
+thumbnail: 'https://steemitimages.com/DQmW69QobFK3C56b3xWvCvM9V2jqcKPFvrZYLrN6kNtcqYT/IMG_4654.JPG'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [📷SMAC&Dailyfoodphotography - Day 5 什么？星巴克竟然也卖包？！](https://steemit.com/@nostalgic1212/smac-and-dailyfoodphotography-day-5)
+This page is synchronized from the post: ['📷SMAC&Dailyfoodphotography - Day 5 什么？星巴克竟然也卖包？！'](https://steemit.com/@nostalgic1212/smac-and-dailyfoodphotography-day-5)

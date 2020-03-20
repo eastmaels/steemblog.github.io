@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】A City A Story Photo Weekly Contest#18 -【ART and CRAFTS】~小城故事相片比賽#18-【艺术与工艺】"
+title: '【Vickyの活动】A City A Story Photo Weekly Contest#18 -【ART and CRAFTS】~小城故事相片比賽#18-【艺术与工艺】'
 permlink: vicky-a-city-a-story-photo-weekly-contest-18-art-and-crafts-18
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-20 12:18:21
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - mysmartphonephotography
 - busy
 - travel
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521547271/n5tl4xojezybffsfmbhy.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521547271/n5tl4xojezybffsfmbhy.jpg'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】A City A Story Photo Weekly Contest#18 -【ART and CRAFTS】~小城故事相片比賽#18-【艺术与工艺】](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-18-art-and-crafts-18)
+This page is synchronized from the post: ['【Vickyの活动】A City A Story Photo Weekly Contest#18 -【ART and CRAFTS】~小城故事相片比賽#18-【艺术与工艺】'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-18-art-and-crafts-18)

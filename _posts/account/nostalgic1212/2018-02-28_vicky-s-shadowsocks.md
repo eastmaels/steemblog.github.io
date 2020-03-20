@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小科普】如何傻瓜式用shadowsocks科学上网"
+title: '【Vicky''s 小科普】如何傻瓜式用shadowsocks科学上网'
 permlink: vicky-s-shadowsocks
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-28 14:44:48
 categories:
 - steem-guides
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-reader
 - steemit
-thumbnail: https://steemitimages.com/DQmRNFjLsaQCpFxAPoJpXWPZbYgGXQjUvrpFTUnvR3hL296/DSC00221.JPG
+thumbnail: 'https://steemitimages.com/DQmRNFjLsaQCpFxAPoJpXWPZbYgGXQjUvrpFTUnvR3hL296/DSC00221.JPG'
 sidebar:
     right:
         sticky: true
@@ -128,4 +129,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小科普】如何傻瓜式用shadowsocks科学上网](https://steemit.com/@nostalgic1212/vicky-s-shadowsocks)
+This page is synchronized from the post: ['【Vicky''s 小科普】如何傻瓜式用shadowsocks科学上网'](https://steemit.com/@nostalgic1212/vicky-s-shadowsocks)

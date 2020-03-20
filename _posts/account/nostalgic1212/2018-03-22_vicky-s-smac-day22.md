@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】SMAC-Day22 吐槽大会--人生起伏之驾照丢失记📒"
+title: '【Vicky’s 碎碎念】SMAC-Day22 吐槽大会--人生起伏之驾照丢失记📒'
 permlink: vicky-s-smac-day22
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-22 13:01:00
 categories:
 - busy
@@ -14,7 +15,7 @@ tags:
 - cn-31
 - monthlyauthorchallenge
 - cn-reader
-thumbnail: https://ipfs.busy.org/ipfs/QmYJCXK3x5TsAk3Xkama2tZAbeTReACB7Zt7gxHzbYfzNf
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYJCXK3x5TsAk3Xkama2tZAbeTReACB7Zt7gxHzbYfzNf'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】SMAC-Day22 吐槽大会--人生起伏之驾照丢失记📒](https://steemit.com/@nostalgic1212/vicky-s-smac-day22)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】SMAC-Day22 吐槽大会--人生起伏之驾照丢失记📒'](https://steemit.com/@nostalgic1212/vicky-s-smac-day22)

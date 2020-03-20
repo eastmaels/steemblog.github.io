@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 盒马鲜生 Mr. Ma"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 盒马鲜生 Mr. Ma'
 permlink: vicky-s-mysmartphonephotography-or-mr-ma
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-19 05:27:30
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotograghy
 - ocd-resteem
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmUwfhB6xWyP4DXapUmC4GKKLNV3f5pMcGHkeaLrkBhc5H
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmUwfhB6xWyP4DXapUmC4GKKLNV3f5pMcGHkeaLrkBhc5H'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 盒马鲜生 Mr. Ma](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-mr-ma)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 盒马鲜生 Mr. Ma'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-mr-ma)

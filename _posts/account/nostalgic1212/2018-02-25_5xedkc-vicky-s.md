@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】日本豆腐蒸虾仁"
+title: '【Vicky''s 小确幸】日本豆腐蒸虾仁'
 permlink: 5xedkc-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-25 11:48:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - food
 - dailyfoodphotography
-thumbnail: https://steemitimages.com/DQmaEwYkGcFpGnvoV67XSmDtQpLSWTJfBCawXvyrjwgGaZg/IMG_4970.JPG
+thumbnail: 'https://steemitimages.com/DQmaEwYkGcFpGnvoV67XSmDtQpLSWTJfBCawXvyrjwgGaZg/IMG_4970.JPG'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】日本豆腐蒸虾仁](https://steemit.com/@nostalgic1212/5xedkc-vicky-s)
+This page is synchronized from the post: ['【Vicky''s 小确幸】日本豆腐蒸虾仁'](https://steemit.com/@nostalgic1212/5xedkc-vicky-s)

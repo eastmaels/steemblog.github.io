@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】谈谈网恋这件小事儿"
+title: '【Vicky''s 碎碎念】谈谈网恋这件小事儿'
 permlink: 4lywzu-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-19 02:42:57
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - blog
 - life
 - cn-reader
-thumbnail: https://ipfs.busy.org/ipfs/Qmf2JxYKd5vToavGE13Rye9H22oPHCJ7Cqdqy4QRVt317v
+thumbnail: 'https://ipfs.busy.org/ipfs/Qmf2JxYKd5vToavGE13Rye9H22oPHCJ7Cqdqy4QRVt317v'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】谈谈网恋这件小事儿](https://steemit.com/@nostalgic1212/4lywzu-vicky-s)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】谈谈网恋这件小事儿'](https://steemit.com/@nostalgic1212/4lywzu-vicky-s)

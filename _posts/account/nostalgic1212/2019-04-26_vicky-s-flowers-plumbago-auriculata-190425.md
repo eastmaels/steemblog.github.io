@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Flowers】Plumbago Auriculata 蓝花丹 190425"
+title: '【Vicky''s Flowers】Plumbago Auriculata 蓝花丹 190425'
 permlink: vicky-s-flowers-plumbago-auriculata-190425
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-26 12:22:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - esteem-cn
 - busy
 - cn-photography
-thumbnail: https://i.loli.net/2018/11/29/5bffe7f2c3fa1.jpeg
+thumbnail: 'https://i.loli.net/2018/11/29/5bffe7f2c3fa1.jpeg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Flowers】Plumbago Auriculata 蓝花丹 190425](https://steemit.com/@nostalgic1212/vicky-s-flowers-plumbago-auriculata-190425)
+This page is synchronized from the post: ['【Vicky''s Flowers】Plumbago Auriculata 蓝花丹 190425'](https://steemit.com/@nostalgic1212/vicky-s-flowers-plumbago-auriculata-190425)

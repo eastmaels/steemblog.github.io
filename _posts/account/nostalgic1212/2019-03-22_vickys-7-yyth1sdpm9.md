@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-7（手法、背景篇）"
+title: '【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-7（手法、背景篇）'
 permlink: vickys-7-yyth1sdpm9
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-22 14:10:42
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-curation
 - ocd-resteem
-thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/02/19/5c6adb6f506c0.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://i.loli.net/2019/02/19/5c6adb6f506c0.jpg'
 sidebar:
     right:
         sticky: true
@@ -119,4 +120,4 @@ _Posted from my blog with [SteemPress](https://wordpress.org/plugins/steempress/
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-7（手法、背景篇）](https://steemit.com/@nostalgic1212/vickys-7-yyth1sdpm9)
+This page is synchronized from the post: ['【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-7（手法、背景篇）'](https://steemit.com/@nostalgic1212/vickys-7-yyth1sdpm9)

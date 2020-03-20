@@ -1,10 +1,11 @@
 
 ---
-title: "【N&N's Castle】The Fragrant Flowers in Summer 夏日香花"
+title: '【N&N''s Castle】The Fragrant Flowers in Summer 夏日香花'
 permlink: nnscastlethefragrantflowersinsummer-r5hq59vnrp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-15 02:07:27
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - art
 - story
 - creativity
-thumbnail: https://s1.ax1x.com/2018/08/13/PgfYWD.md.jpg
+thumbnail: 'https://s1.ax1x.com/2018/08/13/PgfYWD.md.jpg'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ This is a column jointly produced by @nanosesame and @nostalgic1212. In this col
 
 - - -
 
-This page is synchronized from the post: [【N&N's Castle】The Fragrant Flowers in Summer 夏日香花](https://steemit.com/@nostalgic1212/nnscastlethefragrantflowersinsummer-r5hq59vnrp)
+This page is synchronized from the post: ['【N&N''s Castle】The Fragrant Flowers in Summer 夏日香花'](https://steemit.com/@nostalgic1212/nnscastlethefragrantflowersinsummer-r5hq59vnrp)

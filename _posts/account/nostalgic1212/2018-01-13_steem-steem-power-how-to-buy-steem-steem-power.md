@@ -1,10 +1,11 @@
 
 ---
-title: "如何购买steem/steem power---How to buy steem/steem power"
+title: '如何购买steem/steem power---How to buy steem/steem power'
 permlink: steem-steem-power-how-to-buy-steem-steem-power
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-13 08:31:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - steemit
 - blog
-thumbnail: https://steemitimages.com/DQmbxqqY5t2YnqVDvKdjxAa2WnEyvgrQyYkirvmwfZAdYrt/WechatIMG2.jpeg
+thumbnail: 'https://steemitimages.com/DQmbxqqY5t2YnqVDvKdjxAa2WnEyvgrQyYkirvmwfZAdYrt/WechatIMG2.jpeg'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ PS: Is there a sense of pleasure to be a RMB player? Whether you have it or not,
 
 - - -
 
-This page is synchronized from the post: [如何购买steem/steem power---How to buy steem/steem power](https://steemit.com/@nostalgic1212/steem-steem-power-how-to-buy-steem-steem-power)
+This page is synchronized from the post: ['如何购买steem/steem power---How to buy steem/steem power'](https://steemit.com/@nostalgic1212/steem-steem-power-how-to-buy-steem-steem-power)

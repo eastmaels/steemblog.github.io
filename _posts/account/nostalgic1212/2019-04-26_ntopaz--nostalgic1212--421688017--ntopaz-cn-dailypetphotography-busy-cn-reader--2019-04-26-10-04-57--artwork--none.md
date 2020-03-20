@@ -1,10 +1,11 @@
 
 ---
-title: "「Life & Activities」情感艺术 / nTOPAZ Visual Art Contes"
+title: '「Life & Activities」情感艺术 / nTOPAZ Visual Art Contes'
 permlink: ntopaz--nostalgic1212--421688017--ntopaz-cn-dailypetphotography-busy-cn-reader--2019-04-26-10-04-57--artwork--none
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-26 02:05:00
 categories:
 - ntopaz
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - busy
 - cn-reader
-thumbnail: https://artisteem.io/media/40300cff-0718-4134-88d9-5f50f91a38bf
+thumbnail: 'https://artisteem.io/media/40300cff-0718-4134-88d9-5f50f91a38bf'
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ This picture was captured by my friend when she yawned. Can you see how sleepy s
 
 - - -
 
-This page is synchronized from the post: [「Life & Activities」情感艺术 / nTOPAZ Visual Art Contes](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--421688017--ntopaz-cn-dailypetphotography-busy-cn-reader--2019-04-26-10-04-57--artwork--none)
+This page is synchronized from the post: ['「Life & Activities」情感艺术 / nTOPAZ Visual Art Contes'](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--421688017--ntopaz-cn-dailypetphotography-busy-cn-reader--2019-04-26-10-04-57--artwork--none)

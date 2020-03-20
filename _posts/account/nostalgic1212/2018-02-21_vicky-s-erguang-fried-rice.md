@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】耳光炒饭 Erguang Fried Rice"
+title: '【Vicky''s 小确幸】耳光炒饭 Erguang Fried Rice'
 permlink: vicky-s-erguang-fried-rice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-21 11:45:33
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - food
 - busy
-thumbnail: https://steemitimages.com/DQmV55LFBjSoxzNDYp9WaVztsBpzPQoybyRa98EowqhTxPd/IMG_4935.JPG
+thumbnail: 'https://steemitimages.com/DQmV55LFBjSoxzNDYp9WaVztsBpzPQoybyRa98EowqhTxPd/IMG_4935.JPG'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】耳光炒饭 Erguang Fried Rice](https://steemit.com/@nostalgic1212/vicky-s-erguang-fried-rice)
+This page is synchronized from the post: ['【Vicky''s 小确幸】耳光炒饭 Erguang Fried Rice'](https://steemit.com/@nostalgic1212/vicky-s-erguang-fried-rice)

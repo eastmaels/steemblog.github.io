@@ -1,10 +1,11 @@
 
 ---
-title: "「Life & Activities」情感艺术 / Visual Art Contes "
+title: '「Life & Activities」情感艺术 / Visual Art Contes '
 permlink: ntopaz--nostalgic1212--1629057065--ntopaz-cn-cn-reader-dailypetphotography-busy--2019-04-25-15-26-30--artwork--none
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-25 07:26:30
 categories:
 - ntopaz
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - dailypetphotography
 - busy
-thumbnail: https://artisteem.io/media/da13b8b0-f133-49b7-b174-0768628c4462
+thumbnail: 'https://artisteem.io/media/da13b8b0-f133-49b7-b174-0768628c4462'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ Finally, I would like to ask @catwomanteresa what's the name of the cat in my ph
 
 - - -
 
-This page is synchronized from the post: [「Life & Activities」情感艺术 / Visual Art Contes ](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--1629057065--ntopaz-cn-cn-reader-dailypetphotography-busy--2019-04-25-15-26-30--artwork--none)
+This page is synchronized from the post: ['「Life & Activities」情感艺术 / Visual Art Contes '](https://steemit.com/@nostalgic1212/ntopaz--nostalgic1212--1629057065--ntopaz-cn-cn-reader-dailypetphotography-busy--2019-04-25-15-26-30--artwork--none)

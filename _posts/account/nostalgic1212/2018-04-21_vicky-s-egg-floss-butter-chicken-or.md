@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】干奶油鸡 Egg Floss Butter Chicken | 大马美食"
+title: '【Vicky''s 小确幸】干奶油鸡 Egg Floss Butter Chicken | 大马美食'
 permlink: vicky-s-egg-floss-butter-chicken-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-21 06:13:48
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - teammalaysia
 - cn-reader
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmXUNHGKc1zSzPqdBMmgb8tVp2piNH7aZPWhBP6aQQ3uNo
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmXUNHGKc1zSzPqdBMmgb8tVp2piNH7aZPWhBP6aQQ3uNo'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】干奶油鸡 Egg Floss Butter Chicken | 大马美食](https://steemit.com/@nostalgic1212/vicky-s-egg-floss-butter-chicken-or)
+This page is synchronized from the post: ['【Vicky''s 小确幸】干奶油鸡 Egg Floss Butter Chicken | 大马美食'](https://steemit.com/@nostalgic1212/vicky-s-egg-floss-butter-chicken-or)

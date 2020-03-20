@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-2（剧情篇）"
+title: '【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-2（剧情篇）'
 permlink: vickys-2-ces1x6gth8
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-17 14:11:30
 categories:
 - steempress
@@ -15,7 +16,7 @@ tags:
 - cn-curation
 - ocd-resteem
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/02/17/5c691b5af38ed.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://i.loli.net/2019/02/17/5c691b5af38ed.jpg'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ _Posted from my blog with [SteemPress](https://wordpress.org/plugins/steempress/
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-2（剧情篇）](https://steemit.com/@nostalgic1212/vickys-2-ces1x6gth8)
+This page is synchronized from the post: ['【Vicky''s 影评】《客 손》 : 在人诞生的那一天同样诞生了鬼-2（剧情篇）'](https://steemit.com/@nostalgic1212/vickys-2-ces1x6gth8)

@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《不伦食堂》：一个爱好美食的男人上演的东京热（上）"
+title: '【Vicky''s 影评】《不伦食堂》：一个爱好美食的男人上演的东京热（上）'
 permlink: vickys-gsk8ofo2ec
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-01 21:00:36
 categories:
 - steempress
@@ -13,7 +14,7 @@ tags:
 - cnstm
 - cn
 - busy
-thumbnail: https://i.loli.net/2019/02/16/5c676974e112c.jpg
+thumbnail: 'https://i.loli.net/2019/02/16/5c676974e112c.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《不伦食堂》：一个爱好美食的男人上演的东京热（上）](https://steemit.com/@nostalgic1212/vickys-gsk8ofo2ec)
+This page is synchronized from the post: ['【Vicky''s 影评】《不伦食堂》：一个爱好美食的男人上演的东京热（上）'](https://steemit.com/@nostalgic1212/vickys-gsk8ofo2ec)

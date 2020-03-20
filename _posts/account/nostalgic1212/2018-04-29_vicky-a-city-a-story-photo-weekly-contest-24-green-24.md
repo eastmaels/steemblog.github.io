@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの杭州印象】A City A Story Photo Weekly Contest#24 -【GREEN】~小城故事相片比賽#24-【绿】"
+title: '【Vickyの杭州印象】A City A Story Photo Weekly Contest#24 -【GREEN】~小城故事相片比賽#24-【绿】'
 permlink: vicky-a-city-a-story-photo-weekly-contest-24-green-24
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-29 13:18:12
 categories:
 - citystory
@@ -14,7 +15,7 @@ tags:
 - mysmartphonephotography
 - busy
 - beautifulsunday
-thumbnail: https://gateway.ipfs.io/ipfs/QmeLUvvXLrwYMAwJmgCfYaWnwm5ppXi2rphzPD7aBsFpro
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmeLUvvXLrwYMAwJmgCfYaWnwm5ppXi2rphzPD7aBsFpro'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの杭州印象】A City A Story Photo Weekly Contest#24 -【GREEN】~小城故事相片比賽#24-【绿】](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-24-green-24)
+This page is synchronized from the post: ['【Vickyの杭州印象】A City A Story Photo Weekly Contest#24 -【GREEN】~小城故事相片比賽#24-【绿】'](https://steemit.com/@nostalgic1212/vicky-a-city-a-story-photo-weekly-contest-24-green-24)

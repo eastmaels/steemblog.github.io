@@ -1,10 +1,11 @@
 
 ---
-title: "互联网不会变的更好，但我们可以选择开始自救---The Internet can't be better，but we can choose to protect ourself"
+title: '互联网不会变的更好，但我们可以选择开始自救---The Internet can''t be better，but we can choose to protect ourself'
 permlink: the-internet-can-t-be-better-but-we-can-choose-to-protect-ourself
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-07 06:22:42
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - news
 - internet
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [互联网不会变的更好，但我们可以选择开始自救---The Internet can't be better，but we can choose to protect ourself](https://steemit.com/@nostalgic1212/the-internet-can-t-be-better-but-we-can-choose-to-protect-ourself)
+This page is synchronized from the post: ['互联网不会变的更好，但我们可以选择开始自救---The Internet can''t be better，but we can choose to protect ourself'](https://steemit.com/@nostalgic1212/the-internet-can-t-be-better-but-we-can-choose-to-protect-ourself)

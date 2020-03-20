@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】蓝天白云 Somewhere Beyond The Mist"
+title: '【Vicky’s电影/电视剧推荐】蓝天白云 Somewhere Beyond The Mist'
 permlink: vicky-s-somewhere-beyond-the-mist
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-25 01:04:06
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - teammalaysia
 - movie
 - monthlyauthorchallenge
-thumbnail: https://cdn.steemitimages.com/DQmSNswzDekXYfE2nM86mjTnK27GirHvPXWNo2w9gbeu8py/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-05-25%2009.07.22.png
+thumbnail: 'https://cdn.steemitimages.com/DQmSNswzDekXYfE2nM86mjTnK27GirHvPXWNo2w9gbeu8py/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202018-05-25%2009.07.22.png'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】蓝天白云 Somewhere Beyond The Mist](https://steemit.com/@nostalgic1212/vicky-s-somewhere-beyond-the-mist)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】蓝天白云 Somewhere Beyond The Mist'](https://steemit.com/@nostalgic1212/vicky-s-somewhere-beyond-the-mist)

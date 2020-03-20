@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】绍兴臭豆腐和黄酒棒冰 | 第10届奥林匹克 | Steemit Olympics Game #10"
+title: '【Vicky''s 小确幸】绍兴臭豆腐和黄酒棒冰 | 第10届奥林匹克 | Steemit Olympics Game #10'
 permlink: vicky-s-or-10-or-steemit-olypics-game-10
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-27 04:15:48
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - beautifulsunday
 - cn-sport
 - healthchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmUARMfQ6EpiGeGvdq96HcBH5wnH6r52EUXrxxXU8HreoV
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUARMfQ6EpiGeGvdq96HcBH5wnH6r52EUXrxxXU8HreoV'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】绍兴臭豆腐和黄酒棒冰 | 第10届奥林匹克 | Steemit Olympics Game #10](https://steemit.com/@nostalgic1212/vicky-s-or-10-or-steemit-olypics-game-10)
+This page is synchronized from the post: ['【Vicky''s 小确幸】绍兴臭豆腐和黄酒棒冰 | 第10届奥林匹克 | Steemit Olympics Game #10'](https://steemit.com/@nostalgic1212/vicky-s-or-10-or-steemit-olypics-game-10)

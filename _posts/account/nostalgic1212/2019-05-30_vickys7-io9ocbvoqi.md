@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's电影/电视剧推荐】让人不寒而栗的7分钟短片：天朝渣男图鉴（中）"
+title: '【Vicky''s电影/电视剧推荐】让人不寒而栗的7分钟短片：天朝渣男图鉴（中）'
 permlink: vickys7-io9ocbvoqi
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-30 20:01:06
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: https://i.loli.net/2019/05/28/5ced3df858de942078.jpg
+thumbnail: 'https://i.loli.net/2019/05/28/5ced3df858de942078.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's电影/电视剧推荐】让人不寒而栗的7分钟短片：天朝渣男图鉴（中）](https://steemit.com/@nostalgic1212/vickys7-io9ocbvoqi)
+This page is synchronized from the post: ['【Vicky''s电影/电视剧推荐】让人不寒而栗的7分钟短片：天朝渣男图鉴（中）'](https://steemit.com/@nostalgic1212/vickys7-io9ocbvoqi)

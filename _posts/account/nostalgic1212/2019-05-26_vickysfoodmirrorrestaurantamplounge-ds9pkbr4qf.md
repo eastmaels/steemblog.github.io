@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Food】Mirror Restaurant&amp;Lounge 弥鹿餐厅（下）"
+title: '【Vicky''s Food】Mirror Restaurant&amp;Lounge 弥鹿餐厅（下）'
 permlink: vickysfoodmirrorrestaurantamplounge-ds9pkbr4qf
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-26 20:00:33
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-movie
-thumbnail: http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/05/IMG_2324.jpg
+thumbnail: 'http://cnstm.oss-cn-shenzhen.aliyuncs.com/2019/05/IMG_2324.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Food】Mirror Restaurant&amp;Lounge 弥鹿餐厅（下）](https://steemit.com/@nostalgic1212/vickysfoodmirrorrestaurantamplounge-ds9pkbr4qf)
+This page is synchronized from the post: ['【Vicky''s Food】Mirror Restaurant&amp;Lounge 弥鹿餐厅（下）'](https://steemit.com/@nostalgic1212/vickysfoodmirrorrestaurantamplounge-ds9pkbr4qf)

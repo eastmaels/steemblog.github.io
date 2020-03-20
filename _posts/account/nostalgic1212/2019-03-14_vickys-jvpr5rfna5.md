@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《伞学院》：看“美版葫芦娃”们如何拯救世界！（中）"
+title: '【Vicky''s 影评】《伞学院》：看“美版葫芦娃”们如何拯救世界！（中）'
 permlink: vickys-jvpr5rfna5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-14 14:10:21
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-curation
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://i.loli.net/2019/03/11/5c86609346f96.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://i.loli.net/2019/03/11/5c86609346f96.jpg'
 sidebar:
     right:
         sticky: true
@@ -148,4 +149,4 @@ _Posted from my blog with [SteemPress](https://wordpress.org/plugins/steempress/
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《伞学院》：看“美版葫芦娃”们如何拯救世界！（中）](https://steemit.com/@nostalgic1212/vickys-jvpr5rfna5)
+This page is synchronized from the post: ['【Vicky''s 影评】《伞学院》：看“美版葫芦娃”们如何拯救世界！（中）'](https://steemit.com/@nostalgic1212/vickys-jvpr5rfna5)

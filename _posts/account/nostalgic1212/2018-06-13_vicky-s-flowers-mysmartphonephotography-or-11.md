@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #11"
+title: '【Vicky''s Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #11'
 permlink: vicky-s-flowers-mysmartphonephotography-or-11
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-13 01:18:00
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - flower
 - monthlyauthorchallenge
-thumbnail: https://ipfs.busy.org/ipfs/QmcD45BYNYu6VKToPFQqA1Ncp9f5JjdpimpMCtwKsx8tXv
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcD45BYNYu6VKToPFQqA1Ncp9f5JjdpimpMCtwKsx8tXv'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #11](https://steemit.com/@nostalgic1212/vicky-s-flowers-mysmartphonephotography-or-11)
+This page is synchronized from the post: ['【Vicky''s Flowers】MySmartphonePhotography | 🌺这是什么花勒？🌺 #11'](https://steemit.com/@nostalgic1212/vicky-s-flowers-mysmartphonephotography-or-11)

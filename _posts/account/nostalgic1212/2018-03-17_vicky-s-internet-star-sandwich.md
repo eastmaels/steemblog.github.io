@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】网红三明治 Internet Star Sandwich"
+title: '【Vicky''s 小确幸】网红三明治 Internet Star Sandwich'
 permlink: vicky-s-internet-star-sandwich
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-17 10:33:45
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - monthlyauthorchallenge
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521282746/zrzuj8qe2bqq9enyhsg3.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521282746/zrzuj8qe2bqq9enyhsg3.jpg'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】网红三明治 Internet Star Sandwich](https://steemit.com/@nostalgic1212/vicky-s-internet-star-sandwich)
+This page is synchronized from the post: ['【Vicky''s 小确幸】网红三明治 Internet Star Sandwich'](https://steemit.com/@nostalgic1212/vicky-s-internet-star-sandwich)

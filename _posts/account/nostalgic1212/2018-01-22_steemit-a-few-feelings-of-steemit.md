@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 碎碎念】新人对于steemit的一点感悟---a few feelings of steemit"
+title: '【Vicky''s 碎碎念】新人对于steemit的一点感悟---a few feelings of steemit'
 permlink: steemit-a-few-feelings-of-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-22 02:53:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - blog
 - steemit
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ https://steemitimages.com/DQmYy3Jvpj6q6TLEjNL9BdqZ9FLpAMTbZqFDHxT3dUBaxoV/_MG_65
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 碎碎念】新人对于steemit的一点感悟---a few feelings of steemit](https://steemit.com/@nostalgic1212/steemit-a-few-feelings-of-steemit)
+This page is synchronized from the post: ['【Vicky''s 碎碎念】新人对于steemit的一点感悟---a few feelings of steemit'](https://steemit.com/@nostalgic1212/steemit-a-few-feelings-of-steemit)

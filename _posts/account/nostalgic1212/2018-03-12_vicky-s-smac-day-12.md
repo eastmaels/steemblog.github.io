@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s 碎碎念】SMAC-Day 12 关于老道茶馆转型的小想法"
+title: '【Vicky’s 碎碎念】SMAC-Day 12 关于老道茶馆转型的小想法'
 permlink: vicky-s-smac-day-12
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-12 02:54:12
 categories:
 - laodr-teahouse
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - monthlyauthorchallenge
 - cn-reader
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1520822966/axeksiteolqry5llbgxc.png
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1520822966/axeksiteolqry5llbgxc.png'
 sidebar:
     right:
         sticky: true
@@ -86,4 +87,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s 碎碎念】SMAC-Day 12 关于老道茶馆转型的小想法](https://steemit.com/@nostalgic1212/vicky-s-smac-day-12)
+This page is synchronized from the post: ['【Vicky’s 碎碎念】SMAC-Day 12 关于老道茶馆转型的小想法'](https://steemit.com/@nostalgic1212/vicky-s-smac-day-12)

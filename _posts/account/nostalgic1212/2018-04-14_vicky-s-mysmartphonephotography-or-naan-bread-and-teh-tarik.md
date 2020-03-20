@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 印度飞饼+拉茶 Naan bread & Teh Tarik"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 印度飞饼+拉茶 Naan bread & Teh Tarik'
 permlink: vicky-s-mysmartphonephotography-or-naan-bread-and-teh-tarik
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-14 12:18:27
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - dailyfoodphotography
 - malaysia-food
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmWzdGFtk1GBhPjR9PM8pSWgWNP8owVGbAxpLQimbpWyKM
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmWzdGFtk1GBhPjR9PM8pSWgWNP8owVGbAxpLQimbpWyKM'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 印度飞饼+拉茶 Naan bread & Teh Tarik](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-naan-bread-and-teh-tarik)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 印度飞饼+拉茶 Naan bread & Teh Tarik'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-naan-bread-and-teh-tarik)

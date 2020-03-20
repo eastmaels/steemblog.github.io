@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky参加の活动】猫猫来给大家拜年啦"
+title: '【Vicky参加の活动】猫猫来给大家拜年啦'
 permlink: vicky-dailypetphotography-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-16 10:00:42
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - dailypetphotography
 - angpao2018
 - cn-reader
-thumbnail: https://steemitimages.com/DQmeBMy1BF2tmi1ygrZFVNM4Yz6EdsShb9dpvwF9DeXE4xU/IMG_4861.JPG
+thumbnail: 'https://steemitimages.com/DQmeBMy1BF2tmi1ygrZFVNM4Yz6EdsShb9dpvwF9DeXE4xU/IMG_4861.JPG'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky参加の活动】猫猫来给大家拜年啦](https://steemit.com/@nostalgic1212/vicky-dailypetphotography-3)
+This page is synchronized from the post: ['【Vicky参加の活动】猫猫来给大家拜年啦'](https://steemit.com/@nostalgic1212/vicky-dailypetphotography-3)

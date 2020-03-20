@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの活动】我与@winniex的第二次合唱以及与@veronicazhu的第一次合唱🎤 |Music Challenge C（内含三首歌😊）"
+title: '【Vickyの活动】我与@winniex的第二次合唱以及与@veronicazhu的第一次合唱🎤 |Music Challenge C（内含三首歌😊）'
 permlink: vicky-winniex-veronicazhu-or-music-challenge-c
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-11 02:38:24
 categories:
 - monthlyauthorchallenge
@@ -14,7 +15,7 @@ tags:
 - cn-voice
 - musicchallenge
 - cn-reader
-thumbnail: https://ipfs.busy.org/ipfs/Qmam9sakKkMfu7amGQhhBA3De5vQscrwWgCatAsErWFLAS
+thumbnail: 'https://ipfs.busy.org/ipfs/Qmam9sakKkMfu7amGQhhBA3De5vQscrwWgCatAsErWFLAS'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの活动】我与@winniex的第二次合唱以及与@veronicazhu的第一次合唱🎤 |Music Challenge C（内含三首歌😊）](https://steemit.com/@nostalgic1212/vicky-winniex-veronicazhu-or-music-challenge-c)
+This page is synchronized from the post: ['【Vickyの活动】我与@winniex的第二次合唱以及与@veronicazhu的第一次合唱🎤 |Music Challenge C（内含三首歌😊）'](https://steemit.com/@nostalgic1212/vicky-winniex-veronicazhu-or-music-challenge-c)

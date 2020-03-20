@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの读书笔记】夏达《子不语》| 月旦评 | 品乐书会"
+title: '【Vickyの读书笔记】夏达《子不语》| 月旦评 | 品乐书会'
 permlink: 48dan1-vicky-or-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-02 03:02:33
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - busy
 - cn-31
 - cn-literature
-thumbnail: https://steemitimages.com/DQmR3TCnuCFp44Xo8QAQ2wx4V3QLm1KUP6cz4uzYXDruk91/IMG_4816.JPG
+thumbnail: 'https://steemitimages.com/DQmR3TCnuCFp44Xo8QAQ2wx4V3QLm1KUP6cz4uzYXDruk91/IMG_4816.JPG'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの读书笔记】夏达《子不语》| 月旦评 | 品乐书会](https://steemit.com/@nostalgic1212/48dan1-vicky-or-or)
+This page is synchronized from the post: ['【Vickyの读书笔记】夏达《子不语》| 月旦评 | 品乐书会'](https://steemit.com/@nostalgic1212/48dan1-vicky-or-or)

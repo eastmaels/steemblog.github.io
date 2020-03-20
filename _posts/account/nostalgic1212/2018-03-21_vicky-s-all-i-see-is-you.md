@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】我所看到的都是你 All I See Is You"
+title: '【Vicky’s电影/电视剧推荐】我所看到的都是你 All I See Is You'
 permlink: vicky-s-all-i-see-is-you
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-21 07:30:33
 categories:
 - busy
@@ -14,7 +15,7 @@ tags:
 - movie
 - monthlyauthorchallenge
 - cn-reader
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521617067/odxpv9efoxdv0vwktadh.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521617067/odxpv9efoxdv0vwktadh.jpg'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】我所看到的都是你 All I See Is You](https://steemit.com/@nostalgic1212/vicky-s-all-i-see-is-you)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】我所看到的都是你 All I See Is You'](https://steemit.com/@nostalgic1212/vicky-s-all-i-see-is-you)

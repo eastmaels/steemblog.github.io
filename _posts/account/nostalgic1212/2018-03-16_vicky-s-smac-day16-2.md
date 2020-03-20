@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 手作】SMAC-Day16 做个东西——发簪2#|月旦评"
+title: '【Vicky''s 手作】SMAC-Day16 做个东西——发簪2#|月旦评'
 permlink: vicky-s-smac-day16-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-16 01:21:36
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - whalepower
 - cn-art
 - monthlyauthorchallenge
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521163125/lqkdt5tg39wa3ojmjefn.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521163125/lqkdt5tg39wa3ojmjefn.jpg'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 手作】SMAC-Day16 做个东西——发簪2#|月旦评](https://steemit.com/@nostalgic1212/vicky-s-smac-day16-2)
+This page is synchronized from the post: ['【Vicky''s 手作】SMAC-Day16 做个东西——发簪2#|月旦评'](https://steemit.com/@nostalgic1212/vicky-s-smac-day16-2)

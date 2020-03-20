@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】MySmartphonePhotography | 小镇上的慢生活😄"
+title: '【Vicky''s 旅行】MySmartphonePhotography | 小镇上的慢生活😄'
 permlink: 4gjztz-vicky-s-mysmartphonephotography-or
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-03 01:29:57
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - busy
 - travel
 - monthlyauthorchallenge
-thumbnail: https://gateway.ipfs.io/ipfs/QmP2DZ2kd1eXdY8aMXyLwazMSWJtK1djSk1Paz399tNaD1
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmP2DZ2kd1eXdY8aMXyLwazMSWJtK1djSk1Paz399tNaD1'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】MySmartphonePhotography | 小镇上的慢生活😄](https://steemit.com/@nostalgic1212/4gjztz-vicky-s-mysmartphonephotography-or)
+This page is synchronized from the post: ['【Vicky''s 旅行】MySmartphonePhotography | 小镇上的慢生活😄'](https://steemit.com/@nostalgic1212/4gjztz-vicky-s-mysmartphonephotography-or)

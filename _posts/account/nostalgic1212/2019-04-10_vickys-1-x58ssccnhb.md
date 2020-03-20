@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 影评】《无双》：真亦假时假亦真，无为有处有还无-1"
+title: '【Vicky''s 影评】《无双》：真亦假时假亦真，无为有处有还无-1'
 permlink: vickys-1-x58ssccnhb
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-10 20:06:24
 categories:
 - steempress
@@ -13,7 +14,7 @@ tags:
 - cnstm
 - cn
 - busy
-thumbnail: https://i.loli.net/2019/03/05/5c7e206fcc7d9.jpg
+thumbnail: 'https://i.loli.net/2019/03/05/5c7e206fcc7d9.jpg'
 sidebar:
     right:
         sticky: true
@@ -141,4 +142,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 影评】《无双》：真亦假时假亦真，无为有处有还无-1](https://steemit.com/@nostalgic1212/vickys-1-x58ssccnhb)
+This page is synchronized from the post: ['【Vicky''s 影评】《无双》：真亦假时假亦真，无为有处有还无-1'](https://steemit.com/@nostalgic1212/vickys-1-x58ssccnhb)

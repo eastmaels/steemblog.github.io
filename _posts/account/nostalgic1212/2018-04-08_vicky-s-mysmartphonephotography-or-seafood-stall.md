@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 小确幸】MySmartphonePhotography | 海鲜大排档 Seafood Stall|大马美食"
+title: '【Vicky''s 小确幸】MySmartphonePhotography | 海鲜大排档 Seafood Stall|大马美食'
 permlink: vicky-s-mysmartphonephotography-or-seafood-stall
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-08 11:47:03
 categories:
 - mysmartphonephotography
@@ -14,7 +15,7 @@ tags:
 - foodphotography
 - monthlyauthorchallenge
 - beautifulsunday
-thumbnail: https://gateway.ipfs.io/ipfs/QmSbV6GgcLrFjRrVasaVLD6yEFR94ZTfydVAEzVvX8VzX1
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmSbV6GgcLrFjRrVasaVLD6yEFR94ZTfydVAEzVvX8VzX1'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 小确幸】MySmartphonePhotography | 海鲜大排档 Seafood Stall|大马美食](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-seafood-stall)
+This page is synchronized from the post: ['【Vicky''s 小确幸】MySmartphonePhotography | 海鲜大排档 Seafood Stall|大马美食'](https://steemit.com/@nostalgic1212/vicky-s-mysmartphonephotography-or-seafood-stall)

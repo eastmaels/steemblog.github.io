@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】缩小人生   Downsizing"
+title: '【Vicky’s电影/电视剧推荐】缩小人生   Downsizing'
 permlink: vicky-s-downsizing
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-17 02:21:09
 categories:
 - cn-reader
@@ -14,7 +15,7 @@ tags:
 - life
 - cn
 - movie
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521253255/mzjjpbpkhvx4ziv4slxg.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521253255/mzjjpbpkhvx4ziv4slxg.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】缩小人生   Downsizing](https://steemit.com/@nostalgic1212/vicky-s-downsizing)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】缩小人生   Downsizing'](https://steemit.com/@nostalgic1212/vicky-s-downsizing)

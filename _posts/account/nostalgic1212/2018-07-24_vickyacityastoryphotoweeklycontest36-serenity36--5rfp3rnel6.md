@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 旅行】台北之行——「不只是图书馆」 Not Just a Library"
+title: '【Vicky''s 旅行】台北之行——「不只是图书馆」 Not Just a Library'
 permlink: vickyacityastoryphotoweeklycontest36-serenity36--5rfp3rnel6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-24 12:58:42
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - monthlyauthorchallenge
 - placestoremember
 - archisteem
-thumbnail: https://s1.ax1x.com/2018/07/24/PYBTHJ.jpg
+thumbnail: 'https://s1.ax1x.com/2018/07/24/PYBTHJ.jpg'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ https://cdn.steemitimages.com/DQmVrLU1Lpmo98UJSPvyJR7sAbPvtExjHh5RHA1i5zqzuna/IM
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 旅行】台北之行——「不只是图书馆」 Not Just a Library](https://steemit.com/@nostalgic1212/vickyacityastoryphotoweeklycontest36-serenity36--5rfp3rnel6)
+This page is synchronized from the post: ['【Vicky''s 旅行】台北之行——「不只是图书馆」 Not Just a Library'](https://steemit.com/@nostalgic1212/vickyacityastoryphotoweeklycontest36-serenity36--5rfp3rnel6)

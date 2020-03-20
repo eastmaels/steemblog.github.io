@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's Flowers】Hosta plantaginea 玉簪花 190430"
+title: '【Vicky''s Flowers】Hosta plantaginea 玉簪花 190430'
 permlink: vicky-s-flowers-hosta-plantaginea-190430
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-30 01:43:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - busy
 - cn-photography
-thumbnail: https://i.loli.net/2019/02/21/5c6eb303df323.jpg
+thumbnail: 'https://i.loli.net/2019/02/21/5c6eb303df323.jpg'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky's Flowers】Hosta plantaginea 玉簪花 190430](https://steemit.com/@nostalgic1212/vicky-s-flowers-hosta-plantaginea-190430)
+This page is synchronized from the post: ['【Vicky''s Flowers】Hosta plantaginea 玉簪花 190430'](https://steemit.com/@nostalgic1212/vicky-s-flowers-hosta-plantaginea-190430)

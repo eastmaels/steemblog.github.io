@@ -1,10 +1,11 @@
 
 ---
-title: "不要做拿来主义的人---Don't be a borrowlism guy"
+title: '不要做拿来主义的人---Don''t be a "borrowlism" guy'
 permlink: don-t-be-a-borrowlism-guy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-07 14:58:48
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cn-reader
 - steemit
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ Learning is an interesting thing and a process of self-growth. Before you ask qu
 
 - - -
 
-This page is synchronized from the post: [不要做拿来主义的人---Don't be a borrowlism guy](https://steemit.com/@nostalgic1212/don-t-be-a-borrowlism-guy)
+This page is synchronized from the post: ['不要做拿来主义的人---Don''t be a "borrowlism" guy'](https://steemit.com/@nostalgic1212/don-t-be-a-borrowlism-guy)

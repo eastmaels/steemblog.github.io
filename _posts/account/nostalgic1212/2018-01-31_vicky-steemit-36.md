@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyのsteemit小感悟】没有带宽的36小时我是如何度过的"
+title: '【Vickyのsteemit小感悟】没有带宽的36小时我是如何度过的'
 permlink: vicky-steemit-36
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-31 08:07:12
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - blog
 - bandwidth
-thumbnail: https://steemitimages.com/DQmVrcuU3mnYPfGf6UN5ZeXQz3yTbdCWDnFmTwLzDhuD4tW/440H.jpg
+thumbnail: 'https://steemitimages.com/DQmVrcuU3mnYPfGf6UN5ZeXQz3yTbdCWDnFmTwLzDhuD4tW/440H.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyのsteemit小感悟】没有带宽的36小时我是如何度过的](https://steemit.com/@nostalgic1212/vicky-steemit-36)
+This page is synchronized from the post: ['【Vickyのsteemit小感悟】没有带宽的36小时我是如何度过的'](https://steemit.com/@nostalgic1212/vicky-steemit-36)

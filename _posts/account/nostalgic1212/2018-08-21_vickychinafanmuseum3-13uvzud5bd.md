@@ -1,10 +1,11 @@
 
 ---
-title: "【Vickyの杭州印象】中国扇博物馆 China Fan Museum#3"
+title: '【Vickyの杭州印象】中国扇博物馆 China Fan Museum#3'
 permlink: vickychinafanmuseum3-13uvzud5bd
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-21 07:37:15
 categories:
 - steempress
@@ -14,7 +15,7 @@ tags:
 - archisteem
 - travelfeed
 - steemitworldmap
-thumbnail: https://i.loli.net/2018/08/21/5b7b65a9da0a0.png
+thumbnail: 'https://i.loli.net/2018/08/21/5b7b65a9da0a0.png'
 sidebar:
     right:
         sticky: true
@@ -115,4 +116,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vickyの杭州印象】中国扇博物馆 China Fan Museum#3](https://steemit.com/@nostalgic1212/vickychinafanmuseum3-13uvzud5bd)
+This page is synchronized from the post: ['【Vickyの杭州印象】中国扇博物馆 China Fan Museum#3'](https://steemit.com/@nostalgic1212/vickychinafanmuseum3-13uvzud5bd)

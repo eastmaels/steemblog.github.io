@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】善地 The Good Place"
+title: '【Vicky’s电影/电视剧推荐】善地 The Good Place'
 permlink: thegoodplace---ffim5srtfk
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-04 13:51:27
 categories:
 - mei-ju
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - culture
 - movie
-thumbnail: http://upload-images.jianshu.io/upload_images/8799265-b9c336cddfbd7a7e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
+thumbnail: 'http://upload-images.jianshu.io/upload_images/8799265-b9c336cddfbd7a7e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240'
 sidebar:
     right:
         sticky: true
@@ -123,4 +124,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】善地 The Good Place](https://steemit.com/@nostalgic1212/thegoodplace---ffim5srtfk)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】善地 The Good Place'](https://steemit.com/@nostalgic1212/thegoodplace---ffim5srtfk)

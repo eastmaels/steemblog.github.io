@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】9号秘事 Inside No.9"
+title: '【Vicky’s电影/电视剧推荐】9号秘事 Inside No.9'
 permlink: vicky-s-9-inside-no-9
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-18 02:26:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - movie
 - cn-malaysia
 - cn-family
-thumbnail: https://steemitimages.com/DQmVtSM6iauYNc57j7GhiF8ekiaUH98Rh2s2SeNbi2BEocj/p2167747141.jpg
+thumbnail: 'https://steemitimages.com/DQmVtSM6iauYNc57j7GhiF8ekiaUH98Rh2s2SeNbi2BEocj/p2167747141.jpg'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】9号秘事 Inside No.9](https://steemit.com/@nostalgic1212/vicky-s-9-inside-no-9)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】9号秘事 Inside No.9'](https://steemit.com/@nostalgic1212/vicky-s-9-inside-no-9)

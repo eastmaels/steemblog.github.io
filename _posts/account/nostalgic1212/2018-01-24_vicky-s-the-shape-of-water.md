@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky’s电影/电视剧推荐】水形物语 The Shape of Water"
+title: '【Vicky’s电影/电视剧推荐】水形物语 The Shape of Water'
 permlink: vicky-s-the-shape-of-water
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-24 03:39:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - life
 - busy
 - blog
-thumbnail: https://steemitimages.com/DQmQUr8BxT1f8cktquKinDBd2Y5z8jxzWJFcvCm5Dz3cEew/p2506388632.jpg
+thumbnail: 'https://steemitimages.com/DQmQUr8BxT1f8cktquKinDBd2Y5z8jxzWJFcvCm5Dz3cEew/p2506388632.jpg'
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [【Vicky’s电影/电视剧推荐】水形物语 The Shape of Water](https://steemit.com/@nostalgic1212/vicky-s-the-shape-of-water)
+This page is synchronized from the post: ['【Vicky’s电影/电视剧推荐】水形物语 The Shape of Water'](https://steemit.com/@nostalgic1212/vicky-s-the-shape-of-water)

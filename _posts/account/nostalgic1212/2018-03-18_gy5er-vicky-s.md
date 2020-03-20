@@ -1,10 +1,11 @@
 
 ---
-title: "【Vicky's 活动】久违了的周末♨️"
+title: '【Vicky''s 活动】久违了的周末♨️'
 permlink: gy5er-vicky-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-18 08:21:12
 categories:
 - beautifulsunday
@@ -14,7 +15,7 @@ tags:
 - mysmartphonephotography
 - dailyfoodphotography
 - cn-green
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521359953/j2rgvrqws4brrm7uocbs.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521359953/j2rgvrqws4brrm7uocbs.jpg'
 sidebar:
     right:
         sticky: true
@@ -72,4 +73,4 @@ Thank you for reading my articles. If you like me, plz follow @nostalgic1212, or
 
 - - -
 
-This page is synchronized from the post: [【Vicky's 活动】久违了的周末♨️](https://steemit.com/@nostalgic1212/gy5er-vicky-s)
+This page is synchronized from the post: ['【Vicky''s 活动】久违了的周末♨️'](https://steemit.com/@nostalgic1212/gy5er-vicky-s)

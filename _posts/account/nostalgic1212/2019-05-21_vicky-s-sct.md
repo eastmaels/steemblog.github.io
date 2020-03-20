@@ -1,10 +1,11 @@
 
 ---
-title: "【Free Talk】SCT第一笔“工资”（内附图文领取方法）"
+title: '【Free Talk】SCT第一笔“工资”（内附图文领取方法）'
 permlink: vicky-s-sct
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-21 01:10:12
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - cn
 - whalepower
 - busy
-thumbnail: https://i.loli.net/2019/05/22/5ce4ceb5ed10217085.jpg
+thumbnail: 'https://i.loli.net/2019/05/22/5ce4ceb5ed10217085.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ Thank you for reading my articles. If you like me, plz forward, upvote me or lea
 
 - - -
 
-This page is synchronized from the post: [【Free Talk】SCT第一笔“工资”（内附图文领取方法）](https://steemit.com/@nostalgic1212/vicky-s-sct)
+This page is synchronized from the post: ['【Free Talk】SCT第一笔“工资”（内附图文领取方法）'](https://steemit.com/@nostalgic1212/vicky-s-sct)
