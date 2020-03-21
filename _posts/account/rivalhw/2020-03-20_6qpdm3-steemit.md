@@ -8,14 +8,13 @@ toc: true
 position: 9999
 date: 2020-03-20 15:23:39
 categories:
-- steemit
+- steem
 tags:
-- steemit
 - steem
 - history
 - cn-reader
 - cn
-thumbnail: None
+thumbnail: 'https://cdn.steemitimages.com/DQmR3reNggkQXqRAvnFpsu43g1Z4ypZp8HqcJY6viXP8gQM/hands-1822982_960_720.jpg'
 sidebar:
     right:
         sticky: true
@@ -26,7 +25,7 @@ widgets:
 ---
 
 
-坐等北京时间2020年3月20日晚上10点，steemit硬分叉！
+北京时间2020年3月20日晚上10点，坐等steemit硬分叉！
 
 　　纪念这一历史时刻。
 
@@ -35,6 +34,9 @@ widgets:
 　　从此刻起，steem硬分叉诞生出另外一个全新项目:Hive，虽然这个名字看起来似乎有点奇怪:)
 
 　　喜欢创作的朋友，也可以继续一如既往地在两条独立链上发表文章，我也会继续支持大家的！
+
+
+![hands-1822982_960_720.jpg](https://cdn.steemitimages.com/DQmR3reNggkQXqRAvnFpsu43g1Z4ypZp8HqcJY6viXP8gQM/hands-1822982_960_720.jpg)
 
 - - -
 
