@@ -230,6 +230,71 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steem-blockchain-information-api-discord-and-wechat/" class="image is-7by1">
+            <img class="thumbnail" src="https://gateway.ipfs.io/ipfs/QmePWwGdJMJ64XCHHgB2a41QCtp9HcK7etBcY4BUPVAVns" alt="Steem Blockchain Information: API, Discord and Wechat!">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-01T13:15:12.000Z">2018-04-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/witness-category/">witness-category</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 329 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steem-blockchain-information-api-discord-and-wechat/">Steem Blockchain Information: API, Discord and Wechat!</a>
+            
+        </h1>
+        <div class="content">
+            <p>I have wrapped some useful information about steem <a href="https://helloacm.com/how-to-check-if-steemsql-is-synchronized-with-steem-blockchain/" target="_blank" rel="noopener">blockchain</a> via the Steem-Python library into the following:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">import json</span><br><span class="line">from steem import Steem</span><br><span class="line">from steem.converter import Converter</span><br><span class="line">from nodes import steem_nodes</span><br><span class="line">import datetime</span><br><span class="line"></span><br><span class="line">steem = Steem(nodes = steem_nodes)</span><br><span class="line">converter = Converter(steemd_instance = steem)</span><br><span class="line">ticker = steem.get_ticker()</span><br><span class="line">market_price = (float(ticker[&apos;lowest_ask&apos;])*0.5+float(ticker[&apos;highest_bid&apos;])*0.5) </span><br><span class="line">feed_price = converter.steem_to_sbd(1.0)</span><br><span class="line">time = datetime.datetime.utcnow().strftime(&apos;%Y-%m-%dT%H:%M:%S&apos;)</span><br><span class="line"></span><br><span class="line">x = {</span><br><span class="line">  &quot;last_irreversible_block_num&quot;: steem.steemd.last_irreversible_block_num,</span><br><span class="line">  &quot;head_block_number&quot;: steem.steemd.head_block_number,</span><br><span class="line">  &quot;account_num&quot;: steem.steemd.get_account_count(),</span><br><span class="line">  &quot;feed_price&quot;: feed_price,</span><br><span class="line">  &quot;market_price&quot;: market_price,</span><br><span class="line">  &quot;time&quot;: time</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">print(json.dumps(x))</span><br></pre></td></tr></tbody></table></figure>
+<p>And these steem blockchain information can be <a href="https://helloacm.com/steem-blockchain-information-api-discord-and-wechat/" target="_blank" rel="noopener">easily obtained</a> via:</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>And also <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">other API servers</a>.</p>
+<blockquote>
+<p><a href="https://helloacm.com/api/steemit/info/" target="_blank" rel="noopener">https://helloacm.com/api/steemit/info/</a></p>
+</blockquote>
+<p>which returns JSON-encoded:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">{&quot;last_irreversible_block_num&quot;: 21186204, &quot;hardfork_version&quot;: &quot;0.19.0&quot;, &quot;time&quot;: &quot;2018-04-01T13:12:31&quot;, &quot;feed_price&quot;: 1.521, &quot;account_num&quot;: 904077, &quot;head_block_number&quot;: 21186221, &quot;market_price&quot;: 1.0168675809782273, &quot;version&quot;: {&quot;steem_revision&quot;: &quot;e2560ea524b80a865fd468c8947f927f0ffbeb2d&quot;, &quot;blockchain_version&quot;: &quot;0.19.2&quot;, &quot;fc_revision&quot;: &quot;8dd1fd1ec0906509eb722fa7c8d280d59bcca23d&quot;}}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Discord-Bot-steemit"><a href="#Discord-Bot-steemit" class="headerlink" title="Discord Bot - steemit"></a>Discord Bot - steemit</h2><p><img src="https://gateway.ipfs.io/ipfs/QmePWwGdJMJ64XCHHgB2a41QCtp9HcK7etBcY4BUPVAVns" alt="image.png"></p>
+<p>Adding <code>steemit</code> to your discord channel is easy:</p>
+<p><a href="https://discordapp.com/oauth2/authorize?client_id=418196534660694037&amp;permissions=522304&amp;scope=bot" target="_blank" rel="noopener">https://discordapp.com/oauth2/authorize?client_id=418196534660694037&amp;permissions=522304&amp;scope=bot</a></p>
+<h2 id="Wechat-Channel-justyyuk"><a href="#Wechat-Channel-justyyuk" class="headerlink" title="Wechat Channel - justyyuk"></a>Wechat Channel - justyyuk</h2><p><img src="https://gateway.ipfs.io/ipfs/QmSAdLqowBcv3sgXyyNXy1T56UQP4kgUc2YbEJzcJFd9vX" alt="image.png"></p>
+<h3 id="Support-me-and-my-work-as-a-witness-by-voting-for-me-here-Thank-you-very-very-much"><a href="#Support-me-and-my-work-as-a-witness-by-voting-for-me-here-Thank-you-very-very-much" class="headerlink" title="Support me and my work as a witness by voting for me here!, Thank you very very much!"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">voting for me here!</a>, Thank you very very much!</h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steem-blockchain-information-api-discord-and-wechat" target="_blank" rel="noopener">Steem Blockchain Information: API, Discord and Wechat!</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-04-01/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-04-01&amp;cn34" alt="【第 贰壹玖 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-04-01)">
         </a>
@@ -1966,102 +2031,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/7gwnq3-steem-justyy-api/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmc9ka9n5aVok9ShgzmuswUVjMKnJXWkSYfhTyXtKLr41c/banner.jpg" alt="《Steem 指南》之 justyy 在线工具与 API 系列 - 查看被删除的帖子或评论">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-03-30T02:45:21.000Z">2018-03-30</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn-reader/">cn-reader</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 585 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/7gwnq3-steem-justyy-api/">《Steem 指南》之 justyy 在线工具与 API 系列 - 查看被删除的帖子或评论</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemitimages.com/DQmc9ka9n5aVok9ShgzmuswUVjMKnJXWkSYfhTyXtKLr41c/banner.jpg" alt=""><br><em>Image Credit: steemh.org</em></p>
-<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;&#xFF0C;STEEM&#x4E0A;&#x7684;&#x4E00;&#x8A00;&#x4E00;&#x884C;&#x90FD;&#x662F;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x5728;STEEM&#x533A;&#x5757;&#x94FE;&#x4E0A;&#x7684;&#xFF0C;&#x54EA;&#x6015;&#x662F;7&#x5929;&#x5185;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#xFF08;&#x6216;&#x8005;&#x5220;&#x9664;&#xFF09;&#x6587;&#x7AE0;&#x6216;&#x8005;&#x8BC4;&#x8BBA;&#xFF0C;<a href="https://justyy.com/archives/5420" target="_blank" rel="noopener">&#x4FEE;&#x6539;&#x7684;&#x8BB0;&#x5F55;</a>&#x4E5F;&#x90FD;&#x662F;&#x4F1A;&#x88AB;&#x5FE0;&#x5B9E;&#x7684;&#x8BB0;&#x5F55;&#x7684;&#x3002;&#x4E0D;&#x76F8;&#x4FE1;&#xFF1F;&#x8FD9;&#x4E2A;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x5C31;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x628A;&#x5220;&#x9664;&#x8FC7;&#x7684;&#x8BC4;&#x8BBA;&#x7ED9;&#x5217;&#x51FA;&#x6765;&#x3002;</p>
-<h2 id="&#x5DE5;&#x5177;&#x5730;&#x5740;"><a href="#&#x5DE5;&#x5177;&#x5730;&#x5740;" class="headerlink" title="&#x5DE5;&#x5177;&#x5730;&#x5740;"></a>&#x5DE5;&#x5177;&#x5730;&#x5740;</h2><p>&#x4E2D;&#x6587;&#xFF1A;<a href="https://helloacm.com/tools/steemit/list-of-deleted-comments/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit/list-of-deleted-comments/</a><br>&#x82F1;&#x6587;&#xFF1A;<a href="https://helloacm.com/tools/steemit/deleted-comments/" target="_blank" rel="noopener">Steemit Deleted-Comments Checker - Recover Deleted Comments</a></p>
-<h2 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"><a href="#&#x4F7F;&#x7528;&#x65B9;&#x6CD5;" class="headerlink" title="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;"></a>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2><p>&#x628A; ID &#x8F93;&#x5165;&#x6587;&#x672C;&#x6846;&#x4E2D;&#x5E76;&#x6309;&#x56DE;&#x8F66;&#x6216;&#x8005;&#x67E5;&#x8BE2;&#x6309;&#x94AE;&#x5373;&#x53EF;&#xFF1A;</p>
-<p><img src="https://gateway.ipfs.io/ipfs/QmewyKSg23qzCLYC6fETAfAjBmiLEUxYQGkTwdHSzpNHUg" alt="image.png"></p>
-<p>&#x8FD9;&#x65F6;&#x5019;&#x70B9;&#x51FB; <code>&#x94FE;&#x63A5; Permlink</code> &#x5C31;&#x80FD;&#x770B;&#x5230;&#x5220;&#x9664;&#x524D;&#x7684;&#x6587;&#x5B57;&#x3002;</p>
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>&#x4F7F;&#x7528;&#x4E0B;&#x9762;API&#x63A5;&#x53E3;</p>
-<blockquote>
-<p><a href="https://helloacm.com/api/steemit/deleted/?cached&amp;id=justyy" target="_blank" rel="noopener">https://helloacm.com/api/steemit/deleted/?cached&amp;id=justyy</a></p>
-</blockquote>
-<p>&#x4F1A;&#x8FD4;&#x56DE;JSON&#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x542B;&#x6709;&#x4EE5;&#x4E0B;&#x5B57;&#x6BB5;&#xFF1A;</p>
-<blockquote>
-<p>tx_id<br>permlink<br>timestamp<br>block_num<br>transaction_num<br>ref_block_num<br>ref_block_prefix<br>expiration<br>type<br>previous<br>witness<br>witness_signature<br>transaction_merkle_root</p>
-</blockquote>
-<p>&#x5982;&#x679C; \$_GET &#x53C2;&#x6570; s &#x6CA1;&#x6709;&#x6307;&#x5B9A;&#xFF0C;&#x8BE5;API&#x63A5;&#x53E3;&#x4E5F;&#x4F1A;&#x53BB;&#x627E; \$_POST &#x53D8;&#x91CF; id&#x3002;</p>
-<blockquote>
-<p>curl -X POST <a href="https://helloacm.com/api/steemit/deleted/" target="_blank" rel="noopener">https://helloacm.com/api/steemit/deleted/</a> -d &#x201C;id=justyy&#x201D;</p>
-</blockquote>
-<p>API &#x5E76;&#x6CA1;&#x6709;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x88AB;&#x5220;&#x9664;&#x7684;&#x6587;&#x672C;&#xFF0C;&#x4F46;&#x662F;&#x5176;&#x4E2D; <code>permlink</code> &#x5C31;&#x975E;&#x5E38;&#x6709;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; steemdata &#x5DE5;&#x5177;&#x6765;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x7684;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#xFF08;&#x5F53;&#x7136;&#x5C31;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5220;&#x9664;&#x7684;&#x6587;&#x5B57;&#x4E86;&#xFF09;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
-<blockquote>
-<p><a href="https://phist.steemdata.com/history?identifier=https%3A%2F%2Fsteemit.com%2F%40justyy%2Fre-gallantmayor-cant-select-more-than-one-picture-when-using-browser-for-steemit-20180224t005535665z" target="_blank" rel="noopener">https://phist.steemdata.com/history?identifier=https%3A%2F%2Fsteemit.com%2F%40justyy%2Fre-gallantmayor-cant-select-more-than-one-picture-when-using-browser-for-steemit-20180224t005535665z</a></p>
-</blockquote>
-<p>&#x6700;&#x540E;&#xFF0C;&#x8BF7;&#x8BB0;&#x4F4F;&#xFF1A;&#x8C28;&#x8A00;&#x614E;&#x884C;&#x3002;</p>
-<hr>
-<p>&#x5DF2;&#x7ECF;&#x540C;&#x6B65;&#x5230;&#x535A;&#x6587;&#xFF1A;<a href="https://justyy.com/archives/6167" target="_blank" rel="noopener">https://justyy.com/archives/6167</a></p>
-<ul>
-<li><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools, Bots, APIs and Tutorial</a></li>
-<li><a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406; 5 SP</a> &#x5373;&#x53EF;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/2bwmvk-yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x80A1;&#x4E1C;</a>.</li>
-</ul>
-<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
-<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
-<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
-</ol>
-<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/7gwnq3-steem-justyy-api" target="_blank" rel="noopener">&#x300A;Steem &#x6307;&#x5357;&#x300B;&#x4E4B; justyy &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x4E0E; API &#x7CFB;&#x5217; - &#x67E5;&#x770B;&#x88AB;&#x5220;&#x9664;&#x7684;&#x5E16;&#x5B50;&#x6216;&#x8BC4;&#x8BBA;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/127/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/127/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/129/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/129/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -2213,7 +2191,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

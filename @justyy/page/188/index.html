@@ -230,6 +230,72 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/adding-vbscript-defuscator/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512761597/z3lec0r0ozxbcpa90axg.png" alt="Adding VBScript Defuscator">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-12-08T19:36:18.000Z">2017-12-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 317 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/adding-vbscript-defuscator/">Adding VBScript Defuscator</a>
+            
+        </h1>
+        <div class="content">
+            <p>In <a href="https://utopian.io/utopian-io/@justyy/vbscript-obfuscator-in-vbscript" target="_blank" rel="noopener">VBScript Obfuscator in VBScript</a> the simple but yet powerful VBscript obfuscator is written in VBScript. The obfuscator allows you to obfuscate the VBScript source code and still the VBScript can run as expected. If you don&#x2019;t have the original source code,  the process can still be reverted.</p>
+<p>The VBScript Defuscator reverts the process. The <a href="https://isvbscriptdead.com/vbs-obfuscator/" target="_blank" rel="noopener">defuscator</a> tries to look for the function keyword <code>Execute</code> and evaluate the expression, writes the original clean source code back to the console.</p>
+<p>The source code of the VBScript defuscator is as follows, which only works for the specific version of VBScript obfuscator:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Option Explicit</span><br><span class="line">Function Defuscator(vbs)</span><br><span class="line">	Dim t</span><br><span class="line">	t = InStr(1, vbs, &quot;Execute&quot;, 1)</span><br><span class="line">	t = Mid(vbs, t + Len(&quot;Execute&quot;)) </span><br><span class="line">	t = Eval(t)</span><br><span class="line">	Defuscator = t</span><br><span class="line">End Function</span><br><span class="line">Dim fso, i</span><br><span class="line">Const ForReading = 1</span><br><span class="line">Set fso = CreateObject(&quot;Scripting.FileSystemObject&quot;)</span><br><span class="line">For i = 0 To WScript.Arguments.Count - 1</span><br><span class="line">	Dim FileName</span><br><span class="line">	FileName = WScript.Arguments(i)</span><br><span class="line">	Dim MyFile</span><br><span class="line">	Set MyFile = fso.OpenTextFile(FileName, ForReading)</span><br><span class="line">	Dim vbs</span><br><span class="line">	vbs = MyFile.ReadAll	</span><br><span class="line">	WScript.Echo Defuscator(vbs)</span><br><span class="line">	MyFile.Close</span><br><span class="line">Next</span><br><span class="line">Set fso = Nothing</span><br></pre></td></tr></tbody></table></figure>
+<p>You can revert the process via the following <code>vbs_defuscator.vbs</code></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cscript.exe vbs_defuscator.vbs sample_defuscated.vbs &gt; sample.vbs</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512761597/z3lec0r0ozxbcpa90axg.png" alt="image.png"></p>
+<h1 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h1><p>Adding more complex obfuscation/deobfuscation steps. e.g. add a character map and reference the characters in complicated ways.</p>
+<h1 id="Online-VBScript-Obfuscator-Defuscator"><a href="#Online-VBScript-Obfuscator-Defuscator" class="headerlink" title="Online VBScript Obfuscator/Defuscator"></a>Online VBScript Obfuscator/Defuscator</h1><p><a href="https://isvbscriptdead.com/vbs-obfuscator/" target="_blank" rel="noopener">https://isvbscriptdead.com/vbs-obfuscator/</a></p>
+<h1 id="Proof-of-work"><a href="#Proof-of-work" class="headerlink" title="Proof of work"></a>Proof of work</h1><p>doctorlai is my github ID and you can view my profile <a href="https://github.com/DoctorLai" target="_blank" rel="noopener">https://github.com/DoctorLai</a> which has my steemit URL page.</p>
+<ul>
+<li>Commit: <a href="https://github.com/DoctorLai/VBScript_Obfuscator/commit/1bde003d20439456ce9acd13f2d5b1fc4a80a8f3" target="_blank" rel="noopener">https://github.com/DoctorLai/VBScript_Obfuscator/commit/1bde003d20439456ce9acd13f2d5b1fc4a80a8f3</a></li>
+</ul>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-vbscript-defuscator" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-vbscript-defuscator" target="_blank" rel="noopener">Adding VBScript Defuscator</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/cn--2017-12-08/" class="image is-7by1">
             <img class="thumbnail" src="https://helloacm.com/images/dailystats.jpg" alt="CN 中文区每日【财富总值】【活跃统计数据】 (2017-12-08)">
         </a>
@@ -4667,99 +4733,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/64-bit-tablacus-scripting-control/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512641502/xovmsgkkzpsynctt5ptb.png" alt="64-bit Tablacus Scripting Control">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-12-07T10:58:48.000Z">2017-12-07</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 709 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/64-bit-tablacus-scripting-control/">64-bit Tablacus Scripting Control</a>
-            
-        </h1>
-        <div class="content">
-            <p>Tablacus <a href="https://helloacm.com/inconsistent-behavior-of-scriptcontrol-64-bit-to-the-msscript-ocx/" target="_blank" rel="noopener">Scripting Control</a> is the 64-bit Alternative of <code>msscript.ocx</code>. Microsoft does not have and will not plan to make a 64-bit Script Control. The Script Control is a very powerful and easy to use tool when you want to do some scripting in your application. This tutorial will guide you with the basis of the 64-bit Tablacus <a href="https://helloacm.com/run-as-administrator-in-vbscriptjscript-wsh/" target="_blank" rel="noopener">Scripting Control</a>.</p>
-<h1 id="Installation-amp-Uninstallation"><a href="#Installation-amp-Uninstallation" class="headerlink" title="Installation &amp; Uninstallation"></a>Installation &amp; Uninstallation</h1><p>You can <code>git clone</code> the source code and compile to <code>tsc64.dll</code> using <a href="https://helloacm.com/visual-studio-online-a-couple-of-tips/" target="_blank" rel="noopener">Visual Studio</a> 2015/2017 compiler. Also, you can directly download the pre-compiled binaries.</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512641502/xovmsgkkzpsynctt5ptb.png" alt="image.png"></p>
-<p>The essence of the Tablacus Scripting Control is the <code>tsc64.dll</code> which you need to register as a <a href="https://helloacm.com/how-to-call-com-object-from-visual-studio-c/" target="_blank" rel="noopener">COM library</a>. You can throw that file into the <code>%WINDIR%\System32</code> (optional) and run the following command using administrator privileges .</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">regsvr32 tsc64.dll</span><br><span class="line">`</span><br></pre></td></tr></tbody></table></figure>
-<p>On successful registration, it will show the following message indicating <code>tsc64.dll</code> has been installed successfully.</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1512642115/r9omrvaflivorgk7aolr.png" alt="image.png"></p>
-<p>To remove the script control, you just need to add <code>/u</code> parameter for example:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">regsvr32 /u tsc64.dll</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="How-to-Use"><a href="#How-to-Use" class="headerlink" title="How to Use?"></a>How to Use?</h1><p>For 32-bit Microsoft Script Control, you create a Scripting Object like this:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// JScript</span><br><span class="line">var Obj = new ActiveXObject(&quot;MSScriptControl.ScriptControl&quot;);</span><br><span class="line">// VBScript</span><br><span class="line">Set Obj = CreateObject(&quot;MSScriptControl.ScriptControl&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<p>In 64-bit Tablacus Scripting Control, you need to replace with the following:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// JScript</span><br><span class="line">var Obj = new ActiveXObject(&quot;ScriptControl&quot;);</span><br><span class="line">// VBScript</span><br><span class="line">Set Obj = CreateObject(&quot;ScriptControl&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Setting-Language"><a href="#Setting-Language" class="headerlink" title="Setting Language"></a>Setting Language</h2><p>After creation of the <a href="https://helloacm.com/quick-tutorial-to-64-bit-tablacus-scripting-control/" target="_blank" rel="noopener">Script Control</a> object, you need to set its language (by default, the <code>Language</code> property is empty), if you don&#x2019;t do this, you probably will run into the following error:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The operation could not be completed because the script engine has not been initialized to a valid language.</span><br></pre></td></tr></tbody></table></figure>
-<p>You can set to <a href="https://justyy.com/archives/3383" target="_blank" rel="noopener">VBScript</a> via <code>sc.Language=&quot;VBScript&quot;</code> or <code>sc.Language=&quot;VBS&quot;</code> or JScript via <code>sc.Language = &apos;JScript&apos;</code> or <code>sc.Language = &apos;Javascript&apos;</code>.  <a href="https://helloacm.com/how-to-get-the-guid-using-vbscript-or-javascript-jscript-using-scriptlet-typelib/" target="_blank" rel="noopener">JScript</a> is the Microsoft Implementation of Javascript.</p>
-<h2 id="AddCode"><a href="#AddCode" class="headerlink" title="AddCode"></a>AddCode</h2><p>You then can Add Some code on the fly, for example,</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Set Obj = CreateObject(&quot;ScriptControl&quot;)</span><br><span class="line">Obj.Language = &quot;VBScript&quot;</span><br><span class="line">Obj.AddCode &quot;x = 100&quot;</span><br><span class="line">Obj.AddCode &quot;Msgbox x&quot;</span><br></pre></td></tr></tbody></table></figure>
-<p>This will print value of variable <code>x</code> which is 100. The <code>AddCode</code> will be executed sequentially. However, the variables defined will be scoped locally so you can&#x2019;t get the variable <code>x</code> via  <code>Msgbox x</code> outside, for example.</p>
-<h2 id="AddObject"><a href="#AddObject" class="headerlink" title="AddObject"></a>AddObject</h2><p>You can pass the object into the <a href="https://helloacm.com/running-vbscript-in-ms-scriptcontrol/" target="_blank" rel="noopener">script control</a>. This is quite useful as you can pass the UI Object into the script control and the UI can be scripted easily. </p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Set Obj = CreateObject(&quot;ScriptControl&quot;)</span><br><span class="line">Obj.Language = &quot;VBScript&quot;</span><br><span class="line">Obj.AddObject &quot;Obj&quot;, Obj</span><br><span class="line">Obj.AddCode &quot;Msgbox Obj.Language&quot;</span><br></pre></td></tr></tbody></table></figure>
-<p>In the above example, the ScriptControl <code>Obj</code> is passed into the script control so you can run code with this object on the fly.</p>
-<h2 id="Eval"><a href="#Eval" class="headerlink" title="Eval"></a>Eval</h2><p><code>Eval</code> is to evaluate some expression, for example,</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Msgbox Obj.Eval(&quot;1+2+3&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<p>will output 6. and the assignment symbol will be treated as comparison instead of &#x2018;assignment&#x2019;. The following output <code>False</code> instead of setting <code>x</code> to 2.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Obj.AddCode(&quot;x=1&quot;)</span><br><span class="line">MsgBox Obj.Eval(&quot;x=2&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="ExecuteStatement"><a href="#ExecuteStatement" class="headerlink" title="ExecuteStatement"></a>ExecuteStatement</h2><p>Similar to <code>AddCode</code>, <code>ExecuteStatement</code> will be useful to execute a single statement. For example:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Obj.AddObject &quot;Obj&quot;, Obj</span><br><span class="line">Obj.ExecuteStatement &quot;Msgbox Obj.Language&quot;</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Reset"><a href="#Reset" class="headerlink" title="Reset"></a>Reset</h2><p><code>Reset</code> is useful to clean the <a href="https://helloacm.com/running-vbscript-in-ms-scriptcontrol/" target="_blank" rel="noopener">Script Control</a> and make a fresh start e.g. clearing the errors and variables. For example:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Obj.AddCode(&quot;x=1&quot;)</span><br><span class="line">Obj.Reset  &apos; After Reset, x is deleted.</span><br><span class="line">MsgBox Obj.Eval(&quot;x=1&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p><a href="https://isvbscriptdead.com" target="_blank" rel="noopener">Scripting Control</a> is fun. Tablacus Scripting Control is 64-bit which allows you to add scripting feature e.g. Macros to your application without re-compiling the application.</p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/64-bit-tablacus-scripting-control" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/64-bit-tablacus-scripting-control" target="_blank" rel="noopener">64-bit Tablacus Scripting Control</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/187/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/187/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/189/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/189/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -4911,7 +4893,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

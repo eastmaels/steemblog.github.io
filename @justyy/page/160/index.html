@@ -230,6 +230,150 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/how-to-write-chrome-bookmark-scripts-step-by-step-tutorial-with-a-steemit-example-chrome/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516143972/oomkf1lljj5nlpjleio8.png" alt="How to Write Chrome Bookmark Scripts? - Step by Step Tutorial with a SteemIt Example 怎么样写 Chrome 书签程序？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-16T23:44:42.000Z">2018-01-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    11 minutes read (About 1630 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/how-to-write-chrome-bookmark-scripts-step-by-step-tutorial-with-a-steemit-example-chrome/">How to Write Chrome Bookmark Scripts? - Step by Step Tutorial with a SteemIt Example 怎么样写 Chrome 书签程序？</a>
+            
+        </h1>
+        <div class="content">
+            <p>This tutorial is bilingual, English first and Simplified Chinese next. </p>
+<h2 id="What-Will-I-Learn"><a href="#What-Will-I-Learn" class="headerlink" title="What Will I Learn?"></a>What Will I Learn?</h2><p>Chrome browser is so powerful that you can write a few gadgets using Javascript for <a href="https://helloacm.com/create-a-shortcutbookmark-in-chrome-to-the-links-shortener-using-javascript/" target="_blank" rel="noopener">Chrome bookmarks</a>.</p>
+<ul>
+<li>You will learn what is a chrome bookmark script</li>
+<li>You will learn how to write chrome bookmark script</li>
+<li>You will learn the SteemIt example to show the real time Voting Power and Reputation for a user.</li>
+</ul>
+<h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h2><p>In order to proceed with this tutorial, you will need to have:</p>
+<ul>
+<li>a installed Chrome browser</li>
+<li>basic <a href="https://helloacm.com/steemit-javascript-function-to-get-original-post-from-comments-permlink/" target="_blank" rel="noopener">Javascript</a> knowledge</li>
+</ul>
+<h2 id="Difficulty"><a href="#Difficulty" class="headerlink" title="Difficulty"></a>Difficulty</h2><p>Intermediate</p>
+<h2 id="Tutorial-Contents"><a href="#Tutorial-Contents" class="headerlink" title="Tutorial Contents"></a>Tutorial Contents</h2><p>Chrome browser has a bookmarks bar that you can turn it on by:</p>
+<ol>
+<li>type <code>chrome://settings/</code> at URL bar</li>
+<li>turn it on by enabling <code>Show bookmarks bar</code></li>
+</ol>
+<p>You can drag any URLs to the bookmarks. However, the most powerful part is that you can add Javascript code to your bookmarks.</p>
+<p>To add a Bookmark, you can:</p>
+<ol>
+<li>type <code>chrome://bookmarks/</code> at URL bar</li>
+<li>right click the top right icon and select <code>Add New Bookmark</code><br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516143972/oomkf1lljj5nlpjleio8.png" alt="image.png"></li>
+</ol>
+<p>At the prompt up dialog, you can choose a bookmark name and type in javascript code that starts with <code>javascript:</code> </p>
+<p>For example, the following will add a bookmark <code>test</code> and if you click on it, the javascript code will be executed that leads to my steemit profile page.<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144093/y3avrpms8kk6wfn8nxcr.png" alt="image.png"></p>
+<h3 id="SteemIt-Voting-Power-and-Reputation-Checker"><a href="#SteemIt-Voting-Power-and-Reputation-Checker" class="headerlink" title="SteemIt Voting Power and Reputation Checker"></a>SteemIt Voting Power and Reputation Checker</h3><p>Let&#x2019;s continue with a more advanced example. I have provided two APIs to retrieve the voting power and reputation in full digits:</p>
+<ol>
+<li><code>https://helloacm.com/api/steemit/account/reputation/?id=justyy</code>  that will return a number indicating the reputation for the given user.</li>
+<li><code>https://helloacm.com/api/steemit/account/vp/?id=justyy</code>  that will return a number indicating the voting power for the given user.</li>
+</ol>
+<p>So, the design is, if we first click the bookmark, it will ask for the steem id, which will be stored in chrome&#x2019;s <code>localStorage</code> object. Once the browser remembers the steem id, it will fetch these two data from these two separate APIs.</p>
+<p>The first part is to ask for ID and remember it. The javascript code is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var steem_id = localStorage.getItem(&quot;steem_id&quot;);</span><br><span class="line">if (steem_id == null) {</span><br><span class="line">	steem_id = prompt(&quot;Please enter your SteemId&quot;);	</span><br><span class="line">	localStorage.setItem(&quot;steem_id&quot;, steem_id);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>Next, we are going to use <code>fetch</code> and <code>then</code> (the Javascript Promises) to chain these two events. </p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">if (steem_id != null) {</span><br><span class="line">	fetch(&apos;https://helloacm.com/api/steemit/account/reputation/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">	.then(validateResponse)</span><br><span class="line">	.then(readResponseAsJSON)</span><br><span class="line">	.then(function(rep) {</span><br><span class="line">		fetch(&apos;https://helloacm.com/api/steemit/account/vp/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">		.then(validateResponse)</span><br><span class="line">		.then(readResponseAsJSON)</span><br><span class="line">		.then(function(vp) {</span><br><span class="line">			var msg = &quot;ID: &quot; + steem_id + &quot;\n&quot; + </span><br><span class="line">					  &quot;Reputation: &quot; + rep + &quot;\n&quot; +</span><br><span class="line">					  &quot;Voting Power: &quot; + vp;</span><br><span class="line">			alert(msg);</span><br><span class="line">		})</span><br><span class="line">	})</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The <code>validateResponse</code> is defined as follows that checks if the API is available and returns correct responses:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function validateResponse(response) {</span><br><span class="line">  if (!response.ok) {</span><br><span class="line">    throw Error(response.statusText);</span><br><span class="line">  }</span><br><span class="line">  return response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The <code>readResponseAsJSON</code> is just to return the text as JSON</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function readResponseAsJSON(response) {</span><br><span class="line">  return response.json();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>And you just need to copy the entire Javascript to the bookmark contents (remember to insert at the begining <code>javascript:</code>.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144961/ud6nbwjpctu0zcho5xty.png" alt="image.png"></p>
+<p>Now, if you click it, it will ask you for the ID.<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144753/lahfbuuyzvdfxxcvctqm.png" alt="image.png"></p>
+<p>Then, this small tool will show your realtime voting power and reputation by just one click.<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144767/hwycpqzwqtdklwmwvfee.png" alt="image.png"></p>
+<p>Entire piece of <a href="https://helloacm.com/how-to-write-chrome-bookmark-scripts-step-by-step-tutorial-with-a-steemit-example/" target="_blank" rel="noopener">bookmark code</a> to take-away:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">javascript:</span><br><span class="line">var steem_id = localStorage.getItem(&quot;steem_id&quot;);</span><br><span class="line">if (steem_id == null) {</span><br><span class="line">	steem_id = prompt(&quot;Please enter your SteemId&quot;);	</span><br><span class="line">	localStorage.setItem(&quot;steem_id&quot;, steem_id);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function readResponseAsJSON(response) {</span><br><span class="line">  return response.json();</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function validateResponse(response) {</span><br><span class="line">  if (!response.ok) {</span><br><span class="line">    throw Error(response.statusText);</span><br><span class="line">  }</span><br><span class="line">  return response;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">if (steem_id != null) {</span><br><span class="line">	fetch(&apos;https://helloacm.com/api/steemit/account/reputation/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">	.then(validateResponse)</span><br><span class="line">	.then(readResponseAsJSON)</span><br><span class="line">	.then(function(rep) {</span><br><span class="line">		fetch(&apos;https://helloacm.com/api/steemit/account/vp/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">		.then(validateResponse)</span><br><span class="line">		.then(readResponseAsJSON)</span><br><span class="line">		.then(function(vp) {</span><br><span class="line">			var msg = &quot;ID: &quot; + steem_id + &quot;\n&quot; + </span><br><span class="line">					  &quot;Reputation: &quot; + rep + &quot;\n&quot; +</span><br><span class="line">					  &quot;Voting Power: &quot; + vp;</span><br><span class="line">			alert(msg);</span><br><span class="line">		})</span><br><span class="line">	})</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<hr>
+<h2 id="&#x60A8;&#x5C06;&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#xFF1F;"><a href="#&#x60A8;&#x5C06;&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#xFF1F;" class="headerlink" title="&#x60A8;&#x5C06;&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#xFF1F;"></a>&#x60A8;&#x5C06;&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#xFF1F;</h2><p>Chrome &#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x6DFB;&#x52A0;<a href="https://justyy.com/archives/1021" target="_blank" rel="noopener">&#x4E66;&#x7B7E;</a>&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6559;&#x7A0B;&#x60A8;&#x5C06;&#xFF1A;</p>
+<ul>
+<li>&#x5B66;&#x5230;&#x4EC0;&#x4E48;&#x662F;Chrome&#x6D4F;&#x89C8;&#x5668;&#x4E66;&#x7B7E;</li>
+<li>&#x5982;&#x4F55;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;Chrome&#x6D4F;&#x89C8;&#x5668;&#x4E66;&#x7B7E;</li>
+<li>&#x5B66;&#x5230;&#x4E00;&#x4E2A;&#x53D6;<a href="https://justyy.com/archives/5873" target="_blank" rel="noopener">STEEM&#x80FD;&#x91CF;</a>&#x548C;<a href="https://justyy.com/archives/5239" target="_blank" rel="noopener">&#x58F0;&#x8A89;</a>&#x7684;&#x4E66;&#x7B7E;&#x793A;&#x4F8B;</li>
+</ul>
+<h2 id="&#x9700;&#x6C42;"><a href="#&#x9700;&#x6C42;" class="headerlink" title="&#x9700;&#x6C42;"></a>&#x9700;&#x6C42;</h2><p>&#x770B;&#x61C2;<a href="https://justyy.com/archives/5876" target="_blank" rel="noopener">&#x672C;&#x6559;&#x7A0B;</a>&#xFF0C;&#x60A8;&#x9700;&#x8981;&#xFF1A;</p>
+<ul>
+<li>&#x5B89;&#x88C5;&#x5E76;&#x4F7F;&#x7528;Chrome&#x6D4F;&#x89C8;&#x5668;</li>
+<li>&#x6700;&#x57FA;&#x672C;&#x7684;<a href="https://justyy.com/archives/5465" target="_blank" rel="noopener">Javascript</a>&#x77E5;&#x8BC6;</li>
+</ul>
+<h2 id="&#x96BE;&#x5EA6;"><a href="#&#x96BE;&#x5EA6;" class="headerlink" title="&#x96BE;&#x5EA6;"></a>&#x96BE;&#x5EA6;</h2><p>&#x4E2D;&#x7B49;&#x504F;&#x6613;</p>
+<h2 id="&#x6559;&#x7A0B;"><a href="#&#x6559;&#x7A0B;" class="headerlink" title="&#x6559;&#x7A0B;"></a>&#x6559;&#x7A0B;</h2><p>&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x6253;&#x5F00; &#x4E66;&#x7B7E;&#x663E;&#x793A;&#xFF1A;</p>
+<ol>
+<li>&#x5728;&#x5730;&#x5740;&#x680F;&#x91CC;&#x8F93;&#x5165; <code>chrome://settings/</code></li>
+<li>&#x52FE;&#x4E0A; <code>Show bookmarks bar</code></li>
+</ol>
+<p>&#x4E66;&#x7B7E;&#x53EF;&#x4EE5;&#x662F;&#x7F51;&#x5740;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;Javascript &#x5C0F;&#x7A0B;&#x5E8F;&#x3002;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x4E66;&#x7B7E;&#xFF0C;&#x60A8;&#x9700;&#x8981;&#xFF1A;</p>
+<ol>
+<li>&#x5728;&#x5730;&#x5740;&#x680F;&#x8F93;&#x5165; <code>chrome://bookmarks/</code> </li>
+<li>&#x53F3;&#x952E;&#x70B9;&#x51FB;&#x53F3;&#x4E0A;&#x89D2;&#x7684; <code>Add New Bookmark</code></li>
+</ol>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516143972/oomkf1lljj5nlpjleio8.png" alt="image.png"></p>
+<p>&#x7136;&#x540E;&#x5728;&#x5F39;&#x51FA;&#x7684;&#x6DFB;&#x52A0;&#x4E66;&#x7B7E;&#x7A97;&#x53E3;&#xFF0C;&#x8F93;&#x5165;&#x4E66;&#x7B7E;&#x540D;&#x79F0;&#x548C;&#x5185;&#x5BB9;&#xFF0C;&#x5982;&#x679C;&#x662F;Javascript&#x5C0F;&#x7A0B;&#x5E8F;&#x5219;&#x4EE3;&#x7801;&#x9700;&#x8981;&#x4EE5; <code>javascript:</code> &#x5F00;&#x59CB;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B;&#x4F1A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x540D;&#x53EB; <code>test</code> &#x7684;&#x4E66;&#x7B7E;&#xFF0C;&#x5E76;&#x4E14;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x70B9;&#x51FB;&#x5B83;&#xFF0C;&#x5B83;&#x4F1A;&#x5BFC;&#x5230;&#x6211;&#x7684;SteemIt &#x9875;&#x9762;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144093/y3avrpms8kk6wfn8nxcr.png" alt="image.png"></p>
+<h3 id="&#x83B7;&#x53D6;&#x80FD;&#x91CF;&#x548C;&#x7B49;&#x7EA7;&#x7684;&#x4E66;&#x7B7E;&#x7A0B;&#x5E8F;"><a href="#&#x83B7;&#x53D6;&#x80FD;&#x91CF;&#x548C;&#x7B49;&#x7EA7;&#x7684;&#x4E66;&#x7B7E;&#x7A0B;&#x5E8F;" class="headerlink" title="&#x83B7;&#x53D6;&#x80FD;&#x91CF;&#x548C;&#x7B49;&#x7EA7;&#x7684;&#x4E66;&#x7B7E;&#x7A0B;&#x5E8F;"></a>&#x83B7;&#x53D6;&#x80FD;&#x91CF;&#x548C;&#x7B49;&#x7EA7;&#x7684;&#x4E66;&#x7B7E;&#x7A0B;&#x5E8F;</h3><p>&#x4E3A;&#x4E86;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x5199;&#x4E86;&#x4E24;&#x4E2A;API</p>
+<ol>
+<li><code>https://helloacm.com/api/steemit/account/reputation/?id=justyy</code>  &#x83B7;&#x53D6;&#x7B49;&#x7EA7;&#x3002;</li>
+<li><code>https://helloacm.com/api/steemit/account/vp/?id=justyy</code>  &#x83B7;&#x53D6;&#x6295;&#x7968;&#x7684;&#x80FD;&#x91CF;&#x3002;</li>
+</ol>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x8BBE;&#x8BA1;&#x4E86;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x7B2C;&#x4E00;&#x6B21;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x4E66;&#x7B7E;&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x8F93;&#x5165;ID&#xFF0C;&#x7136;&#x540E;&#x4E66;&#x7B7E;&#x5C31;&#x4F1A;&#x8BB0;&#x4F4F;&#x4E86;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Chrome &#x7684; <code>localStorage</code> &#x5BF9;&#x8C61;&#x3002;&#x5F53;&#x6709;&#x4E86;&#x8FD9;&#x4E2A;ID &#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;API&#x4F9D;&#x6B21;&#x83B7;&#x53D6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x4EE3;&#x7801;&#x4E3A;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var steem_id = localStorage.getItem(&quot;steem_id&quot;);</span><br><span class="line">if (steem_id == null) {</span><br><span class="line">	steem_id = prompt(&quot;Please enter your SteemId&quot;);	</span><br><span class="line">	localStorage.setItem(&quot;steem_id&quot;, steem_id);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>fetch</code> &#x548C; <code>then</code> (Javascript Promises) &#x628A;&#x4E8B;&#x4EF6;&#x4E32;&#x8054;&#x8D77;&#x6765;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">if (steem_id != null) {</span><br><span class="line">	fetch(&apos;https://helloacm.com/api/steemit/account/reputation/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">	.then(validateResponse)</span><br><span class="line">	.then(readResponseAsJSON)</span><br><span class="line">	.then(function(rep) {</span><br><span class="line">		fetch(&apos;https://helloacm.com/api/steemit/account/vp/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">		.then(validateResponse)</span><br><span class="line">		.then(readResponseAsJSON)</span><br><span class="line">		.then(function(vp) {</span><br><span class="line">			var msg = &quot;ID: &quot; + steem_id + &quot;\n&quot; + </span><br><span class="line">					  &quot;Reputation: &quot; + rep + &quot;\n&quot; +</span><br><span class="line">					  &quot;Voting Power: &quot; + vp;</span><br><span class="line">			alert(msg);</span><br><span class="line">		})</span><br><span class="line">	})</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><code>validateResponse</code> &#x51FD;&#x6570;&#x7528;&#x4E8E;&#x68C0;&#x67E5;API&#x662F;&#x5426;&#x8FD4;&#x56DE;&#x6B63;&#x786E;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function validateResponse(response) {</span><br><span class="line">  if (!response.ok) {</span><br><span class="line">    throw Error(response.statusText);</span><br><span class="line">  }</span><br><span class="line">  return response;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p> <code>readResponseAsJSON</code>&#x628A;&#x6570;&#x636E;&#x8F6C;&#x6362;&#x6210;JSON&#x683C;&#x5F0F;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function readResponseAsJSON(response) {</span><br><span class="line">  return response.json();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7136;&#x540E;&#xFF0C;&#x60A8;&#x53EA;&#x9700;&#x8981;&#x628A;&#x6574;&#x6BB5;JAVASCRIPT&#x4EE3;&#x7801;&#xFF08;&#x8BB0;&#x5F97;&#x5728;&#x6700;&#x5F00;&#x59CB;&#x6DFB;&#x52A0;<code>javascript:</code>&#xFF09;&#x62F7;&#x8D1D;&#x5230;&#x4E66;&#x7B7E;&#x5185;&#x5BB9;&#x5373;&#x53EF;&#x3002;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144961/ud6nbwjpctu0zcho5xty.png" alt="image.png"></p>
+<p>&#x6765;&#xFF0C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF08;&#x7B2C;&#x4E00;&#x6B21;&#x4F1A;&#x8981;&#x6C42;&#x8F93;&#x5165;ID&#xFF09;&#xFF1A;<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144753/lahfbuuyzvdfxxcvctqm.png" alt="image.png"></p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x70B9;&#x51FB;&#x4E00;&#x6B21;&#x5C31;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x80FD;&#x91CF;&#x548C;&#x7B49;&#x7EA7;&#x3002;<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516144767/hwycpqzwqtdklwmwvfee.png" alt="image.png"></p>
+<p>&#x6574;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">javascript:</span><br><span class="line">var steem_id = localStorage.getItem(&quot;steem_id&quot;);</span><br><span class="line">if (steem_id == null) {</span><br><span class="line">	steem_id = prompt(&quot;Please enter your SteemId&quot;);	</span><br><span class="line">	localStorage.setItem(&quot;steem_id&quot;, steem_id);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function readResponseAsJSON(response) {</span><br><span class="line">  return response.json();</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function validateResponse(response) {</span><br><span class="line">  if (!response.ok) {</span><br><span class="line">    throw Error(response.statusText);</span><br><span class="line">  }</span><br><span class="line">  return response;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">if (steem_id != null) {</span><br><span class="line">	fetch(&apos;https://helloacm.com/api/steemit/account/reputation/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">	.then(validateResponse)</span><br><span class="line">	.then(readResponseAsJSON)</span><br><span class="line">	.then(function(rep) {</span><br><span class="line">		fetch(&apos;https://helloacm.com/api/steemit/account/vp/?id=&apos; + steem_id, {mode: &apos;cors&apos;})</span><br><span class="line">		.then(validateResponse)</span><br><span class="line">		.then(readResponseAsJSON)</span><br><span class="line">		.then(function(vp) {</span><br><span class="line">			var msg = &quot;ID: &quot; + steem_id + &quot;\n&quot; + </span><br><span class="line">					  &quot;Reputation: &quot; + rep + &quot;\n&quot; +</span><br><span class="line">					  &quot;Voting Power: &quot; + vp;</span><br><span class="line">			alert(msg);</span><br><span class="line">		})</span><br><span class="line">	})</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/how-to-write-chrome-bookmark-scripts-step-by-step-tutorial-with-a-steemit-example-chrome" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/how-to-write-chrome-bookmark-scripts-step-by-step-tutorial-with-a-steemit-example-chrome" target="_blank" rel="noopener">How to Write Chrome Bookmark Scripts? - Step by Step Tutorial with a SteemIt Example &#x600E;&#x4E48;&#x6837;&#x5199; Chrome &#x4E66;&#x7B7E;&#x7A0B;&#x5E8F;&#xFF1F;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/4gcuez-steem/" class="image is-7by1">
             <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1516114885/b0jsx30lyq96mhtlaxwc.png" alt="给STEEM中文微信群加了个机器人">
         </a>
@@ -1947,98 +2091,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-01-15T01:34:12.000Z">2018-01-15</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 421 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/adding-moderators-class-to-php-client-of-utopian-api/">Adding Moderators Class to PHP Client of Utopian API</a>
-            
-        </h1>
-        <div class="content">
-            <p>Previously on <a href="https://utopian.io/utopian-io/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">PHP Client of Utopian API</a>, you see how beautiful the PHP is when it comes to wrap utopian APIs.  And I am feeling excited to introduce a sub-class <a href="https://helloacm.com/adding-moderators-class-to-php-client-of-utopian-api/" target="_blank" rel="noopener">Moderators</a> that extends the <code>Utopian</code> base API class.</p>
-<h3 id="PHP-Client-of-Utopian-API"><a href="#PHP-Client-of-Utopian-API" class="headerlink" title="PHP Client of Utopian API"></a>PHP Client of Utopian API</h3><ul>
-<li><p>What is the project about?<br>The project is to wrap the public utopian APIs in PHP Class. I have seen @emrebeyler &#x2018;s <a href="https://utopian.io/utopian-io/@emrebeyler/python-client-of-utopian-api" target="_blank" rel="noopener">contribution on Python client</a>, so I think it is a good idea to provide a PHP implementation.</p>
-</li>
-<li><p>Technology Stack<br>PHP 7.0</p>
-</li>
-<li><p>Roadmap<br>The next release will be adding more unit tests and more about moderators in terms of rewards, payout etc.</p>
-</li>
-<li><p>How to contribute?<br>Github: <a href="https://github.com/DoctorLai/utopian-api-php-client" target="_blank" rel="noopener">https://github.com/DoctorLai/utopian-api-php-client</a></p>
-<ol>
-<li>Fork it!</li>
-<li>Create your feature branch: git checkout -b my-new-feature</li>
-<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
-<li>Push to the branch: git push origin my-new-feature</li>
-<li>Submit a pull request :D</li>
-</ol>
-</li>
-</ul>
-<h1 id="This-Commits"><a href="#This-Commits" class="headerlink" title="This Commits"></a>This Commits</h1><ul>
-<li><a href="https://github.com/DoctorLai/utopian-api-php-client/commits/master/class.moderators.php" target="_blank" rel="noopener">class.moderators.php</a></li>
-<li><a href="https://github.com/DoctorLai/utopian-api-php-client/blob/master/tests/moderator_tests.php" target="_blank" rel="noopener">moderator_tests.php</a></li>
-<li><a href="https://github.com/DoctorLai/utopian-api-php-client/commits/master/README.md" target="_blank" rel="noopener">README.md</a></li>
-</ul>
-<h2 id="Reload-the-Data"><a href="#Reload-the-Data" class="headerlink" title="Reload the Data"></a>Reload the Data</h2><p>This will re-fetch the data from Utopian API.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$moderators-&gt;Reload();</span><br></pre></td></tr></tbody></table></figure><p></p>
-<h2 id="Raw-Data"><a href="#Raw-Data" class="headerlink" title="Raw Data"></a>Raw Data</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$moderators-&gt;GetRawData();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Moderators"><a href="#Get-a-list-of-Moderators" class="headerlink" title="Get a list of Moderators"></a>Get a list of Moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print_r($moderators-&gt;GetList());</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Total-Number-of-Moderators"><a href="#Get-Total-Number-of-Moderators" class="headerlink" title="Get Total Number of Moderators"></a>Get Total Number of Moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;there are &quot; . $moderators-&gt;GetTotal() . &quot; moderators.&quot;;</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Find-a-Moderator"><a href="#Find-a-Moderator" class="headerlink" title="Find a Moderator"></a>Find a Moderator</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$justyy = $moderators-&gt;GetModerator(&apos;justyy&apos;);</span><br><span class="line">print_r($justyy);</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Total-Paid-Rewards"><a href="#Get-Total-Paid-Rewards" class="headerlink" title="Get Total Paid Rewards"></a>Get Total Paid Rewards</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total Paid Rewards: &quot; . $moderators-&gt;GetTotalPaidRewards();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Total-of-should-receive-rewards"><a href="#Get-Total-of-should-receive-rewards" class="headerlink" title="Get Total of should_receive_rewards"></a>Get Total of should_receive_rewards</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Should Receive Total: &quot; . $moderators-&gt;GetShouldReceiveRewards();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Total-Moderated-Count"><a href="#Get-Total-Moderated-Count" class="headerlink" title="Get Total Moderated Count"></a>Get Total Moderated Count</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total Moderated Count: &quot; . $moderators-&gt;GetTotalModerated();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Total-Sum-of-total-paid-rewards-steem"><a href="#Get-Total-Sum-of-total-paid-rewards-steem" class="headerlink" title="Get Total Sum of total_paid_rewards_steem"></a>Get Total Sum of total_paid_rewards_steem</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Steem: &quot; . $moderators-&gt;GetTotalPaidRewardsSteem();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Super-Moderators"><a href="#Get-a-list-of-Super-Moderators" class="headerlink" title="Get a list of Super Moderators"></a>Get a list of Super Moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($moderators-&gt;GetListOfSuperModerators() as $acc) {</span><br><span class="line">   echo &quot;Boss: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Apprentices"><a href="#Get-a-list-of-Apprentices" class="headerlink" title="Get a list of Apprentices"></a>Get a list of Apprentices</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($moderators-&gt;GetListOfApprentice() as $acc) {</span><br><span class="line">   echo &quot;Student: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Banned-Moderators"><a href="#Get-a-list-of-Banned-Moderators" class="headerlink" title="Get a list of Banned Moderators"></a>Get a list of Banned Moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($moderators-&gt;GetListOfBannedModerators() as $acc) {</span><br><span class="line">   echo &quot;Banned: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Active-Moderators"><a href="#Get-a-list-of-Active-Moderators" class="headerlink" title="Get a list of Active Moderators"></a>Get a list of Active Moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($moderators-&gt;GetListOfActiveModerators() as $acc) {</span><br><span class="line">   echo &quot;Active: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-moderators-class-to-php-client-of-utopian-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-moderators-class-to-php-client-of-utopian-api" target="_blank" rel="noopener">Adding Moderators Class to PHP Client of Utopian API</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/159/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/159/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/161/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/161/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -2190,7 +2251,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

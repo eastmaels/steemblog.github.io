@@ -230,6 +230,98 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steemsql-avoid-sql-injection-steemsql-sql/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt="SteemSQL: Avoid SQL Injection  STEEMSQL 教程 - 避免 SQL 注入">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-12-05T22:17:00.000Z">2017-12-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1095 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemsql-avoid-sql-injection-steemsql-sql/">SteemSQL: Avoid SQL Injection  STEEMSQL 教程 - 避免 SQL 注入</a>
+            
+        </h1>
+        <div class="content">
+            <p>My <a href="https://helloacm.com/steemsql-tutorial-get-most-single-payout-authors/" target="_blank" rel="noopener">SteemSQL</a> suddenly stopped working a few hours ago and I thought at first it was the connectivity issues until I found out the same queries run just fine on my other <a href="https://helloacm.com/what-is-ddos-and-how-do-you-cope-with-ddos-attacks/" target="_blank" rel="noopener">VPS machines</a>.</p>
+<p>The particular error is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conn = pymssql.connect(host, username, password, database)</span><br><span class="line">File &quot;pymssql.pyx&quot;, line 641, in pymssql.connect (pymssql.c:10824)</span><br><span class="line">pymssql.OperationalError: (20009, b&apos;DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (sql.steemsql.com:1433)\nNet-Lib error during Connection timed out (110)\n&apos;)</span><br></pre></td></tr></tbody></table></figure>
+<p>I contacted the author of <a href="https://helloacm.com/steemsql-tutorial-how-to-get-the-most-payout-authors-in-history/" target="_blank" rel="noopener">STEEMSQL</a> @arcange and he confirmed that:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Several IP addresses have been blocked because queries issued are considered as SQL Injection attempts by the IPS.</span><br><span class="line">You IP address is being blocked by my IPS (Intrusion Prevention System) because the SQL queries you issue are considered as SQL Injection exploit:</span><br><span class="line">`EXPLOIT MS-SQL SQL Injection closing string plus line comment, proto:TCP, ip/port:XXX.XXX.XXX.XXX</span><br></pre></td></tr></tbody></table></figure>
+<p>I have a few handy tools that invoke the <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> queries:  <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit/</a><br>and it looks like some hackers were trying to inject the query, for example, he/she may put </p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;; DROP TABLE Comments; GO;--</span><br></pre></td></tr></tbody></table></figure>
+<p>in the field of steem ID. So the query looks malicious to the firewall, which will therefore block the IP permanently unless @arcange unblocks it.</p>
+<p>There are two fixes. The recommended on is to use the SQL parameter via something like <code>SELECT field FROM table WHERE author = @account</code></p>
+<p>This will avoid the <a href="https://helloacm.com/steemsql-how-to-avoid-sql-injection/" target="_blank" rel="noopener">SQL injection</a> from</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT author FROM Comments WHERE author =&apos;{0}&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>to </p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT author FROM Comments WHERE author =&apos;&apos;; DROP TABLE Comments; GO;--&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>if the user maliciously enters <code>&apos;; DROP TABLE Comments; GO;--</code></p>
+<p>And, there is a second method which will discard the query if the field is invalid, for example, you can use Python function to check a valid steem ID that contains only lowercase, digits, dot and dash.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def valid_id(s):</span><br><span class="line">  if len(s) == 0: return False</span><br><span class="line">  for i in s:</span><br><span class="line">    if not (i.islower() or i.isdigit() or i == &apos;-&apos; or i == &apos;.&apos;):</span><br><span class="line">      return False      </span><br><span class="line">  return True</span><br></pre></td></tr></tbody></table></figure>
+<p>Similarly, in <a href="https://helloacm.com/how-to-compute-the-modes-of-an-array-in-php/" target="_blank" rel="noopener">PHP</a>, this can be checked as well (the Python version can also use regular expression but it needs <code>import re</code>):</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function isValidId($str) {</span><br><span class="line">    $str = trim($str);</span><br><span class="line">    if (preg_match(&apos;/^[a-z0-9\-\.]+$/&apos;, $str)) {</span><br><span class="line">      return 1;</span><br><span class="line">    }</span><br><span class="line">    return 0;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>So, next time when somebody tries to inject SQL, the API servers will throw out <code>503 Service Temporarily Unavailable</code> instead of trying to contact the <a href="https://helloacm.com/steemsql-how-to-avoid-sql-injection/" target="_blank" rel="noopener">SteemSQL server</a>.</p>
+<hr>
+<p><img src="https://cdn.pixabay.com/photo/2017/06/12/04/21/database-2394312_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x524D;&#xFF0C;&#x6211;&#x7684;&#x670D;&#x52A1;&#x5668;&#x5728;&#x8DD1;<a href="https://justyy.com/archives/5619" target="_blank" rel="noopener">STEEMSQL</a>&#x7684;&#x65F6;&#x5019;&#x518D;&#x4E5F;&#x8054;&#x4E0D;&#x4E0A;&#x4E86;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conn = pymssql.connect(host, username, password, database)</span><br><span class="line">File &quot;pymssql.pyx&quot;, line 641, in pymssql.connect (pymssql.c:10824)</span><br><span class="line">pymssql.OperationalError: (20009, b&apos;DB-Lib error message 20009, severity 9:\nUnable to connect: Adaptive Server is unavailable or does not exist (sql.steemsql.com:1433)\nNet-Lib error during Connection timed out (110)\n&apos;)</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x6211;&#x4EE5;&#x4E3A;&#x662F;&#x6682;&#x65F6;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x76F4;&#x5230;&#x6211;&#x53D1;&#x73B0;&#x6211;&#x5176;&#x5B83;&#x4E09;&#x53F0;<a href="https://justyy.com/archives/4108" target="_blank" rel="noopener">VPS&#x670D;&#x52A1;&#x5668;</a>&#x751A;&#x81F3;&#x662F;LINQPAD&#x90FD;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x624D;&#x610F;&#x8BC6;&#x5230;&#x53EF;&#x80FD;&#x6211;&#x7684;<a href="https://justyy.com/archives/4155" target="_blank" rel="noopener">IP&#x5730;&#x5740;</a>&#x88AB;&#x7981;&#x6389;&#x4E86;&#x3002;&#x4E8E;&#x662F;&#x6211;&#x8054;&#x7CFB;&#x4E86;STEEMSQL&#x7684;&#x4F5C;&#x8005; @arcange  &#x4ED6;&#x8BF4;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Several IP addresses have been blocked because queries issued are considered as SQL Injection attempts by the IPS.</span><br><span class="line">You IP address is being blocked by my IPS (Intrusion Prevention System) because the SQL queries you issue are considered as SQL Injection exploit:</span><br><span class="line">`EXPLOIT MS-SQL SQL Injection closing string plus line comment, proto:TCP, ip/port:XXX.XXX.XXX.XXX</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x662F;&#x7684;&#xFF0C;&#x6211;&#x6709;&#x5F88;&#x591A;&#x57FA;&#x4E8E; STEEMSQL &#x7684;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">&#x5728;&#x7EBF;&#x5DE5;&#x5177;</a>  <a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit-tools/</a><br>&#x4E5F;&#x8BB8;&#x662F;&#x54EA;&#x4E2A;&#x574F;&#x86CB;&#x7279;&#x610F;&#x8F93;&#x5165;&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&apos;; DROP TABLE Comments; GO;--</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5E26;&#x6709;&#x8FD9;&#x6837;&#x7684;SQL&#x8BED;&#x53E5;&#x4F1A;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6076;&#x610F;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4E8E;&#x662F;&#x670D;&#x52A1;&#x5668;&#x628A;IP&#x7ED9;&#x7981;&#x7528;&#x4E86;&#x3002;</p>
+<p>&#x6709;&#x4E24;&#x79CD;&#x529E;&#x6CD5;&#xFF0C;&#x7B2C;&#x4E00;&#x79CD;&#x662F;&#x8FC7;&#x6EE4;SQL&#x53C2;&#x6570;&#xFF0C;&#x5982;  <code>SELECT field FROM table WHERE author = @account</code></p>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT author FROM Comments WHERE author =&apos;{0}&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x88AB;&#x66FF;&#x6362;&#x6210;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT author FROM Comments WHERE author =&apos;&apos;; DROP TABLE Comments; GO;--&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5982;&#x679C;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x662F; <code>&apos;; DROP TABLE Comments; GO;--</code></p>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;STEEM ID&#x662F;&#x7531;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x51CF;&#x53F7;&#x8FD8;&#x6709;&#x70B9;&#x53F7;&#x6784;&#x6210;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;PYTHON&#x91CC;&#x8FD9;&#x4E48;&#x68C0;&#x67E5;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def valid_id(s):</span><br><span class="line">  if len(s) == 0: return False</span><br><span class="line">  for i in s:</span><br><span class="line">    if not (i.islower() or i.isdigit() or i == &apos;-&apos; or i == &apos;.&apos;):</span><br><span class="line">      return False      </span><br><span class="line">  return True</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x6216;&#x8005;&#x5728; <a href="https://justyy.com/archives/5358" target="_blank" rel="noopener">PHP &#x6700;&#x597D;&#x7684;&#x8BED;&#x8A00;</a>&#x91CC;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FD9;&#x6837;&#x68C0;&#x67E5;&#xFF08;&#x4E0A;&#x9762;&#x7684;PYTHON&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x6B63;&#x5219; <code>import re</code> &#x4F46;&#x662F;&#x6211;&#x6BD4;&#x8F83;&#x4E0D;&#x723D;&#x7684;&#x662F;&#x8FD9;&#x4E2A; <code>import</code> &#x54EA;&#x6709;PHP&#x5185;&#x7F6E;&#x7684;&#x597D;&#x7528;&#xFF1F;&#xFF09;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function isValidId($str) {</span><br><span class="line">    $str = trim($str);</span><br><span class="line">    if (preg_match(&apos;/^[a-z0-9\-\.]+$/&apos;, $str)) {</span><br><span class="line">      return 1;</span><br><span class="line">    }</span><br><span class="line">    return 0;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x52A0;&#x4E86;&#x68C0;&#x67E5;&#x540E;&#xFF0C;&#x4E0B;&#x6B21;&#x518D;&#x6709;&#x4EBA;&#x6076;&#x610F;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x6211;&#x7684;API&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE; <code>503 Service Temporarily Unavailable</code>  &#x800C;&#x4E0D;&#x4F1A;&#x53BB;&#x8BBF;&#x95EE; STEEMSQL&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x65E0;&#x6548;&#x7684;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x3002;</p>
+<p>&#x540C;&#x6B65;&#x5230;<a href="https://justyy.com/archives/5650" target="_blank" rel="noopener">&#x535A;&#x6587;</a> <a href="https://justyy.com/archives/5650&#x3002;" target="_blank" rel="noopener">https://justyy.com/archives/5650&#x3002;</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemsql-avoid-sql-injection-steemsql-sql" target="_blank" rel="noopener">SteemSQL: Avoid SQL Injection  STEEMSQL &#x6559;&#x7A0B; - &#x907F;&#x514D; SQL &#x6CE8;&#x5165;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/cn-yy-2017-12-05/" class="image is-7by1">
             <img class="thumbnail" src="https://helloacm.com/images/yybank.jpg" alt="CN 中文区每日【点赞收益年化率】【YY银行利息统计】 (2017-12-05)">
         </a>
@@ -6585,77 +6677,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/vbscript-obfuscator-in-vbscript/" class="image is-7by1">
-            <img class="thumbnail" src="https://github.com/DoctorLai/VBScript_Obfuscator/raw/master/vbscript-obfuscated-in-vbscript.png?raw=true" alt="VBScript Obfuscator in VBScript">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-12-04T15:53:12.000Z">2017-12-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 283 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/vbscript-obfuscator-in-vbscript/">VBScript Obfuscator in VBScript</a>
-            
-        </h1>
-        <div class="content">
-            <p>This is the VBScript Obfuscator written in VBScript. You can <a href="https://isvbscriptdead.com/vbs-obfuscator/" target="_blank" rel="noopener">obfuscate your VBS</a> source file easily with this command line utility.</p>
-<p>Github: <a href="https://github.com/DoctorLai/VBScript_Obfuscator" target="_blank" rel="noopener">https://github.com/DoctorLai/VBScript_Obfuscator</a><br><img src="https://github.com/DoctorLai/VBScript_Obfuscator/raw/master/vbscript-obfuscated-in-vbscript.png?raw=true" alt=""></p>
-<h1 id="How-does-it-work"><a href="#How-does-it-work" class="headerlink" title="How does it work?"></a>How does it work?</h1><p>The obfuscator will parse each character of your VBS file, and obfuscate it via a random character. The source code is thus obfuscated with concatenation of these characters. </p>
-<p>The obfuscated source can be run with the VBScript function <code>Execute</code> but the source code looks pretty obfuscated.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Function vbs_obfuscator(n)</span><br><span class="line">	Dim r, k</span><br><span class="line">	r = Round(Rnd() * 10000) + 1</span><br><span class="line">	k = Round(Rnd() * 2) + 1</span><br><span class="line">	Select Case k</span><br><span class="line">		Case 0</span><br><span class="line">			vbs_obfuscator = &quot;CLng(&amp;H&quot; &amp; Hex(r + n) &amp; &quot;)-&quot; &amp; r</span><br><span class="line">		Case 1</span><br><span class="line">			vbs_obfuscator = (n - r) &amp; &quot;+CLng(&amp;H&quot; &amp; Hex(r) &amp; &quot;)&quot;</span><br><span class="line">		Case Else</span><br><span class="line">			vbs_obfuscator = (n * r) &amp; &quot;/CLng(&amp;H&quot; &amp; Hex(r) &amp; &quot;)&quot;</span><br><span class="line">	End Select			</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Function Obfuscator(vbs)</span><br><span class="line">	Dim length, s, i</span><br><span class="line">	length = Len(vbs)</span><br><span class="line">	s = &quot;&quot;</span><br><span class="line">	For i = 1 To length</span><br><span class="line">		s = s &amp; &quot;chr(&quot; &amp; vbs_obfuscator(Asc(Mid(vbs, i))) + &quot;)&amp;&quot;</span><br><span class="line">	Next</span><br><span class="line">	s = s &amp; &quot;vbCrlf&quot;</span><br><span class="line">	Obfuscator = &quot;Execute &quot; &amp; s</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="Passing-multiple-filenames"><a href="#Passing-multiple-filenames" class="headerlink" title="Passing multiple filenames"></a>Passing multiple filenames</h1><p>You can pass multiple VBScript file names at command line, and the obfuscator will obfuscate each source and print the obfuscated string one by one to the console.</p>
-<p>You can also redirect the console to save to new vbs via <code>cscript.exe vbs_obfuscator.vbs sample.vbs &gt; sample_obfuscated.vbs</code></p>
-<h1 id="Proof-of-work"><a href="#Proof-of-work" class="headerlink" title="Proof of work"></a>Proof of work</h1><p><code>doctorlai</code> is my github ID and you can view my profile <a href="https://github.com/DoctorLai" target="_blank" rel="noopener">https://github.com/DoctorLai</a>  which has my steemit URL page.</p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/vbscript-obfuscator-in-vbscript" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/vbscript-obfuscator-in-vbscript" target="_blank" rel="noopener">VBScript Obfuscator in VBScript</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/189/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/189/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/191/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/191/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -6807,7 +6837,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

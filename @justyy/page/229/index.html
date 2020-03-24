@@ -230,6 +230,124 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steem-sql-steemsql-tutorial-how-to-get-random-posts-on-steemit/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_960_720.png" alt="STEEM SQL 系列之 随机返回是怎么实现的？SteemSQL Tutorial: How to Get Random Posts on SteemIt?">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-01T10:49:33.000Z">2017-10-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1099 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steem-sql-steemsql-tutorial-how-to-get-random-posts-on-steemit/">STEEM SQL 系列之 随机返回是怎么实现的？SteemSQL Tutorial: How to Get Random Posts on SteemIt?</a>
+            
+        </h1>
+        <div class="content">
+            <p>Thank you @arcange for creating STEEMSQL!</p>
+<p>STEEM SQL Tutorial Series&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Authors Order By Potential Payout in Last 7 days?</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-sql-steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Historic Posts of Today on SteemIt?</a></li>
+<li><a href="https://helloacm.com/steemsql-tutorial-what-is-your-monthly-income-on-steemit/" target="_blank" rel="noopener">How to Calculate Monthly Income on STEEMIT?</a></li>
+</ul>
+<p>We have seen many usages of returning some random records from MSSQL using STEEMSQL for example, pick some random posts published today in history (last year, the year before last &#x2026;), we can write a <a href="https://helloacm.com/steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit/" target="_blank" rel="noopener">SQL</a> like this:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">SELECT TOP 10 </span><br><span class="line">    author, body</span><br><span class="line">FROM</span><br><span class="line">    Comments (NOLOCK)</span><br><span class="line">WHERE</span><br><span class="line">    FORMAT(created,&apos;MM-dd&apos;,&apos;en-us&apos;) = FORMAT(GETUTCDATE(),&apos;MM-dd&apos;,&apos;en-us&apos;)</span><br><span class="line">    AND YEAR(created) &lt;&gt; YEAR(GETUTCDATE())</span><br><span class="line">    AND depth = 0</span><br><span class="line">ORDER BY</span><br><span class="line">    NEWID()</span><br></pre></td></tr></tbody></table></figure>
+<p>Notes:</p>
+<ul>
+<li>only selecting the fields you want, which is faster than returning all fields <code>select *</code></li>
+<li>Put a <code>(NOLOCK)</code> to avoid database being injected lock</li>
+<li>USE <code>GetUTCDate()</code> function as all dates &amp; times in STEEMSQL are UTC.</li>
+<li>Use <code>depth = 0</code> to limit to posts only while <code>depth &gt; 0</code> refers to comments</li>
+<li><code>ORDER BY NEWID()</code> chooses random records, but this is slow as it needs to scan entire table and sort by <code>NEWID()</code></li>
+</ul>
+<p>We can also add:</p>
+<ul>
+<li><code>category = &quot;maintag&quot;</code> to limit to specific categories</li>
+</ul>
+<p>Better way to return random records:<br>We can add the following condition and remove the <code>ORDER BY NEWID()</code> which is inefficient.<br><code>AND     (ABS(CAST(   (BINARY_CHECKSUM(ID, NEWID())) as int)) % 100) &lt; 50</code></p>
+<p>The <code>BINARY_CHECKSUM</code> function is fast and there is no need to scan entire table and do the sorting afterwards. </p>
+<p>Of course, there are other ways to return random records, e.g. generate a set of random IDs in the scripting (like Python, <a href="https://helloacm.com/how-to-compute-the-modes-of-an-array-in-php/" target="_blank" rel="noopener">PHP</a>) and then pass these IDs in the SQL.</p>
+<p>Do you have other better ways? please share yours by commenting below. Innovative (better) solutions will be rewarded with 1 SBD.</p>
+<p><img src="https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_960_720.png" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>&#x611F;&#x8C22; @arcange &#x521B;&#x9020;&#x4E86; STEEMSQL!</p>
+<p>STEEM SQL &#x7CFB;&#x5217;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6700;&#x8FD1;7&#x5929; CN &#x533A;&#x7528;&#x6237;&#x53D1;&#x8D34;&#x91CF;&#xFF0C;&#x70B9;&#x8D5E;&#x6570;&#x548C;&#x4F30;&#x8BA1;&#x6536;&#x76CA;&#x503C;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-sql-steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5386;&#x53F2;&#x4E0A;&#x7684;&#x4ECA;&#x5929;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;</a></li>
+<li><a href="https://justyy.com/archives/5370" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x6BCF;&#x4E2A;&#x6708;&#x80FD;&#x6323;&#x591A;&#x5C11;?</a></li>
+</ul>
+<p>&#x6BD4;&#x5982;&#x4F60;&#x770B;&#x5230;&#x8FD9;&#x6837;&#x7684; &#x5E16;&#x5B50; &#x201C;&#x968F;&#x673A;&#x6311;&#x9009;&#x51E0;&#x4E2A;&#x5E16;&#x5B50;&#x201D; &#x6216;&#x8005; &#x201C;&#x968F;&#x673A;&#x6311;&#x9009;&#x51E0;&#x4E2A;&#x56DE;&#x590D;&#x201D;&#xFF0C;&#x4F60;&#x662F;&#x4E0D;&#x662F;&#x5728;&#x60F3;&#xFF0C;&#x8FD9;&#x600E;&#x4E48;&#x5F04;&#x7684;&#xFF1F;&#x5176;&#x5B9E;&#x4E0D;&#x96BE;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x7B2C;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">SELECT TOP 10 </span><br><span class="line">    author, body</span><br><span class="line">FROM</span><br><span class="line">    Comments (NOLOCK)</span><br><span class="line">WHERE</span><br><span class="line">    FORMAT(created,&apos;MM-dd&apos;,&apos;en-us&apos;) = FORMAT(GETUTCDATE(),&apos;MM-dd&apos;,&apos;en-us&apos;)</span><br><span class="line">    AND YEAR(created) &lt;&gt; YEAR(GETUTCDATE())</span><br><span class="line">    AND depth = 0</span><br><span class="line">ORDER BY</span><br><span class="line">    NEWID()</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8BF4;&#x660E;:</p>
+<ul>
+<li>&#x5C3D;&#x53EF;&#x80FD;&#x53EA;&#x9009;&#x62E9;&#x4F60;&#x9700;&#x8981;&#x7684;&#x5B57;&#x6BB5;&#x800C;&#x4E0D;&#x662F;&#x8FD4;&#x56DE;&#x6240;&#x6709; <code>select *</code></li>
+<li>&#x5728;&#x8868;&#x540E;&#x9762;&#x52A0;&#x4E0A;<code>(NOLOCK)</code> &#x80FD;&#x907F;&#x514D;&#x6570;&#x636E;&#x5E93;&#x6B63;&#x5728;&#x66F4;&#x65B0;&#x7684;&#x65F6;&#x5019;&#x9501;&#x5B9A;&#x67E5;&#x8BE2;&#x3002;</li>
+<li>&#x4F7F;&#x7528;<code>GetUTCDate()</code> &#x65E5;&#x671F;&#x65F6;&#x95F4;&#x51FD;&#x6570;&#x56E0;&#x4E3A;&#x5728;STEEMSQL&#x4E0A;&#x6240;&#x6709;&#x65F6;&#x95F4;&#x90FD;&#x662F;UTC&#x3002;</li>
+<li>&#x4F7F;&#x7528; <code>depth = 0</code>&#x6765;&#x9650;&#x5236;&#x6587;&#x7AE0;&#xFF0C;&#x76F8;&#x53CD;&#x4F7F;&#x7528;<code>depth &gt; 0</code>&#x6765;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7684;&#x8BC4;&#x8BBA;</li>
+<li><code>ORDER BY NEWID()</code> &#x80FD;&#x6839;&#x636E;&#x968F;&#x673A;ID&#x6765;&#x6392;&#x5E8F;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x6162;&#xFF0C;&#x56E0;&#x4E3A;&#x9700;&#x8981;&#x67E5;&#x627E;&#x6240;&#x6709;&#x7684;&#x8BB0;&#x5F55;&#x7136;&#x540E;&#x518D;&#x6392;&#x5E8F;&#x3002;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x9650;&#x5236;&#x7C7B;&#x522B;&#xFF0C;&#x6BD4;&#x5982; <code>&quot;cn&quot; &#x7C7B;&#x76EE;&#x968F;&#x673A;&#x6311;&#x9009;&#x2026;&#x2026;</code></p>
+<ul>
+<li><code>category = &quot;cn&quot;</code> </li>
+</ul>
+<p>&#x6548;&#x7387;&#x8F83;&#x9AD8;<br>&#x5728;WHERE&#x9650;&#x5236;&#x8BED;&#x53E5;&#x4E2D;&#x52A0;&#x4E0A;&#x4EE5;&#x4E0B;&#x5224;&#x65AD;&#xFF1A;<br><code>AND     (ABS(CAST(   (BINARY_CHECKSUM(ID, NEWID())) as int)) % 100) &lt; 50</code></p>
+<p><code>BINARY_CHECKSUM</code> &#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8FD4;&#x56DE;&#x4E00;&#x4E9B;&#x5B57;&#x6BB5;&#x7684;&#x8F83;&#x9A8C;&#x503C;&#xFF0C;&#x901F;&#x5EA6;&#x5FEB;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x9700;&#x8981;&#x67E5;&#x627E;&#x6240;&#x6709;&#x8BB0;&#x5F55;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x6392;&#x5E8F;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5728; PYTHON&#x6216;PHP&#x4E2D;&#x5148;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x968F;&#x673A;ID&#x7684;&#x5217;&#x8868;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x8FD9;&#x4E9B;&#x5217;&#x8868;&#x503C;&#x4F20;&#x5165;SQL&#x8BED;&#x53E5;&#x4E2D;&#x2026;&#x2026;</p>
+<p>&#x4F60;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x597D;&#x7684;&#x529E;&#x6CD5;&#xFF1F;&#x5206;&#x4EAB;&#x51FA;&#x6765;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x4E2A;&#x5F88;&#x597D;&#x7684;&#xFF08;&#x521B;&#x65B0;&#xFF09;&#x529E;&#x6CD5;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5956;&#x52B1;&#x4F60; 1 SBD&#x3002;</p>
+<hr>
+<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://justyy.com/archives/5368" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://justyy.com/archives/5413" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x968F;&#x673A;&#x8FD4;&#x56DE;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;</a></li>
+<li><a href="https://helloacm.com/steemsql-tutorial-how-to-get-random-posts-on-steemit/" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Random Posts on SteemIt?</a></li>
+</ul>
+<blockquote>
+<p>@justyy &#x662F; <a href="https://justyy.com/" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B; - &#x897F;&#x534A;&#x7403;&#x77E5;&#x540D;&#x7684;&#x201C;&#x571F;&#x8C6A;&#x201D;&#x535A;&#x4E3B;&#x3002;</p>
+</blockquote>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steem-sql-steemsql-tutorial-how-to-get-random-posts-on-steemit" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x968F;&#x673A;&#x8FD4;&#x56DE;&#x662F;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;SteemSQL Tutorial: How to Get Random Posts on SteemIt?</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/7hpntj/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmYZw3ALmv8dHnTGtufrRERGPhKQ5MtjFpeEXTHC5hKx1E/2017-09-20%2011.25.10.jpg" alt="墙重新刷成白色，整个房子敞亮了 - 英国请人来家里刷墙的经历">
         </a>
@@ -1288,79 +1406,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/2yssmy/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmcU4oijwj9gpLd77dj5XcYYffcyCLPdUgnUDFo5wXAXCD/2013-02-13%2015.56.59.jpg" alt="渐行渐远的孩子">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-29T00:01:51.000Z">2017-09-29</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 460 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/2yssmy/">渐行渐远的孩子</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6211;&#x4E0A;&#x6B21;&#x56DE;&#x56FD;&#x662F;&#x5728;2013&#x5E74;&#xFF0C;&#x5F53;&#x65F6;&#x8001;&#x5927;&#x4E0D;&#x5230;1&#x5C81;&#xFF0C;&#x521A;&#x5B66;&#x8D70;&#x8DEF;&#xFF0C;&#x4E00;&#x6643;4&#x5E74;&#xFF0C;&#x5B69;&#x5B50;&#x5DF2;&#x7ECF;&#x4E0A;&#x5C0F;&#x5B66;&#x3002;</p>
-<p>&#x6BCF;&#x5929;&#x90FD;&#x7ED9;&#x5BB6;&#x91CC;&#x62A5;&#x5E73;&#x5B89;&#xFF0C;&#x4E09;&#x5E74;&#x591A;&#xFF0C;&#x4E00;&#x5929;&#x672A;&#x62C9;&#x4E0B;&#xFF0C;&#x4F46;&#x662F;&#x8BF4;&#x5B9E;&#x5728;&#x8FD8;&#x662F;&#x5F88;&#x5185;&#x759A;&#x3002;&#x751F;&#x6D3B;&#x5DE5;&#x4F5C;&#x5DF2;&#x7ECF;&#x5B9A;&#x5728;&#x82F1;&#x56FD;&#xFF0C;&#x5C06;&#x6765;&#xFF0C;&#x771F;&#x7684;&#x4E0D;&#x6562;&#x60F3;&#x3002;</p>
-<p>&#x4E0A;&#x5E1D;&#x8BF4;&#xFF0C;&#x5B69;&#x5B50;&#x53EA;&#x662F;&#x6682;&#x65F6;&#x6258;&#x7BA1;&#x7ED9;&#x7236;&#x6BCD;&#x7684;&#xFF0C;&#x7B49;&#x5B69;&#x5B50;&#x6210;&#x5E74;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x518D;&#x4E5F;&#x6CA1;&#x6709;&#x7BA1;&#x675F;&#x7684;&#x6743;&#x5229;&#x4E86;&#xFF0C;&#x542C;&#x8D77;&#x6765;&#x5F88;&#x6B8B;&#x5FCD;&#xFF0C;&#x4F46;&#x8FD9;&#x662F;&#x666E;&#x904D;&#x897F;&#x65B9;&#x4EBA;&#x7684;&#x89C2;&#x5FF5;&#x3002;&#x6211;&#x4EEC;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x5C31;&#x662F;&#x7B2C;&#x4E00;&#x4EE3;&#x79FB;&#x6C11;&#xFF0C;&#x5BF9;&#x4E8E;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#xFF0C;&#x505A;&#x9009;&#x62E9;&#x771F;&#x7684;&#x5F88;&#x96BE;&#x3002;</p>
-<p>&#x5B69;&#x5B50;&#x6700;&#x53EF;&#x7231;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x5C31;&#x8FD9;&#x51E0;&#x5E74;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x7740;&#x4ED6;&#x4EEC;<a href="https://justyy.com/archives/5384" target="_blank" rel="noopener">&#x6E10;&#x884C;&#x6E10;&#x8FDC;</a>&#xFF0C;&#x76F4;&#x5230;&#x6211;&#x4EEC;&#x8001;&#x4E86;&#xFF0C;&#x4ED6;&#x4EEC;&#x4E5F;&#x8D70;&#x5230;&#x4E86;&#x62D0;&#x89D2;&#xFF0C;&#x7528;&#x80CC;&#x5F71;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#xFF0C;&#x4E0D;&#x8981;&#x518D;&#x8FFD;&#x4E86;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x5F80;&#x5F80;&#x5BF9;&#x4E8E;&#x5B69;&#x5B50;&#x662F;&#x5BBD;&#x5BB9;&#x7684;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x7236;&#x6BCD;&#x5219;&#x662F;&#x82DB;&#x8D23;&#x7684;&#x3002;&#x5DF1;&#x6240;&#x4E0D;&#x6B32;&#xFF0C;&#x52FF;&#x65BD;&#x4E8E;&#x4EBA;&#x3002;&#x60F3;&#x6B64;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x7236;&#x6BCD;&#x4F55;&#x5C1D;&#x4E0D;&#x662F;&#x5728;&#x7275;&#x6302;&#xFF0C;&#x513F;&#x884C;&#x4E07;&#x91CC;&#x6BCD;&#x62C5;&#x5FE7;&#xFF0C;&#x7236;&#x6BCD;&#x6240;&#x9700;&#x8981;&#x77E5;&#x9053;&#x7684;&#x4EC5;&#x4EC5;&#x662F;&#xFF1A;&#x6211;&#x4EEC;&#x4E00;&#x5207;&#x90FD;&#x597D;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmcU4oijwj9gpLd77dj5XcYYffcyCLPdUgnUDFo5wXAXCD/2013-02-13%2015.56.59.jpg" alt="2013-02-13 15.56.59.jpg"><br><em>&#x8001;&#x7167;&#x7247;2013&#x5E74; - &#x8D24;&#x60E0;&#x7684;&#x5AB3;&#x5987;&#x80CC;&#x7740;&#x5B69;&#x5B50;&#x505A;&#x5BB6;&#x52A1;</em></p>
-<hr>
-<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://justyy.com/archives/5368" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/2yssmy" target="_blank" rel="noopener">&#x6E10;&#x884C;&#x6E10;&#x8FDC;&#x7684;&#x5B69;&#x5B50;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/228/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/228/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/230/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/230/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -1512,7 +1566,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 
