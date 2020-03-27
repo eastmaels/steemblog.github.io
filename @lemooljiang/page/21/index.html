@@ -230,6 +230,158 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@lemooljiang/docker-31/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmPoWr8JGAN6VPfvdB2FfV4cGLYo7UE3f3xd9U8siJuLgB/docker.jpg" alt="Docker基础入门学习 / 网络研习社#31">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-03T04:24:27.000Z">2019-08-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 minutes read (About 1482 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/docker-31/">Docker基础入门学习 / 网络研习社#31</a>
+            
+        </h1>
+        <div class="content">
+            <p>Docker&#x7684;&#x5165;&#x95E8;&#x5E94;&#x7528;&#x5E76;&#x4E0D;&#x96BE;&#xFF0C;&#x5B83;&#x5C31;&#x662F;&#x8981;&#x51CF;&#x514D;&#x7A0B;&#x5E8F;&#x5730;&#x5B66;&#x4E60;&#x548C;&#x5B89;&#x88C5;&#x96BE;&#x5EA6;&#x3002;&#x8FD9;&#x597D;&#x6BD4;&#x5B66;&#x5F00;&#x8F66;&#x6BD4;&#x8F83;&#x5BB9;&#x6613;&#xFF0C;&#x4F60;&#x8981;&#x5B66;&#x9020;&#x8F66;&#x5C31;&#x6BD4;&#x8F83;&#x96BE;&#x4E86;&#x3002;&#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x7528;&#x6237;&#xFF0C;&#x80FD;&#x7528;&#x5C31;ok&#xFF01;</p>
+<p><img src="https://cdn.steemitimages.com/DQmPoWr8JGAN6VPfvdB2FfV4cGLYo7UE3f3xd9U8siJuLgB/docker.jpg" alt="docker.jpg"></p>
+<p><strong>Docker&#x7684;&#x4E09;&#x5927;&#x6982;&#x5FF5;&#xFF1A;&#x4ED3;&#x5E93;&#x3001;&#x955C;&#x50CF;&#x3001;&#x5BB9;&#x5668;</strong></p>
+<p>&#x4ECE;&#x4E0A;&#x56FE;&#x4E2D;&#x5927;&#x5BB6;&#x4E86;&#x89E3;Docker&#x7684;&#x4E09;&#x5927;&#x6982;&#x5FF5;&#xFF1A;&#x4ED3;&#x5E93;&#x3001;&#x955C;&#x50CF;&#x3001;&#x5BB9;&#x5668;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E86;&#x89E3;&#x4E86;&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x5B66;&#x5B8C;&#x5927;&#x534A;&#x4E86;&#xFF01;&#x4F60;&#x6240;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x4ECE;&#x5B9C;&#x5BB6;&#x4E70;&#x628A;&#x6905;&#x5B50;&#x56DE;&#x5BB6;&#xFF0C;&#x653E;&#x5728;&#x5BB6;&#x4E2D;&#x7528;&#x8D77;&#x6765;&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x8FD9;&#x51E0;&#x5929;&#x5B66;&#x4E60;&#x7684;&#x4E00;&#x4E9B;&#x7B14;&#x8BB0;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x7740;&#x770B;&#x770B;&#x3002;</p>
+<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a><center>Docker</center></h1><h2 id="&#x76EE;&#x5F55;"><a href="#&#x76EE;&#x5F55;" class="headerlink" title="&#x76EE;&#x5F55;"></a>&#x76EE;&#x5F55;</h2><ul>
+<li><a href="#&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;">&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;&#xFF1A;</a></li>
+<li><a href="#ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#x7248;&#x672C;&#x8F83;&#x65E7;">Ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#xFF08;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF09;</a></li>
+<li><a href="#docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;">Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;</a></li>
+<li><a href="#docker-compose">docker-compose</a></li>
+<li><a href="#&#x955C;&#x50CF;images">&#x955C;&#x50CF;images</a></li>
+<li><a href="#&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;">&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;</a></li>
+<li><a href="#&#x6784;&#x5EFA;&#x955C;&#x50CF;commit">&#x6784;&#x5EFA;&#x955C;&#x50CF;commit</a></li>
+<li><a href="#&#x6784;&#x5EFA;&#x955C;&#x50CF;dockerfile">&#x6784;&#x5EFA;&#x955C;&#x50CF;Dockerfile</a></li>
+<li><a href="#&#x5BB9;&#x5668;container">&#x5BB9;&#x5668;container</a></li>
+<li><a href="#&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;">&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;</a></li>
+<li><a href="#&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;">&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;</a></li>
+<li><a href="#&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;">&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;</a></li>
+<li><a href="#docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;">docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;</a></li>
+<li><a href="#docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;">docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;</a></li>
+<li><a href="#&#x6570;&#x636E;&#x5377;volumes">&#x6570;&#x636E;&#x5377;volumes</a></li>
+<li><a href="#&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;">&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;</a></li>
+<li><a href="#&#x8D44;&#x6E90;&#x9694;&#x79BB;">&#x8D44;&#x6E90;&#x9694;&#x79BB;</a></li>
+</ul>
+<h2 id="&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;&#xFF1A;"><a href="#&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;&#xFF1A;" class="headerlink" title="&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;&#xFF1A;"></a>&#x4E0B;&#x8F7D;&#x4E0E;&#x8D44;&#x6E90;&#xFF1A;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Docker version 19.03.1, build 74b1e89e8a</span><br><span class="line">docker-compose version 1.23.1, build b02f1306</span><br><span class="line"></span><br><span class="line">&#x5B98; &#x7F51;: https://www.docker.com</span><br><span class="line">docker-hub: https://hub.docker.com</span><br><span class="line">&#x624B;&#x518C;&#xFF1A;https://docs.docker.com</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#xFF08;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF09;"><a href="#Ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#xFF08;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF09;" class="headerlink" title="Ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#xFF08;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF09;"></a>Ubuntu&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#xFF08;&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF09;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install docker.io</span><br><span class="line">source /etc/bash_completion.d/docker.io</span><br><span class="line">sudo docker.io version</span><br><span class="line">&#x6CE8;&#x610F;&#xFF1A;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x5B89;&#x88C5;&#x7684;docker&#x7248;&#x672C;&#x8F83;&#x65E7;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;&#x3002;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;"><a href="#Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;" class="headerlink" title="Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;"></a>Docker&#x7EF4;&#x62A4;&#x7248;&#x672C;&#x5B89;&#x88C5;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install &#x2013;y curl</span><br><span class="line">// &#x53EF;&#x4EE5;&#x5148;&#x68C0;&#x67E5;&#x4E0B;curl: whereis curl ,&#x5982;&#x679C;&#x5DF2;&#x6709;&#x4E0D;&#x7528;&#x5B89;&#x88C5;&#x3002;</span><br><span class="line"></span><br><span class="line">curl &#x2013;sSL https://get.docker.com/ | sh</span><br><span class="line">sudo docker version</span><br><span class="line"></span><br><span class="line">&#x4F7F;&#x7528;&#x975E;root&#x7528;&#x6237;&#xFF08;&#x52A0;&#x5165;docker&#x7528;&#x6237;&#x7EC4;&#xFF09;:</span><br><span class="line">sudo groupadd docker</span><br><span class="line">sudo gpasswd &#x2013;a ${USER} docker    </span><br><span class="line">/ sudo gpasswd &#x2013;a lemooljiang docker</span><br><span class="line">sudo service docker restart</span><br><span class="line"></span><br><span class="line">sudo wget &#x2013;qO- https://get.docker.com | sh</span><br><span class="line">sudo usermod &#x2013;aG docker jiangzhibin</span><br><span class="line"></span><br><span class="line"># &#x53E6;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x5B89;&#x88C5;docker</span><br><span class="line">wget -qO- https://get.docker.com/ | sh</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="docker-compose"><a href="#docker-compose" class="headerlink" title="docker-compose"></a>docker-compose</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L https://github.com/docker/compose/releases/download/1.23.1</span><br><span class="line">/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line">sudo chmod +x /usr/local/bin/docker-compose</span><br><span class="line">docker-compose --version</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x955C;&#x50CF;images"><a href="#&#x955C;&#x50CF;images" class="headerlink" title="&#x955C;&#x50CF;images"></a>&#x955C;&#x50CF;images</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker images [options] [repository]</span><br><span class="line">  -a , --all=false</span><br><span class="line">  -f , --filter=[]</span><br><span class="line">  --no-trunc=false</span><br><span class="line">  -q , --quiet=false</span><br><span class="line"> </span><br><span class="line">docker rmi [options] image[iamge...]</span><br><span class="line">  -f , --force=false</span><br><span class="line">  --no-prune=false</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;"><a href="#&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;" class="headerlink" title="&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;"></a>&#x83B7;&#x53D6;&#x548C;&#x63A8;&#x9001;&#x955C;&#x50CF;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">docker search [options] term</span><br><span class="line">  --automated=false</span><br><span class="line">  --no-trunc=false</span><br><span class="line">  -s , --stars=0</span><br><span class="line">docker search ubuntu    /&#x67E5;&#x627E;ubuntu&#x955C;&#x50CF;</span><br><span class="line"></span><br><span class="line">docker pull [options] name [:tag]</span><br><span class="line">docker pull ubuntu:14.04  /&#x4ECE;&#x8FDC;&#x7A0B;&#x4E0B;&#x8F7D;&#x955C;&#x50CF; </span><br><span class="line"></span><br><span class="line">&#x66F4;&#x6539;&#x56FD;&#x5185;docker&#x6E90;(--registry-mirror&#x9009;&#x9879;)</span><br><span class="line">  vim /etc/default/docker   </span><br><span class="line">  DOCKER_OPTS = &quot;--registry-mirror=http://MIRROR-ADDR&quot;</span><br><span class="line"></span><br><span class="line">docker push docker/whalesay     /&#x4E0A;&#x4F20;&#x955C;&#x50CF;&#x5230;docker-hub</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x6784;&#x5EFA;&#x955C;&#x50CF;commit"><a href="#&#x6784;&#x5EFA;&#x955C;&#x50CF;commit" class="headerlink" title="&#x6784;&#x5EFA;&#x955C;&#x50CF;commit"></a>&#x6784;&#x5EFA;&#x955C;&#x50CF;commit</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker commit &#x901A;&#x8FC7;&#x5BB9;&#x5668;&#x6784;&#x5EFA;</span><br><span class="line">docker build  &#x901A;&#x8FC7;Dockerfile&#x6784;&#x5EFA;</span><br><span class="line"></span><br><span class="line">docker commit [options] container [repository[:tag]]</span><br><span class="line">  -a , --author=&quot;name&quot;</span><br><span class="line">  -m , --message=&quot;things&quot;</span><br><span class="line">  -p , --pause=true </span><br><span class="line"></span><br><span class="line">docker commit -a &quot;lemool&quot; -m &quot;add nginx&quot; my_ubuntu lemool/nginx_ubuntu</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x6784;&#x5EFA;&#x955C;&#x50CF;Dockerfile"><a href="#&#x6784;&#x5EFA;&#x955C;&#x50CF;Dockerfile" class="headerlink" title="&#x6784;&#x5EFA;&#x955C;&#x50CF;Dockerfile"></a>&#x6784;&#x5EFA;&#x955C;&#x50CF;Dockerfile</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">vim Dockerfile</span><br><span class="line"></span><br><span class="line">FROM ubuntu:14.04      /&#x57FA;&#x7840;&#x955C;&#x50CF;&#x4FE1;&#x606F;</span><br><span class="line">MAINTAINER jiangzhibin &quot;497867999@qq.com&quot;  /&#x4F5C;&#x8005; </span><br><span class="line">RUN apt-get update        /&#x8FD0;&#x884C;&#x7684;&#x547D;&#x4EE4;</span><br><span class="line">RUN apt-get install -y nginx</span><br><span class="line">EXPOSE 80                 /&#x66B4;&#x9732;&#x7684;&#x7AEF;&#x53E3;</span><br><span class="line"></span><br><span class="line"># this is first dockerfile</span><br><span class="line"># version v1</span><br><span class="line">FROM ubuntu</span><br><span class="line">MAINTAINER  lemool &quot;497867999@qq.com&quot;</span><br><span class="line">RUN apt-get update</span><br><span class="line">RUN apt-get install -y nginx</span><br><span class="line">EXPOSE 80</span><br><span class="line"></span><br><span class="line">## RUN&#x7684;&#x4E24;&#x79CD;&#x6A21;&#x5F0F;</span><br><span class="line">RUN &lt;command&gt;   /shell&#x6A21;&#x5F0F;</span><br><span class="line">RUN [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]  /exec&#x6A21;&#x5F0F;</span><br><span class="line"></span><br><span class="line">RUN echo hello</span><br><span class="line">RUN [&quot;/bin/bash&quot;,&quot;-c&quot;,&quot;echo hello&quot;]</span><br><span class="line"></span><br><span class="line">CMD [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;](exec&#x6A21;&#x5F0F;)</span><br><span class="line">CMD command param1 param2 &#xFF08;shell&#x6A21;&#x5F0F;&#xFF09;</span><br><span class="line"></span><br><span class="line">ENTRYPOINT [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]</span><br><span class="line">ENTRYPOINT command param1 param2</span><br><span class="line"></span><br><span class="line">ADD &lt;src&gt;...&lt;dest&gt;</span><br><span class="line">COPY &lt;src&gt;...&lt;dest&gt;</span><br><span class="line">VOLUME [&quot;/data&quot;] &#x6DFB;&#x52A0;&#x5DFB;</span><br><span class="line">WORKDIR /path/to/workdir</span><br><span class="line">ENV &lt;key&gt;&lt;value&gt;</span><br><span class="line">USER daemon</span><br><span class="line">ONBUILD [instruction]</span><br><span class="line"></span><br><span class="line">docker build [options] path | url | </span><br><span class="line">docker build -t my_ubuntu .  /&#x76F4;&#x63A5;&#x521B;&#x5EFA;my_ubuntu&#x7684;&#x955C;&#x50CF;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x5BB9;&#x5668;container"><a href="#&#x5BB9;&#x5668;container" class="headerlink" title="&#x5BB9;&#x5668;container"></a>&#x5BB9;&#x5668;container</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">docker run docker/whalesay     /&#x8FD0;&#x884C;&#x955C;&#x50CF;</span><br><span class="line">docker run ubuntu echo hello world  /&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x5E76;&#x8F93;&#x51FA;</span><br><span class="line"></span><br><span class="line">docker run -i  -t  ubuntu /bin/bash      /&#x542F;&#x52A8;&#x4EA4;&#x4E92;&#x5F0F;&#x5BB9;&#x5668;</span><br><span class="line">docker run --name mydocker -it ubuntu /bin/bash</span><br><span class="line">ctrl+p ctrl+q   /&#x9000;&#x51FA;&#x5BB9;&#x5668;</span><br><span class="line"></span><br><span class="line">docker inspect [options] container|image   /&#x8BE6;&#x7EC6;&#x67E5;&#x770B;&#x5BB9;&#x5668;&#x7684;&#x4FE1;&#x606F;</span><br><span class="line"></span><br><span class="line">docker ps        /&#x67E5;&#x770B;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;</span><br><span class="line">docker ps &#x2013;a      /&#x67E5;&#x770B;&#x6240;&#x6709;&#x5BB9;&#x5668;</span><br><span class="line">docker ps -l     /&#x67E5;&#x770B;&#x6700;&#x540E;&#x5F00;&#x542F;&#x7684;&#x5BB9;&#x5668;</span><br><span class="line">docker start container_name  /&#x91CD;&#x542F;&#x5BB9;&#x5668;</span><br><span class="line">docker stop container_name </span><br><span class="line">docker extc | docker attach  /&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x5BB9;&#x5668;</span><br><span class="line">docker rm container_name &#xFF5C; docker rm -f   /&#x5220;&#x9664;&#x5BB9;&#x5668;</span><br><span class="line"></span><br><span class="line">docker tag docker/whalesay   jiangzhibin/whalesay  /&#x66F4;&#x6539;&#x955C;&#x50CF;&#x6807;&#x7B7E;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;"><a href="#&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;" class="headerlink" title="&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;"></a>&#x5BB9;&#x5668;&#x7684;&#x7AEF;&#x53E3;&#x6620;&#x5C04;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -P --name my_ubuntu ubuntu</span><br><span class="line">    -P ,--publish-all=true | false &#x9ED8;&#x8BA4;&#x4E3A;false</span><br><span class="line">docker run -P -i -t ubuntu /bin/bash</span><br><span class="line"></span><br><span class="line">docker run -d -p 91:80 --name my_ubuntu3 ubuntu</span><br><span class="line"> -p ,--publish=[]&#x6307;&#x5B9A;&#x6620;&#x5C04;</span><br><span class="line"> -p hostPort:containerPort</span><br><span class="line"> -p ip:hostPort:containerPort</span><br><span class="line"> -p ip::containerPort</span><br><span class="line">  docker run -p 80 -i -t ubuntu /bin/bash</span><br><span class="line">  docker run -p 8080:80 -i -t ubuntu /bin/bash</span><br><span class="line">  docker run -p 0.0.0.0:80 -i -t ubuntu /bin/bash</span><br><span class="line">  docker run -p 0.0.0.0:8080:80 -i -t ubuntu /bin/bash</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;"><a href="#&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;" class="headerlink" title="&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;"></a>&#x67E5;&#x770B;&#x5B88;&#x62A4;&#x8FDB;&#x7A0B;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">ps &#x2013;ef | grep docker</span><br><span class="line">sudo status docker</span><br><span class="line"></span><br><span class="line">docker -d [options]</span><br><span class="line">  -D , --debug=false</span><br><span class="line">  -e , --exec-driver=&quot;native&quot;</span><br><span class="line">  -g , --graph=&quot;/var/lib/docker&quot;</span><br><span class="line">  --icc=true</span><br><span class="line">  -l , --log-level=&quot;info&quot;</span><br><span class="line">  -p </span><br><span class="line">  -G</span><br><span class="line">  -H</span><br><span class="line">  --tls</span><br><span class="line">  --api</span><br><span class="line">  -s</span><br><span class="line"></span><br><span class="line">sudo service docker stop  </span><br><span class="line">sudo service docker start</span><br><span class="line">&#x542F;&#x52A8;&#x914D;&#x7F6E;&#x6587;&#x4EF6; /etc/default/docker</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;"><a href="#&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;" class="headerlink" title="&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;"></a>&#x5B88;&#x62A4;&#x5F0F;&#x5BB9;&#x5668;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker run -d &lt;image&gt;</span><br><span class="line">ctrl+p ctrl+q   &#x8FDB;&#x5165;&#x540E;&#x53F0;</span><br><span class="line">docker logs </span><br><span class="line">docker top &lt;image&gt;</span><br><span class="line">docker exec -d -i -t &lt;image&gt; &lt;command&gt; &lt;args&gt;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;"><a href="#docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;" class="headerlink" title="docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;"></a>docker&#x8FDC;&#x7A0B;&#x8BBF;&#x95EE;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-H tcp://host.port</span><br><span class="line">   unix:///path/to/socket</span><br><span class="line">   fd&quot;//*or fd://socketfd</span><br><span class="line"></span><br><span class="line">-H unix:///var/run/docker.sock</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;"><a href="#docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;" class="headerlink" title="docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;"></a>docker&#x7F51;&#x7EDC;&#x8FDE;&#x63A5;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install bridge-utils</span><br><span class="line">sudo brctl show</span><br><span class="line"></span><br><span class="line"># &#x66F4;&#x6539;docker0&#x5730;&#x5740;</span><br><span class="line">sudo ifconfig docker0 192.168.200.1 netmask 255.255.255.0</span><br><span class="line"></span><br><span class="line">docker0&#xFF1A;linux&#x865A;&#x62DF;&#x7F51;&#x6865;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;IP&#x5730;&#x5740;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x62E5;&#x6709;&#x4E00;&#x4E2A;&#x9690;&#x85CF;&#x7684;&#x865A;&#x62DF;&#x7F51;&#x5361;</span><br><span class="line">  172.17.42.1  255.255.0.0</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x6570;&#x636E;&#x5377;volumes"><a href="#&#x6570;&#x636E;&#x5377;volumes" class="headerlink" title="&#x6570;&#x636E;&#x5377;volumes"></a>&#x6570;&#x636E;&#x5377;volumes</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">data volumes, &#x6570;&#x636E;&#x7684;&#x6C38;&#x4E45;&#x5316;</span><br><span class="line">docker run -v ~/container_data:/data -it ubuntu /bin/bash</span><br><span class="line">  -v /data</span><br><span class="line">  -v src:dst</span><br><span class="line">docker inspect &lt;image&gt; &#x67E5;&#x770B;&#x6570;&#x636E;&#x5377;</span><br><span class="line"></span><br><span class="line">docker run -it --name volume_test -v /data lemool/nginx_ubuntu</span><br><span class="line">docker inspect volume_test</span><br><span class="line"></span><br><span class="line">docker run -it --name volume_test -v /data:/data lemool/nginx_ubuntu</span><br><span class="line">  /data:/data &#x7B2C;&#x4E00;&#x4E2A;data&#x662F;&#x5BBF;&#x4E3B;&#x673A;&#x7684;data, &#x7B2C;&#x4E8C;&#x4E2A;data&#x662F;docker&#x4E0A;&#x7684;data&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x4E00;&#x5BF9;&#x4E00;&#x6620;&#x5C04;</span><br><span class="line"></span><br><span class="line">VOLUME [&quot;/data&quot;] &#x6DFB;&#x52A0;&#x5DFB;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;"><a href="#&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;" class="headerlink" title="&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;"></a>&#x6570;&#x636E;&#x5377;&#x5BB9;&#x5668;</h2><p>&#x6302;&#x8F7D;&#x6570;&#x636E;&#x5377;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4EE5;&#x5171;&#x4EAB;&#x6570;&#x636E;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --volumes-from [container name]</span><br><span class="line">docker run -it --name volume_test2 --volumes-from volume_test lemool/nginx_ubuntu</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="&#x8D44;&#x6E90;&#x9694;&#x79BB;"><a href="#&#x8D44;&#x6E90;&#x9694;&#x79BB;" class="headerlink" title="&#x8D44;&#x6E90;&#x9694;&#x79BB;"></a>&#x8D44;&#x6E90;&#x9694;&#x79BB;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">LXC Kernel   namespace</span><br><span class="line">pid net  lpc mnt  uts  user  </span><br><span class="line"></span><br><span class="line">&#x8D44;&#x6E90;&#x9650;&#x5236;</span><br><span class="line">cgroup  </span><br><span class="line">cpu &#x5185;&#x5B58;</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/docker-31" target="_blank" rel="noopener">&#x2018;Docker&#x57FA;&#x7840;&#x5165;&#x95E8;&#x5B66;&#x4E60; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#31&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@lemooljiang/docker-30/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmdPztQnZm4v65M5Q2CS5XZQPvkDRh77rnLv24BfH4zuxB/docker1.jpg" alt="Docker, 即开即用的爽利 / 网络研习社#30">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-08-02T14:55:51.000Z">2019-08-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 353 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/docker-30/">Docker, 即开即用的爽利 / 网络研习社#30</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmdPztQnZm4v65M5Q2CS5XZQPvkDRh77rnLv24BfH4zuxB/docker1.jpg" alt="docker1.jpg"></p>
+<p>Docker&#xFF0C;&#x662F;&#x4E45;&#x95FB;&#x5176;&#x540D;&#xFF0C;&#x6CA1;&#x7528;&#x5176;&#x5B9E;&#x3002;&#x82B1;&#x4E86;&#x51E0;&#x5929;&#x65F6;&#x95F4;&#x5B66;&#x4E60;&#x4E86;&#x4E0B;&#xFF0C;&#x6709;&#x4E2A;&#x57FA;&#x672C;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x53D1;&#x73B0;&#x5B83;&#x786E;&#x5B9E;&#x662F;&#x4E2A;&#x9876;&#x7EA7;&#x7684;&#x5DE5;&#x5177;&#x4E86;&#xFF01;</p>
+<p><img src="https://cdn.steemitimages.com/DQmXKxWs4e83dJswhjNgBTm2qDY7QHBbgvQFVPT3pP44o3P/docker2.jpg" alt="docker2.jpg"></p>
+<p>Docker&#x7684;&#x56FE;&#x6807;&#x8BBE;&#x8BA1;&#x5F97;&#x4E0D;&#x9519;&#xFF01;&#x6709;&#x4EBA;&#x5F62;&#x8C61;&#x5730;&#x79F0;Docker&#x4E3A;&#x96C6;&#x88C5;&#x7BB1;&#x6280;&#x672F;&#xFF0C;<strong>&#x4E00;&#x6B21;&#x6784;&#x5EFA;&#xFF0C;&#x5230;&#x5904;&#x53EF;&#x7528;&#xFF01;</strong>&#x54C8;&#xFF0C;&#x5F80;&#x660E;&#x767D;&#x70B9;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x5EFA;&#x4E86;&#x4E2A;&#x623F;&#x8F66;&#xFF0C;&#x4F60;&#x5F00;&#x5230;&#x54EA;&#x90FD;&#x53EF;&#x4EE5;&#x4F4F;&#x5F97;&#x4E0A;&#xFF01;</p>
+<p>&#x5B66;&#x4E60;web&#x7684;&#x4EBA;&#x76F8;&#x5FC5;&#x8FD8;&#x5BF9;lamp&#x5730;&#x5B89;&#x88C5;&#x5FC3;&#x6709;&#x4F59;&#x60B8;&#x5427;&#xFF0C;&#x7279;&#x522B;&#x5730;php&#x7684;&#x7F16;&#x8BD1;&#x6211;&#x662F;&#x4ECE;&#x672A;&#x6210;&#x529F;&#x8FC7;&#xFF01;&#x597D;&#x5728;&#x540E;&#x9762;&#x6709;&#x4E86;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#x5305;&#xFF0C;&#x624D;&#x89E3;&#x51B3;&#x4E86;&#x8FD9;&#x4E2A;&#x5C34;&#x5C2C;&#x3002;&#x6709;&#x4E86;Docker&#x5462;&#xFF0C;&#x8FDE;&#x5B89;&#x88C5;&#x90FD;&#x7701;&#x4E86;&#xFF0C;&#x4F60;&#x62FF;&#x8FC7;&#x6765;run&#x8D77;&#x6765;&#x5C31;&#x80FD;&#x7528;&#x4E86;&#xFF0C;&#x8FD9;&#x771F;&#x771F;&#x662F;&#x8D85;&#x8DD1;&#x7684;&#x914D;&#x7F6E;&#x5462;&#x3002;</p>
+<p>Docker&#x8FD9;&#x79CD;&#x5373;&#x5F00;&#x5373;&#x7528;&#x786E;&#x5B9E;&#x76F8;&#x5F53;&#x4FBF;&#x5229;&#xFF0C;&#x9020;&#x51FA;&#x7684;&#x8F6E;&#x5B50;(docker hub)&#x73B0;&#x5728;&#x662F;&#x98CE;&#x9761;&#x5168;&#x7403;&#x554A;&#x3002;&#x6280;&#x672F;&#x8FD9;&#x4E48;&#x706B;&#xFF0C;&#x8FD8;&#x662F;&#x8981;&#x8E6D;&#x4E0B;&#x70ED;&#x70B9;&#x3002;&#x4E00;&#x5B66;&#x4E4B;&#x4E0B;&#xFF0C;&#x4E0A;&#x624B;&#x8FD8;&#x86EE;&#x5BB9;&#x6613;&#xFF0C;&#x7528;&#x8D77;&#x6765;&#x4E5F;&#x662F;&#x76F8;&#x5F53;&#x723D;&#x5229;&#x3002;</p>
+<p>&#x62FF;&#x4E2A;shadowsocks&#x7684;&#x955C;&#x50CF;&#x6765;&#x7EC3;&#x4E0B;&#x624B;&#xFF0C;&#x54C7;&#xFF0C;&#x771F;&#x662F;&#x4E0D;&#x8981;&#x592A;&#x5BB9;&#x6613;&#x4E86;&#xFF01;&#x5927;&#x4F19;&#x4E5F;&#x53EF;&#x4EE5;&#x8BD5;&#x8BD5;&#x770B;&#x54E6;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/docker-30" target="_blank" rel="noopener">&#x2018;Docker, &#x5373;&#x5F00;&#x5373;&#x7528;&#x7684;&#x723D;&#x5229; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#30&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@lemooljiang/4ejvrx-29/" class="image is-7by1">
             <img class="thumbnail" src="https://i.ibb.co/CMZKPbY/webclass2.jpg" alt="聊下暗网 / 网络研习社#29">
         </a>
@@ -515,153 +667,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/41dhcm-27/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmY1yCed5X6ez1sMSySpGDbJ7rwnNpijKjBJZtPKQSQKMZ/cache.jpg" alt="缓存的妙用 / 网络研习社#27">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-25T14:22:54.000Z">2019-07-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1190 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/41dhcm-27/">缓存的妙用 / 网络研习社#27</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmY1yCed5X6ez1sMSySpGDbJ7rwnNpijKjBJZtPKQSQKMZ/cache.jpg" alt="cache.jpg"></p>
-<p><strong>&#x7F13;&#x5B58;&#x4E4B;&#x79D2;&#xFF0C;&#x5B58;&#x4E4E;&#x4E00;&#x5FC3;&#xFF01;</strong>&#x5728;&#x8D8A;&#x6765;&#x8D8A;&#x8FFD;&#x6C42;&#x901F;&#x5EA6;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x54EA;&#x6015;&#x5FEB;0.1&#x5999;&#xFF0C;&#x4E5F;&#x662F;&#x5DE8;&#x5927;&#x7684;&#x80DC;&#x5229;&#xFF01;&#x5728;&#x8FD9;&#x6837;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;&#x5728;&#x5404;&#x6837;&#x7684;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x7F13;&#x5B58;&#x5C31;&#x8D77;&#x5230;&#x4E86;&#x5F88;&#x597D;&#x5730;&#x63D0;&#x901F;&#x4F5C;&#x7528;&#x3002;</p>
-<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x60F3;&#x5FC5;&#x5BF9;&#x7F13;&#x5B58;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x76F4;&#x89C2;&#x7684;&#x4E86;&#x89E3;&#x3002;&#x5B83;&#x5C31;&#x662F;&#x628A;&#x6570;&#x636E;&#x5B58;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x4EE5;&#x89E3;&#x51B3;&#x4F60;&#x7684;&#x6025;&#x6E34;&#x7684;&#x3002;&#x628A;&#x5B83;&#x5E94;&#x7528;&#x8D77;&#x6765;&#x4E5F;&#x4E0D;&#x592A;&#x96BE;&#xFF0C;&#x4E00;&#x4E2A;&#x4E0B;&#x5348;&#x7684;&#x65F6;&#x95F4;&#x5C31;&#x80FD;&#x61C2;&#x4E2A;&#x57FA;&#x672C;&#x4E86;&#x3002;</p>
-<p>&#x4EE5;&#x4E0B;&#x662F;&#x5728;ubuntu18&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x7740;&#x770B;&#x3002;</p>
-<h2 id="&#x5B89;&#x88C5;&#x548C;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;"><a href="#&#x5B89;&#x88C5;&#x548C;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;" class="headerlink" title="&#x5B89;&#x88C5;&#x548C;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;"></a>&#x5B89;&#x88C5;&#x548C;&#x57FA;&#x672C;&#x7684;&#x64CD;&#x4F5C;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install memcached</span><br><span class="line">memcached -d -m 1024      /&#x5F00;</span><br><span class="line">sudo killall memcached    /&#x5173;</span><br><span class="line">ps aux | grep memcached  /&#x67E5;&#x770B;</span><br><span class="line"></span><br><span class="line">memcached -d -m 1024 -p 11211 -u memcache</span><br><span class="line">    memcached&#x670D;&#x52A1;&#x7684;&#x542F;&#x52A8;&#x53C2;&#x6570;&#xFF1A;</span><br><span class="line">    -p &#x76D1;&#x542C;&#x7684;&#x7AEF;&#x53E3;</span><br><span class="line">    -l &#x8FDE;&#x63A5;&#x7684;IP&#x5730;&#x5740;, &#x9ED8;&#x8BA4;&#x662F;&#x672C;&#x673A;.&#x5982;&#x679C;&#x60F3;&#x8981;&#x8BA9;&#x522B;&#x7684;&#x673A;&#x5668;&#x8FDE;&#x63A5;&#xFF0C;&#x5C31;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;-l 0.0.0.0</span><br><span class="line">    -d start &#x542F;&#x52A8;memcached&#x670D;&#x52A1;</span><br><span class="line">    -d restart &#x91CD;&#x8D77;memcached&#x670D;&#x52A1;</span><br><span class="line">    -d stop|shutdown &#x5173;&#x95ED;&#x6B63;&#x5728;&#x8FD0;&#x884C;&#x7684;memcached&#x670D;&#x52A1;</span><br><span class="line">    -d install &#x5B89;&#x88C5;memcached&#x670D;&#x52A1;</span><br><span class="line">    -d uninstall &#x5378;&#x8F7D;memcached&#x670D;&#x52A1;</span><br><span class="line">    -u &#x4EE5;&#x7684;&#x8EAB;&#x4EFD;&#x8FD0;&#x884C; (&#x4EC5;&#x5728;&#x4EE5;root&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x6709;&#x6548;)</span><br><span class="line">    -m &#x6700;&#x5927;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#xFF0C;&#x5355;&#x4F4D;MB&#x3002;&#x9ED8;&#x8BA4;64MB</span><br><span class="line">    -M &#x5185;&#x5B58;&#x8017;&#x5C3D;&#x65F6;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5220;&#x9664;&#x9879;</span><br><span class="line">    -c &#x6700;&#x5927;&#x540C;&#x65F6;&#x8FDE;&#x63A5;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;1024</span><br><span class="line">    -f &#x5757;&#x5927;&#x5C0F;&#x589E;&#x957F;&#x56E0;&#x5B50;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;1.25-n &#x6700;&#x5C0F;&#x5206;&#x914D;&#x7A7A;&#x95F4;&#xFF0C;key+value+flags&#x9ED8;&#x8BA4;&#x662F;48</span><br><span class="line">    -h &#x663E;&#x793A;&#x5E2E;&#x52A9;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">telnet&#x64CD;&#x4F5C;memcached:</span><br><span class="line">    telnet ip&#x5730;&#x5740; [11211]</span><br><span class="line">    telnet 127.0.0.1 11211</span><br><span class="line">    quit</span><br><span class="line">    stats items</span><br><span class="line">   stats cachedump 1 0</span><br><span class="line">   get django:username</span><br><span class="line"></span><br><span class="line">1. &#x6DFB;&#x52A0;&#x6570;&#x636E;&#xFF1A;</span><br><span class="line">set&#xFF1A;</span><br><span class="line">    set key flas(&#x662F;&#x5426;&#x538B;&#x7F29;) timeout value_length</span><br><span class="line">    value</span><br><span class="line">    &#x793A;&#x4F8B;&#xFF1A;</span><br><span class="line">    set username 0 60 7</span><br><span class="line">    zhiliao</span><br><span class="line">add&#xFF1A;</span><br><span class="line">    add key flas(0) timeout value_length</span><br><span class="line">    value</span><br><span class="line">    &#x793A;&#x4F8B;&#xFF1A;</span><br><span class="line">    add username 0 60 7</span><br><span class="line">    xiaotuo</span><br><span class="line"></span><br><span class="line">set&#x548C;add&#x7684;&#x533A;&#x522B;&#xFF1A;add&#x662F;&#x53EA;&#x8D1F;&#x8D23;&#x6DFB;&#x52A0;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x4F1A;&#x53BB;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x3002;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x7684;&#x6570;&#x636E;&#x7684;key&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x5219;&#x6DFB;&#x52A0;&#x5931;&#x8D25;&#xFF0C;&#x5982;&#x679C;&#x6DFB;&#x52A0;&#x7684;key&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x3002;&#x800C;set&#x4E0D;&#x540C;&#xFF0C;&#x5982;&#x679C;memcached&#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#x76F8;&#x540C;&#x7684;key&#xFF0C;&#x5219;&#x8FDB;&#x884C;&#x6DFB;&#x52A0;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x66FF;&#x6362;&#x3002;</span><br><span class="line"></span><br><span class="line">&#x83B7;&#x53D6;&#x6570;&#x636E;&#xFF1A;</span><br><span class="line">    get key</span><br><span class="line">    &#x793A;&#x4F8B;&#xFF1A;</span><br><span class="line">    get username</span><br><span class="line"></span><br><span class="line">&#x5220;&#x9664;&#x6570;&#x636E;&#xFF1A;</span><br><span class="line">    delete key</span><br><span class="line">    &#x793A;&#x4F8B;&#xFF1A;</span><br><span class="line">    delete username</span><br><span class="line">    flush_all&#xFF1A;&#x5220;&#x9664;memcached&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6570;&#x636E;&#x3002;</span><br><span class="line"></span><br><span class="line">&#x67E5;&#x770B;memcached&#x7684;&#x5F53;&#x524D;&#x72B6;&#x6001;&#xFF1A;</span><br><span class="line">    &#x8BED;&#x6CD5;&#xFF1A;stats</span><br></pre></td></tr></tbody></table></figure>
-<p><br></p>
-<hr>
-<p>&#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@lemooljiang/61qx8h-1" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x521D;&#x4F53;&#x9A8C; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#1</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/gjekw-2" target="_blank" rel="noopener">&#x65B0;&#x6280;&#x80FD;&#xFF1A;&#x5C0F;&#x7A0B;&#x5E8F;&#x7A7A;&#x95F4;&#x5F53;&#x56FE;&#x5E8A;&#xFF01; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#2</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/6a8ukt-3" target="_blank" rel="noopener">&#x5C0F;&#x7A0B;&#x5E8F;&#x4E91;&#x5F00;&#x53D1;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x4F20;&#x9012;&#x5F62;&#x5F0F; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#3</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/coreldraw-4" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x7A81;&#x7834;coreldraw&#x7684;&#x7F51;&#x7EDC;&#x9650;&#x5236; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#4</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/6rr2ug-5" target="_blank" rel="noopener">&#x6211;&#x5E08;&#x7F51;&#x5C0F;&#x7A0B;&#x5E8F;&#x521D;&#x53D1;&#x5E03;&#xFF0C;&#x5927;&#x5BB6;&#x591A;&#x591A;&#x6307;&#x6559; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#5</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/github-6" target="_blank" rel="noopener">&#x7528;github &#x505A;&#x6587;&#x4EF6;&#x76EE;&#x5F55; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#6</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-7" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#xFF08;&#x4E00;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#7</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-8" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x81EA;&#x5B9A;&#x4E49;&#x5B89;&#x88C5;&#xFF08;&#x4E8C;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#8</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/github-9" target="_blank" rel="noopener">&#x5229;&#x7528;github&#x505A;&#x514D;&#x8D39;&#x535A;&#x5BA2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#9</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/nodejs-10" target="_blank" rel="noopener">Nodejs&#xFF0C;&#x6253;&#x5F00;&#x670D;&#x52A1;&#x5668;&#x9ED1;&#x5323;&#x5B50; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#10</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-js-11" target="_blank" rel="noopener">&#x4E00;&#x5165;&#x524D;&#x7AEF;&#x6DF1;&#x4F3C;&#x6D77;&#xFF0C;&#x804A;&#x804A;vue.js / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#11</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-11" target="_blank" rel="noopener">&#x6211;&#x4EEC;&#x60F3;&#x505A;&#x7684;&#xFF0C;vue&#x90FD;&#x5E2E;&#x6211;&#x4EEC;&#x505A;&#x597D;&#x4E86; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#12</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-13" target="_blank" rel="noopener">vue&#x548C;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E00;&#x5BB6;&#x4EB2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#13</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-14" target="_blank" rel="noopener">vue&#x7684;&#x7EC4;&#x4EF6;&#x9762;&#x9762;&#x89C2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#14</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-router-15" target="_blank" rel="noopener">vue-router&#x8DEF;&#x7531;&#x7684;&#x53C2;&#x6570;&#x548C;&#x8BBE;&#x8BA1; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#15</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/webpack-16" target="_blank" rel="noopener">webpack&#x524D;&#x7AEF;&#x795E;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#16</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/filezilla-ftp-17" target="_blank" rel="noopener">&#x7528;FileZilla&#x4F5C;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#17</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/ftp-18" target="_blank" rel="noopener">&#x8FDE;&#x63A5;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65B9;&#x6CD5;/ &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#18</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/axios-http-vuex-19" target="_blank" rel="noopener">axios&#x8BF7;&#x6C42;HTTP&#x548C;vuex&#x6570;&#x636E;&#x7BA1;&#x7406; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#19</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/youtube-youtube-dlg-20" target="_blank" rel="noopener">YouTube &#x89C6;&#x9891;&#x4E0B;&#x8F7D;&#x5229;&#x5668;&#x2014;Youtube-DLG / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#20</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-django-rest-framework-21" target="_blank" rel="noopener">Vue&#x548C;django rest framework&#x505A;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x8BBE;&#x8BA1; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#21</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/74ca1h-22" target="_blank" rel="noopener">&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x7684;&#x4E24;&#x79CD;&#x529E;&#x6CD5; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#22</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/gitbook-23" target="_blank" rel="noopener">gitbook&#x5236;&#x4F5C;&#x751F;&#x6210;&#x7535;&#x5B50;&#x4E66; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#23</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/6piw4h-24" target="_blank" rel="noopener">&#x7528;&#x516C;&#x79C1;&#x94A5;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x8C37;&#x6B4C;&#x4E91; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#24</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/25" target="_blank" rel="noopener">&#x7528;&#x8C37;&#x6B4C;&#x4E91;&#x5347;&#x7EA7;&#x4E0B;&#x79D1;&#x5B66;&#x4E0A;&#x7F51;&#x5DE5;&#x5177;&#x5427; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#25</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/screen-26" target="_blank" rel="noopener">&#x597D;&#x7528;&#x7684;&#x5DE5;&#x5177;screen&#xFF0C;&#x8BA9;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x5B89;&#x9759;&#x5730;&#x8FD0;&#x884C; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#26</a></li>
-</ul>
-<hr>
-<p>&#x3000;@lemooljiang  #network-institute</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/41dhcm-27" target="_blank" rel="noopener">&#x2018;&#x7F13;&#x5B58;&#x7684;&#x5999;&#x7528; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#27&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/5e3ucy/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmPJi9CZabRJrmwkaK2EgoTj5ivM35roABPuqTp3872uSy/sun.jpg" alt="孙影帝你好！">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-07-23T10:59:03.000Z">2019-07-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 357 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/5e3ucy/">孙影帝你好！</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmPJi9CZabRJrmwkaK2EgoTj5ivM35roABPuqTp3872uSy/sun.jpg" alt="sun.jpg"></p>
-<p>&#x300A;&#x5B59;&#x5B87;&#x6668;&#x56DE;&#x5E94;&#x53D6;&#x6D88;&#x5DF4;&#x83F2;&#x7279;&#x5348;&#x9910;&#x4F1A;&#x300B;&#xFF0C;&#x8FD9;&#x7C7B;&#x7684;&#x65B0;&#x95FB;&#x4E00;&#x4E0B;&#x5B50;&#x5C31;&#x5360;&#x636E;&#x4E86;&#x70ED;&#x70B9;&#xFF0C;&#x8BA9;&#x4EBA;&#x4E0D;&#x5F97;&#x4E0D;&#x9762;&#x5BF9;&#x3002;&#x8BF4;&#x5FC3;&#x91CC;&#x8BDD;&#xFF0C;&#x6211;&#x4E00;&#x70B9;&#x90FD;&#x4E0D;&#x60F3;&#x770B;&#xFF0C;&#x4F46;&#x65E0;&#x5948;&#x70ED;&#x70B9;&#x592A;&#x70ED;&#xFF0C;&#x4E5F;&#x6765;&#x804A;&#x9A9A;&#x4E24;&#x53E5;&#x3002;</p>
-<p>&#x8BF4;&#x8D77;&#x5B59;&#xFF0C;&#x8BF4;&#x8D77;&#x6CE2;&#x573A;&#xFF0C;&#x771F;&#x5FC3;&#x6CA1;&#x600E;&#x4E48;&#x5173;&#x6CE8;&#x3002;&#x4E0D;&#x8FC7;&#x8FD9;&#x54E5;&#x4EEC;&#x5B9E;&#x5728;&#x80FD;&#x8E66;&#x54D2;&#xFF0C;&#x5B9E;&#x5728;&#x80FD;&#x7092;&#x4F5C;&#xFF0C;&#x5B9E;&#x5728;&#x80FD;&#x8E6D;&#x70ED;&#x70B9;&#xFF01;&#x6CE2;&#x573A;&#x4E00;&#x53D1;&#x5E03;&#xFF0C;&#x5C31;&#x8E6D;&#x4EE5;&#x592A;&#xFF0C;&#x53F7;&#x79F0;&#x8981;&#x5E72;&#x8DB4;&#x4EE5;&#x592A;&#x3001;&#x8D85;&#x8D8A;&#x4EE5;&#x592A;&#xFF08;&#x6709;&#x70B9;&#x50CF;&#x662F;BM&#x53F7;&#x79F0;&#x8D85;&#x8D8A;&#x6BD4;&#x7279;&#x5E01;&#x4E00;&#x6837;&#xFF0C;&#x4E5F;&#x50CF;&#x662F;steem&#x53F7;&#x79F0;&#x8981;&#x8D85;&#x8D8A;facebook&#x4E00;&#x6837;&#xFF09;&#x3002;&#x4E00;&#x770B;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x4EBA;&#x8BBE;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x660E;&#x767D;&#x8FD9;&#x4E0D;&#x8FC7;&#x662F;&#x5F53;&#x6F14;&#x5458;&#x7684;&#x8DE8;&#x754C;&#x6765;&#x7092;&#x5E01;&#x800C;&#x5DF2;&#x3002;</p>
-<p>&#x6BD4;&#x8D77;&#x786C;&#x6886;&#x6886;&#x3001;&#x51B7;&#x786C;&#x7684;&#x79D1;&#x6280;&#x5B85;&#x4EEC;&#xFF0C;&#x5B59;&#x786E;&#x80FD;&#x5E26;&#x52A8;&#x70B9;&#x5A31;&#x4E50;&#x7684;&#x6C14;&#x6C1B;&#xFF0C;&#x5237;&#x5237;&#x5E01;&#x754C;&#x7684;&#x5B58;&#x5728;&#x611F;&#xFF0C;&#x8D21;&#x732E;&#x8FD8;&#x662F;&#x86EE;&#x5927;&#x7684;&#x3002;&#x6709;&#x70B9;&#x50CF;&#x662F;&#x5218;&#x5F3A;&#x4E1C;&#x88AB;&#x5927;&#x5BB6;&#x8BB0;&#x4F4F;&#x7684;&#x6C38;&#x8FDC;&#x662F;&#x5976;&#x8336;&#x59B9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x4EAC;&#x4E1C;&#x7684;&#x521B;&#x529E;&#x4EBA;&#x4E4B;&#x7C7B;&#x3002;</p>
-<p><strong>&#x8D70;&#x8D70;&#x4E0B;&#x4E09;&#x8DEF;&#x4E5F;&#x672A;&#x5C1D;&#x4E0D;&#x597D;&#xFF01;</strong>&#x201C;&#x51E1;&#x6218;&#x8005;&#x4EE5;&#x6B63;&#x5408;&#xFF0C;&#x4EE5;&#x5947;&#x80DC;&#xFF0C;&#x6545;&#x5584;&#x51FA;&#x5947;&#x8005;&#xFF0C;&#x65E0;&#x7A77;&#x5982;&#x5929;&#x5730;&#xFF0C;&#x4E0D;&#x7AED;&#x5982;&#x6C5F;&#x6CB3;&#x3002;&#x201D;&#x4E0B;&#x4E00;&#x6CE2;&#x70ED;&#x70B9;&#x6211;&#x60F3;&#x5F88;&#x5FEB;&#x5C31;&#x4F1A;&#x6709;&#x7684;&#xFF01;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/5e3ucy" target="_blank" rel="noopener">&#x2018;&#x5B59;&#x5F71;&#x5E1D;&#x4F60;&#x597D;&#xFF01;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -686,7 +691,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@lemooljiang/page/171/">171</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@lemooljiang/page/172/">172</a></li>
             
         </ul>
     </nav>
