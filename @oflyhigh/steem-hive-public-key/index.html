@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>每天进步一点点：STEEM/HIVE公钥(Public Key)生成探索 - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;">
+        <span class="has-mr-6">1</span>
+        <span>&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;">
+        <span class="has-mr-6">2</span>
+        <span>&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;</span>
+        </a></li><li>
+        <a class="is-flex" href="#STEEM-HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;">
+        <span class="has-mr-6">3</span>
+        <span>STEEM/HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x6821;&#x9A8C;">
+        <span class="has-mr-6">4</span>
+        <span>&#x6821;&#x9A8C;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x7ED3;&#x8BBA;">
+        <span class="has-mr-6">5</span>
+        <span>&#x7ED3;&#x8BBA;</span>
+        </a></li><li>
+        <a class="is-flex" href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;">
+        <span class="has-mr-6">6</span>
+        <span>&#x76F8;&#x5173;&#x94FE;&#x63A5;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmch2dccTeSUgEMFFJH7vPcmgv7ZW1cSQfG4BN6z51pm9T/image.png" alt="每天进步一点点：STEEM/HIVE公钥(Public Key)生成探索">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-30T14:30:18.000Z">2020-03-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1086 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                每天进步一点点：STEEM/HIVE公钥(Public Key)生成探索
+            
+        </h1>
+        <div class="content">
+            <p>&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x63A2;&#x7D22;&#x4E86;<a href="https://hive.blog/hive-105017/@oflyhigh/steem-hive-private-key" target="_blank" rel="noopener">STEEM/HIVE&#x79C1;&#x94A5;(Private Key)&#x662F;&#x5982;&#x4F55;&#x751F;&#x6210;&#x7684;</a>&#xFF0C;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#x662F;&#x548C;&#x6BD4;&#x7279;&#x5E01;&#x4E00;&#x6837;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x90A3;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x6709;&#x6CA1;&#x6709;&#x5F88;&#x597D;&#x5947;&#xFF0C;STEEM/HIVE&#x516C;&#x94A5;(Public Key)&#x53C8;&#x662F;&#x5982;&#x4F55;&#x751F;&#x6210;&#x7684;&#x5462;&#xFF1F;</p>
+<p><img src="https://cdn.steemitimages.com/DQmch2dccTeSUgEMFFJH7vPcmgv7ZW1cSQfG4BN6z51pm9T/image.png" alt="image.png"><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x8BB2;&#x771F;&#xFF0C;&#x6211;&#x4E5F;&#x5F88;&#x597D;&#x5947;&#x554A;&#xFF0C;&#x90A3;&#x4E00;&#x8D77;&#x6765;&#x63A2;&#x7D22;&#x4E00;&#x4E0B;&#x5427;&#x3002;</p>
+<h1 id="&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;"><a href="#&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;" class="headerlink" title="&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;"></a>&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x516C;&#x94A5;</h1><p>&#x4E4B;&#x524D;&#x5B66;&#x4E60;&#x6BD4;&#x7279;&#x5E01;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x51FA;&#x8FC7;&#x5982;&#x4E0B;&#x7ED3;&#x8BBA;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>&#x516C;&#x94A5;(K)&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x8FD0;&#x7B97;&#x7531;&#x79C1;&#x94A5;(k)&#x8BA1;&#x7B97;&#x5F97;&#x51FA;</li>
+<li>&#x79C1;&#x94A5;(k)&#x5230;&#x516C;&#x94A5;(K)&#x8BA1;&#x7B97;&#x516C;&#x5F0F;&#xFF1A; K=k&#x2217;G</li>
+<li>&#x751F;&#x6210;&#x8FC7;&#x7A0B;&#x4F7F;&#x7528;secp256k1&#x6807;&#x51C6;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x692D;&#x5706;&#x66F2;&#x7EBF;&#x4EE5;&#x53CA;&#x4E00;&#x7EC4;&#x6570;&#x5B66;&#x5E38;&#x91CF;</li>
+<li>&#x4ECE;&#x79C1;&#x94A5;(k)&#x5230;&#x516C;&#x94A5;(K)&#x7ED3;&#x679C;&#x662F;&#x786E;&#x5B9A;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x53EA;&#x80FD;&#x5355;&#x5411;&#x8FD0;&#x7B97;</li>
+<li>&#x4F7F;&#x7528;Python&#x7684;ecdsa&#x5E93;&#xFF0C;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5B9E;&#x73B0;&#x79C1;&#x94A5;(k)&#x5230;&#x516C;&#x94A5;(K)&#x7684;&#x8BA1;&#x7B97;</li>
+</ul>
+</blockquote>
+<p>&#x5E76;&#x4E14;&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import ecdsa</span><br><span class="line">from binascii import hexlify, unhexlify</span><br><span class="line">secret = unhexlify(&apos;a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e&apos;)</span><br><span class="line">order = ecdsa.SigningKey.from_string(secret, curve=ecdsa.SECP256k1).curve.generator.order()</span><br><span class="line">p = ecdsa.SigningKey.from_string(secret, curve=ecdsa.SECP256k1).verifying_key.pubkey.point</span><br><span class="line">x_str = ecdsa.util.number_to_string(p.x(), order)</span><br><span class="line">y_str = ecdsa.util.number_to_string(p.y(), order)</span><br><span class="line">compressed = hexlify(bytes(chr(2 + (p.y() &amp; 1)), &apos;ascii&apos;) + x_str).decode(&apos;ascii&apos;)</span><br><span class="line">uncompressed = hexlify(bytes(chr(4), &apos;ascii&apos;) + x_str + y_str).decode(&apos;ascii&apos;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x5176;&#x4E2D;&#x6D89;&#x53CA;&#x5230;<code>compressed</code>&#x4EE5;&#x53CA;<code>uncompressed</code>&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x4E0B;&#x56FE;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmZTADw51R2eMcciNhmmhHfFcdnUdua2ps4zUJZ6HK65SD/image.png" alt="image.png"><br>( Source: &#x300A;Mastering Bitcoin&#x300B;)</p>
+</blockquote>
+<p>&#x5C06;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x5F97;&#x5230;&#x7684;&#x79C1;&#x94A5;&#x4EE3;&#x5165;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#xFF0C;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x516C;&#x94A5;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmYAvryDygpM48zQG7iL635tbgmSq9anj5EMCTiL6J2nnW/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x4E0D;&#x8FC7;&#x600E;&#x4E48;&#x770B;&#x548C;STEEM/HIVE&#x7684;&#x516C;&#x94A5;&#x90FD;&#x4E0D;&#x50CF;&#x5462;&#xFF1F;</p>
+<h1 id="&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;"><a href="#&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;" class="headerlink" title="&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;"></a>&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;</h1><p>&#x518D;&#x6765;&#x60F3;&#x60F3;&#x6211;&#x4EEC;&#x62FF;&#x5230;&#x7684;&#x79C1;&#x94A5;&#xFF0C;&#x662F;&#x7528;&#x52A0;&#x4E86;&#x524D;&#x7F00;(0x80)&#x5E76;&#x7528;Base58Check&#x7F16;&#x7801;&#x7684;256&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;&#x968F;&#x673A;&#x6570;&#xFF0C;&#x6700;&#x7EC8;&#x662F;&#x53EF;&#x4EE5;&#x9605;&#x8BFB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x516C;&#x94A5;&#x662F;&#x4E0D;&#x662F;&#x4E5F;&#x5E94;&#x8BE5;&#x5229;&#x7528;&#x5DEE;&#x4E0D;&#x591A;&#x7684;&#x65B9;&#x5F0F;&#x751F;&#x6210;&#x53EF;&#x9605;&#x8BFB;&#x5B57;&#x7B26;&#x4E32;&#x5462;&#xFF1F;</p>
+<p>&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5730;&#x5740;&#x7684;&#x751F;&#x6210;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmSkchDDcx14yrg7A6mRHT5XjB8M3H5xDjGYXYoWd3zWUs/image.png" alt="image.png"><br>( Source: &#x300A;Mastering Bitcoin&#x300B;)</p>
+</blockquote>
+<h1 id="STEEM-HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;"><a href="#STEEM-HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;" class="headerlink" title="STEEM/HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;"></a>STEEM/HIVE&#x4E2D;&#x5730;&#x5740;&#xFF1A;</h1><p>STEEM/HIVE&#x4E2D;&#x662F;&#x4E0D;&#x662F;&#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x5462;&#xFF1F;&#x6211;&#x770B;&#x4E86;&#x4E00;&#x4E0B;steem-python&#x4EE3;&#x7801;&#xFF0C;&#x53D1;&#x73B0;&#x5E76;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x6BD4;&#x7279;&#x5E01;&#x5730;&#x5740;&#x7684;&#x751F;&#x6210;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x4E86;&#x5982;&#x4E0B;&#x7F16;&#x7801;&#x89C4;&#x5219;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def gphBase58CheckEncode(s):</span><br><span class="line">    checksum = ripemd160(s)[:4]</span><br><span class="line">    result = s + hexlify(checksum).decode(&apos;ascii&apos;)</span><br><span class="line">    return base58encode(result)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BB2;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x83B7;&#x53D6;&#x6BD4;&#x7279;&#x5E01;&#x5F62;&#x5F0F;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x4F7F;&#x7528;<strong><em><code>gphBase58CheckEncode</code></em></strong>&#x7F16;&#x7801;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x5BF9;&#x4E4B;&#x524D;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x7684;&#x516C;&#x94A5;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmf2pjC6MEpDz5SbFghMM7s3hRHFXxxvzjYNrP8eX4c1px/image.png" alt="image.png"></p>
+</blockquote>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x539F;&#x59CB;&#x79C1;&#x94A5;:  415ac848c316b406920e0a4b43adc7f93c45bb89124f80ced8d1f50fae4f080d</span><br><span class="line">&#x7F16;&#x7801;&#x79C1;&#x94A5;:  5JK4yeeivq6j3y4sVwZESJiuBPdi1ZinnePreZ1syeQ9HAMWzBH</span><br><span class="line">&#x538B;&#x7F29;&#x516C;&#x94A5;:  02f5810b31e23d76a1b8a76cfe43d7168abbaf6363c3927aafaf4751697488d329</span><br><span class="line">&#x975E;&#x538B;&#x7F29;&#x516C;&#x94A5;:  04f5810b31e23d76a1b8a76cfe43d7168abbaf6363c3927aafaf4751697488d329147d6d4e232cf7de60d94b3962ea260894fe02274223b2a3050eb9b7e655ab4e</span><br><span class="line">&#x538B;&#x7F29;&#x5730;&#x5740;:  6kcRebtq32xhvWU169smx9W8wRcENWMDMv11mEZNAM8CwxM3r9</span><br><span class="line">&#x975E;&#x538B;&#x7F29;&#x5730;&#x5740;: 3s64c2YwPXWh3GEky4TmJeqGsEbXtBReey9byPwtzGrEUfdqiyWCwZkiqPqLuGbMpiLcu1UQAUoHFTZ6sYVNDHzqCnMjJX</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x901A;&#x8FC7;&#x5206;&#x6790;steem-python&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x77E5;&#x5730;&#x5740;&#x90FD;&#x662F;&#x7528;&#x538B;&#x7F29;&#x516C;&#x94A5;&#x751F;&#x6210;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x5728;STEEM/HIVE&#x7CFB;&#x7EDF;&#x4E2D;&#x8981;&#x52A0;&#x4E0A;&#x524D;&#x7F00;<code>STM</code>&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x7EC8;&#x5F97;&#x5230;&#x7684;STEEM/HIVE&#x53EF;&#x9605;&#x8BFB;&#x516C;&#x94A5;(&#x5730;&#x5740;)&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p><code>STM6kcRebtq32xhvWU169smx9W8wRcENWMDMv11mEZNAM8CwxM3r9</code></p>
+</blockquote>
+<h1 id="&#x6821;&#x9A8C;"><a href="#&#x6821;&#x9A8C;" class="headerlink" title="&#x6821;&#x9A8C;"></a>&#x6821;&#x9A8C;</h1><p>&#x4F7F;&#x7528;&#x6211;&#x4EEC;&#x4E0A;&#x4E2A;&#x5E16;&#x5B50;&#x4E2D;&#x7684;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#xFF0C;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmXAqXzEAVMK3ApYgX7cM1uAbVDK9PMULHTxE9NeVXfhZb/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x548C;&#x6211;&#x4EEC;&#x751F;&#x6210;&#x7684;&#x5BF9;&#x6BD4;&#xFF0C;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x3002;</p>
+<h1 id="&#x7ED3;&#x8BBA;"><a href="#&#x7ED3;&#x8BBA;" class="headerlink" title="&#x7ED3;&#x8BBA;"></a>&#x7ED3;&#x8BBA;</h1><p>STEEM/HIVE&#x4F7F;&#x7528;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x751F;&#x6210;&#x65B9;&#x6CD5;&#x548C;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#x516C;&#x94A5;&#x7684;&#x751F;&#x6210;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x4E5F;&#x6709;&#x538B;&#x7F29;&#x548C;&#x975E;&#x538B;&#x7F29;&#x4E24;&#x79CD;&#x3002;</p>
+<p>&#x7136;&#x540E;STEEM/HIVE&#x4E2D;&#x4F7F;&#x7528;<strong><em><code>gphBase58CheckEncode</code></em></strong>&#x5BF9;&#x5176;&#x4E2D;&#x7684;<strong><em>&#x538B;&#x7F29;&#x516C;&#x94A5;</em></strong>&#x8FDB;&#x884C;&#x7F16;&#x7801;&#xFF0C;&#x5E76;&#x52A0;&#x4E0A;<strong><em><code>STM</code></em></strong>&#x524D;&#x7F00;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://hive.blog/hive-105017/@oflyhigh/steem-hive-private-key" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;STEEM/HIVE&#x79C1;&#x94A5;(Private Key)&#x751F;&#x6210;&#x63A2;&#x7D22;</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steem-hive-public-key" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;STEEM/HIVE&#x516C;&#x94A5;(Public Key)&#x751F;&#x6210;&#x63A2;&#x7D22;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/bitcoin/">bitcoin</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/python/">python</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/wif/">wif</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/2ku92p/">
+                <span class="level-item">移栽鸢尾</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+
