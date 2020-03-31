@@ -79,7 +79,9 @@ I hope this helps!
 
 If you like my work, please consider voting for me, thanks!
 https://steemit.com/~witnesses type in **justyy** and click ***VOTE***
-https://steemyy.com/images/vote-for-justyy.jpg
+![](https://steemyy.com/images/vote-for-justyy.jpg)
+<BR/>
+**Alternatively, you could proxy to me via [steemconnect](https://steemconnect.com/sign/account-witness-proxy?proxy=justyy&approve=1) if you are too lazy to vote!**
 
 - - -
 
