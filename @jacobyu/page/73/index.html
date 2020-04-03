@@ -230,6 +230,207 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@jacobyu/research-teb-local-planner/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520491251/doi0bulbs7fadfsgoskb.png" alt="[Research] 지역 경로 계획 소개, teb local planner">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-03-08T07:00:36.000Z">2018-03-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-dev/">kr-dev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 896 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@jacobyu/research-teb-local-planner/">[Research] 지역 경로 계획 소개, teb local planner</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#xC624;&#xB79C;&#xB9CC;&#xC5D0; &#xB85C;&#xBD07; &#xAD00;&#xB828; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC800;&#xB3C4; &#xACF5;&#xBD80;&#xD560;&#xACB8; &#xC791;&#xC131;&#xC911;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBAA8;&#xBC14;&#xC77C; &#xB85C;&#xBD07;&#xC758; &#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC5D0; &#xB300;&#xD574; &#xC18C;&#xAC1C;&#xD558;&#xACE0;&#xC790; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC9C0;&#xC5ED;-&#xACBD;&#xB85C;-&#xACC4;&#xD68D;-Local-path-planner"><a href="#&#xC9C0;&#xC5ED;-&#xACBD;&#xB85C;-&#xACC4;&#xD68D;-Local-path-planner" class="headerlink" title="&#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; (Local path planner)"></a>&#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; (Local path planner)</h3><blockquote>
+<p>Given a plan to follow and a costmap, the controller produces velocity commands to send to a mobile base.</p>
+</blockquote>
+<p>&#xC989;, </p>
+<ul>
+<li>&#xBAA9;&#xC801;&#xC9C0;</li>
+<li>&#xBAA9;&#xC801;&#xC9C0;&#xB85C; &#xAC00;&#xAE30; &#xC704;&#xD55C; &#xC804;&#xC5ED; &#xACBD;&#xB85C;</li>
+<li>&#xC8FC;&#xBCC0;&#xC758; &#xC815;&#xBCF4; (ex - &#xC27D;&#xAC8C; &#xC7A5;&#xC560;&#xBB3C;&#xC774; &#xC788;&#xB2E4;)</li>
+</ul>
+<p>&#xC704;&#xC758; &#xC815;&#xBCF4;&#xB4E4;&#xC774; &#xC788;&#xB2E4;&#xACE0; &#xAC00;&#xC815;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774; &#xB54C;, local path planner&#xB294; &#xBAA8;&#xBC14;&#xC77C; &#xB85C;&#xBD07;&#xC744; &#xBAA9;&#xC801;&#xC9C0;&#xAE4C;&#xC9C0; &#xAC08; &#xC218; &#xC788;&#xB3C4;&#xB85D; <strong>&#xC804;&#xC9C4;, &#xD68C;&#xC804;</strong>&#xC744; &#xBA85;&#xB839;&#xD569;&#xB2C8;&#xB2E4;. </p>
+<hr>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xC800;&#xB294; &#xCF54;&#xC5D1;&#xC2A4;&#xC5D0;&#xC11C; &#xC601;&#xD654;&#xAD00;&#xC744; &#xAC00;&#xC57C;&#xD558;&#xBA70; &#xC785;&#xAD6C;&#xC5D0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC601;&#xD654;&#xAD00;&#xAE4C;&#xC9C0; &#xAC00;&#xAE30; &#xC704;&#xD55C; &#xACBD;&#xB85C;&#xAC00; <strong>&#xC804;&#xC5ED; &#xACBD;&#xB85C;</strong> (global path)&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xC81C; &#xC601;&#xD654;&#xAD00;&#xAE4C;&#xC9C0; &#xC6C0;&#xC9C1;&#xC774;&#xB294;&#xB370;, &#xC911;&#xAC04;&#xC911;&#xAC04; &#xC0AC;&#xB78C;&#xB4E4;&#xB3C4; &#xC788;&#xACE0;, &#xAC11;&#xC790;&#xAE30; &#xACF5;&#xC0AC;&#xB3C4; &#xD558;&#xB354;&#xB77C;&#xACE0;&#xC694;.</p>
+<p>&#xADF8;&#xB798;&#xC11C;, &#xC804;&#xC5ED; &#xACBD;&#xB85C;&#xB97C; &#xB530;&#xB77C; &#xAC00;&#xC9C0;&#xB9CC;, <strong>&#xC0AC;&#xB78C;&#xB4E4;&#xC744; &#xD53C;&#xD574;&#xAC00;&#xB294; &#xACBD;&#xB85C;</strong>&#xB3C4; &#xC0DD;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xAC8C; &#xBC14;&#xB85C; <strong>&#xC9C0;&#xC5ED; &#xACBD;&#xB85C;</strong> (local path)&#xC785;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<p>&#xC5EC;&#xB7EC; &#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; &#xC54C;&#xACE0;&#xB9AC;&#xC998;&#xC774; &#xC788;&#xC9C0;&#xB9CC;,</p>
+<p>&#xC88B;&#xC740; &#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; &#xC54C;&#xACE0;&#xB9AC;&#xC998; (TEB local planner)&#xC744; &#xC18C;&#xAC1C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h3 id="TEB-Timed-Elastic-Band-local-planner"><a href="#TEB-Timed-Elastic-Band-local-planner" class="headerlink" title="TEB(Timed Elastic Band) local planner"></a>TEB(Timed Elastic Band) local planner</h3><h2 id="gt-The-teb-local-planner-package-implements-a-plugin-to-the-base-local-planner-of-the-2D-navigation-stack-The-underlying-method-called-Timed-Elastic-Band-locally-optimizes-the-robot&#x2019;s-trajectory-with-respect-to-trajectory-execution-time-separation-from-obstacles-and-compliance-with-kinodynamic-constraints-at-runtime"><a href="#gt-The-teb-local-planner-package-implements-a-plugin-to-the-base-local-planner-of-the-2D-navigation-stack-The-underlying-method-called-Timed-Elastic-Band-locally-optimizes-the-robot&#x2019;s-trajectory-with-respect-to-trajectory-execution-time-separation-from-obstacles-and-compliance-with-kinodynamic-constraints-at-runtime" class="headerlink" title="&gt; The teb_local_planner package implements a plugin to the base_local_planner of the 2D navigation stack. The underlying method called Timed Elastic Band locally optimizes the robot&#x2019;s trajectory with respect to trajectory execution time, separation from obstacles and compliance with kinodynamic constraints at runtime."></a>&gt; The teb_local_planner package implements a plugin to the base_local_planner of the 2D navigation stack. The underlying method called Timed Elastic Band locally optimizes the robot&#x2019;s trajectory with respect to trajectory execution time, separation from obstacles and compliance with kinodynamic constraints at runtime.</h2><p>TEB&#xB294; &#xC2DC;&#xAC04;, &#xC7A5;&#xC560;&#xBB3C;, &#xC5ED;&#xD559;&#xC801;&#xC778; &#xC81C;&#xC57D; &#xB4F1;&#xC744; &#xACE0;&#xB824;&#xD574;&#xC11C; &#xCD5C;&#xC801;&#xC758; &#xC9C0;&#xC5ED; &#xACBD;&#xB85C;&#xB97C; &#xB9CC;&#xB4E0;&#xB2E4;! &#xB77C;&#xACE0; &#xB418;&#xC5B4;&#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC544;&#xB798; &#xC0AC;&#xC9C4;&#xC5D0;&#xC11C; &#xBE68;&#xAC04; &#xC120;&#xC740; A&#xC9C0;&#xC810;&#xC5D0;&#xC11C; B&#xC9C0;&#xC810;&#xAE4C;&#xC9C0;&#xC758; &#xACBD;&#xB85C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC7A5;&#xC560;&#xBB3C;&#xC774; 3&#xAC1C;&#xAC00; &#xC788;&#xC9C0;&#xB9CC;, &#xACBD;&#xB85C;&#xC5D0; &#xC804;&#xD600; &#xC601;&#xD5A5;&#xC744; &#xC8FC;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB798;&#xC11C; &#xC9C1;&#xC120; &#xACBD;&#xB85C;&#xB97C; &#xB9CC;&#xB4E0; &#xAC83;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520491251/doi0bulbs7fadfsgoskb.png" alt="image.png"></p>
+<p>&#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xC7A5;&#xC560;&#xBB3C;&#xC744; &#xD558;&#xB098; &#xB450;&#xC5C8;&#xB354;&#xB2C8;, &#xC7A5;&#xC560;&#xBB3C;&#xC744; &#xC6B0;&#xD68C;&#xD558;&#xB294; &#xACBD;&#xB85C;&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB450; &#xACBD;&#xB85C;&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xC9C0;&#xB9CC;, &#xADF8; &#xC911;&#xC5D0; &#xB354; &#xB0AB;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD558;&#xB294;&#xAC78; &#xC120;&#xD0DD;&#xD558;&#xC600;&#xACE0; &#xADF8; &#xACBD;&#xB85C;&#xAC00; &#xBE68;&#xAC04;&#xC0C9;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520491385/fwolwt1zcbhkwrdt29ge.png" alt="image.png"></p>
+<p>&#xC7A5;&#xC560;&#xBB3C; &#xD558;&#xB098;&#xB97C; &#xB354; &#xB123;&#xC5B4;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD328;&#xC2A4;&#xAC00; &#xC5EC;&#xB7EC; &#xAC1C;&#xAC00; &#xC0DD;&#xACBC;&#xB294;&#xB370; &#xADF8; &#xC911;&#xC5D0; &#xAC00;&#xC7A5; &#xC88B;&#xC740; &#xD328;&#xC2A4;&#xB97C; &#xC120;&#xD0DD;&#xD558;&#xC600;&#xACE0;</p>
+<p>&#xBE68;&#xAC04; &#xC120;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520492152/pdnywcd9f4zhyj5h5m3x.png" alt="image.png"></p>
+<p>&#xACBD;&#xB85C;&#xAC00; &#xC7A5;&#xC560;&#xBB3C;&#xACFC; &#xAC00;&#xAE4C;&#xC774; &#xC788;&#xB294; &#xAC83; &#xAC19;&#xC544;,</p>
+<p>&#xC880; &#xB354; &#xC6B0;&#xD68C;&#xD560; &#xC218; &#xC788;&#xB294; &#xACBD;&#xB85C;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xACE0; &#xC2F6;&#xC5B4;&#xC84C;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xACBD;&#xB85C;&#xB97C; &#xC0DD;&#xC131;&#xD558;&#xAE30; &#xC704;&#xD55C; &#xB2E4;&#xC591;&#xD55C; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xAC00; &#xC788;&#xC9C0;&#xB9CC;, </p>
+<p>&#xC7A5;&#xC560;&#xBB3C;&#xACFC;&#xC758; &#xCD5C;&#xC18C; &#xAC70;&#xB9AC; &#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xC778; <code>min_obstacle_dist</code>&#xB97C; 0.5m&#xC5D0;&#xC11C; 2.0m&#xB85C; &#xB298;&#xB824;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xBCC0;&#xACBD; &#xD6C4;, &#xACBD;&#xB85C;&#xB97C; &#xBCF4;&#xBA74; &#xC7A5;&#xC560;&#xBB3C;&#xB85C;&#xBD80;&#xD130; &#xAC70;&#xB9AC;&#xAC00; &#xBA3C; &#xAC83;&#xC744; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520491854/r6poixg76btlooux44vj.png" alt="image.png"></p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520492213/asz8dbt3bog1ubftznmq.png" alt="image.png"></p>
+<p>&#xD30C;&#xB77C;&#xBBF8;&#xD130;&#xB97C; &#xC880; &#xB354; &#xD30C;&#xC545;&#xC744; &#xD558;&#xACE0;, &#xC2E4;&#xC81C;&#xB85C; &#xC368;&#xBA39;&#xC5B4;&#xBCFC; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xD574;&#xBCFC; &#xC608;&#xC815;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCC38;&#xACE0; &#xB9C1;&#xD06C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li><a href="http://wiki.ros.org/teb_local_planner#Obstacle_Parameters" target="_blank" rel="noopener">http://wiki.ros.org/teb_local_planner#Obstacle_Parameters</a></li>
+<li><a href="http://wiki.ros.org/teb_local_planner/Tutorials" target="_blank" rel="noopener">http://wiki.ros.org/teb_local_planner/Tutorials</a></li>
+<li><a href="http://wiki.ros.org/teb_local_planner/Tutorials/Setup%20and%20test%20Optimization" target="_blank" rel="noopener">http://wiki.ros.org/teb_local_planner/Tutorials/Setup%20and%20test%20Optimization</a></li>
+</ul>
+<p>&#xC77D;&#xC5B4;&#xC8FC;&#xC154;&#xC11C; &#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;!</p>
+<p>&#xAD81;&#xAE08;&#xD55C; &#xC810;, &#xC870;&#xC5B8; &#xB4F1; &#xD658;&#xC601;&#xD569;&#xB2C8;&#xB2E4;!</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/research-teb-local-planner" target="_blank" rel="noopener">&#x2018;[Research] &#xC9C0;&#xC5ED; &#xACBD;&#xB85C; &#xACC4;&#xD68D; &#xC18C;&#xAC1C;, teb local planner&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@jacobyu/7/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520297133/xi1k2y5lxrruqygdu7md.png" alt="스팀 기반의 격투 게임, 이벤트, 상금 총 7스달">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-03-06T09:34:33.000Z">2018-03-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-event/">kr-event</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 619 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@jacobyu/7/">스팀 기반의 격투 게임, 이벤트, 상금 총 7스달</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;-&#xC774;&#xBCA4;&#xD2B8;"><a href="#&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;-&#xC774;&#xBCA4;&#xD2B8;" class="headerlink" title="&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; &#xC774;&#xBCA4;&#xD2B8;!"></a>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; &#xC774;&#xBCA4;&#xD2B8;!</h3><p>&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;.</p>
+<p>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB77C;&#xACE0; &#xC544;&#xC2DC;&#xB098;&#xC694;? &#xC5EC;&#xB7EC;&#xBC88; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD558;&#xC600;&#xB294;&#xB370;</p>
+<p>&#xD64D;&#xBCF4; &#xACB8; &#xC774;&#xBCA4;&#xD2B8;&#xB97C; &#xD558;&#xACE0; &#xC2F6;&#xC5B4; &#xC774; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520297133/xi1k2y5lxrruqygdu7md.png" alt="image.png"></p>
+<p>&#xC81C;&#xAC00; &#xAC1C;&#xBC1C;&#xC911;&#xC778; &#xC2A4;&#xD300; &#xAE30;&#xBC18;&#xC758; &#xACA9;&#xD22C; &#xAC8C;&#xC784;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>F. LF&#xB77C;&#xB294; &#xC624;&#xD508;&#xC18C;&#xC2A4; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C;,</p>
+<p>&#xC5EC;&#xAE30;&#xC5D0; &#xC2A4;&#xD300;&#xC744; &#xC5F0;&#xB3D9;&#xC2DC;&#xCF30;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xCD94;&#xAC00;&#xC801;&#xC778; &#xAC1C;&#xBC1C; &#xACC4;&#xD68D;&#xC740; &#xC544;&#xB798; &#xB9C1;&#xD06C;&#xB97C; &#xCC38;&#xACE0;&#xD558;&#xC154;&#xC694;.</p>
+<p><a href="https://busy.org/kr-dev/@jacobyu/steem" target="_blank" rel="noopener">https://busy.org/kr-dev/@jacobyu/steem</a></p>
+<p><a href="https://busy.org/@jacobyu/steem-beta" target="_blank" rel="noopener">https://busy.org/@jacobyu/steem-beta</a></p>
+<h3 id="&#xB3D9;&#xAE30;-&#xBC0F;-&#xBAA9;&#xD45C;"><a href="#&#xB3D9;&#xAE30;-&#xBC0F;-&#xBAA9;&#xD45C;" class="headerlink" title="&#xB3D9;&#xAE30; &#xBC0F; &#xBAA9;&#xD45C;"></a>&#xB3D9;&#xAE30; &#xBC0F; &#xBAA9;&#xD45C;</h3><p>&#xD06C;&#xB9BD;&#xD1A0;&#xD0A4;&#xD2F0;&#xB77C;&#xB294; &#xC774;&#xB354;&#xB9AC;&#xC6C0; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD558;&#xB294;<br>&#xACE0;&#xC591;&#xC774; &#xD0A4;&#xC6B0;&#xAE30; &#xAC8C;&#xC784;&#xC744; &#xC54C;&#xAC8C;&#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xD300; &#xAE30;&#xBC18;&#xC758; &#xAC8C;&#xC784;&#xC774; &#xC788;&#xC73C;&#xBA74; &#xC88B;&#xACA0;&#xB2E4; &#xC0DD;&#xAC01;&#xD558;&#xC5EC; &#xC2DC;&#xC791;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB294; &#xC2A4;&#xD300; &#xAE30;&#xBC18;&#xC758; &#xC6F9;&#xAC8C;&#xC784;&#xC785;&#xB2C8;&#xB2E4;.<br>&#xC774; &#xAC8C;&#xC784;&#xC744; &#xD1B5;&#xD574; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0;&#xB97C; &#xAE30;&#xB300;&#xD558;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>&#xB204;&#xAD6C;&#xB4E0; &#xD3B8;&#xD558;&#xAC8C; &#xC811;&#xC18D;</li>
+<li>&#xC2A4;&#xD300;&#xC787; &#xC720;&#xC800;&#xB4E4;&#xAC04;&#xC758; &#xC18C;&#xD1B5; &#xD655;&#xB300;</li>
+<li>&#xC131;&#xACF5;&#xC801;&#xC778; &#xC11C;&#xBE44;&#xC2A4;</li>
+<li>&#xC2A4;&#xD300; &#xAC00;&#xACA9;&#xC0C1;&#xC2B9;!!!!!!!!!</li>
+</ul>
+<hr>
+<h3 id="&#xC774;&#xBCA4;&#xD2B8;-&#xBC29;&#xBC95;"><a href="#&#xC774;&#xBCA4;&#xD2B8;-&#xBC29;&#xBC95;" class="headerlink" title="&#xC774;&#xBCA4;&#xD2B8; &#xBC29;&#xBC95;"></a>&#xC774;&#xBCA4;&#xD2B8; &#xBC29;&#xBC95;</h3><p>&#xC774;&#xBCA4;&#xD2B8; &#xCC38;&#xC5EC; &#xBC29;&#xBC95;&#xC740; &#xC815;&#xB9D0; &#xAC04;&#xB2E8;&#xD55C;&#xB370;&#xC694;.<br>&#xAC8C;&#xC784;&#xC744; &#xCC38;&#xC5EC;&#xD558;&#xBA74;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<ol>
+<li><p><a href="http://&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to" target="_blank" rel="noopener">&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; &#xAC00;&#xC988;&#xC544;~</a> &#xB9C1;&#xD06C;&#xB97C; &#xB204;&#xB978;&#xB2E4;.<br><a href="http://&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to" target="_blank" rel="noopener">&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to</a><br><a href="http://steemfighter.oa.to" target="_blank" rel="noopener">steemfighter.oa.to</a><br><a href="http://steemfighters.com" target="_blank" rel="noopener">steemfighters.com</a></p>
+</li>
+<li><p>&#xC2A4;&#xD300;&#xCEE4;&#xB125;&#xD2B8;2&#xB85C; &#xB85C;&#xADF8;&#xC778;&#xC744; &#xD55C;&#xB2E4;.</p>
+</li>
+<li><p>&#xAC8C;&#xC784;&#xC744; &#xC2DC;&#xC791;&#xD55C;&#xB2E4;.<br>&#xCEF4;&#xD4E8;&#xD130; 1&#xBA85;&#xACFC; &#xC2F8;&#xC6B4;&#xB2E4;.</p>
+</li>
+<li><p>&#xCEF4;&#xD4E8;&#xD130;&#xB97C; &#xC4F0;&#xB7EC;&#xD2B8;&#xB9B0;&#xB2E4;.<br>&#xCEF4;&#xD4E8;&#xD130;&#xC5D0;&#xAC8C; &#xC774;&#xAE30;&#xBA74; @steemfighter&#xC758; &#xCD5C;&#xC2E0; &#xAE00;&#xC5D0; 1&#xD37C; &#xBCF4;&#xD305;&#xC744; &#xD558;&#xAC8C;&#xB429;&#xB2C8;&#xB2E4;.<br>&#xC9C4;&#xB2E4;&#xBA74;, steemfighter&#xC5D0;&#xAC8C; 5&#xD37C; &#xBCF4;&#xD305;&#xC744; &#xD558;&#xAC8C;&#xB429;&#xB2C8;&#xB2E4;.<br>(&#xC5EC;&#xB7EC;&#xBC88; &#xD558;&#xB354;&#xB77C;&#xB3C4; &#xCD5C;&#xC2E0; &#xAE00;&#xC5D0; &#xD55C;&#xBC88;&#xB9CC; &#xBCF4;&#xD305;&#xD558;&#xAC8C;&#xB429;&#xB2C8;&#xB2E4;.)</p>
+</li>
+</ol>
+<hr>
+<p>&#xAC8C;&#xC784; &#xC870;&#xC791; &#xD0A4;&#xB294;<br>wasd tyu (t : ATK, y : JMP, u : DEF)&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAE30;&#xC220;&#xC740;</p>
+<ul>
+<li>u + d + t (D + -&gt; + A)</li>
+<li>u + w + t (D + &#xC717;&#xBC29;&#xD5A5; + A)</li>
+<li>u + d + y (D + -&gt; + J)</li>
+<li>&#xC5EC;&#xB7EC;&#xAC00;&#xC9C0;&#xAC00; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<hr>
+<p><strong>2018.03.08 (&#xBAA9;) &#xC800;&#xB141; 11&#xC2DC;&#xAE4C;&#xC9C0; </strong><br>&#xC2B9;&#xB960;&#xC774; &#xB192;&#xC740; &#xC21C;&#xC73C;&#xB85C; &#xC21C;&#xC704;&#xB97C; &#xB9E4;&#xAE38; &#xC608;&#xC815;&#xC774;&#xBA70;,<br>5&#xB4F1;&#xAE4C;&#xC9C0; &#xC0C1;&#xAE08;&#xC744; &#xB4DC;&#xB9AC;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;!</p>
+<p>1&#xB4F1; : 2.5SBD<br>2&#xB4F1; : 1.5SBD<br>3&#xB4F1; : 1.0SBD<br>4&#xB4F1; : 0.5SBD<br>5&#xB4F1; : 0.5SBD</p>
+<p>&#xC0C1;&#xAE08;&#xC774; &#xC870;&#xAE08; &#xC801;&#xC9C0;&#xB9CC; &#x315C;&#x315C; </p>
+<p>&#xB9CE;&#xC774; &#xCC38;&#xC5EC;&#xD574;&#xC8FC;&#xC2DC;&#xBA74; &#xC88B;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xAD81;&#xAE08;&#xD55C;&#xAC8C; &#xC788;&#xC73C;&#xC2DC;&#xBA74; &#xB313;&#xAE00; &#xB0A8;&#xACA8;&#xC8FC;&#xC138;&#xC694;.<br>&#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/7" target="_blank" rel="noopener">&#x2018;&#xC2A4;&#xD300; &#xAE30;&#xBC18;&#xC758; &#xACA9;&#xD22C; &#xAC8C;&#xC784;, &#xC774;&#xBCA4;&#xD2B8;, &#xC0C1;&#xAE08; &#xCD1D; 7&#xC2A4;&#xB2EC;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@jacobyu/2/" class="image is-7by1">
             <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520271231/hhh9om3oucnt0xawuanb.png" alt="스팀커넥트2를 활용한 보팅 및 댓글 작성">
         </a>
@@ -633,168 +834,15 @@ console.log(err, res)
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@jacobyu/steem/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1519313053/grgohigtrsbgcozpaouq.png" alt="개발 중인 STEEM 기반의 격투게임, 스팀파이터 소개">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-23T19:04:42.000Z">2018-02-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-dev/">kr-dev</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 939 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@jacobyu/steem/">개발 중인 STEEM 기반의 격투게임, 스팀파이터 소개</a>
-            
-        </h1>
-        <div class="content">
-            <p></p><h2>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; (Steemfighter)</h2><br>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB294; &#xCD5C;&#xCD08;&#xC758; &#xC2A4;&#xD300; &#xAE30;&#xBC18;&#xC758; &#xACA9;&#xD22C;&#xAC8C;&#xC784;&#xC744; &#xBAA9;&#xD45C;&#xB85C; &#xD569;&#xB2C8;&#xB2E4;.<p></p>
-<p>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB294; &#xC6F9;&#xC5D0;&#xC11C; &#xB3D9;&#xC791;&#xD558;&#xC5EC;, &#xB530;&#xB85C; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC744; &#xC124;&#xCE58;&#xD560; &#xD544;&#xC694;&#xAC00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB294; &#xC544;&#xB798;&#xC758; &#xC624;&#xD508;&#xC18C;&#xC2A4; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB97C; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xAC1C;&#xBC1C;&#xD569;&#xB2C8;&#xB2E4;.</p>
-<ul><br>     <li>F.LF (&#xB9AC;&#xD2C0;&#xD30C;&#xC774;&#xD130; &#xC6F9;&#xBC84;&#xC83C;)</li><br>     <li>Colyseus (&#xAC8C;&#xC784; &#xC11C;&#xBC84; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;)</li><br></ul><br>&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; &#xAC8C;&#xC784;&#xC744; &#xD1B5;&#xD574; &#xC11C;&#xB85C; &#xBCF4;&#xD305;&#xC744; &#xD574;&#xC8FC;&#xACE0; (ex - &#xC9C4; &#xC0AC;&#xB78C;&#xC774; &#xC774;&#xAE34;&#xC0AC;&#xB78C;&#xC5D0;&#xAC8C;)<br><br>&#xAC8C;&#xC784; &#xC18D;&#xC5D0;&#xC11C; &#xCC44;&#xD305;&#xB3C4; &#xD560; &#xC218; &#xC788;&#xB294; &#xAC83;&#xC744; &#xC708;&#xD569;&#xB2C8;&#xB2E4;.<br><br><img src="https://steemitimages.com/0x0/https://res.cloudinary.com/hpiynhbhq/image/upload/v1519313053/grgohigtrsbgcozpaouq.png" alt="U5ds1swNmbukvRq8N5hqms79Y8vkXNn_1680x8400.png"><br><h4>&#xAD6C;&#xD604;&#xD560; &#xAE30;&#xB2A5;</h4><br>&#xC544;&#xB798;&#xC758; &#xAE30;&#xB2A5;&#xB4E4;&#xC744; &#xAD6C;&#xD604;&#xD560; &#xC608;&#xC815;&#xC785;&#xB2C8;&#xB2E4;.<br><ul><br>     <li>&#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xB300;&#xACB0; - &#xCEF4;&#xD4E8;&#xD130;&#xC640; &#xC2F8;&#xC6CC; &#xC774;&#xAE30;&#xBA74;, @steemfighter&#xAC00; &#xBCF4;&#xD305;&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</li><br>     <li>1:1 &#xB300;&#xACB0; - &#xC720;&#xC800;&#xAC04;&#xC758; &#xACB0;&#xD22C;, &#xC774;&#xAE34; &#xC0AC;&#xB78C;&#xC5D0;&#xAC8C; &#xBCF4;&#xD305;&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</li><br>     <li>&#xBC30;&#xD2C0;&#xADF8;&#xB77C;&#xC6B4;&#xB4DC; - &#xC811;&#xC18D;&#xC744; &#xD558;&#xBA74; &#xC5EC;&#xB7EC; &#xC720;&#xC800;&#xB4E4;&#xACFC; &#xC2F8;&#xC6B0;&#xBA74;&#xC11C; &#xC0B4;&#xC544;&#xB0A8;&#xC2B5;&#xB2C8;&#xB2E4;.<br><ul><br>     <li>&#xC624;&#xB798; &#xC0B4;&#xC544;&#xB0A8;&#xC744;&#xC218;&#xB85D; &#xBCF4;&#xC0C1;&#xC774; &#xCEE4;&#xC9D1;&#xB2C8;&#xB2E4;.</li><br>     <li>&#xC790;&#xC2E0;&#xC744; &#xC8FD;&#xC778; &#xC0AC;&#xB78C;&#xC5D0;&#xAC8C; &#xBCF4;&#xD305;&#xC744; &#xD558;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.</li><br></ul><br></li><br>     <li>&#xCE90;&#xB9AD;&#xD130; &#xCEE4;&#xC2A4;&#xD130;&#xB9C8;&#xC774;&#xC9D5;</li><br>     <li>&#xB9F5; &#xD655;&#xC7A5;</li><br>     <li>&#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xC0DD;&#xAC01;&#xC911;&#xC785;&#xB2C8;&#xB2E4;.</li><br></ul><br><h4>&#xD604;&#xC7AC; &#xAD6C;&#xD604;&#xD55C; &#xAE30;&#xB2A5;</h4><br>&#xACC4;&#xD68D; 1&#xB2E8;&#xACC4; &#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xB300;&#xACB0; &#xAD6C;&#xD604;&#xD558;&#xC600;&#xC73C;&#xBA70;, &#xC544;&#xC9C1; &#xC2A4;&#xD300;&#xACFC; &#xC5F0;&#xB3D9;&#xC740; &#xD558;&#xC9C0;&#xBABB;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.<br><br>&#xACE7; &#xD560; &#xC608;&#xC815;&#xC785;&#xB2C8;&#xB2E4;.<br><br><a href="http://&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to" target="_blank" rel="noopener">&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to</a><br><br>&#xBA3C;&#xC800; &#xC81C;&#xAC00; &#xD558;&#xB294; &#xAC83;&#xC744; &#xBCF4;&#xC2DC;&#xC8E0;.<br><br><a href="https://youtu.be/YgsZy__vkiY" target="_blank" rel="noopener">https://youtu.be/YgsZy__vkiY</a><br><h4>&#xD544;&#xC694;&#xD55C; &#xAE30;&#xC220;</h4><br><ul><br>     <li>Javascript &#xAE30;&#xBC18;&#xC758; &#xAE30;&#xC220;<br><ul><br>     <li>Javascript, typescript, Node.js &#xB4F1; &#xC4F0;&#xC784;.</li><br></ul><br></li><br>     <li>&#xB9AC;&#xD2C0;&#xD30C;&#xC774;&#xD130; &#xCF54;&#xB4DC; &#xBD84;&#xC11D; &#xBC0F; &#xC6D0;&#xD558;&#xB294;&#xB300;&#xB85C; &#xD65C;&#xC6A9; &#xAC00;&#xB2A5;</li><br>     <li>&#xC2A4;&#xD300; API &#xC5F0;&#xB3D9;</li><br>     <li>&#xC2A4;&#xD300; &#xCEE4;&#xB125;&#xD2B8; &#xC5F0;&#xB3D9;</li><br>     <li>&#xAC8C;&#xC784; &#xC11C;&#xBC84; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC; &#xC5F0;&#xB3D9;</li><br>     <li>UI &#xD544;&#xC694;</li><br></ul>
-
-<hr>
-
-<p></p><h4>&#xACC4;&#xD68D; 1&#xB2E8;&#xACC4;</h4><br>&#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xB300;&#xACB0;&#xC740; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC740; &#xACFC;&#xC815;&#xC73C;&#xB85C; &#xC9C4;&#xD589;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xD569;&#xB2C8;&#xB2E4;.<p></p>
-<p>&#xCCAB; &#xD398;&#xC774;&#xC9C0; -&gt; &#xC2A4;&#xD300; &#xCEE4;&#xB125;&#xD2B8; &#xC811;&#xC18D; -&gt; &#xBAA8;&#xB4DC; &#xC120;&#xD0DD; -&gt;&#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xB300;&#xACB0; &#xC120;&#xD0DD; -&gt; &#xC778;&#xACF5;&#xC9C0;&#xB2A5;&#xACFC; &#xAC8C;&#xC784;&#xD55C;&#xB2E4;. -&gt;&#xAC8C;&#xC784; &#xACB0;&#xACFC; -&gt; &#xC774;&#xAE38; &#xACBD;&#xC6B0;, @steemfighter&#xB294; &#xC774;&#xAE34;&#xC0AC;&#xB78C;&#xC5D0;&#xAC8C; &#xBCF4;&#xD305;&#xD55C;&#xB2E4;.</p>
-<p><strong>&#xC778;&#xACF5;&#xC9C0;&#xB2A5; &#xB300;&#xACB0; &#xC120;&#xD0DD; -&gt; &#xC778;&#xACF5;&#xC9C0;&#xB2A5;&#xACFC; &#xAC8C;&#xC784;&#xD55C;&#xB2E4;. -&gt;&#xAC8C;&#xC784; &#xACB0;&#xACFC;</strong></p>
-<p>&#xD575;&#xC2EC; &#xBD80;&#xBD84;&#xC5D0; &#xB300;&#xD55C; &#xAC1C;&#xBC1C;&#xC744; &#xC644;&#xB8CC;&#xD558;&#xC600;&#xACE0;,</p>
-<p>&#xC2A4;&#xD300;&#xCEE4;&#xB125;&#xD2B8; &#xC5F0;&#xB3D9;&#xACFC; &#xBCF4;&#xD305;&#xD558;&#xB294; &#xAE30;&#xB2A5;&#xC744; &#xB123;&#xC73C;&#xBA74; &#xACC4;&#xD68D; 1&#xB2E8;&#xACC4;&#xB294; &#xC644;&#xB8CC;&#xD560; &#xC218; &#xC788;&#xC744;&#xAC83;&#xC73C;&#xB85C; &#xBCF4;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<hr>
-
-<p></p><h4>&#xD14C;&#xC2A4;&#xD2B8; &#xBC29;&#xBC95;</h4><br><a href="http://&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to" target="_blank" rel="noopener">&#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;.oa.to</a>&#xB97C; &#xB4E4;&#xC5B4;&#xAC00;&#xBA74;<p></p>
-<p>&#xC2A4;&#xD300;&#xACFC; &#xC5F0;&#xB3D9;&#xB418;&#xC9C0;&#xC54A;&#xC740; &#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130;&#xB97C; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p><strong>&#xD0A4;&#xB294; wsad tyu&#xC785;&#xB2C8;&#xB2E4;.</strong></p>
-<p><strong>&#xC2A4;&#xD0AC;&#xC774; &#xC788;&#xB294;&#xB370; &#xACE7; &#xC62C;&#xB9AC;&#xB3C4;&#xB85D; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</strong></p>
-<hr>
-
-<p></p><h4>&#xACB0;&#xB860;</h4><br>@morning&#xB2D8;&#xC758; &#xC2A4;&#xD300;&#xCEE4;&#xB125;&#xD2B8; &#xC5F0;&#xB3D9; &#xAC15;&#xC88C;&#xB97C; &#xC5F4;&#xC2EC;&#xD788; &#xBCF4;&#xACE0; &#xC5F0;&#xB3D9;&#xD558;&#xC5EC;<p></p>
-<p>1&#xB2E8;&#xACC4;&#xB97C; &#xC644;&#xB8CC; &#xD6C4; &#xCC3E;&#xC544;&#xBD59;&#xB3C4;&#xB85D; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p>&#xB9CE;&#xC740; &#xAD00;&#xC2EC; &#xBD80;&#xD0C1;&#xB4DC;&#xB9AC;&#xACE0;,</p>
-<p>&#xD55C;&#xBC88; &#xAC8C;&#xC784; &#xD574;&#xBCF4;&#xC2DC;&#xACE0; &#xD6C4;&#xAE30;&#xB3C4; &#xC54C;&#xB824;&#xC8FC;&#xC138;&#xC694; &#x314E;&#x314E;</p>
-<hr>
-
-<p>&#xB9AC;&#xD2C0;&#xD30C;&#xC774;&#xD130;&#xB294; &#xC81C;&#xAC00; &#xC5B4;&#xB9B4; &#xB54C;&#xBD80;&#xD130; &#xC88B;&#xC544;&#xD558;&#xB358; &#xAC8C;&#xC784;&#xC778;&#xB370;&#xC694;.</p>
-<p>&#xC5EC;&#xC720; &#xC2DC;&#xAC04;&#xC740; &#xC774; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0; &#xC9D1;&#xC911;&#xD574;&#xBCF4;&#xACE0;&#xC790; &#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xC81C; &#xC2DC;&#xC791;&#xC785;&#xB2C8;&#xB2E4;.</p>
-<p>&#xAC1C;&#xBC1C;, &#xD14C;&#xC2A4;&#xD2B8;, &#xAE30;&#xD68D; &#xB4F1; &#xB9CE;&#xC740; &#xC870;&#xC5B8; &#xBD80;&#xD0C1;&#xB4DC;&#xB9AC;&#xACE0; &#xCC38;&#xC5EC;&#xB3C4; &#xAC00;&#xB2A5;&#xD558;&#xC2ED;&#xB2C8;&#xB2E4;!</p>
-<p>&#xAD00;&#xC2EC;&#xC788;&#xC73C;&#xC2E0;&#xBD84;&#xC740; &#xB313;&#xAE00;&#xC8FC;&#xC154;&#xC694;! (&#xD64D;&#xBCF4;&#xB97C; &#xC704;&#xD574; &#xBCF4;&#xD305;&#xBD07;&#xC744; &#xD65C;&#xC6A9;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.)</p>
-<p>&#xAD81;&#xAE08;&#xD55C; &#xC810;&#xC774; &#xC788;&#xC73C;&#xC2DC;&#xB2E4;&#xBA74; &#xD3B8;&#xD558;&#xAC8C; &#xB9D0;&#xD574;&#xC8FC;&#xC138;&#xC694;.</p>
-<p>&#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;.</p>
-<p></p><h4>&#xAD00;&#xB828;&#xB41C; &#xC774;&#xC804; &#xAE00;</h4><p></p>
-<ul><br>     <li><a href="https://busy.org/@jacobyu/do-you-know-little-fighter" target="_blank" rel="noopener">&#xC6F9; &#xAE30;&#xBC18;&#xC758; &#xB9AC;&#xD2C0;&#xD30C;&#xC774;&#xD130; &#xACA9;&#xD22C; &#xAC8C;&#xC784; &#xC18C;&#xAC1C;</a></li><br>     <li><a href="https://busy.org/@jacobyu/f-lf" target="_blank" rel="noopener">&#xC6F9; &#xAE30;&#xBC18;&#xC758; &#xB9AC;&#xD2C0;&#xD30C;&#xC774;&#xD130; &#xACA9;&#xD22C; &#xAC8C;&#xC784; - &#xC790;&#xC138;&#xD55C; &#xC18C;&#xAC1C;</a></li><br>     <li><a href="https://busy.org/@jacobyu/vultr" target="_blank" rel="noopener">vultr&#xC744; &#xD1B5;&#xD55C; &#xC11C;&#xBC84; &#xD638;&#xC2A4;&#xD305;, &#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; #1</a></li><br></ul>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/steem" target="_blank" rel="noopener">&#x2018;&#xAC1C;&#xBC1C; &#xC911;&#xC778; STEEM &#xAE30;&#xBC18;&#xC758; &#xACA9;&#xD22C;&#xAC8C;&#xC784;, &#xC2A4;&#xD300;&#xD30C;&#xC774;&#xD130; &#xC18C;&#xAC1C;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@jacobyu/n/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519399885/oxo0svz9dwpgrfup0ptu.png" alt="[일기] 남산, N 서울타워로 가즈아~">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-02-23T15:38:09.000Z">2018-02-23</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-daily/">kr-daily</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 251 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@jacobyu/n/">[일기] 남산, N 서울타워로 가즈아~</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#xC624;&#xB298;&#xC740; &#xC800;&#xB141;&#xC5D0; &#xC5EC;&#xC790;&#xCE5C;&#xAD6C;&#xC640; &#xB0A8;&#xC0B0;&#xC5D0; &#xAC14;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p>&#xC800;&#xB294; &#xB0A8;&#xC0B0;&#xC744; &#xB0AE;&#xC5D0;&#xB9CC; &#xAC14;&#xC5C8;&#xACE0; &#xBC24;&#xC5D0;&#xB294; &#xC548;&#xAC00;&#xBD24;&#xB294;&#xB370;&#xC694;.</p>
-<p>&#xBC24;&#xC5D0; &#xBCF8; &#xB0A8;&#xC0B0;&#xC11C;&#xC6B8;&#xD0C0;&#xC6CC;&#xAC00; &#xC815;&#xB9D0; &#xBA4B;&#xC788;&#xB354;&#xAD70;&#xC694;.</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519399885/oxo0svz9dwpgrfup0ptu.png" alt="image.png"></p>
-<p>&#xAC00;&#xAE4C;&#xC774; &#xAC00;&#xC11C; &#xC544;&#xB798;&#xC5D0;&#xC11C; &#xC704;&#xB85C;&#xB3C4; &#xCC0D;&#xC5B4;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519399998/w2ttjlic5zevgsookmax.png" alt="image.png"></p>
-<p>&#xC804;&#xB9DD;&#xB300;&#xB3C4; &#xC62C;&#xB77C;&#xAC00;&#xBD24;&#xB294;&#xB370;&#xC694;</p>
-<p>&#xB4E4;&#xC5B4;&#xAC08; &#xB54C;, &#xC0AC;&#xC9C4; &#xD55C;&#xBC88; &#xCC0D;&#xACE0; &#xC704;&#xC5D0;&#xC11C; &#xC0AC;&#xC9C4; &#xC778;&#xD654;&#xD574;&#xC11C; &#xD314;&#xB354;&#xB77C;&#xACE0;&#xC694;.</p>
-<p>1&#xB9CC;&#xC6D0;, 2&#xB9CC;&#xC6D0; &#xC815;&#xB3C4;&#xC600;&#xB358;&#xAC83; &#xAC19;&#xC544;&#xC694;.</p>
-<p>&#xC0AC;&#xC9C4;&#xC774; &#xB9D8;&#xC5D0; &#xC548;&#xB4E4;&#xC5B4;&#xC11C; &#xD328;&#xC2A4;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#x314E;&#x314E;</p>
-<p>&#xC5D8;&#xB808;&#xBCA0;&#xC774;&#xD130;&#xC5D0;&#xB294; &#xC544;&#xB798; &#xC0AC;&#xC9C4;&#xCC98;&#xB7FC; &#xBE54;&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB85C; &#xC601;&#xC0C1;&#xC744; &#xBCF4;&#xC5EC;&#xC8FC;&#xB354;&#xAD70;&#xC694;.</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1519400097/v21fmffrmhjjwrk5h101.png" alt="image.png"></p>
-<p>&#xC870;&#xAE08; &#xCD94;&#xC6E0;&#xC9C0;&#xB9CC;</p>
-<p>&#xC57C;&#xACBD;&#xB3C4; &#xBCFC; &#xC218; &#xC788;&#xACE0;, &#xC88B;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/n" target="_blank" rel="noopener">&#x2018;[&#xC77C;&#xAE30;] &#xB0A8;&#xC0B0;, N &#xC11C;&#xC6B8;&#xD0C0;&#xC6CC;&#xB85C; &#xAC00;&#xC988;&#xC544;~&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/72/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/72/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/74/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/74/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -810,7 +858,7 @@ console.log(err, res)
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@jacobyu/page/84/">84</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@jacobyu/page/85/">85</a></li>
             
         </ul>
     </nav>
@@ -946,7 +994,7 @@ console.log(err, res)
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
 
 
 
