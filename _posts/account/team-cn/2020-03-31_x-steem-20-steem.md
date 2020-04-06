@@ -1,6 +1,6 @@
 
 ---
-title: '新手村两周年纪念 X 全球社区庆祝Steem四周年活动（目前累计344.765 STEEM奖金）'
+title: '新手村两周年纪念 X 全球社区庆祝Steem四周年活动（目前累计557.525 STEEM奖金）'
 permlink: x-steem-20-steem
 catalog: true
 toc_nav_num: true
@@ -64,7 +64,7 @@ widgets:
 **有效时间** 2020年3月30号（星期一）至4月18号（星期六）。
 **审查** 这项挑战最棒的一点在于全部Steem社区都是评审。随着这个挑战的进行，我们会向社区发布取得的成就。
 **奖金** 符合资格的中文帖子将会分享344.765 STEEM(接受捐款来增加奖金池金额)
-**链接** 当你发表文章的时候，请把本文的链接加入到你文章中。
+**链接** 当你发表文章后，请把帖子链接发到这篇帖子下
 **在文章的结尾** 请加上：
 
 </li>
@@ -88,4 +88,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: ['新手村两周年纪念 X 全球社区庆祝Steem四周年活动（目前累计344.765 STEEM奖金）'](https://steemit.com/@team-cn/x-steem-20-steem)
+This page is synchronized from the post: ['新手村两周年纪念 X 全球社区庆祝Steem四周年活动（目前累计557.525 STEEM奖金）'](https://steemit.com/@team-cn/x-steem-20-steem)
