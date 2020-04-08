@@ -230,6 +230,269 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/how-to-calculate-estimated-account-value-part-two/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt="How to calculate estimated account value: Part Two / 如何计算账户估值：第二部分">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-02T05:27:12.000Z">2017-09-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 814 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-calculate-estimated-account-value-part-two/">How to calculate estimated account value: Part Two / 如何计算账户估值：第二部分</a>
+            
+        </h1>
+        <div class="content">
+            <p>In my <a href="https://steemit.com/steemdev/@oflyhigh/how-to-calculate-estimated-account-value-part-one" target="_blank" rel="noopener">previous article</a>, we concluded that:<br>To calculate estimated account value, we need to get items from these four parts:<br>1) The assets in wallet( And in SAVINGS)<br>2) The assets in internal market<br>3) The assets(SBD) in conversion processes<br>4) The assets(rewards) to be claimed</p>
+<p>I will explain how to get them in this article.</p>
+<p><img src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt=""></p>
+<h1 id="The-assets-in-wallet-And-in-SAVINGS"><a href="#The-assets-in-wallet-And-in-SAVINGS" class="headerlink" title="The assets in wallet( And in SAVINGS)"></a>The assets in wallet( And in SAVINGS)</h1><p>The following assets need to be fetched.</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+</ul>
+<p>There is a API named <strong><code>get_accounts</code></strong> will retrieve the account information which contained the above items.<br><code>vector&lt; extended_account &gt; get_accounts( vector&lt; string &gt; names ) const;</code></p>
+<p>To retrieve them we need to put the account name into list, and then call API with this list as arguments. We can read the item value from the result using the corresponding key.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Key </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM</td>
+<td>balance</td>
+</tr>
+<tr>
+<td>STEEM POWER</td>
+<td>vesting_shares</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS</td>
+<td>sbd_balance</td>
+</tr>
+<tr>
+<td>STEEM in SAVINGS</td>
+<td>savings_balance</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS in SAVINGS</td>
+<td>savings_sbd_balance</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://steemitimages.com/DQmePGpEQhp6GcCRfqPrqWHop4eKarF4pmEZ77s21NprFLR/image.png" alt=""><br><img src="https://steemitimages.com/DQmQETyNWCmG71g62JbedfCg58PZXiEjCtaMiD4FVYarFq2/image.png" alt=""><br><img src="https://steemitimages.com/DQmNnnmDmmVpJ8hWjZieRdR6pEZmvLXS1JtQm4wwwdj4MB6/image.png" alt=""><br><img src="https://steemitimages.com/DQmc6REL5iKYF6hDDxvMeFWvPEDNXcAHyaMmK3SnE6ZGNwX/image.png" alt=""></p>
+<p>An additional note, STEEM POWER was expressed in the form of  VESTS, we need to convert it to equivalent STEEM.</p>
+<h1 id="The-assets-in-internal-market"><a href="#The-assets-in-internal-market" class="headerlink" title="The assets in internal market"></a>The assets in internal market</h1><p>To simplify the problem, In order to simplify the problem, we define two type of operations: <strong><em>BUY</em></strong> and <strong><em>SELL</em></strong>.</p>
+<ul>
+<li><strong>BUY</strong>: We pay SBD, and want to receive STEEM</li>
+<li><strong>SELL</strong>: We pay STEEM, and want to receive SBD</li>
+</ul>
+<p>So, We get the following correspondence</p>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>How to calculate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM in internal market</td>
+<td>Remaining STEEM in all opening SELL order</td>
+</tr>
+<tr>
+<td>STEEM DOLLARS in internal market</td>
+<td>Remaining SBD in all opening BUY order</td>
+</tr>
+</tbody>
+</table>
+<p>There is a API named <strong><code>get_open_orders</code></strong>, will return all open orders in internal market for specified account.<br><code>vector&lt;extended_limit_order&gt; get_open_orders( string owner )const;</code></p>
+<p>The example return information for my account.<br><img src="https://steemitimages.com/DQmXaRGkLLRGHDviC7YUT6RtuNmAaiP4z4523ehkimF2oM5/image.png" alt=""></p>
+<p>We can draw the results from above information: we have 0.586 STEEM and 2 SBD in internal market.</p>
+<h1 id="The-assets-SBD-in-conversion-processes"><a href="#The-assets-SBD-in-conversion-processes" class="headerlink" title="The assets(SBD) in conversion processes"></a>The assets(SBD) in conversion processes</h1><p>As I mentioned in previous article, if we try to convert some amount SBD to STEEM, it will disappear from the wallet. So to accurately calculate the estimated account value, we need to get this part of SBD.</p>
+<p>Fortunately, there is a API called <strong><code>get_conversion_requests</code></strong>.<br><code>vector&lt;convert_request_api_obj&gt; get_conversion_requests( const string&amp; account_name )const;</code></p>
+<p>The result should like this one, We can work out the total amount of SBD easily.<br><img src="https://steemitimages.com/DQmbQyo4FaENctoreWzudn9cEpfqp9U4ZZeCHNSziMf7omf/image.png" alt=""></p>
+<h1 id="The-assets-rewards-to-be-claimed"><a href="#The-assets-rewards-to-be-claimed" class="headerlink" title="The assets(rewards) to be claimed"></a>The assets(rewards) to be claimed</h1><p>And after HF18, users need to claim their rewards manually, so to accurately calculate the estimated account value, we need to add this part: Rewards to be claim.</p>
+<p>The good news is we can retrieval them directly from user info,  with same API  <strong><code>get_accounts</code></strong> and the same way.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Key </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STEEM Reward to be claimed</td>
+<td><code>reward_steem_balance</code></td>
+</tr>
+<tr>
+<td>STEEM DOLLARS to be claimed</td>
+<td><code>reward_sbd_balance</code></td>
+</tr>
+<tr>
+<td>STEEM POWER to be claimed</td>
+<td><code>reward_vesting_balance</code> / <code>reward_vesting_steem</code></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://steemitimages.com/DQmTRx1tH8Cp7J2rQP5raa23fxB2iray8MDa6BkPc51ZhHd/image.png" alt=""><br>For STEEM POWER to be claimed, we can obtain it from <strong><code>reward_vesting_balance</code></strong> or <strong><code>reward_vesting_steem</code></strong>, but the previous one need to be converted, so the later one is better.</p>
+<p>For detailed usage of APIs, Please refer to the <a href="https://github.com/steemit/steem" target="_blank" rel="noopener"><strong>steem source code</strong> on Github</a>.</p>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x4E0A;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x6211;&#x4EEC;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF0C;&#x7CBE;&#x786E;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#xFF1A;</p>
+<ul>
+<li>&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x5305;&#x62EC;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;</li>
+<li>&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;</li>
+<li>&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;</li>
+<li>&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</li>
+</ul>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;<br><strong><code>get_accounts</code></strong>&#x8BFB;&#x56DE;&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x5305;&#x62EC;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;<br><strong><code>get_open_orders</code></strong>&#x8BFB;&#x56DE;&#x5E76;&#x8BA1;&#x7B97;&#x51FA;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;<br><strong><code>get_conversion_requests</code></strong>&#x8BFB;&#x56DE;&#x5E76;&#x8BA1;&#x7B97;&#x51FA; &#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;<br><strong><code>get_accounts</code></strong>&#x8BFB;&#x56DE;&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</p>
+<p>API&#x7684;&#x8BE6;&#x7EC6;&#x7528;&#x6CD5;&#xFF0C;&#x8BF7;&#x53C2;&#x8003;<a href="https://github.com/steemit/steem" target="_blank" rel="noopener">Github&#x4E0A;&#x7684;steem&#x6E90;&#x7801;</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-calculate-estimated-account-value-part-two" target="_blank" rel="noopener">How to calculate estimated account value: Part Two / &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF1A;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/how-to-calculate-estimated-account-value-part-one/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt="How to calculate estimated account value: Part One / 如何计算账户估值：第一部分">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-01T10:47:03.000Z">2017-09-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 710 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-calculate-estimated-account-value-part-one/">How to calculate estimated account value: Part One / 如何计算账户估值：第一部分</a>
+            
+        </h1>
+        <div class="content">
+            <p>Are you curious about your estimated account value?  Or,  curious about estimated account value of your friends?</p>
+<p><img src="https://steemitimages.com/DQmbJsbAdBGz7L6r7nkrEuJjeZHGcpb3Lh2ABo7iei98v1S/image.png" alt=""></p>
+<h1 id="Get-estimated-account-value-in-wallet-page"><a href="#Get-estimated-account-value-in-wallet-page" class="headerlink" title="Get estimated account value in wallet page"></a>Get estimated account value in wallet page</h1><p>You can check your estimated account value in your wallet after your logged in steemit.com, and you can check your friend&#x2019;s wallet by visit <a href="https://steemit.com/@yourfriendid/transfers" target="_blank" rel="noopener">https://steemit.com/@yourfriendid/transfers</a> without login. But, Have you noticed that there are some differences between them?</p>
+<p>Take my account for example:</p>
+<h4 id="&#x2705;&#xFE0F;Check-my-wallet-after-logged-in"><a href="#&#x2705;&#xFE0F;Check-my-wallet-after-logged-in" class="headerlink" title="&#x2705;&#xFE0F;Check my wallet after logged-in"></a>&#x2705;&#xFE0F;Check my wallet after logged-in</h4><p><img src="https://steemitimages.com/DQmVgdiMVYtEMNuy8fSHKPibUHyoQUyiycq3VfJuo94GJse/image.png" alt=""></p>
+<hr>
+<h4 id="&#x274C;&#xFE0F;Check-my-wallet-without-logged-in"><a href="#&#x274C;&#xFE0F;Check-my-wallet-without-logged-in" class="headerlink" title="&#x274C;&#xFE0F;Check my wallet without  logged-in"></a>&#x274C;&#xFE0F;Check my wallet without  logged-in</h4><p><img src="https://steemitimages.com/DQmNnate1fykMWgdBVzFcQ7bx98jbQUV5VUFLoF78hojpQr/image.png" alt=""></p>
+<p>Pay attention to where I marked it, the estimated account value after logged-in in is  more than without logged-in. Why? &#x26A0;&#xFE0F;Because <strong><em>the assets in internal market are not counted in estimated account value if this account is not logged in</em></strong>.</p>
+<p>So, if your friends have a lot of assets  in internal market, you will get a completely wrong value.</p>
+<h1 id="How-to-solve-this-problem"><a href="#How-to-solve-this-problem" class="headerlink" title="How to solve this problem?"></a>How to solve this problem?</h1><p>There is a API <code>get_open_orders</code>, will return all open orders in internal market of the specified account, and then we can calculate the assets in internal market of this account. </p>
+<p>Is it enough? No!<br>After we got account&#x2019;s assets in internal market by script, we need to manually add them to the values we got from web page(wallet), This is very annoying thing.  A better way is to read the user&#x2019;s wallet information by script too, and then add the corresponding information together.</p>
+<h1 id="What-we-need-to-get"><a href="#What-we-need-to-get" class="headerlink" title="What we need to get?"></a>What we need to get?</h1><p>To read the user&#x2019;s wallet information, we need to get the following information:</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+</ul>
+<p>Is it enough now? No!</p>
+<p>There a function in wallet called  <strong><em>Convert to Steem</em></strong>, if you use it to convert SBD to STEEM, your SBD will disappear from the wallet, until it be converted successfully. </p>
+<p>So, It should be better if we can obtain the assets(SBD) to be converted.<br>Fortunately, there is a API called <code>get_conversion_requests</code>. We can use it to calculate the amount of assets(SBD).</p>
+<p>And after HF18, users need to claim their rewards manually, so to accurately calculate the estimated account value, we need to add this part:  <strong><em>Rewards to be claim</em></strong></p>
+<h1 id="Conclusions"><a href="#Conclusions" class="headerlink" title="Conclusions"></a>Conclusions</h1><p>Estimated account value contains four parts:</p>
+<p>1) The assets in wallet( And in SAVINGS)<br>2) The assets in internal market<br>3) The assets(SBD) in conversion processes<br>4) The assets(rewards) to be claimed</p>
+<p>To calculate estimated account value, we need to get following items:</p>
+<ul>
+<li>STEEM</li>
+<li>STEEM POWER</li>
+<li>STEEM DOLLARS</li>
+<li>STEEM in SAVINGS</li>
+<li>STEEM DOLLARS in SAVINGS</li>
+<li><strong><em>STEEM in internal market</em></strong></li>
+<li><strong><em>STEEM DOLLARS in internal market</em></strong></li>
+<li><strong><em>STEEM DOLLARS in conversion requests</em></strong></li>
+<li><strong><em>STEEM Reward to be claimed</em></strong></li>
+<li><strong><em>STEEM POWER to be claimed</em></strong></li>
+<li><strong><em>STEEM DOLLARS to be claimed</em></strong></li>
+</ul>
+<p>I&#x2019;ll explain how to get these items in my next article.<br>Thank you for reading.</p>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x767B;&#x9646;&#x67E5;&#x770B;&#x7528;&#x6237;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x548C;&#x4E0D;&#x767B;&#x5F55;&#x67E5;&#x770B;&#xFF0C;&#x7ED3;&#x679C;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x533A;&#x522B;&#x3002;<br>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x767B;&#x9646;&#xFF0C;&#x6216;&#x8005;ID A&#x767B;&#x5F55;&#x67E5;&#x770B;ID B&#x7684;&#x94B1;&#x5305;, &#x5728;&#x5185;&#x90E8;&#x5E02;&#x573A;&#x7684;&#x8D44;&#x4EA7;&#x4E0D;&#x88AB;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;&#xFF0C; &#x4EE5;&#x53CA;&#x5F85;&#x6536;&#x53D6;&#x7684;&#x6536;&#x76CA;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x8BA1;&#x7B97;&#x5728;&#x5185;&#x3002;<br>&#x6240;&#x4EE5;&#x8981;&#x7CBE;&#x786E;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8BFB;&#x53D6;</p>
+<ul>
+<li>&#x94B1;&#x5305;&#x8D44;&#x4EA7;&#xFF08;&#x4FDD;&#x62A4;&#x5B58;&#x6B3E;&#x8D26;&#x6237;&#xFF09;</li>
+<li>&#x5185;&#x90E8;&#x5E02;&#x573A;&#x8D44;&#x4EA7;</li>
+<li>&#x8F6C;&#x6362;&#x4E2D;&#x7684;&#x8D44;&#x4EA7;</li>
+<li>&#x5F85;&#x6536;&#x53D6;&#x7684;&#x8D44;&#x4EA7;</li>
+</ul>
+<p>&#x6211;&#x5C06;&#x5728;&#x4E0B;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x83B7;&#x5F97;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-calculate-estimated-account-value-part-one" target="_blank" rel="noopener">How to calculate estimated account value: Part One / &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF1A;&#x7B2C;&#x4E00;&#x90E8;&#x5206;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/multisignature-account-test/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmSsfYazjF6THVCMUq75KxEtGrtgWR4o2HAALjCz3iGu7J/image.png" alt="Multisignature account test / 多重签名测试">
         </a>
@@ -480,164 +743,6 @@
 <p>&#x6211;&#x60F3;&#x6216;&#x8BB8;&#x662F;&#x6709;&#x4E86;&#x5C0F;&#x5B69;&#x540E;&#xFF0C;&#x5979;&#x5C31;&#x53EF;&#x4EE5;&#x548C;&#x513F;&#x5973;&#x5728;&#x4E00;&#x8D77;&#x4E86;&#x5427;&#x3002;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/3gm4ah" target="_blank" rel="noopener">&#x5D14;&#x5976;&#x5976;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/who-resteemed-rebloged-your-posts/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmQ9fQGiM5E8rXEJUm8x3wWJDaxwMPeeU3bajaciDjoKKt/image.png" alt="Who resteemed/rebloged your posts? / 谁转发了你的文章？">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-27T11:13:33.000Z">2017-08-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 476 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/who-resteemed-rebloged-your-posts/">Who resteemed/rebloged your posts? / 谁转发了你的文章？</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemitimages.com/DQmQ9fQGiM5E8rXEJUm8x3wWJDaxwMPeeU3bajaciDjoKKt/image.png" alt=""></p>
-<p>We often see replies like this&#xFF1A;</p>
-<blockquote>
-<p>Nice post, upvoted and resteemed.</p>
-</blockquote>
-<p>&#x6211;&#x4EEC;&#x6216;&#x8BB8;&#x65F6;&#x5E38;&#x770B;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x56DE;&#x590D;&#xFF1A;</p>
-<blockquote>
-<p>&#x597D;&#x6587;&#x7AE0;&#xFF0C;&#x6295;&#x7968;&#x5E76;&#x8F6C;&#x53D1;&#x4E86;&#x3002;</p>
-</blockquote>
-<p>Most of the replies like this come from robots, We don&#x2019;t have to care.<br>But&#xFF0C;Do you care who resteemed your posts?</p>
-<blockquote>
-<p>&#x5927;&#x591A;&#x6570;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#x7684;&#x56DE;&#x590D;&#x6765;&#x81EA;&#x673A;&#x5668;&#x4EBA;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x662F;&#x5426;&#x5173;&#x5FC3;&#x90FD;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x4F60;&#x7684;&#x5E16;&#x5B50;&#x5462;&#xFF1F;</p>
-</blockquote>
-<p>One of my friends said that&#xFF1A; &#x201C;Who resteemed your posts is your truly fan!&#x201D;, I don&#x2019;t think so, but the more people resteemed, the more popular the post is.</p>
-<blockquote>
-<p>&#x6211;&#x7684;&#x4E00;&#x4E2A;&#x670B;&#x53CB;&#x8BF4;&#xFF1A;&#x201C;&#x8F6C;&#x53D1;&#x624D;&#x662F;&#x771F;&#x7231;&#x7C89;&#x3002;&#x201D;&#xFF0C;&#x6211;&#x4E0D;&#x8FD9;&#x6837;&#x8BA4;&#x4E3A;&#xFF0C;&#x4F46;&#x662F;&#x8F6C;&#x53D1;&#x7684;&#x8D8A;&#x591A;&#xFF0C;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#x8D8A;&#x53D7;&#x6B22;&#x8FCE;&#x3002;</p>
-</blockquote>
-<p>So I made a small tool to check who resteemed my posts.</p>
-<blockquote>
-<p>&#x6240;&#x4EE5;&#x6211;&#x5F04;&#x4E2A;&#x4E86;&#x5C0F;&#x5DE5;&#x5177;&#x6765;&#x68C0;&#x67E5;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x6211;&#x7684;&#x5E16;&#x5B50;&#x3002;</p>
-</blockquote>
-<h1 id="The-URL-amp-Interface"><a href="#The-URL-amp-Interface" class="headerlink" title="The URL &amp; Interface"></a>The URL &amp; Interface</h1><p><a href="http://steemit.serviceuptime.net/check_resteem.php" target="_blank" rel="noopener">http://steemit.serviceuptime.net/check_resteem.php</a></p>
-<p><img src="https://steemitimages.com/DQmPiHwvcs6sFSx35HRMv8fRnELtb9PxDY9Bcs44DW22HVY/image.png" alt=""><br>Just input the account name you want to check, then press Return or click Check Button, you will get the results.</p>
-<blockquote>
-<p>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x5566;&#xFF0C;&#x8F93;&#x5165;&#x4F60;&#x8981;&#x67E5;&#x770B;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x7136;&#x540E;&#x56DE;&#x8F66;&#x6216;&#x8005;&#x70B9;Check &#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x4F1A;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x4E86;&#x3002;</p>
-</blockquote>
-<h1 id="The-Results-Filed"><a href="#The-Results-Filed" class="headerlink" title="The Results Filed"></a>The Results Filed</h1><p>The tool will read out 20 entries from user&#x2019;s blog, and listed them in table, and give a list who resteemed the posts.</p>
-<blockquote>
-<p>&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x8BFB;&#x53D6;&#x7528;&#x6237;&#x7684;&#x8FD1;20&#x6761;&#x535A;&#x5BA2;&#x6761;&#x76EE;&#xFF0C;&#x5E76;&#x5217;&#x51FA;&#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x5BF9;&#x5E94;&#x6587;&#x7AE0;&#x3002;</p>
-</blockquote>
-<p>For example, the part of the results for oflyhigh<br><img src="https://steemitimages.com/DQmPcQqAxBV1rYtjya9RcnJKaSUaXWCoLLgLvUwsYd5xwk6/image.png" alt=""></p>
-<blockquote>
-<p>&#x4EE5;&#x4E0A;&#x662F;oflyhigh&#x7684;&#x90E8;&#x5206;&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x3002;</p>
-</blockquote>
-<p>You can click the user to reach the user&#x2019;s blog page at steemit.</p>
-<blockquote>
-<p>&#x53EF;&#x4EE5;&#x70B9;&#x51FB;&#x7528;&#x6237;&#x540D;&#x76F4;&#x8FBE;&#x7528;&#x6237;&#x7684;steemit&#x535A;&#x5BA2;&#x4E3B;&#x9875;&#x3002;</p>
-</blockquote>
-<hr>
-<p>Are you want to know who resteemed your posts? <a href="http://steemit.serviceuptime.net/check_resteem.php" target="_blank" rel="noopener">Check it Now! </a></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/who-resteemed-rebloged-your-posts" target="_blank" rel="noopener">Who resteemed/rebloged your posts? / &#x8C01;&#x8F6C;&#x53D1;&#x4E86;&#x4F60;&#x7684;&#x6587;&#x7AE0;&#xFF1F;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/3fxaec/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmZDXnQbSWVXMyfwYQmn18DsV7C8oHWeGnuqFa1aroEjtV/image.png" alt="七夕，我们不要忘记那头牛">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-26T12:33:45.000Z">2017-08-26</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1573 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/3fxaec/">七夕，我们不要忘记那头牛</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4E03;&#x5915;&#x7684;&#x6545;&#x4E8B;&#xFF0C;&#x662F;&#x5C0F;&#x65F6;&#x5019;&#x5976;&#x5976;&#x8BB2;&#x7ED9;&#x6211;&#x542C;&#x7684;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x5976;&#x5976;&#x7B97;&#x5F97;&#x4E0A;&#x662F;&#x534A;&#x4E2A;&#x8BFB;&#x4E66;&#x4EBA;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x90A3;&#x4E2A;&#x5E74;&#x4EE3;&#xFF0C;&#x5176;&#x5B9E;&#x5E76;&#x6CA1;&#x6709;&#x591A;&#x5C11;&#x4E66;&#x53EF;&#x4EE5;&#x8BFB;&#xFF0C;&#x5F88;&#x591A;&#x6545;&#x4E8B;&#x90FD;&#x662F;&#x6545;&#x8001;&#x76F8;&#x4F20;&#x7684;&#x3002;&#x5728;&#x90A3;&#x4E2A;&#x6CA1;&#x6709;&#x7AE5;&#x8F66;&#x3001;&#x6CA1;&#x6709;&#x7535;&#x89C6;&#x3001;&#x66F4;&#x6CA1;&#x6709;&#x4E92;&#x8054;&#x7F51;&#xFF0C;&#x7269;&#x8D28;&#x98DF;&#x7CAE;&#x548C;&#x7CBE;&#x795E;&#x98DF;&#x7CAE;&#x90FD;&#x6781;&#x5EA6;&#x532E;&#x4E4F;&#x7684;&#x5E74;&#x4EE3;&#xFF0C;&#x542C;&#x5976;&#x5976;&#x8BB2;&#x6545;&#x4E8B;&#x662F;&#x6211;&#x6700;&#x4EAB;&#x53D7;&#x7684;&#x65F6;&#x5149;&#x4E86;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmZDXnQbSWVXMyfwYQmn18DsV7C8oHWeGnuqFa1aroEjtV/image.png" alt=""><br>(Image source <a href="http://www.sohu.com/a/28488778_125643" target="_blank" rel="noopener">here</a>)</p>
-<p>&#x7EB5;&#x7136;&#x5976;&#x5976;&#x5F53;&#x65F6;&#x8BB2;&#x5F97;&#x7ED8;&#x58F0;&#x7ED8;&#x8272;&#xFF0C;&#x4F46;&#x662F;&#x65F6;&#x9694;&#x591A;&#x5E74;&#xFF0C;&#x6211;&#x65E9;&#x5DF2;&#x5FD8;&#x8BB0;&#x8BF8;&#x591A;&#x7EC6;&#x8282;&#x3002;&#x53EA;&#x8BB0;&#x5F97;&#x6709;&#x5144;&#x5F1F;&#x4FE9;&#xFF0C;&#x5AC2;&#x5B50;&#x6B3A;&#x8D1F;&#x5F1F;&#x5F1F;&#xFF0C;&#x8BA9;&#x4ED6;&#x7761;&#x5728;&#x725B;&#x68DA;&#x91CC;&#xFF0C;&#x5403;&#x4E0D;&#x9971;&#x7A7F;&#x4E0D;&#x6696;&#xFF0C;&#x53EA;&#x6709;&#x8001;&#x9EC4;&#x725B;&#x662F;&#x4ED6;&#x7684;&#x670B;&#x53CB;&#x3002;&#x540E;&#x6765;&#x5AC2;&#x5B50;&#x8981;&#x6C42;&#x5206;&#x5BB6;&#xFF0C;&#x53EA;&#x7ED9;&#x4E86;&#x4ED6;&#x8FD9;&#x5934;&#x8001;&#x9EC4;&#x725B;&#xFF0C;&#x4ED6;&#x548C;&#x8FD9;&#x4E2A;&#x8001;&#x9EC4;&#x725B;&#x76F8;&#x4F9D;&#x4E3A;&#x547D;&#xFF0C;&#x88AB;&#x4EBA;&#x53EB;&#x505A;&#x725B;&#x90CE;&#x3002;&#x7136;&#x540E;&#x6709;&#x4E00;&#x5929;&#x8001;&#x9EC4;&#x725B;&#x7A81;&#x7136;&#x8BF4;&#x8BDD;&#xFF0C;&#x544A;&#x8BC9;&#x4ED6;&#x6CB3;&#x8FB9;&#x6709;&#x4ED9;&#x5973;&#x6D17;&#x6FA1;&#xFF0C;&#x5176;&#x4E2D;&#x7EFF;&#x8272;&#x8863;&#x88D9;&#x7684;&#x5C31;&#x662F;&#x4ED6;&#x7684;&#x5AB3;&#x5987;&#x3002;&#x4E8E;&#x662F;&#x4ED6;&#x53BB;&#x6CB3;&#x8FB9;&#x628A;&#x7EFF;&#x8272;&#x8863;&#x88D9;&#x85CF;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x5176;&#x5B83;&#x4ED9;&#x5973;&#x6D17;&#x5B8C;&#x6FA1;&#xFF0C;&#x90FD;&#x7A7F;&#x4E0A;&#x8863;&#x670D;&#x79BB;&#x5F00;&#xFF0C;&#x552F;&#x72EC;&#x8FD9;&#x4E2A;&#x6700;&#x5C0F;&#x7684;&#x4ED9;&#x5973;&#x627E;&#x4E0D;&#x5230;&#x8863;&#x670D;&#x3002;&#x8FD9;&#x65F6;&#x5019;&#x4ED6;&#x62FF;&#x7740;&#x8863;&#x670D;&#x8D70;&#x4E86;&#x51FA;&#x6765;&#xFF0C;&#x8BF4;&#x505A;&#x6211;&#x5AB3;&#x5987;&#x5427;&#xFF0C;&#x4E8E;&#x662F;&#x4ED9;&#x5973;&#x5C31;&#x548C;&#x4ED6;&#x751F;&#x6D3B;&#x5728;&#x4E00;&#x8D77;&#x3002;</p>
-<p>&#x548C;&#x4ED9;&#x5973;&#x751F;&#x6D3B;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x65E5;&#x5B50;&#x5F88;&#x5FEB;&#x6D3B;&#xFF0C;&#x4ED6;&#x5916;&#x51FA;&#x653E;&#x725B;&#x79CD;&#x7530;&#xFF0C;&#x4ED9;&#x5973;&#x5728;&#x5BB6;&#x7EC7;&#x5E03;&#x505A;&#x996D;&#xFF0C;&#x88AB;&#x4EBA;&#x53EB;&#x505A;&#x7EC7;&#x5973;&#xFF0C;&#x65E5;&#x5B50;&#x5E73;&#x9759;&#x53C8;&#x7F8E;&#x597D;&#xFF0C;&#x4E4B;&#x540E;&#x4ED6;&#x4EEC;&#x53C8;&#x751F;&#x4E86;&#x4E24;&#x4E2A;&#x5C0F;&#x5B69;&#xFF0C;&#x66F4;&#x662F;&#x589E;&#x6DFB;&#x4E86;&#x5F88;&#x591A;&#x4E50;&#x8DA3;&#x3002;&#x6709;&#x4E00;&#x5929;&#x8001;&#x9EC4;&#x725B;&#x7A81;&#x7136;&#x54ED;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x8BF4;&#x6211;&#x8981;&#x6B7B;&#x4E86;&#xFF0C;&#x6211;&#x6B7B;&#x4E4B;&#x540E;&#x7559;&#x7740;&#x6211;&#x7684;&#x76AE;&#xFF0C;&#x4EE5;&#x540E;&#x9047;&#x5230;&#x56F0;&#x96BE;&#x4F1A;&#x5E2E;&#x5230;&#x4F60;&#x7684;&#x3002;&#x7136;&#x540E;&#x8001;&#x725B;&#x5C31;&#x6B7B;&#x4E86;&#xFF0C;&#x725B;&#x90CE;&#x54ED;&#x4E86;&#x597D;&#x4E45;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x725B;&#x76AE;&#x6252;&#x4E86;&#x4E0B;&#x6765;&#xFF0C;&#x5C06;&#x8001;&#x725B;&#x5B89;&#x846C;&#x3002;&#x53C8;&#x8FC7;&#x4E86;&#x4E24;&#x5E74;&#xFF0C;&#x738B;&#x6BCD;&#x5A18;&#x5A18;&#x77E5;&#x9053;&#x4E86;&#x4ED9;&#x5973;&#x7559;&#x5728;&#x51E1;&#x95F4;&#x5E76;&#x548C;&#x51E1;&#x4EBA;&#x7ED3;&#x5A5A;&#x751F;&#x5B50;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5927;&#x4E3A;&#x9707;&#x6012;&#xFF0C;&#x6D3E;&#x5929;&#x5175;&#x63B3;&#x8D70;&#x7EC7;&#x5973;&#x3002;&#x725B;&#x90CE;&#x56DE;&#x5BB6;&#x770B;&#x5230;&#x4E24;&#x4E2A;&#x5B69;&#x5B50;&#x5728;&#x55F7;&#x55F7;&#x54ED;&#xFF0C;&#x8BF4;&#x5929;&#x5175;&#x6293;&#x8D70;&#x4E86;&#x5988;&#x5988;&#xFF0C;&#x4E8E;&#x662F;&#x725B;&#x90CE;&#x627E;&#x4E86;&#x4E24;&#x4E2A;&#x5927;&#x7B50;&#x628A;&#x5B69;&#x5B50;&#x88C5;&#x7B50;&#x91CC;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x8001;&#x9EC4;&#x725B;&#x7684;&#x76AE;&#x62AB;&#x4E0A;&#xFF0C;&#x7528;&#x4E00;&#x6839;&#x6241;&#x62C5;&#x6311;&#x8D77;&#x4E24;&#x4E2A;&#x5927;&#x7B50;&#x98DE;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x53BB;&#x8FFD;&#x5929;&#x5175;&#x548C;&#x7EC7;&#x5973;&#x3002;</p>
-<p>&#x773C;&#x770B;&#x5C31;&#x5FEB;&#x8FFD;&#x4E0A;&#x7EC7;&#x5973;&#x4E86;&#xFF0C;&#x738B;&#x6BCD;&#x5A18;&#x5A18;&#x770B;&#x5230;&#x540E;&#x975E;&#x5E38;&#x751F;&#x6C14;&#xFF0C;&#x4ECE;&#x5934;&#x4E0A;&#x62D4;&#x4E0B;&#x4E00;&#x6839;&#x7C2A;&#x5B50;&#xFF0C;&#x968F;&#x624B;&#x4E00;&#x5212;&#xFF0C;&#x4E00;&#x9053;&#x94F6;&#x6CB3;&#x6A2A;&#x4E98;&#x5728;&#x7EC7;&#x5973;&#x548C;&#x725B;&#x90CE;&#x4E4B;&#x95F4;&#x3002;&#x725B;&#x90CE;&#x98DE;&#x4E0D;&#x8FC7;&#x53BB;&#xFF0C;&#x53EA;&#x80FD;&#x548C;&#x7EC7;&#x5973;&#x9694;&#x6CB3;&#x76F8;&#x671B;&#x3002;&#x540E;&#x6765;&#x559C;&#x9E4A;&#x611F;&#x4ED6;&#x4EEC;&#x60C5;&#x611F;&#x771F;&#x5207;&#xFF0C;&#x6BCF;&#x5E74;&#x4E03;&#x6708;&#x521D;&#x4E03;&#x6240;&#x6709;&#x559C;&#x9E4A;&#x90FD;&#x98DE;&#x5230;&#x725B;&#x90CE;&#x548C;&#x7EC7;&#x5973;&#x4E4B;&#x95F4;&#xFF0C;&#x7528;&#x5B83;&#x4EEC;&#x7684;&#x8EAB;&#x4F53;&#x5728;&#x94F6;&#x6CB3;&#x4E0A;&#x642D;&#x4E00;&#x5EA7;&#x9E4A;&#x6865;&#xFF0C;&#x725B;&#x90CE;&#x548C;&#x7EC7;&#x5973;&#x5F97;&#x4EE5;&#x8E0F;&#x6865;&#x76F8;&#x4F1A;&#x3002;&#x4F20;&#x8BF4;&#x5728;&#x8FD9;&#x4E00;&#x5929;&#x591C;&#x91CC;&#xFF0C;&#x4F60;&#x5728;&#x8461;&#x8404;&#x67B6;&#x4E0B;&#x7EC6;&#x7EC6;&#x7684;&#x542C;&#xFF0C;&#x5C31;&#x4F1A;&#x542C;&#x5230;&#x725B;&#x90CE;&#x548C;&#x7EC7;&#x5973;&#x8BF4;&#x6084;&#x6084;&#x8BDD;&#x3002;</p>
-<p>&#x6545;&#x4E8B;&#x8BB2;&#x5B8C;&#x4E86;&#xFF0C; &#x628A;&#x6211;&#x7AE5;&#x5E74;&#x7565;&#x6709;&#x6A21;&#x7CCA;&#x7684;&#x8BB0;&#x5FC6;&#x8BB2;&#x51FA;&#x6765;&#xFF0C;&#x679C;&#x7136;&#x7D22;&#x7136;&#x65E0;&#x5473;&#x3002;&#x4F46;&#x90A3;&#x65F6;&#x5019;&#x6211;&#x5374;&#x542C;&#x5F97;&#x6D25;&#x6D25;&#x6709;&#x5473;&#x3002;&#x542C;&#x5230;&#x725B;&#x90CE;&#x88AB;&#x5AC2;&#x5B50;&#x8D76;&#x51FA;&#x5BB6;&#x95E8;&#x6C14;&#x6124;&#x4E0D;&#x5DF2;&#xFF0C;&#x542C;&#x5230;&#x725B;&#x90CE;&#x627E;&#x4E86;&#x4E2A;&#x7F8E;&#x8C8C;&#x4ED9;&#x5973;&#x505A;&#x5AB3;&#x5987;&#x6781;&#x5176;&#x7FA1;&#x6155;&#xFF0C;&#x542C;&#x5230;&#x4ED6;&#x4EEC;&#x8FC7;&#x7740;&#x7537;&#x8015;&#x5973;&#x7EC7;&#x7684;&#x65E5;&#x5B50;&#x5E76;&#x6709;&#x4E86;&#x4E24;&#x4E2A;&#x5C0F;&#x5B69;&#x597D;&#x5E0C;&#x671B;&#x8FD9;&#x6837;&#x5FEB;&#x4E50;&#x7684;&#x65E5;&#x5B50;&#x4E00;&#x76F4;&#x6301;&#x7EED;&#x4E0B;&#x53BB;&#xFF0C;&#x542C;&#x5230;&#x8001;&#x9EC4;&#x725B;&#x6B7B;&#x4E86;&#x4F24;&#x5FC3;&#x4E0D;&#x5DF2;&#x843D;&#x6CEA;&#x4E0D;&#x6B62;&#xFF0C;&#x542C;&#x5230;&#x738B;&#x6BCD;&#x5A18;&#x5A18;&#x6D3E;&#x5929;&#x5175;&#x6765;&#x6293;&#x7EC7;&#x5973;&#x5BF9;&#x738B;&#x6BCD;&#x5A18;&#x5A18;&#x75DB;&#x6068;&#x5BF9;&#x7EC7;&#x5973;&#x62C5;&#x5FE7;&#xFF0C;&#x542C;&#x5230;&#x725B;&#x90CE;&#x8FFD;&#x4E86;&#x4E0A;&#x53BB;&#x597D;&#x5E0C;&#x671B;&#x4ED6;&#x80FD;&#x628A;&#x7EC7;&#x5973;&#x8FFD;&#x56DE;&#x6765;&#xFF0C;&#x542C;&#x5230;&#x4ED6;&#x4EEC;&#x88AB;&#x94F6;&#x6CB3;&#x963B;&#x9694;&#x597D;&#x5E0C;&#x671B;&#x51FA;&#x73B0;&#x4E00;&#x5EA7;&#x6865;&#x6216;&#x8005;&#x4E00;&#x8258;&#x8239;&#x540C;&#x65F6;&#x5728;&#x60F3;&#x4E3A;&#x5565;&#x98DE;&#x4E0D;&#x8FC7;&#x53BB;&#x5462;&#xFF1F;&#x542C;&#x5230;&#x559C;&#x9E4A;&#x4E3A;&#x4ED6;&#x4EEC;&#x642D;&#x6865;&#xFF0C;&#x8BA9;&#x4ED6;&#x4EEC;&#x805A;&#x4F1A;&#xFF0C;&#x4E3A;&#x4ED6;&#x4EEC;&#x611F;&#x5230;&#x6B23;&#x6170;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5F88;&#x597D;&#x5947;&#x4E3A;&#x4EC0;&#x4E48;&#x4ED6;&#x4EEC;&#x805A;&#x4F1A;&#x540E;&#x8FD8;&#x8981;&#x5206;&#x5F00;&#xFF1F;</p>
-<p>&#x5F88;&#x591A;&#x60C5;&#x611F;&#x5F88;&#x591A;&#x4E3A;&#x4EC0;&#x4E48;&#xFF0C;&#x5976;&#x5976;&#x5F53;&#x65F6;&#x8BF4;&#x4ED6;&#x4EEC;&#x4E0D;&#x80FD;&#x805A;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5426;&#x5219;&#x738B;&#x6BCD;&#x5A18;&#x5A18;&#x53C8;&#x8981;&#x751F;&#x6C14;&#x4E86;&#xFF0C;&#x6211;&#x4F3C;&#x61C2;&#x975E;&#x61C2;&#xFF0C;&#x77E5;&#x9053;&#x4E86;&#x4EBA;&#x751F;&#x6709;&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#x5F88;&#x662F;&#x65E0;&#x5948;&#x3002;&#x5C0F;&#x65F6;&#x5019;&#xFF0C;&#x6BCF;&#x9022;&#x4E03;&#x5915;&#xFF0C;&#x6211;&#x7ECF;&#x5E38;&#x8E72;&#x7740;&#x9662;&#x91CC;&#x7684;&#x8461;&#x8404;&#x67B6;&#x4E0B;&#xFF0C;&#x9759;&#x9759;&#x7684;&#x503E;&#x542C;&#xFF0C;&#x7136;&#x540E;&#x9664;&#x4E86;&#x86D0;&#x86D0;&#x548C;&#x5176;&#x5B83;&#x4E0D;&#x77E5;&#x540D;&#x7684;&#x866B;&#x5B50;&#x7684;&#x9E23;&#x53EB;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x542C;&#x5230;&#x4EC0;&#x4E48;&#x725B;&#x90CE;&#x548C;&#x7EC7;&#x5973;&#x7684;&#x6084;&#x6084;&#x8BDD;&#x3002;</p>
-<p>&#x957F;&#x5927;&#x540E;&#xFF0C;&#x77E5;&#x9053;&#x4E86;&#x6545;&#x4E8B;&#x90FD;&#x662F;&#x5047;&#x7684;&#xFF0C;&#x7528;&#x6B4C;&#x8BCD;&#x91CC;&#x8BF4;&#x7684;<strong><em>&#x7AE5;&#x8BDD;&#x91CC;&#x90FD;&#x662F;&#x9A97;&#x4EBA;&#x7684;</em></strong><br>&#x725B;&#x90CE;&#x548C;&#x7EC7;&#x5973;&#x90FD;&#x662F;&#x88AB;&#x675C;&#x64B0;&#x51FA;&#x6765;&#x7684;&#x4EBA;&#x7269;&#xFF0C;&#x94F6;&#x6CB3;&#x662F;&#x94F6;&#x6CB3;&#x7CFB;&#x4E3B;&#x4F53;&#x90E8;&#x5206;&#x6295;&#x5F71;&#x5728;&#x5929;&#x7403;&#x4E0A;&#x7684;&#x4EAE;&#x5E26;&#x800C;&#x4E0D;&#x662F;&#x5929;&#x6CB3;&#xFF0C;&#x66F4;&#x4E0D;&#x7528;&#x8BF4;&#x4EC0;&#x4E48;&#x9E4A;&#x6865;&#x76F8;&#x4F1A;&#x4E86;&#x3002;</p>
-<p>&#x800C;&#x8FD9;&#x4E9B;&#x5E74;&#xFF0C;&#x5546;&#x5BB6;&#x4EEC;&#x7684;&#x7092;&#x4F5C;&#xFF0C;&#x5E76;&#x7ED9;&#x4E03;&#x5915;&#x8D4B;&#x4E88;&#x4E86;&#x60C5;&#x4EBA;&#x8282;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x8FD9;&#x6837;&#x4EC0;&#x4E48;&#x9C9C;&#x82B1;&#x554A;&#x5DE7;&#x514B;&#x529B;&#x5305;&#x5305;&#x94BB;&#x6212;&#x4EC0;&#x4E48;&#x7684;&#x53C8;&#x53EF;&#x4EE5;&#x5356;&#x51FA;&#x597D;&#x591A;&#x4E86;&#x3002;&#x5C31;&#x597D;&#x6BD4;&#x5546;&#x5BB6;&#x4EEC;&#x9020;&#x51FA;&#x4E86;6.18&#x548C;&#x53CC;&#x5341;&#x4E8C;&#x3002;&#x4F3C;&#x4E4E;&#x60C5;&#x554A;&#x7231;&#x554A;&#xFF0C;&#x552F;&#x6709;&#x793C;&#x7269;&#x548C;&#x91D1;&#x94B1;&#x624D;&#x53EF;&#x4EE5;&#x8861;&#x91CF;&#x3002;</p>
-<p>&#x4E8E;&#x662F;&#x6211;&#x4E0D;&#x7531;&#x5F97;&#x60F3;&#x8D77;&#x4E86;&#x90A3;&#x5934;&#x725B;&#x3002;<br>&#x90A3;&#x5934;&#x5728;&#x725B;&#x90CE;&#x843D;&#x9B44;&#x65F6;&#x4E0D;&#x79BB;&#x4E0D;&#x5F03;&#x7684;&#x725B;&#x3002;<br>&#x90A3;&#x5934;&#x5728;&#x725B;&#x90CE;&#x6709;&#x4E86;&#x5AB3;&#x5987;&#x540E;&#x4F9D;&#x65E7;&#x4EFB;&#x52B3;&#x4EFB;&#x6028;&#x7684;&#x725B;&#x3002;<br>&#x90A3;&#x5934;&#x6B7B;&#x4E86;&#x8FD8;&#x8981;&#x6252;&#x76AE;&#xFF0C;&#x5949;&#x732E;&#x51FA;&#x6700;&#x540E;&#x5149;&#x548C;&#x70ED;&#x7684;&#x725B;&#x3002;</p>
-<p>&#x6211;&#x957F;&#x5927;&#x540E;&#x65F6;&#x5E38;&#x60F3;&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x6545;&#x4E8B;&#x8981;&#x7F16;&#x7684;&#x8FD9;&#x4E48;&#x8840;&#x8165;&#x548C;&#x6B8B;&#x5FCD;&#x5462;&#xFF0C;&#x8001;&#x9EC4;&#x725B;&#x6B7B;&#x4E86;&#x4E3A;&#x4F55;&#x8FD8;&#x8981;&#x7ED9;&#x4ED6;&#x6252;&#x76AE;&#xFF0C;&#x591A;&#x8840;&#x8165;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x6539;&#x6210;&#xFF0C;&#x8001;&#x725B;&#x4E34;&#x6B7B;&#x524D;&#xFF0C;&#x7ED9;&#x725B;&#x90CE;&#x4E00;&#x4E2A;&#x9F99;&#x73E0;&#xFF0C;&#x7136;&#x540E;&#x544A;&#x8BC9;&#x4ED6;&#x9047;&#x5230;&#x56F0;&#x96BE;&#x65F6;&#x53EF;&#x4EE5;&#x62FF;&#x9F99;&#x73E0;&#x6765;&#x53EC;&#x5524;&#x795E;&#x9F99;&#xFF0C;&#x5E2E;&#x4ED6;&#x89E3;&#x51B3;&#x9EBB;&#x70E6;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6539;&#xFF0C;&#x597D;&#x591A;&#x4E86;&#x3002;</p>
-<hr>
-<p>&#x603B;&#x4E4B;&#x4E0D;&#x7BA1;&#x662F;&#x6252;&#x76AE;&#x8FD8;&#x662F;&#x7559;&#x4E0B;&#x9F99;&#x73E0;&#xFF0C;&#x4E03;&#x5915;&#x9664;&#x4E86;&#x60C5;&#x554A;&#x7231;&#x554A;&#x793C;&#x7269;&#x554A;&#x7EA2;&#x5305;&#x554A;&#xFF0C;&#x8981;&#x8BB0;&#x5F97;&#x66FE;&#x7ECF;&#x6709;&#x90A3;&#x4E48;&#x4E00;&#x5934;&#x725B;&#xFF0C;&#x6CA1;&#x6709;&#x5B83;&#x5C31;&#x6CA1;&#x6709;&#x4ECA;&#x5929;&#x7684;&#x4E03;&#x5915;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/3fxaec" target="_blank" rel="noopener">&#x4E03;&#x5915;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x8981;&#x5FD8;&#x8BB0;&#x90A3;&#x5934;&#x725B;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
