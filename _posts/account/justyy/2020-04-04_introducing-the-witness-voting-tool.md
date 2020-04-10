@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-04-04 13:18:12
 categories:
-- steem
+- programming
 tags:
-- steem
 - programming
 - steem-tools
 - whalepower
@@ -72,6 +71,7 @@ steem.broadcast.accountWitnessProxy(ActiveKey, YourAccount, WitnessProxy, functi
 }); 
 ```
 
+
 ------------
 
 I hope this helps!
@@ -84,7 +84,11 @@ If you like my work, please consider voting for me, thanks!
 https://steemit.com/~witnesses type in **justyy** and click ***VOTE***
 ![](https://steemyy.com/images/vote-for-justyy.jpg)
 <BR/>
-**Alternatively, you could proxy to me via [steemconnect](https://steemconnect.com/sign/account-witness-proxy?proxy=justyy&approve=1) if you are too lazy to vote!**
+**Alternatively, you could [proxy to me](https://steemyy.com/witness-voting/?witness=justyy&action=proxy)  if you are too lazy to vote!**
+
+Also: you can vote me at the tool I made:  https://steemyy.com/witness-voting/?witness=justyy
+
+### Visit me at:  [https://steemyy.com](https://steemyy.com)
 
 - - -
 

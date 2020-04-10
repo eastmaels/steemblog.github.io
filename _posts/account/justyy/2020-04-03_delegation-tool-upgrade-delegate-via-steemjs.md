@@ -62,6 +62,7 @@ steem.broadcast.delegateVestingShares(ActiveKey, delegator, delegatee, amount + 
 6. Click the Button
 7. Wait for the confirmed message.
 
+
 ------------
 
 I hope this helps!
@@ -74,7 +75,11 @@ If you like my work, please consider voting for me, thanks!
 https://steemit.com/~witnesses type in **justyy** and click ***VOTE***
 ![](https://steemyy.com/images/vote-for-justyy.jpg)
 <BR/>
-**Alternatively, you could proxy to me via [steemconnect](https://steemconnect.com/sign/account-witness-proxy?proxy=justyy&approve=1) if you are too lazy to vote!**
+**Alternatively, you could [proxy to me](https://steemyy.com/witness-voting/?witness=justyy&action=proxy)  if you are too lazy to vote!**
+
+Also: you can vote me at the tool I made:  https://steemyy.com/witness-voting/?witness=justyy
+
+### Visit me at:  [https://steemyy.com](https://steemyy.com)
 
 - - -
 
