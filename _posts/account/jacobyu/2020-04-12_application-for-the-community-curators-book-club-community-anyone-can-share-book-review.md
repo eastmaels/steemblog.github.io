@@ -52,7 +52,7 @@ Book club with STEEM has three advantages.
 ##### 1. Motivation
 
 
-The reason you would like to curate is I want to give book-lovers **reward and motivation.** STEEM voting is good motivation for writing book review. 
+The reason I would like to curate is I want to give book-lovers **reward and motivation.** STEEM voting is good motivation for writing book review. 
 
 
 ##### 2. Together
@@ -64,7 +64,7 @@ Reading book together is better than reading book alone. It is difficult for peo
 ##### 3. No disappear
 
 
-As time goes by, book reviews will accumulate in our community. Once the review is  written in STEEM, **it does not disappear**. These book reviews can be good content. Also anyone can get the book review with steem api. It can be a database. Then people who like books will naturally come to Steam and come to our community.
+As time goes by, book reviews will accumulate in our community. Once the review is  written in STEEM, **it does not disappear**. These book reviews can be good content. Also anyone can get the book review with steem api. It can be a database. Then people who like books will naturally come to STEEM and come to our community.
 
 
 
