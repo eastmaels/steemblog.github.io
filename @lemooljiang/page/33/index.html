@@ -230,6 +230,202 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@lemooljiang/74ca1h-22/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmcMHHPMyBXAF7bjKBnkgyR9ZBafndMKUjYRneidq7bawe/vue%20rest.jpg" alt="解决跨域的两种办法 / 网络研习社#22">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-16T12:30:51.000Z">2019-05-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 860 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/74ca1h-22/">解决跨域的两种办法 / 网络研习社#22</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmcMHHPMyBXAF7bjKBnkgyR9ZBafndMKUjYRneidq7bawe/vue%20rest.jpg" alt="vue rest.jpg"></p>
+<p>&#x5728;&#x524D;&#x4E00;&#x8282;&#x4E2D;&#x5206;&#x4EAB;&#x4E86;&#x524D;&#x540E;&#x7AEF;&#x8BBE;&#x8BA1;&#x7684;&#x7406;&#x5FF5;&#x548C;&#x65B9;&#x6CD5;&#x3002;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x9047;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x5C31;&#x662F;&#x8DE8;&#x57DF;&#x7684;&#x95EE;&#x9898;&#x3002;&#x8BBF;&#x95EE;&#x7684;&#x7AEF;&#x53E3;&#x4E0D;&#x540C;&#xFF0C;&#x57DF;&#x540D;&#x4E0D;&#x540C;&#x90FD;&#x4F1A;&#x8DE8;&#x57DF;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x53EA;&#x8981;&#x662F;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x5C31;&#x4F1A;&#x9047;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x8FD9;&#x4E5F;&#x662F;&#x670D;&#x52A1;&#x5668;&#x7684;&#x4E00;&#x4E9B;&#x9632;&#x8303;&#x673A;&#x5236;&#x3002;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x6709;&#x4E24;&#x4E2A;&#x529E;&#x6CD5;&#xFF0C;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x5199;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x7528;&#x73B0;&#x6210;&#x7684;&#x3002;</p>
+<h2 id="&#x4E00;&#x3001;&#x521B;&#x5EFA;cors-py&#x89E3;&#x51B3;&#x8DE8;&#x57DF;"><a href="#&#x4E00;&#x3001;&#x521B;&#x5EFA;cors-py&#x89E3;&#x51B3;&#x8DE8;&#x57DF;" class="headerlink" title="&#x4E00;&#x3001;&#x521B;&#x5EFA;cors.py&#x89E3;&#x51B3;&#x8DE8;&#x57DF;"></a>&#x4E00;&#x3001;&#x521B;&#x5EFA;cors.py&#x89E3;&#x51B3;&#x8DE8;&#x57DF;</h2><figure class="highlight py hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MiddlewareMixin</span><span class="hljs-params">(object)</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, get_response=None)</span>:</span></span><br><span class="line">        self.get_response = get_response</span><br><span class="line">        super(MiddlewareMixin, self).__init__()</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__call__</span><span class="hljs-params">(self, request)</span>:</span></span><br><span class="line">        response = <span class="hljs-keyword">None</span></span><br><span class="line">        <span class="hljs-keyword">if</span> hasattr(self, <span class="hljs-string">&apos;process_request&apos;</span>):</span><br><span class="line">            response = self.process_request(request)</span><br><span class="line">        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> response:</span><br><span class="line">            response = self.get_response(request)</span><br><span class="line">        <span class="hljs-keyword">if</span> hasattr(self, <span class="hljs-string">&apos;process_response&apos;</span>):</span><br><span class="line">            response = self.process_response(request, response)</span><br><span class="line">        <span class="hljs-keyword">return</span> response</span><br><span class="line"></span><br><span class="line"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CORSMiddleware</span><span class="hljs-params">(MiddlewareMixin)</span>:</span></span><br><span class="line">    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_response</span><span class="hljs-params">(self,request,response)</span>:</span></span><br><span class="line">        <span class="hljs-comment"># &#x6DFB;&#x52A0;&#x54CD;&#x5E94;&#x5934;</span></span><br><span class="line">        <span class="hljs-comment"># &#x5141;&#x8BB8;&#x4F60;&#x7684;&#x57DF;&#x540D;&#x6765;&#x83B7;&#x53D6;&#x6211;&#x7684;&#x6570;&#x636E;</span></span><br><span class="line">        response[<span class="hljs-string">&apos;Access-Control-Allow-Origin&apos;</span>] = <span class="hljs-string">&quot;*&quot;</span></span><br><span class="line">        <span class="hljs-comment"># &#x5141;&#x8BB8;&#x4F60;&#x643A;&#x5E26;Content-Type&#x8BF7;&#x6C42;&#x5934;</span></span><br><span class="line">        response[<span class="hljs-string">&apos;Access-Control-Allow-Headers&apos;</span>] = <span class="hljs-string">&quot;Content-Type&quot;</span></span><br><span class="line">        <span class="hljs-comment"># &#x5141;&#x8BB8;&#x4F60;&#x53D1;&#x9001;DELETE,PUT</span></span><br><span class="line">        response[<span class="hljs-string">&apos;Access-Control-Allow-Methods&apos;</span>] = <span class="hljs-string">&quot;DELETE,PUT,GET,POST&quot;</span></span><br><span class="line">        <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;OPTIONS&quot;</span>:</span><br><span class="line">            response[<span class="hljs-string">&apos;Access-Control-Allow-Headers&apos;</span>] = <span class="hljs-string">&quot;Content-Type&quot;</span></span><br><span class="line">            response[<span class="hljs-string">&apos;Access-Control-Allow-Methods&apos;</span>] = <span class="hljs-string">&quot;PUT,DELETE&quot;</span></span><br><span class="line">        <span class="hljs-keyword">return</span> response</span><br><span class="line"></span><br><span class="line">&#x5728;settings.py&#x4E2D;&#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x4EF6;</span><br><span class="line">MIDDLEWARE = [    </span><br><span class="line">    <span class="hljs-string">&apos;app01.cors.CORSMiddleware&apos;</span>,  // &#x8981;&#x653E;&#x5728;&#x6700;&#x4E0A;&#x9762;    ...</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x4E8C;&#x3001;&#x7528;django-cors-headers&#x6765;&#x89E3;&#x51B3;&#x8DE8;&#x57DF;"><a href="#&#x4E8C;&#x3001;&#x7528;django-cors-headers&#x6765;&#x89E3;&#x51B3;&#x8DE8;&#x57DF;" class="headerlink" title="&#x4E8C;&#x3001;&#x7528;django-cors-headers&#x6765;&#x89E3;&#x51B3;&#x8DE8;&#x57DF;"></a>&#x4E8C;&#x3001;&#x7528;django-cors-headers&#x6765;&#x89E3;&#x51B3;&#x8DE8;&#x57DF;</h2><p><a href="https://github.com/ottoyiu/django-cors-headers" target="_blank" rel="noopener">django-cors-headers</a> &#xFF0C;&#x5206;&#x56DB;&#x6B65;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1. pip install django-cors-headers</span><br><span class="line">#settings.py</span><br><span class="line">2. INSTALLED_APPS = (</span><br><span class="line">    ...</span><br><span class="line">    &apos;corsheaders&apos;,</span><br><span class="line">    )</span><br><span class="line">3. MIDDLEWARE = [  # Or MIDDLEWARE_CLASSES on Django &lt; 1.10</span><br><span class="line">    </span><br><span class="line">    &apos;corsheaders.middleware.CorsMiddleware&apos;,</span><br><span class="line">    ...</span><br><span class="line">    ]</span><br><span class="line">4. CORS_ORIGIN_ALLOW_ALL = True</span><br></pre></td></tr></tbody></table></figure><p></p>
+<hr>
+<p>&#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@lemooljiang/61qx8h-1" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x521D;&#x4F53;&#x9A8C; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#1</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/gjekw-2" target="_blank" rel="noopener">&#x65B0;&#x6280;&#x80FD;&#xFF1A;&#x5C0F;&#x7A0B;&#x5E8F;&#x7A7A;&#x95F4;&#x5F53;&#x56FE;&#x5E8A;&#xFF01; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#2</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/6a8ukt-3" target="_blank" rel="noopener">&#x5C0F;&#x7A0B;&#x5E8F;&#x4E91;&#x5F00;&#x53D1;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x4F20;&#x9012;&#x5F62;&#x5F0F; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#3</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/coreldraw-4" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x7A81;&#x7834;coreldraw&#x7684;&#x7F51;&#x7EDC;&#x9650;&#x5236; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#4</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/6rr2ug-5" target="_blank" rel="noopener">&#x6211;&#x5E08;&#x7F51;&#x5C0F;&#x7A0B;&#x5E8F;&#x521D;&#x53D1;&#x5E03;&#xFF0C;&#x5927;&#x5BB6;&#x591A;&#x591A;&#x6307;&#x6559; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#5</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/github-6" target="_blank" rel="noopener">&#x7528;github &#x505A;&#x6587;&#x4EF6;&#x76EE;&#x5F55; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#6</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-7" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#xFF08;&#x4E00;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#7</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-8" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x81EA;&#x5B9A;&#x4E49;&#x5B89;&#x88C5;&#xFF08;&#x4E8C;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#8</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/github-9" target="_blank" rel="noopener">&#x5229;&#x7528;github&#x505A;&#x514D;&#x8D39;&#x535A;&#x5BA2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#9</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/nodejs-10" target="_blank" rel="noopener">Nodejs&#xFF0C;&#x6253;&#x5F00;&#x670D;&#x52A1;&#x5668;&#x9ED1;&#x5323;&#x5B50; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#10</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-js-11" target="_blank" rel="noopener">&#x4E00;&#x5165;&#x524D;&#x7AEF;&#x6DF1;&#x4F3C;&#x6D77;&#xFF0C;&#x804A;&#x804A;vue.js / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#11</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-11" target="_blank" rel="noopener">&#x6211;&#x4EEC;&#x60F3;&#x505A;&#x7684;&#xFF0C;vue&#x90FD;&#x5E2E;&#x6211;&#x4EEC;&#x505A;&#x597D;&#x4E86; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#12</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-13" target="_blank" rel="noopener">vue&#x548C;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E00;&#x5BB6;&#x4EB2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#13</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-14" target="_blank" rel="noopener">vue&#x7684;&#x7EC4;&#x4EF6;&#x9762;&#x9762;&#x89C2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#14</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-router-15" target="_blank" rel="noopener">vue-router&#x8DEF;&#x7531;&#x7684;&#x53C2;&#x6570;&#x548C;&#x8BBE;&#x8BA1; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#15</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/webpack-16" target="_blank" rel="noopener">webpack&#x524D;&#x7AEF;&#x795E;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#16</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/filezilla-ftp-17" target="_blank" rel="noopener">&#x7528;FileZilla&#x4F5C;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#17</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/ftp-18" target="_blank" rel="noopener">&#x8FDE;&#x63A5;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65B9;&#x6CD5;/ &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#18</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/axios-http-vuex-19" target="_blank" rel="noopener">axios&#x8BF7;&#x6C42;HTTP&#x548C;vuex&#x6570;&#x636E;&#x7BA1;&#x7406; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#19</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/youtube-youtube-dlg-20" target="_blank" rel="noopener">YouTube &#x89C6;&#x9891;&#x4E0B;&#x8F7D;&#x5229;&#x5668;&#x2014;Youtube-DLG / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#20</a></li>
+<li><a href="https://steemit.com/cn/@lemooljiang/vue-django-rest-framework-21" target="_blank" rel="noopener">Vue&#x548C;django rest framework&#x505A;&#x524D;&#x540E;&#x7AEF;&#x5206;&#x79BB;&#x8BBE;&#x8BA1; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#21</a></li>
+</ul>
+<hr>
+<p>&#x3000;@lemooljiang  #network-institute</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/74ca1h-22" target="_blank" rel="noopener">&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x7684;&#x4E24;&#x79CD;&#x529E;&#x6CD5; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#22</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@lemooljiang/6ccfew/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmXRefFpzXU63uyrCbCkbHfZn1h8Vfbxx8HNk62drhjbFP/bitcoin.jpg" alt="比特币涨起来都像是不要钱似的！">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-14T08:14:57.000Z">2019-05-14</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 224 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/6ccfew/">比特币涨起来都像是不要钱似的！</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmXRefFpzXU63uyrCbCkbHfZn1h8Vfbxx8HNk62drhjbFP/bitcoin.jpg" alt="bitcoin.jpg"></p>
+<p><strong>&#x6BD4;&#x7279;&#x5E01;&#x6DA8;&#x8D77;&#x6765;&#x4E86;!</strong>&#x6BD4;&#x7279;&#x5E01;&#x8FDE;&#x6DA8;&#x51E0;&#x5929;&#xFF0C;&#x6709;&#x70B9;&#x8BA1;&#x5212;&#x7740;&#x5148;&#x5356;&#x4E00;&#x7B14;&#xFF0C;&#x60F3;&#x8D77;&#x5356;&#x4E0A;&#x4E00;&#x7B14;&#xFF0C;&#x5927;&#x6982;&#x5FEB;&#x4E00;&#x5E74;&#x4E86;&#x5427;&#xFF01;&#x65F6;&#x5149;&#x98DE;&#x901D;&#x554A;&#xFF01;</p>
+<p>&#x524D;&#x4E24;&#x5929;&#x5927;&#x6982;&#x662F;6000&#x5200;&#x5427;&#xFF0C;&#x5C31;&#x8BA1;&#x5212;&#x7740;&#x4E0A;&#x4E86;8000&#x5200;&#x5C31;&#x5356;&#x5570;&#x3002;&#x6CA1;&#x60F3;&#x5230;&#x8FD9;&#x4E48;&#x5FEB;&#x5C31;&#x5B9E;&#x73B0;&#x4E86;&#xFF01;&#x4E2D;&#x5348;&#x5C31;&#x8F6C;&#x70B9;&#x5E01;&#x5230;&#x706B;&#x5E01;&#x4E0A;&#xFF0C;&#x56E0;&#x4E3A;&#x8981;&#x786E;&#x8BA4;&#x65F6;&#x95F4;&#xFF0C;&#x5C31;&#x5148;&#x4F11;&#x606F;&#x4F19;&#x3002;&#x4E00;&#x89C9;&#x8D77;&#x6765;&#xFF0C;&#x5DF2;&#x7ECF;&#x51B2;&#x5230;&#x4E86;8300&#x5200;&#x5570;&#xFF0C;&#x611F;&#x60C5;&#x6BD4;&#x7279;&#x5E01;&#x6DA8;&#x8D77;&#x6765;&#x90FD;&#x50CF;&#x662F;&#x4E0D;&#x8981;&#x94B1;&#x4F3C;&#x7684;&#xFF01;</p>
+<p>&#x6BD4;&#x7279;&#x5E01;&#x5C31;&#x662F;&#x8FD9;&#x4E48;&#x4E00;&#x4E2A;&#x5947;&#x602A;&#x7684;&#x7269;&#x79CD;&#xFF0C;&#x8DCC;&#x8D77;&#x6765;&#x4F60;&#x4F1A;&#x6000;&#x7591;&#x4EBA;&#x751F;&#xFF0C;&#x6DA8;&#x8D77;&#x6765;&#x4E5F;&#x4F1A;&#x6000;&#x7591;&#x4EBA;&#x751F;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x4F60;&#x7684;&#x4EBA;&#x751F;&#x771F;&#x7684;&#x662F;&#x771F;&#x5B9E;&#x7684;&#x5417;&#xFF1F;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/6ccfew" target="_blank" rel="noopener">&#x6BD4;&#x7279;&#x5E01;&#x6DA8;&#x8D77;&#x6765;&#x90FD;&#x50CF;&#x662F;&#x4E0D;&#x8981;&#x94B1;&#x4F3C;&#x7684;&#xFF01;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@lemooljiang/5e68ry/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmWSmXUP5jAoxBTg78Rf5BzRVYph3PXoM3UYbqdrkBupoN/got2.jpg" alt="坦格利安的疯狂之血：烈焰焚城！">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-13T08:25:06.000Z">2019-05-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 473 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/5e68ry/">坦格利安的疯狂之血：烈焰焚城！</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmWSmXUP5jAoxBTg78Rf5BzRVYph3PXoM3UYbqdrkBupoN/got2.jpg" alt="got2.jpg"></p>
+<p><img src="https://cdn.steemitimages.com/DQmVNcKSJco6LwrWj4sDpm9HoozvGRpXW98Kcok426jRCXF/got1.jpg" alt="got1.jpg"></p>
+<p>&#x5728;&#x9F99;&#x6BCD;&#x53D6;&#x5F97;&#x4E86;&#x541B;&#x4E34;&#x4E4B;&#x6218;&#x80DC;&#x5229;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5374;&#x6CA1;&#x6709;&#x6B62;&#x6B65;&#x4E8E;&#x6B64;&#x3002;&#x5979;&#x5F00;&#x59CB;&#x5411;&#x624B;&#x65E0;&#x5BF8;&#x94C1;&#x7684;&#x5E73;&#x6C11;&#x55B7;&#x5410;&#x9F99;&#x7130;&#xFF0C;&#x65E0;&#x57A2;&#x8005;&#x4E5F;&#x5411;&#x5DF2;&#x6295;&#x964D;&#x7684;&#x654C;&#x4EBA;&#x4E3E;&#x8D77;&#x5C60;&#x5200;&#xFF01;&#x6574;&#x4E2A;&#x541B;&#x4E34;&#x4E00;&#x7247;&#x706B;&#x6D77;&#xFF0C;&#x9F99;&#x6BCD;&#x4E5F;&#x5C55;&#x793A;&#x51FA;&#x5766;&#x683C;&#x5229;&#x5B89;&#x5BB6;&#x65CF;&#x7279;&#x6709;&#x7684;&#x75AF;&#x72C2;&#x4E4B;&#x8840;&#xFF01;</p>
+<p>&#x9F99;&#x6BCD;&#x7684;&#x7236;&#x4EB2;&#xFF1A;&#x75AF;&#x738B;&#xFF0C;&#x5728;&#x672B;&#x671F;&#x60F3;&#x653E;&#x91CE;&#x706B;&#x5C06;&#x5168;&#x57CE;&#x548C;&#x4ED6;&#x4E00;&#x8D77;&#x966A;&#x846C;&#xFF01;&#x53EF;&#x60DC;&#x88AB;&#x8A79;&#x59C6;&#x963B;&#x6B62;&#xFF0C;&#x4EBA;&#x4E5F;&#x88AB;&#x4ED6;&#x6240;&#x6740;&#x3002;&#x8FD9;&#x4E2A;&#x75AF;&#x72C2;&#x4E3E;&#x6B62;&#x60F3;&#x4E0D;&#x5230;&#x88AB;&#x4ED6;&#x5973;&#x513F;&#x5B9E;&#x73B0;&#x4E86;&#xFF0C;&#x75AF;&#x738B;&#x5728;&#x5730;&#x4E0B;&#x4E5F;&#x8BE5;&#x5B89;&#x606F;&#x4E86;&#x3002;<br>&#x9F99;&#x6BCD;&#x7684;&#x5927;&#x54E5;&#xFF1A;&#x96F7;&#x54E5;&#xFF0C;&#x660E;&#x77E5;&#x522B;&#x4EBA;&#xFF08;&#x83B1;&#x5B89;&#x5A1C;&#xFF09;&#x5DF2;&#x6709;&#x5A5A;&#x7EA6;&#xFF0C;&#x8FD8;&#x8981;&#x516C;&#x7136;&#x8FFD;&#x6C42;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x5A01;&#x671B;&#x5C3D;&#x5931;&#xFF0C;&#x738B;&#x56FD;&#x53DB;&#x4E71;&#xFF01;<br>&#x9F99;&#x6BCD;&#x7684;&#x4E8C;&#x54E5;&#xFF1A;&#x97E6;&#x8D5B;&#x91CC;&#x65AF;&#xFF0C;&#x4EB2;&#x624B;&#x5C06;&#x59B9;&#x59B9;&#x5356;&#x4EBA;&#xFF0C;&#x8FD8;&#x60F3;&#x8981;&#x4E00;&#x5356;&#x518D;&#x5356;&#xFF01;<br>&#x6240;&#x4EE5;&#xFF0C;&#x4ECE;&#x5BB6;&#x65CF;&#x6765;&#x770B;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x75AF;&#x72C2;&#x7684;&#x5BB6;&#x65CF;&#xFF0C;&#x9AA8;&#x5B50;&#x91CC;&#x90FD;&#x662F;&#x75AF;&#x72C2;&#x7684;&#x57FA;&#x56E0;&#xFF01;&#x8FD9;&#x4E5F;&#x96BE;&#x602A;&#x74E6;&#x91CC;&#x65AF;&#x60F3;&#x8981;&#x6539;&#x9009;&#x96EA;&#x8BFA;&#x7684;&#x539F;&#x56E0;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x4E5F;&#x548C;&#x8FD1;&#x4EB2;&#x7ED3;&#x5A5A;&#x6709;&#x5173;&#x5427;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x9F99;&#x6BCD;&#x7684;&#x4E00;&#x610F;&#x5B64;&#x884C;&#xFF0C;&#x548C;&#x75AF;&#x72C2;&#x7684;&#x711A;&#x57CE;&#x4E4B;&#x4E3E;&#xFF08;&#x5979;&#x4EE5;&#x524D;&#x53EF;&#x4ECE;&#x6CA1;&#x8FD9;&#x4E48;&#x5E72;&#x8FC7;&#xFF09;&#xFF0C;&#x9635;&#x8425;&#x4E2D;&#x5DF2;&#x51FA;&#x73B0;&#x4E86;&#x5206;&#x88C2;&#xFF01;&#x96EA;&#x8BFA;&#x660E;&#x663E;&#x4E0D;&#x613F;&#x770B;&#x5230;&#x5E73;&#x6C11;&#x4F24;&#x4EA1;&#xFF0C;&#x5C0F;&#x6076;&#x9B54;&#x4E5F;&#x5BF9;&#x4E0D;&#x5206;&#x6E05;&#x7EA2;&#x7682;&#x767D;&#x4E00;&#x901A;&#x70E7;&#x6740;&#x5C3D;&#x529B;&#x53CD;&#x5BF9;&#xFF0C;&#x4E8C;&#x4E2B;&#x4E5F;&#x5C06;&#x4EC7;&#x6068;&#x7684;&#x76EE;&#x5149;&#x6295;&#x5411;&#x4E86;&#x9F99;&#x6BCD;&#x3002;&#x4F5C;&#x4E3A;&#x5BF9;&#x641E;&#x5F02;&#x9B3C;&#x7684;&#x4E3B;&#x529B;&#x519B;&#x3001;&#x62EF;&#x6551;&#x4E16;&#x4EBA;&#x7684;&#x82F1;&#x96C4;&#xFF0C;&#x8F6C;&#x773C;&#x95F4;&#x53C8;&#x6210;&#x4E3A;&#x75AF;&#x72C2;&#x7684;&#x5C60;&#x592B;&#xFF0C;&#x8FD9;&#x4E16;&#x95F4;&#x5C3D;&#x662F;&#x6211;&#x4EEC;&#x770B;&#x4E0D;&#x61C2;&#x7684;&#x4E8B;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/5e68ry" target="_blank" rel="noopener">&#x5766;&#x683C;&#x5229;&#x5B89;&#x7684;&#x75AF;&#x72C2;&#x4E4B;&#x8840;&#xFF1A;&#x70C8;&#x7130;&#x711A;&#x57CE;&#xFF01;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@lemooljiang/vue-django-rest-framework-21/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmYaTaW5P5Dt57CK5W3GoZnT44GJsCdPK9tQKC97ortFtr/web.jpg" alt="Vue和django rest framework做前后端分离设计 / 网络研习社#21">
         </a>
@@ -421,201 +617,6 @@
 </ol>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/2mxjfi" target="_blank" rel="noopener">&#x6740;&#x6BD2;&#x8F6F;&#x4EF6;&#x624D;&#x662F;&#x6700;&#x5927;&#x7684;&#x75C5;&#x6BD2;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/8-4/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmakjU6ZKJxnKAjEZzLSRDXzPFdLvSWgJYGmPAne8D12g7/dragon.jpg" alt="杀龙如杀鸡--《冰与火之歌 8-4》">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-06T13:27:39.000Z">2019-05-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 336 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/8-4/">杀龙如杀鸡--《冰与火之歌 8-4》</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmakjU6ZKJxnKAjEZzLSRDXzPFdLvSWgJYGmPAne8D12g7/dragon.jpg" alt="dragon.jpg"></p>
-<p><img src="https://cdn.steemitimages.com/DQmbkpww71zoHWmHw4JXzCRcc9JkrieeJ47gFy6kQmpJpEc/dragon2.jpg" alt="dragon2.jpg"></p>
-<p>&#x8DDD;&#x79BB;&#x5F02;&#x9B3C;&#x4E4B;&#x6218;&#x521A;&#x521A;&#x7ED3;&#x675F;&#xFF0C;&#x4E24;&#x4E2A;&#x5973;&#x4EBA;&#xFF08;&#x9F99;&#x6BCD;&#x548C;&#x745F;&#x66E6;&#xFF09;&#x4E0D;&#x987E;&#x4F17;&#x4EBA;&#x7684;&#x53CD;&#x5BF9;&#x5F00;&#x59CB;&#x4E89;&#x593A;&#x94C1;&#x738B;&#x5EA7;&#x5927;&#x6253;&#x51FA;&#x624B;&#xFF01;&#x4E00;&#x51FA;&#x573A;&#x9F99;&#x6BCD;&#x5C31;&#x88AB;&#x5077;&#x88AD;&#xFF0C;&#x4E00;&#x6761;&#x9F99;&#x76F4;&#x63A5;&#x5C31;&#x88AB;&#x5E72;&#x8DB4;&#x4E0B;&#x4E86;&#xFF0C;&#x5982;&#x540C;&#x6740;&#x4E86;&#x4E00;&#x53EA;&#x9E21;&#xFF01;</p>
-<p><strong>&#x843D;&#x540E;&#x5C31;&#x8981;&#x6328;&#x6253;&#xFF01;</strong>&#x8FD9;&#x771F;&#x662F;&#x653E;&#x4E4B;&#x56DB;&#x6D77;&#x7686;&#x51C6;&#x7684;&#x771F;&#x7406;&#x3002;&#x79BB;&#x9A91;&#x6761;&#x9F99;&#x5C31;&#x80FD;&#x7EDF;&#x6CBB;&#x5168;&#x5927;&#x9646;&#x7684;&#x65F6;&#x4EE3;&#x5DF2;&#x7ECF;&#x8FC7;&#x53BB;&#x597D;&#x51E0;&#x767E;&#x5E74;&#xFF08;&#x6700;&#x65E9;&#x662F;&#x4F0A;&#x803F;&#x9A91;&#x9F99;&#x6253;&#x4E0B;&#x4E86;&#x5929;&#x4E0B;&#xFF09;&#xFF0C;&#x65E9;&#x5C31;&#x6709;&#x9488;&#x5BF9;&#x6740;&#x9F99;&#x7684;&#x6B66;&#x5668;&#x4E86;&#x3002;&#x5728;&#x7B2C;6&#x5B63;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#xFF0C;&#x56E0;&#x4E3A;&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#x5E76;&#x6CA1;&#x6709;&#x9F99;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x5927;&#x6740;&#x5668;&#x4E5F;&#x5E76;&#x6CA1;&#x6709;&#x51FA;&#x573A;&#x3002;&#x745F;&#x66E6;&#x5F97;&#x5230;&#x94C1;&#x7FA4;&#x5C9B;&#x548C;&#x9EC4;&#x91D1;&#x519B;&#x56E2;&#x7684;&#x652F;&#x63F4;&#xFF0C;&#x65E9;&#x5C31;&#x505A;&#x597D;&#x4E86;&#x9488;&#x5BF9;&#x9F99;&#x7684;&#x6B66;&#x5668;&#x3002;&#x800C;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x9F99;&#x6BCD;&#x8FD8;&#x662F;&#x539F;&#x59CB;&#x5730;&#x9A91;&#x9F99;&#x6253;&#x5929;&#x4E0B;&#xFF0C;&#x5DF2;&#x7ECF;&#x843D;&#x540E;&#x4E8E;&#x65F6;&#x4EE3;&#x4E86;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x4E0A;&#x96C6;&#x4E2D;&#x591C;&#x738B;&#x6302;&#x5F97;&#x6709;&#x70B9;&#x65E9;&#xFF0C;&#x8FD9;&#x96C6;&#x4E2D;&#x60C5;&#x8282;&#x53C8;&#x6BD4;&#x8F83;&#x62D6;&#x5EF6;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8FD9;&#x5B63;&#x770B;&#x8D77;&#x6765;&#x597D;&#x50CF;&#x4E0D;&#x5982;&#x9884;&#x6599;&#x4E2D;&#x7CBE;&#x5F69;&#x554A;&#x3002;&#x5E0C;&#x671B;&#x540E;&#x9762;&#x80FD;&#x6709;&#x5927;&#x7684;&#x4EAE;&#x70B9;&#xFF01;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/8-4" target="_blank" rel="noopener">&#x6740;&#x9F99;&#x5982;&#x6740;&#x9E21;&#x2013;&#x300A;&#x51B0;&#x4E0E;&#x706B;&#x4E4B;&#x6B4C; 8-4&#x300B;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/3hzixr/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmdyeNSKrnHs65daEkZryfRq9edsi6PgdRK47HJYRTyU4R/bitcoin.jpg" alt="币市永不休">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-04T14:35:03.000Z">2019-05-04</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 166 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/3hzixr/">币市永不休</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmdyeNSKrnHs65daEkZryfRq9edsi6PgdRK47HJYRTyU4R/bitcoin.jpg" alt="bitcoin.jpg"></p>
-<p>&#x5E01;&#x5E02;&#x8DCC;&#x8DCC;&#x6DA8;&#x6DA8;&#xFF0C;&#x6C38;&#x4E0D;&#x505C;&#x6B47;&#x3002;&#x867D;&#x7136;&#x6BD4;&#x7279;&#x5E01;&#x8FDE;&#x65E5;&#x6765;&#x4E5F;&#x662F;&#x4E0D;&#x65AD;&#x4E0A;&#x6DA8;&#xFF0C;&#x8FBE;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x9AD8;&#x5EA6;&#xFF0C;&#x4F46;&#x662F;&#x6BD4;&#x8D77;17&#x5E74;&#x8FD8;&#x662F;&#x76F8;&#x5DEE;&#x592A;&#x591A;&#x3002;&#x4EBA;&#x4E5F;&#x63D0;&#x4E0D;&#x8D77;&#x4EC0;&#x4E48;&#x7CBE;&#x795E;&#xFF0C;&#x5173;&#x6CE8;&#x8FD9;&#x4E2A;&#x5E01;&#x4EF7;&#x4E86;&#x3002;&#x518D;&#x52A0;&#x4E0A;steem&#x8FDE;&#x5E74;&#x6765;&#x7684;&#x6301;&#x7EED;&#x8D70;&#x4F4E;&#xFF0C;&#x6536;&#x5165;&#x662F;&#x8D8A;&#x6765;&#x8D8A;&#x4F4E;&#xFF0C;&#x4EBA;&#x6C14;&#x4E5F;&#x662F;&#x9010;&#x6E10;&#x8D70;&#x51C9;&#xFF0C;&#x8FD8;&#x662F;&#x90A3;&#x4E9B;&#x4E2A;&#x8001;&#x9762;&#x5B54;&#x3001;&#x8001;&#x4F19;&#x8BA1;&#x3002;&#x53BB;&#x9664;&#x4E9B;&#x7126;&#x8E81;&#xFF0C;&#x4E13;&#x6CE8;&#x5199;&#x4F5C;&#xFF0C;&#x4E13;&#x6CE8;&#x6280;&#x672F;&#xFF0C;&#x4E5F;&#x8BB8;&#x6709;&#x4E00;&#x756A;&#x65B0;&#x7684;&#x5C40;&#x9762;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/3hzixr" target="_blank" rel="noopener">&#x5E01;&#x5E02;&#x6C38;&#x4E0D;&#x4F11;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/youtube-youtube-dlg-20/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmVgamsdqTFZSBZ15NKRsWVVzz6bXW6JXUDbYz9dcJYDYJ/youtube-dlg.jpg" alt="YouTube 视频下载利器—Youtube-DLG / 网络研习社#20">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-05-02T15:09:48.000Z">2019-05-02</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 689 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/youtube-youtube-dlg-20/">YouTube 视频下载利器—Youtube-DLG / 网络研习社#20</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmVgamsdqTFZSBZ15NKRsWVVzz6bXW6JXUDbYz9dcJYDYJ/youtube-dlg.jpg" alt="youtube-dlg.jpg"></p>
-<p><a href="https://github.com/MrS0m30n3/youtube-dl-gui" target="_blank" rel="noopener">https://github.com/MrS0m30n3/youtube-dl-gui</a></p>
-<p>&#x8FD9;&#x51E0;&#x5929;&#x5B66;&#x722C;&#x866B;&#x65F6;&#x5076;&#x7136;&#x95F4;&#x53D1;&#x73B0;&#x7684;&#x4E00;&#x4E2A;&#x597D;&#x7528;&#x7684;&#x5DE5;&#x5177;&#xFF0C;YoutTube &#x89C6;&#x9891;&#x4E0B;&#x8F7D;&#x5229;&#x5668;&#x2014;Youtube-DLG&#x3002;YoutTube&#x4E0A;&#x8FD8;&#x662F;&#x86EE;&#x591A;&#x597D;&#x89C6;&#x9891;&#x7684;&#xFF0C;&#x6709;&#x65F6;&#x9650;&#x4E8E;&#x7F51;&#x901F;&#x770B;&#x8D77;&#x6765;&#x8D39;&#x52B2;&#xFF0C;&#x8FD8;&#x6709;&#x65F6;&#x4E0D;&#x65F6;&#x5730;&#x63D2;&#x64AD;&#x5E7F;&#x544A;&#xFF0C;&#x6709;&#x4E9B;&#x70E6;&#x4EBA;&#x3002;&#x4E0B;&#x8F7D;&#x4E0B;&#x6765;&#x518D;&#x770B;&#x5373;&#x6D41;&#x7545;&#xFF0C;&#x53C8;&#x6CA1;&#x6709;&#x5E7F;&#x544A;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x4E0D;&#x5C11;&#x4F18;&#x70B9;&#x7684;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmcCeYzRkFyrNH8zzjzue9M11a4voZWupk4KnmH37fAZiS/youtube-dlg2.jpg" alt="youtube-dlg2.jpg"></p>
-<p>Youtube-DLG&#x8FD9;&#x6B3E;&#x5DE5;&#x5177;&#x76F8;&#x5F53;&#x4EB2;&#x6C11;&#xFF0C;&#x9700;&#x8981;&#x57FA;&#x672C;&#x7684;&#x8BBE;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x6BD4;&#x5982;&#xFF1A;&#x4E0B;&#x8F7D;&#x5B58;&#x50A8;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x89C6;&#x9891;&#x7684;&#x5927;&#x5C0F;&#xFF08;&#x63A8;&#x8350;720P&#xFF09;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmbwLp4ELSZMnUAeWLTv7hXgxzpCLpwzePux4TVFzC69YZ/youtube-dlg3.jpg" alt="youtube-dlg3.jpg"></p>
-<p>&#x5C06;Youtube&#x4E0A;&#x89C6;&#x9891;&#x7684;&#x5730;&#x5740;&#xFF08;url&#xFF09;&#x8D34;&#x5230;&#x4E0B;&#x8F7D;&#x6846;&#x4E2D;&#xFF0C;&#x70B9; add ,  &#x518D;&#x70B9; start &#xFF0C; &#x5C31;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;&#x4E86;&#xFF0C;&#x76F8;&#x5F53;&#x7B80;&#x6613;&#x3002;</p>
-<hr>
-<p>&#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@lemooljiang/61qx8h-1" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x5C0F;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x521D;&#x4F53;&#x9A8C; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#1</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/gjekw-2" target="_blank" rel="noopener">&#x65B0;&#x6280;&#x80FD;&#xFF1A;&#x5C0F;&#x7A0B;&#x5E8F;&#x7A7A;&#x95F4;&#x5F53;&#x56FE;&#x5E8A;&#xFF01; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#2</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/6a8ukt-3" target="_blank" rel="noopener">&#x5C0F;&#x7A0B;&#x5E8F;&#x4E91;&#x5F00;&#x53D1;&#x4E2D;&#x6570;&#x636E;&#x7684;&#x4F20;&#x9012;&#x5F62;&#x5F0F; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#3</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/coreldraw-4" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x7A81;&#x7834;coreldraw&#x7684;&#x7F51;&#x7EDC;&#x9650;&#x5236; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#4</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/6rr2ug-5" target="_blank" rel="noopener">&#x6211;&#x5E08;&#x7F51;&#x5C0F;&#x7A0B;&#x5E8F;&#x521D;&#x53D1;&#x5E03;&#xFF0C;&#x5927;&#x5BB6;&#x591A;&#x591A;&#x6307;&#x6559; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#5</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/github-6" target="_blank" rel="noopener">&#x7528;github &#x505A;&#x6587;&#x4EF6;&#x76EE;&#x5F55; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#6</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-7" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x4E00;&#x952E;&#x5B89;&#x88C5;&#xFF08;&#x4E00;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#7</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/lnmp-8" target="_blank" rel="noopener">LNMP&#x73AF;&#x5883;&#x81EA;&#x5B9A;&#x4E49;&#x5B89;&#x88C5;&#xFF08;&#x4E8C;&#xFF09; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#8</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/github-9" target="_blank" rel="noopener">&#x5229;&#x7528;github&#x505A;&#x514D;&#x8D39;&#x535A;&#x5BA2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#9</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/nodejs-10" target="_blank" rel="noopener">Nodejs&#xFF0C;&#x6253;&#x5F00;&#x670D;&#x52A1;&#x5668;&#x9ED1;&#x5323;&#x5B50; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#10</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-js-11" target="_blank" rel="noopener">&#x4E00;&#x5165;&#x524D;&#x7AEF;&#x6DF1;&#x4F3C;&#x6D77;&#xFF0C;&#x804A;&#x804A;vue.js / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#11</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-11" target="_blank" rel="noopener">&#x6211;&#x4EEC;&#x60F3;&#x505A;&#x7684;&#xFF0C;vue&#x90FD;&#x5E2E;&#x6211;&#x4EEC;&#x505A;&#x597D;&#x4E86; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#12</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-13" target="_blank" rel="noopener">vue&#x548C;&#x5C0F;&#x7A0B;&#x5E8F;&#x4E00;&#x5BB6;&#x4EB2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#13</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-14" target="_blank" rel="noopener">vue&#x7684;&#x7EC4;&#x4EF6;&#x9762;&#x9762;&#x89C2; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#14</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/vue-router-15" target="_blank" rel="noopener">vue-router&#x8DEF;&#x7531;&#x7684;&#x53C2;&#x6570;&#x548C;&#x8BBE;&#x8BA1; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#15</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/webpack-16" target="_blank" rel="noopener">webpack&#x524D;&#x7AEF;&#x795E;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#16</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/filezilla-ftp-17" target="_blank" rel="noopener">&#x7528;FileZilla&#x4F5C;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#17</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/ftp-18" target="_blank" rel="noopener">&#x8FDE;&#x63A5;FTP&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65B9;&#x6CD5;/ &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#18</a></li>
-<li><a href="https://steemit.com/cn/@lemooljiang/axios-http-vuex-19" target="_blank" rel="noopener">axios&#x8BF7;&#x6C42;HTTP&#x548C;vuex&#x6570;&#x636E;&#x7BA1;&#x7406; / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#19</a></li>
-</ul>
-<hr>
-<p>&#x3000;@lemooljiang  #network-institute</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/youtube-youtube-dlg-20" target="_blank" rel="noopener">YouTube &#x89C6;&#x9891;&#x4E0B;&#x8F7D;&#x5229;&#x5668;&#x2014;Youtube-DLG / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#20</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
