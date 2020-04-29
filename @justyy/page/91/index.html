@@ -230,6 +230,99 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/coding-exercise-search-in-a-binary-search-tree-bst/" class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt="Coding Exercise - Search in a Binary Search Tree 编程练习题：二叉查找树BST">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-08-15T23:39:57.000Z">2018-08-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1206 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/coding-exercise-search-in-a-binary-search-tree-bst/">Coding Exercise - Search in a Binary Search Tree 编程练习题：二叉查找树BST</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt=""></p>
+<blockquote>
+<p>Given the root node of a binary search tree (BST) and a value. You need to find the node in the BST that the node&#x2019;s value equals the given value. Return the subtree rooted with that node. If such node doesn&#x2019;t exist, you should return NULL. For example, </p>
+<p>Given the tree:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    4</span><br><span class="line">   / \</span><br><span class="line">  2   7</span><br><span class="line"> / \</span><br><span class="line">1   3</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>And the value to search: 2<br>You should return this subtree:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  2     </span><br><span class="line"> / \   </span><br><span class="line">1   3</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>In the example above, if we want to search the value 5, since there is no node with value 5, we should return NULL.<br>Note that an empty tree is represented by NULL, therefore you would see the expected output (serialized tree format) as [], not null</p>
+</blockquote>
+<h2 id="C-C-Definition-of-a-Binary-Tree-Node"><a href="#C-C-Definition-of-a-Binary-Tree-Node" class="headerlink" title="C/C++ Definition of a Binary Tree Node"></a>C/C++ Definition of a Binary Tree Node</h2><p>A <a href="https://helloacm.com/c-coding-exercise-binary-tree-postorder-traversal/" target="_blank" rel="noopener">Binary tree</a> can be recursively defined using struct.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct TreeNode {</span><br><span class="line">    int val;</span><br><span class="line">    TreeNode *left;</span><br><span class="line">    TreeNode *right;</span><br><span class="line">    TreeNode(int x) : val(x), left(NULL), right(NULL) {}</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Recursion"><a href="#Recursion" class="headerlink" title="Recursion"></a>Recursion</h2><p>The Binary Search Tree (BST) &#x2018;s one important characteristics: the left node is smaller than the parent and the right node is larger than the parent. So, instead of searching the entire tree, we can cut one branch at each iteration, to reduce to complexity from O(n) to O(logn).</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        if (root-&gt;val == val) return root;</span><br><span class="line">        return val &gt; root-&gt;val ? searchBST(root-&gt;right, val) : searchBST(root-&gt;left, val);</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Iterative"><a href="#Iterative" class="headerlink" title="Iterative"></a>Iterative</h2><p>You can convert above <a href="https://helloacm.com/c-coding-exercise-sum-of-left-leaves-bfs-dfs-recursion/" target="_blank" rel="noopener">recursion</a> to iterative implementation using Stack - pushing one subtree to the stack.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        stack&lt;TreeNode*&gt; st;</span><br><span class="line">        st.push(root);</span><br><span class="line">        while (st.size() &gt; 0) {</span><br><span class="line">            auto cur = st.top();</span><br><span class="line">            st.pop();</span><br><span class="line">            if (cur == nullptr) continue;</span><br><span class="line">            if (val == cur-&gt;val) {</span><br><span class="line">                return cur;</span><br><span class="line">            }            </span><br><span class="line">            if (val &gt; cur-&gt;val) {</span><br><span class="line">                st.push(cur-&gt;right);</span><br><span class="line">            } else {</span><br><span class="line">                st.push(cur-&gt;left);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return NULL;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>As the task is to find the element in the tree, and each iteration, you only search one branch (and cut another branch), you can use Queue as well.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        deque&lt;TreeNode*&gt; Q;</span><br><span class="line">        Q.push_back(root);</span><br><span class="line">        while (Q.size() &gt; 0) {</span><br><span class="line">            auto cur = Q.front();</span><br><span class="line">            Q.pop_front();</span><br><span class="line">            if (cur == nullptr) continue;</span><br><span class="line">            if (val == cur-&gt;val) {</span><br><span class="line">                return cur;</span><br><span class="line">            }            </span><br><span class="line">            if (val &gt; cur-&gt;val) {</span><br><span class="line">                Q.push_back(cur-&gt;right);</span><br><span class="line">            } else {</span><br><span class="line">                Q.push_back(cur-&gt;left);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return NULL;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a witness proxy</a> - let @justyy represent you.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
+<p>// Reposted to <a href="https://helloacm.com/c-c-coding-exercise-search-in-a-binary-search-tree/" target="_blank" rel="noopener">https://helloacm.com/c-c-coding-exercise-search-in-a-binary-search-tree/</a> for better indexing.</p>
+<hr>
+<p>&#x9898;&#x610F;&#xFF1A;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x4E8C;&#x5206;&#x67E5;&#x627E;&#x6811; BST, Binary Search Tree, &#x67E5;&#x627E;&#x6307;&#x5B9A;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8FD4;&#x56DE;&#x8BE5;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x7684;&#x5B50;&#x6811;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x627E;&#x5230;&#x5C31;&#x8FD4;&#x56DE;NULL&#x3002;</p>
+<h2 id="&#x4E8C;&#x53C9;&#x6811;&#x5728;C-C-&#x4E2D;&#x7684;&#x5B9A;&#x4E49;"><a href="#&#x4E8C;&#x53C9;&#x6811;&#x5728;C-C-&#x4E2D;&#x7684;&#x5B9A;&#x4E49;" class="headerlink" title="&#x4E8C;&#x53C9;&#x6811;&#x5728;C/C++&#x4E2D;&#x7684;&#x5B9A;&#x4E49;"></a>&#x4E8C;&#x53C9;&#x6811;&#x5728;C/C++&#x4E2D;&#x7684;&#x5B9A;&#x4E49;</h2><p>&#x4E8C;&#x53C9;&#x6811;&#x53EF;&#x4EE5;&#x7528;&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x5176;&#x4E2D;&#x5DE6;&#x53F3;&#x5B50;&#x6811;&#x90FD;&#x662F;&#x9012;&#x5F52;&#x7684;&#x5B9A;&#x4E49;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">struct TreeNode {</span><br><span class="line">    int val;</span><br><span class="line">    TreeNode *left;</span><br><span class="line">    TreeNode *right;</span><br><span class="line">    TreeNode(int x) : val(x), left(NULL), right(NULL) {}</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x9012;&#x5F52;"><a href="#&#x9012;&#x5F52;" class="headerlink" title="&#x9012;&#x5F52;"></a>&#x9012;&#x5F52;</h2><p>&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;BST&#x7684;&#x6700;&#x91CD;&#x8981;&#x7684;&#x7279;&#x6027;&#x5C31;&#x662F;&#x5DE6;&#x8282;&#x70B9;&#x6BD4;&#x6839;&#x8282;&#x70B9;&#x5C0F;&#xFF0C;&#x800C;&#x53F3;&#x8282;&#x70B9;&#x6BD4;&#x6839;&#x5B50;&#x6811;&#x5927;&#x3002;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6BCF;&#x6B21;&#x6839;&#x636E;&#x6839;&#x8282;&#x70B9;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x76F8;&#x5E94;&#x7684;&#x5728;&#x5DE6;&#x5B50;&#x6811;&#x6216;&#x8005;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#x9012;&#x5F52;&#x67E5;&#x627E;&#x3002;&#x6BCF;&#x6B21;&#x90FD;&#x6452;&#x5F03;&#x4E00;&#x68F5;&#x5B50;&#x6811;&#xFF0C;&#x8FD9;&#x6837;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x5927;&#x7EA6;&#x662F; O(logn) &#xFF0C;&#x5982;&#x679C;&#x904D;&#x5386;&#x6240;&#x6709;&#x7684;&#x8282;&#x70B9;&#x5219;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6; O(n).</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        if (root-&gt;val == val) return root;</span><br><span class="line">        return val &gt; root-&gt;val ? searchBST(root-&gt;right, val) : searchBST(root-&gt;left, val);</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x8FED;&#x4EE3;"><a href="#&#x8FED;&#x4EE3;" class="headerlink" title="&#x8FED;&#x4EE3;"></a>&#x8FED;&#x4EE3;</h2><p>&#x9012;&#x5F52;&#x5B9E;&#x73B0;&#x53EF;&#x4EE5;&#x7528;<a href="https://justyy.com/archives/6431" target="_blank" rel="noopener">&#x8FED;&#x4EE3;</a>&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x81EA;&#x5DF1;&#x64CD;&#x4F5C;&#x5806;&#x6808;&#xFF0C;&#x6BCF;&#x5B50;&#x628A;&#x5DE6;&#x5B50;&#x6811;&#x6216;&#x8005;&#x53F3;&#x5B50;&#x6811;&#x6DFB;&#x52A0;&#x5230;&#x5806;&#x6808;&#x4E2D;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        stack&lt;TreeNode*&gt; st;</span><br><span class="line">        st.push(root);</span><br><span class="line">        while (st.size() &gt; 0) {</span><br><span class="line">            auto cur = st.top();</span><br><span class="line">            st.pop();</span><br><span class="line">            if (cur == nullptr) continue;</span><br><span class="line">            if (val == cur-&gt;val) {</span><br><span class="line">                return cur;</span><br><span class="line">            }            </span><br><span class="line">            if (val &gt; cur-&gt;val) {</span><br><span class="line">                st.push(cur-&gt;right);</span><br><span class="line">            } else {</span><br><span class="line">                st.push(cur-&gt;left);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return NULL;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x7531;&#x4E8E;&#x8FD9;&#x9898;&#x548C;&#x641C;&#x7D22;&#x7684;&#x987A;&#x5E8F;&#x5173;&#x7CFB;&#x4E0D;&#x592A;&#x5927;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;<a href="https://justyy.com/archives/4992" target="_blank" rel="noopener">&#x961F;&#x5217;</a>&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x6309;&#x5C42;&#x6765;&#x67E5;&#x627E;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    TreeNode* searchBST(TreeNode* root, int val) {</span><br><span class="line">        if (root == nullptr) return NULL;</span><br><span class="line">        deque&lt;TreeNode*&gt; Q;</span><br><span class="line">        Q.push_back(root);</span><br><span class="line">        while (Q.size() &gt; 0) {</span><br><span class="line">            auto cur = Q.front();</span><br><span class="line">            Q.pop_front();</span><br><span class="line">            if (cur == nullptr) continue;</span><br><span class="line">            if (val == cur-&gt;val) {</span><br><span class="line">                return cur;</span><br><span class="line">            }            </span><br><span class="line">            if (val &gt; cur-&gt;val) {</span><br><span class="line">                Q.push_back(cur-&gt;right);</span><br><span class="line">            } else {</span><br><span class="line">                Q.push_back(cur-&gt;left);</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return NULL;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>// Reposted to: <a href="https://justyy.com/archives/6465" target="_blank" rel="noopener">https://justyy.com/archives/6465</a></p>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;-Witness-Thread"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;-Witness-Thread" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA; - Witness Thread"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA; - Witness Thread</a></h2><ol>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#x4EE3;&#x7406; Proxy</a>.</li>
+</ol>
+<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
+<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
+<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
+</ol>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/coding-exercise-search-in-a-binary-search-tree-bst" target="_blank" rel="noopener">&#x2018;Coding Exercise - Search in a Binary Search Tree &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898;&#xFF1A;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;BST&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-08-15/" class="image is-7by1">
             <img class="thumbnail" src="http://www.bing.com/az/hprichbg/rb/GrevysZebra_JA-JP7416197088_1920x1080.jpg" alt="【第 叁伍伍 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-08-15)">
         </a>
@@ -10515,69 +10608,6 @@
 <p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-08-12" target="_blank" rel="noopener">&#x2018;&#x3010;&#x7B2C; &#x53C1;&#x4F0D;&#x8D30; &#x671F;&#x3011;Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;CN&#x533A;&#x8C01;&#x5728;POWER DOWN&#xFF1F;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x3011;(2018-08-12)&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/portrait-canon-eos-6d-24-70mm-f2-8/" class="image is-7by1">
-            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmZvnuHJZcj6nSkgq5q7c71ydMznuuwsEocs6Gr7CcQLm8" alt="Portrait - Canon EOS 6D + 24-70mm F2.8">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-08-11T18:18:45.000Z">2018-08-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/photography/">photography</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 183 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/portrait-canon-eos-6d-24-70mm-f2-8/">Portrait - Canon EOS 6D + 24-70mm F2.8</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://ipfs.busy.org/ipfs/QmZvnuHJZcj6nSkgq5q7c71ydMznuuwsEocs6Gr7CcQLm8" alt="IMG_7507.JPG"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmRRMit2imiAYJUCUjJHzndbp1v4qrmfixWvScdWj1RbSq" alt="IMG_7508_&#x526F;&#x672C;.jpg"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmSoHzovZts2kDJrXvQz1dgXLXt9J5F29AovAnU2j5Gpfz" alt="IMG_7514_&#x526F;&#x672C;.jpg"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmfE5nn5uG8XugbpdSQozjs9Dne84Womgn6a1utYAtTyDH" alt="IMG_7531.JPG"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmWshKmMRhgnPRdkmB6pst1qRRc5VHk9rjoJs2u4U46qnG" alt="IMG_7545_&#x526F;&#x672C;.jpg"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmeBcy9v3RDHFrKFYDTHs2oFAzb2AN8gU6TR35kPGCBpaZ" alt="IMG_7554.JPG"></p>
-<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
-<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
-</ol>
-<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/portrait-canon-eos-6d-24-70mm-f2-8" target="_blank" rel="noopener">&#x2018;Portrait - Canon EOS 6D + 24-70mm F2.8&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
