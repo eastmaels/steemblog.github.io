@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-04-29 18:42:12
 categories:
-- witness-category
+- witness-update
 tags:
-- witness-category
 - witness-update
 - witness-nodes
 - witness
@@ -39,7 +38,7 @@ Two days ago, I got an email which worries me:
 
 > No action is required from you. This e-mail has only been sent to inform you ahead of time.
 
-All my 3 Nodes were in the same physical location, and thus affected. Immediately, to avoid Single-Point-Of-Failure, I rented another server (Dedicated Server!) in North USA.
+All my 3 Nodes are in the same physical location, and thus affected. Immediately, to avoid Single-Point-Of-Failure, I rented another server (Dedicated Server!) in North USA.
 
 And it just replaced one of my Servers in Germany as the main Witness Node within 2 Days! It wasn't ready before the maintainance event, but I was lucky to miss only 1 block!
 
@@ -58,7 +57,7 @@ PS: I got the dedicated server from [Dacentec](https://justyy.com/out/da).
 I hope this helps!
 
 **Steem On!~**
-
+*// Posted at [here](https://anothervps.com/witness-infrastructure-update-adding-a-witness-node-in-north-usa-to-avoid-single-point-of-failure/) as well.*
 ------------------
 
 If you like my work, please consider voting for me, thanks!
