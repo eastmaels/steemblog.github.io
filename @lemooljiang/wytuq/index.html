@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>区块链如何实现溯源？用日志吧！ / 学习智能合约#6 - None</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@lemooljiang/css/style.css">
+
+<link rel="stylesheet" href="/@lemooljiang/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@lemooljiang/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="None" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@lemooljiang/">Home</a>
+                
+                <a class="navbar-item" href="/@lemooljiang/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@lemooljiang/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@lemooljiang/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@lemooljiang/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;">
+        <span class="has-mr-6">1</span>
+        <span>web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@lemooljiang/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/Qmdow5jzu9gKqmD9duMFso4XqkSwUedhUYeJhoZeL971wU" alt="区块链如何实现溯源？用日志吧！ / 学习智能合约#6">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-08T03:47:54.000Z">2020-05-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/smartcontract/">smartcontract</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 466 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                区块链如何实现溯源？用日志吧！ / 学习智能合约#6
+            
+        </h1>
+        <div class="content">
+            <p>&#x7528;&#x533A;&#x5757;&#x94FE;&#x5B9E;&#x73B0;&#x6EAF;&#x6E90;&#x7684;&#x63D0;&#x6CD5;&#x542C;&#x8FC7;&#x4E0D;&#x5C11;&#xFF0C;&#x6587;&#x7AE0;&#x4E5F;&#x770B;&#x8FC7;&#x4E0D;&#x5C11;&#xFF0C;&#x73B0;&#x5728;&#x5C31;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x628A;&#xFF0C;&#x770B;&#x770B;&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x7684;&#x3002;</p>
+<p>&#x5728;&#x6211;&#x7684;&#x4E0A;&#x7BC7;&#x6587;&#x7AE0;<a href="https://steemjiang.com/trend/@lemooljiang/dmqyf" target="_blank" rel="noopener">&#x300A;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x6BD4;mapping&#x66F4;&#x4FBF;&#x5B9C;&#x7684;&#x5B58;&#x50A8;&#x65B9;&#x6848;&#xFF1A;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#xFF1F;&#x300B;</a> &#x6709;&#x5206;&#x6790;&#x8FC7;&#xFF0C;<strong>&#x5982;&#x679C;&#x662F;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x76EE;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x7528;mapping&#x5E76;&#x4E0D;&#x662F;&#x6700;&#x4F73;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x7528;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#x624D;&#x662F;&#xFF01;</strong> &#x7136;&#x540E;&#xFF0C;&#x518D;&#x4ECE;&#x533A;&#x5757;&#x4E2D;&#x8BFB;&#x53D6;&#x65E5;&#x5FD7;&#xFF0C;&#x63D0;&#x53D6;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="https://steemjiang.com:8081/ipfs/Qmdow5jzu9gKqmD9duMFso4XqkSwUedhUYeJhoZeL971wU" alt="etherjiang.jpg"></p>
+<p><a href="https://etherjiang.github.io" target="_blank" rel="noopener">https://etherjiang.github.io</a></p>
+<p>&#x4E0A;&#x9762;&#x7684;etherjiang&#x662F;&#x6211;&#x6700;&#x8FD1;&#x8BBE;&#x8BA1;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x6280;&#x80FD;&#x90FD;&#x5B8C;&#x6210;&#x4E86;&#x4E00;&#x904D;&#x3002;</p>
+<h2 id="web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;"><a href="#web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;" class="headerlink" title="web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;"></a>web3&#x5B9E;&#x73B0;&#x904D;&#x5386;&#x65E5;&#x5FD7;</h2><figure class="highlight js hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">myContract.getPastEvents(<span class="hljs-string">&apos;MyEvent&apos;</span>, {</span><br><span class="line">    filter: {<span class="hljs-attr">myIndexedParam</span>: [<span class="hljs-number">20</span>,<span class="hljs-number">23</span>], <span class="hljs-attr">myOtherIndexedParam</span>: <span class="hljs-string">&apos;0x123456789...&apos;</span>},</span><br><span class="line">    fromBlock: <span class="hljs-number">0</span>,</span><br><span class="line">    toBlock: <span class="hljs-string">&apos;latest&apos;</span></span><br><span class="line">}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, events</span>)</span>{ <span class="hljs-built_in">console</span>.log(events); })</span><br><span class="line"></span><br><span class="line">eg:</span><br><span class="line"><span class="hljs-keyword">let</span> res = <span class="hljs-keyword">await</span> instance.getPastEvents(<span class="hljs-string">&apos;SetContent&apos;</span>, {<span class="hljs-attr">fromBlock</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">toBlock</span>: <span class="hljs-string">&apos;latest&apos;</span>})</span><br><span class="line"><span class="hljs-keyword">let</span> log = res[<span class="hljs-number">0</span>].returnValues[<span class="hljs-number">0</span>]</span><br></pre></td></tr></tbody></table></figure>
+<p><strong><code>getPastEvents</code> &#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E5;&#x5FD7;&#x904D;&#x5386;&#x4E86;</strong>&#xFF0C;&#x901F;&#x5EA6;&#x8FD8;&#x4E0D;&#x9519;&#x3002;&#x5F97;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x65E5;&#x5FD7;&#x6570;&#x7EC4;&#x3002;&#x5E16;&#x4E00;&#x4E2A;&#x770B;&#x770B;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">0:</span><br><span class="line">address: &quot;0x98C59036C71Ef10684b3A4a3ffA85b280fe7b402&quot;</span><br><span class="line">args: Result {0: &quot;QmVRPzXoLsXa7PccffrCk9x2z81MnfYtKfM1iVaijfzhAG&quot;, __length__: 1, t: &quot;QmVRPzXoLsXa7PccffrCk9x2z81MnfYtKfM1iVaijfzhAG&quot;}</span><br><span class="line">blockHash: &quot;0xa5016d26ee660a5e9b87893aa937d1c3f0c6cd6a6dc8585b400f1760ad751f2c&quot;</span><br><span class="line">blockNumber: 7840738</span><br><span class="line">event: &quot;SetContent&quot;</span><br><span class="line">id: &quot;log_ce314885&quot;</span><br><span class="line">logIndex: 0</span><br><span class="line">raw: {data: &quot;0x000000000000000000000000000000000000000000000000&#x2026;96a667a684147000000000000000000000000000000000000&quot;, topics: Array(1)}</span><br><span class="line">removed: false</span><br><span class="line">returnValues: Result {0: &quot;QmVRPzXoLsXa7PccffrCk9x2z81MnfYtKfM1iVaijfzhAG&quot;, t: &quot;QmVRPzXoLsXa7PccffrCk9x2z81MnfYtKfM1iVaijfzhAG&quot;}</span><br><span class="line">signature: &quot;0x8372f4d5703f980a74984746e8a40c81a527b0806704c2d078f255a0dc26fe3e&quot;</span><br><span class="line">transactionHash: &quot;0xe614c0216af7ff16ec7905153b9748ece9c5fb86f4eeeb8b390c6a2dbcfd98cb&quot;</span><br><span class="line">transactionIndex: 0</span><br><span class="line">__proto__: Object</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x6B64;&#x65E5;&#x5FD7;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6709;&#x7528;&#x7684;&#x6570;&#x636E;&#x5728; returnValues &#x4E2D;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x7528;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x8F7B;&#x677E;&#x5730;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x6EAF;&#x6E90;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x8FD8;&#x4E0D;&#x9519;&#x5462;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/wytuq" target="_blank" rel="noopener">&#x2018;&#x533A;&#x5757;&#x94FE;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x6EAF;&#x6E90;&#xFF1F;&#x7528;&#x65E5;&#x5FD7;&#x5427;&#xFF01; / &#x5B66;&#x4E60;&#x667A;&#x80FD;&#x5408;&#x7EA6;#6&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@lemooljiang/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/eth/">eth</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/logs/">logs</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/smartcontract/">smartcontract</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/solidity/">solidity</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/truffle/">truffle</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/vuejs/">vuejs</a>, <a class="has-link-grey -link" href="/@lemooljiang/tags/web3/">web3</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@lemooljiang/09i4r/">
+                <span class="level-item">初识Hyperledger  / 网络研习社#63</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@lemooljiang/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="None" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 None&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@lemooljiang/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@lemooljiang/content.json"};</script>
+
+
+
+    
+<script src="/@lemooljiang/js/bundle.js" defer></script></body>
+</html>
+
