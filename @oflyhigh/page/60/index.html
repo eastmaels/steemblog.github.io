@@ -230,6 +230,180 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/banana-pi-m3-matplotlib/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZbEt3rgSjajNXkZzLTFngw7bnZy4Bin8R2YsYMDJWUhz/image.png" alt="在香蕉派(Banana Pi)M3上安装matplotlib">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-25T00:08:48.000Z">2019-09-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 568 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/banana-pi-m3-matplotlib/">在香蕉派(Banana Pi)M3上安装matplotlib</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x6253;&#x7B97;&#x5728;&#x9999;&#x8549;&#x6D3E;(Banana Pi)M3&#x4E0A;&#x7528;&#x4E00;&#x4E0B;matplotlib&#xFF0C;&#x6267;&#x884C;&#x5B89;&#x88C5;&#x6307;&#x4EE4;&#x540E;&#xFF0C;&#x51FA;&#x4E86;&#x4E00;&#x5927;&#x5806;&#x9519;&#x8BEF;&#xFF0C;&#x5B89;&#x88C5;&#x4E5F;&#x6CA1;&#x6709;&#x6210;&#x529F;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmZbEt3rgSjajNXkZzLTFngw7bnZy4Bin8R2YsYMDJWUhz/image.png" alt=""></p>
+<h1 id="&#x5B89;&#x88C5;&#x51FA;&#x9519;"><a href="#&#x5B89;&#x88C5;&#x51FA;&#x9519;" class="headerlink" title="&#x5B89;&#x88C5;&#x51FA;&#x9519;"></a>&#x5B89;&#x88C5;&#x51FA;&#x9519;</h1><p>&#x5B89;&#x88C5;&#x6307;&#x4EE4;&#x5982;&#x4E0B;(virtualenv&#x4E0B;)&#xFF1A;</p>
+<blockquote>
+<p><code>pip install matplotlib</code></p>
+</blockquote>
+<p>&#x968F;&#x4FBF;&#x622A;&#x53D6;&#x4E00;&#x4E9B;&#x51FA;&#x9519;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmWrTTaYmPmL6Tpy3UbkChKbogaHEwewfREUaBkwxqfV4Y/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmSeRHugrv8HLWy4n4rpdtWSv8LQFPKh8bKUbwBkVbc1vD/image.png" alt=""></p>
+</blockquote>
+<p>&#x770B;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x5728;&#x7F16;&#x8BD1;numpy&#x65F6;&#x5019;&#x51FA;&#x9519;&#x3002;</p>
+<h1 id="&#x89E3;&#x51B3;&#x529E;&#x6CD5;"><a href="#&#x89E3;&#x51B3;&#x529E;&#x6CD5;" class="headerlink" title="&#x89E3;&#x51B3;&#x529E;&#x6CD5;"></a>&#x89E3;&#x51B3;&#x529E;&#x6CD5;</h1><p>&#x5728;numpy&#x7684;&#x5B98;&#x65B9;github&#x4E0A;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x53CD;&#x5E94;&#x76F8;&#x540C;&#x95EE;&#x9898;&#x7684;issue: <a href="https://github.com/numpy/numpy/issues/14147" target="_blank" rel="noopener">Failed to build v1.17.0 on CentOS7 with default gcc (4.8) #14147</a>&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x4EBA;&#x7ED9;&#x51FA;&#x8FD9;&#x6837;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<blockquote>
+<p><code>CFLAGS=-std=c99 pip install numpy==1.17.0</code></p>
+</blockquote>
+<p>&#x518D;&#x770B;&#x51FA;&#x9519;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#x4E2D;&#x7684;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#xFF0C;&#x6216;&#x8BB8;&#x8FD9;&#x771F;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x529E;&#x6CD5;&#x5462;</p>
+<blockquote>
+<p>numpy/core/src/npysort/radixsort.c.src:112:5: error: &#x2018;for&#x2019; loop initial declarations are only allowed in C99 or C11 mode</p>
+<p>numpy/core/src/npysort/radixsort.c.src:112:5: note: use option -std=c99, -std=gnu99, -std=c11 or -std=gnu11 to compile your code</p>
+</blockquote>
+<p>&#x4E0D;&#x8FC7;&#x73B0;&#x5728;&#x6700;&#x65B0;&#x53D1;&#x884C;&#x7248;&#x5DF2;&#x7ECF;&#x662F;1.17.2&#x4E86;&#xFF0C;&#x53E6;&#x5916;&#x6211;&#x89C9;&#x5F97;C11&#x8981;&#x6BD4;C99&#x65B0;&#x4E00;&#x4E9B;&#xFF0C;&#x7528;C11&#x662F;&#x4E0D;&#x662F;&#x4F1A;&#x66F4;&#x597D;&#x4E00;&#x4E9B;&#x5462;&#xFF1F;&#x4E8E;&#x662F;&#x6211;&#x5C06;&#x6307;&#x4EE4;&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;<br><code>CFLAGS=-std=c11 pip install numpy==1.17.2</code></p>
+<p>&#x6700;&#x7EC8;&#x679C;&#x7136;&#x7F16;&#x8BD1;&#x5E76;&#x5B89;&#x88C5;&#x6210;&#x529F;(numpy)&#xFF1A;</p>
+<blockquote>
+<p>Successfully built numpy<br>Installing collected packages: numpy<br>Successfully installed numpy-1.17.2</p>
+</blockquote>
+<p>&#x518D;&#x6B21;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x6307;&#x4EE4;&#xFF1A;</p>
+<blockquote>
+<p><code>pip install matplotlib</code></p>
+</blockquote>
+<p>&#x4E00;&#x5207;&#x987A;&#x5229;&#xFF0C;&#x7EC8;&#x4E8E;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x5566;&#xFF0C;&#x7EC8;&#x4E8E;&#x53C8;&#x53EF;&#x4EE5;&#x6109;&#x5FEB;&#x5730;&#x73A9;&#x800D;&#x5566;&#x3002;</p>
+<h1 id="&#x8865;&#x5145;"><a href="#&#x8865;&#x5145;" class="headerlink" title="&#x8865;&#x5145;"></a>&#x8865;&#x5145;</h1><p>&#x8BB0;&#x5F97;&#x4EE5;&#x524D;&#x7528;&#x5982;&#x4E0B;&#x6307;&#x4EE4;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5B89;&#x88C5;(&#x975E;virtualenv&#x73AF;&#x5883;)&#xFF1A;</p>
+<blockquote>
+<p><code>sudo apt-get install python3-matplotlib</code></p>
+</blockquote>
+<p>&#x4F46;&#x662F;&#x8FD9;&#x6B21;&#x5C1D;&#x8BD5;&#xFF0C;&#x90E8;&#x5206;&#x6587;&#x4EF6;&#x63D0;&#x793A;&#x627E;&#x4E0D;&#x5230;&#xFF08;404  Not Found&#xFF09;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmSV9jtwjayni54NLhuXBFMRy5VLETRtVfedF9bKkeFzBb/image.png" alt=""></p>
+</blockquote>
+<p>&#x53CD;&#x6B63;pip&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#x641E;&#x5B9A;&#x4E86;&#xFF0C;&#x61D2;&#x5F97;&#x6DF1;&#x7A76;&#x4E0A;&#x8FF0;&#x9519;&#x8BEF;&#x5566;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://github.com/numpy/numpy/issues/14147" target="_blank" rel="noopener">Failed to build v1.17.0 on CentOS7 with default gcc (4.8) #14147</a></li>
+<li><a href="https://askubuntu.com/questions/1167666/installing-numpy-using-pip3-on-ubuntu-error-command-failed-with-exit-status-1" target="_blank" rel="noopener">Installing Numpy using pip3 on Ubuntu - Error &#x201C;Command failed with exit status 1&#x201D;</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/banana-pi-m3-matplotlib" target="_blank" rel="noopener">&#x2018;&#x5728;&#x9999;&#x8549;&#x6D3E;(Banana Pi)M3&#x4E0A;&#x5B89;&#x88C5;matplotlib&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/eoseosio-v1-8-2019-09-24/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmXjGsZ8bJbppdTn7bV5Ag7aWhkmgJbjdRa9bov3qyCqJG/image.png" alt="EOS主网共识升级成功，EOSIO v1.8正式上线">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-24T10:16:45.000Z">2019-09-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 811 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/eoseosio-v1-8-2019-09-24/">EOS主网共识升级成功，EOSIO v1.8正式上线</a>
+            
+        </h1>
+        <div class="content">
+            <p><a href="https://steemit.com/cn/@oflyhigh/eosconsensus-protocol-upgrade-2019-09-23" target="_blank" rel="noopener">&#x6628;&#x5929;&#x7684;&#x5E16;&#x5B50;</a>&#x4E2D;&#xFF0C;&#x6211;&#x63D0;&#x5230;&#x4E86;EOS&#x4E3B;&#x7F51;&#x5C06;&#x5728;&#x5317;&#x4EAC;&#x65F6;&#x95F4;2019&#x5E74;9&#x6708;13&#x65E5;&#x665A;&#x4E0A;9&#x70B9;&#x949F;&#x8FDB;&#x884C;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;(Consensus Protocol Upgrade)&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmXjGsZ8bJbppdTn7bV5Ag7aWhkmgJbjdRa9bov3qyCqJG/image.png" alt=""><br>(&#x56FE;&#x6E90;&#xFF1A;<a href="https://steemit.com/eos/@freedomnation/eos-blockchain-operative-system-desktop-wallpapers" target="_blank" rel="noopener">https://steemit.com</a>)</p>
+<p>&#x7531;&#x4E8E;STEEM HF20&#x4EE5;&#x53CA;HF21/HF22&#x786C;&#x5206;&#x53C9;&#x7684;&#x7ECF;&#x5386;&#xFF0C;&#x6211;&#x5BF9;EOS&#x7684;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x8868;&#x8FBE;&#x4E86;&#x4E00;&#x5B9A;&#x7684;&#x62C5;&#x5FE7;&#xFF0C;&#x5C31;&#x6015;&#x51FA;&#x73B0;&#x5565;&#x7C7B;&#x4F3C;&#x4E3B;&#x7F51;&#x505C;&#x6446;&#x7684;&#x5C34;&#x5C2C;&#x4E8B;&#x4EF6;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x597D;&#x6D88;&#x606F;&#x662F;&#xFF0C;EOS&#x4E3B;&#x7F51;&#x6210;&#x529F;&#x5730;&#x6FC0;&#x6D3B;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#xFF0C;&#x62C5;&#x5FC3;&#x7684;&#x4E8B;&#x60C5;&#x5E76;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#xFF0C;&#x503C;&#x5F97;&#x5E86;&#x795D;&#x4E00;&#x4E0B;&#x2014;&#x2014;&#x6BD5;&#x7ADF;&#x6211;&#x8FD8;&#x6709;&#x597D;&#x4E9B;&#x4E2A;EOS&#x5462;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4EE5;&#x4E3A;EOS&#x5347;&#x7EA7;&#x662F;&#x7B80;&#x7B80;&#x5355;&#x5355;&#x5730;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;&#x7A0B;&#x5E8F;&#xFF0C;&#x90A3;&#x5C31;&#x5927;&#x9519;&#x7279;&#x9519;&#x4E86;&#xFF0C;&#x65E9;&#x5728;&#x51E0;&#x4E2A;&#x6708;&#x4EE5;&#x524D;<a href="https://github.com/EOSIO/eos/releases/tag/v1.8.0-rc1" target="_blank" rel="noopener">EOSIO v1.8.0-rc1</a>&#x53D1;&#x5E03;&#x540E;&#xFF0C;&#x4E3B;&#x7F51;&#x7684;BP&#x4EEC;&#x5C31;&#x5F00;&#x59CB;&#x4E86;&#x5404;&#x79CD;&#x6D4B;&#x8BD5;&#xFF0C;&#x5E76;&#x5728;kylin&#x548C;jungle&#x8FDB;&#x884C;&#x4E86;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x6D4B;&#x8BD5;&#x3002;</p>
+<p>&#x5728;<a href="https://github.com/EOSIO/eos/releases/tag/v1.8.1" target="_blank" rel="noopener">EOSIO v1.8.1</a>&#x6B63;&#x5F0F;&#x7248;&#x53D1;&#x5E03;&#x540E;&#xFF0C;&#x66F4;&#x662F;&#x5F00;&#x59CB;&#x4E86;&#x6F2B;&#x957F;&#x7684;Replay&#x4E4B;&#x65C5;&#xFF0C;STEEM&#x786C;&#x5206;&#x53C9;Replay&#x89C6;&#x670D;&#x52A1;&#x5668;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x7EA6;4-8&#x4E2A;&#x5C0F;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x89C9;&#x5F97;&#x5F88;&#x6162;&#x4E86;&#xFF0C;&#x4F46;&#x662F;EOS Replay&#x9700;&#x8981;&#x6570;&#x5341;&#x5929;&#x751A;&#x81F3;&#x6570;&#x6708;&#x4E4B;&#x4E45;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E4B;&#x540E;&#xFF0C;BP&#x4EEC;&#x51E0;&#x4E4E;&#x6BCF;&#x5468;&#x7EC4;&#x7EC7;&#x4E00;&#x6B21;&#x89C6;&#x9891;&#x4F1A;&#x8BAE;&#xFF0C;&#x786E;&#x8BA4;&#x6BCF;&#x4E2A;BP&#x7684;Replay&#x4EE5;&#x53CA;&#x5347;&#x7EA7;&#x51C6;&#x5907;&#x8FDB;&#x5C55;&#xFF0C;&#x6700;&#x7EC8;&#x628A;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x7684;&#x6FC0;&#x6D3B;&#x65F6;&#x95F4;&#x8BBE;&#x5B9A;&#x5230;&#x5317;&#x4EAC;&#x65F6;&#x95F4;2019&#x5E74;9&#x6708;13&#x65E5;&#x665A;&#x4E0A;9&#x70B9;&#x949F;&#x3002;</p>
+<p>&#x7531;&#x4E8E;EOSIO v1.8.x &#x7684;net_plugin(p2p&#x8FDE;&#x63A5;&#x90E8;&#x5206;)&#x5B58;&#x5728;&#x4E00;&#x4E9B;BUG&#xFF0C;&#x5BFC;&#x81F4;EOS&#x4E3B;&#x7F51;&#x5EF6;&#x8FDF;&#x5927;&#xFF0C;&#x4E22;&#x5757;(&#x8F6E;)&#x95EE;&#x9898;&#x65F6;&#x6709;&#x53D1;&#x751F;&#xFF0C;BP&#x4EEC;&#x5728;&#x5347;&#x7EA7;&#x524D;&#x4E00;&#x5929;&#x90E8;&#x7F72;&#x4E86;N&#x4E2A;&#x79C1;&#x6709;&#x8282;&#x70B9;&#xFF0C;&#x786E;&#x4FDD;&#x5347;&#x7EA7;&#x5E73;&#x6ED1;&#x8FDB;&#x884C;&#x3002;</p>
+<p>&#x5728;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x4E4B;&#x524D;&#x7684;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5185;&#xFF0C;BP&#x4EEC;&#x7EC4;&#x7EC7;&#x4E86;&#x4E24;&#x6B21;&#x89C6;&#x9891;&#x4F1A;&#x8BAE;&#xFF0C;&#x5E76;&#x5728;&#x5FAE;&#x4FE1;&#x548C;&#x7535;&#x62A5;&#x7FA4;&#x6700;&#x7EC8;&#x786E;&#x8BA4;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x51C6;&#x5907;&#x72B6;&#x6001;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmQT1Ddpm6kw9gX9nx7fottgvJKKegDhewGb2rs6D32Nsh/image.png" alt=""><br>(&#x56FE;&#x6E90;&#xFF1A;&#x6765;&#x81EA;<a href="https://eosnation.io/upgrade/" target="_blank" rel="noopener">https://eosnation.io/upgrade/</a>)</p>
+<p>&#x5728;&#x5347;&#x7EA7;&#x4E4B;&#x524D;&#x7684;&#x89C6;&#x9891;&#x4F1A;&#x8BAE;&#x4E2D;&#xFF0C;&#x8282;&#x70B9;&#x4EEC;&#x5BF9;&#x662F;&#x5426;&#x6FC0;&#x6D3B;&#x5347;&#x7EA7;&#x8FDB;&#x884C;&#x4E86;&#x6295;&#x7968;&#xFF0C;&#x6700;&#x540E;21&#x4E2A;&#x8D85;&#x7EA7;&#x8282;&#x70B9;&#x5168;&#x90E8;&#x6295;&#x4E86;&#x8D5E;&#x6210;&#x7968; (Go)&#xFF0C;&#x5728;&#x5317;&#x4EAC;&#x65F6;&#x95F4;21&#x70B9;&#x65F6;&#xFF0C;&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;&#x88AB;&#x6B63;&#x5F0F;&#x6FC0;&#x6D3B;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmX7op2wxZbMsikHpjLBHMAhMaNpUcLzofyAMgbYhzTy8j/image.png" alt=""><br>(&#x56FE;&#x6E90;&#xFF1A;&#x6765;&#x81EA;<a href="https://eosnation.io/upgrade/" target="_blank" rel="noopener">https://eosnation.io/upgrade/</a>)</p>
+<p>&#x5C3D;&#x7BA1;EOS&#x5E01;&#x4EF7;&#x6CA1;&#x6709;&#x88AB;&#x62C9;&#x5347;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4F9D;&#x7136;&#x662F;&#x4E00;&#x6B21;&#x6210;&#x529F;&#x7684;&#x5347;&#x7EA7;&#x3002;&#x867D;&#x7136;&#x6211;&#x7684;&#x5E01;&#x6CA1;&#x6709;&#x89E3;&#x5957;&#xFF0C;&#x4F46;&#x662F;&#x770B;&#x8D77;&#x6765;&#x6682;&#x65F6;&#x4E0D;&#x4F1A;&#x5F52;&#x96F6;&#x5566;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x653E;&#x5FC3;&#x5566;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/cn/@oflyhigh/eosconsensus-protocol-upgrade-2019-09-23" target="_blank" rel="noopener">EOS&#x5171;&#x8BC6;&#x534F;&#x8BAE;&#x5347;&#x7EA7;(Consensus Protocol Upgrade)&#x6765;&#x4E86;</a></li>
+<li><a href="https://eosnation.io/upgrade/" target="_blank" rel="noopener">https://eosnation.io/upgrade/</a></li>
+<li><a href="https://developers.eos.io/eosio-nodeos/docs/consensus-protocol-upgrade-process" target="_blank" rel="noopener">1.8: Consensus Protocol Upgrade Process</a></li>
+<li><a href="https://github.com/EOSIO/eos/releases/tag/v1.8.0" target="_blank" rel="noopener">EOSIO v1.8.0 Release Notes</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/eoseosio-v1-8-2019-09-24" target="_blank" rel="noopener">&#x2018;EOS&#x4E3B;&#x7F51;&#x5171;&#x8BC6;&#x5347;&#x7EA7;&#x6210;&#x529F;&#xFF0C;EOSIO v1.8&#x6B63;&#x5F0F;&#x4E0A;&#x7EBF;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/624qbh-ufw/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：UFW简单使用（三）">
         </a>
@@ -624,183 +798,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/ufw/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：UFW简单使用（一）">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-22T01:39:48.000Z">2019-09-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 763 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/ufw/">每天进步一点点：UFW简单使用（一）</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x9700;&#x8981;&#x5728;&#x4E00;&#x53F0;ubuntu 18.04&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x914D;&#x7F6E;&#x9632;&#x706B;&#x5899;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x83AB;&#x8FC7;&#x4E8E;&#x4F7F;&#x7528;UFW&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x5927;&#x81F4;&#x7B80;&#x5355;&#x8BB0;&#x5F55;&#x4E00;&#x4E0B;&#xFF0C;&#x5907;&#x5FD8;&#x4EE5;&#x53CA;&#x4F9B;&#x9700;&#x8981;&#x7684;&#x4EBA;&#x53C2;&#x8003;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>UFW&#x662F;&#x4ECE;Ubuntu 8.04&#x5F15;&#x5165;&#x5230;Ubuntu&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5168;&#x79F0;&#x662F;<strong><em>Uncomplicated Firewall</em></strong>&#xFF0C;&#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x662F;<strong><em>&#x7B80;&#x5355;&#x7684;&#x9632;&#x706B;&#x5899;</em></strong>&#xFF0C;&#x5C31;&#x50CF;&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x4E00;&#x6837;&#xFF0C;UFW&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
-<h1 id="&#x5B89;&#x88C5;"><a href="#&#x5B89;&#x88C5;" class="headerlink" title="&#x5B89;&#x88C5;"></a>&#x5B89;&#x88C5;</h1><p>&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;UFW&#x4F1A;&#x968F;&#x7CFB;&#x7EDF;&#x5B89;&#x88C5;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5B89;&#x88C5;&#x7684;&#x662F;&#x6700;&#x5C0F;&#x7CFB;&#x7EDF;&#xFF0C;&#x90A3;&#x4E48;UFW&#x53EF;&#x80FD;&#x4E0D;&#x88AB;&#x5305;&#x542B;&#x5728;&#x5185;&#xFF0C;&#x4E0D;&#x8FC7;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;UFW&#x5B89;&#x88C5;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x6307;&#x4EE4;&#x5373;&#x53EF;&#xFF1A;</p>
-<p><code>sudo apt-get install ufw</code></p>
-<h1 id="&#x7981;&#x7528;-&#x6FC0;&#x6D3B;-&#x91CD;&#x7F6E;"><a href="#&#x7981;&#x7528;-&#x6FC0;&#x6D3B;-&#x91CD;&#x7F6E;" class="headerlink" title="&#x7981;&#x7528;/&#x6FC0;&#x6D3B;/&#x91CD;&#x7F6E;"></a>&#x7981;&#x7528;/&#x6FC0;&#x6D3B;/&#x91CD;&#x7F6E;</h1><p>&#x5B89;&#x88C5;&#x540E;&#xFF0C;UFW&#x7684;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#x662F;&#x88AB;&#x7981;&#x7528;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x7981;&#x7528;&#x72B6;&#x6001;&#x4E0B;&#x7F16;&#x8F91;&#x89C4;&#x5219;&#xFF0C;&#x5F85;&#x7F16;&#x8F91;&#x597D;&#x540E;&#x542F;&#x7528;UFW&#x3002;</p>
-<p>&#x6FC0;&#x6D3B;&#x6307;&#x4EE4;&#xFF1A;</p>
-<blockquote>
-<p><code>sudo ufw enable</code></p>
-</blockquote>
-<p><strong><em>&#x5728;&#x6FC0;&#x6D3B;/&#x542F;&#x7528;UFW&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x786E;&#x4FDD;&#x5141;&#x8BB8;&#x4E86;SSH&#x7B49;&#x534F;&#x8BAE;/&#x7AEF;&#x53E3;</em></strong>&#xFF0C;&#x5426;&#x5219;&#x53EF;&#x80FD;&#x628A;&#x81EA;&#x5DF1;&#x6321;&#x5728;&#x5916;&#x8FB9;&#xFF0C;&#x90A3;&#x5C31;&#x5C34;&#x5C2C;&#x4E86;&#x3002;</p>
-<p>&#x7981;&#x7528;&#x6307;&#x4EE4;&#xFF1A;</p>
-<blockquote>
-<p><code>sudo ufw disable</code></p>
-</blockquote>
-<p>&#x7F16;&#x8F91;&#x4E86;&#x4E00;&#x5927;&#x5806;&#x89C4;&#x5219;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x63A8;&#x5012;&#x91CD;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x91CD;&#x7F6E;&#x6307;&#x4EE4;&#x3002;</p>
-<blockquote>
-<p><code>sudo ufw reset</code></p>
-</blockquote>
-<h1 id="&#x9ED8;&#x8BA4;&#x89C4;&#x5219;"><a href="#&#x9ED8;&#x8BA4;&#x89C4;&#x5219;" class="headerlink" title="&#x9ED8;&#x8BA4;&#x89C4;&#x5219;"></a>&#x9ED8;&#x8BA4;&#x89C4;&#x5219;</h1><p>&#x5BF9;&#x4E8E;&#x9632;&#x706B;&#x5899;&#x800C;&#x8A00;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x6709;&#x4E24;&#x79CD;&#x7B56;&#x7565;&#xFF0C;&#x5206;&#x522B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<ul>
-<li>&#x5141;&#x8BB8;&#x6240;&#x6709;&#x7684;&#xFF0C;&#x7981;&#x6B62;&#x7279;&#x6B8A;&#x7684;</li>
-<li>&#x7981;&#x6B62;&#x6240;&#x6709;&#x7684;&#xFF0C;&#x5141;&#x8BB8;&#x7279;&#x6B8A;&#x7684;</li>
-</ul>
-<p>&#x6240;&#x4EE5;UFW&#x7684;&#x9ED8;&#x8BA4;&#x89C4;&#x5219;&#x4E5F;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x8BBE;&#x7F6E;&#x4E3A;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;</p>
-<blockquote>
-<p><code>sudo ufw default allow [incoming|outgoing|routed]</code><br><code>sudo ufw default deny|reject [incoming|outgoing|routed]</code></p>
-</blockquote>
-<p>&#x5176;&#x4E2D;<code>deny</code>&#x548C;<code>reject</code>&#x7684;&#x533A;&#x522B;&#x662F; &#xFF0C;<code>deny</code>&#x53EA;&#x662F;&#x963B;&#x6B62;&#xFF0C;<code>reject</code>&#x62D2;&#x7EDD;&#x4F1A;&#x7ED9;&#x51FA;&#x4FE1;&#x606F;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x5F62;&#x8C61;&#x4E00;&#x4E9B;&#x6BD4;&#x55BB;&#x7684;&#x8BDD;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x95E8;&#x5728;&#x91CC;&#x8FB9;&#x9501;&#x4E0A;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x4ECE;&#x5916;&#x8FB9;&#x600E;&#x4E48;&#x63A8;&#x4E5F;&#x63A8;&#x4E0D;&#x5F00;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;<code>deny</code>&#xFF1B;&#x4F46;&#x662F;&#x5982;&#x679C;&#x95E8;&#x4E0A;&#x8D34;&#x7740;&#xFF0C;<strong><em>&#x95E8;&#x5DF2;&#x4E0A;&#x9501;&#xFF0C;&#x6B64;&#x8DEF;&#x4E0D;&#x901A;</em></strong>&#xFF0C;&#x8FD9;&#x5C31;&#x662F;<code>reject</code>&#x3002;</p>
-<p>&#x5982;&#x679C;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x8BBE;&#x7F6E;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BB2;&#xFF0C;UFW&#x7684;&#x9ED8;&#x8BA4;&#x89C4;&#x5219;&#x662F;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmVvz59p4sTttwBPSzdjWazfaDgJvvf4zD2x2oEEQ4AKZK/image.png" alt=""><br><code>Default: deny (incoming), allow (outgoing), deny (routed)</code></p>
-</blockquote>
-<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7981;&#x6B62;&#x6240;&#x6709;&#x5165;&#x7AD9;&#x6570;&#x636E;&#xFF0C;&#x5141;&#x8BB8;&#x6240;&#x6709;&#x51FA;&#x7AD9;&#x6570;&#x636E;&#xFF0C;&#x7981;&#x6B62;&#x8DEF;&#x7531;&#x3002;</p>
-<h1 id="&#x67E5;&#x770B;&#x5E2E;&#x52A9;"><a href="#&#x67E5;&#x770B;&#x5E2E;&#x52A9;" class="headerlink" title="&#x67E5;&#x770B;&#x5E2E;&#x52A9;"></a>&#x67E5;&#x770B;&#x5E2E;&#x52A9;</h1><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x8C03;&#x51FA;&#x5E2E;&#x52A9;&#x4FE1;&#x606F;&#xFF1A;</p>
-<blockquote>
-<p><code>ufw --help</code></p>
-</blockquote>
-<p>&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmfBNeT1QPZteqSZsFQE74gR26pWdSyEsMxJjRgaBanBYC/image.png" alt=""></p>
-</blockquote>
-<p>&#x6216;&#x8005;&#x67E5;&#x770B;&#x8BE6;&#x7EC6;&#x7684;&#x624B;&#x518C;&#x4FE1;&#x606F;&#xFF1A;<br><code>man ufw</code></p>
-<p>&#x8FD9;&#x8282;&#x5148;&#x8BB2;&#x8FD9;&#x4E48;&#x591A;&#xFF0C;&#x4E0B;&#x8282;&#x5C06;&#x7ED3;&#x5408;&#x4E00;&#x4E9B;&#x5B9E;&#x4F8B;&#x6765;&#x8BB2;&#x89E3;UFW&#x7B80;&#x5355;&#x4F7F;&#x7528;&#xFF0C;&#x656C;&#x8BF7;&#x671F;&#x5F85;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://wiki.ubuntu.com/UncomplicatedFirewall" target="_blank" rel="noopener">UncomplicatedFirewall</a></li>
-<li><a href="http://manpages.ubuntu.com/manpages/bionic/en/man8/ufw.8.html" target="_blank" rel="noopener">UFW Manual for Ubuntu 18.04</a></li>
-<li><a href="https://help.ubuntu.com/community/UFW" target="_blank" rel="noopener">Ubuntu Community Documentation on UFW</a></li>
-</ul>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/ufw" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;UFW&#x7B80;&#x5355;&#x4F7F;&#x7528;&#xFF08;&#x4E00;&#xFF09;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/-2019-09-21/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmWrHgr6n8PbK5c5ah3CqexfCD1Hz4s4C3ocpjD643bMiW/image.png" alt="去大学操场锻炼">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-21T11:38:21.000Z">2019-09-21</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 447 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/-2019-09-21/">去大学操场锻炼</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmWrHgr6n8PbK5c5ah3CqexfCD1Hz4s4C3ocpjD643bMiW/image.png" alt=""></p>
-<p>&#x6211;&#x7684;&#x4E00;&#x4E2A;&#x670B;&#x53CB;&#x7279;&#x522B;&#x70ED;&#x7231;&#x8FD0;&#x52A8;&#xFF0C;&#x6BCF;&#x5929;&#x65E9;&#x6668;&#x90FD;&#x53BB;&#x9644;&#x8FD1;&#x7684;&#x5927;&#x5B66;&#x6821;&#x56ED;&#x8DD1;&#x4E2A;&#x4E09;&#x4E94;&#x516C;&#x91CC;&#xFF0C;&#x8FD8;&#x7ECF;&#x5E38;&#x558A;&#x6211;&#x4E00;&#x8D77;&#x53BB;&#x8DD1;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x867D;&#x7136;&#x5BF9;&#x4ED6;&#x7FA1;&#x6155;&#x4E0D;&#x5DF2;&#xFF0C;&#x4F46;&#x662F;&#x522B;&#x8BF4;&#x4E09;&#x4E94;&#x516C;&#x91CC;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x8BA9;&#x6211;&#x8DD1;&#x4E2A;&#x4E09;&#x4E94;&#x767E;&#x7C73;&#xFF0C;&#x4F30;&#x8BA1;&#x90FD;&#x7D2F;&#x5F97;&#x6C14;&#x5598;&#x5401;&#x5401;&#x4E86;&#x5427;&#xFF1F;</p>
-<p>&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4E0D;&#x8DD1;&#x6B65;&#x7684;&#x8BDD;&#xFF0C;&#x53BB;&#x5927;&#x5B66;&#x64CD;&#x573A;&#x8F6C;&#x8F6C;&#xFF0C;&#x6D3B;&#x52A8;&#x4E00;&#x4E0B;&#xFF0C;&#x672C;&#x6765;&#x5C31;&#x662F;&#x5F88;&#x723D;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5929;&#x6C14;&#x5F88;&#x597D;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x62CD;&#x51E0;&#x5F20;&#x7167;&#x7247;&#xFF0C;&#x8D85;&#x7F8E;&#x3002;</p>
-<p>&#x518D;&#x9A91;&#x51E0;&#x5708;&#x5171;&#x4EAB;&#x5355;&#x8F66;&#xFF0C;&#x4E5F;&#x5E94;&#x8BE5;&#x80FD;&#x8D77;&#x5230;&#x953B;&#x70BC;&#x7684;&#x4F5C;&#x7528;&#x5427;&#xFF0C;&#x54C8;&#x54C8;&#xFF0C;&#x804A;&#x80DC;&#x4E8E;&#x65E0;&#x5427;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmYubDhHCsg9hon1h3Ncqkoh3vGdznr3c75Jf1SXBivuzM/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmTfpkY33jHFzxQMR3oWo2pG8UCeUur5EBVMH9UxiKay2W/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmXR7JkG1ZrNN7CYNEf7icxifpxzDUFxM34yE95bnB2YxE/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmbbKQTQQgYnjUR6mG6HZrUvEMgQYHcD9op1vkecUCfe2f/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmQ5N59AAMXjneTpZweAonWAb1hSY2ZQBCTn8XQAB5qb9H/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmYqth158XFdy1qzCAFpY6Ur9BtYgvDc3aFGsM7SrXdAeR/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmQ6gpiZ5fJkvePnpaoVgQNbQU93dKzaFySnQ9DWx8Nyzd/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmahyCFAomZSDYxa6M7L7G2jXho7FRCTVCj9pcfmh583GR/image.png" alt=""></p>
-<p><img src="https://cdn.steemitimages.com/DQmerLQUGSit2dRMLmA8SmLryriHdNpdgaezMnZCHBNz7ET/image.png" alt=""></p>
-<p>&#x4ECE;&#x64CD;&#x573A;&#x8F6C;&#x73A9;&#xFF0C;&#x518D;&#x8D70;&#x8D70;&#x94F6;&#x674F;&#x8DEF;&#xFF0C;&#x53BB;&#x53CB;&#x56ED;&#x9910;&#x5385;&#x6DF7;&#x987F;&#x996D;&#xFF0C;&#x90A3;&#x6B64;&#x884C;&#x5C31;&#x76F8;&#x5F53;&#x5B8C;&#x7F8E;&#x4E86;&#x3002;</p>
-<p>&#x73B0;&#x5728;&#x65F6;&#x95F4;&#x8FD8;&#x6709;&#x70B9;&#x65E9;&#xFF0C;&#x7B49;&#x94F6;&#x674F;&#x53F6;&#x9EC4;&#x4E86;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x94F6;&#x674F;&#x8DEF;&#x94FA;&#x6EE1;&#x9EC4;&#x53F6;&#xFF0C;&#x53D8;&#x6210;&#x9EC4;&#x91D1;&#x5927;&#x9053;&#xFF0C;&#x90A3;&#x624D;&#x53EB;&#x7F8E;&#x4E0D;&#x80DC;&#x6536;&#x5462;&#x3002;</p>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/-2019-09-21" target="_blank" rel="noopener">&#x2018;&#x53BB;&#x5927;&#x5B66;&#x64CD;&#x573A;&#x953B;&#x70BC;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -825,7 +822,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/354/">354</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/355/">355</a></li>
             
         </ul>
     </nav>
