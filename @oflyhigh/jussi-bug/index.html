@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+<title>偶然间发现JUSSI的一个小BUG - oflyhigh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="https://www.easyicon.net/api/resizeApi.php?id=1185564&size=32">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+    
+    
+
+    
+    
+    
+
+
+<link rel="stylesheet" href="/@oflyhigh/css/style.css">
+
+<link rel="stylesheet" href="/@oflyhigh/css/bundle.css"></head>
+<body class="is-2-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/@oflyhigh/">
+            
+                <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/@oflyhigh/">Home</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/archives">Archives</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/categories">Categories</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/tags">Tags</a>
+                
+                <a class="navbar-item" href="/@oflyhigh/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                
+                <a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                
+
+                
+
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-4-widescreen  has-order-3 column-right is-sticky">
+    
+        
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Catalogue
+            </h3>
+            <ul class="menu-list"><ul class="menu-list"><li>
+        <a class="is-flex" href="#Step-1">
+        <span class="has-mr-6">1.1</span>
+        <span>Step 1</span>
+        </a></li><li>
+        <a class="is-flex" href="#Step-2">
+        <span class="has-mr-6">1.2</span>
+        <span>Step 2</span>
+        </a></li><li>
+        <a class="is-flex" href="#Conclusion">
+        <span class="has-mr-6">1.3</span>
+        <span>Conclusion</span>
+        </a></li></ul><li>
+        <a class="is-flex" href="#&#x4E2D;&#x6587;&#x7248;">
+        <span class="has-mr-6">2</span>
+        <span>&#x4E2D;&#x6587;&#x7248;</span>
+        </a></li></ul>
+        </div>
+    </div>
+</div>
+
+
+    
+    
+</div>
+
+
+                <script src="/@oflyhigh/js/pjax-widget.js"></script>
+
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="https://images.hive.blog/DQmXbHdVstYLw8EFjWZj6hF5FANF4jrspacmSjhZMhFApCU/image.png" alt="偶然间发现JUSSI的一个小BUG">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-22T02:50:45.000Z">2020-05-22</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 611 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                偶然间发现JUSSI的一个小BUG
+            
+        </h1>
+        <div class="content">
+            <p>I implemented a python library myself, and because I saw that the <code>condenser_api</code> would be deprecated, so in this python library I used other substitution APIs instead of using the <code>condenser_api</code>.</p>
+<p><img src="https://images.hive.blog/DQmXbHdVstYLw8EFjWZj6hF5FANF4jrspacmSjhZMhFApCU/image.png" alt="image.png"><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>My scripts use my python library and the local node, and they work together without any problems.</p>
+<p>But when I tried to use <a href="https://api.hive.blog" target="_blank" rel="noopener">https://api.hive.blog</a>, the following API call went wrong:</p>
+<blockquote>
+<p><code>network_broadcast_api.broadcast_transaction</code></p>
+</blockquote>
+<p>And the error message:</p>
+<blockquote>
+<p>{&#x201C;jsonrpc&#x201D;:&#x201D;2.0&#x201D;,&#x201D;id&#x201D;:1,&#x201D;error&#x201D;:{&#x201C;code&#x201D;:-32603,&#x201D;message&#x201D;:&#x201D;Internal Error&#x201D;,&#x201D;data&#x201D;:{&#x201C;error_id&#x201D;:&#x201D;b39f68b2-729c-4a3d-8c0e-3a55d3ae0559&#x201D;,&#x201D;jussi_request_id&#x201D;:&#x201D;000136681014195215&#x201D;}}}</p>
+</blockquote>
+<p>First of all, I thought there was a problem in my script or python library, but when I examined it closely, I found nothing wrong. In addition, I found that using my local node or <a href="https://anyx.io" target="_blank" rel="noopener">https://anyx.io</a>, my scripts worked fine.</p>
+<p>So what&#x2019;s the difference between <a href="https://api.hive.blog" target="_blank" rel="noopener">https://api.hive.blog</a> and my local node or <a href="https://anyx.io?" target="_blank" rel="noopener">https://anyx.io?</a> The answer is <a href="https://api.hive.blog" target="_blank" rel="noopener">https://api.hive.blog</a> using JUSSI.</p>
+<p>In order to test this problem, I tested some other nodes, and the results are the same: <strong><em>Nodes with JUSSI enabled return &#x201C;internal error&#x201D;, while others handle it normally</em></strong>.</p>
+<p>We can use the following steps to reproduce this problem:</p>
+<h4 id="Step-1"><a href="#Step-1" class="headerlink" title="Step 1"></a>Step 1</h4><p>Make an API Call to <a href="https://api.hive.blog" target="_blank" rel="noopener">https://api.hive.blog</a> (JUSSI enabled)</p>
+<blockquote>
+<p><code>curl -s --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;, &quot;method&quot;:&quot;network_broadcast_api.broadcast_transaction&quot;, &quot;params&quot;:{&quot;trx&quot;:{&quot;ref_block_num&quot;:1097,&quot;ref_block_prefix&quot;:2181793527,&quot;expiration&quot;:&quot;2016-03-24T18:00:21&quot;,&quot;operations&quot;:[{&quot;type&quot;:&quot;vote_operation&quot;,&quot;value&quot;:{&quot;voter&quot;:&quot;hiveio&quot;,&quot;author&quot;:&quot;alice&quot;,&quot;permlink&quot;:&quot;a-post-by-alice&quot;,&quot;weight&quot;:10000}}],&quot;extensions&quot;:[],&quot;signatures&quot;:[]},&quot;max_block_age&quot;:50}, &quot;id&quot;:1}&apos; https://api.hive.blog</code></p>
+</blockquote>
+<p>Check the response:</p>
+<blockquote>
+<p>{&#x201C;jsonrpc&#x201D;:&#x201D;2.0&#x201D;,&#x201D;id&#x201D;:1,&#x201D;error&#x201D;:{&#x201C;code&#x201D;:-32603,&#x201D;message&#x201D;:&#x201D;Internal Error&#x201D;,&#x201D;data&#x201D;:{&#x201C;error_id&#x201D;:&#x201D;b39f68b2-729c-4a3d-8c0e-3a55d3ae0559&#x201D;,&#x201D;jussi_request_id&#x201D;:&#x201D;000136681014195215&#x201D;}}}</p>
+</blockquote>
+<h4 id="Step-2"><a href="#Step-2" class="headerlink" title="Step 2"></a>Step 2</h4><p>Make API Call to <a href="https://api.hive.blog" target="_blank" rel="noopener">https://api.hive.blog</a> (without JUSSI)</p>
+<blockquote>
+<p><code>curl -s --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;, &quot;method&quot;:&quot;network_broadcast_api.broadcast_transaction&quot;, &quot;params&quot;:{&quot;trx&quot;:{&quot;ref_block_num&quot;:1097,&quot;ref_block_prefix&quot;:2181793527,&quot;expiration&quot;:&quot;2016-03-24T18:00:21&quot;,&quot;operations&quot;:[{&quot;type&quot;:&quot;vote_operation&quot;,&quot;value&quot;:{&quot;voter&quot;:&quot;hiveio&quot;,&quot;author&quot;:&quot;alice&quot;,&quot;permlink&quot;:&quot;a-post-by-alice&quot;,&quot;weight&quot;:10000}}],&quot;extensions&quot;:[],&quot;signatures&quot;:[]},&quot;max_block_age&quot;:50}, &quot;id&quot;:1}&apos; https://anyx.io</code></p>
+</blockquote>
+<p>Check the response:</p>
+<blockquote>
+<p>{&#x201C;error&#x201D;:{&#x201C;code&#x201D;:-32000,&#x201D;data&#x201D;:{&#x201C;code&#x201D;:3030000,&#x201D;message&#x201D;:&#x201D;missing required posting authority&#x201D; &#x2026;</p>
+</blockquote>
+<h4 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h4><p>We expect the two nodes to return the same information (step 2 is correct), but step 1 returns:&#x201D;Internal Error&#x201D;.</p>
+<p>In my opinion, for an API call, <strong><em>whether or not the node is JUSSI enabled, the result should be consistent</em></strong>. So, I think this may be a BUG of JUSSI.</p>
+<h1 id="&#x4E2D;&#x6587;&#x7248;"><a href="#&#x4E2D;&#x6587;&#x7248;" class="headerlink" title="&#x4E2D;&#x6587;&#x7248;"></a>&#x4E2D;&#x6587;&#x7248;</h1><p>&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x4E86;&#x4E2A;python&#x5E93;&#xFF0C;&#x56E0;&#x4E3A;&#x770B;&#x5230;<code>condenser_api</code>&#x8981;&#x88AB;&#x5F03;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x7684;&#x5B9E;&#x73B0;&#x65F6;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x662F;&#x7528;&#x5176;&#x5B83;&#x66FF;&#x4EE3;API&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x5E93;&#x7684;&#x7A0B;&#x5E8F;&#x914D;&#x5408;&#x6211;&#x7684;&#x672C;&#x5730;&#x8282;&#x70B9;&#xFF0C;&#x4E00;&#x76F4;&#x5DE5;&#x4F5C;&#x7684;&#x633A;&#x597D;&#x6CA1;&#x5565;&#x6BDB;&#x75C5;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x5F53;&#x6211;&#x5076;&#x7136;&#x4F7F;&#x7528;<a href="https://api.hive.blog&#xFF0C;" target="_blank" rel="noopener">https://api.hive.blog&#xFF0C;</a> &#x53D1;&#x73B0;&#x7ADF;&#x7136;&#x65E0;&#x6CD5;&#x5904;&#x7406;<code>network_broadcast_api.broadcast_transaction</code>&#x3002;</p>
+<p>&#x7ECF;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x6D4B;&#x8BD5;&#xFF0C;&#x6211;&#x51B3;&#x5B9A;&#x8FD9;&#x4E2A;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;BUG&#xFF0C;&#x6CA1;&#x60F3;&#x5230;&#x5076;&#x7136;&#x95F4;&#x7ADF;&#x7136;&#x6D4B;&#x51FA;JUSSI&#x7684;&#x4E00;&#x4E2A;BUG&#x3002;&#x56E0;&#x4E3A;&#x6307;&#x671B;JUSSI&#x8FC5;&#x901F;&#x66F4;&#x65B0;&#x662F;&#x4E0D;&#x53EF;&#x80FD;&#x4E86;&#xFF0C;&#x53EA;&#x597D;&#x5148;&#x81EA;&#x5DF1;&#x6539;&#x4E00;&#x4E0B;&#x5E93;&#x55BD;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/jussi-bug" target="_blank" rel="noopener">&#x2018;&#x5076;&#x7136;&#x95F4;&#x53D1;&#x73B0;JUSSI&#x7684;&#x4E00;&#x4E2A;&#x5C0F;BUG&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/@oflyhigh/tags/bug/">bug</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn/">cn</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cn-programming/">cn-programming</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/cutehive/">cutehive</a>, <a class="has-link-grey -link" href="/@oflyhigh/tags/jussi/">jussi</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+<div class="sharethis-inline-share-buttons"></div>
+<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&amp;product=inline-share-buttons" async="async"></script>
+
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@oflyhigh/3kbxvy-linode/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">又被Linode小小的坑了一下</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/@oflyhigh/steem-permanently-shut-down-my-witness-node-on-steem/">
+                <span class="level-item">永久关闭我在STEEM的见证人节点 / Permanently shut down my witness node on STEEM</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/@oflyhigh/">
+                
+                    <img src="https://avatars0.githubusercontent.com/u/50857551?s=200&v=4" alt="oflyhigh" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 oflyhigh&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en_US.UTF-8");</script>
+
+
+    
+    
+    
+    <script src="/@oflyhigh/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){outdatedBrowser({bgColor:"#f25648",color:"#ffffff",lowerThan:"flex"})});</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>document.addEventListener("DOMContentLoaded",function(){MathJax.Hub.Config({"HTML-CSS":{matchFontHeight:!1},SVG:{matchFontHeight:!1},CommonHTML:{matchFontHeight:!1},tex2jax:{inlineMath:[["$","$"],["\\(","\\)"]]}})});</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+
+
+
+    
+<script src="/@oflyhigh/js/bundle.js" defer></script></body>
+</html>
+
