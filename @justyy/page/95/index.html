@@ -230,6 +230,99 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/c-coding-exercise-find-maximum-depth-of-n-ary-tree-n/" class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt="C++ Coding Exercise - Find Maximum Depth of N-ary Tree - 编程练习题：找出N叉树的深度">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-08-05T11:09:09.000Z">2018-08-05</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    7 minutes read (About 1026 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/c-coding-exercise-find-maximum-depth-of-n-ary-tree-n/">C++ Coding Exercise - Find Maximum Depth of N-ary Tree - 编程练习题：找出N叉树的深度</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt=""></p>
+<blockquote>
+<p>Given a n-ary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. For example, given a 3-ary tree:</p>
+</blockquote>
+<p><img src="https://ipfs.busy.org/ipfs/QmVcB8FG1fdD6NaZejAMZ3kUdKBKuvbEKfeiuR5CpwDubm" alt="image.png"></p>
+<blockquote>
+<p>We should return its max depth, which is 3.  Note: The depth of the tree is at most 1000.  The total number of nodes is at most 5000.</p>
+</blockquote>
+<h2 id="Definition-of-N-ary-Tree"><a href="#Definition-of-N-ary-Tree" class="headerlink" title="Definition of N-ary Tree"></a>Definition of N-ary Tree</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// Definition for a Node.</span><br><span class="line">class Node {</span><br><span class="line">public:</span><br><span class="line">    int val;</span><br><span class="line">    vector&lt;Node*&gt; children;</span><br><span class="line"></span><br><span class="line">    Node() {}</span><br><span class="line"></span><br><span class="line">    Node(int _val, vector&lt;Node*&gt; _children) {</span><br><span class="line">        val = _val;</span><br><span class="line">        children = _children;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="DFS-Depth-First-Search"><a href="#DFS-Depth-First-Search" class="headerlink" title="DFS (Depth First Search)"></a>DFS (Depth First Search)</h2><p><a href="https://helloacm.com/c-coding-exercise-sum-of-left-leaves-bfs-dfs-recursion/" target="_blank" rel="noopener">DFS</a> is usually easy to implement using <a href="https://helloacm.com/how-to-check-symmetric-tree-in-c-iterative-and-recursion/" target="_blank" rel="noopener">recursion</a>. The depth of N-ary tree is the maximum depth of its subtree (children) plus one. </p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) {</span><br><span class="line">        if (root == NULL) {</span><br><span class="line">            return 0;</span><br><span class="line">        }</span><br><span class="line">        int depth = 0;</span><br><span class="line">        for (const auto &amp;subTree: root-&gt;children) {</span><br><span class="line">            auto d = maxDepth(subTree);</span><br><span class="line">            depth = max(depth, d);</span><br><span class="line">        }</span><br><span class="line">        return depth + 1; // children depth plus one</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="BFS-Breadth-First-Search"><a href="#BFS-Breadth-First-Search" class="headerlink" title="BFS (Breadth First Search)"></a>BFS (Breadth First Search)</h2><p>BFS travels the tree level by level. This is done by maintaining a queue and expanding the children nodes node by node. At each iteration, we also need to calculate its depth and push the depth together with the node in the queue.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) {</span><br><span class="line">        if (root == NULL) return 0;</span><br><span class="line">        queue&lt;pair&lt;Node*, int&gt;&gt; Q;</span><br><span class="line">        Q.push(make_pair(root, 1));</span><br><span class="line">        int depth = 1;</span><br><span class="line">        while (Q.size() &gt; 0) {</span><br><span class="line">            auto p = Q.front();</span><br><span class="line">            Q.pop();</span><br><span class="line">            for (const auto &amp;n: p.first-&gt;children) {</span><br><span class="line">                Q.push(make_pair(n, p.second + 1)); // push children to queue</span><br><span class="line">                depth = max(p.second + 1, depth);   // record the maximum depth of current node</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return depth;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>Both <a href="https://helloacm.com/cc-coding-exercise-word-break-dp-bfs-dfs/" target="_blank" rel="noopener">BFS</a> and DFS need to walk through the entire tree, and therefore, performance-wise, there is no much difference.</p>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
+<p>// Reposted to my blog for better indexing:  <a href="https://helloacm.com/c-coding-exercise-find-maximum-depth-of-n-ary-tree/" target="_blank" rel="noopener">https://helloacm.com/c-coding-exercise-find-maximum-depth-of-n-ary-tree/</a></p>
+<hr>
+<p>&#x9898;&#x610F;&#xFF1A;&#x627E;&#x51FA;N&#x53C9;&#x6811;&#x7684;&#x6700;&#x5927;&#x6DF1;&#x5EA6;&#x3002;</p>
+<p><img src="https://ipfs.busy.org/ipfs/QmVcB8FG1fdD6NaZejAMZ3kUdKBKuvbEKfeiuR5CpwDubm" alt="image.png"></p>
+<p>&#x4E0A;&#x9762;&#x8FD9;&#x9897;&#x6811;&#xFF0C;&#x6DF1;&#x5EA6;&#x4E3A;3.</p>
+<h2 id="N&#x53C9;&#x6811;&#x7684;C-&#x5B9A;&#x4E49;"><a href="#N&#x53C9;&#x6811;&#x7684;C-&#x5B9A;&#x4E49;" class="headerlink" title="N&#x53C9;&#x6811;&#x7684;C++&#x5B9A;&#x4E49;"></a>N&#x53C9;&#x6811;&#x7684;C++&#x5B9A;&#x4E49;</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// Definition for a Node.</span><br><span class="line">class Node {</span><br><span class="line">public:</span><br><span class="line">    int val;</span><br><span class="line">    vector&lt;Node*&gt; children;</span><br><span class="line"></span><br><span class="line">    Node() {}</span><br><span class="line"></span><br><span class="line">    Node(int _val, vector&lt;Node*&gt; _children) {</span><br><span class="line">        val = _val;</span><br><span class="line">        children = _children;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x6DF1;&#x5EA6;&#x4F18;&#x5148;-DFS-Depth-First-Search"><a href="#&#x6DF1;&#x5EA6;&#x4F18;&#x5148;-DFS-Depth-First-Search" class="headerlink" title="&#x6DF1;&#x5EA6;&#x4F18;&#x5148; DFS (Depth First Search)"></a>&#x6DF1;&#x5EA6;&#x4F18;&#x5148; DFS (Depth First Search)</h2><p>&#x7528;<a href="https://justyy.com/archives/6431" target="_blank" rel="noopener">&#x9012;&#x5F52;</a>&#x6765;&#x5B9E;&#x73B0;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x6700;&#x5408;&#x9002;&#x4E86;&#x3002;&#x8FD9;&#x9898;&#x7684;&#x89E3;&#x6CD5;&#x5C31;&#x662F;&#x9012;&#x5F52;&#x7684;&#x627E;&#x51FA;&#x5B50;&#x6811;&#x7684;&#x6DF1;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x7B54;&#x6848;&#x5C31;&#x662F;&#x8FD9;&#x4E9B;&#x5B50;&#x6811;&#x6DF1;&#x5EA6;&#x6700;&#x6DF1;&#x7684;&#x90A3;&#x4E2A;&#x52A0;&#x4E0A;&#x4E00;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) {</span><br><span class="line">        if (root == NULL) {</span><br><span class="line">            return 0;</span><br><span class="line">        }</span><br><span class="line">        int depth = 0;</span><br><span class="line">        for (const auto &amp;subTree: root-&gt;children) {</span><br><span class="line">            auto d = maxDepth(subTree);</span><br><span class="line">            depth = max(depth, d);</span><br><span class="line">        }</span><br><span class="line">        return depth + 1; // &#x5B50;&#x6811;&#x6700;&#x5927;&#x6DF1;&#x5EA6;&#x52A0;1&#x5C31;&#x662F;&#x7B54;&#x6848;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="&#x5E7F;&#x5EA6;&#x4F18;&#x5148;-BFS-Breadth-First-Search"><a href="#&#x5E7F;&#x5EA6;&#x4F18;&#x5148;-BFS-Breadth-First-Search" class="headerlink" title="&#x5E7F;&#x5EA6;&#x4F18;&#x5148; BFS (Breadth First Search)"></a>&#x5E7F;&#x5EA6;&#x4F18;&#x5148; BFS (Breadth First Search)</h2><p><a href="https://justyy.com/archives/6433" target="_blank" rel="noopener">&#x5E7F;&#x5EA6;&#x4F18;&#x5148;</a>&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x7684;&#x904D;&#x4F8B;&#x6811;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x961F;&#x5217;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x6BCF;&#x6B21;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x53D6;&#x51FA;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x5B50;&#x6811;&#x7ED3;&#x70B9;&#x4F9D;&#x6B21;&#x7684;&#x6DFB;&#x52A0;&#x5230;&#x961F;&#x5217;&#x4E2D;&#x5E76;&#x8BA1;&#x7B97;&#x5F53;&#x524D;&#x6DF1;&#x5EA6;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) {</span><br><span class="line">        if (root == NULL) return 0;</span><br><span class="line">        queue&lt;pair&lt;Node*, int&gt;&gt; Q;</span><br><span class="line">        Q.push(make_pair(root, 1));</span><br><span class="line">        int depth = 1;</span><br><span class="line">        while (Q.size() &gt; 0) {</span><br><span class="line">            auto p = Q.front();</span><br><span class="line">            Q.pop();</span><br><span class="line">            for (const auto &amp;n: p.first-&gt;children) {</span><br><span class="line">                Q.push(make_pair(n, p.second + 1)); //&#x5B50;&#x8282;&#x70B9;&#x4F9D;&#x6B21;&#x5165;&#x961F;&#x5217;</span><br><span class="line">                depth = max(p.second + 1, depth);  // &#x8BB0;&#x5F55;&#x5E76;&#x66F4;&#x65B0;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x6DF1;&#x5EA6;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return depth;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#x90FD;&#x9700;&#x8981;&#x628A;&#x6574;&#x9897;&#x6811;&#x8D70;&#x5B8C;&#x624D;&#x80FD;&#x7B97;&#x51FA;&#x6700;&#x5927;&#x6DF1;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x90FD;&#x662F;&#x7C7B;&#x4F3C;&#x7684;&#x3002;</p>
+<p>// &#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;&#x535A;&#x5BA2;&#xFF1A; <a href="https://justyy.com/archives/6444" target="_blank" rel="noopener">https://justyy.com/archives/6444</a></p>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
+</ol>
+<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
+<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
+<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
+</ol>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/c-coding-exercise-find-maximum-depth-of-n-ary-tree-n" target="_blank" rel="noopener">&#x2018;C++ Coding Exercise - Find Maximum Depth of N-ary Tree - &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898;&#xFF1A;&#x627E;&#x51FA;N&#x53C9;&#x6811;&#x7684;&#x6DF1;&#x5EA6;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-08-05/" class="image is-7by1">
             <img class="thumbnail" src="http://www.bing.com/az/hprichbg/rb/PortAntonio_JA-JP9246692740_1920x1080.jpg" alt="【第 叁肆伍 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀文章】【YY银行股东】(2018-08-05)">
         </a>
@@ -10423,81 +10516,6 @@
 <p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/ilovecoding" target="_blank" rel="noopener">&#x2018;&#x7A0B;&#x5E8F;&#x5458;&#x90FD;&#x5E94;&#x8BE5;&#x6765;&#x5173;&#x6CE8; @ilovecoding&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/i-love-coding-the-steemit-reblogger-service/" class="image is-7by1">
-            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmbRok1X23FBXjGTKMqR9AC2sFTuZ488uYiVircdtaKUQy" alt="I Love Coding! The SteemIt Reblogger Service">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-08-01T22:06:39.000Z">2018-08-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 268 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/i-love-coding-the-steemit-reblogger-service/">I Love Coding! The SteemIt Reblogger Service</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://ipfs.busy.org/ipfs/QmbRok1X23FBXjGTKMqR9AC2sFTuZ488uYiVircdtaKUQy" alt="image.png"></p>
-<h2 id="New-Project-Motivation"><a href="#New-Project-Motivation" class="headerlink" title="New Project Motivation"></a>New Project Motivation</h2><p>On SteemIt, there are a lot of nice programming articles/tutorials from different authors. I would like a single account that resteemed all the programming-related posts, so that I can easily keep it as a feed.</p>
-<h2 id="Project-Github"><a href="#Project-Github" class="headerlink" title="Project Github"></a>Project Github</h2><p><a href="https://github.com/DoctorLai/SteemRebloggerService" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemRebloggerService</a><br>Consider submitting a PR or Issue.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><ol>
-<li>git clone <a href="https://github.com/DoctorLai/SteemRebloggerService.git" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemRebloggerService.git</a></li>
-<li>edit <code>config.json</code></li>
-<li>pm2 start reblogger.js</li>
-</ol>
-<h2 id="Monitor"><a href="#Monitor" class="headerlink" title="Monitor"></a>Monitor</h2><p><code>pm2 monit</code></p>
-<p><img src="https://github.com/DoctorLai/SteemRebloggerService/blob/master/SteemRebloggerService.jpg?raw=true" alt=""></p>
-<h2 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h2><p>Javascript, in particular the Node JS.</p>
-<h2 id="Configuration-file"><a href="#Configuration-file" class="headerlink" title="Configuration file"></a>Configuration file</h2><p><code>config.json</code></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  &quot;rpc_nodes&quot;: [</span><br><span class="line">    &quot;https://api.steemit.com&quot;,</span><br><span class="line">    &quot;https://rpc.buildteam.io&quot;,</span><br><span class="line">    &quot;https://steemd.minnowsupportproject.org&quot;,</span><br><span class="line">    &quot;https://steemd.privex.io&quot;,</span><br><span class="line">    &quot;https://gtg.steem.house:8090&quot;</span><br><span class="line">  ],</span><br><span class="line">  &quot;account&quot;: &quot;ilovecoding&quot;,</span><br><span class="line">  &quot;posting_key&quot;: &quot;POSTING KEY&quot;,</span><br><span class="line">  &quot;tags&quot;: [&quot;ilovecoding&quot;, &quot;programming&quot;, &quot;coding&quot;],</span><br><span class="line">  &quot;blacklist&quot;: [],</span><br><span class="line">  &quot;interval&quot;: 3</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h2><ol>
-<li>Automatic Upvote for these resteemed posts</li>
-<li>Avoid Resteemed Twice (currently, exception thrown)</li>
-<li>Resteem Queue - allow control of resteem/maximum intervals</li>
-</ol>
-<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
-<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
-</ol>
-<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
-<h1 id="You-may-now-want-to-follow-ilovecoding-for-all-programming-related-posts"><a href="#You-may-now-want-to-follow-ilovecoding-for-all-programming-related-posts" class="headerlink" title="You may now want to follow @ilovecoding for all programming-related posts!"></a>You may now want to follow @ilovecoding for all programming-related posts!</h1><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/i-love-coding-the-steemit-reblogger-service" target="_blank" rel="noopener">&#x2018;I Love Coding! The SteemIt Reblogger Service&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
