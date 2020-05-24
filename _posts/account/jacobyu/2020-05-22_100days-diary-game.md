@@ -36,7 +36,7 @@ widgets:
 
 1. https://steempeak.com/the100daysofsteem/@steemitblog/100-days-of-steem-day-49-the-diary-game 이 글에다가 댓글로 참가한다고 신청합니다.
 
-2. 자신이 원하는 언어로 일기를 100글자 이상 쓰면 됩니다. 태그는 #the100daysofsteem, #thediarygame을 붙입니다.
+2. 자신이 원하는 언어로 일기를 100글자 이상 쓰면 됩니다. 태그는 #the100daysofsteem, #thediarygame을 붙입니다. (글을 쓰고, 100days 포스팅에 댓글로 알려달라고 하는군요.)
 
 3. 스팀잇 재단에서 일주일에한번 다이어리 랭킹 포스팅을 쓰겠다고합니다.
 
