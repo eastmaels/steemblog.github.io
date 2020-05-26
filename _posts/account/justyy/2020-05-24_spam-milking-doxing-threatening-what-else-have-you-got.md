@@ -65,8 +65,15 @@ oh, and the flying c**k (there is a reason for social network to block you)
 
 ![image.png](https://cdn.steemitimages.com/DQmUdTBV9YLv4LiPb1mb9DkzX3yE3s2KKeVVnThejQJVsV9/image.png)
 
+Racist/Antisocial comments by previous top steem witness
 
-You know you guys are really sick? The more you've done, the more damage to your reputation. 
+![image.png](https://cdn.steemitimages.com/DQmYp3w2Nsm8SSbYkFn1mXZUGEvpaeRT5AiVu6ZwWhTmArM/image.png)
+
+And this one (threat?):
+
+![image.png](https://cdn.steemitimages.com/DQmZN9Rjjkph85Y3Ha7F7mkyVq6rZz4oyMH32QsydcGgGFR/image.png)
+
+You know you guys are really sick and disgusting? The more you've done, the more damage to your reputation. 
 
 <hr/>
 
