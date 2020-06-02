@@ -230,6 +230,189 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/the-voting-power-matters-more-than-you-think-best-upvoting-strategy/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2015/04/03/18/57/electricity-705670_960_720.jpg" alt="Voting Power Matters? 能量需要恢复满么？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-17T22:23:27.000Z">2017-10-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    10 minutes read (About 1574 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/the-voting-power-matters-more-than-you-think-best-upvoting-strategy/">Voting Power Matters? 能量需要恢复满么？</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.pixabay.com/photo/2015/04/03/18/57/electricity-705670_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>We all know that each 100% vote costs your 2% voting power, and every 24 hours, your voting power restores 20%. This means that you can vote 10 times at 100% one day and the voting power will remain the same the next day.</p>
+<p>The question comes:  Given a 30 days period, and approximately 60% voting power at the day 1,  is there a much bigger gain to restore your voting power to 100% (wait 2 days) ?</p>
+<p>I always thought there is not much difference in terms of total curation earnings until today.. I wrote a <a href="https://isvbscriptdead.com/" target="_blank" rel="noopener">VBScript</a> that reveals the truth.</p>
+<p>The first strategy, just vote 10 times 100% per day every day in the 30 days&#x2019; period. Assume 10K SP 100% gives 1 SBD. And suppose the 10 votes are done in a row (the VP restored during upvotes can be ignored)<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy1(ByVal sp, ByVal vp, ByVal days)</span><br><span class="line">	income = 0</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 10</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp - 0.02</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy1 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The second strategy, let&#x2019;s wait a few days before the VP is restored, adding a parameter <code>rest</code> in the unit of days.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy2(ByVal sp, ByVal vp, ByVal days, ByVal rest)</span><br><span class="line">	days = days - rest</span><br><span class="line">	vp = vp + 0.2 * rest  &apos; 1 day restores 20%</span><br><span class="line">	If vp &gt; 1 Then</span><br><span class="line">		vp = 1  &apos; voting power can only be maximum 100%</span><br><span class="line">	End If </span><br><span class="line">	income = 0</span><br><span class="line">	</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 10</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp - 0.02</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy2 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
+<p>In my case, I have 10K SP so let&#x2019;s assume these values:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">steempower = 10000</span><br><span class="line">votingpower = 0.6</span><br><span class="line">daysofcuration = 30</span><br><span class="line">restoredays = 2</span><br></pre></td></tr></tbody></table></figure>
+<p>So the simulation gives:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">WScript.Echo (&quot;Strategy 1 Max Income = &quot; &amp; Strategy1(steempower, votingpower, daysofcuration))</span><br><span class="line">WScript.Echo (&quot;Strategy 2 Max Income = &quot; &amp; Strategy2(steempower, votingpower, daysofcuration, restoredays))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Strategy 1 Max Income = 152.999999999999</span><br><span class="line">Strategy 2 Max Income = 254.799999999999</span><br></pre></td></tr></tbody></table></figure>
+<p>This is a BIGGGGGGGGG difference!  The lower voting power, longer periods, the bigger difference! So&#x2026;. you might consider letting your <a href="https://helloacm.com/how-am-i-doing-with-steemit-curation-bot/" target="_blank" rel="noopener">upvoting robot</a> take a few days&#x2019; rest&#x2026;</p>
+<p><strong>Correction</strong>  @tumutanzi told me my understanding was not exactly right. The 2% loss is to the current VP, so instead of <code>vp = vp - 0.02</code>  the correct version is <code>vp = vp * 0.98</code>.</p>
+<p>So the correct version to emulate <a href="https://helloacm.com/r-tutorial-how-rich-is-steemit-wechat-group/" target="_blank" rel="noopener">steemit</a> curator is  (you can vote 11 times per day)</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy1(ByVal sp, ByVal vp, ByVal days)</span><br><span class="line">	income = 0</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 11</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp * 0.98</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		If (vp &gt; 1) Then</span><br><span class="line">			vp = 1</span><br><span class="line">		End If </span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy1 = income</span><br><span class="line">End Function </span><br><span class="line"></span><br><span class="line">Function Strategy2(ByVal sp, ByVal vp, ByVal days, ByVal rest)</span><br><span class="line">	days = days - rest</span><br><span class="line">	vp = vp + 0.2 * rest</span><br><span class="line">	If vp &gt; 1 Then</span><br><span class="line">		vp = 1</span><br><span class="line">	End If </span><br><span class="line">	income = 0</span><br><span class="line">	</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 11</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp * 0.98</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		If (vp &gt; 1) Then</span><br><span class="line">			vp = 1</span><br><span class="line">		End If 		</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy2 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
+<p>And this gives totally different results, </p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steempower = 10000</span><br><span class="line">votingpower = 0.6</span><br><span class="line">daysofcuration = 30</span><br><span class="line">restoredays = 2</span><br><span class="line"></span><br><span class="line">WScript.Echo (&quot;Strategy 1 Max Income = &quot; &amp; Strategy1(steempower, votingpower, daysofcuration))</span><br><span class="line">WScript.Echo (&quot;Strategy 2 Max Income = &quot; &amp; Strategy2(steempower, votingpower, daysofcuration, restoredays))</span><br></pre></td></tr></tbody></table></figure>
+<p>It indicates there is NOT much difference at all!</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Strategy 1 Max Income = 279.67590316366</span><br><span class="line">Strategy 2 Max Income = 278.976108950286</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://cdn.pixabay.com/photo/2014/08/30/23/53/humpback-whale-431902_960_720.jpg" alt=""></p>
+<h2 id="Image-Credit-Pixabay-com"><a href="#Image-Credit-Pixabay-com" class="headerlink" title="Image Credit: Pixabay.com"></a><em>Image Credit: Pixabay.com</em></h2><p>&#x867D;&#x7136;&#x8BF4;&#x5C0F;&#x9C7C;&#x7684;<a href="https://justyy.com/archives/5433" target="_blank" rel="noopener">&#x70B9;&#x8D5E;</a>&#x7B56;&#x7565;&#x5C31;&#x662F;&#x559C;&#x6B22;&#x7684;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;SP&#x5C11;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x6CA1;&#x6709;&#x591A;&#x5C11;&#x533A;&#x522B;&#xFF0C;&#x4F46;&#x662F;&#x73B0;&#x5728; @justyy &#x5DF2;&#x7ECF;&#x6709;&#x8D85;&#x8FC7;1&#x4E07;&#x7684;SP &#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4ECA;&#x5929;&#x60F3;&#x4E86;&#x4E00;&#x4E0B;&#x8FD9;&#x4E48;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;&#xFF0C;&#x4E00;&#x6B21;100%&#x70B9;&#x8D5E;&#x6D88;&#x8017;&#x80FD;&#x91CF; 2%&#xFF0C;&#x4E00;&#x5929;&#x6062;&#x590D;20%&#x7684;&#x80FD;&#x91CF;&#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x5929;&#x4E2D;&#x4F60;&#x53EF;&#x4EE5;&#x70B9;&#x6EE1;10&#x6B21;&#x3002;&#x90A3;&#x4E48;&#x95EE;&#x9898;&#x5C31;&#x662F;&#xFF0C;&#x5047;&#x8BBE;30&#x5929;&#x65F6;&#x95F4;&#x5185;&#xFF0C;&#x4F60;&#x4E00;&#x5929;&#x70B9;10&#x6B21;&#xFF0C;&#x6700;&#x5927;&#x6536;&#x76CA;&#x662F;&#x591A;&#x5C11;&#xFF1F;</p>
+<p>&#x4E3A;&#x4E86;&#x7B80;&#x5316;&#x5206;&#x6790;&#x6A21;&#x578B;&#xFF0C;&#x6211;&#x4EEC;&#x5047;&#x8BBE;1&#x4E07;SP&#x80FD;&#x91CF;&#x5168;&#x6EE1;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x662F;1 SBD&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x679C;&#x521D;&#x59CB;&#x80FD;&#x91CF;&#x53EA;&#x6709;60%&#xFF0C;&#x6211;&#x4EEC;&#x662F;&#x4E0D;&#x662F;&#x9700;&#x8981;&#x7B49;&#x6062;&#x590D;&#x4E86;90%&#x751A;&#x81F3;&#x662F;&#x5168;&#x6EE1;&#x540E;&#x518D;&#x70B9;&#x8FD9;&#x6837;&#x6548;&#x679C;&#x4F1A;&#x597D;&#x4E00;&#x70B9;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x672C;&#x6765;&#x4EE5;&#x4E3A;&#x6CA1;&#x5565;&#x533A;&#x522B;&#xFF0C;&#x76F4;&#x5230;&#x4ECA;&#x5929;&#x665A;&#x4E0A;&#x65E0;&#x804A;&#x968F;&#x4FBF;&#x5199;&#x4E86;&#x6BB5;<a href="https://isvbscriptdead.com/" target="_blank" rel="noopener">VBScript</a>&#x4EE3;&#x7801;&#x6765;&#x5206;&#x6790;&#xFF0C;&#x7ED3;&#x679C;&#x8BA9;&#x6211;&#x5F88;&#x5403;&#x60CA;&#x3002;</p>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x7B56;&#x7565;&#xFF0C;&#x4ECE;&#x7B2C;&#x4E00;&#x5929;&#x5C31;&#x5F00;&#x59CB;&#x70B9;&#x6EE1;10&#x6B21;&#xFF0C;&#x5047;&#x8BBE;&#x8FD9;10&#x6B21;&#x90FD;&#x662F;&#x4E00;&#x4E0B;&#x5B50;&#x70B9;&#x5B8C;&#xFF0C;&#x4E24;&#x6B21;&#x70B9;&#x8D5E;&#x95F4;&#x7684;&#x80FD;&#x91CF;&#x6062;&#x590D;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x8BA1;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x6765;&#x6A21;&#x62DF;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy1(ByVal sp, ByVal vp, ByVal days)</span><br><span class="line">	income = 0</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 10</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp - 0.02</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy1 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7B2C;&#x4E8C;&#x79CD;&#x7B56;&#x7565;&#xFF0C;&#x591A;&#x52A0;&#x4E86;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5148;&#x4F11;&#x606F;&#x51E0;&#x5929;&#xFF0C;&#x6062;&#x590D;&#x6062;&#x590D;&#x80FD;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x70B9;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy2(ByVal sp, ByVal vp, ByVal days, ByVal rest)</span><br><span class="line">	days = days - rest</span><br><span class="line">	vp = vp + 0.2 * rest  &apos; &#x6BCF;&#x5929;&#x6062;&#x590D;20%</span><br><span class="line">	If vp &gt; 1 Then</span><br><span class="line">		vp = 1  &apos; &#x80FD;&#x91CF;&#x6700;&#x591A;&#x6062;&#x590D;&#x5230;100%</span><br><span class="line">	End If </span><br><span class="line">	income = 0</span><br><span class="line">	</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 10</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp - 0.02</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy2 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x6211;&#x6709;1&#x4E07;SP&#xFF0C;&#x90A3;&#x4E48;&#x5047;&#x5B9A;&#x8FD9;&#x4E9B;&#x503C;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">steempower = 10000</span><br><span class="line">votingpower = 0.6</span><br><span class="line">daysofcuration = 30</span><br><span class="line">restoredays = 2</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8DD1;&#x4E00;&#x4E0B;&#x7A0B;&#x5E8F;&#x770B;&#x770B;&#x7ED3;&#x679C;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">WScript.Echo (&quot;Strategy 1 Max Income = &quot; &amp; Strategy1(steempower, votingpower, daysofcuration))</span><br><span class="line">WScript.Echo (&quot;Strategy 2 Max Income = &quot; &amp; Strategy2(steempower, votingpower, daysofcuration, restoredays))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Strategy 1 Max Income = 152.999999999999</span><br><span class="line">Strategy 2 Max Income = 254.799999999999</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x592A;&#x610F;&#x5916;&#x4E86;&#xFF0C;&#x4F60;&#x7684;VP&#x8D8A;&#x4F4E;&#xFF0C;&#x7EDF;&#x8BA1;&#x65F6;&#x95F4;&#x8D8A;&#x957F;&#xFF0C;&#x6548;&#x679C;&#x5DEE;&#x522B;&#x5C31;&#x8D8A;&#x5927;&#xFF0C;OMG&#xFF0C;&#x8FD8;&#x662F;&#x5148;&#x8BA9;<a href="https://justyy.com/archives/5260" target="_blank" rel="noopener">&#x673A;&#x5668;&#x4EBA;</a>&#x7F13;&#x51E0;&#x5929;&#x5427;&#xFF0C;&#x81F3;&#x5C11;<a href="https://justyy.com/archives/5493" target="_blank" rel="noopener">&#x70B9;&#x8D5E;</a>&#x6BD4;&#x7387;&#x5148;&#x964D;&#x4E00;&#x964D;&#xFF0C;&#x7B49;&#x6062;&#x590D;&#x4E86;&#x5DEE;&#x4E0D;&#x591A;&#x4E86;&#x8FD9;&#x6837;&#x6BCF;&#x5929;&#x4FDD;&#x6301;10&#x6B21;&#x70B9;&#x8D5E; &#x70B9;&#x5B8C;&#x80FD;&#x91CF;&#x4FDD;&#x6301;&#x5728;80%&#x5DE6;&#x53F3;&#xFF0C;&#x8FD9;&#x6837;&#x662F;&#x6700;&#x4F18;&#x7684;&#x3002;</p>
+<p><strong>&#x9519;&#x5566;&#x9519;&#x5566;</strong>  @tumutanzi &#x544A;&#x8BC9;&#x6211;&#xFF0C;&#x6211;&#x7684;&#x7406;&#x89E3;&#x6709;&#x95EE;&#x9898;&#xFF0C; 2%&#x7684;&#x635F;&#x5931;&#x4E0D;&#x662F; <code>vp = vp - 0.02</code> &#x800C;&#x662F;&#x9488;&#x5BF9;&#x5F53;&#x524D;VP&#x80FD;&#x91CF;&#xFF0C;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x662F;<code>vp = vp * 0.98</code>.</p>
+<p>&#x7A0B;&#x5E8F;&#x66F4;&#x6B63;&#x4E00;&#x4E0B;&#xFF0C;&#x6BCF;&#x5929;&#x53EF;&#x4EE5;&#x70B9;11&#x6B21;&#xFF0C;&#x70B9;10&#x6B21;&#x80FD;&#x91CF;&#x6EE1;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x6D6A;&#x8D39;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">Function Strategy1(ByVal sp, ByVal vp, ByVal days)</span><br><span class="line">	income = 0</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 11</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp * 0.98</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		If (vp &gt; 1) Then</span><br><span class="line">			vp = 1</span><br><span class="line">		End If </span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy1 = income</span><br><span class="line">End Function </span><br><span class="line"></span><br><span class="line">Function Strategy2(ByVal sp, ByVal vp, ByVal days, ByVal rest)</span><br><span class="line">	days = days - rest</span><br><span class="line">	vp = vp + 0.2 * rest</span><br><span class="line">	If vp &gt; 1 Then</span><br><span class="line">		vp = 1</span><br><span class="line">	End If </span><br><span class="line">	income = 0</span><br><span class="line">	</span><br><span class="line">	While days &gt; 0</span><br><span class="line">		For i = 1 To 11</span><br><span class="line">			income = income + sp * vp / 10000</span><br><span class="line">			vp = vp * 0.98</span><br><span class="line">		Next	</span><br><span class="line">		vp = vp + 0.2</span><br><span class="line">		If (vp &gt; 1) Then</span><br><span class="line">			vp = 1</span><br><span class="line">		End If 		</span><br><span class="line">		days = days - 1</span><br><span class="line">	Wend </span><br><span class="line">	Strategy2 = income</span><br><span class="line">End Function</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5047;&#x5B9A;&#x4EE5;&#x4E0B;&#x503C;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steempower = 10000</span><br><span class="line">votingpower = 0.6</span><br><span class="line">daysofcuration = 30</span><br><span class="line">restoredays = 2</span><br><span class="line"></span><br><span class="line">WScript.Echo (&quot;Strategy 1 Max Income = &quot; &amp; Strategy1(steempower, votingpower, daysofcuration))</span><br><span class="line">WScript.Echo (&quot;Strategy 2 Max Income = &quot; &amp; Strategy2(steempower, votingpower, daysofcuration, restoredays))</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x7ED3;&#x679C;&#x663E;&#x793A;&#xFF0C;&#x6CA1;&#x5565;&#x533A;&#x522B;&#xFF0C;&#x4E0D;&#x5F97;&#x4E0D;&#x8BF4;&#xFF0C;&#x8FD9;&#x7CFB;&#x7EDF;&#x8BBE;&#x8BA1;&#x7684;&#x771F;&#x5DE7;&#x5999;&#x3002;&#x662F;&#x6211;&#x6CA1;&#x5F04;&#x6E05;&#x695A;&#xFF0C;&#x4E22;&#x4EBA;&#x4E86;&#xFF08;&#x6342;&#x8138;&#xFF09;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Strategy 1 Max Income = 279.67590316366</span><br><span class="line">Strategy 2 Max Income = 278.976108950286</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+</ol>
+<blockquote>
+<p><a href="https://justyy.com/archives/5495" target="_blank" rel="noopener">&#x6700;&#x4F73;&#x70B9;&#x8D5E;&#x7B56;&#x7565;</a></p>
+<h2 id="Steemit-Upvoting-Strategy"><a href="#Steemit-Upvoting-Strategy" class="headerlink" title="Steemit Upvoting Strategy"></a><a href="https://helloacm.com/best-upvoting-strategy-steemit-voting-power-matters/" target="_blank" rel="noopener">Steemit Upvoting Strategy</a></h2><p><a href="https://steemit.com/cn/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a><br><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
+</blockquote>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/the-voting-power-matters-more-than-you-think-best-upvoting-strategy" target="_blank" rel="noopener">Voting Power Matters? &#x80FD;&#x91CF;&#x9700;&#x8981;&#x6062;&#x590D;&#x6EE1;&#x4E48;&#xFF1F;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/steemit-sp-delegation-tool-sp/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/09/08/11/05/the-pink-panther-1653913_960_720.jpg" alt="SteemIt SP Delegation Tool 简易SP代理工具">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-10-17T19:22:33.000Z">2017-10-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 666 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemit-sp-delegation-tool-sp/">SteemIt SP Delegation Tool 简易SP代理工具</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.pixabay.com/photo/2016/09/08/11/05/the-pink-panther-1653913_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>Currently, around <a href="https://steemit.com/cn/@justyy/daily-cn-updates-cn2017-10-17" target="_blank" rel="noopener">40 Steemians</a> in CN community delegate around  <a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">6400</a> SP to @justyy who will send daily interests (currently at 14.6% APR) and <a href="https://helloacm.com/best-upvoting-strategy-steemit-voting-power-matters/" target="_blank" rel="noopener">upvote</a> the delegator&#x2019;s content worth of 200% vote (at least once per day). </p>
+<p>Many have trouble using steemconnect.com to fill the delegate request because they don&#x2019;t know how to fill the URL according to requirement and it is obviously not user-friendly&#x2026; </p>
+<p><img src="https://steemitimages.com/DQmWqcrwbK9VD4vDTMEovwhv4qPfg2PL74XGfmFQszYNBDw/image.png" alt=""></p>
+<p>Therefore, here comes with this tiny tool</p>
+<p>Tool URL:  <a href="https://helloacm.com/tools/steemit/sp-delegate-form/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit/sp-delegate-form/</a></p>
+<p>It allows you enter the delegator ID (optionally, means &#x2018;you&#x2019; if left empty), delegatee ID and the amount of SP or VESTS to delegate.</p>
+<p><img src="https://steemitimages.com/DQmPnscgBJLxqC7P8uPz7GLZUYoDTLqc1i9NuY9yLvodxH7/image.png" alt=""></p>
+<p>Click the button will redirect you to <em>steemconnect.com</em> with correct URL parameters so it won&#x2019;t go wrong!</p>
+<p><img src="https://steemitimages.com/DQmcC5xDe5GSpggXJPHMahARkLKhPJp2mLSLN37YbaLXLuC/image.png" alt=""></p>
+<hr>
+<p>&#x5F53;&#x524D;&#xFF0C;&#x52A0;&#x5165;CN&#x533A;&#x4F4E;&#x4FDD;&#x94F6;&#x884C;&#x7684;&#x4E00;&#x5171;&#x6709;<a href="https://steemit.com/cn/@justyy/daily-cn-updates-cn2017-10-17" target="_blank" rel="noopener">40&#x4E2A;&#x4EBA;</a>&#xFF0C;&#x4E00;&#x5171;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x94F6;&#x884C;&#x5927;&#x7EA6;  <a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">6400</a> SP&#x3002; &#x597D;&#x5904;&#x662F;&#x6BCF;&#x5929;&#x80FD;&#x6536;&#x5229;&#x606F; &#xFF08;14.6% &#x5E74;&#x5316;&#x7387;&#xFF09; &#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x81F3;&#x5C11;&#x4E00;&#x6B21;&#x7684;&#x53CC;&#x500D;<a href="https://justyy.com/archives/5495" target="_blank" rel="noopener">&#x70B9;&#x8D5E;</a>&#x3002;</p>
+<p>&#x4EE3;&#x7406;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x901A;&#x8FC7; steemconnect.com &#x4F46;&#x662F;&#x5F88;&#x591A;&#x4EBA;&#x90FD;&#x641E;&#x9519;&#xFF0C;&#x56E0;&#x4E3A; steemconnect.com &#x5E76;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#x7684;&#x754C;&#x9762;&#x53EF;&#x4F9B;&#x586B;&#x5199;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmWqcrwbK9VD4vDTMEovwhv4qPfg2PL74XGfmFQszYNBDw/image.png" alt=""></p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x53C8;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x8F6E;&#x5B50; &#x3002;</p>
+<p>&#x5DE5;&#x5177;&#x5730;&#x5740;:  <a href="https://helloacm.com/tools/steemit/delegate-form/" target="_blank" rel="noopener">https://helloacm.com/tools/steemit/delegate-form/</a></p>
+<p>&#x8FD9;&#x4E2A;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x586B;&#x5199;&#x88AB;&#x4EE3;&#x7406;&#x8005;</p>
+<p><img src="https://steemitimages.com/DQmYg1PRpBK9qVrVcEoV76eU8sesTwa5v9X2tdAS6hLmUPt/image.png" alt=""></p>
+<p>&#x70B9;&#x51FB;&#x6309;&#x94AE;&#x5C06;&#x8F6C;&#x5230; steemconnect.com &#x8FDB;&#x884C;&#x4EE3;&#x7406;&#x524D;&#x7684;&#x786E;&#x8BA4;&#xFF0C;&#x8F93;&#x5165;&#x94A5;&#x5319;&#x524D;&#x8BF7;&#x786E;&#x4FDD;&#x60A8;&#x8BBF;&#x95EE;&#x7684;&#x662F; steemconnect.com&#xFF01;</p>
+<p><img src="https://steemitimages.com/DQmcC5xDe5GSpggXJPHMahARkLKhPJp2mLSLN37YbaLXLuC/image.png" alt=""></p>
+<hr>
+<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
+<ol>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
+</ol>
+<blockquote>
+<p><a href="https://justyy.com/archives/5501" target="_blank" rel="noopener">STEEMIT &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></p>
+<h2 id="The-SteemIt-SP-Delegation-Tool"><a href="#The-SteemIt-SP-Delegation-Tool" class="headerlink" title="The SteemIt SP Delegation Tool"></a><a href="https://helloacm.com/the-steemit-sp-delegation-tool/" target="_blank" rel="noopener">The SteemIt SP Delegation Tool</a></h2><p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
+</blockquote>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemit-sp-delegation-tool-sp" target="_blank" rel="noopener">SteemIt SP Delegation Tool &#x7B80;&#x6613;SP&#x4EE3;&#x7406;&#x5DE5;&#x5177;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cn2017-10-17/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-17)">
         </a>
@@ -783,257 +966,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit/" class="image is-7by1">
-            <img class="thumbnail" src="http://www.cazena.com/sites/default/files/Picture2_1.png" alt="R Tutorial - How rich is SteemIt Wechat Group? R 语言教程 - STEEMIT微信群有多少钱？">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-10-15T21:58:06.000Z">2017-10-15</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1559 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit/">R Tutorial - How rich is SteemIt Wechat Group? R 语言教程 - STEEMIT微信群有多少钱？</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="http://www.cazena.com/sites/default/files/Picture2_1.png" alt=""></p>
-<p>There are current 211 members in the <a href="https://helloacm.com/tools/steemit/wechat-ranking/" target="_blank" rel="noopener">Steemit Wechat Group</a> and I want to know how rich we are as a group. <a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">Last tutorial</a>, we talked about how to connect to @arcange &#x2018;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a> via RODBC, and today, we are going to exercise this a little bit with a code example - How rich is SteemIt Wechat Group?</p>
-<p>The STEEMSQL we are looking for is something like this:</p>
-<p><code>select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name=&apos;justyy&apos;</code></p>
-<p><img src="https://steemitimages.com/DQmU6FzPkmpS6FiM9TBNz8fKKvRNFwFmHUMZzGYnuyHAvQC/image.png" alt=""></p>
-<p>The values of these four fields are not pure numbers, instead, they come with the unit either SBD or STEEM.  So it is sad that we cann&#x2019;t do this in pure SQL via aggregate function <code>sum</code>  But that is OK.</p>
-<p>The members of the wechat group can be found via Github where you can <a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">submit a pull request</a> if you believe you are not in the list. </p>
-<p><code>https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt</code></p>
-<p>Basically, it is a text file with each line containing the STEEMID. So in R, we can just use <code>readLines</code> to import the data into an array.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url = &quot;https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt&quot;</span><br><span class="line">members = readLines(url)</span><br></pre></td></tr></tbody></table></figure>
-<p>Now, we can then construct the SQL to explicitly limit the account names to be within the group,  namely,</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br></pre></td></tr></tbody></table></figure>
-<p>So the SQL will become something like this:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;justyy&apos;, &apos;tumutanzi&apos; ...)</span><br></pre></td></tr></tbody></table></figure>
-<p>It is better to save this in a R function:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">getsbd = function(members) {</span><br><span class="line">  conn &lt;- odbcDriverConnect(&quot;Driver=SQL Server Native Client 11.0;Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit&quot;)</span><br><span class="line">  x &lt;- sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br><span class="line">  close(conn)</span><br><span class="line">  return(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>Then, <code>arr &lt;- getsbd(members)</code> gets the data (four columns, i.e.  <code>&gt; dim(arr) [1] 211   4</code>) and we can process them individually.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">sum_sbd = 0.0</span><br><span class="line">sum_steem = 0.0</span><br><span class="line">sum_sbd_saving = 0.0</span><br><span class="line">sum_steem_saving = 0.0</span><br><span class="line"></span><br><span class="line">for(money in arr[,4]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd = sum_sbd + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,2]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd_saving = sum_sbd_saving + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,3]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem = sum_steem + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,1]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem_saving = sum_steem_saving + as.numeric(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p><code>str_split</code> will split the string e.g. <code>1.00 SBD</code> or <code>2.00 STEEM</code> to vectors so that the value and unit are separated. And the final result is:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; print(paste(&quot;Total SBD = &quot;, sum_sbd))</span><br><span class="line">&gt; print(paste(&quot;Total SBD Savings = &quot;, sum_sbd_saving))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM = &quot;, sum_steem))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM Savings = &quot;, sum_steem_saving))</span><br><span class="line">[1] &quot;Total SBD =  31739.145&quot;</span><br><span class="line">[1] &quot;Total SBD Savings =  597.972&quot;</span><br><span class="line">[1] &quot;Total STEEM =  16067.426&quot;</span><br><span class="line">[1] &quot;Total STEEM Savings =  0.01&quot;</span><br></pre></td></tr></tbody></table></figure>
-<p>Similarly, you can sum up the Steem Power, however, it is a bit tricky to convert the VESTS to SP.</p>
-<p><img src="https://cdn.pixabay.com/photo/2014/11/03/11/20/money-515058_960_720.jpg" alt=""></p>
-<h2 id="Image-Credit-Pixabay-com"><a href="#Image-Credit-Pixabay-com" class="headerlink" title="Image Credit: Pixabay.com"></a><em>Image Credit: Pixabay.com</em></h2><p>&#x5F53;&#x524D;&#xFF0C;<a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">&#x5FAE;&#x4FE1;&#x7FA4;&#x540D;&#x5355;</a>&#x4E00;&#x5171;&#x6709;211&#x4EBA;&#xFF08;&#x6CA1;&#x6709;&#x4E0A;&#x699C;&#x7684;&#x8BF7;&#x706B;&#x901F;&#x8054;&#x7CFB; wexin@justyy.com  &#x597D;&#x5904;&#x591A;&#x591A;&#xFF0C;&#x4F60;&#x4F1A;&#x61C2;&#x7684;&#xFF09;&#xFF0C; &#x6628;&#x5929;&#xFF0C;&#x6211;&#x4EEC;&#x8BB2;&#x4E86;&#x600E;&#x4E48;&#x5728;R&#x8BED;&#x8A00;&#x91CC;<a href="https://steemit.com/cn/@justyy/r-tutorial-connecting-to-steemsql-r-steemsql" target="_blank" rel="noopener">&#x901A;&#x8FC7;RODBC&#x8FDE;&#x63A5;STEEMSQL&#x6570;&#x636E;&#x5E93;</a>&#xFF0C;&#x4ECA;&#x5929;&#x6211;&#x4EEC;&#x5C31;&#x6765;&#x6E29;&#x6545;&#x800C;&#x77E5;&#x65B0;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E00;&#x4E2A;&#x5B9E;&#x7528;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;STEEMIT&#x4E2D;&#x6587;&#x5FAE;&#x4FE1;&#x7FA4;&#x4E00;&#x5171;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</p>
-<p>&#x67E5;&#x8BE2; @justyy &#x7684;&#x5E10;&#x53F7;&#x5F88;&#x7B80;&#x5355;&#xFF0C;<a href="https://justyy.com/archives/5420" target="_blank" rel="noopener">STEEMSQL</a>&#x662F;&#xFF1A;</p>
-<p><code>select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name=&apos;justyy&apos;</code></p>
-<p><img src="https://steemitimages.com/DQmU6FzPkmpS6FiM9TBNz8fKKvRNFwFmHUMZzGYnuyHAvQC/image.png" alt=""></p>
-<p>&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x5230;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x5B57;&#x6BB5;&#x5E76;&#x4E0D;&#x662F;&#x6570;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD8;&#x6709;&#x5355;&#x4F4D;&#xFF0C;&#x8FD9;&#x5C31;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x5728;STEEMSQL&#x91CC;&#x76F4;&#x63A5;&#x7528;&#x805A;&#x7C7B;&#x51FD;&#x6570; <code>sum</code> &#x628A;&#x5B83;&#x4EEC;&#x76F8;&#x52A0;&#x8D77;&#x6765;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x628A;&#x6210;&#x5458;&#x5217;&#x8868;&#x8BFB;&#x8FDB;&#x6765;&#xFF0C;&#x8FD9;&#x4E2A;&#x4F8B;&#x8868;&#x5728; github &#x4E0A;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8FD8;&#x6CA1;&#x5728;&#x5217;&#x8868;&#x91CC;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;<a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">PR</a></p>
-<p><code>https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt</code></p>
-<p>&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E00;&#x884C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;STEEMIT &#x5E10;&#x53F7;ID&#xFF0C;&#x6211;&#x4EEC;&#x5728;<a href="https://justyy.com/archives/3457" target="_blank" rel="noopener">R</a>&#x91CC;&#x53EF;&#x4EE5;&#x7528; <code>readLines</code> &#x628A;&#x6587;&#x672C;&#x6570;&#x636E;&#x8BFB;&#x6210;&#x6570;&#x7EC4;&#x3002;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">url = &quot;https://raw.githubusercontent.com/DoctorLai/steemit-wechat-group/master/members.txt&quot;</span><br><span class="line">members = readLines(url)</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x7136;&#x540E;&#xFF0C;&#x901A;&#x8FC7;&#x7C7B;&#x4F3C; join &#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6765;&#x6784;&#x9020;&#x8FD9;&#x4E2A;SQL</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x751F;&#x6210;&#x7684;SQL&#x5927;&#x6982;&#x957F;&#x8FD9;&#x6837;&#x2026;&#x2026;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;justyy&apos;, &apos;tumutanzi&apos; ...)</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x628A;&#x83B7;&#x53D6;&#x6570;&#x636E;&#x8FD9;&#x5757;&#x5199;&#x6210;&#x51FD;&#x6570;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">getsbd = function(members) {</span><br><span class="line">  conn &lt;- odbcDriverConnect(&quot;Driver=SQL Server Native Client 11.0;Server=sql.steemsql.com;Database=DBSteem;Uid=steemit;Pwd=steemit&quot;)</span><br><span class="line">  x &lt;- sqlQuery(conn, str_c(&quot;select savings_balance, savings_sbd_balance, balance, sbd_balance from Accounts where name in (&apos;&quot;, paste(members, collapse = &quot;&apos;,&apos;&quot;), &quot;&apos;)&quot;))</span><br><span class="line">  close(conn)</span><br><span class="line">  return(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x7136;&#x540E;, <code>arr &lt;- getsbd(members)</code> &#x5C31;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x542B;&#x6709;4&#x4E2A;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x7EC4; <code>&gt; dim(arr) [1] 211   4</code>&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x597D;&#x529E;&#x4E86;&#xFF0C;&#x904D;&#x5386;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x6570;&#x7EC4;&#xFF0C;&#x7136;&#x540E;&#x76F8;&#x52A0;&#x3002;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">sum_sbd = 0.0</span><br><span class="line">sum_steem = 0.0</span><br><span class="line">sum_sbd_saving = 0.0</span><br><span class="line">sum_steem_saving = 0.0</span><br><span class="line"></span><br><span class="line">for(money in arr[,4]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd = sum_sbd + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,2]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_sbd_saving = sum_sbd_saving + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,3]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem = sum_steem + as.numeric(x)</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">for(money in arr[,1]) {</span><br><span class="line">  x = unlist(str_split(money, &quot; &quot;))[1]</span><br><span class="line">  sum_steem_saving = sum_steem_saving + as.numeric(x)</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p><code>str_split</code> &#x51FD;&#x6570;&#x628A;&#x6570;&#x503C;&#x548C;&#x5355;&#x4F4D;&#x5206;&#x5F00;&#xFF0C;&#x65B9;&#x4FBF;&#x7D2F;&#x8BA1;&#x3002;&#x4E0D;&#x591A;&#x8BF4;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x7ED3;&#x679C;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt; print(paste(&quot;Total SBD = &quot;, sum_sbd))</span><br><span class="line">&gt; print(paste(&quot;Total SBD Savings = &quot;, sum_sbd_saving))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM = &quot;, sum_steem))</span><br><span class="line">&gt; print(paste(&quot;Total STEEM Savings = &quot;, sum_steem_saving))</span><br><span class="line">[1] &quot;Total SBD =  31739.145&quot;</span><br><span class="line">[1] &quot;Total SBD Savings =  597.972&quot;</span><br><span class="line">[1] &quot;Total STEEM =  16067.426&quot;</span><br><span class="line">[1] &quot;Total STEEM Savings =  0.01&quot;</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>&#x7C7B;&#x4F3C;&#x53EF;&#x4EE5;&#x7D2F;&#x8BA1; VESTS &#x7136;&#x540E;&#x518D;&#x8BA1;&#x7B97;SP&#xFF0C;&#x4E0D;&#x8FC7;&#x8F83;&#x9EBB;&#x70E6;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x5C55;&#x5F00;&#x7EC6;&#x8282;&#x4E86;&#x3002;</p>
-<hr>
-<h2 id="gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"><a href="#gt-justyy-&#x662F;-https-justyy-com-&#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;-tumutanzi-&#x5927;&#x54E5;-&#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165;-STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;" class="headerlink" title="&gt; @justyy &#x662F; https://justyy.com &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  &#x5927;&#x54E5; &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;"></a>&gt; @justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;  @tumutanzi  <a href="https://steemit.com/cn/@tumutanzi/5ndvpm-steemit" target="_blank" rel="noopener">&#x5927;&#x54E5;</a> &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;</h2><p><strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;&#xFF08;<strong>&#x5E74;&#x5316;&#x7387;14.6%</strong>&#xFF09;&#x5E76;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x81F3;&#x5C11;2&#x500D;(VP 200%+)&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5927;&#x9C7C; <strong>@htliao</strong> &#x90FD;&#x52A0;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8BA1;&#x5212;(530 SP)&#x8868;&#x793A;&#x652F;&#x6301;&#x3002;</p>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">cn&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-</ol>
-<hr>
-<blockquote>
-<p><a href="https://helloacm.com/r-tutorial-how-rich-is-steemit-wechat-group/" target="_blank" rel="noopener">R Tutorial &#x2013; How rich is SteemIt Wechat Group? </a><br><a href="https://justyy.com/archives/5480" target="_blank" rel="noopener">R &#x8BED;&#x8A00;&#x6559;&#x7A0B; &#x2013; STEEMIT&#x5FAE;&#x4FE1;&#x7FA4;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</a><br><a href="https://justyy.com/archives/5478" target="_blank" rel="noopener">R &#x6559;&#x7A0B;&#x4E4B; &#x600E;&#x4E48;&#x6837;&#x8FDE;&#x63A5;&#x5230; STEEMSQL &#x6570;&#x636E;&#x5E93;</a><br><a href="https://helloacm.com/r-tutorial-connecting-to-steemsql/" target="_blank" rel="noopener">R Tutorial &#x2013; Connecting to STEEMSQL</a><br><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
-</blockquote>
-<p><img src="https://steemitimages.com/DQmeq8e5HKANWhkFqKj4XLFp9ifYt8EMvJahMZfLVj98oDY/image.png" alt=""></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/r-tutorial-how-rich-is-steemit-wechat-group-r-steemit" target="_blank" rel="noopener">R Tutorial - How rich is SteemIt Wechat Group? R &#x8BED;&#x8A00;&#x6559;&#x7A0B; - STEEMIT&#x5FAE;&#x4FE1;&#x7FA4;&#x6709;&#x591A;&#x5C11;&#x94B1;&#xFF1F;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-cn-updates-cn2017-10-15/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-15)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-10-15T11:00:36.000Z">2017-10-15</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    9 minutes read (About 1352 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-cn-updates-cn2017-10-15/">Daily #CN Updates CN社区每日榜单【潜在收益排行榜】【优秀被错过的文章】【低保计划参与者】【优质内容点赞记录】(2017-10-15)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com  (Thank you @arcange !)<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-10-15 11:11:09 (UTC)<br>&#x62A5;&#x544A;&#x65F6;&#x95F4;: 2017-10-11 11:11:09 (UTC) - 2017-10-12 11:11:09 (UTC)</p>
-<h2 id="2017-10-15-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"><a href="#2017-10-15-&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;" class="headerlink" title="2017-10-15 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;"></a>2017-10-15 &#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;</h2><p><img src="https://justyy.com/jpg/ducks.jpg" alt=""><br><em>Image Credit: pixabay.com</em><br>|          |      &#x4F5C;&#x8005; Author|    &#x6587;&#x7AE0; Post|<br>|&#x2014;&#x2014;&#x2014;-|:&#x2014;&#x2014;&#x2014;&#x2014;-:|:&#x2014;&#x2014;|<br>| 1 | @travelgirl | <a href="https://steemit.com/cn/@travelgirl/streetphotography-comp-vintage-bicycle-sydney-australia" target="_blank" rel="noopener">StreetPhotography Contest - Vintage Bicycle @ Sydney, Australia  - &#x8857;&#x982D;&#x651D;&#x5F71;&#x6BD4;&#x8CFD; - &#x61F7;&#x820A;&#x55AE;&#x8ECA; @ &#x6089;&#x5C3C;, &#x6FB3;&#x6D32;</a> |<br>| 2 | @magicmonk | <a href="https://steemit.com/cn/@magicmonk/do-you-like-swimming-at-night-look-at-this-beautiful-swimming-pool" target="_blank" rel="noopener">&#x4F60;&#x559C;&#x6B61;&#x665A;&#x4E0A;&#x6E38;&#x6CF3;&#x55CE; &#x770B;&#x9019;&#x500B;&#x6F02;&#x4EAE;&#x7684;&#x6E38;&#x6CF3;&#x6C60; Do you like swimming at night Look at this beautiful swimming pool.</a> |<br>| 3 | @acactus1013 | <a href="https://steemit.com/cn/@acactus1013/drawing-challenge-7-my-wedlock-wine-7" target="_blank" rel="noopener">Drawing Challenge # 7 : My Wedlock Wine/&#x7ED8;&#x753B;&#x6311;&#x6218;&#x8D5B; #7 : &#x6211;&#x7684;&#x4EA4;&#x676F;&#x9152;</a> |<br>| 4 | @shenchensucc | <a href="https://steemit.com/cn/@shenchensucc/3-ph-d-working-in-canada-3" target="_blank" rel="noopener">&#x52A0;&#x62FF;&#x5927;&#x535A;&#x58EB;&#x5DE5;&#x4F5C;&#x8BB0;#3 &#x5165;&#x804C; Ph.D. working in Canada #3</a> |<br>| 5 | @jessie901220 | <a href="https://steemit.com/introduceyourself/@jessie901220/hello-steemit-i-owe-you-an-introduction-steemit" target="_blank" rel="noopener">Hello Steemit, I owe you an introduction ~~ &#x5F88;&#x5F00;&#x5FC3;&#x6765;&#x5230;Steemit, &#x8FD9;&#x662F;&#x6B20;&#x4F60;&#x7684;&#x81EA;&#x6211;&#x4ECB;&#x7ECD; ~</a> |<br>| 6 | @karasui | <a href="https://steemit.com/cn/@karasui/or-11" target="_blank" rel="noopener">&#x4E0D;&#x65AD;&#x53D8;&#x5316;&#x7684;&#x89D2;&#x8272; &#x8C37;&#x6B4C;&#x70B9;&#x540D; #11 &#x89D2;&#x8272;</a> |<br>| 7 | @tvb | <a href="https://steemit.com/cn/@tvb/my-sad-history-of-cet4" target="_blank" rel="noopener">&#x5927;&#x5B66;&#x82F1;&#x8BED;&#x56DB;&#x7EA7;&#x7684;&#x5FC3;&#x9178;&#x53F2;  My sad history of CET4</a> |<br>| 8 | @wangwenjing | <a href="https://steemit.com/cn/@wangwenjing/or-i-love-bookstore" target="_blank" rel="noopener">&#x6211;&#x7684;&#x4E66;&#x5E97;&#x60C5;&#x7ED3;   I Love Bookstore</a> |<br>| 9 | @mrpointp | <a href="https://steemit.com/cn/@mrpointp/have-you-ever-applied-for-education-grants-when-in-college" target="_blank" rel="noopener">&#x5927;&#x5B66;&#x65F6;&#x671F;&#x4F60;&#x7533;&#x8BF7;&#x8FC7;&#x52A9;&#x5B66;&#x91D1;&#x5417;&#xFF1F;Have you ever applied for education grants when in college&#xFF1F;</a> |<br>| 10 | @sunnyjolly | <a href="https://steemit.com/cn/@sunnyjolly/or" target="_blank" rel="noopener">&#x517B;&#x513F;&#x65B9;&#x77E5;&#x7236;&#x6BCD;&#x6069; &#x201C;&#x4E09;&#x4E2A;&#x4E00;&#x201D;&#x6D3B;&#x52A8;</a> |<br>| 11 | @hqy | <a href="https://steemit.com/cn/@hqy/2idxpq" target="_blank" rel="noopener">&#x6C89;&#x91CD;&#x7684;&#x5BB6;&#x4E66;  &#x9690;&#x5FCD;&#x7684;&#x60C5;&#x6000;</a> | </p>
-<blockquote>
-<p>&#x672C;&#x5217;&#x8868;&#x652F;&#x6301;&#x9ED1;&#x540D;&#x5355;&#x7528;&#x4E8E;&#x8FC7;&#x6EE4;&#x7ECF;&#x5E38;&#x53D1;&#x6C34;&#x6587;&#x7684;ID&#xFF0C;&#x6B22;&#x8FCE; report@justyy.com &#x4E3E;&#x62A5;&#x3002;</p>
-<h2 id="2017-10-15-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"><a href="#2017-10-15-Daily-Top-Authors-in-CN-Last-7-Days-&#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B;-&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;" class="headerlink" title="2017-10-15 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; &#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;"></a>2017-10-15 Daily Top Authors in [CN] (Last 7 Days) &#x6BCF;&#x65E5;cn&#x793E;&#x533A;&#x4E4B; <em>&#x8FC7;&#x53BB;7&#x5929;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;</em></h2><p>The following is the list of top 30 daily authors in [CN] in the last 7 days sorted by potential payout. See the <a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SQL</a> for more details.<br>&#x8FD9;&#x662F;&#x6839;&#x636E;<a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;&#x7684;SQL</a> - &#x7ECF;<a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">&#x5C11;&#x91CF;&#x4FEE;&#x6539;</a>&#x548C;&#x8C03;&#x6574;&#x7EDF;&#x8BA1;&#x51FA;&#x8FC7;&#x53BB;7&#x5929;&#x4F5C;&#x8005;&#x7684;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x3002;<br>|   &#x6392;&#x540D; Rank| &#x4F5C;&#x8005; Author| &#x53D1;&#x8D34;&#x6570; Posts| &#x70B9;&#x8D5E;&#x6570; Votes| &#x6F5C;&#x5728;&#x6536;&#x76CA; Pending Payout|  &#x5E73;&#x5747;&#x6BCF;&#x8D34;&#x6536;&#x76CA; Average Pending Payout Per Post|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|&#x2014;:|&#x2014;:|<br>| 1| @oflyhigh | 8 | 2437 | 1373.49 |171.69 |<br>| 2| @rivalhw | 8 | 1218 | 998.66 |124.83 |<br>| 3| @deanliu | 6 | 1576 | 894.85 |149.14 |<br>| 4| @htliao | 7 | 1406 | 856.63 |122.38 |<br>| 5| @sweetsssj | 2 | 3379 | 837.95 |418.97 |<br>| 6| @tumutanzi | 7 | 1186 | 776.96 |110.99 |<br>| 7| @someone | 6 | 933 | 732.21 |122.04 |<br>| 8| @linuslee0216 | 7 | 1012 | 724.62 |103.52 |<br>| 9| @jubi | 9 | 646 | 542.52 |60.28 |<br>| 10| @blackbunny | 6 | 620 | 502.19 |83.70 |<br>| 11| @guyverckw | 12 | 1040 | 489.08 |40.76 |<br>| 12| @aaronli | 6 | 816 | 466.47 |77.75 |<br>| 13| @nicolemoker | 3 | 838 | 439.11 |146.37 |<br>| 14| @chinadaily | 14 | 770 | 438.07 |31.29 |<br>| 15| @justyy | 18 | 1051 | 431.49 |23.97 |<br>| 16| @joythewanderer | 5 | 726 | 406.64 |81.33 |<br>| 17| @bxt | 8 | 394 | 401.66 |50.21 |<br>| 18| @rea | 1 | 841 | 375.48 |375.48 |<br>| 19| @ace108 | 27 | 1804 | 365.74 |13.55 |<br>| 20| @stacee | 5 | 503 | 363.98 |72.80 |<br>| 21| @twinkledrop | 6 | 346 | 347.86 |57.98 |<br>| 22| @travelgirl | 14 | 801 | 324.63 |23.19 |<br>| 23| @helene | 3 | 593 | 311.88 |103.96 |<br>| 24| @goodboyphilip | 8 | 600 | 284.11 |35.51 |<br>| 25| @susanli3769 | 8 | 300 | 270.91 |33.86 |<br>| 26| @btsabc | 6 | 294 | 267.12 |44.52 |<br>| 27| @victorier | 5 | 449 | 262.01 |52.40 |<br>| 28| @hannahwu | 7 | 437 | 258.69 |36.96 |<br>| 29| @tvb | 8 | 389 | 253.09 |31.64 |<br>| 30| @czechglobalhosts | 7 | 371 | 248.44 |35.49 |</p>
-</blockquote>
-<p><em>&#x4EE5;&#x4E0A;&#x6536;&#x76CA;&#x5305;&#x62EC;75%&#x7684;&#x4F5C;&#x8005;&#x6536;&#x76CA;(Author Rewards)&#x548C;25%&#x7684;&#x70B9;&#x8D5E;&#x6536;&#x76CA;(Curation Rewards)&#x3002;</em><br><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p><strong>CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;<a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</a>&#x6BCF;&#x5929;&#x4F1A;&#x4E3A;&#x8FD9;30&#x540D;&#x4F5C;&#x8005;&#x70B9;&#x8D5E;&#xFF01;</strong><br><strong><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN Good-Content-Body</a> will upvote these authors every day!</strong></p>
-<h2 id="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History"><a href="#&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;-Recent-Quality-Content-Upvote-Bot-Upvoting-History" class="headerlink" title="&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History"></a>&#x8FD1;&#x671F;&#x673A;&#x5668;&#x4EBA;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55; Recent Quality-Content-Upvote-Bot Upvoting History</h2><blockquote>
-<p>&#x8FD9;&#x4E2A;&#x673A;&#x5668;&#x4EBA;&#x5F88;&#x5584;&#x826F;&#xFF0C;&#x53EA;&#x60F3;&#x6FC0;&#x52B1;CN&#x793E;&#x533A;&#x4EA7;&#x751F;&#x66F4;&#x591A;&#x7684;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x7136;&#x522B;&#x5FD8;&#x8BB0;&#x4E86;&#xFF0C;&#x6211;&#x672C;&#x4EBA;&#x4EBA;&#x5DE5;&#x4E5F;&#x662F;&#x4F1A;&#x5BF9;&#x672A;&#x4E0A;&#x699C;&#x7684;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#x7684;&#x54DF;~</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">&#x65F6;&#x95F4; Time</th>
-<th style="text-align:right">&#x4F5C;&#x8005; Author</th>
-<th style="text-align:right">&#x6587;&#x7AE0; Post</th>
-<th style="text-align:right">&#x6743;&#x91CD; Weighting %</th>
-<th style="text-align:right">VP %</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">2017-10-15 00:59:13</td>
-<td style="text-align:right">@ace108</td>
-<td style="text-align:right"><a href="https://steemit.com/@ace108/top-20-level-1-commenters-for-20171014-active-hours-and-how-their-comments-looks-like-by-ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:right">31.00</td>
-<td style="text-align:right">53.07</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 03:49:16</td>
-<td style="text-align:right">@guyverckw</td>
-<td style="text-align:right"><a href="https://steemit.com/@guyverckw/yearly-astrology-guide-book" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:right">36.60</td>
-<td style="text-align:right">54.72</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 04:19:19</td>
-<td style="text-align:right">@nationalpark</td>
-<td style="text-align:right"><a href="https://steemit.com/@nationalpark/stingray-city-grand-cayman" target="_blank" rel="noopener">@nationalpark</a></td>
-<td style="text-align:right">24.19</td>
-<td style="text-align:right">54.84</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 07:29:17</td>
-<td style="text-align:right">@travelgirl</td>
-<td style="text-align:right"><a href="https://steemit.com/@travelgirl/haigh-s-chocolate-beautiful-sunday-sydney-australia-haigh-s" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:right">26.86</td>
-<td style="text-align:right">56.78</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 09:07:15</td>
-<td style="text-align:right">@rivalhw</td>
-<td style="text-align:right"><a href="https://steemit.com/@rivalhw/6fhxiy" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:right">31.25</td>
-<td style="text-align:right">57.69</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 10:29:12</td>
-<td style="text-align:right">@goodboyphilip</td>
-<td style="text-align:right"><a href="https://steemit.com/@goodboyphilip/video-02-nmb-fans-meeting-akb48-nmb48-goodboy-philip" target="_blank" rel="noopener">@goodboyphilip</a></td>
-<td style="text-align:right">27.17</td>
-<td style="text-align:right">57.59</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 10:35:30</td>
-<td style="text-align:right">@oflyhigh</td>
-<td style="text-align:right"><a href="https://steemit.com/@oflyhigh/4mxjkh" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:right">31.20</td>
-<td style="text-align:right">57.59</td>
-</tr>
-<tr>
-<td style="text-align:right">2017-10-15 10:54:22</td>
-<td style="text-align:right">@czechglobalhosts</td>
-<td style="text-align:right"><a href="https://steemit.com/@czechglobalhosts/43waha-7-world-s-continents-photo-challenge-south-american-saturday-winner-announcement" target="_blank" rel="noopener">@czechglobalhosts</a></td>
-<td style="text-align:right">25.34</td>
-<td style="text-align:right">58.11</td>
-</tr>
-</tbody>
-</table>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 51&#x5929;&#x3002;<br><a href="https://justyy.com/archives/5201" target="_blank" rel="noopener">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#xFF1F;</a><br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
-<blockquote>
-<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
-</blockquote>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ol>
-<h1 id="CN-&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;39&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;"><a href="#CN-&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;39&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;" class="headerlink" title="CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;39&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;"></a>CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x5F53;&#x524D;39&#x4F4D;&#x53C2;&#x4E8E;&#x8005;&#xFF0C;&#x611F;&#x8C22;&#xFF01;</h1><p>&#x67E5;&#x8BE2;&#x8C01;&#x90FD;&#x53C2;&#x4E8E;&#x4E86;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;<a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x5728;&#x7EBF;&#x5DE5;&#x5177;: Steemit &#x67E5;&#x770B;&#x8C01;&#x59D4;&#x6D3E;&#x4EE3;&#x7406;&#x7ED9;&#x4F60;Steem Power&#xFF1F;</a>&#x3002;<br>|Delegator| Steem Power| Vests|  DateTime|<br>|&#x2013;:|&#x2013;:|&#x2013;:|&#x2013;:|<br>|@eduter|660.09|1357975.69|2017-10-12 21:10:21|<br>|@htliao|530.32|1091019.80|2017-10-03 12:00:48|<br>|@bobdos|500.01|1028645.75|2017-10-15 05:45:30|<br>|@sunnyjolly|400.52|823973.51|2017-09-20 09:40:21|<br>|@mrpointp|400.35|823619.84|2017-09-28 14:09:36|<br>|@herlife|300.4|618006.65|2017-09-19 14:18:12|<br>|@zsilence|300.34|617872.78|2017-09-23 16:04:45|<br>|@mrspointm|300.26|617714.93|2017-09-28 14:07:18|<br>|@victory622|266.37|547985.69|2017-09-18 21:59:57|<br>|@coldhair|255.05|524713.00|2017-09-19 15:08:36|<br>|@luneknight|210.18|432399.70|2017-09-28 14:55:39|<br>|@berlin1997|200.19|411835.88|2017-09-27 08:55:06|<br>|@kangnajiang|117.04|240787.09|2017-10-08 10:12:12|<br>|@zhijun|100.55|206853.00|2017-09-19 03:18:57|<br>|@icedream|100.13|205996.82|2017-09-20 02:08:24|<br>|@yellowbird|100.13|205996.48|2017-09-20 02:52:51|<br>|@jessicameng|100.13|205993.57|2017-09-20 09:14:24|<br>|@fr3eze|100.1|205931.08|2017-09-26 03:17:24|<br>|@karasui|100.1|205926.99|2017-09-26 12:31:09|<br>|@jiangchen|100.08|205895.44|2017-09-29 11:36:09|<br>|@drunkevil|100.08|205885.32|2017-09-30 10:23:51|<br>|@catwomanteresa|100.08|205883.35|2017-09-30 14:50:03|<br>|@mumingduozi|60.24|123928.00|2017-09-19 00:25:12|<br>|@towardsthesun|50.06|102993.29|2017-09-21 00:33:18|<br>|@liumei|50.06|102983.93|2017-09-22 17:35:12|<br>|@tvb|50.04|102943.21|2017-09-30 07:54:27|<br>|@veronicazhu|50.02|102913.15|2017-10-06 00:26:30|<br>|@syh7758520|30.04|61802.26|2017-09-19 02:37:42|<br>|@raywang|30.03|61779.27|2017-09-26 03:40:09|<br>|@feng1925|20.03|41198.84|2017-09-20 07:52:30|<br>|@liangfengyouren|20.02|41192.83|2017-09-23 01:40:00|<br>|@mangoanddaddy|20.02|41189.47|2017-09-24 14:37:42|<br>|@speeding|20.02|41182.20|2017-09-28 00:34:57|<br>|@susanli3769|20.01|41176.13|2017-09-30 20:51:39|<br>|@jiba|15.65|32203.21|2017-09-19 01:04:06|<br>|@wangwenjing|10.01|20598.79|2017-09-20 21:35:18|<br>|@lixing|10.01|20596.48|2017-09-23 00:14:33|<br>|@willwangfeng|10.0|20576.13|2017-10-12 04:24:57|<br>|@keepup|6.0|12344.23|2017-10-14 11:06:12|</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">Steemit &#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools and APIs</a></p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-cn-updates-cn2017-10-15" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x6BCF;&#x65E5;&#x699C;&#x5355;&#x3010;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x53C2;&#x4E0E;&#x8005;&#x3011;&#x3010;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x3011;(2017-10-15)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -1058,7 +990,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/285/">285</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/286/">286</a></li>
             
         </ul>
     </nav>

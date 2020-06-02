@@ -230,6 +230,101 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@jacobyu/2113-how-to-use-google-firestore/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn-images-1.medium.com/max/1600/1*a2Da_CQHUsSKTCTRI2tYhQ.png" alt="Google Cloud Firestore 라이브러리 활용기">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-09T05:54:27.000Z">2019-05-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-dev/">kr-dev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 775 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@jacobyu/2113-how-to-use-google-firestore/">Google Cloud Firestore 라이브러리 활용기</a>
+            
+        </h1>
+        <div class="content">
+            <p><img class="" src="https://cdn-images-1.medium.com/max/1600/1*a2Da_CQHUsSKTCTRI2tYhQ.png" alt="Google cloud firestore&#xEC;&#x97;&#x90; &#xEB;&#x8C;&#x80;&#xED;&#x95;&#x9C; &#xEC;&#x9D;&#xB4;&#xEB;&#xAF;&#xB8;&#xEC;&#xA7;&#x80; &#xEA;&#xB2;&#x80;&#xEC;&#x83;&#x89;&#xEA;&#xB2;&#xB0;&#xEA;&#xB3;&#xBC;" width="585" height="180"></p>
+<p></p><h2>Cloud Firestore</h2><p></p>
+<p></p><blockquote>Cloud Firestore is a fast, fully managed, <strong>serverless</strong>, cloud-native NoSQL document database that simplifies storing, syncing, and querying data for your mobile, web, and IoT apps at global scale. Its client libraries provide live synchronization and offline support, while its security features and integrations with Firebase and Google Cloud Platform (GCP) accelerate building truly serverless apps.</blockquote><br>Google&#xC5D0;&#xC11C; &#xC11C;&#xBE44;&#xC2A4;&#xD558;&#xACE0; &#xC788;&#xB294; Cloud Firestore&#xC5D0; &#xB300;&#xD574; &#xC18C;&#xAC1C;&#xD569;&#xB2C8;&#xB2E4;.<p></p>
+<p>Cloud Firestore&#xB294; cloud, serverless, NoSQL &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC5EC;&#xB7EC; &#xD2B9;&#xC9D5;&#xB4E4;&#xC774; &#xC788;&#xB294;&#xB370;</p>
+<ul><br>     <li>&#xD655;&#xC7A5;&#xC131;. &#xB3D9;&#xC2DC; &#xC811;&#xC18D;&#xC774; &#xB9CE;&#xC544;&#xC9C0;&#xBA74; &#xC54C;&#xC544;&#xC11C; &#xD655;&#xC7A5;&#xC774; &#xB41C;&#xB2E4;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</li><br>     <li>&#xBCF4;&#xC548;.</li><br>     <li>&#xC0AC;&#xC6A9;&#xC790;&#xB294; &#xB85C;&#xC9C1;, &#xB370;&#xC774;&#xD130;&#xB9CC; &#xACE0;&#xBBFC;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</li><br></ul>
+
+<hr>
+
+<p></p><h2>&#xD65C;&#xC6A9;&#xBC29;&#xBC95;</h2><br>&#xD65C;&#xC6A9; &#xBC29;&#xBC95;&#xC740; &#xD06C;&#xAC8C; 2&#xAC00;&#xC9C0;&#xC785;&#xB2C8;&#xB2E4;.<p></p>
+<p>1&#xBC88;. &#xAC01; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xC5D0; &#xB9DE;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;</p>
+<p>2&#xBC88;. firestore&#xB97C; &#xD65C;&#xC6A9;&#xD55C; restAPI &#xC11C;&#xBC84; &#xAD6C;&#xC131;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p></p><h3>1&#xBC88;. &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xC5D0; &#xB9DE;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;</h3><br>1&#xBC88; &#xBC29;&#xBC95;&#xC740; &#xC27D;&#xAC8C; firestore&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xBCFC; &#xC218; &#xC788;&#xC73C;&#xB098;, &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xD50C;&#xB7AB;&#xD3FC;&#xC774; &#xB2EC;&#xB77C;&#xC9C8;&#xB54C;&#xB9C8;&#xB2E4; &#xADF8;&#xC5D0; &#xB9DE;&#xB294; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xCC3E;&#xC544; &#xC368;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.<p></p>
+<p>&#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC;&#xC5D0;&#xC11C; firestore&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xB54C;&#xC640; &#xC544;&#xC774;&#xD3F0;&#xC5D0;&#xC11C; firestore&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xB54C; &#xCF54;&#xB4DC;&#xAC00; &#xC880; &#xB2E4;&#xB974;&#xC8E0;.</p>
+<p>&#xADF8;&#xB9AC;&#xACE0; firestore&#xC5D0; &#xC885;&#xC18D;&#xB41C; &#xCF54;&#xB4DC;&#xB77C;&#xC11C; &#xCD94;&#xD6C4; &#xC544;&#xB9C8;&#xC874;, &#xC790;&#xCCB4;&#xC11C;&#xBC84;&#xB85C; &#xC11C;&#xBC84;&#xB97C; &#xC62E;&#xAE38; &#xACBD;&#xC6B0;, &#xB2E4;&#xC2DC; &#xCF54;&#xB4DC;&#xB97C; &#xC9DC;&#xC57C;&#xD558;&#xC8E0;.</p>
+<p></p><h3>2&#xBC88;. Firestore&#xB97C; &#xD65C;&#xC6A9;&#xD55C; restAPI &#xC11C;&#xBC84;</h3><br>2&#xBC88; &#xBC29;&#xBC95;&#xC740; restAPI&#xB97C; &#xD55C; &#xBC88; &#xAD6C;&#xC131;&#xD574;&#xB193;&#xC73C;&#xBA74; &#xC5B4;&#xB5A4; &#xD50C;&#xB7AB;&#xD3FC;&#xC774;&#xB4E0; &#xAE30;&#xC874;&#xC5D0; rest api &#xC694;&#xCCAD;&#xD558;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xADF8;&#xB300;&#xB85C; &#xD65C;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<p></p>
+<p>&#xADF8;&#xB9AC;&#xACE0; &#xC544;&#xB9C8;&#xC874;, &#xC790;&#xCCB4; &#xC11C;&#xBC84;&#xB85C; &#xC62E;&#xACA8;&#xB3C4; &#xADF8;&#xB300;&#xB85C; &#xCF54;&#xB4DC;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC8E0;.</p>
+<p>2&#xBC88; &#xBC29;&#xBC95;&#xC740; &#xC9C1;&#xC811; &#xC0AC;&#xC6A9;&#xD574;&#xBCF4;&#xACE0; &#xB354; &#xC801;&#xC5B4;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<hr>
+
+<p></p><h2>1&#xBC88; &#xBC29;&#xBC95;, JJM page&#xC5D0;&#xC11C; &#xD65C;&#xC6A9;</h2><br>&#xBCF4;&#xD305; &#xD788;&#xC2A4;&#xD1A0;&#xB9AC; &#xBD80;&#xBD84;&#xC5D0;&#xC11C; firestore&#xB97C; &#xD65C;&#xC6A9;&#xD574;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.<p></p>
+<p>JJM &#xBCF4;&#xD305;&#xC744; &#xD560; &#xB54C;&#xB9C8;&#xB2E4;, &#xBCF4;&#xD305; &#xD788;&#xC2A4;&#xD1A0;&#xB9AC;&#xC5D0; &#xAE30;&#xB85D;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB9AC;&#xACE0; &#xADF8; &#xAE30;&#xB85D;&#xB4E4;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xD574;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><img class="alignnone wp-image-2130 size-large" src="https://passionbull.net/wp-content/uploads/2019/05/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2019-05-09-14-40-47-1024x536.png" sizes="(max-width: 640px) 100vw, 640px" srcset="https://passionbull.net/wp-content/uploads/2019/05/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2019-05-09-14-40-47-1024x536.png 1024w, https://passionbull.net/wp-content/uploads/2019/05/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2019-05-09-14-40-47-300x157.png 300w, https://passionbull.net/wp-content/uploads/2019/05/&#xC2A4;&#xD06C;&#xB9B0;&#xC0F7;-2019-05-09-14-40-47-768x402.png 768w" alt="" width="640" height="335"></p>
+<p>&#xC774;&#xB97C; &#xC704;&#xD574;&#xC11C; &#xD544;&#xC694;&#xD55C;&#xAC74; &#xB531; 2&#xAC1C;&#xC758; &#xD568;&#xC218;&#xB9CC; &#xC788;&#xC73C;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC4F0;&#xAE30;&#xC640; &#xC77D;&#xAE30;&#xC8E0;.</p>
+<p>&#xC544;&#xB798;&#xCC98;&#xB7FC; history&#xC5D0; &#xBCF4;&#xD305; rate&#xC640; &#xBCF4;&#xD305;&#xC744; &#xD55C; &#xB0A0;&#xC9DC;&#xB97C; add&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xBD80;&#xBD84;&#xC774; &#xC4F0;&#xB294; &#xBD80;&#xBD84;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><code>db.collection(&#x201C;history&#x201D;).add({<br>rate: _rate,<br>date: _date<br>});</code></p>
+<p></p><div></div><p></p>
+<p></p><div></div><br><br>&#xC774; &#xBD80;&#xBD84;&#xC740; history&#xC5D0; &#xB2F4;&#xAE34; document&#xB97C; &#xC77D;&#xC5B4;&#xC624;&#xB294; &#xBD80;&#xBD84;&#xC785;&#xB2C8;&#xB2E4;.<p></p>
+<p>&#xC2DC;&#xAC04; &#xC21C;&#xC11C;&#xB300;&#xB85C; 10&#xAC1C;&#xB9CC; &#xC77D;&#xC5B4;&#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><code>db.collection(&#x201C;history&#x201D;).orderBy(&#x201C;date&#x201D;,&#x201D;desc&#x201D;).limit(10)<br>.get()<br>.then(function(querySnapshot) {<br>querySnapshot.forEach(function(doc) {<br>console.log(doc.id, &#x201C; =&gt; &#x201C;, doc.data());<br></code></p>
+<hr>
+
+<p></p><h2>&#xB290;&#xB080;&#xC810;</h2><br>&#xC11C;&#xBC84;&#xB97C; &#xC798; &#xBAB0;&#xB77C;&#xB3C4; &#xC11C;&#xBC84;&#xAC00; &#xD544;&#xC694;&#xD55C; &#xC11C;&#xBE44;&#xC2A4;&#xB97C; &#xC81C;&#xACF5;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<p></p>
+<p>&#xB2E8;, Firestore&#xC758; &#xBB34;&#xB8CC;&#xD560;&#xB2F9;&#xB7C9;&#xC744; &#xCD08;&#xACFC;&#xD558;&#xBA74; &#xB3C8;&#xC744; &#xB0B4;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xBB34;&#xB8CC;&#xD560;&#xB2F9;&#xB7C9;&#xC744; &#xCD08;&#xACFC;&#xD560;&#xC815;&#xB3C4;&#xBA74; &#xB3C8;&#xC744; &#xBC8C; &#xC218; &#xC788;&#xB294; &#xC11C;&#xBE44;&#xC2A4;&#xC774;&#xC9C0; &#xC54A;&#xC744;&#xAE4C;?? &#xC0DD;&#xAC01;&#xD574;&#xBD05;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC77D;&#xC5B4;&#xC8FC;&#xC154;&#xC11C; &#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;!!!</p>
+<hr>
+
+<p></p><h2>&#xCC38;&#xACE0;</h2><br><a href="https://firebase.google.com/docs/firestore/use-rest-api?hl=ko" target="_blank" rel="noopener">https://firebase.google.com/docs/firestore/use-rest-api?hl=ko</a><p></p>
+<p><a href="https://firebase.google.com/docs/database/rtdb-vs-firestore?hl=ko" target="_blank" rel="noopener">https://firebase.google.com/docs/database/rtdb-vs-firestore?hl=ko</a></p>
+<p><a href="https://medium.com/get-it-working/get-googles-firestore-working-with-react-c78f198d2364" target="_blank" rel="noopener">https://medium.com/get-it-working/get-googles-firestore-working-with-react-c78f198d2364</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/2113-how-to-use-google-firestore" target="_blank" rel="noopener">&#x2018;Google Cloud Firestore &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC; &#xD65C;&#xC6A9;&#xAE30;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@jacobyu/2127-black-milk-tea/" class="image is-7by1">
             <img class="thumbnail" src="https://passionbull.net/wp-content/uploads/2019/05/20190508_0820239176342116920255832-1.jpg" alt="[일기] 밀크티 만들기">
         </a>
@@ -512,75 +607,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@jacobyu/mqjtw/" class="image is-7by1">
-            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/Qmf1xWqgVtMx95YNFBE1rLHH7PPKPvkA5xDC2B8vgmEHyp" alt="[일기] 중국출장, 중국사람들">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-27T16:14:06.000Z">2019-04-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@jacobyu/categories/kr-diary/">kr-diary</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 389 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@jacobyu/mqjtw/">[일기] 중국출장, 중국사람들</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://ipfs.busy.org/ipfs/Qmf1xWqgVtMx95YNFBE1rLHH7PPKPvkA5xDC2B8vgmEHyp" alt="20190427_153849.jpg"></p>
-<p><img src="https://ipfs.busy.org/ipfs/QmNswBJJAzNhsXRZFsELgMPQRLi6xroT5hyyZDdkAGsJXW" alt="20190428_092736.jpg"></p>
-<p>&#xC911;&#xAD6D; &#xCD9C;&#xC7A5; 2&#xC77C;&#xC9F8;<br>&#xB290;&#xB080;&#xC810;&#xC740;.. &#xC911;&#xAD6D;&#xC0AC;&#xB78C;&#xB4E4;&#xB294; &#xCE5C;&#xC808;&#xD558;&#xB2E4;.<br>&#xC9C1;&#xC811; &#xC911;&#xAD6D;&#xC0AC;&#xB78C;&#xB4E4;&#xACFC; &#xAC19;&#xC774; &#xC77C;&#xD558;&#xBA74;&#xC11C; &#xB290;&#xAF08;&#xB2E4;.<br>&#xBA3C;&#xC800; &#xBC25;&#xC744; &#xC798; &#xC0AC;&#xC8FC;&#xBA70;.. &#xD638;&#xD154;&#xB3C4; &#xC88B;&#xC740; &#xACF3;&#xC73C;&#xB85C; &#xC608;&#xC57D;&#xD574;&#xC92C;&#xB2E4;.<br>&#xBC30;&#xB824;&#xB97C; &#xB9CE;&#xC774;&#xD574;&#xC8FC;&#xB294;&#xAC83;&#xC744; &#xB290;&#xAF08;&#xB2E4;.</p>
-<p>&#xBC25;&#xC744; &#xAC19;&#xC774; &#xBA39;&#xB294;&#xB300; &#xD56D;&#xC0C1; &#xBA3C;&#xC800; &#xBA39;&#xC5B4;&#xBCF4;&#xB77C;&#xACE0; &#xD55C;&#xB2E4;.<br>&#xD0DD;&#xC2DC;&#xB97C; &#xC7A1;&#xC544;&#xC8FC;&#xBA70;, &#xD638;&#xD154;&#xAE4C;&#xC9C0; &#xB370;&#xB824;&#xB2E4;&#xC900;&#xB2E4;.<br>&#xC911;&#xAD6D; &#xC0AC;&#xB78C;&#xB4E4;.. &#xC720;&#xBA38;&#xB7EC;&#xC2A4;&#xD558;&#xB2E4;.<br>&#xC6C3;&#xC74C;&#xC774; &#xBA48;&#xCD94;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
-<p>&#xADF8;&#xB9AC;&#xACE0; &#xC911;&#xAD6D;&#xC2DD;&#xC740; &#xD070; &#xC6D0;&#xBC18;&#xC5D0;&#xC11C; &#xC74C;&#xC2DD;&#xC744; &#xB098;&#xB220;&#xBA39;&#xB294;&#xB370;<br>&#xC11C;&#xB85C; &#xBC30;&#xB824;&#xD558;&#xB294;&#xAC8C; &#xB290;&#xAEF4;&#xC9C4;&#xB2E4;. &#xD55C;&#xBA85;&#xC774; &#xC74C;&#xC2DD;&#xC744; &#xB35C;&#xACE0; &#xC788;&#xB2E4;&#xBA74; &#xB2E4;&#xB978; &#xC0AC;&#xB78C;&#xC774; &#xC6D0;&#xBC18;&#xC744; &#xC7A1;&#xC544;&#xC8FC;&#xACE0;.. &#xADF8;&#xB7F0; &#xBB38;&#xD654;&#xB97C; &#xBCFC; &#xC218; &#xC788;&#xC5C8;&#xB2E4;.</p>
-<p>&#xBC16;&#xC5D0;&#xC11C; &#xC0AC;&#xB78C;&#xB4E4;&#xC774; &#xB2E4;&#xAC19;&#xC774; &#xCCB4;&#xC870;&#xD558;&#xB294;&#xAC83;&#xB3C4; &#xBD24;&#xB2E4;.<br>&#xB204;&#xAD6C;&#xB098; &#xCC38;&#xC5EC;&#xAC00;&#xB2A5;&#xD558;&#xB2E4;&#xACE0; &#xD55C;&#xB2E4;.</p>
-<p>&#xC704;&#xCC57;&#xD398;&#xC774;, &#xB514;&#xB514; (&#xCE74; &#xC250;&#xC5B4;&#xB9C1;) &#xD3B8;&#xD574;&#xBCF4;&#xC600;&#xB2E4;.<br>&#xADF8;&#xB9AC;&#xACE0; &#xAD50;&#xC721;&#xCABD;&#xC73C;&#xB85C; &#xB9CE;&#xC740; &#xAE30;&#xD68C;&#xAC00; &#xC788;&#xC5B4;&#xBCF4;&#xC778;&#xB2E4;.</p>
-<p>&#xC5B4;&#xB5BB;&#xAC8C; &#xD558;&#xBA74; &#xB9CE;&#xC740; &#xCE5C;&#xAD6C;&#xB4E4;, &#xCEE4;&#xB125;&#xC158;&#xC744; &#xC5BB;&#xC744;&#xC218; &#xC788;&#xB294;&#xAC00;?<br>&#xAC00;&#xB054;&#xC529;&#xB9CC;&#xB098;&#xBA74;&#xC11C; &#xC220;&#xB9C8;&#xC2DC;&#xACE0; &#xC774;&#xC57C;&#xAE30;&#xD558;&#xB2E4; &#xCE5C;&#xD574;&#xC84C;&#xB2E4;<br>&#xC11C;&#xB85C; &#xB2E4;&#xB978; &#xBC30;&#xACBD;&#xC744; &#xAC00;&#xC9C4; &#xCE5C;&#xAD6C;&#xB4E4;&#xB07C;&#xB9AC; &#xC790;&#xAE30;&#xC758; &#xCE5C;&#xAD6C;&#xB4E4;&#xC744; &#xC18C;&#xAC1C;&#xC2DC;&#xCF1C;&#xC92C;&#xB2E4;. &#xB77C;&#xACE0; &#xD55C;&#xB2E4;.<br>&#xC2A4;&#xC2A4;&#xB85C;&#xC758; &#xD3C9;&#xD310;&#xC744; &#xB192;&#xC5EC;&#xB77C;. &#xADF8;&#xB7EC;&#xBA74; &#xC54C;&#xC544;&#xC11C; &#xCC3E;&#xC544;&#xC628;&#xB2E4;.</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@jacobyu/mqjtw" target="_blank" rel="noopener">&#x2018;[&#xC77C;&#xAE30;] &#xC911;&#xAD6D;&#xCD9C;&#xC7A5;, &#xC911;&#xAD6D;&#xC0AC;&#xB78C;&#xB4E4;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/64/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/64/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/66/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@jacobyu/page/66/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -596,7 +631,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@jacobyu/page/98/">98</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@jacobyu/page/99/">99</a></li>
             
         </ul>
     </nav>
@@ -732,7 +767,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@jacobyu/content.json"};</script>
 
 
 
