@@ -230,6 +230,163 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/php--postheader-2019-09-06/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt="每天进步一点点：PHP  POST以及设置Header的一点探索">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-06T10:37:15.000Z">2019-09-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 728 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/php--postheader-2019-09-06/">每天进步一点点：PHP  POST以及设置Header的一点探索</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x6700;&#x8FD1;&#x5199;&#x4E2A;PHP&#x811A;&#x672C;&#xFF0C;POST&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x7ED9;&#x6307;&#x5B9A;&#x811A;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x8BBE;&#x7F6E;Header&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x8BBE;&#x7F6E;&#x7684;Header&#x4E0D;&#x751F;&#x6548;&#xFF0C;&#x4E3A;&#x4E86;&#x641E;&#x660E;&#x767D;&#x5230;&#x5E95;&#x54EA;&#x91CC;&#x51FA;&#x4E86;&#x95EE;&#x9898;&#xFF0C;&#x505A;&#x4E86;&#x4E00;&#x70B9;&#x5B66;&#x4E60;&#xFF0C;&#x8BB0;&#x5F55;&#x5982;&#x4E0B;&#xFF0C;&#x5907;&#x5FD8;&#x5E76;&#x4F9B;&#x9047;&#x5230;&#x540C;&#x6837;&#x95EE;&#x9898;&#x7684;&#x670B;&#x53CB;&#x53C2;&#x8003;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmRkLq6rRew3mHfx4vYGWyqpC8wSebLPeC2iZCXAdpuGkR/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x56DE;&#x663E;Header"><a href="#&#x56DE;&#x663E;Header" class="headerlink" title="&#x56DE;&#x663E;Header"></a>&#x56DE;&#x663E;Header</h1><p>&#x4E3A;&#x4E86;&#x6D4B;&#x8BD5;&#x6211;&#x8BBE;&#x7F6E;&#x6210;Header&#x662F;&#x5426;&#x6210;&#x529F;&#x53D1;&#x9001;&#xFF0C;&#x6211;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x6765;&#x56DE;&#x663E;Header&#x8BBE;&#x7F6E;&#xFF0C;&#x7ECF;&#x8FC7;&#x5B66;&#x4E60;&#xFF0C;&#x6211;&#x53D1;&#x73B0;PHP&#x81EA;&#x5E26;&#x4E00;&#x4E2A;&#x51FD;&#x6570;<a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a>&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x8F7B;&#x6613;&#x83B7;&#x53D6;Header&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x7B80;&#x5355;&#x7684;&#x793A;&#x4F8B;&#x811A;&#x672C;&#x5982;&#x4E0B;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">foreach (getallheaders() as $name =&gt; $value) {</span><br><span class="line">    echo &quot;$name: $value</span><br><span class="line">&quot;;</span><br><span class="line">}</span><br><span class="line">?&gt;</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x4E0A;&#x8FF0;&#x811A;&#x672C;&#xFF0C;&#x8FD4;&#x56DE;&#x5982;&#x4E0B;&#x5185;&#x5BB9;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmZzua2L11t52CukbZFBdpxUuFhWKqz1rhgva15es6LvNB/image.png" alt=""></p>
+</blockquote>
+<p>&#x53EF;&#x89C1;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x5DE5;&#x4F5C;&#x826F;&#x597D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x8F85;&#x52A9;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x7684;&#x662F;<a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a>&#x5176;&#x5B9E;&#x662F;<a href="https://www.php.net/manual/en/function.apache-request-headers.php" target="_blank" rel="noopener">apache_request_headers()</a>&#x7684;&#x522B;&#x540D;&#xFF0C;&#x4E24;&#x8005;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<h1 id="&#x53D1;&#x9001;Header"><a href="#&#x53D1;&#x9001;Header" class="headerlink" title="&#x53D1;&#x9001;Header"></a>&#x53D1;&#x9001;Header</h1><p>&#x6211;&#x4F7F;&#x7528;PHP&#x7684;<a href="https://www.php.net/manual/en/ref.curl.php" target="_blank" rel="noopener">curl &#x51FD;&#x6570;</a>&#x6765;&#x5B8C;&#x6210;POST&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    $ch = curl_init(); </span><br><span class="line">    </span><br><span class="line">    $url = &quot;http://serviceuptime.net/header_echo.php&quot;;</span><br><span class="line">    $headers = &quot;Accept-Encoding: gzip, deflate&quot;;</span><br><span class="line">    $data = &quot;Hello!&quot;;</span><br><span class="line">    </span><br><span class="line">    curl_setopt($ch, CURLOPT_URL,$url); </span><br><span class="line">    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); </span><br><span class="line">    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers); </span><br><span class="line">    </span><br><span class="line">    curl_setopt($ch, CURLOPT_POST, 1); </span><br><span class="line">    curl_setopt($ch, CURLOPT_POSTFIELDS, $data); </span><br><span class="line"></span><br><span class="line">    $resp= curl_exec($ch); </span><br><span class="line">    print_r($resp);</span><br><span class="line">?&gt;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x4EE3;&#x7801;&#x5982;&#x4E0A;&#x6240;&#x793A;&#xFF0C;&#x4F46;&#x662F;&#x6267;&#x884C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x540E;&#xFF0C;&#x8FD4;&#x56DE;&#x4EE3;&#x7801;&#x4E2D;&#x5E76;&#x6CA1;&#x6709;&#x542B;&#x6709;&#x6211;&#x4EEC;&#x8BBE;&#x7F6E;&#x7684;&#x5185;&#x5BB9;&#xFF1A;<br><img src="https://cdn.steemitimages.com/DQmT9qq3YuxvC76RfSpoDUfsYmKwrG2K3bLjE1eKWgMrspj/image.png" alt=""></p>
+<p>&#x90A3;&#x4E48;&#x54EA;&#x91CC;&#x51FA;&#x9519;&#x4E86;&#x5462;&#xFF1F;&#x901A;&#x8FC7;&#x67E5;&#x770B;<a href="https://www.php.net/manual/en/function.curl-setopt.php" target="_blank" rel="noopener">curl_setopt()</a>&#xFF0C;&#x6211;&#x53D1;&#x73B0;&#x4F20;&#x9012;&#x7ED9;<code>CURLOPT_HTTPHEADER</code>&#x9009;&#x9879;&#x7684;&#xFF0C;&#x5E94;&#x8BE5;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmQ7nWRzVAtRGHnkHeaitprGpEuTxpSBV96Hk1jBCx8STw/image.png" alt=""></p>
+</blockquote>
+<p>&#x6240;&#x4EE5;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x6B63;&#x786E;&#x7684;&#x5199;&#x6CD5;&#x5E94;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p><code>$headers = array(&quot;Accept-Encoding: gzip, deflate&quot;);</code></p>
+</blockquote>
+<p>&#x518D;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#x540E;&#xFF0C;&#x679C;&#x7136;&#x8FD4;&#x56DE;&#x4E86;&#x6211;&#x8981;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8BC1;&#x660E;Header&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmQBGHkfaLjigmvTi46VmPETiqYx2zpKBGJN2PomYsFcTZ/image.png" alt=""></p>
+</blockquote>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x65E2;&#x7136;&#x662F;array&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x591A;&#x6761;Header&#x4E86;&#xFF0C;&#x8FD9;&#x6070;&#x6070;&#x8BF4;&#x660E;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x76F4;&#x63A5;&#x4F20;&#x5165;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x9519;&#x8BEF;&#x7684;&#x3002;</p>
+<p><strong><em>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x4EC5;&#x4F9B;&#x53C2;&#x8003;</em></strong></p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://www.php.net/manual/en/function.getallheaders.php" target="_blank" rel="noopener">getallheaders()</a></li>
+<li><a href="https://www.php.net/manual/en/function.apache-request-headers.php" target="_blank" rel="noopener">apache_request_headers()</a></li>
+<li><a href="https://www.php.net/manual/en/ref.curl.php" target="_blank" rel="noopener">cURL Functions</a></li>
+<li><a href="https://www.php.net/manual/en/function.curl-setopt.php" target="_blank" rel="noopener">curl_setopt()</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/php--postheader-2019-09-06" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;PHP  POST&#x4EE5;&#x53CA;&#x8BBE;&#x7F6E;Header&#x7684;&#x4E00;&#x70B9;&#x63A2;&#x7D22;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/kjrwj/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmWZduKs346KacHPi4m5ezxj9HhVoWsSrP4d5y5wna5ibC/image.png" alt="吉野家的火锅">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-09-06T04:50:21.000Z">2019-09-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 276 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/kjrwj/">吉野家的火锅</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://cdn.steemitimages.com/DQmWZduKs346KacHPi4m5ezxj9HhVoWsSrP4d5y5wna5ibC/image.png" alt=""></p>
+<p>&#x4E00;&#x76F4;&#x5F88;&#x559C;&#x6B22;&#x5409;&#x91CE;&#x5BB6;&#x7684;&#x725B;&#x8089;&#x996D;&#xFF0C;&#x5403;&#x4E86;&#x597D;&#x591A;&#x5E74;&#x8FD8;&#x4E0D;&#x89C9;&#x5F97;&#x817B;&#x6B6A;&#x3002;</p>
+<p>&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#x53C8;&#x53D1;&#x73B0;&#x5409;&#x91CE;&#x5BB6;&#x7684;&#x9762;&#x6761;&#x4E5F;&#x4E0D;&#x9519;&#xFF0C;&#x9762;&#x6761;&#x7B4B;&#x9053;&#xFF0C;&#x6C64;&#x9C9C;&#x5473;&#x7F8E;&#xFF0C;&#x51B5;&#x4E14;&#x4E5F;&#x6709;&#x725B;&#x8089;&#x3002;</p>
+<p>&#x8FD9;&#x6B21;&#x53BB;&#x5409;&#x91CE;&#x5BB6;&#xFF0C;&#x53D1;&#x73B0;&#x4ED6;&#x5BB6;&#x7ADF;&#x7136;&#x8FD8;&#x6709;&#x5C0F;&#x706B;&#x9505;&#xFF0C;&#x81EA;&#x5DF1;&#x6DAE;&#x725B;&#x8089;&#x5403;&#xFF0C;&#x518D;&#x914D;&#x4E00;&#x7897;&#x7C73;&#x996D;&#xFF0C;&#x51E0;&#x4E2A;&#x5C0F;&#x83DC;&#xFF0C;&#x4E5F;&#x4E0D;&#x9519;&#x7684;&#x3002;</p>
+<hr>
+<p><img src="https://cdn.steemitimages.com/DQmV3GfiGeifsYsLJSMfizdCwag7xySKmJAPpuREPszAuor/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmWjPzudwPFM8qER4syD6Kc2jHarjv4sAA6ARJXGgpg9oN/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmcaWCKcYK71q3rmdkVeaJtX46z4wV4GnhhSTm8ZE9M8CA/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmR7o3LozR19hiAiPwSTWHwgkiK4oEiMYasG3HM8eq6yEp/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmWZduKs346KacHPi4m5ezxj9HhVoWsSrP4d5y5wna5ibC/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmSq5QEVd81JXr3zSDEDzNeVvCuzmPLuZzazKU3secP72M/image.png" alt=""></p>
+<p><img src="https://cdn.steemitimages.com/DQmYF4RYwzqZnaox5tMSmJYcQ6XpYxqw3HsCB9Na85znwNa/image.png" alt=""></p>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/kjrwj" target="_blank" rel="noopener">&#x2018;&#x5409;&#x91CE;&#x5BB6;&#x7684;&#x706B;&#x9505;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/--atm-2019-09-05/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmU1dkcKVFmFVbwhXo41UKy3o3JNZqSaHzuXQnkS6ypAGy/image.png" alt="现金 &amp; 巨额跨行ATM提款费">
         </a>
@@ -530,172 +687,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/steemit-2019-09-03/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmWCgnh3vWw2mB9736G2RCmqSAvWhiaNvTdyyuYYTAQ6eT/image.png" alt="SteemIT公众号现已恢复正常">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-03T15:47:03.000Z">2019-09-03</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 608 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/steemit-2019-09-03/">SteemIT公众号现已恢复正常</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x7531;&#x4E8E;HF22&#x5F15;&#x8FDB;&#x4E86;&#x4E00;&#x4E2A;&#x65B0;&#x7684;BUG&#xFF0C;&#x5BFC;&#x81F4;&#x4E86;STEEM&#x533A;&#x5757;&#x94FE;&#x505C;&#x8F6C;&#xFF0C;&#x5C3D;&#x7BA1;&#x6B64;BUG&#x5728;&#x5DF2;&#x7ECF;&#x6570;&#x5C0F;&#x65F6;&#x540E;&#x88AB;&#x4FEE;&#x590D;&#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6240;&#x6709;&#x8282;&#x70B9;&#x91CD;&#x64AD;&#xFF08;Replay&#xFF09;&#x6570;&#x636E;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x4EE5;&#x53CA;&#x8BBE;&#x7F6E;&#xFF0C;&#x91CD;&#x64AD;&#x6570;&#x636E;&#x4E00;&#x822C;&#x9700;&#x8981;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5230;&#x5341;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmWCgnh3vWw2mB9736G2RCmqSAvWhiaNvTdyyuYYTAQ6eT/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x5C3D;&#x7BA1;&#x5F88;&#x591A;&#x89C1;&#x8BC1;&#x4EBA;&#x8282;&#x70B9;&#x5728;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5185;&#x5B8C;&#x6210;&#x91CD;&#x64AD;&#xFF0C;&#x8BA9;steem&#x533A;&#x5757;&#x94FE;&#x91CD;&#x65B0;&#x8FD0;&#x8F6C;&#x8D77;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x9057;&#x61BE;&#x7684;&#x662F;&#xFF0C;steemit&#x5B98;&#x65B9;&#x8282;&#x70B9;(<code>api.steemit.com</code>)&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x672A;&#x80FD;&#x4FEE;&#x590D;&#xFF0C;&#x5BFC;&#x81F4;&#x5F88;&#x591A;&#x4F9D;&#x8D56;&#x4E8E;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x5E94;&#x7528;(&#x5305;&#x62EC;<a href="https://steemit.com" target="_blank" rel="noopener">steemit.com</a>)&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;</p>
-<p>&#x60B2;&#x50AC;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x516C;&#x4F17;&#x53F7;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x662F;&#x4F9D;&#x8D56;&#x4E8E;&#x5B98;&#x65B9;&#x8282;&#x70B9;(<code>api.steemit.com</code>)&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E24;&#x5929;&#x516C;&#x4F17;&#x53F7;&#x7684;&#x4FE1;&#x606F;&#x4E00;&#x76F4;&#x4E0D;&#x6B63;&#x5E38;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x6570;&#x636E;&#x8001;&#x65E7;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x663E;&#x793A;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmdzA29eDfwWpqW79tp2Z33oiXd2TvNAQb7iMMsjJG2z4s/image.png" alt=""></p>
-</blockquote>
-<p>&#x8BA9;&#x4EBA;&#x6FC0;&#x52A8;&#x7684;&#x662F;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E86;&#x4E00;&#x5929;&#x534A;&#x4EE5;&#x4E0A;&#x7684;&#x7B49;&#x5F85;&#xFF0C;steemit&#x5B98;&#x65B9;&#x8282;&#x70B9;(<code>api.steemit.com</code>)&#x7EC8;&#x4E8E;&#x6062;&#x590D;&#x7684;&#x6B63;&#x5E38;&#x3002;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmWHJUogN43R3bJ8KMtQDLKrQj5CT5zeMSh74uBAMk3ZXS/image.png" alt=""></p>
-</blockquote>
-<p>&#x800C;&#x4F5C;&#x4E3A;&#x4F9D;&#x8D56;&#x4E8E;steemit&#x5B98;&#x65B9;&#x8282;&#x70B9;(<code>api.steemit.com</code>)&#x7684;&#x516C;&#x4F17;&#x53F7;&#xFF0C;&#x81EA;&#x7136;&#x968F;&#x4E4B;&#x6062;&#x590D;&#x7684;&#x6B63;&#x5E38;&#xFF0C;&#x73B0;&#x5728;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5728;&#x4E0A;&#x8FB9;&#x6109;&#x5FEB;&#x5730; &#x73A9;&#x800D;&#xFF08;&#x67E5;&#x8BE2;&#xFF09;&#x5566;&#x3002;</p>
-<p>&#x6BD4;&#x5982;&#x67E5;&#x770B;&#x5F53;&#x524D;&#x6700;&#x65B0;&#x7684;&#x4FE1;&#x606F;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmf8q56HveAyi6v8v4zzDKa3uj3cbDU81zRDXYADmLs6Jc/image.png" alt=""></p>
-</blockquote>
-<p>&#x5176;&#x5B83;&#x67E5;&#x8BE2;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmZzzRJWyA4csyapj3ZJVS95Lsc84XYF3u52MFoYabrh1i/image.png" alt=""></p>
-</blockquote>
-<p>&#x5F53;&#x7136;&#x5566;&#xFF0C;&#x6709;&#x4E9B;&#x529F;&#x80FD;&#x8FD8;&#x5F97;&#x9488;&#x5BF9;HF22&#x505A;&#x4E00;&#x4E9B;&#x8C03;&#x6574;&#xFF0C;&#x6162;&#x6162;&#x6765;&#x5566;&#x3002;</p>
-<p>&#x81F3;&#x4E8E;&#x4E3A;&#x4EC0;&#x4E48;&#x5B98;&#x65B9;&#x8282;&#x70B9;(<code>api.steemit.com</code>)&#x8981;&#x6BD4;&#x5176;&#x5B83;&#x7684;&#x8282;&#x70B9;&#x6062;&#x590D;&#x7684;&#x66F4;&#x6162;&#xFF0C;&#x6211;&#x731C;&#x6D4B;&#x5E94;&#x8BE5;&#x662F;&#x542F;&#x7528;&#x4E86;Mira&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x542F;&#x7528;Mira&#x7684;&#x8282;&#x70B9;Replay&#x8981;&#x8017;&#x8D39;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x95F4;&#x3002;</p>
-<h1 id="&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;"><a href="#&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;" class="headerlink" title="&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;"></a>&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;</h1><p>&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x7EE7;&#x7EED;&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x5173;&#x6CE8;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x65B9;&#x4FBF;&#x7684;&#x5C0F;&#x529F;&#x80FD;&#xFF0C;&#x8FD8;&#x5728;&#x4E0D;&#x65AD;&#x5B8C;&#x5584;&#x4E2D;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmZGHbCGz263CJHT5wLff6zqQJF5nEPC5RkZWJocmqLZE3/image.png" alt=""></p>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steemit-2019-09-03" target="_blank" rel="noopener">&#x2018;SteemIT&#x516C;&#x4F17;&#x53F7;&#x73B0;&#x5DF2;&#x6062;&#x590D;&#x6B63;&#x5E38;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/bugbug-2019-09-03/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmbqn5MfckipJxn3mshfDUqajGzbEUbr8hhbGDCozpGiqC/image.png" alt="BUG之又见BUG，主备节点均已恢复上线">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-09-03T08:28:57.000Z">2019-09-03</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 506 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/bugbug-2019-09-03/">BUG之又见BUG，主备节点均已恢复上线</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x524D;&#x665A;&#x6709;&#x4E8B;&#x60C5;&#x5FD9;&#x4E86;&#x51E0;&#x4E4E;&#x4E00;&#x6574;&#x591C;&#xFF0C;&#x65E9;&#x6668;&#x7761;&#x4E86;&#x4E0D;&#x5230;&#x4E00;&#x4E2A;&#x534A;&#x5C0F;&#x65F6;&#xFF0C;&#x9192;&#x6765;&#x540E;&#x5C31;&#x770B;&#x5230;@justyy &#x5728;&#x7FA4;&#x91CC;&#x8BF4;steem&#x94FE;&#x53C8;&#x505C;&#x6B62;&#x524D;&#x8FDB;&#x4E86;&#x3002;</p>
-<p>&#x5927;&#x6982;&#x5728;&#x6628;&#x5929;&#x4E0A;&#x5348;9:16&#x524D;&#x540E;&#xFF0C;steemit&#x7684;&#x5B98;&#x65B9;github&#x4E0A;&#x63A8;&#x51FA;&#x4E86;&#x8865;&#x4E01;&#x7A0B;&#x5E8F;&#xFF1A;</p>
-<blockquote>
-<p><a href="https://github.com/steemit/steem/commits/20190901-fix-curation-weight" target="_blank" rel="noopener">https://github.com/steemit/steem/commits/20190901-fix-curation-weight</a></p>
-</blockquote>
-<p>&#x4E0D;&#x8FC7;&#x9057;&#x61BE;&#x7684;&#x662F;&#xFF0C;&#x8FD9;&#x6B21;&#x4E0D;&#x662F;&#x4EC5;&#x4EC5;&#x66FF;&#x6362;steemd&#x7A0B;&#x5E8F;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x7684;&#xFF0C;&#x9700;&#x8981;replay&#x3002;</p>
-<p>&#x4E8E;&#x662F;&#x53C8;&#x5F00;&#x59CB;&#x7F16;&#x8BD1;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmbqn5MfckipJxn3mshfDUqajGzbEUbr8hhbGDCozpGiqC/image.png" alt=""></p>
-</blockquote>
-<p>&#x8FD9;&#x6B21;&#x4E0D;&#x662F;&#x786C;&#x5206;&#x53C9;&#xFF0C;&#x6240;&#x4EE5;&#x7248;&#x672C;&#x53F7;&#x4F9D;&#x65E7;&#x662F;0.22.0&#xFF0C;&#x4E5F;&#x8BB8;&#x56DE;&#x5934;steemd&#x4F1A;&#x628A;&#x8865;&#x4E01;&#x4F5C;&#x4E3A;&#x65B0;&#x7248;&#x672C;v0.22.1&#x53D1;&#x5E03;&#xFF0C;&#x4F46;&#x662F;&#x7A0B;&#x5E8F;&#x5176;&#x5B9E;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
-<blockquote>
-<p>&#x542F;&#x52A8;&#x6253;&#x4E86;&#x8865;&#x4E01;&#x540E;&#x7684;steemd&#x5E94;&#x7528;&#xFF1A;<br><img src="https://cdn.steemitimages.com/DQmSHQjdJDHsnVdecXQMGi9mGEgDZtydo9F15vKrdP9oxLN/image.png" alt=""></p>
-<p>&#x7136;&#x540E;&#x662F;&#x6F2B;&#x957F;&#x7684;Replay.<br><img src="https://cdn.steemitimages.com/DQmTe3uAWueCFkatHW5AREBfnWPuLMKbHLQcG9xSgEZa5mP/image.png" alt=""></p>
-</blockquote>
-<p>&#x53EF;&#x60DC;&#x6211;&#x624B;&#x6B20;&#x53C8;&#x91CD;&#x542F;&#x4E86;steemd&#xFF0C;&#x641E;&#x4E86;&#x4E00;&#x4E0B;&#x6D4B;&#x8BD5;&#xFF0C;&#x4EE5;&#x4E3A;&#x80FD;&#x52A0;&#x901F;replay&#x8FDB;&#x7A0B;&#xFF0C;&#x7ED3;&#x679C;&#x6BDB;&#x7EBF;&#x6548;&#x679C;&#x90FD;&#x6CA1;&#x6709;&#xFF0C;&#x8FD8;&#x767D;&#x767D;&#x6D6A;&#x8D39;&#x4E86;&#x4E4B;&#x524D;replay&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<p>&#x7EC8;&#x4E8E;&#x770B;&#x5230;HF21/HF22&#x4E86;&#xFF0C;&#x89C1;&#x5230;&#x4E86;&#x66D9;&#x5149;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmTn22B8BNZPqYHCDRar7WzCMfgpdUSY3t4T6QJofDa1b6/image.png" alt=""></p>
-</blockquote>
-<p>&#x8017;&#x65F6;7.89&#x5C0F;&#x65F6;&#x540E;&#x603B;&#x7B97;&#x5B8C;&#x6210;&#x4E86;&#x3002;</p>
-<blockquote>
-<p>3281588ms database.cpp:339              reindex              ] Done reindexing, elapsed time: <code>28406.83747999999832246 sec</code></p>
-</blockquote>
-<p>&#x7B2C;&#x4E8C;&#x53F0;&#x673A;&#x5668;&#xFF08;&#x5907;&#x4EFD;&#x8282;&#x70B9;&#xFF09;&#x5FEB;&#x4E86;&#x597D;&#x591A;&#xFF0C;&#x53EA;&#x7528;&#x4E86;4.89&#x5C0F;&#x65F6;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmVYQ2VU7QbMj3RD56YcNsFWHWWbtsvJH2aNXcbv1eM45A/image.png" alt=""></p>
-</blockquote>
-<p>&#x770B;&#x6765;&#x66F4;&#x9AD8;&#x901F;&#x5EA6;&#x7684;CPU&#x8FD8;&#x662F;&#x6709;&#x6240;&#x5E2E;&#x52A9;&#x7684;&#xFF0C;&#x4E0B;&#x6B21;&#x6709;&#x7ECF;&#x9A8C;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD8;&#x662F;&#x5E0C;&#x671B;&#x8FD9;&#x6837;&#x4E0B;&#x6B21;&#x8D8A;&#x5C11;&#x8D8A;&#x597D;&#x3002;</p>
-<h1 id="&#x8865;&#x5145;&#xFF1A;"><a href="#&#x8865;&#x5145;&#xFF1A;" class="headerlink" title="&#x8865;&#x5145;&#xFF1A;"></a>&#x8865;&#x5145;&#xFF1A;</h1><p>&#x4EE4;&#x4EBA;&#x5C34;&#x5C2C;&#x7684;&#x662F;&#xFF0C;&#x8BB8;&#x591A;&#x7B2C;&#x4E09;&#x65B9;API&#x90FD;&#x6062;&#x590D;&#x4E86;&#xFF0C;&#x800C;steemit&#x5B98;&#x65B9;&#x7684;API(<code>api.steemit.com</code>)&#x4F9D;&#x7136;&#x662F;&#x574F;&#x6389;&#x7684;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x4F55;&#x65F6;&#x80FD;&#x591F;&#x4FEE;&#x590D;&#x3002;</p>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/bugbug-2019-09-03" target="_blank" rel="noopener">&#x2018;BUG&#x4E4B;&#x53C8;&#x89C1;BUG&#xFF0C;&#x4E3B;&#x5907;&#x8282;&#x70B9;&#x5747;&#x5DF2;&#x6062;&#x590D;&#x4E0A;&#x7EBF;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -720,7 +711,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/360/">360</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/361/">361</a></li>
             
         </ul>
     </nav>
