@@ -230,6 +230,60 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/r-programming-tutorial-how-to-compute-pi-using-monte-carlo-in-r-r-monte-carlo-pi/" class="image is-7by1">
+            <img class="thumbnail" src="https://helloacm.com/wp-content/uploads/2016/08/monte-carlo-pi-in-r.jpg" alt="R Programming Tutorial – How to Compute PI using Monte Carlo in R?  R语言入门之 – 如何通过Monte Carlo来计算 PI?">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-07-23T07:32:54.000Z">2017-07-23</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 973 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/r-programming-tutorial-how-to-compute-pi-using-monte-carlo-in-r-r-monte-carlo-pi/">R Programming Tutorial – How to Compute PI using Monte Carlo in R?  R语言入门之 – 如何通过Monte Carlo来计算 PI?</a>
+            
+        </h1>
+        <div class="content">
+            <br><p>&#xA0;This tutorial will continue to help you understand how powerful R is to handle the vectors (arrays).&#xA0;</p><br><p>&#xA0;We know that the math constant &#xA0;can be approximated by 4 times of the number of points inside a 1/4 circle divided by the total number of points. This is known as the <a href="https://helloacm.com/c-coding-exercise-parallel-for-monte-carlo-pi-calculation/" target="_blank" rel="noopener">Monte Carlo</a> computation, which is to create as many random sample points as possible and count the statistics. &#xA0;&#xA0;</p><br><pre><code>set.seed(0.234234)</code></pre><br><p>We can set the random seed by using set.seed() function (you can set to a constant number in order to reproduce the same &#x2018;random&#x2019; data sets), e.g.:&#xA0;</p><br><p>&#x4E0A;&#x6B21;&#x5F00;&#x59CB;&#x6B65;&#x5165;R&#x8BED;&#x8A00;&#x7684;&#x4E16;&#x754C;, &#x611F;&#x89C9;R&#x8FD8;&#x662F;&#x633A;&#x7B80;&#x6D01;&#x5F3A;&#x5927;&#x7684;. &#x5B66;&#x4E00;&#x95E8;&#x7A0B;&#x5E8F;&#x6700;&#x597D;&#x7684;&#x529E;&#x6CD5;&#x5C31;&#x662F;&#x6572;&#x4EE3;&#x7801;, &#x6572;&#x4F8B;&#x5B50;. &#x5728;&#x5DE5;&#x4F5C;&#x751F;&#x6D3B;&#x4E2D;&#x5982;&#x679C;&#x9047;&#x5230;&#x9700;&#x8981;&#x6572;&#x4EE3;&#x7801;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5F97;&#x95EE;&#x95EE;&#x81EA;&#x5DF1;&#x80FD;&#x5426;&#x62FF;R&#x8BED;&#x8A00;&#x6765;&#x89E3;&#x51B3;? &#x8FD9;&#x6837;&#x80FD;&#x66F4;&#x597D;&#x7684;&#x8FDB;&#x6B65;.&#xA0;</p><br><p>&#xA0;&#x6211;&#x4EEC;&#x90FD;&#x77E5;&#x9053;&#x5706;&#x5468;&#x7387;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x968F;&#x673A;&#x5728;&#x4E00;&#x4E2A;&#x6B63;&#x65B9;&#x5F62;(&#x5750;&#x6807;X/Y&#x5747;&#x4E3A;0&#x5230;1)&#x6492;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x70B9;. &#x7EDF;&#x8BA1;&#x4E00;&#x4E0B;&#x70B9;&#x5728;1/4&#x7684;&#x5706;&#x5185;(&#x534A;&#x5F84;&#x4E3A;1)&#x7684;&#x4E2A;&#x6570;&#x548C;&#x603B;&#x7684;&#x6492;&#x70B9;&#x4E2A;&#x6570; &#x8FD9;&#x4E2A;&#x503C;&#x5C31;&#x4F1A;&#x5F88;&#x63A5;&#x8FD1; pi/4 &#xA0;. &#x56E0;&#x4E3A;&#x5706;&#x7684;&#x9762;&#x79EF;&#x516C;&#x5F0F;&#x4E3A; &#xA0;&#xA0;&#xA0;pi <em> r </em> r</p><br><p>&#xA0;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x4E5F;&#x79F0;&#x4E4B;&#x4E3A;<a href="https://justyy.com/archives/1808" target="_blank" rel="noopener">&#x8499;&#x7279;&#x5361;&#x7F57;</a>&#x65B9;&#x6CD5;, &#x662F;&#x4E00;&#x79CD;&#x968F;&#x673A;, &#x7EDF;&#x8BA1;&#x7684;&#x65B9;&#x6CD5;.&#xA0;</p><br><p>&#xA0;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; runif &#x6765;&#x751F;&#x6210;&#x968F;&#x673A;&#x7684;&#x70B9;, &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x70B9;&#x7684;&#x4E2A;&#x6570;, &#xA0;</p><br><p>&#xA0;Now, we can generate two vectors given a length, for example:&#xA0;</p><br><pre><code>x=runif(100000)<br><br>y=runif(100000)</code></pre><br><p>&#xA0;&#x6BCF;&#x4E2A;&#x968F;&#x673A;&#x503C;&#x662F;&#x5728;0&#x5230;1&#x4E4B;&#x95F4;&#x7684;&#x6D6E;&#x70B9;&#x6570;(&#x4E5F;&#x53EF;&#x4EE5;&#x6307;&#x5B9A; min=0,max=1). &#x7136;&#x540E;&#x53EF;&#x4EE5;&#x628A;&#x957F;&#x5EA6;&#x653E;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x5411;&#x91CF;&#x91CC;: &#xA0;</p><br><p>&#xA0;These random numbers are float numbers between 0 and 1, which can be visualized as 100000 points. So we can now compute their distance to the (0, 0), or the radius of the circle.&#xA0;</p><br><pre><code>z=sqrt(x^2+y^2)</code></pre><br><p>&#xA0;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EA;&#x8981;&#x7EDF;&#x8BA1;&#x51FA;&#x8FD9;&#x4E2A;z&#x6570;&#x7EC4;&#x91CC;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;1&#x7684;&#x4E2A;&#x6570;&#x5373;&#x53EF;. R&#x8BED;&#x8A00;&#x91CC;&#x7684; which &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x4E86;&#x6570;&#x7EC4;&#x91CC;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x7684; &#x7D22;&#x5F15;&#x503C;, &#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7;: &#xA0;</p><br><p>&#xA0;Now, z is also length of 100000. We next need to count how many of the distances in z vector are smaller than 1 (falling inside the 1/4 circle). We can use <em>which</em> to return all indices of the array given a condition.&#xA0;</p><br><pre><code>length(which(z&lt;=1))</code></pre><br><p>&#xA0;&#x5373;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5728;&#x5706;&#x5185;&#x70B9;&#x7684;&#x4E2A;&#x6570;, &#x8BB0;&#x5F97;&#x4E58;&#x4E8E;4&#x518D;&#x9664;&#x4E8E;&#x6837;&#x672C;&#x7684;&#x4E2A;&#x6570; &#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5706;&#x5468;&#x7387;&#x7684;&#x8FD1;&#x4F3C;&#x503C; (&#x70B9;&#x6570;&#x8D8A;&#x591A; &#x7CBE;&#x5EA6;&#x8D8A;&#x63A5;&#x8FD1;, &#x4F46; &#xA0;&#x662F;&#x4E2A;&#x65E0;&#x7406;&#x6570;) &#xA0;</p><br><p>&#xA0;To count the points, we use the length function. And the PI is finally estimated in a straightforward expression. Remember, this is just the approximation and the accuracy does improve when the number of samples gets larger and larger.&#xA0;</p><br><pre><code>length(which(z&lt;=1))*4/length(z)<br><br>[1] 3.1454&#xA0;</code></pre><br><h3>&#x753B;&#x56FE; &#xA0;&#xA0;PLOT THE POINTS</h3><br><p>&#x628A;&#x5728;&#x5706;&#x5185;&#x7684;&#x70B9;&#x753B;&#x51FA;&#x6765; (&#x4E0D;&#x6307;&#x5B9A;&#x989C;&#x8272;&#x9ED8;&#x8BA4;&#x4E3A;&#x9ED1;&#x8272;) &#xA0;</p><br><p>&#xA0;We can plot the points (that fall inside the circle) using (default black color if color is not specified):&#xA0;</p><br><pre><code>plot(x[which(z&lt;=1)],y[which(z&lt;=1)],xlab=&#x201D;X&#x201D;,ylab=&#x201D;Y&#x201D;,main=&#x201D;Monte Carlo&#x201D;)</code></pre><br><p>&#xA0;&#x518D;&#x628A;&#x5269;&#x4E0B;&#x7684;&#x70B9;&#x7528;&#x84DD;&#x8272;&#x753B;&#x51FA;&#x6765; (&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x7528;&#x7684;&#x662F; points &#x65B9;&#x6CD5;&#x5728;&#x539F;&#x6765;&#x7684;&#x56FE;&#x4E0A;&#x753B;): &#xA0;</p><br><p>&#xA0;and points outside the circle (noted in blue color) can be added to the same plot using:&#xA0;</p><br><pre><code>points(x[which(z&gt;1)],y[which(z&gt;1)],col=&#x2019;blue&#x2019;)</code></pre><br><p>&#xA0;&#x6700;&#x540E;&#x9762;&#x5C31;&#x5F88;&#x76F4;&#x89C2;&#x7684;&#x80FD;&#x89E3;&#x91CA;&#x8FD9;&#x79CD;<a href="https://justyy.com/archives/1626" target="_blank" rel="noopener">&#x7B97;&#x6CD5;</a>. &#xA0;&#xA0;This finally gives the plot:&#xA0;</p><br><p><img src="https://helloacm.com/wp-content/uploads/2016/08/monte-carlo-pi-in-r.jpg" width="655" height="652"></p><br><p>&#xA0;You see? No for/while loops, just 4 statements in R!&#xA0;</p><br><p>&#xA0;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;<a href="https://justyy.com/archives/3415" target="_blank" rel="noopener">R&#x975E;&#x5E38;&#x5F3A;&#x5927;</a>, &#x6CA1;&#x7528;&#x5230; for/while (<a href="https://justyy.com/archives/911" target="_blank" rel="noopener">Python</a>, Matlab &#x4E5F;&#x53EF;&#x4EE5;). &#x4F20;&#x7EDF;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x57FA;&#x672C;&#x90FD;&#x662F;&#x9700;&#x8981;&#x7528;&#x5230;for&#x6216;&#x8005;while&#x7684;. &#x4ECE;&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#x662F;&#x4E0D;&#x662F;&#x80FD;&#x770B;&#x51FA;&#x7EDF;&#x8BA1;&#x5B66;&#x51FA;&#x751F;&#x7684;R&#x8BED;&#x8A00;&#x7684;&#x4E00;&#x4E9B;&#x7F16;&#x7A0B;&#x98CE;&#x683C;&#x5462;?&#xA0;</p><br><p><img src="https://steemitimages.com/0x0/https://steemitimages.com/0x0/https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" width="1200" height="628"></p><br><p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a>, which motivates me to create more quality posts.&#xA0;&#xA0;</p><br><p>&#x6839;&#x636E;&#x6211;&#x7684;&#x535A;&#x6587; &#xA0;<a href="https://helloacm.com/r-programming-tutorial-how-to-compute-pi-using-monte-carlo-in-r/" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;</a> &#x548C; <a href="https://justyy.com/archives/3415" target="_blank" rel="noopener">&#x8FD9;&#x7BC7;</a> &#x6574;&#x7406;&#x3002; &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;&#xA0;&#xA0;&#xA0;</p><br>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/r-programming-tutorial-how-to-compute-pi-using-monte-carlo-in-r-r-monte-carlo-pi" target="_blank" rel="noopener">R Programming Tutorial &#x2013; How to Compute PI using Monte Carlo in R?  R&#x8BED;&#x8A00;&#x5165;&#x95E8;&#x4E4B; &#x2013; &#x5982;&#x4F55;&#x901A;&#x8FC7;Monte Carlo&#x6765;&#x8BA1;&#x7B97; PI?</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/3agemx/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/07/happyukgo-bicycle.jpg" alt="Don&#39;t ride the bicycle in the opposite direction! 自行车一定不要逆着车道行驶">
         </a>
@@ -497,60 +551,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/2-seat-convertible-cars-are-mid-life-crisis-cars-2-mid-life-crisis-car/" class="image is-7by1">
-            <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2015/07/bmw-z4-2.jpg" alt="2-seat Convertible cars are Mid-life Crisis Cars 2座跑车 都是 Mid-life Crisis Car">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-07-19T20:56:03.000Z">2017-07-19</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 521 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/2-seat-convertible-cars-are-mid-life-crisis-cars-2-mid-life-crisis-car/">2-seat Convertible cars are Mid-life Crisis Cars 2座跑车 都是 Mid-life Crisis Car</a>
-            
-        </h1>
-        <div class="content">
-            <br><p>My colleague Chris told me that the BMW Z4 is a mid-life crisis car. He said, some men dump their wife in the mid age (40 maybe) and buy such 2-seats convertible car just to recapture the youth with young ladies (age of 20 maybe) sitting aside.</p><br><p>I don&#x2019;t know if this is true. But, this car (BMW-Z4) has a very low MPG and a very high insurance group. It is definitely not a practical family-use car.</p><br><p>Check the photos below (It is not my car&#x2026; it is my friend&#x2019;s car.. LOL)</p><br><p>&#x5468;&#x4E94;&#x548C;&#x540C;&#x4E8B;CHRIS&#x5728;&#x804A;&#x5929; &#x8BF4;&#x5230; BMW Z4 &#x8DD1;&#x8F66;&#xA0;</p><br><p>&#x4ED6;&#x8BF4; &#x8FD9;&#x8F66;&#x662F;&#x516C;&#x8BA4;&#x7684; Mid-life Crisis CAR &#x6211;&#x4E0D;&#x592A;&#x7406;&#x89E3; &#x4ED6;&#x89E3;&#x91CA;&#x8BF4;: &#x4E00;&#x4E9B;&#x7537;&#x4EBA;&#x5230;&#x4E86;&#x4E2D;&#x5E74;&#x5C31;&#x628A;&#x4ED6;&#x8001;&#x5A46; &#x7ED9; &#x4F11;&#x4E86; (dumped) &#x7136;&#x540E; &#x4E3A;&#x4E86; &#x91CD;&#x62FE;&#x9752;&#x6625; (Recapture the Youth) &#x4E70;&#x4E24;&#x95E8;&#x7684;&#x8DD1;&#x8F66; &#x5C31;&#x4E3A;&#x4E86;&#x65C1;&#x8FB9;&#x80FD;&#x5750;&#x4E0A;20&#x591A;&#x5C81;&#x7684;&#x5C0F;&#x59D1;&#x5A18;&#x8BC1;&#x660E;&#x81EA;&#x5DF1;&#x8FD8;&#x5E74;&#x8F7B;. <a href="https://justyy.com/archives/152" target="_blank" rel="noopener">&#x4EBA;&#x5230;&#x4E2D;&#x5E74;</a> &#x7537;&#x4EBA;&#x5973;&#x4EBA;&#x90FD;&#x4F1A;&#x6709;&#x66F4;&#x5E74;&#x671F;&#x75C7;&#x72B6;&#x7684;.&#xA0;</p><br><p>2&#x5EA7;&#x8DD1;&#x8F66; &#x4E00;&#x662F;&#x8D35; &#x7EF4;&#x4FEE;&#x8D39; &#x7A0D;&#x5FAE;&#x78B0;&#x4E86;&#x64E6;&#x4E86;&#x90A3;&#x4E2A;&#x5FC3;&#x75BC; &#x4E8C;&#x662F;&#x4FDD;&#x9669;&#x8D35; &#x4E09;&#x5219;&#x662F;&#x4E0D;&#x5B9E;&#x7528; &#x56DB;&#x5219;&#x662F;&#x8D39;&#x6CB9;(&#x4E0D;&#x73AF;&#x4FDD;) &#x4E0D;&#x8FC7;&#x50CF;&#x4E0A;&#x9762;&#x8BF4;&#x7684; &#x5F00;&#x8D77;&#x6765;&#x8D77;&#x7684;&#x5F88;&#x62C9;&#x8F70;. &#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2015/07/bmw-z4-2.jpg" width="980" height="735"></p><br><p>&#xA0;&#x5E95;&#x76D8;&#x592A;&#x4F4E;&#x4E86; &#x8FC7;&#x4E2A;&#x5C0F;BUMP&#x90FD;&#x5F97;&#x6162; &#x8981;&#x4E0D;&#x7136;&#x5C31;&#x78B0;&#x574F;&#x4E86;; &#x5F15;&#x64CE;&#x58F0;&#x633A;&#x5927; &#x4E00;&#x8E29;&#x6CB9;&#x95E8;&#x633A;&#x62C9;&#x8F70;; &#x52A0;&#x901F;&#x611F;&#x5F3A; 0 &#x2013; 60&#x516C;&#x7406;&#x6BCF;&#x5C0F;&#x65F6; &#x4E00;&#x8E29;&#x6CB9;&#x95E8;&#x5C31;&#x6709;&#x4E86;; &#x56DE;&#x5934;&#x7387;&#x9AD8;; &#x5C31;&#x5DEE;&#x4E00;&#x59B9;&#x5B50;&#x5750;&#x65C1;&#x8FB9;&#x4E86; &#x1F642;&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2015/07/bmw-z4.jpg" width="980" height="735"></p><br><p>&#xA0;&#x4E0D;&#x8FC7;&#x4E00;&#x5E74;&#x7684;&#x8DEF;&#x7A0E;(&#x6309;CO2&#x6392;&#x653E;&#x91CF;) &#x9700;&#x8981; 290&#x82F1;&#x9551; <a href="https://justyy.com/archives/1260" target="_blank" rel="noopener">&#x4FDD;&#x9669;</a>&#x4E5F;&#x5F88;&#x8D35;(Insurance Group) &#x8FD9;&#x8F66;&#x9002;&#x5408;&#x5C0F;&#x60C5;&#x4FA3;&#x5F00; &#x6211;&#x8FD9;&#x6709;&#x5BB6;&#x6709;&#x513F;&#x7684;&#x4EBA;&#x8FD8;&#x662F; &#x5F00;&#x4E2A;&#x5C0F;&#x8F7F;&#x8F66; &#x6216;&#x8005; SUV&#x597D;&#x4E86;. &#x6211;&#x90A3;<a href="https://justyy.com/archives/1210" target="_blank" rel="noopener">AUDI A6</a> &#x5C31;&#x4E0D;&#x9519; &#x91CC;&#x9762;&#x7A7A;&#x95F4;&#x5F88;&#x5927; &#x88C5;&#x5B69;&#x5B50;&#x5F88;&#x591F;.&#xA0;</p><br><p><img src="https://steemitimages.com/0x0/https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" width="1200" height="628"></p><br><p>Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a>, which motivates me to create more quality posts.&#xA0;&#xA0;</p><br><p>&#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;&#xA0;&#xA0;&#xA0;&#xA0;</p><br><p>&#x6839;&#x636E;&#x6211;&#x7684;&#x535A;&#x6587; &#xA0;<a href="https://justyy.com/archives/1708" target="_blank" rel="noopener">2&#x5EA7;&#x8DD1;&#x8F66; &#x90FD;&#x662F; Mid-life Crisis Car</a> &#x548C; <a href="https://justyy.com/archives/1809" target="_blank" rel="noopener">&#x7F8E;&#x68A6;&#x6210;&#x771F; bmw-z4 &#x5C0F;&#x8DD1;&#x8F66;</a> &#xA0;&#x91CD;&#x65B0;&#x6574;&#x7406;&#x3002;</p><br>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/2-seat-convertible-cars-are-mid-life-crisis-cars-2-mid-life-crisis-car" target="_blank" rel="noopener">2-seat Convertible cars are Mid-life Crisis Cars 2&#x5EA7;&#x8DD1;&#x8F66; &#x90FD;&#x662F; Mid-life Crisis Car</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -575,7 +575,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/286/">286</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/287/">287</a></li>
             
         </ul>
     </nav>

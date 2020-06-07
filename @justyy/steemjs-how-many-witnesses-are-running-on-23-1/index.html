@@ -151,15 +151,19 @@
         <a class="is-flex" href="#Filtering">
         <span class="has-mr-6">3</span>
         <span>Filtering</span>
-        </a><ul class="menu-list"><li>
+        </a><ul class="menu-list"><ul class="menu-list"><li>
         <a class="is-flex" href="#The-answer-is-46-witnesses-are-running-on-23-1-and-all-of-them-are-active">
-        <span class="has-mr-6">3.1</span>
+        <span class="has-mr-6">3.1.1</span>
         <span>The answer is 46 witnesses are running on 23.1 and all of them are active.</span>
-        </a></li><li>
-        <a class="is-flex" href="#Visit-me-at-https-steemyy-com">
+        </a></li></ul><li>
+        <a class="is-flex" href="#Reposted-to-Blog">
         <span class="has-mr-6">3.2</span>
+        <span>Reposted to Blog</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#Visit-me-at-https-steemyy-com">
+        <span class="has-mr-6">3.2.1</span>
         <span>Visit me at:  https://steemyy.com</span>
-        </a></li></ul></li></ul>
+        </a></li></ul></li></ul></li></ul>
         </div>
     </div>
 </div>
@@ -187,14 +191,14 @@
                 <time class="level-item has-text-grey" datetime="2020-06-06T18:52:03.000Z">2020-06-06</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/witness-category/">witness-category</a>
+                <a class="has-link-grey -link" href="/@justyy/categories/steemjs/">steemjs</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    3 minutes read (About 397 words)
+                    3 minutes read (About 429 words)
                 </span>
                 
                 
@@ -207,22 +211,22 @@
             
         </h1>
         <div class="content">
-            <p>How many witnesses are running on 23.1 and how many of them are active? It turns out answering this question does not require preprocess blocks on steem blockchain e.g. SteemSQL. Rather, we can get the answer by pure SteemJS.</p>
+            <p>How many <a href="https://steemyy.com/witness-ranking/" target="_blank" rel="noopener">witnesses</a> are running on 23.1 and how many of them are active? It turns out answering this question does not require preprocess blocks on steem blockchain e.g. SteemSQL. Rather, we can get the answer by pure SteemJS.</p>
 <h1 id="Get-All-Witnesses"><a href="#Get-All-Witnesses" class="headerlink" title="Get All Witnesses"></a>Get All Witnesses</h1><p>First, we can use the <code>steemp.api.getWitnessCount</code> to return the list of all registered witnesses - which is a lot more than we thought, currently more than 1400 witnesses but of course many of them have been disabled or never produced a block.</p>
 <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function getTotalWitnesses() {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">      steem.api.getWitnessCount(function(err, result) {</span><br><span class="line">          if (!err) {</span><br><span class="line">              resolve(result);</span><br><span class="line">          } else {</span><br><span class="line">              reject(err);</span><br><span class="line">          }</span><br><span class="line">      });</span><br><span class="line">    });</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <h1 id="Get-All-Witnesses-Accounts"><a href="#Get-All-Witnesses-Accounts" class="headerlink" title="Get All Witnesses Accounts"></a>Get All Witnesses Accounts</h1><p>Then, we can use <code>steem.api.getWitnesses</code> to retreive the witnesses information for multiple accounts at the same time. </p>
 <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">function getAllWitnessAccounts(total) {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">          steem.api.getWitnesses([...Array(total).keys()], function(err, result) {</span><br><span class="line">            if (!err) {</span><br><span class="line">                resolve(result);</span><br><span class="line">            } else {</span><br><span class="line">                reject(err);</span><br><span class="line">           }</span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}   </span><br><span class="line">`</span><br></pre></td></tr></tbody></table></figure>
 <h1 id="Filtering"><a href="#Filtering" class="headerlink" title="Filtering"></a>Filtering</h1><p>Then, we can chain those two functions to filter out those witnesses that are running 23.1 and are active.</p>
 <figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(async function () {</span><br><span class="line">    const totalWitnesses = await getTotalWitnesses();</span><br><span class="line">    let data = await getAllWitnessAccounts(totalWitnesses);</span><br><span class="line">    log(data.filter(x =&gt; {</span><br><span class="line">        return x.running_version === &quot;0.23.1&quot; &amp;&amp; (x.signing_key !== &quot;STM1111111111111111111111111111111114T1Anm&quot;);</span><br><span class="line">    }).length);</span><br><span class="line">})();</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="The-answer-is-46-witnesses-are-running-on-23-1-and-all-of-them-are-active"><a href="#The-answer-is-46-witnesses-are-running-on-23-1-and-all-of-them-are-active" class="headerlink" title="The answer is 46 witnesses are running on 23.1 and all of them are active."></a>The answer is 46 witnesses are running on 23.1 and all of them are active.</h3><p>Run the code using <a href="https://steemyy.com/steemjs/?s=function%20getTotalWitnesses()%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20steem.api.getWitnessCount(function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%0D%0A%0D%0Afunction%20getAllWitnessAccounts(total)%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20steem.api.getWitnesses(%5B...Array(total).keys()%5D%2C%20function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%20%20%20%0D%0A%0D%0A(async%20function%20()%20%7B%0D%0A%20%20%20%20const%20totalWitnesses%20%3D%20await%20getTotalWitnesses()%3B%0D%0A%20%20%20%20let%20data%20%3D%20await%20getAllWitnessAccounts(totalWitnesses)%3B%0D%0A%20%20%20%20log(data.filter(x%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20return%20x.running_version%20%3D%3D%3D%20%220.23.1%22%20%26%26%20(x.signing_key%20!%3D%3D%20%22STM1111111111111111111111111111111114T1Anm%22)%3B%0D%0A%20%20%20%20%7D).length)%3B%0D%0A%7D)()%3B%0D%0A" target="_blank" rel="noopener">SteemJs</a></p>
+<h3 id="The-answer-is-46-witnesses-are-running-on-23-1-and-all-of-them-are-active"><a href="#The-answer-is-46-witnesses-are-running-on-23-1-and-all-of-them-are-active" class="headerlink" title="The answer is 46 witnesses are running on 23.1 and all of them are active."></a>The answer is 46 witnesses are running on 23.1 and all of them are active.</h3><p>If we point the RPC node to HIVE chain, we get 107 witnesses running on 23.0.</p>
+<p>Run the code using <a href="https://steemyy.com/steemjs/?s=function%20getTotalWitnesses()%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20steem.api.getWitnessCount(function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%0D%0A%0D%0Afunction%20getAllWitnessAccounts(total)%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20steem.api.getWitnesses(%5B...Array(total).keys()%5D%2C%20function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%20%20%20%0D%0A%0D%0A(async%20function%20()%20%7B%0D%0A%20%20%20%20const%20totalWitnesses%20%3D%20await%20getTotalWitnesses()%3B%0D%0A%20%20%20%20let%20data%20%3D%20await%20getAllWitnessAccounts(totalWitnesses)%3B%0D%0A%20%20%20%20log(data.filter(x%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20return%20x.running_version%20%3D%3D%3D%20%220.23.1%22%20%26%26%20(x.signing_key%20!%3D%3D%20%22STM1111111111111111111111111111111114T1Anm%22)%3B%0D%0A%20%20%20%20%7D).length)%3B%0D%0A%7D)()%3B%0D%0A" target="_blank" rel="noopener">SteemJs</a></p>
 <p>Slightly changing the query, we know:<br>There are 24 Witnesses running at 0.23.0 but they are disabled.<br>And there are 9 witnesses running at 0.23.0 and they are &#x2018;active&#x2019; which may be those HIVE witnesses who didn&#x2019;t take offline they witnesses.</p>
 <p>BTW, i have added the dSteem into the SteemJs tool:  <a href="https://steemyy.com/steemjs/" target="_blank" rel="noopener">https://steemyy.com/steemjs/</a><br><img src="https://cdn.steemitimages.com/DQmZcg5iThqQD4uUQwFsxtRBGm8DPxFP5q7ziRca1XJ9hnM/image.png" alt="image.png"></p>
 <hr>
 
 <p>Every little helps! I hope this helps!</p>
 <p><strong>Steem On!~</strong></p>
-<hr>
-<p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="Reposted to Blog"></a><em>Reposted to <a href="https://helloacm.com/steemjs-how-many-witnesses-are-running-on-23-1/" target="_blank" rel="noopener">Blog</a></em></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
 <p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
 <p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
 <h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
@@ -234,7 +238,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/@justyy/tags/coding/">coding</a>, <a class="has-link-grey -link" href="/@justyy/tags/programming/">programming</a>, <a class="has-link-grey -link" href="/@justyy/tags/steem-witnesses/">steem-witnesses</a>, <a class="has-link-grey -link" href="/@justyy/tags/steemjs/">steemjs</a>, <a class="has-link-grey -link" href="/@justyy/tags/tutorial/">tutorial</a>, <a class="has-link-grey -link" href="/@justyy/tags/whalepower/">whalepower</a>, <a class="has-link-grey -link" href="/@justyy/tags/witness-category/">witness-category</a>
+                    <a class="has-link-grey -link" href="/@justyy/tags/coding/">coding</a>, <a class="has-link-grey -link" href="/@justyy/tags/programming/">programming</a>, <a class="has-link-grey -link" href="/@justyy/tags/steem-witnesses/">steem-witnesses</a>, <a class="has-link-grey -link" href="/@justyy/tags/steemjs/">steemjs</a>, <a class="has-link-grey -link" href="/@justyy/tags/tutorial/">tutorial</a>, <a class="has-link-grey -link" href="/@justyy/tags/whalepower/">whalepower</a>
                 </div>
             </div>
         </div>
@@ -255,6 +259,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/@justyy/are-top-20-witnesses-voting-each-other-introducing-witness-voting-factor/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Are Top 20 Witnesses Voting Each Other? Introducing Witness-voting Factor</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
