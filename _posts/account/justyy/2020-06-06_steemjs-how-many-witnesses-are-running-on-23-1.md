@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-06-06 18:52:03
 categories:
-- witness-category
+- steemjs
 tags:
-- witness-category
 - steemjs
 - whalepower
 - programming
@@ -28,7 +27,7 @@ widgets:
 ---
 
 
-How many witnesses are running on 23.1 and how many of them are active? It turns out answering this question does not require preprocess blocks on steem blockchain e.g. SteemSQL. Rather, we can get the answer by pure SteemJS.
+How many [witnesses](https://steemyy.com/witness-ranking/) are running on 23.1 and how many of them are active? It turns out answering this question does not require preprocess blocks on steem blockchain e.g. SteemSQL. Rather, we can get the answer by pure SteemJS.
 
 # Get All Witnesses
 First, we can use the `steemp.api.getWitnessCount` to return the list of all registered witnesses - which is a lot more than we thought, currently more than 1400 witnesses but of course many of them have been disabled or never produced a block.
@@ -78,6 +77,7 @@ Then, we can chain those two functions to filter out those witnesses that are ru
 ```
 
 ### The answer is 46 witnesses are running on 23.1 and all of them are active.
+If we point the RPC node to HIVE chain, we get 107 witnesses running on 23.0.
 
 Run the code using <a href="https://steemyy.com/steemjs/?s=function%20getTotalWitnesses()%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20steem.api.getWitnessCount(function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%0D%0A%0D%0Afunction%20getAllWitnessAccounts(total)%20%7B%0D%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20steem.api.getWitnesses(%5B...Array(total).keys()%5D%2C%20function(err%2C%20result)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0D%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%20%20%20%20%7D)%3B%0D%0A%20%20%20%20%7D)%3B%0D%0A%7D%20%20%20%0D%0A%0D%0A(async%20function%20()%20%7B%0D%0A%20%20%20%20const%20totalWitnesses%20%3D%20await%20getTotalWitnesses()%3B%0D%0A%20%20%20%20let%20data%20%3D%20await%20getAllWitnessAccounts(totalWitnesses)%3B%0D%0A%20%20%20%20log(data.filter(x%20%3D%3E%20%7B%0D%0A%20%20%20%20%20%20%20%20return%20x.running_version%20%3D%3D%3D%20%220.23.1%22%20%26%26%20(x.signing_key%20!%3D%3D%20%22STM1111111111111111111111111111111114T1Anm%22)%3B%0D%0A%20%20%20%20%7D).length)%3B%0D%0A%7D)()%3B%0D%0A">SteemJs</a>
 
@@ -94,7 +94,7 @@ Every little helps! I hope this helps!
 
 
 **Steem On!~**
-
+*Reposted to [Blog](https://helloacm.com/steemjs-how-many-witnesses-are-running-on-23-1/)*
 ------------------
 
 If you like my work, please consider voting for me, thanks!
