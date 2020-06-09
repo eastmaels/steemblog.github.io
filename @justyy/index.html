@@ -230,6 +230,88 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/how-to-set-up-your-on-call-duty-when-your-witness-is-missing-a-block/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmeUtmtxvsoPnZiqntQTc8HLa4nGfGs1viShbKWwNGzZ3W/image.png" alt="How to Set Up Your On-Call Duty when Your Witness is Missing a Block?">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-06-09T18:23:24.000Z">2020-06-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/witness-tool/">witness-tool</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 640 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/how-to-set-up-your-on-call-duty-when-your-witness-is-missing-a-block/">How to Set Up Your On-Call Duty when Your Witness is Missing a Block?</a>
+            
+        </h1>
+        <div class="content">
+            <p>What is On-Call? You know many Software Engineers at Big Companies need to do On-Call Duties to fix service related issues when they arise.</p>
+<p>Yesterday, I presented a utility to switch your node in case of missing too many blocks. But wouldn&#x2019;t it be a lot nicer if we can be notified (be paged) when this happens?</p>
+<p>Please be warned that if you like less intrusive notification, you should go for SMS (which should be easy to set up using the method below) or even just email.</p>
+<p>Post: <a href="https://steemit.com/witness-category/@justyy/open-source-auto-switch-your-witness-node-in-the-event-of-failure" target="_blank" rel="noopener">Open Source: Auto Switch Your Witness Node In the Event of Failure</a><br>Open Source Utility: <a href="https://github.com/DoctorLai/SteemWitnessAutoSwitch" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemWitnessAutoSwitch</a></p>
+<p>This is how we can set up the on-call when missing blocks.</p>
+<h1 id="IFTTT"><a href="#IFTTT" class="headerlink" title="IFTTT"></a>IFTTT</h1><p>You may have heard of IFTTT which stands for If This Then That. This is a powerful service that allows you to connect two or more services. </p>
+<p>First, you would need to register a IFTTT account, then you would need to connect the &#x201C;Webhooks&#x201D; service which allows you to send a message to the hook. Then, the &#x201C;That&#x201D; part would be to connect the &#x201C;Voip Call&#x201D; part which will call you - alternatively, you could choose other notification methods such as SMS or Emails, or even make a tweet if you like!</p>
+<p><img src="https://cdn.steemitimages.com/DQmeUtmtxvsoPnZiqntQTc8HLa4nGfGs1viShbKWwNGzZ3W/image.png" alt="image.png"></p>
+<p><img src="https://cdn.steemitimages.com/DQmZsYpkYR9WAzcd6A9zyW2xnJxi7YCX6TN3VLMTGNRyEmy/image.png" alt="image.png"></p>
+<p><img src="https://cdn.steemitimages.com/DQmaDD5ZTDd8DcwxDSbr1qbPFJs1HcbhpS5w4ivjgCEYvmZ/image.png" alt="image.png"></p>
+<p><img src="https://cdn.steemitimages.com/DQmXDSwJGimEdkCQi76szNbscLgSW5idAyv9zwHEx9p7XGY/image.png" alt="image.png"></p>
+<p>This is how the final recipe looks like:</p>
+<p><img src="https://cdn.steemitimages.com/DQmbPn5A7HJZzia8QPNezNNH1AswZTzRk3Wt8znbWy89ixc/image.png" alt="image.png"></p>
+<p>Note that we can pass a <em>value1</em> parameter to report the current missing blocks.<br>Here is how you send a notification message to the webhook aka &#x201C;This&#x201D;</p>
+<blockquote>
+<p>curl -X POST -H &#x201C;Content-Type: application/json&#x201D;  -d &#x2018;{&#x201C;value1&#x201D;:&#x201D;123&#x201D;}&#x2019;  <a href="https://maker.ifttt.com/trigger/{steem-witness}/with/key/YourIFTTTKeyHere" target="_blank" rel="noopener">https://maker.ifttt.com/trigger/{steem-witness}/with/key/YourIFTTTKeyHere</a></p>
+</blockquote>
+<p>You will see this message on success.<br><strong>Congratulations! You&#x2019;ve fired the steem-witness event</strong></p>
+<p>Then, on the github code <a href="https://github.com/DoctorLai/SteemWitnessAutoSwitch/blob/master/monitor-witness.js" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemWitnessAutoSwitch/blob/master/monitor-witness.js</a>  , you can modify a little bit:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const execSync = require(&apos;child_process&apos;).execSync;</span><br><span class="line"></span><br><span class="line">function reportMissing(missed) {</span><br><span class="line">    log(&quot;Report missing: &quot; + missed);</span><br><span class="line">    // TODO: You can send a email/SMS here</span><br><span class="line">   execSync(&apos;curl -X POST -H &quot;Content-Type: application/json&quot; -d \&apos;{&quot;value1&quot;:&quot;&apos; + missed + &apos;&quot;}\&apos; </span><br><span class="line"> https://maker.ifttt.com/trigger/{steem-witness}/with/key/YourIFTTTKeyHere&apos;);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>That is it, everytime there is a missing block, you will get a call who will tell you total missed blocks aka the parameter <em>value1</em></p>
+<p><img src="https://cdn.steemitimages.com/DQmVmc4wjiJ1Hv9d1uyFmxaZe5piMH7dSRtp3GaZqv7jYqY/image.png" alt="image.png"></p>
+<p><img src="https://cdn.steemitimages.com/DQmWYGifPn4VcSmPGhWeeaS3weokmJssKu8C3eUPDkrhPno/image.png" alt="image.png"></p>
+<p><img src="https://cdn.steemitimages.com/DQmS85JM5C35dVhazMqDYFnEZ9LHfgXXgo79GSqv4cid97n/image.png" alt="image.png"></p>
+<hr>
+
+<p>Every little helps! I hope this helps!</p>
+<h2 id="Steem-On"><a href="#Steem-On" class="headerlink" title="Steem On!~"></a><strong>Steem On!~</strong></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/how-to-set-up-your-on-call-duty-when-your-witness-is-missing-a-block" target="_blank" rel="noopener">&#x2018;How to Set Up Your On-Call Duty when Your Witness is Missing a Block?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/open-source-auto-switch-your-witness-node-in-the-event-of-failure/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmd38mcjMAznHsoSMjDCsnRJmVJALuAtbWRHE1V21tGNJW/image.png" alt="Open Source: Auto Switch Your Witness Node In the Event of Failure">
         </a>
@@ -560,100 +642,6 @@
 <p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
 <h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/illustrating-the-blockchain-via-steemjs-blocks-are-chained" target="_blank" rel="noopener">&#x2018;Illustrating the Blockchain via SteemJs  - Blocks are Chained&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/three-ways-of-running-a-continuous-nodejs-application-on-your-server/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmSTwjoWBZjLzuJ5HeTVvKCddGuyaiyqo2w4EzGshBpLFb/image.png" alt="Three ways of Running a continuous NodeJS Application on Your Server">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-06-03T17:52:30.000Z">2020-06-03</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/whalepower/">whalepower</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 616 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/three-ways-of-running-a-continuous-nodejs-application-on-your-server/">Three ways of Running a continuous NodeJS Application on Your Server</a>
-            
-        </h1>
-        <div class="content">
-            <p>Let&#x2019;s say, I have an application that is written in NodeJs, that process the latest blocks of the <a href="https://helloacm.com/recursive-algorithm-to-get-proxy-votes-on-steem-blockchain/" target="_blank" rel="noopener">steem blockchain</a> and write data into a database. I have three ways of running it on my server.</p>
-<h1 id="Using-Screen"><a href="#Using-Screen" class="headerlink" title="Using Screen"></a>Using Screen</h1><p>As you probably know, when you are disconnected from a SSH session, the programs that are launched in the session will be terminated. There is any easy way to fix this. You can start a session by using command <code>screen -S name</code> before you run any long-running program e.g. system updates or a program that needs to run forever.</p>
-<p>In case the <a href="https://helloacm.com/a-nice-alternative-for-putty-termius-a-very-nice-portable-ssh-connection-tool/" target="_blank" rel="noopener">SSH</a> is disconnected, the programs will be still running. And you can use command <code>screen -r name</code> to re-connect to the session. You can <code>screen -ls</code> to list the current sessions, and <code>screen -d name</code> to detach a session.</p>
-<p>The advantage of using this method is:</p>
-<ol>
-<li>you can easily monitor the application (by seeing its output)</li>
-<li>you can easily terminate or restart the application e.g. Ctrl + C</li>
-<li>the application runs continuously, meaning that you can keep up to the latest blocks and provide a less than 3 second sync time.</li>
-</ol>
-<p>Some disadvantages:</p>
-<ol>
-<li>If the application exists abnormaly, it is not restarted automatically - thus you would need to add the error-handling in your code.</li>
-<li>Long-running code may tend to have more problems: e.g. memory-leaks, crash at some point.</li>
-</ol>
-<h1 id="Putting-it-in-Crontab"><a href="#Putting-it-in-Crontab" class="headerlink" title="Putting it in Crontab"></a>Putting it in Crontab</h1><p>Another way is to run your program in <a href="https://helloacm.com/crontab-generator-secure-fast-handy-tool-to-generate-the-crontab-lines/" target="_blank" rel="noopener">crontab</a>. However, the finest granularity is every minute i.e. you can specify your application to run every minute.</p>
-<p>Advantages are:</p>
-<ol>
-<li>You probably don&#x2019;t need to do error-handling. In case it fails, it fails. You can just wait for next minute (restart automatically).</li>
-<li>Not to worry about memory leaks. It is less likely to go wrong due to memory issue.</li>
-</ol>
-<p>Disadvantages:</p>
-<ol>
-<li>Lose the ability to sync real-time with the blocks</li>
-<li>Not easy to monitor the output (you can redirect the errors to files though)</li>
-</ol>
-<h1 id="Using-a-Process-Manager"><a href="#Using-a-Process-Manager" class="headerlink" title="Using a Process Manager"></a>Using a Process Manager</h1><p>You can combine the both advantages using a Process Manager. For example, if it is a NodeJs application, you can use <code>pm2</code> utility.</p>
-<p>Advantages:</p>
-<ol>
-<li>automatically restart your application in case it crashes or some conditions are met e.g. memory constraints, age.</li>
-<li>easy to monitor the output of each application e.g. you can <code>pm2 show app</code></li>
-<li>easy to terminate <code>pm2 delete app</code> or restart <code>pm2 restart app</code></li>
-<li>the application runs continuously</li>
-<li>error-handling is optional - but considered a good practise not to let <code>pm2</code> restart your app.</li>
-</ol>
-<p><img src="https://cdn.steemitimages.com/DQmSTwjoWBZjLzuJ5HeTVvKCddGuyaiyqo2w4EzGshBpLFb/image.png" alt="image.png"></p>
-<hr>
-
-<p>Every little helps! I hope this helps!</p>
-<p><strong>Steem On!~</strong></p>
-<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="Reposted to Blog"></a><em>Reposted to <a href="https://helloacm.com/three-ways-of-running-a-continuous-nodejs-application-on-your-server/" target="_blank" rel="noopener">Blog</a></em></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
-<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
-<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
-<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/three-ways-of-running-a-continuous-nodejs-application-on-your-server" target="_blank" rel="noopener">&#x2018;Three ways of Running a continuous NodeJS Application on Your Server&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
