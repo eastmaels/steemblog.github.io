@@ -30,7 +30,7 @@ widgets:
 
 What is On-Call? You know many Software Engineers at Big Companies need to do On-Call Duties to fix service related issues when they arise.
 
-Yesterday, I presented a utility to switch your node in case of missing too many blocks. But wouldn't it be a lot nicer if we can be notified (be paged) when this happens?
+Yesterday, I presented a utility to switch your [node](https://helloacm.com/steem-witness-replay-time-takes-longer-and-longer/) in case of missing too many blocks. But wouldn't it be a lot nicer if we can be notified (be paged) when this happens?
 
 Please be warned that if you like less intrusive notification, you should go for SMS (which should be easy to set up using the method below) or even just email.
 
@@ -40,7 +40,7 @@ Open Source Utility: https://github.com/DoctorLai/SteemWitnessAutoSwitch
 This is how we can set up the on-call when missing blocks.
 
 # IFTTT
-You may have heard of IFTTT which stands for If This Then That. This is a powerful service that allows you to connect two or more services. 
+You may have heard of [IFTTT](https://helloacm.com/adding-ifttt-to-steemit/) which stands for If This Then That. This is a powerful service that allows you to connect two or more services. 
 
 First, you would need to register a IFTTT account, then you would need to connect the "Webhooks" service which allows you to send a message to the hook. Then, the "That" part would be to connect the "Voip Call" part which will call you - alternatively, you could choose other notification methods such as SMS or Emails, or even make a tweet if you like!
 
@@ -97,6 +97,7 @@ Every little helps! I hope this helps!
 
 
 **Steem On!~**
+*Repost to [Blog](https://helloacm.com/how-to-set-up-your-on-call-duty-when-your-steem-witness-is-missing-a-block/)*
 ------------------
 
 If you like my work, please consider voting for me, thanks!
