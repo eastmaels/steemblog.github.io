@@ -230,6 +230,178 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/4qhpev-python/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmQgbGt8yjCTtZ3fieB8zZ2mkzaDo24V1XdFL8XcUnS8Be/image.png" alt="有多无聊：弹性碰撞与Python代码">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-16T01:19:30.000Z">2019-10-16</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 minutes read (About 1400 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/4qhpev-python/">有多无聊：弹性碰撞与Python代码</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x535A;&#x4E3B;&#x8BB2;&#x4E86;&#x4E00;&#x4EF6;&#x5F88;&#x6709;&#x610F;&#x601D;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5927;&#x610F;&#x662F;&#x4E24;&#x4E2A;&#x65B9;&#x5757;&#x7269;&#x4F53;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x4E0A;&#x5F39;&#x6027;&#x78B0;&#x649E;&#x540E;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x5757;&#x518D;&#x649E;&#x5230;&#x5899;&#x58C1;&#x53CD;&#x5F39;&#xFF0C;&#x6700;&#x7EC8;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x4E00;&#x5B9A;&#x6761;&#x4EF6;&#x4E0B;&#x53D1;&#x751F;&#x5F39;&#x6027;&#x78B0;&#x649E;&#x7684;&#x6B21;&#x6570;&#x4F1A;&#x548C;PI&#x8FD9;&#x4E2A;&#x5E38;&#x91CF;&#x6781;&#x5EA6;&#x76F8;&#x5173;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmQgbGt8yjCTtZ3fieB8zZ2mkzaDo24V1XdFL8XcUnS8Be/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x649E;&#x51FB;&#x6B21;&#x6570;&#x4E0E;&#x5706;&#x5468;&#x7387;"><a href="#&#x649E;&#x51FB;&#x6B21;&#x6570;&#x4E0E;&#x5706;&#x5468;&#x7387;" class="headerlink" title="&#x649E;&#x51FB;&#x6B21;&#x6570;&#x4E0E;&#x5706;&#x5468;&#x7387;"></a>&#x649E;&#x51FB;&#x6B21;&#x6570;&#x4E0E;&#x5706;&#x5468;&#x7387;</h1><p>&#x4E3A;&#x4E86;&#x8BF4;&#x660E;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x5927;&#x81F4;&#x753B;&#x4E86;&#x4E2A;&#x56FE;&#xFF08;&#x539F;&#x8C05;&#x6211;&#x7684;&#x7ED8;&#x56FE;&#x6280;&#x80FD;&#xFF09;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmb6je2M8UVJbaHKVhHYXBNaZgaUMahAKre6wPqjrTL32q/image.png" alt=""></p>
+</blockquote>
+<p>&#x5728;&#x4E0A;&#x56FE;&#x4E2D;&#xFF0C;&#x6709;&#x7EA2;&#x8272;&#x65B9;&#x5757;A(1)&#x548C;&#x7EFF;&#x8272;&#x65B9;&#x5757;B(2)&#xFF0C;A&#x4EE5;&#x901F;&#x5EA6;v1&#x524D;&#x8FDB;&#xFF0C;B&#x9759;&#x6B62;&#x4E0D;&#x52A8;(&#x901F;&#x5EA6;v2=0)&#xFF0C;A&#x649E;&#x51FB;&#x5230;B&#xFF0C;B&#x88AB;&#x649E;&#x540E;&#x83B7;&#x53D6;&#x4E00;&#x5B9A;&#x7684;&#x901F;&#x5EA6;vb&#xFF0C;&#x65B9;&#x5757;B&#x649E;&#x51FB;&#x5899;&#x4F53;&#xFF08;&#x9EC4;&#x5B9E;&#x7EBF;&#xFF09;&#x540E;&#x8FD4;&#x56DE;&#xFF0C;&#x53C8;&#x649E;&#x51FB;A&#x3002;</p>
+<p>&#x5982;&#x679C;A&#x3001;B&#x8D28;&#x91CF;&#x76F8;&#x7B49;&#xFF0C;&#x90A3;&#x4E48;&#x649E;&#x51FB;&#x4F1A;&#x53D1;&#x751F;3&#x6B21;&#xFF0C;&#x5982;&#x679C;A&#x7684;&#x8D28;&#x91CF;&#x5927;&#x4E8E;B&#xFF0C;&#x649E;&#x51FB;&#x4F1A;&#x53D1;&#x751F;&#x5F88;&#x591A;&#x6B21;&#x3002;</p>
+<p>&#x800C;&#x8FD9;&#x4E2A;&#x535A;&#x4E3B;&#x603B;&#x7ED3;&#x7684;&#x89C4;&#x5F8B;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>&#x5982;&#x679C;A&#x3001;B&#x8D28;&#x91CF;&#x76F8;&#x7B49;&#xFF0C;&#x649E;&#x51FB;3&#x6B21;<br>&#x5982;&#x679C;A&#x7684;&#x8D28;&#x91CF;&#x662F;B&#x7684;100&#x500D;&#xFF0C;&#x90A3;&#x4E48;&#x649E;&#x51FB;31&#x6B21;<br>&#x5982;&#x679C;A&#x7684;&#x8D28;&#x91CF;&#x662F;B&#x7684;10000&#x500D;&#xFF0C;&#x90A3;&#x4E48;&#x649E;&#x51FB;314&#x6B21;<br>&#x5982;&#x679C;A&#x7684;&#x8D28;&#x91CF;&#x662F;B&#x7684;1000000&#x500D;&#xFF0C;&#x90A3;&#x4E48;&#x649E;&#x51FB;3141&#x6B21;<br>&#x5982;&#x679C;A&#x7684;&#x8D28;&#x91CF;&#x662F;B&#x7684;100000000&#x500D;&#xFF0C;&#x90A3;&#x4E48;&#x649E;&#x51FB;31415&#x6B21;</p>
+</blockquote>
+<p>&#x89C2;&#x5BDF;&#x649E;&#x51FB;&#x6B21;&#x6570;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x649E;&#x51FB;&#x7684;&#x6B21;&#x6570;&#x7ADF;&#x7136;&#x7B26;&#x5408;&#x5706;&#x5468;&#x7387;(PI)&#x7684;&#x89C4;&#x5F8B;&#x3002;</p>
+<h1 id="&#x5F39;&#x6027;&#x78B0;&#x649E;"><a href="#&#x5F39;&#x6027;&#x78B0;&#x649E;" class="headerlink" title="&#x5F39;&#x6027;&#x78B0;&#x649E;"></a>&#x5F39;&#x6027;&#x78B0;&#x649E;</h1><p>&#x5176;&#x5B9E;&#x5982;&#x679C;&#x662F;&#x771F;&#x5B9E;&#x5730;&#x5B9E;&#x9A8C;&#xFF0C;&#x5F88;&#x96BE;&#x91CD;&#x73B0;&#x4E0A;&#x8FF0;&#x89C4;&#x5F8B;&#xFF0C;&#x4E3A;&#x4F55;&#xFF1F;&#x56E0;&#x4E3A;&#x65B9;&#x5757;&#x548C;&#x5E73;&#x9762;&#x4E4B;&#x95F4;&#x5B58;&#x5728;&#x6469;&#x64E6;&#xFF0C;&#x65B9;&#x5757;&#x5728;&#x7A7A;&#x6C14;&#x4E2D;&#x4E5F;&#x4F1A;&#x6709;&#x7A7A;&#x6C14;&#x963B;&#x529B;&#xFF0C;&#x65B9;&#x5757;&#x548C;&#x65B9;&#x5757;&#x649E;&#x51FB;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x751F;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x5F62;&#x53D8;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x53EA;&#x6709;&#x5728;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x624D;&#x53EF;&#x80FD;&#x91CD;&#x73B0;&#x4E0A;&#x8FF0;&#x89C4;&#x5F8B;&#x3002;&#x90A3;&#x4E48;&#x4EC0;&#x4E48;&#x662F;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x5462;&#xFF1F;&#x5C31;&#x662F;&#x4E0D;&#x5B58;&#x5728;&#x6469;&#x64E6;&#x3001;&#x4E0D;&#x5B58;&#x5728;&#x7A7A;&#x6C14;&#x963B;&#x529B;&#x3001;&#x65B9;&#x5757;&#x649E;&#x51FB;&#x65F6;&#x65E0;&#x5F62;&#x53D8;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x767E;&#x5EA6;&#x767E;&#x79D1;&#x91CC;&#x5173;&#x4E8E;<a href="https://baike.baidu.com/item/&#x5F39;&#x6027;&#x78B0;&#x649E;/2321173" target="_blank" rel="noopener">&#x5F39;&#x6027;&#x78B0;&#x649E;</a>&#x5B9A;&#x4E49;&#x7684;&#x66F4;&#x79D1;&#x5B66;&#x4E00;&#x4E9B;&#xFF0C;&#x76F4;&#x63A5;&#x642C;&#x6765;&#xFF1A;</p>
+<blockquote>
+<p>&#x5728;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x7269;&#x4F53;&#x78B0;&#x649E;&#x540E;&#xFF0C;&#x5F62;&#x53D8;&#x80FD;&#x591F;&#x6062;&#x590D;&#xFF0C;&#x4E0D;&#x53D1;&#x70ED;&#x3001;&#x53D1;&#x58F0;&#xFF0C;&#x6CA1;&#x6709;&#x52A8;&#x80FD;&#x635F;&#x5931;&#xFF0C;&#x8FD9;&#x79CD;&#x78B0;&#x649E;&#x79F0;&#x4E3A;&#x5F39;&#x6027;&#x78B0;&#x649E;&#xFF08;elastic collision&#xFF09;&#xFF0C;&#x53C8;&#x79F0;&#x5B8C;&#x5168;&#x5F39;&#x6027;&#x78B0;&#x649E;&#xFF08;Perfect Elastic Collision&#xFF09;&#x3002;</p>
+</blockquote>
+<p>&#x5F39;&#x6027;&#x78B0;&#x649E;&#x7B26;&#x5408;&#x4E24;&#x5927;&#x7269;&#x7406;&#x5B9A;&#x5F8B;&#xFF1A;<strong><em>&#x52A8;&#x91CF;&#x5B88;&#x6052;&#x5B9A;&#x5F8B;</em></strong> &#x4EE5;&#x53CA;<strong><em>&#x80FD;&#x91CF;&#x5B88;&#x6052;&#x5B9A;&#x5F8B;</em></strong></p>
+<p>&#x800C;&#x6839;&#x636E;&#x6211;&#x4EEC;&#x63CF;&#x8FF0;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4E0D;&#x96BE;&#x63A8;&#x5BFC;&#x51FA;&#xFF0C;&#x5F39;&#x6027;&#x78B0;&#x649E;&#x540E;&#x7269;&#x4F53;&#x7684;&#x901F;&#x5EA6;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmV6b8z2sjYd59uZ5frzbYrxEdq1M99N8aRm7ED3xre73E/image.png" alt=""></p>
+</blockquote>
+<p>&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x76EE;&#x7684;&#x4E0D;&#x662F;&#x63A8;&#x5BFC;&#x516C;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5;&#x76F4;&#x63A5;&#x62FF;&#x6765;&#x7528;&#x5C31;&#x597D;&#x4E86;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x4F8B;&#x5B50;&#x4E2D;&#x78B0;&#x649E;&#x662F;&#x53D1;&#x751F;&#x5728;&#x76F4;&#x7EBF;&#x4E0A;&#x7684;&#x6838;&#x5FC3;&#x78B0;&#x649E;&#xFF0C;&#x6240;&#x4EE5;&#x516C;&#x5F0F;&#x4E2D;&#x7684;v&#xFF0C;&#x5C31;&#x662F;&#x7269;&#x4F53;&#x7684;&#x521D;&#x901F;&#x5EA6;&#x5566;&#x3002;</p>
+<h1 id="Python&#x4EE3;&#x7801;"><a href="#Python&#x4EE3;&#x7801;" class="headerlink" title="Python&#x4EE3;&#x7801;"></a>Python&#x4EE3;&#x7801;</h1><p>&#x8BF4;&#x4E86;&#x8FD9;&#x4E48;&#x591A;&#xFF0C;&#x6211;&#x662F;&#x8981;&#x8BC1;&#x660E;&#x5F39;&#x6027;&#x78B0;&#x649E;&#x548C;&#x5706;&#x5468;&#x7387;&#x7684;&#x5173;&#x7CFB;&#x5417;&#xFF1F;&#x975E;&#x4E5F;&#xFF01;&#x6211;&#x53EA;&#x662F;&#x597D;&#x5947;&#x78B0;&#x649E;&#x771F;&#x7684;&#x7B26;&#x5408;&#x8FD9;&#x4E2A;&#x89C4;&#x5F8B;&#x5417;&#xFF1F;</p>
+<p>&#x4E4B;&#x524D;&#x8BF4;&#x4E86;&#xFF0C;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5B9E;&#x9A8C;&#x624D;&#x80FD;&#x91CD;&#x73B0;&#x51FA;&#x54CD;&#x5E94;&#x7684;&#x89C4;&#x5F8B;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x9645;&#x4E0A;&#x6CA1;&#x6CD5;&#x5F04;&#x51FA;&#x7406;&#x60F3;&#x7684;&#x5B9E;&#x9A8C;&#x6761;&#x4EF6;&#x5440;&#xFF1F;&#x4E0D;&#x8FC7;&#x6CA1;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x7A0B;&#x5E8F;&#x6A21;&#x62DF;&#x554A;&#xFF01;</p>
+<p>&#x4E3A;&#x4E86;&#x8BA1;&#x7B97;&#x78B0;&#x649E;&#x6B21;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x9700;&#x8981;&#x8BA1;&#x7B97;&#x78B0;&#x649E;&#x524D;&#x540E;&#x7684;&#x901F;&#x5EA6;&#xFF08;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x7B80;&#x5355;&#x5730;&#x5957;&#x7528;&#x516C;&#x5F0F;&#xFF09;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def collision(m1, v1, m2, v2):</span><br><span class="line">        va = (v1*(m1 - m2) + 2*m2*v2)/(m1 + m2)</span><br><span class="line">        vb = (v2*(m2 - m1) + 2*m1*v1)/(m2 + m1)</span><br><span class="line">        return va, vb</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x662F;&#x8BA1;&#x7B97;&#x78B0;&#x649E;&#x6B21;&#x6570;&#xFF0C;&#x8FD9;&#x53EF;&#x96BE;&#x4F4F;&#x4E86;&#x6211;&#xFF0C;&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x78B0;&#x649E;&#x6B21;&#x6570;&#x5462;&#xFF1F;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x627E;&#x51FA;<strong><em>&#x7B26;&#x5408;&#x4EC0;&#x4E48;&#x6761;&#x4EF6;&#x4F1A;&#x9000;&#x51FA;&#x78B0;&#x649E;</em></strong>&#xFF1F;</p>
+<p>&#x4ECE;&#x65B9;&#x5757;&#x56FE;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x96BE;&#x5206;&#x6790;&#x51FA;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x65B9;&#x5757;A&#x5411;&#x5DE6;&#x4FA7;&#x884C;&#x8D70;&#xFF0C;&#x4E14;&#x65B9;&#x5757;B&#x8FFD;&#x4E0D;&#x4E0A;&#x5B83;&#x65F6;&#xFF0C;&#x78B0;&#x649E;&#x624D;&#x4F1A;&#x7ED3;&#x675F;&#xFF0C;&#x5047;&#x8BBE;&#x5411;&#x53F3;&#x8FD0;&#x52A8;&#x4E3A;&#x6B63;&#xFF0C;&#x90A3;&#x4E48;&#x4EA6;&#x5373;&#x7B26;&#x5408;&#x5982;&#x4E0B;&#x6761;&#x4EF6;&#xFF1A;</p>
+<blockquote>
+<p><strong><em><code>v1 &lt; 0 and v2&lt;=0 and abs(v1) &gt;= abs(v2)</code></em></strong></p>
+</blockquote>
+<p>&#x8FD8;&#x6709;&#x5C31;&#x662F;&#x65B9;&#x5757;&#x548C;&#x5899;&#x58C1;&#x649E;&#x51FB;&#xFF0C;&#x5899;&#x58C1;&#x7684;&#x8D28;&#x91CF;&#xFF0C;&#x90A3;&#x4E48;&#x4EE3;&#x5165;&#x901F;&#x5EA6;&#x516C;&#x5F0F;&#x4E2D;&#xFF0C;&#x4E0D;&#x96BE;&#x7B97;&#x51FA;&#xFF1A;</p>
+<blockquote>
+<p><strong><em>`v2 = -1</em>v2`*</strong></p>
+</blockquote>
+<p>&#x6839;&#x636E;&#x4E0A;&#x8FF0;&#x5206;&#x6790;&#x6211;&#x5199;&#x51FA;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6765;&#x8BA1;&#x7B97;&#x6B21;&#x6570;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">def func_times(m1, v1, m2, v2):</span><br><span class="line">        times = 0</span><br><span class="line">        while(True):</span><br><span class="line">                if(v1 &lt; 0 and v2&lt;=0 and abs(v1) &gt;= abs(v2)):</span><br><span class="line">                        break</span><br><span class="line">                v1, v2 = collision(m1, v1, m2, v2)</span><br><span class="line">                times = times +1</span><br><span class="line"></span><br><span class="line">                if(v1 &lt; 0 and v2&lt;=0 and abs(v1) &gt;= abs(v2)):</span><br><span class="line">                        break</span><br><span class="line"></span><br><span class="line">                v2 = -1*v2</span><br><span class="line">                times = times +1</span><br><span class="line"></span><br><span class="line">        return times</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h1 id="&#x89C1;&#x8BC1;&#x5947;&#x8FF9;"><a href="#&#x89C1;&#x8BC1;&#x5947;&#x8FF9;" class="headerlink" title="&#x89C1;&#x8BC1;&#x5947;&#x8FF9;"></a>&#x89C1;&#x8BC1;&#x5947;&#x8FF9;</h1><p>&#x597D;&#x4E86;&#xFF0C;&#x73B0;&#x5728;&#x662F;&#x89C1;&#x8BC1;&#x5947;&#x8FF9;&#x7684;&#x65F6;&#x523B;&#x7684;&#x65F6;&#x523B;&#x5566;&#x3002;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">m1 = 100</span><br><span class="line">m2 = 100</span><br><span class="line">v1 = 100</span><br><span class="line">v2 = 0</span><br><span class="line">for i in range(0, 7):</span><br><span class="line">        m1 = 100*100**i</span><br><span class="line">        times = func_times(m1, v1, m2, v2)</span><br><span class="line">        print(f&quot;M1:{m1}, M2:{m2}, v1:{v1}, v2:{v2}, Times:{times}&quot;)</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x7ED9;&#x6728;&#x5757;&#x8BBE;&#x5B9A;&#x8D28;&#x91CF;&#x548C;&#x521D;&#x901F;&#x5EA6;&#xFF0C;&#x7136;&#x540E;&#x6A21;&#x62DF;&#x78B0;&#x649E;&#xFF0C;&#x770B;&#x770B;&#x662F;&#x4E0D;&#x662F;&#x7B26;&#x5408;&#x8FD9;&#x4E2A;&#x535A;&#x4E3B;&#x8BF4;&#x7684;&#x89C4;&#x5F8B;&#xFF1F;</p>
+<p>&#x8FD0;&#x884C;&#x4E0A;&#x8FF0;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmP3pK4KKwqi4SdCMBsnQvVeeQcyBR6t9A2LgTdscVRnU3/image.png" alt=""></p>
+</blockquote>
+<p>&#x54C7;&#x54C7;&#x54C7;&#xFF0C;&#x679C;&#x7136;&#x662F;&#x5706;&#x5468;&#x7387;&#x554A;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x795E;&#x5947;&#xFF1F;</p>
+<p><img src="https://cdn.steemitimages.com/DQmVhbrSPeaSgRdAUZB6B9FvxA2Rvpfnc6Ky26NAhy3avFu/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x81F3;&#x4E8E;&#x4E3A;&#x4F55;&#x662F;&#x5706;&#x5468;&#x7387;&#xFF0C;&#x5C31;&#x7559;&#x7ED9;&#x806A;&#x660E;&#x7684;&#x4F60;&#x53BB;&#x8BC1;&#x660E;&#x5566;&#xFF01;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://baike.baidu.com/item/&#x5F39;&#x6027;&#x78B0;&#x649E;/2321173" target="_blank" rel="noopener">&#x5F39;&#x6027;&#x78B0;&#x649E;</a></li>
+</ul>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/4qhpev-python" target="_blank" rel="noopener">&#x2018;&#x6709;&#x591A;&#x65E0;&#x804A;&#xFF1A;&#x5F39;&#x6027;&#x78B0;&#x649E;&#x4E0E;Python&#x4EE3;&#x7801;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/-2019-10-15/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmSnNCJdhbJPrcdNemo4UK5Qife8a4AfXYRjbPxoyYkyjE/image.png" alt="终究不是万能的">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-10-15T10:43:03.000Z">2019-10-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 665 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/-2019-10-15/">终究不是万能的</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x524D;&#x6BB5;&#x65F6;&#x95F4;&#xFF0C;&#x4E00;&#x4F4D;&#x670B;&#x53CB;&#x5BB6;&#x7684;&#x8001;&#x6B3E;&#x6DB2;&#x6676;&#x7535;&#x89C6;&#x574F;&#x6389;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x62FF;&#x5230;&#x6211;&#x90A3;&#x4E2A;&#x5F00;&#x8F66;&#x4F1A;&#x9986;&#x7684;&#x670B;&#x53CB;&#x90A3;&#x91CC;&#xFF0C;&#x6253;&#x7B97;&#x8BA9;&#x4ED6;&#x5E2E;&#x5FD9;&#x4FEE;&#x7406;&#x4E00;&#x4E0B;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmSnNCJdhbJPrcdNemo4UK5Qife8a4AfXYRjbPxoyYkyjE/image.png" alt=""></p>
+<p>&#x670B;&#x53CB;&#x5927;&#x5305;&#x5927;&#x63FD;&#x7684;&#x5E94;&#x627F;&#x4E0B;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x7535;&#x89C6;&#x62C6;&#x5F00;&#xFF0C;&#x5F04;&#x574F;&#x4E86;&#x4E00;&#x4E2A;&#x7CBE;&#x5BC6;&#x7684;&#x5C0F;&#x90E8;&#x4EF6;&#xFF0C;&#x5E76;&#x667E;&#x4E86;&#x597D;&#x591A;&#x5929;&#x4E4B;&#x540E;&#xFF0C;&#x65E0;&#x5948;&#x9001;&#x5230;&#x4FEE;&#x7406;&#x94FA;&#x53BB;&#x4E86;&#x3002;</p>
+<p>&#x4E3A;&#x6B64;&#x6211;&#x5632;&#x7B11;&#x4E86;&#x4ED6;&#x597D;&#x591A;&#x5929;&#xFF0C;&#x660E;&#x660E;&#x662F;&#x4FEE;&#x8F66;&#x7684;&#xFF0C;&#x7ADF;&#x7136;&#x641E;&#x8D77;&#x4E86;&#x4FEE;&#x7406;&#x5BB6;&#x7535;&#xFF0C;&#x771F;&#x8981;&#x4FEE;&#x597D;&#x4E86;&#x4E5F;&#x884C;&#xFF0C;&#x53CD;&#x800C;&#x8BA9;&#x7535;&#x89C6;&#x574F;&#x5F97;&#x66F4;&#x4E25;&#x91CD;&#x4E86;&#xFF0C;&#x54C8;&#x54C8;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x8BDD;&#x8BF4;&#x6211;&#x5BB6;&#x4E5F;&#x6709;&#x4E2A;&#x574F;&#x6389;&#x7684;&#x6DB2;&#x6676;&#x7535;&#x89C6;&#xFF0C;&#x5C31;&#x662F;&#x7A81;&#x7136;&#x95F4;&#x7535;&#x6E90;&#x706F;&#x5C31;&#x4E0D;&#x4EAE;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x5BB6;&#x91CC;&#x597D;&#x51E0;&#x4E2A;&#x7535;&#x89C6;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x8FD9;&#x4E48;&#x574F;&#x7740;&#x4E5F;&#x6CA1;&#x642D;&#x7406;&#x5B83;&#xFF0C;&#x5DF2;&#x7ECF;&#x95F2;&#x7F6E;&#x4E00;&#x4E24;&#x5E74;&#x4E86;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x56E0;&#x4E3A;&#x670B;&#x53CB;&#x7ED9;&#x670B;&#x53CB;&#x4FEE;&#x7535;&#x89C6;&#x8FD9;&#x4E2A;&#x4E8B;&#xFF0C;&#x6211;&#x7A81;&#x7136;&#x60F3;&#x8D77;&#x4E86;&#x6211;&#x8FD9;&#x4E2A;&#x7535;&#x89C6;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x8FD9;&#x4E2A;&#x7535;&#x89C6;&#x5E94;&#x8BE5;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x5927;&#x6545;&#x969C;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x5C31;&#x662F;&#x7535;&#x6E90;&#x677F;&#x4E0A;&#x7684;&#x4FDD;&#x9669;&#x4E1D;&#x4E4B;&#x7C7B;&#x574F;&#x6389;&#x4E86;&#xFF0C;&#x6309;&#x8BF4;&#x4FEE;&#x8D77;&#x6765;&#x5E94;&#x8BE5;&#x4E0D;&#x590D;&#x6742;&#x5427;&#xFF1F;</p>
+<p>&#x4E8E;&#x662F;&#x4E4E;&#x5E9F;&#x4E86;&#x4E5D;&#x725B;&#x4E8C;&#x864E;&#x4E4B;&#x529B;&#x628A;&#x6DB2;&#x6676;&#x7535;&#x89C6;&#x540E;&#x76D6;&#x62C6;&#x5F00;&#xFF0C;&#x627E;&#x5230;&#x4E86;&#x7535;&#x6E90;&#x677F;&#xFF0C;&#x5E76;&#x4E14;&#x627E;&#x5230;&#x4E86;&#x4FDD;&#x9669;&#x4E1D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x7136;&#x540E;&#x4ECE;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x5806;&#x4FDD;&#x9669;&#x4E1D;&#x4E2D;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x4E2A;3A&#x7684;&#x4FDD;&#x9669;&#x4E1D;&#x66FF;&#x6362;&#x4E0A;&#x53BB;&#x3002;&#x80C6;&#x98A4;&#x5FC3;&#x60CA;&#x5730;&#x63D2;&#x4E0A;&#x7535;&#x6E90;&#x5E76;&#x4E14;&#x6309;&#x8D77;Power &#x952E;&#xFF0C;&#x7ED3;&#x679C;&#x7ADF;&#x7136;&#x8FD8;&#x662F;&#x4E00;&#x70B9;&#x54CD;&#x5E94;&#x90FD;&#x6CA1;&#x6709;&#x3002;</p>
+<p>&#x4E8E;&#x662F;&#x4E4E;&#x60F3;&#x7740;&#x627E;&#x4E07;&#x7528;&#x8868;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#x7535;&#x6E90;&#x677F;&#x7684;&#x8F93;&#x51FA;&#x4E4B;&#x7C7B;&#x7684;&#xFF0C;&#x53EF;&#x662F;&#x627E;&#x4E86;&#x534A;&#x5929;&#x4E5F;&#x6CA1;&#x627E;&#x5230;&#x6211;&#x7684;&#x4E07;&#x7528;&#x8868;&#x54EA;&#x91CC;&#x53BB;&#x4E86;&#x3002;&#x540E;&#x6765;&#x60F3;&#x5230;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x7834;&#x7535;&#x89C6;&#x6211;2&#x5E74;&#x6CA1;&#x5F00;&#x673A;&#x6211;&#x4E5F;&#x6CA1;&#x89C9;&#x5F97;&#x6709;&#x5565;&#x95EE;&#x9898;&#xFF0C;&#x6536;&#x62FE;&#x5B83;&#x6709;&#x5565;&#x610F;&#x4E49;&#x5462;&#xFF1F;</p>
+<p><img src="https://cdn.steemitimages.com/DQmQB3oGGqujoefNt9FF8DX5jzB5zBdPgGezB2EcaM5nGai/image.png" alt=""></p>
+<p>&#x4E8E;&#x662F;&#x4E4E;&#xFF0C;&#x679C;&#x65AD;&#x653E;&#x5F03;&#xFF0C;&#x5C06;&#x673A;&#x5668;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x56DE;&#x53BB;&#x3002;&#x6536;&#x83B7;&#x4E86;&#x8170;&#x9178;&#x80CC;&#x75DB;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x660E;&#x767D;&#x4E86;&#x4E0D;&#x8981;&#x53BB;&#x505A;&#x6CA1;&#x4EC0;&#x4E48;&#x610F;&#x4E49;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x8FD8;&#x6709;&#x5C31;&#x662F;<strong><em>&#x81EA;&#x5DF1;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x4E07;&#x80FD;&#x7684;</em></strong>&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x6211;&#x89C9;&#x5F97;&#x8FD9;&#x4EF6;&#x4E8B;&#x5BF9;&#x6211;&#x670B;&#x53CB;&#x4EEC;&#x4FDD;&#x5BC6;&#xFF0C;&#x5426;&#x5219;&#x4E00;&#x5B9A;&#x4F1A;&#x88AB;&#x4ED6;&#x4EEC;&#x5632;&#x7B11;&#x6B7B;&#x7684;&#xFF0C;&#x6BD5;&#x7ADF;&#x6211;&#x4E4B;&#x524D;&#x5632;&#x7B11;&#x4ED6;&#x90A3;&#x4E48;&#x4E45;&#x5462;&#xFF0C;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x3002;</p>
+<hr>
+<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
+
+
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/-2019-10-15" target="_blank" rel="noopener">&#x2018;&#x7EC8;&#x7A76;&#x4E0D;&#x662F;&#x4E07;&#x80FD;&#x7684;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/6zmwmp/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmXG2SbFuB55HHxFCM74QwcNxbB36bnv4nPKkZKv3cHfiW/image.png" alt="可恶的大数据与用户行为分析">
         </a>
@@ -574,186 +746,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/ai-thinker-gprs-gsm-a9/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmdvaT8ete84o89z6cy152HaBoYL3AsHY19G3DPcJ697pi/image.png" alt="悲催，(Ai-Thinker) GPRS+GSM A9开发板不支持京东通信电话卡">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-13T01:51:09.000Z">2019-10-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 842 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/ai-thinker-gprs-gsm-a9/">悲催，(Ai-Thinker) GPRS+GSM A9开发板不支持京东通信电话卡</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4E4B;&#x524D;&#x7684;&#x5E16;&#x5B50;&#x4E2D;&#x8BF4;&#x8FC7;&#xFF0C;&#x4E3A;&#x4E86;&#x5B8C;&#x6210;&#x4E00;&#x4E2A;&#x5C0F;&#x529F;&#x80FD;&#xFF0C;&#x4E70;&#x4E86;&#x5B89;&#x4FE1;&#x53EF;(Ai-Thinker) GPRS+GSM A9&#x5F00;&#x53D1;&#x677F;&#x4EE5;&#x53CA;&#x4EAC;&#x4E1C;&#x901A;&#x4FE1;&#x7684;&#x7684;&#x7535;&#x8BDD;&#x5361;(&#x8054;&#x901A;&#x5236;&#x5F0F;)&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmdvaT8ete84o89z6cy152HaBoYL3AsHY19G3DPcJ697pi/image.png" alt=""></p>
-<p>&#x4E00;&#x76F4;&#x61D2;&#x5F97;&#x52A8;&#x624B;&#xFF0C;&#x4ECA;&#x5929;&#x51B3;&#x5B9A;&#x7740;&#x624B;&#x5F00;&#x59CB;&#x5F04;&#x4E86;&#xFF0C;&#x53EF;&#x60DC;&#x5F00;&#x53D1;&#x677F;&#x4E0A;&#x7684;&#x4E1D;&#x5370;&#x6839;&#x672C;&#x770B;&#x4E0D;&#x6E05;&#x695A;&#x554A;&#x3002;</p>
-<p>&#x627E;&#x4E86;&#x534A;&#x5929;&#x627E;&#x5230;&#x4E86;A9&#x5F00;&#x53D1;&#x677F;&#x7684;&#x793A;&#x610F;&#x56FE;&#xFF0C;&#x603B;&#x7B97;&#x53EF;&#x4EE5;&#x8FDE;&#x7EBF;&#x4E86;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmfUMng7tX36CKnsyB46Wsc3peiMHCTmUTJAn6ppdGXMic/image.png" alt=""><br>(&#x56FE;&#x6E90;&#xFF1A;<a href="https://wiki.ai-thinker.com/gprs/a9/boards" target="_blank" rel="noopener">https://wiki.ai-thinker.com/gprs/a9/boards</a>)</p>
-</blockquote>
-<p>&#x7136;&#x540E;&#x7528;<a href="https://steemit.com/cn/@oflyhigh/arduino-unousb-ttl-2019-10-12" target="_blank" rel="noopener">Arduino UNO&#x5F53;&#x4F5C;USB-TTL</a>&#x5F00;&#x59CB;&#x8FDE;&#x63A5;&#xFF0C;&#x539F;&#x672C;&#x4EE5;&#x4E3A;&#x5E94;&#x8BE5;&#x987A;&#x5229;&#x7684;&#x8054;&#x7F51;&#x5E76;&#x53EF;&#x4EE5;&#x62E8;&#x6253;&#x7535;&#x8BDD;&#xFF0C;&#x7ED3;&#x679C;&#x6B7B;&#x6D3B;&#x6CE8;&#x518C;&#x4E0D;&#x4E0A;&#x7F51;&#x7EDC;&#x3002;</p>
-<p>&#x521D;&#x59CB;&#x5316;&#x540E;&#x59CB;&#x7EC8;&#x7B49;&#x4E0D;&#x5230;Ready&#x63D0;&#x793A;&#xFF0C;&#x4E00;&#x76F4;&#x505C;&#x7559;&#x5728;&#xFF1A;</p>
-<blockquote>
-<p>Init&#x2026;<br>+CREG: 2<br>+CREG: 2<br>+CREG: 3</p>
-</blockquote>
-<p>&#x5982;&#x679C;&#x5C1D;&#x8BD5;&#x6253;&#x7535;&#x8BDD;&#xFF0C;&#x5219;&#x63D0;&#x793A;&#xFF1A;</p>
-<blockquote>
-<p>+CME ERROR: 58</p>
-</blockquote>
-<p>&#x770B;&#x63D0;&#x793A;&#xFF0C;&#x5927;&#x81F4;&#x5E94;&#x8BE5;&#x662F;&#x6CA1;&#x6709;&#x6210;&#x529F;&#x6CE8;&#x518C;&#x5230;&#x7F51;&#x7EDC;&#x4E0A;(<code>3 registration denied</code>)&#x3002;</p>
-<p>&#x6211;&#x5206;&#x6790;&#x53EF;&#x80FD;&#x662F;&#x4F9B;&#x7535;&#x4E0D;&#x8DB3;&#x6216;&#x8005;&#x4FE1;&#x53F7;&#x4E0D;&#x591F;&#x5F3A;&#xFF0C;&#x4E8E;&#x662F;&#x53C8;&#x5C1D;&#x8BD5;&#x6362;&#x4E86;5V2A&#x7684;USB&#x7535;&#x6E90;&#xFF0C;&#x65E0;&#x6548;&#xFF1B;&#x53C8;&#x5C1D;&#x8BD5;&#x6362;&#x4E86;&#x5176;&#x5B83;GSM/GPRS&#x5929;&#x7EBF;&#xFF0C;&#x8FD8;&#x662F;&#x65E0;&#x6548;&#x3002;</p>
-<p>&#x597D;&#x5728;&#x6211;&#x4E70;&#x6A21;&#x5757;&#x4E00;&#x822C;&#x4E60;&#x60EF;&#x4E70;&#x4E24;&#x4E2A;&#xFF0C;&#x83AB;&#x4E0D;&#x662F;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x574F;&#x4E86;&#xFF0C;&#x518D;&#x6362;&#x4E2A;&#x6A21;&#x5757;&#x8BD5;&#x8BD5;&#xFF0C;&#x7ED3;&#x679C;&#x75C7;&#x72B6;&#x4F9D;&#x7136;&#x3002;</p>
-<p>&#x4E8E;&#x662F;&#x4E4E;&#xFF0C;&#x8003;&#x8651;&#x5230;&#x53EF;&#x80FD;&#x662F;&#x5361;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6362;&#x4E86;&#x4E00;&#x5F20;&#x79FB;&#x52A8;&#x5361;&#x8FDB;&#x53BB;&#xFF0C;&#x77AC;&#x95F4;&#x6CE8;&#x518C;&#x5230;&#x7F51;&#x7EDC;&#x4E0A;&#x4E00;&#x5207;OK&#x3002;</p>
-<blockquote>
-<p>Init&#x2026;<br>^STN: 37<br>+CTZV:19/10/12,10:57:23,+08</p>
-<p>+CREG: 1</p>
-<p>A9/A9G<br>V02.02.20180825R<br>Ai_Thinker_Co._Ltd.<br>READY</p>
-</blockquote>
-<p>&#x62E8;&#x6253;&#x7535;&#x8BDD;&#x4E4B;&#x7C7B;&#x7684;&#x4E5F;&#x5B8C;&#x5168;&#x6B63;&#x5E38;&#xFF1A;</p>
-<blockquote>
-<p>ATD131XXXXXXXX;</p>
-<p>OK<br>+CIEV: &#x201C;CALL&#x201D;,1<br>+CIEV: &#x201C;SOUNDER&#x201D;,1<br>+CIEV: &#x201C;CALL&#x201D;,1<br>+CIEV: &#x201C;SOUNDER&#x201D;,0<br>+CIEV: &#x201C;CALL&#x201D;,0</p>
-<p>BUSY</p>
-</blockquote>
-<p>&#x90A3;&#x5C31;&#x5947;&#x602A;&#x4E86;&#xFF0C;&#x4E3A;&#x5565;&#x79FB;&#x52A8;&#x5361;&#x597D;&#x7528;&#x800C;&#x8054;&#x901A;&#x5361;&#x4E0D;&#x597D;&#x7528;&#x5462;&#xFF1F;&#x6309;&#x8BF4;&#x90FD;&#x5E94;&#x8BE5;&#x652F;&#x6301;GSM&#x554A;&#xFF1F;</p>
-<p>&#x5BF9;&#x4E86;&#xFF0C;GSM&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x8054;&#x901A;&#x7981;&#x7528;&#x4E86;GSM&#x529F;&#x80FD;&#x5462;&#xFF1F;&#x4E8E;&#x662F;&#x4E4E;&#x6253;&#x7535;&#x8BDD;&#x5230;&#x8054;&#x901A;&#x5BA2;&#x670D;&#xFF0C;&#x54A8;&#x8BE2;&#x540E;&#xFF0C;&#x5927;&#x81F4;&#x6709;&#x4E86;&#x5982;&#x4E0B;&#x7ED3;&#x8BBA;&#xFF1A;</p>
-<blockquote>
-<p>1: GSM&#x5DF2;&#x7ECF;&#x5FEB;&#x4E0D;&#x8FD0;&#x8425;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x597D;&#x591A;&#x5730;&#x533A;&#x4FE1;&#x53F7;&#x90FD;&#x4E0D;&#x597D;<br>2: &#x65B0;&#x5F00;&#x7684;&#x5361;&#x8981;&#x5F00;&#x901A;GSM&#x4E1A;&#x52A1;&#xFF0C;&#x5426;&#x5219;&#x53EA;&#x6709;3G&#x3001;4G&#x4E1A;&#x52A1;<br>3: &#x865A;&#x62DF;&#x8FD0;&#x8425;&#x5546;&#x8FD8;&#x5F97;&#x627E;&#x5BF9;&#x5E94;&#x7684;&#x8FD0;&#x8425;&#x5546;&#x5904;&#x7406;</p>
-</blockquote>
-<p>&#x4E8E;&#x662F;&#x5E9F;&#x4E86;&#x534A;&#x5929;&#x52B2;&#x6253;&#x8FDB;&#x4E86;&#x4EAC;&#x4E1C;&#x901A;&#x4FE1;&#x7684;&#x5BA2;&#x670D;&#xFF0C;&#x8F6C;&#x6765;&#x8F6C;&#x53BB;&#xFF0C;&#x6700;&#x540E;&#x7684;&#x5BA2;&#x670D;&#x544A;&#x8BC9;&#x6211;&#xFF0C;<strong><em>&#x4EAC;&#x4E1C;&#x901A;&#x4FE1;&#x4E0D;&#x652F;&#x6301;2G(GSM)&#x4E1A;&#x52A1;&#xFF0C;&#x65E0;&#x6CD5;&#x5F00;&#x901A;</em></strong>&#x3002;</p>
-<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6211;&#x7684;&#x5B89;&#x4FE1;&#x53EF;(Ai-Thinker) GPRS+GSM A9&#x5F00;&#x53D1;&#x677F;&#x548C;&#x8FD9;&#x4E2A;&#x4EAC;&#x4E1C;&#x901A;&#x4FE1;&#x7535;&#x8BDD;&#x5361;&#xFF0C;&#x6839;&#x672C;&#x6CA1;&#x6CD5;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x767D;&#x6298;&#x817E;&#x534A;&#x5929;&#x5566;&#xFF0C;&#x90C1;&#x95F7;&#x2639;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmYwQNUnJtAfREsXwZ1murN6yoHvedJFQvCquW1AUp9aM7/image.png" alt=""></p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemit.com/cn/@oflyhigh/arduino-unousb-ttl-2019-10-12" target="_blank" rel="noopener">&#x5C0F;&#x6280;&#x5DE7;&#xFF1A;Arduino UNO&#x5F53;&#x4F5C;USB-TTL</a></li>
-<li><a href="https://steemit.com/cn/@oflyhigh/ai-thinker-gprsgsm-a9-2019-10-02" target="_blank" rel="noopener">&#x5B89;&#x4FE1;&#x53EF;(Ai-Thinker) GPRS+GSM A9&#x5F00;&#x53D1;&#x677F;&#x5230;&#x8D27;&#x4E86;</a></li>
-<li><a href="https://wiki.ai-thinker.com/gprs/a9/boards" target="_blank" rel="noopener">Pudding &#x7CFB;&#x5217;&#x5F00;&#x53D1;&#x677F;-A9&#x5F00;&#x53D1;&#x677F;&#x8D44;&#x6599;</a></li>
-<li><a href="https://wiki.ai-thinker.com/gprs" target="_blank" rel="noopener">GPRS A9/A9G &#x7CFB;&#x5217;&#x6A21;&#x7EC4;&#x4E13;&#x9898;</a></li>
-<li><a href="https://m2msupport.net/m2msupport/atcreg-network-registration/" target="_blank" rel="noopener">https://m2msupport.net/m2msupport/atcreg-network-registration/</a></li>
-</ul>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/ai-thinker-gprs-gsm-a9" target="_blank" rel="noopener">&#x2018;&#x60B2;&#x50AC;&#xFF0C;(Ai-Thinker) GPRS+GSM A9&#x5F00;&#x53D1;&#x677F;&#x4E0D;&#x652F;&#x6301;&#x4EAC;&#x4E1C;&#x901A;&#x4FE1;&#x7535;&#x8BDD;&#x5361;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/arduino-unousb-ttl-2019-10-12/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmNLhiKE79hu8h3dHJEApFqDnkgzqJfjnr6DKugESbW4wa/image.png" alt="小技巧：Arduino UNO当作USB-TTL">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-10-12T12:34:57.000Z">2019-10-12</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 685 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/arduino-unousb-ttl-2019-10-12/">小技巧：Arduino UNO当作USB-TTL</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5728;&#x548C;&#x786C;&#x4EF6;&#x6A21;&#x5757;&#x6253;&#x4EA4;&#x9053;&#x65F6;&#xFF0C;&#x7ECF;&#x5E38;&#x4F1A;&#x7528;&#x5230;USB-TTL&#x6A21;&#x5757;&#xFF0C;&#x65E9;&#x4E9B;&#x5E74;&#x521A;&#x73A9;&#x8FD9;&#x4E9B;&#x4E1C;&#x897F;&#x65F6;&#xFF0C;&#x6211;&#x4E5F;&#x4E70;&#x4E86;&#x597D;&#x591A;USB-TTL&#x6A21;&#x5757;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmNLhiKE79hu8h3dHJEApFqDnkgzqJfjnr6DKugESbW4wa/image.png" alt=""></p>
-<p>&#x4F46;&#x662F;&#x6DD8;&#x5B9D;&#x7684;&#x5978;&#x5546;&#x4F60;&#x61C2;&#x7684;&#xFF0C;&#x5F88;&#x591A;&#x90FD;&#x662F;&#x7528;&#x7684;&#x5783;&#x573E;&#x82AF;&#x7247;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6CA1;&#x51E0;&#x5929;&#xFF0C;&#x8FD9;&#x4E9B;&#x5783;&#x573E;&#x6A21;&#x5757;&#x65E0;&#x4E00;&#x4F8B;&#x5916;&#x7684;&#x90FD;&#x70E7;&#x6389;&#x4E86;&#x3002;</p>
-<p>&#x8FD9;&#x8FD8;&#x4E0D;&#x662F;&#x6700;&#x60E8;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6700;&#x60E8;&#x7684;&#x662F;&#xFF0C;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x70E7;&#x6389;&#x65F6;&#x6563;&#x53D1;&#x4E86;&#x5927;&#x91CF;&#x7684;&#x70ED;&#x91CF;&#xFF0C;&#x6211;&#x6CA1;&#x6CE8;&#x610F;&#x8FD9;&#x4E8B;&#xFF0C;&#x76F4;&#x63A5;&#x4E0A;&#x624B;&#x53BB;&#x62FF;&#xFF0C;&#x7136;&#x540E;&#x624B;&#x6307;&#x4E0A;&#x70EB;&#x51FA;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6C34;&#x6CE1;&#xFF0C;&#x75BC;&#x4E86;&#x597D;&#x591A;&#x5929;&#x3002;</p>
-<p>&#x5176;&#x5B9E;&#x6211;&#x624B;&#x5934;&#x6709;&#x597D;&#x591A;Arduino UNO &#x4EE5;&#x53CA;Arduino NANO&#x6A21;&#x5757;&#xFF0C;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x62FF;&#x6765;&#x76F4;&#x63A5;&#x5F53;&#x4F5C;USB-TTL&#x4F7F;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x6839;&#x672C;&#x6CA1;&#x5FC5;&#x8981;&#x4E70;USB-TTL&#x6A21;&#x5757;&#x7684;&#x3002;</p>
-<p>Arduino UNO&#x7684;USB&#x90E8;&#x5206;&#x4E3B;&#x63A7;&#x4F7F;&#x7528;&#x7684;&#x662F;ATmega16u2/ATmega8U2&#xFF0C;&#x6211;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x6BD4;&#x795E;&#x9A6C;CH340&#x3001;CP2102&#x3001;FT232&#x90FD;&#x8981;&#x7A33;&#x5B9A;&#x3002;&#x5F53;&#x7136;&#x4E86;&#x4E00;&#x4E9B;&#x5C71;&#x5BE8;&#x7684;Arduino UNO&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x82AF;&#x7247;&#xFF0C;&#x4E0D;&#x8FC7;&#x5BF9;&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x5E16;&#x5B50;&#x4E2D;&#x8BB2;&#x8FF0;&#x7684;&#x6280;&#x5DE7;&#x5E76;&#x65E0;&#x5B9E;&#x8D28;&#x5F71;&#x54CD;&#x3002;</p>
-<p>Arduino UNO&#x4E0A;&#x6570;&#x5B57;&#x811A;0&#x3001;1&#x5206;&#x522B;&#x662F;RX(0)&#x4EE5;&#x53CA;TX(1)&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x4E2A;&#x662F;&#x4ECE;Arduino UNO&#x4E0A;&#x4E3B;&#x63A7;&#x82AF;&#x7247;ATMEL 328P&#x7684;&#x89C6;&#x89D2;&#x6765;&#x770B;&#x7684;&#x3002;</p>
-<blockquote>
-<p>Serial: 0 (RX) and 1 (TX). Used to receive (RX) and transmit (TX) TTL serial data. These pins are connected to the corresponding pins of the ATmega8U2 USB-to-TTL Serial chip.</p>
-</blockquote>
-<p>&#x4E3E;&#x4F8B;&#x8BF4;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x8981;&#x548C;328P&#x901A;&#x4FE1;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x9700;&#x8981;&#x4EA4;&#x53C9;&#x94FE;&#x63A5;&#x6A21;&#x5757;&#x4E0E;UNO&#x7684;TX&#x3001;RX&#x5E76;&#x5171;&#x5730;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x5982;&#x679C;&#x60F3;&#x628A;Arduino UNO&#x5F53;&#x4F5C;USB-TTL&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x65F6;&#x5019;&#x6A21;&#x5757;&#x7684;UNO&#x7684;&#x94FE;&#x63A5;&#x5E94;&#x8BE5;&#xFF1A;</p>
-<blockquote>
-<p>TX&lt;-&gt;TX<br>RX&lt;-&gt;RX<br>GND&lt;-&gt;GND</p>
-</blockquote>
-<p>&#x53E6;&#x5916;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;Arduino UNO&#x5185;&#x88C5;&#x8F7D;&#x6709;&#x4E32;&#x53E3;&#x8BFB;&#x5199;&#x76F8;&#x5173;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x4F1A;&#x5F71;&#x54CD;&#x628A;Arduino UNO&#x5F53;&#x4F5C;USB-TTL&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x70E7;&#x5F55;&#x4E00;&#x4E2A;&#x7A7A;&#x7A0B;&#x5E8F;&#x8FDB;&#x53BB;&#xFF0C;&#x4EE5;&#x514D;UNO&#x6363;&#x4E71;&#x3002;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">void setup() {</span><br><span class="line">  // put your setup code here, to run once:</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">void loop() {</span><br><span class="line">  // put your main code here, to run repeatedly:</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x613F;&#x610F;&#x7684;&#x8BDD;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x70E7;&#x5165;&#x4E00;&#x4E2A;blink&#x7684;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;&#x8FDB;&#x53BB;&#xFF0C;&#x56E0;&#x4E3A;&#x770B;&#x7740;&#x5C0F;&#x706F;&#x95EA;&#x95EA;&#xFF0C;&#x5C31;&#x6BD4;&#x8F83;&#x597D;&#x73A9;&#x3002;&#x1F600;</p>
-<p> Arduino&#x73AF;&#x5883;&#x7684;&#x5B89;&#x88C5;&#x4EE5;&#x53CA;blink&#x793A;&#x4F8B;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x6587;&#x672B;&#x94FE;&#x63A5;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemit.com/cn-stem/@oflyhigh/arduino-arduino-and-blink" target="_blank" rel="noopener">STEM with Arduino(1)&#xFF1A;Arduino&#x4ECB;&#x7ECD;&#x3001;Arduino&#x73AF;&#x5883;&#x4E0B;&#x8F7D;&amp;&#x5B89;&#x88C5;&#x3001;blink&#x793A;&#x4F8B;</a></li>
-<li><a href="https://www.arduino.cc" target="_blank" rel="noopener">https://www.arduino.cc</a></li>
-</ul>
-<hr>
-<center><strong>Vote For Me As Witness</strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong><code>oflyhigh</code></strong> and click <strong><em><code>VOTE</code></em></strong><br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener"><img src="https://cdn.steemitimages.com/DQmX5NysqT44FBa3bhuWqQ69nAbseu8Nt5YQPn2pYejPVxA/image.png" alt=""></a><br><a href="https://steemconnect.com/sign/account-witness-vote?witness=oflyhigh&amp;approve=1" target="_blank" rel="noopener">Vote @oflyhigh via Steemconnect</a><br><strong>Thank you!</strong></center>
-
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/arduino-unousb-ttl-2019-10-12" target="_blank" rel="noopener">&#x2018;&#x5C0F;&#x6280;&#x5DE7;&#xFF1A;Arduino UNO&#x5F53;&#x4F5C;USB-TTL&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -778,7 +770,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/361/">361</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/362/">362</a></li>
             
         </ul>
     </nav>
