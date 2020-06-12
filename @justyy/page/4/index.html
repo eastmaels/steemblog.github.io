@@ -230,6 +230,70 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/old-new-tool-view-your-proxy-supporters/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemyy.com/images/vote-for-justyy.jpg" alt="Old New Tool: View Your Proxy Supporters">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-24T15:49:42.000Z">2020-05-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/witness-category/">witness-category</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 307 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/old-new-tool-view-your-proxy-supporters/">Old New Tool: View Your Proxy Supporters</a>
+            
+        </h1>
+        <div class="content">
+            <p>This is technically not a new tool. However, it was based on @steemsql - which is now dead.</p>
+<p>It is not that difficult to gather the information needed for this tool. You just need to crawl blocks from 0 to the latest, then sync with it, extracting the relevant information (account_witness_proxy)  and store them in a database either relational such as sqlite, mysql or non-relational such as mongodb.</p>
+<p>Depending on the schema, you could store entire witness proxy history, or store all proxy votes from same account, or even, store only the latest proxy votes (disregard previous votes).</p>
+<p>The first two scenarios require filtering previous votes:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sql = &quot;&quot;&quot;</span><br><span class="line">SELECT name,proxy,time,block  </span><br><span class="line">FROM proxy as P1 where</span><br><span class="line">block = (</span><br><span class="line">   select max(block) from</span><br><span class="line">   proxy as P2</span><br><span class="line">   where P2.name = P1.name</span><br><span class="line">) and </span><br><span class="line">proxy = &apos;&quot;&quot;&quot; + id + &quot;&quot;&quot;&apos;</span><br><span class="line">order by time desc</span><br><span class="line">&quot;&quot;&quot;</span><br></pre></td></tr></tbody></table></figure>
+<p>Any way, the tool:<br><a href="https://steemyy.com/proxy/" target="_blank" rel="noopener">https://steemyy.com/proxy/</a><br>Chinese verision: <a href="https://steemyy.com/list-of-proxy/" target="_blank" rel="noopener">https://steemyy.com/list-of-proxy/</a></p>
+<p>And API is provided as well, where it returns not only the direct proxy voters but who vote them, and who vote who vote them&#x2026; </p>
+<p>Example:</p>
+<h2 id="https-steemyy-com-api-steemit-proxy-cached-amp-id-justyy"><a href="#https-steemyy-com-api-steemit-proxy-cached-amp-id-justyy" class="headerlink" title="https://steemyy.com/api/steemit/proxy/?cached&amp;id=justyy"></a><a href="https://steemyy.com/api/steemit/proxy/?cached&amp;id=justyy" target="_blank" rel="noopener">https://steemyy.com/api/steemit/proxy/?cached&amp;id=justyy</a></h2><p>I hope this helps!</p>
+<h2 id="Steem-On"><a href="#Steem-On" class="headerlink" title="Steem On!~"></a><strong>Steem On!~</strong></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/old-new-tool-view-your-proxy-supporters" target="_blank" rel="noopener">&#x2018;Old New Tool: View Your Proxy Supporters&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/showing-real-time-block-witness-in-witness-page/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZFxusLZj4rWnQkJxugi2vuCyQaHpeMUdieCgJ8QpGbVX/image.png" alt="Showing Real Time Block/Witness in Witness Page">
         </a>
@@ -540,77 +604,6 @@ justyy 0.001 SBD HELLO [username]
 <p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
 <h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/wallet-tool-upgrade-customize-parameters-for-each-recipents" target="_blank" rel="noopener">&#x2018;Wallet Tool Upgrade: Customize Parameters for Each Recipents&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/free-account-registration-service-for-steem-steem/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmUpMPzA8LLdfXNpQ1AYFeZmxXS5XJK63bJzUz6NAysXeL/image.png" alt="Free Account Registration Service for STEEM! 免费注册 STEEM 帐号！">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-08T14:48:00.000Z">2020-05-08</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/steem/">steem</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 281 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/free-account-registration-service-for-steem-steem/">Free Account Registration Service for STEEM! 免费注册 STEEM 帐号！</a>
-            
-        </h1>
-        <div class="content">
-            <p>Hello,<br>I spent half day, started working last night and coding till 4:AM this morning.<br>Here you go:  A Free Account Registration Tool for STEEM!</p>
-<p>English: <a href="https://steemyy.com/reg.php" target="_blank" rel="noopener">https://steemyy.com/reg.php</a><br>Chinese: <a href="https://steemyy.com/steemit-tools/reg.php" target="_blank" rel="noopener">https://steemyy.com/steemit-tools/reg.php</a></p>
-<p>Account registration is not free. It costs something on steem blockchain either RC (resource credits) or 3 STEEMs. That is why we need to verify your email address and take precaution measures to reduce the spam.</p>
-<ol>
-<li>Fill the Registration Form</li>
-<li>Wait for Email</li>
-<li>Click the Link in the Email to Verify</li>
-<li>Wait for Account/Password in the Email</li>
-<li>Recommended: Change Password as soon as you have it.</li>
-</ol>
-<p><img src="https://cdn.steemitimages.com/DQmUpMPzA8LLdfXNpQ1AYFeZmxXS5XJK63bJzUz6NAysXeL/image.png" alt="image.png"></p>
-<p><img src="https://cdn.steemitimages.com/DQmNtwiRXJQazhZehmV5uT2x2mvd6CYEvK2jzFaLbyjiPFN/image.png" alt="image.png"></p>
-<p><img src="https://cdn.steemitimages.com/DQmU8BHiAPaqTSfi2QY9yN9yZYjSinSRV6qgY1ETzhP2eDS/image.png" alt="image.png"></p>
-<p><img src="https://cdn.steemitimages.com/DQmZK8ARkK72vTBhcoF6E9ioXLHLF4E6b6dLKp4pnWWcUpz/image.png" alt="image.png"></p>
-<hr>
-<p>I hope this helps!</p>
-<h2 id="Steem-On"><a href="#Steem-On" class="headerlink" title="Steem On!~"></a><strong>Steem On!~</strong></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
-<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
-<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
-<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/free-account-registration-service-for-steem-steem" target="_blank" rel="noopener">&#x2018;Free Account Registration Service for STEEM! &#x514D;&#x8D39;&#x6CE8;&#x518C; STEEM &#x5E10;&#x53F7;&#xFF01;&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
