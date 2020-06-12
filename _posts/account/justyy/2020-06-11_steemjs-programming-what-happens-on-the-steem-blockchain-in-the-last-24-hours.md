@@ -8,9 +8,8 @@ toc: true
 position: 9999
 date: 2020-06-11 19:10:21
 categories:
-- witness-category
+- whalepower
 tags:
-- witness-category
 - whalepower
 - witness-tool
 - programming
@@ -31,7 +30,7 @@ widgets:
 
 Many questions are interesting but the answers are not obvious or easy to get. For example:  Who comments most in the last 24 hours?
 
-I am going to show you a pattern to find out the answers to such questions using SteemJs. 
+I am going to show you a pattern to find out the answers to such questions using [SteemJs](https://steemyy.com/steemjs/). 
 
 ## Get Current Lastest Block
 We need to get the latest block number on the steem blockchain, and we can work out roughly the last 24 hours block range by subtracting 20*60*24 (3 seconds a block).
@@ -103,7 +102,7 @@ We need to write the data into a database, or for simplicity, we can write to a 
 })();
 ```
 
-Of course, if you want to further develop into a tool, you would need a database, and a background daemon that automatically syncs with the blockchain.
+Of course, if you want to further develop into a tool, you would need a database, and a background daemon that automatically syncs with the [blockchain](https://helloacm.com/illustrating-the-blockchain-via-steemjs-blocks-are-chained/).
 
 <hr/>
 
@@ -111,6 +110,7 @@ Every little helps! I hope this helps!
 
 
 **Steem On!~**
+*Reposted to [Blog](https://helloacm.com/steemjs-programming-what-happens-on-the-steem-blockchain-in-the-last-24-hours/)*
 ------------------
 
 If you like my work, please consider voting for me, thanks!
