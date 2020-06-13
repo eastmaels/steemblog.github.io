@@ -230,6 +230,72 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/design-how-to-solve-503-error-of-api-when-resources-are-not-available/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemyy.com/images/vote-for-justyy.jpg" alt="Design: How to Solve 503 Error of API when Resources are not available?">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-06-13T16:25:09.000Z">2020-06-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/codeonsteem/">codeonsteem</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 315 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/design-how-to-solve-503-error-of-api-when-resources-are-not-available/">Design: How to Solve 503 Error of API when Resources are not available?</a>
+            
+        </h1>
+        <div class="content">
+            <p>The HTTP <a href="https://helloacm.com/how-to-respond-with-503-service-busy-to-requests-when-server-load-average-is-high/" target="_blank" rel="noopener">503 Error</a> indidicates the server is busy. It might be due to the fact that the servers are overloaded (high load average).</p>
+<p>One of my API is designed to return 503 Error when the cached file is not available. It is designed as the follows:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if (!is_file($file)) {</span><br><span class="line">    throw_503();</span><br><span class="line">    die();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The $file will be updated periodically e.g. every minute via <a href="https://helloacm.com/crontab-generator/" target="_blank" rel="noopener">Crontab</a>. When the OS is writing to that file, the <code>is_file</code> will return false because the file is in-use.</p>
+<p>One way of solving this is to have multiple caching versions, to avoid the single point of failure. For example, if a file-1 is not available we can check for file-2. These two files should not be updated at the same time.</p>
+<p>Another way to resolve this issue is to add a delay check (hacky solution), for example:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">if (!is_file($file)) {</span><br><span class="line">   sleep(1); // delay check.</span><br><span class="line">}</span><br><span class="line">if (!is_file($file)) {</span><br><span class="line">    throw_503();</span><br><span class="line">    die();</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+
+<p>Every little helps! I hope this helps!</p>
+<p><strong>Steem On!~</strong></p>
+<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="*Reposted to Blog"></a>*Reposted to <a href="https://helloacm.com/design-how-to-solve-503-error-of-api-when-resources-are-not-available/" target="_blank" rel="noopener">Blog</a></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/design-how-to-solve-503-error-of-api-when-resources-are-not-available" target="_blank" rel="noopener">&#x2018;Design: How to Solve 503 Error of API when Resources are not available?&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/a-bug-in-the-steemjs-regarding-the-incorrect-reputation/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmQQuv3X3rB1QE6aD7GgnZgQM1LkSQrXMFucLkRpVmVCwy/image.png" alt="A Bug in the SteemJs Regarding the Incorrect Reputation">
         </a>
@@ -591,71 +657,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/are-top-20-witnesses-voting-each-other-introducing-witness-voting-factor/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemyy.com/images/vote-for-justyy.jpg" alt="Are Top 20 Witnesses Voting Each Other? Introducing Witness-voting Factor">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-06-07T18:06:42.000Z">2020-06-07</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/witness/">witness</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 525 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/are-top-20-witnesses-voting-each-other-introducing-witness-voting-factor/">Are Top 20 Witnesses Voting Each Other? Introducing Witness-voting Factor</a>
-            
-        </h1>
-        <div class="content">
-            <p>Let&#x2019;s introduce a concept i.e. witness-voting factor that represent the average witness voting each other in the TOP 20. The maximum value is 20, and the minimal is 0.</p>
-<p>If the witness-voting factor is 20, it means that all top 20 witnesses are voting each other. This is not healthy as the gap (of votes) between TOP 20 and the rest will be always increasing. Also, since witnesses are voting each other, it is kinda controlled by a group of people who share the same interests - this is centralisation admit it or not.</p>
-<h1 id="SteemJs-code-to-compute-the-witness-voting-factor"><a href="#SteemJs-code-to-compute-the-witness-voting-factor" class="headerlink" title="SteemJs code to compute the witness-voting factor"></a>SteemJs code to compute the witness-voting factor</h1><p>The idea is to retrieve the list of the votes of the TOP 20, and group them, count the frequency and sort them. Compute the average. The witness-voting factor for Top 20 on <a href="https://helloacm.com/steemjs-how-many-witnesses-are-running-on-23-1/" target="_blank" rel="noopener">STEEM blockchain</a> is 4.5, compared to 12.65 on HIVE.</p>
-<p>Run the following in <a href="https://steemyy.com/steemjs/?s=function%20getTotalWitnesses()%20%7B%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0A%20%20%20%20%20%20steem.api.getWitnessCount(function(err%2C%20result)%20%7B%0A%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%7D)%3B%0A%7D%0A%0Afunction%20getAllWitnessAccounts(total)%20%7B%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20steem.api.getWitnesses(%5B...Array(total).keys()%5D%2C%20function(err%2C%20result)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%7D)%3B%0A%7D%20%20%20%0A%0Afunction%20getAccounts(accounts)%20%7B%0A%20%20%20%20return%20new%20Promise((resolve%2C%20reject)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20steem.api.getAccounts(accounts%2C%20function(err%2C%20result)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(!err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20resolve(result)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20reject(err)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%7D)%3B%0A%7D%20%20%20%0A%0A%0A(async%20function%20()%20%7B%0A%20%20%20%20const%20totalWitnesses%20%3D%20await%20getTotalWitnesses()%3B%0A%20%20%20%20let%20data%20%3D%20await%20getAllWitnessAccounts(totalWitnesses)%3B%0A%20%20%20%20data%20%3D%20data.filter(x%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20return%20(x.votes%20%3E%200)%20%26%26%20(x.running_version%20%3D%3D%3D%20%220.23.1%22)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%20%20data.sort((a%2C%20b)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20return%20b.votes%20-%20a.votes%3B%0A%20%20%20%20%7D)%3B%0A%20%20%20%20data%20%3D%20data.slice(0%2C%2020)%3B%0A%20%20%20%20let%20top%20%3D%20%5B%5D%3B%0A%20%20%20%20data.map((x)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20top.push(x.owner)%3B%0A%20%20%20%20%7D)%3B%0A%20%20%20%20const%20accountData%20%3D%20await%20getAccounts(top)%3B%0A%20%20%20%20let%20votes%20%3D%20%7B%7D%3B%0A%20%20%20%20data.map((x)%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20const%20account%20%3D%20accountData.filter(v%20%3D%3E%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20v.name%20%3D%3D%3D%20x.owner%0A%20%20%20%20%20%20%20%20%7D)%3B%0A%20%20%20%20%20%20%20%20for%20(let%20w%20of%20account%5B0%5D.witness_votes)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20if%20(typeof%20votes%5Bw%5D%20%3D%3D%3D%20%22undefined%22)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20votes%5Bw%5D%20%3D%201%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20votes%5Bw%5D%20%2B%2B%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D)%3B%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20var%20items%20%3D%20Object.keys(votes).map(function(key)%20%7B%0A%20%20%20%20%20%20return%20%5Bkey%2C%20votes%5Bkey%5D%5D%3B%0A%20%20%20%20%7D)%3B%0A%20%20%20%20%0A%20%20%20%20items.sort(function(first%2C%20second)%20%7B%0A%20%20%20%20%20%20return%20second%5B1%5D%20-%20first%5B1%5D%3B%0A%20%20%20%20%7D)%3B%0A%20%20%20%20%0A%20%20%20%20let%20x%20%3D%200%2C%20cnt%20%3D%200%3B%0A%20%20%20%20for%20(let%20w%20of%20items)%20%7B%0A%20%20%20%20%20%20%20%20if%20(top.includes(w%5B0%5D))%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20log(w%5B0%5D%20%2B%20%22%2C%20%22%20%2B%20w%5B1%5D)%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20x%20%2B%3D%20w%5B1%5D%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20cnt%20%2B%2B%3B%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%20%20log(x%2Fcnt)%3B%0A%7D)()%3B%0A%0A" target="_blank" rel="noopener">SteemJs Editor</a></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br></pre></td><td class="code"><pre><span class="line">function getTotalWitnesses() {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">      steem.api.getWitnessCount(function(err, result) {</span><br><span class="line">          if (!err) {</span><br><span class="line">              resolve(result);</span><br><span class="line">          } else {</span><br><span class="line">              reject(err);</span><br><span class="line">          }</span><br><span class="line">      });</span><br><span class="line">    });</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">function getAllWitnessAccounts(total) {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">          steem.api.getWitnesses([...Array(total).keys()], function(err, result) {</span><br><span class="line">            if (!err) {</span><br><span class="line">                resolve(result);</span><br><span class="line">            } else {</span><br><span class="line">                reject(err);</span><br><span class="line">           }</span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}   </span><br><span class="line"></span><br><span class="line">function getAccounts(accounts) {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">          steem.api.getAccounts(accounts, function(err, result) {</span><br><span class="line">            if (!err) {</span><br><span class="line">                resolve(result);</span><br><span class="line">            } else {</span><br><span class="line">                reject(err);</span><br><span class="line">           }</span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">(async function () {</span><br><span class="line">    const totalWitnesses = await getTotalWitnesses();</span><br><span class="line">    let data = await getAllWitnessAccounts(totalWitnesses);</span><br><span class="line">    data = data.filter(x =&gt; {</span><br><span class="line">        // reduce the noise</span><br><span class="line">        return (x.votes &gt; 0) &amp;&amp; (x.running_version === &quot;0.23.1&quot;);</span><br><span class="line">    });</span><br><span class="line">    // sort by votes</span><br><span class="line">    data.sort((a, b) =&gt; {</span><br><span class="line">        return b.votes - a.votes;</span><br><span class="line">    });</span><br><span class="line">    // only count TOP 20 witnesses</span><br><span class="line">    data = data.slice(0, 20);</span><br><span class="line">    let top = [];</span><br><span class="line">    data.map((x) =&gt; {</span><br><span class="line">        top.push(x.owner);</span><br><span class="line">    });</span><br><span class="line">    const accountData = await getAccounts(top);</span><br><span class="line">    let votes = {};</span><br><span class="line">    data.map((x) =&gt; {</span><br><span class="line">        const account = accountData.filter(v =&gt; {</span><br><span class="line">            return v.name === x.owner</span><br><span class="line">        });</span><br><span class="line">        // count the vote frequency for each witness</span><br><span class="line">        for (let w of account[0].witness_votes) {</span><br><span class="line">            if (typeof votes[w] === &quot;undefined&quot;) {</span><br><span class="line">                votes[w] = 1;</span><br><span class="line">            } else {</span><br><span class="line">                votes[w] ++;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    });    </span><br><span class="line">    </span><br><span class="line">    var items = Object.keys(votes).map(function(key) {</span><br><span class="line">      return [key, votes[key]];</span><br><span class="line">    });</span><br><span class="line">    </span><br><span class="line">    items.sort(function(first, second) {</span><br><span class="line">      return second[1] - first[1];</span><br><span class="line">    });</span><br><span class="line">    </span><br><span class="line">    let x = 0, cnt = 0;</span><br><span class="line">    for (let w of items) {</span><br><span class="line">        // TOP 20 witnesses only</span><br><span class="line">        if (top.includes(w[0])) {</span><br><span class="line">            log(w[0] + &quot;, &quot; + w[1]);</span><br><span class="line">            x += w[1];</span><br><span class="line">            cnt ++;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    log(x/cnt);</span><br><span class="line">})();</span><br></pre></td></tr></tbody></table></figure>
-<p>Here is the detail list:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">future.witness, 7</span><br><span class="line">justyy, 7</span><br><span class="line">steem-agora, 7</span><br><span class="line">steemchiller, 7</span><br><span class="line">dev.supporters, 6</span><br><span class="line">dlike, 6</span><br><span class="line">maiyude, 6</span><br><span class="line">steem-supporter, 6</span><br><span class="line">symbionts, 6</span><br><span class="line">steem-dragon, 4</span><br><span class="line">scissor.sisters, 4</span><br><span class="line">cryptoking777, 3</span><br><span class="line">hivei0, 3</span><br><span class="line">hoasen, 3</span><br><span class="line">juddsmith079, 3</span><br><span class="line">matreshka, 3</span><br><span class="line">protoss20, 3</span><br><span class="line">hinomaru-jp, 2</span><br><span class="line">inwi, 2</span><br><span class="line">rnt1, 2</span><br></pre></td></tr></tbody></table></figure><p></p>
-<hr>
-
-<p>Every little helps! I hope this helps!</p>
-<p><strong>Steem On!~</strong></p>
-<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="Reposted to Blog"></a><em>Reposted to <a href="https://helloacm.com/are-top-20-witnesses-voting-each-other-introducing-witness-voting-factor/" target="_blank" rel="noopener">Blog</a></em></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
-<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
-<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
-<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/are-top-20-witnesses-voting-each-other-introducing-witness-voting-factor" target="_blank" rel="noopener">&#x2018;Are Top 20 Witnesses Voting Each Other? Introducing Witness-voting Factor&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -674,7 +675,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/287/">287</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/288/">288</a></li>
             
         </ul>
     </nav>
