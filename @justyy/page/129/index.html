@@ -230,6 +230,84 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/jobtools-update-manage-your-favorite-jobs/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/3685e2ae528d7a952d5d3f0e3e86502eceb2image.png" alt="JobTools Update: Manage Your Favorite Jobs">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-19T00:55:45.000Z">2018-04-19</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 497 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/jobtools-update-manage-your-favorite-jobs/">JobTools Update: Manage Your Favorite Jobs</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Introduction-to-JobTools"><a href="#Introduction-to-JobTools" class="headerlink" title="Introduction to JobTools"></a>Introduction to JobTools</h1><p><a href="https://helloacm.com/jobtools-update-manage-your-favorite-jobs/" target="_blank" rel="noopener">JobTools</a> is the first and currently only ONE Job Seeking Tools in Chrome Extension. It is based on ZipRecuriter <a href="https://helloacm.com/php-job-searching-using-zip-recruiter-api/" target="_blank" rel="noopener">Job Seeking API</a>.</p>
+<h1 id="Motivation-of-the-New-Features"><a href="#Motivation-of-the-New-Features" class="headerlink" title="Motivation of the New Features"></a>Motivation of the New Features</h1><p>When you are browsing a list of jobs, you want to save the good ones (potential good fit) to your favorites and then later, you can submit applications one by one. This phrase is job filtering, where a &#x2018;saved-job-list&#x2019; will be very useful.</p>
+<h1 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h1><p>This commit: <a href="https://github.com/DoctorLai/JobTools/commit/2f7703f08ab4169fe44ff06c0f14c275041296cb" target="_blank" rel="noopener">here</a> adds the following:</p>
+<ol>
+<li>Save Job by clicking the image button</li>
+<li>Save-Job Tab</li>
+<li>Removing Job Button from the Favorite List</li>
+<li>Clear All Saved Job</li>
+</ol>
+<h1 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h1><p>Javascript in Chrome Browser</p>
+<h1 id="How-to-Implement"><a href="#How-to-Implement" class="headerlink" title="How to Implement?"></a>How to Implement?</h1><p>The <code>saved_jobs</code> is a Javascript dictionary that is saved to the browser.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">let saved_jobs = {}</span><br><span class="line"></span><br><span class="line">// load it when app starts</span><br><span class="line">if (settings[&apos;saved_jobs&apos;]) {</span><br><span class="line">    let saved_jobs_s = settings[&apos;saved_jobs&apos;];</span><br><span class="line">    // saved jobs </span><br><span class="line">    if (saved_jobs_s) {</span><br><span class="line">        try {</span><br><span class="line">            saved_jobs = JSON.parse(saved_jobs_s);</span><br><span class="line">        } catch (e) {</span><br><span class="line">            console.log(e);</span><br><span class="line">            saved_jobs = {};</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    // refresh the list</span><br><span class="line">    load_job_list(saved_jobs, $(&quot;div#saved_jobs&quot;));</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>load and save the job:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">// save a job</span><br><span class="line">const save_a_job = (id, title, company, date, min_salary, max_salary, location, url) =&gt; {</span><br><span class="line">    saved_jobs[id] = {</span><br><span class="line">        &quot;title&quot;: title,</span><br><span class="line">        &quot;company&quot;: company,</span><br><span class="line">        &quot;date&quot;: date,</span><br><span class="line">        &quot;min_salary&quot;: min_salary,</span><br><span class="line">        &quot;max_salary&quot;: max_salary,</span><br><span class="line">        &quot;location&quot;: location,</span><br><span class="line">        &quot;url&quot;: url</span><br><span class="line">    };</span><br><span class="line">    saveSettings(false);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">// remove a job</span><br><span class="line">const remove_a_job = (id) =&gt; {</span><br><span class="line">    delete saved_jobs[id];</span><br><span class="line">    saveSettings(false);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h1><p>Click the &#x2018;Save&#x2019; Image Button to save a job.<br><img src="https://cdn.utopian.io/posts/3685e2ae528d7a952d5d3f0e3e86502eceb2image.png" alt="image.png"></p>
+<p>Manage favorite jobs in Job Tab<br><img src="https://cdn.utopian.io/posts/ef5afbd7a5b711b7c22c5975674182b0f341image.png" alt="image.png"></p>
+<h1 id="Installation-Add-to-Your-Browser"><a href="#Installation-Add-to-Your-Browser" class="headerlink" title="Installation (Add to Your Browser)"></a>Installation (Add to Your Browser)</h1><p>You can install the extension at <a href="https://chrome.google.com/webstore/detail/job-tools/ghclpimmbjepihhlnklkiemncamklkii" target="_blank" rel="noopener">Chrome Webstore</a>.  </p>
+<p>For Opera browsers, the workaround is to first install <a href="https://addons.opera.com/en/extensions/details/download-chrome-extension-9/" target="_blank" rel="noopener">Chrome Extension Gadget</a>.</p>
+<p>And similarly for Firefox, you can install <a href="https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Store Foxified</a> before you install JobTools.</p>
+<h1 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a>Contribution</h1><p>Fully Open Source: <a href="https://github.com/DoctorLai/JobTools" target="_blank" rel="noopener">https://github.com/DoctorLai/JobTools</a>  You can either submit a Pull Request or open a issue (for suggestions and bug reports)</p>
+<hr>
+<h2 id="Support-me-and-my-work-as-a-witness-by"><a href="#Support-me-and-my-work-as-a-witness-by" class="headerlink" title="Support me and my work as a witness by"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
+</ol>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/jobtools-update-manage-your-favorite-jobs" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/jobtools-update-manage-your-favorite-jobs" target="_blank" rel="noopener">JobTools Update: Manage Your Favorite Jobs</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/little-math-puzzles/" class="image is-7by1">
             <img class="thumbnail" src="https://gateway.ipfs.io/ipfs/QmbEnKYNhXTo8KVN1MaxSSF7auCEux2n3BfoibxduwHyP3" alt="Little Math Puzzles">
         </a>
@@ -2260,93 +2338,6 @@
 <p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/revive-utopian-chrome-extension-thanks-to-wehmoen-wrapping-utopian-api-calls" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/revive-utopian-chrome-extension-thanks-to-wehmoen-wrapping-utopian-api-calls" target="_blank" rel="noopener">Revive Utopian Chrome Extension thanks to @wehmoen ! (Wrapping Utopian API Calls)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/london-is-such-a-lovely-city/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmVh2kr6XYZATUyTnc5MxywDMzj5vKB7y6QRiqipXZAYvz/2018-04-14%2012.46.08.jpg" alt="伦敦是个很有活力的城市 London is such a lovely city.">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-04-15T11:12:00.000Z">2018-04-15</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1126 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/london-is-such-a-lovely-city/">伦敦是个很有活力的城市 London is such a lovely city.</a>
-            
-        </h1>
-        <div class="content">
-            <p><strong>I attended <a href="https://steemit.com/promo-steem/@justyy/london-cryptocurrency-show-steem-is-the-no-1-blockchain-in-the-world" target="_blank" rel="noopener">London Cryptocurrency Show</a> yesterday, and this post is more about London.</strong></p>
-<p>&#x6628;&#x5929;&#x56E0;&#x4E3A;&#x53C2;&#x52A0;&#x4E86; <a href="https://steemit.com/promo-steem/@justyy/london-cryptocurrency-show-steem-is-the-no-1-blockchain-in-the-world" target="_blank" rel="noopener">London Cryptocurrency Show</a> &#xFF08;&#x5C55;&#x4F1A;&#x7167;&#x7247;&#xFF09;&#x53BB;&#x4E86;&#x4E00;&#x8D9F;&#x4F26;&#x6566;&#xFF0C;&#x56DE;&#x6765;&#x4E4B;&#x540E;&#x5C31;&#x89C9;&#x5F97;&#x6211;&#x4E0D;&#x80FD;&#x4E00;&#x76F4;&#x90FD;&#x751F;&#x6D3B;&#x5728;&#x82F1;&#x56FD;&#x7684;<a href="https://justyy.com/archives/5887" target="_blank" rel="noopener">&#x6751;&#x91CC;</a>&#x3002;</p>
-<h2 id="&#x5C55;&#x4F1A;"><a href="#&#x5C55;&#x4F1A;" class="headerlink" title="&#x5C55;&#x4F1A;"></a>&#x5C55;&#x4F1A;</h2><p>&#x6211;&#x672C;&#x4EBA;&#x6BD4;&#x8F83;&#x559C;&#x6B22;&#x8FD9;&#x4E2A;&#x56FE;&#x6807;&#x8BBE;&#x8BA1;&#xFF0C; bitstocks &#x4E5F;&#x662F;LCCS&#x7684;&#x4E3B;&#x8981;&#x8D5E;&#x52A9;&#x5546;<br><img src="https://steemitimages.com/DQmVh2kr6XYZATUyTnc5MxywDMzj5vKB7y6QRiqipXZAYvz/2018-04-14%2012.46.08.jpg" alt="2018-04-14 12.46.08.jpg"></p>
-<p>&#x514D;&#x8D39;&#x9886;&#x53D6;PAC<br><img src="https://steemitimages.com/DQmWjtZgdzxHo8rESXkvVD5YJDnp8Nwo31DcaMyqDLsTvKL/2018-04-14%2012.20.57.jpg" alt="2018-04-14 12.20.57.jpg"></p>
-<p>&#x628A;STEEM ID&#x5199;&#x4E0A;&#xFF0C;&#x7701;&#x5F97;&#x4ECB;&#x7ECD;&#x4E86;<br><img src="https://steemitimages.com/DQmUzpywCWT43RLiiWbHyMh48e7EBiGnCe6DYyGL4zMXewR/2018-04-14%2020.03.25.jpg" alt="2018-04-14 20.03.25.jpg"></p>
-<p>&#x73AF;&#x4FDD;&#xFF0C;&#x4E0B;&#x6B21;&#x53BB;&#x4E70;&#x83DC;&#x5C31;&#x5E26;&#x4E0A;&#x8FD9;&#x4E2A;&#xFF0C;&#x7701;&#x5F97;&#x6BCF;&#x6B21;&#x4E70;&#x83DC;&#x62FF;&#x56DE;&#x5BB6;&#x4E00;&#x5806;&#x5851;&#x6599;&#x888B;&#x3002;<br><img src="https://steemitimages.com/DQmNQRe1YUUb2enzdvsBeNiqYJR1xm7CmpByDN1JkGfmNLX/2018-04-14%2020.03.54.jpg" alt="2018-04-14 20.03.54.jpg"></p>
-<p>Promo-Steem &#x7684;&#x5C55;&#x53F0;&#xFF0C;&#x6574;&#x4E86;&#x6574;&#x4E2A;&#x5C55;&#x4F1A;&#x7684;&#x7126;&#x70B9;&#xFF0C;&#x4E00;&#x5929;&#x4E0B;&#x6765;&#xFF0C;&#x5C31;&#x6211;&#x4EEC;&#x5C55;&#x53F0;&#x524D;&#x9762;&#x805A;&#x96C6;&#x4E86;&#x6700;&#x591A;&#x7684;&#x4EBA;&#x3002;<br><img src="https://gateway.ipfs.io/ipfs/QmfEYuwFSHDc4Pp2advXt77hYtfCQhGx2NozjLLqoN2rNt" alt="2018-04-14 10.03.15.jpg"></p>
-<p>&#x77FF;&#x673A;&#xFF0C;8&#x4E2A;GPU&#xFF0C;4000&#x591A;&#x82F1;&#x9551;&#xFF0C;&#x8BF4;&#x662F;&#x62FF;&#x6765;&#x6316;&#x83B1;&#x7279;&#x5E01;&#x53EF;&#x4EE5;&#x6323;&#x94B1;&#xFF0C;&#x58F0;&#x97F3;&#x5F88;&#x5C0F;&#x3002;<br><img src="https://gateway.ipfs.io/ipfs/QmV2bdL6zk9Z19vUuMiXiUL12oHbKgnJEKExX3nmXfCgNC" alt="2018-04-14 12.47.28.jpg"></p>
-<p>2&#x7F8E;&#x5973;&#x5728;&#x4E3A;STEEM&#x505A;&#x5BA3;&#x4F20;&#x3002;<br><img src="https://steemitimages.com/DQmfFtSjxsYYudUuFWVyQBvtWVD7CJiKeNL1ygZRWs7SQgv/image.png" alt=""></p>
-<p>&#x5BF9;&#x4E86;&#xFF0C;&#x6628;&#x5929;&#x89C1;&#x5230;&#x4E86;&#x5F88;&#x591A;Steemian, &#x7279;&#x522B;&#x662F;&#x5927;&#x725B; @roelandp &#x7279;&#x522B;&#x7684;&#x5E74;&#x8F7B;&#xFF0C;&#x5413;&#x5F97;&#x6211;&#x4E00;&#x56DE;&#x5BB6;&#x5C31;&#x5F00;&#x59CB;&#x4FDD;&#x517B;&#xFF0C;&#x62FF;&#x7740;&#x5AB3;&#x5987;&#x7684;&#x74F6;&#x74F6;&#x7F50;&#x7F50;&#x5F80;&#x8138;&#x4E0A;&#x6D82;. :P</p>
-<h2 id="&#x4F26;&#x6566;"><a href="#&#x4F26;&#x6566;" class="headerlink" title="&#x4F26;&#x6566;"></a>&#x4F26;&#x6566;</h2><p>&#x6211;&#x65E9;&#x4E0A;5&#x70B9;&#x8D77;&#x5E8A;&#xFF0C;&#x5F00;&#x8F66;&#x534A;&#x5C0F;&#x65F6;&#x5230; Huntingdon&#xFF0C;&#x5468;&#x672B;&#x505C;&#x8F66;&#x4E00;&#x5929;3&#x82F1;&#x9551;&#xFF0C;&#x5750;&#x4E86;7&#x70B9;&#x7684;&#x706B;&#x8F66;&#x5230;&#x4F26;&#x6566; &#x56FD;&#x738B;&#x5341;&#x5B57;&#x706B;&#x8F66;&#x7AD9;&#xFF0C;&#x5927;&#x6982;1&#x5C0F;&#x65F6;&#xFF0C;&#x5F53;&#x5929;&#x6765;&#x56DE;&#x5305;&#x5730;&#x94C1;&#x7968;&#x4E00;&#x5171;25&#x82F1;&#x9551;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmfJpEdFdttY6ieJdagvakgFtjiuDikJXdX3QBKDSSvUBm/2018-04-14%2008.51.09.jpg" alt="2018-04-14 08.51.09.jpg"></p>
-<p>&#x5927;&#x6982;20&#x5206;&#x949F;&#x5750;&#x5730;&#x94C1;&#x5230;&#x4E86; Hammersmith&#xFF0C;&#x5C31;&#x627E;&#x5395;&#x6240;&#xFF0C;&#x5730;&#x94C1;&#x53E3;&#x5546;&#x573A;&#x5904;&#x7684;&#x9EA6;&#x5F53;&#x52B3;&#x7B49;&#x5E97;&#x90FD;&#x6CA1;&#x6709;&#x5395;&#x6240;&#x7684;&#xFF0C;&#x6700;&#x540E;&#x53D1;&#x73B0;&#xFF0C;&#x9700;&#x8981;&#x6295;&#x5E01; 50P &#xFF08;&#x5927;&#x6982;4&#x5757;&#x94B1;&#xFF09;&#x4E0A;&#x4E00;&#x6B21;&#x5395;&#x6240;&#x3002;</p>
-<p>&#x65E9;&#x9910;&#x5728;COSTA&#xFF0C;&#x82B1;&#x8D39;7&#x82F1;&#x9551;&#xFF0C;2&#x4E2A;&#x6708;&#x4E3B;&#x673A;&#x8D39; :(   &#x751F;&#x6D3B;&#x5728;&#x4F26;&#x6566;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x90FD;&#x662F;&#x571F;&#x8C6A;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmViGbT5m2WTmQJZemFseH7mFfnZHLJwk4baGDFvSEYPEC/2018-04-14%2008.14.59.jpg" alt="2018-04-14 08.14.59.jpg"></p>
-<p>&#x73B0;&#x4EE3;&#x5316;&#x7684;&#x4F26;&#x6566;&#x8857;&#x666F;<br><img src="https://gateway.ipfs.io/ipfs/QmZVGwKtvhYh5AfkZbe5EqCGS84Zd47TiP8BnEQp1wD38z" alt="2018-04-14 16.44.12.jpg"></p>
-<p>&#x5510;&#x4EBA;&#x8857;&#x5728; Piccadilly &#x5730;&#x94C1;&#x94B1;&#x7684; Leicester Square &#x7AD9;<br><img src="https://gateway.ipfs.io/ipfs/QmfNUrzyGjw2NLd28BVvhcMuBnLPrwB7w9vf8j5NcEjyzz" alt="2018-04-14 14.12.04.jpg"></p>
-<p>&#x4F4F;&#x5728;&#x6751;&#x91CC;&#xFF0C;&#x5E73;&#x65F6;&#x9664;&#x4E86;&#x516C;&#x53F8;&#x7684;&#x540C;&#x4E8B;&#x53EF;&#x80FD;&#x90FD;&#x89C1;&#x4E0D;&#x8FC7;&#x51E0;&#x4E2A;&#x65B0;&#x9762;&#x5B54;&#xFF0C;&#x8FD9;&#x4E0B;&#x611F;&#x89C9;&#x8FDB;&#x4E86;&#x57CE;&#xFF0C;&#x56DE;&#x5230;&#x4E86;&#x7956;&#x56FD;&#x3002;<br><img src="https://steemitimages.com/DQmRQTBY3W3JeJJP7XuBT31j7CRoS7GDj2B2Ad7Yev5m5Sk/2018-04-14%2014.14.28.jpg" alt="2018-04-14 14.14.28.jpg"></p>
-<p>17&#x5EA6;&#xFF0C;&#x590F;&#x5929;&#x8981;&#x6765;&#x4E86;&#xFF0C;&#x767D;&#x82B1;&#x82B1;&#x7684;&#x5927;&#x817F;&#x8981;&#x6765;&#x4E86;&#x3002;<br><img src="https://steemitimages.com/DQmV2uqLjhkccqniMCcg3nWDWMEK9yGMa2UX2tbviZhW5Ci/2018-04-14%2014.56.58.jpg" alt="2018-04-14 14.56.58.jpg"></p>
-<p>&#x8D70;&#x7D2F;&#x4E86;&#xFF0C;&#x5750;&#x4E0B;&#x6765;&#x5403;&#x4E2A;&#x4E32;&#xFF0C;&#x771F;&#x63A5;&#x5730;&#x6C14;&#xFF0C;&#x4E00;&#x4E32;1&#x9551;5<br><img src="https://steemitimages.com/DQmfR8zXwxz7G1AgwBAMap38BqVVURaSEX1Yag7fGYiTHS3/2018-04-14%2014.30.50.jpg" alt="2018-04-14 14.30.50.jpg"></p>
-<p>&#x6ECB;&#x8865;&#x6D77;&#x9C9C;&#x9762;&#xFF0C;&#x653E;&#x67B8;&#x675E;&#x7684;&#xFF0C;&#x5927;&#x8865;&#x3002;<br><img src="https://steemitimages.com/DQmS4EvUrqVch12nX1666bEow27KKJhpMywimBFiPUTBnuy/2018-04-14%2014.38.35.jpg" alt="2018-04-14 14.38.35.jpg"></p>
-<p>&#x5B8C;&#x4E8B;&#x4E86;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;&#xFF0C;&#x592A;&#x63A5;&#x5730;&#x6C14;&#x4E86;&#xFF01;<br><img src="https://steemitimages.com/DQmTknL4TP1P56g9MXavTTBAwiRjZTDqJATFrDcJQLdD2To/2018-04-14%2014.50.11.jpg" alt="2018-04-14 14.50.11.jpg"></p>
-<p>&#x4F26;&#x6566;&#x7684; St Pancras International &#x8F66;&#x7AD9;&#x548C; Kings Cross &#x4E00;&#x6837;&#x7684;&#x6709;&#x540D;&#xFF0C;&#x4E8B;&#x5B9E;&#x4E0A;&#x4E24;&#x4E2A;&#x5730;&#x65B9;&#x662F;&#x7D27;&#x6328;&#x7740;&#x7684;&#x3002;&#x6709;&#x591A;&#x5C11;&#x5C0F;&#x4F19;&#x4F34;&#x56DE;&#x56FD;&#x540E;&#x603B;&#x662F;&#x5F88;&#x60F3;&#x5FF5;&#x8FD9;&#x91CC;&#x3002;<br><img src="https://steemitimages.com/DQmQJNZRDAxoHwcoAh3T4niLfD2QYisayXp6tQQSrFZbcuw/2018-04-14%2017.18.07.jpg" alt="2018-04-14 17.18.07.jpg"></p>
-<p>&#x4ECE;&#x8FD9;&#x91CC;&#x5750;&#x6B27;&#x6D32;&#x4E4B;&#x661F; EuroStar &#x4ECE;&#x6D77;&#x5E95;&#x96A7;&#x9053;&#x5750;&#x706B;&#x8F66;&#x5230;&#x6CD5;&#x56FD;&#x5DF4;&#x9ECE;&#xFF08;30&#x82F1;&#x9551;&#xFF0C;&#x4E0D;&#x5230;3&#x5C0F;&#x65F6;&#xFF09;&#x3002;<br><img src="https://steemitimages.com/DQmWbidYWidGjcZegVs9K1p4HAixbQDb8VwrEhDZbcShVk6/2018-04-14%2017.21.20.jpg" alt="2018-04-14 17.21.20.jpg"></p>
-<p><img src="https://steemitimages.com/DQmWzT53LBazjMZEfCREhEvkzWaZiBZHLrvDf5y852n1sur/image.png" alt=""></p>
-<p>&#x54C8;&#x7406;&#x6CE2;&#x7279;&#x7684;&#x90A3;&#x4E2A; 9&#x53C8;3/4&#x7AD9;&#x53F0;&#xFF0C;&#x6BCF;&#x6B21;&#x6765;&#x90FD;&#x6709;&#x4E00;&#x957F;&#x961F;&#x7684;&#x65C5;&#x5BA2;&#x8981;&#x6392;&#x961F;&#x6392;&#x7167;&#x3002;<br><img src="https://steemitimages.com/DQmdbHE4S1NJrvZ1LTJ5mJP9ZLz5pbsxVYEw9g1Jxfbbx6g/2018-04-14%2017.26.53.jpg" alt="2018-04-14 17.26.53.jpg"></p>
-<p>&#x62CD;&#x7167;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x5B9A;&#x8981;&#x8DF3;&#x8D77;&#x6765;&#xFF0C;&#x65C1;&#x8FB9;&#x7684;&#x5546;&#x5E97;&#x8FD8;&#x63D0;&#x4F9B;&#x56F4;&#x5DFE;&#xFF0C;&#x7136;&#x540E;&#x62CD;&#x7167;&#x5B8C;&#x8FDB;&#x5E97;&#x2026;&#x2026;<br><img src="https://steemitimages.com/DQmWh9eM4eJuL1vd7ZAczo6osVvvVFZADdtzfgHBj5dJD6Q/2018-04-14%2017.27.50.jpg" alt="2018-04-14 17.27.50.jpg"></p>
-<p>&#x4ECE;&#x5510;&#x4EBA;&#x8857;&#x4E70;&#x4E86;&#x4E9B;&#x70B9;&#x5FC3;&#x5E26;&#x56DE;&#x5BB6;&#x3002;<br><img src="https://steemitimages.com/DQmWhpQkGMkzyr5cYx6q3qRXqbjmo1UFub5aShH5envujf4/2018-04-14%2019.29.29.jpg" alt="2018-04-14 19.29.29.jpg"></p>
-<p><a href="https://justyy.com/archives/6241" target="_blank" rel="noopener">&#x4F26;&#x6566;</a>&#x662F;&#x4E2A;&#x5F88;&#x6709;&#x9B45;&#x529B;&#x7684;&#x57CE;&#x5E02;&#xFF0C;&#x53EF;&#x60DC;&#x751F;&#x6D3B;&#x6210;&#x672C;&#x592A;&#x9AD8;&#xFF0C;&#x6211;&#x6682;&#x65F6;&#x8FD8;&#x4F4F;&#x4E0D;&#x8D77;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x6253;&#x7B97;&#x4E0B;&#x6B21;&#x653E;&#x5047;&#x5E26;&#x7740;&#x5AB3;&#x5987;&#x5B69;&#x5B50;&#x53BB;&#x4F26;&#x6566;&#x8FC7;&#x4E2A;&#x5468;&#x672B;&#xFF01;</p>
-<hr>
-<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
-<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
-<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
-</ol>
-<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/london-is-such-a-lovely-city" target="_blank" rel="noopener">&#x4F26;&#x6566;&#x662F;&#x4E2A;&#x5F88;&#x6709;&#x6D3B;&#x529B;&#x7684;&#x57CE;&#x5E02; London is such a lovely city.</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
