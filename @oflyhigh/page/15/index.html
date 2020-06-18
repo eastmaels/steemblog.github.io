@@ -230,6 +230,183 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/python-int64t/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_960_720.jpg" alt="每天进步一点点：Python 中int64_t的最大值？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-01T02:40:30.000Z">2020-05-01</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1140 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/python-int64t/">每天进步一点点：Python 中int64_t的最大值？</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;&#x6D4B;&#x8BD5;HIVE API&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53D1;&#x73B0;&#x8981;&#x60F3;&#x4F7F;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;API&#x6309;&#x7740;&#x9884;&#x60F3;&#x4E2D;&#x7684;&#x60C5;&#x51B5;&#x6B63;&#x786E;&#x5DE5;&#x4F5C;&#xFF0C;&#x9700;&#x8981;&#x4F20;&#x5165;int64_t&#x7C7B;&#x578B;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x4F60;&#x8981;&#x8BF4;&#x4EC0;&#x4E48;8&#x4F4D;&#x3001;16&#x4F4D;&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x6211;&#x4E5F;&#x8BB8;&#x5F20;&#x53E3;&#x5C31;&#x6765;&#xFF0C;&#x53EF;&#x4EE5;64&#x4F4D;&#x6211;&#x7684;&#x5927;&#x8111;&#x4E5F;&#x5904;&#x7406;&#x4E0D;&#x8FC7;&#x6765;&#x554A;&#x3002;</p>
+<p><img src="https://cdn.pixabay.com/photo/2015/11/15/07/47/geometry-1044090_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x57FA;&#x672C;&#x539F;&#x7406;"><a href="#&#x57FA;&#x672C;&#x539F;&#x7406;" class="headerlink" title="&#x57FA;&#x672C;&#x539F;&#x7406;"></a>&#x57FA;&#x672C;&#x539F;&#x7406;</h1><p>HIVE&#x4EE3;&#x7801;&#x4E2D;&#x76F4;&#x63A5;&#x7528;&#x7684;&#x662F;<code>std::numeric_limits&lt; int64_t &gt;::max()</code>&#xFF0C;&#x6211;&#x4E5F;&#x6CA1;&#x6CD5;&#x76F4;&#x63A5;&#x5F15;&#x7528;&#x5440;&#x3002;</p>
+<p>&#x90A3;64&#x4F4D;&#x6700;&#x5927;&#x503C;&#x662F;&#x591A;&#x5C11;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#xFF0C;<strong><em>&#x8BA1;&#x7B97;&#x673A;&#x4E2D;&#x7684;&#x6570;&#x90FD;&#x662F;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#xFF0C;&#x6240;&#x8C13;&#x591A;&#x5C11;&#x4F4D;&#x5C31;&#x662F;&#x591A;&#x5C11;&#x4E2A;0&#x548C;1</em></strong>&#xFF0C;&#x6BD4;&#x5982;64&#x4F4D;&#x5C31;&#x662F;64&#x4E2A;0&#x3001;1&#x7EC4;&#x5408;&#x3002;</p>
+<p>&#x800C;<strong><em>&#x6709;&#x7B26;&#x53F7;&#x6570;&#x6700;&#x9AD8;&#x4F4D;&#x7528;&#x6765;&#x8868;&#x793A;&#x7B26;&#x53F7;&#x4F4D;</em></strong>&#xFF0C;&#x7B26;&#x53F7;&#x4F4D;&#x4E3A;0&#x8868;&#x793A;&#x6B63;&#x6570;&#xFF0C;&#x7B26;&#x53F7;&#x4F4D;&#x4E3A;1&#x8868;&#x793A;&#x8D1F;&#x6570;&#xFF0C;&#x5176;&#x5B83;&#x6570;&#x4F4D;&#x7528;&#x8865;&#x7801;&#x7684;&#x5F62;&#x5F0F;&#x8868;&#x793A;&#xFF1A;</p>
+<blockquote>
+<p>&#x6B63;&#x6570;&#x7684;&#x8865;&#x7801;&#x5C31;&#x662F;&#x5176;&#x4E8C;&#x8FDB;&#x5236;&#x8868;&#x793A;&#xFF0C;&#x4E0E;&#x539F;&#x7801;&#x76F8;&#x540C;&#xFF1B;&#x8D1F;&#x6570;&#x7684;&#x8865;&#x7801;&#x5C31;&#x662F;&#x9664;&#x7B26;&#x53F7;&#x4F4D;&#x5916;&#x7684;&#x6240;&#x6709;&#x4F4D;&#x53D6;&#x53CD;&#x540E;&#x52A0;1&#x3002;</p>
+</blockquote>
+<h1 id="&#x4EE3;&#x7801;&#x8BA1;&#x7B97;"><a href="#&#x4EE3;&#x7801;&#x8BA1;&#x7B97;" class="headerlink" title="&#x4EE3;&#x7801;&#x8BA1;&#x7B97;"></a>&#x4EE3;&#x7801;&#x8BA1;&#x7B97;</h1><p>&#x77E5;&#x9053;&#x4E86;&#x8FD9;&#x4E9B;&#xFF0C;&#x90A3;&#x4E48;&#x6C42;&#x4E0D;&#x540C;&#x4F4D;&#x6570;&#x7684;&#x6570;&#x7684;&#x6700;&#x5927;&#x6B63;&#x503C;&#x5C31;&#x5F88;&#x5BB9;&#x6613;&#x4E86;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x4E0A;&#x8FF0;&#x4FE1;&#x606F;&#x5199;&#x51FA;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmQrTwxgDyFmxLd1huMRj5gxnKEzqJ8vfF9AYJtYvszLJr/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x8BA1;&#x7B97;&#x4E8C;&#x8FDB;&#x5236;&#x51FD;&#x6570;&#x7684;10&#x8FDB;&#x5236;&#x503C;&#xFF0C;&#x56E0;&#x4E3A;&#x6B63;&#x6570;&#x8865;&#x7801;&#x548C;&#x6E90;&#x7801;&#x76F8;&#x540C;&#xFF0C;&#x90A3;&#x4E48;<strong><em>int64_t&#x6700;&#x5927;&#x503C;&#x5176;&#x5B9E;&#x5C31;&#x662F;63&#x4E2A;1&#x7EC4;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;</em></strong>&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x5E76;&#x8BA1;&#x7B97;&#x4E00;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmY4EfkHr3mMM51188JC9GegAkhQXjXqLVvxkhTkemWXAr/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x770B;&#x6765;<code>9223372036854775807</code>&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<h1 id="&#x4F7F;&#x7528;ctypes"><a href="#&#x4F7F;&#x7528;ctypes" class="headerlink" title="&#x4F7F;&#x7528;ctypes"></a>&#x4F7F;&#x7528;ctypes</h1><p>&#x4E3A;&#x4E86;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x5199;&#x4E86;&#x4E00;&#x5806;&#x5783;&#x573E;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x6709;&#x70B9;&#x50BB;&#xFF0C;&#x90A3;&#x662F;&#x4E0D;&#x662F;&#x6709;&#x66F4;&#x7B80;&#x4FBF;&#x7684;&#x65B9;&#x6CD5;&#x5462;&#xFF1F;&#x6211;&#x627E;&#x5230;&#x4E00;&#x79CD;&#x4E5F;&#x8BB8;&#x4E0D;&#x7B97;&#x662F;&#x7B80;&#x4FBF;&#x65B9;&#x6CD5;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x90A3;&#x5C31;&#x662F;&#x4F7F;&#x7528;<a href="https://docs.python.org/3.6/library/ctypes.html" target="_blank" rel="noopener">ctypes</a></p>
+<p>ctypes&#x80FD;&#x505A;&#x5F88;&#x591A;&#x4E8B;&#x60C5;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x60F3;&#x8BA9;&#x5B83;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5728;python&#x4E2D;&#x4F7F;&#x7528;c&#x8BED;&#x8A00;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6BD4;&#x5982;int64&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x6839;&#x636E;&#x4E0A;&#x8FF0;&#x5206;&#x6790;&#x4E0D;&#x96BE;&#x5F97;&#x51FA;&#xFF0C;int64&#x6700;&#x5927;&#x503C;&#x5C31;&#x662F;uint64&#x6700;&#x5927;&#x503C;&#x51CF;1&#x518D;&#x9664;&#x4EE5;2&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x8BA1;&#x7B97;int64&#x7684;&#x6700;&#x5927;&#x503C;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQme7W7AZHPAMAqz5fbMb2P4xkAvHMHtU97UeieKQUpUurp/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x5BF9;&#x6BD4;&#x4E0D;&#x96BE;&#x53D1;&#x73B0;&#xFF0C;&#x548C;&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x5B8C;&#x5168;&#x4E00;&#x81F4;&#x3002;</p>
+<h1 id="&#x79FB;&#x4F4D;&#x8BA1;&#x7B97;"><a href="#&#x79FB;&#x4F4D;&#x8BA1;&#x7B97;" class="headerlink" title="&#x79FB;&#x4F4D;&#x8BA1;&#x7B97;"></a>&#x79FB;&#x4F4D;&#x8BA1;&#x7B97;</h1><p>&#x5176;&#x5B9E;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x66F4;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x79FB;&#x4F4D;&#x8BA1;&#x7B97;&#x6CD5;&#xFF0C;int64&#x7684;&#x6700;&#x5927;&#x503C;&#x662F;63&#x4E2A;1&#x7EC4;&#x6210;&#x7684;2&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x600E;&#x4E48;&#x80FD;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x5462;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x77E5;&#x9053;1&#x4E2A;1&#x7EC4;&#x6210;&#x7684;2&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E8C;&#x8FDB;&#x5236;&#x6570;10&#x51CF;&#x53BB;&#x4E8C;&#x8FDB;&#x5236;&#x6570;1&#x6765;&#x83B7;&#x53D6;&#xFF0C;&#x90A3;&#x4E48;63&#x4E2A;1&#x7EC4;&#x6210;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x5176;&#x5B9E;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;10000(63&#x4E2A;&#x96F6;)&#x7EC4;&#x6210;&#x7684;64&#x4F4D;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x51CF;1&#x6765;&#x83B7;&#x53D6;&#xFF0C;&#x800C;1&#x540E;&#x8FB9;63&#x4E2A;&#x96F6;&#xFF0C;&#x5C31;&#x662F;&#x628A;1&#x5DE6;&#x79FB;&#x4E86;63&#x4F4D;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x4E5F;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmdGvxfdBvShLKxEh4CZcM9PjY89M4Z6cNsdZ9u5Pvq4xQ/image.png" alt="image.png"></p>
+</blockquote>
+<h1 id="&#x5230;&#x5E95;&#x7528;&#x5565;&#xFF1F;"><a href="#&#x5230;&#x5E95;&#x7528;&#x5565;&#xFF1F;" class="headerlink" title="&#x5230;&#x5E95;&#x7528;&#x5565;&#xFF1F;"></a>&#x5230;&#x5E95;&#x7528;&#x5565;&#xFF1F;</h1><p>&#x5C3D;&#x7BA1;&#x6211;<strong><em>&#x5236;&#x9020;&#x51FA;&#x4E09;&#x79CD;&#x8D85;&#x7EA7;&#x590D;&#x6742;&#x7684;&#x8BA1;&#x7B97;&#x65B9;&#x6CD5;</em></strong>&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x5F88;&#x50BB;&#xFF0C;&#x4E0D;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x561B;&#xFF0C;&#x76F4;&#x63A5;&#x5F15;&#x7528;<code>9223372036854775807</code>&#x5C31;&#x597D;&#x4E86;&#x5457;&#xFF1F;</p>
+<p>&#x53EF;&#x662F;&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x5F15;&#x7528;&#x8FD9;&#x4E2A;&#x6570;&#x6211;&#x53C8;&#x89C9;&#x5F97;&#x5F88;&#x4E0D;&#x4F18;&#x96C5;&#xFF0C;&#x54EA;&#x6015;&#x6211;&#x53EF;&#x4EE5;&#x505A;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<blockquote>
+<p><code>MAX_INT64_VALUE = 9223372036854775807</code></p>
+</blockquote>
+<p>&#x6211;&#x4F30;&#x8BA1;&#x4EE5;&#x540E;&#x6211;&#x4F1A;&#x5FCD;&#x4E0D;&#x4F4F;&#x95EE;&#x81EA;&#x5DF1;&#xFF0C;&#x8FD9;&#x4E2A;<code>9223372036854775807</code>&#x54EA;&#x91CC;&#x6765;&#x7684;&#x5462;&#xFF1F;</p>
+<p>&#x60F3;&#x4E86;&#x597D;&#x4E45;&#x4E4B;&#x540E;&#x7A81;&#x7136;&#x60F3;&#x8D77;&#x6765;&#xFF0C;&#x6211;&#x662F;&#x4E0D;&#x662F;&#x592A;&#x50BB;&#x4E86;&#xFF0C;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5C31;&#x662F;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x7684;&#x4FBF;&#x4E8E;&#x9605;&#x8BFB;&#x7684;&#x8868;&#x793A;&#x561B;&#xFF0C;&#x90A3;&#x4E48;INT64&#x7684;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x90A3;&#x4E0D;&#x5C31;&#x662F;<code>0x7FFFFFFFFFFFFFFF</code>&#x561B;(&#x6700;&#x9AD8;&#x4F4D;&#x4E0D;&#x7B49;&#x4E8E;1)&#xFF0C;&#x6240;&#x4EE5;&#x4EE3;&#x7801;&#x4E2D;&#x76F4;&#x63A5;&#x7528;&#x4EE5;&#x4E0B;&#x5B9A;&#x4E49;&#x5373;&#x53EF;&#xFF1A;</p>
+<blockquote>
+<p><code>MAX_INT64_VALUE = 0x7FFFFFFFFFFFFFFF</code></p>
+</blockquote>
+<p>&#x65E2;&#x542B;&#x4E49;&#x660E;&#x786E;&#xFF0C;&#x53C8;&#x4E0D;&#x4F1A;&#x6709;&#x7591;&#x95EE;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x53C8;&#x5F88;&#x4F18;&#x96C5;&#x3002;</p>
+<h1 id="&#x8865;&#x5145;"><a href="#&#x8865;&#x5145;" class="headerlink" title="&#x8865;&#x5145;"></a>&#x8865;&#x5145;</h1><p>&#x7F51;&#x4E0A;&#x8FD8;&#x6709;&#x4EE3;&#x7801;&#x8BA1;&#x7B97;int&#x7C7B;&#x578B;&#x6700;&#x5927;&#x503C;&#xFF0C;&#x4F7F;&#x7528;sys.max_size&#xFF0C;&#x5728;64&#x4F4D;&#x4E3B;&#x673A;&#x4E0A;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5F97;&#x51FA;&#x6B63;&#x786E;&#x7684;&#x503C;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x5728;32&#x4F4D;&#x7CFB;&#x7EDF;&#x4E0A;&#xFF0C;&#x7B97;&#x51FA;&#x7684;&#x503C;&#x5C31;&#x662F;int32_t&#x7684;&#x6700;&#x5927;&#x503C;&#x4E86;&#x3002;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmZJNGACFGvSkkyvquxKR2yqXdmpLCbSpLrJ5TV6hWF37G/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x6240;&#x4EE5;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x5BF9;&#x7CFB;&#x7EDF;&#x4F9D;&#x8D56;&#x7A0B;&#x5EA6;&#x9AD8;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x662F;&#x884C;&#x4E0D;&#x901A;&#x7684;&#x3002;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://baike.baidu.com/item/%E8%A1%A5%E7%A0%81/6854613" target="_blank" rel="noopener">&#x8865;&#x7801;</a></li>
+<li><a href="https://docs.python.org/3.6/library/ctypes.html" target="_blank" rel="noopener">https://docs.python.org/3.6/library/ctypes.html</a></li>
+<li><a href="https://en.cppreference.com/w/cpp/types/numeric_limits/max" target="_blank" rel="noopener">https://en.cppreference.com/w/cpp/types/numeric_limits/max</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/python-int64t" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;Python &#x4E2D;int64_t&#x7684;&#x6700;&#x5927;&#x503C;&#xFF1F;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/69v1ud/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2015/02/20/22/39/trading-643722_960_720.jpg" alt="乌龙单">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-30T11:57:27.000Z">2020-04-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 685 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/69v1ud/">乌龙单</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5927;&#x6982;&#x662F;&#x524D;&#x665A;&#x534A;&#x591C;12&#x70B9;&#x5DE6;&#x53F3;&#xFF0C;&#x770B;&#x5230;&#x5FAE;&#x4FE1;&#x7FA4;&#x91CC;&#x4ED6;&#x4EEC;&#x8BF4;HBD&#x7206;&#x62C9;&#x597D;&#x591A;&#x500D;&#xFF0C;&#x6211;&#x6253;&#x5F00;&#x4E00;&#x76F4;&#x6302;&#x7740;&#x7684;bittrex BTC-HBD&#x7684;&#x4EA4;&#x6613;&#x5BF9;&#x9875;&#x9762;&#xFF0C;&#x4E00;&#x770B;&#x8D70;&#x52BF;&#x5E73;&#x5E73;&#x6839;&#x672C;&#x6CA1;&#x52A8;&#x561B;&#x3002;</p>
+<p><img src="https://cdn.pixabay.com/photo/2015/02/20/22/39/trading-643722_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x7ED3;&#x679C;&#x770B;&#x7FA4;&#x91CC;&#x522B;&#x4EBA;&#x53D1;&#x6765;&#x7684;&#x622A;&#x56FE;&#xFF0C;&#x6211;&#x624D;&#x77E5;&#x9053;&#x4E0D;&#x662F;BTC-HBD&#x7684;&#x4EA4;&#x6613;&#x5BF9;&#x7684;&#x8D70;&#x52BF;&#x6CA1;&#x52A8;&#xFF0C;&#x800C;&#x662F;&#x56E0;&#x4E3A;&#x7F51;&#x7EDC;&#x94FE;&#x63A5;&#x7684;&#x95EE;&#x9898;(&#x5899;)&#xFF0C;&#x6211;&#x7684;&#x9875;&#x9762;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x5237;&#x65B0;&#x800C;&#x8A00;&#x3002;</p>
+<p>&#x7B49;&#x6211;&#x8D39;&#x4E86;&#x534A;&#x5929;&#x52B2;&#x5237;&#x65B0;&#x4E4B;&#x540E;&#xFF0C;HBD&#x7684;&#x4EF7;&#x683C;&#x5DF2;&#x7ECF;&#x56DE;&#x590D;&#x7684;&#x6B63;&#x5E38;&#xFF0C;&#x53EA;&#x80FD;&#x770B;&#x9AD8;&#x9AD8;&#x8038;&#x7ACB;&#x7684;&#x7EFF;&#x7EBF;(&#x66B4;&#x6DA8;)&#x800C;&#x5F92;&#x547C;&#x5948;&#x4F55;&#xFF01;&#x4E0D;&#x7981;&#x611F;&#x6168;&#xFF0C;&#x5899;&#x5BB3;&#x6B7B;&#x4EBA;&#x554A;&#x3002;</p>
+<p>&#x65E2;&#x7136;HBD&#x4EF7;&#x683C;&#x5DF2;&#x7ECF;&#x6062;&#x590D;&#x4E86;&#x6B63;&#x5E38;&#xFF0C;&#x90A3;&#x5C31;&#x4E0D;&#x53BB;&#x60F3;&#x4E86;&#xFF0C;&#x6211;&#x8FD8;&#x662F;&#x770B;&#x770B;HIVE&#x5427;&#xFF0C;&#x867D;&#x7136;HIVE&#x6BD4;&#x8D77;&#x9AD8;&#x70B9;&#x4E5F;&#x8DCC;&#x4E86;&#x4E0B;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x7EC8;&#x7A76;&#x4F1A;&#x6709;&#x6DA8;&#x4E0A;&#x53BB;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E4B;&#x524D;&#x5728;&#x5C71;&#x9876;&#x4E0A;&#x4E70;&#x4E86;&#x4E00;&#x4E9B;&#xFF0C;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x6302;&#x5728;&#x6BD4;&#x5C71;&#x9876;&#x66F4;&#x9AD8;&#x7684;&#x4F4D;&#x7F6E;&#x7B49;&#x6210;&#x4EA4;&#x3002;</p>
+<p>&#x8FD9;&#x4E24;&#x7B14;&#x662F;&#x5728;&#x4ECE;&#x5C71;&#x9876;&#x4E0A;&#x8DCC;&#x4E0B;&#x6765;&#x4E4B;&#x540E;&#x4E70;&#x5165;&#x7684;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmSpxvx35prPSaJEKc7sCm9vvGevzJ7a9RsxCAUVYjfv8g/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x90A3;&#x6211;&#x5C31;&#x6302;0.0001&#x4E0A;&#x5356;&#x51FA;&#x5427;&#xFF0C;&#x8981;&#x662F;&#x6210;&#x4EA4;&#xFF0C;&#x4E5F;&#x8D5A;&#x4E0D;&#x5C11;&#x5462;&#xFF0C;&#x8FD9;&#x6837;&#x4E00;&#x60F3;&#x7F8E;&#x6ECB;&#x6ECB;&#xFF0C;&#x7ED3;&#x679C;&#x56E0;&#x4E3A;&#x7F51;&#x901F;&#x4EE5;&#x53CA;&#x81EA;&#x5DF1;&#x4E0D;&#x591F;&#x6E05;&#x9192;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x628A;&#x5356;&#x5355;&#x6302;&#x6210;&#x4E86;&#x4E70;&#x5355;&#xFF0C;&#x7136;&#x540E;&#x8FC5;&#x901F;&#x5730;&#x6210;&#x4EA4;&#x4E86;&#xFF0C;&#x6211;&#x54ED;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmca6QFWLErbq2LzcjKah9pjNao4X8Fcetocxy1wmRkVHS/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x6211;&#x8FDE;&#x7EED;&#x4E70;&#x5165;&#x4E86;&#x4E09;&#x7B14;&#xFF0C;&#x5FC3;&#x7D2F;&#xFF0C;&#x4E5F;&#x4E0D;&#x6253;&#x7B97;&#x6302;&#x5355;&#x53BB;&#x5356;&#x4E86;&#xFF0C;&#x7B49;&#x6DA8;&#x5230;$1&#x4EE5;&#x540E;&#x518D;&#x8BF4;&#x5427;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x5929;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670B;&#x53CB;&#x606D;&#x559C;&#x6211;&#xFF0C;&#x8BF4;HBD&#x66B4;&#x6DA8;&#xFF0C;&#x6211;&#x4E00;&#x5B9A;&#x8D5A;&#x4E86;&#x4E0D;&#x5C11;&#xFF0C;&#x6211;&#x90FD;&#x4E0D;&#x77E5;&#x9053;&#x548B;&#x56DE;&#x590D;&#x624D;&#x597D;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x7A81;&#x7136;&#x60F3;&#xFF0C;HBD&#x66B4;&#x6DA8;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x4EBA;&#x4E5F;&#x6302;&#x4E86;&#x4E4C;&#x9F99;&#x5355;&#x5462;&#xFF1F;&#x672C;&#x6765;&#x6253;&#x7B97;&#x5356;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x6302;&#x6210;&#x4E86;&#x4E70;&#x5165;&#xFF0C;&#x548C;&#x6211;&#x64CD;&#x4F5C;&#x624B;&#x6CD5;&#x76F8;&#x540C;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x4EBA;&#x5BB6;&#x8D44;&#x91D1;&#x91CF;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x6240;&#x4EE5;&#x62C9;&#x5F97;&#x6BD4;&#x8F83;&#x9AD8;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x4E4C;&#x9F99;&#x5355;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x4EE5;&#x524D;&#x4E5F;&#x6CA1;&#x5C11;&#x5E72;&#x8FC7;&#xFF0C;&#x4E70;&#x5356;&#x65B9;&#x5411;&#x641E;&#x53CD;&#x662F;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x672C;&#x6765;&#x6253;&#x7B97;&#x4E70;A&#x8D44;&#x4EA7;&#xFF0C;&#x7ED3;&#x679C;&#x4E0D;&#x5C0F;&#x5FC3;&#x4E70;&#x4E86;B&#x8D44;&#x4EA7;&#x3002;</p>
+<p><img src="https://cdn.pixabay.com/photo/2017/10/01/14/56/communication-2805785_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x4E0D;&#x8FC7;&#x867D;&#x7136;&#x95F9;&#x8FC7;&#x4E0D;&#x5C11;&#x4E4C;&#x9F99;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x65F6;&#x5019;&#x53CD;&#x800C;&#x56E0;&#x4E4C;&#x9F99;&#x5355;&#x83B7;&#x5229;&#x8FC7;&#xFF0C;&#x8981;&#x662F;&#x6309;&#x7740;&#x81EA;&#x5DF1;&#x6B63;&#x5E38;&#x7684;&#x601D;&#x8DEF;&#x64CD;&#x4F5C;&#xFF0C;&#x53CD;&#x800C;&#x4F1A;&#x8D54;&#x94B1;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6108;&#x53D1;&#x5730;&#x76F8;&#x4FE1;&#xFF0C;&#x8D5A;&#x94B1;&#x5168;&#x662F;&#x51ED;&#x8FD0;&#x6C14;&#xFF0C;&#x5012;&#x662F;&#x6709;&#x65F6;&#x5019;&#x8D54;&#x94B1;&#xFF0C;&#x662F;&#x9700;&#x8981;&#x5B9E;&#x529B;&#x7684;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/69v1ud" target="_blank" rel="noopener">&#x2018;&#x4E4C;&#x9F99;&#x5355;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/vim/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/02/19/11/35/crayons-1209804_960_720.jpg" alt="每天进步一点点：修改VIM中注释的颜色">
         </a>
@@ -652,167 +829,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/createclaimedaccount/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_960_720.jpg" alt="每天进步一点点：create_claimed_account">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-28T03:08:33.000Z">2020-04-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 834 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/createclaimedaccount/">每天进步一点点：create_claimed_account</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;<a href="https://hive.blog/hive-105017/@oflyhigh/claimaccount-claim-discounted-account" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;&#x6279;&#x91CF;claim_account (claim discounted account)</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x4F7F;&#x7528;RC&#x7533;&#x9886;&#x6253;&#x6298;&#x8D26;&#x6237;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x76F8;&#x5F53;&#x4E8E;&#x7533;&#x9886;&#x5230;&#x4E00;&#x5F20;&#x5165;&#x573A;&#x5238;&#xFF0C;&#x5B9E;&#x9645;&#x521B;&#x5EFA;&#x8D26;&#x6237;&#x65F6;&#x5219;&#x4F7F;&#x7528;<code>create_claimed_account</code>&#x3002;</p>
-<p><img src="https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p><code>create_claimed_account</code>&#x4F7F;&#x7528;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x5982;&#x4E0B;&#xFF0C;&#x4E00;&#x770B;&#x5C31;&#x76F8;&#x5F53;&#x590D;&#x6742;&#x4E86;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmSbnpQ6UWFDu38TKsS2xuiJENX8zpuDi3zw11v7nUSTbg/image.png" alt="image.png"></p>
-</blockquote>
-<h1 id="&#x8D26;&#x6237;&#x6743;&#x9650;"><a href="#&#x8D26;&#x6237;&#x6743;&#x9650;" class="headerlink" title="&#x8D26;&#x6237;&#x6743;&#x9650;"></a>&#x8D26;&#x6237;&#x6743;&#x9650;</h1><p>&#x4E4B;&#x6240;&#x4EE5;&#x590D;&#x6742;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x521B;&#x5EFA;&#x8D26;&#x6237;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x8981;&#x4E3A;&#x8D26;&#x6237;&#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;&#x6743;&#x9650;(<code>owener</code>&#x3001;<code>active</code>&#x3001;<code>posting</code>&#x3001;<code>memo_key</code>)&#xFF0C;&#x524D;&#x4E09;&#x8005;&#x662F;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x7684;&#x7C7B;&#x578B;&#xFF0C;memo_key&#x5219;&#x53EF;&#x4EE5;&#x5F53;&#x4F5C;&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;&#x3002;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">{&apos;active&apos;: {</span><br><span class="line">    &apos;account_auths&apos;: [],</span><br><span class="line">    &apos;key_auths&apos;: [[&apos;STM798n7jMPF4JM8D7dj4g1M2GiG8Dx79vbYWfuJCJkSTxXCvrosF&apos;,  1]],</span><br><span class="line">    &apos;weight_threshold&apos;: 1}</span><br></pre></td></tr></tbody></table></figure>
-<p>&#x4EE5;&#x6700;&#x7B80;&#x5355;&#x7684;active&#x6743;&#x9650;&#x4E3A;&#x4F8B;&#xFF0C;<code>weight_threshold</code>&#x4EE3;&#x8868;&#x591A;&#x7B7E;&#x7684;&#x9608;&#x503C;&#xFF0C;<code>account_auths</code>&#x4EE3;&#x8868;&#x6DFB;&#x52A0;&#x7684;&#x6388;&#x6743;&#x8D26;&#x6237;&#xFF0C;<code>key_auths</code>&#x4EE3;&#x8868;&#x6DFB;&#x52A0;&#x7684;&#x6388;&#x6743;&#x516C;&#x94A5;&#x3002;</p>
-<p>&#x65E0;&#x8BBA;&#x662F;&#x6388;&#x6743;&#x8D26;&#x6237;&#x8FD8;&#x662F;&#x6388;&#x6743;&#x516C;&#x94A5;&#x90FD;&#x662F;&#x5217;&#x8868;&#xFF0C;&#x5C31;&#x662F;&#x8BF4;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x591A;&#x7EC4;&#xFF0C;&#x4EE5;&#x5355;&#x7EC4;&#x6388;&#x6743;&#x7684;&#x516C;&#x94A5;&#x4E3A;&#x4F8B;&#xFF0C;&#x7C7B;&#x4F3C;&#x8FD9;&#x6837;&#xFF1A;</p>
-<blockquote>
-<p><code>[&apos;STM798n7jMPF4JM8D7dj4g1M2GiG8Dx79vbYWfuJCJkSTxXCvrosF&apos;,  1]</code></p>
-</blockquote>
-<p>&#x524D;&#x8005;&#x4EE3;&#x8868;&#x88AB;&#x6388;&#x6743;&#x7684;&#x516C;&#x94A5;&#xFF0C;&#x540E;&#x8005;&#x4EE3;&#x8868;&#x9608;&#x503C;&#x3002;</p>
-<h1 id="&#x521B;&#x5EFA;claimed&#x8D26;&#x6237;"><a href="#&#x521B;&#x5EFA;claimed&#x8D26;&#x6237;" class="headerlink" title="&#x521B;&#x5EFA;claimed&#x8D26;&#x6237;"></a>&#x521B;&#x5EFA;claimed&#x8D26;&#x6237;</h1><p>&#x77E5;&#x9053;&#x4E86;&#x8D26;&#x6237;&#x6743;&#x9650;&#x7684;&#x76F8;&#x5173;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5C31;&#x5E94;&#x8BE5;&#x5F88;&#x7B80;&#x5355;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x7684;&#x6A21;&#x677F;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">op = [&apos;create_claimed_account&apos;,{</span><br><span class="line">    &apos;creator&apos;:&apos;&apos;,</span><br><span class="line">    &apos;new_account_name&apos;:&apos;&apos;,</span><br><span class="line">    &apos;owner&apos;:{},</span><br><span class="line">    &apos;active&apos;:{},</span><br><span class="line">    &apos;posting&apos;:{},</span><br><span class="line">    &apos;memo_key&apos;:{},</span><br><span class="line">    &apos;json_metadata&apos;:&apos;{}&apos;,</span><br><span class="line">    &apos;extensions&apos;:[]</span><br><span class="line">  }]</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>&#x5E76;&#x521B;&#x5EFA;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x7684;&#x6743;&#x9650;&#x7C7B;&#x578B;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">auth = {</span><br><span class="line">     &apos;weight_threshold&apos;:1,</span><br><span class="line">     &apos;account_auths&apos;:[],</span><br><span class="line">     &apos;key_auths&apos;:[]</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure><p></p>
-<p>&#x4E3A;&#x6BCF;&#x4E2A;&#x6743;&#x9650;&#x8BBE;&#x7F6E;&#x521D;&#x503C;&#x5E76;&#x8D4B;&#x503C;&#x5230;OP&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x4EA4;&#x6613;&#x8FFD;&#x52A0;&#x5230;transaction&#x4E2D;&#xFF0C;&#x7B7E;&#x540D;&#x4EA4;&#x6613;&#x5E76;&#x5E7F;&#x64AD;&#xFF1A;</p>
-<blockquote>
-<p><code>trx.append_op(op)</code><br><code>trx.sign_digest(wif)</code><br><code>trx.broadcast()</code></p>
-</blockquote>
-<p>&#x88AB;&#x5E7F;&#x64AD;&#x51FA;&#x53BB;&#x7684;&#x5185;&#x5BB9;&#x5927;&#x6982;&#x957F;&#x6210;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmNt6cDKVEnTaHvXuaFSJrXM1KcKJEJDFgRhNF7icrCBtE/image.png" alt="image.png"></p>
-</blockquote>
-<p>&#x5E7F;&#x64AD;&#x6210;&#x529F;&#x5E76;&#x4E14;&#x4E0D;&#x51FA;&#x95EE;&#x9898;&#x540E;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x4E0A;&#x5C31;&#x4F1A;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x6211;&#x4EEC;&#x7684;&#x8D26;&#x6237;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmNxbxpmvUjEhgipXBYiDf6DJrKNuWC23KPdBYugGopuaf/image.png" alt="image.png"></p>
-</blockquote>
-<h1 id="&#x5176;&#x5B83;"><a href="#&#x5176;&#x5B83;" class="headerlink" title="&#x5176;&#x5B83;"></a>&#x5176;&#x5B83;</h1><p>&#x6211;&#x5728;&#x5C1D;&#x8BD5;&#x521B;&#x5EFA;@oflyhigh.account&#x540E;&#xFF0C;&#x53C8;&#x5C1D;&#x8BD5;&#x521B;&#x5EFA;@oflyhigh.accounts&#xFF0C;&#x53EF;&#x662F;&#x5374;&#x7ED9;&#x6211;&#x5982;&#x4E0B;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;</p>
-<blockquote>
-<p>&#x2018;could not insert object, most likely a uniqueness constraint was &#x2018;<br> &#x2018;violated:could not insert object, most likely a uniqueness constraint was &#x2018;<br> &#x2018;violated: &#x2018;</p>
-</blockquote>
-<p>&#x8FD9;&#x79CD;&#x62A5;&#x9519;&#x4E00;&#x534A;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x540C;&#x540D;&#x8D26;&#x6237;&#x5B58;&#x5728;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x5141;&#x8BB8;&#x518D;&#x88AB;&#x521B;&#x5EFA;&#xFF0C;&#x7136;&#x800C;&#x6211;&#x67E5;&#x4E86;&#xFF0C;&#x5E76;&#x6CA1;&#x6709;&#x540C;&#x540D;&#x8D26;&#x6237;&#x554A;&#x3002;&#x627E;&#x6765;&#x627E;&#x53BB;&#x624D;&#x53D1;&#x73B0;&#xFF0C;<strong><em>&#x8D26;&#x6237;&#x957F;&#x5EA6;&#x88AB;&#x9650;&#x5B9A;&#x4E3A;16&#x4E2A;&#x5B57;&#x7B26;</em></strong>&#xFF0C;<code>oflyhigh.accounts</code>&#x5C3D;&#x7BA1;&#x5E7F;&#x64AD;&#x51FA;&#x53BB;&#x662F;<code>oflyhigh.accounts</code>&#x4F46;&#x662F;&#x5230;&#x94FE;&#x7AEF;&#x88AB;&#x622A;&#x77ED;&#x4E3A;<code>oflyhigh.account</code>&#x5C31;&#x548C;&#x4E4B;&#x524D;&#x521B;&#x5EFA;&#x7684;&#x8D26;&#x6237;&#x91CD;&#x590D;&#x4E86;&#x3002;</p>
-<p>&#x4E3A;&#x4E86;&#x8BC1;&#x5B9E;&#x8FD9;&#x70B9;&#xFF0C;&#x6211;&#x7528;&#x4E86;26&#x4E2A;&#x5B57;&#x6BCD;&#x6765;&#x521B;&#x5EFA;&#x8D26;&#x6237;&#xFF0C;&#x5E7F;&#x64AD;&#x51FA;&#x53BB;&#x7684;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmd2wZhRcmZdKQJJ29FgxjyXTP5jJRDK67ZLyAknXTAUTh/image.png" alt="image.png"></p>
-</blockquote>
-<p>&#x521B;&#x5EFA;&#x7684;&#x8D26;&#x6237;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmauy7WQ3ppMkrpUmoxc1SbWHKTwKnKmvXm1heteUW9NwC/image.png" alt="image.png"></p>
-</blockquote>
-<p>&#x53EF;&#x89C1;&#x6210;&#x529F;&#x7684;&#x88AB;&#x622A;&#x77ED;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x5C3D;&#x7BA1;&#x5982;&#x6B64;&#xFF0C;&#x6211;&#x8FD8;&#x662F;&#x62E5;&#x6709;&#x4E86;&#x6700;&#x957F;&#x7684;&#x5B57;&#x6BCD;&#x5E8F;&#x8D26;&#x6237;@abcdefghijklmnop&#xFF0C;&#x6709;&#x4EBA;&#x51FA;&#x9AD8;&#x4EF7;&#x6536;&#x8D2D;&#x4E0D;&#xFF1F;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x3002;</p>
-<ul>
-<li><a href="https://hive.blog/hive-105017/@oflyhigh/claimaccount-claim-discounted-account" target="_blank" rel="noopener">&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;&#x6279;&#x91CF;claim_account (claim discounted account)</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/createclaimedaccount" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;create_claimed_account&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/wti2006/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2015/11/07/11/08/cards-1030852_960_720.jpg" alt="平仓了WTI2006原油多单">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-27T13:07:57.000Z">2020-04-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 733 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/wti2006/">平仓了WTI2006原油多单</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4ECA;&#x5929;&#x65E9;&#x6668;&#x8FD8;&#x5728;&#x534A;&#x68A6;&#x534A;&#x9192;&#x4E4B;&#x95F4;&#x542C;&#x5230;&#x7535;&#x8BDD;&#x94C3;&#x54CD;&#xFF0C;&#x62FF;&#x8D77;&#x6765;&#x540E;&#x53D1;&#x73B0;&#x662F;&#x4E00;&#x4E2A;&#x964C;&#x751F;&#x53F7;&#x7801;&#xFF0C;&#x6700;&#x8FD1;&#x4EC0;&#x4E48;&#x529E;&#x7406;POS&#x673A;&#x7684;&#x3001;&#x63D0;&#x4F9B;&#x8D37;&#x6B3E;&#x7684;&#x7279;&#x522B;&#x591A;&#xFF0C;&#x539F;&#x4EE5;&#x4E3A;&#x4E5F;&#x662F;&#x8FD9;&#x7C7B;&#x7535;&#x8BDD;&#x5462;&#xFF0C;&#x968F;&#x4FBF;&#x63A5;&#x8D77;&#x6765;&#x542C;&#x4E00;&#x4E0B;&#x3002;</p>
-<p><img src="https://cdn.pixabay.com/photo/2015/11/07/11/08/cards-1030852_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x7ED3;&#x679C;&#x7535;&#x8BDD;&#x63A5;&#x8D77;&#x6765;&#x540E;&#xFF0C;&#x5BF9;&#x65B9;&#x6B63;&#x786E;&#x5730;&#x53EB;&#x51FA;&#x4E86;&#x6211;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#x5E76;&#x8BF4;&#x660E;&#x662F;&#x5EFA;&#x884C;&#x5BA2;&#x670D;&#xFF0C;&#x95EE;&#x6211;&#x662F;&#x4E0D;&#x662F;&#x6301;&#x4ED3;&#x4E86;&#x5EFA;&#x884C;&#x4E86;&#x7684;&#x5BF9;&#x6807;&#x539F;&#x6CB9;&#x671F;&#x8D27;&#x7684;&#x8D26;&#x6237;&#x5546;&#x54C1;&#x4E2D;&#x7684;&#x539F;&#x6CB9;WTI&#xFF0C;&#x770B;&#x6765;&#x4E0D;&#x662F;&#x9A97;&#x5B50;&#x7535;&#x8BDD;&#x3002;</p>
-<p>&#x6211;&#x627F;&#x8BA4;&#x6301;&#x4ED3;&#x8D26;&#x6237;&#x539F;&#x6CB9;&#x540E;&#xFF0C;&#x5BA2;&#x670D;&#x548C;&#x6211;&#x8BF4;&#x6700;&#x8FD1;&#x56E0;&#x4E3A;&#x75AB;&#x60C5;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x8D26;&#x6237;&#x5546;&#x54C1;&#x4E2D;&#x7684;&#x539F;&#x6CB9;&#x671F;&#x8D27;&#x98CE;&#x9669;&#x7279;&#x522B;&#x9AD8;&#xFF0C;&#x8BA9;&#x6211;&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x63A7;&#x5236;&#x98CE;&#x9669;&#xFF0C;&#x5E76;&#x544A;&#x77E5;&#x6211;&#x52A1;&#x5FC5;&#x4ED4;&#x7EC6;&#x9605;&#x8BFB;&#x7528;&#x6237;&#x534F;&#x8BAE;&#x3002;</p>
-<p>&#x770B;&#x6837;&#x5B50;&#x56E0;&#x4E3A;&#x4E2D;&#x56FD;&#x94F6;&#x884C;&#x539F;&#x6CB9;&#x5B9D;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5EFA;&#x884C;&#x4E5F;&#x5BB3;&#x6015;&#x4E86;&#xFF0C;&#x7535;&#x8BDD;&#x901A;&#x77E5;&#x8BA9;&#x7528;&#x6237;&#x9605;&#x8BFB;&#x534F;&#x8BAE;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x4E00;&#x65E6;&#x51FA;&#x73B0;&#x7C7B;&#x4F3C;&#x539F;&#x6CB9;&#x5B9D;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5EFA;&#x884C;&#x53EF;&#x4EE5;&#x8BF4;&#x5BA2;&#x6237;&#x5DF2;&#x7ECF;&#x9605;&#x8BFB;&#x8FC7;&#x534F;&#x8BAE;&#xFF0C;&#x719F;&#x77E5;&#x98CE;&#x9669;&#x3002;</p>
-<p>&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x5BA2;&#x670D;&#x53C8;&#x52A0;&#x4E86;&#x6211;&#x5FAE;&#x4FE1;&#xFF0C;&#x7ED9;&#x6211;&#x63A8;&#x9001;&#x51E0;&#x6761;&#x7C7B;&#x4F3C;&#x300A;&#x5173;&#x4E8E;&#x8FD1;&#x671F;&#x8D26;&#x6237;&#x5546;&#x54C1;&#x4E1A;&#x52A1;&#x7684;&#x5E02;&#x573A;&#x98CE;&#x9669;&#x63D0;&#x793A;&#x300B;&#x4EE5;&#x53CA;&#x300A;&#x5173;&#x4E8E;&#x8D26;&#x6237;&#x5546;&#x54C1;&#x4EA4;&#x6613;&#x4E1A;&#x52A1;WTI2006&#x5408;&#x7EA6;&#x4EA4;&#x6613;&#x89C4;&#x5219;&#x7684;&#x63D0;&#x793A;&#x516C;&#x544A;&#x300B;&#x7B49;&#x7B49;&#x7B49;&#x7B49;</p>
-<p>&#x6211;&#x987A;&#x4FBF;&#x95EE;&#x4E86;&#x4E00;&#x53E5;&#xFF0C;&#x96BE;&#x9053;&#x6211;&#x4E70;&#x8D26;&#x6237;&#x5546;&#x54C1;WTI2006&#x5408;&#x7EA6;&#xFF0C;&#x6709;&#x8D54;&#x5149;&#x4FDD;&#x8BC1;&#x91D1;&#x8FD8;&#x5012;&#x642D;&#x94B1;&#x7684;&#x98CE;&#x9669;&#x5417;&#xFF1F;&#x5C31;&#x50CF;&#x4E2D;&#x884C;&#x539F;&#x6CB9;&#x5B9D;&#x90A3;&#x79CD;&#x51FA;&#x73B0;-37&#x7F8E;&#x5143;/&#x6876;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x5BA2;&#x670D;&#x548C;&#x6211;&#x8BF4;&#xFF0C;&#x5979;&#x4EEC;&#x53EA;&#x8D1F;&#x8D23;&#x901A;&#x77E5;&#x5BA2;&#x6237;&#xFF0C;&#x81EA;&#x5DF1;&#x4E5F;&#x4E0D;&#x61C2;&#x548B;&#x73A9;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x7684;&#x539F;&#x6CB9;&#x591A;&#x5355;&#x5927;&#x4E0D;&#x4E86;&#x8D54;&#x5149;&#xFF0C;&#x6709;&#x4E2D;&#x884C;&#x7684;&#x524D;&#x8F66;&#x4E4B;&#x9274;&#xFF0C;&#x4E0D;&#x81F3;&#x4E8E;&#x5012;&#x642D;&#x94B1;&#xFF0C;&#x5927;&#x4E0D;&#x4E86;&#x8D54;&#x5149;&#x4FDD;&#x8BC1;&#x91D1;&#xFF0C;&#x4E0D;&#x8FC7;&#x60F3;&#x60F3;&#x91D1;&#x878D;&#x5E02;&#x573A;&#x53EF;&#x80FD;&#x771F;&#x7684;&#x4E0D;&#x50CF;&#x6211;&#x60F3;&#x8C61;&#x7684;&#x90A3;&#x4E48;&#x7B80;&#x5355;&#xFF0C;&#x6BD5;&#x7ADF;&#x4E2D;&#x884C;&#x539F;&#x6CB9;&#x5B9D;&#x7684;&#x4E8B;&#x60C5;&#x6211;&#x73B0;&#x5728;&#x90FD;&#x4E0D;&#x6562;&#x76F8;&#x4FE1;&#x3002;</p>
-<p>&#x65E2;&#x7136;&#x5927;&#x5BB6;&#x90FD;&#x8BF4;&#x98CE;&#x9669;&#x9AD8;&#xFF0C;&#x90FD;&#x4E0D;&#x5EFA;&#x8BAE;&#x6211;&#x73A9;&#xFF0C;&#x90A3;&#x6211;&#x8FD8;&#x662F;&#x542C;&#x4EBA;&#x529D;&#x5403;&#x9971;&#x996D;&#xFF0C;&#x628A;&#x591A;&#x5355;&#x5E73;&#x4ED3;&#x4E86;&#x5427;&#x3002;&#x9664;&#x4E86;&#x5EFA;&#x884C;&#x7684;&#x591A;&#x5355;&#xFF0C;&#x5DE5;&#x884C;&#x90A3;&#x8FB9;&#x6211;&#x4E5F;&#x5F00;&#x4E86;&#x4E00;&#x4E9B;&#xFF0C;&#x901A;&#x901A;&#x90FD;&#x5E73;&#x6389;&#x3002;</p>
-<p>&#x5E73;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;&#x7B97;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x81EA;&#x5DF1;&#x7ADF;&#x7136;&#x8FD8;&#x8D5A;&#x4E86;&#x5927;&#x7EA6;1350&#x5143;&#xFF0C;&#x8FD9;&#x771F;&#x662F;&#x610F;&#x5916;&#x4E4B;&#x559C;&#x4E86;&#xFF0C;&#x5E73;&#x4ED3;&#x4E4B;&#x540E;&#xFF0C;&#x5FC3;&#x91CC;&#x500D;&#x611F;&#x8F7B;&#x677E;&#xFF0C;&#x98CE;&#x9669;&#x592A;&#x9AD8;&#x7684;&#x4E1C;&#x897F;&#xFF0C;&#x771F;&#x7684;&#x4E0D;&#x80FD;&#x53BB;&#x73A9;&#x554A;&#xFF0C;&#x592A;&#x5413;&#x4EBA;&#x4E86;&#x3002;</p>
-<p><img src="https://cdn.pixabay.com/photo/2015/01/08/16/35/play-593207_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x60F3;&#x60F3;&#x8FD8;&#x662F;&#x7092;&#x5E01;&#x597D;&#xFF0C;<strong><em>&#x5927;&#x4E0D;&#x4E86;&#x5F52;&#x96F6;</em></strong>&#xFF0C;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4F60;&#x4E70;&#x4E86;&#x591A;&#x5C11;&#x679A;&#x6BD4;&#x7279;&#x5E01;&#x6216;&#x8005;&#x4EC0;&#x4E48;&#x7684;&#x4EE5;&#x540E;&#x53D8;&#x6210;&#x8D1F;&#x503C;&#xFF0C;&#x771F;&#x7684;&#x662F;&#x592A;&#x6709;&#x826F;&#x5FC3;&#x4E86;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/wti2006" target="_blank" rel="noopener">&#x2018;&#x5E73;&#x4ED3;&#x4E86;WTI2006&#x539F;&#x6CB9;&#x591A;&#x5355;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -837,7 +853,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/363/">363</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@oflyhigh/page/364/">364</a></li>
             
         </ul>
     </nav>
