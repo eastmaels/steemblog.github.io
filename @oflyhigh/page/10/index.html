@@ -230,6 +230,172 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/hp/" class="image is-7by1">
+            <img class="thumbnail" src="https://images.hive.blog/DQmfVicQe1xLzvGWCKNxKTH2puW6SUxXteuE6949PdH3zGd/image.png" alt="每天进步一点点：从代码中确认如何计算提案HP">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-18T03:02:33.000Z">2020-05-18</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 767 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/hp/">每天进步一点点：从代码中确认如何计算提案HP</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x4E4B;&#x524D;&#x53D1;&#x4E86;&#x4E00;&#x4E2A;&#x63D0;&#x6848;&#xFF0C;&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x63D0;&#x6848;&#x83B7;&#x5F97;&#x7684;&#x603B;HP&#x662F;&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x7684;&#x6709;&#x4E9B;&#x4E0D;&#x592A;&#x786E;&#x5B9A;&#x3002;&#x6709;&#x4EBA;&#x8BF4;&#x5C31;&#x662F;&#x6309;&#x8D26;&#x6237;HP&#x8BA1;&#x7B97;&#x7684;&#xFF0C;&#x4E5F;&#x6709;&#x4EBA;&#x8BF4;&#x662F;&#x548C;&#x89C1;&#x8BC1;&#x4EBA;&#x6295;&#x7968;&#x4E00;&#x6837;&#x89C4;&#x5219;&#x662F;&#x8D26;&#x6237;&#x548C;&#x89C1;&#x8BC1;&#x4EBA;&#x4EE3;&#x7406;&#x7684;&#x548C;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmfVicQe1xLzvGWCKNxKTH2puW6SUxXteuE6949PdH3zGd/image.png" alt="image.png"><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x5C3D;&#x7BA1;<a href="https://hivedao.com/" target="_blank" rel="noopener">https://hivedao.com/</a> &#x7684;&#x754C;&#x9762;&#x4E0A;&#x662F;&#x6309;<code>&#x8D26;&#x6237;+&#x89C1;&#x8BC1;&#x4EBA;&#x4EE3;&#x7406;</code>&#x7684;&#x603B;&#x6743;&#x91CD;&#x6765;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E07;&#x4E00;&#x754C;&#x9762;&#x5C31;&#x662F;&#x4EC5;&#x4EC5;&#x8FD9;&#x6837;&#x663E;&#x793A;&#x800C;&#x5DF2;&#x5462;&#xFF1F;&#x771F;&#x8981;&#x641E;&#x660E;&#x767D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x8FD8;&#x662F;&#x8981;&#x770B;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x597D;&#x5728;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x8FD8;&#x662F;&#x5F88;&#x597D;&#x627E;&#x7684;&#xFF0C;&#x5230;<code>database.cpp</code>&#x4E2D;&#x627E;&#x5230;&#x5982;&#x4E0B;&#x51FD;&#x6570;&#xFF1A;</p>
+<blockquote>
+<p><code>void database::_apply_block( const signed_block&amp; next_block )</code></p>
+</blockquote>
+<p>&#x7136;&#x540E;&#x4E0D;&#x96BE;&#x627E;&#x5230;&#x5176;&#x4E2D;&#x8C03;&#x7528;&#x4E86;<code>process_proposals( note );</code>&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmeDdFknQWcyciQGGGJBUYJaFgvwvWMdaEPP2UdeP2bMVD/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>sps_processor</code>&#x7C7B;&#x5B9E;&#x4F8B;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x8FD0;&#x884C;<code>run</code>&#x51FD;&#x6570;</p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;<code>steem/chain/util/sps_processor.hpp</code>&#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;&#x7C7B;&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x4E14;&#x5728;<code>steem//libraries/chain/util/sps_processor.cpp</code>&#x627E;&#x5230;&#x7C7B;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x800C;<code>run</code>&#x51FD;&#x6570;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmY6KxjzSvda5F1o8Gc1pgHgDXJcVSN2hz5jkozgG3GHmG/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x5728;<code>make_payments()</code>&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x53D1;&#x73B0;&#x5982;&#x4E0B;&#x8BA1;&#x7B97;&#x7968;&#x6570;&#x7684;&#x8BED;&#x53E5;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmbtLFRReexNsd5PNuVb5qFcLvfRLzp3SBHNahK6dnwCx8/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x800C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4F1A;&#x53BB;&#x66F4;&#x65B0;&#x6BCF;&#x4E2A;&#x63D0;&#x6848;&#x7684;&#x7968;&#x6570;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmd33F9p4FenGY4G48gzsErVEUK4paJFdrphfmZyxCP51K/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x66F4;&#x65B0;&#x5355;&#x4E2A;&#x63D0;&#x6848;&#x7684;&#x7968;&#x6570;&#x7684;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><img src="https://images.hive.blog/DQmd83975brucs5dDRXmZYYEbbmb8eZaSGgMTwMXkvc9prd/image.png" alt="image.png"></p>
+</blockquote>
+<p>&#x800C;&#x5176;&#x4E2D;&#x6211;&#x7528;&#x7EA2;&#x6846;&#x5708;&#x8D77;&#x6765;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x627E;&#x7684;&#x7B54;&#x6848;&#x4E86;&#x3002;&#x5176;&#x5B9E;&#x6CE8;&#x91CA;&#x5199;&#x7684;&#x633A;&#x660E;&#x767D;&#x4E86;&#xFF1A;</p>
+<blockquote>
+<p>//If _voter has set proxy, then his votes aren&#x2019;t taken into consideration</p>
+</blockquote>
+<p>&#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>&#x5982;&#x679C;&#x6295;&#x7968;&#x8005;&#x8BBE;&#x7F6E;&#x4E86;&#x4EE3;&#x7406;(&#x89C1;&#x8BC1;&#x4EBA;&#x7968;&#x4EE3;&#x7406;)&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x7684;&#x7968;&#x6570;&#x4E0D;&#x4E88;&#x8003;&#x8651;&#x3002;</p>
+</blockquote>
+<p>&#x800C;&#x540E;&#x8FB9;&#x7684;&#x4EE3;&#x7801;&#x4E5F;&#x8BC1;&#x5B9E;&#x4E86;&#x8FD9;&#x6837;&#xFF0C;&#x5C31;&#x662F;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x6295;&#x7968;&#x4EE3;&#x7406;&#x7684;&#x7528;&#x6237;&#x7968;&#x6570;&#x7B49;&#x540C;&#x4E8E;&#x6295;&#x89C1;&#x8BC1;&#x4EBA;&#x7684;&#x7968;&#x6570;&#xFF08;&#x6743;&#x91CD;&#xFF09;&#x3002;</p>
+<p>&#x53EF;&#x80FD;&#x6709;&#x70B9;&#x62D7;&#x53E3;&#xFF0C;&#x76F4;&#x767D;&#x70B9;&#x8BF4;&#x5C31;&#x662F;<strong><em>&#x6295;&#x63D0;&#x6848;&#x548C;&#x6295;&#x89C1;&#x8BC1;&#x4EBA;&#x6309;&#x4E00;&#x6837;&#x7684;&#x89C4;&#x5219;&#x8BA1;&#x7B97;&#x5F97;&#x7968;</em></strong>&#xFF0C;&#x8FD9;&#x6837;&#x8BF4;&#xFF0C;&#x5927;&#x5BB6;&#x5E94;&#x8BE5;&#x90FD;&#x660E;&#x767D;&#x4E86;&#x5427;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5BF9;&#x4E8E;&#x5C31;&#x662F;&#x60F3;&#x770B;&#x63D0;&#x6848;&#x603B;&#x7968;&#x6570;&#x7684;&#x6211;&#x4EEC;&#x6765;&#x8BB2;&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x4E00;&#x4E2A;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x53BB;&#x8BA1;&#x7B97;&#x7136;&#x540E;&#x518D;&#x52A0;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x76F4;&#x63A5;&#x8C03;&#x7528;API&#x8BFB;&#x53D6;&#x603B;&#x7968;&#x6570;&#x5C31;&#x6027;&#x4E86;&#x3002;&#x6BD4;&#x5982;&#x6211;&#x4E4B;&#x524D;&#x7684;&#x63D0;&#x6848;&#xFF1A;</p>
+<blockquote>
+<p><code>curl -s --data &apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;, &quot;method&quot;:&quot;condenser_api.list_proposals&quot;, &quot;params&quot;:[[&quot;oflyhigh&quot;], 1, &quot;by_creator&quot;, &quot;ascending&quot;, &quot;all&quot;], &quot;id&quot;:1}&apos; https://api.openhive.network</code></p>
+</blockquote>
+<p>&#x5F53;&#x524D;&#x603B;&#x5F97;&#x7968;&#x6570;&#xFF1A;<code>&quot;total_votes&quot;:&quot;28438822824814612&quot;</code>&#x8FD9;&#x4E2A;&#x503C;&#x662F;VESTS&#x7684;&#x6574;&#x6570;&#x8868;&#x793A;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x5148;&#x9664;&#x4E86;<code>1000000</code>&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6362;&#x7B97;&#x6210;HP&#xFF0C;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x5927;&#x81F4;&#x7B49;&#x4E8E;1400&#x4E07;HP&#x5DE6;&#x53F3;&#xFF0C;&#x8DDD;&#x79BB;&#x63D0;&#x6848;&#x901A;&#x8FC7;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x6BB5;&#x4E0D;&#x5C0F;&#x7684;&#x8DDD;&#x79BB;&#x5462;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/hp" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;&#x4ECE;&#x4EE3;&#x7801;&#x4E2D;&#x786E;&#x8BA4;&#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x63D0;&#x6848;HP&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/3anvov-and/" class="image is-7by1">
+            <img class="thumbnail" src="https://images.hive.blog/DQmWFAHJfXSuJC6KuAgswqx4xoyeLS2naEDr1c7ZewqGHex/image.png" alt="虎啸山林 &amp; 饿虎扑食等">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-17T15:31:39.000Z">2020-05-17</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 664 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/3anvov-and/">虎啸山林 &amp; 饿虎扑食等</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x4ECA;&#x5929;&#x5728;&#x5C0F;&#x533A;&#x653E;&#x98CE;&#x65F6;&#x53D1;&#x73B0;&#x4E00;&#x5806;&#x5C0F;&#x82B1;&#x732B;&#xFF0C;&#x800C;&#x8FD9;&#x6B21;&#x5C0F;&#x82B1;&#x732B;&#x4EEC;&#x7279;&#x522B;&#x914D;&#x5408;&#xFF0C;&#x4E56;&#x4E56;&#x5730;&#x8BA9;&#x6211;&#x6392;&#x4E86;&#x597D;&#x51E0;&#x5F20;&#x56FE;&#x7247;&#xFF0C;&#x6709;&#x4E9B;&#x8FD8;&#x7279;&#x522B;&#x6709;&#x8DA3;&#x3002;</p>
+<p>&#x5206;&#x4EAB;&#x7ED9;&#x5927;&#x5BB6;&#xFF0C;&#x4E00;&#x8D77;&#x6B23;&#x8D4F;&#x54E6;&#x3002;</p>
+<hr>
+<p><img src="https://images.hive.blog/DQmWFAHJfXSuJC6KuAgswqx4xoyeLS2naEDr1c7ZewqGHex/image.png" alt="image.png"><br>&#x5176;&#x5B9E;&#x6211;&#x662F;&#x4E00;&#x53EA;&#x8001;&#x864E;&#xFF0C;&#x8FD9;&#x5F20;&#x864E;&#x5578;&#x5C71;&#x6797;&#x56FE;&#x5A01;&#x6B66;&#x9738;&#x6C14;&#x5427;&#xFF1F;</p>
+<p><img src="https://images.hive.blog/DQmQeczzuufi2JSQzryxio2WUvcT9y4vd8CaxZkwtzDxwUh/image.png" alt="image.png"><br>&#x4F60;&#x7785;&#x5565;&#xFF1F;&#x7785;&#x4F60;&#x548B;&#x5730;&#xFF1F;&#xFF01;</p>
+<p><img src="https://images.hive.blog/DQmYF3Zt6Win7k78Pot1hPiw59pgrH9ToCjQYdKSSkgA8Vi/image.png" alt="image.png"><br>&#x6211;&#x4EEC;&#x662F;&#x6709;&#x7EC4;&#x7EC7;&#x7684;&#x732B;&#xFF0C;&#x8BF7;&#x53EB;&#x6211;&#x4EEC;&#x6C6A;&#x6C6A;&#x961F;&#xFF0C;&#x54E6;&#x4E0D;&#x5BF9;&#xFF0C;&#x662F;&#x55B5;&#x55B5;&#x961F;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmZkvRZGBR57WVvauMfLNocWyAHM5NjD5ybFwUwfi5uxPk/image.png" alt="image.png"><br>&#x530D;&#x5310;&#x524D;&#x8FDB;&#xFF0C;&#x51C6;&#x5907;&#x6765;&#x4E2A;&#x997F;&#x864E;&#x6251;&#x98DF;&#xFF0C;&#x5C0F;&#x866B;&#x5B50;&#x4F60;&#x5F80;&#x54EA;&#x91CC;&#x8DD1;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmUhaqa7XXpjFfGWPQuYa9PxE8fyAJ8iHwetwuQB5XEE1R/image.png" alt="image.png"><br>&#x5C34;&#x5C2C;&#xFF0C;&#x866B;&#x5B50;&#x54EA;&#x91CC;&#x53BB;&#x4E86;&#xFF1F;</p>
+<p><img src="https://images.hive.blog/DQmasC1MsGL6LUxqcBDjVuDzGkeYr8joVaR9ApvaB5jW7aj/image.png" alt="image.png"><br>&#x6211;&#x89C9;&#x5F97;&#x6211;&#x6700;&#x4F18;&#x96C5;&#x4E86;&#xFF0C;&#x6709;&#x732B;&#x53CD;&#x5BF9;&#x561B;&#xFF1F;</p>
+<p><img src="https://images.hive.blog/DQmZbN8X4NRJyZCQK3rST8ZaJaDhNKzDnrPKNkvTVC5f6Ua/image.png" alt="image.png"><br>&#x770B;&#x6211;&#x773C;&#x795E;&#xFF0C;&#x4E3B;&#x8981;&#x770B;&#x6C14;&#x8D28;&#xFF01;</p>
+<p><img src="https://images.hive.blog/DQme2QywDTwB4PtaSq5qq3cEhCgSHF9PvP5wvSkfmjLhhmb/image.png" alt="image.png"><br>&#x601D;&#x7D22;&#x732B;&#x751F;&#x7684;&#x610F;&#x4E49;&#x4F55;&#x5728;&#xFF1F;&#x6709;&#x65F6;&#x5019;&#x89C9;&#x5F97;&#x751F;&#x4E0D;&#x5982;&#x6B7B;&#x5462;&#xFF1F;</p>
+<p><img src="https://images.hive.blog/DQmeBmgUy2CTiioYweZmWm7fGngRG7eyZTB7r3DEC43HKPK/image.png" alt="image.png"><br>&#x4F60;&#x601D;&#x8003;&#x4F60;&#x7684;&#xFF0C;&#x6211;&#x722C;&#x6211;&#x7684;&#x5899;&#xFF0C;&#x53BB;&#x770B;&#x770B;&#x8FD9;&#x6237;&#x4EBA;&#x5BB6;&#x8EB2;&#x5728;&#x5C4B;&#x5B50;&#x91CC;&#x505A;&#x4EC0;&#x4E48;&#x5462;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmYWaKga3pQ4FCvMxWC5jJ6p1UqKoE57yUsVfrLCE3EEM5/image.png" alt="image.png"><br>&#x6211;&#x662F;&#x8C01;&#xFF1F;&#x6211;&#x4ECE;&#x54EA;&#x91CC;&#x6765;&#xFF1F;&#x8981;&#x5230;&#x54EA;&#x91CC;&#x53BB;&#xFF1F;</p>
+<p><img src="https://images.hive.blog/DQmUJtJG6GRm9U9tYZ5HG7h2BHCj1wyg6QbA6pyMGtdenGw/image.png" alt="image.png"><br>&#x4E0D;&#x60F3;&#x90A3;&#x4E48;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x7ADF;&#x7136;&#x6709;&#x4EBA;&#x8BF4;&#x6211;&#x662F;&#x6C57;&#x811A;&#xFF0C;&#x6211;&#x4E0D;&#x4FE1;&#xFF01;</p>
+<p><img src="https://images.hive.blog/DQmWzg8PiFpGUTAvXYjD3GT6oQU5awen1GsL9VidGTC3MuD/image.png" alt="image.png"><br>&#x771F;&#x7684;&#x4E00;&#x70B9;&#x4E0D;&#x81ED;&#xFF0C;&#x554A;&#xFF0C;&#x6211;&#x6709;&#x70B9;&#x6076;&#x5FC3;&#xFF0C;&#x6709;&#x70B9;&#x6655;&#x1F635;&#xFF0C;&#x600E;&#x4E48;&#x529E;&#xFF1F;&#x8C01;&#x6765;&#x6551;&#x6551;&#x732B;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmbicrYQdWrdY6ASv9Lhnvy8SDcjg8LY3mxRiUUVSo5PZB/image.png" alt="image.png"><br>&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x9017;&#x4F60;&#x73A9;&#x5462;&#xFF0C;&#x771F;&#x7684;&#x4E00;&#x70B9;&#x90FD;&#x4E0D;&#x81ED;&#xFF0C;&#x6211;&#x5F97;&#x610F;&#x7684;&#x7B11;&#x3002;</p>
+<p><img src="https://images.hive.blog/DQmbrKJB8NcDWTYQUKAANSuHrtzPyTRANcQ6fzYRsVCMYCJ/image.png" alt="image.png"><br>&#x6211;&#x88AB;&#x718F;&#x5012;&#x4E86;&#xFF0C;&#x8FD9;&#x6C57;&#x811A;&#x6709;&#x6BD2;&#xFF0C;&#x8FD9;&#x4E0B;&#x53EF;&#x7B11;&#x4E0D;&#x51FA;&#x6765;&#x4E86;&#x3002;</p>
+<p>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x53EF;&#x7231;&#x7684;&#x4E00;&#x7EC4;&#x5C0F;&#x732B;&#xFF0C;&#x5F88;&#x641E;&#x7B11;&#x7684;&#x56FE;&#x7247;&#x554A;&#xFF1F;</p>
+<p>&#x5C0F;&#x732B;&#x4EEC;&#x6709;&#x597D;&#x5FC3;&#x7684;&#x90BB;&#x5C45;&#x642D;&#x7684;&#x7A9D;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5728;&#x65C1;&#x8FB9;&#x7684;&#x82B1;&#x56ED;&#x91CC;&#x81EA;&#x7531;&#x73A9;&#x800D;&#xFF0C;&#x771F;&#x7684;&#x597D;&#x60EC;&#x610F;&#x3002;&#x4E0D;&#x8FC7;&#x4F30;&#x8BA1;&#x732B;&#x751F;&#x4E5F;&#x6709;&#x732B;&#x751F;&#x7684;&#x56F0;&#x6270;&#xFF0C;&#x770B;&#x90A3;&#x53EA;&#x601D;&#x7D22;&#x732B;&#x751F;&#x7684;&#x732B;&#x5C31;&#x77E5;&#x9053;&#x4E86;&#x3002;&#x8FD8;&#x662F;&#x4E0D;&#x7FA1;&#x6155;&#x4E86;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/3anvov-and" target="_blank" rel="noopener">&#x2018;&#x864E;&#x5578;&#x5C71;&#x6797; &amp; &#x997F;&#x864E;&#x6251;&#x98DF;&#x7B49;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/requests/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_960_720.jpg" alt="每天进步一点点：requests 读取网络图片">
         </a>
@@ -577,179 +743,6 @@
 </ul>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/6fcxmq-python" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;Python&#x9879;&#x76EE;&#x7684;&#x6253;&#x5305;&#x4E0E;&#x53D1;&#x5E03;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/7x5jpy/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2019/03/03/14/38/hacker-4031973_960_720.jpg" alt="密码此前已被破解😱">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-14T13:18:57.000Z">2020-05-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 657 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/7x5jpy/">密码此前已被破解😱</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4ECA;&#x5929;&#x5728;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;(PyPI )&#x6CE8;&#x518C;&#x8D26;&#x6237;&#xFF0C;&#x8FD9;&#x4E2A;&#x7F51;&#x7AD9;&#x5728;&#x6211;&#x7684;&#x5224;&#x65AD;&#x4E2D;&#x5C5E;&#x4E8E;&#x4E2D;&#x7B49;&#x91CD;&#x8981;&#x7684;&#x7F51;&#x7AD9;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x9009;&#x53D6;&#x4E86;&#x81EA;&#x5DF1;&#x4E00;&#x4E2A;&#x7ECF;&#x5E38;&#x5728;&#x4E2D;&#x7B49;&#x91CD;&#x8981;&#x7F51;&#x7AD9;&#x4E0A;&#x4F7F;&#x7528;&#x7684;&#x5BC6;&#x7801;&#x3002;</p>
-<p><img src="https://cdn.pixabay.com/photo/2019/03/03/14/38/hacker-4031973_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x6309;&#x8BF4;&#x5728;&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x597D;&#x884C;&#x4E3A;&#xFF0C;&#x4E0D;&#x8FC7;&#x8981;&#x6CE8;&#x518C;&#x7684;&#x7F51;&#x7AD9;&#x90A3;&#x4E48;&#x591A;&#xFF0C;&#x90FD;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x54EA;&#x91CC;&#x8BB0;&#x5F97;&#x8FC7;&#x6765;&#x561B;&#xFF0C;&#x53C8;&#x4E0D;&#x60F3;&#x7528;&#x4EC0;&#x4E48;&#x5BC6;&#x7801;&#x7BA1;&#x7406;&#x8F6F;&#x4EF6;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x628A;&#x7F51;&#x7AD9;&#x5206;&#x4E09;&#x516D;&#x4E5D;&#x7B49;&#xFF0C;&#x91CD;&#x8981;&#x7684;&#x7F51;&#x7AD9;&#x4E00;&#x7AD9;&#x4E00;&#x5BC6;&#x7801;&#xFF0C;&#x5176;&#x5B83;&#x7684;&#x89C6;&#x60C5;&#x51B5;&#x5206;&#x914D;&#x3002;</p>
-<p>&#x7136;&#x800C;&#x4ECA;&#x5929;&#x7684;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x540E;&#xFF0C;&#x7ADF;&#x7136;&#x51FA;&#x73B0;&#x4E86;&#x5982;&#x4E0B;&#x63D0;&#x793A;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmditchTdwcyLg8YZgK8w7o3BPFhXEJinWTsCfBj72g9C2/image.png" alt="image.png"></p>
-</blockquote>
-<p>&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p>This password appears in a security breach or has been compromised and cannot be used. Please refer to the FAQ for more information.</p>
-</blockquote>
-<p>&#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F;&#xFF1A;</p>
-<blockquote>
-<p>&#x6B64;&#x5BC6;&#x7801;&#x51FA;&#x73B0;&#x5728;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x4E2D;&#x6216;&#x5DF2;&#x88AB;&#x7834;&#x89E3;&#xFF0C;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;&#x3002;&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x8BF7;&#x53C2;&#x8003;FAQ&#x3002;</p>
-</blockquote>
-<p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;FAQ&#x4FE1;&#x606F;&#xFF1A;</p>
-<blockquote>
-<p>During each of these processes, PyPI generates a SHA-1 hash of the supplied password and uses the first five (5) characters of the hash to check the Have I Been Pwned API and determine if the password has been previously compromised. The plaintext password is never stored by PyPI or submitted to the Have I Been Pwned API.</p>
-</blockquote>
-<p>&#x5927;&#x610F;&#x5C31;&#x662F;&#x8BF4;&#x6211;&#x6CE8;&#x518C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B83;&#x4EEC;&#x7528;&#x5BC6;&#x7801;SHA-1 &#x54C8;&#x5E0C;&#x7684;&#x524D;5&#x4F4D;&#x53BB;&#x4E00;&#x4E2A;API&#x90A3;&#x68C0;&#x67E5;&#xFF0C;&#x7136;&#x540E;&#x5224;&#x65AD;&#x5BC6;&#x7801;&#x662F;&#x4E0D;&#x662F;&#x5728;&#x5B89;&#x5168;&#x6F0F;&#x6D1E;&#x4E2D;&#x6216;&#x8005;&#x5DF2;&#x7ECF;&#x88AB;&#x7834;&#x89E3;&#x8FC7;&#x3002;</p>
-<p>&#x867D;&#x7136;&#x6211;&#x8FD9;&#x4E2A;&#x5BC6;&#x7801;&#x662F;&#x7528;&#x5728;&#x4E2D;&#x7B49;&#x91CD;&#x8981;&#x7684;&#x7F51;&#x7AD9;&#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x4E0D;&#x662F;&#x8BF8;&#x5982;123456&#xFF0C;abc123&#x8FD9;&#x6837;&#x8D85;&#x7EA7;&#x7B80;&#x5355;&#x7684;&#x5BC6;&#x7801;&#xFF0C;&#x4E4B;&#x524D;&#x56FE;&#x7247;&#x4E2D;&#x7684;&#x5BC6;&#x7801;&#x5F3A;&#x5EA6;&#x4E5F;&#x8BC1;&#x5B9E;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6BD5;&#x7ADF;&#x662F;&#x6211;&#x7CBE;&#x5FC3;&#x8BBE;&#x7F6E;&#x7684;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#xFF0C;&#x65E2;&#x7136;&#x8BF4;&#x662F;&#x88AB;&#x7834;&#x89E3;&#x4E86;&#xFF0C;&#x90A3;&#x80AF;&#x5B9A;&#x662F;&#x88AB;&#x7834;&#x89E3;&#x4E86;&#xFF0C;&#x5927;&#x6982;&#x7387;&#x7684;&#x60C5;&#x51B5;&#x662F;&#x6211;&#x7528;&#x8FD9;&#x4E2A;&#x5BC6;&#x7801;&#x7684;&#x67D0;&#x4E2A;&#x7F51;&#x7AD9;&#x88AB;&#x62D6;&#x5E93;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x5BC6;&#x7801;&#x771F;&#x7684;&#x5C31;&#x4E0D;&#x5B89;&#x5168;&#x4E86;&#x3002;</p>
-<p>&#x65E2;&#x7136;&#x5982;&#x6B64;&#xFF0C;&#x5C31;&#x91CD;&#x65B0;&#x9009;&#x53D6;&#x4E2A;&#x5BC6;&#x7801;&#x5427;&#xFF0C;&#x54CE;&#xFF0C;&#x770B;&#x6765;&#x6709;&#x65F6;&#x95F4;&#x8981;&#x628A;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x5BC6;&#x7801;&#x7684;&#x6240;&#x6709;&#x7F51;&#x7AD9;&#x5BC6;&#x7801;&#x90FD;&#x6362;&#x4E00;&#x4E0B;&#x4E86;&#xFF0C;&#x5C3D;&#x7BA1;&#x5176;&#x5B9E;&#x88AB;&#x76D7;&#x4E86;&#x4E5F;&#x6CA1;&#x5565;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#xFF0C;&#x7ECF;&#x8FC7;&#x8FD9;&#x4EF6;&#x4E8B;&#xFF0C;&#x53D1;&#x73B0;<a href="https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange" target="_blank" rel="noopener"><strong><em>Have I Been Pwned</em></strong> &#x8FD9;&#x4E2A;API</a>&#xFF0C;&#x7814;&#x7A76;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x8FD8;&#x662F;&#x975E;&#x5E38;&#x597D;&#x73A9;&#x7684;&#xFF0C;&#x8FD9;&#x4E5F;&#x7B97;&#x662F;&#x6709;&#x5931;&#x6709;&#x5F97;&#x5427;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://pypi.org/help/#compromised-password" target="_blank" rel="noopener">https://pypi.org/help/#compromised-password</a></li>
-<li><a href="https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange" target="_blank" rel="noopener">https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/7x5jpy" target="_blank" rel="noopener">&#x2018;&#x5BC6;&#x7801;&#x6B64;&#x524D;&#x5DF2;&#x88AB;&#x7834;&#x89E3;&#x1F631;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/python-and-r/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.pixabay.com/photo/2018/09/19/18/30/keyboard-3689225_960_720.jpg" alt="每天进步一点点：Python读写文件的模式 &amp; r+">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-14T03:14:03.000Z">2020-05-14</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 882 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/python-and-r/">每天进步一点点：Python读写文件的模式 &amp; r+</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5E2E;&#x670B;&#x53CB;&#x5199;&#x4E00;&#x6BB5;&#x77ED;&#x5C0F;&#x7684;Python&#x4EE3;&#x7801;&#xFF0C;&#x5176;&#x6BCF;&#x6B21;&#x8FD0;&#x884C;&#x65F6;&#x4F1A;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x9700;&#x8981;&#x4E0E;&#x4E0A;&#x6B21;&#x8FD0;&#x884C;&#x65F6;&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x6BD4;&#x4E00;&#x4E0B;&#xFF0C;&#x6765;&#x5224;&#x65AD;&#x662F;&#x5426;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x3002;</p>
-<p><img src="https://cdn.pixabay.com/photo/2018/09/19/18/30/keyboard-3689225_960_720.jpg" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x8981;&#x60F3;&#x505A;&#x5230;&#x8FD9;&#x70B9;&#x6709;&#x5F88;&#x591A;&#x529E;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x8BFB;&#x5199;&#x6570;&#x636E;&#x5E93;&#x554A;&#x3001;&#x8BFB;&#x5199;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x554A;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x8BBA;&#x90A3;&#x6837;&#x90FD;&#x89C9;&#x5F97;&#x592A;&#x9EBB;&#x70E6;&#x4E86;&#xFF0C;&#x6BD5;&#x7ADF;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x592A;&#x591A;&#x7684;&#x6570;&#x636E;&#x8981;&#x5B58;&#x50A8;&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
-<p>&#x60F3;&#x6765;&#x60F3;&#x53BB;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x529E;&#x6CD5;&#x83AB;&#x8FC7;&#x4E8E;&#x76F4;&#x63A5;&#x5199;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x56E0;&#x4E3A;&#x65E2;&#x8981;&#x8BFB;&#x53D6;&#x53C8;&#x8981;&#x5199;&#x5165;&#xFF0C;&#x4E8E;&#x662F;&#x6211;&#x76F4;&#x63A5;&#x5199;&#x4E86;&#x5982;&#x4E0B;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
-<blockquote>
-<p><code>f = open(fname, &apos;rw&apos;)</code></p>
-</blockquote>
-<p>&#x5176;&#x4E2D;<code>fname</code>&#x4FDD;&#x5B58;&#x7740;&#x8DEF;&#x5F84;+&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x770B;&#x7740;&#x89C9;&#x5F97;&#x633A;&#x5B8C;&#x7F8E;&#x7684;&#xFF0C;&#x7136;&#x800C;&#x6267;&#x884C;&#x65F6;&#x76F4;&#x63A5;&#x62A5;&#x9519;&#x4E86;&#xFF1A;</p>
-<blockquote>
-<p>ValueError: must have exactly one of create/read/write/append mode</p>
-</blockquote>
-<p>&#x64E6;&#xFF0C;&#x5982;&#x679C;&#x53EA;&#x662F;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#xFF0C;&#x6211;&#x600E;&#x4E48;&#x4E00;&#x8FB9;&#x6109;&#x5FEB;&#x5730;&#x8BFB;&#xFF0C;&#x4E00;&#x8FB9;&#x6109;&#x5FEB;&#x5730;&#x5199;&#x4E86;&#xFF1F;&#x7F51;&#x4E0A;&#x627E;&#x4E86;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x6709;&#x5EFA;&#x8BAE;&#x8BFB;&#x6A21;&#x5F0F;&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x540C;&#x65F6;&#x5199;&#x6A21;&#x5F0F;&#x518D;&#x6253;&#x5F00;&#xFF0C;&#x8FD8;&#x6709;&#x7684;&#x5EFA;&#x8BAE;&#x6253;&#x5F00;A&#x6587;&#x4EF6;&#x8BFB;&#xFF0C;&#x518D;&#x6253;&#x5F00;B&#x6587;&#x4EF6;&#x5199;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x6253;&#x5F00;A&#x8BFB;&#xFF0C;&#x518D;&#x6253;&#x5F00;B&#x5199;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x9700;&#x8981;&#x5173;&#x95ED;A&#x540E;&#xFF0C;&#x5728;&#x7528;B&#x8986;&#x76D6;A&#xFF0C;&#x90A3;&#x6837;&#x597D;&#x50CF;&#x8FD8;&#x4E0D;&#x5982;&#x6211;&#x6253;&#x5F00;&#x5E76;&#x8BFB;A&#xFF0C;&#x5173;&#x95ED;A&#xFF0C;&#x518D;&#x6253;&#x5F00;&#x5199;A&#x3002;&#x5C3D;&#x7BA1;&#x8FD9;&#x4E2A;&#x601D;&#x8DEF;&#x5E94;&#x8BE5;&#x5B8C;&#x5168;&#x53EF;&#x884C;&#xFF0C;&#x4F46;&#x662F;Python&#x771F;&#x7684;&#x4E0D;&#x80FD;&#x7528;&#x8BFB;&#x5199;&#x65B9;&#x5F0F;&#x6253;&#x5F00;&#x5417;&#xFF1F;</p>
-<p>&#x4E8E;&#x662F;&#x627E;&#x4E86;&#x4E00;&#x4E0B;Python&#x5B98;&#x7F51;&#x4E0A;&#x7684;<a href="https://docs.python.org/3/library/functions.html#open" target="_blank" rel="noopener">&#x5173;&#x4E8E;open&#x7684;&#x5185;&#x5BB9;</a>&#xFF0C;&#x5E76;&#x770B;&#x5230;&#x8FD9;&#x90E8;&#x5206;&#xFF1A;</p>
-<blockquote>
-<p><img src="https://images.hive.blog/DQmYqSdcSwUUdLtGReZBpKnUhNsgeaiTY3anuMy3YFaNMVj/image.png" alt="image.png"></p>
-</blockquote>
-<p>&#x5C24;&#x5176;&#x662F;&#x5176;&#x4E2D;<code>&apos;+&apos; | open for updating (reading and writing)</code>&#x7B80;&#x76F4;&#x5C31;&#x662F;&#x6211;&#x60F3;&#x8981;&#x7684;&#x554A;&#xFF0C;&#x867D;&#x7136;&#x6211;&#x6309;&#x6211;&#x7684;&#x7ECF;&#x9A8C;<code>+</code>&#x662F;&#x8981;&#x548C;&#x5176;&#x5B83;&#x6807;&#x8BB0;&#x4E00;&#x8D77;&#x7528;&#x7684;&#x3002;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x4E0D;&#x6B7B;&#x5FC3;&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><code>f = open(fname, &apos;+&apos;)</code></p>
-</blockquote>
-<p>&#x679C;&#x4E0D;&#x5176;&#x7136;&#x51FA;&#x9519;&#x4E86;&#xFF1A;</p>
-<blockquote>
-<p>ValueError: Must have exactly one of create/read/write/append mode and at most one plus</p>
-</blockquote>
-<p>&#x8FD8;&#x662F;&#x8001;&#x8001;&#x5B9E;&#x5B9E;&#x7528;<code>r+</code>&#x5427;&#xFF0C;&#x4EA6;&#x5373;<code>f = open(fname, &apos;r+&apos;)</code>&#x679C;&#x7136;&#x6253;&#x5F00;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x662F;&#x65B0;&#x95EE;&#x9898;&#x53C8;&#x6765;&#x4E86;&#xFF0C;&#x6211;&#x8BFB;&#x5B8C;&#x5B57;&#x7B26;&#x4E32;&#x5E76;&#x5199;&#x5165;&#x540E;&#xFF0C;&#x65B0;&#x65B0;&#x5199;&#x5165;&#x7684;&#x5185;&#x5BB9;&#x76F4;&#x63A5;&#x8FFD;&#x52A0;&#x5230;&#x539F;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x540E;&#x8FB9;&#x4E86;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x60F3;&#x60F3;&#x4E5F;&#x662F;&#xFF0C;&#x56E0;&#x4E3A;&#x8BFB;&#x5B8C;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6587;&#x4EF6;&#x6307;&#x9488;&#x5DF2;&#x7ECF;&#x6307;&#x5230;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x4E86;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x5199;&#x5165;&#xFF0C;&#x5F53;&#x7136;&#x5C31;&#x662F;&#x8FFD;&#x52A0;&#x55BD;&#x3002;</p>
-<p>&#x6216;&#x8BB8;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x5982;&#x4E0B;&#x6307;&#x4EE4;&#x5C06;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x6587;&#x4EF6;&#x6700;&#x524D;&#x7AEF;&#xFF1A;</p>
-<blockquote>
-<p><code>f.seek(0)</code></p>
-</blockquote>
-<p>&#x4E0D;&#x8FC7;&#x60F3;&#x60F3;&#xFF0C;&#x8FD9;&#x6837;&#x6216;&#x8BB8;&#x4E5F;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x5047;&#x8BBE;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x5185;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;<code>1234567890</code>&#xFF0C;&#x6211;&#x8981;&#x65B0;&#x5199;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;<code>12345</code>&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5199;&#x5B8C;&#x4EE5;&#x540E;&#xFF0C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#x53D8;&#x4E0D;&#x53D8;&#x5462;&#xFF1F;</p>
-<p>&#x6211;&#x6CA1;&#x53BB;&#x6D4B;&#x8BD5;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5185;&#x5BB9;&#x53D8;&#x4E0D;&#x53D8;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x4ECE;&#x903B;&#x8F91;&#x4E0A;&#x5C31;&#x4E0D;&#x4F18;&#x96C5;&#x3002;&#x4E3A;&#x4E86;&#x4F18;&#x96C5;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x6211;&#x8FD8;&#x662F;&#x7528;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x5427;&#xFF1A;</p>
-<blockquote>
-<p><code>f.seek(0)</code><br><code>f.truncate()</code><br><code>f.write(str_a)</code></p>
-</blockquote>
-<p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5148;&#x5B9A;&#x4F4D;&#x5230;&#x6587;&#x4EF6;&#x5934;&#xFF0C;&#x518D;&#x6E05;&#x7A7A;&#x5185;&#x5BB9;&#xFF0C;&#x518D;&#x5199;&#x5165;&#xFF0C;&#x8FD9;&#x6837;&#x770B;&#x8D77;&#x6765;&#x4F18;&#x96C5;&#x591A;&#x4E86;&#x3002;&#x628A;&#x7A0B;&#x5E8F;&#x8DD1;&#x8D77;&#x6765;&#xFF0C;&#x679C;&#x7136;&#x597D;&#x7528;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x5C31;&#x653E;&#x5FC3;&#x5566;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://docs.python.org/3/library/functions.html#open" target="_blank" rel="noopener">https://docs.python.org/3/library/functions.html#open</a></li>
-<li><a href="https://docs.python.org/3.7/tutorial/inputoutput.html#methods-of-file-objects" target="_blank" rel="noopener">https://docs.python.org/3.7/tutorial/inputoutput.html#methods-of-file-objects</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/python-and-r" target="_blank" rel="noopener">&#x2018;&#x6BCF;&#x5929;&#x8FDB;&#x6B65;&#x4E00;&#x70B9;&#x70B9;&#xFF1A;Python&#x8BFB;&#x5199;&#x6587;&#x4EF6;&#x7684;&#x6A21;&#x5F0F; &amp; r+&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
