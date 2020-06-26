@@ -230,6 +230,106 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steemsql-800-sbd-7000-cny-steemsql-tutorial-i-have-spent-800-sbd-7000-usd-buying-votes/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1514372209/kocop5sf2c4mrlkr26mr.png" alt="SteemSQL Tutorial - I have spent 800 SBD (7000+ USD) buying votes! SteemSQL 教程 - 我花了800多 SBD (7000多美元)买赞。">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-12-27T11:23:24.000Z">2017-12-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/busy/">busy</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 946 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemsql-800-sbd-7000-cny-steemsql-tutorial-i-have-spent-800-sbd-7000-usd-buying-votes/">SteemSQL Tutorial - I have spent 800 SBD (7000+ USD) buying votes! SteemSQL 教程 - 我花了800多 SBD (7000多美元)买赞。</a>
+            
+        </h1>
+        <div class="content">
+            <p>I spent around 800 SBD (7000 USD) in buying votes. The following queries the table <code>TxTransfers</code> thanks to @arcange&#x2019;s <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a></p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select &quot;from&quot;, &quot;to&quot;, &quot;memo&quot;, (amount)</span><br><span class="line">from TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot; = &apos;justyy&apos; and</span><br><span class="line">	memo like &apos;http%&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>This will list all the transfers with memo starting &#x201C;http&#x201D;. If we group the results, we know exactly how much have been sent to per vote-buying ID.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select &quot;to&quot;, sum(amount)</span><br><span class="line">from TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot; = &apos;justyy&apos; and</span><br><span class="line">	memo like &apos;http%&apos;</span><br><span class="line">group by</span><br><span class="line">	&quot;to&quot;</span><br></pre></td></tr></tbody></table></figure>
+<p>This is clear and I did spend a lot in this!</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1514372209/kocop5sf2c4mrlkr26mr.png" alt="image.png"></p>
+<p>Some data should have been excluded from the <a href="https://helloacm.com/steemsql-how-to-avoid-sql-injection/" target="_blank" rel="noopener">SteemSQL</a> results, for example, the SBD sent to @oflyhigh, @travelgirl, @wilkinshui and @yuxi were not for buying votes. The biggest service I use is @minnowbooster which I have spent 686.7 SBD, Gosh!</p>
+<p>Why buy votes? My reasons are:</p>
+<ul>
+<li>Increase your Reputation faster</li>
+<li>Promote your posts</li>
+<li>SEO, the posts worth more than 10 USD have do-follow links</li>
+</ul>
+<p>This might still be <a href="https://helloacm.com/steemsql-tutorial-i-have-spent-800-sbd-7000-usd-buying-votes/" target="_blank" rel="noopener">useful and reasonable</a> to use these services. What do you think?</p>
+<p><img src="https://cdn.pixabay.com/photo/2015/10/31/08/50/coins-1015125_960_720.jpg" alt=""><br><em>Image Credit: Pixabay.com</em></p>
+<p>&#x4E0D;&#x67E5;&#x4E0D;&#x77E5;&#x9053;&#xFF0C;&#x4E00;&#x67E5;&#x5413;&#x4E00;&#x8DF3;&#xFF0C;&#x6211;&#x524D;&#x524D;&#x540E;&#x540E;&#x82B1;&#x4E86;&#x5927;&#x6982;800&#x591A; SBD&#x4E70;&#x8D5E;&#xFF01;&#x6309;&#x5E02;&#x4EF7;&#x5C31;&#x662F;7000&#x591A;&#x7F8E;&#x5143;&#xFF01;&#x5929;&#x554A;&#x64B8;&#x3002;&#x67E5;&#x8BE2;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select &quot;from&quot;, &quot;to&quot;, &quot;memo&quot;, (amount)</span><br><span class="line">from TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot; = &apos;justyy&apos; and</span><br><span class="line">	memo like &apos;http%&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x4E2A;&#x8BED;&#x53E5;&#x663E;&#x793A;&#x4E86;&#x6240;&#x6709;&#x4E70;&#x8D5E;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x6211;&#x4EEC;&#x518D;&#x7EC6;&#x5206;&#x4E00;&#x4E0B;&#xFF0C;&#x6309; &#x201C;to&#x201D; &#x6765;&#x5206;&#x7EC4;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select &quot;to&quot;, sum(amount)</span><br><span class="line">from TxTransfers (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	&quot;from&quot; = &apos;justyy&apos; and</span><br><span class="line">	memo like &apos;http%&apos;</span><br><span class="line">group by</span><br><span class="line">	&quot;to&quot;</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x4E0B;&#x66F4;&#x6E05;&#x695A;&#x4E86;&#xFF1A;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1514372209/kocop5sf2c4mrlkr26mr.png" alt="image.png"></p>
+<p>&#x9664;&#x53BB;&#x4E4B;&#x524D;&#x641E;&#x6D3B;&#x52A8;&#x7ED9; @oflyhigh , @travelgril, @wilkinshui &#x8FD8;&#x6709; @yuxi &#x7684;&#x51E0;&#x7B14;&#x5C0F;&#x989D;&#x5956;&#x52B1;&#x4E0D;&#x7B97;&#xFF0C;&#x771F;&#x7684;&#x82B1;&#x4E86;7000&#x591A;&#x7F8E;&#x5143;&#x4E70;&#x8D5E;&#xFF01;&#x7279;&#x522B;&#x662F;&#x4E4B;&#x524D;&#x5F88;&#x5927;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x90FD;&#x5728;&#x7ED9; @minnowbooster &#x4E70;&#x8D5E;&#xFF0C;&#x4E00;&#x5171;&#x82B1;&#x4E86; 686.7 SBD&#x3002;</p>
+<p>&#x4E3A;&#x5565;&#x8981;&#x4E70;&#x8D5E;&#xFF1F;&#x6211;&#x7684;&#x539F;&#x56E0;&#x6709;&#xFF1A;</p>
+<ul>
+<li><a href="https://justyy.com/archives/5640" target="_blank" rel="noopener">&#x5347;&#x7EA7;</a>&#x66F4;&#x5FEB;</li>
+<li>&#x82B1;&#x94B1;&#x63A8;&#x5E16;&#x5B50;</li>
+<li><a href="https://justyy.com/archives/5214" target="_blank" rel="noopener">SEO</a>&#xFF0C;&#x5E16;&#x5B50;&#x8D85;&#x8FC7;10&#x5757;&#x94B1;&#x5DE6;&#x53F3;&#xFF0C;&#x6587;&#x4E2D;&#x7684;&#x94FE;&#x63A5;&#x5C31;&#x662F; follow&#x3002;</li>
+</ul>
+<p>&#x6240;&#x4EE5;&#x5373;&#x4F7F;&#x4ECE;&#x5E10;&#x9762;&#x4E0A;&#x770B;&#xFF0C;&#x4E70;&#x8D5E;&#x5E76;&#x4E0D;&#x5212;&#x7B97;&#xFF0C;&#x4F46;&#x662F;&#x8003;&#x8651;&#x5230;&#x4EE5;&#x4E0A;&#x4E09;&#x70B9;&#xFF0C;&#x4E5F;&#x4E0D;&#x90A3;&#x4E48;&#x7EA0;&#x7ED3;&#x4E86;&#x3002;</p>
+<p>&#x5DF2;&#x540C;&#x6B65;&#x5230;&#x535A;&#x6587;: <a href="https://justyy.com/archives/5772" target="_blank" rel="noopener">https://justyy.com/archives/5772</a></p>
+<blockquote>
+<p>AD &#x4E00;&#x6CE2;&#xFF0C;&#x6700;&#x8FD1;SBD&#x6DA8;&#x5230;10&#x5757;&#x94B1;&#x4E86;&#xFF0C;SBD&#x6BD4;SP&#x503C;&#x94B1;&#x591A;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x628A;&#x94B1;&#x5B58;&#x5728;<a href="https://steemit.com/cn-stats/@justyy/daily-cn-updates-cnyy2017-12-15" target="_blank" rel="noopener">YY&#x94F6;&#x884C;</a>&#x662F;&#x5F88;&#x5212;&#x7B97;&#x7684;&#xFF0C;YY&#x94F6;&#x884C;&#x5403;&#x7684;&#x662F;&#x8349;&#xFF08;&#x501F;&#x7684;SP&#xFF09;&#xFF0C;&#x6324;&#x7684;&#x662F;&#x5976;&#x554A;&#xFF08;&#x503C;&#x94B1;&#x7684;SBD&#xFF09;&#xFF0C; &#x6BCF;&#x65E5;&#x53D1; SBD&#x5229;&#x606F;&#xFF0C;&#x4ECE;&#x4E0D;&#x95F4;&#x65AD;&#xFF0C;&#x63D0;&#x524D;&#x795D;YY&#x80A1;&#x4E1C;&#x4EEC;&#x5723;&#x8BDE;&#x5FEB;&#x4E50;&#xFF0C;&#x65B0;&#x5E74;&#x5FEB;&#x4E50;&#xFF0C;&#x80A1;&#x4E1C;&#x4EEC;&#x90FD;&#x5728;2018&#x91CC;&#x8D5A;&#x5927;&#x94B1;&#xFF0C;&#x5B9E;&#x73B0;<a href="https://justyy.com/archives/3954" target="_blank" rel="noopener">&#x8D22;&#x52A1;&#x81EA;&#x7531;</a>&#x554A;&#xFF01;</p>
+</blockquote>
+<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
+<blockquote>
+<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></p>
+</blockquote>
+<h1 id="&#x8FD1;&#x671F;&#x5E16;&#x5B50;"><a href="#&#x8FD1;&#x671F;&#x5E16;&#x5B50;" class="headerlink" title="&#x8FD1;&#x671F;&#x5E16;&#x5B50;"></a>&#x8FD1;&#x671F;&#x5E16;&#x5B50;</h1><ul>
+<li><a href="https://steemit.com/cn/@justyy/boxing-day" target="_blank" rel="noopener">&#x6109;&#x5FEB;&#x7684; Boxing Day | Happy Boxing Day (Photography)</a></li>
+<li><a href="https://steemit.com/busy/@justyy/2017-my-top-posts-in-2017" target="_blank" rel="noopener">2017 &#x5E74;&#xFF0C;&#x6211;&#x7684;&#x70ED;&#x95E8;&#x5E16;&#x5B50; My Top Posts in 2017!</a></li>
+<li><a href="https://steemit.com/cn/@justyy/13-merry-christmas-2017" target="_blank" rel="noopener">&#x5728;&#x82F1;&#x56FD;&#x7684;&#x7B2C;13&#x4E2A;&#x5723;&#x8BDE;&#x8282; Merry Christmas 2017! | &#x6708;&#x65E6;&#x8BC4;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-or" target="_blank" rel="noopener">&#x4E4C;&#x6258;&#x90A6;&#x7ED9; STEEM &#x5E26;&#x6765;&#x4E86;&#x7B2C;&#x4E8C;&#x6625; | &#x6708;&#x65E6;&#x8BC4;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/adblue" target="_blank" rel="noopener">&#x67F4;&#x6CB9;&#x6C7D;&#x8F66;&#x7684; AdBlue &#x662F;&#x5565;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/4awu29" target="_blank" rel="noopener">&#x6211;&#x73A9;&#x533A;&#x5757;&#x94FE;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x7684;&#x539F;&#x5219; - &#x6708;&#x65E6;&#x8BC4;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/utopian" target="_blank" rel="noopener">&#x6559;&#x4F60;&#x5982;&#x4F55;&#x62B1;&#x4E0A; utopian &#x5927;&#x817F;, &#x5982;&#x4F55;&#x6700;&#x5927;&#x5316;&#x4E4C;&#x6258;&#x90A6;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/paypal-cny" target="_blank" rel="noopener">Paypal &#x8D1D;&#x5B9D;&#x5F00;&#x901A; &#x65E5;&#x5143;&#x5E10;&#x6237;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/coinbase-bch" target="_blank" rel="noopener">Coinbase &#x652F;&#x6301; BCH&#x7684;&#x4EA4;&#x6613;&#x4E86;&#xFF01;</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemsql-800-sbd-7000-cny-steemsql-tutorial-i-have-spent-800-sbd-7000-usd-buying-votes" target="_blank" rel="noopener">SteemSQL Tutorial - I have spent 800 SBD (7000+ USD) buying votes! SteemSQL &#x6559;&#x7A0B; - &#x6211;&#x82B1;&#x4E86;800&#x591A; SBD (7000&#x591A;&#x7F8E;&#x5143;)&#x4E70;&#x8D5E;&#x3002;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cnyy2017-12-27/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/jpg/ducks.jpg" alt="Daily #CN Updates CN社区【七天收益排行榜】【优秀被错过的文章】【YY银行股东名单】(2017-12-27)">
         </a>
@@ -3703,861 +3803,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/cn--2017-12-26/" class="image is-7by1">
-            <img class="thumbnail" src="https://helloacm.com/images/dailystats.jpg" alt="CN 中文区每日【财富总值】【活跃统计数据】 (2017-12-26)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-12-26T15:01:09.000Z">2017-12-26</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn-stats/">cn-stats</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    10 minutes read (About 1546 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/cn--2017-12-26/">CN 中文区每日【财富总值】【活跃统计数据】 (2017-12-26)</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x6570;&#x636E;&#x6765;&#x6E90;: steemsql.com<br>Thank you @arcange for creating <a href="https://steemit.com/steemit/@arcange/steemsql-com-a-public-sql-server-database-with-all-steemit-blockchain-data" target="_blank" rel="noopener">STEEMSQL</a>!<br>&#x751F;&#x6210;&#x65F6;&#x95F4;: 2017-12-26 15:03:03 (UTC)</p>
-<h2 id="2017-12-26-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"><a href="#2017-12-26-CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;" class="headerlink" title="2017-12-26 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;"></a>2017-12-26 CN&#x533A;&#x8D22;&#x5BCC;&#x603B;&#x503C;</h2><p><img src="https://helloacm.com/images/dailystats.jpg" alt=""><br><em><a href="https://helloacm.com/images/dailystats.jpg" target="_blank" rel="noopener">Image Credit</a></em></p>
-<p>CN &#x5FAE;&#x4FE1;&#x7FA4;&#x4E00;&#x5171;&#x6709;: </p>
-<blockquote>
-<p><strong>255</strong>&#x4EBA;<br>&#x4E00;&#x5171; Total SP:<br><strong>511052.36</strong><br>&#x4E00;&#x5171; &#x6709;&#x6548;ESP Total ESP:<br><strong>1454107.07</strong><br>&#x4E00;&#x5171; &#x8D22;&#x5BCC;&#x603B;&#x503C; Total Values (SBD):<br><strong>1724000.35</strong></p>
-</blockquote>
-<p>&#x6309;<em>10</em>&#x6B21;100%&#x70B9;&#x8D5E;&#x6765;&#x7B97;&#xFF0C;<strong>1454107.07</strong> SP &#x80FD;&#x5F97;&#x5230;&#x5927;&#x7EA6; <strong>1366.86</strong> SBD&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E9B; SP &#x90FD;&#x7528;&#x6765;&#x7ED9;CN&#x533A;&#x7684;&#x4EBA;&#x70B9;&#x8D5E;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x4EBA;&#x6BCF;&#x5929;&#x5E73;&#x5747;&#x6536;&#x5165;&#x662F; <strong>5.36</strong> SBD&#x3002;</p>
-<ol>
-<li><a href="https://helloacm.com/tools/steemit/wechat/" target="_blank" rel="noopener">SteemIt &#x597D;&#x53CB;&#x5FAE;&#x4FE1;&#x7FA4;&#x6392;&#x884C;&#x699C;</a> </li>
-<li><a href="https://github.com/DoctorLai/steemit-wechat-group/blob/master/members.txt" target="_blank" rel="noopener">Github &#x540D;&#x5355;</a></li>
-<li><a href="https://github.com/DoctorLai/steemit-wechat-group" target="_blank" rel="noopener">&#x52A0;&#x5165;&#x65B9;&#x6CD5;: wexin@justyy.com</a></li>
-<li>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left">&#x6700;&#x5C0F;&#x503C; Min</th>
-<th style="text-align:left">&#x6700;&#x5927;&#x503C; Max</th>
-<th style="text-align:left">&#x5E73;&#x5747; Avg</th>
-<th style="text-align:left">&#x4E2D;&#x4F4D;&#x6570; Median</th>
-<th style="text-align:left">&#x6807;&#x51C6;&#x65B9;&#x5DEE; STD</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">SBD</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">1691.17</td>
-<td style="text-align:left">32.11</td>
-<td style="text-align:left">1.42</td>
-<td style="text-align:left">144.44</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x7B49;&#x7EA7; Reputation</td>
-<td style="text-align:left">3.24</td>
-<td style="text-align:left">75.39</td>
-<td style="text-align:left">49.72</td>
-<td style="text-align:left">51.53</td>
-<td style="text-align:left">13.98</td>
-</tr>
-<tr>
-<td style="text-align:left">Steem Power</td>
-<td style="text-align:left">0.0</td>
-<td style="text-align:left">106521</td>
-<td style="text-align:left">2003.98</td>
-<td style="text-align:left">109.24</td>
-<td style="text-align:left">7942.5</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x6709;&#x6548; ESP</td>
-<td style="text-align:left">0.0</td>
-<td style="text-align:left">865467.36</td>
-<td style="text-align:left">5702.22</td>
-<td style="text-align:left">81.66</td>
-<td style="text-align:left">54677.17</td>
-</tr>
-<tr>
-<td style="text-align:left">STEEM</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">7079.48</td>
-<td style="text-align:left">80.38</td>
-<td style="text-align:left">0.0</td>
-<td style="text-align:left">492.79</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x5E10;&#x53F7;&#x4EF7;&#x503C; $</td>
-<td style="text-align:left">0.65</td>
-<td style="text-align:left">366660.04</td>
-<td style="text-align:left">6755.28</td>
-<td style="text-align:left">388.24</td>
-<td style="text-align:left">26938.82</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x6295;&#x7968;&#x80FD;&#x91CF; VP %</td>
-<td style="text-align:left">1.79</td>
-<td style="text-align:left">100</td>
-<td style="text-align:left">79.74</td>
-<td style="text-align:left">92.75</td>
-<td style="text-align:left">24.09</td>
-</tr>
-<tr>
-<td style="text-align:left">&#x5E10;&#x53F7;&#x5929;&#x6570; Days</td>
-<td style="text-align:left">2</td>
-<td style="text-align:left">611</td>
-<td style="text-align:left">185.15</td>
-<td style="text-align:left">153</td>
-<td style="text-align:left">134.46</td>
-</tr>
-</tbody>
-</table>
-<h2 id="2017-12-26-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs"><a href="#2017-12-26-&#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237;-Active-Users-Last-24-Hrs" class="headerlink" title="2017-12-26 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)"></a>2017-12-26 &#x8FC7;&#x53BB;24&#x5C0F;&#x65F6;&#x6D3B;&#x8DC3;&#x7528;&#x6237; (Active Users Last 24 Hrs)</h2><table>
-<thead>
-<tr>
-<th style="text-align:left"></th>
-<th style="text-align:left">Active User</th>
-<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09; Number of Posts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left"><a href="https://steemit.com/@ace108" target="_blank" rel="noopener">@ace108</a></td>
-<td style="text-align:left">84</td>
-</tr>
-<tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left"><a href="https://steemit.com/@angelina6688" target="_blank" rel="noopener">@angelina6688</a></td>
-<td style="text-align:left">81</td>
-</tr>
-<tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left"><a href="https://steemit.com/@rivalhw" target="_blank" rel="noopener">@rivalhw</a></td>
-<td style="text-align:left">67</td>
-</tr>
-<tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left"><a href="https://steemit.com/@winniex" target="_blank" rel="noopener">@winniex</a></td>
-<td style="text-align:left">61</td>
-</tr>
-<tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left"><a href="https://steemit.com/@lovemyson" target="_blank" rel="noopener">@lovemyson</a></td>
-<td style="text-align:left">47</td>
-</tr>
-<tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left"><a href="https://steemit.com/@chann" target="_blank" rel="noopener">@chann</a></td>
-<td style="text-align:left">46</td>
-</tr>
-<tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left"><a href="https://steemit.com/@drunkevil" target="_blank" rel="noopener">@drunkevil</a></td>
-<td style="text-align:left">45</td>
-</tr>
-<tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left"><a href="https://steemit.com/@towardsthesun" target="_blank" rel="noopener">@towardsthesun</a></td>
-<td style="text-align:left">43</td>
-</tr>
-<tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left"><a href="https://steemit.com/@rosatravels" target="_blank" rel="noopener">@rosatravels</a></td>
-<td style="text-align:left">38</td>
-</tr>
-<tr>
-<td style="text-align:left">10</td>
-<td style="text-align:left"><a href="https://steemit.com/@tvb" target="_blank" rel="noopener">@tvb</a></td>
-<td style="text-align:left">38</td>
-</tr>
-<tr>
-<td style="text-align:left">11</td>
-<td style="text-align:left"><a href="https://steemit.com/@kimzwarch" target="_blank" rel="noopener">@kimzwarch</a></td>
-<td style="text-align:left">35</td>
-</tr>
-<tr>
-<td style="text-align:left">12</td>
-<td style="text-align:left"><a href="https://steemit.com/@dapeng" target="_blank" rel="noopener">@dapeng</a></td>
-<td style="text-align:left">32</td>
-</tr>
-<tr>
-<td style="text-align:left">13</td>
-<td style="text-align:left"><a href="https://steemit.com/@cnbuddy" target="_blank" rel="noopener">@cnbuddy</a></td>
-<td style="text-align:left">31</td>
-</tr>
-<tr>
-<td style="text-align:left">14</td>
-<td style="text-align:left"><a href="https://steemit.com/@tumutanzi" target="_blank" rel="noopener">@tumutanzi</a></td>
-<td style="text-align:left">30</td>
-</tr>
-<tr>
-<td style="text-align:left">15</td>
-<td style="text-align:left"><a href="https://steemit.com/@catwomanteresa" target="_blank" rel="noopener">@catwomanteresa</a></td>
-<td style="text-align:left">30</td>
-</tr>
-<tr>
-<td style="text-align:left">16</td>
-<td style="text-align:left"><a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a></td>
-<td style="text-align:left">29</td>
-</tr>
-<tr>
-<td style="text-align:left">17</td>
-<td style="text-align:left"><a href="https://steemit.com/@yellowbird" target="_blank" rel="noopener">@yellowbird</a></td>
-<td style="text-align:left">29</td>
-</tr>
-<tr>
-<td style="text-align:left">18</td>
-<td style="text-align:left"><a href="https://steemit.com/@mrspointm" target="_blank" rel="noopener">@mrspointm</a></td>
-<td style="text-align:left">26</td>
-</tr>
-<tr>
-<td style="text-align:left">19</td>
-<td style="text-align:left"><a href="https://steemit.com/@acactus1013" target="_blank" rel="noopener">@acactus1013</a></td>
-<td style="text-align:left">26</td>
-</tr>
-<tr>
-<td style="text-align:left">20</td>
-<td style="text-align:left"><a href="https://steemit.com/@xiaoshancun" target="_blank" rel="noopener">@xiaoshancun</a></td>
-<td style="text-align:left">25</td>
-</tr>
-<tr>
-<td style="text-align:left">21</td>
-<td style="text-align:left"><a href="https://steemit.com/@magicmonk" target="_blank" rel="noopener">@magicmonk</a></td>
-<td style="text-align:left">24</td>
-</tr>
-<tr>
-<td style="text-align:left">22</td>
-<td style="text-align:left"><a href="https://steemit.com/@herlife" target="_blank" rel="noopener">@herlife</a></td>
-<td style="text-align:left">24</td>
-</tr>
-<tr>
-<td style="text-align:left">23</td>
-<td style="text-align:left"><a href="https://steemit.com/@dancingapple" target="_blank" rel="noopener">@dancingapple</a></td>
-<td style="text-align:left">24</td>
-</tr>
-<tr>
-<td style="text-align:left">24</td>
-<td style="text-align:left"><a href="https://steemit.com/@hannahwu" target="_blank" rel="noopener">@hannahwu</a></td>
-<td style="text-align:left">24</td>
-</tr>
-<tr>
-<td style="text-align:left">25</td>
-<td style="text-align:left"><a href="https://steemit.com/@bxt" target="_blank" rel="noopener">@bxt</a></td>
-<td style="text-align:left">23</td>
-</tr>
-<tr>
-<td style="text-align:left">26</td>
-<td style="text-align:left"><a href="https://steemit.com/@victory622" target="_blank" rel="noopener">@victory622</a></td>
-<td style="text-align:left">23</td>
-</tr>
-<tr>
-<td style="text-align:left">27</td>
-<td style="text-align:left"><a href="https://steemit.com/@chaofanjun" target="_blank" rel="noopener">@chaofanjun</a></td>
-<td style="text-align:left">21</td>
-</tr>
-<tr>
-<td style="text-align:left">28</td>
-<td style="text-align:left"><a href="https://steemit.com/@jubi" target="_blank" rel="noopener">@jubi</a></td>
-<td style="text-align:left">21</td>
-</tr>
-<tr>
-<td style="text-align:left">29</td>
-<td style="text-align:left"><a href="https://steemit.com/@fr3eze" target="_blank" rel="noopener">@fr3eze</a></td>
-<td style="text-align:left">19</td>
-</tr>
-<tr>
-<td style="text-align:left">30</td>
-<td style="text-align:left"><a href="https://steemit.com/@travelgirl" target="_blank" rel="noopener">@travelgirl</a></td>
-<td style="text-align:left">18</td>
-</tr>
-<tr>
-<td style="text-align:left">31</td>
-<td style="text-align:left"><a href="https://steemit.com/@wangwenjing" target="_blank" rel="noopener">@wangwenjing</a></td>
-<td style="text-align:left">17</td>
-</tr>
-<tr>
-<td style="text-align:left">32</td>
-<td style="text-align:left"><a href="https://steemit.com/@mumingduozi" target="_blank" rel="noopener">@mumingduozi</a></td>
-<td style="text-align:left">17</td>
-</tr>
-<tr>
-<td style="text-align:left">33</td>
-<td style="text-align:left"><a href="https://steemit.com/@fundurian" target="_blank" rel="noopener">@fundurian</a></td>
-<td style="text-align:left">16</td>
-</tr>
-<tr>
-<td style="text-align:left">34</td>
-<td style="text-align:left"><a href="https://steemit.com/@windowglass" target="_blank" rel="noopener">@windowglass</a></td>
-<td style="text-align:left">16</td>
-</tr>
-<tr>
-<td style="text-align:left">35</td>
-<td style="text-align:left"><a href="https://steemit.com/@aaronli" target="_blank" rel="noopener">@aaronli</a></td>
-<td style="text-align:left">15</td>
-</tr>
-<tr>
-<td style="text-align:left">36</td>
-<td style="text-align:left"><a href="https://steemit.com/@berlin1997" target="_blank" rel="noopener">@berlin1997</a></td>
-<td style="text-align:left">14</td>
-</tr>
-<tr>
-<td style="text-align:left">37</td>
-<td style="text-align:left"><a href="https://steemit.com/@karasui" target="_blank" rel="noopener">@karasui</a></td>
-<td style="text-align:left">14</td>
-</tr>
-<tr>
-<td style="text-align:left">38</td>
-<td style="text-align:left"><a href="https://steemit.com/@vandadream" target="_blank" rel="noopener">@vandadream</a></td>
-<td style="text-align:left">14</td>
-</tr>
-<tr>
-<td style="text-align:left">39</td>
-<td style="text-align:left"><a href="https://steemit.com/@joythewanderer" target="_blank" rel="noopener">@joythewanderer</a></td>
-<td style="text-align:left">14</td>
-</tr>
-<tr>
-<td style="text-align:left">40</td>
-<td style="text-align:left"><a href="https://steemit.com/@lymichale" target="_blank" rel="noopener">@lymichale</a></td>
-<td style="text-align:left">14</td>
-</tr>
-<tr>
-<td style="text-align:left">41</td>
-<td style="text-align:left"><a href="https://steemit.com/@icedream" target="_blank" rel="noopener">@icedream</a></td>
-<td style="text-align:left">13</td>
-</tr>
-<tr>
-<td style="text-align:left">42</td>
-<td style="text-align:left"><a href="https://steemit.com/@susanli3769" target="_blank" rel="noopener">@susanli3769</a></td>
-<td style="text-align:left">13</td>
-</tr>
-<tr>
-<td style="text-align:left">43</td>
-<td style="text-align:left"><a href="https://steemit.com/@mrpointp" target="_blank" rel="noopener">@mrpointp</a></td>
-<td style="text-align:left">12</td>
-</tr>
-<tr>
-<td style="text-align:left">44</td>
-<td style="text-align:left"><a href="https://steemit.com/@nationalpark" target="_blank" rel="noopener">@nationalpark</a></td>
-<td style="text-align:left">12</td>
-</tr>
-<tr>
-<td style="text-align:left">45</td>
-<td style="text-align:left"><a href="https://steemit.com/@shanghairabbit" target="_blank" rel="noopener">@shanghairabbit</a></td>
-<td style="text-align:left">12</td>
-</tr>
-<tr>
-<td style="text-align:left">46</td>
-<td style="text-align:left"><a href="https://steemit.com/@bring" target="_blank" rel="noopener">@bring</a></td>
-<td style="text-align:left">12</td>
-</tr>
-<tr>
-<td style="text-align:left">47</td>
-<td style="text-align:left"><a href="https://steemit.com/@rea" target="_blank" rel="noopener">@rea</a></td>
-<td style="text-align:left">12</td>
-</tr>
-<tr>
-<td style="text-align:left">48</td>
-<td style="text-align:left"><a href="https://steemit.com/@liuboya" target="_blank" rel="noopener">@liuboya</a></td>
-<td style="text-align:left">11</td>
-</tr>
-<tr>
-<td style="text-align:left">49</td>
-<td style="text-align:left"><a href="https://steemit.com/@liumei" target="_blank" rel="noopener">@liumei</a></td>
-<td style="text-align:left">11</td>
-</tr>
-<tr>
-<td style="text-align:left">50</td>
-<td style="text-align:left"><a href="https://steemit.com/@melaleuca" target="_blank" rel="noopener">@melaleuca</a></td>
-<td style="text-align:left">10</td>
-</tr>
-<tr>
-<td style="text-align:left">51</td>
-<td style="text-align:left"><a href="https://steemit.com/@superhardness" target="_blank" rel="noopener">@superhardness</a></td>
-<td style="text-align:left">10</td>
-</tr>
-<tr>
-<td style="text-align:left">52</td>
-<td style="text-align:left"><a href="https://steemit.com/@nanosesame" target="_blank" rel="noopener">@nanosesame</a></td>
-<td style="text-align:left">10</td>
-</tr>
-<tr>
-<td style="text-align:left">53</td>
-<td style="text-align:left"><a href="https://steemit.com/@shieha" target="_blank" rel="noopener">@shieha</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">54</td>
-<td style="text-align:left"><a href="https://steemit.com/@bigbigfish" target="_blank" rel="noopener">@bigbigfish</a></td>
-<td style="text-align:left">9</td>
-</tr>
-<tr>
-<td style="text-align:left">55</td>
-<td style="text-align:left"><a href="https://steemit.com/@cornelia" target="_blank" rel="noopener">@cornelia</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">56</td>
-<td style="text-align:left"><a href="https://steemit.com/@mangoanddaddy" target="_blank" rel="noopener">@mangoanddaddy</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">57</td>
-<td style="text-align:left"><a href="https://steemit.com/@jessicameng" target="_blank" rel="noopener">@jessicameng</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">58</td>
-<td style="text-align:left"><a href="https://steemit.com/@linuslee0216" target="_blank" rel="noopener">@linuslee0216</a></td>
-<td style="text-align:left">8</td>
-</tr>
-<tr>
-<td style="text-align:left">59</td>
-<td style="text-align:left"><a href="https://steemit.com/@stabilowl" target="_blank" rel="noopener">@stabilowl</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">60</td>
-<td style="text-align:left"><a href="https://steemit.com/@incrediblesnow" target="_blank" rel="noopener">@incrediblesnow</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">61</td>
-<td style="text-align:left"><a href="https://steemit.com/@hqy" target="_blank" rel="noopener">@hqy</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">62</td>
-<td style="text-align:left"><a href="https://steemit.com/@aafeng" target="_blank" rel="noopener">@aafeng</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">63</td>
-<td style="text-align:left"><a href="https://steemit.com/@jiangchen" target="_blank" rel="noopener">@jiangchen</a></td>
-<td style="text-align:left">7</td>
-</tr>
-<tr>
-<td style="text-align:left">64</td>
-<td style="text-align:left"><a href="https://steemit.com/@liangfengyouren" target="_blank" rel="noopener">@liangfengyouren</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">65</td>
-<td style="text-align:left"><a href="https://steemit.com/@breathewind" target="_blank" rel="noopener">@breathewind</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">66</td>
-<td style="text-align:left"><a href="https://steemit.com/@feng1925" target="_blank" rel="noopener">@feng1925</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">67</td>
-<td style="text-align:left"><a href="https://steemit.com/@sunnyjolly" target="_blank" rel="noopener">@sunnyjolly</a></td>
-<td style="text-align:left">6</td>
-</tr>
-<tr>
-<td style="text-align:left">68</td>
-<td style="text-align:left"><a href="https://steemit.com/@veronicazhu" target="_blank" rel="noopener">@veronicazhu</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">69</td>
-<td style="text-align:left"><a href="https://steemit.com/@deanliu" target="_blank" rel="noopener">@deanliu</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">70</td>
-<td style="text-align:left"><a href="https://steemit.com/@jademont" target="_blank" rel="noopener">@jademont</a></td>
-<td style="text-align:left">5</td>
-</tr>
-<tr>
-<td style="text-align:left">71</td>
-<td style="text-align:left"><a href="https://steemit.com/@luneknight" target="_blank" rel="noopener">@luneknight</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">72</td>
-<td style="text-align:left"><a href="https://steemit.com/@shenchensucc" target="_blank" rel="noopener">@shenchensucc</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">73</td>
-<td style="text-align:left"><a href="https://steemit.com/@shirlam" target="_blank" rel="noopener">@shirlam</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">74</td>
-<td style="text-align:left"><a href="https://steemit.com/@wilkinshui" target="_blank" rel="noopener">@wilkinshui</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">75</td>
-<td style="text-align:left"><a href="https://steemit.com/@daviswu" target="_blank" rel="noopener">@daviswu</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">76</td>
-<td style="text-align:left"><a href="https://steemit.com/@cifer" target="_blank" rel="noopener">@cifer</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">77</td>
-<td style="text-align:left"><a href="https://steemit.com/@itchyfeetdonica" target="_blank" rel="noopener">@itchyfeetdonica</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">78</td>
-<td style="text-align:left"><a href="https://steemit.com/@chillicheng111" target="_blank" rel="noopener">@chillicheng111</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">79</td>
-<td style="text-align:left"><a href="https://steemit.com/@speeding" target="_blank" rel="noopener">@speeding</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">80</td>
-<td style="text-align:left"><a href="https://steemit.com/@susanlo" target="_blank" rel="noopener">@susanlo</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">81</td>
-<td style="text-align:left"><a href="https://steemit.com/@htliao" target="_blank" rel="noopener">@htliao</a></td>
-<td style="text-align:left">4</td>
-</tr>
-<tr>
-<td style="text-align:left">82</td>
-<td style="text-align:left"><a href="https://steemit.com/@janetmay" target="_blank" rel="noopener">@janetmay</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">83</td>
-<td style="text-align:left"><a href="https://steemit.com/@mxg" target="_blank" rel="noopener">@mxg</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">84</td>
-<td style="text-align:left"><a href="https://steemit.com/@coconut-home" target="_blank" rel="noopener">@coconut-home</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">85</td>
-<td style="text-align:left"><a href="https://steemit.com/@blacktranquility" target="_blank" rel="noopener">@blacktranquility</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">86</td>
-<td style="text-align:left"><a href="https://steemit.com/@timknip" target="_blank" rel="noopener">@timknip</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">87</td>
-<td style="text-align:left"><a href="https://steemit.com/@jychbetter" target="_blank" rel="noopener">@jychbetter</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">88</td>
-<td style="text-align:left"><a href="https://steemit.com/@kenchung" target="_blank" rel="noopener">@kenchung</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">89</td>
-<td style="text-align:left"><a href="https://steemit.com/@hag228" target="_blank" rel="noopener">@hag228</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">90</td>
-<td style="text-align:left"><a href="https://steemit.com/@bobdos" target="_blank" rel="noopener">@bobdos</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">91</td>
-<td style="text-align:left"><a href="https://steemit.com/@coldhair" target="_blank" rel="noopener">@coldhair</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">92</td>
-<td style="text-align:left"><a href="https://steemit.com/@pakyeechan" target="_blank" rel="noopener">@pakyeechan</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">93</td>
-<td style="text-align:left"><a href="https://steemit.com/@ygern" target="_blank" rel="noopener">@ygern</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">94</td>
-<td style="text-align:left"><a href="https://steemit.com/@oflyhigh" target="_blank" rel="noopener">@oflyhigh</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">95</td>
-<td style="text-align:left"><a href="https://steemit.com/@runup" target="_blank" rel="noopener">@runup</a></td>
-<td style="text-align:left">3</td>
-</tr>
-<tr>
-<td style="text-align:left">96</td>
-<td style="text-align:left"><a href="https://steemit.com/@niya" target="_blank" rel="noopener">@niya</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">97</td>
-<td style="text-align:left"><a href="https://steemit.com/@xuzhen" target="_blank" rel="noopener">@xuzhen</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">98</td>
-<td style="text-align:left"><a href="https://steemit.com/@bonjovis" target="_blank" rel="noopener">@bonjovis</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">99</td>
-<td style="text-align:left"><a href="https://steemit.com/@pptx" target="_blank" rel="noopener">@pptx</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">100</td>
-<td style="text-align:left"><a href="https://steemit.com/@cipaul" target="_blank" rel="noopener">@cipaul</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">101</td>
-<td style="text-align:left"><a href="https://steemit.com/@coindzs" target="_blank" rel="noopener">@coindzs</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">102</td>
-<td style="text-align:left"><a href="https://steemit.com/@chinadaily" target="_blank" rel="noopener">@chinadaily</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">103</td>
-<td style="text-align:left"><a href="https://steemit.com/@syh7758520" target="_blank" rel="noopener">@syh7758520</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">104</td>
-<td style="text-align:left"><a href="https://steemit.com/@wanderwithtwo" target="_blank" rel="noopener">@wanderwithtwo</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">105</td>
-<td style="text-align:left"><a href="https://steemit.com/@huayi" target="_blank" rel="noopener">@huayi</a></td>
-<td style="text-align:left">2</td>
-</tr>
-<tr>
-<td style="text-align:left">106</td>
-<td style="text-align:left"><a href="https://steemit.com/@jessie901220" target="_blank" rel="noopener">@jessie901220</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">107</td>
-<td style="text-align:left"><a href="https://steemit.com/@leir" target="_blank" rel="noopener">@leir</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">108</td>
-<td style="text-align:left"><a href="https://steemit.com/@lydiachan" target="_blank" rel="noopener">@lydiachan</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">109</td>
-<td style="text-align:left"><a href="https://steemit.com/@pakhar" target="_blank" rel="noopener">@pakhar</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">110</td>
-<td style="text-align:left"><a href="https://steemit.com/@sweetsssj" target="_blank" rel="noopener">@sweetsssj</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">111</td>
-<td style="text-align:left"><a href="https://steemit.com/@ernestine" target="_blank" rel="noopener">@ernestine</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">112</td>
-<td style="text-align:left"><a href="https://steemit.com/@bullda" target="_blank" rel="noopener">@bullda</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">113</td>
-<td style="text-align:left"><a href="https://steemit.com/@kidult00" target="_blank" rel="noopener">@kidult00</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">114</td>
-<td style="text-align:left"><a href="https://steemit.com/@keepup" target="_blank" rel="noopener">@keepup</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">115</td>
-<td style="text-align:left"><a href="https://steemit.com/@mitrip" target="_blank" rel="noopener">@mitrip</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">116</td>
-<td style="text-align:left"><a href="https://steemit.com/@antone" target="_blank" rel="noopener">@antone</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">117</td>
-<td style="text-align:left"><a href="https://steemit.com/@waiyee422" target="_blank" rel="noopener">@waiyee422</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">118</td>
-<td style="text-align:left"><a href="https://steemit.com/@wilburm" target="_blank" rel="noopener">@wilburm</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">119</td>
-<td style="text-align:left"><a href="https://steemit.com/@wnh518518" target="_blank" rel="noopener">@wnh518518</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">120</td>
-<td style="text-align:left"><a href="https://steemit.com/@guyverckw" target="_blank" rel="noopener">@guyverckw</a></td>
-<td style="text-align:left">1</td>
-</tr>
-<tr>
-<td style="text-align:left">121</td>
-<td style="text-align:left"><a href="https://steemit.com/@nileelily" target="_blank" rel="noopener">@nileelily</a></td>
-<td style="text-align:left">1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days"><a href="#&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5;-Activity-Last-14-Days" class="headerlink" title="&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days"></a>&#x8FC7;&#x53BB;14&#x5929;&#x6D3B;&#x8DC3;&#x60C5;&#x51B5; Activity Last 14 Days</h2><table>
-<thead>
-<tr>
-<th style="text-align:left">&#x65E5;&#x671F; Date</th>
-<th style="text-align:left">&#x53D1;&#x8D34;&#x6570;&#xFF08;&#x6587;&#x7AE0;+&#x8BC4;&#x8BBA;&#xFF09;Number of Posts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">2017-12-25</td>
-<td style="text-align:left">1503</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-24</td>
-<td style="text-align:left">1096</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-23</td>
-<td style="text-align:left">1203</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-22</td>
-<td style="text-align:left">1452</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-21</td>
-<td style="text-align:left">1539</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-20</td>
-<td style="text-align:left">1552</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-19</td>
-<td style="text-align:left">1289</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-18</td>
-<td style="text-align:left">1552</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-17</td>
-<td style="text-align:left">1286</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-16</td>
-<td style="text-align:left">988</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-15</td>
-<td style="text-align:left">1405</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-14</td>
-<td style="text-align:left">1281</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-13</td>
-<td style="text-align:left">1075</td>
-</tr>
-<tr>
-<td style="text-align:left">2017-12-12</td>
-<td style="text-align:left">1049</td>
-</tr>
-</tbody>
-</table>
-<p><em>@dailystats &#x63D0;&#x4F9B;&#x8FC7;&#x53BB;7&#x5929;&#x5168;&#x7F51;&#x6F5C;&#x5728;&#x6536;&#x76CA;&#x524D;30&#x540D;&#x7684;&#x6392;&#x540D;</em><br><em>check @dailystats for top 30 daily authors in the last 7 days sorted by potential payout</em></p>
-<p>&#x8FD9;&#x4E2A;&#x62A5;&#x544A;&#x7684;&#x5E74;&#x9F84;&#x4E3A;: 58&#x5929;&#x3002;<br><em>&#x6B22;&#x8FCE; @justyy &#x5982;&#x679C;&#x60A8;&#x6709;&#x597D;&#x7684;&#x5EFA;&#x8BAE;&#x6216;&#x8005;&#x60F3;&#x770B;&#x54EA;&#x4E9B;&#x699C;&#x5355;&#x5374;&#x627E;&#x4E0D;&#x5230;&#x3002;</em></p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/daily-cn-updates-cnyy2017-12-26" target="_blank" rel="noopener">Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x4E03;&#x5929;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x540D;&#x5355;&#x3011;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn-yy-2017-12-25" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;YY&#x94F6;&#x884C;&#x5229;&#x606F;&#x7EDF;&#x8BA1;&#x3011;&#x3010;&#x70B9;&#x8D5E;&#x5E74;&#x5316;&#x7387;&#x3011;</a></li>
-</ul>
-<blockquote>
-<p>@justyy &#x662F; <a href="https://justyy.com" target="_blank" rel="noopener">https://justyy.com</a> &#x7684;&#x535A;&#x4E3B;&#xFF0C;&#x5728;&#x5927;&#x54E5; @tumutanzi &#x7684;&#x4ECB;&#x7ECD;&#x4E0B;&#x52A0;&#x5165; STEEMIT&#xFF0C;&#x5199;&#x4E9B;&#x5E16;&#x5B50;&#x6323;&#x4E9B;&#x5C0F;&#x94B1;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x3002;<strong>@justyy &#x4E5F;&#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(&#x5E74;&#x5316;&#x7387; 5%)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+&#x3002;&#x52A0;&#x5165;&#x8BA1;&#x5212;&#x6700;&#x4F4E;&#x4EE3;&#x7406;10SP&#x3002;CN &#x533A;&#x7684;&#x5927;&#x9C7C; @htliao &#x4E5F;&#x52A0;&#x5165;&#x4E86;&#x8BA1;&#x5212;&#xFF08;<a href="https://helloacm.com/tools/steemit/delegators/?id=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;&#x4E86; 530 SP</a>&#xFF09;&#x3002;</p>
-</blockquote>
-<ol>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">CN &#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/56dta3-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#xFF08;&#x9F13;&#x52B1;&#x65B0;&#x4EBA;&#xFF09;&#x771F;&#x7684;&#x9002;&#x5408;&#x4F60;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cnbuddy-yy" target="_blank" rel="noopener">cnbuddy &#x548C; YY &#x94F6;&#x884C;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x54EA;&#x4E2A;&#x66F4;&#x9002;&#x5408;&#x4F60;&#xFF1F;</a></li>
-</ol>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;</p>
-<blockquote>
-<p><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a><br><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a><br>AD &#x4E00;&#x6CE2;&#xFF0C;&#x6700;&#x8FD1;SBD&#x6DA8;&#x5230;10&#x51E0;&#x5757;&#x94B1;&#xFF0C;1 SBD &#x6BD4; STEEM&#x503C;&#x94B1;&#x591A;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x628A;&#x94B1;<a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x5B58;&#x5728;YY&#x94F6;&#x884C;</a>&#x662F;&#x5F88;&#x5212;&#x7B97;&#x7684;&#xFF0C;YY&#x94F6;&#x884C;&#x5403;&#x7684;&#x662F;&#x8349;&#xFF08;&#x501F;&#x7684;SP&#xFF09;&#xFF0C;&#x6324;&#x7684;&#x662F;&#x5976;&#x554A;&#xFF08;SBD&#x5229;&#x606F;&#xFF09;&#xFF0C;&#x6BCF;&#x65E5;&#x53D1; SBD&#x5229;&#x606F;&#xFF0C;&#x4ECE;&#x4E0D;&#x95F4;&#x65AD;&#x3002;</p>
-</blockquote>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cn--2017-12-26" target="_blank" rel="noopener">CN &#x4E2D;&#x6587;&#x533A;&#x6BCF;&#x65E5;&#x3010;&#x8D22;&#x5BCC;&#x603B;&#x503C;&#x3011;&#x3010;&#x6D3B;&#x8DC3;&#x7EDF;&#x8BA1;&#x6570;&#x636E;&#x3011; (2017-12-26)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/179/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/179/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/181/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/181/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -4666,7 +3920,7 @@
     
     
 
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -4709,7 +3963,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

@@ -230,6 +230,75 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steemvbs-adding-reputation-getprofile-getwitnessvotes-validateaccountname/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmWEvXLocCvB96wNF1qFaFuRnAck75hrxuVp9BzPFmv35C/image.png" alt="SteemVBS - Adding Reputation, GetProfile, GetWitnessVotes, ValidateAccountName">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-15T22:57:00.000Z">2018-05-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 442 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemvbs-adding-reputation-getprofile-getwitnessvotes-validateaccountname/">SteemVBS - Adding Reputation, GetProfile, GetWitnessVotes, ValidateAccountName</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmWEvXLocCvB96wNF1qFaFuRnAck75hrxuVp9BzPFmv35C/image.png" alt=""><br><a href="https://helloacm.com/steemvbs-yes-it-is-vbscript/" target="_blank" rel="noopener">SteemVBS</a> is the first Steem Library written in <a href="https://helloacm.com/scriptunit-vbscriptjscript-unit-tests-runner/" target="_blank" rel="noopener">VBScript</a>. Yes, it is VBScript. ;)</p>
+<h2 id="SteemVBS"><a href="#SteemVBS" class="headerlink" title="SteemVBS"></a>SteemVBS</h2><p><a href="https://isvbscriptdead.com" target="_blank" rel="noopener">VBScript</a> is still being used nowadays, especially on windows platforms. You can do so much thing using VBScript. The aim of the SteemVBS is to provide a few useful functions that connect Network Adminstrators or MS Officer users (via VBA) to Steem Blockchain.</p>
+<p>Fully open source: <a href="https://github.com/DoctorLai/steemvbs" target="_blank" rel="noopener">https://github.com/DoctorLai/steemvbs</a><br>Submit PR or Issue.</p>
+<h2 id="New-Features"><a href="#New-Features" class="headerlink" title="New Features"></a>New Features</h2><p><a href="https://github.com/DoctorLai/steemvbs/commit/d997a6debcb1981e198bbb3e0f4848412c186961" target="_blank" rel="noopener"><strong>Commits</strong></a>: A few functions/classes  and unit tests have been added in:</p>
+<h3 id="Formater-Reputation"><a href="#Formater-Reputation" class="headerlink" title="Formater Reputation"></a>Formater Reputation</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Dim Format</span><br><span class="line">Set Format = New Formatter</span><br><span class="line"></span><br><span class="line">Const EPSILON = 1e-3</span><br><span class="line"></span><br><span class="line">AssertEqualFloat Format.Reputation(95832978796820), 69.833, EPSILON, &quot;Format.Reputation 95832978796820&quot;</span><br><span class="line"></span><br><span class="line">AssertEqualFloat Format.Reputation(10004392664120), 61.0017, EPSILON, &quot;Format.Reputation 10004392664120&quot;</span><br><span class="line"></span><br><span class="line">AssertEqualFloat Format.Reputation(30999525306309), 65.42219, EPSILON, &quot;Format.Reputation 30999525306309&quot;</span><br><span class="line"></span><br><span class="line">AssertEqualFloat Format.Reputation(-37765258368568), -16.193832, EPSILON, &quot;Format.Reputation -37765258368568&quot;</span><br><span class="line"></span><br><span class="line">Set Format = Nothing</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="ValidateAccountName"><a href="#ValidateAccountName" class="headerlink" title="ValidateAccountName"></a>ValidateAccountName</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&apos; Test ValidateAccountName</span><br><span class="line"></span><br><span class="line">Dim u</span><br><span class="line">Set u = New Utility</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;justyy&quot;), &quot;&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;justyy**&quot;), &quot;Account name should have only letters, digits, or dashes.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;a    &quot;), &quot;Account name should have only letters, digits, or dashes.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;12341234&quot;), &quot;Account name should start with a letter.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;  askd f&quot;), &quot;Account name should start with a letter.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;-&quot;), &quot;Account name should be longer.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">AssertEqual u.ValidateAccountName(&quot;-aasdfasdfasdfasdfasdfasdfasdfasdf&quot;), &quot;Account name should be shorter.&quot;, &quot;&quot;</span><br><span class="line"></span><br><span class="line">Set u = Nothing</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Get-Profile-String"><a href="#Get-Profile-String" class="headerlink" title="Get Profile String"></a>Get Profile String</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Dim SteemIt</span><br><span class="line">Set SteemIt = New Steem</span><br><span class="line"></span><br><span class="line">WScript.Echo SteemIt.GetAccount_Profile(&quot;justyy&quot;)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="Get-Witness-Votes"><a href="#Get-Witness-Votes" class="headerlink" title="Get Witness Votes"></a>Get Witness Votes</h3><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&apos; test GetAccount_WitnessVotes</span><br><span class="line"></span><br><span class="line">Dim SteemIt</span><br><span class="line">Set SteemIt = New Steem</span><br><span class="line"></span><br><span class="line">Dim Util</span><br><span class="line">Set Util = New Utility</span><br><span class="line"></span><br><span class="line">Dim witness</span><br><span class="line">witness = SteemIt.GetAccount_WitnessVotes(&quot;justyy&quot;)</span><br><span class="line"></span><br><span class="line">AssertTrue Util.InArray(&quot;abit&quot;, witness), &quot;justyy should vote abit&quot;</span><br><span class="line"></span><br><span class="line">AssertTrue Util.InArray(&quot;jerrybanfield&quot;, witness), &quot;justyy should vote jerrybanfield&quot;</span><br><span class="line"></span><br><span class="line">Set SteemIt = Nothing</span><br><span class="line">Set Util = Nothing</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h2><p>Most of the features of <a href="https://helloacm.com/the-steemjs-editor-test-your-steemjs-code-snippet-easily/" target="_blank" rel="noopener">Steem-Js</a> and Steem-Python will be brought in.</p>
+<h2 id="Notice"><a href="#Notice" class="headerlink" title="Notice"></a>Notice</h2><p>This library is under development. Beware.</p>
+<hr>
+<p>Support me and <a href="https://helloacm.com/steemvbs-adding-reputation-getprofile-getwitnessvotes-validateaccountname/" target="_blank" rel="noopener">my work</a> as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</p>
+<ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here, or</a></li>
+<li>voting me as a <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">proxy</a></li>
+</ol>
+<p>Some of my contributions: <strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools, Bots, APIs and Tutorial</a></strong> Thank you!</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemvbs-adding-reputation-getprofile-getwitnessvotes-validateaccountname" target="_blank" rel="noopener">SteemVBS - Adding Reputation, GetProfile, GetWitnessVotes, ValidateAccountName</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-05-15/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-05-15&amp;cn34" alt="【第 贰陆叁 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-05-15)">
         </a>
@@ -2752,80 +2821,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/steem-memo-not-present-in-the-steem-min-js-client-side/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmbCAkoUVAa8kFGYDaveS6JCYoPTo7LiWuDrMB7A1TJqzJ/image.png" alt="steem.memo Not present in the steem.min.js (Client-Side)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-11T23:43:45.000Z">2018-05-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 231 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/steem-memo-not-present-in-the-steem-min-js-client-side/">steem.memo Not present in the steem.min.js (Client-Side)</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="Contribution-to-SteemIt-com-reporting-a-bug-regarding-steem-js"><a href="#Contribution-to-SteemIt-com-reporting-a-bug-regarding-steem-js" class="headerlink" title="Contribution to SteemIt.com  - reporting a bug regarding steem-js"></a>Contribution to SteemIt.com  - reporting a bug regarding steem-js</h2><h2 id="Github-Respository-http-github-com-steemit-steem-js"><a href="#Github-Respository-http-github-com-steemit-steem-js" class="headerlink" title="Github Respository: http://github.com/steemit/steem-js/"></a>Github Respository: <a href="http://github.com/steemit/steem-js/" target="_blank" rel="noopener">http://github.com/steemit/steem-js/</a></h2><p>I was trying to use the <code>steem.memo</code>  as exposed in the source code:</p>
-<p><a href="https://github.com/steemit/steem-js/blob/master/src/index.js" target="_blank" rel="noopener">https://github.com/steemit/steem-js/blob/master/src/index.js</a></p>
-<p><img src="https://steemitimages.com/DQmbCAkoUVAa8kFGYDaveS6JCYoPTo7LiWuDrMB7A1TJqzJ/image.png" alt=""></p>
-<p>But it is not present in <code>steem.min.js</code></p>
-<h2 id="Expected-Behavior"><a href="#Expected-Behavior" class="headerlink" title="Expected Behavior"></a>Expected Behavior</h2><p>The <code>steem.memo</code> should be present in you use it in the browsers via <code>steem.min.js</code>.</p>
-<h2 id="Actual-Behavior"><a href="#Actual-Behavior" class="headerlink" title="Actual Behavior"></a>Actual Behavior</h2><p>The <code>steem.memo</code> is only present in NodeJs (server side) but not Client-Side via <code>steem.min.js</code>.</p>
-<h2 id="How-to-produce"><a href="#How-to-produce" class="headerlink" title="How to produce"></a>How to produce</h2><p>Create a HTML file:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&apos;https://cdn.steemjs.com/lib/latest/steem.min.js&apos;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">console.log(steem.memo);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></tbody></table></figure>
-<p>Or simply visit:  <a href="https://steemyy.com/steem-memo-test.html" target="_blank" rel="noopener">https://steemyy.com/steem-memo-test.html</a></p>
-<p>If you press F12 in Chrome, it will print <code>undefined</code>:</p>
-<p><img src="https://steemitimages.com/DQmSTYswp35MZN4nFujLY3nNKT5JhAXUpCDgd5bWyuRywSH/image.png" alt=""></p>
-<p>At the console, if you type in <code>steem.</code> you can clearly see <code>memo</code> is missing..<br><img src="https://steemitimages.com/DQmWRVQnkMdWV6478zXut7K3SCP4qcMVWq3UhaP1QPTKiSi/image.png" alt=""></p>
-<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>It will be great if this can be fixed. As <code>steem.memo.decode()</code> is a useful function in decoding the wallet message using the memo key.</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steem-memo-not-present-in-the-steem-min-js-client-side" target="_blank" rel="noopener">steem.memo Not present in the steem.min.js (Client-Side)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/122/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/122/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/124/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/124/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -2934,7 +2938,7 @@
     
     
 
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -2977,7 +2981,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

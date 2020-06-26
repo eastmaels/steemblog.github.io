@@ -230,6 +230,112 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steem-api-steem-api-converter-sbd-steem-vests/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmPF5EkvQmViL3pEbj97w2EUA1MdtdwA9uSaDFmr6XcrV7/image.png" alt="STEEM API 系列之获取货币转换 - Steem API/converter (SBD, STEEM, VESTS)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-27T23:04:33.000Z">2017-09-27</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 786 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steem-api-steem-api-converter-sbd-steem-vests/">STEEM API 系列之获取货币转换 - Steem API/converter (SBD, STEEM, VESTS)</a>
+            
+        </h1>
+        <div class="content">
+            <p>We have so many concepts in <a href="https://helloacm.com/steemit-quick-way-to-check-if-you-are-a-minnow-or-whale/" target="_blank" rel="noopener">STEEMIT</a> namely:  SBD, STEEM, STEEM POWER (SP) and VESTS. There are conversions between them. For instances:</p>
+<ul>
+<li>How much SBD can we get per STEEM?</li>
+<li>How much STEEM per SBD?</li>
+<li>1 SP = ? VESTS</li>
+<li>1M VESTS = ? STEEM</li>
+<li>1 VESTS = ? STEEM POWER</li>
+<li>What is the current median price of SBD?</li>
+</ul>
+<p>I have added an handy API to fetch all these data, which now is deployed to four API servers world wide:</p>
+<ul>
+<li>East USA&#xFF1A;<a href="https://helloacm.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://helloacm.com/api/steemit/converter/?cached</a></li>
+<li>West USA&#xFF1A;<a href="https://steakovercooked.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://steakovercooked.com/api/steemit/converter/?cached</a> </li>
+<li>London, UK&#xFF1A;<a href="https://uploadbeta.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://uploadbeta.com/api/steemit/converter/?cached</a></li>
+<li>Tokyo, Japan&#xFF1A;<a href="https://happyukgo.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://happyukgo.com/api/steemit/converter/?cached</a></li>
+</ul>
+<p>An example to invoke the API on the <a href="https://helloacm.com/how-to-parallel-for-in-linux-bash-shell/" target="_blank" rel="noopener">Linux Bash</a>:<br><code>curl -s -X GET &quot;https://helloacm.com/api/steemit/converter/?cached&quot;</code></p>
+<p>That returns the JSON key-pairs<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">&quot;steem_to_sbd&quot;: 1.084,</span><br><span class="line">&quot;sbd_to_steem&quot;: 0.9225092250922509, </span><br><span class="line">&quot;sp_to_vests&quot;: 2059.117814239809, </span><br><span class="line">&quot;steem_per_mvests&quot;: 485.64486844050873, </span><br><span class="line">&quot;vests_to_sp&quot;: 0.0004856448684405087, </span><br><span class="line">&quot;sbd_median_price&quot;: 1.084</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The results are cached and updated every hour. Using our favorite programming language <a href="https://helloacm.com/how-to-compute-the-modes-of-an-array-in-php/" target="_blank" rel="noopener">PHP</a>, this can be pretty easy to use:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">   $converter = json_decode(file_get_contents(&quot;https://helloacm.com/api/steemit/converter/?cached&quot;), true);</span><br><span class="line">   echo &quot;1 STEEM = &quot;. $converter[&apos;steem_to_sbd&apos;]. &quot; SBD&quot;;</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://steemitimages.com/DQmPF5EkvQmViL3pEbj97w2EUA1MdtdwA9uSaDFmr6XcrV7/image.png" alt=""></p>
+<p><a href="https://justyy.com/archives/5374" target="_blank" rel="noopener">STEEMIT</a> &#x6709; SBD&#x3001;STEEM&#x3001;STEEM POWER &#x8FD8;&#x6709; VESTS&#x8FD9;&#x51E0;&#x4E2A;&#x6982;&#x5FF5;&#x3002;&#x65F6;&#x4E0D;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x77E5;&#x9053;&#x5B83;&#x4EEC;&#x4E4B;&#x95F4;&#x51E0;&#x4E2A;&#x8F6C;&#x6362;&#x5173;&#x7CFB;&#xFF1A;</p>
+<ul>
+<li>1&#x4E2A;STEEM&#x7B49;&#x4E8E;&#x591A;&#x5C11;SBD&#xFF1F;</li>
+<li>1&#x4E2A;SBD &#x7B49;&#x4E8E;&#x591A;&#x5C11;STEEM&#xFF1F;</li>
+<li>1&#x4E2A;SP&#x7B49;&#x4E8E;&#x591A;&#x5C11;VESTS&#xFF1F;</li>
+<li>1M&#x7684;VESTS &#x7B49;&#x4E8E;&#x591A;&#x5C11;STEEM&#xFF1F;</li>
+<li>1&#x4E2A;VESTS&#x7B49;&#x4E8E;&#x591A;&#x5C11;STEEM POWER&#xFF1F;</li>
+<li>SBD&#x7684;&#x4E2D;&#x4F4D;&#x4EF7;&#xFF1F;</li>
+</ul>
+<p>&#x8FD9;&#x4E0B;&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x628A;&#x8FD9;&#x4E9B;&#x90FD;&#x6574;&#x7406;&#x6210;&#x4E00;&#x4E2A;API&#xFF0C;&#x653E;&#x5728;&#x56DB;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#xFF1A;</p>
+<ul>
+<li>&#x7F8E;&#x56FD;&#x4E1C;&#x90E8;&#xFF1A;<a href="https://helloacm.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://helloacm.com/api/steemit/converter/?cached</a></li>
+<li>&#x7F8E;&#x56FD;&#x897F;&#x90E8;&#xFF1A;<a href="https://steakovercooked.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://steakovercooked.com/api/steemit/converter/?cached</a> </li>
+<li>&#x82F1;&#x56FD;&#x4F26;&#x6566;&#xFF1A;<a href="https://uploadbeta.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://uploadbeta.com/api/steemit/converter/?cached</a></li>
+<li>&#x65E5;&#x672C;&#x4E1C;&#x4EAC;&#xFF1A;<a href="https://happyukgo.com/api/steemit/converter/?cached" target="_blank" rel="noopener">https://happyukgo.com/api/steemit/converter/?cached</a></li>
+</ul>
+<p>&#x4E3E;&#x4F8B;&#xFF0C;&#x5728;<a href="https://justyy.com/archives/2468" target="_blank" rel="noopener">SHELL</a>&#x4E0B;&#x6267;&#x884C;&#x547D;&#x4EE4;&#xFF1A;<br><code>curl -s -X GET &quot;https://helloacm.com/api/steemit/converter/?cached&quot;</code></p>
+<p>&#x8FD4;&#x56DE;JSON&#x6570;&#x636E;&#xFF1A;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">&quot;steem_to_sbd&quot;: 1.084,</span><br><span class="line">&quot;sbd_to_steem&quot;: 0.9225092250922509, </span><br><span class="line">&quot;sp_to_vests&quot;: 2059.117814239809, </span><br><span class="line">&quot;steem_per_mvests&quot;: 485.64486844050873, </span><br><span class="line">&quot;vests_to_sp&quot;: 0.0004856448684405087, </span><br><span class="line">&quot;sbd_median_price&quot;: 1.084</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>API&#x7ED3;&#x679C;&#x6BCF;&#x5C0F;&#x65F6;&#x66F4;&#x65B0;&#x7ED3;&#x679C;&#x4E00;&#x6B21;&#x3002;&#x8FD9;&#x4E0B;&#x65B9;&#x4FBF;&#x591A;&#x4E86;&#xFF0C;&#x5565;&#x8BED;&#x8A00;&#x60F3;&#x77E5;&#x9053;&#x7ED3;&#x679C;&#x4E5F;&#x5C31;&#x4E00;&#x4E24;&#x53E5;&#x8BDD;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6BD4;&#x5982;&#x7528;&#x6211;&#x4EEC;&#x6700;&#x559C;&#x7231;&#x7684;<a href="https://justyy.com/archives/5358" target="_blank" rel="noopener">PHP</a>&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">   $converter = json_decode(file_get_contents(&quot;https://helloacm.com/api/steemit/converter/?cached&quot;), true);</span><br><span class="line">   echo &quot;1 STEEM = &quot;. $converter[&apos;steem_to_sbd&apos;]. &quot; SBD&quot;;</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A;</p>
+<ul>
+<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
+<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
+</ul>
+<hr>
+<ul>
+<li><a href="https://helloacm.com/steem-apiconverter-sbd-steem-vests/" target="_blank" rel="noopener">Steem API/converter (SBD, STEEM, VESTS)</a></li>
+<li><a href="https://justyy.com/archives/5379" target="_blank" rel="noopener">STEEM API &#x7CFB;&#x5217;&#x4E4B;&#x83B7;&#x53D6;&#x8D27;&#x5E01;&#x8F6C;&#x6362;</a></li>
+</ul>
+<p>&#x6B22;&#x8FCE;&#x4F60;&#x53D1;&#x8868;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#x548C;&#x770B;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x610F;&#x601D;&#x7684;&#x8BC4;&#x8BBA;&#x6211;&#x53EF;&#x80FD;&#x4F1A;&#x5956;&#x52B1;&#x4F60;1 SBD&#x54E6;&#x3002;<br>Interesting Comments might be rewarded with 1 SBD.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steem-api-steem-api-converter-sbd-steem-vests" target="_blank" rel="noopener">STEEM API &#x7CFB;&#x5217;&#x4E4B;&#x83B7;&#x53D6;&#x8D27;&#x5E01;&#x8F6C;&#x6362; - Steem API/converter (SBD, STEEM, VESTS)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/steemit-steemit-tool-series-when-were-you-last-voted-by-big-whales/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.pixabay.com/photo/2016/02/18/21/44/updating-1208137_960_720.png" alt="SteemIt 在线工具系列 - 大鱼多久没翻你的牌了？ SteemIt Tool Series - When were  you last voted by Big Whales?">
         </a>
@@ -1020,118 +1126,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/steem-sql-steemsql-tutorial-what-is-your-monthly-income-on-steemit/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmUm4WBdwGV6YbvfqH8ahg482A8VkfeDoFXVf86odYhQSf/image.png" alt="STEEM SQL 系列之 每个月到底能挣多少？SteemSQL Tutorial: What is Your Monthly Income on Steemit?">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-09-25T22:44:15.000Z">2017-09-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    8 minutes read (About 1259 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/steem-sql-steemsql-tutorial-what-is-your-monthly-income-on-steemit/">STEEM SQL 系列之 每个月到底能挣多少？SteemSQL Tutorial: What is Your Monthly Income on Steemit?</a>
-            
-        </h1>
-        <div class="content">
-            <p>Thank you @arcange for creating STEEMSQL!</p>
-<p>STEEM SQL Tutorial Series&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/steem-sql-steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Historic Posts of Today on SteemIt?</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Authors Order By Potential Payout in Last 7 days?</a></li>
-</ul>
-<p>Have you wondered that the your earnings on STEEMIT can really make a difference? Have you thought about making a living by full time blogging on steemit? The easiest way is to look at your historic earning data monthly so you get a rough idea via the following <a href="https://helloacm.com/how-to-make-sql-insert-statement-simply-faster/" target="_blank" rel="noopener">SQL</a></p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;) Month, sum(total_payout_value) Min,  sum(total_payout_value) + sum(curator_payout_value) Max</span><br><span class="line">from </span><br><span class="line">	Comments (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	author=&apos;justyy&apos;</span><br><span class="line">group by</span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;)</span><br><span class="line">order by</span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;) desc</span><br></pre></td></tr></tbody></table></figure>
-<p>We know that 75% are author rewards, so if we group the data by months, sum the author rewards, that will be the minimal level of payout. Suppose you get all other 25% curation rewards e.g. always upvotes at 30 min, that is the maximum (in theory) you earn.</p>
-<p>In my case, here is my earning data per calendar month, I have no idea why the Sept (this month)  is zero earnings (maybe data is not synchronized into steemSQL from the blockchain yet?)</p>
-<p><img src="https://steemitimages.com/DQmUm4WBdwGV6YbvfqH8ahg482A8VkfeDoFXVf86odYhQSf/image.png" alt=""></p>
-<p>It would be great if you could share yours in the comments (the data is public anyway).  In 7 days, <strong>I will give 1 SBD to whoever has the lowest and highest payout respectively (in August 2017).</strong></p>
-<p><img src="https://cdn.pixabay.com/photo/2016/12/09/18/30/database-schema-1895779_960_720.png" alt=""><br><em>Image Credit: Pixabay.com</em></p>
-<p>&#x611F;&#x8C22; @arcange &#x521B;&#x9020;&#x4E86; STEEMSQL!</p>
-<p>STEEM SQL &#x7CFB;&#x5217;&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/steem-sql-steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5386;&#x53F2;&#x4E0A;&#x7684;&#x4ECA;&#x5929;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;</a></li>
-<li><p><a href="https://steemit.com/cn/@justyy/steem-sql-7-cn" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6700;&#x8FD1;7&#x5929; CN &#x533A;&#x7528;&#x6237;&#x53D1;&#x8D34;&#x91CF;&#xFF0C;&#x70B9;&#x8D5E;&#x6570;&#x548C;&#x4F30;&#x8BA1;&#x6536;&#x76CA;&#x503C;</a></p>
-<p>@jubi &#x5927;&#x54E5;&#x4E00;&#x76F4;&#x8BF4;&#x8981;&#x9760; STEEMIT &#x6765;&#x4E70;&#x522B;&#x5885;&#xFF0C;&#x8FD9;&#x68A6;&#x60F3;&#x5F88;&#x597D;&#xFF0C;&#x5374;&#x9065;&#x4E0D;&#x53EF;&#x53CA;&#x3002;&#x5BF9;&#x6211;&#x6765;&#x8BF4;&#xFF0C;STEEMIT&#x7684;&#x6536;&#x5165;&#x80FD;&#x8BA9;&#x6211;&#x6539;&#x5584;&#x4E00;&#x4E0B;&#x751F;&#x6D3B;&#xFF0C;&#x4F46;&#x662F;&#x8FDC;&#x8FDC;&#x5230;&#x4E0D;&#x4E86;&#x80FD;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x7684;&#x4E3B;&#x4E1A;&#x3002;</p>
-</li>
-</ul>
-<p>&#x4F7F;&#x7528; LINQPAD + STEEMSQL&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8DD1;&#x4E00;&#x4E0B;&#x4E0B;&#x9762;&#x7684;<a href="https://justyy.com/archives/5043" target="_blank" rel="noopener">SQL</a>&#xFF0C;&#x6765;&#x770B;&#x770B;&#x6211;&#x6BCF;&#x4E2A;&#x6708;&#x5728;<a href="https://justyy.com/archives/5247" target="_blank" rel="noopener">STEEMIT</a>&#x4E0A;&#x7684;&#x6536;&#x5165;&#x60C5;&#x51B5;:</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;) &#x6708;&#x4EFD;, sum(total_payout_value) &#x6700;&#x5C0F;&#x6536;&#x5165;,  sum(total_payout_value) + sum(curator_payout_value) &#x6700;&#x5927;&#x6536;&#x5165;</span><br><span class="line">from </span><br><span class="line">	Comments (NOLOCK)</span><br><span class="line">where</span><br><span class="line">	author=&apos;justyy&apos;</span><br><span class="line">group by</span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;)</span><br><span class="line">order by</span><br><span class="line">	FORMAT(created, &apos;yyyy-MM&apos;) desc</span><br></pre></td></tr></tbody></table></figure>
-<p>75%&#x662F;&#x4F5C;&#x8005;&#x5956;&#x52B1;&#xFF0C;25%&#x662F;&#x70B9;&#x8D5E;&#x5956;&#x52B1;&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x5C11;&#x62FF;&#x5230;75%&#xFF0C;25%&#x7406;&#x8BBA;&#x6700;&#x5927;&#x503C;&#xFF08;&#x4F46;&#x8FDC;&#x5230;&#x4E0D;&#x4E86;&#xFF09;&#x3002;&#x5947;&#x602A;&#x7684;&#x662F;9&#x6708;&#x4EFD;&#xFF08;&#x8FD9;&#x4E2A;&#x6708;&#xFF09;&#x6570;&#x636E;&#x4E3A;0&#xFF0C;&#x4E5F;&#x8BB8;&#x662F;&#x6570;&#x636E;&#x8FD8;&#x6CA1;&#x4ECE;&#x533A;&#x5757;&#x94FE;&#x540C;&#x6B65;&#x5230; steemsql &#x4E0A;&#x3002;</p>
-<p><img src="https://steemitimages.com/DQmb2g7gEs2j5bcK7BbfGQPbKwaNpW7mmzPh4yUqiAmfVpL/image.png" alt=""></p>
-<p>&#x6B22;&#x8FCE;&#x628A;&#x4F60;&#x4EEC;&#x7684;&#x6536;&#x5165;&#x5728;&#x8BC4;&#x8BBA;&#x4E2D;&#x6652;&#x4E00;&#x6652;&#xFF0C;&#x53CD;&#x6B63;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x90FD;&#x662F;&#x516C;&#x5F00;&#x7684;&#x3002;7&#x5929;&#x540E;&#xFF0C;<strong>&#x6211;&#x4F1A;&#x7ED9;&#x8BC4;&#x8BBA;&#x4E2D;2017&#x5E74;8&#x6708;&#x4EFD;&#x6700;&#x4F4E;&#x548C;&#x6700;&#x9AD8;&#x6536;&#x5165;&#x7684;&#x5404;&#x9001;1 SBD&#x3002;</strong></p>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<ul>
-<li><strong><a href="https://steemit.com/cn/@justyy/daily-cn-updates---cn72017-09-25" target="_blank" rel="noopener">CN &#x6BCF;&#x65E5;&#x6392;&#x884C;&#x699C;</a></strong></li>
-<li><strong><a href="https://steemit.com/steemit/@dailystats/daily-top-30-authors-pending-payout-in-the-last-7-days-2017-09-25" target="_blank" rel="noopener">Daily Top 30 Authors Pending Payout in the Last 7 days</a></strong></li>
-</ul>
-<p>// Later, it may be reposted to my blogs: <a href="https://justyy.com" target="_blank" rel="noopener">justyy.com</a>, <a href="https://helloacm.com" target="_blank" rel="noopener">helloacm.com</a> and <a href="https://codingforspeed.com" target="_blank" rel="noopener">codingforspeed.com</a>  &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x8BA1;&#x7B97;&#x673A;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
-<ul>
-<li><a href="https://helloacm.com/steemsql-tutorial-what-is-your-monthly-income-on-steemit/" target="_blank" rel="noopener">SteemSQL Tutorial: What is Your Monthly Income on Steemit?</a></li>
-<li><a href="https://helloacm.com/steemsql-tutorial-how-to-get-authors-order-by-potential-payout-in-last-7-days/" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Authors Order By Potential Payout in Last 7 days?</a></li>
-<li><a href="https://helloacm.com/steemsql-tutorial-how-to-get-historic-posts-of-today-on-steemit/" target="_blank" rel="noopener">SteemSQL Tutorial: How to Get Historic Posts of Today on SteemIt?</a></li>
-<li><a href="https://justyy.com/archives/5370" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x6BCF;&#x4E2A;&#x6708;&#x5230;&#x5E95;&#x80FD;&#x6323;&#x591A;&#x5C11;&#xFF1F;</a></li>
-<li><a href="https://justyy.com/archives/5198" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6700;&#x8FD1;7&#x5929; CN &#x533A;&#x7528;&#x6237;&#x53D1;&#x8D34;&#x91CF;&#xFF0C;&#x70B9;&#x8D5E;&#x6570;&#x548C;&#x4F30;&#x8BA1;&#x6536;&#x76CA;&#x503C;?</a></li>
-<li><a href="https://justyy.com/archives/5363" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x5386;&#x53F2;&#x4E0A;&#x7684;&#x4ECA;&#x5929;&#x600E;&#x4E48;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;</a></li>
-</ul>
-<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
-<p>&#x539F;&#x6587;&#x9996;&#x53D1;&#x4E8E; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<p><img src="https://steemitimages.com/0x0/https://justyy.com/gif/steemit.gif" alt=""></p>
-<p><strong>@justyy &#x662F;CN &#x533A;&#x7684;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;</strong>&#xFF0C;&#x5BF9;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x70B9;&#x8D5E;&#xFF0C;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x7ED9; @justyy &#x6BCF;&#x5929;&#x6536;&#x5229;&#x606F;(100 SP &#x6BCF;&#x5929;0.04 SBD)&#x5E76;&#x4E14;&#x80FD;&#x83B7;&#x5F97;&#x4E00;&#x6B21;&#x76F8;&#x5E94;&#x81F3;&#x5C11;2&#x500D;&#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;VP 200%+ &#xFF0C;&#x8BE6;&#x7EC6;&#x8BF7;&#x770B;&#xFF1A;</p>
-<ul>
-<li><a href="https://steemit.com/cn/@justyy/cn-introduction-to-the-cn-wechat-group-voting-robot-justyy" target="_blank" rel="noopener">cn&#x533A;&#x6700;&#x4F4E;&#x4FDD;&#x969C;&#x7CFB;&#x7EDF; &#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/a-good-content-upvote-bot-cn" target="_blank" rel="noopener">CN &#x533A;&#x4F18;&#x8D28;&#x5185;&#x5BB9;&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;!</a> </li>
-<li><a href="https://steemit.com/cn/@justyy/good-content-upvoting-history-now-integrated-into-to-daily-ranking-table" target="_blank" rel="noopener">&#x70B9;&#x8D5E;&#x673A;&#x5668;&#x4EBA;&#x6BCF;&#x65E5;&#x70B9;&#x8D5E;&#x8BB0;&#x5F55;&#x6574;&#x5408;&#x5230;&#x6BCF;&#x65E5;&#x62A5;&#x8868;&#x4E2D;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/cn" target="_blank" rel="noopener">&#x867D;&#x7136;&#x4E0D;&#x6323;&#x94B1;&#xFF0C;&#x4F46;&#x662F;CN&#x533A;&#x4F4E;&#x4FDD;&#x8BA1;&#x5212;&#x8FD8;&#x4F1A;&#x7EE7;&#x7EED;&#x4E0B;&#x53BB;</a></li>
-</ul>
-<p><img src="https://justyy.com/gif/justyy-php-is-the-best.gif" alt=""><br>&#x6B22;&#x8FCE;&#x4F60;&#x53D1;&#x8868;&#x4F60;&#x7684;&#x89C1;&#x89E3;&#x548C;&#x770B;&#x6CD5;&#xFF0C;&#x7279;&#x522B;&#x6709;&#x610F;&#x601D;&#x7684;&#x8BC4;&#x8BBA;&#x6211;&#x53EF;&#x80FD;&#x4F1A;&#x5956;&#x52B1;&#x4F60;1 SBD&#x54E6;&#x3002;<br>Interesting Comments might be rewarded with 1 SBD.</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steem-sql-steemsql-tutorial-what-is-your-monthly-income-on-steemit" target="_blank" rel="noopener">STEEM SQL &#x7CFB;&#x5217;&#x4E4B; &#x6BCF;&#x4E2A;&#x6708;&#x5230;&#x5E95;&#x80FD;&#x6323;&#x591A;&#x5C11;&#xFF1F;SteemSQL Tutorial: What is Your Monthly Income on Steemit?</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/238/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/238/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/240/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/240/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -1240,7 +1243,7 @@
     
     
 
-<a id="back-to-top" title="Kembali ke atas" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 
@@ -1283,7 +1286,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 
