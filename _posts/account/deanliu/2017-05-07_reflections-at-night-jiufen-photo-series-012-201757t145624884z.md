@@ -1,10 +1,11 @@
 
 ---
-title: "Reflections at night - Jiufen photo series 012"
+title: 'Reflections at night - Jiufen photo series 012'
 permlink: reflections-at-night-jiufen-photo-series-012-201757t145624884z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-07 06:56:27
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - taiwan
 - esteem
-thumbnail: https://i.imgur.com/uGjtzNz.jpg
+thumbnail: 'https://i.imgur.com/uGjtzNz.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Reflections at night - Jiufen photo series 012](https://steemit.com/@deanliu/reflections-at-night-jiufen-photo-series-012-201757t145624884z)
+This page is synchronized from the post: ['Reflections at night - Jiufen photo series 012'](https://steemit.com/@deanliu/reflections-at-night-jiufen-photo-series-012-201757t145624884z)

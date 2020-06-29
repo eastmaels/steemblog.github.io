@@ -1,10 +1,11 @@
 
 ---
-title: "東京夢幻鬆餅 bibliothèque 🍙 Dean's Tokyo Snapshots 🍙 "
+title: '東京夢幻鬆餅 bibliothèque 🍙 Dean''s Tokyo Snapshots 🍙 '
 permlink: bibliotheque-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-15 10:28:36
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/da69f19d38554b8d8301096223cd4aea04659cc8.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/da69f19d38554b8d8301096223cd4aea04659cc8.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [東京夢幻鬆餅 bibliothèque 🍙 Dean's Tokyo Snapshots 🍙 ](https://steemit.com/@deanliu/bibliotheque-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['東京夢幻鬆餅 bibliothèque 🍙 Dean''s Tokyo Snapshots 🍙 '](https://steemit.com/@deanliu/bibliotheque-dean-s-tokyo-snapshots)

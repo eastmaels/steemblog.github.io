@@ -1,10 +1,11 @@
 
 ---
-title: "Meet Beitou MRT Depot 遇見北投機廠"
+title: 'Meet Beitou MRT Depot 遇見北投機廠'
 permlink: meetbeitoumrtdepot-cgz3058wuo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-12 14:24:57
 categories:
 - industrial
@@ -12,7 +13,7 @@ tags:
 - industrial
 - photography
 - taipei
-thumbnail: http://deanliu.vornix.blog/wp-content/uploads/2018/08/DSC_6091.jpg
+thumbnail: 'http://deanliu.vornix.blog/wp-content/uploads/2018/08/DSC_6091.jpg'
 sidebar:
     right:
         sticky: true
@@ -33,4 +34,4 @@ This Friday I was fortunate to have an opportunity to visit the home of the trai
 
 - - -
 
-This page is synchronized from the post: [Meet Beitou MRT Depot 遇見北投機廠](https://steemit.com/@deanliu/meetbeitoumrtdepot-cgz3058wuo)
+This page is synchronized from the post: ['Meet Beitou MRT Depot 遇見北投機廠'](https://steemit.com/@deanliu/meetbeitoumrtdepot-cgz3058wuo)

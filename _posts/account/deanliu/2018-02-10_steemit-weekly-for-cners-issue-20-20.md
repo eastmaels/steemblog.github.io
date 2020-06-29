@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 20 / 《社區週邊事》 - 第 20 期"
+title: 'Steemit Weekly for CNers - Issue 20 / 《社區"週"邊事》 - 第 20 期'
 permlink: steemit-weekly-for-cners-issue-20-20
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-10 04:04:12
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - news
 - steemit-weekly
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -140,4 +141,4 @@ by **@engadgetnews**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 20 / 《社區週邊事》 - 第 20 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-20-20)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 20 / 《社區"週"邊事》 - 第 20 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-20-20)

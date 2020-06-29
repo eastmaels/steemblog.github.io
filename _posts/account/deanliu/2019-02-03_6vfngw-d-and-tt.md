@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 旋轉壽司"
+title: '[D&TT] 旋轉壽司'
 permlink: 6vfngw-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-03 01:37:33
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - deantt
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/a2a4c057cfc4a755ea4c7421534efa4bd722fb0c.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/a2a4c057cfc4a755ea4c7421534efa4bd722fb0c.jpg'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 旋轉壽司](https://steemit.com/@deanliu/6vfngw-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 旋轉壽司'](https://steemit.com/@deanliu/6vfngw-d-and-tt)

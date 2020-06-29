@@ -1,17 +1,18 @@
 
 ---
-title: "Recent article about VCR... Who will be said goodbye to soon?"
+title: 'Recent article about VCR... Who will be said goodbye to soon?'
 permlink: recent-article-about-vcr-who-will-be-said-goodbye-to-soon
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-28 08:39:51
 categories:
 - vcr
 tags:
 - vcr
 - blockchain
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -28,4 +29,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Recent article about VCR... Who will be said goodbye to soon?](https://steemit.com/@deanliu/recent-article-about-vcr-who-will-be-said-goodbye-to-soon)
+This page is synchronized from the post: ['Recent article about VCR... Who will be said goodbye to soon?'](https://steemit.com/@deanliu/recent-article-about-vcr-who-will-be-said-goodbye-to-soon)

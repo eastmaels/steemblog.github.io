@@ -1,10 +1,11 @@
 
 ---
-title: "Aragon: Create your Own Decentralized Organization on Ethereum."
+title: 'Aragon: Create your Own Decentralized Organization on Ethereum.'
 permlink: aragon-create-your-own-decentralized-organization-on-ethereum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-27 02:35:27
 categories:
 - dao
@@ -14,7 +15,7 @@ tags:
 - governance
 - blockchain
 - ethereum
-thumbnail: https://cdn.steemitimages.com/DQmYoa52EEMSyd3hNxk49ZUXpnWNjiTLWLHj8YEqUeC4WpR/y3tLQbs.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmYoa52EEMSyd3hNxk49ZUXpnWNjiTLWLHj8YEqUeC4WpR/y3tLQbs.jpg'
 sidebar:
     right:
         sticky: true
@@ -124,4 +125,4 @@ Tip Dan:
 
 - - -
 
-This page is synchronized from the post: [Aragon: Create your Own Decentralized Organization on Ethereum.](https://steemit.com/@deanliu/aragon-create-your-own-decentralized-organization-on-ethereum)
+This page is synchronized from the post: ['Aragon: Create your Own Decentralized Organization on Ethereum.'](https://steemit.com/@deanliu/aragon-create-your-own-decentralized-organization-on-ethereum)

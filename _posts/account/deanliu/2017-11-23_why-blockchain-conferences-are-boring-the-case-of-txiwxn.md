@@ -1,10 +1,11 @@
 
 ---
-title: "Why Blockchain conferences are boring - the case of Txiwxn"
+title: 'Why Blockchain conferences are boring - the case of Txiwxn'
 permlink: why-blockchain-conferences-are-boring-the-case-of-txiwxn
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-23 05:37:00
 categories:
 - blockchain
@@ -12,7 +13,7 @@ tags:
 - blockchain
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ CN區朋友們好，
 
 - - -
 
-This page is synchronized from the post: [Why Blockchain conferences are boring - the case of Txiwxn](https://steemit.com/@deanliu/why-blockchain-conferences-are-boring-the-case-of-txiwxn)
+This page is synchronized from the post: ['Why Blockchain conferences are boring - the case of Txiwxn'](https://steemit.com/@deanliu/why-blockchain-conferences-are-boring-the-case-of-txiwxn)

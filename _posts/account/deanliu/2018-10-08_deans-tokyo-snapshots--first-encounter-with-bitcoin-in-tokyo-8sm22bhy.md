@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 First encounter with bitcoin in Tokyo"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 First encounter with bitcoin in Tokyo'
 permlink: deans-tokyo-snapshots--first-encounter-with-bitcoin-in-tokyo-8sm22bhy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-08 23:42:06
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - bitcoin
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/c8c71b677baaf3a1856f931c81f5622213c34817.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/c8c71b677baaf3a1856f931c81f5622213c34817.png'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 First encounter with bitcoin in Tokyo](https://steemit.com/@deanliu/deans-tokyo-snapshots--first-encounter-with-bitcoin-in-tokyo-8sm22bhy)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 First encounter with bitcoin in Tokyo'](https://steemit.com/@deanliu/deans-tokyo-snapshots--first-encounter-with-bitcoin-in-tokyo-8sm22bhy)

@@ -1,10 +1,11 @@
 
 ---
-title: "🙎 [人蔘商號] 本日商品－神的開箱文 🙎 Ginseng Store - Dismantling gods 🙎"
+title: '🙎 [人蔘商號] 本日商品－神的開箱文 🙎 Ginseng Store - Dismantling "gods" 🙎'
 permlink: ginseng-store-dismantling-gods
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-24 09:37:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - writing
 - cn-reader
 - gods
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🙎 [人蔘商號] 本日商品－神的開箱文 🙎 Ginseng Store - Dismantling gods 🙎](https://steemit.com/@deanliu/ginseng-store-dismantling-gods)
+This page is synchronized from the post: ['🙎 [人蔘商號] 本日商品－神的開箱文 🙎 Ginseng Store - Dismantling "gods" 🙎'](https://steemit.com/@deanliu/ginseng-store-dismantling-gods)

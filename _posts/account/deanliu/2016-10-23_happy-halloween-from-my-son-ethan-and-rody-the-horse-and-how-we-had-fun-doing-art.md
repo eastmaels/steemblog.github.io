@@ -1,10 +1,11 @@
 
 ---
-title: "Happy Halloween from my son Ethan and Rody the horse and how we had fun doing 'art'"
+title: 'Happy Halloween from my son Ethan and Rody the horse and how we had fun doing ''art'''
 permlink: happy-halloween-from-my-son-ethan-and-rody-the-horse-and-how-we-had-fun-doing-art
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-23 05:56:33
 categories:
 - life
@@ -12,7 +13,7 @@ tags:
 - life
 - halloween
 - parenting
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Happy Halloween from my son Ethan and Rody the horse and how we had fun doing 'art'](https://steemit.com/@deanliu/happy-halloween-from-my-son-ethan-and-rody-the-horse-and-how-we-had-fun-doing-art)
+This page is synchronized from the post: ['Happy Halloween from my son Ethan and Rody the horse and how we had fun doing ''art'''](https://steemit.com/@deanliu/happy-halloween-from-my-son-ethan-and-rody-the-horse-and-how-we-had-fun-doing-art)

@@ -1,10 +1,11 @@
 
 ---
-title: "My Christmas Morning"
+title: 'My Christmas Morning'
 permlink: my-christmas-morning
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-26 05:00:00
 categories:
 - christmas
@@ -13,7 +14,7 @@ tags:
 - photography
 - cafe
 - hotel
-thumbnail: https://steemitimages.com/DQmdurEhEMQJu7TxPCuMyoWx7fN9VWtadEGT5hhexi7iti6/DSC_3510.JPG
+thumbnail: 'https://steemitimages.com/DQmdurEhEMQJu7TxPCuMyoWx7fN9VWtadEGT5hhexi7iti6/DSC_3510.JPG'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ So for the last time ... MERRY CHRISTMAS TO YA ALL!!
 
 - - -
 
-This page is synchronized from the post: [My Christmas Morning](https://steemit.com/@deanliu/my-christmas-morning)
+This page is synchronized from the post: ['My Christmas Morning'](https://steemit.com/@deanliu/my-christmas-morning)

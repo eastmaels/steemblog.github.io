@@ -1,10 +1,11 @@
 
 ---
-title: "PPAP - AKA Pen Pineapple Apple Pen - has created a new hype around Asia... Warning!! It might be addictive!!"
+title: 'PPAP - AKA Pen Pineapple Apple Pen - has created a new hype around Asia... Warning!! It might be addictive!!'
 permlink: ppap-aka-pen-pineapple-apple-pen-has-created-a-new-hype-around-asia-warning-it-might-be-addictive
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-26 17:29:24
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - funny
 - japan
 - hype
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [PPAP - AKA Pen Pineapple Apple Pen - has created a new hype around Asia... Warning!! It might be addictive!!](https://steemit.com/@deanliu/ppap-aka-pen-pineapple-apple-pen-has-created-a-new-hype-around-asia-warning-it-might-be-addictive)
+This page is synchronized from the post: ['PPAP - AKA Pen Pineapple Apple Pen - has created a new hype around Asia... Warning!! It might be addictive!!'](https://steemit.com/@deanliu/ppap-aka-pen-pineapple-apple-pen-has-created-a-new-hype-around-asia-warning-it-might-be-addictive)

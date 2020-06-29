@@ -1,17 +1,18 @@
 
 ---
-title: "Two Questions about Payout ... SBD/SP split and how Steem Price will affect? Answers will be paid."
+title: 'Two Questions about Payout ... SBD/SP split and how Steem Price will affect? Answers will be paid.'
 permlink: two-questions-about-payout-sbd-sp-split-and-how-steem-price-will-affect-answers-will-be-paid
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-30 10:14:30
 categories:
 - steem-help
 tags:
 - steem-help
 - payout
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Two Questions about Payout ... SBD/SP split and how Steem Price will affect? Answers will be paid.](https://steemit.com/@deanliu/two-questions-about-payout-sbd-sp-split-and-how-steem-price-will-affect-answers-will-be-paid)
+This page is synchronized from the post: ['Two Questions about Payout ... SBD/SP split and how Steem Price will affect? Answers will be paid.'](https://steemit.com/@deanliu/two-questions-about-payout-sbd-sp-split-and-how-steem-price-will-affect-answers-will-be-paid)

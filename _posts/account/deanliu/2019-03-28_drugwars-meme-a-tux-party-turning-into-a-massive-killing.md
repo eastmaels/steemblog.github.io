@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars Movie] A Tux Party Turning Into A Massive Killing"
+title: '[DrugWars Movie] A Tux Party Turning Into A Massive Killing'
 permlink: drugwars-meme-a-tux-party-turning-into-a-massive-killing
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-28 08:31:33
 categories:
 - drugwars
@@ -15,7 +16,7 @@ tags:
 - battle
 - busy
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmWmrCXSRnB2CgCMond1e9Tc28gxxHUHtGh4Kav5MPJHt6/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-28%20%E4%B8%8B%E5%8D%883.51.22.png
+thumbnail: 'https://cdn.steemitimages.com/DQmWmrCXSRnB2CgCMond1e9Tc28gxxHUHtGh4Kav5MPJHt6/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-28%20%E4%B8%8B%E5%8D%883.51.22.png'
 sidebar:
     right:
         sticky: true
@@ -31,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars Movie] A Tux Party Turning Into A Massive Killing](https://steemit.com/@deanliu/drugwars-meme-a-tux-party-turning-into-a-massive-killing)
+This page is synchronized from the post: ['[DrugWars Movie] A Tux Party Turning Into A Massive Killing'](https://steemit.com/@deanliu/drugwars-meme-a-tux-party-turning-into-a-massive-killing)

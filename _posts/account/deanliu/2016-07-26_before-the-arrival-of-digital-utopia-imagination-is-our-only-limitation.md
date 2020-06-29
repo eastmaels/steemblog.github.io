@@ -1,10 +1,11 @@
 
 ---
-title: "Before the arrival of digital utopia, imagination is our only limitation"
+title: 'Before the arrival of digital utopia, imagination is our only limitation'
 permlink: before-the-arrival-of-digital-utopia-imagination-is-our-only-limitation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-26 11:22:30
 categories:
 - blockchain
@@ -13,7 +14,7 @@ tags:
 - steemit
 - steem
 - fintech
-thumbnail: //i.imgsafe.org/7453615422.png
+thumbnail: '//i.imgsafe.org/7453615422.png'
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Before the arrival of digital utopia, imagination is our only limitation](https://steemit.com/@deanliu/before-the-arrival-of-digital-utopia-imagination-is-our-only-limitation)
+This page is synchronized from the post: ['Before the arrival of digital utopia, imagination is our only limitation'](https://steemit.com/@deanliu/before-the-arrival-of-digital-utopia-imagination-is-our-only-limitation)

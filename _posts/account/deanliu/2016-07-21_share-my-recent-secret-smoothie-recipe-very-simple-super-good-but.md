@@ -1,10 +1,11 @@
 
 ---
-title: "Share my recent secret smoothie recipe - very simple super good but ..."
+title: 'Share my recent secret smoothie recipe - very simple super good but ...'
 permlink: share-my-recent-secret-smoothie-recipe-very-simple-super-good-but
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-21 06:28:21
 categories:
 - smoothie
@@ -13,7 +14,7 @@ tags:
 - durian
 - juice
 - recipe
-thumbnail: http://i.imgsafe.org/06b0fd291b.jpg
+thumbnail: 'http://i.imgsafe.org/06b0fd291b.jpg'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Share my recent secret smoothie recipe - very simple super good but ...](https://steemit.com/@deanliu/share-my-recent-secret-smoothie-recipe-very-simple-super-good-but)
+This page is synchronized from the post: ['Share my recent secret smoothie recipe - very simple super good but ...'](https://steemit.com/@deanliu/share-my-recent-secret-smoothie-recipe-very-simple-super-good-but)

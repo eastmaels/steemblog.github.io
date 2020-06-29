@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Japan Goodies in Tokyo"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Japan Goodies in Tokyo'
 permlink: dean-s-tokyo-snapshots-japan-goodies-in-tokyo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-12 07:58:33
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - japan
 - busy
 - dessert
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/be0d21a2a1394cad2905d9ab5fc72dd22d510898.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/be0d21a2a1394cad2905d9ab5fc72dd22d510898.png'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Japan Goodies in Tokyo](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-japan-goodies-in-tokyo)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Japan Goodies in Tokyo'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-japan-goodies-in-tokyo)

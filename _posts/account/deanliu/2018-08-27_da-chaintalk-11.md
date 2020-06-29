@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #11 — 加密貨幣的加密是什麼？"
+title: 'DA-ChainTalk #11 — 加密貨幣的加密是什麼？'
 permlink: da-chaintalk-11
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-27 13:07:45
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - encryption
 - blockchain
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmSGt9cVwkamXYVuUd5ZPBeLtej2nE3KAoeUMrxwCzQcKG/computer-3229814_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmSGt9cVwkamXYVuUd5ZPBeLtej2nE3KAoeUMrxwCzQcKG/computer-3229814_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #11 — 加密貨幣的加密是什麼？](https://steemit.com/@deanliu/da-chaintalk-11)
+This page is synchronized from the post: ['DA-ChainTalk #11 — 加密貨幣的加密是什麼？'](https://steemit.com/@deanliu/da-chaintalk-11)

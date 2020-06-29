@@ -1,10 +1,11 @@
 
 ---
-title: "Came Across A Post from ... when?"
+title: 'Came Across A Post from ... when?'
 permlink: came-across-a-post-from-when
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-21 06:17:00
 categories:
 - lastyear
@@ -14,7 +15,7 @@ tags:
 - writing
 - humor
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ This is a <em>100% SP post</em> so I can get a little more power to make it happ
 
 - - -
 
-This page is synchronized from the post: [Came Across A Post from ... when?](https://steemit.com/@deanliu/came-across-a-post-from-when)
+This page is synchronized from the post: ['Came Across A Post from ... when?'](https://steemit.com/@deanliu/came-across-a-post-from-when)

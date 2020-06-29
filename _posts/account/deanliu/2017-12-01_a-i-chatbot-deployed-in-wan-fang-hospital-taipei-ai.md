@@ -1,10 +1,11 @@
 
 ---
-title: "A.I. Chatbot deployed in Wan Fang Hospital, Taipei 台北直擊 AI 醫療服務聊天機器人！"
+title: 'A.I. Chatbot deployed in Wan Fang Hospital, Taipei 台北直擊 AI 醫療服務聊天機器人！'
 permlink: a-i-chatbot-deployed-in-wan-fang-hospital-taipei-ai
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-01 10:32:45
 categories:
 - ai
@@ -14,7 +15,7 @@ tags:
 - technology
 - medical
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ https://steemitimages.com/DQmSGuPLafyRLL4fCuBZsM84Vayo4ahhRC2eFe6DUmKe8VM/DSC_32
 
 - - -
 
-This page is synchronized from the post: [A.I. Chatbot deployed in Wan Fang Hospital, Taipei 台北直擊 AI 醫療服務聊天機器人！](https://steemit.com/@deanliu/a-i-chatbot-deployed-in-wan-fang-hospital-taipei-ai)
+This page is synchronized from the post: ['A.I. Chatbot deployed in Wan Fang Hospital, Taipei 台北直擊 AI 醫療服務聊天機器人！'](https://steemit.com/@deanliu/a-i-chatbot-deployed-in-wan-fang-hospital-taipei-ai)

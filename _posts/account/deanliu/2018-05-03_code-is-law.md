@@ -1,10 +1,11 @@
 
 ---
-title: "[論鏈] Code Is Law，代碼即法律？"
+title: '[論鏈] Code Is Law，代碼即法律？'
 permlink: code-is-law
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-03 12:29:54
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - code-is-law
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmVECyaVFRsj7gfwVUtU8qNJT3qRp6f3Pf8XqeRjWvT9NE/the-1865639_640.jpg
+thumbnail: 'https://steemitimages.com/DQmVECyaVFRsj7gfwVUtU8qNJT3qRp6f3Pf8XqeRjWvT9NE/the-1865639_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[論鏈] Code Is Law，代碼即法律？](https://steemit.com/@deanliu/code-is-law)
+This page is synchronized from the post: ['[論鏈] Code Is Law，代碼即法律？'](https://steemit.com/@deanliu/code-is-law)

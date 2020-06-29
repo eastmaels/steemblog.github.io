@@ -1,10 +1,11 @@
 
 ---
-title: "[古蹟咖啡] 台北角公園咖啡 [Antique Cafe] Triangle Garden Cafe in Taipei"
+title: '[古蹟咖啡] 台北角公園咖啡 [Antique Cafe] Triangle Garden Cafe in Taipei'
 permlink: antique-cafe-triangle-garden-cafe-in-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-02 07:09:09
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - hipster
 - taipei
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmaJUBZgBc6vvfiLdeiCiTe5vj7vg1CuWCViPBeryfNFyP/DSC_5965.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmaJUBZgBc6vvfiLdeiCiTe5vj7vg1CuWCViPBeryfNFyP/DSC_5965.JPG'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[古蹟咖啡] 台北角公園咖啡 [Antique Cafe] Triangle Garden Cafe in Taipei](https://steemit.com/@deanliu/antique-cafe-triangle-garden-cafe-in-taipei)
+This page is synchronized from the post: ['[古蹟咖啡] 台北角公園咖啡 [Antique Cafe] Triangle Garden Cafe in Taipei'](https://steemit.com/@deanliu/antique-cafe-triangle-garden-cafe-in-taipei)

@@ -1,10 +1,11 @@
 
 ---
-title: "🙎 [人蔘商號] 本日商品－夢想的價格標籤  🙎  Ginseng Store - Price tags of dreams 🙎"
+title: '🙎 [人蔘商號] 本日商品－夢想的價格標籤  🙎  Ginseng Store - Price tags of dreams 🙎'
 permlink: ginseng-store-price-tags-of-dreams
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-17 07:50:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - writing
 - cn-reader
 - dream
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🙎 [人蔘商號] 本日商品－夢想的價格標籤  🙎  Ginseng Store - Price tags of dreams 🙎](https://steemit.com/@deanliu/ginseng-store-price-tags-of-dreams)
+This page is synchronized from the post: ['🙎 [人蔘商號] 本日商品－夢想的價格標籤  🙎  Ginseng Store - Price tags of dreams 🙎'](https://steemit.com/@deanliu/ginseng-store-price-tags-of-dreams)

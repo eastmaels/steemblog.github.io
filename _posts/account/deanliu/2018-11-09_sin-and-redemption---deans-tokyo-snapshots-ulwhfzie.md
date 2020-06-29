@@ -1,10 +1,11 @@
 
 ---
-title: "Sin and Redemption  🍙 Dean's Tokyo Snapshots 🍙 墮落與救贖"
+title: 'Sin and Redemption  🍙 Dean''s Tokyo Snapshots 🍙 墮落與救贖'
 permlink: sin-and-redemption---deans-tokyo-snapshots-ulwhfzie
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-09 11:50:27
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - cn
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/e6d2e5747c29b2f0431964cc79892ec94dd3ab3c.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/e6d2e5747c29b2f0431964cc79892ec94dd3ab3c.png'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Sin and Redemption  🍙 Dean's Tokyo Snapshots 🍙 墮落與救贖](https://steemit.com/@deanliu/sin-and-redemption---deans-tokyo-snapshots-ulwhfzie)
+This page is synchronized from the post: ['Sin and Redemption  🍙 Dean''s Tokyo Snapshots 🍙 墮落與救贖'](https://steemit.com/@deanliu/sin-and-redemption---deans-tokyo-snapshots-ulwhfzie)

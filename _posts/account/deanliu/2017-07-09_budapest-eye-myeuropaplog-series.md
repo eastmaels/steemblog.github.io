@@ -1,10 +1,11 @@
 
 ---
-title: "✶ Budapest Eye ✶ 布達佩斯之眼 ✶ #myeuropaplog series 歐洲行旅照片記錄系列"
+title: '✶ Budapest Eye ✶ 布達佩斯之眼 ✶ #myeuropaplog series 歐洲行旅照片記錄系列'
 permlink: budapest-eye-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-09 00:01:30
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - europe
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [✶ Budapest Eye ✶ 布達佩斯之眼 ✶ #myeuropaplog series 歐洲行旅照片記錄系列](https://steemit.com/@deanliu/budapest-eye-myeuropaplog-series)
+This page is synchronized from the post: ['✶ Budapest Eye ✶ 布達佩斯之眼 ✶ #myeuropaplog series 歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/budapest-eye-myeuropaplog-series)

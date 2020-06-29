@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 童畫故事每一天"
+title: '[D&TT] 童畫故事每一天'
 permlink: 2zxjwb-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-01 13:35:42
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - kids
 - busy
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmZt7tgj1xLGU5FfSUMryd7dVS8DPCPjSdvcpNVn1T6m7m/baby-1399332_640%20(1).jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmZt7tgj1xLGU5FfSUMryd7dVS8DPCPjSdvcpNVn1T6m7m/baby-1399332_640%20(1).jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 童畫故事每一天](https://steemit.com/@deanliu/2zxjwb-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 童畫故事每一天'](https://steemit.com/@deanliu/2zxjwb-d-and-tt)

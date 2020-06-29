@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 跟媽媽辦派對！ "
+title: '[D&TT] 跟媽媽辦派對！ '
 permlink: dtt-ykrgndqm
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-14 12:00:06
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - party
 - cn
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/89bcf1e780727bbd4a1f3c8f2919a7d448c1d4a9.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/89bcf1e780727bbd4a1f3c8f2919a7d448c1d4a9.png'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 跟媽媽辦派對！ ](https://steemit.com/@deanliu/dtt-ykrgndqm)
+This page is synchronized from the post: ['[D&TT] 跟媽媽辦派對！ '](https://steemit.com/@deanliu/dtt-ykrgndqm)

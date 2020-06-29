@@ -1,10 +1,11 @@
 
 ---
-title: "[台灣小食] 蒜翻天鹽酥雞 Taiwanese Fried Chicken"
+title: '[台灣小食] 蒜翻天鹽酥雞 Taiwanese Fried Chicken'
 permlink: taiwanese-fried-chicken
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-25 06:16:33
 categories:
 - food
@@ -13,7 +14,7 @@ tags:
 - life
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmTCEpVt4q5ZtD6onsMr7xjmvgtvLWvMuRXk5zGsMfM2Hn/DSC_4417.JPG
+thumbnail: 'https://steemitimages.com/DQmTCEpVt4q5ZtD6onsMr7xjmvgtvLWvMuRXk5zGsMfM2Hn/DSC_4417.JPG'
 sidebar:
     right:
         sticky: true
@@ -122,4 +123,4 @@ Ok! That's all folks! I hope you enjoy this and will really enjoy it when you vi
 
 - - -
 
-This page is synchronized from the post: [[台灣小食] 蒜翻天鹽酥雞 Taiwanese Fried Chicken](https://steemit.com/@deanliu/taiwanese-fried-chicken)
+This page is synchronized from the post: ['[台灣小食] 蒜翻天鹽酥雞 Taiwanese Fried Chicken'](https://steemit.com/@deanliu/taiwanese-fried-chicken)

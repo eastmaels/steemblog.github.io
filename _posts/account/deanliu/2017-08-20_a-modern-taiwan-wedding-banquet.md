@@ -1,10 +1,11 @@
 
 ---
-title: "💏  A Modern Taiwan Wedding Banquet 💏  上週末參加的一場台北婚宴 💏"
+title: '💏  A Modern Taiwan Wedding Banquet 💏  上週末參加的一場台北婚宴 💏'
 permlink: a-modern-taiwan-wedding-banquet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-20 04:45:42
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - food
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -107,4 +108,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [💏  A Modern Taiwan Wedding Banquet 💏  上週末參加的一場台北婚宴 💏](https://steemit.com/@deanliu/a-modern-taiwan-wedding-banquet)
+This page is synchronized from the post: ['💏  A Modern Taiwan Wedding Banquet 💏  上週末參加的一場台北婚宴 💏'](https://steemit.com/@deanliu/a-modern-taiwan-wedding-banquet)

@@ -1,10 +1,11 @@
 
 ---
-title: "To fiat or not to fiat, that's the question"
+title: 'To fiat or not to fiat, that''s the question'
 permlink: to-fiat-or-not-to-fiat-that-s-the-question
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-20 09:49:36
 categories:
 - crypto
@@ -14,7 +15,7 @@ tags:
 - future
 - fiat
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmVSnYSaLC4H3XHRuPCKLaR1babh9PzPauUE17X66jHsqr
+thumbnail: 'https://ipfs.busy.org/ipfs/QmVSnYSaLC4H3XHRuPCKLaR1babh9PzPauUE17X66jHsqr'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Waiting for the D day to come.
 
 - - -
 
-This page is synchronized from the post: [To fiat or not to fiat, that's the question](https://steemit.com/@deanliu/to-fiat-or-not-to-fiat-that-s-the-question)
+This page is synchronized from the post: ['To fiat or not to fiat, that''s the question'](https://steemit.com/@deanliu/to-fiat-or-not-to-fiat-that-s-the-question)

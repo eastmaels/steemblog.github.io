@@ -1,10 +1,11 @@
 
 ---
-title: "Suggestions to the new Steemit.com"
+title: 'Suggestions to the new Steemit.com'
 permlink: suggestions-to-the-new-steemit-com
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-03 01:08:48
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - suggestions
 - steem
-thumbnail: https://cdn.steemitimages.com/DQmTycoYoAsGwJtUmz5znWSoQrZeaYPzjgZYPg1h21aLQqC/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-03%20%E4%B8%8A%E5%8D%888.40.43.png
+thumbnail: 'https://cdn.steemitimages.com/DQmTycoYoAsGwJtUmz5znWSoQrZeaYPzjgZYPg1h21aLQqC/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-03%20%E4%B8%8A%E5%8D%888.40.43.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Have a lovely day, every one!
 
 - - -
 
-This page is synchronized from the post: [Suggestions to the new Steemit.com](https://steemit.com/@deanliu/suggestions-to-the-new-steemit-com)
+This page is synchronized from the post: ['Suggestions to the new Steemit.com'](https://steemit.com/@deanliu/suggestions-to-the-new-steemit-com)

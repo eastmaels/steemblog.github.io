@@ -1,10 +1,11 @@
 
 ---
-title: "Introducing CoolWallet - A Cool Bitcoin Hardware Wallet - with Steemit Exclusive Discount! [limited time]  介紹很酷的比特幣錢包CoolWallet並提供Steemit獨家限時優惠！"
+title: 'Introducing CoolWallet - A Cool Bitcoin Hardware Wallet - with Steemit Exclusive Discount! [limited time]  介紹很酷的比特幣錢包CoolWallet並提供Steemit獨家限時優惠！'
 permlink: introducing-coolwallet-a-cool-bitcoin-hardware-wallet-with-steemit-exclusive-discount-limited-time-coolwallet-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-09 14:35:48
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - beyondbitcoin
 - blockchain
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ Finally, <em>it is truly meaningful for a blockchain-based Bitcoin </em><em><str
 
 - - -
 
-This page is synchronized from the post: [Introducing CoolWallet - A Cool Bitcoin Hardware Wallet - with Steemit Exclusive Discount! [limited time]  介紹很酷的比特幣錢包CoolWallet並提供Steemit獨家限時優惠！](https://steemit.com/@deanliu/introducing-coolwallet-a-cool-bitcoin-hardware-wallet-with-steemit-exclusive-discount-limited-time-coolwallet-steemit)
+This page is synchronized from the post: ['Introducing CoolWallet - A Cool Bitcoin Hardware Wallet - with Steemit Exclusive Discount! [limited time]  介紹很酷的比特幣錢包CoolWallet並提供Steemit獨家限時優惠！'](https://steemit.com/@deanliu/introducing-coolwallet-a-cool-bitcoin-hardware-wallet-with-steemit-exclusive-discount-limited-time-coolwallet-steemit)

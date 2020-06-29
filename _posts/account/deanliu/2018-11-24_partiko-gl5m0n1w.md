@@ -1,10 +1,11 @@
 
 ---
-title: "支持Partiko，凍蒜！😀😀"
+title: '支持Partiko，凍蒜！😀😀'
 permlink: partiko-gl5m0n1w
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-24 02:01:42
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - news
 - cn
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmdP6jt8UvbX1XCPV6E3fgYSPR6WRKGnGKc27hRimiYpcM/Banner.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmdP6jt8UvbX1XCPV6E3fgYSPR6WRKGnGKc27hRimiYpcM/Banner.png'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [支持Partiko，凍蒜！😀😀](https://steemit.com/@deanliu/partiko-gl5m0n1w)
+This page is synchronized from the post: ['支持Partiko，凍蒜！😀😀'](https://steemit.com/@deanliu/partiko-gl5m0n1w)

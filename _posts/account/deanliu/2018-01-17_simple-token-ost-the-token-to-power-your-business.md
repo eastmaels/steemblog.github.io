@@ -1,10 +1,11 @@
 
 ---
-title: "SIMPLE TOKEN (OST) - The Token To Power Your Business"
+title: 'SIMPLE TOKEN (OST) - The Token To Power Your Business'
 permlink: simple-token-ost-the-token-to-power-your-business
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-17 13:55:51
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - tokenization
 - business
-thumbnail: https://steemitimages.com/DQmQRJA9xn4E3fSYXkF6r4DDnb88wQCfWmTJ7iFT9UFZcu4/07_Joel_Meyerowitz_1962_2-P4654-0026.jpg
+thumbnail: 'https://steemitimages.com/DQmQRJA9xn4E3fSYXkF6r4DDnb88wQCfWmTJ7iFT9UFZcu4/07_Joel_Meyerowitz_1962_2-P4654-0026.jpg'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [SIMPLE TOKEN (OST) - The Token To Power Your Business](https://steemit.com/@deanliu/simple-token-ost-the-token-to-power-your-business)
+This page is synchronized from the post: ['SIMPLE TOKEN (OST) - The Token To Power Your Business'](https://steemit.com/@deanliu/simple-token-ost-the-token-to-power-your-business)

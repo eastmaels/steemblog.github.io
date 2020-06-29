@@ -1,10 +1,11 @@
 
 ---
-title: "親愛的地表 Dear Crude"
+title: '親愛的地表 Dear Crude'
 permlink: dear-crude
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-07 03:11:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - news
 - earthquake
 - taiwan
-thumbnail: http://img5.cna.com.tw/www/WebPhotos/800/20180207/37875703.jpg
+thumbnail: 'http://img5.cna.com.tw/www/WebPhotos/800/20180207/37875703.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [親愛的地表 Dear Crude](https://steemit.com/@deanliu/dear-crude)
+This page is synchronized from the post: ['親愛的地表 Dear Crude'](https://steemit.com/@deanliu/dear-crude)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 東京自煮趣"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 東京自煮趣'
 permlink: 6u7acz-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-26 10:48:15
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cooking
 - busy
 - japan
-thumbnail: https://ipfs.busy.org/ipfs/QmS285jybCNiaDrNunHxLRqRN8D2XqAEtrBVEEzJQJ2FzJ
+thumbnail: 'https://ipfs.busy.org/ipfs/QmS285jybCNiaDrNunHxLRqRN8D2XqAEtrBVEEzJQJ2FzJ'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 東京自煮趣](https://steemit.com/@deanliu/6u7acz-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 東京自煮趣'](https://steemit.com/@deanliu/6u7acz-dean-s-tokyo-snapshots)

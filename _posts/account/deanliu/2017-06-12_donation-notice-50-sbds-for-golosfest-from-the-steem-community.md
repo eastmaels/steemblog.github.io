@@ -1,10 +1,11 @@
 
 ---
-title: "Donation Notice - 50 SBDs for GolosFest from the Steem Community"
+title: 'Donation Notice - 50 SBDs for GolosFest from the Steem Community'
 permlink: donation-notice-50-sbds-for-golosfest-from-the-steem-community
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-12 08:05:30
 categories:
 - golos
@@ -14,7 +15,7 @@ tags:
 - donation
 - share
 - sbd
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Donation Notice - 50 SBDs for GolosFest from the Steem Community](https://steemit.com/@deanliu/donation-notice-50-sbds-for-golosfest-from-the-steem-community)
+This page is synchronized from the post: ['Donation Notice - 50 SBDs for GolosFest from the Steem Community'](https://steemit.com/@deanliu/donation-notice-50-sbds-for-golosfest-from-the-steem-community)

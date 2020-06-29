@@ -1,10 +1,11 @@
 
 ---
-title: "Meeting Blocks of Light After Two Days' Blockchain Conference 路遇光之塊"
+title: 'Meeting Blocks of Light After Two Days'' Blockchain Conference 路遇光之塊'
 permlink: meeting-blocks-of-light-after-two-days-blockchain-conference
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-24 15:27:21
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - blockchain
 - art
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ https://steemitimages.com/DQmZDEw31VPaD6XVorJjNerGWAoTVjHZtrgkekqxBTLsgCQ/DSC_12
 
 - - -
 
-This page is synchronized from the post: [Meeting Blocks of Light After Two Days' Blockchain Conference 路遇光之塊](https://steemit.com/@deanliu/meeting-blocks-of-light-after-two-days-blockchain-conference)
+This page is synchronized from the post: ['Meeting Blocks of Light After Two Days'' Blockchain Conference 路遇光之塊'](https://steemit.com/@deanliu/meeting-blocks-of-light-after-two-days-blockchain-conference)

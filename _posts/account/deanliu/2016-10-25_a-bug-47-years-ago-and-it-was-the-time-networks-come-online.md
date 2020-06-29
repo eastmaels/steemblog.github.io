@@ -1,10 +1,11 @@
 
 ---
-title: "A bug 47 years ago ... and it is the time networks come online."
+title: 'A bug 47 years ago ... and it is the time networks come online.'
 permlink: a-bug-47-years-ago-and-it-was-the-time-networks-come-online
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-25 02:08:21
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - bug
 - bug-report
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A bug 47 years ago ... and it is the time networks come online.](https://steemit.com/@deanliu/a-bug-47-years-ago-and-it-was-the-time-networks-come-online)
+This page is synchronized from the post: ['A bug 47 years ago ... and it is the time networks come online.'](https://steemit.com/@deanliu/a-bug-47-years-ago-and-it-was-the-time-networks-come-online)

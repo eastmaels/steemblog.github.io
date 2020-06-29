@@ -1,10 +1,11 @@
 
 ---
-title: "日本泡麵 🍙 Dean's Tokyo Snapshots 🍙"
+title: '日本泡麵 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: deans-tokyo-snapshots-ezjtyqrn
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-01 11:04:33
 categories:
 - dean-tokyo
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/8e55f80e40fba934fa9dfac52551f8fa9ce5c95b.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/8e55f80e40fba934fa9dfac52551f8fa9ce5c95b.png'
 sidebar:
     right:
         sticky: true
@@ -83,4 +84,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [日本泡麵 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/deans-tokyo-snapshots-ezjtyqrn)
+This page is synchronized from the post: ['日本泡麵 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/deans-tokyo-snapshots-ezjtyqrn)

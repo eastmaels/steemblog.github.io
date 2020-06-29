@@ -1,10 +1,11 @@
 
 ---
-title: "Art of the STATE — 論狀態"
+title: 'Art of the STATE — 論狀態'
 permlink: art-of-the-state
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-13 11:51:57
 categories:
 - state
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - consensus
-thumbnail: https://steemitimages.com/DQmVQMR45ou9tKA954Kdayfw4X3zT7FDG5BZ9WMjRpY61Sq/time-3222267_640.jpg
+thumbnail: 'https://steemitimages.com/DQmVQMR45ou9tKA954Kdayfw4X3zT7FDG5BZ9WMjRpY61Sq/time-3222267_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ BTC其實是一種基於UTXO的stateless的區塊鏈，但我們且不去管這�
 
 - - -
 
-This page is synchronized from the post: [Art of the STATE — 論狀態](https://steemit.com/@deanliu/art-of-the-state)
+This page is synchronized from the post: ['Art of the STATE — 論狀態'](https://steemit.com/@deanliu/art-of-the-state)

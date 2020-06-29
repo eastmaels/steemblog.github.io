@@ -1,10 +1,11 @@
 
 ---
-title: "[Luxury Hotel Series] - Regent Taipei - part 1 - SteemFest Live and the Roof Top Swimming Pool [五星飯店系列] 台北晶華 part 1。看直播與屋頂泳池。"
+title: '[Luxury Hotel Series] - Regent Taipei - part 1 - SteemFest Live and the Roof Top Swimming Pool [五星飯店系列] 台北晶華 part 1。看直播與屋頂泳池。'
 permlink: luxury-hotel-series-regent-taipei-part-1-steemfest-live-and-the-roof-top-swimming-pool-part-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-18 15:44:12
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - hotel
 - travel
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Luxury Hotel Series] - Regent Taipei - part 1 - SteemFest Live and the Roof Top Swimming Pool [五星飯店系列] 台北晶華 part 1。看直播與屋頂泳池。](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-1-steemfest-live-and-the-roof-top-swimming-pool-part-1)
+This page is synchronized from the post: ['[Luxury Hotel Series] - Regent Taipei - part 1 - SteemFest Live and the Roof Top Swimming Pool [五星飯店系列] 台北晶華 part 1。看直播與屋頂泳池。'](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-1-steemfest-live-and-the-roof-top-swimming-pool-part-1)

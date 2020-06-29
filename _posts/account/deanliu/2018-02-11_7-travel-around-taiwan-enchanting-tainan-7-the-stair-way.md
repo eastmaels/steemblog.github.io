@@ -1,10 +1,11 @@
 
 ---
-title: "🚉  [輕旅行系列] 慵懶台南 #7 人間之梯 🚉  [Travel Around Taiwan] Enchanting Tainan #7 The stair way"
+title: '🚉  [輕旅行系列] 慵懶台南 #7 人間之梯 🚉  [Travel Around Taiwan] Enchanting Tainan #7 The stair way'
 permlink: 7-travel-around-taiwan-enchanting-tainan-7-the-stair-way
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-11 15:09:06
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -102,4 +103,4 @@ https://steemitimages.com/DQmZLPGGgHiNpsFHnNqp9cNcrQW6eCkfqdzCvBMNbR2oXWw/_20180
 
 - - -
 
-This page is synchronized from the post: [🚉  [輕旅行系列] 慵懶台南 #7 人間之梯 🚉  [Travel Around Taiwan] Enchanting Tainan #7 The stair way](https://steemit.com/@deanliu/7-travel-around-taiwan-enchanting-tainan-7-the-stair-way)
+This page is synchronized from the post: ['🚉  [輕旅行系列] 慵懶台南 #7 人間之梯 🚉  [Travel Around Taiwan] Enchanting Tainan #7 The stair way'](https://steemit.com/@deanliu/7-travel-around-taiwan-enchanting-tainan-7-the-stair-way)

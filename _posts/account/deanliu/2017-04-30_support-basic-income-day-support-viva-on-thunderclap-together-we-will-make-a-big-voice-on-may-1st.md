@@ -1,10 +1,11 @@
 
 ---
-title: "Support Basic Income Day, Support VIVA, on Thunderclap - Together We Will Make a Big Voice on May 1st!!"
+title: 'Support Basic Income Day, Support VIVA, on Thunderclap - Together We Will Make a Big Voice on May 1st!!'
 permlink: support-basic-income-day-support-viva-on-thunderclap-together-we-will-make-a-big-voice-on-may-1st
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-30 07:37:51
 categories:
 - universalbasicincome
@@ -13,7 +14,7 @@ tags:
 - ubi
 - viva
 - news
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Support Basic Income Day, Support VIVA, on Thunderclap - Together We Will Make a Big Voice on May 1st!!](https://steemit.com/@deanliu/support-basic-income-day-support-viva-on-thunderclap-together-we-will-make-a-big-voice-on-may-1st)
+This page is synchronized from the post: ['Support Basic Income Day, Support VIVA, on Thunderclap - Together We Will Make a Big Voice on May 1st!!'](https://steemit.com/@deanliu/support-basic-income-day-support-viva-on-thunderclap-together-we-will-make-a-big-voice-on-may-1st)

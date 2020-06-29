@@ -1,10 +1,11 @@
 
 ---
-title: "[MEME] Why Don't You Like ERC20 Tokens?"
+title: '[MEME] Why Don''t You Like ERC20 Tokens?'
 permlink: meme-why-don-t-you-like-erc20-tokens
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-22 14:45:27
 categories:
 - meme
@@ -13,7 +14,7 @@ tags:
 - funny
 - ethereum
 - erc20
-thumbnail: https://i.imgflip.com/1y1u2h.jpg
+thumbnail: 'https://i.imgflip.com/1y1u2h.jpg'
 sidebar:
     right:
         sticky: true
@@ -32,4 +33,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[MEME] Why Don't You Like ERC20 Tokens?](https://steemit.com/@deanliu/meme-why-don-t-you-like-erc20-tokens)
+This page is synchronized from the post: ['[MEME] Why Don''t You Like ERC20 Tokens?'](https://steemit.com/@deanliu/meme-why-don-t-you-like-erc20-tokens)

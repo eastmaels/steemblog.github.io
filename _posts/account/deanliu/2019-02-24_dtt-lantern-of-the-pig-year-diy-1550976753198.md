@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 豬年燈籠 Lantern of the Pig Year DIY"
+title: '[D&TT] 豬年燈籠 Lantern of the Pig Year DIY'
 permlink: dtt-lantern-of-the-pig-year-diy-1550976753198
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-24 02:52:33
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - toy
 - diy
 - cn
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/508f108246f772e8a7e3e8a4a0471173915eefc0.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/508f108246f772e8a7e3e8a4a0471173915eefc0.jpg'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 豬年燈籠 Lantern of the Pig Year DIY](https://steemit.com/@deanliu/dtt-lantern-of-the-pig-year-diy-1550976753198)
+This page is synchronized from the post: ['[D&TT] 豬年燈籠 Lantern of the Pig Year DIY'](https://steemit.com/@deanliu/dtt-lantern-of-the-pig-year-diy-1550976753198)

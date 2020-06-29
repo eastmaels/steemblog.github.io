@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #03] 邏輯判斷"
+title: '[DA series - Learn Python with Steem #03] 邏輯判斷'
 permlink: da-series-learn-python-with-steem-03
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-30 02:13:48
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -132,4 +133,4 @@ SyntaxError: invalid syntax
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #03] 邏輯判斷](https://steemit.com/@deanliu/da-series-learn-python-with-steem-03)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #03] 邏輯判斷'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-03)

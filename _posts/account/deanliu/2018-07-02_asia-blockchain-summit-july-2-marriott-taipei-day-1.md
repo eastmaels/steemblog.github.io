@@ -1,10 +1,11 @@
 
 ---
-title: "Asia Blockchain Summit July 2 @ Marriott, Taipei - Day 1"
+title: 'Asia Blockchain Summit July 2 @ Marriott, Taipei - Day 1'
 permlink: asia-blockchain-summit-july-2-marriott-taipei-day-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-02 11:27:21
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmUcRHkp47QzFbfmaGCnEKYNZHwNj3pCYcoUZiquqLnAcZ/DSC_5597.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmUcRHkp47QzFbfmaGCnEKYNZHwNj3pCYcoUZiquqLnAcZ/DSC_5597.JPG'
 sidebar:
     right:
         sticky: true
@@ -83,4 +84,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Asia Blockchain Summit July 2 @ Marriott, Taipei - Day 1](https://steemit.com/@deanliu/asia-blockchain-summit-july-2-marriott-taipei-day-1)
+This page is synchronized from the post: ['Asia Blockchain Summit July 2 @ Marriott, Taipei - Day 1'](https://steemit.com/@deanliu/asia-blockchain-summit-july-2-marriott-taipei-day-1)

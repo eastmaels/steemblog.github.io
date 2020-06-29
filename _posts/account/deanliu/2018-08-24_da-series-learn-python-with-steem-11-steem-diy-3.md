@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #11] Steem 小工具DIY #3 - 我的文章列表（二）"
+title: '[DA series - Learn Python with Steem #11] Steem 小工具DIY #3 - 我的文章列表（二）'
 permlink: da-series-learn-python-with-steem-11-steem-diy-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-24 01:30:33
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -207,4 +208,4 @@ for permlink in permlink_list:
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #11] Steem 小工具DIY #3 - 我的文章列表（二）](https://steemit.com/@deanliu/da-series-learn-python-with-steem-11-steem-diy-3)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #11] Steem 小工具DIY #3 - 我的文章列表（二）'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-11-steem-diy-3)

@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之題外話 ] 你是誰？The STEEM Identity"
+title: '[ Steem十講之題外話 ] 你是誰？The STEEM Identity'
 permlink: steem-the-steem-identity
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-26 04:49:27
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - steem
 - steem-10
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -120,4 +121,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之題外話 ] 你是誰？The STEEM Identity](https://steemit.com/@deanliu/steem-the-steem-identity)
+This page is synchronized from the post: ['[ Steem十講之題外話 ] 你是誰？The STEEM Identity'](https://steemit.com/@deanliu/steem-the-steem-identity)

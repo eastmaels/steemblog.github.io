@@ -1,10 +1,11 @@
 
 ---
-title: "A Good Time to Possess TQS - A translated Tradeqwik Voting Announcement (A charity element inside) [Tradeqwik交易所點讚政策更新！本文SBD捐助墨西哥地震災民]"
+title: 'A Good Time to Possess TQS - A translated Tradeqwik Voting Announcement (A charity element inside) [Tradeqwik交易所點讚政策更新！本文SBD捐助墨西哥地震災民]'
 permlink: a-good-time-to-possess-tqs-a-translated-tradeqwik-announcement-a-tentative-calculation-and-a-charity-element-tradeqwik-sbd
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-30 08:06:18
 categories:
 - tradeqwik
@@ -14,7 +15,7 @@ tags:
 - viva
 - cn-cryptocurrency
 - cn
-thumbnail: http://steemitimages.com/300x300/https://steemitimages.com/DQmcnmh5DQ4DsmVXoba3CuJJ2pdnceEpEXR6VyPdsHPDweK/image.png
+thumbnail: 'http://steemitimages.com/300x300/https://steemitimages.com/DQmcnmh5DQ4DsmVXoba3CuJJ2pdnceEpEXR6VyPdsHPDweK/image.png'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ Tradeqwik雖然是個交易所（以下簡稱暱稱為TQ），但同時也是一
 
 - - -
 
-This page is synchronized from the post: [A Good Time to Possess TQS - A translated Tradeqwik Voting Announcement (A charity element inside) [Tradeqwik交易所點讚政策更新！本文SBD捐助墨西哥地震災民]](https://steemit.com/@deanliu/a-good-time-to-possess-tqs-a-translated-tradeqwik-announcement-a-tentative-calculation-and-a-charity-element-tradeqwik-sbd)
+This page is synchronized from the post: ['A Good Time to Possess TQS - A translated Tradeqwik Voting Announcement (A charity element inside) [Tradeqwik交易所點讚政策更新！本文SBD捐助墨西哥地震災民]'](https://steemit.com/@deanliu/a-good-time-to-possess-tqs-a-translated-tradeqwik-announcement-a-tentative-calculation-and-a-charity-element-tradeqwik-sbd)

@@ -1,10 +1,11 @@
 
 ---
-title: "Please be careful not to use the new Steemit logo. I was gonna until right before I hit the post button 注意！請小心不要誤用新的Steemit Logo..."
+title: 'Please be careful not to use the new Steemit logo. I was gonna until right before I hit the post button 注意！請小心不要誤用新的Steemit Logo...'
 permlink: please-be-careful-not-to-use-the-new-steemit-logo-i-was-gonna-until-right-before-i-hit-the-post-button-steemit-logo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-01 04:12:27
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - logo
 - cn
 - copyright
-thumbnail: https://steemitimages.com/DQmbHLht6G5C1WTLXhUNTatVyGfkchYvkkSTMhrs76n1gWS/boy-1637188_640.jpg
+thumbnail: 'https://steemitimages.com/DQmbHLht6G5C1WTLXhUNTatVyGfkchYvkkSTMhrs76n1gWS/boy-1637188_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ This meme post is a collaboration of me and @nanosesame (a very very talented yo
 
 - - -
 
-This page is synchronized from the post: [Please be careful not to use the new Steemit logo. I was gonna until right before I hit the post button 注意！請小心不要誤用新的Steemit Logo...](https://steemit.com/@deanliu/please-be-careful-not-to-use-the-new-steemit-logo-i-was-gonna-until-right-before-i-hit-the-post-button-steemit-logo)
+This page is synchronized from the post: ['Please be careful not to use the new Steemit logo. I was gonna until right before I hit the post button 注意！請小心不要誤用新的Steemit Logo...'](https://steemit.com/@deanliu/please-be-careful-not-to-use-the-new-steemit-logo-i-was-gonna-until-right-before-i-hit-the-post-button-steemit-logo)

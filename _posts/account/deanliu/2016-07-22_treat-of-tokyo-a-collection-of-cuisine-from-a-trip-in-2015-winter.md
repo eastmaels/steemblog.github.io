@@ -1,10 +1,11 @@
 
 ---
-title: "Treat of Tokyo - a collection of cuisine from a trip in 2015 winter"
+title: 'Treat of Tokyo - a collection of cuisine from a trip in 2015 winter'
 permlink: treat-of-tokyo-a-collection-of-cuisine-from-a-trip-in-2015-winter
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-22 09:25:57
 categories:
 - cuisine
@@ -18,7 +19,7 @@ tags:
 - sushi
 - treat
 - travel
-thumbnail: http://i.imgsafe.org/1e1d9e984c.jpg
+thumbnail: 'http://i.imgsafe.org/1e1d9e984c.jpg'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Treat of Tokyo - a collection of cuisine from a trip in 2015 winter](https://steemit.com/@deanliu/treat-of-tokyo-a-collection-of-cuisine-from-a-trip-in-2015-winter)
+This page is synchronized from the post: ['Treat of Tokyo - a collection of cuisine from a trip in 2015 winter'](https://steemit.com/@deanliu/treat-of-tokyo-a-collection-of-cuisine-from-a-trip-in-2015-winter)

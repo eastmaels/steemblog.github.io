@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] Information, that is."
+title: '[DrugWars] Information, that is.'
 permlink: drugwars-information-that-is
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-17 03:42:30
 categories:
 - drugwars
@@ -13,7 +14,7 @@ tags:
 - battle
 - information
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmdWd3F9JY9VQ6TbuuFpXaswwPVatB4b8gAjJ1sCPvPWAG
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdWd3F9JY9VQ6TbuuFpXaswwPVatB4b8gAjJ1sCPvPWAG'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ Now, I need to head back to the game and send my scouts!
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] Information, that is.](https://steemit.com/@deanliu/drugwars-information-that-is)
+This page is synchronized from the post: ['[DrugWars] Information, that is.'](https://steemit.com/@deanliu/drugwars-information-that-is)

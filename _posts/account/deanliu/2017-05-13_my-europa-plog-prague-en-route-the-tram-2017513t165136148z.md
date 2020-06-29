@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Prague en Route - the Tram"
+title: 'My Europa Plog - Prague en Route - the Tram'
 permlink: my-europa-plog-prague-en-route-the-tram-2017513t165136148z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-13 14:51:39
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - life
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/ggQ5HQn.jpg
+thumbnail: 'https://i.imgur.com/ggQ5HQn.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Prague en Route - the Tram](https://steemit.com/@deanliu/my-europa-plog-prague-en-route-the-tram-2017513t165136148z)
+This page is synchronized from the post: ['My Europa Plog - Prague en Route - the Tram'](https://steemit.com/@deanliu/my-europa-plog-prague-en-route-the-tram-2017513t165136148z)

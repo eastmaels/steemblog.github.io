@@ -1,10 +1,11 @@
 
 ---
-title: "ZENCASH - The Most Secure Platform for Money, Messages, and Media"
+title: 'ZENCASH - The Most Secure Platform for Money, Messages, and Media'
 permlink: zencash-the-most-secure-platform-for-money-messages-and-media
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-13 04:36:30
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - zencash
 - blockchain
 - dag
-thumbnail: https://steemitimages.com/DQmUrnmQEBN9XSRMZhrBfbLzu1fV7bqVg4F9UfWE2PRRcdf/1.jpg
+thumbnail: 'https://steemitimages.com/DQmUrnmQEBN9XSRMZhrBfbLzu1fV7bqVg4F9UfWE2PRRcdf/1.jpg'
 sidebar:
     right:
         sticky: true
@@ -127,4 +128,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [ZENCASH - The Most Secure Platform for Money, Messages, and Media](https://steemit.com/@deanliu/zencash-the-most-secure-platform-for-money-messages-and-media)
+This page is synchronized from the post: ['ZENCASH - The Most Secure Platform for Money, Messages, and Media'](https://steemit.com/@deanliu/zencash-the-most-secure-platform-for-money-messages-and-media)

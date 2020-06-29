@@ -1,10 +1,11 @@
 
 ---
-title: "[來自東京在台北] Haritts Donuts 甜甜圈"
+title: '[來自東京在台北] Haritts Donuts 甜甜圈'
 permlink: haritts-donuts
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-03 23:57:48
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cn
 - taipei
 - japan
-thumbnail: https://cdn.steemitimages.com/DQmXNP3NGMdjKUzXigsQjNyU5XybGYNvTyHVv62zwyUhmEa/DSC_6431.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmXNP3NGMdjKUzXigsQjNyU5XybGYNvTyHVv62zwyUhmEa/DSC_6431.JPG'
 sidebar:
     right:
         sticky: true
@@ -88,4 +89,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[來自東京在台北] Haritts Donuts 甜甜圈](https://steemit.com/@deanliu/haritts-donuts)
+This page is synchronized from the post: ['[來自東京在台北] Haritts Donuts 甜甜圈'](https://steemit.com/@deanliu/haritts-donuts)

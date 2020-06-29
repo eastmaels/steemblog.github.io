@@ -1,10 +1,11 @@
 
 ---
-title: "Witnessing A New Era of Steem - Just Incredible ... Cheers! ^^"
+title: 'Witnessing A New Era of Steem - Just Incredible ... Cheers! ^^'
 permlink: witnessing-a-new-era-of-steem-just-incredible-cheers
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-03 14:16:00
 categories:
 - steem
@@ -13,7 +14,7 @@ tags:
 - news
 - history
 - cryptocurrency
-thumbnail: https://steemitimages.com/DQmaWJ7fXaeEdX6VRwobe8RrDPqgR18oTGL5fUpH3dNdauK/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-03%20%E4%B8%8B%E5%8D%889.55.25.png
+thumbnail: 'https://steemitimages.com/DQmaWJ7fXaeEdX6VRwobe8RrDPqgR18oTGL5fUpH3dNdauK/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-03%20%E4%B8%8B%E5%8D%889.55.25.png'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ See this all time chart below? Just so incredible ... Congratulations to everyon
 
 - - -
 
-This page is synchronized from the post: [Witnessing A New Era of Steem - Just Incredible ... Cheers! ^^](https://steemit.com/@deanliu/witnessing-a-new-era-of-steem-just-incredible-cheers)
+This page is synchronized from the post: ['Witnessing A New Era of Steem - Just Incredible ... Cheers! ^^'](https://steemit.com/@deanliu/witnessing-a-new-era-of-steem-just-incredible-cheers)

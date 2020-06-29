@@ -1,10 +1,11 @@
 
 ---
-title: "[Photo] Sup!?"
+title: '[Photo] Sup!?'
 permlink: photo-sup-vk0fcfkq
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-23 06:24:33
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - funny
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/3067d50d3f1bf62837cd218fa51dbe2536480c20.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/3067d50d3f1bf62837cd218fa51dbe2536480c20.jpg'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[Photo] Sup!?](https://steemit.com/@deanliu/photo-sup-vk0fcfkq)
+This page is synchronized from the post: ['[Photo] Sup!?'](https://steemit.com/@deanliu/photo-sup-vk0fcfkq)

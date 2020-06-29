@@ -1,10 +1,11 @@
 
 ---
-title: "[Vote Steem on NetCoins!!] 喔嗨呦，口泥揪娃！去投票吧～～"
+title: '[Vote Steem on NetCoins!!] 喔嗨呦，口泥揪娃！去投票吧～～'
 permlink: vote-steem-on-netcoins
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-18 00:44:24
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - exchange-blast
 - promo-steem
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmVYQ2moXR2kjpUQGZo3PL8Na8P4C437N5tjaj399soGor/puszta-2511846_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmVYQ2moXR2kjpUQGZo3PL8Na8P4C437N5tjaj399soGor/puszta-2511846_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ http://contest.gonetcoins.com/
 
 - - -
 
-This page is synchronized from the post: [[Vote Steem on NetCoins!!] 喔嗨呦，口泥揪娃！去投票吧～～](https://steemit.com/@deanliu/vote-steem-on-netcoins)
+This page is synchronized from the post: ['[Vote Steem on NetCoins!!] 喔嗨呦，口泥揪娃！去投票吧～～'](https://steemit.com/@deanliu/vote-steem-on-netcoins)

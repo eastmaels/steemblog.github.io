@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Market, peeking the way of life in Prague"
+title: 'My Europa Plog - Market, peeking the way of life in Prague'
 permlink: my-europa-plog-market-peeking-the-way-of-life-in-prague-2017519t23413332z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-19 21:41:06
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - market
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/5RtUEii.jpg
+thumbnail: 'https://i.imgur.com/5RtUEii.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Market, peeking the way of life in Prague](https://steemit.com/@deanliu/my-europa-plog-market-peeking-the-way-of-life-in-prague-2017519t23413332z)
+This page is synchronized from the post: ['My Europa Plog - Market, peeking the way of life in Prague'](https://steemit.com/@deanliu/my-europa-plog-market-peeking-the-way-of-life-in-prague-2017519t23413332z)

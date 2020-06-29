@@ -1,10 +1,11 @@
 
 ---
-title: "Hublot Smart Watch - The Big Bang Referee 2018 FIFA World Cup Russia"
+title: 'Hublot Smart Watch - The Big Bang Referee 2018 FIFA World Cup Russia'
 permlink: hublot-smart-watch-the-big-bang-referee-2018-fifa-world-cup-russia
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-14 00:00:48
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - hublot
 - sports
 - 2018fifaworldcup
-thumbnail: https://i.imgur.com/66JTVxx.jpg
+thumbnail: 'https://i.imgur.com/66JTVxx.jpg'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [Hublot Smart Watch - The Big Bang Referee 2018 FIFA World Cup Russia](https://steemit.com/@deanliu/hublot-smart-watch-the-big-bang-referee-2018-fifa-world-cup-russia)
+This page is synchronized from the post: ['Hublot Smart Watch - The Big Bang Referee 2018 FIFA World Cup Russia'](https://steemit.com/@deanliu/hublot-smart-watch-the-big-bang-referee-2018-fifa-world-cup-russia)

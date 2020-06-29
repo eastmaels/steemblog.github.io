@@ -1,10 +1,11 @@
 
 ---
-title: "人間一刻 #6 🕒 Moments of Life #6"
+title: '人間一刻 #6 🕒 Moments of Life #6'
 permlink: 6-moments-of-life-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-12 00:46:39
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - momentsoflife
 - writing
 - cn-reader
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [人間一刻 #6 🕒 Moments of Life #6](https://steemit.com/@deanliu/6-moments-of-life-6)
+This page is synchronized from the post: ['人間一刻 #6 🕒 Moments of Life #6'](https://steemit.com/@deanliu/6-moments-of-life-6)

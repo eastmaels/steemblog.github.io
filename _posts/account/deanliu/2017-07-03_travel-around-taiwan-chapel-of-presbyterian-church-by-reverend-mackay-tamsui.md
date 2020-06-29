@@ -1,10 +1,11 @@
 
 ---
-title: "🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui"
+title: '🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui'
 permlink: travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-03 04:26:06
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - history
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui](https://steemit.com/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui)
+This page is synchronized from the post: ['🚉   [輕旅行系列]  淡水，馬偕教堂  🚉    [Travel Around Taiwan] Chapel of Presbyterian Church by Reverend Mackay, Tamsui'](https://steemit.com/@deanliu/travel-around-taiwan-chapel-of-presbyterian-church-by-reverend-mackay-tamsui)

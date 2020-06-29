@@ -1,10 +1,11 @@
 
 ---
-title: "2017 Future Commerce Exhibition TAIPEI #3 - Virtual is King: Channel, Platform and Services 台北未來商務展"
+title: '2017 Future Commerce Exhibition TAIPEI #3 - Virtual is King: Channel, Platform and Services 台北未來商務展'
 permlink: 2017-future-commerce-exhibition-taipei-3-virtual-is-king-channel-platform-and-services
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-02 02:48:06
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - future
 - business
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [2017 Future Commerce Exhibition TAIPEI #3 - Virtual is King: Channel, Platform and Services 台北未來商務展](https://steemit.com/@deanliu/2017-future-commerce-exhibition-taipei-3-virtual-is-king-channel-platform-and-services)
+This page is synchronized from the post: ['2017 Future Commerce Exhibition TAIPEI #3 - Virtual is King: Channel, Platform and Services 台北未來商務展'](https://steemit.com/@deanliu/2017-future-commerce-exhibition-taipei-3-virtual-is-king-channel-platform-and-services)

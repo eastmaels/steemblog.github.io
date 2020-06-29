@@ -1,10 +1,11 @@
 
 ---
-title: "雞🐔 飛，狗 🐶 跳，逛眼科買糕點。Go to Miyahara Eye Hospital for ... cakes?"
+title: '雞🐔 飛，狗 🐶 跳，逛眼科買糕點。Go to Miyahara Eye Hospital for ... cakes?'
 permlink: go-to-miyahara-eye-hospital-for-cakes
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-18 00:20:09
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - food
 - newyear
 - cn
-thumbnail: https://steemitimages.com/DQmawErVxtxUJ1GTf8RhXjd2BD1Ab9hwm87DWFyJgkqUHtc/_20180217_230439.JPG
+thumbnail: 'https://steemitimages.com/DQmawErVxtxUJ1GTf8RhXjd2BD1Ab9hwm87DWFyJgkqUHtc/_20180217_230439.JPG'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ https://steemitimages.com/DQmXEemrVTkqW4MGrfSS9Au3zbmeUixnuYsWEP3x1Qwg3GT/_20180
 
 - - -
 
-This page is synchronized from the post: [雞🐔 飛，狗 🐶 跳，逛眼科買糕點。Go to Miyahara Eye Hospital for ... cakes?](https://steemit.com/@deanliu/go-to-miyahara-eye-hospital-for-cakes)
+This page is synchronized from the post: ['雞🐔 飛，狗 🐶 跳，逛眼科買糕點。Go to Miyahara Eye Hospital for ... cakes?'](https://steemit.com/@deanliu/go-to-miyahara-eye-hospital-for-cakes)

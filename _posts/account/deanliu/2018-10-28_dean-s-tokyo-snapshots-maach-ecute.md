@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 mAAch ecute 神田萬世橋"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 mAAch ecute 神田萬世橋'
 permlink: dean-s-tokyo-snapshots-maach-ecute
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-28 12:22:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - hipster
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQcNN6985GVFzxrqyABCcbwcWTQgkKiRTvVfVRMsPktUx/DSC_6712.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQcNN6985GVFzxrqyABCcbwcWTQgkKiRTvVfVRMsPktUx/DSC_6712.JPG'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 mAAch ecute 神田萬世橋](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-maach-ecute)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 mAAch ecute 神田萬世橋'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-maach-ecute)

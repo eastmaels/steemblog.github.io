@@ -1,10 +1,11 @@
 
 ---
-title: "👣 Follow Perry the Platypus to experience and live in Hualien Taiwan! 👣"
+title: '👣 Follow Perry the Platypus to experience and live in Hualien Taiwan! 👣'
 permlink: follow-perry-the-platypus-to-experience-and-live-in-hualien-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-26 08:12:48
 categories:
 - cartoon
@@ -14,7 +15,7 @@ tags:
 - perrytheplatypus
 - busy
 - travel
-thumbnail: https://steemitimages.com/DQmWi2Mcpb4rs3Zyh8n5HJacmGQZN3zMc8twSyVekadgQsF/DSC_5024.JPG
+thumbnail: 'https://steemitimages.com/DQmWi2Mcpb4rs3Zyh8n5HJacmGQZN3zMc8twSyVekadgQsF/DSC_5024.JPG'
 sidebar:
     right:
         sticky: true
@@ -114,4 +115,4 @@ Hmmm, maybe I should consider making more ***Perry the Platypus*** series in the
 
 - - -
 
-This page is synchronized from the post: [👣 Follow Perry the Platypus to experience and live in Hualien Taiwan! 👣](https://steemit.com/@deanliu/follow-perry-the-platypus-to-experience-and-live-in-hualien-taiwan)
+This page is synchronized from the post: ['👣 Follow Perry the Platypus to experience and live in Hualien Taiwan! 👣'](https://steemit.com/@deanliu/follow-perry-the-platypus-to-experience-and-live-in-hualien-taiwan)

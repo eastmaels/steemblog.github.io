@@ -1,10 +1,11 @@
 
 ---
-title: "Walk and Shoot - Sharing photos shot during our Beitou-Shipai walk 北投石牌散步拍攝分享"
+title: 'Walk and Shoot - Sharing photos shot during our Beitou-Shipai walk 北投石牌散步拍攝分享'
 permlink: walk-and-shoot-sharing-photos-shot-during-our-beitou-shipai-walk
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-18 09:36:27
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - travel
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmeupsDu3AiPhL5nt8MSszXggz3ysr5fQgxxadar6jqmgs/_20180118_165644.JPG
+thumbnail: 'https://steemitimages.com/DQmeupsDu3AiPhL5nt8MSszXggz3ysr5fQgxxadar6jqmgs/_20180118_165644.JPG'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ https://steemitimages.com/DQmNiid5Kqipt41FRHxkg1kKKx5krrs4SmMv4G9ukdbnCTG/DSC_36
 
 - - -
 
-This page is synchronized from the post: [Walk and Shoot - Sharing photos shot during our Beitou-Shipai walk 北投石牌散步拍攝分享](https://steemit.com/@deanliu/walk-and-shoot-sharing-photos-shot-during-our-beitou-shipai-walk)
+This page is synchronized from the post: ['Walk and Shoot - Sharing photos shot during our Beitou-Shipai walk 北投石牌散步拍攝分享'](https://steemit.com/@deanliu/walk-and-shoot-sharing-photos-shot-during-our-beitou-shipai-walk)

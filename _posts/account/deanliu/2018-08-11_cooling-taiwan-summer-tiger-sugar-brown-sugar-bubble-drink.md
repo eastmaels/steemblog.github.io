@@ -1,10 +1,11 @@
 
 ---
-title: "[Cooling Taiwan Summer] [台灣冰涼一夏] TIGER SUGAR 老虎堂 Brown Sugar Bubble Drink 黑糖珍珠鮮奶"
+title: '[Cooling Taiwan Summer] [台灣冰涼一夏] TIGER SUGAR 老虎堂 Brown Sugar Bubble Drink 黑糖珍珠鮮奶'
 permlink: cooling-taiwan-summer-tiger-sugar-brown-sugar-bubble-drink
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-11 02:16:06
 categories:
 - beverage
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmaUdB8UxqMJG8TNCZAoPfuEzopH3EHXzQjDvqYHiFgFsi/DSC_6056.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmaUdB8UxqMJG8TNCZAoPfuEzopH3EHXzQjDvqYHiFgFsi/DSC_6056.JPG'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ d
 
 - - -
 
-This page is synchronized from the post: [[Cooling Taiwan Summer] [台灣冰涼一夏] TIGER SUGAR 老虎堂 Brown Sugar Bubble Drink 黑糖珍珠鮮奶](https://steemit.com/@deanliu/cooling-taiwan-summer-tiger-sugar-brown-sugar-bubble-drink)
+This page is synchronized from the post: ['[Cooling Taiwan Summer] [台灣冰涼一夏] TIGER SUGAR 老虎堂 Brown Sugar Bubble Drink 黑糖珍珠鮮奶'](https://steemit.com/@deanliu/cooling-taiwan-summer-tiger-sugar-brown-sugar-bubble-drink)

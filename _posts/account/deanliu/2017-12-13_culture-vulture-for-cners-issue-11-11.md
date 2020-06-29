@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 11 ｜《文化讀癮．一週譯報》第11期：到書海裡過一夜"
+title: 'Culture Vulture for CNers Issue 11 ｜《文化讀癮．一週譯報》第11期：到書海裡過一夜'
 permlink: culture-vulture-for-cners-issue-11-11
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-13 09:13:33
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - culture
 - japan
 - travel
-thumbnail: https://steemitimages.com/DQmPFj9ua9LsGnSYMn1yCiUXnw9Sy1oRg4JWWAjfgM2QLSV/cv201712.jpg
+thumbnail: 'https://steemitimages.com/DQmPFj9ua9LsGnSYMn1yCiUXnw9Sy1oRg4JWWAjfgM2QLSV/cv201712.jpg'
 sidebar:
     right:
         sticky: true
@@ -100,4 +101,4 @@ CN區的朋友，大家好！
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 11 ｜《文化讀癮．一週譯報》第11期：到書海裡過一夜](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-11-11)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 11 ｜《文化讀癮．一週譯報》第11期：到書海裡過一夜'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-11-11)

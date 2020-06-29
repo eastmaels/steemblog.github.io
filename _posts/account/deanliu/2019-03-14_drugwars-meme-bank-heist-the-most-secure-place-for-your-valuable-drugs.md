@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars MEME] BANK HEIST - The Most Secure Place for Your Valuable Drugs! "
+title: '[DrugWars MEME] BANK HEIST - The Most Secure Place for Your Valuable Drugs! '
 permlink: drugwars-meme-bank-heist-the-most-secure-place-for-your-valuable-drugs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-14 03:44:09
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - meme
 - funny
 - busy
-thumbnail: https://i.imgflip.com/2vzqu1.jpg
+thumbnail: 'https://i.imgflip.com/2vzqu1.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars MEME] BANK HEIST - The Most Secure Place for Your Valuable Drugs! ](https://steemit.com/@deanliu/drugwars-meme-bank-heist-the-most-secure-place-for-your-valuable-drugs)
+This page is synchronized from the post: ['[DrugWars MEME] BANK HEIST - The Most Secure Place for Your Valuable Drugs! '](https://steemit.com/@deanliu/drugwars-meme-bank-heist-the-most-secure-place-for-your-valuable-drugs)

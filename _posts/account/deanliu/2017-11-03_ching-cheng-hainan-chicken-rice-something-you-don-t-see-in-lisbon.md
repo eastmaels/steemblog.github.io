@@ -1,10 +1,11 @@
 
 ---
-title: "Ching Cheng Hainan Chicken Rice - Something You Don't See in Lisbon 慶城海南雞飯，平民超級美食！"
+title: 'Ching Cheng Hainan Chicken Rice - Something You Don''t See in Lisbon 慶城海南雞飯，平民超級美食！'
 permlink: ching-cheng-hainan-chicken-rice-something-you-don-t-see-in-lisbon
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-03 13:13:33
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - restaurant
 - travel
 - cn
-thumbnail: https://steemitimages.com/DQmUzgojPNog7h9fEFJ6y9MkPDznUPNmHmEiSuuXZmXVYAS/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-11-03%20%E4%B8%8B%E5%8D%888.43.32.png
+thumbnail: 'https://steemitimages.com/DQmUzgojPNog7h9fEFJ6y9MkPDznUPNmHmEiSuuXZmXVYAS/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-11-03%20%E4%B8%8B%E5%8D%888.43.32.png'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ https://steemitimages.com/DQmZCUJFBiirdwNhtp7P5MMexu4yEMiYos4Xa8w7tyBYFNc/DSC_31
 
 - - -
 
-This page is synchronized from the post: [Ching Cheng Hainan Chicken Rice - Something You Don't See in Lisbon 慶城海南雞飯，平民超級美食！](https://steemit.com/@deanliu/ching-cheng-hainan-chicken-rice-something-you-don-t-see-in-lisbon)
+This page is synchronized from the post: ['Ching Cheng Hainan Chicken Rice - Something You Don''t See in Lisbon 慶城海南雞飯，平民超級美食！'](https://steemit.com/@deanliu/ching-cheng-hainan-chicken-rice-something-you-don-t-see-in-lisbon)

@@ -15,7 +15,7 @@ tags:
 - steem-engine
 - tokenization
 - cn
-thumbnail: https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmZFFUPmL3Ea4fUXMiz1NoiKr9TktR4eFPNmTEVNnfBoKV/image.png
+thumbnail: 'https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmZFFUPmL3Ea4fUXMiz1NoiKr9TktR4eFPNmTEVNnfBoKV/image.png'
 sidebar:
     right:
         sticky: true
@@ -48,4 +48,4 @@ JJM tokens，我是最近才持有，若說是買讚，是有點類似，但又�
 
 - - -
 
-This page is synchronized from the post: [[論Tokenization] Steem Engine發力下，Token用途大探索](https://steemit.com/@deanliu/tokenization-steem-engine-token)
+This page is synchronized from the post: ['[論Tokenization] Steem Engine發力下，Token用途大探索'](https://steemit.com/@deanliu/tokenization-steem-engine-token)

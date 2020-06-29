@@ -5,6 +5,7 @@ permlink: the-key-problem-that-no-one-solves-so-far
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-04 13:26:24
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - aaa
 - steem
 - blockchain
-thumbnail: https://cdn.steemitimages.com/DQmPc6WJenmepfUzBnBCoqyXcwATwSiDcP77JA7XxXFadKs/books-985954_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmPc6WJenmepfUzBnBCoqyXcwATwSiDcP77JA7XxXFadKs/books-985954_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ If not, then it's doom to fail. Steem can survive as a enabler of content platfo
 
 - - -
 
-This page is synchronized from the post: [The Key Problem that No One Solves So Far ...](https://steemit.com/@deanliu/the-key-problem-that-no-one-solves-so-far)
+This page is synchronized from the post: ['The Key Problem that No One Solves So Far ...'](https://steemit.com/@deanliu/the-key-problem-that-no-one-solves-so-far)

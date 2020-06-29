@@ -1,10 +1,11 @@
 
 ---
-title: "Now You Can Edit Your Old Posts within One Month 舊帖已經可以重新編輯了"
+title: 'Now You Can Edit Your Old Posts within One Month 舊帖已經可以重新編輯了'
 permlink: now-you-can-edit-your-old-posts-within-one-month
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-23 06:28:06
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - editing
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Now You Can Edit Your Old Posts within One Month 舊帖已經可以重新編輯了](https://steemit.com/@deanliu/now-you-can-edit-your-old-posts-within-one-month)
+This page is synchronized from the post: ['Now You Can Edit Your Old Posts within One Month 舊帖已經可以重新編輯了'](https://steemit.com/@deanliu/now-you-can-edit-your-old-posts-within-one-month)

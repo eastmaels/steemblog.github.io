@@ -1,10 +1,11 @@
 
 ---
-title: "✂ [MYOT - Make Your Own Toys!] Handmade Lantern!! ✂ [MYOT 自製玩具系列] 呦厚，中秋提燈籠啊！✂"
+title: '✂ [MYOT - Make Your Own Toys!] Handmade Lantern!! ✂ [MYOT 自製玩具系列] 呦厚，中秋提燈籠啊！✂'
 permlink: myot-make-your-own-toys-handmade-lantern-myot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-05 14:46:57
 categories:
 - myot
@@ -14,7 +15,7 @@ tags:
 - toy
 - art
 - mid-autumn
-thumbnail: https://steemitimages.com/DQmeAD7YwZKw3Z2SwiYYbjjiVe6UYQai548K3mZ8VWPfPJ5/IMG_20170211_163546.jpg
+thumbnail: 'https://steemitimages.com/DQmeAD7YwZKw3Z2SwiYYbjjiVe6UYQai548K3mZ8VWPfPJ5/IMG_20170211_163546.jpg'
 sidebar:
     right:
         sticky: true
@@ -148,4 +149,4 @@ Thank you for reading my #MYOT series! I encourage all of you to do the same and
 
 - - -
 
-This page is synchronized from the post: [✂ [MYOT - Make Your Own Toys!] Handmade Lantern!! ✂ [MYOT 自製玩具系列] 呦厚，中秋提燈籠啊！✂](https://steemit.com/@deanliu/myot-make-your-own-toys-handmade-lantern-myot)
+This page is synchronized from the post: ['✂ [MYOT - Make Your Own Toys!] Handmade Lantern!! ✂ [MYOT 自製玩具系列] 呦厚，中秋提燈籠啊！✂'](https://steemit.com/@deanliu/myot-make-your-own-toys-handmade-lantern-myot)

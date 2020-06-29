@@ -1,10 +1,11 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Eight / 七天黑白挑戰 － 第八天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Eight / 七天黑白挑戰 － 第八天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-eight-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-17 09:31:45
 categories:
 - sevendaybnwchallenge
@@ -14,7 +15,7 @@ tags:
 - contest
 - giveaway
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ See my quote from the *fake last* post:
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Eight / 七天黑白挑戰 － 第八天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-eight-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Eight / 七天黑白挑戰 － 第八天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-eight-by-deanliu)

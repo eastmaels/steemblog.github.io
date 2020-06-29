@@ -1,10 +1,11 @@
 
 ---
-title: "解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies"
+title: '解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies'
 permlink: price-feed-o-a-try-to-decipher-the-price-feed-and-sharing-with-cn-newbies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-10 07:46:12
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - sbd
 - witness
 - cn-programming
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -85,4 +86,4 @@ Dear English readers, I know there will be many asking but this post is not seri
 
 - - -
 
-This page is synchronized from the post: [解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies](https://steemit.com/@deanliu/price-feed-o-a-try-to-decipher-the-price-feed-and-sharing-with-cn-newbies)
+This page is synchronized from the post: ['解不開的黑箱－也來說一下Price Feed，呼應O小嬸「也来说一下帖子的奖励」A Try to Decipher the Price Feed and Sharing with CN Newbies'](https://steemit.com/@deanliu/price-feed-o-a-try-to-decipher-the-price-feed-and-sharing-with-cn-newbies)

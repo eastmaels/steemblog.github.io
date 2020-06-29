@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - What Dubai Airport has to offer .... (midnight transferring...)"
+title: 'My Europa Plog - What Dubai Airport has to offer .... (midnight transferring...)'
 permlink: my-europa-plog-what-dubai-airport-has-to-offer-midnight-transferring-2017523t32251965z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-22 23:22:54
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - travel
 - dubai
 - myeuropaplog
-thumbnail: https://i.imgur.com/HF6IleK.jpg
+thumbnail: 'https://i.imgur.com/HF6IleK.jpg'
 sidebar:
     right:
         sticky: true
@@ -28,4 +29,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - What Dubai Airport has to offer .... (midnight transferring...)](https://steemit.com/@deanliu/my-europa-plog-what-dubai-airport-has-to-offer-midnight-transferring-2017523t32251965z)
+This page is synchronized from the post: ['My Europa Plog - What Dubai Airport has to offer .... (midnight transferring...)'](https://steemit.com/@deanliu/my-europa-plog-what-dubai-airport-has-to-offer-midnight-transferring-2017523t32251965z)

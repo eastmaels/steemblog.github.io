@@ -1,10 +1,11 @@
 
 ---
-title: "The Cafe Overlooking Tokyo Train Station - Tokyo Cafe Lexcel 懷念東京的片刻"
+title: 'The Cafe Overlooking Tokyo Train Station - Tokyo Cafe Lexcel 懷念東京的片刻'
 permlink: the-cafe-overlooking-tokyo-train-station-tokyo-cafe-lexcel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-13 05:21:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cafe
 - tokyo
 - life
-thumbnail: https://steemitimages.com/DQmTjp1hCocWXepXn13a2bvNAwtKzVWeDbNf9ugEig3y8j2/IMG_20151104_164827.jpg
+thumbnail: 'https://steemitimages.com/DQmTjp1hCocWXepXn13a2bvNAwtKzVWeDbNf9ugEig3y8j2/IMG_20151104_164827.jpg'
 sidebar:
     right:
         sticky: true
@@ -87,4 +88,4 @@ https://steemitimages.com/DQmSUYZNGVS3Kt2DfsVFncH3fVFfkK3aEec7uxgR4Zew2kV/%E8%9E
 
 - - -
 
-This page is synchronized from the post: [The Cafe Overlooking Tokyo Train Station - Tokyo Cafe Lexcel 懷念東京的片刻](https://steemit.com/@deanliu/the-cafe-overlooking-tokyo-train-station-tokyo-cafe-lexcel)
+This page is synchronized from the post: ['The Cafe Overlooking Tokyo Train Station - Tokyo Cafe Lexcel 懷念東京的片刻'](https://steemit.com/@deanliu/the-cafe-overlooking-tokyo-train-station-tokyo-cafe-lexcel)

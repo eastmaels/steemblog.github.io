@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 國王的新衣"
+title: '[D&TT] 國王的新衣'
 permlink: zmhfu-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-20 01:52:57
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - family
 - life
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmTy4WEP1ScvuBCbWZSYuYM1YGuKMQScrEzLKtVLcbH6v6/photo6312196071111108720.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmTy4WEP1ScvuBCbWZSYuYM1YGuKMQScrEzLKtVLcbH6v6/photo6312196071111108720.jpg'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ TT沒有太大興趣，反而是最近在研究布料的媽媽，興致盎然。
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 國王的新衣](https://steemit.com/@deanliu/zmhfu-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 國王的新衣'](https://steemit.com/@deanliu/zmhfu-d-and-tt)

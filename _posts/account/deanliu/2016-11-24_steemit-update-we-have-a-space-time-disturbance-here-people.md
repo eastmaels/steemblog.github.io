@@ -1,10 +1,11 @@
 
 ---
-title: "Live Steemit Update!! We have a space-time disturbance here people!"
+title: 'Live Steemit Update!! We have a space-time disturbance here people!'
 permlink: steemit-update-we-have-a-space-time-disturbance-here-people
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-24 07:36:51
 categories:
 - news
@@ -12,7 +13,7 @@ tags:
 - news
 - steemit
 - mystery
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Live Steemit Update!! We have a space-time disturbance here people!](https://steemit.com/@deanliu/steemit-update-we-have-a-space-time-disturbance-here-people)
+This page is synchronized from the post: ['Live Steemit Update!! We have a space-time disturbance here people!'](https://steemit.com/@deanliu/steemit-update-we-have-a-space-time-disturbance-here-people)

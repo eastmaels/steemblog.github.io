@@ -1,10 +1,11 @@
 
 ---
-title: "🐦 寫在Steem騰飛之前  🐦 Oh the Eagle Flies High"
+title: '🐦 寫在Steem騰飛之前  🐦 Oh the Eagle Flies High'
 permlink: steem-oh-the-eagle-flies-high
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-28 07:27:33
 categories:
 - steem
@@ -13,7 +14,7 @@ tags:
 - blockchain
 - cryptocurrency
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🐦 寫在Steem騰飛之前  🐦 Oh the Eagle Flies High](https://steemit.com/@deanliu/steem-oh-the-eagle-flies-high)
+This page is synchronized from the post: ['🐦 寫在Steem騰飛之前  🐦 Oh the Eagle Flies High'](https://steemit.com/@deanliu/steem-oh-the-eagle-flies-high)

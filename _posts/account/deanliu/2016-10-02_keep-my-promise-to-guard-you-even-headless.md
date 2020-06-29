@@ -1,10 +1,11 @@
 
 ---
-title: "Keep my promise to guard you even headless 永恆的守護之諾"
+title: 'Keep my promise to guard you even headless 永恆的守護之諾'
 permlink: keep-my-promise-to-guard-you-even-headless
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-02 08:58:18
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - poem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Keep my promise to guard you even headless 永恆的守護之諾](https://steemit.com/@deanliu/keep-my-promise-to-guard-you-even-headless)
+This page is synchronized from the post: ['Keep my promise to guard you even headless 永恆的守護之諾'](https://steemit.com/@deanliu/keep-my-promise-to-guard-you-even-headless)

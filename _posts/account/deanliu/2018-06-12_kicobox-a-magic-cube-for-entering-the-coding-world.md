@@ -1,10 +1,11 @@
 
 ---
-title: "KicoBox - A Magic Cube for Entering the Coding World"
+title: 'KicoBox - A Magic Cube for Entering the Coding World'
 permlink: kicobox-a-magic-cube-for-entering-the-coding-world
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-12 07:30:03
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - programming
 - robot
 - education
-thumbnail: https://i.imgur.com/mvs0VLb.jpg
+thumbnail: 'https://i.imgur.com/mvs0VLb.jpg'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [KicoBox - A Magic Cube for Entering the Coding World](https://steemit.com/@deanliu/kicobox-a-magic-cube-for-entering-the-coding-world)
+This page is synchronized from the post: ['KicoBox - A Magic Cube for Entering the Coding World'](https://steemit.com/@deanliu/kicobox-a-magic-cube-for-entering-the-coding-world)

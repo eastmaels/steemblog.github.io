@@ -1,10 +1,11 @@
 
 ---
-title: "法式點心費南雪跟金融有什麼關係？Financier, A French almond cake"
+title: '法式點心費南雪跟金融有什麼關係？Financier, A French almond cake'
 permlink: financier-a-french-almond-cake
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-18 03:21:45
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - culture
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ https://steemitimages.com/DQmQwrM9kW36Sk2cykUvX9KBjvBTrvgBN7jyL5WexscRuiz/_20171
 
 - - -
 
-This page is synchronized from the post: [法式點心費南雪跟金融有什麼關係？Financier, A French almond cake](https://steemit.com/@deanliu/financier-a-french-almond-cake)
+This page is synchronized from the post: ['法式點心費南雪跟金融有什麼關係？Financier, A French almond cake'](https://steemit.com/@deanliu/financier-a-french-almond-cake)

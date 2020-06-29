@@ -1,10 +1,11 @@
 
 ---
-title: "Santal 29 - A Cosy Thai Restaurant in Taipei"
+title: 'Santal 29 - A Cosy Thai Restaurant in Taipei'
 permlink: santal-29-a-cosy-thai-restaurant-in-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-28 10:52:09
 categories:
 - food
@@ -13,7 +14,7 @@ tags:
 - cuisine
 - restaurant
 - cn
-thumbnail: https://steemitimages.com/DQmemD46B7qhcqDsfrmWJqMCDhdSQNhjNLxsffexxwqmyiu/DSC_4569.JPG
+thumbnail: 'https://steemitimages.com/DQmemD46B7qhcqDsfrmWJqMCDhdSQNhjNLxsffexxwqmyiu/DSC_4569.JPG'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ CN區朋友們，這是台北一間風格非常清新的泰式餐廳。隱身在
 
 - - -
 
-This page is synchronized from the post: [Santal 29 - A Cosy Thai Restaurant in Taipei](https://steemit.com/@deanliu/santal-29-a-cosy-thai-restaurant-in-taipei)
+This page is synchronized from the post: ['Santal 29 - A Cosy Thai Restaurant in Taipei'](https://steemit.com/@deanliu/santal-29-a-cosy-thai-restaurant-in-taipei)

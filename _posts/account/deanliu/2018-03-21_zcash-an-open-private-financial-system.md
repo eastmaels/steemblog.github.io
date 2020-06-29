@@ -1,10 +1,11 @@
 
 ---
-title: "ZCash - An Open, Private Financial System."
+title: 'ZCash - An Open, Private Financial System.'
 permlink: zcash-an-open-private-financial-system
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-21 03:05:27
 categories:
 - zcash
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - blockchain
 - zero-knowledge
-thumbnail: https://steemitimages.com/DQmc9UT1Ea5SVCFMtpzBcn4hDdJKPDzpBB4iS2rWUP7V1Gw/maxresdefault.jpg
+thumbnail: 'https://steemitimages.com/DQmc9UT1Ea5SVCFMtpzBcn4hDdJKPDzpBB4iS2rWUP7V1Gw/maxresdefault.jpg'
 sidebar:
     right:
         sticky: true
@@ -125,4 +126,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [ZCash - An Open, Private Financial System.](https://steemit.com/@deanliu/zcash-an-open-private-financial-system)
+This page is synchronized from the post: ['ZCash - An Open, Private Financial System.'](https://steemit.com/@deanliu/zcash-an-open-private-financial-system)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 幸楽苑 Kourakuen"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 幸楽苑 Kourakuen'
 permlink: dean-s-tokyo-snapshots-kourakuen
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-18 12:29:09
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - busy
 - food
-thumbnail: https://cdn.steemitimages.com/DQmYwmtePXeBXUXYBRUPVDNikY2i7R3hNrtGj59opoLobw3/DSC_6122.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmYwmtePXeBXUXYBRUPVDNikY2i7R3hNrtGj59opoLobw3/DSC_6122.JPG'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 幸楽苑 Kourakuen](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kourakuen)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 幸楽苑 Kourakuen'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kourakuen)

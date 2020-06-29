@@ -1,10 +1,11 @@
 
 ---
-title: "分享兩句最近看到的好句  Two great quotes I've seen lately regarding bitcoin and blockchain I suppose"
+title: '分享兩句最近看到的好句  Two great quotes I''ve seen lately regarding bitcoin and blockchain I suppose'
 permlink: two-great-quotes-i-ve-seen-lately-regarding-bitcoin-and-blockchain-i-suppose
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-12 09:38:18
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - twitter
 - quote
 - cn
-thumbnail: https://steemitimages.com/DQmWvc8JodEAzhUyR27LH2kfq6uxokk5v6CP3MEiBNLTrL1/image.png
+thumbnail: 'https://steemitimages.com/DQmWvc8JodEAzhUyR27LH2kfq6uxokk5v6CP3MEiBNLTrL1/image.png'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ This post is to share two excellent quotes I've encountered lately from some sou
 
 - - -
 
-This page is synchronized from the post: [分享兩句最近看到的好句  Two great quotes I've seen lately regarding bitcoin and blockchain I suppose](https://steemit.com/@deanliu/two-great-quotes-i-ve-seen-lately-regarding-bitcoin-and-blockchain-i-suppose)
+This page is synchronized from the post: ['分享兩句最近看到的好句  Two great quotes I''ve seen lately regarding bitcoin and blockchain I suppose'](https://steemit.com/@deanliu/two-great-quotes-i-ve-seen-lately-regarding-bitcoin-and-blockchain-i-suppose)

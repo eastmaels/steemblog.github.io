@@ -1,10 +1,11 @@
 
 ---
-title: "Be advised that ICO isn't really Initial Coin Offering."
+title: 'Be advised that ICO isn''t really Initial Coin Offering.'
 permlink: be-advised-that-ico-isn-t-really-initial-coin-offering
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-02 13:49:24
 categories:
 - ico
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - investment
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ ICO actually sounds more prestigious than it really is. You, as an early ordinar
 
 - - -
 
-This page is synchronized from the post: [Be advised that ICO isn't really Initial Coin Offering.](https://steemit.com/@deanliu/be-advised-that-ico-isn-t-really-initial-coin-offering)
+This page is synchronized from the post: ['Be advised that ICO isn''t really Initial Coin Offering.'](https://steemit.com/@deanliu/be-advised-that-ico-isn-t-really-initial-coin-offering)

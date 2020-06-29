@@ -1,10 +1,11 @@
 
 ---
-title: "Where's Vitalik?"
+title: 'Where''s Vitalik?'
 permlink: where-s-vitalik
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-01 11:35:30
 categories:
 - funny
@@ -12,7 +13,7 @@ tags:
 - funny
 - life
 - ethereum
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Where's Vitalik?](https://steemit.com/@deanliu/where-s-vitalik)
+This page is synchronized from the post: ['Where''s Vitalik?'](https://steemit.com/@deanliu/where-s-vitalik)

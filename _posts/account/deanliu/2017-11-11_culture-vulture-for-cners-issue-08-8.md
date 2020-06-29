@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 08 ｜《文化读瘾．一周译报》第8期：在喜马拉雅山脉彻夜欢舞"
+title: 'Culture Vulture for CNers Issue 08 ｜《文化读瘾．一周译报》第8期：在喜马拉雅山脉彻夜欢舞'
 permlink: culture-vulture-for-cners-issue-08-8
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-11 13:41:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - religion
-thumbnail: https://steemitimages.com/DQmdzqEquVTTyG8FTKWpzh3CAiQEuuYvm5cyFm6GLzMn3N3/CV08.jpg
+thumbnail: 'https://steemitimages.com/DQmdzqEquVTTyG8FTKWpzh3CAiQEuuYvm5cyFm6GLzMn3N3/CV08.jpg'
 sidebar:
     right:
         sticky: true
@@ -103,4 +104,4 @@ Beeth是跨村庄的聚会节庆，在至少两个或更多的村子之间轮流
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 08 ｜《文化读瘾．一周译报》第8期：在喜马拉雅山脉彻夜欢舞](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-08-8)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 08 ｜《文化读瘾．一周译报》第8期：在喜马拉雅山脉彻夜欢舞'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-08-8)

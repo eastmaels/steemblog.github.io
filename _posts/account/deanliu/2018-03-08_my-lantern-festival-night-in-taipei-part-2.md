@@ -1,10 +1,11 @@
 
 ---
-title: "再看花燈，再猜燈謎！My Lantern Festival Night in Taipei - Part 2"
+title: '再看花燈，再猜燈謎！My Lantern Festival Night in Taipei - Part 2'
 permlink: my-lantern-festival-night-in-taipei-part-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-08 10:11:45
 categories:
 - culture
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - riddle
-thumbnail: https://steemitimages.com/DQmaEhFbUkAH3WoArH1ZLibUAq8dwvAzRUrhQh2tuq2iYDr/DSC_4509.JPG
+thumbnail: 'https://steemitimages.com/DQmaEhFbUkAH3WoArH1ZLibUAq8dwvAzRUrhQh2tuq2iYDr/DSC_4509.JPG'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ In this lantern section that we bumped into casually, here seemed to show the la
 
 - - -
 
-This page is synchronized from the post: [再看花燈，再猜燈謎！My Lantern Festival Night in Taipei - Part 2](https://steemit.com/@deanliu/my-lantern-festival-night-in-taipei-part-2)
+This page is synchronized from the post: ['再看花燈，再猜燈謎！My Lantern Festival Night in Taipei - Part 2'](https://steemit.com/@deanliu/my-lantern-festival-night-in-taipei-part-2)

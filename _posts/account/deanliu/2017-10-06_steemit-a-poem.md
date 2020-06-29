@@ -1,10 +1,11 @@
 
 ---
-title: "詩一首：白駒過隙，滴流穿石－寫於Steemit時光暫留之日  A Poem"
+title: '詩一首：白駒過隙，滴流穿石－寫於Steemit時光暫留之日  A Poem'
 permlink: steemit-a-poem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-06 13:10:15
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - poem
 - cn-reader
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -125,4 +126,4 @@ xiaohui
 
 - - -
 
-This page is synchronized from the post: [詩一首：白駒過隙，滴流穿石－寫於Steemit時光暫留之日  A Poem](https://steemit.com/@deanliu/steemit-a-poem)
+This page is synchronized from the post: ['詩一首：白駒過隙，滴流穿石－寫於Steemit時光暫留之日  A Poem'](https://steemit.com/@deanliu/steemit-a-poem)

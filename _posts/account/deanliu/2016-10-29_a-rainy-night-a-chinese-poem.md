@@ -1,10 +1,11 @@
 
 ---
-title: "雨夜 － 隨筆詩一首  A Rainy Night - a Chinese poem"
+title: '雨夜 － 隨筆詩一首  A Rainy Night - a Chinese poem'
 permlink: a-rainy-night-a-chinese-poem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-29 06:00:54
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - poetry
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [雨夜 － 隨筆詩一首  A Rainy Night - a Chinese poem](https://steemit.com/@deanliu/a-rainy-night-a-chinese-poem)
+This page is synchronized from the post: ['雨夜 － 隨筆詩一首  A Rainy Night - a Chinese poem'](https://steemit.com/@deanliu/a-rainy-night-a-chinese-poem)

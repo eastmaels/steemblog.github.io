@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 組裝吹氣式樂器"
+title: '[D&TT] 組裝吹氣式樂器'
 permlink: 3aixsv-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-25 13:08:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - myot
 - toy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/018f65d3a02bafd03b61d3c804bba3ccbf19e9ae.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/018f65d3a02bafd03b61d3c804bba3ccbf19e9ae.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 組裝吹氣式樂器](https://steemit.com/@deanliu/3aixsv-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 組裝吹氣式樂器'](https://steemit.com/@deanliu/3aixsv-d-and-tt)

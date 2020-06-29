@@ -1,10 +1,11 @@
 
 ---
-title: "Huntzz - hunt treasure everywhere!"
+title: 'Huntzz - hunt treasure everywhere!'
 permlink: huntzz-hunt-treasure-everywhere
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-24 15:02:09
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - treasure
 - adventure
 - fun
-thumbnail: https://i.imgur.com/G8Yo11c.png
+thumbnail: 'https://i.imgur.com/G8Yo11c.png'
 sidebar:
     right:
         sticky: true
@@ -85,4 +86,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [Huntzz - hunt treasure everywhere!](https://steemit.com/@deanliu/huntzz-hunt-treasure-everywhere)
+This page is synchronized from the post: ['Huntzz - hunt treasure everywhere!'](https://steemit.com/@deanliu/huntzz-hunt-treasure-everywhere)

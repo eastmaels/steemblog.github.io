@@ -1,10 +1,11 @@
 
 ---
-title: "牆的訊息・Messages of the Wall"
+title: '牆的訊息・Messages of the Wall'
 permlink: messages-of-the-wall
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-23 02:14:48
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - life
 - photography
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmPpCxfHzWATNzjGi6G639QNZbcGXvi2sbnruHWHkDQjCb/_20180722_181814.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmPpCxfHzWATNzjGi6G639QNZbcGXvi2sbnruHWHkDQjCb/_20180722_181814.JPG'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [牆的訊息・Messages of the Wall](https://steemit.com/@deanliu/messages-of-the-wall)
+This page is synchronized from the post: ['牆的訊息・Messages of the Wall'](https://steemit.com/@deanliu/messages-of-the-wall)

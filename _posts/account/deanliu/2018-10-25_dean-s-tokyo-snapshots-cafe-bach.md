@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Cafe Bach"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Cafe Bach'
 permlink: dean-s-tokyo-snapshots-cafe-bach
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-25 12:18:00
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmec84pDxSzf8n7vyQbJUjEF3wDUktpaiQJ7Wn8dJDpdiQ/DSC_6376.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmec84pDxSzf8n7vyQbJUjEF3wDUktpaiQJ7Wn8dJDpdiQ/DSC_6376.JPG'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Cafe Bach](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-cafe-bach)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Cafe Bach'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-cafe-bach)

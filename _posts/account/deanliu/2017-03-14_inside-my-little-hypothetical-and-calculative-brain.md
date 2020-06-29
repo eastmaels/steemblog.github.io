@@ -1,10 +1,11 @@
 
 ---
-title: "inside my little hypothetical and calculative brain ..."
+title: 'inside my little hypothetical and calculative brain ...'
 permlink: inside-my-little-hypothetical-and-calculative-brain
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-14 05:52:33
 categories:
 - funny
@@ -12,7 +13,7 @@ tags:
 - funny
 - steemit
 - experiment
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [inside my little hypothetical and calculative brain ...](https://steemit.com/@deanliu/inside-my-little-hypothetical-and-calculative-brain)
+This page is synchronized from the post: ['inside my little hypothetical and calculative brain ...'](https://steemit.com/@deanliu/inside-my-little-hypothetical-and-calculative-brain)

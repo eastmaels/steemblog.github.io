@@ -1,10 +1,11 @@
 
 ---
-title: "[Blockchain ABC] Centralization v Decentralization"
+title: '[Blockchain ABC] Centralization v Decentralization'
 permlink: blockchain-abc-centralization-v-decentralization
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-11 07:52:21
 categories:
 - blockchain-abc
@@ -14,7 +15,7 @@ tags:
 - meme
 - decentralization
 - system
-thumbnail: https://cdn.steemitimages.com/DQmf6DEY8wPtELDp7hQcvykmpLtYcJfEvYfBWPtvezLqTrB/marching-band-1916503_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmf6DEY8wPtELDp7hQcvykmpLtYcJfEvYfBWPtvezLqTrB/marching-band-1916503_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Blockchain ABC] Centralization v Decentralization](https://steemit.com/@deanliu/blockchain-abc-centralization-v-decentralization)
+This page is synchronized from the post: ['[Blockchain ABC] Centralization v Decentralization'](https://steemit.com/@deanliu/blockchain-abc-centralization-v-decentralization)

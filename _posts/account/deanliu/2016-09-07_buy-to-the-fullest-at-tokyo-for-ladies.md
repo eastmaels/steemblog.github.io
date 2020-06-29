@@ -1,10 +1,11 @@
 
 ---
-title: "Buy to the fullest at Tokyo ... For ladies..."
+title: 'Buy to the fullest at Tokyo ... For ladies...'
 permlink: buy-to-the-fullest-at-tokyo-for-ladies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-07 05:59:00
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - tokyo
 - travel
 - ja
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Buy to the fullest at Tokyo ... For ladies...](https://steemit.com/@deanliu/buy-to-the-fullest-at-tokyo-for-ladies)
+This page is synchronized from the post: ['Buy to the fullest at Tokyo ... For ladies...'](https://steemit.com/@deanliu/buy-to-the-fullest-at-tokyo-for-ladies)

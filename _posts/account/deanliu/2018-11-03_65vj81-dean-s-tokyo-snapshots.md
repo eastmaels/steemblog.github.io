@@ -1,10 +1,11 @@
 
 ---
-title: "在日本外食的困擾 🍙 Dean's Tokyo Snapshots 🍙"
+title: '在日本外食的困擾 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: 65vj81-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-03 02:43:24
 categories:
 - restaurant
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQGQERYAbDxBzmWbnKZALVRUJTybw4T596ePf2iU19ZuR/DSC_5870.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQGQERYAbDxBzmWbnKZALVRUJTybw4T596ePf2iU19ZuR/DSC_5870.JPG'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [在日本外食的困擾 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/65vj81-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['在日本外食的困擾 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/65vj81-dean-s-tokyo-snapshots)

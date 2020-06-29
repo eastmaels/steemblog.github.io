@@ -1,10 +1,11 @@
 
 ---
-title: "TEZOS: The Self Amending Smart Contract Platform."
+title: 'TEZOS: The Self Amending Smart Contract Platform.'
 permlink: tezos-the-self-amending-smart-contract-platform
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-05 14:37:00
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - tezos
 - baking
 - xtz
-thumbnail: https://steemitimages.com/DQmXfCuLYtK1KRmGzuiw3jBJsP4a18tqrWnCMhYUmZmdv5M/tcp-paris_dusk__tcp_large.jpg
+thumbnail: 'https://steemitimages.com/DQmXfCuLYtK1KRmGzuiw3jBJsP4a18tqrWnCMhYUmZmdv5M/tcp-paris_dusk__tcp_large.jpg'
 sidebar:
     right:
         sticky: true
@@ -102,4 +103,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [TEZOS: The Self Amending Smart Contract Platform.](https://steemit.com/@deanliu/tezos-the-self-amending-smart-contract-platform)
+This page is synchronized from the post: ['TEZOS: The Self Amending Smart Contract Platform.'](https://steemit.com/@deanliu/tezos-the-self-amending-smart-contract-platform)

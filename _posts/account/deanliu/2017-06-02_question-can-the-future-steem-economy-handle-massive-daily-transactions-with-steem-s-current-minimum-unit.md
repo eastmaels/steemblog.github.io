@@ -1,10 +1,11 @@
 
 ---
-title: "Question! Can the future Steem economy handle massive daily transactions with Steem's current minimum unit?"
+title: 'Question! Can the future Steem economy handle massive daily transactions with Steem''s current minimum unit?'
 permlink: question-can-the-future-steem-economy-handle-massive-daily-transactions-with-steem-s-current-minimum-unit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-02 07:01:03
 categories:
 - steem
@@ -13,7 +14,7 @@ tags:
 - bitcoin
 - cryptocurrency
 - money
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ If we are to have a smaller minimum unit (I don't know how...), maybe it's time 
 
 - - -
 
-This page is synchronized from the post: [Question! Can the future Steem economy handle massive daily transactions with Steem's current minimum unit?](https://steemit.com/@deanliu/question-can-the-future-steem-economy-handle-massive-daily-transactions-with-steem-s-current-minimum-unit)
+This page is synchronized from the post: ['Question! Can the future Steem economy handle massive daily transactions with Steem''s current minimum unit?'](https://steemit.com/@deanliu/question-can-the-future-steem-economy-handle-massive-daily-transactions-with-steem-s-current-minimum-unit)

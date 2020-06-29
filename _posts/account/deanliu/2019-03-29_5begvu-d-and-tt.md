@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 畫爸媽，送爸媽"
+title: '[D&TT] 畫爸媽，送爸媽'
 permlink: 5begvu-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-29 03:14:45
 categories:
 - deantt
@@ -13,7 +14,7 @@ tags:
 - cn
 - drawing
 - family
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/45e41f0069ab2f3f0552afc454671ee96fa12853.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/45e41f0069ab2f3f0552afc454671ee96fa12853.jpg'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 畫爸媽，送爸媽](https://steemit.com/@deanliu/5begvu-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 畫爸媽，送爸媽'](https://steemit.com/@deanliu/5begvu-d-and-tt)

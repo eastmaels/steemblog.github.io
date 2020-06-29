@@ -1,10 +1,11 @@
 
 ---
-title: "Butterfly kids and blue bugs ... amazing insect world  微觀的春蟲世界"
+title: 'Butterfly kids and blue bugs ... amazing insect world  微觀的春蟲世界'
 permlink: butterfly-kids-and-blue-bugs-amazing-insect-world
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-22 07:04:42
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - bugs
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Butterfly kids and blue bugs ... amazing insect world  微觀的春蟲世界](https://steemit.com/@deanliu/butterfly-kids-and-blue-bugs-amazing-insect-world)
+This page is synchronized from the post: ['Butterfly kids and blue bugs ... amazing insect world  微觀的春蟲世界'](https://steemit.com/@deanliu/butterfly-kids-and-blue-bugs-amazing-insect-world)

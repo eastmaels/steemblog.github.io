@@ -1,10 +1,11 @@
 
 ---
-title: "Number of posts shown on users' page should be re-considered"
+title: 'Number of posts shown on users'' page should be re-considered'
 permlink: number-of-posts-shown-on-users-page-should-be-re-considered
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-11 05:38:09
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - post
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Number of posts shown on users' page should be re-considered](https://steemit.com/@deanliu/number-of-posts-shown-on-users-page-should-be-re-considered)
+This page is synchronized from the post: ['Number of posts shown on users'' page should be re-considered'](https://steemit.com/@deanliu/number-of-posts-shown-on-users-page-should-be-re-considered)

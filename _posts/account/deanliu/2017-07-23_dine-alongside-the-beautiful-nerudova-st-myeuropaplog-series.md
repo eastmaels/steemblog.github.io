@@ -1,10 +1,11 @@
 
 ---
-title: "🍴 Dine Alongside the Beautiful Nerudova St 🍴 布拉格聶魯達街邊上的一餐 🍴 #myeuropaplog series 歐洲行旅照片記錄系列"
+title: '🍴 Dine Alongside the Beautiful Nerudova St 🍴 布拉格聶魯達街邊上的一餐 🍴 #myeuropaplog series 歐洲行旅照片記錄系列'
 permlink: dine-alongside-the-beautiful-nerudova-st-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-23 09:26:39
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - europe
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -85,4 +86,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🍴 Dine Alongside the Beautiful Nerudova St 🍴 布拉格聶魯達街邊上的一餐 🍴 #myeuropaplog series 歐洲行旅照片記錄系列](https://steemit.com/@deanliu/dine-alongside-the-beautiful-nerudova-st-myeuropaplog-series)
+This page is synchronized from the post: ['🍴 Dine Alongside the Beautiful Nerudova St 🍴 布拉格聶魯達街邊上的一餐 🍴 #myeuropaplog series 歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/dine-alongside-the-beautiful-nerudova-st-myeuropaplog-series)

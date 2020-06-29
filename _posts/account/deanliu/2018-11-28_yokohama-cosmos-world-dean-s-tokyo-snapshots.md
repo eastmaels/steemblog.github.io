@@ -1,10 +1,11 @@
 
 ---
-title: "Yokohama Cosmos World 🍙 Dean's Tokyo Snapshots 🍙 歡樂的橫濱太空世界"
+title: 'Yokohama Cosmos World 🍙 Dean''s Tokyo Snapshots 🍙 歡樂的橫濱太空世界'
 permlink: yokohama-cosmos-world-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-28 11:25:12
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmc2UbM2cgE8dkkFaVPE79xvzjARdanTwmMJnr8FtTvFbG/DSC_7469.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmc2UbM2cgE8dkkFaVPE79xvzjARdanTwmMJnr8FtTvFbG/DSC_7469.JPG'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [Yokohama Cosmos World 🍙 Dean's Tokyo Snapshots 🍙 歡樂的橫濱太空世界](https://steemit.com/@deanliu/yokohama-cosmos-world-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['Yokohama Cosmos World 🍙 Dean''s Tokyo Snapshots 🍙 歡樂的橫濱太空世界'](https://steemit.com/@deanliu/yokohama-cosmos-world-dean-s-tokyo-snapshots)

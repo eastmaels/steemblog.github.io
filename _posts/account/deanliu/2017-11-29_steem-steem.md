@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之第二講 ] Steem之鏈"
+title: '[ Steem十講之第二講 ] Steem之鏈'
 permlink: steem-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-29 03:34:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - steem-10
 - blockchain
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之第二講 ] Steem之鏈](https://steemit.com/@deanliu/steem-steem)
+This page is synchronized from the post: ['[ Steem十講之第二講 ] Steem之鏈'](https://steemit.com/@deanliu/steem-steem)

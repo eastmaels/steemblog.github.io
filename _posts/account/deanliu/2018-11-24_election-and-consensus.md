@@ -1,10 +1,11 @@
 
 ---
-title: "Election and consensus"
+title: 'Election and consensus'
 permlink: election-and-consensus
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-24 07:58:30
 categories:
 - election
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - governance
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmXQHStTdnEGoWWr8xL9YrNJ7U6gXx74BpRLvpHf7n54kg
+thumbnail: 'https://ipfs.busy.org/ipfs/QmXQHStTdnEGoWWr8xL9YrNJ7U6gXx74BpRLvpHf7n54kg'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ But, for now, voting for the candidate you like, is still the best way to secure
 
 - - -
 
-This page is synchronized from the post: [Election and consensus](https://steemit.com/@deanliu/election-and-consensus)
+This page is synchronized from the post: ['Election and consensus'](https://steemit.com/@deanliu/election-and-consensus)

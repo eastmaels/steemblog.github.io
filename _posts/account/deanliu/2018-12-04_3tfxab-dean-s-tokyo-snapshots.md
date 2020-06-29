@@ -1,10 +1,11 @@
 
 ---
-title: "時間度量：一個月 🍙 Dean's Tokyo Snapshots 🍙"
+title: '時間度量：一個月 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: 3tfxab-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-04 13:02:42
 categories:
 - time
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/7bf306acaef3ea9d16882c3cc94421cc62693a4d.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/7bf306acaef3ea9d16882c3cc94421cc62693a4d.png'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [時間度量：一個月 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/3tfxab-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['時間度量：一個月 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/3tfxab-dean-s-tokyo-snapshots)

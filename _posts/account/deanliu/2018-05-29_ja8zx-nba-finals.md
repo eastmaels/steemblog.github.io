@@ -1,10 +1,11 @@
 
 ---
-title: "[NBA Finals] 火箭惜敗 又是勇士戰騎士"
+title: '[NBA Finals] 火箭惜敗 又是勇士戰騎士'
 permlink: ja8zx-nba-finals
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-29 07:21:21
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - nba-finals
-thumbnail: https://cdn.steemitimages.com/DQmZW265x7WUurmhehZn8aWpW3RQgEZBh32AD3XegB2ZVaX/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmZW265x7WUurmhehZn8aWpW3RQgEZBh32AD3XegB2ZVaX/image.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ https://youtu.be/Jb8RX8b3b30
 
 - - -
 
-This page is synchronized from the post: [[NBA Finals] 火箭惜敗 又是勇士戰騎士](https://steemit.com/@deanliu/ja8zx-nba-finals)
+This page is synchronized from the post: ['[NBA Finals] 火箭惜敗 又是勇士戰騎士'](https://steemit.com/@deanliu/ja8zx-nba-finals)

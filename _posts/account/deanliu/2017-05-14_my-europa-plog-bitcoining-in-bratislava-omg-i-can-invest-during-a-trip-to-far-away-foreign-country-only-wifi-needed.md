@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Bitcoining in Bratislava - OMG I can INVEST! during a trip to far-away foreign country. Only WIFI needed."
+title: 'My Europa Plog - Bitcoining in Bratislava - OMG I can INVEST! during a trip to far-away foreign country. Only WIFI needed.'
 permlink: my-europa-plog-bitcoining-in-bratislava-omg-i-can-invest-during-a-trip-to-far-away-foreign-country-only-wifi-needed
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-14 14:04:48
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - peerplays
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Bitcoining in Bratislava - OMG I can INVEST! during a trip to far-away foreign country. Only WIFI needed.](https://steemit.com/@deanliu/my-europa-plog-bitcoining-in-bratislava-omg-i-can-invest-during-a-trip-to-far-away-foreign-country-only-wifi-needed)
+This page is synchronized from the post: ['My Europa Plog - Bitcoining in Bratislava - OMG I can INVEST! during a trip to far-away foreign country. Only WIFI needed.'](https://steemit.com/@deanliu/my-europa-plog-bitcoining-in-bratislava-omg-i-can-invest-during-a-trip-to-far-away-foreign-country-only-wifi-needed)

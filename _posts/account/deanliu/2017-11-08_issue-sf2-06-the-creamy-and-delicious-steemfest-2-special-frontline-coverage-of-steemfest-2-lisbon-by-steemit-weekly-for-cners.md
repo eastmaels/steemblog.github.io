@@ -1,10 +1,11 @@
 
 ---
-title: "📣    [Issue SF2-06: The Creamy & Delicious SteemFest 2] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣"
+title: '📣    [Issue SF2-06: The Creamy & Delicious SteemFest 2] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'
 permlink: issue-sf2-06-the-creamy-and-delicious-steemfest-2-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-08 05:56:18
 categories:
 - steemfest
@@ -14,7 +15,7 @@ tags:
 - news
 - steemit-weekly
 - cn
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -213,4 +214,4 @@ For what this *Steemit Weekly* series is about, please check out latest [issue 0
 
 - - -
 
-This page is synchronized from the post: [📣    [Issue SF2-06: The Creamy & Delicious SteemFest 2] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣](https://steemit.com/@deanliu/issue-sf2-06-the-creamy-and-delicious-steemfest-2-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners)
+This page is synchronized from the post: ['📣    [Issue SF2-06: The Creamy & Delicious SteemFest 2] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'](https://steemit.com/@deanliu/issue-sf2-06-the-creamy-and-delicious-steemfest-2-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners)

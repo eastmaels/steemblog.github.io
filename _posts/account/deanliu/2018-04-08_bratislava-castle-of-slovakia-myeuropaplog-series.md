@@ -1,10 +1,11 @@
 
 ---
-title: "Bratislava Castle of Slovakia #myeuropaplog series 📷 布拉提斯拉瓦城堡－歐洲行旅照片記錄系列 📷"
+title: 'Bratislava Castle of Slovakia #myeuropaplog series 📷 布拉提斯拉瓦城堡－歐洲行旅照片記錄系列 📷'
 permlink: bratislava-castle-of-slovakia-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-08 03:57:18
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - busy
 - slovakia
 - castle
-thumbnail: https://steemitimages.com/DQmZoUpchkP9d6hrpjW34WW2R4N5iDfeAugqsuGsQNDzsEz/DSC_1921.JPG
+thumbnail: 'https://steemitimages.com/DQmZoUpchkP9d6hrpjW34WW2R4N5iDfeAugqsuGsQNDzsEz/DSC_1921.JPG'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ https://steemitimages.com/DQmTaKRWvcwSWVK8kvoD3T22ePDQmSrAwHoykAUbapY9DQ1/DSC_19
 
 - - -
 
-This page is synchronized from the post: [Bratislava Castle of Slovakia #myeuropaplog series 📷 布拉提斯拉瓦城堡－歐洲行旅照片記錄系列 📷](https://steemit.com/@deanliu/bratislava-castle-of-slovakia-myeuropaplog-series)
+This page is synchronized from the post: ['Bratislava Castle of Slovakia #myeuropaplog series 📷 布拉提斯拉瓦城堡－歐洲行旅照片記錄系列 📷'](https://steemit.com/@deanliu/bratislava-castle-of-slovakia-myeuropaplog-series)

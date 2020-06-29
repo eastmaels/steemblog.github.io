@@ -1,10 +1,11 @@
 
 ---
-title: "[車站美食] Uncle TeTsu's Cheese Cake @ Taipei Main Station 北車一樓・徹思叔叔的起司蛋糕"
+title: '[車站美食] Uncle TeTsu''s Cheese Cake @ Taipei Main Station 北車一樓・徹思叔叔的起司蛋糕'
 permlink: uncle-tetsu-s-cheese-cake-taipei-main-station
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-23 03:03:39
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cn
 - taipei
 - japan
-thumbnail: https://cdn.steemitimages.com/DQmVcxkGk5CVmZPrTB9UcbxvvNvL7W1sBGGVwfzZV66mv3j/DSC_6236.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmVcxkGk5CVmZPrTB9UcbxvvNvL7W1sBGGVwfzZV66mv3j/DSC_6236.JPG'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[車站美食] Uncle TeTsu's Cheese Cake @ Taipei Main Station 北車一樓・徹思叔叔的起司蛋糕](https://steemit.com/@deanliu/uncle-tetsu-s-cheese-cake-taipei-main-station)
+This page is synchronized from the post: ['[車站美食] Uncle TeTsu''s Cheese Cake @ Taipei Main Station 北車一樓・徹思叔叔的起司蛋糕'](https://steemit.com/@deanliu/uncle-tetsu-s-cheese-cake-taipei-main-station)

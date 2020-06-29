@@ -1,10 +1,11 @@
 
 ---
-title: "Too hot to say no ... 1010 Hunan Cuisine in Taipei"
+title: 'Too hot to say no ... 1010 Hunan Cuisine in Taipei'
 permlink: too-hot-to-say-no-1010-hunan-cuisine-in-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-13 09:26:15
 categories:
 - food
@@ -13,7 +14,7 @@ tags:
 - cn
 - life
 - cuisine
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -72,4 +73,4 @@ Please have a look at the menu first, dear guests! It is cute and colorful!</p>
 
 - - -
 
-This page is synchronized from the post: [Too hot to say no ... 1010 Hunan Cuisine in Taipei](https://steemit.com/@deanliu/too-hot-to-say-no-1010-hunan-cuisine-in-taipei)
+This page is synchronized from the post: ['Too hot to say no ... 1010 Hunan Cuisine in Taipei'](https://steemit.com/@deanliu/too-hot-to-say-no-1010-hunan-cuisine-in-taipei)

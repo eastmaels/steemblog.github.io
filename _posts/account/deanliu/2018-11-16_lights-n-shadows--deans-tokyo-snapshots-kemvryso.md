@@ -1,10 +1,11 @@
 
 ---
-title: "Lights n Shadows 🍙 Dean's Tokyo Snapshots 🍙 東京光影  "
+title: 'Lights n Shadows 🍙 Dean''s Tokyo Snapshots 🍙 東京光影  '
 permlink: lights-n-shadows--deans-tokyo-snapshots-kemvryso
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-16 06:14:42
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/79097a8103f7ac5d740c235591e0befa14ea6fe4.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/79097a8103f7ac5d740c235591e0befa14ea6fe4.png'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Lights n Shadows 🍙 Dean's Tokyo Snapshots 🍙 東京光影  ](https://steemit.com/@deanliu/lights-n-shadows--deans-tokyo-snapshots-kemvryso)
+This page is synchronized from the post: ['Lights n Shadows 🍙 Dean''s Tokyo Snapshots 🍙 東京光影  '](https://steemit.com/@deanliu/lights-n-shadows--deans-tokyo-snapshots-kemvryso)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 09 ｜《文化讀癮．一週譯報》第9期：來自母親的絢麗遺產——保加利亞傳統刺繡"
+title: 'Culture Vulture for CNers Issue 09 ｜《文化讀癮．一週譯報》第9期：來自母親的絢麗遺產——保加利亞傳統刺繡'
 permlink: culture-vulture-for-cners-issue-09-9
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-19 05:45:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - embroidery
-thumbnail: https://steemitimages.com/DQmV4ETLzGhWfrhctMSCwTZWMZHk5RbH4Z5mMbW4N5YBfAg/CV09.jpg
+thumbnail: 'https://steemitimages.com/DQmV4ETLzGhWfrhctMSCwTZWMZHk5RbH4Z5mMbW4N5YBfAg/CV09.jpg'
 sidebar:
     right:
         sticky: true
@@ -116,4 +117,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 09 ｜《文化讀癮．一週譯報》第9期：來自母親的絢麗遺產——保加利亞傳統刺繡](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-09-9)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 09 ｜《文化讀癮．一週譯報》第9期：來自母親的絢麗遺產——保加利亞傳統刺繡'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-09-9)

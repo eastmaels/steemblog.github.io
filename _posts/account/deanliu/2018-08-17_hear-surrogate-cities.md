@@ -1,10 +1,11 @@
 
 ---
-title: "Hear Surrogate Cities 聽見工業時代的音樂會：”代孕城市“"
+title: 'Hear "Surrogate Cities" 聽見工業時代的音樂會：”代孕城市“'
 permlink: hear-surrogate-cities
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-17 11:53:03
 categories:
 - music
@@ -14,7 +15,7 @@ tags:
 - industrial
 - cn
 - busy
-thumbnail: https://i.loli.net/2018/08/17/5b76b327f3051.jpg
+thumbnail: 'https://i.loli.net/2018/08/17/5b76b327f3051.jpg'
 sidebar:
     right:
         sticky: true
@@ -102,4 +103,4 @@ Please, enjoy this concert by photos.... ^_^
 
 - - -
 
-This page is synchronized from the post: [Hear Surrogate Cities 聽見工業時代的音樂會：”代孕城市“](https://steemit.com/@deanliu/hear-surrogate-cities)
+This page is synchronized from the post: ['Hear "Surrogate Cities" 聽見工業時代的音樂會：”代孕城市“'](https://steemit.com/@deanliu/hear-surrogate-cities)

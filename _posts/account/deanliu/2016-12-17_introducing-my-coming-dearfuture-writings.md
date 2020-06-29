@@ -1,10 +1,11 @@
 
 ---
-title: "即將登場 - 致未來  introducing my coming #dearfuture writings"
+title: '即將登場 - 致未來  introducing my coming #dearfuture writings'
 permlink: introducing-my-coming-dearfuture-writings
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-17 06:52:54
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - writing
 - dearfuture
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [即將登場 - 致未來  introducing my coming #dearfuture writings](https://steemit.com/@deanliu/introducing-my-coming-dearfuture-writings)
+This page is synchronized from the post: ['即將登場 - 致未來  introducing my coming #dearfuture writings'](https://steemit.com/@deanliu/introducing-my-coming-dearfuture-writings)

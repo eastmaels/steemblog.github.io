@@ -1,10 +1,11 @@
 
 ---
-title: "Pick your favorite Bitan Waterdance Photo and Win 5 Steems"
+title: 'Pick your favorite Bitan Waterdance Photo and Win 5 Steems'
 permlink: pick-your-favorite-bitan-waterdance-photo-and-win-5-steems
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-22 03:28:03
 categories:
 - waterdance
@@ -13,7 +14,7 @@ tags:
 - taiwan
 - photography
 - giveaway
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Pick your favorite Bitan Waterdance Photo and Win 5 Steems](https://steemit.com/@deanliu/pick-your-favorite-bitan-waterdance-photo-and-win-5-steems)
+This page is synchronized from the post: ['Pick your favorite Bitan Waterdance Photo and Win 5 Steems'](https://steemit.com/@deanliu/pick-your-favorite-bitan-waterdance-photo-and-win-5-steems)

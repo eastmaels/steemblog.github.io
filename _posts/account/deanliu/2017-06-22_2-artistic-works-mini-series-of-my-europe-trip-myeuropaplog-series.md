@@ -1,10 +1,11 @@
 
 ---
-title: "#2  Artistic Works Mini-series of My Europe Trip - #myeuropaplog series"
+title: '#2  Artistic Works Mini-series of My Europe Trip - #myeuropaplog series'
 permlink: 2-artistic-works-mini-series-of-my-europe-trip-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-22 09:03:21
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - travel
 - europe
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ https://steemitimages.com/DQma7bJS4a9qyq9qjkxqEj4yPiG1ujnJSeaXhW6p1d18Mow/_20170
 
 - - -
 
-This page is synchronized from the post: [#2  Artistic Works Mini-series of My Europe Trip - #myeuropaplog series](https://steemit.com/@deanliu/2-artistic-works-mini-series-of-my-europe-trip-myeuropaplog-series)
+This page is synchronized from the post: ['#2  Artistic Works Mini-series of My Europe Trip - #myeuropaplog series'](https://steemit.com/@deanliu/2-artistic-works-mini-series-of-my-europe-trip-myeuropaplog-series)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 16 ｜《文化读瘾．一周译报》第16期：大麻的前世今生"
+title: 'Culture Vulture for CNers Issue 16 ｜《文化读瘾．一周译报》第16期：大麻的前世今生'
 permlink: culture-vulture-for-cners-issue-16-16
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-02 04:13:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - marijuana
-thumbnail: https://steemitimages.com/DQmPcer3NswYtxfFKGke4FfiMu9mFYKhW6iznVWkKudHbZR/cv16.jpg
+thumbnail: 'https://steemitimages.com/DQmPcer3NswYtxfFKGke4FfiMu9mFYKhW6iznVWkKudHbZR/cv16.jpg'
 sidebar:
     right:
         sticky: true
@@ -124,4 +125,4 @@ CN区的朋友，大家好！
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 16 ｜《文化读瘾．一周译报》第16期：大麻的前世今生](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-16-16)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 16 ｜《文化读瘾．一周译报》第16期：大麻的前世今生'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-16-16)

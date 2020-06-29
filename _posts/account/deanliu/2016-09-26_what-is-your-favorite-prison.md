@@ -1,10 +1,11 @@
 
 ---
-title: "What is your favorite prison?"
+title: 'What is your favorite prison?'
 permlink: what-is-your-favorite-prison
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-26 13:37:39
 categories:
 - prison
@@ -12,7 +13,7 @@ tags:
 - prison
 - parenting
 - family
-thumbnail: https://www.steemimg.com/images/2016/09/26/jail-983153_640d4161.png
+thumbnail: 'https://www.steemimg.com/images/2016/09/26/jail-983153_640d4161.png'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [What is your favorite prison?](https://steemit.com/@deanliu/what-is-your-favorite-prison)
+This page is synchronized from the post: ['What is your favorite prison?'](https://steemit.com/@deanliu/what-is-your-favorite-prison)

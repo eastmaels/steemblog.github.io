@@ -1,10 +1,11 @@
 
 ---
-title: "panorama at daytime - Jiufen photo series 004"
+title: 'panorama at daytime - Jiufen photo series 004'
 permlink: panorama-at-daytime-jiufen-photo-series-004
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-24 05:10:21
 categories:
 - travel
@@ -13,7 +14,7 @@ tags:
 - photography
 - panorama
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [panorama at daytime - Jiufen photo series 004](https://steemit.com/@deanliu/panorama-at-daytime-jiufen-photo-series-004)
+This page is synchronized from the post: ['panorama at daytime - Jiufen photo series 004'](https://steemit.com/@deanliu/panorama-at-daytime-jiufen-photo-series-004)

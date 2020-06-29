@@ -1,10 +1,11 @@
 
 ---
-title: "🙎  [人蔘商號] 開張公告  🙎  本日商品－辯證觀  🙎  Ginseng Store - Opening"
+title: '🙎  [人蔘商號] 開張公告  🙎  本日商品－辯證觀  🙎  Ginseng Store - Opening'
 permlink: ginseng-store-opening
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-02 08:03:09
 categories:
 - ginsengstore
@@ -13,7 +14,7 @@ tags:
 - cn
 - cn-writing
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🙎  [人蔘商號] 開張公告  🙎  本日商品－辯證觀  🙎  Ginseng Store - Opening](https://steemit.com/@deanliu/ginseng-store-opening)
+This page is synchronized from the post: ['🙎  [人蔘商號] 開張公告  🙎  本日商品－辯證觀  🙎  Ginseng Store - Opening'](https://steemit.com/@deanliu/ginseng-store-opening)

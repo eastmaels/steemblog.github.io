@@ -1,10 +1,11 @@
 
 ---
-title: "SteemPlus 1.3: Manage Your Steemit Feed! 新增 Feed+，終於可以好好管理你凌亂的Feed了！"
+title: 'SteemPlus 1.3: Manage Your Steemit Feed! 新增 Feed+，終於可以好好管理你凌亂的Feed了！'
 permlink: steemplus-1-3-manage-your-steemit-feed-feed-feed
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-14 09:53:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steem
 - dev
-thumbnail: https://steemitimages.com/DQmZorMWKg7CZmVY3HeyeEbAeDu9Zwjzm4m3K9t49XYaN7q/image.png
+thumbnail: 'https://steemitimages.com/DQmZorMWKg7CZmVY3HeyeEbAeDu9Zwjzm4m3K9t49XYaN7q/image.png'
 sidebar:
     right:
         sticky: true
@@ -144,4 +145,4 @@ SteemPlus是開源軟體，可以從<a href="https://github.com/stoodkev/SteemPl
 
 - - -
 
-This page is synchronized from the post: [SteemPlus 1.3: Manage Your Steemit Feed! 新增 Feed+，終於可以好好管理你凌亂的Feed了！](https://steemit.com/@deanliu/steemplus-1-3-manage-your-steemit-feed-feed-feed)
+This page is synchronized from the post: ['SteemPlus 1.3: Manage Your Steemit Feed! 新增 Feed+，終於可以好好管理你凌亂的Feed了！'](https://steemit.com/@deanliu/steemplus-1-3-manage-your-steemit-feed-feed-feed)

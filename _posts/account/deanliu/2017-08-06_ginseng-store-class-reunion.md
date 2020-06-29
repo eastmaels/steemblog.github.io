@@ -1,10 +1,11 @@
 
 ---
-title: "🙎 [人蔘商號] 本日商品－同學會 🙎 Ginseng Store - Class Reunion 🙎"
+title: '🙎 [人蔘商號] 本日商品－同學會 🙎 Ginseng Store - Class Reunion 🙎'
 permlink: ginseng-store-class-reunion
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-06 16:41:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - writing
 - cn-writing
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🙎 [人蔘商號] 本日商品－同學會 🙎 Ginseng Store - Class Reunion 🙎](https://steemit.com/@deanliu/ginseng-store-class-reunion)
+This page is synchronized from the post: ['🙎 [人蔘商號] 本日商品－同學會 🙎 Ginseng Store - Class Reunion 🙎'](https://steemit.com/@deanliu/ginseng-store-class-reunion)

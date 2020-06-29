@@ -1,17 +1,18 @@
 
 ---
-title: "it is not always colorful flowers that bring value to a garden"
+title: 'it is not always colorful flowers that bring value to a garden'
 permlink: it-is-not-always-colorful-flowers-that-bring-value-to-a-garden
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-17 05:53:09
 categories:
 - photography
 tags:
 - photography
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -31,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [it is not always colorful flowers that bring value to a garden](https://steemit.com/@deanliu/it-is-not-always-colorful-flowers-that-bring-value-to-a-garden)
+This page is synchronized from the post: ['it is not always colorful flowers that bring value to a garden'](https://steemit.com/@deanliu/it-is-not-always-colorful-flowers-that-bring-value-to-a-garden)

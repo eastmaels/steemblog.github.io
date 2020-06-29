@@ -1,10 +1,11 @@
 
 ---
-title: "狐獴，台北木柵動物園 #2 Meerkat, Taipei Muzha Zoo"
+title: '狐獴，台北木柵動物園 #2 Meerkat, Taipei Muzha Zoo'
 permlink: 2-meerkat-taipei-muzha-zoo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-14 01:41:12
 categories:
 - zoo
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/64562eccb74f9fada44a42ca5c722cf2088690de.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/64562eccb74f9fada44a42ca5c722cf2088690de.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ _Review: [台北木柵動物園 #1 Taipei Muzha Zoo](https://steemit.com/zoo/@de
 
 - - -
 
-This page is synchronized from the post: [狐獴，台北木柵動物園 #2 Meerkat, Taipei Muzha Zoo](https://steemit.com/@deanliu/2-meerkat-taipei-muzha-zoo)
+This page is synchronized from the post: ['狐獴，台北木柵動物園 #2 Meerkat, Taipei Muzha Zoo'](https://steemit.com/@deanliu/2-meerkat-taipei-muzha-zoo)

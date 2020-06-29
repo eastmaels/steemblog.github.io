@@ -1,10 +1,11 @@
 
 ---
-title: "[Luxury Hotel Series] - Regent Taipei - part 3 - Lights & Shadows and A Secret Garden. [五星飯店系列] 台北晶華 part 3。光與影，祕密花園。"
+title: '[Luxury Hotel Series] - Regent Taipei - part 3 - Lights & Shadows and A Secret Garden. [五星飯店系列] 台北晶華 part 3。光與影，祕密花園。'
 permlink: luxury-hotel-series-regent-taipei-part-3-lights-and-shadows-and-a-secret-garden-part-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-25 16:32:06
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - hotel
 - travel
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Luxury Hotel Series] - Regent Taipei - part 3 - Lights & Shadows and A Secret Garden. [五星飯店系列] 台北晶華 part 3。光與影，祕密花園。](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-3-lights-and-shadows-and-a-secret-garden-part-3)
+This page is synchronized from the post: ['[Luxury Hotel Series] - Regent Taipei - part 3 - Lights & Shadows and A Secret Garden. [五星飯店系列] 台北晶華 part 3。光與影，祕密花園。'](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-3-lights-and-shadows-and-a-secret-garden-part-3)

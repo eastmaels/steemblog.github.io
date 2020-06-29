@@ -1,10 +1,11 @@
 
 ---
-title: "Good to see the new Hide Resteems function for personal blogs on Steemit, but what I really want is ..."
+title: 'Good to see the new "Hide Resteems" function for personal blogs on Steemit, but what I really want is ...'
 permlink: good-to-see-the-new-hide-resteems-function-for-personal-blogs-on-steemit-but-what-i-really-want-is
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-03 02:54:03
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - resteem
 - feed
 - suggestion
-thumbnail: https://cdn.steemitimages.com/DQmSb9uc9H2EukHEoie164Rhmv8yWpW4CdmK5J1cfWhsyh9/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-03%20%E4%B8%8A%E5%8D%8810.57.03.png
+thumbnail: 'https://cdn.steemitimages.com/DQmSb9uc9H2EukHEoie164Rhmv8yWpW4CdmK5J1cfWhsyh9/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-10-03%20%E4%B8%8A%E5%8D%8810.57.03.png'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ Do you think so too, Steemians!?
 
 - - -
 
-This page is synchronized from the post: [Good to see the new Hide Resteems function for personal blogs on Steemit, but what I really want is ...](https://steemit.com/@deanliu/good-to-see-the-new-hide-resteems-function-for-personal-blogs-on-steemit-but-what-i-really-want-is)
+This page is synchronized from the post: ['Good to see the new "Hide Resteems" function for personal blogs on Steemit, but what I really want is ...'](https://steemit.com/@deanliu/good-to-see-the-new-hide-resteems-function-for-personal-blogs-on-steemit-but-what-i-really-want-is)

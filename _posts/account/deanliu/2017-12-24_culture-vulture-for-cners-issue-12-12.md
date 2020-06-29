@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 12 ｜《文化读瘾．一周译报》第12期：到墨西哥过圣诞"
+title: 'Culture Vulture for CNers Issue 12 ｜《文化读瘾．一周译报》第12期：到墨西哥过圣诞'
 permlink: culture-vulture-for-cners-issue-12-12
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-24 10:30:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - culture
 - mexico
 - christmas
-thumbnail: https://steemitimages.com/DQmYkWr7stuYCUHuDQrzC7ccziDufmvJDA9hkFUV5uX65Qp/cv201712sim.jpg
+thumbnail: 'https://steemitimages.com/DQmYkWr7stuYCUHuDQrzC7ccziDufmvJDA9hkFUV5uX65Qp/cv201712sim.jpg'
 sidebar:
     right:
         sticky: true
@@ -147,4 +148,4 @@ https://www.youtube.com/watch?v=oofhA46D2hs
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 12 ｜《文化读瘾．一周译报》第12期：到墨西哥过圣诞](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-12-12)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 12 ｜《文化读瘾．一周译报》第12期：到墨西哥过圣诞'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-12-12)

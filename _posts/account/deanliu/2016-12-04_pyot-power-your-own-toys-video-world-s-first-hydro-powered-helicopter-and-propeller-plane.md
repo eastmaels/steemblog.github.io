@@ -1,10 +1,11 @@
 
 ---
-title: "PYOT - Power Your Own Toys! [Video] World's first hydro-powered helicopter and propeller plane?"
+title: 'PYOT - Power Your Own Toys! [Video] World''s first hydro-powered helicopter and propeller plane?'
 permlink: pyot-power-your-own-toys-video-world-s-first-hydro-powered-helicopter-and-propeller-plane
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-04 15:43:15
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - diy
 - funny
 - toy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [PYOT - Power Your Own Toys! [Video] World's first hydro-powered helicopter and propeller plane?](https://steemit.com/@deanliu/pyot-power-your-own-toys-video-world-s-first-hydro-powered-helicopter-and-propeller-plane)
+This page is synchronized from the post: ['PYOT - Power Your Own Toys! [Video] World''s first hydro-powered helicopter and propeller plane?'](https://steemit.com/@deanliu/pyot-power-your-own-toys-video-world-s-first-hydro-powered-helicopter-and-propeller-plane)

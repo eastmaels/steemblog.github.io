@@ -1,10 +1,11 @@
 
 ---
-title: "雞🐔  飛，狗 🐶  跳， 緬懷🐔年之大吃炸🐔。J & G Fried Chicken!!"
+title: '雞🐔  飛，狗 🐶  跳， 緬懷🐔年之大吃炸🐔。J & G Fried Chicken!!'
 permlink: j-and-g-fried-chicken
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-17 06:19:12
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - food
 - travel
 - fastfood
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -126,4 +127,4 @@ TADA~~~!! 薄皮一隻雞來也！分成許多部分，大致上有兩隻腿，�
 
 - - -
 
-This page is synchronized from the post: [雞🐔  飛，狗 🐶  跳， 緬懷🐔年之大吃炸🐔。J & G Fried Chicken!!](https://steemit.com/@deanliu/j-and-g-fried-chicken)
+This page is synchronized from the post: ['雞🐔  飛，狗 🐶  跳， 緬懷🐔年之大吃炸🐔。J & G Fried Chicken!!'](https://steemit.com/@deanliu/j-and-g-fried-chicken)

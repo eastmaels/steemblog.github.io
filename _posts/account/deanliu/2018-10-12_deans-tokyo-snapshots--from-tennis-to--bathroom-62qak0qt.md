@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 From tennis to ... bathroom? 😂😂"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 From tennis to ... bathroom? 😂😂'
 permlink: deans-tokyo-snapshots--from-tennis-to--bathroom-62qak0qt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-12 23:18:36
 categories:
 - sports
@@ -15,7 +16,7 @@ tags:
 - japan
 - tennis
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/b23d4e0ca6c582085eb5ddbbe01b9c4f6b914c82.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/b23d4e0ca6c582085eb5ddbbe01b9c4f6b914c82.png'
 sidebar:
     right:
         sticky: true
@@ -82,4 +83,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 From tennis to ... bathroom? 😂😂](https://steemit.com/@deanliu/deans-tokyo-snapshots--from-tennis-to--bathroom-62qak0qt)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 From tennis to ... bathroom? 😂😂'](https://steemit.com/@deanliu/deans-tokyo-snapshots--from-tennis-to--bathroom-62qak0qt)

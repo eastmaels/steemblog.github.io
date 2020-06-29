@@ -1,10 +1,11 @@
 
 ---
-title: "Memo - Save me from the Steemit Prison ... Or not."
+title: 'Memo - Save me from the Steemit Prison ... Or not.'
 permlink: memo-save-me-from-the-steemit-prison-or-not
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-29 06:26:06
 categories:
 - memo
@@ -12,7 +13,7 @@ tags:
 - memo
 - funny
 - prison
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -32,4 +33,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Memo - Save me from the Steemit Prison ... Or not.](https://steemit.com/@deanliu/memo-save-me-from-the-steemit-prison-or-not)
+This page is synchronized from the post: ['Memo - Save me from the Steemit Prison ... Or not.'](https://steemit.com/@deanliu/memo-save-me-from-the-steemit-prison-or-not)

@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 31 / 《社區週邊事》 - 第 31 期"
+title: 'Steemit Weekly for CNers - Issue 31 / 《社區"週"邊事》 - 第 31 期'
 permlink: steemit-weekly-for-cners-issue-31-31
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-14 07:39:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steemit-weekly
 - news
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -135,4 +136,4 @@ by **@acidyo**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 31 / 《社區週邊事》 - 第 31 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-31-31)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 31 / 《社區"週"邊事》 - 第 31 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-31-31)

@@ -1,10 +1,11 @@
 
 ---
-title: "從中目黑的 Sarutahiko Coffee  🍙 Dean's Tokyo Snapshots 🍙 到南西誠品的猿田彥珈琲"
+title: '從中目黑的 Sarutahiko Coffee  🍙 Dean''s Tokyo Snapshots 🍙 到南西誠品的猿田彥珈琲'
 permlink: -sarutahiko-coffee-deans-tokyo-snapshots--1545789725579
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-26 02:02:06
 categories:
 - coffee
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - cn
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/2936532ab63e363fa90a1f321300dc151af918e6.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/2936532ab63e363fa90a1f321300dc151af918e6.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [從中目黑的 Sarutahiko Coffee  🍙 Dean's Tokyo Snapshots 🍙 到南西誠品的猿田彥珈琲](https://steemit.com/@deanliu/-sarutahiko-coffee-deans-tokyo-snapshots--1545789725579)
+This page is synchronized from the post: ['從中目黑的 Sarutahiko Coffee  🍙 Dean''s Tokyo Snapshots 🍙 到南西誠品的猿田彥珈琲'](https://steemit.com/@deanliu/-sarutahiko-coffee-deans-tokyo-snapshots--1545789725579)

@@ -1,10 +1,11 @@
 
 ---
-title: "王者，台北木柵動物園 #3 Tiger, Taipei Muzha Zoo"
+title: '王者，台北木柵動物園 #3 Tiger, Taipei Muzha Zoo'
 permlink: 3-tiger-taipei-muzha-zoo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-18 01:14:00
 categories:
 - zoo
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/3a28cc75b82528f694a79c53009dc345f723bbc7.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/3a28cc75b82528f694a79c53009dc345f723bbc7.jpg'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ _Review:
 
 - - -
 
-This page is synchronized from the post: [王者，台北木柵動物園 #3 Tiger, Taipei Muzha Zoo](https://steemit.com/@deanliu/3-tiger-taipei-muzha-zoo)
+This page is synchronized from the post: ['王者，台北木柵動物園 #3 Tiger, Taipei Muzha Zoo'](https://steemit.com/@deanliu/3-tiger-taipei-muzha-zoo)

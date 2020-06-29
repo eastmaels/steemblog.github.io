@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之第六講 ] 人生相對論  Relativity of Life"
+title: '[ Steem十講之第六講 ] 人生相對論  Relativity of Life'
 permlink: steem-relativity-of-life
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-05 08:31:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - steem-10
 - relativity
-thumbnail: https://steemitimages.com/DQmVic5B8HnApxjbBsiMXzX7qQS1GpithdiUjMCK4xrMLTV/albert-einstein-219675_640.jpg
+thumbnail: 'https://steemitimages.com/DQmVic5B8HnApxjbBsiMXzX7qQS1GpithdiUjMCK4xrMLTV/albert-einstein-219675_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -145,4 +146,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之第六講 ] 人生相對論  Relativity of Life](https://steemit.com/@deanliu/steem-relativity-of-life)
+This page is synchronized from the post: ['[ Steem十講之第六講 ] 人生相對論  Relativity of Life'](https://steemit.com/@deanliu/steem-relativity-of-life)

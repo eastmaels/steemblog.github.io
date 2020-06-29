@@ -1,10 +1,11 @@
 
 ---
-title: "🙊  昨夜風狂雨驟 怎麼我一夜好眠？🙊 Sleep Well Free From Steem Waves"
+title: '🙊  昨夜風狂雨驟 怎麼我一夜好眠？🙊 Sleep Well Free From Steem Waves'
 permlink: sleep-well-free-from-steem-waves
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-11 08:12:21
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - cn-newbie
 - steem
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ images credits - pixabay, poloniex</em></p>
 
 - - -
 
-This page is synchronized from the post: [🙊  昨夜風狂雨驟 怎麼我一夜好眠？🙊 Sleep Well Free From Steem Waves](https://steemit.com/@deanliu/sleep-well-free-from-steem-waves)
+This page is synchronized from the post: ['🙊  昨夜風狂雨驟 怎麼我一夜好眠？🙊 Sleep Well Free From Steem Waves'](https://steemit.com/@deanliu/sleep-well-free-from-steem-waves)

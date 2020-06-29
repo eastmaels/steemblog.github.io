@@ -1,10 +1,11 @@
 
 ---
-title: "抵達鐮倉車站 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #1"
+title: '抵達鐮倉車站 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #1'
 permlink: dean-s-tokyo-snapshots-kamakura-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-07 07:32:48
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - busy
 - cn
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/8926223ebda7d031b02eae4a822029b91265a4c9.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/8926223ebda7d031b02eae4a822029b91265a4c9.jpg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [抵達鐮倉車站 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #1](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-1)
+This page is synchronized from the post: ['抵達鐮倉車站 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #1'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-1)

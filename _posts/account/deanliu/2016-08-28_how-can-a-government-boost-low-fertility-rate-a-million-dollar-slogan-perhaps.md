@@ -1,10 +1,11 @@
 
 ---
-title: "How can a government boost low fertility rate? A million dollar slogan perhaps!?"
+title: 'How can a government boost low fertility rate? A million dollar slogan perhaps!?'
 permlink: how-can-a-government-boost-low-fertility-rate-a-million-dollar-slogan-perhaps
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-28 10:39:39
 categories:
 - anarchism
@@ -12,7 +13,7 @@ tags:
 - anarchism
 - fun
 - fertility
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [How can a government boost low fertility rate? A million dollar slogan perhaps!?](https://steemit.com/@deanliu/how-can-a-government-boost-low-fertility-rate-a-million-dollar-slogan-perhaps)
+This page is synchronized from the post: ['How can a government boost low fertility rate? A million dollar slogan perhaps!?'](https://steemit.com/@deanliu/how-can-a-government-boost-low-fertility-rate-a-million-dollar-slogan-perhaps)

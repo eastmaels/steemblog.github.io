@@ -1,10 +1,11 @@
 
 ---
-title: "Mini Line Cube - Stress Relieving, Wearable, Creative Brain Teaser"
+title: 'Mini Line Cube - Stress Relieving, Wearable, Creative Brain Teaser'
 permlink: mini-line-cube-stress-relieving-wearable-creative-brain-teaser
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-16 15:00:36
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - design
 - art
 - worldcup
-thumbnail: https://i.imgur.com/t9cPTyj.jpg
+thumbnail: 'https://i.imgur.com/t9cPTyj.jpg'
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [Mini Line Cube - Stress Relieving, Wearable, Creative Brain Teaser](https://steemit.com/@deanliu/mini-line-cube-stress-relieving-wearable-creative-brain-teaser)
+This page is synchronized from the post: ['Mini Line Cube - Stress Relieving, Wearable, Creative Brain Teaser'](https://steemit.com/@deanliu/mini-line-cube-stress-relieving-wearable-creative-brain-teaser)

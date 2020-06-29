@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 28 / 《社區週邊事》 - 第 28 期"
+title: 'Steemit Weekly for CNers - Issue 28 / 《社區"週"邊事》 - 第 28 期'
 permlink: steemit-weekly-for-cners-issue-28-28
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-10 06:55:33
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steemit-weekly
 - news
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -136,4 +137,4 @@ by **@jademont**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 28 / 《社區週邊事》 - 第 28 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-28-28)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 28 / 《社區"週"邊事》 - 第 28 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-28-28)

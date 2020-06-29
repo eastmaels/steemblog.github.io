@@ -1,10 +1,11 @@
 
 ---
-title: "Bye bye and thank you to the BAD WHALE @berniesanders"
+title: 'Bye bye and thank you to the BAD WHALE @berniesanders'
 permlink: bye-bye-and-thank-you-to-the-bad-whale-berniesanders
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-12 15:47:12
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - whale
 - berniesanders
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Bye bye and thank you to the BAD WHALE @berniesanders](https://steemit.com/@deanliu/bye-bye-and-thank-you-to-the-bad-whale-berniesanders)
+This page is synchronized from the post: ['Bye bye and thank you to the BAD WHALE @berniesanders'](https://steemit.com/@deanliu/bye-bye-and-thank-you-to-the-bad-whale-berniesanders)

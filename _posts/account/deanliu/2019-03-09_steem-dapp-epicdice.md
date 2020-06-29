@@ -1,10 +1,11 @@
 
 ---
-title: "[Steem Dapp動態] EpicDice問世！快來支持一下吧！"
+title: '[Steem Dapp動態] EpicDice問世！快來支持一下吧！'
 permlink: steem-dapp-epicdice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-09 11:49:51
 categories:
 - epicdice
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmSJZ4DmkwNJFUz94VgLENt1PyVC9QpREHSY78rS3rmJSk/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-09%20%E4%B8%8B%E5%8D%884.42.15.png
+thumbnail: 'https://cdn.steemitimages.com/DQmSJZ4DmkwNJFUz94VgLENt1PyVC9QpREHSY78rS3rmJSk/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-09%20%E4%B8%8B%E5%8D%884.42.15.png'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Steem Dapp動態] EpicDice問世！快來支持一下吧！](https://steemit.com/@deanliu/steem-dapp-epicdice)
+This page is synchronized from the post: ['[Steem Dapp動態] EpicDice問世！快來支持一下吧！'](https://steemit.com/@deanliu/steem-dapp-epicdice)

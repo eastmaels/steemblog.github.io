@@ -1,10 +1,11 @@
 
 ---
-title: "A nice cafe, a good memory and a weekend giveaway! 美好的咖啡廳與週末猜謎"
+title: 'A nice cafe, a good memory and a weekend giveaway! 美好的咖啡廳與週末猜謎'
 permlink: a-nice-cafe-a-good-memory-and-a-weekend-giveaway
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-03 01:02:18
 categories:
 - cafe
@@ -13,7 +14,7 @@ tags:
 - coffee
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A nice cafe, a good memory and a weekend giveaway! 美好的咖啡廳與週末猜謎](https://steemit.com/@deanliu/a-nice-cafe-a-good-memory-and-a-weekend-giveaway)
+This page is synchronized from the post: ['A nice cafe, a good memory and a weekend giveaway! 美好的咖啡廳與週末猜謎'](https://steemit.com/@deanliu/a-nice-cafe-a-good-memory-and-a-weekend-giveaway)

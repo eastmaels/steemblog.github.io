@@ -1,10 +1,11 @@
 
 ---
-title: "短篇故事：一把電鑽 (下)  [完結篇]  An Electrical Drill – Part 3 (Final Episode)"
+title: '短篇故事：一把電鑽 (下)  [完結篇]  An Electrical Drill – Part 3 (Final Episode)'
 permlink: an-electrical-drill-part-3-final-episode
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-20 15:39:27
 categories:
 - story
@@ -12,7 +13,7 @@ tags:
 - story
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [短篇故事：一把電鑽 (下)  [完結篇]  An Electrical Drill – Part 3 (Final Episode)](https://steemit.com/@deanliu/an-electrical-drill-part-3-final-episode)
+This page is synchronized from the post: ['短篇故事：一把電鑽 (下)  [完結篇]  An Electrical Drill – Part 3 (Final Episode)'](https://steemit.com/@deanliu/an-electrical-drill-part-3-final-episode)

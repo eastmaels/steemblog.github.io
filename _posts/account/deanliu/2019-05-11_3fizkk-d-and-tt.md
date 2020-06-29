@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 母親節"
+title: '[D&TT] 母親節'
 permlink: 3fizkk-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-11 07:25:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - mother
 - love
 - deantt
-thumbnail: https://ipfs.busy.org/ipfs/QmZL1wBdJUU4tCHqW7PhAeymw3exca1jLneQHSmPHQUb5U
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZL1wBdJUU4tCHqW7PhAeymw3exca1jLneQHSmPHQUb5U'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 母親節](https://steemit.com/@deanliu/3fizkk-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 母親節'](https://steemit.com/@deanliu/3fizkk-d-and-tt)

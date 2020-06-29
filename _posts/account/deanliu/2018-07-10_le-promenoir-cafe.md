@@ -1,10 +1,11 @@
 
 ---
-title: "穿越時空：鬧區古蹟裡的咖啡廳  Le Promenoir Cafe"
+title: '穿越時空：鬧區古蹟裡的咖啡廳  Le Promenoir Cafe'
 permlink: le-promenoir-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-10 07:43:51
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - coffee
 - travel
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmW7tmsqNGUrwgcdX3oAcCDV6pNuarM4swSJABFaQbkawD/DSC_5521.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmW7tmsqNGUrwgcdX3oAcCDV6pNuarM4swSJABFaQbkawD/DSC_5521.JPG'
 sidebar:
     right:
         sticky: true
@@ -107,4 +108,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [穿越時空：鬧區古蹟裡的咖啡廳  Le Promenoir Cafe](https://steemit.com/@deanliu/le-promenoir-cafe)
+This page is synchronized from the post: ['穿越時空：鬧區古蹟裡的咖啡廳  Le Promenoir Cafe'](https://steemit.com/@deanliu/le-promenoir-cafe)

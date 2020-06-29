@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 簡易釣魚遊戲 "
+title: '[D&TT] 簡易釣魚遊戲 '
 permlink: dtt-qzkbm0ve
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-09 00:45:39
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - life
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmTcxG9wSd9rfTRKbp5ThrWfTnPsygXA8B1uhvHvSdKQJK/photo6167784895364049220.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmTcxG9wSd9rfTRKbp5ThrWfTnPsygXA8B1uhvHvSdKQJK/photo6167784895364049220.jpg'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 簡易釣魚遊戲 ](https://steemit.com/@deanliu/dtt-qzkbm0ve)
+This page is synchronized from the post: ['[D&TT] 簡易釣魚遊戲 '](https://steemit.com/@deanliu/dtt-qzkbm0ve)

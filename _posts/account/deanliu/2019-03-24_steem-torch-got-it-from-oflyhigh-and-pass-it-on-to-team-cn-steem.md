@@ -1,10 +1,11 @@
 
 ---
-title: "🔥 [Steem Torch] Got it from @oflyhigh and pass it on to @team-cn  🔥 [Steem火炬實驗] 下一棒：新手村  🔥"
+title: '🔥 [Steem Torch] Got it from @oflyhigh and pass it on to @team-cn  🔥 [Steem火炬實驗] 下一棒：新手村  🔥'
 permlink: steem-torch-got-it-from-oflyhigh-and-pass-it-on-to-team-cn-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-24 02:39:39
 categories:
 - steemtorch
@@ -14,7 +15,7 @@ tags:
 - cn
 - team-cn
 - community
-thumbnail: https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmYMapAa3qQrdgRbCyEFunN1EBVKY3yGuDXeDU6MZnEMsQ/steem%20torch.jpg
+thumbnail: 'https://steemitimages.com/640x0/https://cdn.steemitimages.com/DQmYMapAa3qQrdgRbCyEFunN1EBVKY3yGuDXeDU6MZnEMsQ/steem%20torch.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ The following part will be in Chinese.
 
 - - -
 
-This page is synchronized from the post: [🔥 [Steem Torch] Got it from @oflyhigh and pass it on to @team-cn  🔥 [Steem火炬實驗] 下一棒：新手村  🔥](https://steemit.com/@deanliu/steem-torch-got-it-from-oflyhigh-and-pass-it-on-to-team-cn-steem)
+This page is synchronized from the post: ['🔥 [Steem Torch] Got it from @oflyhigh and pass it on to @team-cn  🔥 [Steem火炬實驗] 下一棒：新手村  🔥'](https://steemit.com/@deanliu/steem-torch-got-it-from-oflyhigh-and-pass-it-on-to-team-cn-steem)

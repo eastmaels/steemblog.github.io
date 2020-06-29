@@ -1,17 +1,18 @@
 
 ---
-title: "Saying hi to friends from mainland China 朋友們你好啊!"
+title: 'Saying hi to friends from mainland China 朋友們你好啊!'
 permlink: saying-hi-to-friends-from-mainland-china
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-27 07:42:42
 categories:
 - cn
 tags:
 - cn
 - chinese
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Saying hi to friends from mainland China 朋友們你好啊!](https://steemit.com/@deanliu/saying-hi-to-friends-from-mainland-china)
+This page is synchronized from the post: ['Saying hi to friends from mainland China 朋友們你好啊!'](https://steemit.com/@deanliu/saying-hi-to-friends-from-mainland-china)

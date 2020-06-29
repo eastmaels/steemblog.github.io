@@ -1,10 +1,11 @@
 
 ---
-title: "[B.D.單身日記] Serendipity"
+title: '[B.D.單身日記] Serendipity'
 permlink: b-d-serendipity
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-23 09:52:36
 categories:
 - writing
@@ -14,7 +15,7 @@ tags:
 - hualien
 - busy
 - cn
-thumbnail: https://steemitimages.com/DQmeQ1xxiA3dSx8vF6GxjGScpH1ZdpCDgZYSDojWcgDYW8P/DSC_5020.JPG
+thumbnail: 'https://steemitimages.com/DQmeQ1xxiA3dSx8vF6GxjGScpH1ZdpCDgZYSDojWcgDYW8P/DSC_5020.JPG'
 sidebar:
     right:
         sticky: true
@@ -127,4 +128,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[B.D.單身日記] Serendipity](https://steemit.com/@deanliu/b-d-serendipity)
+This page is synchronized from the post: ['[B.D.單身日記] Serendipity'](https://steemit.com/@deanliu/b-d-serendipity)

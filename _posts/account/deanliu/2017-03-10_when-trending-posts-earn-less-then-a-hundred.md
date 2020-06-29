@@ -1,10 +1,11 @@
 
 ---
-title: "When trending posts earn less than a hundred ..."
+title: 'When trending posts earn less than a hundred ...'
 permlink: when-trending-posts-earn-less-then-a-hundred
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-10 02:04:54
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - steem
 - reward
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -32,4 +33,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [When trending posts earn less than a hundred ...](https://steemit.com/@deanliu/when-trending-posts-earn-less-then-a-hundred)
+This page is synchronized from the post: ['When trending posts earn less than a hundred ...'](https://steemit.com/@deanliu/when-trending-posts-earn-less-then-a-hundred)

@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 14 / 《社區週邊事》 - 第 14 期"
+title: 'Steemit Weekly for CNers - Issue 14 / 《社區"週"邊事》 - 第 14 期'
 permlink: steemit-weekly-for-cners-issue-14-14
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-18 09:18:15
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - news
 - steemit-weekly
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -148,4 +149,4 @@ by **@calaber24p**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 14 / 《社區週邊事》 - 第 14 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-14-14)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 14 / 《社區"週"邊事》 - 第 14 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-14-14)

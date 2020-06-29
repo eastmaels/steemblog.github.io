@@ -1,10 +1,11 @@
 
 ---
-title: "One G.A.F.B. Cafe in Beijing - 在北京逃離北京的神祕空間 ZARAH Cafe"
+title: 'One G.A.F.B. Cafe in Beijing - 在北京逃離北京的神祕空間 ZARAH Cafe'
 permlink: one-g-a-f-b-cafe-in-beijing-zarah-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-12 06:38:45
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - travel
 - cafe
 - beijing
-thumbnail: https://steemitimages.com/DQmPXz7BBVWddCMEYWsqQDBdRAc9AqhnJJTooqDCi4cVtrJ/DSC_2750.JPG
+thumbnail: 'https://steemitimages.com/DQmPXz7BBVWddCMEYWsqQDBdRAc9AqhnJJTooqDCi4cVtrJ/DSC_2750.JPG'
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ https://steemitimages.com/DQmZAjheW7iBrc3PF89D9XR4emDoCxiXg38Dff8KZzBhzry/DSC_27
 
 - - -
 
-This page is synchronized from the post: [One G.A.F.B. Cafe in Beijing - 在北京逃離北京的神祕空間 ZARAH Cafe](https://steemit.com/@deanliu/one-g-a-f-b-cafe-in-beijing-zarah-cafe)
+This page is synchronized from the post: ['One G.A.F.B. Cafe in Beijing - 在北京逃離北京的神祕空間 ZARAH Cafe'](https://steemit.com/@deanliu/one-g-a-f-b-cafe-in-beijing-zarah-cafe)

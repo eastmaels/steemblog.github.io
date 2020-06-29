@@ -1,10 +1,11 @@
 
 ---
-title: "[Cooling Taiwan Summer] [台灣冰涼一夏] YI FANG Fruit Tea 一芳水果茶"
+title: '[Cooling Taiwan Summer] [台灣冰涼一夏] YI FANG Fruit Tea 一芳水果茶'
 permlink: cooling-taiwan-summer-yi-fang-fruit-tea
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-12 10:33:39
 categories:
 - beverage
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmZDm8zhRq2ZYav3zfnHxikNLsbJLDwK4JBHwr6KyQnD2D/photo6305505431186942009.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmZDm8zhRq2ZYav3zfnHxikNLsbJLDwK4JBHwr6KyQnD2D/photo6305505431186942009.jpg'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Cooling Taiwan Summer] [台灣冰涼一夏] YI FANG Fruit Tea 一芳水果茶](https://steemit.com/@deanliu/cooling-taiwan-summer-yi-fang-fruit-tea)
+This page is synchronized from the post: ['[Cooling Taiwan Summer] [台灣冰涼一夏] YI FANG Fruit Tea 一芳水果茶'](https://steemit.com/@deanliu/cooling-taiwan-summer-yi-fang-fruit-tea)

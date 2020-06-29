@@ -1,10 +1,11 @@
 
 ---
-title: "A Wonderful Collaboration of 5 CN Steemians on Reporting SteemFest 2 直擊里斯本特別報導幕後花絮"
+title: 'A Wonderful Collaboration of 5 CN Steemians on Reporting SteemFest 2 直擊里斯本特別報導幕後花絮'
 permlink: a-wonderful-collaboration-of-5-cn-steemians-on-reporting-steemfest-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-15 08:42:18
 categories:
 - news
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steemit-weekly
 - cn
-thumbnail: https://steemitimages.com/DQmfRZofS41C7gSmLKyzNRq3hRMpAbAQYHpvZpkayeSvGec/image.png
+thumbnail: 'https://steemitimages.com/DQmfRZofS41C7gSmLKyzNRq3hRMpAbAQYHpvZpkayeSvGec/image.png'
 sidebar:
     right:
         sticky: true
@@ -136,4 +137,4 @@ This is the earliest Wechat group established in early Sep. I thought of the ide
 
 - - -
 
-This page is synchronized from the post: [A Wonderful Collaboration of 5 CN Steemians on Reporting SteemFest 2 直擊里斯本特別報導幕後花絮](https://steemit.com/@deanliu/a-wonderful-collaboration-of-5-cn-steemians-on-reporting-steemfest-2)
+This page is synchronized from the post: ['A Wonderful Collaboration of 5 CN Steemians on Reporting SteemFest 2 直擊里斯本特別報導幕後花絮'](https://steemit.com/@deanliu/a-wonderful-collaboration-of-5-cn-steemians-on-reporting-steemfest-2)

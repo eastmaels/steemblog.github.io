@@ -1,10 +1,11 @@
 
 ---
-title: "Funny Photo"
+title: 'Funny Photo'
 permlink: funny-photo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-29 11:24:21
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - robot
 - japan
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmUpmwmcn2zfx3fzbTjVMmV7J1Lz8dL6C5aWa4XWz7FsGP
+thumbnail: 'https://ipfs.busy.org/ipfs/QmUpmwmcn2zfx3fzbTjVMmV7J1Lz8dL6C5aWa4XWz7FsGP'
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ Hey, girls...  Please... look at me...  I am powerful and scary... Ain't I?.....
 
 - - -
 
-This page is synchronized from the post: [Funny Photo](https://steemit.com/@deanliu/funny-photo)
+This page is synchronized from the post: ['Funny Photo'](https://steemit.com/@deanliu/funny-photo)

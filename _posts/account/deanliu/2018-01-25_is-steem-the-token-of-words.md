@@ -1,10 +1,11 @@
 
 ---
-title: "Is Steem the token of words?"
+title: 'Is Steem the token of words?'
 permlink: is-steem-the-token-of-words
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-25 06:17:30
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - world
 - being
 - words
-thumbnail: https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.png
+thumbnail: 'https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ I just don't know if it will be Steem.
 
 - - -
 
-This page is synchronized from the post: [Is Steem the token of words?](https://steemit.com/@deanliu/is-steem-the-token-of-words)
+This page is synchronized from the post: ['Is Steem the token of words?'](https://steemit.com/@deanliu/is-steem-the-token-of-words)

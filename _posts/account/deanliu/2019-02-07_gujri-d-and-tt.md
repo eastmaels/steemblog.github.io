@@ -1,10 +1,11 @@
 
 ---
-title: "[新春系列] [D&TT] 童畫新年"
+title: '[新春系列] [D&TT] 童畫新年'
 permlink: gujri-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-07 02:43:00
 categories:
 - newyear
@@ -14,7 +15,7 @@ tags:
 - drawing
 - cn
 - life
-thumbnail: https://cdn.steemitimages.com/DQmdRgHTokkLfATkPJNfswEcux7ip5epoZmiGgYwzRfJLbd/photo6258229905821116522.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmdRgHTokkLfATkPJNfswEcux7ip5epoZmiGgYwzRfJLbd/photo6258229905821116522.jpg'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ TT過年，我們沒空理他時，就儘量想辦法讓他畫畫... 於是，�
 
 - - -
 
-This page is synchronized from the post: [[新春系列] [D&TT] 童畫新年](https://steemit.com/@deanliu/gujri-d-and-tt)
+This page is synchronized from the post: ['[新春系列] [D&TT] 童畫新年'](https://steemit.com/@deanliu/gujri-d-and-tt)

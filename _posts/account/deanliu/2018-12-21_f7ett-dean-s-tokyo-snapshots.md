@@ -1,10 +1,11 @@
 
 ---
-title: "茶泡飯－健康又實惠的日本餐點選擇 🍙 Dean's Tokyo Snapshots 🍙 茶漬け，ちゃづけ"
+title: '茶泡飯－健康又實惠的日本餐點選擇 🍙 Dean''s Tokyo Snapshots 🍙 茶漬け，ちゃづけ'
 permlink: f7ett-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-21 14:36:42
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmR8NvZNKQZiKV3sst58zrpfwXQ1qczWLQ99DgbSfCBHC4/DSC_6566.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmR8NvZNKQZiKV3sst58zrpfwXQ1qczWLQ99DgbSfCBHC4/DSC_6566.JPG'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [茶泡飯－健康又實惠的日本餐點選擇 🍙 Dean's Tokyo Snapshots 🍙 茶漬け，ちゃづけ](https://steemit.com/@deanliu/f7ett-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['茶泡飯－健康又實惠的日本餐點選擇 🍙 Dean''s Tokyo Snapshots 🍙 茶漬け，ちゃづけ'](https://steemit.com/@deanliu/f7ett-dean-s-tokyo-snapshots)

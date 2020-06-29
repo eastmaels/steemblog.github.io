@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #13] Steem 小工具DIY #5 交易紀錄查詢"
+title: '[DA series - Learn Python with Steem #13] Steem 小工具DIY #5 交易紀錄查詢'
 permlink: da-series-learn-python-with-steem-13-steem-diy-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-10 12:46:45
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -147,4 +148,4 @@ for i in range(1, num_iteration+1):
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #13] Steem 小工具DIY #5 交易紀錄查詢](https://steemit.com/@deanliu/da-series-learn-python-with-steem-13-steem-diy-5)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #13] Steem 小工具DIY #5 交易紀錄查詢'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-13-steem-diy-5)

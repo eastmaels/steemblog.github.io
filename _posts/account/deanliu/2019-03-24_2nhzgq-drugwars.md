@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 詭譎多變"
+title: '[DrugWars] 詭譎多變'
 permlink: 2nhzgq-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-24 08:49:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - gaming
 - dapp
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmSaG1YbV8688NU5X6eJ4D2MisP5Rvir1Cj723gJC4Ab8x/cig-2565867_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmSaG1YbV8688NU5X6eJ4D2MisP5Rvir1Cj723gJC4Ab8x/cig-2565867_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ DrugWars這遊戲，這一週以來的Drama真是沒少了... 先前的頻繁改
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 詭譎多變](https://steemit.com/@deanliu/2nhzgq-drugwars)
+This page is synchronized from the post: ['[DrugWars] 詭譎多變'](https://steemit.com/@deanliu/2nhzgq-drugwars)

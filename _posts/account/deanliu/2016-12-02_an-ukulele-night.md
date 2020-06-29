@@ -1,10 +1,11 @@
 
 ---
-title: "音樂懷舊的夜 An Ukulele Night"
+title: '音樂懷舊的夜 An Ukulele Night'
 permlink: an-ukulele-night
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-02 15:43:21
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - music
 - nostalgia
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [音樂懷舊的夜 An Ukulele Night](https://steemit.com/@deanliu/an-ukulele-night)
+This page is synchronized from the post: ['音樂懷舊的夜 An Ukulele Night'](https://steemit.com/@deanliu/an-ukulele-night)

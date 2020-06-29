@@ -1,10 +1,11 @@
 
 ---
-title: "🍰  Cafe Central in Vienna #myeuropaplog series  🍰  維也納中央咖啡館－歐洲行旅照片記錄系列 🍰"
+title: '🍰  Cafe Central in Vienna #myeuropaplog series  🍰  維也納中央咖啡館－歐洲行旅照片記錄系列 🍰'
 permlink: cafe-central-in-vienna-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-17 00:22:15
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cn
 - myeuropaplog
 - vienna
-thumbnail: https://steemitimages.com/DQmTKLa2nH3oagWEExiGnjwFqJJiqUfXE56cbFnyjFs8kAT/_20171216_222629.JPG
+thumbnail: 'https://steemitimages.com/DQmTKLa2nH3oagWEExiGnjwFqJJiqUfXE56cbFnyjFs8kAT/_20171216_222629.JPG'
 sidebar:
     right:
         sticky: true
@@ -116,4 +117,4 @@ More Vienna is coming ... 維也納的照片，會繼續上桌囉！
 
 - - -
 
-This page is synchronized from the post: [🍰  Cafe Central in Vienna #myeuropaplog series  🍰  維也納中央咖啡館－歐洲行旅照片記錄系列 🍰](https://steemit.com/@deanliu/cafe-central-in-vienna-myeuropaplog-series)
+This page is synchronized from the post: ['🍰  Cafe Central in Vienna #myeuropaplog series  🍰  維也納中央咖啡館－歐洲行旅照片記錄系列 🍰'](https://steemit.com/@deanliu/cafe-central-in-vienna-myeuropaplog-series)

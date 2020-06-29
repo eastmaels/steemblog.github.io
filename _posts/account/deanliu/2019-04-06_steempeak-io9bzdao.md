@@ -1,10 +1,11 @@
 
 ---
-title: "[社區閒聊]  Steempeak "
+title: '[社區閒聊]  Steempeak '
 permlink: steempeak-io9bzdao
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-06 03:53:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steempeak
 - partiko
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/hUonajN1-E89EA2E5B995E5BFABE785A7202019-04-0620E4B88AE58D8811.32.11.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/hUonajN1-E89EA2E5B995E5BFABE785A7202019-04-0620E4B88AE58D8811.32.11.png'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [[社區閒聊]  Steempeak ](https://steemit.com/@deanliu/steempeak-io9bzdao)
+This page is synchronized from the post: ['[社區閒聊]  Steempeak '](https://steemit.com/@deanliu/steempeak-io9bzdao)

@@ -1,10 +1,11 @@
 
 ---
-title: "We'd like to get rich ... Readers' desire exposed [with Ned's photo inside]"
+title: 'We''d like to get rich ... Readers'' desire exposed [with Ned''s photo inside]'
 permlink: we-d-like-to-get-rich-readers-desire-exposed-with-ned-s-photo-inside
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-16 09:13:00
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - pageview
 - attention
 - money
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ But I recall that our captain @ned brought this exciting term to our attention <
 
 - - -
 
-This page is synchronized from the post: [We'd like to get rich ... Readers' desire exposed [with Ned's photo inside]](https://steemit.com/@deanliu/we-d-like-to-get-rich-readers-desire-exposed-with-ned-s-photo-inside)
+This page is synchronized from the post: ['We''d like to get rich ... Readers'' desire exposed [with Ned''s photo inside]'](https://steemit.com/@deanliu/we-d-like-to-get-rich-readers-desire-exposed-with-ned-s-photo-inside)

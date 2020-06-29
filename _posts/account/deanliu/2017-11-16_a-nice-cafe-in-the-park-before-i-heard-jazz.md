@@ -1,10 +1,11 @@
 
 ---
-title: "A nice cafe in the park ... before I heard jazz. 公園裡的咖啡角落"
+title: 'A nice cafe in the park ... before I heard jazz. 公園裡的咖啡角落'
 permlink: a-nice-cafe-in-the-park-before-i-heard-jazz
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-16 05:36:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - park
 - taipei
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -112,4 +113,4 @@ https://steemitimages.com/DQmZmdugwF8vHofS9ybLFbJqaoPqji2CvMvRLEbNREj6LPe/DSC_32
 
 - - -
 
-This page is synchronized from the post: [A nice cafe in the park ... before I heard jazz. 公園裡的咖啡角落](https://steemit.com/@deanliu/a-nice-cafe-in-the-park-before-i-heard-jazz)
+This page is synchronized from the post: ['A nice cafe in the park ... before I heard jazz. 公園裡的咖啡角落'](https://steemit.com/@deanliu/a-nice-cafe-in-the-park-before-i-heard-jazz)

@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 根子"
+title: '[D&TT] 根子'
 permlink: 5pxohf-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-02 12:03:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - linguistics
 - language
-thumbnail: https://cdn.steemitimages.com/DQmWT7Anecgs6nLn4GupD1jDXPbaMsXKE9Vusimruu6dk2Y/clover-1225988_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmWT7Anecgs6nLn4GupD1jDXPbaMsXKE9Vusimruu6dk2Y/clover-1225988_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 根子](https://steemit.com/@deanliu/5pxohf-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 根子'](https://steemit.com/@deanliu/5pxohf-d-and-tt)

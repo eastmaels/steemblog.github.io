@@ -1,10 +1,11 @@
 
 ---
-title: "JR - Japan Railways in ... Japan? No ..."
+title: 'JR - Japan Railways in ... Japan? No ...'
 permlink: jr-japan-railways-in-japan-no
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-07 14:08:03
 categories:
 - train
@@ -13,7 +14,7 @@ tags:
 - railway
 - japan
 - taiwan
-thumbnail: https://steemitimages.com/DQmSDukd91oYkbmoi6ZZzQw773pvSMPnddnw7jaiFzoNvva/DSC_3511.JPG
+thumbnail: 'https://steemitimages.com/DQmSDukd91oYkbmoi6ZZzQw773pvSMPnddnw7jaiFzoNvva/DSC_3511.JPG'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ Here is a news in Chinese reporting this:
 
 - - -
 
-This page is synchronized from the post: [JR - Japan Railways in ... Japan? No ...](https://steemit.com/@deanliu/jr-japan-railways-in-japan-no)
+This page is synchronized from the post: ['JR - Japan Railways in ... Japan? No ...'](https://steemit.com/@deanliu/jr-japan-railways-in-japan-no)

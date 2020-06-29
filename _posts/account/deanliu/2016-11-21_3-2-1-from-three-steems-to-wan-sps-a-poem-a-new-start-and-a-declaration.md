@@ -1,10 +1,11 @@
 
 ---
-title: "3.. 2.. 1.. From three steems to 'wan' SPs - a poem, a new start and a declaration  見證過萬一刻"
+title: '3.. 2.. 1.. From three steems to ''wan'' SPs - a poem, a new start and a declaration  見證過萬一刻'
 permlink: 3-2-1-from-three-steems-to-wan-sps-a-poem-a-new-start-and-a-declaration
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-21 05:48:24
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - poem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Forever until the blockchain of Steem shall ever cease to exist</strong></blockq
 
 - - -
 
-This page is synchronized from the post: [3.. 2.. 1.. From three steems to 'wan' SPs - a poem, a new start and a declaration  見證過萬一刻](https://steemit.com/@deanliu/3-2-1-from-three-steems-to-wan-sps-a-poem-a-new-start-and-a-declaration)
+This page is synchronized from the post: ['3.. 2.. 1.. From three steems to ''wan'' SPs - a poem, a new start and a declaration  見證過萬一刻'](https://steemit.com/@deanliu/3-2-1-from-three-steems-to-wan-sps-a-poem-a-new-start-and-a-declaration)

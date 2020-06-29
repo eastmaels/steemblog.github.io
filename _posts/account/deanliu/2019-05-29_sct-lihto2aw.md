@@ -1,10 +1,11 @@
 
 ---
-title: "[SCT之旅]  生態系 "
+title: '[SCT之旅]  生態系 '
 permlink: sct-lihto2aw
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-29 02:22:24
 categories:
 - sct
@@ -15,7 +16,7 @@ tags:
 - ecosystem
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmPEzikBRLadi1zYQRAvR2ERwgGweQeybuZwFgHpgMvJ9W/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmPEzikBRLadi1zYQRAvR2ERwgGweQeybuZwFgHpgMvJ9W/image.png'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [[SCT之旅]  生態系 ](https://steemit.com/@deanliu/sct-lihto2aw)
+This page is synchronized from the post: ['[SCT之旅]  生態系 '](https://steemit.com/@deanliu/sct-lihto2aw)

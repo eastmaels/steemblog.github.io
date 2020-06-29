@@ -1,10 +1,11 @@
 
 ---
-title: "Suggestion for Busy and Partiko - Remove your 'Upvote when posting' option"
+title: 'Suggestion for Busy and Partiko - Remove your ''Upvote when posting'' option'
 permlink: suggestion-for-busy-and-partiko-remove-your-upvote-when-posting-option
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-28 07:08:09
 categories:
 - hf20
@@ -14,7 +15,7 @@ tags:
 - partiko
 - steem
 - steemit
-thumbnail: https://cdn.steemitimages.com/DQmSoNMsEbrtFuUGhAgfVYYTg82Z5GVzDx7NYMtqitRPopn/under-construction-2891888_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmSoNMsEbrtFuUGhAgfVYYTg82Z5GVzDx7NYMtqitRPopn/under-construction-2891888_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Last, I am not sure if this suggestion is not practical, maybe it may cost too m
 
 - - -
 
-This page is synchronized from the post: [Suggestion for Busy and Partiko - Remove your 'Upvote when posting' option](https://steemit.com/@deanliu/suggestion-for-busy-and-partiko-remove-your-upvote-when-posting-option)
+This page is synchronized from the post: ['Suggestion for Busy and Partiko - Remove your ''Upvote when posting'' option'](https://steemit.com/@deanliu/suggestion-for-busy-and-partiko-remove-your-upvote-when-posting-option)

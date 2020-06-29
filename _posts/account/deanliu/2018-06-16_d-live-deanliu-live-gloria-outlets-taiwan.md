@@ -1,10 +1,11 @@
 
 ---
-title: "D-Live: deanliu live! @Gloria Outlets, Taiwan"
+title: 'D-Live: deanliu live! @Gloria Outlets, Taiwan'
 permlink: d-live-deanliu-live-gloria-outlets-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-16 08:04:30
 categories:
 - shopping
@@ -13,7 +14,7 @@ tags:
 - life
 - live
 - taiwan
-thumbnail: https://cdn.steemitimages.com/DQmWkhHg2s6MMPT2A3QJ4mFufNHeBCfjfy9eSvtMGiJt4FL/DSC_5504.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmWkhHg2s6MMPT2A3QJ4mFufNHeBCfjfy9eSvtMGiJt4FL/DSC_5504.JPG'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ Stay tuned!! ^o^
 
 - - -
 
-This page is synchronized from the post: [D-Live: deanliu live! @Gloria Outlets, Taiwan](https://steemit.com/@deanliu/d-live-deanliu-live-gloria-outlets-taiwan)
+This page is synchronized from the post: ['D-Live: deanliu live! @Gloria Outlets, Taiwan'](https://steemit.com/@deanliu/d-live-deanliu-live-gloria-outlets-taiwan)

@@ -1,10 +1,11 @@
 
 ---
-title: "Tokyo Structures 🍙 Dean's Tokyo Snapshots 🍙 東京結構"
+title: 'Tokyo Structures 🍙 Dean''s Tokyo Snapshots 🍙 東京結構'
 permlink: tokyo-structures-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-14 02:18:00
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmUg2hJVScM6g2HEQkt3ytcxq4GHC88EpQybPj8EZyGxvS/DSC_6748.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmUg2hJVScM6g2HEQkt3ytcxq4GHC88EpQybPj8EZyGxvS/DSC_6748.JPG'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [Tokyo Structures 🍙 Dean's Tokyo Snapshots 🍙 東京結構](https://steemit.com/@deanliu/tokyo-structures-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['Tokyo Structures 🍙 Dean''s Tokyo Snapshots 🍙 東京結構'](https://steemit.com/@deanliu/tokyo-structures-dean-s-tokyo-snapshots)

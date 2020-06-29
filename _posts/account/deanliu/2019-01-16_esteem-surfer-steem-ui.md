@@ -1,10 +1,11 @@
 
 ---
-title: "🏄 eSteem Surfer－桌面端Steem UI使用分享 🏄 "
+title: '🏄 eSteem Surfer－桌面端Steem UI使用分享 🏄 '
 permlink: esteem-surfer-steem-ui
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-16 08:40:00
 categories:
 - esteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn
 - dapp
-thumbnail: https://img.esteem.ws/8s9wm9kgg1.png
+thumbnail: 'https://img.esteem.ws/8s9wm9kgg1.png'
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ Gallery，咦？ 我也不清楚，估計是可以把常用圖片放這裡吧？
 
 - - -
 
-This page is synchronized from the post: [🏄 eSteem Surfer－桌面端Steem UI使用分享 🏄 ](https://steemit.com/@deanliu/esteem-surfer-steem-ui)
+This page is synchronized from the post: ['🏄 eSteem Surfer－桌面端Steem UI使用分享 🏄 '](https://steemit.com/@deanliu/esteem-surfer-steem-ui)

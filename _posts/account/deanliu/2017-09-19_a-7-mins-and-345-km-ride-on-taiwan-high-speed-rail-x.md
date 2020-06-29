@@ -1,10 +1,11 @@
 
 ---
-title: "🚅  A 7-mins and 345 km ride on Taiwan High Speed Rail 🚅  高鐵遊台灣 X 向前走 🚅"
+title: '🚅  A 7-mins and 345 km ride on Taiwan High Speed Rail 🚅  高鐵遊台灣 X 向前走 🚅'
 permlink: a-7-mins-and-345-km-ride-on-taiwan-high-speed-rail-x
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-19 10:12:12
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - train
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmXMMs4MQvE6E2K818aqSvaqoSEpZzSk9HbsP4dp2A9sDx/snap%20.jpg
+thumbnail: 'https://steemitimages.com/DQmXMMs4MQvE6E2K818aqSvaqoSEpZzSk9HbsP4dp2A9sDx/snap%20.jpg'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ https://www.youtube.com/watch?v=gD14iiXq7Xw
 
 - - -
 
-This page is synchronized from the post: [🚅  A 7-mins and 345 km ride on Taiwan High Speed Rail 🚅  高鐵遊台灣 X 向前走 🚅](https://steemit.com/@deanliu/a-7-mins-and-345-km-ride-on-taiwan-high-speed-rail-x)
+This page is synchronized from the post: ['🚅  A 7-mins and 345 km ride on Taiwan High Speed Rail 🚅  高鐵遊台灣 X 向前走 🚅'](https://steemit.com/@deanliu/a-7-mins-and-345-km-ride-on-taiwan-high-speed-rail-x)

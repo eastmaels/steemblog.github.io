@@ -1,10 +1,11 @@
 
 ---
-title: "Web Browser Mining or Simply Get Your Referral Rewards before JSECoin's ICO [第一次當礦工就上手的JSECoin]"
+title: 'Web Browser Mining or Simply Get Your Referral Rewards before JSECoin''s ICO [第一次當礦工就上手的JSECoin]'
 permlink: web-browser-mining-or-simply-get-your-referral-rewards-before-jsecoin-s-ico-jsecoin
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-07 09:55:30
 categories:
 - jsecoin
@@ -14,7 +15,7 @@ tags:
 - cn-cryptocurrency
 - mining
 - cn
-thumbnail: https://steemitimages.com/DQmSYpLkg3YnY9wgvYZ9YeebBZth6dhmiPJa3NTcosLgEQ6/image.png
+thumbnail: 'https://steemitimages.com/DQmSYpLkg3YnY9wgvYZ9YeebBZth6dhmiPJa3NTcosLgEQ6/image.png'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ Hashrate Speed Test: 375 hp/s
 
 - - -
 
-This page is synchronized from the post: [Web Browser Mining or Simply Get Your Referral Rewards before JSECoin's ICO [第一次當礦工就上手的JSECoin]](https://steemit.com/@deanliu/web-browser-mining-or-simply-get-your-referral-rewards-before-jsecoin-s-ico-jsecoin)
+This page is synchronized from the post: ['Web Browser Mining or Simply Get Your Referral Rewards before JSECoin''s ICO [第一次當礦工就上手的JSECoin]'](https://steemit.com/@deanliu/web-browser-mining-or-simply-get-your-referral-rewards-before-jsecoin-s-ico-jsecoin)

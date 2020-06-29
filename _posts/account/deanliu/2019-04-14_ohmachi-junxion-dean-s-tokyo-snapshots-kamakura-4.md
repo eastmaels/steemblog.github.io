@@ -1,10 +1,11 @@
 
 ---
-title: " 旅店 Ohmachi Junxion 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #4"
+title: ' 旅店 Ohmachi Junxion 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #4'
 permlink: ohmachi-junxion-dean-s-tokyo-snapshots-kamakura-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-14 09:40:45
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - accommodation
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/48c31cd78e4aac01039838777a1a16bbab487d6c.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/48c31cd78e4aac01039838777a1a16bbab487d6c.jpg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ _日本旅遊已結束，繼續以此系列紀錄日本之行...._ ^^
 
 - - -
 
-This page is synchronized from the post: [ 旅店 Ohmachi Junxion 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #4](https://steemit.com/@deanliu/ohmachi-junxion-dean-s-tokyo-snapshots-kamakura-4)
+This page is synchronized from the post: [' 旅店 Ohmachi Junxion 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #4'](https://steemit.com/@deanliu/ohmachi-junxion-dean-s-tokyo-snapshots-kamakura-4)

@@ -1,10 +1,11 @@
 
 ---
-title: "Final countdown for NETCOINS contest GO VOTE!!! 最後苦戰，請上線投票支援！！  "
+title: 'Final countdown for NETCOINS contest GO VOTE!!! 最後苦戰，請上線投票支援！！  '
 permlink: final-countdown-for-netcoins-contest-go-vote-96akh6yg
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-20 23:00:51
 categories:
 - netcoins
@@ -14,7 +15,7 @@ tags:
 - netcoin
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmUgtwzos5kgKrPX8vs5nm999xhs3yW8zfcX6Bq2j84A2C/rocket-launch-67723_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmUgtwzos5kgKrPX8vs5nm999xhs3yW8zfcX6Bq2j84A2C/rocket-launch-67723_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Final countdown for NETCOINS contest GO VOTE!!! 最後苦戰，請上線投票支援！！  ](https://steemit.com/@deanliu/final-countdown-for-netcoins-contest-go-vote-96akh6yg)
+This page is synchronized from the post: ['Final countdown for NETCOINS contest GO VOTE!!! 最後苦戰，請上線投票支援！！  '](https://steemit.com/@deanliu/final-countdown-for-netcoins-contest-go-vote-96akh6yg)

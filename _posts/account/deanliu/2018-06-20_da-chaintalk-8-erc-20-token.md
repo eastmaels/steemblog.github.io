@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #8 — 如何發行ERC-20的Token？"
+title: 'DA-ChainTalk #8 — 如何發行ERC-20的Token？'
 permlink: da-chaintalk-8-erc-20-token
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-20 11:54:00
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - erc-20
 - ico
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmeTYeF9n8uegEr1QvZ2MPLxo5BF3RajEkNqAi785oDwNa/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmeTYeF9n8uegEr1QvZ2MPLxo5BF3RajEkNqAi785oDwNa/image.png'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #8 — 如何發行ERC-20的Token？](https://steemit.com/@deanliu/da-chaintalk-8-erc-20-token)
+This page is synchronized from the post: ['DA-ChainTalk #8 — 如何發行ERC-20的Token？'](https://steemit.com/@deanliu/da-chaintalk-8-erc-20-token)

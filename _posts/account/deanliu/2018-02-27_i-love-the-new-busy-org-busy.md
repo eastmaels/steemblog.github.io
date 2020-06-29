@@ -1,10 +1,11 @@
 
 ---
-title: "I love the *new* busy.org! 試玩忙忙平台Busy！"
+title: 'I love the *new* busy.org! 試玩忙忙平台Busy！'
 permlink: i-love-the-new-busy-org-busy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-27 14:57:18
 categories:
 - busy
@@ -14,7 +15,7 @@ tags:
 - blogging
 - platform
 - cn
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1519740456/qzu4ydslrpa2ygvjyr8x.png
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1519740456/qzu4ydslrpa2ygvjyr8x.png'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ Okay! That was my brief review of this new (to me) platform! Love it. No doubt. 
 
 - - -
 
-This page is synchronized from the post: [I love the *new* busy.org! 試玩忙忙平台Busy！](https://steemit.com/@deanliu/i-love-the-new-busy-org-busy)
+This page is synchronized from the post: ['I love the *new* busy.org! 試玩忙忙平台Busy！'](https://steemit.com/@deanliu/i-love-the-new-busy-org-busy)

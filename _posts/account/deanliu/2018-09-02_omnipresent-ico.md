@@ -1,10 +1,11 @@
 
 ---
-title: "Omnipresent ICO ..."
+title: 'Omnipresent ICO ...'
 permlink: omnipresent-ico
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-02 03:16:42
 categories:
 - ico
@@ -13,7 +14,7 @@ tags:
 - tokenization
 - funny
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmUq2HoMvWdg9RJaQHo3dwYa5PoLKhsTPBWtQoVEwu9cqs/DSC_6271.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmUq2HoMvWdg9RJaQHo3dwYa5PoLKhsTPBWtQoVEwu9cqs/DSC_6271.JPG'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ I think I have some crypto addiction problem......
 
 - - -
 
-This page is synchronized from the post: [Omnipresent ICO ...](https://steemit.com/@deanliu/omnipresent-ico)
+This page is synchronized from the post: ['Omnipresent ICO ...'](https://steemit.com/@deanliu/omnipresent-ico)

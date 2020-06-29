@@ -1,16 +1,17 @@
 
 ---
-title: "小魚們來看…關於Promote功能的小秘訣(cn區獨享)"
+title: '小魚們來看…關於Promote功能的小秘訣(cn區獨享)'
 permlink: promote-cn
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-06 02:23:48
 categories:
 - cn
 tags:
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [小魚們來看…關於Promote功能的小秘訣(cn區獨享)](https://steemit.com/@deanliu/promote-cn)
+This page is synchronized from the post: ['小魚們來看…關於Promote功能的小秘訣(cn區獨享)'](https://steemit.com/@deanliu/promote-cn)

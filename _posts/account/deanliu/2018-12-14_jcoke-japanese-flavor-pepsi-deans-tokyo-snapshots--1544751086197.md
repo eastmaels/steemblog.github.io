@@ -1,10 +1,11 @@
 
 ---
-title: "J-Coke ... Japanese flavor pepsi 🍙 Dean's Tokyo Snapshots 🍙"
+title: 'J-Coke ... Japanese flavor pepsi 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: jcoke-japanese-flavor-pepsi-deans-tokyo-snapshots--1544751086197
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-14 01:31:27
 categories:
 - coke
@@ -14,7 +15,7 @@ tags:
 - pepsi
 - japan
 - dclick
-thumbnail: https://cdn.steemitimages.com/DQmRVous9zY9V8V8ayUesGX6fCDGe5AWNexkRPJ21ZVLMxW/DSC_7449_1541582669961.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmRVous9zY9V8V8ayUesGX6fCDGe5AWNexkRPJ21ZVLMxW/DSC_7449_1541582669961.JPG'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ But I still encourage all of you to buy one bottle and try it. Maybe you will li
 
 - - -
 
-This page is synchronized from the post: [J-Coke ... Japanese flavor pepsi 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/jcoke-japanese-flavor-pepsi-deans-tokyo-snapshots--1544751086197)
+This page is synchronized from the post: ['J-Coke ... Japanese flavor pepsi 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/jcoke-japanese-flavor-pepsi-deans-tokyo-snapshots--1544751086197)

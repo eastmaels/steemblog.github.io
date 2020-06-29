@@ -1,10 +1,11 @@
 
 ---
-title: "Industrial Style Decorated - Butter 2 Brunch & Cafe"
+title: 'Industrial Style Decorated - Butter 2 Brunch & Cafe'
 permlink: industrial-style-decorated-butter-2-brunch-and-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-22 03:45:54
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - taichung
 - travel
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmQeSdmuWALFzb3QBryVYofQmUBvKq2Rba3ba8mFjCRzZX/_20180722_105546.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQeSdmuWALFzb3QBryVYofQmUBvKq2Rba3ba8mFjCRzZX/_20180722_105546.JPG'
 sidebar:
     right:
         sticky: true
@@ -119,4 +120,4 @@ Now fully charged, we have enough energy to carry on our trip now! ^_^
 
 - - -
 
-This page is synchronized from the post: [Industrial Style Decorated - Butter 2 Brunch & Cafe](https://steemit.com/@deanliu/industrial-style-decorated-butter-2-brunch-and-cafe)
+This page is synchronized from the post: ['Industrial Style Decorated - Butter 2 Brunch & Cafe'](https://steemit.com/@deanliu/industrial-style-decorated-butter-2-brunch-and-cafe)

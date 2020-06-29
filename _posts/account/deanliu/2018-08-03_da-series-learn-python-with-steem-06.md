@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #06] 函式"
+title: '[DA series - Learn Python with Steem #06] 函式'
 permlink: da-series-learn-python-with-steem-06
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-03 02:03:30
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -112,4 +113,4 @@ print(answer)
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #06] 函式](https://steemit.com/@deanliu/da-series-learn-python-with-steem-06)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #06] 函式'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-06)

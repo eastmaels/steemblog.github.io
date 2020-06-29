@@ -1,10 +1,11 @@
 
 ---
-title: "推薦SteemApps.com"
+title: '推薦SteemApps.com'
 permlink: steemapps-com
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-18 13:13:54
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - dapp
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmWzUdfvBpfjBdCo9hnWjcZkFWE9whLu6xVkuyq6zx6G3w
+thumbnail: 'https://ipfs.busy.org/ipfs/QmWzUdfvBpfjBdCo9hnWjcZkFWE9whLu6xVkuyq6zx6G3w'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [推薦SteemApps.com](https://steemit.com/@deanliu/steemapps-com)
+This page is synchronized from the post: ['推薦SteemApps.com'](https://steemit.com/@deanliu/steemapps-com)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 17 ｜《文化讀癮．一週譯報》第17期：亞齊咖啡文化魅力"
+title: 'Culture Vulture for CNers Issue 17 ｜《文化讀癮．一週譯報》第17期：亞齊咖啡文化魅力'
 permlink: culture-vulture-for-cners-issue-17-17
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-04 14:01:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - coffee
-thumbnail: https://steemitimages.com/DQmZyJVSR61NejfsGqcKYkBYgDtSoTtbFdNM36Chwe3mToa/cv17.jpg
+thumbnail: 'https://steemitimages.com/DQmZyJVSR61NejfsGqcKYkBYgDtSoTtbFdNM36Chwe3mToa/cv17.jpg'
 sidebar:
     right:
         sticky: true
@@ -156,4 +157,4 @@ CN區的朋友，大家好！
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 17 ｜《文化讀癮．一週譯報》第17期：亞齊咖啡文化魅力](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-17-17)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 17 ｜《文化讀癮．一週譯報》第17期：亞齊咖啡文化魅力'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-17-17)

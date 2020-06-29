@@ -1,10 +1,11 @@
 
 ---
-title: "Cointelegraph News: Steemit Appoints New VP, Hints At Move Away From ‘Crypto-Centric’"
+title: 'Cointelegraph News: Steemit Appoints New VP, Hints At Move Away From ‘Crypto-Centric’'
 permlink: cointelegraph-news-steemit-appoints-new-vp-hints-at-move-away-from-crypto-centric
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-08 08:23:06
 categories:
 - news
@@ -13,7 +14,7 @@ tags:
 - steemit
 - steem
 - crowdsourcing
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Cointelegraph News: Steemit Appoints New VP, Hints At Move Away From ‘Crypto-Centric’](https://steemit.com/@deanliu/cointelegraph-news-steemit-appoints-new-vp-hints-at-move-away-from-crypto-centric)
+This page is synchronized from the post: ['Cointelegraph News: Steemit Appoints New VP, Hints At Move Away From ‘Crypto-Centric’'](https://steemit.com/@deanliu/cointelegraph-news-steemit-appoints-new-vp-hints-at-move-away-from-crypto-centric)

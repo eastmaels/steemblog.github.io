@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Kidaishouran《熈代勝覽》きだいしょうらん"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Kidaishouran《熈代勝覽》きだいしょうらん'
 permlink: dean-s-tokyo-snapshots-kidaishouran
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-27 08:46:24
 categories:
 - history
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmNeSmGXMmBvntKsMC6g2GACt7vhtdXmE7HTDsGju5kNWg/DSC_6601.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNeSmGXMmBvntKsMC6g2GACt7vhtdXmE7HTDsGju5kNWg/DSC_6601.JPG'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Kidaishouran《熈代勝覽》きだいしょうらん](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kidaishouran)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Kidaishouran《熈代勝覽》きだいしょうらん'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kidaishouran)

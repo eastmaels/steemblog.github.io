@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 初生震撼"
+title: '[D&TT] 初生震撼'
 permlink: 2xvqhp-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-09 02:12:51
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - kids
 - busy
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmRVdaLufqqzdcVeN7ei35NL537gfjSCXzG8uLzNHLHibp/music-818459_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmRVdaLufqqzdcVeN7ei35NL537gfjSCXzG8uLzNHLHibp/music-818459_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -82,4 +83,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 初生震撼](https://steemit.com/@deanliu/2xvqhp-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 初生震撼'](https://steemit.com/@deanliu/2xvqhp-d-and-tt)

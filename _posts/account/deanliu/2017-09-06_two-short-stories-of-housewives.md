@@ -1,10 +1,11 @@
 
 ---
-title: "主婦短篇故事兩篇 Two Short Stories of Housewives"
+title: '主婦短篇故事兩篇 Two Short Stories of Housewives'
 permlink: two-short-stories-of-housewives
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-06 23:10:00
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cn-reader
 - writing
 - story
-thumbnail: https://steemitimages.com/DQmUiwciPbpKLshy1LxfhwTvMqhW5PCucKj5HHL5dbFtRis/background-2664512_640.jpg
+thumbnail: 'https://steemitimages.com/DQmUiwciPbpKLshy1LxfhwTvMqhW5PCucKj5HHL5dbFtRis/background-2664512_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -83,4 +84,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [主婦短篇故事兩篇 Two Short Stories of Housewives](https://steemit.com/@deanliu/two-short-stories-of-housewives)
+This page is synchronized from the post: ['主婦短篇故事兩篇 Two Short Stories of Housewives'](https://steemit.com/@deanliu/two-short-stories-of-housewives)

@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #7 — 挖礦，交易的確認與共識的形成。"
+title: 'DA-ChainTalk #7 — 挖礦，交易的確認與共識的形成。'
 permlink: da-chaintalk-7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-13 14:06:15
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - mining
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmaaRSPexVDZ1Qbvo19xLLARJDngWHHuq1YXGfBGZwoFKe/mines-2554837_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmaaRSPexVDZ1Qbvo19xLLARJDngWHHuq1YXGfBGZwoFKe/mines-2554837_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -119,4 +120,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #7 — 挖礦，交易的確認與共識的形成。](https://steemit.com/@deanliu/da-chaintalk-7)
+This page is synchronized from the post: ['DA-ChainTalk #7 — 挖礦，交易的確認與共識的形成。'](https://steemit.com/@deanliu/da-chaintalk-7)

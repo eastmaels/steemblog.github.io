@@ -1,10 +1,11 @@
 
 ---
-title: "Steem 停電後的暴漲"
+title: 'Steem 停電後的暴漲'
 permlink: steem-m1zcctd2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-18 23:58:24
 categories:
 - steem
@@ -15,7 +16,7 @@ tags:
 - news
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmQc7GHTN7D3meUQjfAq83erkdrxHfUKiJfVbeuzBnGXi8/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-19%20%E4%B8%8A%E5%8D%887.41.10.png
+thumbnail: 'https://cdn.steemitimages.com/DQmQc7GHTN7D3meUQjfAq83erkdrxHfUKiJfVbeuzBnGXi8/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-19%20%E4%B8%8A%E5%8D%887.41.10.png'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Steem 停電後的暴漲](https://steemit.com/@deanliu/steem-m1zcctd2)
+This page is synchronized from the post: ['Steem 停電後的暴漲'](https://steemit.com/@deanliu/steem-m1zcctd2)

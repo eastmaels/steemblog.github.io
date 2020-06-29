@@ -1,10 +1,11 @@
 
 ---
-title: "The distribution of our beloved Super Brilliant Dollar, but why?"
+title: 'The distribution of our beloved Super Brilliant Dollar, but why?'
 permlink: the-distribution-of-our-beloved-super-brilliant-dollar-but-why
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-07 08:45:21
 categories:
 - sbd
@@ -14,7 +15,7 @@ tags:
 - money
 - funny
 - cn
-thumbnail: http://www.warbirdalley.com/images/sbd-06.jpg
+thumbnail: 'http://www.warbirdalley.com/images/sbd-06.jpg'
 sidebar:
     right:
         sticky: true
@@ -43,24 +44,43 @@ So I made the following top 20 SBD holder table for your information here. Top 2
 |---|---|---|---|
 |#1|bittrex|1,552,602|43.62%|
 |#2|	poloniex|	794,529|	22.32%
+
 |#3|	imadev|	71,103|	2.00%
+
 |#4|	teamsmooth-mm|	46,685|	1.31%
+
 |#5|	azeroth|	20,966|	0.59%
+
 |#6|	monobyte|17,912	|0.50%
+
 |#7|	rocket.chat|	11,895	|0.33%
+
 |#8|	steemit|	8,572	|0.24%
+
 |#9|	lukewearechange|	6,489|	0.18%
+
 |#10|	theoretical|	5,812	|0.16%
+
 |#11|	ned|	5,743	|0.16%
+
 |#12|	privex|	5,263	|0.15%
+
 |#13|	steemit2|	4,992|	0.14%
+
 |#14|	arhag|	4,760|	0.13%
+
 |#15|	steemitblog|	4,612|	0.13%
+
 |#16|	hitbtc-exchange|	4,604	|0.13%
+
 |#17|	alot|	4,491	|0.13%
+
 |#18|	stan|	4,409	|0.12%
+
 |#19|	utopian-io|	4,239	|0.12%
+
 |#20|	cyrano|	4,111|	0.12%
+
 |-|	SUM	|2,583,789	|72.59%
 
 *****
@@ -100,4 +120,4 @@ CN Version
 
 - - -
 
-This page is synchronized from the post: [The distribution of our beloved Super Brilliant Dollar, but why?](https://steemit.com/@deanliu/the-distribution-of-our-beloved-super-brilliant-dollar-but-why)
+This page is synchronized from the post: ['The distribution of our beloved Super Brilliant Dollar, but why?'](https://steemit.com/@deanliu/the-distribution-of-our-beloved-super-brilliant-dollar-but-why)

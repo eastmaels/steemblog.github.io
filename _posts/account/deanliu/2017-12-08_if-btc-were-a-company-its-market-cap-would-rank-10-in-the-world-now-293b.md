@@ -1,10 +1,11 @@
 
 ---
-title: "If BTC were a company, its market cap would rank #10 in the world now (293B)"
+title: 'If BTC were a company, its market cap would rank #10 in the world now (293B)'
 permlink: if-btc-were-a-company-its-market-cap-would-rank-10-in-the-world-now-293b
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-08 04:38:39
 categories:
 - bitcoin
@@ -13,7 +14,7 @@ tags:
 - cryptocurrency
 - ranking
 - marketcap
-thumbnail: https://steemitimages.com/DQmY5uK1iybRnYmqCcwuUAXaGGY3EZidQqKqed6qGSBcWDF/airplanes-713662_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmY5uK1iybRnYmqCcwuUAXaGGY3EZidQqKqed6qGSBcWDF/airplanes-713662_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ https://www.statista.com/statistics/263264/top-companies-in-the-world-by-market-
 
 - - -
 
-This page is synchronized from the post: [If BTC were a company, its market cap would rank #10 in the world now (293B)](https://steemit.com/@deanliu/if-btc-were-a-company-its-market-cap-would-rank-10-in-the-world-now-293b)
+This page is synchronized from the post: ['If BTC were a company, its market cap would rank #10 in the world now (293B)'](https://steemit.com/@deanliu/if-btc-were-a-company-its-market-cap-would-rank-10-in-the-world-now-293b)

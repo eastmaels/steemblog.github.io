@@ -1,10 +1,11 @@
 
 ---
-title: "Enough Halloween Stuffs For Me ... Except This One!"
+title: 'Enough Halloween Stuffs For Me ... Except This One!'
 permlink: enough-halloween-stuffs-for-me-except-this-one
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-30 09:17:42
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - halloween
 - funny
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Enough Halloween Stuffs For Me ... Except This One!](https://steemit.com/@deanliu/enough-halloween-stuffs-for-me-except-this-one)
+This page is synchronized from the post: ['Enough Halloween Stuffs For Me ... Except This One!'](https://steemit.com/@deanliu/enough-halloween-stuffs-for-me-except-this-one)

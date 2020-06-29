@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 14 ｜《文化读瘾．一周译报》第14期： 我们一起，在异乡结婚吧！"
+title: 'Culture Vulture for CNers Issue 14 ｜《文化读瘾．一周译报》第14期： 我们一起，在异乡结婚吧！'
 permlink: culture-vulture-for-cners-issue-14-14
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-09 08:28:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - indonesia
 - marriage
-thumbnail: https://steemitimages.com/DQmf61kdfAWcqrRsvQyYudqTvppLTUoznydHLyNfV5EVhv3/cv14.jpg
+thumbnail: 'https://steemitimages.com/DQmf61kdfAWcqrRsvQyYudqTvppLTUoznydHLyNfV5EVhv3/cv14.jpg'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ https://www.youtube.com/watch?v=hbqIl1jQue8
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 14 ｜《文化读瘾．一周译报》第14期： 我们一起，在异乡结婚吧！](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-14-14)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 14 ｜《文化读瘾．一周译报》第14期： 我们一起，在异乡结婚吧！'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-14-14)

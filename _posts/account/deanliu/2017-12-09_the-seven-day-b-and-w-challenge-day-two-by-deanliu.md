@@ -1,10 +1,11 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Two / 七天黑白挑戰 － 第二天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Two / 七天黑白挑戰 － 第二天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-two-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-09 09:11:51
 categories:
 - sevendaybnwchallenge
@@ -12,7 +13,7 @@ tags:
 - sevendaybnwchallenge
 - photography
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ I nominate @deanliu. Again. I love this guy. After all, he or she is me. lol.
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Two / 七天黑白挑戰 － 第二天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-two-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Two / 七天黑白挑戰 － 第二天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-two-by-deanliu)

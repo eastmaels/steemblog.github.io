@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 13 ｜《文化讀癮．一週譯報》第13期：到新年市集走一圈"
+title: 'Culture Vulture for CNers Issue 13 ｜《文化讀癮．一週譯報》第13期：到新年市集走一圈'
 permlink: culture-vulture-for-cners-issue-13-13
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-03 09:45:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - philippines
-thumbnail: https://steemitimages.com/DQmPc4jauAJG8cYQWSsd94YSbMyWGJdTG7tNwez7kiP4xNX/cv13.jpg
+thumbnail: 'https://steemitimages.com/DQmPc4jauAJG8cYQWSsd94YSbMyWGJdTG7tNwez7kiP4xNX/cv13.jpg'
 sidebar:
     right:
         sticky: true
@@ -154,4 +155,4 @@ CN區的朋友，
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 13 ｜《文化讀癮．一週譯報》第13期：到新年市集走一圈](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-13-13)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 13 ｜《文化讀癮．一週譯報》第13期：到新年市集走一圈'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-13-13)

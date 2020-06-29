@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 重兵來襲"
+title: '[DrugWars] 重兵來襲'
 permlink: 5caiv8-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-11 09:14:42
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - history
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmS2hY8GmqybZu2eGVa6a6NxNEpELYYe3irfyEvMTG6h55
+thumbnail: 'https://ipfs.busy.org/ipfs/QmS2hY8GmqybZu2eGVa6a6NxNEpELYYe3irfyEvMTG6h55'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ DW玩家們，歡迎在下面留言討論啊～～ ^_^
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 重兵來襲](https://steemit.com/@deanliu/5caiv8-drugwars)
+This page is synchronized from the post: ['[DrugWars] 重兵來襲'](https://steemit.com/@deanliu/5caiv8-drugwars)

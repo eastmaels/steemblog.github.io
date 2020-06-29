@@ -1,10 +1,11 @@
 
 ---
-title: "[閒聊] 電影之三 Hello Netflix"
+title: '[閒聊] 電影之三 Hello Netflix'
 permlink: hello-netflix
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-14 03:26:12
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - movie
 - netflix
-thumbnail: https://gateway.ipfs.io/ipfs/QmNxLryLbjP5GDDdiHfNBzBsM8LQ7tT8qzwnVaotCk2YCw
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmNxLryLbjP5GDDdiHfNBzBsM8LQ7tT8qzwnVaotCk2YCw'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[閒聊] 電影之三 Hello Netflix](https://steemit.com/@deanliu/hello-netflix)
+This page is synchronized from the post: ['[閒聊] 電影之三 Hello Netflix'](https://steemit.com/@deanliu/hello-netflix)

@@ -1,10 +1,11 @@
 
 ---
-title: " [Tasteem Review] 簡評Tasteem項目"
+title: ' [Tasteem Review] 簡評Tasteem項目'
 permlink: tasteem-review-tasteem-wpfnzl9m
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-10 03:24:21
 categories:
 - cn
@@ -15,7 +16,7 @@ tags:
 - dapp
 - dapp-review
 - partiko
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/SV8mlSSU-E89EA2E5B995E5BFABE785A7202019-04-1020E4B88AE58D8810.31.47.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/SV8mlSSU-E89EA2E5B995E5BFABE785A7202019-04-1020E4B88AE58D8810.31.47.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [ [Tasteem Review] 簡評Tasteem項目](https://steemit.com/@deanliu/tasteem-review-tasteem-wpfnzl9m)
+This page is synchronized from the post: [' [Tasteem Review] 簡評Tasteem項目'](https://steemit.com/@deanliu/tasteem-review-tasteem-wpfnzl9m)

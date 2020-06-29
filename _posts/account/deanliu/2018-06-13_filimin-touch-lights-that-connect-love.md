@@ -1,10 +1,11 @@
 
 ---
-title: "FILIMIN - touch lights that connect love"
+title: 'FILIMIN - touch lights that connect love'
 permlink: filimin-touch-lights-that-connect-love
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-13 05:56:24
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - family
 - globalization
 - life
-thumbnail: https://cdn.steemitimages.com/DQmdSJv5ixTf1qDi7S2vdgaL8r8t2BhuPakQMKMbHBquKxX/image%20(1).png
+thumbnail: 'https://cdn.steemitimages.com/DQmdSJv5ixTf1qDi7S2vdgaL8r8t2BhuPakQMKMbHBquKxX/image%20(1).png'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [FILIMIN - touch lights that connect love](https://steemit.com/@deanliu/filimin-touch-lights-that-connect-love)
+This page is synchronized from the post: ['FILIMIN - touch lights that connect love'](https://steemit.com/@deanliu/filimin-touch-lights-that-connect-love)

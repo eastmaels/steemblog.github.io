@@ -1,10 +1,11 @@
 
 ---
-title: "🚉  [輕旅行系列] 台中，鐵路排骨便當與珍珠奶茶  🚉   [Travel Around Taiwan] Taichung, Railway Rice Box and Bubble Tea"
+title: '🚉  [輕旅行系列] 台中，鐵路排骨便當與珍珠奶茶  🚉   [Travel Around Taiwan] Taichung, Railway Rice Box and Bubble Tea'
 permlink: travel-around-taiwan-taichung-railway-rice-box-and-bubble-tea
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-01 08:48:24
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - tea
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🚉  [輕旅行系列] 台中，鐵路排骨便當與珍珠奶茶  🚉   [Travel Around Taiwan] Taichung, Railway Rice Box and Bubble Tea](https://steemit.com/@deanliu/travel-around-taiwan-taichung-railway-rice-box-and-bubble-tea)
+This page is synchronized from the post: ['🚉  [輕旅行系列] 台中，鐵路排骨便當與珍珠奶茶  🚉   [Travel Around Taiwan] Taichung, Railway Rice Box and Bubble Tea'](https://steemit.com/@deanliu/travel-around-taiwan-taichung-railway-rice-box-and-bubble-tea)

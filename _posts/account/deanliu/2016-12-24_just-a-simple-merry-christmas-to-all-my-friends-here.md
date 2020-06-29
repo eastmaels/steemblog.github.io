@@ -1,10 +1,11 @@
 
 ---
-title: "🎄  Just a simple Merry Christmas to all my friends here🎄  輕輕一聲聖誕祝朋友們快樂🎄"
+title: '🎄  Just a simple Merry Christmas to all my friends here🎄  輕輕一聲聖誕祝朋友們快樂🎄'
 permlink: just-a-simple-merry-christmas-to-all-my-friends-here
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-24 14:36:42
 categories:
 - christmas
@@ -12,7 +13,7 @@ tags:
 - christmas
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🎄  Just a simple Merry Christmas to all my friends here🎄  輕輕一聲聖誕祝朋友們快樂🎄](https://steemit.com/@deanliu/just-a-simple-merry-christmas-to-all-my-friends-here)
+This page is synchronized from the post: ['🎄  Just a simple Merry Christmas to all my friends here🎄  輕輕一聲聖誕祝朋友們快樂🎄'](https://steemit.com/@deanliu/just-a-simple-merry-christmas-to-all-my-friends-here)

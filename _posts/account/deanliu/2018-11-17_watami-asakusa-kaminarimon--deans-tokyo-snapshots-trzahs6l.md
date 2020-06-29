@@ -1,10 +1,11 @@
 
 ---
-title: "Watami Asakusa Kaminarimon 🍙 Dean's Tokyo Snapshots 🍙 東京淺草寺"
+title: 'Watami Asakusa Kaminarimon 🍙 Dean''s Tokyo Snapshots 🍙 東京淺草寺'
 permlink: watami-asakusa-kaminarimon--deans-tokyo-snapshots-trzahs6l
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-17 06:10:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmRpK53J55GCjxyTYUTMeJxnG4dajS6ybeBxUrvBwvm8fM/DSC_0008.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmRpK53J55GCjxyTYUTMeJxnG4dajS6ybeBxUrvBwvm8fM/DSC_0008.JPG'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Watami Asakusa Kaminarimon 🍙 Dean's Tokyo Snapshots 🍙 東京淺草寺](https://steemit.com/@deanliu/watami-asakusa-kaminarimon--deans-tokyo-snapshots-trzahs6l)
+This page is synchronized from the post: ['Watami Asakusa Kaminarimon 🍙 Dean''s Tokyo Snapshots 🍙 東京淺草寺'](https://steemit.com/@deanliu/watami-asakusa-kaminarimon--deans-tokyo-snapshots-trzahs6l)

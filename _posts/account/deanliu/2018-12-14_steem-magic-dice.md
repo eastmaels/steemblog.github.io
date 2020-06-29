@@ -1,10 +1,11 @@
 
 ---
-title: "Steem賭場：Magic Dice"
+title: 'Steem賭場：Magic Dice'
 permlink: steem-magic-dice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-14 11:37:45
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - gambling
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmZLEMTjrPtFGyEaJ3Gt6bP6qcZvy2SKzSnj6g7bqYJrWy
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZLEMTjrPtFGyEaJ3Gt6bP6qcZvy2SKzSnj6g7bqYJrWy'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Steem賭場：Magic Dice](https://steemit.com/@deanliu/steem-magic-dice)
+This page is synchronized from the post: ['Steem賭場：Magic Dice'](https://steemit.com/@deanliu/steem-magic-dice)

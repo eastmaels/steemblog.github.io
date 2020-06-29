@@ -1,16 +1,17 @@
 
 ---
-title: "指教@dapeng的 Steemit 的三大谎言(新手必读)"
+title: '指教@dapeng的 "Steemit 的三大谎言(新手必读)"'
 permlink: dapeng-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-20 15:01:30
 categories:
 - cn
 tags:
 - cn
-thumbnail: https://steemitimages.com/DQmcmo2BxwSXMT44vkMh6rd36inrjLmLQ8gH21VUP3ECUQ8/giraffes-627031_640.jpg
+thumbnail: 'https://steemitimages.com/DQmcmo2BxwSXMT44vkMh6rd36inrjLmLQ8gH21VUP3ECUQ8/giraffes-627031_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -111,4 +112,4 @@ https://steemitimages.com/DQmakLHi5PWNYcvsyAyiGkJ4EenBTt3AvCXwy47YCEJcGgC/%E8%9E
 
 - - -
 
-This page is synchronized from the post: [指教@dapeng的 Steemit 的三大谎言(新手必读)](https://steemit.com/@deanliu/dapeng-steemit)
+This page is synchronized from the post: ['指教@dapeng的 "Steemit 的三大谎言(新手必读)"'](https://steemit.com/@deanliu/dapeng-steemit)

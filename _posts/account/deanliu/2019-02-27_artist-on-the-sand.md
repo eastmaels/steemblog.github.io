@@ -1,10 +1,11 @@
 
 ---
-title: "[滬尾遊] Artist on the sand 沙灘上的藝術家"
+title: '[滬尾遊] Artist on the sand 沙灘上的藝術家'
 permlink: artist-on-the-sand
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-27 11:43:36
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - tamsui
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/ec07b908a307cdd1bcce73f82572479803d260b3.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/ec07b908a307cdd1bcce73f82572479803d260b3.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[滬尾遊] Artist on the sand 沙灘上的藝術家](https://steemit.com/@deanliu/artist-on-the-sand)
+This page is synchronized from the post: ['[滬尾遊] Artist on the sand 沙灘上的藝術家'](https://steemit.com/@deanliu/artist-on-the-sand)

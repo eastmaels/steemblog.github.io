@@ -1,10 +1,11 @@
 
 ---
-title: "Finally.... Big boss showed up."
+title: 'Finally.... Big boss showed up.'
 permlink: finally-big-boss-showed-up-umf0nlyt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-05 06:26:57
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - boss
 - busy
 - partiko
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/f0880c57b856eb21298024c8314da2829ebc9263.png
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/f0880c57b856eb21298024c8314da2829ebc9263.png'
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Finally.... Big boss showed up.](https://steemit.com/@deanliu/finally-big-boss-showed-up-umf0nlyt)
+This page is synchronized from the post: ['Finally.... Big boss showed up.'](https://steemit.com/@deanliu/finally-big-boss-showed-up-umf0nlyt)

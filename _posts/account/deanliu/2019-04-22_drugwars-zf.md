@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 造反了！ZF幫成員全部打一輪出氣😈！"
+title: '[DrugWars] 造反了！ZF幫成員全部打一輪出氣😈！'
 permlink: drugwars-zf
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-22 11:30:24
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - government
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmSitbCtknMk9tLw5p4tkqKMsnWUa2zcfhPhNnzm8K1bKP
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSitbCtknMk9tLw5p4tkqKMsnWUa2zcfhPhNnzm8K1bKP'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ If you don't understand Chinese, that's fine. If you play DrugWars, you'll under
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 造反了！ZF幫成員全部打一輪出氣😈！](https://steemit.com/@deanliu/drugwars-zf)
+This page is synchronized from the post: ['[DrugWars] 造反了！ZF幫成員全部打一輪出氣😈！'](https://steemit.com/@deanliu/drugwars-zf)

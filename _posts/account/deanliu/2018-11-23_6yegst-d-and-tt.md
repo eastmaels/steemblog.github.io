@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 出國前夕的牙疼"
+title: '[D&TT] 出國前夕的牙疼'
 permlink: 6yegst-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-23 06:59:12
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - cn
 - dean-tokyo
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmazUSbcrNtZkppqFwnQbtjTqadvZdmN4HGWmPPos58C8A
+thumbnail: 'https://ipfs.busy.org/ipfs/QmazUSbcrNtZkppqFwnQbtjTqadvZdmN4HGWmPPos58C8A'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ TT你這小子，運氣好，要是晚一天脫落，在飛機上喊疼，我看
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 出國前夕的牙疼](https://steemit.com/@deanliu/6yegst-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 出國前夕的牙疼'](https://steemit.com/@deanliu/6yegst-d-and-tt)

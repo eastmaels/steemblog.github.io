@@ -1,10 +1,11 @@
 
 ---
-title: "Time to shift attention, briefly, from ETH to EHT: Historical Black Hole Image! 黑洞揭秘！"
+title: 'Time to shift attention, briefly, from ETH to EHT: Historical Black Hole Image! 黑洞揭秘！'
 permlink: time-to-shift-attention-briefly-from-eth-to-eht-historical-black-hole-image
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-11 00:55:51
 categories:
 - steemstem
@@ -14,7 +15,7 @@ tags:
 - astronomy
 - news
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmQgiqi9e4xjLZLiUY5phgfpTRgT9BgfPqxYaDrz2xSJCw/photo5869455135544027398.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmQgiqi9e4xjLZLiUY5phgfpTRgT9BgfPqxYaDrz2xSJCw/photo5869455135544027398.jpg'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ Okay, now we can shift attention back to ETH.... lol
 
 - - -
 
-This page is synchronized from the post: [Time to shift attention, briefly, from ETH to EHT: Historical Black Hole Image! 黑洞揭秘！](https://steemit.com/@deanliu/time-to-shift-attention-briefly-from-eth-to-eht-historical-black-hole-image)
+This page is synchronized from the post: ['Time to shift attention, briefly, from ETH to EHT: Historical Black Hole Image! 黑洞揭秘！'](https://steemit.com/@deanliu/time-to-shift-attention-briefly-from-eth-to-eht-historical-black-hole-image)

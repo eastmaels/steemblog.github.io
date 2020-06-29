@@ -1,10 +1,11 @@
 
 ---
-title: "local delicacies 1 - Jiufen photo series 002"
+title: 'local delicacies 1 - Jiufen photo series 002'
 permlink: local-delicacies-1-jiufen-photo-series-002
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-21 02:28:42
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - food
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [local delicacies 1 - Jiufen photo series 002](https://steemit.com/@deanliu/local-delicacies-1-jiufen-photo-series-002)
+This page is synchronized from the post: ['local delicacies 1 - Jiufen photo series 002'](https://steemit.com/@deanliu/local-delicacies-1-jiufen-photo-series-002)

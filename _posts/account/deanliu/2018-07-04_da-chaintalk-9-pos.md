@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #9 — 共識機制介紹：POS的前世今生"
+title: 'DA-ChainTalk #9 — 共識機制介紹：POS的前世今生'
 permlink: da-chaintalk-9-pos
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-04 13:00:57
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - steem
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmZF39mx6pt6DaKooaamibwPLDr23jg2UCMiC3b1syXwuE/poker-3024531_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmZF39mx6pt6DaKooaamibwPLDr23jg2UCMiC3b1syXwuE/poker-3024531_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ dPOS最常被批評的就是所謂「中心化」的問題，畢竟21個人掌�
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #9 — 共識機制介紹：POS的前世今生](https://steemit.com/@deanliu/da-chaintalk-9-pos)
+This page is synchronized from the post: ['DA-ChainTalk #9 — 共識機制介紹：POS的前世今生'](https://steemit.com/@deanliu/da-chaintalk-9-pos)

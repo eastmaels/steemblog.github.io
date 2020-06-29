@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT]  生病 "
+title: '[D&TT]  生病 '
 permlink: dtt-ksbogqnn
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-21 03:26:42
 categories:
 - deantt
@@ -15,7 +16,7 @@ tags:
 - kids
 - health
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmNanmAvxWtJ2ay8uZD9dLbgDKBDMx3Dwc1K6ZUTKoAbX3/toddler-1245674_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmNanmAvxWtJ2ay8uZD9dLbgDKBDMx3Dwc1K6ZUTKoAbX3/toddler-1245674_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [[D&TT]  生病 ](https://steemit.com/@deanliu/dtt-ksbogqnn)
+This page is synchronized from the post: ['[D&TT]  生病 '](https://steemit.com/@deanliu/dtt-ksbogqnn)

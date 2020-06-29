@@ -1,10 +1,11 @@
 
 ---
-title: "🍜  Fight of the Culinary Masters - The Beef Noodles Clash!! 🍜  台北牛肉麵大對決！林東芳 v 段純貞 🍜"
+title: '🍜  Fight of the Culinary Masters - The Beef Noodles Clash!! 🍜  台北牛肉麵大對決！林東芳 v 段純貞 🍜'
 permlink: fight-of-the-culinary-masters-the-beef-noodles-clash-v
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-28 22:57:06
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - noodles
 - taipei
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ DCZ Beef Noodles, on the other hand, looks so modern and organized. This store w
 
 - - -
 
-This page is synchronized from the post: [🍜  Fight of the Culinary Masters - The Beef Noodles Clash!! 🍜  台北牛肉麵大對決！林東芳 v 段純貞 🍜](https://steemit.com/@deanliu/fight-of-the-culinary-masters-the-beef-noodles-clash-v)
+This page is synchronized from the post: ['🍜  Fight of the Culinary Masters - The Beef Noodles Clash!! 🍜  台北牛肉麵大對決！林東芳 v 段純貞 🍜'](https://steemit.com/@deanliu/fight-of-the-culinary-masters-the-beef-noodles-clash-v)

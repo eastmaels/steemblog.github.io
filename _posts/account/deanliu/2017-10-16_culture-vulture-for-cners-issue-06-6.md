@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 06 ｜《文化读瘾．一周译报》第6期：山的民族、海的民族"
+title: 'Culture Vulture for CNers Issue 06 ｜《文化读瘾．一周译报》第6期：山的民族、海的民族'
 permlink: culture-vulture-for-cners-issue-06-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-16 13:20:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - nature
-thumbnail: https://steemitimages.com/DQmRHecbY8GfZ3KPXzVzqrkfP2i2VNYMAC5u9GF9kT2ixDz/CV06.jpg
+thumbnail: 'https://steemitimages.com/DQmRHecbY8GfZ3KPXzVzqrkfP2i2VNYMAC5u9GF9kT2ixDz/CV06.jpg'
 sidebar:
     right:
         sticky: true
@@ -159,4 +160,4 @@ https://www.youtube.com/watch?v=g6LkJ_1V0Dk
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 06 ｜《文化读瘾．一周译报》第6期：山的民族、海的民族](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-06-6)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 06 ｜《文化读瘾．一周译报》第6期：山的民族、海的民族'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-06-6)

@@ -1,10 +1,11 @@
 
 ---
-title: "種韭菜，割韭菜，一年收上百萬人民幣！Happy leek farmer in Taiwan"
+title: '種韭菜，割韭菜，一年收上百萬人民幣！Happy leek farmer in Taiwan'
 permlink: happy-leek-farmer-in-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-04 06:35:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - funny
 - farming
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [種韭菜，割韭菜，一年收上百萬人民幣！Happy leek farmer in Taiwan](https://steemit.com/@deanliu/happy-leek-farmer-in-taiwan)
+This page is synchronized from the post: ['種韭菜，割韭菜，一年收上百萬人民幣！Happy leek farmer in Taiwan'](https://steemit.com/@deanliu/happy-leek-farmer-in-taiwan)

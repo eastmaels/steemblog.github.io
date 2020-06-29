@@ -1,10 +1,11 @@
 
 ---
-title: "收到Cobinhood的紀念品"
+title: '收到Cobinhood的紀念品'
 permlink: cobinhood
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-02 09:10:00
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - cobinhood
 - exchange
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmQEe8atPREZr9Afk2s4gvdMcJob4ip63Tv1467hXfRMSA/photo6260518109777602596.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmQEe8atPREZr9Afk2s4gvdMcJob4ip63Tv1467hXfRMSA/photo6260518109777602596.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Steemit上，比我還清楚Cobinhood的人就是 @kimxinfo了，他還是打雜
 
 - - -
 
-This page is synchronized from the post: [收到Cobinhood的紀念品](https://steemit.com/@deanliu/cobinhood)
+This page is synchronized from the post: ['收到Cobinhood的紀念品'](https://steemit.com/@deanliu/cobinhood)

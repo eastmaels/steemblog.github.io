@@ -1,10 +1,11 @@
 
 ---
-title: "Geometry of Tokyo - a collection of shapes and light and shadows from my trip"
+title: 'Geometry of Tokyo - a collection of shapes and light and shadows from my trip'
 permlink: geometry-of-tokyo-a-collection-of-shapes-and-light-and-shadows-from-my-trip
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-29 07:59:12
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - tokyo
 - japan
 - jp
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Geometry of Tokyo - a collection of shapes and light and shadows from my trip](https://steemit.com/@deanliu/geometry-of-tokyo-a-collection-of-shapes-and-light-and-shadows-from-my-trip)
+This page is synchronized from the post: ['Geometry of Tokyo - a collection of shapes and light and shadows from my trip'](https://steemit.com/@deanliu/geometry-of-tokyo-a-collection-of-shapes-and-light-and-shadows-from-my-trip)

@@ -1,10 +1,11 @@
 
 ---
-title: "100% SP Might Be A Good Payout Option Now! 現在就選擇100%SP為發帖收入吧!"
+title: '100% SP Might Be A Good Payout Option Now! 現在就選擇100%SP為發帖收入吧!'
 permlink: 100-sp-might-be-a-good-payout-option-now-100-sp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-25 06:38:24
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - payout
 - steem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [100% SP Might Be A Good Payout Option Now! 現在就選擇100%SP為發帖收入吧!](https://steemit.com/@deanliu/100-sp-might-be-a-good-payout-option-now-100-sp)
+This page is synchronized from the post: ['100% SP Might Be A Good Payout Option Now! 現在就選擇100%SP為發帖收入吧!'](https://steemit.com/@deanliu/100-sp-might-be-a-good-payout-option-now-100-sp)

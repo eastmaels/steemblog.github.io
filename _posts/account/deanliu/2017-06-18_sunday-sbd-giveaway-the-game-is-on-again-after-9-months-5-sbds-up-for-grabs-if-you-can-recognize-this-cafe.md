@@ -1,10 +1,11 @@
 
 ---
-title: "[Sunday SBD Giveaway] The Game is ON again after 9 months!! 5 SBDs up for grabs if you can recognize this Cafe"
+title: '[Sunday SBD Giveaway] The Game is ON again after 9 months!! 5 SBDs up for grabs if you can recognize this Cafe'
 permlink: sunday-sbd-giveaway-the-game-is-on-again-after-9-months-5-sbds-up-for-grabs-if-you-can-recognize-this-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-18 03:11:54
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - travel
 - giveaway
 - sundaysbd-giveaway
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ Rules - </strong>Guess the cafe from the photo in the post</p>
 
 - - -
 
-This page is synchronized from the post: [[Sunday SBD Giveaway] The Game is ON again after 9 months!! 5 SBDs up for grabs if you can recognize this Cafe](https://steemit.com/@deanliu/sunday-sbd-giveaway-the-game-is-on-again-after-9-months-5-sbds-up-for-grabs-if-you-can-recognize-this-cafe)
+This page is synchronized from the post: ['[Sunday SBD Giveaway] The Game is ON again after 9 months!! 5 SBDs up for grabs if you can recognize this Cafe'](https://steemit.com/@deanliu/sunday-sbd-giveaway-the-game-is-on-again-after-9-months-5-sbds-up-for-grabs-if-you-can-recognize-this-cafe)

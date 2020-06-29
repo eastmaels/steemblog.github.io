@@ -1,10 +1,11 @@
 
 ---
-title: "隨筆詩 — 詩人之死 Death of A Poet"
+title: '隨筆詩 — 詩人之死 Death of A Poet'
 permlink: death-of-a-poet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-14 23:48:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - poem
 - poet
 - death
-thumbnail: https://steemitimages.com/DQmQzB4fmZx2YBQcw1BiKCuGG6qLWdLBjSM8vyHe4AfvTnc/cemetery-91552_640.jpg
+thumbnail: 'https://steemitimages.com/DQmQzB4fmZx2YBQcw1BiKCuGG6qLWdLBjSM8vyHe4AfvTnc/cemetery-91552_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ image - pixabay
 
 - - -
 
-This page is synchronized from the post: [隨筆詩 — 詩人之死 Death of A Poet](https://steemit.com/@deanliu/death-of-a-poet)
+This page is synchronized from the post: ['隨筆詩 — 詩人之死 Death of A Poet'](https://steemit.com/@deanliu/death-of-a-poet)

@@ -1,10 +1,11 @@
 
 ---
-title: "[食記] 台北的香港興記菜館 Taipei's Hing Kee Restaurant from Hong Kong"
+title: '[食記] 台北的香港興記菜館 Taipei''s Hing Kee Restaurant from Hong Kong'
 permlink: taipei-s-hing-kee-restaurant-from-hong-kong
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-26 11:41:00
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cn
 - hk
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/79e50620c6e2033b2ad44b37de5fec1dc876f278.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/79e50620c6e2033b2ad44b37de5fec1dc876f278.jpg'
 sidebar:
     right:
         sticky: true
@@ -91,4 +92,4 @@ XO醬炒空心菜～～
 
 - - -
 
-This page is synchronized from the post: [[食記] 台北的香港興記菜館 Taipei's Hing Kee Restaurant from Hong Kong](https://steemit.com/@deanliu/taipei-s-hing-kee-restaurant-from-hong-kong)
+This page is synchronized from the post: ['[食記] 台北的香港興記菜館 Taipei''s Hing Kee Restaurant from Hong Kong'](https://steemit.com/@deanliu/taipei-s-hing-kee-restaurant-from-hong-kong)

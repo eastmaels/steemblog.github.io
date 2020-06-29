@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 iki Expresso Tokyo"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 iki Expresso Tokyo'
 permlink: deans-tokyo-snapshots--iki-expresso-tokyo-nmtlcle5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-29 23:39:06
 categories:
 - coffee
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/c064d8b3b59fa3cc701eb80986e841fe8b98f563.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/c064d8b3b59fa3cc701eb80986e841fe8b98f563.png'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 iki Expresso Tokyo](https://steemit.com/@deanliu/deans-tokyo-snapshots--iki-expresso-tokyo-nmtlcle5)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 iki Expresso Tokyo'](https://steemit.com/@deanliu/deans-tokyo-snapshots--iki-expresso-tokyo-nmtlcle5)

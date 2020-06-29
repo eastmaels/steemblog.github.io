@@ -1,10 +1,11 @@
 
 ---
-title: "DailyDialogue (beta) #0110  Auld Lang Syne"
+title: 'DailyDialogue (beta) #0110  Auld Lang Syne'
 permlink: dailydialogue-beta-0110-auld-lang-syne
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-25 06:15:48
 categories:
 - dailydialogue
@@ -12,7 +13,7 @@ tags:
 - dailydialogue
 - oneweekoff
 - fun
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ To love a thing means wanting it to live.&nbsp;</em></blockquote>
 
 - - -
 
-This page is synchronized from the post: [DailyDialogue (beta) #0110  Auld Lang Syne](https://steemit.com/@deanliu/dailydialogue-beta-0110-auld-lang-syne)
+This page is synchronized from the post: ['DailyDialogue (beta) #0110  Auld Lang Syne'](https://steemit.com/@deanliu/dailydialogue-beta-0110-auld-lang-syne)

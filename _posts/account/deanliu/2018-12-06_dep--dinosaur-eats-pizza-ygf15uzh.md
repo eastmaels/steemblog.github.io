@@ -1,10 +1,11 @@
 
 ---
-title: "DEP - Dinosaur Eats Pizza"
+title: 'DEP - Dinosaur Eats Pizza'
 permlink: dep--dinosaur-eats-pizza-ygf15uzh
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-06 01:22:42
 categories:
 - partiko
@@ -14,7 +15,7 @@ tags:
 - drawing
 - steem
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmVL2JEELJiCRr2njzS9pAc8B8hRJTj35HvZhQPEktZ5SC/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-05%20%E4%B8%8B%E5%8D%888.59.56.png
+thumbnail: 'https://cdn.steemitimages.com/DQmVL2JEELJiCRr2njzS9pAc8B8hRJTj35HvZhQPEktZ5SC/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-12-05%20%E4%B8%8B%E5%8D%888.59.56.png'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [DEP - Dinosaur Eats Pizza](https://steemit.com/@deanliu/dep--dinosaur-eats-pizza-ygf15uzh)
+This page is synchronized from the post: ['DEP - Dinosaur Eats Pizza'](https://steemit.com/@deanliu/dep--dinosaur-eats-pizza-ygf15uzh)

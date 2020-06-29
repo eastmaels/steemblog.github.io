@@ -1,10 +1,11 @@
 
 ---
-title: "Coffee Lovers MUST Have! HILARIOUS Fridge Magnet for a Laugh Every Morning!"
+title: 'Coffee Lovers MUST Have! HILARIOUS Fridge Magnet for a Laugh Every Morning!'
 permlink: coffee-lovers-must-have-hilarious-fridge-magnet-for-a-laugh-every-morning
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-21 16:05:39
 categories:
 - funny
@@ -12,7 +13,7 @@ tags:
 - funny
 - life
 - coffee
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Coffee Lovers MUST Have! HILARIOUS Fridge Magnet for a Laugh Every Morning!](https://steemit.com/@deanliu/coffee-lovers-must-have-hilarious-fridge-magnet-for-a-laugh-every-morning)
+This page is synchronized from the post: ['Coffee Lovers MUST Have! HILARIOUS Fridge Magnet for a Laugh Every Morning!'](https://steemit.com/@deanliu/coffee-lovers-must-have-hilarious-fridge-magnet-for-a-laugh-every-morning)

@@ -1,10 +1,11 @@
 
 ---
-title: "Cha Cha Thé - When the East meets the West and When Literature meets Delicacy 采采 - 當東方遇見西方 當文學遇上食茶"
+title: 'Cha Cha Thé - When the East meets the West and When Literature meets Delicacy 采采 - 當東方遇見西方 當文學遇上食茶'
 permlink: cha-cha-the-when-the-east-meets-the-west-and-when-literature-meets-delicacy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-27 08:41:33
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - poem
 - art
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -136,4 +137,4 @@ Wang Chen Tsai-Hsia, Designer in Chief, founder and soul of <a href="http://www.
 
 - - -
 
-This page is synchronized from the post: [Cha Cha Thé - When the East meets the West and When Literature meets Delicacy 采采 - 當東方遇見西方 當文學遇上食茶](https://steemit.com/@deanliu/cha-cha-the-when-the-east-meets-the-west-and-when-literature-meets-delicacy)
+This page is synchronized from the post: ['Cha Cha Thé - When the East meets the West and When Literature meets Delicacy 采采 - 當東方遇見西方 當文學遇上食茶'](https://steemit.com/@deanliu/cha-cha-the-when-the-east-meets-the-west-and-when-literature-meets-delicacy)

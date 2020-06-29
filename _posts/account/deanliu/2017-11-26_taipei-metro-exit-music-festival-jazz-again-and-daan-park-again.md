@@ -1,10 +1,11 @@
 
 ---
-title: "Taipei Metro Exit Music Festival - Jazz again and Daan Park again ... ^^ 又見爵士之夜－台北捷運出口音樂節"
+title: 'Taipei Metro Exit Music Festival - Jazz again and Daan Park again ... ^^ 又見爵士之夜－台北捷運出口音樂節'
 permlink: taipei-metro-exit-music-festival-jazz-again-and-daan-park-again
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-26 07:25:24
 categories:
 - music
@@ -14,7 +15,7 @@ tags:
 - weekend
 - life
 - cn
-thumbnail: https://steemitimages.com/DQmNbLLFJGPxbW1vcYsY27FoFx1LBkNyaR82k2xptAedikG/1511658221446.jpg
+thumbnail: 'https://steemitimages.com/DQmNbLLFJGPxbW1vcYsY27FoFx1LBkNyaR82k2xptAedikG/1511658221446.jpg'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ https://steemitimages.com/DQmR1bMhyCfgqQ9M4FM34wYSPUvskpk5YSNAKfYwiPUGASU/DSC_12
 
 - - -
 
-This page is synchronized from the post: [Taipei Metro Exit Music Festival - Jazz again and Daan Park again ... ^^ 又見爵士之夜－台北捷運出口音樂節](https://steemit.com/@deanliu/taipei-metro-exit-music-festival-jazz-again-and-daan-park-again)
+This page is synchronized from the post: ['Taipei Metro Exit Music Festival - Jazz again and Daan Park again ... ^^ 又見爵士之夜－台北捷運出口音樂節'](https://steemit.com/@deanliu/taipei-metro-exit-music-festival-jazz-again-and-daan-park-again)

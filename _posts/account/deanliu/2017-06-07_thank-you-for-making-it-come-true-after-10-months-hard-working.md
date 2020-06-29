@@ -1,10 +1,11 @@
 
 ---
-title: "Thank You for Making It Come True After 10 Months' Hard Working!!"
+title: 'Thank You for Making It Come True After 10 Months'' Hard Working!!'
 permlink: thank-you-for-making-it-come-true-after-10-months-hard-working
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-07 09:37:06
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - engagement
 - sharing
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Thank You for Making It Come True After 10 Months' Hard Working!!](https://steemit.com/@deanliu/thank-you-for-making-it-come-true-after-10-months-hard-working)
+This page is synchronized from the post: ['Thank You for Making It Come True After 10 Months'' Hard Working!!'](https://steemit.com/@deanliu/thank-you-for-making-it-come-true-after-10-months-hard-working)

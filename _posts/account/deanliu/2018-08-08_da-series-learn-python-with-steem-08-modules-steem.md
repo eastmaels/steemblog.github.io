@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #08] 函式庫(Modules)的安裝與使用，準備好玩Steem！"
+title: '[DA series - Learn Python with Steem #08] 函式庫(Modules)的安裝與使用，準備好玩Steem！'
 permlink: da-series-learn-python-with-steem-08-modules-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-08 05:02:33
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -133,4 +134,4 @@ python check_balance.py BlahBlahBlah
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #08] 函式庫(Modules)的安裝與使用，準備好玩Steem！](https://steemit.com/@deanliu/da-series-learn-python-with-steem-08-modules-steem)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #08] 函式庫(Modules)的安裝與使用，準備好玩Steem！'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-08-modules-steem)

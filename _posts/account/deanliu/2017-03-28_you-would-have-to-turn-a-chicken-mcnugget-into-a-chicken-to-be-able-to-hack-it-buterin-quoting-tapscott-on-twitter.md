@@ -1,10 +1,11 @@
 
 ---
-title: "You would have to turn a Chicken McNugget into a chicken to be able to hack it Buterin quoting Tapscott on Twitter"
+title: '"You would have to turn a Chicken McNugget into a chicken to be able to hack it" Buterin quoting Tapscott on Twitter'
 permlink: you-would-have-to-turn-a-chicken-mcnugget-into-a-chicken-to-be-able-to-hack-it-buterin-quoting-tapscott-on-twitter
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-28 09:42:33
 categories:
 - mcnugget
@@ -14,7 +15,7 @@ tags:
 - funny
 - hash
 - twitter
-thumbnail: https://steemitimages.com/DQmaosS2BMYxVyuu3ft66i3RhXBe48iYxF7gshgn4iAcaP4/IMG_20170328_093839.jpg
+thumbnail: 'https://steemitimages.com/DQmaosS2BMYxVyuu3ft66i3RhXBe48iYxF7gshgn4iAcaP4/IMG_20170328_093839.jpg'
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [You would have to turn a Chicken McNugget into a chicken to be able to hack it Buterin quoting Tapscott on Twitter](https://steemit.com/@deanliu/you-would-have-to-turn-a-chicken-mcnugget-into-a-chicken-to-be-able-to-hack-it-buterin-quoting-tapscott-on-twitter)
+This page is synchronized from the post: ['"You would have to turn a Chicken McNugget into a chicken to be able to hack it" Buterin quoting Tapscott on Twitter'](https://steemit.com/@deanliu/you-would-have-to-turn-a-chicken-mcnugget-into-a-chicken-to-be-able-to-hack-it-buterin-quoting-tapscott-on-twitter)

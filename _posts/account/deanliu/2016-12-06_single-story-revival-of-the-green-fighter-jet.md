@@ -1,17 +1,18 @@
 
 ---
-title: "單篇故事《綠色戰機再現》－寫於《少年》之後  Single Story - Revival of the Green Fighter Jet"
+title: '單篇故事《綠色戰機再現》－寫於《少年》之後  Single Story - Revival of the Green Fighter Jet'
 permlink: single-story-revival-of-the-green-fighter-jet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-06 09:59:36
 categories:
 - story
 tags:
 - story
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [單篇故事《綠色戰機再現》－寫於《少年》之後  Single Story - Revival of the Green Fighter Jet](https://steemit.com/@deanliu/single-story-revival-of-the-green-fighter-jet)
+This page is synchronized from the post: ['單篇故事《綠色戰機再現》－寫於《少年》之後  Single Story - Revival of the Green Fighter Jet'](https://steemit.com/@deanliu/single-story-revival-of-the-green-fighter-jet)

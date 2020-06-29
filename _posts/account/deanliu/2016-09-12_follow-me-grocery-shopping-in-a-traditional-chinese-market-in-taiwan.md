@@ -1,10 +1,11 @@
 
 ---
-title: "Follow me grocery shopping in a traditional Chinese market in Taiwan 台灣傳統市場走一回"
+title: 'Follow me grocery shopping in a traditional Chinese market in Taiwan 台灣傳統市場走一回'
 permlink: follow-me-grocery-shopping-in-a-traditional-chinese-market-in-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-12 06:04:15
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - shopping
 - cn
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Follow me grocery shopping in a traditional Chinese market in Taiwan 台灣傳統市場走一回](https://steemit.com/@deanliu/follow-me-grocery-shopping-in-a-traditional-chinese-market-in-taiwan)
+This page is synchronized from the post: ['Follow me grocery shopping in a traditional Chinese market in Taiwan 台灣傳統市場走一回'](https://steemit.com/@deanliu/follow-me-grocery-shopping-in-a-traditional-chinese-market-in-taiwan)

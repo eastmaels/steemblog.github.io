@@ -1,10 +1,11 @@
 
 ---
-title: "[News] Steem Ranks #2 in Rency's Rating"
+title: '[News] Steem Ranks #2 in Rency''s Rating'
 permlink: news-steem-ranks-2-in-rency-s-rating
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-14 01:39:15
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - rating
 - news
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQgbQ8aS8CE1sgEk6CxGSmh2waN5WPG1FwUTEbqR1sApM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-14%20%E4%B8%8A%E5%8D%889.24.45.png
+thumbnail: 'https://cdn.steemitimages.com/DQmQgbQ8aS8CE1sgEk6CxGSmh2waN5WPG1FwUTEbqR1sApM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-14%20%E4%B8%8A%E5%8D%889.24.45.png'
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ Anyway, more exposure is always better for Steem!
 
 - - -
 
-This page is synchronized from the post: [[News] Steem Ranks #2 in Rency's Rating](https://steemit.com/@deanliu/news-steem-ranks-2-in-rency-s-rating)
+This page is synchronized from the post: ['[News] Steem Ranks #2 in Rency''s Rating'](https://steemit.com/@deanliu/news-steem-ranks-2-in-rency-s-rating)

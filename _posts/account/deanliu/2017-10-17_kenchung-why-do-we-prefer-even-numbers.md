@@ -1,10 +1,11 @@
 
 ---
-title: "看《Kenchung學數學》學人文－Why Do We Prefer Even Numbers?"
+title: '看《Kenchung學數學》學人文－Why Do We Prefer Even Numbers?'
 permlink: kenchung-why-do-we-prefer-even-numbers
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-17 08:39:57
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - science
 - cn-science
 - writing
-thumbnail: https://steemitimages.com/DQmYkD3npKF9v9YGS6QPc42aJFDQLcegWNU3F512AUHXqE7/cube-2031512_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmYkD3npKF9v9YGS6QPc42aJFDQLcegWNU3F512AUHXqE7/cube-2031512_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -121,4 +122,4 @@ K大師在這篇文章裡，從生活中擷取靈感，告訴了我們數學知�
 
 - - -
 
-This page is synchronized from the post: [看《Kenchung學數學》學人文－Why Do We Prefer Even Numbers?](https://steemit.com/@deanliu/kenchung-why-do-we-prefer-even-numbers)
+This page is synchronized from the post: ['看《Kenchung學數學》學人文－Why Do We Prefer Even Numbers?'](https://steemit.com/@deanliu/kenchung-why-do-we-prefer-even-numbers)

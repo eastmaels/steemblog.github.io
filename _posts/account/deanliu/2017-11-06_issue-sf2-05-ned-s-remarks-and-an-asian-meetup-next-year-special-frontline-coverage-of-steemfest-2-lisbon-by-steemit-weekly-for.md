@@ -1,10 +1,11 @@
 
 ---
-title: "📣    [Issue SF2-05: Ned's Remarks and An Asian MeetUp Next Year?] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣"
+title: '📣    [Issue SF2-05: Ned''s Remarks and An Asian MeetUp Next Year?] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'
 permlink: issue-sf2-05-ned-s-remarks-and-an-asian-meetup-next-year-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-06 23:24:09
 categories:
 - steemfest
@@ -14,7 +15,7 @@ tags:
 - news
 - steemit-weekly
 - cn
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -187,4 +188,4 @@ For what this *Steemit Weekly* series is about, please check out latest [issue 0
 
 - - -
 
-This page is synchronized from the post: [📣    [Issue SF2-05: Ned's Remarks and An Asian MeetUp Next Year?] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣](https://steemit.com/@deanliu/issue-sf2-05-ned-s-remarks-and-an-asian-meetup-next-year-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for)
+This page is synchronized from the post: ['📣    [Issue SF2-05: Ned''s Remarks and An Asian MeetUp Next Year?] 📣   Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'](https://steemit.com/@deanliu/issue-sf2-05-ned-s-remarks-and-an-asian-meetup-next-year-special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for)

@@ -1,10 +1,11 @@
 
 ---
-title: "DClick的進化－Monetize By Url"
+title: 'DClick的進化－Monetize By Url'
 permlink: dclick-monetize-by-url
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-19 02:02:15
 categories:
 - dclick
@@ -14,7 +15,7 @@ tags:
 - monetization
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmVgnFpcRfYVKcgxqEGEBvxQcKpwuG4CgLzWAVyC1qguLo
+thumbnail: 'https://ipfs.busy.org/ipfs/QmVgnFpcRfYVKcgxqEGEBvxQcKpwuG4CgLzWAVyC1qguLo'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ DClick出了一個新的廣告方式，我大概四五天前發現的，似乎�
 
 - - -
 
-This page is synchronized from the post: [DClick的進化－Monetize By Url](https://steemit.com/@deanliu/dclick-monetize-by-url)
+This page is synchronized from the post: ['DClick的進化－Monetize By Url'](https://steemit.com/@deanliu/dclick-monetize-by-url)

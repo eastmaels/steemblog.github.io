@@ -1,10 +1,11 @@
 
 ---
-title: "Calculate your way into the Steemit ocean ... Steemit世界裡的加減乘除"
+title: 'Calculate your way into the Steemit ocean ... Steemit世界裡的加減乘除'
 permlink: calculate-your-way-into-the-steemit-ocean-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-06 09:29:21
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - cn
 - 
 - RobinhoonWhale
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Calculate your way into the Steemit ocean ... Steemit世界裡的加減乘除](https://steemit.com/@deanliu/calculate-your-way-into-the-steemit-ocean-steemit)
+This page is synchronized from the post: ['Calculate your way into the Steemit ocean ... Steemit世界裡的加減乘除'](https://steemit.com/@deanliu/calculate-your-way-into-the-steemit-ocean-steemit)

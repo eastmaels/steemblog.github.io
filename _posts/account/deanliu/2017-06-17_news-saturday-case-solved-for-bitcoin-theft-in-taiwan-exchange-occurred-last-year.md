@@ -1,10 +1,11 @@
 
 ---
-title: "News Saturday - Case Solved for Bitcoin Theft in Taiwan Exchange Occurred Last Year  週六新聞 - 台灣比特幣交易所去年遭竊事件破案"
+title: 'News Saturday - Case Solved for Bitcoin Theft in Taiwan Exchange Occurred Last Year  週六新聞 - 台灣比特幣交易所去年遭竊事件破案'
 permlink: news-saturday-case-solved-for-bitcoin-theft-in-taiwan-exchange-occurred-last-year
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-17 07:20:33
 categories:
 - news
@@ -14,7 +15,7 @@ tags:
 - exchange
 - tor
 - hack
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [News Saturday - Case Solved for Bitcoin Theft in Taiwan Exchange Occurred Last Year  週六新聞 - 台灣比特幣交易所去年遭竊事件破案](https://steemit.com/@deanliu/news-saturday-case-solved-for-bitcoin-theft-in-taiwan-exchange-occurred-last-year)
+This page is synchronized from the post: ['News Saturday - Case Solved for Bitcoin Theft in Taiwan Exchange Occurred Last Year  週六新聞 - 台灣比特幣交易所去年遭竊事件破案'](https://steemit.com/@deanliu/news-saturday-case-solved-for-bitcoin-theft-in-taiwan-exchange-occurred-last-year)

@@ -1,10 +1,11 @@
 
 ---
-title: "iStaging - Preview objects/furnitures and spaces like never before"
+title: 'iStaging - Preview objects/furnitures and spaces like never before'
 permlink: istaging-preview-objects-furnitures-and-spaces-like-never-before
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-18 15:00:12
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - ar
 - vr
 - istaging
-thumbnail: https://i.imgur.com/ZVuoqVr.png
+thumbnail: 'https://i.imgur.com/ZVuoqVr.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [iStaging - Preview objects/furnitures and spaces like never before](https://steemit.com/@deanliu/istaging-preview-objects-furnitures-and-spaces-like-never-before)
+This page is synchronized from the post: ['iStaging - Preview objects/furnitures and spaces like never before'](https://steemit.com/@deanliu/istaging-preview-objects-furnitures-and-spaces-like-never-before)

@@ -1,10 +1,11 @@
 
 ---
-title: "#costumecontest  Most creative costume category Ghooooooost"
+title: '#costumecontest  Most creative costume category "Ghooooooost"'
 permlink: costumecontest-most-creative-costume-category-ghooooooost
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-31 23:15:48
 categories:
 - costumecontest
@@ -13,7 +14,7 @@ tags:
 - halloween
 - life
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [#costumecontest  Most creative costume category Ghooooooost](https://steemit.com/@deanliu/costumecontest-most-creative-costume-category-ghooooooost)
+This page is synchronized from the post: ['#costumecontest  Most creative costume category "Ghooooooost"'](https://steemit.com/@deanliu/costumecontest-most-creative-costume-category-ghooooooost)

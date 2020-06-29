@@ -1,10 +1,11 @@
 
 ---
-title: "參賽名單～～【第一屆 deanliu X Partiko 微小說 競賽：42字】"
+title: '參賽名單～～【第一屆 deanliu X Partiko 微小說 競賽：42字】'
 permlink: deanliu-x-partiko--42-gahzmqn3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-17 01:52:09
 categories:
 - partiko
@@ -14,7 +15,7 @@ tags:
 - story
 - contest
 - cn
-thumbnail: https://steemitimages.com/0x0/https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.png
+thumbnail: 'https://steemitimages.com/0x0/https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.png'
 sidebar:
     right:
         sticky: true
@@ -44,6 +45,7 @@ widgets:
 <h3>一起來欣賞，眾人的創意吧！</h3>
 
 ![](https://steemitimages.com/0x0/https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.png)
+
 |  1 | maiyude | 大风,大雨,大街,大喊,大叫<br/>小人,小小,小跳,小哭,小闹<br/>无风,无雨,无天,无地,无言<br/>绝情,绝心,绝路,绝望,绝句 | 資格符合 |
 |  :------: | :------: | ------ | :------: |
 |  2 | maiyude | 和尚市集买肉，背着大筐。<br/>大家指指点点，和尚淡然自若。<br/>买完肉，和尚转身就走。<br/>突然 ，背筐传来小儿大哭声。 | 資格符合 |
@@ -109,4 +111,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [參賽名單～～【第一屆 deanliu X Partiko 微小說 競賽：42字】](https://steemit.com/@deanliu/deanliu-x-partiko--42-gahzmqn3)
+This page is synchronized from the post: ['參賽名單～～【第一屆 deanliu X Partiko 微小說 競賽：42字】'](https://steemit.com/@deanliu/deanliu-x-partiko--42-gahzmqn3)

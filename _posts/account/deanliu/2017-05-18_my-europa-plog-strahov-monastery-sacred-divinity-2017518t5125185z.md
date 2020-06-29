@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Strahov Monastery - Sacred Divinity"
+title: 'My Europa Plog - Strahov Monastery - Sacred Divinity'
 permlink: my-europa-plog-strahov-monastery-sacred-divinity-2017518t5125185z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-18 03:12:09
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - religious
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/5ihWBDo.jpg
+thumbnail: 'https://i.imgur.com/5ihWBDo.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Strahov Monastery - Sacred Divinity](https://steemit.com/@deanliu/my-europa-plog-strahov-monastery-sacred-divinity-2017518t5125185z)
+This page is synchronized from the post: ['My Europa Plog - Strahov Monastery - Sacred Divinity'](https://steemit.com/@deanliu/my-europa-plog-strahov-monastery-sacred-divinity-2017518t5125185z)

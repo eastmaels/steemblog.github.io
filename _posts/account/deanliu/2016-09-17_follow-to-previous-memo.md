@@ -1,16 +1,17 @@
 
 ---
-title: "Followup to previous memo -- 月圓之後，是事物改變的開始，點上燭火，留一絲期待"
+title: 'Followup to previous memo -- 月圓之後，是事物改變的開始，點上燭火，留一絲期待'
 permlink: follow-to-previous-memo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-17 12:26:30
 categories:
 - cn
 tags:
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Followup to previous memo -- 月圓之後，是事物改變的開始，點上燭火，留一絲期待](https://steemit.com/@deanliu/follow-to-previous-memo)
+This page is synchronized from the post: ['Followup to previous memo -- 月圓之後，是事物改變的開始，點上燭火，留一絲期待'](https://steemit.com/@deanliu/follow-to-previous-memo)

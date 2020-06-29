@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #2 — 區塊鏈應用的分層解析"
+title: 'DA-ChainTalk #2 — 區塊鏈應用的分層解析'
 permlink: da-chaintalk-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-23 03:49:12
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - cn-programming
 - cn-cryptocurrency
 - cn
-thumbnail: https://steemitimages.com/DQmS99XjS22SRRVNMTG6kckJDb2zTfAkbKaZJrS6fu2YPzk/block-chain-3055701_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmS99XjS22SRRVNMTG6kckJDb2zTfAkbKaZJrS6fu2YPzk/block-chain-3055701_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ API就好像是一個規定好的溝通格式，讓我們能夠向特定的伺�
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #2 — 區塊鏈應用的分層解析](https://steemit.com/@deanliu/da-chaintalk-2)
+This page is synchronized from the post: ['DA-ChainTalk #2 — 區塊鏈應用的分層解析'](https://steemit.com/@deanliu/da-chaintalk-2)

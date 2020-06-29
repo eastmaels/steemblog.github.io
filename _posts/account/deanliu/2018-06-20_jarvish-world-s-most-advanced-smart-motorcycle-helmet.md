@@ -1,10 +1,11 @@
 
 ---
-title: "JARVISH - World's Most Advanced Smart Motorcycle Helmet"
+title: 'JARVISH - World''s Most Advanced Smart Motorcycle Helmet'
 permlink: jarvish-world-s-most-advanced-smart-motorcycle-helmet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-20 15:05:21
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - motorcycle
 - helmet
 - ar
-thumbnail: https://i.imgur.com/6vJCf3u.png
+thumbnail: 'https://i.imgur.com/6vJCf3u.png'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [JARVISH - World's Most Advanced Smart Motorcycle Helmet](https://steemit.com/@deanliu/jarvish-world-s-most-advanced-smart-motorcycle-helmet)
+This page is synchronized from the post: ['JARVISH - World''s Most Advanced Smart Motorcycle Helmet'](https://steemit.com/@deanliu/jarvish-world-s-most-advanced-smart-motorcycle-helmet)

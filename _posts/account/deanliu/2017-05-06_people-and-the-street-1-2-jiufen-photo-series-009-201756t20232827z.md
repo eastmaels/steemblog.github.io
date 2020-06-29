@@ -1,10 +1,11 @@
 
 ---
-title: "People and the street 1/2 - Jiufen photo series 009"
+title: 'People and the street 1/2 - Jiufen photo series 009'
 permlink: people-and-the-street-1-2-jiufen-photo-series-009-201756t20232827z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-06 12:02:36
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - taiwan
 - esteem
-thumbnail: https://i.imgur.com/4vWX8pH.jpg
+thumbnail: 'https://i.imgur.com/4vWX8pH.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [People and the street 1/2 - Jiufen photo series 009](https://steemit.com/@deanliu/people-and-the-street-1-2-jiufen-photo-series-009-201756t20232827z)
+This page is synchronized from the post: ['People and the street 1/2 - Jiufen photo series 009'](https://steemit.com/@deanliu/people-and-the-street-1-2-jiufen-photo-series-009-201756t20232827z)

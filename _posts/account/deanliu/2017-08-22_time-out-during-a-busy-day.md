@@ -1,10 +1,11 @@
 
 ---
-title: "偷閒 ... Time Out ... during a busy day ..."
+title: '偷閒 ... Time Out ... during a busy day ...'
 permlink: time-out-during-a-busy-day
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-22 06:42:18
 categories:
 - life
@@ -12,7 +13,7 @@ tags:
 - life
 - afternoon
 - mumblejumble
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [偷閒 ... Time Out ... during a busy day ...](https://steemit.com/@deanliu/time-out-during-a-busy-day)
+This page is synchronized from the post: ['偷閒 ... Time Out ... during a busy day ...'](https://steemit.com/@deanliu/time-out-during-a-busy-day)

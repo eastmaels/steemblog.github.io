@@ -1,10 +1,11 @@
 
 ---
-title: "Share my another favorite ingredient for smoothies!"
+title: 'Share my another favorite ingredient for smoothies!'
 permlink: share-my-another-favorite-ingredient-for-smoothies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-25 09:31:30
 categories:
 - smoothie
@@ -13,7 +14,7 @@ tags:
 - passionfruit
 - juice
 - recipe
-thumbnail: http://i.imgsafe.org/5d30a77ff1.jpg
+thumbnail: 'http://i.imgsafe.org/5d30a77ff1.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Share my another favorite ingredient for smoothies!](https://steemit.com/@deanliu/share-my-another-favorite-ingredient-for-smoothies)
+This page is synchronized from the post: ['Share my another favorite ingredient for smoothies!'](https://steemit.com/@deanliu/share-my-another-favorite-ingredient-for-smoothies)

@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] Battle Simulation 戰事模擬：@travelgirl來襲！"
+title: '[DrugWars] Battle Simulation 戰事模擬：@travelgirl來襲！'
 permlink: drugwars-battle-simulation-travelgirl
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-15 01:24:51
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - dapp
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQ7yKV5dPhJz1CdfqVi9RZcXYhmKT32KaWDBfai6x37jS/chess-2489553_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmQ7yKV5dPhJz1CdfqVi9RZcXYhmKT32KaWDBfai6x37jS/chess-2489553_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -211,4 +212,4 @@ P.S. 此文寫於昨天下午，晚上發不出去。剛好今天早上戰事規
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] Battle Simulation 戰事模擬：@travelgirl來襲！](https://steemit.com/@deanliu/drugwars-battle-simulation-travelgirl)
+This page is synchronized from the post: ['[DrugWars] Battle Simulation 戰事模擬：@travelgirl來襲！'](https://steemit.com/@deanliu/drugwars-battle-simulation-travelgirl)

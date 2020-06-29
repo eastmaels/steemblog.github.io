@@ -16,7 +16,7 @@ tags:
 - food
 - dean-hk
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/c79e2eba4d97c66ea5a965ca8c3ccd0ffbba675a.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/c79e2eba4d97c66ea5a965ca8c3ccd0ffbba675a.jpg'
 sidebar:
     right:
         sticky: true
@@ -71,4 +71,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[香港隨食] 裕・鵝莊 Goose Manor](https://steemit.com/@deanliu/goose-manor)
+This page is synchronized from the post: ['[香港隨食] 裕・鵝莊 Goose Manor'](https://steemit.com/@deanliu/goose-manor)

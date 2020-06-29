@@ -1,10 +1,11 @@
 
 ---
-title: "Bonjour Steem! 美女支持台灣第一個Steem見證人— @stoodkev — Support the first ever Steem Witness in Taiwan!!"
+title: 'Bonjour Steem! 美女支持台灣第一個Steem見證人— @stoodkev — Support the first ever Steem Witness in Taiwan!!'
 permlink: bonjour-steem-stoodkev-support-the-first-ever-steem-witness-in-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-25 10:33:12
 categories:
 - witness
@@ -14,7 +15,7 @@ tags:
 - steem
 - steemit
 - cn
-thumbnail: https://steemitimages.com/DQmWhdPADwRYpAnXtSVFFajxr5zyyhDdZ2jXo9DaqnHDMvC/image.png
+thumbnail: 'https://steemitimages.com/DQmWhdPADwRYpAnXtSVFFajxr5zyyhDdZ2jXo9DaqnHDMvC/image.png'
 sidebar:
     right:
         sticky: true
@@ -86,4 +87,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Bonjour Steem! 美女支持台灣第一個Steem見證人— @stoodkev — Support the first ever Steem Witness in Taiwan!!](https://steemit.com/@deanliu/bonjour-steem-stoodkev-support-the-first-ever-steem-witness-in-taiwan)
+This page is synchronized from the post: ['Bonjour Steem! 美女支持台灣第一個Steem見證人— @stoodkev — Support the first ever Steem Witness in Taiwan!!'](https://steemit.com/@deanliu/bonjour-steem-stoodkev-support-the-first-ever-steem-witness-in-taiwan)

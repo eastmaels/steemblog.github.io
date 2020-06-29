@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之第三講 ] Curation，上帝之手？"
+title: '[ Steem十講之第三講 ] Curation，上帝之手？'
 permlink: steem-curation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-04 05:48:24
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - steem-10
 - curation
-thumbnail: https://steemitimages.com/DQmVrYUhg7Zw1Hgti2LJ8EPvnD62sryhHsP3f6333A1DWGe/hands-2327605_640.jpg
+thumbnail: 'https://steemitimages.com/DQmVrYUhg7Zw1Hgti2LJ8EPvnD62sryhHsP3f6333A1DWGe/hands-2327605_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -96,4 +97,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之第三講 ] Curation，上帝之手？](https://steemit.com/@deanliu/steem-curation)
+This page is synchronized from the post: ['[ Steem十講之第三講 ] Curation，上帝之手？'](https://steemit.com/@deanliu/steem-curation)

@@ -1,10 +1,11 @@
 
 ---
-title: "Eggs Shopping 去蛋舖，蛋呢？"
+title: 'Eggs Shopping 去蛋舖，蛋呢？'
 permlink: eggs-shopping
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-11 13:02:45
 categories:
 - toy
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/b39ea5fb09d8fb5c1ab4fe45e9ea381779252477.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/b39ea5fb09d8fb5c1ab4fe45e9ea381779252477.jpg'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ TT扭了幾顆，不便宜，最便宜從$60起跳，動不動就是一兩百...
 
 - - -
 
-This page is synchronized from the post: [Eggs Shopping 去蛋舖，蛋呢？](https://steemit.com/@deanliu/eggs-shopping)
+This page is synchronized from the post: ['Eggs Shopping 去蛋舖，蛋呢？'](https://steemit.com/@deanliu/eggs-shopping)

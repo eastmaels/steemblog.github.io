@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #4 — 側鏈協作的世界"
+title: 'DA-ChainTalk #4 — 側鏈協作的世界'
 permlink: da-chaintalk-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-12 01:24:51
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - sidechain
 - bitcoin
 - cn
-thumbnail: https://steemitimages.com/DQmP359JfAJAkDsrtNQ2ynCBYKi1UX5embPmpKuwppz66dR/the-main-processor-3286065_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmP359JfAJAkDsrtNQ2ynCBYKi1UX5embPmpKuwppz66dR/the-main-processor-3286065_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -120,4 +121,4 @@ SPV驗證方法最為公平，但是比較困難的是如果要利用SPV Proof�
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #4 — 側鏈協作的世界](https://steemit.com/@deanliu/da-chaintalk-4)
+This page is synchronized from the post: ['DA-ChainTalk #4 — 側鏈協作的世界'](https://steemit.com/@deanliu/da-chaintalk-4)

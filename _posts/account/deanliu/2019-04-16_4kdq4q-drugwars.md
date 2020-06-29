@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 多項更新上線，收益依舊不見起色"
+title: '[DrugWars] 多項更新上線，收益依舊不見起色'
 permlink: 4kdq4q-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-16 03:46:51
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cn-dw
 - drugwars
 - gaming
-thumbnail: https://cdn.steemitimages.com/DQmNUAUSLLyCPK1aPUF7FmrFDv8gzyMwbStWKgpQ1YkErir/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-16%20%E4%B8%8A%E5%8D%8811.23.26.png
+thumbnail: 'https://cdn.steemitimages.com/DQmNUAUSLLyCPK1aPUF7FmrFDv8gzyMwbStWKgpQ1YkErir/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-16%20%E4%B8%8A%E5%8D%8811.23.26.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Mission那裡以前都只是些廢話，現在已經把未來要上線的任務�
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 多項更新上線，收益依舊不見起色](https://steemit.com/@deanliu/4kdq4q-drugwars)
+This page is synchronized from the post: ['[DrugWars] 多項更新上線，收益依舊不見起色'](https://steemit.com/@deanliu/4kdq4q-drugwars)

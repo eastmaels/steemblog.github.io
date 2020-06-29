@@ -1,10 +1,11 @@
 
 ---
-title: "Night and Day at Chiang Kai-shek Memorial Hall  夜與日，在中正紀念堂"
+title: 'Night and Day at Chiang Kai-shek Memorial Hall  夜與日，在中正紀念堂'
 permlink: night-and-day-at-chiang-kai-shek-memorial-hall
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-01-18 15:53:12
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - travel
 - taipei
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Night and Day at Chiang Kai-shek Memorial Hall  夜與日，在中正紀念堂](https://steemit.com/@deanliu/night-and-day-at-chiang-kai-shek-memorial-hall)
+This page is synchronized from the post: ['Night and Day at Chiang Kai-shek Memorial Hall  夜與日，在中正紀念堂'](https://steemit.com/@deanliu/night-and-day-at-chiang-kai-shek-memorial-hall)

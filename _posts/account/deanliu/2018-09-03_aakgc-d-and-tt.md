@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 新角"
+title: '[D&TT] 新角'
 permlink: aakgc-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-03 02:51:51
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - time
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmSWnLQMX7opWY1gtvUma8P9RydnyAnJNGpkpWvea5igmn
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSWnLQMX7opWY1gtvUma8P9RydnyAnJNGpkpWvea5igmn'
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 新角](https://steemit.com/@deanliu/aakgc-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 新角'](https://steemit.com/@deanliu/aakgc-d-and-tt)

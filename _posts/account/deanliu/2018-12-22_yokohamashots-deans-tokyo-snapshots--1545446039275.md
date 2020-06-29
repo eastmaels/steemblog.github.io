@@ -1,10 +1,11 @@
 
 ---
-title: "Yokohama Shots 🍙 Dean's Tokyo Snapshots 🍙 橫濱港"
+title: 'Yokohama Shots 🍙 Dean''s Tokyo Snapshots 🍙 橫濱港'
 permlink: yokohamashots-deans-tokyo-snapshots--1545446039275
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-22 02:34:00
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - yokohama
 - dean-tokyo
 - japan
-thumbnail: https://cdn.steemitimages.com/DQmcxwmkTz5c7UVtcfTNZeRg2efobNpzG9xFoTDamf612mi/DSC_7456.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmcxwmkTz5c7UVtcfTNZeRg2efobNpzG9xFoTDamf612mi/DSC_7456.JPG'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Yokohama Shots 🍙 Dean's Tokyo Snapshots 🍙 橫濱港](https://steemit.com/@deanliu/yokohamashots-deans-tokyo-snapshots--1545446039275)
+This page is synchronized from the post: ['Yokohama Shots 🍙 Dean''s Tokyo Snapshots 🍙 橫濱港'](https://steemit.com/@deanliu/yokohamashots-deans-tokyo-snapshots--1545446039275)

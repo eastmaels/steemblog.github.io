@@ -1,10 +1,11 @@
 
 ---
-title: "🚉   [輕旅行系列] 慵懶台南 #1 水果行與杏仁豆腐  🚉   [Travel Around Taiwan] Enchanting Tainan #1 Fruits Store & Almond Tofu"
+title: '🚉   [輕旅行系列] 慵懶台南 #1 水果行與杏仁豆腐  🚉   [Travel Around Taiwan] Enchanting Tainan #1 Fruits Store & Almond Tofu'
 permlink: 1-travel-around-taiwan-enchanting-tainan-1-fruits-store-and-almond-tofu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-27 16:14:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - food
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmYJ7wnQEucr8nydPwY6XqEsGGP2RexezorGQQUw3w6An1/DSC_3717.JPG
+thumbnail: 'https://steemitimages.com/DQmYJ7wnQEucr8nydPwY6XqEsGGP2RexezorGQQUw3w6An1/DSC_3717.JPG'
 sidebar:
     right:
         sticky: true
@@ -82,4 +83,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🚉   [輕旅行系列] 慵懶台南 #1 水果行與杏仁豆腐  🚉   [Travel Around Taiwan] Enchanting Tainan #1 Fruits Store & Almond Tofu](https://steemit.com/@deanliu/1-travel-around-taiwan-enchanting-tainan-1-fruits-store-and-almond-tofu)
+This page is synchronized from the post: ['🚉   [輕旅行系列] 慵懶台南 #1 水果行與杏仁豆腐  🚉   [Travel Around Taiwan] Enchanting Tainan #1 Fruits Store & Almond Tofu'](https://steemit.com/@deanliu/1-travel-around-taiwan-enchanting-tainan-1-fruits-store-and-almond-tofu)

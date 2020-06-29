@@ -1,10 +1,11 @@
 
 ---
-title: "🎃  Hallosteem Photography Contest Entry - 🎃   I WANT MYYYYY~~~ BURGER!! 🎃"
+title: '🎃  Hallosteem Photography Contest Entry - 🎃   "I WANT MYYYYY~~~ BURGER!!" 🎃'
 permlink: hallosteem-photography-contest-entry-i-want-myyyyy-burger
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-27 13:20:30
 categories:
 - hallosteem-photo
@@ -14,7 +15,7 @@ tags:
 - halloween
 - horror
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ https://steemitimages.com/DQmWWQWitiCESbULCMdy6E63vZBXks2PNVMCUrqorv8F9sL/photo6
 
 - - -
 
-This page is synchronized from the post: [🎃  Hallosteem Photography Contest Entry - 🎃   I WANT MYYYYY~~~ BURGER!! 🎃](https://steemit.com/@deanliu/hallosteem-photography-contest-entry-i-want-myyyyy-burger)
+This page is synchronized from the post: ['🎃  Hallosteem Photography Contest Entry - 🎃   "I WANT MYYYYY~~~ BURGER!!" 🎃'](https://steemit.com/@deanliu/hallosteem-photography-contest-entry-i-want-myyyyy-burger)

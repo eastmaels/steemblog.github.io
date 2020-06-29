@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 No title"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 No title'
 permlink: dean-s-tokyo-snapshots-no-title
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-25 23:30:45
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - dean-tokyo
 - japan
-thumbnail: https://cdn.steemitimages.com/DQmUzDSp8MZRWxxaEVQWqjjyWNkUHFHwzrutf1dQpzuXnqy/DSC_6727.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmUzDSp8MZRWxxaEVQWqjjyWNkUHFHwzrutf1dQpzuXnqy/DSC_6727.JPG'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 No title](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-no-title)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 No title'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-no-title)

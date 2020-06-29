@@ -5,6 +5,7 @@ permlink: sct-and-proxy-token-witness-sct-steem-proxy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-05 03:13:48
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - steem
 - proxy
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmetdhXiYVCXZMbJrFUppBhYYT6fh6o4ghrFAAAX9YSbFH/democrats-3594094_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmetdhXiYVCXZMbJrFUppBhYYT6fh6o4ghrFAAAX9YSbFH/democrats-3594094_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[SCT & Proxy.token Witness] SCT團隊進一步希望提升Steem社區的代議效率，宣布見證人參與計畫與發行PROXY代幣](https://steemit.com/@deanliu/sct-and-proxy-token-witness-sct-steem-proxy)
+This page is synchronized from the post: ['[SCT & Proxy.token Witness] SCT團隊進一步希望提升Steem社區的代議效率，宣布見證人參與計畫與發行PROXY代幣'](https://steemit.com/@deanliu/sct-and-proxy-token-witness-sct-steem-proxy)

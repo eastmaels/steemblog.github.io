@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] Been there"
+title: '[D&TT] Been there'
 permlink: d-and-tt-been-there
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-13 10:52:03
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - kids
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmW5xGZZ3UTTE3E124V3kgp1yFQFrr1TnmdkgKxVzKtSNy/baby-22194_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmW5xGZZ3UTTE3E124V3kgp1yFQFrr1TnmdkgKxVzKtSNy/baby-22194_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ TT算是一個蠻冷靜的小孩，喔，我指的是在陌生人面前，因為
 
 - - -
 
-This page is synchronized from the post: [[D&TT] Been there](https://steemit.com/@deanliu/d-and-tt-been-there)
+This page is synchronized from the post: ['[D&TT] Been there'](https://steemit.com/@deanliu/d-and-tt-been-there)

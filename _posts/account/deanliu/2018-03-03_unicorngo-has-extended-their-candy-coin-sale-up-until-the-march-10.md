@@ -1,10 +1,11 @@
 
 ---
-title: "UnicornGO has extended their Candy Coin sale up until the March 10"
+title: 'UnicornGO has extended their Candy Coin sale up until the March 10'
 permlink: unicorngo-has-extended-their-candy-coin-sale-up-until-the-march-10
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-03 03:13:21
 categories:
 - unicorngo
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - ico
 - news
-thumbnail: https://steemitimages.com/DQmZswaSPeMHTJ7gtrbNBacfnNk8K1om3ZpvVvXr6mm9wAM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-03-03%20%E4%B8%8A%E5%8D%8810.55.44.png
+thumbnail: 'https://steemitimages.com/DQmZswaSPeMHTJ7gtrbNBacfnNk8K1om3ZpvVvXr6mm9wAM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-03-03%20%E4%B8%8A%E5%8D%8810.55.44.png'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ I am not a responsible investor as I invested without fully understand what I wo
 
 - - -
 
-This page is synchronized from the post: [UnicornGO has extended their Candy Coin sale up until the March 10](https://steemit.com/@deanliu/unicorngo-has-extended-their-candy-coin-sale-up-until-the-march-10)
+This page is synchronized from the post: ['UnicornGO has extended their Candy Coin sale up until the March 10'](https://steemit.com/@deanliu/unicorngo-has-extended-their-candy-coin-sale-up-until-the-march-10)

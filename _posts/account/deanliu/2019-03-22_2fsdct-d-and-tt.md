@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 小小建築師夢"
+title: '[D&TT] 小小建築師夢'
 permlink: 2fsdct-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-22 02:27:36
 categories:
 - deantt
@@ -13,7 +14,7 @@ tags:
 - cn
 - architecture
 - education
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/d0a8aa588cb58cfc632d49cb289a94f5875475e1.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/d0a8aa588cb58cfc632d49cb289a94f5875475e1.jpg'
 sidebar:
     right:
         sticky: true
@@ -111,4 +112,4 @@ TT還在生病中，而我是在又一個無眠的夜晚寫下這一篇。他剛
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 小小建築師夢](https://steemit.com/@deanliu/2fsdct-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 小小建築師夢'](https://steemit.com/@deanliu/2fsdct-d-and-tt)

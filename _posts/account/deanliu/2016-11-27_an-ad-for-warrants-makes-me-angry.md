@@ -1,10 +1,11 @@
 
 ---
-title: "An Ad for Warrants Makes Me Angry  令人生氣的權證廣告"
+title: 'An Ad for Warrants Makes Me Angry  令人生氣的權證廣告'
 permlink: an-ad-for-warrants-makes-me-angry
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-27 09:34:18
 categories:
 - life
@@ -12,7 +13,7 @@ tags:
 - life
 - money
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [An Ad for Warrants Makes Me Angry  令人生氣的權證廣告](https://steemit.com/@deanliu/an-ad-for-warrants-makes-me-angry)
+This page is synchronized from the post: ['An Ad for Warrants Makes Me Angry  令人生氣的權證廣告'](https://steemit.com/@deanliu/an-ad-for-warrants-makes-me-angry)

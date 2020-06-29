@@ -1,16 +1,17 @@
 
 ---
-title: "Really a less than minor bug ... but still a bug."
+title: 'Really a less than minor bug ... but still a bug.'
 permlink: really-a-less-than-minor-bug-but-still-a-bug
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-12 09:33:42
 categories:
 - bug
 tags:
 - bug
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Really a less than minor bug ... but still a bug.](https://steemit.com/@deanliu/really-a-less-than-minor-bug-but-still-a-bug)
+This page is synchronized from the post: ['Really a less than minor bug ... but still a bug.'](https://steemit.com/@deanliu/really-a-less-than-minor-bug-but-still-a-bug)

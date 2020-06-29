@@ -1,10 +1,11 @@
 
 ---
-title: "I love Boston Bruins because ..."
+title: 'I love Boston Bruins because ...'
 permlink: i-love-boston-bruins-because
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-28 09:25:18
 categories:
 - hockey
@@ -14,7 +15,7 @@ tags:
 - nhl
 - sports
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmfAYHv2k1a2gBMGQfUKh6sBhTkiWKLtPHnyxs1uLKmSth/photo6079898418400045236.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmfAYHv2k1a2gBMGQfUKh6sBhTkiWKLtPHnyxs1uLKmSth/photo6079898418400045236.jpg'
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ Let's compare them. See how they look alike? ^_^ A capital letter B with some ba
 
 - - -
 
-This page is synchronized from the post: [I love Boston Bruins because ...](https://steemit.com/@deanliu/i-love-boston-bruins-because)
+This page is synchronized from the post: ['I love Boston Bruins because ...'](https://steemit.com/@deanliu/i-love-boston-bruins-because)

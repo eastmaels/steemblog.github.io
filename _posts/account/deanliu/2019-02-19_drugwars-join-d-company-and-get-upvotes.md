@@ -1,10 +1,11 @@
 
 ---
-title: "[閒聊DrugWars] 還等什麼？黑幫帝國就要崛起，還不趕緊加入？Join D-Company and Get Upvotes!"
+title: '[閒聊DrugWars] 還等什麼？黑幫帝國就要崛起，還不趕緊加入？Join D-Company and Get Upvotes!'
 permlink: drugwars-join-d-company-and-get-upvotes
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-19 01:56:24
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - games
 - dapp
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmbSwKRrwVtCnVe7mxJzU45xxHPu3rNWbjGfeEeFMFCNSu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-19%20%E4%B8%8A%E5%8D%889.22.14.png
+thumbnail: 'https://cdn.steemitimages.com/DQmbSwKRrwVtCnVe7mxJzU45xxHPu3rNWbjGfeEeFMFCNSu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-19%20%E4%B8%8A%E5%8D%889.22.14.png'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ English readers, I am promoting Drugwars via my ref link below. If you join this
 
 - - -
 
-This page is synchronized from the post: [[閒聊DrugWars] 還等什麼？黑幫帝國就要崛起，還不趕緊加入？Join D-Company and Get Upvotes!](https://steemit.com/@deanliu/drugwars-join-d-company-and-get-upvotes)
+This page is synchronized from the post: ['[閒聊DrugWars] 還等什麼？黑幫帝國就要崛起，還不趕緊加入？Join D-Company and Get Upvotes!'](https://steemit.com/@deanliu/drugwars-join-d-company-and-get-upvotes)

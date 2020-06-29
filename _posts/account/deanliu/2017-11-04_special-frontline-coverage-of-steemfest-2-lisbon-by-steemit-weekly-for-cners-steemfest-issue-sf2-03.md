@@ -1,10 +1,11 @@
 
 ---
-title: "📣  [Issue SF2-03: Culture and WorldMap?] 📣  Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣"
+title: '📣  [Issue SF2-03: Culture and WorldMap?] 📣  Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'
 permlink: special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners-steemfest-issue-sf2-03
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-04 12:42:39
 categories:
 - steemfest
@@ -14,7 +15,7 @@ tags:
 - news
 - steemit-weekly
 - cn
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -184,4 +185,4 @@ SteemFest真是處處驚喜。 @eroche 與 @martibis湊在一塊，又是一個�
 
 - - -
 
-This page is synchronized from the post: [📣  [Issue SF2-03: Culture and WorldMap?] 📣  Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣](https://steemit.com/@deanliu/special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners-steemfest-issue-sf2-03)
+This page is synchronized from the post: ['📣  [Issue SF2-03: Culture and WorldMap?] 📣  Special Frontline Coverage of SteemFest 2 Lisbon by Steemit Weekly for CNers!!! 📣 SteemFest里斯本大會現場特別報導！ 📣'](https://steemit.com/@deanliu/special-frontline-coverage-of-steemfest-2-lisbon-by-steemit-weekly-for-cners-steemfest-issue-sf2-03)

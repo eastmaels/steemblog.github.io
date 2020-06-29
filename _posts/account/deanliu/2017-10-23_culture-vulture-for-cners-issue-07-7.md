@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 07 ｜《文化讀癮．一週譯報》第7期：憤怒女神的愛情故事"
+title: 'Culture Vulture for CNers Issue 07 ｜《文化讀癮．一週譯報》第7期：憤怒女神的愛情故事'
 permlink: culture-vulture-for-cners-issue-07-7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-23 02:56:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - religion
-thumbnail: https://steemitimages.com/DQmXM5JZXgxuBTM7u8AFxN118Gu5poMKUVxAhFu2kS4jwAX/CV07.jpg
+thumbnail: 'https://steemitimages.com/DQmXM5JZXgxuBTM7u8AFxN118Gu5poMKUVxAhFu2kS4jwAX/CV07.jpg'
 sidebar:
     right:
         sticky: true
@@ -120,4 +121,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 07 ｜《文化讀癮．一週譯報》第7期：憤怒女神的愛情故事](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-07-7)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 07 ｜《文化讀癮．一週譯報》第7期：憤怒女神的愛情故事'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-07-7)

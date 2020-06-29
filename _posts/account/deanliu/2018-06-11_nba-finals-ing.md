@@ -1,10 +1,11 @@
 
 ---
-title: "[NBA Finals] 勇士王朝-ing？"
+title: '[NBA Finals] 勇士王朝-ing？'
 permlink: nba-finals-ing
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-11 08:40:30
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - warriors
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmV4ta5gACvYh9tHPSNwzQ9DUtrJY9kSVa32VNVrA2v6oR/DSC_5460.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmV4ta5gACvYh9tHPSNwzQ9DUtrJY9kSVa32VNVrA2v6oR/DSC_5460.JPG'
 sidebar:
     right:
         sticky: true
@@ -88,4 +89,4 @@ G1到G4的橫掃，其實顯示出兩隊實力真的是有差距的。不像是�
 
 - - -
 
-This page is synchronized from the post: [[NBA Finals] 勇士王朝-ing？](https://steemit.com/@deanliu/nba-finals-ing)
+This page is synchronized from the post: ['[NBA Finals] 勇士王朝-ing？'](https://steemit.com/@deanliu/nba-finals-ing)

@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 殺聲震天，屍橫遍野"
+title: '[DrugWars] 殺聲震天，屍橫遍野'
 permlink: 3rmvra-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-07 08:42:06
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - battle
-thumbnail: https://ipfs.busy.org/ipfs/QmaVvXj3MiuDPWYR7f4wZPM3q7oJgDsiwJocKSSmy5h5j7
+thumbnail: 'https://ipfs.busy.org/ipfs/QmaVvXj3MiuDPWYR7f4wZPM3q7oJgDsiwJocKSSmy5h5j7'
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 殺聲震天，屍橫遍野](https://steemit.com/@deanliu/3rmvra-drugwars)
+This page is synchronized from the post: ['[DrugWars] 殺聲震天，屍橫遍野'](https://steemit.com/@deanliu/3rmvra-drugwars)

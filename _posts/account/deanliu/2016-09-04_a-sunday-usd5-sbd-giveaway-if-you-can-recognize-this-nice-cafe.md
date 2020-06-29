@@ -1,10 +1,11 @@
 
 ---
-title: "A Sunday $5 SBD giveaway if you can recognize this nice cafe!! 週日咖啡廳猜謎再來一次！"
+title: 'A Sunday $5 SBD giveaway if you can recognize this nice cafe!! 週日咖啡廳猜謎再來一次！'
 permlink: a-sunday-usd5-sbd-giveaway-if-you-can-recognize-this-nice-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-04 06:53:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - life
 - travel
 - contest
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Sunday $5 SBD giveaway if you can recognize this nice cafe!! 週日咖啡廳猜謎再來一次！](https://steemit.com/@deanliu/a-sunday-usd5-sbd-giveaway-if-you-can-recognize-this-nice-cafe)
+This page is synchronized from the post: ['A Sunday $5 SBD giveaway if you can recognize this nice cafe!! 週日咖啡廳猜謎再來一次！'](https://steemit.com/@deanliu/a-sunday-usd5-sbd-giveaway-if-you-can-recognize-this-nice-cafe)

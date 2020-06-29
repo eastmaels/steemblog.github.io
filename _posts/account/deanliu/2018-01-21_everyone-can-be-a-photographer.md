@@ -1,10 +1,11 @@
 
 ---
-title: "Everyone can be a photographer：攝影，可以不是專業，而是你看待世界的方式"
+title: 'Everyone can be a photographer：攝影，可以不是專業，而是你看待世界的方式'
 permlink: everyone-can-be-a-photographer
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-21 03:14:33
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - life
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmUqdhpaRHGDef3LmCgWKLH82fP7aYZLwbpNuh5yuQ626b/IMG_20161224_111818.jpg
+thumbnail: 'https://steemitimages.com/DQmUqdhpaRHGDef3LmCgWKLH82fP7aYZLwbpNuh5yuQ626b/IMG_20161224_111818.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ So why not pick up your camera phone, start narrate with it, record how you feel
 
 - - -
 
-This page is synchronized from the post: [Everyone can be a photographer：攝影，可以不是專業，而是你看待世界的方式](https://steemit.com/@deanliu/everyone-can-be-a-photographer)
+This page is synchronized from the post: ['Everyone can be a photographer：攝影，可以不是專業，而是你看待世界的方式'](https://steemit.com/@deanliu/everyone-can-be-a-photographer)

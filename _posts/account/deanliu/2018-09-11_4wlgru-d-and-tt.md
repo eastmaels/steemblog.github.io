@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 第一顆掉牙"
+title: '[D&TT] 第一顆掉牙'
 permlink: 4wlgru-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-11 12:46:06
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - tooth-fairy
 - life
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmc4WaUvq9QvnGnaovpM35XHC3sRYFt3iFAprdFqQ1JCiF/wallpaper-830417_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmc4WaUvq9QvnGnaovpM35XHC3sRYFt3iFAprdFqQ1JCiF/wallpaper-830417_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ TT的門牙，在好多個月前就蛀了，但門牙，又是乳牙，牙醫說
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 第一顆掉牙](https://steemit.com/@deanliu/4wlgru-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 第一顆掉牙'](https://steemit.com/@deanliu/4wlgru-d-and-tt)

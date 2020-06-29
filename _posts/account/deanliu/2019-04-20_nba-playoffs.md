@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] 勇士劇場"
+title: '[漫談NBA Playoffs] 勇士劇場'
 permlink: nba-playoffs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-20 02:03:51
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - sports
 - drama
 - warriors
-thumbnail: https://cdn.steemitimages.com/DQmNd9AzEgLdE8r9HsE8eJJSdUFJTbuq8btHouN7QYWCKoi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-19%20%E4%B8%8A%E5%8D%8811.39.24.png
+thumbnail: 'https://cdn.steemitimages.com/DQmNd9AzEgLdE8r9HsE8eJJSdUFJTbuq8btHouN7QYWCKoi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-19%20%E4%B8%8A%E5%8D%8811.39.24.png'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] 勇士劇場](https://steemit.com/@deanliu/nba-playoffs)
+This page is synchronized from the post: ['[漫談NBA Playoffs] 勇士劇場'](https://steemit.com/@deanliu/nba-playoffs)

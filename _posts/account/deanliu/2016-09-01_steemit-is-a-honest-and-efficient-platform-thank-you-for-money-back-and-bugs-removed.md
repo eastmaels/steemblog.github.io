@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit is a honest and efficient platform! Thank you for money back and bugs removed!"
+title: 'Steemit is a honest and efficient platform! Thank you for money back and bugs removed!'
 permlink: steemit-is-a-honest-and-efficient-platform-thank-you-for-money-back-and-bugs-removed
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-01 03:08:06
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - promotion
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Steemit is a honest and efficient platform! Thank you for money back and bugs removed!](https://steemit.com/@deanliu/steemit-is-a-honest-and-efficient-platform-thank-you-for-money-back-and-bugs-removed)
+This page is synchronized from the post: ['Steemit is a honest and efficient platform! Thank you for money back and bugs removed!'](https://steemit.com/@deanliu/steemit-is-a-honest-and-efficient-platform-thank-you-for-money-back-and-bugs-removed)

@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #02] 變數與資料型態"
+title: '[DA series - Learn Python with Steem #02] 變數與資料型態'
 permlink: da-series-learn-python-with-steem-02
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-27 05:15:54
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ AntonAnton
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #02] 變數與資料型態](https://steemit.com/@deanliu/da-series-learn-python-with-steem-02)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #02] 變數與資料型態'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-02)

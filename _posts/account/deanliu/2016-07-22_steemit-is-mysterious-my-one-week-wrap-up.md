@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit is mysterious ... my one-week wrap-up"
+title: 'Steemit is mysterious ... my one-week wrap-up'
 permlink: steemit-is-mysterious-my-one-week-wrap-up
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-22 06:50:21
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - payout
 - zero
 - Steemit
-thumbnail: http://i.imgsafe.org/1bd2212375.jpg
+thumbnail: 'http://i.imgsafe.org/1bd2212375.jpg'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Steemit is mysterious ... my one-week wrap-up](https://steemit.com/@deanliu/steemit-is-mysterious-my-one-week-wrap-up)
+This page is synchronized from the post: ['Steemit is mysterious ... my one-week wrap-up'](https://steemit.com/@deanliu/steemit-is-mysterious-my-one-week-wrap-up)

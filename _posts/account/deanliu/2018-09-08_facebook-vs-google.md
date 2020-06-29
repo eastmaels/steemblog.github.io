@@ -1,10 +1,11 @@
 
 ---
-title: "Facebook vs Google：企業願景比較"
+title: 'Facebook vs Google：企業願景比較'
 permlink: facebook-vs-google
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-08 07:33:12
 categories:
 - facebook
@@ -14,7 +15,7 @@ tags:
 - vision
 - business
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmd7RGdrUvNeg1JtS82y6SL2C32nZgqu5CRsgbiQkTyndp/boxing-89802_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmd7RGdrUvNeg1JtS82y6SL2C32nZgqu5CRsgbiQkTyndp/boxing-89802_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Facebook vs Google：企業願景比較](https://steemit.com/@deanliu/facebook-vs-google)
+This page is synchronized from the post: ['Facebook vs Google：企業願景比較'](https://steemit.com/@deanliu/facebook-vs-google)

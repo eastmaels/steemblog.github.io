@@ -1,10 +1,11 @@
 
 ---
-title: "🎈 Crypto in the Air 🎈 空中撒糖差可擬 🎈"
+title: '🎈 Crypto in the Air 🎈 空中撒糖差可擬 🎈'
 permlink: crypto-in-the-air
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-19 08:49:54
 categories:
 - airdrop
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmey8saDYqVC1gYSpE3xVjEXuj5jCmwjNw4NHn12NnAP5f/spassfototo-2673395_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmey8saDYqVC1gYSpE3xVjEXuj5jCmwjNw4NHn12NnAP5f/spassfototo-2673395_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ This is such a natural result since Steem has the largest crypto community in th
 
 - - -
 
-This page is synchronized from the post: [🎈 Crypto in the Air 🎈 空中撒糖差可擬 🎈](https://steemit.com/@deanliu/crypto-in-the-air)
+This page is synchronized from the post: ['🎈 Crypto in the Air 🎈 空中撒糖差可擬 🎈'](https://steemit.com/@deanliu/crypto-in-the-air)

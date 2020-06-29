@@ -1,10 +1,11 @@
 
 ---
-title: "An incredibly inspiring story from a marvelous Japanese young man Yamada ..."
+title: 'An incredibly inspiring story from a marvelous Japanese young man Yamada ...'
 permlink: an-incredibly-inspiring-story-from-a-marvelous-japanese-young-man-yamada
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-21 08:41:57
 categories:
 - 
@@ -14,7 +15,7 @@ tags:
 - worldtouring
 - cycling
 - adventure
-thumbnail: http://i.imgsafe.org/083b983feb.png
+thumbnail: 'http://i.imgsafe.org/083b983feb.png'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [An incredibly inspiring story from a marvelous Japanese young man Yamada ...](https://steemit.com/@deanliu/an-incredibly-inspiring-story-from-a-marvelous-japanese-young-man-yamada)
+This page is synchronized from the post: ['An incredibly inspiring story from a marvelous Japanese young man Yamada ...'](https://steemit.com/@deanliu/an-incredibly-inspiring-story-from-a-marvelous-japanese-young-man-yamada)

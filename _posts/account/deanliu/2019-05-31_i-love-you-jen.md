@@ -1,10 +1,11 @@
 
 ---
-title: "[香港隨住] I Love You, Jen! 香港今旅酒店"
+title: '[香港隨住] I Love You, Jen! 香港今旅酒店'
 permlink: i-love-you-jen
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-31 13:05:33
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - travel
 - dean-hk
 - accomodation
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/f44a4b2ced5fc8e724bee9a2ec23191eb74ca72d.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/f44a4b2ced5fc8e724bee9a2ec23191eb74ca72d.jpg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[香港隨住] I Love You, Jen! 香港今旅酒店](https://steemit.com/@deanliu/i-love-you-jen)
+This page is synchronized from the post: ['[香港隨住] I Love You, Jen! 香港今旅酒店'](https://steemit.com/@deanliu/i-love-you-jen)

@@ -1,10 +1,11 @@
 
 ---
-title: "Budapest Reflections #myeuropaplog series  📷 歐洲行旅照片記錄系列 📷"
+title: 'Budapest Reflections #myeuropaplog series  📷 歐洲行旅照片記錄系列 📷'
 permlink: budapest-reflections-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-28 09:15:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - europe
 - cn
 - myeuropaplog
-thumbnail: https://steemitimages.com/DQmcD2fLvRSbVdt3Pu87YksKHG6T9rWp7MmULNe89pJKh76/DSC_1432.JPG
+thumbnail: 'https://steemitimages.com/DQmcD2fLvRSbVdt3Pu87YksKHG6T9rWp7MmULNe89pJKh76/DSC_1432.JPG'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ Budapest is no exception. In this post, I have picked those photos of **reflecti
 
 - - -
 
-This page is synchronized from the post: [Budapest Reflections #myeuropaplog series  📷 歐洲行旅照片記錄系列 📷](https://steemit.com/@deanliu/budapest-reflections-myeuropaplog-series)
+This page is synchronized from the post: ['Budapest Reflections #myeuropaplog series  📷 歐洲行旅照片記錄系列 📷'](https://steemit.com/@deanliu/budapest-reflections-myeuropaplog-series)

@@ -1,10 +1,11 @@
 
 ---
-title: "Neighborhood shots - Daily pics - Have a nice day!! :)"
+title: 'Neighborhood shots - Daily pics - Have a nice day!! :)'
 permlink: neighborhood-shots-daily-pics-have-a-nice-day-201757t12567269z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-07 04:56:12
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - photography
 - daily
 - esteem
-thumbnail: https://i.imgur.com/2Cd8868.jpg
+thumbnail: 'https://i.imgur.com/2Cd8868.jpg'
 sidebar:
     right:
         sticky: true
@@ -28,4 +29,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Neighborhood shots - Daily pics - Have a nice day!! :)](https://steemit.com/@deanliu/neighborhood-shots-daily-pics-have-a-nice-day-201757t12567269z)
+This page is synchronized from the post: ['Neighborhood shots - Daily pics - Have a nice day!! :)'](https://steemit.com/@deanliu/neighborhood-shots-daily-pics-have-a-nice-day-201757t12567269z)

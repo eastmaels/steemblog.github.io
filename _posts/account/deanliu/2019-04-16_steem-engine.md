@@ -1,10 +1,11 @@
 
 ---
-title: "[社區閒聊] Steem Engine帶來的想像"
+title: '[社區閒聊] Steem Engine帶來的想像'
 permlink: steem-engine
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-16 11:39:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steem-engine
 - tokeneconomy
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmbuHtVUqzH72WtSqdKp9echCTcDUpMFerGrHk1kbjMdYc
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbuHtVUqzH72WtSqdKp9echCTcDUpMFerGrHk1kbjMdYc'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ https://steem-engine.com/?p=market
 
 - - -
 
-This page is synchronized from the post: [[社區閒聊] Steem Engine帶來的想像](https://steemit.com/@deanliu/steem-engine)
+This page is synchronized from the post: ['[社區閒聊] Steem Engine帶來的想像'](https://steemit.com/@deanliu/steem-engine)

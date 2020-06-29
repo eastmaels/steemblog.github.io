@@ -1,10 +1,11 @@
 
 ---
-title: "What are the Captains doing during the Steem Price Storm? -- My Sunday Investigation"
+title: 'What are the Captains doing during the Steem Price Storm? -- My Sunday Investigation'
 permlink: what-are-the-captains-doing-during-the-steem-price-storm-my-sunday-investigation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-28 10:58:03
 categories:
 - steem
@@ -12,7 +13,7 @@ tags:
 - steem
 - steemit
 - fun
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [What are the Captains doing during the Steem Price Storm? -- My Sunday Investigation](https://steemit.com/@deanliu/what-are-the-captains-doing-during-the-steem-price-storm-my-sunday-investigation)
+This page is synchronized from the post: ['What are the Captains doing during the Steem Price Storm? -- My Sunday Investigation'](https://steemit.com/@deanliu/what-are-the-captains-doing-during-the-steem-price-storm-my-sunday-investigation)

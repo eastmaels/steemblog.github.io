@@ -1,10 +1,11 @@
 
 ---
-title: "[滬尾遊] 最美小徑 A beautiful lane in Tamsui, Taipei"
+title: '[滬尾遊] 最美小徑 A beautiful lane in Tamsui, Taipei'
 permlink: a-beautiful-lane-in-tamsui-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-19 11:46:57
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - walk
 - tamsui
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/b424208fa9962cb1631ba05271a1fa1d2f5f21a7.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/b424208fa9962cb1631ba05271a1fa1d2f5f21a7.jpg'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ At the end of the lane, you will spot the auditorium of the Aletheia University 
 
 - - -
 
-This page is synchronized from the post: [[滬尾遊] 最美小徑 A beautiful lane in Tamsui, Taipei](https://steemit.com/@deanliu/a-beautiful-lane-in-tamsui-taipei)
+This page is synchronized from the post: ['[滬尾遊] 最美小徑 A beautiful lane in Tamsui, Taipei'](https://steemit.com/@deanliu/a-beautiful-lane-in-tamsui-taipei)

@@ -1,10 +1,11 @@
 
 ---
-title: "A Wish to have a Steemit-backed FREE Star Wars Mooncake before coming Moon festival 中秋免費月餅之願 추석소원"
+title: 'A Wish to have a Steemit-backed FREE Star Wars Mooncake before coming Moon festival 中秋免費月餅之願 추석소원'
 permlink: a-wish-to-have-a-steemit-backed-free-star-wars-mooncake-before-coming-moon-festival
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-14 08:11:54
 categories:
 - wish
@@ -14,7 +15,7 @@ tags:
 - cn
 - kr
 - starwars
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Wish to have a Steemit-backed FREE Star Wars Mooncake before coming Moon festival 中秋免費月餅之願 추석소원](https://steemit.com/@deanliu/a-wish-to-have-a-steemit-backed-free-star-wars-mooncake-before-coming-moon-festival)
+This page is synchronized from the post: ['A Wish to have a Steemit-backed FREE Star Wars Mooncake before coming Moon festival 中秋免費月餅之願 추석소원'](https://steemit.com/@deanliu/a-wish-to-have-a-steemit-backed-free-star-wars-mooncake-before-coming-moon-festival)

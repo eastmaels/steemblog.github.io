@@ -1,10 +1,11 @@
 
 ---
-title: "Meeting Darth Vader in Tokyo 🍙 Dean's Tokyo Snapshots 🍙"
+title: 'Meeting Darth Vader in Tokyo 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: meetingdarth-vader-in-tokyo-deans-tokyo-snapshots--1544836582819
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-15 01:16:24
 categories:
 - starwars
@@ -14,7 +15,7 @@ tags:
 - fun
 - dean-tokyo
 - japan
-thumbnail: https://cdn.steemitimages.com/DQmWHcfph521wTsW5YqZd7mZyTYTWcesejJLNx5uTbNhkRv/DSC_0006.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmWHcfph521wTsW5YqZd7mZyTYTWcesejJLNx5uTbNhkRv/DSC_0006.JPG'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ When I saw this in Tokyo, I thought it looked familiar but cannot recall who or 
 
 - - -
 
-This page is synchronized from the post: [Meeting Darth Vader in Tokyo 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/meetingdarth-vader-in-tokyo-deans-tokyo-snapshots--1544836582819)
+This page is synchronized from the post: ['Meeting Darth Vader in Tokyo 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/meetingdarth-vader-in-tokyo-deans-tokyo-snapshots--1544836582819)

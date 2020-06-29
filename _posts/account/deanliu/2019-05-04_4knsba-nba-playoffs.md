@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] 見證歷史！"
+title: '[漫談NBA Playoffs] 見證歷史！'
 permlink: 4knsba-nba-playoffs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-04 11:56:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nba
 - history
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/ec869945dd6b9608a4856f12dd3d1047477a9354.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/ec869945dd6b9608a4856f12dd3d1047477a9354.jpg'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ P.S. 金塊隊的大個子Jokic，似乎外號是Joker，讓我印象深刻！�
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] 見證歷史！](https://steemit.com/@deanliu/4knsba-nba-playoffs)
+This page is synchronized from the post: ['[漫談NBA Playoffs] 見證歷史！'](https://steemit.com/@deanliu/4knsba-nba-playoffs)

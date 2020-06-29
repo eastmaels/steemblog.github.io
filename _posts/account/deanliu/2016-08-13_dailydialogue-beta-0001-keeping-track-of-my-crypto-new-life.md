@@ -1,17 +1,18 @@
 
 ---
-title: "DailyDialogue (beta) #0001 Keeping Track of My Crypto New Life"
+title: 'DailyDialogue (beta) #0001 Keeping Track of My Crypto New Life'
 permlink: dailydialogue-beta-0001-keeping-track-of-my-crypto-new-life
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-13 09:06:57
 categories:
 - dailydialogue
 tags:
 - dailydialogue
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DailyDialogue (beta) #0001 Keeping Track of My Crypto New Life](https://steemit.com/@deanliu/dailydialogue-beta-0001-keeping-track-of-my-crypto-new-life)
+This page is synchronized from the post: ['DailyDialogue (beta) #0001 Keeping Track of My Crypto New Life'](https://steemit.com/@deanliu/dailydialogue-beta-0001-keeping-track-of-my-crypto-new-life)

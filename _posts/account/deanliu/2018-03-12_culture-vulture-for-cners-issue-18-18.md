@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 18 ｜《文化读瘾．一周译报》第18期：遗留在东南亚的西班牙情调"
+title: 'Culture Vulture for CNers Issue 18 ｜《文化读瘾．一周译报》第18期：遗留在东南亚的西班牙情调'
 permlink: culture-vulture-for-cners-issue-18-18
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-12 14:04:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - philippines
 - spain
-thumbnail: https://steemitimages.com/DQmYzuLMfLJ1w79xgbivAv6TtHJga2zxEjdvNVmpNnTShu9/cv201712sim.jpg
+thumbnail: 'https://steemitimages.com/DQmYzuLMfLJ1w79xgbivAv6TtHJga2zxEjdvNVmpNnTShu9/cv201712sim.jpg'
 sidebar:
     right:
         sticky: true
@@ -108,4 +109,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 18 ｜《文化读瘾．一周译报》第18期：遗留在东南亚的西班牙情调](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-18-18)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 18 ｜《文化读瘾．一周译报》第18期：遗留在东南亚的西班牙情调'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-18-18)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 NEGISHI Ox Tongue BBQ by the Yurakucho Station"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 NEGISHI Ox Tongue BBQ by the Yurakucho Station'
 permlink: dean-s-tokyo-snapshots-negishi-ox-tongue-bbq-by-the-yurakucho-station
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-10 23:08:00
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - travel
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/5c40b7a728692cfddeba4e65d736ced2d8be0437.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/5c40b7a728692cfddeba4e65d736ced2d8be0437.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 NEGISHI Ox Tongue BBQ by the Yurakucho Station](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-negishi-ox-tongue-bbq-by-the-yurakucho-station)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 NEGISHI Ox Tongue BBQ by the Yurakucho Station'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-negishi-ox-tongue-bbq-by-the-yurakucho-station)

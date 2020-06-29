@@ -1,10 +1,11 @@
 
 ---
-title: "一起努力，補足不到0.5兆美金的部分吧！A Chinese translation for Vitalik's recent twitter"
+title: '一起努力，補足不到0.5兆美金的部分吧！A Chinese translation for Vitalik''s recent twitter'
 permlink: 0-5-a-chinese-translation-for-vitalik-s-recent-twitter
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-18 23:54:45
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cn-writing
 - blockchain
 - vitalik
-thumbnail: https://steemitimages.com/DQmPCjxiwKrAHVaXwg59Qx7MFpNbkkaHoKmmXAvnhEDRDrC/image.png
+thumbnail: 'https://steemitimages.com/DQmPCjxiwKrAHVaXwg59Qx7MFpNbkkaHoKmmXAvnhEDRDrC/image.png'
 sidebar:
     right:
         sticky: true
@@ -87,4 +88,4 @@ This post is mostly a Chinese translation of [Vitalik Buterin's recent twitter](
 
 - - -
 
-This page is synchronized from the post: [一起努力，補足不到0.5兆美金的部分吧！A Chinese translation for Vitalik's recent twitter](https://steemit.com/@deanliu/0-5-a-chinese-translation-for-vitalik-s-recent-twitter)
+This page is synchronized from the post: ['一起努力，補足不到0.5兆美金的部分吧！A Chinese translation for Vitalik''s recent twitter'](https://steemit.com/@deanliu/0-5-a-chinese-translation-for-vitalik-s-recent-twitter)

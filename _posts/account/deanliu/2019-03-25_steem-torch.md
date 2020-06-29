@@ -1,10 +1,11 @@
 
 ---
-title: "[社區閒聊] 🔥 [Steem Torch] 🔥火炬實驗的啟示"
+title: '[社區閒聊] 🔥 [Steem Torch] 🔥火炬實驗的啟示'
 permlink: steem-torch
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-25 03:44:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steem
 - community
 - network
-thumbnail: https://cdn.steemitimages.com/DQmRuLKdcfQNXKbPxjpxZ3P8pQkWm838zpuZZupm6v1Piqz/chain-1027864_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmRuLKdcfQNXKbPxjpxZ3P8pQkWm838zpuZZupm6v1Piqz/chain-1027864_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[社區閒聊] 🔥 [Steem Torch] 🔥火炬實驗的啟示](https://steemit.com/@deanliu/steem-torch)
+This page is synchronized from the post: ['[社區閒聊] 🔥 [Steem Torch] 🔥火炬實驗的啟示'](https://steemit.com/@deanliu/steem-torch)

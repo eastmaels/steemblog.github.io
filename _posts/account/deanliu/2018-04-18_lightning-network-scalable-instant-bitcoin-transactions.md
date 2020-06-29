@@ -1,10 +1,11 @@
 
 ---
-title: "Lightning Network:  Scalable, Instant Bitcoin Transactions."
+title: 'Lightning Network:  Scalable, Instant Bitcoin Transactions.'
 permlink: lightning-network-scalable-instant-bitcoin-transactions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-18 00:59:39
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - lightning-network
 - scalability
 - blockchain
-thumbnail: https://steemitimages.com/DQmPGif4zkq2uL3oDXjTAFvGcL4RyaighRZ4yqu3qBDQDNS/maxresdefault.jpg
+thumbnail: 'https://steemitimages.com/DQmPGif4zkq2uL3oDXjTAFvGcL4RyaighRZ4yqu3qBDQDNS/maxresdefault.jpg'
 sidebar:
     right:
         sticky: true
@@ -180,4 +181,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [Lightning Network:  Scalable, Instant Bitcoin Transactions.](https://steemit.com/@deanliu/lightning-network-scalable-instant-bitcoin-transactions)
+This page is synchronized from the post: ['Lightning Network:  Scalable, Instant Bitcoin Transactions.'](https://steemit.com/@deanliu/lightning-network-scalable-instant-bitcoin-transactions)

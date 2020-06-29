@@ -1,10 +1,11 @@
 
 ---
-title: "嚐鮮日本水果 🍙 Dean's Tokyo Snapshots 🍙"
+title: '嚐鮮日本水果 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: 4di2eg-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-05 02:38:24
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/ba75c2673791586c308dae6fca0db13b5496bd0c.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/ba75c2673791586c308dae6fca0db13b5496bd0c.png'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [嚐鮮日本水果 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/4di2eg-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['嚐鮮日本水果 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/4di2eg-dean-s-tokyo-snapshots)

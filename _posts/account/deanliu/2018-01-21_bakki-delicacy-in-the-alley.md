@@ -1,10 +1,11 @@
 
 ---
-title: "🍪 Bakki - delicacy in the alley 🍪"
+title: '🍪 Bakki - delicacy in the alley 🍪'
 permlink: bakki-delicacy-in-the-alley
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-21 16:27:12
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - photography
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmTn1iDLBU1gJLrQfTuvWUmArevh6tEJQmgSgPLQUMaExF/_20180113_144355.JPG
+thumbnail: 'https://steemitimages.com/DQmTn1iDLBU1gJLrQfTuvWUmArevh6tEJQmgSgPLQUMaExF/_20180113_144355.JPG'
 sidebar:
     right:
         sticky: true
@@ -117,4 +118,4 @@ Come visit Taichung, Taiwan to taste yourself! You can also arrange a meetup wit
 
 - - -
 
-This page is synchronized from the post: [🍪 Bakki - delicacy in the alley 🍪](https://steemit.com/@deanliu/bakki-delicacy-in-the-alley)
+This page is synchronized from the post: ['🍪 Bakki - delicacy in the alley 🍪'](https://steemit.com/@deanliu/bakki-delicacy-in-the-alley)

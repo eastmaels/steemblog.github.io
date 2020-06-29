@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #07] 類別"
+title: '[DA series - Learn Python with Steem #07] 類別'
 permlink: da-series-learn-python-with-steem-07
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-06 06:13:00
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -142,4 +143,4 @@ Antonazzo
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #07] 類別](https://steemit.com/@deanliu/da-series-learn-python-with-steem-07)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #07] 類別'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-07)

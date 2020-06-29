@@ -1,17 +1,18 @@
 
 ---
-title: "A Dear Wang Letter - how I miss you and Steemit"
+title: 'A Dear Wang Letter - how I miss you and Steemit'
 permlink: a-dear-wang-letter-how-i-miss-you-and-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-24 10:44:24
 categories:
 - fun
 tags:
 - fun
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ You should've known<br>
 
 - - -
 
-This page is synchronized from the post: [A Dear Wang Letter - how I miss you and Steemit](https://steemit.com/@deanliu/a-dear-wang-letter-how-i-miss-you-and-steemit)
+This page is synchronized from the post: ['A Dear Wang Letter - how I miss you and Steemit'](https://steemit.com/@deanliu/a-dear-wang-letter-how-i-miss-you-and-steemit)

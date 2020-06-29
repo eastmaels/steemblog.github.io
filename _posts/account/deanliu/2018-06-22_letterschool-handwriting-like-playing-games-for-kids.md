@@ -1,10 +1,11 @@
 
 ---
-title: "LetterSchool - Handwriting Like Playing Games for Kids!!"
+title: 'LetterSchool - Handwriting Like Playing Games for Kids!!'
 permlink: letterschool-handwriting-like-playing-games-for-kids
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-22 15:01:18
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - kids
 - learning
 - alphabets
-thumbnail: https://i.imgur.com/tY8rbTh.png
+thumbnail: 'https://i.imgur.com/tY8rbTh.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [LetterSchool - Handwriting Like Playing Games for Kids!!](https://steemit.com/@deanliu/letterschool-handwriting-like-playing-games-for-kids)
+This page is synchronized from the post: ['LetterSchool - Handwriting Like Playing Games for Kids!!'](https://steemit.com/@deanliu/letterschool-handwriting-like-playing-games-for-kids)

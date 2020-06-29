@@ -1,10 +1,11 @@
 
 ---
-title: "Coffee and Exchange of Ideas ... which is more real?"
+title: 'Coffee and Exchange of Ideas ... which is more real?'
 permlink: coffee-and-exchange-of-ideas-which-is-more-real
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-22 03:51:57
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - life
 - philosophy
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Coffee and Exchange of Ideas ... which is more real?](https://steemit.com/@deanliu/coffee-and-exchange-of-ideas-which-is-more-real)
+This page is synchronized from the post: ['Coffee and Exchange of Ideas ... which is more real?'](https://steemit.com/@deanliu/coffee-and-exchange-of-ideas-which-is-more-real)

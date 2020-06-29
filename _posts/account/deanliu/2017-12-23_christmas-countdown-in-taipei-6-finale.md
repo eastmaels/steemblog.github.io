@@ -1,10 +1,11 @@
 
 ---
-title: "🎄  聖誕倒數在台北之六：最後一次 🎄  Christmas Countdown in Taipei #6 - Finale 🎄"
+title: '🎄  聖誕倒數在台北之六：最後一次 🎄  Christmas Countdown in Taipei #6 - Finale 🎄'
 permlink: christmas-countdown-in-taipei-6-finale
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-23 12:34:18
 categories:
 - christmas-countdown
@@ -14,7 +15,7 @@ tags:
 - photography
 - taipei
 - cn
-thumbnail: https://steemitimages.com/DQmfHoxhAMZVYBzqJ2R2MGHUVWJAL9fVKeEy51qFLJ269Mj/_20171223_101044.JPG
+thumbnail: 'https://steemitimages.com/DQmfHoxhAMZVYBzqJ2R2MGHUVWJAL9fVKeEy51qFLJ269Mj/_20171223_101044.JPG'
 sidebar:
     right:
         sticky: true
@@ -82,4 +83,4 @@ _101044.JPG](https://steemitimages.com/DQmfHoxhAMZVYBzqJ2R2MGHUVWJAL9fVKeEy51qFL
 
 - - -
 
-This page is synchronized from the post: [🎄  聖誕倒數在台北之六：最後一次 🎄  Christmas Countdown in Taipei #6 - Finale 🎄](https://steemit.com/@deanliu/christmas-countdown-in-taipei-6-finale)
+This page is synchronized from the post: ['🎄  聖誕倒數在台北之六：最後一次 🎄  Christmas Countdown in Taipei #6 - Finale 🎄'](https://steemit.com/@deanliu/christmas-countdown-in-taipei-6-finale)

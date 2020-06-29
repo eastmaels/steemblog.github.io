@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 足球課"
+title: '[D&TT] 足球課'
 permlink: 6matly-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-05 10:16:51
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - busy
 - soccer
 - sports
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/1555fcca117f084e9b4cf856154457a782eaa0d4.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/1555fcca117f084e9b4cf856154457a782eaa0d4.jpg'
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 足球課](https://steemit.com/@deanliu/6matly-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 足球課'](https://steemit.com/@deanliu/6matly-d-and-tt)

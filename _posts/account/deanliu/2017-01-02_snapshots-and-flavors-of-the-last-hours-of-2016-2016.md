@@ -1,10 +1,11 @@
 
 ---
-title: "Snapshots and flavors of the last hours of 2016  最後時光與滋味—紀錄2016的背影"
+title: 'Snapshots and flavors of the last hours of 2016  最後時光與滋味—紀錄2016的背影'
 permlink: snapshots-and-flavors-of-the-last-hours-of-2016-2016
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-01-02 08:16:54
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - life
 - food
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Snapshots and flavors of the last hours of 2016  最後時光與滋味—紀錄2016的背影](https://steemit.com/@deanliu/snapshots-and-flavors-of-the-last-hours-of-2016-2016)
+This page is synchronized from the post: ['Snapshots and flavors of the last hours of 2016  最後時光與滋味—紀錄2016的背影'](https://steemit.com/@deanliu/snapshots-and-flavors-of-the-last-hours-of-2016-2016)

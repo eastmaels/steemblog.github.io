@@ -1,10 +1,11 @@
 
 ---
-title: "A story of a homeless mom - whales' casual life revealed"
+title: 'A story of a homeless mom - whales'' casual life revealed'
 permlink: a-story-of-a-homeless-mom-whales-casual-life-revealed
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-15 07:40:36
 categories:
 - steemstats
@@ -13,7 +14,7 @@ tags:
 - tag
 - whale
 - story
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A story of a homeless mom - whales' casual life revealed](https://steemit.com/@deanliu/a-story-of-a-homeless-mom-whales-casual-life-revealed)
+This page is synchronized from the post: ['A story of a homeless mom - whales'' casual life revealed'](https://steemit.com/@deanliu/a-story-of-a-homeless-mom-whales-casual-life-revealed)

@@ -1,10 +1,11 @@
 
 ---
-title: "[MEME] Elon Musk's Cryptocandy"
+title: '[MEME] Elon Musk''s Cryptocandy'
 permlink: meme-elon-musk-s-cryptocandy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-08 02:33:15
 categories:
 - meme
@@ -14,7 +15,7 @@ tags:
 - cryptocandy
 - crypto
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ You are welcome to twitter this post!!
 
 - - -
 
-This page is synchronized from the post: [[MEME] Elon Musk's Cryptocandy](https://steemit.com/@deanliu/meme-elon-musk-s-cryptocandy)
+This page is synchronized from the post: ['[MEME] Elon Musk''s Cryptocandy'](https://steemit.com/@deanliu/meme-elon-musk-s-cryptocandy)

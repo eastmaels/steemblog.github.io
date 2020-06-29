@@ -1,10 +1,11 @@
 
 ---
-title: "Waterdance Giveaway Announcement .... and a little commercial attached. :D"
+title: 'Waterdance Giveaway Announcement .... and a little commercial attached. :D'
 permlink: waterdance-giveaway-announcement-and-a-little-commercial-attached-d
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-24 04:55:12
 categories:
 - waterdance
@@ -12,7 +13,7 @@ tags:
 - waterdance
 - giveaway
 - announcement
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Waterdance Giveaway Announcement .... and a little commercial attached. :D](https://steemit.com/@deanliu/waterdance-giveaway-announcement-and-a-little-commercial-attached-d)
+This page is synchronized from the post: ['Waterdance Giveaway Announcement .... and a little commercial attached. :D'](https://steemit.com/@deanliu/waterdance-giveaway-announcement-and-a-little-commercial-attached-d)

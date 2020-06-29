@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Fresh and Green! Union Sand Yard at Ningyocho"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Fresh and Green! Union Sand Yard at Ningyocho'
 permlink: dean-s-tokyo-snapshots-fresh-and-green-union-sand-yard-at-ningyocho
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-24 23:25:54
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - food
 - restaraunt
-thumbnail: https://cdn.steemitimages.com/DQmeqBWa6kxPGJEBxUkJc7QpYHR12pdBou6xtwdZh5iqp89/DSC_6413.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmeqBWa6kxPGJEBxUkJc7QpYHR12pdBou6xtwdZh5iqp89/DSC_6413.JPG'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Fresh and Green! Union Sand Yard at Ningyocho](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-fresh-and-green-union-sand-yard-at-ningyocho)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Fresh and Green! Union Sand Yard at Ningyocho'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-fresh-and-green-union-sand-yard-at-ningyocho)

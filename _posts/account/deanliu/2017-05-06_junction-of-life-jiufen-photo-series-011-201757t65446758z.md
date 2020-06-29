@@ -1,10 +1,11 @@
 
 ---
-title: "Junction of life - Jiufen photo series 011"
+title: 'Junction of life - Jiufen photo series 011'
 permlink: junction-of-life-jiufen-photo-series-011-201757t65446758z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-06 22:54:51
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - art
 - taiwan
 - esteem
-thumbnail: https://i.imgur.com/ZczCrWc.jpg
+thumbnail: 'https://i.imgur.com/ZczCrWc.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Junction of life - Jiufen photo series 011](https://steemit.com/@deanliu/junction-of-life-jiufen-photo-series-011-201757t65446758z)
+This page is synchronized from the post: ['Junction of life - Jiufen photo series 011'](https://steemit.com/@deanliu/junction-of-life-jiufen-photo-series-011-201757t65446758z)

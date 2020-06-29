@@ -1,10 +1,11 @@
 
 ---
-title: "[MEME] Why Our 3 Seconds Confirmation Blockchain Does Not Have CryptoPets?"
+title: '[MEME] Why Our 3 Seconds Confirmation Blockchain Does Not Have CryptoPets?'
 permlink: meme-why-our-3-seconds-confirmation-blockchain-does-not-have-cryptopets
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-05 10:04:42
 categories:
 - ethereum
@@ -14,7 +15,7 @@ tags:
 - steem
 - cryptokitties
 - cn
-thumbnail: https://i.imgflip.com/20isi8.jpg
+thumbnail: 'https://i.imgflip.com/20isi8.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ Meanwhile, I am whining why we the faster blockchain does not have this idea fir
 
 - - -
 
-This page is synchronized from the post: [[MEME] Why Our 3 Seconds Confirmation Blockchain Does Not Have CryptoPets?](https://steemit.com/@deanliu/meme-why-our-3-seconds-confirmation-blockchain-does-not-have-cryptopets)
+This page is synchronized from the post: ['[MEME] Why Our 3 Seconds Confirmation Blockchain Does Not Have CryptoPets?'](https://steemit.com/@deanliu/meme-why-our-3-seconds-confirmation-blockchain-does-not-have-cryptopets)

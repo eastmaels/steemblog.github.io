@@ -1,10 +1,11 @@
 
 ---
-title: "Y.Y.X.X.Y. - Yin & Yang & Xmas in Xin-Yi district Taipei  白晝夜晚與聖誕—再訪台北信義計畫區"
+title: 'Y.Y.X.X.Y. - Yin & Yang & Xmas in Xin-Yi district Taipei  白晝夜晚與聖誕—再訪台北信義計畫區'
 permlink: y-y-x-x-y-yin-and-yang-and-xmas-in-xin-yi-district-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-26 15:23:03
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - life
 - christmas
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Y.Y.X.X.Y. - Yin & Yang & Xmas in Xin-Yi district Taipei  白晝夜晚與聖誕—再訪台北信義計畫區](https://steemit.com/@deanliu/y-y-x-x-y-yin-and-yang-and-xmas-in-xin-yi-district-taipei)
+This page is synchronized from the post: ['Y.Y.X.X.Y. - Yin & Yang & Xmas in Xin-Yi district Taipei  白晝夜晚與聖誕—再訪台北信義計畫區'](https://steemit.com/@deanliu/y-y-x-x-y-yin-and-yang-and-xmas-in-xin-yi-district-taipei)

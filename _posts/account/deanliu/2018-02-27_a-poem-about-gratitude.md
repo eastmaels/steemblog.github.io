@@ -1,10 +1,11 @@
 
 ---
-title: "隨筆詩 — 感恩。A Poem about Gratitude"
+title: '隨筆詩 — 感恩。A Poem about Gratitude'
 permlink: a-poem-about-gratitude
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-27 03:33:39
 categories:
 - poem
@@ -14,7 +15,7 @@ tags:
 - gratitude
 - life
 - cn
-thumbnail: https://steemitimages.com/DQmP6fGxyySWvCGY9rts8nurffnN6hXUhnqAN2h5NXgF8d4/image.png
+thumbnail: 'https://steemitimages.com/DQmP6fGxyySWvCGY9rts8nurffnN6hXUhnqAN2h5NXgF8d4/image.png'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [隨筆詩 — 感恩。A Poem about Gratitude](https://steemit.com/@deanliu/a-poem-about-gratitude)
+This page is synchronized from the post: ['隨筆詩 — 感恩。A Poem about Gratitude'](https://steemit.com/@deanliu/a-poem-about-gratitude)

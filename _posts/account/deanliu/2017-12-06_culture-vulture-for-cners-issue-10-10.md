@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 10 ｜《文化读瘾．一周译报》第10期：象神迦尼萨之日"
+title: 'Culture Vulture for CNers Issue 10 ｜《文化读瘾．一周译报》第10期：象神迦尼萨之日'
 permlink: culture-vulture-for-cners-issue-10-10
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-06 03:29:09
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - religion
-thumbnail: https://steemitimages.com/DQmeZvyBn9W2cQw3H2pAJEUKXZ6oLLLtPfknvh7SU3KUz2J/CV10.jpg
+thumbnail: 'https://steemitimages.com/DQmeZvyBn9W2cQw3H2pAJEUKXZ6oLLLtPfknvh7SU3KUz2J/CV10.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 10 ｜《文化读瘾．一周译报》第10期：象神迦尼萨之日](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-10-10)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 10 ｜《文化读瘾．一周译报》第10期：象神迦尼萨之日'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-10-10)

@@ -1,10 +1,11 @@
 
 ---
-title: "樂聲悠揚～超市內自動演奏的鋼琴 Automatic Piano"
+title: '樂聲悠揚～超市內自動演奏的鋼琴 Automatic Piano'
 permlink: automatic-piano
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-19 11:25:54
 categories:
 - piano
@@ -14,7 +15,7 @@ tags:
 - video
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ https://youtu.be/7TV4vULYq5I
 
 - - -
 
-This page is synchronized from the post: [樂聲悠揚～超市內自動演奏的鋼琴 Automatic Piano](https://steemit.com/@deanliu/automatic-piano)
+This page is synchronized from the post: ['樂聲悠揚～超市內自動演奏的鋼琴 Automatic Piano'](https://steemit.com/@deanliu/automatic-piano)

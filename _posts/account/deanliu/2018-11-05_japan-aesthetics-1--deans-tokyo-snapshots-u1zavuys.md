@@ -1,10 +1,11 @@
 
 ---
-title: "Japan Aesthetics #1 🍙 Dean's Tokyo Snapshots 🍙"
+title: 'Japan Aesthetics #1 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: japan-aesthetics-1--deans-tokyo-snapshots-u1zavuys
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-05 09:20:09
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/f4a9893055dc88164d3be8bc7224e63de04df7f2.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/f4a9893055dc88164d3be8bc7224e63de04df7f2.png'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Japan Aesthetics #1 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/japan-aesthetics-1--deans-tokyo-snapshots-u1zavuys)
+This page is synchronized from the post: ['Japan Aesthetics #1 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/japan-aesthetics-1--deans-tokyo-snapshots-u1zavuys)

@@ -1,10 +1,11 @@
 
 ---
-title: "Pebby - A Smart Ball that Connects You and Your Pet, Remotely"
+title: 'Pebby - A Smart Ball that Connects You and Your Pet, Remotely'
 permlink: pebby-a-smart-ball-that-connects-you-and-your-pet-remotely
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-01 15:00:57
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - dog
 - cat
 - toy
-thumbnail: https://i.imgur.com/bmYLZAV.jpg
+thumbnail: 'https://i.imgur.com/bmYLZAV.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [Pebby - A Smart Ball that Connects You and Your Pet, Remotely](https://steemit.com/@deanliu/pebby-a-smart-ball-that-connects-you-and-your-pet-remotely)
+This page is synchronized from the post: ['Pebby - A Smart Ball that Connects You and Your Pet, Remotely'](https://steemit.com/@deanliu/pebby-a-smart-ball-that-connects-you-and-your-pet-remotely)

@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #04] 迴圈"
+title: '[DA series - Learn Python with Steem #04] 迴圈'
 permlink: da-series-learn-python-with-steem-04
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-31 02:21:06
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -133,4 +134,4 @@ print(number, end = '\t')
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #04] 迴圈](https://steemit.com/@deanliu/da-series-learn-python-with-steem-04)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #04] 迴圈'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-04)

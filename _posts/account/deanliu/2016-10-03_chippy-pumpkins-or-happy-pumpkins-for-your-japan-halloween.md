@@ -1,10 +1,11 @@
 
 ---
-title: "Chippy Pumpkins or Happy Pumpkins for your Japan Halloween? 日本超市的多樣南瓜"
+title: 'Chippy Pumpkins or Happy Pumpkins for your Japan Halloween? 日本超市的多樣南瓜'
 permlink: chippy-pumpkins-or-happy-pumpkins-for-your-japan-halloween
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-03 06:51:15
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - halloween
 - funny
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Chippy Pumpkins or Happy Pumpkins for your Japan Halloween? 日本超市的多樣南瓜](https://steemit.com/@deanliu/chippy-pumpkins-or-happy-pumpkins-for-your-japan-halloween)
+This page is synchronized from the post: ['Chippy Pumpkins or Happy Pumpkins for your Japan Halloween? 日本超市的多樣南瓜'](https://steemit.com/@deanliu/chippy-pumpkins-or-happy-pumpkins-for-your-japan-halloween)

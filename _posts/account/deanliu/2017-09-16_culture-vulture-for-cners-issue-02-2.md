@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 02 ｜《文化读瘾．一周译报》第2期：群岛之国的百般风情"
+title: 'Culture Vulture for CNers Issue 02 ｜《文化读瘾．一周译报》第2期：群岛之国的百般风情'
 permlink: culture-vulture-for-cners-issue-02-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-16 11:06:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - life
-thumbnail: https://steemitimages.com/DQmNkiXo5cqs8YwTcGxKfg6cE1MmjX8FEVeb2q8cRN6SJk4/banner_simp.jpg
+thumbnail: 'https://steemitimages.com/DQmNkiXo5cqs8YwTcGxKfg6cE1MmjX8FEVeb2q8cRN6SJk4/banner_simp.jpg'
 sidebar:
     right:
         sticky: true
@@ -195,4 +196,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 02 ｜《文化读瘾．一周译报》第2期：群岛之国的百般风情](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-02-2)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 02 ｜《文化读瘾．一周译报》第2期：群岛之国的百般风情'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-02-2)

@@ -1,10 +1,11 @@
 
 ---
-title: "2019: New Year, New Signature Block 新年新簽名檔！"
+title: '2019: New Year, New Signature Block 新年新簽名檔！'
 permlink: 2019-new-year-new-signature-block
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-01 04:08:42
 categories:
 - newyear
@@ -14,7 +15,7 @@ tags:
 - signature
 - cn
 - life
-thumbnail: https://cdn.steemitimages.com/DQmPGkKJzZ33U2SPZv6BDbM4wYYyKrZUezc3qkZDRZRNp9o/woman-570883_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmPGkKJzZ33U2SPZv6BDbM4wYYyKrZUezc3qkZDRZRNp9o/woman-570883_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ Check out my new signature block at the end. I might change the look of it, but 
 
 - - -
 
-This page is synchronized from the post: [2019: New Year, New Signature Block 新年新簽名檔！](https://steemit.com/@deanliu/2019-new-year-new-signature-block)
+This page is synchronized from the post: ['2019: New Year, New Signature Block 新年新簽名檔！'](https://steemit.com/@deanliu/2019-new-year-new-signature-block)

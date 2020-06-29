@@ -1,17 +1,18 @@
 
 ---
-title: "embrace your inner green"
+title: 'embrace your inner green'
 permlink: embrace-your-inner-green
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-12 07:28:03
 categories:
 - photography
 tags:
 - photography
 - gardening
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -28,4 +29,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [embrace your inner green](https://steemit.com/@deanliu/embrace-your-inner-green)
+This page is synchronized from the post: ['embrace your inner green'](https://steemit.com/@deanliu/embrace-your-inner-green)

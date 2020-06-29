@@ -1,10 +1,11 @@
 
 ---
-title: "Red Lantern 2/2 - Jiufen photo series 008"
+title: 'Red Lantern 2/2 - Jiufen photo series 008'
 permlink: red-lantern-2-2-jiufen-photo-series-008
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-04 11:02:48
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - travel
 - life
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Red Lantern 2/2 - Jiufen photo series 008](https://steemit.com/@deanliu/red-lantern-2-2-jiufen-photo-series-008)
+This page is synchronized from the post: ['Red Lantern 2/2 - Jiufen photo series 008'](https://steemit.com/@deanliu/red-lantern-2-2-jiufen-photo-series-008)

@@ -1,10 +1,11 @@
 
 ---
-title: "JB's Diner - A famous brunch place in Taipei Tian Mu 天母好吃熱門的早午餐餐廳 JB's Diner"
+title: 'JB''s Diner - A famous brunch place in Taipei Tian Mu 天母好吃熱門的早午餐餐廳 JB''s Diner'
 permlink: jb-s-diner-a-famous-brunch-place-in-taipei-tian-mu-jb-s-diner
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-14 04:00:36
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - food
 - cn
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [JB's Diner - A famous brunch place in Taipei Tian Mu 天母好吃熱門的早午餐餐廳 JB's Diner](https://steemit.com/@deanliu/jb-s-diner-a-famous-brunch-place-in-taipei-tian-mu-jb-s-diner)
+This page is synchronized from the post: ['JB''s Diner - A famous brunch place in Taipei Tian Mu 天母好吃熱門的早午餐餐廳 JB''s Diner'](https://steemit.com/@deanliu/jb-s-diner-a-famous-brunch-place-in-taipei-tian-mu-jb-s-diner)

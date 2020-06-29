@@ -1,10 +1,11 @@
 
 ---
-title: "Meme challenge # 18 - Bobby Haircut ... Just Neat ..."
+title: 'Meme challenge # 18 - Bobby Haircut ... Just Neat ...'
 permlink: meme-challenge-18-bobby-haircut-just-neat
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-26 08:04:24
 categories:
 - memechallenge
@@ -14,7 +15,7 @@ tags:
 - meme
 - ned
 - steem
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Meme challenge # 18 - Bobby Haircut ... Just Neat ...](https://steemit.com/@deanliu/meme-challenge-18-bobby-haircut-just-neat)
+This page is synchronized from the post: ['Meme challenge # 18 - Bobby Haircut ... Just Neat ...'](https://steemit.com/@deanliu/meme-challenge-18-bobby-haircut-just-neat)

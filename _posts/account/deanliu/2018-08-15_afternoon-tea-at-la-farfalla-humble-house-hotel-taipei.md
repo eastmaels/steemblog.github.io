@@ -1,10 +1,11 @@
 
 ---
-title: "Afternoon Tea at La Farfalla, Humble House Hotel Taipei "
+title: 'Afternoon Tea at La Farfalla, Humble House Hotel Taipei '
 permlink: afternoon-tea-at-la-farfalla-humble-house-hotel-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-15 12:05:09
 categories:
 - cuisine
@@ -14,7 +15,7 @@ tags:
 - restaurant
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmNW43eHih3ZSEQjqcAEsiWs1Hez4Je7nBLTdV44DLBdd8/DSC_6207.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNW43eHih3ZSEQjqcAEsiWs1Hez4Je7nBLTdV44DLBdd8/DSC_6207.JPG'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ I will let the photos tell the story. ^_^
 
 - - -
 
-This page is synchronized from the post: [Afternoon Tea at La Farfalla, Humble House Hotel Taipei ](https://steemit.com/@deanliu/afternoon-tea-at-la-farfalla-humble-house-hotel-taipei)
+This page is synchronized from the post: ['Afternoon Tea at La Farfalla, Humble House Hotel Taipei '](https://steemit.com/@deanliu/afternoon-tea-at-la-farfalla-humble-house-hotel-taipei)

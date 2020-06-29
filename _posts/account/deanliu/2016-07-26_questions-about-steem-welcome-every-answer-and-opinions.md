@@ -1,10 +1,11 @@
 
 ---
-title: "Questions about Steem ... welcome every answer and opinions"
+title: 'Questions about Steem ... welcome every answer and opinions'
 permlink: questions-about-steem-welcome-every-answer-and-opinions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-26 03:38:33
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - language
 - marketplace
 - 
-thumbnail: //i.imgsafe.org/6dadc94cad.png
+thumbnail: '//i.imgsafe.org/6dadc94cad.png'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Questions about Steem ... welcome every answer and opinions](https://steemit.com/@deanliu/questions-about-steem-welcome-every-answer-and-opinions)
+This page is synchronized from the post: ['Questions about Steem ... welcome every answer and opinions'](https://steemit.com/@deanliu/questions-about-steem-welcome-every-answer-and-opinions)

@@ -1,10 +1,11 @@
 
 ---
-title: "🚉 [輕旅行系列] 台北萬華龍山寺 🚉 [Travel Around Taiwan] Taipei Lungshan Temple"
+title: '🚉 [輕旅行系列] 台北萬華龍山寺 🚉 [Travel Around Taiwan] Taipei Lungshan Temple'
 permlink: travel-around-taiwan-taipei-lungshan-temple
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-09 16:23:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - photography
 - taipei
 - temple
-thumbnail: https://steemitimages.com/DQmXovHH584J9VKLetW9GqqmVhznLf7bu7moDvKXp6Qr1Qr/DSC_2962.JPG
+thumbnail: 'https://steemitimages.com/DQmXovHH584J9VKLetW9GqqmVhznLf7bu7moDvKXp6Qr1Qr/DSC_2962.JPG'
 sidebar:
     right:
         sticky: true
@@ -145,4 +146,4 @@ Last time in this series ...
 
 - - -
 
-This page is synchronized from the post: [🚉 [輕旅行系列] 台北萬華龍山寺 🚉 [Travel Around Taiwan] Taipei Lungshan Temple](https://steemit.com/@deanliu/travel-around-taiwan-taipei-lungshan-temple)
+This page is synchronized from the post: ['🚉 [輕旅行系列] 台北萬華龍山寺 🚉 [Travel Around Taiwan] Taipei Lungshan Temple'](https://steemit.com/@deanliu/travel-around-taiwan-taipei-lungshan-temple)

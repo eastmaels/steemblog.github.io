@@ -1,10 +1,11 @@
 
 ---
-title: "🍴 Café Gerbeaud, Budapest #myeuropaplog series 🍴  布達佩斯吉爾波咖啡館－歐洲行旅照片記錄系列 🍴"
+title: '🍴 Café Gerbeaud, Budapest #myeuropaplog series 🍴  布達佩斯吉爾波咖啡館－歐洲行旅照片記錄系列 🍴'
 permlink: cafe-gerbeaud-budapest-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-07 02:32:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cn
 - myeuropaplog
 - budapest
-thumbnail: https://steemitimages.com/DQmceB6BbBmiurL6nsV4dhMXBTaybFSA1xeRXzKaUjHHjFi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-07%20%E4%B8%8A%E5%8D%8810.25.02.png
+thumbnail: 'https://steemitimages.com/DQmceB6BbBmiurL6nsV4dhMXBTaybFSA1xeRXzKaUjHHjFi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-07%20%E4%B8%8A%E5%8D%8810.25.02.png'
 sidebar:
     right:
         sticky: true
@@ -133,4 +134,4 @@ Stay tuned ... / 敬請持續鎖定本頻道 ...
 
 - - -
 
-This page is synchronized from the post: [🍴 Café Gerbeaud, Budapest #myeuropaplog series 🍴  布達佩斯吉爾波咖啡館－歐洲行旅照片記錄系列 🍴](https://steemit.com/@deanliu/cafe-gerbeaud-budapest-myeuropaplog-series)
+This page is synchronized from the post: ['🍴 Café Gerbeaud, Budapest #myeuropaplog series 🍴  布達佩斯吉爾波咖啡館－歐洲行旅照片記錄系列 🍴'](https://steemit.com/@deanliu/cafe-gerbeaud-budapest-myeuropaplog-series)

@@ -1,10 +1,11 @@
 
 ---
-title: "Afterthought of Asia Blockchain Summit Taipei"
+title: 'Afterthought of Asia Blockchain Summit Taipei'
 permlink: afterthought-of-asia-blockchain-summit-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-04 03:08:21
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - opinions
 - busy
 - abs
-thumbnail: https://cdn.steemitimages.com/DQmZz38FuTJjJmrwadeaVyLivNTUBggPgUs1KnbCbiKaj4g/DSC_5629.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmZz38FuTJjJmrwadeaVyLivNTUBggPgUs1KnbCbiKaj4g/DSC_5629.JPG'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ Thanks for reading. I hope this post has somehow compensated for the previous tw
 
 - - -
 
-This page is synchronized from the post: [Afterthought of Asia Blockchain Summit Taipei](https://steemit.com/@deanliu/afterthought-of-asia-blockchain-summit-taipei)
+This page is synchronized from the post: ['Afterthought of Asia Blockchain Summit Taipei'](https://steemit.com/@deanliu/afterthought-of-asia-blockchain-summit-taipei)

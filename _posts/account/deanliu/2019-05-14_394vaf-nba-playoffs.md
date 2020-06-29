@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] 勇士要拓荒，暴龍咬公鹿"
+title: '[漫談NBA Playoffs] 勇士要拓荒，暴龍咬公鹿'
 permlink: 394vaf-nba-playoffs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-14 22:45:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nba
 - playoffs
 - warriors
-thumbnail: https://img.ltn.com.tw/Upload/sports/page/800/2019/05/13/phpm2yg1n.jpg
+thumbnail: 'https://img.ltn.com.tw/Upload/sports/page/800/2019/05/13/phpm2yg1n.jpg'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Stephen Curry不用說了，馬上就要對上拓荒者隊的弟弟Seth Curry。
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] 勇士要拓荒，暴龍咬公鹿](https://steemit.com/@deanliu/394vaf-nba-playoffs)
+This page is synchronized from the post: ['[漫談NBA Playoffs] 勇士要拓荒，暴龍咬公鹿'](https://steemit.com/@deanliu/394vaf-nba-playoffs)

@@ -1,10 +1,11 @@
 
 ---
-title: "[Luxury Hotel Series] 🏩  Intercontinental Budapest 🏩  Breakfast in the room ❤️ - #myeuropaplog series 布達佩斯洲際早餐－歐洲行旅照片記錄系列"
+title: '[Luxury Hotel Series] 🏩  Intercontinental Budapest 🏩  Breakfast in the room ❤️ - #myeuropaplog series 布達佩斯洲際早餐－歐洲行旅照片記錄系列'
 permlink: luxury-hotel-series-intercontinental-budapest-breakfast-in-the-room-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-02 14:47:36
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - budapest
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ https://steemitimages.com/DQmRsxKSaC23LSHaPJ1NECWWcEtfPoknDbYFyi7CF8Z2hje/DSC_12
 
 - - -
 
-This page is synchronized from the post: [[Luxury Hotel Series] 🏩  Intercontinental Budapest 🏩  Breakfast in the room ❤️ - #myeuropaplog series 布達佩斯洲際早餐－歐洲行旅照片記錄系列](https://steemit.com/@deanliu/luxury-hotel-series-intercontinental-budapest-breakfast-in-the-room-myeuropaplog-series)
+This page is synchronized from the post: ['[Luxury Hotel Series] 🏩  Intercontinental Budapest 🏩  Breakfast in the room ❤️ - #myeuropaplog series 布達佩斯洲際早餐－歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/luxury-hotel-series-intercontinental-budapest-breakfast-in-the-room-myeuropaplog-series)

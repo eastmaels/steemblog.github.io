@@ -1,10 +1,11 @@
 
 ---
-title: "Happy Chinese New Year to All Steemians!"
+title: 'Happy Chinese New Year to All Steemians!'
 permlink: happy-chinese-new-year-to-all-steemians
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-04 04:33:57
 categories:
 - newyear
@@ -14,7 +15,7 @@ tags:
 - busy
 - cny
 - photography
-thumbnail: https://ipfs.busy.org/ipfs/QmeYL5vmBDKGn59RYK3NU7fnhmzPrSbtjy8GGgMxyjJ5Ni
+thumbnail: 'https://ipfs.busy.org/ipfs/QmeYL5vmBDKGn59RYK3NU7fnhmzPrSbtjy8GGgMxyjJ5Ni'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ Happy New Year to All !!!
 
 - - -
 
-This page is synchronized from the post: [Happy Chinese New Year to All Steemians!](https://steemit.com/@deanliu/happy-chinese-new-year-to-all-steemians)
+This page is synchronized from the post: ['Happy Chinese New Year to All Steemians!'](https://steemit.com/@deanliu/happy-chinese-new-year-to-all-steemians)

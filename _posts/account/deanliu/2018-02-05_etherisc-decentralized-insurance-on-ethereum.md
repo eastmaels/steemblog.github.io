@@ -1,10 +1,11 @@
 
 ---
-title: "ETHERISC - Decentralized Insurance on Ethereum"
+title: 'ETHERISC - Decentralized Insurance on Ethereum'
 permlink: etherisc-decentralized-insurance-on-ethereum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-05 02:24:30
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - business
 - insurance
 - travel
-thumbnail: https://steemitimages.com/DQmSs1iRgtz9LeifkwRSCtj1H9eyD7L6DTUaK7CttkE8Tqz/IoD-airport-lounges-header.jpg
+thumbnail: 'https://steemitimages.com/DQmSs1iRgtz9LeifkwRSCtj1H9eyD7L6DTUaK7CttkE8Tqz/IoD-airport-lounges-header.jpg'
 sidebar:
     right:
         sticky: true
@@ -113,4 +114,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [ETHERISC - Decentralized Insurance on Ethereum](https://steemit.com/@deanliu/etherisc-decentralized-insurance-on-ethereum)
+This page is synchronized from the post: ['ETHERISC - Decentralized Insurance on Ethereum'](https://steemit.com/@deanliu/etherisc-decentralized-insurance-on-ethereum)

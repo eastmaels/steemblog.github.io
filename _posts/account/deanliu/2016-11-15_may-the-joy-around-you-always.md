@@ -1,16 +1,17 @@
 
 ---
-title: "願歡樂常在 － 生活記事  May the Joy Around You Always"
+title: '願歡樂常在 － 生活記事  May the Joy Around You Always'
 permlink: may-the-joy-around-you-always
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-15 06:47:00
 categories:
 - cn
 tags:
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [願歡樂常在 － 生活記事  May the Joy Around You Always](https://steemit.com/@deanliu/may-the-joy-around-you-always)
+This page is synchronized from the post: ['願歡樂常在 － 生活記事  May the Joy Around You Always'](https://steemit.com/@deanliu/may-the-joy-around-you-always)

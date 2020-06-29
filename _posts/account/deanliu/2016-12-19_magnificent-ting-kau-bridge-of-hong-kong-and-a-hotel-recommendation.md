@@ -1,10 +1,11 @@
 
 ---
-title: "Magnificent Ting Kau Bridge of Hong Kong and a hotel recommendation  香港汀九橋與酒店建議"
+title: 'Magnificent Ting Kau Bridge of Hong Kong and a hotel recommendation  香港汀九橋與酒店建議'
 permlink: magnificent-ting-kau-bridge-of-hong-kong-and-a-hotel-recommendation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-19 07:03:48
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - construction
 - travel
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Magnificent Ting Kau Bridge of Hong Kong and a hotel recommendation  香港汀九橋與酒店建議](https://steemit.com/@deanliu/magnificent-ting-kau-bridge-of-hong-kong-and-a-hotel-recommendation)
+This page is synchronized from the post: ['Magnificent Ting Kau Bridge of Hong Kong and a hotel recommendation  香港汀九橋與酒店建議'](https://steemit.com/@deanliu/magnificent-ting-kau-bridge-of-hong-kong-and-a-hotel-recommendation)

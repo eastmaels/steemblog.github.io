@@ -1,10 +1,11 @@
 
 ---
-title: "Should Spreading News about Disasters be Rewarded ? An issue to think about ..."
+title: 'Should Spreading News about Disasters be Rewarded ? An issue to think about ...'
 permlink: should-spreading-news-about-disasters-be-rewarded-an-issue-to-think-about
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-08 05:31:06
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - news
 - ethics
 - suggestions
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Should Spreading News about Disasters be Rewarded ? An issue to think about ...](https://steemit.com/@deanliu/should-spreading-news-about-disasters-be-rewarded-an-issue-to-think-about)
+This page is synchronized from the post: ['Should Spreading News about Disasters be Rewarded ? An issue to think about ...'](https://steemit.com/@deanliu/should-spreading-news-about-disasters-be-rewarded-an-issue-to-think-about)

@@ -1,10 +1,11 @@
 
 ---
-title: "It's March 14 and it's Pi day!!"
+title: 'It''s March 14 and it''s Pi day!!'
 permlink: it-s-march-14-and-it-s-pi-day
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-14 12:14:33
 categories:
 - pi
@@ -14,7 +15,7 @@ tags:
 - news
 - busy
 - pie
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1521028038/cm5edvvgsbhnbg0k2ter.png
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1521028038/cm5edvvgsbhnbg0k2ter.png'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ images - Google and pixabay
 
 - - -
 
-This page is synchronized from the post: [It's March 14 and it's Pi day!!](https://steemit.com/@deanliu/it-s-march-14-and-it-s-pi-day)
+This page is synchronized from the post: ['It''s March 14 and it''s Pi day!!'](https://steemit.com/@deanliu/it-s-march-14-and-it-s-pi-day)

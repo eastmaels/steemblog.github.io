@@ -1,17 +1,18 @@
 
 ---
-title: "UNDER-Construction"
+title: 'UNDER-Construction'
 permlink: under-construction
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-19 05:12:57
 categories:
 - photography
 tags:
 - photography
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [UNDER-Construction](https://steemit.com/@deanliu/under-construction)
+This page is synchronized from the post: ['UNDER-Construction'](https://steemit.com/@deanliu/under-construction)

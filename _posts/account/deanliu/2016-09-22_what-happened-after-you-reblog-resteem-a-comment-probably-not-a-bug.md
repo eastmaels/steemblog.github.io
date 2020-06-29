@@ -1,10 +1,11 @@
 
 ---
-title: "What will happen after you Reblog/Resteem a Comment ? Probably not a bug..."
+title: 'What will happen after you Reblog/Resteem a Comment ? Probably not a bug...'
 permlink: what-happened-after-you-reblog-resteem-a-comment-probably-not-a-bug
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-22 07:45:15
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - reblog
 - bug
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [What will happen after you Reblog/Resteem a Comment ? Probably not a bug...](https://steemit.com/@deanliu/what-happened-after-you-reblog-resteem-a-comment-probably-not-a-bug)
+This page is synchronized from the post: ['What will happen after you Reblog/Resteem a Comment ? Probably not a bug...'](https://steemit.com/@deanliu/what-happened-after-you-reblog-resteem-a-comment-probably-not-a-bug)

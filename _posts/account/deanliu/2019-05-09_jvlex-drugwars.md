@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 律師變搬運工的幽默"
+title: '[DrugWars] 律師變搬運工的幽默'
 permlink: jvlex-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-09 02:44:54
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - drugwars
 - cn-dw
 - lawyer
-thumbnail: https://cdn.steemitimages.com/DQmZHDEGstjEMmgHTbbePXF5bR1Q1yySfrGYzEoQ5H3Tp6S/%E6%9C%AA%E5%91%BD%E5%90%8D.png
+thumbnail: 'https://cdn.steemitimages.com/DQmZHDEGstjEMmgHTbbePXF5bR1Q1yySfrGYzEoQ5H3Tp6S/%E6%9C%AA%E5%91%BD%E5%90%8D.png'
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 律師變搬運工的幽默](https://steemit.com/@deanliu/jvlex-drugwars)
+This page is synchronized from the post: ['[DrugWars] 律師變搬運工的幽默'](https://steemit.com/@deanliu/jvlex-drugwars)

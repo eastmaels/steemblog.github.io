@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Real Tokyo alongside Keisei Skyliner..."
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Real Tokyo alongside Keisei Skyliner...'
 permlink: deans-tokyo-snapshots--real-tokyo-alongside-keisei-skyliner-jpok0cz1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-08 08:46:48
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - photography
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/47d0b2fb16d7f5848e3100718cb63c79c23aec8f.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/47d0b2fb16d7f5848e3100718cb63c79c23aec8f.png'
 sidebar:
     right:
         sticky: true
@@ -115,4 +116,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Real Tokyo alongside Keisei Skyliner...](https://steemit.com/@deanliu/deans-tokyo-snapshots--real-tokyo-alongside-keisei-skyliner-jpok0cz1)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Real Tokyo alongside Keisei Skyliner...'](https://steemit.com/@deanliu/deans-tokyo-snapshots--real-tokyo-alongside-keisei-skyliner-jpok0cz1)

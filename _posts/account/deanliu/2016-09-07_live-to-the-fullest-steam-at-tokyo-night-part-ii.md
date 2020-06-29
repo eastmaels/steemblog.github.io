@@ -1,10 +1,11 @@
 
 ---
-title: "Live to the fullest steam at Tokyo night - Part II"
+title: 'Live to the fullest steam at Tokyo night - Part II'
 permlink: live-to-the-fullest-steam-at-tokyo-night-part-ii
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-07 03:01:18
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - tokyo
 - travel
 - ja
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Live to the fullest steam at Tokyo night - Part II](https://steemit.com/@deanliu/live-to-the-fullest-steam-at-tokyo-night-part-ii)
+This page is synchronized from the post: ['Live to the fullest steam at Tokyo night - Part II'](https://steemit.com/@deanliu/live-to-the-fullest-steam-at-tokyo-night-part-ii)

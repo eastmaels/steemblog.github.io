@@ -1,10 +1,11 @@
 
 ---
-title: "致戴蒙先生，以及任何努力想了解加密货币的朋友。 A Chinese translation of Adam Ludwin's A Letter to Jamie Dimon -- Simplified Chinese version"
+title: '致戴蒙先生，以及任何努力想了解加密货币的朋友。 A Chinese translation of Adam Ludwin''s "A Letter to Jamie Dimon" -- Simplified Chinese version'
 permlink: a-chinese-translation-of-adam-ludwin-s-a-letter-to-jamie-dimon-simplified-chinese-version
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-02 09:31:45
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - translation
 - cn
-thumbnail: https://steemitimages.com/DQmSR6TLhDsPBYcyErAhpWftSnAvx5adyu6NRr3yjkrfeqh/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-02%20%E4%B8%8B%E5%8D%884.38.06.png
+thumbnail: 'https://steemitimages.com/DQmSR6TLhDsPBYcyErAhpWftSnAvx5adyu6NRr3yjkrfeqh/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-01-02%20%E4%B8%8B%E5%8D%884.38.06.png'
 sidebar:
     right:
         sticky: true
@@ -351,4 +352,4 @@ pps —我这里没有提及领一个相关话题：企业使用的加密帐本�
 
 - - -
 
-This page is synchronized from the post: [致戴蒙先生，以及任何努力想了解加密货币的朋友。 A Chinese translation of Adam Ludwin's A Letter to Jamie Dimon -- Simplified Chinese version](https://steemit.com/@deanliu/a-chinese-translation-of-adam-ludwin-s-a-letter-to-jamie-dimon-simplified-chinese-version)
+This page is synchronized from the post: ['致戴蒙先生，以及任何努力想了解加密货币的朋友。 A Chinese translation of Adam Ludwin''s "A Letter to Jamie Dimon" -- Simplified Chinese version'](https://steemit.com/@deanliu/a-chinese-translation-of-adam-ludwin-s-a-letter-to-jamie-dimon-simplified-chinese-version)

@@ -1,10 +1,11 @@
 
 ---
-title: "Monkey, in the history of technological development ..."
+title: 'Monkey, in the history of technological development ...'
 permlink: monkey-in-the-history-of-technological-development
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-21 07:34:36
 categories:
 - meme
@@ -13,7 +14,7 @@ tags:
 - funny
 - blockchain
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Monkey, in the history of technological development ...](https://steemit.com/@deanliu/monkey-in-the-history-of-technological-development)
+This page is synchronized from the post: ['Monkey, in the history of technological development ...'](https://steemit.com/@deanliu/monkey-in-the-history-of-technological-development)

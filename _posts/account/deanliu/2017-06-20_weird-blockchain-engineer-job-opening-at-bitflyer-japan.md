@@ -1,10 +1,11 @@
 
 ---
-title: "Weird Blockchain Engineer Job Opening at bitFlyer Japan"
+title: 'Weird "Blockchain Engineer" Job Opening at bitFlyer Japan'
 permlink: weird-blockchain-engineer-job-opening-at-bitflyer-japan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-20 09:27:48
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - bitcoin
 - japan
 - crypto
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ https://steemitimages.com/DQmU65zYtjRd2PwcKG7g3ZadfzHVAtD51Af9YX6owJBDRyk/image.
 
 - - -
 
-This page is synchronized from the post: [Weird Blockchain Engineer Job Opening at bitFlyer Japan](https://steemit.com/@deanliu/weird-blockchain-engineer-job-opening-at-bitflyer-japan)
+This page is synchronized from the post: ['Weird "Blockchain Engineer" Job Opening at bitFlyer Japan'](https://steemit.com/@deanliu/weird-blockchain-engineer-job-opening-at-bitflyer-japan)

@@ -1,10 +1,11 @@
 
 ---
-title: "[NBA] 勇士可敬對手：James Harden"
+title: '[NBA] 勇士可敬對手：James Harden'
 permlink: nba-james-harden
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-04 13:27:57
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - sports
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmRoVAcQLCb5JSbziLn8EV6hGVo4X8D7KvwCwhyj9iqL6F
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRoVAcQLCb5JSbziLn8EV6hGVo4X8D7KvwCwhyj9iqL6F'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[NBA] 勇士可敬對手：James Harden](https://steemit.com/@deanliu/nba-james-harden)
+This page is synchronized from the post: ['[NBA] 勇士可敬對手：James Harden'](https://steemit.com/@deanliu/nba-james-harden)

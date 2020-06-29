@@ -1,10 +1,11 @@
 
 ---
-title: "MYOT - Make Your Own Toys for your kids! This time it's the Fishing Set!"
+title: 'MYOT - Make Your Own Toys for your kids! This time it''s the Fishing Set!'
 permlink: myot-make-your-own-toys-for-your-kids-this-time-it-s-the-fishing-set
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-03 09:15:54
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - fishing
 - howto
 - diy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [MYOT - Make Your Own Toys for your kids! This time it's the Fishing Set!](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-this-time-it-s-the-fishing-set)
+This page is synchronized from the post: ['MYOT - Make Your Own Toys for your kids! This time it''s the Fishing Set!'](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-this-time-it-s-the-fishing-set)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 03 ｜《文化讀癮．一週譯報》第3期：生之喜悅"
+title: 'Culture Vulture for CNers Issue 03 ｜《文化讀癮．一週譯報》第3期：生之喜悅'
 permlink: culture-vulture-for-cners-issue-03-03
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-25 04:21:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - newborn
-thumbnail: https://steemitimages.com/DQmT9batnnfby41aRbDmuFx3vS4SXuXEEYQue9vgCyjtCc1/banner03.jpg
+thumbnail: 'https://steemitimages.com/DQmT9batnnfby41aRbDmuFx3vS4SXuXEEYQue9vgCyjtCc1/banner03.jpg'
 sidebar:
     right:
         sticky: true
@@ -125,4 +126,4 @@ Peucicap是亞齊文化中的古老傳統，為的是孩子日後的成長與發
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 03 ｜《文化讀癮．一週譯報》第3期：生之喜悅](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-03-03)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 03 ｜《文化讀癮．一週譯報》第3期：生之喜悅'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-03-03)

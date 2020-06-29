@@ -1,10 +1,11 @@
 
 ---
-title: "Security Warning for cn newbies 新來的朋友要注意帳號安全!!"
+title: 'Security Warning for cn newbies 新來的朋友要注意帳號安全!!'
 permlink: security-warning-for-cn-newbies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-16 07:36:51
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - steem-help
 - security
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Security Warning for cn newbies 新來的朋友要注意帳號安全!!](https://steemit.com/@deanliu/security-warning-for-cn-newbies)
+This page is synchronized from the post: ['Security Warning for cn newbies 新來的朋友要注意帳號安全!!'](https://steemit.com/@deanliu/security-warning-for-cn-newbies)

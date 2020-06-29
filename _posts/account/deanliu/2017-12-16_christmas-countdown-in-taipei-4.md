@@ -1,10 +1,11 @@
 
 ---
-title: "🎄 聖誕倒數在台北之四 🎄 Christmas Countdown in Taipei #4 🎄"
+title: '🎄 聖誕倒數在台北之四 🎄 Christmas Countdown in Taipei #4 🎄'
 permlink: christmas-countdown-in-taipei-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-16 00:37:30
 categories:
 - christmas-countdown
@@ -14,7 +15,7 @@ tags:
 - photography
 - taipei
 - cn
-thumbnail: https://steemitimages.com/DQmTAGfqPQDFGwfB4qfmUpYXaBRkdDnAvrE7eW7ZXkDoQwu/DSC_3305.JPG
+thumbnail: 'https://steemitimages.com/DQmTAGfqPQDFGwfB4qfmUpYXaBRkdDnAvrE7eW7ZXkDoQwu/DSC_3305.JPG'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ https://steemitimages.com/DQmebwadKAf9FohyrRAMtdmtJKV8C8umdXLTE4Yoe4trwyz/DSC_33
 
 - - -
 
-This page is synchronized from the post: [🎄 聖誕倒數在台北之四 🎄 Christmas Countdown in Taipei #4 🎄](https://steemit.com/@deanliu/christmas-countdown-in-taipei-4)
+This page is synchronized from the post: ['🎄 聖誕倒數在台北之四 🎄 Christmas Countdown in Taipei #4 🎄'](https://steemit.com/@deanliu/christmas-countdown-in-taipei-4)

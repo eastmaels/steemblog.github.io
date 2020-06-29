@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Time-engraved Rail Bridge 時間鐵道橋"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Time-engraved Rail Bridge 時間鐵道橋'
 permlink: dean-s-tokyo-snapshots-time-engraved-rail-bridge
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-23 10:24:15
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - time
 - busy
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmaMDFZmYvy1qLCzHrwboEUUFJuJFfNiZnBQhPKsa5e7Wy/DSC_6752.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmaMDFZmYvy1qLCzHrwboEUUFJuJFfNiZnBQhPKsa5e7Wy/DSC_6752.JPG'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Time-engraved Rail Bridge 時間鐵道橋](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-time-engraved-rail-bridge)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Time-engraved Rail Bridge 時間鐵道橋'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-time-engraved-rail-bridge)

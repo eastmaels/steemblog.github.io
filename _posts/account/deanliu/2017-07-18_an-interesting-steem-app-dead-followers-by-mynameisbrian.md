@@ -1,10 +1,11 @@
 
 ---
-title: "🙍 An Interesting Steem App - Dead Followers by @mynameisbrian 🙍 死亡粉絲計數器？介紹有趣小工具！🙍"
+title: '🙍 An Interesting Steem App - Dead Followers by @mynameisbrian 🙍 死亡粉絲計數器？介紹有趣小工具！🙍'
 permlink: an-interesting-steem-app-dead-followers-by-mynameisbrian
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-18 11:07:21
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - follower
 - steem-help
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🙍 An Interesting Steem App - Dead Followers by @mynameisbrian 🙍 死亡粉絲計數器？介紹有趣小工具！🙍](https://steemit.com/@deanliu/an-interesting-steem-app-dead-followers-by-mynameisbrian)
+This page is synchronized from the post: ['🙍 An Interesting Steem App - Dead Followers by @mynameisbrian 🙍 死亡粉絲計數器？介紹有趣小工具！🙍'](https://steemit.com/@deanliu/an-interesting-steem-app-dead-followers-by-mynameisbrian)

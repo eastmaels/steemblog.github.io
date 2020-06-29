@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] ⚽ 人生第一場正式足球賽 ⚽"
+title: '[D&TT] ⚽ 人生第一場正式足球賽 ⚽'
 permlink: 2eqanw-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-19 03:55:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - busy
 - sports
 - soccer
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/454623e15ca5bb8f3fc901e6ab1b8188ccf1a130.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/454623e15ca5bb8f3fc901e6ab1b8188ccf1a130.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] ⚽ 人生第一場正式足球賽 ⚽](https://steemit.com/@deanliu/2eqanw-d-and-tt)
+This page is synchronized from the post: ['[D&TT] ⚽ 人生第一場正式足球賽 ⚽'](https://steemit.com/@deanliu/2eqanw-d-and-tt)

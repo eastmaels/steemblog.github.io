@@ -1,17 +1,18 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Six / 七天黑白挑戰 － 第六天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Six / 七天黑白挑戰 － 第六天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-six-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-15 08:12:03
 categories:
 - sevendaybnwchallenge
 tags:
 - sevendaybnwchallenge
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ I nominate @princessleia because this is an inactive account and if ***she*** re
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Six / 七天黑白挑戰 － 第六天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-six-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Six / 七天黑白挑戰 － 第六天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-six-by-deanliu)

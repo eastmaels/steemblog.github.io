@@ -1,10 +1,11 @@
 
 ---
-title: "A crypto night with mutton hot pot - meeting Steemians from Hong Kong"
+title: 'A crypto night with mutton hot pot - meeting Steemians from Hong Kong'
 permlink: a-crypto-night-with-mutton-hot-pot-meeting-steemians-from-hong-kong
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-28 04:29:27
 categories:
 - meetup
@@ -14,7 +15,7 @@ tags:
 - taipei
 - taiwan
 - cn
-thumbnail: https://steemitimages.com/DQmSjUXN6mbJyfeUDdKqWw7bmMC4kTeyLxk9tyDCXZ6fHCc/DSC_3318.JPG
+thumbnail: 'https://steemitimages.com/DQmSjUXN6mbJyfeUDdKqWw7bmMC4kTeyLxk9tyDCXZ6fHCc/DSC_3318.JPG'
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ By the way, Chris has already written two posts about his trip to Taiwan. But bo
 
 - - -
 
-This page is synchronized from the post: [A crypto night with mutton hot pot - meeting Steemians from Hong Kong](https://steemit.com/@deanliu/a-crypto-night-with-mutton-hot-pot-meeting-steemians-from-hong-kong)
+This page is synchronized from the post: ['A crypto night with mutton hot pot - meeting Steemians from Hong Kong'](https://steemit.com/@deanliu/a-crypto-night-with-mutton-hot-pot-meeting-steemians-from-hong-kong)

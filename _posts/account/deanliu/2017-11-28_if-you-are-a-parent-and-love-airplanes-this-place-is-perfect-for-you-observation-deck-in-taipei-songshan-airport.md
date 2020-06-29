@@ -1,10 +1,11 @@
 
 ---
-title: "If you are a parent and love airplanes, this place is perfect for you - Observation Deck in Taipei Songshan Airport 台北松山機場觀景台"
+title: 'If you are a parent and love airplanes, this place is perfect for you - Observation Deck in Taipei Songshan Airport 台北松山機場觀景台'
 permlink: if-you-are-a-parent-and-love-airplanes-this-place-is-perfect-for-you-observation-deck-in-taipei-songshan-airport
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-28 06:10:18
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - airplane
 - airport
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -133,4 +134,4 @@ https://steemitimages.com/DQmRdSASeHZRd6E2v9D4LHzy28caLYJKSpPEX3dT9ZMdFi6/DSC_32
 
 - - -
 
-This page is synchronized from the post: [If you are a parent and love airplanes, this place is perfect for you - Observation Deck in Taipei Songshan Airport 台北松山機場觀景台](https://steemit.com/@deanliu/if-you-are-a-parent-and-love-airplanes-this-place-is-perfect-for-you-observation-deck-in-taipei-songshan-airport)
+This page is synchronized from the post: ['If you are a parent and love airplanes, this place is perfect for you - Observation Deck in Taipei Songshan Airport 台北松山機場觀景台'](https://steemit.com/@deanliu/if-you-are-a-parent-and-love-airplanes-this-place-is-perfect-for-you-observation-deck-in-taipei-songshan-airport)

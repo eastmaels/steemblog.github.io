@@ -1,10 +1,11 @@
 
 ---
-title: "Question about Steem #2 ... in Chinese... 對於使用steemit的一些問題"
+title: 'Question about Steem #2 ... in Chinese... 對於使用steemit的一些問題'
 permlink: question-about-steem-2-in-chinese-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-28 08:10:12
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - steemit
 - questions
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Question about Steem #2 ... in Chinese... 對於使用steemit的一些問題](https://steemit.com/@deanliu/question-about-steem-2-in-chinese-steemit)
+This page is synchronized from the post: ['Question about Steem #2 ... in Chinese... 對於使用steemit的一些問題'](https://steemit.com/@deanliu/question-about-steem-2-in-chinese-steemit)

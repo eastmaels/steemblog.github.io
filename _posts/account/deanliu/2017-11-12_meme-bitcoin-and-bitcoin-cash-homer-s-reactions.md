@@ -1,10 +1,11 @@
 
 ---
-title: "MEME - Bitcoin and Bitcoin Cash - Homer's Reactions"
+title: 'MEME - Bitcoin and Bitcoin Cash - Homer''s Reactions'
 permlink: meme-bitcoin-and-bitcoin-cash-homer-s-reactions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-12 02:49:51
 categories:
 - meme
@@ -14,7 +15,7 @@ tags:
 - bitcoincash
 - cryptocurrency
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [MEME - Bitcoin and Bitcoin Cash - Homer's Reactions](https://steemit.com/@deanliu/meme-bitcoin-and-bitcoin-cash-homer-s-reactions)
+This page is synchronized from the post: ['MEME - Bitcoin and Bitcoin Cash - Homer''s Reactions'](https://steemit.com/@deanliu/meme-bitcoin-and-bitcoin-cash-homer-s-reactions)

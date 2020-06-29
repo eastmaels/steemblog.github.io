@@ -1,16 +1,17 @@
 
 ---
-title: "Memo for my own use only - recording saved SBD for public benefit - also a experiment for bot voting but they don't know"
+title: 'Memo for my own use only - recording saved SBD for public benefit - also a experiment for bot voting but they don''t know'
 permlink: memo-for-my-own-use-only-recording-saved-sbd-for-public-benefit-also-a-experiment-for-bot-voting-but-they-don-t-know
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-09 07:11:30
 categories:
 - memo
 tags:
 - memo
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Memo for my own use only - recording saved SBD for public benefit - also a experiment for bot voting but they don't know](https://steemit.com/@deanliu/memo-for-my-own-use-only-recording-saved-sbd-for-public-benefit-also-a-experiment-for-bot-voting-but-they-don-t-know)
+This page is synchronized from the post: ['Memo for my own use only - recording saved SBD for public benefit - also a experiment for bot voting but they don''t know'](https://steemit.com/@deanliu/memo-for-my-own-use-only-recording-saved-sbd-for-public-benefit-also-a-experiment-for-bot-voting-but-they-don-t-know)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍜  Dean's Kitchen - Goose with Green Bean Noodles 🍜  美女廚房－鵝肉冬粉 🍜"
+title: '🍜  Dean''s Kitchen - Goose with Green Bean Noodles 🍜  美女廚房－鵝肉冬粉 🍜'
 permlink: dean-s-kitchen-goose-with-green-bean-noodles
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-14 11:49:30
 categories:
 - cooking
@@ -14,7 +15,7 @@ tags:
 - recipe
 - beauty-kitchen
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ https://steemitimages.com/DQmNNgtPYcNQU37q9DpBs4PxKEf9HjCi2wyLb2U9c7pBQdi/_20180
 
 - - -
 
-This page is synchronized from the post: [🍜  Dean's Kitchen - Goose with Green Bean Noodles 🍜  美女廚房－鵝肉冬粉 🍜](https://steemit.com/@deanliu/dean-s-kitchen-goose-with-green-bean-noodles)
+This page is synchronized from the post: ['🍜  Dean''s Kitchen - Goose with Green Bean Noodles 🍜  美女廚房－鵝肉冬粉 🍜'](https://steemit.com/@deanliu/dean-s-kitchen-goose-with-green-bean-noodles)

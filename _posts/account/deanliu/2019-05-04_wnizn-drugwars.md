@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 大規模戰鬥"
+title: '[DrugWars] 大規模戰鬥'
 permlink: wnizn-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-04 02:45:42
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - drugwars
 - cn-dw
 - gaming
-thumbnail: https://cdn.steemitimages.com/DQmWRC9Sopez9SEzu5bfRoe42RybH9ib1qvMcw39byy2kXu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-05-04%20%E4%B8%8A%E5%8D%889.29.18.png
+thumbnail: 'https://cdn.steemitimages.com/DQmWRC9Sopez9SEzu5bfRoe42RybH9ib1qvMcw39byy2kXu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-05-04%20%E4%B8%8A%E5%8D%889.29.18.png'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 大規模戰鬥](https://steemit.com/@deanliu/wnizn-drugwars)
+This page is synchronized from the post: ['[DrugWars] 大規模戰鬥'](https://steemit.com/@deanliu/wnizn-drugwars)

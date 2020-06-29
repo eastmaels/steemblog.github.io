@@ -1,10 +1,11 @@
 
 ---
-title: "The system just blinked and sent me back to 3 days ago for 20 second"
+title: 'The system just blinked and sent me back to 3 days ago for 20 second'
 permlink: the-system-just-blinked-and-sent-me-back-to-3-days-ago-for-20-second
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-15 03:16:09
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - fun
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -32,4 +33,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [The system just blinked and sent me back to 3 days ago for 20 second](https://steemit.com/@deanliu/the-system-just-blinked-and-sent-me-back-to-3-days-ago-for-20-second)
+This page is synchronized from the post: ['The system just blinked and sent me back to 3 days ago for 20 second'](https://steemit.com/@deanliu/the-system-just-blinked-and-sent-me-back-to-3-days-ago-for-20-second)

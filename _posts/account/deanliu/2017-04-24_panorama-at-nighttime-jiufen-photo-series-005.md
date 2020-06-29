@@ -1,10 +1,11 @@
 
 ---
-title: "panorama at nighttime - Jiufen photo series 005"
+title: 'panorama at nighttime - Jiufen photo series 005'
 permlink: panorama-at-nighttime-jiufen-photo-series-005
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-24 12:05:54
 categories:
 - travel
@@ -13,7 +14,7 @@ tags:
 - photography
 - panorama
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [panorama at nighttime - Jiufen photo series 005](https://steemit.com/@deanliu/panorama-at-nighttime-jiufen-photo-series-005)
+This page is synchronized from the post: ['panorama at nighttime - Jiufen photo series 005'](https://steemit.com/@deanliu/panorama-at-nighttime-jiufen-photo-series-005)

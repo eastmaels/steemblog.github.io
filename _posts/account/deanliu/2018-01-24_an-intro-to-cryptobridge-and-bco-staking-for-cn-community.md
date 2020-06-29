@@ -1,10 +1,11 @@
 
 ---
-title: "加密橋 — 從比特股通往～～ An intro to CryptoBridge and BCO Staking for CN community"
+title: '加密橋 — 從比特股通往～～ An intro to CryptoBridge and BCO Staking for CN community'
 permlink: an-intro-to-cryptobridge-and-bco-staking-for-cn-community
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-24 06:23:03
 categories:
 - bitshares
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - cn-cryptocurrency
 - cn
-thumbnail: https://bit-media.org/wp-content/uploads/2018/01/cryptobridge.jpeg
+thumbnail: 'https://bit-media.org/wp-content/uploads/2018/01/cryptobridge.jpeg'
 sidebar:
     right:
         sticky: true
@@ -101,4 +102,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [加密橋 — 從比特股通往～～ An intro to CryptoBridge and BCO Staking for CN community](https://steemit.com/@deanliu/an-intro-to-cryptobridge-and-bco-staking-for-cn-community)
+This page is synchronized from the post: ['加密橋 — 從比特股通往～～ An intro to CryptoBridge and BCO Staking for CN community'](https://steemit.com/@deanliu/an-intro-to-cryptobridge-and-bco-staking-for-cn-community)

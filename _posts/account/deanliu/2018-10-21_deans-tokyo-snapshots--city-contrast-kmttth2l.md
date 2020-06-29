@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 City Contrast "
+title: '🍙 Dean''s Tokyo Snapshots 🍙 City Contrast '
 permlink: deans-tokyo-snapshots--city-contrast-kmttth2l
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-21 23:26:21
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - photography
 - city
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/9f29b4e950fbbb030321ee52c0c0835d712834ea.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/9f29b4e950fbbb030321ee52c0c0835d712834ea.png'
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 City Contrast ](https://steemit.com/@deanliu/deans-tokyo-snapshots--city-contrast-kmttth2l)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 City Contrast '](https://steemit.com/@deanliu/deans-tokyo-snapshots--city-contrast-kmttth2l)

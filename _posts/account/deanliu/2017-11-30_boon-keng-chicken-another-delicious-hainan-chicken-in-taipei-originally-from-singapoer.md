@@ -1,10 +1,11 @@
 
 ---
-title: "Boon Keng Chicken - Another delicious Hainan Chicken in Taipei, originally from Singapore ... 星洲來的文慶雞"
+title: 'Boon Keng Chicken - Another delicious Hainan Chicken in Taipei, originally from Singapore ... 星洲來的文慶雞'
 permlink: boon-keng-chicken-another-delicious-hainan-chicken-in-taipei-originally-from-singapoer
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-30 05:30:54
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - food
 - cuisine
 - taipei
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ https://steemitimages.com/DQmUg4fif8DpZjNBARDUwJzCTaEaTA3mnM3pBkaA2uw7L2R/DSC_12
 
 - - -
 
-This page is synchronized from the post: [Boon Keng Chicken - Another delicious Hainan Chicken in Taipei, originally from Singapore ... 星洲來的文慶雞](https://steemit.com/@deanliu/boon-keng-chicken-another-delicious-hainan-chicken-in-taipei-originally-from-singapoer)
+This page is synchronized from the post: ['Boon Keng Chicken - Another delicious Hainan Chicken in Taipei, originally from Singapore ... 星洲來的文慶雞'](https://steemit.com/@deanliu/boon-keng-chicken-another-delicious-hainan-chicken-in-taipei-originally-from-singapoer)

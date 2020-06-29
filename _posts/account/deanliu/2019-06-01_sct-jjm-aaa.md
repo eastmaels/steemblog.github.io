@@ -1,10 +1,11 @@
 
 ---
-title: "SCT之後，繼續玩耍JJM跟AAA..."
+title: 'SCT之後，繼續玩耍JJM跟AAA...'
 permlink: sct-jjm-aaa
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-06-01 01:59:33
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - jjm
 - aaa
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmV8F4K5pWskdhtYyxadMX1hcxkUWaPW72utciJxdWevdr/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-06-01%20%E4%B8%8A%E5%8D%889.42.16.png
+thumbnail: 'https://cdn.steemitimages.com/DQmV8F4K5pWskdhtYyxadMX1hcxkUWaPW72utciJxdWevdr/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-06-01%20%E4%B8%8A%E5%8D%889.42.16.png'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ AAA平台據說是60% Curation reward，這對於讀者蠻好的。我以後就�
 
 - - -
 
-This page is synchronized from the post: [SCT之後，繼續玩耍JJM跟AAA...](https://steemit.com/@deanliu/sct-jjm-aaa)
+This page is synchronized from the post: ['SCT之後，繼續玩耍JJM跟AAA...'](https://steemit.com/@deanliu/sct-jjm-aaa)

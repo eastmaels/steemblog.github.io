@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 慣性"
+title: '[DrugWars] 慣性'
 permlink: 6vgksb-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-06 03:37:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - drugwars
 - gaming
 - fight
-thumbnail: https://cdn.steemitimages.com/DQmd6bqMWPRFh2yRDX6jQJycVeu89YDMB6Vb4iJKVsF95aB/dwfight.png
+thumbnail: 'https://cdn.steemitimages.com/DQmd6bqMWPRFh2yRDX6jQJycVeu89YDMB6Vb4iJKVsF95aB/dwfight.png'
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 慣性](https://steemit.com/@deanliu/6vgksb-drugwars)
+This page is synchronized from the post: ['[DrugWars] 慣性'](https://steemit.com/@deanliu/6vgksb-drugwars)

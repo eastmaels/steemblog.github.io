@@ -1,10 +1,11 @@
 
 ---
-title: "[MEME] Laugh My Ass Off"
+title: '[MEME] Laugh My Ass Off'
 permlink: meme-laugh-my-ass-off-dt7tmxxs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-08 04:56:36
 categories:
 - meme
@@ -14,7 +15,7 @@ tags:
 - crypto
 - cn
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://s3.us-east-2.amazonaws.com/partiko.io/img/d00040a168788c54aecb5b9c18c8b633356c773b.png
+thumbnail: 'https://steemitimages.com/0x0/https://s3.us-east-2.amazonaws.com/partiko.io/img/d00040a168788c54aecb5b9c18c8b633356c773b.png'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[MEME] Laugh My Ass Off](https://steemit.com/@deanliu/meme-laugh-my-ass-off-dt7tmxxs)
+This page is synchronized from the post: ['[MEME] Laugh My Ass Off'](https://steemit.com/@deanliu/meme-laugh-my-ass-off-dt7tmxxs)

@@ -1,10 +1,11 @@
 
 ---
-title: "Going to Tokyo Japan Soon ! 即將去東京旅行！"
+title: 'Going to Tokyo Japan Soon ! 即將去東京旅行！'
 permlink: going-to-tokyo-japan-soon
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-04 13:47:18
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmaKWYrQpPFwWBeiBvMWhxRbBFr73EjYKuJJVzKemT3rSU/japan-2014618_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmaKWYrQpPFwWBeiBvMWhxRbBFr73EjYKuJJVzKemT3rSU/japan-2014618_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ CN區朋友們好，
 
 - - -
 
-This page is synchronized from the post: [Going to Tokyo Japan Soon ! 即將去東京旅行！](https://steemit.com/@deanliu/going-to-tokyo-japan-soon)
+This page is synchronized from the post: ['Going to Tokyo Japan Soon ! 即將去東京旅行！'](https://steemit.com/@deanliu/going-to-tokyo-japan-soon)

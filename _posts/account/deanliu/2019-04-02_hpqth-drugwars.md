@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 戰鬥的邏輯，更新！『矛B盾R』"
+title: '[DrugWars] 戰鬥的邏輯，更新！『矛B盾R』'
 permlink: hpqth-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-02 02:32:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - drugwars
 - battle
 - fight
-thumbnail: https://cdn.steemitimages.com/DQmQR3KNy85z4PTxHqQr5RDk72i9rbCcWWwEk8TUFNFtn7U/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-02%20%E4%B8%8A%E5%8D%8810.19.28.png
+thumbnail: 'https://cdn.steemitimages.com/DQmQR3KNy85z4PTxHqQr5RDk72i9rbCcWWwEk8TUFNFtn7U/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-02%20%E4%B8%8A%E5%8D%8810.19.28.png'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ Bouncer，主要用來攻擊（成本考慮下），以及搬運資源。而其�
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 戰鬥的邏輯，更新！『矛B盾R』](https://steemit.com/@deanliu/hpqth-drugwars)
+This page is synchronized from the post: ['[DrugWars] 戰鬥的邏輯，更新！『矛B盾R』'](https://steemit.com/@deanliu/hpqth-drugwars)

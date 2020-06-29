@@ -1,10 +1,11 @@
 
 ---
-title: "First Zap Hooray!!"
+title: 'First Zap Hooray!!'
 permlink: first-zap-hooray
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-07 23:39:12
 categories:
 - zap
@@ -14,7 +15,7 @@ tags:
 - zappl
 - cn-zap
 - steem
-thumbnail: https://s3-us-west-1.amazonaws.com/zapplweb%2FpostImage/zapplPostImage1518046722328.jpeg
+thumbnail: 'https://s3-us-west-1.amazonaws.com/zapplweb%2FpostImage/zapplPostImage1518046722328.jpeg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [First Zap Hooray!!](https://steemit.com/@deanliu/first-zap-hooray)
+This page is synchronized from the post: ['First Zap Hooray!!'](https://steemit.com/@deanliu/first-zap-hooray)

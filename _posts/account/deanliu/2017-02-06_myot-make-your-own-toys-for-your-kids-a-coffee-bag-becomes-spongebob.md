@@ -1,10 +1,11 @@
 
 ---
-title: "MYOT - Make Your Own Toys for your kids! A coffee bag becomes Spongebob!! 自製玩具 - 咖啡袋變海綿寶寶"
+title: 'MYOT - Make Your Own Toys for your kids! A coffee bag becomes Spongebob!! 自製玩具 - 咖啡袋變海綿寶寶'
 permlink: myot-make-your-own-toys-for-your-kids-a-coffee-bag-becomes-spongebob
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-02-06 14:53:30
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - howto
 - coffee
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [MYOT - Make Your Own Toys for your kids! A coffee bag becomes Spongebob!! 自製玩具 - 咖啡袋變海綿寶寶](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-a-coffee-bag-becomes-spongebob)
+This page is synchronized from the post: ['MYOT - Make Your Own Toys for your kids! A coffee bag becomes Spongebob!! 自製玩具 - 咖啡袋變海綿寶寶'](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-a-coffee-bag-becomes-spongebob)

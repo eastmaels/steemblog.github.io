@@ -1,10 +1,11 @@
 
 ---
-title: " 烏龍麵與天婦羅 🍙 Dean's Tokyo Snapshots 🍙 "
+title: ' 烏龍麵與天婦羅 🍙 Dean''s Tokyo Snapshots 🍙 '
 permlink: deans-tokyo-snapshots-wru4g1my
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-18 01:46:21
 categories:
 - food
@@ -15,7 +16,7 @@ tags:
 - dean-tokyo
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmSjJLk2onMWppUaXMWE5AXQWzxYUGWXBZ26UZqFLA83eZ/_20181218_092716.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmSjJLk2onMWppUaXMWE5AXQWzxYUGWXBZ26UZqFLA83eZ/_20181218_092716.JPG'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [ 烏龍麵與天婦羅 🍙 Dean's Tokyo Snapshots 🍙 ](https://steemit.com/@deanliu/deans-tokyo-snapshots-wru4g1my)
+This page is synchronized from the post: [' 烏龍麵與天婦羅 🍙 Dean''s Tokyo Snapshots 🍙 '](https://steemit.com/@deanliu/deans-tokyo-snapshots-wru4g1my)

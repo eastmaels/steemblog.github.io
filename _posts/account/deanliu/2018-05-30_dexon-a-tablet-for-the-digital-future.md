@@ -1,10 +1,11 @@
 
 ---
-title: "DEXON - A Tablet for the Digital Future?"
+title: 'DEXON - A Tablet for the Digital Future?'
 permlink: dexon-a-tablet-for-the-digital-future
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-30 06:51:51
 categories:
 - dexon
@@ -14,7 +15,7 @@ tags:
 - funny
 - cobinhood
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmUmuKSdbeCv324cJdeFhwCyRUFvRavXLPfcpqQu5eWnQN/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmUmuKSdbeCv324cJdeFhwCyRUFvRavXLPfcpqQu5eWnQN/image.png'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ The following is a list of possible side effects that may occur from the use of 
 
 - - -
 
-This page is synchronized from the post: [DEXON - A Tablet for the Digital Future?](https://steemit.com/@deanliu/dexon-a-tablet-for-the-digital-future)
+This page is synchronized from the post: ['DEXON - A Tablet for the Digital Future?'](https://steemit.com/@deanliu/dexon-a-tablet-for-the-digital-future)

@@ -1,16 +1,17 @@
 
 ---
-title: "Blocks chained & interwined"
+title: 'Blocks chained & interwined'
 permlink: blocks-chained-and-interwined
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-13 17:31:24
 categories:
 - photography
 tags:
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -30,4 +31,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Blocks chained & interwined](https://steemit.com/@deanliu/blocks-chained-and-interwined)
+This page is synchronized from the post: ['Blocks chained & interwined'](https://steemit.com/@deanliu/blocks-chained-and-interwined)

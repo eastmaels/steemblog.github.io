@@ -1,10 +1,11 @@
 
 ---
-title: "Being Rich for 1 Second - You Can Do It too on Poloniex - I Did!! I Have, sorry Had, 997 Bitcoins!"
+title: 'Being Rich for 1 Second - You Can Do It too on Poloniex - I Did!! I Have, sorry Had, 997 Bitcoins!'
 permlink: being-rich-for-1-second-you-can-do-it-too-on-poloniex-i-did-i-have-sorry-had-997-bitcoins
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-14 11:38:36
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - funny
 - beyondbitcoin
 - steem
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Being Rich for 1 Second - You Can Do It too on Poloniex - I Did!! I Have, sorry Had, 997 Bitcoins!](https://steemit.com/@deanliu/being-rich-for-1-second-you-can-do-it-too-on-poloniex-i-did-i-have-sorry-had-997-bitcoins)
+This page is synchronized from the post: ['Being Rich for 1 Second - You Can Do It too on Poloniex - I Did!! I Have, sorry Had, 997 Bitcoins!'](https://steemit.com/@deanliu/being-rich-for-1-second-you-can-do-it-too-on-poloniex-i-did-i-have-sorry-had-997-bitcoins)

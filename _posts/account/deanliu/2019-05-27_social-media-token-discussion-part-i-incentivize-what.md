@@ -1,10 +1,11 @@
 
 ---
-title: "[Social Media Token discussion] Part I - Incentivize What?"
+title: '[Social Media Token discussion] Part I - Incentivize What?'
 permlink: social-media-token-discussion-part-i-incentivize-what
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-27 01:29:45
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - steem
 - facebook
 - token
-thumbnail: https://cdn.steemitimages.com/DQmPkUok4gMxbAxGm5va8RaapX4KN4Bk1jqxxt12Rdiw7Cq/mobile-phone-1917737_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmPkUok4gMxbAxGm5va8RaapX4KN4Bk1jqxxt12Rdiw7Cq/mobile-phone-1917737_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Welcome to share your views in the comments. We are here so let's engage. :)
 
 - - -
 
-This page is synchronized from the post: [[Social Media Token discussion] Part I - Incentivize What?](https://steemit.com/@deanliu/social-media-token-discussion-part-i-incentivize-what)
+This page is synchronized from the post: ['[Social Media Token discussion] Part I - Incentivize What?'](https://steemit.com/@deanliu/social-media-token-discussion-part-i-incentivize-what)

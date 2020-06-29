@@ -1,10 +1,11 @@
 
 ---
-title: "Meet Art on the Street of Taipei 街頭遇見藝術"
+title: 'Meet Art on the Street of Taipei 街頭遇見藝術'
 permlink: meet-art-on-the-street-of-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-28 09:39:51
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - street-art
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmSn789JxrEMwCFibYaHxUSYX3bPQX9Wf1TKbKsHJZD3oJ/DSC_5828.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmSn789JxrEMwCFibYaHxUSYX3bPQX9Wf1TKbKsHJZD3oJ/DSC_5828.JPG'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ I met this wall of art this morning and enjoyed these artwork collaborated by tw
 
 - - -
 
-This page is synchronized from the post: [Meet Art on the Street of Taipei 街頭遇見藝術](https://steemit.com/@deanliu/meet-art-on-the-street-of-taipei)
+This page is synchronized from the post: ['Meet Art on the Street of Taipei 街頭遇見藝術'](https://steemit.com/@deanliu/meet-art-on-the-street-of-taipei)

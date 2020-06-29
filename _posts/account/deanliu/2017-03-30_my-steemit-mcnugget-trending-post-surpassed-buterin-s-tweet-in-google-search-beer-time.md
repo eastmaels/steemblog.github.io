@@ -1,10 +1,11 @@
 
 ---
-title: "My Steemit McNugget Trending Post Surpassed Buterin's Tweet in Google Search - Beer Time!!"
+title: 'My Steemit McNugget Trending Post Surpassed Buterin''s Tweet in Google Search - Beer Time!!'
 permlink: my-steemit-mcnugget-trending-post-surpassed-buterin-s-tweet-in-google-search-beer-time
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-30 04:26:42
 categories:
 - mcnugget
@@ -14,7 +15,7 @@ tags:
 - twitter
 - meme
 - google
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ How come!? Is it the power of Steemit too strong that it will push anything publ
 
 - - -
 
-This page is synchronized from the post: [My Steemit McNugget Trending Post Surpassed Buterin's Tweet in Google Search - Beer Time!!](https://steemit.com/@deanliu/my-steemit-mcnugget-trending-post-surpassed-buterin-s-tweet-in-google-search-beer-time)
+This page is synchronized from the post: ['My Steemit McNugget Trending Post Surpassed Buterin''s Tweet in Google Search - Beer Time!!'](https://steemit.com/@deanliu/my-steemit-mcnugget-trending-post-surpassed-buterin-s-tweet-in-google-search-beer-time)

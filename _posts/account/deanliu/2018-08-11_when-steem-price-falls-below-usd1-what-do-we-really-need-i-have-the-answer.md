@@ -1,10 +1,11 @@
 
 ---
-title: "When Steem price falls below $1, what do we really need!? I have the answer..."
+title: 'When Steem price falls below $1, what do we really need!? I have the answer...'
 permlink: when-steem-price-falls-below-usd1-what-do-we-really-need-i-have-the-answer
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-11 13:44:36
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - powerup
 - faith
 - k-pop
-thumbnail: https://cdn.steemitimages.com/DQmeDheRVVhBm13HZPH1G2JBHHtJncZVpjJzsqPskC8DB3K/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-11%20%E4%B8%8B%E5%8D%889.37.49.png
+thumbnail: 'https://cdn.steemitimages.com/DQmeDheRVVhBm13HZPH1G2JBHHtJncZVpjJzsqPskC8DB3K/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-08-11%20%E4%B8%8B%E5%8D%889.37.49.png'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ I feel that this song is just what Steemians need right now! ^_^
 
 - - -
 
-This page is synchronized from the post: [When Steem price falls below $1, what do we really need!? I have the answer...](https://steemit.com/@deanliu/when-steem-price-falls-below-usd1-what-do-we-really-need-i-have-the-answer)
+This page is synchronized from the post: ['When Steem price falls below $1, what do we really need!? I have the answer...'](https://steemit.com/@deanliu/when-steem-price-falls-below-usd1-what-do-we-really-need-i-have-the-answer)

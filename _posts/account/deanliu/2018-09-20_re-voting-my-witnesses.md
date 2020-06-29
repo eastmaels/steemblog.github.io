@@ -1,10 +1,11 @@
 
 ---
-title: "Re-voting My Witnesses 重新投票見證人"
+title: 'Re-voting My Witnesses 重新投票見證人'
 permlink: re-voting-my-witnesses
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-20 02:47:27
 categories:
 - witness
@@ -13,7 +14,7 @@ tags:
 - steem
 - voting
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmPHvn4FZCUaSncJWE3iUKnCMfoHgLRbjEVGLpP655C7Fg/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-19%20%E4%B8%8B%E5%8D%8811.15.19.png
+thumbnail: 'https://cdn.steemitimages.com/DQmPHvn4FZCUaSncJWE3iUKnCMfoHgLRbjEVGLpP655C7Fg/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-19%20%E4%B8%8B%E5%8D%8811.15.19.png'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ It seems I still have two spots available that I have not yet figured out whom t
 
 - - -
 
-This page is synchronized from the post: [Re-voting My Witnesses 重新投票見證人](https://steemit.com/@deanliu/re-voting-my-witnesses)
+This page is synchronized from the post: ['Re-voting My Witnesses 重新投票見證人'](https://steemit.com/@deanliu/re-voting-my-witnesses)

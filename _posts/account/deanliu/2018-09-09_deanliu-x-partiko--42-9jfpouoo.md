@@ -1,10 +1,11 @@
 
 ---
-title: "【第一屆 deanliu X Partiko 微小說 競賽：42字】"
+title: '【第一屆 deanliu X Partiko 微小說 競賽：42字】'
 permlink: deanliu-x-partiko--42-9jfpouoo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-09 05:59:57
 categories:
 - partiko
@@ -14,7 +15,7 @@ tags:
 - story
 - contest
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmbQ262WaTnkwR4KVjTv4VwGsQWE3a3PRreAarNtdqCZFX/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-09%20%E4%B8%8B%E5%8D%882.41.30.png
+thumbnail: 'https://cdn.steemitimages.com/DQmbQ262WaTnkwR4KVjTv4VwGsQWE3a3PRreAarNtdqCZFX/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-09%20%E4%B8%8B%E5%8D%882.41.30.png'
 sidebar:
     right:
         sticky: true
@@ -110,4 +111,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [【第一屆 deanliu X Partiko 微小說 競賽：42字】](https://steemit.com/@deanliu/deanliu-x-partiko--42-9jfpouoo)
+This page is synchronized from the post: ['【第一屆 deanliu X Partiko 微小說 競賽：42字】'](https://steemit.com/@deanliu/deanliu-x-partiko--42-9jfpouoo)

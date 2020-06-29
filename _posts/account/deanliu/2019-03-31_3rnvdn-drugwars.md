@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 新戰鬥的要領"
+title: '[DrugWars] 新戰鬥的要領'
 permlink: 3rnvdn-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-31 08:50:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - drugwars
 - battle
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmd88LjoKhBBtzaSXYPL9RrAfTiFvXVcmiLYk7QMZvTmpz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-31%20%E4%B8%8B%E5%8D%884.23.04.png
+thumbnail: 'https://cdn.steemitimages.com/DQmd88LjoKhBBtzaSXYPL9RrAfTiFvXVcmiLYk7QMZvTmpz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-31%20%E4%B8%8B%E5%8D%884.23.04.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 新戰鬥的要領](https://steemit.com/@deanliu/3rnvdn-drugwars)
+This page is synchronized from the post: ['[DrugWars] 新戰鬥的要領'](https://steemit.com/@deanliu/3rnvdn-drugwars)

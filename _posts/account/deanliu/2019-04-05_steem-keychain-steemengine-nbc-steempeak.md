@@ -1,10 +1,11 @@
 
 ---
-title: "[社區閒聊] Steem KeyChain / SteemEngine / NBC / Steempeak"
+title: '[社區閒聊] Steem KeyChain / SteemEngine / NBC / Steempeak'
 permlink: steem-keychain-steemengine-nbc-steempeak
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-05 07:00:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nbc
 - steempeak
 - tokenization
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/0xvnVQHS-E89EA2E5B995E5BFABE785A7202019-04-0520E4B88BE58D882.09.51.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/0xvnVQHS-E89EA2E5B995E5BFABE785A7202019-04-0520E4B88BE58D882.09.51.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[社區閒聊] Steem KeyChain / SteemEngine / NBC / Steempeak](https://steemit.com/@deanliu/steem-keychain-steemengine-nbc-steempeak)
+This page is synchronized from the post: ['[社區閒聊] Steem KeyChain / SteemEngine / NBC / Steempeak'](https://steemit.com/@deanliu/steem-keychain-steemengine-nbc-steempeak)

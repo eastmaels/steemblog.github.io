@@ -1,10 +1,11 @@
 
 ---
-title: "COBINHOOD - A Rising Zero-Fee Crypto Exchange and ICO Platform"
+title: 'COBINHOOD - A Rising Zero-Fee Crypto Exchange and ICO Platform'
 permlink: cobinhood-a-rising-zero-fee-crypto-exchange-and-ico-platform
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-09 07:07:33
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - exchange
 - trading
 - ico
-thumbnail: https://steemitimages.com/DQmUXRQnhm531gzUB4YMbRNvrCQpJ89HX5ToNQjm2967QSN/BD_BW1964_T054-16_masterrepro.jpg
+thumbnail: 'https://steemitimages.com/DQmUXRQnhm531gzUB4YMbRNvrCQpJ89HX5ToNQjm2967QSN/BD_BW1964_T054-16_masterrepro.jpg'
 sidebar:
     right:
         sticky: true
@@ -117,4 +118,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [COBINHOOD - A Rising Zero-Fee Crypto Exchange and ICO Platform](https://steemit.com/@deanliu/cobinhood-a-rising-zero-fee-crypto-exchange-and-ico-platform)
+This page is synchronized from the post: ['COBINHOOD - A Rising Zero-Fee Crypto Exchange and ICO Platform'](https://steemit.com/@deanliu/cobinhood-a-rising-zero-fee-crypto-exchange-and-ico-platform)

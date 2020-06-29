@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Prague at night"
+title: 'My Europa Plog - Prague at night'
 permlink: my-europa-plog-prague-at-night-2017521t233725814z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-21 21:37:30
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - prague
 - life
 - myeuropaplog
-thumbnail: https://i.imgur.com/FMNJR9G.jpg
+thumbnail: 'https://i.imgur.com/FMNJR9G.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Prague at night](https://steemit.com/@deanliu/my-europa-plog-prague-at-night-2017521t233725814z)
+This page is synchronized from the post: ['My Europa Plog - Prague at night'](https://steemit.com/@deanliu/my-europa-plog-prague-at-night-2017521t233725814z)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 A Lane of Memory in Tokyo"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 A Lane of Memory in Tokyo'
 permlink: dean-s-tokyo-snapshots-a-lane-of-memory-in-tokyo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-12 01:22:57
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - coffee
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/60f9590ae8a536f30e681c23b33a16b211d2519c.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/60f9590ae8a536f30e681c23b33a16b211d2519c.png'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 A Lane of Memory in Tokyo](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-a-lane-of-memory-in-tokyo)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 A Lane of Memory in Tokyo'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-a-lane-of-memory-in-tokyo)

@@ -1,10 +1,11 @@
 
 ---
-title: "Dean Liu is on DLive - My New Journey of Discovery"
+title: 'Dean Liu is on DLive - My New Journey of Discovery'
 permlink: dean-liu-is-on-dlive-my-new-journey-of-discovery
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-01 13:17:24
 categories:
 - dlive
@@ -14,7 +15,7 @@ tags:
 - video
 - live
 - streaming
-thumbnail: https://steemitimages.com/DQmTVzm81mJPpQoZw58KuKmqfGcZ3HSnyH19UcWoRLrThXW/DLive_Logo_2.png
+thumbnail: 'https://steemitimages.com/DQmTVzm81mJPpQoZw58KuKmqfGcZ3HSnyH19UcWoRLrThXW/DLive_Logo_2.png'
 sidebar:
     right:
         sticky: true
@@ -88,4 +89,4 @@ CN區朋友們好，
 
 - - -
 
-This page is synchronized from the post: [Dean Liu is on DLive - My New Journey of Discovery](https://steemit.com/@deanliu/dean-liu-is-on-dlive-my-new-journey-of-discovery)
+This page is synchronized from the post: ['Dean Liu is on DLive - My New Journey of Discovery'](https://steemit.com/@deanliu/dean-liu-is-on-dlive-my-new-journey-of-discovery)

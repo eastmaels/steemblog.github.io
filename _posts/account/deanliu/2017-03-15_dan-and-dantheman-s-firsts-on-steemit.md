@@ -1,10 +1,11 @@
 
 ---
-title: "dan and dantheman's firsts on steemit"
+title: 'dan and dantheman''s firsts on steemit'
 permlink: dan-and-dantheman-s-firsts-on-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-15 08:25:03
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - dan
 - dantheman
 - history
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [dan and dantheman's firsts on steemit](https://steemit.com/@deanliu/dan-and-dantheman-s-firsts-on-steemit)
+This page is synchronized from the post: ['dan and dantheman''s firsts on steemit'](https://steemit.com/@deanliu/dan-and-dantheman-s-firsts-on-steemit)

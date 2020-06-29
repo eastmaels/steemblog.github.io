@@ -1,10 +1,11 @@
 
 ---
-title: "Cool, I have ads inside my blog."
+title: 'Cool, I have ads inside my blog.'
 permlink: cool-i-have-ads-inside-my-blog
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-07 09:58:15
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - ads
 - commercial
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmdnoEH2rtHyniAyyDmUjhRKNhDvosbMhBjEDJycyBXZ1R
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdnoEH2rtHyniAyyDmUjhRKNhDvosbMhBjEDJycyBXZ1R'
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ I tried to check it out and found that ads only appear inside one's blog, Steemi
 
 - - -
 
-This page is synchronized from the post: [Cool, I have ads inside my blog.](https://steemit.com/@deanliu/cool-i-have-ads-inside-my-blog)
+This page is synchronized from the post: ['Cool, I have ads inside my blog.'](https://steemit.com/@deanliu/cool-i-have-ads-inside-my-blog)

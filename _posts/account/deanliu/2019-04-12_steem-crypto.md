@@ -1,10 +1,11 @@
 
 ---
-title: "[社區閒聊] 你都花多少時間在Steem/Crypto上？"
+title: '[社區閒聊] 你都花多少時間在Steem/Crypto上？'
 permlink: steem-crypto
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-12 07:55:18
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steem
 - crypto
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmYmicthrS9PgEcpgMSyoL2oESAzb6pSFGh8CPFw1ANRgY
+thumbnail: 'https://ipfs.busy.org/ipfs/QmYmicthrS9PgEcpgMSyoL2oESAzb6pSFGh8CPFw1ANRgY'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Crypto很迷人，但人生永遠是更重要的。要當好一個Steemian，長
 
 - - -
 
-This page is synchronized from the post: [[社區閒聊] 你都花多少時間在Steem/Crypto上？](https://steemit.com/@deanliu/steem-crypto)
+This page is synchronized from the post: ['[社區閒聊] 你都花多少時間在Steem/Crypto上？'](https://steemit.com/@deanliu/steem-crypto)

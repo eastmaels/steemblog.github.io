@@ -1,10 +1,11 @@
 
 ---
-title: "東京鐵塔在窗外的相鐵 Fresa Inn 六本木 🍙 Dean's Tokyo Snapshots 🍙"
+title: '東京鐵塔在窗外的相鐵 Fresa Inn 六本木 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: fresa-inn-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-04 07:54:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - hotel
-thumbnail: https://cdn.steemitimages.com/DQmQSjMGBbWszCQT4JrBJeCaYtA19r45ugueiABk2FEq6Tr/image%20(6).jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmQSjMGBbWszCQT4JrBJeCaYtA19r45ugueiABk2FEq6Tr/image%20(6).jpg'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [東京鐵塔在窗外的相鐵 Fresa Inn 六本木 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/fresa-inn-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['東京鐵塔在窗外的相鐵 Fresa Inn 六本木 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/fresa-inn-dean-s-tokyo-snapshots)

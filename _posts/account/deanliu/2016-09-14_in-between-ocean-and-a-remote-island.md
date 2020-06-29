@@ -1,10 +1,11 @@
 
 ---
-title: "In between ocean and a remote island"
+title: 'In between ocean and a remote island'
 permlink: in-between-ocean-and-a-remote-island
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-14 03:14:03
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - travel
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [In between ocean and a remote island](https://steemit.com/@deanliu/in-between-ocean-and-a-remote-island)
+This page is synchronized from the post: ['In between ocean and a remote island'](https://steemit.com/@deanliu/in-between-ocean-and-a-remote-island)

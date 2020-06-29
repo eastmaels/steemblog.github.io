@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Artistigue in Prague"
+title: 'My Europa Plog - Artistigue in Prague'
 permlink: my-europa-plog-artistigue-in-prague-2017512t152632799z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-12 13:26:36
 categories:
 - travel
@@ -13,7 +14,7 @@ tags:
 - art
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/ogHG6Dd.jpg
+thumbnail: 'https://i.imgur.com/ogHG6Dd.jpg'
 sidebar:
     right:
         sticky: true
@@ -28,4 +29,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Artistigue in Prague](https://steemit.com/@deanliu/my-europa-plog-artistigue-in-prague-2017512t152632799z)
+This page is synchronized from the post: ['My Europa Plog - Artistigue in Prague'](https://steemit.com/@deanliu/my-europa-plog-artistigue-in-prague-2017512t152632799z)

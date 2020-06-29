@@ -1,10 +1,11 @@
 
 ---
-title: "街頭的一家旅人 🍙 Dean's Tokyo Snapshots 🍙"
+title: '街頭的一家旅人 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: 4y52zv-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-17 12:55:09
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmdNbgi3DavPbbNHHj3VqQ2b4qxHTJ91Y2KWfNymkUd2zi
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdNbgi3DavPbbNHHj3VqQ2b4qxHTJ91Y2KWfNymkUd2zi'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [街頭的一家旅人 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/4y52zv-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['街頭的一家旅人 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/4y52zv-dean-s-tokyo-snapshots)

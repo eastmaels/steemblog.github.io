@@ -1,10 +1,11 @@
 
 ---
-title: "Creative Faces - Sharing My Kid's Artwork on Father's Day of Taiwan   孩子創意造臉，我父親節快樂！"
+title: 'Creative Faces - Sharing My Kid''s Artwork on Father''s Day of Taiwan   孩子創意造臉，我父親節快樂！'
 permlink: creative-faces-sharing-my-kid-s-artwork-on-father-s-day-of-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-08 14:37:54
 categories:
 - art
@@ -14,7 +15,7 @@ tags:
 - kids
 - father
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Creative Faces - Sharing My Kid's Artwork on Father's Day of Taiwan   孩子創意造臉，我父親節快樂！](https://steemit.com/@deanliu/creative-faces-sharing-my-kid-s-artwork-on-father-s-day-of-taiwan)
+This page is synchronized from the post: ['Creative Faces - Sharing My Kid''s Artwork on Father''s Day of Taiwan   孩子創意造臉，我父親節快樂！'](https://steemit.com/@deanliu/creative-faces-sharing-my-kid-s-artwork-on-father-s-day-of-taiwan)

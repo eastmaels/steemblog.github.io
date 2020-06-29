@@ -1,10 +1,11 @@
 
 ---
-title: "My photography today 2017.11.26"
+title: 'My photography today 2017.11.26'
 permlink: my-photography-today-2017-11-26
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-26 11:29:24
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - life
 - taipei
-thumbnail: https://steemitimages.com/DQmVqLd5PvaXq3jjeiAvp8TuJxd6JP8y6xdDXHrPSzyC9Cx/DSC_3246.JPG
+thumbnail: 'https://steemitimages.com/DQmVqLd5PvaXq3jjeiAvp8TuJxd6JP8y6xdDXHrPSzyC9Cx/DSC_3246.JPG'
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ I will introduce this great place for parenting in Taipei next time (yeah,lots o
 
 - - -
 
-This page is synchronized from the post: [My photography today 2017.11.26](https://steemit.com/@deanliu/my-photography-today-2017-11-26)
+This page is synchronized from the post: ['My photography today 2017.11.26'](https://steemit.com/@deanliu/my-photography-today-2017-11-26)

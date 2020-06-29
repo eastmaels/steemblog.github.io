@@ -1,10 +1,11 @@
 
 ---
-title: "[學習筆記] [社區閒聊] Cache Game來了的啟示"
+title: '[學習筆記] [社區閒聊] Cache Game來了的啟示'
 permlink: cache-game
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-17 23:07:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - dapp
 - cn-programming
-thumbnail: https://steemitimages.com/DQmebRJap3xUvmsBNapMqb528wxhvYPiDzbeH8gYdm6oTEA/image.png
+thumbnail: 'https://steemitimages.com/DQmebRJap3xUvmsBNapMqb528wxhvYPiDzbeH8gYdm6oTEA/image.png'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[學習筆記] [社區閒聊] Cache Game來了的啟示](https://steemit.com/@deanliu/cache-game)
+This page is synchronized from the post: ['[學習筆記] [社區閒聊] Cache Game來了的啟示'](https://steemit.com/@deanliu/cache-game)

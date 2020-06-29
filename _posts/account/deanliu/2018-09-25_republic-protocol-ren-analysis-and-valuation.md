@@ -1,10 +1,11 @@
 
 ---
-title: "Republic Protocol (REN) Analysis and Valuation."
+title: 'Republic Protocol (REN) Analysis and Valuation.'
 permlink: republic-protocol-ren-analysis-and-valuation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-25 13:44:54
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - ethereum
 - ren
 - blockchain
-thumbnail: https://cdn.steemitimages.com/DQmPWnNpQiN3GXX799SQuk1PatRLAGA7JnBHLS4vr4S7k85/photo-1512094244022-4816e6e7d764.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmPWnNpQiN3GXX799SQuk1PatRLAGA7JnBHLS4vr4S7k85/photo-1512094244022-4816e6e7d764.jpg'
 sidebar:
     right:
         sticky: true
@@ -237,4 +238,4 @@ by [FØx ](https://mentormarket.io/profile/@tradealert/?aff_id=USERNAME)</center
 
 - - -
 
-This page is synchronized from the post: [Republic Protocol (REN) Analysis and Valuation.](https://steemit.com/@deanliu/republic-protocol-ren-analysis-and-valuation)
+This page is synchronized from the post: ['Republic Protocol (REN) Analysis and Valuation.'](https://steemit.com/@deanliu/republic-protocol-ren-analysis-and-valuation)

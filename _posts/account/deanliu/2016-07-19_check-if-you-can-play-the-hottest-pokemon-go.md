@@ -1,16 +1,17 @@
 
 ---
-title: "Check if you can play the hottest Pokémon Go..."
+title: 'Check if you can play the hottest Pokémon Go...'
 permlink: check-if-you-can-play-the-hottest-pokemon-go
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-19 04:30:06
 categories:
 - pokemon
 tags:
 - pokemon
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -30,4 +31,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Check if you can play the hottest Pokémon Go...](https://steemit.com/@deanliu/check-if-you-can-play-the-hottest-pokemon-go)
+This page is synchronized from the post: ['Check if you can play the hottest Pokémon Go...'](https://steemit.com/@deanliu/check-if-you-can-play-the-hottest-pokemon-go)

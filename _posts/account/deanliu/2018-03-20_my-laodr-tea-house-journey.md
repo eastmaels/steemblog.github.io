@@ -1,10 +1,11 @@
 
 ---
-title: "[紀錄] 茶館歲月 My Laodr Tea House Journey"
+title: '[紀錄] 茶館歲月 My Laodr Tea House Journey'
 permlink: my-laodr-tea-house-journey
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-20 04:48:27
 categories:
 - history
@@ -14,7 +15,7 @@ tags:
 - cn
 - memoir
 - chat
-thumbnail: https://steemitimages.com/DQmd4VvRH4VRDeeHRMyA55D11TWa76EPY1CSa9wcJnMJGxG/image.png
+thumbnail: 'https://steemitimages.com/DQmd4VvRH4VRDeeHRMyA55D11TWa76EPY1CSa9wcJnMJGxG/image.png'
 sidebar:
     right:
         sticky: true
@@ -133,4 +134,4 @@ HF19後，茶館進入穩定發展期～～
 
 - - -
 
-This page is synchronized from the post: [[紀錄] 茶館歲月 My Laodr Tea House Journey](https://steemit.com/@deanliu/my-laodr-tea-house-journey)
+This page is synchronized from the post: ['[紀錄] 茶館歲月 My Laodr Tea House Journey'](https://steemit.com/@deanliu/my-laodr-tea-house-journey)

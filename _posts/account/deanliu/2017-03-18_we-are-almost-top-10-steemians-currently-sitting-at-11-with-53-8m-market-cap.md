@@ -1,10 +1,11 @@
 
 ---
-title: "We are almost Top-10 Steemians!! Currently sitting at #11 with 53.8M Market Cap  //Edit IT'S TOP 10 NOW!!!!!"
+title: 'We are almost Top-10 Steemians!! Currently sitting at #11 with 53.8M Market Cap  //Edit IT''S TOP 10 NOW!!!!!'
 permlink: we-are-almost-top-10-steemians-currently-sitting-at-11-with-53-8m-market-cap
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-18 07:53:03
 categories:
 - steem
@@ -12,7 +13,7 @@ tags:
 - steem
 - steemit
 - marketcap
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [We are almost Top-10 Steemians!! Currently sitting at #11 with 53.8M Market Cap  //Edit IT'S TOP 10 NOW!!!!!](https://steemit.com/@deanliu/we-are-almost-top-10-steemians-currently-sitting-at-11-with-53-8m-market-cap)
+This page is synchronized from the post: ['We are almost Top-10 Steemians!! Currently sitting at #11 with 53.8M Market Cap  //Edit IT''S TOP 10 NOW!!!!!'](https://steemit.com/@deanliu/we-are-almost-top-10-steemians-currently-sitting-at-11-with-53-8m-market-cap)

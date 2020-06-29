@@ -1,10 +1,11 @@
 
 ---
-title: "Mithril Android App 'Lit' is On Now - You can mine your friends now? "
+title: 'Mithril Android App ''Lit'' is On Now - You can mine your friends now? '
 permlink: mithril-android-app-lit-is-on-now-you-can-mine-your-friends-now
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-06 05:27:30
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - busy
 - cn
 - mithril
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -131,4 +132,4 @@ CN區捧油們好，
 
 - - -
 
-This page is synchronized from the post: [Mithril Android App 'Lit' is On Now - You can mine your friends now? ](https://steemit.com/@deanliu/mithril-android-app-lit-is-on-now-you-can-mine-your-friends-now)
+This page is synchronized from the post: ['Mithril Android App ''Lit'' is On Now - You can mine your friends now? '](https://steemit.com/@deanliu/mithril-android-app-lit-is-on-now-you-can-mine-your-friends-now)

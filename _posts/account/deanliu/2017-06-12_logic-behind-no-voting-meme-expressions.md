@@ -1,10 +1,11 @@
 
 ---
-title: "LOGIC BEHIND NO VOTING - MEME EXPRESSIONS"
+title: 'LOGIC BEHIND NO VOTING - MEME EXPRESSIONS'
 permlink: logic-behind-no-voting-meme-expressions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-12 06:23:39
 categories:
 - funny
@@ -14,7 +15,7 @@ tags:
 - meme
 - steemit
 - newbie
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [LOGIC BEHIND NO VOTING - MEME EXPRESSIONS](https://steemit.com/@deanliu/logic-behind-no-voting-meme-expressions)
+This page is synchronized from the post: ['LOGIC BEHIND NO VOTING - MEME EXPRESSIONS'](https://steemit.com/@deanliu/logic-behind-no-voting-meme-expressions)

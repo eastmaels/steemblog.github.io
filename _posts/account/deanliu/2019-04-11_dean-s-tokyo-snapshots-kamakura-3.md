@@ -1,10 +1,11 @@
 
 ---
-title: "小路裡的無名寺 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #3"
+title: '小路裡的無名寺 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #3'
 permlink: dean-s-tokyo-snapshots-kamakura-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-11 08:52:06
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - busy
 - cn
-thumbnail: https://ipfs.busy.org/ipfs/QmQTfNQmo9Wfach8pvUYo23UhPeUZVcgA1rfgAkeKUdZz6
+thumbnail: 'https://ipfs.busy.org/ipfs/QmQTfNQmo9Wfach8pvUYo23UhPeUZVcgA1rfgAkeKUdZz6'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ _日本旅遊已結束，繼續以此系列紀錄日本之行...._ ^^
 
 - - -
 
-This page is synchronized from the post: [小路裡的無名寺 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #3](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-3)
+This page is synchronized from the post: ['小路裡的無名寺 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #3'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-3)

@@ -1,10 +1,11 @@
 
 ---
-title: "My 2nd Steem Anniversary 兩週年之時光飛逝"
+title: 'My 2nd Steem Anniversary 兩週年之時光飛逝'
 permlink: my-2nd-steem-anniversary
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-14 09:39:21
 categories:
 - anniversary
@@ -14,7 +15,7 @@ tags:
 - steemit
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmRSCKNBn3yGrKhGJopFbzAhdy5HzjVjadj8iasDqSCwDv
+thumbnail: 'https://ipfs.busy.org/ipfs/QmRSCKNBn3yGrKhGJopFbzAhdy5HzjVjadj8iasDqSCwDv'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Thanks in advance for all the kind words!
 
 - - -
 
-This page is synchronized from the post: [My 2nd Steem Anniversary 兩週年之時光飛逝](https://steemit.com/@deanliu/my-2nd-steem-anniversary)
+This page is synchronized from the post: ['My 2nd Steem Anniversary 兩週年之時光飛逝'](https://steemit.com/@deanliu/my-2nd-steem-anniversary)

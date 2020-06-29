@@ -1,10 +1,11 @@
 
 ---
-title: "A future bedtime story ... Celebrating the anniversary of @steemit's first post"
+title: 'A future bedtime story ... Celebrating the anniversary of @steemit''s first post'
 permlink: a-future-bedtime-story-celebrating-the-anniversary-of-steemit-s-first-post
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-31 03:07:33
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - steem
 - anniversary
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A future bedtime story ... Celebrating the anniversary of @steemit's first post](https://steemit.com/@deanliu/a-future-bedtime-story-celebrating-the-anniversary-of-steemit-s-first-post)
+This page is synchronized from the post: ['A future bedtime story ... Celebrating the anniversary of @steemit''s first post'](https://steemit.com/@deanliu/a-future-bedtime-story-celebrating-the-anniversary-of-steemit-s-first-post)

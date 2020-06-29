@@ -1,10 +1,11 @@
 
 ---
-title: "🌎  區塊鏈旅遊評論平台Futourist怎麼玩？🌎   How do Futourist work? 🌎"
+title: '🌎  區塊鏈旅遊評論平台Futourist怎麼玩？🌎   How do Futourist work? 🌎'
 permlink: futourist-how-do-futourist-work
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-29 01:48:30
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - travel
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -113,4 +114,4 @@ Futourist 其中一個主要的特色是舉辦比賽。一般是由平台本身�
 
 - - -
 
-This page is synchronized from the post: [🌎  區塊鏈旅遊評論平台Futourist怎麼玩？🌎   How do Futourist work? 🌎](https://steemit.com/@deanliu/futourist-how-do-futourist-work)
+This page is synchronized from the post: ['🌎  區塊鏈旅遊評論平台Futourist怎麼玩？🌎   How do Futourist work? 🌎'](https://steemit.com/@deanliu/futourist-how-do-futourist-work)

@@ -1,10 +1,11 @@
 
 ---
-title: "One CAtFE in Beijing - Faith Coffee offers specialty coffee and something that melts your heart.  胡同裡的喵咖啡"
+title: 'One CAtFE in Beijing - Faith Coffee offers specialty coffee and something that melts your heart.  胡同裡的喵咖啡'
 permlink: one-catfe-in-beijing-faith-coffee-offers-specialty-coffee-and-something-that-melts-your-heart
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-15 10:06:39
 categories:
 - coffee
@@ -14,7 +15,7 @@ tags:
 - travel
 - cat
 - cn
-thumbnail: https://steemitimages.com/DQmZii8EmLbXWTWpHk6wDLXPFAXovebgLZqsX9zF2dpe1wA/1937522981.jpg
+thumbnail: 'https://steemitimages.com/DQmZii8EmLbXWTWpHk6wDLXPFAXovebgLZqsX9zF2dpe1wA/1937522981.jpg'
 sidebar:
     right:
         sticky: true
@@ -130,4 +131,4 @@ For the cafe's location, please refer to the following map. Be careful if you go
 
 - - -
 
-This page is synchronized from the post: [One CAtFE in Beijing - Faith Coffee offers specialty coffee and something that melts your heart.  胡同裡的喵咖啡](https://steemit.com/@deanliu/one-catfe-in-beijing-faith-coffee-offers-specialty-coffee-and-something-that-melts-your-heart)
+This page is synchronized from the post: ['One CAtFE in Beijing - Faith Coffee offers specialty coffee and something that melts your heart.  胡同裡的喵咖啡'](https://steemit.com/@deanliu/one-catfe-in-beijing-faith-coffee-offers-specialty-coffee-and-something-that-melts-your-heart)

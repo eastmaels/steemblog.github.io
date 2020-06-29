@@ -1,10 +1,11 @@
 
 ---
-title: "A Walk in Taipei's Xinyi Commercial District 台北信義計畫區建築群"
+title: 'A Walk in Taipei''s Xinyi Commercial District 台北信義計畫區建築群'
 permlink: a-walk-in-taipei-s-xinyi-commercial-district
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-05 06:53:51
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - taipei
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Walk in Taipei's Xinyi Commercial District 台北信義計畫區建築群](https://steemit.com/@deanliu/a-walk-in-taipei-s-xinyi-commercial-district)
+This page is synchronized from the post: ['A Walk in Taipei''s Xinyi Commercial District 台北信義計畫區建築群'](https://steemit.com/@deanliu/a-walk-in-taipei-s-xinyi-commercial-district)

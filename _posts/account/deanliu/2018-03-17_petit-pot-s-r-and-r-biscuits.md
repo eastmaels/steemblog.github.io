@@ -1,10 +1,11 @@
 
 ---
-title: "PETIT POT's R&R Biscuits 遇見永康街的蘭姆葡萄餅"
+title: 'PETIT POT''s R&R Biscuits 遇見永康街的蘭姆葡萄餅'
 permlink: petit-pot-s-r-and-r-biscuits
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-17 06:48:42
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - pastry
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmfZ4cGcmpHcBTQe5kmupwEkAioTHKNLyNFQhVRM1ea2GG/DSC_4533.JPG
+thumbnail: 'https://steemitimages.com/DQmfZ4cGcmpHcBTQe5kmupwEkAioTHKNLyNFQhVRM1ea2GG/DSC_4533.JPG'
 sidebar:
     right:
         sticky: true
@@ -113,4 +114,4 @@ The shop's name is **PETIT POT**, kinda cute. Let's have a look!
 
 - - -
 
-This page is synchronized from the post: [PETIT POT's R&R Biscuits 遇見永康街的蘭姆葡萄餅](https://steemit.com/@deanliu/petit-pot-s-r-and-r-biscuits)
+This page is synchronized from the post: ['PETIT POT''s R&R Biscuits 遇見永康街的蘭姆葡萄餅'](https://steemit.com/@deanliu/petit-pot-s-r-and-r-biscuits)

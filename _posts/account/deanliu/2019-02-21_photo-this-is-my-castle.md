@@ -1,10 +1,11 @@
 
 ---
-title: "[Photo] This is my castle!"
+title: '[Photo] This is my castle!'
 permlink: photo-this-is-my-castle
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-21 11:50:24
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - cat
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmZ2h7gH2ZN4i6Rq7mHfThcbAvu4oqp2AZuLxQ966UhvK6
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZ2h7gH2ZN4i6Rq7mHfThcbAvu4oqp2AZuLxQ966UhvK6'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Photo] This is my castle!](https://steemit.com/@deanliu/photo-this-is-my-castle)
+This page is synchronized from the post: ['[Photo] This is my castle!'](https://steemit.com/@deanliu/photo-this-is-my-castle)

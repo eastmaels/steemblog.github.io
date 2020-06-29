@@ -1,10 +1,11 @@
 
 ---
-title: "Ground Control to Major Ned"
+title: 'Ground Control to Major Ned'
 permlink: ground-control-to-major-ned
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-05 08:15:30
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - space
 - cryptocurrency
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ And I…</blockquote>
 
 - - -
 
-This page is synchronized from the post: [Ground Control to Major Ned](https://steemit.com/@deanliu/ground-control-to-major-ned)
+This page is synchronized from the post: ['Ground Control to Major Ned'](https://steemit.com/@deanliu/ground-control-to-major-ned)

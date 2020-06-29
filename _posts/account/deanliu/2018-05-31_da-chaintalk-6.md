@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #6 — 從分散式去到去中心化系統"
+title: 'DA-ChainTalk #6 — 從分散式去到去中心化系統'
 permlink: da-chaintalk-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-31 10:06:33
 categories:
 - da-chaintalk
@@ -13,7 +14,7 @@ tags:
 - decentralization
 - consensus
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmNrpdye4zvDZhJQetjMokTQB8AfLrUBGBVLhJ6ZF3TiX5/artificial-intelligence-3382521_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmNrpdye4zvDZhJQetjMokTQB8AfLrUBGBVLhJ6ZF3TiX5/artificial-intelligence-3382521_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #6 — 從分散式去到去中心化系統](https://steemit.com/@deanliu/da-chaintalk-6)
+This page is synchronized from the post: ['DA-ChainTalk #6 — 從分散式去到去中心化系統'](https://steemit.com/@deanliu/da-chaintalk-6)

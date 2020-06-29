@@ -1,10 +1,11 @@
 
 ---
-title: "Crypto magazines have hit the bookstore shelves in Taiwan! 台北書店上架虛擬通貨雜誌！ "
+title: 'Crypto magazines have hit the bookstore shelves in Taiwan! 台北書店上架虛擬通貨雜誌！ '
 permlink: crypto-magazines-have-hit-the-bookstore-shelves-in-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-04 04:00:12
 categories:
 - crypto
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmbE65kNiGUA66cvxnxs9HKc9Bmxtb6LjkNbmbiXgCEMzS
+thumbnail: 'https://ipfs.busy.org/ipfs/QmbE65kNiGUA66cvxnxs9HKc9Bmxtb6LjkNbmbiXgCEMzS'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ It seems despite crypto prices were trending down in the past few months, the de
 
 - - -
 
-This page is synchronized from the post: [Crypto magazines have hit the bookstore shelves in Taiwan! 台北書店上架虛擬通貨雜誌！ ](https://steemit.com/@deanliu/crypto-magazines-have-hit-the-bookstore-shelves-in-taiwan)
+This page is synchronized from the post: ['Crypto magazines have hit the bookstore shelves in Taiwan! 台北書店上架虛擬通貨雜誌！ '](https://steemit.com/@deanliu/crypto-magazines-have-hit-the-bookstore-shelves-in-taiwan)

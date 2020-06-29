@@ -1,10 +1,11 @@
 
 ---
-title: "One Night in Beijing 我留下許多影"
+title: 'One Night in Beijing 我留下許多影'
 permlink: one-night-in-beijing
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-11 16:19:54
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - china
 - beijing
 - cn
-thumbnail: https://steemitimages.com/DQmXGkopypW9cpceSKG2fsDTphefrLEv4wmBXMRkg1PSLXq/1583139096.jpg
+thumbnail: 'https://steemitimages.com/DQmXGkopypW9cpceSKG2fsDTphefrLEv4wmBXMRkg1PSLXq/1583139096.jpg'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ This batch of photos were taken last year in Beijing, a city that I really appre
 
 - - -
 
-This page is synchronized from the post: [One Night in Beijing 我留下許多影](https://steemit.com/@deanliu/one-night-in-beijing)
+This page is synchronized from the post: ['One Night in Beijing 我留下許多影'](https://steemit.com/@deanliu/one-night-in-beijing)

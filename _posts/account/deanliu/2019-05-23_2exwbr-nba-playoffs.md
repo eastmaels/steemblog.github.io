@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] 綠咖哩湯"
+title: '[漫談NBA Playoffs] 綠咖哩湯'
 permlink: 2exwbr-nba-playoffs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-23 04:17:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nba
 - warriors
 - busy
-thumbnail: https://headbangerskitchen.com/wp-content/uploads/2017/12/VEGANTHAICURRY2-1024x576.jpg
+thumbnail: 'https://headbangerskitchen.com/wp-content/uploads/2017/12/VEGANTHAICURRY2-1024x576.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Green不以攻擊見長，但籃球其實攻守都一樣重要，只是球星多
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] 綠咖哩湯](https://steemit.com/@deanliu/2exwbr-nba-playoffs)
+This page is synchronized from the post: ['[漫談NBA Playoffs] 綠咖哩湯'](https://steemit.com/@deanliu/2exwbr-nba-playoffs)

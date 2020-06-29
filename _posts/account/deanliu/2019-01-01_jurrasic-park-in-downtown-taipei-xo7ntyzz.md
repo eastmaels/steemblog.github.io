@@ -1,10 +1,11 @@
 
 ---
-title: "台北鬧區的侏羅紀公園 Jurrasic Park in Downtown Taipei  "
+title: '台北鬧區的侏羅紀公園 Jurrasic Park in Downtown Taipei  '
 permlink: jurrasic-park-in-downtown-taipei-xo7ntyzz
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-01 13:03:45
 categories:
 - travel
@@ -15,7 +16,7 @@ tags:
 - cn
 - taipei
 - partiko
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/1122cecfd95d95a90126a56ab312b6d83966e540.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/1122cecfd95d95a90126a56ab312b6d83966e540.jpg'
 sidebar:
     right:
         sticky: true
@@ -112,4 +113,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [台北鬧區的侏羅紀公園 Jurrasic Park in Downtown Taipei  ](https://steemit.com/@deanliu/jurrasic-park-in-downtown-taipei-xo7ntyzz)
+This page is synchronized from the post: ['台北鬧區的侏羅紀公園 Jurrasic Park in Downtown Taipei  '](https://steemit.com/@deanliu/jurrasic-park-in-downtown-taipei-xo7ntyzz)

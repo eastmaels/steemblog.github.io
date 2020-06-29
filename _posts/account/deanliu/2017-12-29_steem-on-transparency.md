@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之第五講 ] 透明人？On Transparency"
+title: '[ Steem十講之第五講 ] 透明人？On Transparency'
 permlink: steem-on-transparency
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-29 05:24:45
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - steem-10
 - transparency
-thumbnail: https://steemitimages.com/DQmWKiHHas5zkxsZChQgae3h3WHRBzxv9VxTn4ACQkPBou1/ice-sculptures-1934607_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmWKiHHas5zkxsZChQgae3h3WHRBzxv9VxTn4ACQkPBou1/ice-sculptures-1934607_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -119,4 +120,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之第五講 ] 透明人？On Transparency](https://steemit.com/@deanliu/steem-on-transparency)
+This page is synchronized from the post: ['[ Steem十講之第五講 ] 透明人？On Transparency'](https://steemit.com/@deanliu/steem-on-transparency)

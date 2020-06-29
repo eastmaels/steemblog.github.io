@@ -1,10 +1,11 @@
 
 ---
-title: "In the beginning was the number 10001000100 and the number was with ... ?"
+title: 'In the beginning was the number 10001000100 and the number was with ... ?'
 permlink: in-the-beginning-was-the-number-10001000100-and-the-number-was-with
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-01 03:24:36
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - pow
 - history
 - blockchain
-thumbnail: https://cdn.steemitimages.com/DQmdbVZzrBYNiBi7K9yLKDxkUiv91uXYeS5GppspwU9F2Ai/sunrise-1765027_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmdbVZzrBYNiBi7K9yLKDxkUiv91uXYeS5GppspwU9F2Ai/sunrise-1765027_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ I hope you enjoy this interesting and simple looking back in Steem's history. ^_
 
 - - -
 
-This page is synchronized from the post: [In the beginning was the number 10001000100 and the number was with ... ?](https://steemit.com/@deanliu/in-the-beginning-was-the-number-10001000100-and-the-number-was-with)
+This page is synchronized from the post: ['In the beginning was the number 10001000100 and the number was with ... ?'](https://steemit.com/@deanliu/in-the-beginning-was-the-number-10001000100-and-the-number-was-with)

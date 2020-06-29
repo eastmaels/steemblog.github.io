@@ -1,10 +1,11 @@
 
 ---
-title: "Lunar New Year, the Taiwanese Tempo with original photos"
+title: 'Lunar New Year, the Taiwanese Tempo with original photos'
 permlink: lunar-new-year-the-taiwanese-tempo-with-original-photos
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-01-30 09:09:48
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - cn
 - photography
 - culture
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Lunar New Year, the Taiwanese Tempo with original photos](https://steemit.com/@deanliu/lunar-new-year-the-taiwanese-tempo-with-original-photos)
+This page is synchronized from the post: ['Lunar New Year, the Taiwanese Tempo with original photos'](https://steemit.com/@deanliu/lunar-new-year-the-taiwanese-tempo-with-original-photos)

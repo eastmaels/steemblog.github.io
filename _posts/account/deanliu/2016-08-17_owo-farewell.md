@@ -1,10 +1,11 @@
 
 ---
-title: "OWO Farewell 暫別一週，山高水長。"
+title: 'OWO Farewell 暫別一週，山高水長。'
 permlink: owo-farewell
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-17 06:12:27
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - oneweekoff
 - poem
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [OWO Farewell 暫別一週，山高水長。](https://steemit.com/@deanliu/owo-farewell)
+This page is synchronized from the post: ['OWO Farewell 暫別一週，山高水長。'](https://steemit.com/@deanliu/owo-farewell)

@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #3 — 智能合約之前世今生"
+title: 'DA-ChainTalk #3 — 智能合約之前世今生'
 permlink: da-chaintalk-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-04 03:24:39
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - cn-programming
 - dapp
 - cn
-thumbnail: https://steemitimages.com/DQmPACz2EHrzRFo6hguBVa63YC49YLSkYYQqysKeNeGvtuo/danbo-2495978_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmPACz2EHrzRFo6hguBVa63YC49YLSkYYQqysKeNeGvtuo/danbo-2495978_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -109,4 +110,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #3 — 智能合約之前世今生](https://steemit.com/@deanliu/da-chaintalk-3)
+This page is synchronized from the post: ['DA-ChainTalk #3 — 智能合約之前世今生'](https://steemit.com/@deanliu/da-chaintalk-3)

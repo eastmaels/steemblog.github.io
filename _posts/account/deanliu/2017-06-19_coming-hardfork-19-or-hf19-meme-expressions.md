@@ -1,10 +1,11 @@
 
 ---
-title: "Coming Hardfork 19 or HF19 - MEME EXPRESSIONS"
+title: 'Coming Hardfork 19 or HF19 - MEME EXPRESSIONS'
 permlink: coming-hardfork-19-or-hf19-meme-expressions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-19 05:34:48
 categories:
 - funny
@@ -14,7 +15,7 @@ tags:
 - meme
 - steemit
 - hf19
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Coming Hardfork 19 or HF19 - MEME EXPRESSIONS](https://steemit.com/@deanliu/coming-hardfork-19-or-hf19-meme-expressions)
+This page is synchronized from the post: ['Coming Hardfork 19 or HF19 - MEME EXPRESSIONS'](https://steemit.com/@deanliu/coming-hardfork-19-or-hf19-meme-expressions)

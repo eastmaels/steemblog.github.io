@@ -1,10 +1,11 @@
 
 ---
-title: "The Pacific at Hualien's seashore / 花蓮的海・日與夜"
+title: 'The Pacific at Hualien''s seashore / 花蓮的海・日與夜'
 permlink: the-pacific-at-hualien-s-seashore
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-22 07:01:24
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - hualien
-thumbnail: https://steemitimages.com/DQmNuPPghSUBhfFC14WZkEXyhxkqGKGNYZdKc1Av7GfKcNz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-04-22%20%E4%B8%8B%E5%8D%882.54.13.png
+thumbnail: 'https://steemitimages.com/DQmNuPPghSUBhfFC14WZkEXyhxkqGKGNYZdKc1Av7GfKcNz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-04-22%20%E4%B8%8B%E5%8D%882.54.13.png'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ https://www.youtube.com/watch?v=OdEqGvll_nQ&t=34s
 
 - - -
 
-This page is synchronized from the post: [The Pacific at Hualien's seashore / 花蓮的海・日與夜](https://steemit.com/@deanliu/the-pacific-at-hualien-s-seashore)
+This page is synchronized from the post: ['The Pacific at Hualien''s seashore / 花蓮的海・日與夜'](https://steemit.com/@deanliu/the-pacific-at-hualien-s-seashore)

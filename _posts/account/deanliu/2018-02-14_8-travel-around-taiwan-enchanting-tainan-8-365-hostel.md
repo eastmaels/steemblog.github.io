@@ -1,10 +1,11 @@
 
 ---
-title: "🚉  [輕旅行系列] 慵懶台南 #8 日光居所 🚉  [Travel Around Taiwan] Enchanting Tainan #8 365 Hostel"
+title: '🚉  [輕旅行系列] 慵懶台南 #8 日光居所 🚉  [Travel Around Taiwan] Enchanting Tainan #8 365 Hostel'
 permlink: 8-travel-around-taiwan-enchanting-tainan-8-365-hostel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-14 05:09:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - hotel
 - cn
-thumbnail: https://steemitimages.com/DQmRmYPrha5oSCjJWgoP3ybvQ7Lgx9PowckfXPhKYB5dMk7/DSC_3664.JPG
+thumbnail: 'https://steemitimages.com/DQmRmYPrha5oSCjJWgoP3ybvQ7Lgx9PowckfXPhKYB5dMk7/DSC_3664.JPG'
 sidebar:
     right:
         sticky: true
@@ -174,4 +175,4 @@ Stay tuned for more Enchanting Tainan later ~~~~
 
 - - -
 
-This page is synchronized from the post: [🚉  [輕旅行系列] 慵懶台南 #8 日光居所 🚉  [Travel Around Taiwan] Enchanting Tainan #8 365 Hostel](https://steemit.com/@deanliu/8-travel-around-taiwan-enchanting-tainan-8-365-hostel)
+This page is synchronized from the post: ['🚉  [輕旅行系列] 慵懶台南 #8 日光居所 🚉  [Travel Around Taiwan] Enchanting Tainan #8 365 Hostel'](https://steemit.com/@deanliu/8-travel-around-taiwan-enchanting-tainan-8-365-hostel)

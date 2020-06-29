@@ -1,10 +1,11 @@
 
 ---
-title: "鐮倉街景隨拍 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #2"
+title: '鐮倉街景隨拍 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #2'
 permlink: dean-s-tokyo-snapshots-kamakura-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-08 11:22:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - busy
 - cn
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/c2549279927c8e69bf1f975c2e86d49b2154beee.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/c2549279927c8e69bf1f975c2e86d49b2154beee.jpg'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [鐮倉街景隨拍 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #2](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-2)
+This page is synchronized from the post: ['鐮倉街景隨拍 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #2'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-2)

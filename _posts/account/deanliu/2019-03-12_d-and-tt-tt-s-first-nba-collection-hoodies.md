@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] TT's first NBA collection ... Hoodies! "
+title: '[D&TT] TT''s first NBA collection ... Hoodies! '
 permlink: d-and-tt-tt-s-first-nba-collection-hoodies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-12 09:30:48
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - deantt
 - busy
 - sports
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/d581adf759712732db3b8a5e102b3798ff0fc71b.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/d581adf759712732db3b8a5e102b3798ff0fc71b.jpg'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] TT's first NBA collection ... Hoodies! ](https://steemit.com/@deanliu/d-and-tt-tt-s-first-nba-collection-hoodies)
+This page is synchronized from the post: ['[D&TT] TT''s first NBA collection ... Hoodies! '](https://steemit.com/@deanliu/d-and-tt-tt-s-first-nba-collection-hoodies)

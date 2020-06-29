@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - From Praha to Prague - Past, present and future?"
+title: 'My Europa Plog - From Praha to Prague - Past, present and future?'
 permlink: my-europa-plog-from-praha-to-prague-past-present-and-future-2017511t64553506z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-11 04:45:57
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - myeuropaplog
 - prague
 - art
-thumbnail: https://i.imgur.com/70FXE7c.jpg
+thumbnail: 'https://i.imgur.com/70FXE7c.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - From Praha to Prague - Past, present and future?](https://steemit.com/@deanliu/my-europa-plog-from-praha-to-prague-past-present-and-future-2017511t64553506z)
+This page is synchronized from the post: ['My Europa Plog - From Praha to Prague - Past, present and future?'](https://steemit.com/@deanliu/my-europa-plog-from-praha-to-prague-past-present-and-future-2017511t64553506z)

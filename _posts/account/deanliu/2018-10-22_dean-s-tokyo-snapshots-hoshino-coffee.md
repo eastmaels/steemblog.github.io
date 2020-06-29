@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Hoshino Coffee 星乃珈琲店 オフィシャルサイト"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Hoshino Coffee 星乃珈琲店 オフィシャルサイト'
 permlink: dean-s-tokyo-snapshots-hoshino-coffee
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-22 11:24:09
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - food
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/9d3ebea8f4b91dee3937e06fc9518c176416502e.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/9d3ebea8f4b91dee3937e06fc9518c176416502e.png'
 sidebar:
     right:
         sticky: true
@@ -83,4 +84,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Hoshino Coffee 星乃珈琲店 オフィシャルサイト](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-hoshino-coffee)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Hoshino Coffee 星乃珈琲店 オフィシャルサイト'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-hoshino-coffee)

@@ -1,10 +1,11 @@
 
 ---
-title: "再談 Magic Dice (內有提高勝率秘方) "
+title: '再談 Magic Dice (內有提高勝率秘方) '
 permlink: magic-dice-95eply9u
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-22 11:00:03
 categories:
 - gamble
@@ -15,7 +16,7 @@ tags:
 - dapp
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmZqmTg5PqDifS99k5VRo42SscRFT3A1MEVwbwb29CpTyr/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-01-22%20%E4%B8%8A%E5%8D%889.19.04.png
+thumbnail: 'https://cdn.steemitimages.com/DQmZqmTg5PqDifS99k5VRo42SscRFT3A1MEVwbwb29CpTyr/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-01-22%20%E4%B8%8A%E5%8D%889.19.04.png'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [再談 Magic Dice (內有提高勝率秘方) ](https://steemit.com/@deanliu/magic-dice-95eply9u)
+This page is synchronized from the post: ['再談 Magic Dice (內有提高勝率秘方) '](https://steemit.com/@deanliu/magic-dice-95eply9u)

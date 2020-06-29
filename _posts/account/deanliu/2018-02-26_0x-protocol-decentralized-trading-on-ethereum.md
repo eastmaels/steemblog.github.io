@@ -1,10 +1,11 @@
 
 ---
-title: "0x Protocol - Decentralized Trading on ETHEREUM."
+title: '0x Protocol - Decentralized Trading on ETHEREUM.'
 permlink: 0x-protocol-decentralized-trading-on-ethereum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-26 23:52:12
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - zrx
 - ethereum
 - dex
-thumbnail: https://steemitimages.com/DQmP7jkFERYPoqCjBz6ZDQncU4TpPMwiiGzVytGNMz7npPi/IMG_0775.jpg
+thumbnail: 'https://steemitimages.com/DQmP7jkFERYPoqCjBz6ZDQncU4TpPMwiiGzVytGNMz7npPi/IMG_0775.jpg'
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [0x Protocol - Decentralized Trading on ETHEREUM.](https://steemit.com/@deanliu/0x-protocol-decentralized-trading-on-ethereum)
+This page is synchronized from the post: ['0x Protocol - Decentralized Trading on ETHEREUM.'](https://steemit.com/@deanliu/0x-protocol-decentralized-trading-on-ethereum)

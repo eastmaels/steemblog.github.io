@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 戰術密咒：嘍肉刀媽忍，槍狙刺砲傭。 "
+title: '[DrugWars] 戰術密咒：嘍肉刀媽忍，槍狙刺砲傭。 '
 permlink: drugwars-qvqrmtzp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-13 03:29:45
 categories:
 - drugwars
@@ -15,7 +16,7 @@ tags:
 - gaming
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmQyPaACwD73j7Lrfh1nUuxxWE5utTTwZASJfGHXUFBQPX/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-13%20%E4%B8%8A%E5%8D%8810.42.38.png
+thumbnail: 'https://cdn.steemitimages.com/DQmQyPaACwD73j7Lrfh1nUuxxWE5utTTwZASJfGHXUFBQPX/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-13%20%E4%B8%8A%E5%8D%8810.42.38.png'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 戰術密咒：嘍肉刀媽忍，槍狙刺砲傭。 ](https://steemit.com/@deanliu/drugwars-qvqrmtzp)
+This page is synchronized from the post: ['[DrugWars] 戰術密咒：嘍肉刀媽忍，槍狙刺砲傭。 '](https://steemit.com/@deanliu/drugwars-qvqrmtzp)

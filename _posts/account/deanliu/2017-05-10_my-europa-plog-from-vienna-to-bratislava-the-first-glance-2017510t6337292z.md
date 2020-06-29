@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - From Vienna to Bratislava, the first glance."
+title: 'My Europa Plog - From Vienna to Bratislava, the first glance.'
 permlink: my-europa-plog-from-vienna-to-bratislava-the-first-glance-2017510t6337292z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-10 04:33:09
 categories:
 - myeuropaplog
@@ -14,7 +15,7 @@ tags:
 - photography
 - europe
 - plog
-thumbnail: https://i.imgur.com/mKELXJK.jpg
+thumbnail: 'https://i.imgur.com/mKELXJK.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - From Vienna to Bratislava, the first glance.](https://steemit.com/@deanliu/my-europa-plog-from-vienna-to-bratislava-the-first-glance-2017510t6337292z)
+This page is synchronized from the post: ['My Europa Plog - From Vienna to Bratislava, the first glance.'](https://steemit.com/@deanliu/my-europa-plog-from-vienna-to-bratislava-the-first-glance-2017510t6337292z)

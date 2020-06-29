@@ -1,16 +1,17 @@
 
 ---
-title: "Looking back, Feeling sad."
+title: 'Looking back, Feeling sad.'
 permlink: looking-back-feeling-sad
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-12 11:15:06
 categories:
 - memo
 tags:
 - memo
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Looking back, Feeling sad.](https://steemit.com/@deanliu/looking-back-feeling-sad)
+This page is synchronized from the post: ['Looking back, Feeling sad.'](https://steemit.com/@deanliu/looking-back-feeling-sad)

@@ -1,10 +1,11 @@
 
 ---
-title: "EOS - The Decentralized Operating System."
+title: 'EOS - The Decentralized Operating System.'
 permlink: eos-the-decentralized-operating-system
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-13 00:11:27
 categories:
 - eos
@@ -13,7 +14,7 @@ tags:
 - cryptocurrency
 - blockchain
 - dapp
-thumbnail: https://steemitimages.com/DQmQ6Db5fK4Ymw4TNVNTy4Y5cLTWWCk7MyhZQF5fwdwGVQC/barren-1867069_960_720.jpg
+thumbnail: 'https://steemitimages.com/DQmQ6Db5fK4Ymw4TNVNTy4Y5cLTWWCk7MyhZQF5fwdwGVQC/barren-1867069_960_720.jpg'
 sidebar:
     right:
         sticky: true
@@ -113,4 +114,4 @@ Also, make sure to go check out Dan's latest review this time on  [**SpankChain*
 
 - - -
 
-This page is synchronized from the post: [EOS - The Decentralized Operating System.](https://steemit.com/@deanliu/eos-the-decentralized-operating-system)
+This page is synchronized from the post: ['EOS - The Decentralized Operating System.'](https://steemit.com/@deanliu/eos-the-decentralized-operating-system)

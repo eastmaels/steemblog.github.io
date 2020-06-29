@@ -1,10 +1,11 @@
 
 ---
-title: "🍞 Central Market Hall Budapest 🍞 布達佩斯中央市場 🍞  #myeuropaplog series  歐洲行旅照片記錄系列"
+title: '🍞 Central Market Hall Budapest 🍞 布達佩斯中央市場 🍞  #myeuropaplog series  歐洲行旅照片記錄系列'
 permlink: central-market-hall-budapest-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-05 07:37:51
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -87,4 +88,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🍞 Central Market Hall Budapest 🍞 布達佩斯中央市場 🍞  #myeuropaplog series  歐洲行旅照片記錄系列](https://steemit.com/@deanliu/central-market-hall-budapest-myeuropaplog-series)
+This page is synchronized from the post: ['🍞 Central Market Hall Budapest 🍞 布達佩斯中央市場 🍞  #myeuropaplog series  歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/central-market-hall-budapest-myeuropaplog-series)

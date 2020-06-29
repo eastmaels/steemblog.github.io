@@ -1,10 +1,11 @@
 
 ---
-title: "A father from Taiwan, thinking ... introducing myself a bit..."
+title: 'A father from Taiwan, thinking ... introducing myself a bit...'
 permlink: a-father-from-taiwan-thinking-introducing-myself-a-bit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-14 11:09:39
 categories:
 - introduction
@@ -14,7 +15,7 @@ tags:
 - taipei
 - father
 - family
-thumbnail: https://i.imgsafe.org/768c54a979.jpg
+thumbnail: 'https://i.imgsafe.org/768c54a979.jpg'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ It was really crazy and hard to believe, I know. But I need to remind you that T
 
 - - -
 
-This page is synchronized from the post: [A father from Taiwan, thinking ... introducing myself a bit...](https://steemit.com/@deanliu/a-father-from-taiwan-thinking-introducing-myself-a-bit)
+This page is synchronized from the post: ['A father from Taiwan, thinking ... introducing myself a bit...'](https://steemit.com/@deanliu/a-father-from-taiwan-thinking-introducing-myself-a-bit)

@@ -1,10 +1,11 @@
 
 ---
-title: "One year ago I was happy to be the first Crown bidder - celebrating my first year with VIVA"
+title: 'One year ago I was happy to be the first Crown bidder - celebrating my first year with VIVA'
 permlink: one-year-ago-i-was-happy-to-be-the-first-crown-bidder-celebrating-my-first-year-with-viva
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-20 13:44:27
 categories:
 - viva
@@ -13,7 +14,7 @@ tags:
 - memory
 - anniversary
 - vivacrowns
-thumbnail: https://steemitimages.com/DQmWVcVQED6WrorRefdBHmLuZS3XpvJJCHpccVJcZCnZEji/logo-sm.png
+thumbnail: 'https://steemitimages.com/DQmWVcVQED6WrorRefdBHmLuZS3XpvJJCHpccVJcZCnZEji/logo-sm.png'
 sidebar:
     right:
         sticky: true
@@ -105,4 +106,4 @@ https://steemitimages.com/0x0/https://s29.postimg.org/cthf5l94n/U5dqwx7_TTVWY93_
 
 - - -
 
-This page is synchronized from the post: [One year ago I was happy to be the first Crown bidder - celebrating my first year with VIVA](https://steemit.com/@deanliu/one-year-ago-i-was-happy-to-be-the-first-crown-bidder-celebrating-my-first-year-with-viva)
+This page is synchronized from the post: ['One year ago I was happy to be the first Crown bidder - celebrating my first year with VIVA'](https://steemit.com/@deanliu/one-year-ago-i-was-happy-to-be-the-first-crown-bidder-celebrating-my-first-year-with-viva)

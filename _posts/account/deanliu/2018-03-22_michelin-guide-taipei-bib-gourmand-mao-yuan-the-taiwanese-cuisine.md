@@ -1,10 +1,11 @@
 
 ---
-title: "[Michelin Guide Taipei] [Bib Gourmand] Mao Yuan - the Taiwanese Cuisine 🍴🍷 [米其林台北指南] 台菜之巔・茂園餐廳"
+title: '[Michelin Guide Taipei] [Bib Gourmand] Mao Yuan - the Taiwanese Cuisine 🍴🍷 [米其林台北指南] 台菜之巔・茂園餐廳'
 permlink: michelin-guide-taipei-bib-gourmand-mao-yuan-the-taiwanese-cuisine
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-22 07:24:51
 categories:
 - cuisine
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmNa1ZQ9KXEqCXPVQx57VZLiEifdDRHaUFksHZ5Dh5RJTY/DSC_4447.JPG
+thumbnail: 'https://steemitimages.com/DQmNa1ZQ9KXEqCXPVQx57VZLiEifdDRHaUFksHZ5Dh5RJTY/DSC_4447.JPG'
 sidebar:
     right:
         sticky: true
@@ -117,4 +118,4 @@ See you next time! Oh, sorry! We are going to be on Michelin's Guide so maybe we
 
 - - -
 
-This page is synchronized from the post: [[Michelin Guide Taipei] [Bib Gourmand] Mao Yuan - the Taiwanese Cuisine 🍴🍷 [米其林台北指南] 台菜之巔・茂園餐廳](https://steemit.com/@deanliu/michelin-guide-taipei-bib-gourmand-mao-yuan-the-taiwanese-cuisine)
+This page is synchronized from the post: ['[Michelin Guide Taipei] [Bib Gourmand] Mao Yuan - the Taiwanese Cuisine 🍴🍷 [米其林台北指南] 台菜之巔・茂園餐廳'](https://steemit.com/@deanliu/michelin-guide-taipei-bib-gourmand-mao-yuan-the-taiwanese-cuisine)

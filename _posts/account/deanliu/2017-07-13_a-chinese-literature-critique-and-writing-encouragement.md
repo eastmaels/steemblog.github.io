@@ -1,10 +1,11 @@
 
 ---
-title: "📝  中文文學評論與鼓勵創作 📝   A Chinese Literature Critique and Writing Encouragement  📝"
+title: '📝  中文文學評論與鼓勵創作 📝   A Chinese Literature Critique and Writing Encouragement  📝'
 permlink: a-chinese-literature-critique-and-writing-encouragement
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-13 13:15:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - literature
 - writing
 - oflyhigh
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [📝  中文文學評論與鼓勵創作 📝   A Chinese Literature Critique and Writing Encouragement  📝](https://steemit.com/@deanliu/a-chinese-literature-critique-and-writing-encouragement)
+This page is synchronized from the post: ['📝  中文文學評論與鼓勵創作 📝   A Chinese Literature Critique and Writing Encouragement  📝'](https://steemit.com/@deanliu/a-chinese-literature-critique-and-writing-encouragement)

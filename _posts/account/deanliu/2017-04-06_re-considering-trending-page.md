@@ -1,10 +1,11 @@
 
 ---
-title: "Re-considering Trending Page"
+title: 'Re-considering Trending Page'
 permlink: re-considering-trending-page
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-06 02:21:42
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - payout
 - trending
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Re-considering Trending Page](https://steemit.com/@deanliu/re-considering-trending-page)
+This page is synchronized from the post: ['Re-considering Trending Page'](https://steemit.com/@deanliu/re-considering-trending-page)

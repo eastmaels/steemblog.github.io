@@ -1,10 +1,11 @@
 
 ---
-title: "A little Santa Power bestowed on me by dear @wang and paying forward  施展王的聖誕小魔法"
+title: 'A little Santa Power bestowed on me by dear @wang and paying forward  施展王的聖誕小魔法'
 permlink: a-little-santa-power-bestowed-on-me-by-dear-wang-and-paying-forward
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-15 09:16:06
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - busy
 - cn
 - payitforward
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Anyone can be a Santa if you want! May the SP (Santa Power) be with you!!&nbsp;<
 
 - - -
 
-This page is synchronized from the post: [A little Santa Power bestowed on me by dear @wang and paying forward  施展王的聖誕小魔法](https://steemit.com/@deanliu/a-little-santa-power-bestowed-on-me-by-dear-wang-and-paying-forward)
+This page is synchronized from the post: ['A little Santa Power bestowed on me by dear @wang and paying forward  施展王的聖誕小魔法'](https://steemit.com/@deanliu/a-little-santa-power-bestowed-on-me-by-dear-wang-and-paying-forward)

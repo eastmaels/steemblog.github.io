@@ -1,10 +1,11 @@
 
 ---
-title: "人間一刻 #01  🕒  Moments of Life #01"
+title: '人間一刻 #01  🕒  Moments of Life #01'
 permlink: 01-moments-of-life-01
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-25 03:19:48
 categories:
 - momentsoflife
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - writing
 - blog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [人間一刻 #01  🕒  Moments of Life #01](https://steemit.com/@deanliu/01-moments-of-life-01)
+This page is synchronized from the post: ['人間一刻 #01  🕒  Moments of Life #01'](https://steemit.com/@deanliu/01-moments-of-life-01)

@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Photo Log  [#myeuropaplog] Announcement - New Style Travelling on eSteem and Sbohem Můj Přítel!"
+title: 'My Europa Photo Log  [#myeuropaplog] Announcement - New Style Travelling on eSteem and Sbohem Můj Přítel!'
 permlink: my-europa-photo-log-myeuropaplog-announcement-new-style-travelling-on-esteem-and-sbohem-muj-pritel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-08 03:03:12
 categories:
 - myeuropaplog
@@ -14,7 +15,7 @@ tags:
 - blog
 - esteem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ I am Sooooooooooooooo going to Europe!!</p>
 
 - - -
 
-This page is synchronized from the post: [My Europa Photo Log  [#myeuropaplog] Announcement - New Style Travelling on eSteem and Sbohem Můj Přítel!](https://steemit.com/@deanliu/my-europa-photo-log-myeuropaplog-announcement-new-style-travelling-on-esteem-and-sbohem-muj-pritel)
+This page is synchronized from the post: ['My Europa Photo Log  [#myeuropaplog] Announcement - New Style Travelling on eSteem and Sbohem Můj Přítel!'](https://steemit.com/@deanliu/my-europa-photo-log-myeuropaplog-announcement-new-style-travelling-on-esteem-and-sbohem-muj-pritel)

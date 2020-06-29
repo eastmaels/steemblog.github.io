@@ -1,10 +1,11 @@
 
 ---
-title: "Yokohama night 🍙 Dean's Tokyo Snapshots 🍙 港之夜與幸福鐘"
+title: 'Yokohama night 🍙 Dean''s Tokyo Snapshots 🍙 港之夜與幸福鐘'
 permlink: yokohama-night--deans-tokyo-snapshots-qiuhmnml
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-23 02:48:24
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/3605de8e6b8a5d2ed69d0d38df11a2daaaab1b4b.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/3605de8e6b8a5d2ed69d0d38df11a2daaaab1b4b.png'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Yokohama night 🍙 Dean's Tokyo Snapshots 🍙 港之夜與幸福鐘](https://steemit.com/@deanliu/yokohama-night--deans-tokyo-snapshots-qiuhmnml)
+This page is synchronized from the post: ['Yokohama night 🍙 Dean''s Tokyo Snapshots 🍙 港之夜與幸福鐘'](https://steemit.com/@deanliu/yokohama-night--deans-tokyo-snapshots-qiuhmnml)

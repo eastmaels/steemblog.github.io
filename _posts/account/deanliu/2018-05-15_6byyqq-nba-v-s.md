@@ -1,10 +1,11 @@
 
 ---
-title: "[NBA直播運動茶館] 勇士 V.S 火箭，看球者歡迎入內聊天！"
+title: '[NBA直播運動茶館] 勇士 V.S 火箭，看球者歡迎入內聊天！'
 permlink: 6byyqq-nba-v-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-15 01:03:06
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - chat
 - sports
 - cn
-thumbnail: http://img1.gtimg.com/sports/pics/hv1/6/112/1944/126437166.jpg
+thumbnail: 'http://img1.gtimg.com/sports/pics/hv1/6/112/1944/126437166.jpg'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ GOGOGO!!
 
 - - -
 
-This page is synchronized from the post: [[NBA直播運動茶館] 勇士 V.S 火箭，看球者歡迎入內聊天！](https://steemit.com/@deanliu/6byyqq-nba-v-s)
+This page is synchronized from the post: ['[NBA直播運動茶館] 勇士 V.S 火箭，看球者歡迎入內聊天！'](https://steemit.com/@deanliu/6byyqq-nba-v-s)

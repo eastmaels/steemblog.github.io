@@ -1,10 +1,11 @@
 
 ---
-title: "A Relaxing Space Inside Daan Park MRT Station - 台北捷運大安森林公園站裡的一個小天地"
+title: 'A Relaxing Space Inside Daan Park MRT Station - 台北捷運大安森林公園站裡的一個小天地'
 permlink: a-relaxing-space-inside-daan-park-mrt-station
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-13 04:35:21
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - travel
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ Normally I don't pay attention to this kind of plate on the wall, but I was too 
 
 - - -
 
-This page is synchronized from the post: [A Relaxing Space Inside Daan Park MRT Station - 台北捷運大安森林公園站裡的一個小天地](https://steemit.com/@deanliu/a-relaxing-space-inside-daan-park-mrt-station)
+This page is synchronized from the post: ['A Relaxing Space Inside Daan Park MRT Station - 台北捷運大安森林公園站裡的一個小天地'](https://steemit.com/@deanliu/a-relaxing-space-inside-daan-park-mrt-station)

@@ -1,17 +1,18 @@
 
 ---
-title: "Hotel Photography"
+title: 'Hotel Photography'
 permlink: hotel-photography
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-23 14:35:45
 categories:
 - photography
 tags:
 - photography
 - hotel
-thumbnail: https://steemitimages.com/DQmUUS3vcRU3BFEoFNuc5mtDthif3q3wLYYN79b4gssS2PU/DSC_3454.JPG
+thumbnail: 'https://steemitimages.com/DQmUUS3vcRU3BFEoFNuc5mtDthif3q3wLYYN79b4gssS2PU/DSC_3454.JPG'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ https://steemitimages.com/DQmd7YRHNErmEAbpVqmQ5JKe4hViwnmkqbSkuqfKKSVWLLs/DSC_34
 
 - - -
 
-This page is synchronized from the post: [Hotel Photography](https://steemit.com/@deanliu/hotel-photography)
+This page is synchronized from the post: ['Hotel Photography'](https://steemit.com/@deanliu/hotel-photography)

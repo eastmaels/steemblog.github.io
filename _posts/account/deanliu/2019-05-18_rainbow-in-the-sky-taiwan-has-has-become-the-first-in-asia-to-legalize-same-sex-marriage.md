@@ -1,10 +1,11 @@
 
 ---
-title: "Rainbow in the sky - Taiwan has has become the first in Asia to legalize same-sex marriage 🌈 空中的彩虹：台灣同性婚姻合法化"
+title: 'Rainbow in the sky - Taiwan has has become the first in Asia to legalize same-sex marriage 🌈 空中的彩虹：台灣同性婚姻合法化'
 permlink: rainbow-in-the-sky-taiwan-has-has-become-the-first-in-asia-to-legalize-same-sex-marriage
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-18 08:49:30
 categories:
 - lgbt
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - marriage
-thumbnail: https://ichef.bbci.co.uk/news/624/cpsprodpb/13087/production/_106995977_gettyimages-1144117825.jpg
+thumbnail: 'https://ichef.bbci.co.uk/news/624/cpsprodpb/13087/production/_106995977_gettyimages-1144117825.jpg'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ You may check the news here: [Taiwan gay marriage: Parliament legalises same-sex
 
 - - -
 
-This page is synchronized from the post: [Rainbow in the sky - Taiwan has has become the first in Asia to legalize same-sex marriage 🌈 空中的彩虹：台灣同性婚姻合法化](https://steemit.com/@deanliu/rainbow-in-the-sky-taiwan-has-has-become-the-first-in-asia-to-legalize-same-sex-marriage)
+This page is synchronized from the post: ['Rainbow in the sky - Taiwan has has become the first in Asia to legalize same-sex marriage 🌈 空中的彩虹：台灣同性婚姻合法化'](https://steemit.com/@deanliu/rainbow-in-the-sky-taiwan-has-has-become-the-first-in-asia-to-legalize-same-sex-marriage)

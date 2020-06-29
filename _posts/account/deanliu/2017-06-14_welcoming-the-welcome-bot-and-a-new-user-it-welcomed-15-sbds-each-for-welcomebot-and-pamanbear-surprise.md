@@ -1,10 +1,11 @@
 
 ---
-title: "Welcoming the Welcome Bot and A New User it Welcomed - 15 SBDs each for @welcomebot and @pamanbear (Surprise!!)"
+title: 'Welcoming the Welcome Bot and A New User it Welcomed - 15 SBDs each for @welcomebot and @pamanbear (Surprise!!)'
 permlink: welcoming-the-welcome-bot-and-a-new-user-it-welcomed-15-sbds-each-for-welcomebot-and-pamanbear-surprise
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-14 06:03:00
 categories:
 - share
@@ -14,7 +15,7 @@ tags:
 - welcomebot
 - newbie
 - steemit
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Since I will be earning more from this post, I will increase the money to <stron
 
 - - -
 
-This page is synchronized from the post: [Welcoming the Welcome Bot and A New User it Welcomed - 15 SBDs each for @welcomebot and @pamanbear (Surprise!!)](https://steemit.com/@deanliu/welcoming-the-welcome-bot-and-a-new-user-it-welcomed-15-sbds-each-for-welcomebot-and-pamanbear-surprise)
+This page is synchronized from the post: ['Welcoming the Welcome Bot and A New User it Welcomed - 15 SBDs each for @welcomebot and @pamanbear (Surprise!!)'](https://steemit.com/@deanliu/welcoming-the-welcome-bot-and-a-new-user-it-welcomed-15-sbds-each-for-welcomebot-and-pamanbear-surprise)

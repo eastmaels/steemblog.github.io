@@ -1,10 +1,11 @@
 
 ---
-title: "Amalfi kitchen的義式享受 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #7"
+title: 'Amalfi kitchen的義式享受 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #7'
 permlink: amalfi-kitchen-dean-s-tokyo-snapshots-kamakura-7
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-17 07:48:36
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/603238df7edcabfccc85bbc2dec8150728d0449c.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/603238df7edcabfccc85bbc2dec8150728d0449c.jpg'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ _日本旅遊已結束，繼續以此系列紀錄日本之行...._ ^^
 
 - - -
 
-This page is synchronized from the post: [Amalfi kitchen的義式享受 🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #7](https://steemit.com/@deanliu/amalfi-kitchen-dean-s-tokyo-snapshots-kamakura-7)
+This page is synchronized from the post: ['Amalfi kitchen的義式享受 🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #7'](https://steemit.com/@deanliu/amalfi-kitchen-dean-s-tokyo-snapshots-kamakura-7)

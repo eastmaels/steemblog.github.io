@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars MEME] Recent Hottest Matchup in DrugWars "
+title: '[DrugWars MEME] Recent Hottest Matchup in DrugWars '
 permlink: drugwars-meme-the-recent-hottest-matchup-in-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-19 07:56:39
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - funny
 - drugwars-fight
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ https://steemit.com/created/drugwars-fight
 
 - - -
 
-This page is synchronized from the post: [[DrugWars MEME] Recent Hottest Matchup in DrugWars ](https://steemit.com/@deanliu/drugwars-meme-the-recent-hottest-matchup-in-drugwars)
+This page is synchronized from the post: ['[DrugWars MEME] Recent Hottest Matchup in DrugWars '](https://steemit.com/@deanliu/drugwars-meme-the-recent-hottest-matchup-in-drugwars)

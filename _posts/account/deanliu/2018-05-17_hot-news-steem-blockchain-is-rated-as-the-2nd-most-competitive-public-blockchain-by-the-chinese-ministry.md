@@ -1,10 +1,11 @@
 
 ---
-title: "[Hot News] Steem Blockchain Is Rated as the 2nd Most Competitive Public Blockchain by the Chinese Ministry!! 🎉🎉🎉"
+title: '[Hot News] Steem Blockchain Is Rated as the 2nd Most Competitive Public Blockchain by the Chinese Ministry!! 🎉🎉🎉'
 permlink: hot-news-steem-blockchain-is-rated-as-the-2nd-most-competitive-public-blockchain-by-the-chinese-ministry
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-17 06:43:12
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - china
 - news
 - cn
-thumbnail: https://steemitimages.com/DQmbnz3utQqiZmFtc4bi2qfnupkd4xX1mSSAJCNm4EQgHkW/image.png
+thumbnail: 'https://steemitimages.com/DQmbnz3utQqiZmFtc4bi2qfnupkd4xX1mSSAJCNm4EQgHkW/image.png'
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ This evaluation is done by the **China Electronic Information Industry Developme
 
 - - -
 
-This page is synchronized from the post: [[Hot News] Steem Blockchain Is Rated as the 2nd Most Competitive Public Blockchain by the Chinese Ministry!! 🎉🎉🎉](https://steemit.com/@deanliu/hot-news-steem-blockchain-is-rated-as-the-2nd-most-competitive-public-blockchain-by-the-chinese-ministry)
+This page is synchronized from the post: ['[Hot News] Steem Blockchain Is Rated as the 2nd Most Competitive Public Blockchain by the Chinese Ministry!! 🎉🎉🎉'](https://steemit.com/@deanliu/hot-news-steem-blockchain-is-rated-as-the-2nd-most-competitive-public-blockchain-by-the-chinese-ministry)

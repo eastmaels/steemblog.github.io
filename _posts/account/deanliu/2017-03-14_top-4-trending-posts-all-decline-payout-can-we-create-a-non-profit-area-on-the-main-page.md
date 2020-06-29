@@ -1,10 +1,11 @@
 
 ---
-title: "Top 4 Trending Posts All Decline Payout - Can we create a Non-Profit area on the main page?"
+title: 'Top 4 Trending Posts All Decline Payout - Can we create a Non-Profit area on the main page?'
 permlink: top-4-trending-posts-all-decline-payout-can-we-create-a-non-profit-area-on-the-main-page
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-14 23:27:51
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - reward
 - non-profit
 - promotion
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Top 4 Trending Posts All Decline Payout - Can we create a Non-Profit area on the main page?](https://steemit.com/@deanliu/top-4-trending-posts-all-decline-payout-can-we-create-a-non-profit-area-on-the-main-page)
+This page is synchronized from the post: ['Top 4 Trending Posts All Decline Payout - Can we create a Non-Profit area on the main page?'](https://steemit.com/@deanliu/top-4-trending-posts-all-decline-payout-can-we-create-a-non-profit-area-on-the-main-page)

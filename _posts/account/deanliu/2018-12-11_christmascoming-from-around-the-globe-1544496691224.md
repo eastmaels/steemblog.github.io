@@ -1,10 +1,11 @@
 
 ---
-title: "Christmas coming from around the globe"
+title: 'Christmas coming from around the globe'
 permlink: christmascoming-from-around-the-globe-1544496691224
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-11 02:51:33
 categories:
 - christmas
@@ -13,7 +14,7 @@ tags:
 - season
 - greeting
 - dclick
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/a200f77bcc5599585944d060ce7bce906e8a8cc4.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/a200f77bcc5599585944d060ce7bce906e8a8cc4.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ So, sharing with you some of them ... from Tokyo and Italy .... :)
 
 - - -
 
-This page is synchronized from the post: [Christmas coming from around the globe](https://steemit.com/@deanliu/christmascoming-from-around-the-globe-1544496691224)
+This page is synchronized from the post: ['Christmas coming from around the globe'](https://steemit.com/@deanliu/christmascoming-from-around-the-globe-1544496691224)

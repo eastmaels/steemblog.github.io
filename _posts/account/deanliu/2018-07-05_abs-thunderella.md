@@ -1,10 +1,11 @@
 
 ---
-title: "[ABS見聞] 下世代公鏈之一：Thunderella"
+title: '[ABS見聞] 下世代公鏈之一：Thunderella'
 permlink: abs-thunderella
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-05 03:24:36
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - abs
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmWe6CP1VXo3paek6gS9a4Mo1jaoK6zHJFRMBNM7KWfEFv/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-05%20%E4%B8%8A%E5%8D%8811.05.01.png
+thumbnail: 'https://cdn.steemitimages.com/DQmWe6CP1VXo3paek6gS9a4Mo1jaoK6zHJFRMBNM7KWfEFv/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-05%20%E4%B8%8A%E5%8D%8811.05.01.png'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[ABS見聞] 下世代公鏈之一：Thunderella](https://steemit.com/@deanliu/abs-thunderella)
+This page is synchronized from the post: ['[ABS見聞] 下世代公鏈之一：Thunderella'](https://steemit.com/@deanliu/abs-thunderella)

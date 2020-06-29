@@ -1,10 +1,11 @@
 
 ---
-title: "Cute cafe with magnificent views 1/2 - Jiufen photo series 013"
+title: 'Cute cafe with magnificent views 1/2 - Jiufen photo series 013'
 permlink: cute-cafe-with-magnificent-views-1-2-jiufen-photo-series-013
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-08 14:48:03
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - life
 - cafe
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Cute cafe with magnificent views 1/2 - Jiufen photo series 013](https://steemit.com/@deanliu/cute-cafe-with-magnificent-views-1-2-jiufen-photo-series-013)
+This page is synchronized from the post: ['Cute cafe with magnificent views 1/2 - Jiufen photo series 013'](https://steemit.com/@deanliu/cute-cafe-with-magnificent-views-1-2-jiufen-photo-series-013)

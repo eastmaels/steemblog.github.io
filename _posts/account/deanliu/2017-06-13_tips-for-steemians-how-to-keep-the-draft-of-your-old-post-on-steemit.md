@@ -1,10 +1,11 @@
 
 ---
-title: "Tips for Steemians! How to keep the draft of your OLD POST on Steemit"
+title: 'Tips for Steemians! How to keep the draft of your OLD POST on Steemit'
 permlink: tips-for-steemians-how-to-keep-the-draft-of-your-old-post-on-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-13 05:53:48
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - blog
 - steem-help
 - howto
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Tips for Steemians! How to keep the draft of your OLD POST on Steemit](https://steemit.com/@deanliu/tips-for-steemians-how-to-keep-the-draft-of-your-old-post-on-steemit)
+This page is synchronized from the post: ['Tips for Steemians! How to keep the draft of your OLD POST on Steemit'](https://steemit.com/@deanliu/tips-for-steemians-how-to-keep-the-draft-of-your-old-post-on-steemit)

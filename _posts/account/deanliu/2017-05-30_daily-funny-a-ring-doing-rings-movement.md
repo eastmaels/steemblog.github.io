@@ -1,10 +1,11 @@
 
 ---
-title: "Daily Funny - A Ring Doing Rings Movement"
+title: 'Daily Funny - A Ring Doing Rings Movement'
 permlink: daily-funny-a-ring-doing-rings-movement
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-30 02:20:57
 categories:
 - funny
@@ -13,7 +14,7 @@ tags:
 - humor
 - life
 - sports
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Daily Funny - A Ring Doing Rings Movement](https://steemit.com/@deanliu/daily-funny-a-ring-doing-rings-movement)
+This page is synchronized from the post: ['Daily Funny - A Ring Doing Rings Movement'](https://steemit.com/@deanliu/daily-funny-a-ring-doing-rings-movement)

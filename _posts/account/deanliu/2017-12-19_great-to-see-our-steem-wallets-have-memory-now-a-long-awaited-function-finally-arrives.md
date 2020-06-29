@@ -1,10 +1,11 @@
 
 ---
-title: "Great to see our Steem wallets have MEMORY now!! A long-awaited function finally arrives!"
+title: 'Great to see our Steem wallets have MEMORY now!! A long-awaited function finally arrives!'
 permlink: great-to-see-our-steem-wallets-have-memory-now-a-long-awaited-function-finally-arrives
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-19 03:31:57
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - wallet
 - news
-thumbnail: https://steemitimages.com/DQmQR7kntnsLBYAAaVk9epCHYBS5G28ucfqvS8pmputKFai/image.png
+thumbnail: 'https://steemitimages.com/DQmQR7kntnsLBYAAaVk9epCHYBS5G28ucfqvS8pmputKFai/image.png'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ CN區朋友們好，現在轉帳不用再害怕打錯字啦（除了第一次要
 
 - - -
 
-This page is synchronized from the post: [Great to see our Steem wallets have MEMORY now!! A long-awaited function finally arrives!](https://steemit.com/@deanliu/great-to-see-our-steem-wallets-have-memory-now-a-long-awaited-function-finally-arrives)
+This page is synchronized from the post: ['Great to see our Steem wallets have MEMORY now!! A long-awaited function finally arrives!'](https://steemit.com/@deanliu/great-to-see-our-steem-wallets-have-memory-now-a-long-awaited-function-finally-arrives)

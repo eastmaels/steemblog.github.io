@@ -1,10 +1,11 @@
 
 ---
-title: "A traditional market in a un-traditional way - neat, clean and coffee inside! 有趣的台北天母士東市場"
+title: 'A traditional market in a un-traditional way - neat, clean and coffee inside! 有趣的台北天母士東市場'
 permlink: a-traditional-market-in-a-un-traditional-way-neat-clean-and-coffee-inside
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-31 09:07:39
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A traditional market in a un-traditional way - neat, clean and coffee inside! 有趣的台北天母士東市場](https://steemit.com/@deanliu/a-traditional-market-in-a-un-traditional-way-neat-clean-and-coffee-inside)
+This page is synchronized from the post: ['A traditional market in a un-traditional way - neat, clean and coffee inside! 有趣的台北天母士東市場'](https://steemit.com/@deanliu/a-traditional-market-in-a-un-traditional-way-neat-clean-and-coffee-inside)

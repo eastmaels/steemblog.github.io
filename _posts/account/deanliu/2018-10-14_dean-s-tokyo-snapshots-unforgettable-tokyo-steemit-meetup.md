@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Unforgettable Tokyo Steemit Meetup!"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Unforgettable Tokyo Steemit Meetup!'
 permlink: dean-s-tokyo-snapshots-unforgettable-tokyo-steemit-meetup
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-14 15:50:42
 categories:
 - meetup
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmca7KDsDcLZqR7XwaoiThCgRgJhWt4tAPHvFnqokMFugN/DSC_6280.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmca7KDsDcLZqR7XwaoiThCgRgJhWt4tAPHvFnqokMFugN/DSC_6280.JPG'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Unforgettable Tokyo Steemit Meetup!](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-unforgettable-tokyo-steemit-meetup)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Unforgettable Tokyo Steemit Meetup!'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-unforgettable-tokyo-steemit-meetup)

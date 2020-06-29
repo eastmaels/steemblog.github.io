@@ -1,10 +1,11 @@
 
 ---
-title: "WE NEED SPORTS BET ON STEEM! Do you agree too!?"
+title: 'WE NEED SPORTS BET ON STEEM! Do you agree too!?'
 permlink: we-need-sports-bet-on-steem-do-you-agree-too
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-18 09:21:00
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - gambling
 - busy
 - nba
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/lxQLRo0R-E89EA2E5B995E5BFABE785A7202019-04-1620E4B88BE58D881.27.35.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/lxQLRo0R-E89EA2E5B995E5BFABE785A7202019-04-1620E4B88BE58D881.27.35.png'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ I don't have the energy or time to do this, so I write this post and hope someon
 
 - - -
 
-This page is synchronized from the post: [WE NEED SPORTS BET ON STEEM! Do you agree too!?](https://steemit.com/@deanliu/we-need-sports-bet-on-steem-do-you-agree-too)
+This page is synchronized from the post: ['WE NEED SPORTS BET ON STEEM! Do you agree too!?'](https://steemit.com/@deanliu/we-need-sports-bet-on-steem-do-you-agree-too)

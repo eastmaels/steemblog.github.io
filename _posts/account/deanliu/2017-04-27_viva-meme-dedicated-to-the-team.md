@@ -1,10 +1,11 @@
 
 ---
-title: "VIVA meme - dedicated to the team"
+title: 'VIVA meme - dedicated to the team'
 permlink: viva-meme-dedicated-to-the-team
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-27 08:04:21
 categories:
 - meme
@@ -14,7 +15,7 @@ tags:
 - ico
 - vivacoin
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [VIVA meme - dedicated to the team](https://steemit.com/@deanliu/viva-meme-dedicated-to-the-team)
+This page is synchronized from the post: ['VIVA meme - dedicated to the team'](https://steemit.com/@deanliu/viva-meme-dedicated-to-the-team)

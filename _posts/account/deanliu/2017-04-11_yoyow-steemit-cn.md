@@ -1,10 +1,11 @@
 
 ---
-title: "YOYOW 與 Steemit/CN 的競爭？一個茶館的觀點"
+title: 'YOYOW 與 Steemit/CN 的競爭？一個茶館的觀點'
 permlink: yoyow-steemit-cn
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-11 07:54:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - yoyow
 - laodr-teahouse
 - blockchain
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [YOYOW 與 Steemit/CN 的競爭？一個茶館的觀點](https://steemit.com/@deanliu/yoyow-steemit-cn)
+This page is synchronized from the post: ['YOYOW 與 Steemit/CN 的競爭？一個茶館的觀點'](https://steemit.com/@deanliu/yoyow-steemit-cn)

@@ -1,10 +1,11 @@
 
 ---
-title: "A Review of Din Tai Fung steemitblogs and about its FIRST store"
+title: 'A Review of Din Tai Fung steemitblogs and about its FIRST store'
 permlink: a-review-of-din-tai-fung-steemitblogs-and-about-its-first-store
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-25 08:17:36
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - dintaifung
 - steemit
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Review of Din Tai Fung steemitblogs and about its FIRST store](https://steemit.com/@deanliu/a-review-of-din-tai-fung-steemitblogs-and-about-its-first-store)
+This page is synchronized from the post: ['A Review of Din Tai Fung steemitblogs and about its FIRST store'](https://steemit.com/@deanliu/a-review-of-din-tai-fung-steemitblogs-and-about-its-first-store)

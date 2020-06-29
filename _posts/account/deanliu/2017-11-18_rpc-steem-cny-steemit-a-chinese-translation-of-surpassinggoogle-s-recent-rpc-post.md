@@ -1,10 +1,11 @@
 
 ---
-title: "[新建立的完整RPC公開節點，讓Steem生態系更多元，促進Steemit成長] - A Chinese translation of @surpassinggoogle's recent RPC post"
+title: '[新建立的完整RPC公開節點，讓Steem生態系更多元，促進Steemit成長] - A Chinese translation of @surpassinggoogle''s recent RPC post'
 permlink: rpc-steem-cny-steemit-a-chinese-translation-of-surpassinggoogle-s-recent-rpc-post
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-18 16:54:39
 categories:
 - witness-update
@@ -14,7 +15,7 @@ tags:
 - steemdev
 - steem
 - cn
-thumbnail: https://steemitimages.com/0x0/https://i.imgur.com/Mba3kdq.png
+thumbnail: 'https://steemitimages.com/0x0/https://i.imgur.com/Mba3kdq.png'
 sidebar:
     right:
         sticky: true
@@ -158,4 +159,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[新建立的完整RPC公開節點，讓Steem生態系更多元，促進Steemit成長] - A Chinese translation of @surpassinggoogle's recent RPC post](https://steemit.com/@deanliu/rpc-steem-cny-steemit-a-chinese-translation-of-surpassinggoogle-s-recent-rpc-post)
+This page is synchronized from the post: ['[新建立的完整RPC公開節點，讓Steem生態系更多元，促進Steemit成長] - A Chinese translation of @surpassinggoogle''s recent RPC post'](https://steemit.com/@deanliu/rpc-steem-cny-steemit-a-chinese-translation-of-surpassinggoogle-s-recent-rpc-post)

@@ -1,10 +1,11 @@
 
 ---
-title: "Testing Posting on Busy with Error Message"
+title: 'Testing Posting on Busy with Error Message'
 permlink: testing-posting-on-busy-with-error-message
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-24 02:15:36
 categories:
 - busy
@@ -12,7 +13,7 @@ tags:
 - busy
 - bug
 - error
-thumbnail: https://ipfs.busy.org/ipfs/QmR62j8PWVEVG1g1qBiSpc6vuezGZ8kFP9KMfsBGY3HVxa
+thumbnail: 'https://ipfs.busy.org/ipfs/QmR62j8PWVEVG1g1qBiSpc6vuezGZ8kFP9KMfsBGY3HVxa'
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ So, the question still holds.
 
 - - -
 
-This page is synchronized from the post: [Testing Posting on Busy with Error Message](https://steemit.com/@deanliu/testing-posting-on-busy-with-error-message)
+This page is synchronized from the post: ['Testing Posting on Busy with Error Message'](https://steemit.com/@deanliu/testing-posting-on-busy-with-error-message)

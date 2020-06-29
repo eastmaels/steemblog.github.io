@@ -1,10 +1,11 @@
 
 ---
-title: "Treat of Tokyo 2 - a collection of cuisine, see what the city can offer you..."
+title: 'Treat of Tokyo 2 - a collection of cuisine, see what the city can offer you...'
 permlink: treat-of-tokyo-2-a-collection-of-cuisine-see-what-the-city-can-offer-you
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-26 06:37:18
 categories:
 - cuisine
@@ -14,7 +15,7 @@ tags:
 - japan
 - tokyo
 - noodles
-thumbnail: //i.imgsafe.org/702700bc29.jpg
+thumbnail: '//i.imgsafe.org/702700bc29.jpg'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Treat of Tokyo 2 - a collection of cuisine, see what the city can offer you...](https://steemit.com/@deanliu/treat-of-tokyo-2-a-collection-of-cuisine-see-what-the-city-can-offer-you)
+This page is synchronized from the post: ['Treat of Tokyo 2 - a collection of cuisine, see what the city can offer you...'](https://steemit.com/@deanliu/treat-of-tokyo-2-a-collection-of-cuisine-see-what-the-city-can-offer-you)

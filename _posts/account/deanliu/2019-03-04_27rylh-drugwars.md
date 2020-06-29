@@ -1,10 +1,11 @@
 
 ---
-title: "[閒聊DrugWars] 資源邏輯的轉換"
+title: '[閒聊DrugWars] 資源邏輯的轉換'
 permlink: 27rylh-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-04 06:31:45
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - fun
-thumbnail: https://ipfs.busy.org/ipfs/QmX8WVYkPbLJE2VRBLdzLxMCKogq4z1zyzA42fzPSsePMS
+thumbnail: 'https://ipfs.busy.org/ipfs/QmX8WVYkPbLJE2VRBLdzLxMCKogq4z1zyzA42fzPSsePMS'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[閒聊DrugWars] 資源邏輯的轉換](https://steemit.com/@deanliu/27rylh-drugwars)
+This page is synchronized from the post: ['[閒聊DrugWars] 資源邏輯的轉換'](https://steemit.com/@deanliu/27rylh-drugwars)

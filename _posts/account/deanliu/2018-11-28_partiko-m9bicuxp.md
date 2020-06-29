@@ -1,10 +1,11 @@
 
 ---
-title: "祝賀Partiko達標與一些建議 "
+title: '祝賀Partiko達標與一些建議 '
 permlink: partiko-m9bicuxp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-28 02:29:09
 categories:
 - partiko
@@ -12,7 +13,7 @@ tags:
 - partiko
 - steem
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmdP6jt8UvbX1XCPV6E3fgYSPR6WRKGnGKc27hRimiYpcM/Banner.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmdP6jt8UvbX1XCPV6E3fgYSPR6WRKGnGKc27hRimiYpcM/Banner.png'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [祝賀Partiko達標與一些建議 ](https://steemit.com/@deanliu/partiko-m9bicuxp)
+This page is synchronized from the post: ['祝賀Partiko達標與一些建議 '](https://steemit.com/@deanliu/partiko-m9bicuxp)

@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] ✂ [MYOT - 自製玩具系列] 跟著喬治玩虹吸"
+title: '[D&TT] ✂ [MYOT - 自製玩具系列] 跟著喬治玩虹吸'
 permlink: d-and-tt-myot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-18 07:12:03
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - myot
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmVTt4haLXbHtEAXCzzfbzi2voCLHBusQHEoKYe4xJGsQ8/DSC_6361.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmVTt4haLXbHtEAXCzzfbzi2voCLHBusQHEoKYe4xJGsQ8/DSC_6361.JPG'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ TT玩得挺開心的～～ 他為我為什麼，我只能一直說是重力造�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] ✂ [MYOT - 自製玩具系列] 跟著喬治玩虹吸](https://steemit.com/@deanliu/d-and-tt-myot)
+This page is synchronized from the post: ['[D&TT] ✂ [MYOT - 自製玩具系列] 跟著喬治玩虹吸'](https://steemit.com/@deanliu/d-and-tt-myot)

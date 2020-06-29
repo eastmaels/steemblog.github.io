@@ -1,10 +1,11 @@
 
 ---
-title: "EOS的主網上線組(EMLG)全數投票無異義通過，進入第三階段，即將開放投BP！"
+title: 'EOS的主網上線組(EMLG)全數投票無異義通過，進入第三階段，即將開放投BP！'
 permlink: eos-emlg-bp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-09 04:22:57
 categories:
 - eos
@@ -14,7 +15,7 @@ tags:
 - mainnet
 - cn
 - news
-thumbnail: https://cdn.steemitimages.com/DQmSF35xNqsbpQi9A6xBGSNNXJLtiCSzjmU9cxU9EUiEtw7/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-09%20%E4%B8%8B%E5%8D%8812.13.46.png
+thumbnail: 'https://cdn.steemitimages.com/DQmSF35xNqsbpQi9A6xBGSNNXJLtiCSzjmU9cxU9EUiEtw7/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-06-09%20%E4%B8%8B%E5%8D%8812.13.46.png'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ EOS幣價，似乎也受到激勵，往上漲了一些喔！
 
 - - -
 
-This page is synchronized from the post: [EOS的主網上線組(EMLG)全數投票無異義通過，進入第三階段，即將開放投BP！](https://steemit.com/@deanliu/eos-emlg-bp)
+This page is synchronized from the post: ['EOS的主網上線組(EMLG)全數投票無異義通過，進入第三階段，即將開放投BP！'](https://steemit.com/@deanliu/eos-emlg-bp)

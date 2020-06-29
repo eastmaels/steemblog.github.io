@@ -1,17 +1,18 @@
 
 ---
-title: "Participating the Partiko party"
+title: 'Participating the Partiko party'
 permlink: participating-the-partiko-party-kxkpo5iq
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-22 01:43:12
 categories:
 - partiko
 tags:
 - partiko
 - steem
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/853f6d03af8e8786b8d1a7924e08069c7c39a1c0.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/853f6d03af8e8786b8d1a7924e08069c7c39a1c0.png'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Participating the Partiko party](https://steemit.com/@deanliu/participating-the-partiko-party-kxkpo5iq)
+This page is synchronized from the post: ['Participating the Partiko party'](https://steemit.com/@deanliu/participating-the-partiko-party-kxkpo5iq)

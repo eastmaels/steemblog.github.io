@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Religion and Death"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Religion and Death'
 permlink: dean-s-tokyo-snapshots-religion-and-death
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-15 01:10:09
 categories:
 - culture
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - death
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/68ff5242eb45516f762f6fcea1084e83fb259f0e.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/68ff5242eb45516f762f6fcea1084e83fb259f0e.png'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Religion and Death](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-religion-and-death)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Religion and Death'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-religion-and-death)

@@ -1,10 +1,11 @@
 
 ---
-title: "LOGIC BEHIND FLAGGING - MEME EXPRESSIONS"
+title: 'LOGIC BEHIND FLAGGING - MEME EXPRESSIONS'
 permlink: logic-behind-flagging-meme-expressions
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-11 08:53:27
 categories:
 - funny
@@ -14,7 +15,7 @@ tags:
 - meme
 - steemit
 - newbie
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ This <em><strong>meme series</strong></em> is created for you. While you laugh (
 
 - - -
 
-This page is synchronized from the post: [LOGIC BEHIND FLAGGING - MEME EXPRESSIONS](https://steemit.com/@deanliu/logic-behind-flagging-meme-expressions)
+This page is synchronized from the post: ['LOGIC BEHIND FLAGGING - MEME EXPRESSIONS'](https://steemit.com/@deanliu/logic-behind-flagging-meme-expressions)

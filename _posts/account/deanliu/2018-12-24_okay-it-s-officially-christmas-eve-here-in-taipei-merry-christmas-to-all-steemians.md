@@ -1,10 +1,11 @@
 
 ---
-title: "Okay, it's officially Christmas eve here in Taipei ... Merry Christmas to all Steemians!"
+title: 'Okay, it''s officially Christmas eve here in Taipei ... Merry Christmas to all Steemians!'
 permlink: okay-it-s-officially-christmas-eve-here-in-taipei-merry-christmas-to-all-steemians
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-24 12:53:03
 categories:
 - christmas
@@ -12,7 +13,7 @@ tags:
 - christmas
 - greetings
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmckziozyJGC3MgKEiwf6X4m3KxdfP88ZmLp1nHEUwjkQq
+thumbnail: 'https://ipfs.busy.org/ipfs/QmckziozyJGC3MgKEiwf6X4m3KxdfP88ZmLp1nHEUwjkQq'
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ My son has grown to question if Santa really exists (quoting his classmate and s
 
 - - -
 
-This page is synchronized from the post: [Okay, it's officially Christmas eve here in Taipei ... Merry Christmas to all Steemians!](https://steemit.com/@deanliu/okay-it-s-officially-christmas-eve-here-in-taipei-merry-christmas-to-all-steemians)
+This page is synchronized from the post: ['Okay, it''s officially Christmas eve here in Taipei ... Merry Christmas to all Steemians!'](https://steemit.com/@deanliu/okay-it-s-officially-christmas-eve-here-in-taipei-merry-christmas-to-all-steemians)

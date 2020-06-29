@@ -1,10 +1,11 @@
 
 ---
-title: "🚉 [輕旅行系列] 北投附近，吃喝 🚉  [Travel Around Taiwan] Bite and Drink near Beitou"
+title: '🚉 [輕旅行系列] 北投附近，吃喝 🚉  [Travel Around Taiwan] Bite and Drink near Beitou'
 permlink: travel-around-taiwan-bite-and-drink-near-beitou
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-31 09:34:42
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - photography
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -104,4 +105,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🚉 [輕旅行系列] 北投附近，吃喝 🚉  [Travel Around Taiwan] Bite and Drink near Beitou](https://steemit.com/@deanliu/travel-around-taiwan-bite-and-drink-near-beitou)
+This page is synchronized from the post: ['🚉 [輕旅行系列] 北投附近，吃喝 🚉  [Travel Around Taiwan] Bite and Drink near Beitou'](https://steemit.com/@deanliu/travel-around-taiwan-bite-and-drink-near-beitou)

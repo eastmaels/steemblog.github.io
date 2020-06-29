@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 土風炉 六本木 Tofuro Roppongi"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 土風炉 六本木 Tofuro Roppongi'
 permlink: dean-s-tokyo-snapshots-tofuro-roppongi
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-09 07:14:12
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - food
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmRVGXgfYyXUgf5MHwCFrne3ApVHpKhAP82VRZ2k2TWZUj/DSC_5637.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmRVGXgfYyXUgf5MHwCFrne3ApVHpKhAP82VRZ2k2TWZUj/DSC_5637.JPG'
 sidebar:
     right:
         sticky: true
@@ -156,4 +157,4 @@ Time to say goodbye...
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 土風炉 六本木 Tofuro Roppongi](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-tofuro-roppongi)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 土風炉 六本木 Tofuro Roppongi'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-tofuro-roppongi)

@@ -1,10 +1,11 @@
 
 ---
-title: "My Food Log - Jin Din Rou in Taipei [台北京鼎樓]"
+title: 'My Food Log - Jin Din Rou in Taipei [台北京鼎樓]'
 permlink: my-food-log-jin-din-rou-at-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-03 06:09:51
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cuisine
 - myfoodlog
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -72,4 +73,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Food Log - Jin Din Rou in Taipei [台北京鼎樓]](https://steemit.com/@deanliu/my-food-log-jin-din-rou-at-taipei)
+This page is synchronized from the post: ['My Food Log - Jin Din Rou in Taipei [台北京鼎樓]'](https://steemit.com/@deanliu/my-food-log-jin-din-rou-at-taipei)

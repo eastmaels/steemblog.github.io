@@ -1,10 +1,11 @@
 
 ---
-title: "📷 SteemitPhotoChallenge # 16 -- A Chinese Style Banquet"
+title: '📷 SteemitPhotoChallenge # 16 -- A Chinese Style Banquet'
 permlink: steemitphotochallenge-16-a-chinese-style-banquet
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-08 06:32:54
 categories:
 - steemitphotochallenge
@@ -13,7 +14,7 @@ tags:
 - photography
 - food
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [📷 SteemitPhotoChallenge # 16 -- A Chinese Style Banquet](https://steemit.com/@deanliu/steemitphotochallenge-16-a-chinese-style-banquet)
+This page is synchronized from the post: ['📷 SteemitPhotoChallenge # 16 -- A Chinese Style Banquet'](https://steemit.com/@deanliu/steemitphotochallenge-16-a-chinese-style-banquet)

@@ -1,10 +1,11 @@
 
 ---
-title: "Kyber Network: A Platform for Decentralized Finance."
+title: 'Kyber Network: A Platform for Decentralized Finance.'
 permlink: kyber-network-a-platform-for-decentralized-finance
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-17 06:00:45
 categories:
 - ethereum
@@ -14,7 +15,7 @@ tags:
 - kyber-network
 - cryptocurrency
 - dex
-thumbnail: https://cdn.steemitimages.com/DQmR7BDi1jJZQnhPKtnhLE4QP937XTAHcXYw4C1nfACC5kp/24245952-crowd-of-people-in-times-square-in-new-york-city.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmR7BDi1jJZQnhPKtnhLE4QP937XTAHcXYw4C1nfACC5kp/24245952-crowd-of-people-in-times-square-in-new-york-city.jpg'
 sidebar:
     right:
         sticky: true
@@ -148,4 +149,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [Kyber Network: A Platform for Decentralized Finance.](https://steemit.com/@deanliu/kyber-network-a-platform-for-decentralized-finance)
+This page is synchronized from the post: ['Kyber Network: A Platform for Decentralized Finance.'](https://steemit.com/@deanliu/kyber-network-a-platform-for-decentralized-finance)

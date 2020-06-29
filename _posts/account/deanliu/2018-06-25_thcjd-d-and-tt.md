@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 身心俱疲的累到骨髓裡"
+title: '[D&TT] 身心俱疲的累到骨髓裡'
 permlink: thcjd-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-25 13:56:18
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - kids
 - writing
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmTgLrzbwcj5BNHV4LEeAPPpSypBPpcJoS554YEQAvW5bU/child-817373_640%20(1).jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmTgLrzbwcj5BNHV4LEeAPPpSypBPpcJoS554YEQAvW5bU/child-817373_640%20(1).jpg'
 sidebar:
     right:
         sticky: true
@@ -80,4 +81,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 身心俱疲的累到骨髓裡](https://steemit.com/@deanliu/thcjd-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 身心俱疲的累到骨髓裡'](https://steemit.com/@deanliu/thcjd-d-and-tt)

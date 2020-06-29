@@ -1,10 +1,11 @@
 
 ---
-title: "[學生美食] MINT PASTA 綠薄荷麵食坊"
+title: '[學生美食] MINT PASTA 綠薄荷麵食坊'
 permlink: mint-pasta
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-06 13:22:45
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - taipei
-thumbnail: https://cdn.steemitimages.com/DQmbAhGtTQEdjoK5RHyGheVn96KWiEXbAmjBML34QEBnxn3/DSC_5763.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmbAhGtTQEdjoK5RHyGheVn96KWiEXbAmjBML34QEBnxn3/DSC_5763.JPG'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[學生美食] MINT PASTA 綠薄荷麵食坊](https://steemit.com/@deanliu/mint-pasta)
+This page is synchronized from the post: ['[學生美食] MINT PASTA 綠薄荷麵食坊'](https://steemit.com/@deanliu/mint-pasta)

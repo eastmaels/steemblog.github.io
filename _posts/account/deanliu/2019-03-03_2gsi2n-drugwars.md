@@ -1,10 +1,11 @@
 
 ---
-title: "[閒聊DrugWars] 殘酷的戰爭"
+title: '[閒聊DrugWars] 殘酷的戰爭'
 permlink: 2gsi2n-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-03 07:25:57
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - fun
-thumbnail: https://ipfs.busy.org/ipfs/QmT3FCP2AChQfzwBoUcXGGEVRyoA7di5CQAuyHF1iGnEsB
+thumbnail: 'https://ipfs.busy.org/ipfs/QmT3FCP2AChQfzwBoUcXGGEVRyoA7di5CQAuyHF1iGnEsB'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[閒聊DrugWars] 殘酷的戰爭](https://steemit.com/@deanliu/2gsi2n-drugwars)
+This page is synchronized from the post: ['[閒聊DrugWars] 殘酷的戰爭'](https://steemit.com/@deanliu/2gsi2n-drugwars)

@@ -1,10 +1,11 @@
 
 ---
-title: "Take a stroll in a part of old Taipei around Main Station 台北車站商圈之公園散步"
+title: 'Take a stroll in a part of old Taipei around Main Station 台北車站商圈之公園散步'
 permlink: take-a-stroll-in-a-part-of-old-taipei-around-main-station
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-09 12:41:57
 categories:
 - travel
@@ -13,7 +14,7 @@ tags:
 - taiwan
 - photography
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Take a stroll in a part of old Taipei around Main Station 台北車站商圈之公園散步](https://steemit.com/@deanliu/take-a-stroll-in-a-part-of-old-taipei-around-main-station)
+This page is synchronized from the post: ['Take a stroll in a part of old Taipei around Main Station 台北車站商圈之公園散步'](https://steemit.com/@deanliu/take-a-stroll-in-a-part-of-old-taipei-around-main-station)

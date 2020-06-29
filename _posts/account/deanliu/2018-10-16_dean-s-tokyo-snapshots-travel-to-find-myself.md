@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Travel to find myself"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Travel to find myself'
 permlink: dean-s-tokyo-snapshots-travel-to-find-myself
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-16 14:03:00
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - funny
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/e42a812a49675320f8ead306ea584b634a879fc2.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/e42a812a49675320f8ead306ea584b634a879fc2.png'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Travel to find myself](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-travel-to-find-myself)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Travel to find myself'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-travel-to-find-myself)

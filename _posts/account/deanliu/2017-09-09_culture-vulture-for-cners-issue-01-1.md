@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 01 ｜《文化讀癮．一週譯報》第1期：南國的草原部落．北國的田園牧歌"
+title: 'Culture Vulture for CNers Issue 01 ｜《文化讀癮．一週譯報》第1期：南國的草原部落．北國的田園牧歌'
 permlink: culture-vulture-for-cners-issue-01-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-09 05:56:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - life
-thumbnail: https://steemitimages.com/DQmWWCg3Rms7wmCZ2hDr5bzefMrpQWXLVEwzBamZ38x1awp/banner01.jpg
+thumbnail: 'https://steemitimages.com/DQmWWCg3Rms7wmCZ2hDr5bzefMrpQWXLVEwzBamZ38x1awp/banner01.jpg'
 sidebar:
     right:
         sticky: true
@@ -198,4 +199,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 01 ｜《文化讀癮．一週譯報》第1期：南國的草原部落．北國的田園牧歌](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-01-1)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 01 ｜《文化讀癮．一週譯報》第1期：南國的草原部落．北國的田園牧歌'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-01-1)

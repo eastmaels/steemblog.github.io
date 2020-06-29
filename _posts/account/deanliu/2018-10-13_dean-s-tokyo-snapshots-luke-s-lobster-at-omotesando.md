@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Luke's Lobster at Omotesando"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Luke''s Lobster at Omotesando'
 permlink: dean-s-tokyo-snapshots-luke-s-lobster-at-omotesando
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-13 09:15:00
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - japan
 - busy
 - tasteem
-thumbnail: https://ipfs.busy.org/ipfs/QmSatdAVoxrnj3GgGFCvUSG8dRipLV7Er6nsLFrypdM7yT
+thumbnail: 'https://ipfs.busy.org/ipfs/QmSatdAVoxrnj3GgGFCvUSG8dRipLV7Er6nsLFrypdM7yT'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Luke's Lobster at Omotesando](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-luke-s-lobster-at-omotesando)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Luke''s Lobster at Omotesando'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-luke-s-lobster-at-omotesando)

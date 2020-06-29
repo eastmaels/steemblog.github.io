@@ -1,10 +1,11 @@
 
 ---
-title: "Sounds from heaven - introducing an indigenous song from Amis people in eastern Taiwan"
+title: 'Sounds from heaven - introducing an indigenous song from Amis people in eastern Taiwan'
 permlink: sounds-from-heaven-introducing-an-indigenous-song-from-amis-people-in-eastern-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-30 05:03:24
 categories:
 - music
@@ -13,7 +14,7 @@ tags:
 - indigenous
 - amis
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -31,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Sounds from heaven - introducing an indigenous song from Amis people in eastern Taiwan](https://steemit.com/@deanliu/sounds-from-heaven-introducing-an-indigenous-song-from-amis-people-in-eastern-taiwan)
+This page is synchronized from the post: ['Sounds from heaven - introducing an indigenous song from Amis people in eastern Taiwan'](https://steemit.com/@deanliu/sounds-from-heaven-introducing-an-indigenous-song-from-amis-people-in-eastern-taiwan)

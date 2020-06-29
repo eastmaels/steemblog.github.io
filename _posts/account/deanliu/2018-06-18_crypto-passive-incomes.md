@@ -1,10 +1,11 @@
 
 ---
-title: "Crypto Passive Incomes? 幣圈的被動式收入？"
+title: 'Crypto Passive Incomes? 幣圈的被動式收入？'
 permlink: crypto-passive-incomes
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-18 00:59:48
 categories:
 - crypto
@@ -14,7 +15,7 @@ tags:
 - dtube
 - news
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmYjZNuFok8tJNaTyrn45XfYhpwosWeHBdfz6AamiJj8hN/iceland-1751463_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmYjZNuFok8tJNaTyrn45XfYhpwosWeHBdfz6AamiJj8hN/iceland-1751463_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ You are welcome to share any experiences you have regarding earning passive cryp
 
 - - -
 
-This page is synchronized from the post: [Crypto Passive Incomes? 幣圈的被動式收入？](https://steemit.com/@deanliu/crypto-passive-incomes)
+This page is synchronized from the post: ['Crypto Passive Incomes? 幣圈的被動式收入？'](https://steemit.com/@deanliu/crypto-passive-incomes)

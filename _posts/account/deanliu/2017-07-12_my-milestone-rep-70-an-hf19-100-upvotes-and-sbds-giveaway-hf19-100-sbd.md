@@ -1,10 +1,11 @@
 
 ---
-title: "🎈 My Milestone - Rep 70 - An HF19, 100% Upvotes and SBDs Giveaway!! 🎈 慶賀七十，HF19，100%點讚與SBD大贈送！🎈"
+title: '🎈 My Milestone - Rep 70 - An HF19, 100% Upvotes and SBDs Giveaway!! 🎈 慶賀七十，HF19，100%點讚與SBD大贈送！🎈'
 permlink: my-milestone-rep-70-an-hf19-100-upvotes-and-sbds-giveaway-hf19-100-sbd
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-12 10:58:06
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - giveaway
 - hf19
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🎈 My Milestone - Rep 70 - An HF19, 100% Upvotes and SBDs Giveaway!! 🎈 慶賀七十，HF19，100%點讚與SBD大贈送！🎈](https://steemit.com/@deanliu/my-milestone-rep-70-an-hf19-100-upvotes-and-sbds-giveaway-hf19-100-sbd)
+This page is synchronized from the post: ['🎈 My Milestone - Rep 70 - An HF19, 100% Upvotes and SBDs Giveaway!! 🎈 慶賀七十，HF19，100%點讚與SBD大贈送！🎈'](https://steemit.com/@deanliu/my-milestone-rep-70-an-hf19-100-upvotes-and-sbds-giveaway-hf19-100-sbd)

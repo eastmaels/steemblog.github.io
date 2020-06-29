@@ -1,10 +1,11 @@
 
 ---
-title: "Galilei Family Brunch at Taipei Xinyi has a fun painting  台北伽立略家庭餐廳的「萌那麗莎 」"
+title: 'Galilei Family Brunch at Taipei Xinyi has a fun painting  台北伽立略家庭餐廳的「萌那麗莎 」'
 permlink: galilei-family-brunch-at-taipei-xinyi-has-a-fun-painting
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-20 06:31:09
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - funny
 - art
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Galilei Family Brunch at Taipei Xinyi has a fun painting  台北伽立略家庭餐廳的「萌那麗莎 」](https://steemit.com/@deanliu/galilei-family-brunch-at-taipei-xinyi-has-a-fun-painting)
+This page is synchronized from the post: ['Galilei Family Brunch at Taipei Xinyi has a fun painting  台北伽立略家庭餐廳的「萌那麗莎 」'](https://steemit.com/@deanliu/galilei-family-brunch-at-taipei-xinyi-has-a-fun-painting)

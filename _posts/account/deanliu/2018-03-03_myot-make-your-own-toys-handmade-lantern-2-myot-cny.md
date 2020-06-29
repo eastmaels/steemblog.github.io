@@ -1,10 +1,11 @@
 
 ---
-title: "✂ [MYOT - Make Your Own Toys!] Handmade Lantern 2!! ✂ [MYOT 自製玩具系列] 呦厚，元宵節提燈籠啊！✂"
+title: '✂ [MYOT - Make Your Own Toys!] Handmade Lantern 2!! ✂ [MYOT 自製玩具系列] 呦厚，元宵節提燈籠啊！✂'
 permlink: myot-make-your-own-toys-handmade-lantern-2-myot-cny
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-03 13:29:54
 categories:
 - myot
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - life
-thumbnail: https://steemitimages.com/DQmUR7sR6QVoyu7AC8YJnn32U8EKPqXGexbgKACo6KriPqb/DSC_4475.JPG
+thumbnail: 'https://steemitimages.com/DQmUR7sR6QVoyu7AC8YJnn32U8EKPqXGexbgKACo6KriPqb/DSC_4475.JPG'
 sidebar:
     right:
         sticky: true
@@ -93,4 +94,4 @@ Then, let's see how it looks in the dark. Tada!~~~~
 
 - - -
 
-This page is synchronized from the post: [✂ [MYOT - Make Your Own Toys!] Handmade Lantern 2!! ✂ [MYOT 自製玩具系列] 呦厚，元宵節提燈籠啊！✂](https://steemit.com/@deanliu/myot-make-your-own-toys-handmade-lantern-2-myot-cny)
+This page is synchronized from the post: ['✂ [MYOT - Make Your Own Toys!] Handmade Lantern 2!! ✂ [MYOT 自製玩具系列] 呦厚，元宵節提燈籠啊！✂'](https://steemit.com/@deanliu/myot-make-your-own-toys-handmade-lantern-2-myot-cny)

@@ -1,10 +1,11 @@
 
 ---
-title: "Chicken Attack to start the Year of Chicken  雞年伊始之雞雞攻擊"
+title: 'Chicken Attack to start the Year of Chicken  雞年伊始之雞雞攻擊'
 permlink: chicken-attack-to-start-the-year-of-chicken
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-02-07 03:43:36
 categories:
 - meme
@@ -14,7 +15,7 @@ tags:
 - funny
 - japan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Chicken Attack to start the Year of Chicken  雞年伊始之雞雞攻擊](https://steemit.com/@deanliu/chicken-attack-to-start-the-year-of-chicken)
+This page is synchronized from the post: ['Chicken Attack to start the Year of Chicken  雞年伊始之雞雞攻擊'](https://steemit.com/@deanliu/chicken-attack-to-start-the-year-of-chicken)

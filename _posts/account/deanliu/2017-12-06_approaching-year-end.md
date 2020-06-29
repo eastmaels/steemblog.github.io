@@ -1,10 +1,11 @@
 
 ---
-title: "歲末之思  Approaching year-end"
+title: '歲末之思  Approaching year-end'
 permlink: approaching-year-end
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-06 12:11:21
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cn-writing
 - life
 - y2017
-thumbnail: https://steemitimages.com/DQmb3Hm9qKMYEZSMWVSBDnMJMK4zA79jkcXM2KcJdNJEwaz/agenda-1928416_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmb3Hm9qKMYEZSMWVSBDnMJMK4zA79jkcXM2KcJdNJEwaz/agenda-1928416_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [歲末之思  Approaching year-end](https://steemit.com/@deanliu/approaching-year-end)
+This page is synchronized from the post: ['歲末之思  Approaching year-end'](https://steemit.com/@deanliu/approaching-year-end)

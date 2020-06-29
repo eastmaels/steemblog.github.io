@@ -1,10 +1,11 @@
 
 ---
-title: "dashwallets.com doesn't have wallets for DASH ... Ouch!"
+title: 'dashwallets.com doesn''t have wallets for DASH ... Ouch!'
 permlink: dashwallets-com-doesn-t-have-wallets-for-dash-ouch
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-20 02:40:57
 categories:
 - funny
@@ -13,7 +14,7 @@ tags:
 - dash
 - wallet
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [dashwallets.com doesn't have wallets for DASH ... Ouch!](https://steemit.com/@deanliu/dashwallets-com-doesn-t-have-wallets-for-dash-ouch)
+This page is synchronized from the post: ['dashwallets.com doesn''t have wallets for DASH ... Ouch!'](https://steemit.com/@deanliu/dashwallets-com-doesn-t-have-wallets-for-dash-ouch)

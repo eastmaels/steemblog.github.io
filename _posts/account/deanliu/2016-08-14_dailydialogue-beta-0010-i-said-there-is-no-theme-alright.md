@@ -1,17 +1,18 @@
 
 ---
-title: "DailyDialogue (beta) #0010 I said there is no theme alright?"
+title: 'DailyDialogue (beta) #0010 I said there is no theme alright?'
 permlink: dailydialogue-beta-0010-i-said-there-is-no-theme-alright
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-14 07:31:09
 categories:
 - dailydialogue
 tags:
 - dailydialogue
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DailyDialogue (beta) #0010 I said there is no theme alright?](https://steemit.com/@deanliu/dailydialogue-beta-0010-i-said-there-is-no-theme-alright)
+This page is synchronized from the post: ['DailyDialogue (beta) #0010 I said there is no theme alright?'](https://steemit.com/@deanliu/dailydialogue-beta-0010-i-said-there-is-no-theme-alright)

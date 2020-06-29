@@ -1,10 +1,11 @@
 
 ---
-title: "Highest Alert Steemians! You should expect to see such whale faces in the next 48 hours."
+title: 'Highest Alert Steemians! You should expect to see such whale faces in the next 48 hours.'
 permlink: highest-alert-steemians-you-should-expect-to-see-such-whale-faces-in-the-next-48-hours
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-31 05:50:15
 categories:
 - funny
@@ -14,7 +15,7 @@ tags:
 - meme
 - aprilfools
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Highest Alert Steemians! You should expect to see such whale faces in the next 48 hours.](https://steemit.com/@deanliu/highest-alert-steemians-you-should-expect-to-see-such-whale-faces-in-the-next-48-hours)
+This page is synchronized from the post: ['Highest Alert Steemians! You should expect to see such whale faces in the next 48 hours.'](https://steemit.com/@deanliu/highest-alert-steemians-you-should-expect-to-see-such-whale-faces-in-the-next-48-hours)

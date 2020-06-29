@@ -1,10 +1,11 @@
 
 ---
-title: "麻辣外帶，在家享受－詹記麻辣鍋。Chan Chi Spicy Hot Pot ~~~"
+title: '麻辣外帶，在家享受－詹記麻辣鍋。Chan Chi Spicy Hot Pot ~~~'
 permlink: chan-chi-spicy-hot-pot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-10 11:18:57
 categories:
 - food
@@ -13,7 +14,7 @@ tags:
 - cn
 - cuisine
 - hotpot
-thumbnail: https://steemitimages.com/DQmRx7KmJ58rA6YrdCDUkFFCpkX8NCYt5rn9Bh5USYhKS8b/image.png
+thumbnail: 'https://steemitimages.com/DQmRx7KmJ58rA6YrdCDUkFFCpkX8NCYt5rn9Bh5USYhKS8b/image.png'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ The following photos are from the [facebook of Chan Chi Spicy Hot Pot](https://w
 
 - - -
 
-This page is synchronized from the post: [麻辣外帶，在家享受－詹記麻辣鍋。Chan Chi Spicy Hot Pot ~~~](https://steemit.com/@deanliu/chan-chi-spicy-hot-pot)
+This page is synchronized from the post: ['麻辣外帶，在家享受－詹記麻辣鍋。Chan Chi Spicy Hot Pot ~~~'](https://steemit.com/@deanliu/chan-chi-spicy-hot-pot)

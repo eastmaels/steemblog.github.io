@@ -1,17 +1,18 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Five / 七天黑白挑戰 － 第五天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Five / 七天黑白挑戰 － 第五天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-five-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-13 23:59:45
 categories:
 - sevendaybnwchallenge
 tags:
 - sevendaybnwchallenge
 - photography
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ I nominate @wilkinshui, @ygern and @deanliu. I love breaking rules, and I will b
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Five / 七天黑白挑戰 － 第五天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-five-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Five / 七天黑白挑戰 － 第五天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-five-by-deanliu)

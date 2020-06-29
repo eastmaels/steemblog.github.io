@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Bratislava to & from Prague - the Trains"
+title: 'My Europa Plog - Bratislava to & from Prague - the Trains'
 permlink: my-europa-plog-bratislava-to-and-from-prague-the-trains-2017513t215519648z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-13 19:55:21
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - life
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/YSiU18u.jpg
+thumbnail: 'https://i.imgur.com/YSiU18u.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Bratislava to & from Prague - the Trains](https://steemit.com/@deanliu/my-europa-plog-bratislava-to-and-from-prague-the-trains-2017513t215519648z)
+This page is synchronized from the post: ['My Europa Plog - Bratislava to & from Prague - the Trains'](https://steemit.com/@deanliu/my-europa-plog-bratislava-to-and-from-prague-the-trains-2017513t215519648z)

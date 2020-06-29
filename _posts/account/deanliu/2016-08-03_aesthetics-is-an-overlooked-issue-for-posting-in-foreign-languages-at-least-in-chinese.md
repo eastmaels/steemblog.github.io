@@ -1,10 +1,11 @@
 
 ---
-title: "Aesthetics is an overlooked issue for posting in foreign languages (at least in Chinese)"
+title: 'Aesthetics is an overlooked issue for posting in foreign languages (at least in Chinese)'
 permlink: aesthetics-is-an-overlooked-issue-for-posting-in-foreign-languages-at-least-in-chinese
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-03 08:04:30
 categories:
 - language
@@ -14,7 +15,7 @@ tags:
 - publish
 - cn
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Aesthetics is an overlooked issue for posting in foreign languages (at least in Chinese)](https://steemit.com/@deanliu/aesthetics-is-an-overlooked-issue-for-posting-in-foreign-languages-at-least-in-chinese)
+This page is synchronized from the post: ['Aesthetics is an overlooked issue for posting in foreign languages (at least in Chinese)'](https://steemit.com/@deanliu/aesthetics-is-an-overlooked-issue-for-posting-in-foreign-languages-at-least-in-chinese)

@@ -1,10 +1,11 @@
 
 ---
-title: "Steem Price Might Fall But I Will Still Be Happy Or Even Happier - This Is Why"
+title: 'Steem Price Might Fall But I Will Still Be Happy Or Even Happier - This Is Why'
 permlink: steem-price-might-fall-but-i-will-still-be-happy-or-even-happier-this-is-why
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-13 07:45:57
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - blog
 - writing
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ As a mundane and ordinary blogger/muggle like me, you can just let TIME be your 
 
 - - -
 
-This page is synchronized from the post: [Steem Price Might Fall But I Will Still Be Happy Or Even Happier - This Is Why](https://steemit.com/@deanliu/steem-price-might-fall-but-i-will-still-be-happy-or-even-happier-this-is-why)
+This page is synchronized from the post: ['Steem Price Might Fall But I Will Still Be Happy Or Even Happier - This Is Why'](https://steemit.com/@deanliu/steem-price-might-fall-but-i-will-still-be-happy-or-even-happier-this-is-why)

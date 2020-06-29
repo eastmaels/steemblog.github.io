@@ -1,10 +1,11 @@
 
 ---
-title: "From wall cracks to art - all you need is creativity"
+title: 'From wall cracks to art - all you need is creativity'
 permlink: from-wall-cracks-to-art-all-you-need-is-creativity
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-01-12 14:38:06
 categories:
 - art
@@ -13,7 +14,7 @@ tags:
 - news
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [From wall cracks to art - all you need is creativity](https://steemit.com/@deanliu/from-wall-cracks-to-art-all-you-need-is-creativity)
+This page is synchronized from the post: ['From wall cracks to art - all you need is creativity'](https://steemit.com/@deanliu/from-wall-cracks-to-art-all-you-need-is-creativity)

@@ -1,10 +1,11 @@
 
 ---
-title: "『一男，二女，三門票 - 第二回』-- 第二組  📝  Story Solitaire in CN - Round 2 - Group 2 📝"
+title: '『一男，二女，三門票 - 第二回』-- 第二組  📝  Story Solitaire in CN - Round 2 - Group 2 📝'
 permlink: story-solitaire-in-cn-round-2-group-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-27 14:30:12
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-reader
 - writing
 - story
-thumbnail: https://steemitimages.com/0x0/https://steemitimages.com/DQmeo1sZYZ8788TgXrtoTeXjgxcmqQo25NakWsfj9cizvw4/image.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://steemitimages.com/DQmeo1sZYZ8788TgXrtoTeXjgxcmqQo25NakWsfj9cizvw4/image.jpg'
 sidebar:
     right:
         sticky: true
@@ -108,4 +109,4 @@ https://steemitimages.com/DQmakLHi5PWNYcvsyAyiGkJ4EenBTt3AvCXwy47YCEJcGgC/%E8%9E
 
 - - -
 
-This page is synchronized from the post: [『一男，二女，三門票 - 第二回』-- 第二組  📝  Story Solitaire in CN - Round 2 - Group 2 📝](https://steemit.com/@deanliu/story-solitaire-in-cn-round-2-group-2)
+This page is synchronized from the post: ['『一男，二女，三門票 - 第二回』-- 第二組  📝  Story Solitaire in CN - Round 2 - Group 2 📝'](https://steemit.com/@deanliu/story-solitaire-in-cn-round-2-group-2)

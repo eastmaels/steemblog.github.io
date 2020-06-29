@@ -1,10 +1,11 @@
 
 ---
-title: "Blah Blah Blah on Ba Ba Father's Day - Part 2 – Dad's creation"
+title: 'Blah Blah Blah on Ba Ba Father''s Day - Part 2 – Dad''s creation'
 permlink: blah-blah-blah-on-ba-ba-father-s-day-part-2-dad-s-creation
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-08 09:35:54
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - creation
 - fantasy
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Blah Blah Blah on Ba Ba Father's Day - Part 2 – Dad's creation](https://steemit.com/@deanliu/blah-blah-blah-on-ba-ba-father-s-day-part-2-dad-s-creation)
+This page is synchronized from the post: ['Blah Blah Blah on Ba Ba Father''s Day - Part 2 – Dad''s creation'](https://steemit.com/@deanliu/blah-blah-blah-on-ba-ba-father-s-day-part-2-dad-s-creation)

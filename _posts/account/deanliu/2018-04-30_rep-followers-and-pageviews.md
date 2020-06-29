@@ -1,10 +1,11 @@
 
 ---
-title: "Rep, Followers and Pageviews"
+title: 'Rep, Followers and Pageviews'
 permlink: rep-followers-and-pageviews
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-30 04:00:00
 categories:
 - rep
@@ -14,7 +15,7 @@ tags:
 - pageview
 - steemit
 - busy
-thumbnail: https://steemitimages.com/300x600/https://steemitimages.com/DQmUMmj6ATLhyVoatLEzmYbfpNbEzjgNzCmVNni815PfeEQ/customer-experience-3024488_640.jpg
+thumbnail: 'https://steemitimages.com/300x600/https://steemitimages.com/DQmUMmj6ATLhyVoatLEzmYbfpNbEzjgNzCmVNni815PfeEQ/customer-experience-3024488_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ At the end, let me say something less frustrating - all of the above issues, I t
 
 - - -
 
-This page is synchronized from the post: [Rep, Followers and Pageviews](https://steemit.com/@deanliu/rep-followers-and-pageviews)
+This page is synchronized from the post: ['Rep, Followers and Pageviews'](https://steemit.com/@deanliu/rep-followers-and-pageviews)

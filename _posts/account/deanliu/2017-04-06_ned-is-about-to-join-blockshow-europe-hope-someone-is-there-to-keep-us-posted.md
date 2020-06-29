@@ -1,10 +1,11 @@
 
 ---
-title: "Ned is about to join BlockShow Europe ... Hope someone is there to keep us posted"
+title: 'Ned is about to join BlockShow Europe ... Hope someone is there to keep us posted'
 permlink: ned-is-about-to-join-blockshow-europe-hope-someone-is-there-to-keep-us-posted
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-06 05:27:06
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - steem
 - blockchain
 - ned
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Ned is about to join BlockShow Europe ... Hope someone is there to keep us posted](https://steemit.com/@deanliu/ned-is-about-to-join-blockshow-europe-hope-someone-is-there-to-keep-us-posted)
+This page is synchronized from the post: ['Ned is about to join BlockShow Europe ... Hope someone is there to keep us posted'](https://steemit.com/@deanliu/ned-is-about-to-join-blockshow-europe-hope-someone-is-there-to-keep-us-posted)

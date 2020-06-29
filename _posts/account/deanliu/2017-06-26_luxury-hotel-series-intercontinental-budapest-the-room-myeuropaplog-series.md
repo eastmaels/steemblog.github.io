@@ -1,10 +1,11 @@
 
 ---
-title: "[Luxury Hotel Series] 🏩 Intercontinental Budapest 🏩 The Room - #myeuropaplog series 布達佩斯洲際酒店－歐洲行旅照片記錄系列"
+title: '[Luxury Hotel Series] 🏩 Intercontinental Budapest 🏩 The Room - #myeuropaplog series 布達佩斯洲際酒店－歐洲行旅照片記錄系列'
 permlink: luxury-hotel-series-intercontinental-budapest-the-room-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-26 08:26:12
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - budapest
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -96,4 +97,4 @@ Let's look around the Hotel's surroundings ... </p><p>Located beside the Duna Ri
 
 - - -
 
-This page is synchronized from the post: [[Luxury Hotel Series] 🏩 Intercontinental Budapest 🏩 The Room - #myeuropaplog series 布達佩斯洲際酒店－歐洲行旅照片記錄系列](https://steemit.com/@deanliu/luxury-hotel-series-intercontinental-budapest-the-room-myeuropaplog-series)
+This page is synchronized from the post: ['[Luxury Hotel Series] 🏩 Intercontinental Budapest 🏩 The Room - #myeuropaplog series 布達佩斯洲際酒店－歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/luxury-hotel-series-intercontinental-budapest-the-room-myeuropaplog-series)

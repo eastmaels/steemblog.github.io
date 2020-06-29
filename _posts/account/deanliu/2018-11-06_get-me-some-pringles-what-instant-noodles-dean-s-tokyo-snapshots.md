@@ -1,10 +1,11 @@
 
 ---
-title: "Get me some Pringles ... WHAT!? Instant noodles!? 🍙 Dean's Tokyo Snapshots 🍙"
+title: 'Get me some Pringles ... WHAT!? Instant noodles!? 🍙 Dean''s Tokyo Snapshots 🍙'
 permlink: get-me-some-pringles-what-instant-noodles-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-06 11:44:51
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - food
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/0b7d4cd2d2749d389d306f5d7ebb9eeee573337f.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/0b7d4cd2d2749d389d306f5d7ebb9eeee573337f.png'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [Get me some Pringles ... WHAT!? Instant noodles!? 🍙 Dean's Tokyo Snapshots 🍙](https://steemit.com/@deanliu/get-me-some-pringles-what-instant-noodles-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['Get me some Pringles ... WHAT!? Instant noodles!? 🍙 Dean''s Tokyo Snapshots 🍙'](https://steemit.com/@deanliu/get-me-some-pringles-what-instant-noodles-dean-s-tokyo-snapshots)

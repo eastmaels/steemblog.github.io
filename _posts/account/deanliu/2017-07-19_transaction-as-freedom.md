@@ -1,10 +1,11 @@
 
 ---
-title: "Transaction as Freedom 🌿 操作即自由"
+title: 'Transaction as Freedom 🌿 操作即自由'
 permlink: transaction-as-freedom
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-19 07:51:15
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - freedom
 - censorship
 - cn
-thumbnail: https://steemitimages.com/0x0/https://steemitimages.com/DQmaUs9JKJk2JNsM5VT27UPrXvDPbxWv7PrRCNAgnR19RjG/%E5%A4%A7%E5%93%AD02-80.gif
+thumbnail: 'https://steemitimages.com/0x0/https://steemitimages.com/DQmaUs9JKJk2JNsM5VT27UPrXvDPbxWv7PrRCNAgnR19RjG/%E5%A4%A7%E5%93%AD02-80.gif'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Transaction as Freedom 🌿 操作即自由](https://steemit.com/@deanliu/transaction-as-freedom)
+This page is synchronized from the post: ['Transaction as Freedom 🌿 操作即自由'](https://steemit.com/@deanliu/transaction-as-freedom)

@@ -1,10 +1,11 @@
 
 ---
-title: "Post should have different properties in the future, not just with its content tagged"
+title: 'Post should have different properties in the future, not just with its content tagged'
 permlink: post-should-have-different-properties-in-the-future-not-just-with-its-content-tagged
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-05 07:43:45
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - post
 - tag
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Post should have different properties in the future, not just with its content tagged](https://steemit.com/@deanliu/post-should-have-different-properties-in-the-future-not-just-with-its-content-tagged)
+This page is synchronized from the post: ['Post should have different properties in the future, not just with its content tagged'](https://steemit.com/@deanliu/post-should-have-different-properties-in-the-future-not-just-with-its-content-tagged)

@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #5 — 分散式系統"
+title: 'DA-ChainTalk #5 — 分散式系統'
 permlink: da-chaintalk-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-24 05:41:15
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - distributed-system
 - network
 - cn
-thumbnail: https://pplware.sapo.pt/wp-content/uploads/2015/10/img0_thumb.jpg
+thumbnail: 'https://pplware.sapo.pt/wp-content/uploads/2015/10/img0_thumb.jpg'
 sidebar:
     right:
         sticky: true
@@ -102,4 +103,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #5 — 分散式系統](https://steemit.com/@deanliu/da-chaintalk-5)
+This page is synchronized from the post: ['DA-ChainTalk #5 — 分散式系統'](https://steemit.com/@deanliu/da-chaintalk-5)

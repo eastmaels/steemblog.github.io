@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] Be there"
+title: '[D&TT] Be there'
 permlink: d-and-tt-be-there
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-10 05:18:09
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - sacrifice
-thumbnail: https://ipfs.busy.org/ipfs/QmZx9GEJY7T4ftWvtVYKr642RWwxxApcgeAdRRdgfqiHwV
+thumbnail: 'https://ipfs.busy.org/ipfs/QmZx9GEJY7T4ftWvtVYKr642RWwxxApcgeAdRRdgfqiHwV'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[D&TT] Be there](https://steemit.com/@deanliu/d-and-tt-be-there)
+This page is synchronized from the post: ['[D&TT] Be there'](https://steemit.com/@deanliu/d-and-tt-be-there)

@@ -1,10 +1,11 @@
 
 ---
-title: "MoxyOne - Zero-Fee Exchange COBINHOOD's 2nd Underwriting: Pay with Your Crypto!"
+title: 'MoxyOne - Zero-Fee Exchange COBINHOOD''s 2nd Underwriting: Pay with Your Crypto!'
 permlink: moxyone-zero-fee-exchange-cobinhood-s-2nd-underwriting-pay-with-your-crypto
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-16 03:04:27
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - money
 - blockchain
 - busy
-thumbnail: https://steemitimages.com/DQmWB7e9HUygmgd6Xru8sAVt9746Bnz2TKxUcC5k1gGke54/image.png
+thumbnail: 'https://steemitimages.com/DQmWB7e9HUygmgd6Xru8sAVt9746Bnz2TKxUcC5k1gGke54/image.png'
 sidebar:
     right:
         sticky: true
@@ -151,4 +152,4 @@ https://cdn-images-1.medium.com/max/800/1*pKWgkRpOVFc3GY14zOTNpg.jpeg
 
 - - -
 
-This page is synchronized from the post: [MoxyOne - Zero-Fee Exchange COBINHOOD's 2nd Underwriting: Pay with Your Crypto!](https://steemit.com/@deanliu/moxyone-zero-fee-exchange-cobinhood-s-2nd-underwriting-pay-with-your-crypto)
+This page is synchronized from the post: ['MoxyOne - Zero-Fee Exchange COBINHOOD''s 2nd Underwriting: Pay with Your Crypto!'](https://steemit.com/@deanliu/moxyone-zero-fee-exchange-cobinhood-s-2nd-underwriting-pay-with-your-crypto)

@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 When Lambo!?"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 When Lambo!?'
 permlink: dean-s-tokyo-snapshots-when-lambo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-09 23:35:24
 categories:
 - lambo
@@ -14,7 +15,7 @@ tags:
 - japan
 - crypto
 - funny
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/5cbb6e6f8689903a9b1f6301fc21458dfd3e84f1.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/5cbb6e6f8689903a9b1f6301fc21458dfd3e84f1.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 When Lambo!?](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-when-lambo)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 When Lambo!?'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-when-lambo)

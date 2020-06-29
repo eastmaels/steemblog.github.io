@@ -1,10 +1,11 @@
 
 ---
-title: "MYOT - Make Your Own Toys for your kids! Let's make a Concentration/Memory game from a tissue box!!"
+title: 'MYOT - Make Your Own Toys for your kids! Let''s make a Concentration/Memory game from a tissue box!!'
 permlink: myot-make-your-own-toys-for-your-kids-let-s-make-a-concentration-memory-game-from-a-tissue-box
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-16 08:41:30
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - howto
 - diy
 - game
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ The player with the most matches wins.</blockquote>
 
 - - -
 
-This page is synchronized from the post: [MYOT - Make Your Own Toys for your kids! Let's make a Concentration/Memory game from a tissue box!!](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-let-s-make-a-concentration-memory-game-from-a-tissue-box)
+This page is synchronized from the post: ['MYOT - Make Your Own Toys for your kids! Let''s make a Concentration/Memory game from a tissue box!!'](https://steemit.com/@deanliu/myot-make-your-own-toys-for-your-kids-let-s-make-a-concentration-memory-game-from-a-tissue-box)

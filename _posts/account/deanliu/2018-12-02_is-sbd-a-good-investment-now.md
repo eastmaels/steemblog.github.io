@@ -1,10 +1,11 @@
 
 ---
-title: "Is SBD a good investment now?"
+title: 'Is SBD a good investment now?'
 permlink: is-sbd-a-good-investment-now
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-02 13:23:42
 categories:
 - sbd
@@ -14,7 +15,7 @@ tags:
 - investment
 - arbitrage
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmdZ5CpesmrBtWchoXawpBegKPDs3s4kqdsg9y7cR17jtB
+thumbnail: 'https://ipfs.busy.org/ipfs/QmdZ5CpesmrBtWchoXawpBegKPDs3s4kqdsg9y7cR17jtB'
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ So, my conclusion is yes. Yes, SBD at the moment is a very good investment for a
 
 - - -
 
-This page is synchronized from the post: [Is SBD a good investment now?](https://steemit.com/@deanliu/is-sbd-a-good-investment-now)
+This page is synchronized from the post: ['Is SBD a good investment now?'](https://steemit.com/@deanliu/is-sbd-a-good-investment-now)

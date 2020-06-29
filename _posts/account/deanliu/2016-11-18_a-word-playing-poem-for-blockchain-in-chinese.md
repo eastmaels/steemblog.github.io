@@ -1,10 +1,11 @@
 
 ---
-title: "解構區塊鏈之玩弄文字詩  A word playing poem for blockchain in Chinese"
+title: '解構區塊鏈之玩弄文字詩  A word playing poem for blockchain in Chinese'
 permlink: a-word-playing-poem-for-blockchain-in-chinese
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-18 03:04:36
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - poetry
 - fun
 - blockchain
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Appeared in the past, coming from the future, to the present</strong></blockquot
 
 - - -
 
-This page is synchronized from the post: [解構區塊鏈之玩弄文字詩  A word playing poem for blockchain in Chinese](https://steemit.com/@deanliu/a-word-playing-poem-for-blockchain-in-chinese)
+This page is synchronized from the post: ['解構區塊鏈之玩弄文字詩  A word playing poem for blockchain in Chinese'](https://steemit.com/@deanliu/a-word-playing-poem-for-blockchain-in-chinese)

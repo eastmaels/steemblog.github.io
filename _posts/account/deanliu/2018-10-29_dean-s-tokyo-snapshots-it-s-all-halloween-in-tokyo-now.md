@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 🎃🎃 It's all Halloween in Tokyo now!! 👻👻"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 🎃🎃 It''s all Halloween in Tokyo now!! 👻👻'
 permlink: dean-s-tokyo-snapshots-it-s-all-halloween-in-tokyo-now
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-29 12:35:39
 categories:
 - festival
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/8983547db69e4c5ab7d14a9cb3ef1e1e724f6bb9.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/8983547db69e4c5ab7d14a9cb3ef1e1e724f6bb9.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 🎃🎃 It's all Halloween in Tokyo now!! 👻👻](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-it-s-all-halloween-in-tokyo-now)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 🎃🎃 It''s all Halloween in Tokyo now!! 👻👻'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-it-s-all-halloween-in-tokyo-now)

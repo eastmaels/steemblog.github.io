@@ -1,17 +1,18 @@
 
 ---
-title: "短篇故事－少年和他的綠色戰機 (一) A Short Story - D and his Green Fighter Jet - part 1"
+title: '短篇故事－少年和他的綠色戰機 (一) A Short Story - D and his Green Fighter Jet - part 1'
 permlink: a-short-story-d-and-his-green-fighter-jet-part-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-02 07:10:00
 categories:
 - story
 tags:
 - story
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [短篇故事－少年和他的綠色戰機 (一) A Short Story - D and his Green Fighter Jet - part 1](https://steemit.com/@deanliu/a-short-story-d-and-his-green-fighter-jet-part-1)
+This page is synchronized from the post: ['短篇故事－少年和他的綠色戰機 (一) A Short Story - D and his Green Fighter Jet - part 1'](https://steemit.com/@deanliu/a-short-story-d-and-his-green-fighter-jet-part-1)

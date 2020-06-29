@@ -1,10 +1,11 @@
 
 ---
-title: "A tale of two new years and a happy lunar new year of rooster to all of you!"
+title: 'A tale of two new years and a happy lunar new year of rooster to all of you!'
 permlink: a-tale-of-two-new-years-and-a-happy-lunar-new-year-of-rooster-to-all-of-you
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-01-25 08:49:06
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - cn
 - photography
 - culture
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A tale of two new years and a happy lunar new year of rooster to all of you!](https://steemit.com/@deanliu/a-tale-of-two-new-years-and-a-happy-lunar-new-year-of-rooster-to-all-of-you)
+This page is synchronized from the post: ['A tale of two new years and a happy lunar new year of rooster to all of you!'](https://steemit.com/@deanliu/a-tale-of-two-new-years-and-a-happy-lunar-new-year-of-rooster-to-all-of-you)

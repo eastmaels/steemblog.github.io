@@ -1,10 +1,11 @@
 
 ---
-title: "Tokyo Street Shots #1 🍙 Dean's Tokyo Snapshots 🍙 東京街景 #1"
+title: 'Tokyo Street Shots #1 🍙 Dean''s Tokyo Snapshots 🍙 東京街景 #1'
 permlink: tokyo-street-shots-1-dean-s-tokyo-snapshots-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-11 11:01:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmV7TaAgaxTXR6E3wmsKCUems5yaqYozeA44rjubGkXhUV/DSC_5706.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmV7TaAgaxTXR6E3wmsKCUems5yaqYozeA44rjubGkXhUV/DSC_5706.JPG'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [Tokyo Street Shots #1 🍙 Dean's Tokyo Snapshots 🍙 東京街景 #1](https://steemit.com/@deanliu/tokyo-street-shots-1-dean-s-tokyo-snapshots-1)
+This page is synchronized from the post: ['Tokyo Street Shots #1 🍙 Dean''s Tokyo Snapshots 🍙 東京街景 #1'](https://steemit.com/@deanliu/tokyo-street-shots-1-dean-s-tokyo-snapshots-1)

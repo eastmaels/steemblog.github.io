@@ -1,10 +1,11 @@
 
 ---
-title: "Radar Relay: Trustless Token Trading on Ethereum."
+title: 'Radar Relay: Trustless Token Trading on Ethereum.'
 permlink: radar-relay-trustless-token-trading-on-ethereum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-04 13:27:51
 categories:
 - exchange
@@ -14,7 +15,7 @@ tags:
 - radar-relay
 - ethereum
 - busy
-thumbnail: https://steemitimages.com/DQmVhcuUQTSJmUGgwDAiybeajjdNmv5MSzJFNHs4oR26tob/5339f07a6da811b11ff4bf5e-750-563.jpg
+thumbnail: 'https://steemitimages.com/DQmVhcuUQTSJmUGgwDAiybeajjdNmv5MSzJFNHs4oR26tob/5339f07a6da811b11ff4bf5e-750-563.jpg'
 sidebar:
     right:
         sticky: true
@@ -118,4 +119,4 @@ Tip Jar:
 
 - - -
 
-This page is synchronized from the post: [Radar Relay: Trustless Token Trading on Ethereum.](https://steemit.com/@deanliu/radar-relay-trustless-token-trading-on-ethereum)
+This page is synchronized from the post: ['Radar Relay: Trustless Token Trading on Ethereum.'](https://steemit.com/@deanliu/radar-relay-trustless-token-trading-on-ethereum)

@@ -1,10 +1,11 @@
 
 ---
-title: "“Leslie CHOW” from Hangover is in a hotel room next door to me!! Live from Taipei Taiwan…"
+title: '“Leslie CHOW” from Hangover is in a hotel room next door to me!! Live from Taipei Taiwan…'
 permlink: leslie-chow-from-hangover-is-in-a-hotel-room-next-door-to-me-live-from-taipei-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-01 14:12:09
 categories:
 - news
@@ -14,7 +15,7 @@ tags:
 - taipei
 - kr
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [“Leslie CHOW” from Hangover is in a hotel room next door to me!! Live from Taipei Taiwan…](https://steemit.com/@deanliu/leslie-chow-from-hangover-is-in-a-hotel-room-next-door-to-me-live-from-taipei-taiwan)
+This page is synchronized from the post: ['“Leslie CHOW” from Hangover is in a hotel room next door to me!! Live from Taipei Taiwan…'](https://steemit.com/@deanliu/leslie-chow-from-hangover-is-in-a-hotel-room-next-door-to-me-live-from-taipei-taiwan)

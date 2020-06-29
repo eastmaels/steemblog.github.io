@@ -1,10 +1,11 @@
 
 ---
-title: "逛花燈，吃東西，你猜燈謎？My Lantern Festival Night in Taipei - Part 1"
+title: '逛花燈，吃東西，你猜燈謎？My Lantern Festival Night in Taipei - Part 1'
 permlink: my-lantern-festival-night-in-taipei-part-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-05 04:15:33
 categories:
 - culture
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - riddle
-thumbnail: https://steemitimages.com/DQmXNt1sb2n91wV7omC4gEV15nt3t1rSossoVAKN6tVqjiT/DSC_4496.JPG
+thumbnail: 'https://steemitimages.com/DQmXNt1sb2n91wV7omC4gEV15nt3t1rSossoVAKN6tVqjiT/DSC_4496.JPG'
 sidebar:
     right:
         sticky: true
@@ -127,4 +128,4 @@ Well, although the cafe had run out of many items on their menu, but we were sti
 
 - - -
 
-This page is synchronized from the post: [逛花燈，吃東西，你猜燈謎？My Lantern Festival Night in Taipei - Part 1](https://steemit.com/@deanliu/my-lantern-festival-night-in-taipei-part-1)
+This page is synchronized from the post: ['逛花燈，吃東西，你猜燈謎？My Lantern Festival Night in Taipei - Part 1'](https://steemit.com/@deanliu/my-lantern-festival-night-in-taipei-part-1)

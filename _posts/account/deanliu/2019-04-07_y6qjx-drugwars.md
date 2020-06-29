@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 歧路"
+title: '[DrugWars] 歧路'
 permlink: y6qjx-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-07 02:09:21
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - cn-dw
 - drugwars
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/IUMwESCI-E89EA2E5B995E5BFABE785A7202019-04-0620E4B88BE58D885.51.57.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/IUMwESCI-E89EA2E5B995E5BFABE785A7202019-04-0620E4B88BE58D885.51.57.png'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ DW這遊戲，後來的表現不佳，無限通膨，現在似乎要升級都是
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 歧路](https://steemit.com/@deanliu/y6qjx-drugwars)
+This page is synchronized from the post: ['[DrugWars] 歧路'](https://steemit.com/@deanliu/y6qjx-drugwars)

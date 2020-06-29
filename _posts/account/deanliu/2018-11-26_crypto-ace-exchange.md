@@ -1,10 +1,11 @@
 
 ---
-title: "新開張的台灣交易Crypto所：ACE Exchange"
+title: '新開張的台灣交易Crypto所：ACE Exchange'
 permlink: crypto-ace-exchange
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-26 05:02:30
 categories:
 - crypto
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - taiwan
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmd2oLWpYfH4Xtjh7NY4MsrjL1Gy3KPFpXy5Lo1b1bBu8B/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-26%20%E4%B8%8B%E5%8D%8812.45.07.png
+thumbnail: 'https://cdn.steemitimages.com/DQmd2oLWpYfH4Xtjh7NY4MsrjL1Gy3KPFpXy5Lo1b1bBu8B/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-11-26%20%E4%B8%8B%E5%8D%8812.45.07.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ ACE交易所首頁：https://ace.io/home
 
 - - -
 
-This page is synchronized from the post: [新開張的台灣交易Crypto所：ACE Exchange](https://steemit.com/@deanliu/crypto-ace-exchange)
+This page is synchronized from the post: ['新開張的台灣交易Crypto所：ACE Exchange'](https://steemit.com/@deanliu/crypto-ace-exchange)

@@ -1,10 +1,11 @@
 
 ---
-title: "Edit Hotel Yokohama 🍙 Dean's Tokyo Snapshots 🍙 橫濱文青風的Edit Hotel"
+title: 'Edit Hotel Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 橫濱文青風的Edit Hotel'
 permlink: edit-hotel-yokohama-dean-s-tokyo-snapshots-edit-hotel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-05 09:32:39
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmYCKY2pKZp76WaHrqU89op1kSV7YJWeJy6mXsb6WjhYfN/DSC_7452.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmYCKY2pKZp76WaHrqU89op1kSV7YJWeJy6mXsb6WjhYfN/DSC_7452.JPG'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Edit Hotel Yokohama 🍙 Dean's Tokyo Snapshots 🍙 橫濱文青風的Edit Hotel](https://steemit.com/@deanliu/edit-hotel-yokohama-dean-s-tokyo-snapshots-edit-hotel)
+This page is synchronized from the post: ['Edit Hotel Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 橫濱文青風的Edit Hotel'](https://steemit.com/@deanliu/edit-hotel-yokohama-dean-s-tokyo-snapshots-edit-hotel)

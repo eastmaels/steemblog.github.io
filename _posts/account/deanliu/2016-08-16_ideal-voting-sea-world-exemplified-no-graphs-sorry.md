@@ -1,17 +1,18 @@
 
 ---
-title: "IDEAL Voting Sea World Exemplified (no graphs sorry)"
+title: 'IDEAL Voting Sea World Exemplified (no graphs sorry)'
 permlink: ideal-voting-sea-world-exemplified-no-graphs-sorry
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-16 12:24:51
 categories:
 - steemit
 tags:
 - steemit
 - voting
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [IDEAL Voting Sea World Exemplified (no graphs sorry)](https://steemit.com/@deanliu/ideal-voting-sea-world-exemplified-no-graphs-sorry)
+This page is synchronized from the post: ['IDEAL Voting Sea World Exemplified (no graphs sorry)'](https://steemit.com/@deanliu/ideal-voting-sea-world-exemplified-no-graphs-sorry)

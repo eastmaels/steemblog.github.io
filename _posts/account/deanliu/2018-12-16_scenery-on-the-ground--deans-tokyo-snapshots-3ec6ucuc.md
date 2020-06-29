@@ -1,10 +1,11 @@
 
 ---
-title: "Scenery on the ground 🍙 Dean's Tokyo Snapshots 🍙 "
+title: 'Scenery on the ground 🍙 Dean''s Tokyo Snapshots 🍙 '
 permlink: scenery-on-the-ground--deans-tokyo-snapshots-3ec6ucuc
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-16 01:34:36
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - culture
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmZSXAXV736S89N15wWmpAcoCQfRzixNBiFh49wDqTr9hL/DSC_6178.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmZSXAXV736S89N15wWmpAcoCQfRzixNBiFh49wDqTr9hL/DSC_6178.JPG'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Scenery on the ground 🍙 Dean's Tokyo Snapshots 🍙 ](https://steemit.com/@deanliu/scenery-on-the-ground--deans-tokyo-snapshots-3ec6ucuc)
+This page is synchronized from the post: ['Scenery on the ground 🍙 Dean''s Tokyo Snapshots 🍙 '](https://steemit.com/@deanliu/scenery-on-the-ground--deans-tokyo-snapshots-3ec6ucuc)

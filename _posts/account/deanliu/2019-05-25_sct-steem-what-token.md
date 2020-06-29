@@ -1,10 +1,11 @@
 
 ---
-title: "惡搞SCT：Steem What Token?"
+title: '惡搞SCT：Steem What Token?'
 permlink: sct-steem-what-token
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-25 00:54:24
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - token
 - sct-cn
 - steem
-thumbnail: https://ipfs.busy.org/ipfs/QmP5diLG6nhzzbxBg8GZ9FMai1T9WbGTs4Gy2S9vktUdiy
+thumbnail: 'https://ipfs.busy.org/ipfs/QmP5diLG6nhzzbxBg8GZ9FMai1T9WbGTs4Gy2S9vktUdiy'
 sidebar:
     right:
         sticky: true
@@ -56,4 +57,4 @@ Steem幣價跌的時候發給，按照SP發給。跌越低，你越哭哭，就�
 
 - - -
 
-This page is synchronized from the post: [惡搞SCT：Steem What Token?](https://steemit.com/@deanliu/sct-steem-what-token)
+This page is synchronized from the post: ['惡搞SCT：Steem What Token?'](https://steemit.com/@deanliu/sct-steem-what-token)

@@ -1,10 +1,11 @@
 
 ---
-title: "[論新聞] LINE幣，LINE鏈，LINE交易"
+title: '[論新聞] LINE幣，LINE鏈，LINE交易'
 permlink: line-line-line
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-28 11:45:30
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - exchange
 - news
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmW1PZyiw2kYiYFvvCvcE81QcHdQvARMvPtfm1etcsWToH/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmW1PZyiw2kYiYFvvCvcE81QcHdQvARMvPtfm1etcsWToH/image.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ https://i1.wp.com/www.inside.com.tw/wp-content/uploads/2018/06/180628_botbox.png
 
 - - -
 
-This page is synchronized from the post: [[論新聞] LINE幣，LINE鏈，LINE交易](https://steemit.com/@deanliu/line-line-line)
+This page is synchronized from the post: ['[論新聞] LINE幣，LINE鏈，LINE交易'](https://steemit.com/@deanliu/line-line-line)

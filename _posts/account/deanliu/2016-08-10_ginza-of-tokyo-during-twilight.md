@@ -1,10 +1,11 @@
 
 ---
-title: "Ginza of Tokyo during twilight"
+title: 'Ginza of Tokyo during twilight'
 permlink: ginza-of-tokyo-during-twilight
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-10 06:28:18
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - tokyo
 - japan
 - ja
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Ginza of Tokyo during twilight](https://steemit.com/@deanliu/ginza-of-tokyo-during-twilight)
+This page is synchronized from the post: ['Ginza of Tokyo during twilight'](https://steemit.com/@deanliu/ginza-of-tokyo-during-twilight)

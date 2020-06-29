@@ -1,10 +1,11 @@
 
 ---
-title: "Hikawa Maru @ Yokohama #1 🍙 Dean's Tokyo Snapshots 🍙 橫濱冰川丸號 #1"
+title: 'Hikawa Maru @ Yokohama #1 🍙 Dean''s Tokyo Snapshots 🍙 橫濱冰川丸號 #1'
 permlink: hikawa-maru-yokohama-1-dean-s-tokyo-snapshots-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-27 02:36:51
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQgc4xggAdNYqhEXys72NL5aDbBFapYKZ3x6o4RwFCoQp/DSC_7440.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQgc4xggAdNYqhEXys72NL5aDbBFapYKZ3x6o4RwFCoQp/DSC_7440.JPG'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ Let's go, come with me...  ***On board!!***
 
 - - -
 
-This page is synchronized from the post: [Hikawa Maru @ Yokohama #1 🍙 Dean's Tokyo Snapshots 🍙 橫濱冰川丸號 #1](https://steemit.com/@deanliu/hikawa-maru-yokohama-1-dean-s-tokyo-snapshots-1)
+This page is synchronized from the post: ['Hikawa Maru @ Yokohama #1 🍙 Dean''s Tokyo Snapshots 🍙 橫濱冰川丸號 #1'](https://steemit.com/@deanliu/hikawa-maru-yokohama-1-dean-s-tokyo-snapshots-1)

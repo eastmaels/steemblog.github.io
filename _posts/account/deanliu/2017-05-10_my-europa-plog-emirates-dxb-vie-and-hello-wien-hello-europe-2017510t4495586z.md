@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Emirates, DXB, VIE and hello Wien, hello Europe!!"
+title: 'My Europa Plog - Emirates, DXB, VIE and hello Wien, hello Europe!!'
 permlink: my-europa-plog-emirates-dxb-vie-and-hello-wien-hello-europe-2017510t4495586z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-10 02:49:09
 categories:
 - myeuropaplog
@@ -14,7 +15,7 @@ tags:
 - photography
 - europe
 - plog
-thumbnail: https://i.imgur.com/gBG1RkS.jpg
+thumbnail: 'https://i.imgur.com/gBG1RkS.jpg'
 sidebar:
     right:
         sticky: true
@@ -29,4 +30,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Emirates, DXB, VIE and hello Wien, hello Europe!!](https://steemit.com/@deanliu/my-europa-plog-emirates-dxb-vie-and-hello-wien-hello-europe-2017510t4495586z)
+This page is synchronized from the post: ['My Europa Plog - Emirates, DXB, VIE and hello Wien, hello Europe!!'](https://steemit.com/@deanliu/my-europa-plog-emirates-dxb-vie-and-hello-wien-hello-europe-2017510t4495586z)

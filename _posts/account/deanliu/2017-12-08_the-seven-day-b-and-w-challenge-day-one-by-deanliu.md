@@ -1,10 +1,11 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day One / 七天黑白挑戰 － 第一天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day One / 七天黑白挑戰 － 第一天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-one-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-08 08:23:48
 categories:
 - sevendaybnwchallenge
@@ -13,7 +14,7 @@ tags:
 - photography
 - life
 - cn
-thumbnail: https://steemitimages.com/DQmbyD851GxjpT1fw3ZLHzEBFg6My3qbkY1QaM1idbNbiwG/imageedit_3_5468880634.jpg
+thumbnail: 'https://steemitimages.com/DQmbyD851GxjpT1fw3ZLHzEBFg6My3qbkY1QaM1idbNbiwG/imageedit_3_5468880634.jpg'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ Note. no one says photo cannot be a processed image, as a photo without people a
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day One / 七天黑白挑戰 － 第一天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-one-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day One / 七天黑白挑戰 － 第一天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-one-by-deanliu)

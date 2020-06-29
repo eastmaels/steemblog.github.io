@@ -1,10 +1,11 @@
 
 ---
-title: "Tibet or Indian dishes for dinner!? This place has it all. 西藏廚房美食分享"
+title: 'Tibet or Indian dishes for dinner!? This place has it all. 西藏廚房美食分享'
 permlink: tibet-or-indian-dishes-for-dinner-this-place-has-it-all
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-01 02:22:06
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - tibet
 - indian
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Tibet or Indian dishes for dinner!? This place has it all. 西藏廚房美食分享](https://steemit.com/@deanliu/tibet-or-indian-dishes-for-dinner-this-place-has-it-all)
+This page is synchronized from the post: ['Tibet or Indian dishes for dinner!? This place has it all. 西藏廚房美食分享'](https://steemit.com/@deanliu/tibet-or-indian-dishes-for-dinner-this-place-has-it-all)

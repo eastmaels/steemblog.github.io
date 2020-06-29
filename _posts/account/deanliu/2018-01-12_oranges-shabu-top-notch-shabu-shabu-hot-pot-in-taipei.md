@@ -1,10 +1,11 @@
 
 ---
-title: "Oranges Shabu (橘色涮涮屋) - Top notch Shabu Shabu Hot Pot in Taipei"
+title: 'Oranges Shabu (橘色涮涮屋) - Top notch Shabu Shabu Hot Pot in Taipei'
 permlink: oranges-shabu-top-notch-shabu-shabu-hot-pot-in-taipei
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-12 15:59:54
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - restaurant
 - taipei
 - cn
-thumbnail: https://steemitimages.com/DQmcMUYrwJe6vm5resJxrAVvR4RB2yNkjVQ5LoCR7p6VDdk/VID-4524.gif
+thumbnail: 'https://steemitimages.com/DQmcMUYrwJe6vm5resJxrAVvR4RB2yNkjVQ5LoCR7p6VDdk/VID-4524.gif'
 sidebar:
     right:
         sticky: true
@@ -144,4 +145,4 @@ Everything was perfect. So I recommend you to try this one if you are not too co
 
 - - -
 
-This page is synchronized from the post: [Oranges Shabu (橘色涮涮屋) - Top notch Shabu Shabu Hot Pot in Taipei](https://steemit.com/@deanliu/oranges-shabu-top-notch-shabu-shabu-hot-pot-in-taipei)
+This page is synchronized from the post: ['Oranges Shabu (橘色涮涮屋) - Top notch Shabu Shabu Hot Pot in Taipei'](https://steemit.com/@deanliu/oranges-shabu-top-notch-shabu-shabu-hot-pot-in-taipei)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers: a CN translation project｜Steemit中文社區跨界翻譯行動——《文化讀癮．一週譯報》上線預告"
+title: 'Culture Vulture for CNers: a CN translation project｜Steemit中文社區跨界翻譯行動——《文化讀癮．一週譯報》上線預告'
 permlink: culture-vulture-for-cners-a-cn-translation-project-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-04 09:19:30
 categories:
 - cn-culturevulture
@@ -14,7 +15,7 @@ tags:
 - culture
 - travel
 - cn
-thumbnail: https://steemitimages.com/DQmReN3Wzc4UVZ6W5A3qphmoCRhyxhHq2XzGAmRFH8t5tMs/banner.jpg
+thumbnail: 'https://steemitimages.com/DQmReN3Wzc4UVZ6W5A3qphmoCRhyxhHq2XzGAmRFH8t5tMs/banner.jpg'
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers: a CN translation project｜Steemit中文社區跨界翻譯行動——《文化讀癮．一週譯報》上線預告](https://steemit.com/@deanliu/culture-vulture-for-cners-a-cn-translation-project-steemit)
+This page is synchronized from the post: ['Culture Vulture for CNers: a CN translation project｜Steemit中文社區跨界翻譯行動——《文化讀癮．一週譯報》上線預告'](https://steemit.com/@deanliu/culture-vulture-for-cners-a-cn-translation-project-steemit)

@@ -1,10 +1,11 @@
 
 ---
-title: "One Week in Media - Steem is doing great!"
+title: 'One Week in Media - Steem is doing great!'
 permlink: one-week-in-media-steem-is-doing-great
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-18 08:33:21
 categories:
 - news
@@ -13,7 +14,7 @@ tags:
 - steemit
 - steem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [One Week in Media - Steem is doing great!](https://steemit.com/@deanliu/one-week-in-media-steem-is-doing-great)
+This page is synchronized from the post: ['One Week in Media - Steem is doing great!'](https://steemit.com/@deanliu/one-week-in-media-steem-is-doing-great)

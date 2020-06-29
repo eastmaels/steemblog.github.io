@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #1 東京老電車荒川線之一：時光請上車"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #1 東京老電車荒川線之一：時光請上車'
 permlink: dean-s-tokyo-snapshots-arakawa-line-1
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-20 01:06:39
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - photography
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmPNaYVWVPmeEscySGGzXwsCTssRoWKcJMJ2xshHYqCqYQ/DSC_6415.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmPNaYVWVPmeEscySGGzXwsCTssRoWKcJMJ2xshHYqCqYQ/DSC_6415.JPG'
 sidebar:
     right:
         sticky: true
@@ -87,4 +88,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #1 東京老電車荒川線之一：時光請上車](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-1)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #1 東京老電車荒川線之一：時光請上車'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-1)

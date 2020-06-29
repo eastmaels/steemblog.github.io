@@ -1,10 +1,11 @@
 
 ---
-title: "Glimpses of Hualien 花蓮掠影"
+title: 'Glimpses of Hualien 花蓮掠影'
 permlink: glimpses-of-hualien
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-30 12:24:51
 categories:
 - phtography
@@ -14,7 +15,7 @@ tags:
 - hualien
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmegRt8F9vHTY3gQtWEXmaz2G6sh6aTrpTN6FfBbcUsYRn/DSC_5040.JPG
+thumbnail: 'https://steemitimages.com/DQmegRt8F9vHTY3gQtWEXmaz2G6sh6aTrpTN6FfBbcUsYRn/DSC_5040.JPG'
 sidebar:
     right:
         sticky: true
@@ -91,4 +92,4 @@ I am sharing with you the photo collection of my Hualien trip - mountains, seash
 
 - - -
 
-This page is synchronized from the post: [Glimpses of Hualien 花蓮掠影](https://steemit.com/@deanliu/glimpses-of-hualien)
+This page is synchronized from the post: ['Glimpses of Hualien 花蓮掠影'](https://steemit.com/@deanliu/glimpses-of-hualien)

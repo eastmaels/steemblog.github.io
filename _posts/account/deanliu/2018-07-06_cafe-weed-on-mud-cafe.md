@@ -1,10 +1,11 @@
 
 ---
-title: "[咖啡廳] 草泥..... Cafe！Weed on Mud Cafe ...."
+title: '[咖啡廳] 草泥..... Cafe！Weed on Mud Cafe ....'
 permlink: cafe-weed-on-mud-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-06 01:07:42
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQXRN51hX1LXw7Sg8tSEkPqeKsU97qzdHw7WKLEzAskBJ/DSC_5587.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQXRN51hX1LXw7Sg8tSEkPqeKsU97qzdHw7WKLEzAskBJ/DSC_5587.JPG'
 sidebar:
     right:
         sticky: true
@@ -106,4 +107,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[咖啡廳] 草泥..... Cafe！Weed on Mud Cafe ....](https://steemit.com/@deanliu/cafe-weed-on-mud-cafe)
+This page is synchronized from the post: ['[咖啡廳] 草泥..... Cafe！Weed on Mud Cafe ....'](https://steemit.com/@deanliu/cafe-weed-on-mud-cafe)

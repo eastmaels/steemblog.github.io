@@ -1,10 +1,11 @@
 
 ---
-title: "[Photo] 淡水隨拍"
+title: '[Photo] 淡水隨拍'
 permlink: photo-frgxo65v
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-04 09:49:57
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - partiko
-thumbnail: https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/115fd31891533c37a6a9e6401e5b985e02b23ab9.jpg
+thumbnail: 'https://steemitimages.com/0x0/https://d1vof77qrk4l5q.cloudfront.net/img/115fd31891533c37a6a9e6401e5b985e02b23ab9.jpg'
 sidebar:
     right:
         sticky: true
@@ -39,4 +40,4 @@ Posted using [Partiko Android](https://partiko.app/referral/deanliu)
 
 - - -
 
-This page is synchronized from the post: [[Photo] 淡水隨拍](https://steemit.com/@deanliu/photo-frgxo65v)
+This page is synchronized from the post: ['[Photo] 淡水隨拍'](https://steemit.com/@deanliu/photo-frgxo65v)

@@ -1,10 +1,11 @@
 
 ---
-title: " 世紀不對決：Djokovic vs Nadal"
+title: ' 世紀不對決：Djokovic vs Nadal'
 permlink: djokovic-vs-nadal
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-28 01:39:15
 categories:
 - sports
@@ -13,7 +14,7 @@ tags:
 - tennis
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmXftTjbyHcYHEjWMRqwMUy1Ki7qJ6BJx5YZ7EPWD17NsV
+thumbnail: 'https://ipfs.busy.org/ipfs/QmXftTjbyHcYHEjWMRqwMUy1Ki7qJ6BJx5YZ7EPWD17NsV'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [ 世紀不對決：Djokovic vs Nadal](https://steemit.com/@deanliu/djokovic-vs-nadal)
+This page is synchronized from the post: [' 世紀不對決：Djokovic vs Nadal'](https://steemit.com/@deanliu/djokovic-vs-nadal)

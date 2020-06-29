@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 09 / 《社區週邊事》 - 第 09 期"
+title: 'Steemit Weekly for CNers - Issue 09 / 《社區"週"邊事》 - 第 09 期'
 permlink: steemit-weekly-for-cners-issue-08-09
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-31 02:21:57
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - news
 - steemit-weekly
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -169,4 +170,4 @@ by **@busy.org**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 09 / 《社區週邊事》 - 第 09 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-08-09)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 09 / 《社區"週"邊事》 - 第 09 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-08-09)

@@ -1,10 +1,11 @@
 
 ---
-title: "🌄  莫忘那一切最初開始的地方  🌄  Lest We Forget Where It All Begins  🌄"
+title: '🌄  莫忘那一切最初開始的地方  🌄  Lest We Forget Where It All Begins  🌄'
 permlink: lest-we-forget-where-it-all-begins
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-23 08:11:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - newbie
 - future
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🌄  莫忘那一切最初開始的地方  🌄  Lest We Forget Where It All Begins  🌄](https://steemit.com/@deanliu/lest-we-forget-where-it-all-begins)
+This page is synchronized from the post: ['🌄  莫忘那一切最初開始的地方  🌄  Lest We Forget Where It All Begins  🌄'](https://steemit.com/@deanliu/lest-we-forget-where-it-all-begins)

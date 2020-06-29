@@ -1,10 +1,11 @@
 
 ---
-title: "[閒談] SteemFest 3：誰去了？重點是什麼？"
+title: '[閒談] SteemFest 3：誰去了？重點是什麼？'
 permlink: steemfest-3-ujrsergr
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-13 13:57:42
 categories:
 - steemfest
@@ -14,7 +15,7 @@ tags:
 - news
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmdxLbuvnRsM9B8ya5Nb4mwvh3RATxpX6AgCdBnSH7mCnN/people-2557396_640%20(1).jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmdxLbuvnRsM9B8ya5Nb4mwvh3RATxpX6AgCdBnSH7mCnN/people-2557396_640%20(1).jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[閒談] SteemFest 3：誰去了？重點是什麼？](https://steemit.com/@deanliu/steemfest-3-ujrsergr)
+This page is synchronized from the post: ['[閒談] SteemFest 3：誰去了？重點是什麼？'](https://steemit.com/@deanliu/steemfest-3-ujrsergr)

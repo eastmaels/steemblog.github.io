@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] Snake Obsession 迷戀蛇"
+title: '[D&TT] Snake Obsession 迷戀蛇'
 permlink: d-and-tt-snake-obsession
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-07 09:30:03
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - parenting
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/5fea83a5cf1ccc1fbc06a2d9000b5b207616ff28.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/5fea83a5cf1ccc1fbc06a2d9000b5b207616ff28.jpg'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] Snake Obsession 迷戀蛇](https://steemit.com/@deanliu/d-and-tt-snake-obsession)
+This page is synchronized from the post: ['[D&TT] Snake Obsession 迷戀蛇'](https://steemit.com/@deanliu/d-and-tt-snake-obsession)

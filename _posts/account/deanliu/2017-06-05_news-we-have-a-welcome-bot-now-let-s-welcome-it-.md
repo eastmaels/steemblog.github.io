@@ -1,10 +1,11 @@
 
 ---
-title: "[News] We Have a Welcome Bot Now!! Let's Welcome It ^_^"
+title: '[News] We Have a Welcome Bot Now!! Let''s Welcome It ^_^'
 permlink: news-we-have-a-welcome-bot-now-let-s-welcome-it-
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-05 07:53:24
 categories:
 - news
@@ -13,7 +14,7 @@ tags:
 - welcomebot
 - newbie
 - steemit
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[News] We Have a Welcome Bot Now!! Let's Welcome It ^_^](https://steemit.com/@deanliu/news-we-have-a-welcome-bot-now-let-s-welcome-it-)
+This page is synchronized from the post: ['[News] We Have a Welcome Bot Now!! Let''s Welcome It ^_^'](https://steemit.com/@deanliu/news-we-have-a-welcome-bot-now-let-s-welcome-it-)

@@ -1,10 +1,11 @@
 
 ---
-title: "翻譯與讀後心得分享：關於 Adam Ludwin 的那封信"
+title: '翻譯與讀後心得分享：關於 Adam Ludwin 的那封信'
 permlink: adam-ludwin
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-03 03:37:33
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - steem
 - bitcoin
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [翻譯與讀後心得分享：關於 Adam Ludwin 的那封信](https://steemit.com/@deanliu/adam-ludwin)
+This page is synchronized from the post: ['翻譯與讀後心得分享：關於 Adam Ludwin 的那封信'](https://steemit.com/@deanliu/adam-ludwin)

@@ -1,10 +1,11 @@
 
 ---
-title: "🎈 How to Use Random.org for Drawing Winners and Giveaway Announcements 🎈 Rep70以及文藝青年得獎公告 🎈"
+title: '🎈 How to Use Random.org for Drawing Winners and Giveaway Announcements 🎈 Rep70以及文藝青年得獎公告 🎈'
 permlink: how-to-use-random-org-for-drawing-winners-and-giveaway-announcements-rep70
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-24 08:10:30
 categories:
 - howto
@@ -13,7 +14,7 @@ tags:
 - giveaway
 - drawing
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🎈 How to Use Random.org for Drawing Winners and Giveaway Announcements 🎈 Rep70以及文藝青年得獎公告 🎈](https://steemit.com/@deanliu/how-to-use-random-org-for-drawing-winners-and-giveaway-announcements-rep70)
+This page is synchronized from the post: ['🎈 How to Use Random.org for Drawing Winners and Giveaway Announcements 🎈 Rep70以及文藝青年得獎公告 🎈'](https://steemit.com/@deanliu/how-to-use-random-org-for-drawing-winners-and-giveaway-announcements-rep70)

@@ -1,10 +1,11 @@
 
 ---
-title: "✂ [MYOT - Make Your Own Toys!] Paper Digger Handmade!! ✂ [MYOT 自製玩具系列] 動手做紙挖土機 ✂"
+title: '✂ [MYOT - Make Your Own Toys!] Paper Digger Handmade!! ✂ [MYOT 自製玩具系列] 動手做紙挖土機 ✂'
 permlink: myot-make-your-own-toys-paper-digger-handmade-myot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-11-11 07:16:45
 categories:
 - myot
@@ -13,7 +14,7 @@ tags:
 - cn
 - toy
 - diy
-thumbnail: https://steemitimages.com/DQmaHWnhaQwenECeb3VtEcBspjx6QZbqAvrNxzggcWVuqoM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-11-11%20%E4%B8%8B%E5%8D%882.45.35.png
+thumbnail: 'https://steemitimages.com/DQmaHWnhaQwenECeb3VtEcBspjx6QZbqAvrNxzggcWVuqoM/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202017-11-11%20%E4%B8%8B%E5%8D%882.45.35.png'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ https://steemitimages.com/DQmZ2hCnLPRgcYXw3Kst8DiaPFJut5mPahKYArdb1zTvbiT/_20171
 
 - - -
 
-This page is synchronized from the post: [✂ [MYOT - Make Your Own Toys!] Paper Digger Handmade!! ✂ [MYOT 自製玩具系列] 動手做紙挖土機 ✂](https://steemit.com/@deanliu/myot-make-your-own-toys-paper-digger-handmade-myot)
+This page is synchronized from the post: ['✂ [MYOT - Make Your Own Toys!] Paper Digger Handmade!! ✂ [MYOT 自製玩具系列] 動手做紙挖土機 ✂'](https://steemit.com/@deanliu/myot-make-your-own-toys-paper-digger-handmade-myot)

@@ -1,10 +1,11 @@
 
 ---
-title: "Let's steem it up and play on words a little bit ... but still some serious proposals"
+title: 'Let''s steem it up and play on words a little bit ... but still some serious proposals'
 permlink: let-s-steem-it-up-and-play-on-words-a-little-bit-but-still-some-serious-proposals
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-29 18:44:00
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - episteemology
 - steemina
 - steemtroduction
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Let's steem it up and play on words a little bit ... but still some serious proposals](https://steemit.com/@deanliu/let-s-steem-it-up-and-play-on-words-a-little-bit-but-still-some-serious-proposals)
+This page is synchronized from the post: ['Let''s steem it up and play on words a little bit ... but still some serious proposals'](https://steemit.com/@deanliu/let-s-steem-it-up-and-play-on-words-a-little-bit-but-still-some-serious-proposals)

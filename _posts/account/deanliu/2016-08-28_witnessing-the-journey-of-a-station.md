@@ -1,10 +1,11 @@
 
 ---
-title: "Witnessing the journey of a station"
+title: 'Witnessing the journey of a station'
 permlink: witnessing-the-journey-of-a-station
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-28 11:39:57
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - travel
 - tokyo
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -32,4 +33,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Witnessing the journey of a station](https://steemit.com/@deanliu/witnessing-the-journey-of-a-station)
+This page is synchronized from the post: ['Witnessing the journey of a station'](https://steemit.com/@deanliu/witnessing-the-journey-of-a-station)

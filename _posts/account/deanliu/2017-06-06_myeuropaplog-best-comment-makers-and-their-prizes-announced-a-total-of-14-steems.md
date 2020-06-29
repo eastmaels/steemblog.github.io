@@ -1,10 +1,11 @@
 
 ---
-title: "#myeuropaplog Best Comment Makers and Their Prizes Announced - A total of 14 Steems!"
+title: '#myeuropaplog Best Comment Makers and Their Prizes Announced - A total of 14 Steems!'
 permlink: myeuropaplog-best-comment-makers-and-their-prizes-announced-a-total-of-14-steems
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-06 08:44:48
 categories:
 - contest
@@ -14,7 +15,7 @@ tags:
 - photography
 - engagement
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [#myeuropaplog Best Comment Makers and Their Prizes Announced - A total of 14 Steems!](https://steemit.com/@deanliu/myeuropaplog-best-comment-makers-and-their-prizes-announced-a-total-of-14-steems)
+This page is synchronized from the post: ['#myeuropaplog Best Comment Makers and Their Prizes Announced - A total of 14 Steems!'](https://steemit.com/@deanliu/myeuropaplog-best-comment-makers-and-their-prizes-announced-a-total-of-14-steems)

@@ -1,10 +1,11 @@
 
 ---
-title: "A Sunday $5 SBD Giveaway if you recognize this cafe #3 週日咖啡廳猜謎來了！"
+title: 'A Sunday $5 SBD Giveaway if you recognize this cafe #3 週日咖啡廳猜謎來了！'
 permlink: a-sunday-usd5-sbd-giveaway-if-you-recognize-this-cafe-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-18 18:02:27
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - cafe
 - travel
 - contest
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Sunday $5 SBD Giveaway if you recognize this cafe #3 週日咖啡廳猜謎來了！](https://steemit.com/@deanliu/a-sunday-usd5-sbd-giveaway-if-you-recognize-this-cafe-3)
+This page is synchronized from the post: ['A Sunday $5 SBD Giveaway if you recognize this cafe #3 週日咖啡廳猜謎來了！'](https://steemit.com/@deanliu/a-sunday-usd5-sbd-giveaway-if-you-recognize-this-cafe-3)

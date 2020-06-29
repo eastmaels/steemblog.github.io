@@ -1,10 +1,11 @@
 
 ---
-title: "🚉   [輕旅行系列] 慵懶台南 #3 視覺府城 🚉   [Travel Around Taiwan] Enchanting Tainan #3 Visual Tainan"
+title: '🚉   [輕旅行系列] 慵懶台南 #3 視覺府城 🚉   [Travel Around Taiwan] Enchanting Tainan #3 Visual Tainan'
 permlink: 3-travel-around-taiwan-enchanting-tainan-3-visual-tainan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-29 13:01:45
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - tainan
 - cn
-thumbnail: https://steemitimages.com/DQmerT7tP6YZPnQMGrpJF3D2u9TPpTjcBbZu1fbx4oXWDV5/_20180129_202006.JPG
+thumbnail: 'https://steemitimages.com/DQmerT7tP6YZPnQMGrpJF3D2u9TPpTjcBbZu1fbx4oXWDV5/_20180129_202006.JPG'
 sidebar:
     right:
         sticky: true
@@ -90,4 +91,4 @@ Stay tuned for more Enchanting Tainan tomorrow ~~~~
 
 - - -
 
-This page is synchronized from the post: [🚉   [輕旅行系列] 慵懶台南 #3 視覺府城 🚉   [Travel Around Taiwan] Enchanting Tainan #3 Visual Tainan](https://steemit.com/@deanliu/3-travel-around-taiwan-enchanting-tainan-3-visual-tainan)
+This page is synchronized from the post: ['🚉   [輕旅行系列] 慵懶台南 #3 視覺府城 🚉   [Travel Around Taiwan] Enchanting Tainan #3 Visual Tainan'](https://steemit.com/@deanliu/3-travel-around-taiwan-enchanting-tainan-3-visual-tainan)

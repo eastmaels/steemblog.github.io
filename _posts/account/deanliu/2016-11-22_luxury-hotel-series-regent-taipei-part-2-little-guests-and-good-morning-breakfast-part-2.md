@@ -1,10 +1,11 @@
 
 ---
-title: "[Luxury Hotel Series] - Regent Taipei - part 2 - Little guests and Good morning breakfast [五星飯店系列] 台北晶華 part 2。小客人與豐盛早餐。"
+title: '[Luxury Hotel Series] - Regent Taipei - part 2 - Little guests and Good morning breakfast [五星飯店系列] 台北晶華 part 2。小客人與豐盛早餐。'
 permlink: luxury-hotel-series-regent-taipei-part-2-little-guests-and-good-morning-breakfast-part-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-22 05:35:06
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - hotel
 - travel
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Luxury Hotel Series] - Regent Taipei - part 2 - Little guests and Good morning breakfast [五星飯店系列] 台北晶華 part 2。小客人與豐盛早餐。](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-2-little-guests-and-good-morning-breakfast-part-2)
+This page is synchronized from the post: ['[Luxury Hotel Series] - Regent Taipei - part 2 - Little guests and Good morning breakfast [五星飯店系列] 台北晶華 part 2。小客人與豐盛早餐。'](https://steemit.com/@deanliu/luxury-hotel-series-regent-taipei-part-2-little-guests-and-good-morning-breakfast-part-2)

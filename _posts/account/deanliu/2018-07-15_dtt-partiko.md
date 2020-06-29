@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 週末玩球....測試新平台Partiko"
+title: '[D&TT] 週末玩球....測試新平台Partiko'
 permlink: dtt-partiko
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-15 02:10:00
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - kids
 - cn
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/deanliu-dtt-partiko-1531620599947.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/deanliu-dtt-partiko-1531620599947.png'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ Posted using [Partiko Android](https://play.google.com/store/apps/details?id=io.
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 週末玩球....測試新平台Partiko](https://steemit.com/@deanliu/dtt-partiko)
+This page is synchronized from the post: ['[D&TT] 週末玩球....測試新平台Partiko'](https://steemit.com/@deanliu/dtt-partiko)

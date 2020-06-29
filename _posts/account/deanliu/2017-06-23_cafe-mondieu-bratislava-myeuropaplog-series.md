@@ -1,10 +1,11 @@
 
 ---
-title: "Cafe Mondieu, Bratislava 🍮  - #myeuropaplog series  歐洲行旅照片記錄系列"
+title: 'Cafe Mondieu, Bratislava 🍮  - #myeuropaplog series  歐洲行旅照片記錄系列'
 permlink: cafe-mondieu-bratislava-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-23 22:58:24
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cafe
 - cn
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Cafe Mondieu, Bratislava 🍮  - #myeuropaplog series  歐洲行旅照片記錄系列](https://steemit.com/@deanliu/cafe-mondieu-bratislava-myeuropaplog-series)
+This page is synchronized from the post: ['Cafe Mondieu, Bratislava 🍮  - #myeuropaplog series  歐洲行旅照片記錄系列'](https://steemit.com/@deanliu/cafe-mondieu-bratislava-myeuropaplog-series)

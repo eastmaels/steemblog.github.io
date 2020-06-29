@@ -1,10 +1,11 @@
 
 ---
-title: "🍵  老子之道，老道之道，老子知道  🍵  The Way of LAODR 🍵"
+title: '🍵  老子之道，老道之道，老子知道  🍵  The Way of LAODR 🍵'
 permlink: the-way-of-laodr
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-21 16:02:30
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - philosophy
 - life
 - cn-programming
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -83,4 +84,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🍵  老子之道，老道之道，老子知道  🍵  The Way of LAODR 🍵](https://steemit.com/@deanliu/the-way-of-laodr)
+This page is synchronized from the post: ['🍵  老子之道，老道之道，老子知道  🍵  The Way of LAODR 🍵'](https://steemit.com/@deanliu/the-way-of-laodr)

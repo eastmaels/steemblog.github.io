@@ -1,10 +1,11 @@
 
 ---
-title: "[steemit exclusive] Aftermath of Typhoon MEGI  ... Live reporting #2  梅姬颱風災情第一手報導"
+title: '[steemit exclusive] Aftermath of Typhoon MEGI  ... Live reporting #2  梅姬颱風災情第一手報導'
 permlink: steemit-exclusive-aftermath-of-typhoon-megi-live-reporting-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-28 13:48:24
 categories:
 - news
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - photogrpahy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[steemit exclusive] Aftermath of Typhoon MEGI  ... Live reporting #2  梅姬颱風災情第一手報導](https://steemit.com/@deanliu/steemit-exclusive-aftermath-of-typhoon-megi-live-reporting-2)
+This page is synchronized from the post: ['[steemit exclusive] Aftermath of Typhoon MEGI  ... Live reporting #2  梅姬颱風災情第一手報導'](https://steemit.com/@deanliu/steemit-exclusive-aftermath-of-typhoon-megi-live-reporting-2)

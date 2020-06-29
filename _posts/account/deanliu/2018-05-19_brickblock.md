@@ -1,10 +1,11 @@
 
 ---
-title: "Brickblock - 資產代幣化的未來？"
+title: 'Brickblock - 資產代幣化的未來？'
 permlink: brickblock
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-19 01:00:09
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - tokenization
 - cn
 - busy
-thumbnail: https://gateway.ipfs.io/ipfs/QmRHZy4bbPURQnVEm3qemCCsuo3or3Jh5mzkECQoFweDd1
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmRHZy4bbPURQnVEm3qemCCsuo3or3Jh5mzkECQoFweDd1'
 sidebar:
     right:
         sticky: true
@@ -64,4 +65,4 @@ Quote一段相關話：
 
 - - -
 
-This page is synchronized from the post: [Brickblock - 資產代幣化的未來？](https://steemit.com/@deanliu/brickblock)
+This page is synchronized from the post: ['Brickblock - 資產代幣化的未來？'](https://steemit.com/@deanliu/brickblock)

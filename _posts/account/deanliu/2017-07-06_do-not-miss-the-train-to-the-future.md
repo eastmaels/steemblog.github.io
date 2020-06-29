@@ -1,10 +1,11 @@
 
 ---
-title: "🚀 不要錯過，這通向未來的窗口  🚀 Do Not Miss the Train to the Future"
+title: '🚀 不要錯過，這通向未來的窗口  🚀 Do Not Miss the Train to the Future'
 permlink: do-not-miss-the-train-to-the-future
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-06 06:12:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steem
 - blockchain
 - future
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🚀 不要錯過，這通向未來的窗口  🚀 Do Not Miss the Train to the Future](https://steemit.com/@deanliu/do-not-miss-the-train-to-the-future)
+This page is synchronized from the post: ['🚀 不要錯過，這通向未來的窗口  🚀 Do Not Miss the Train to the Future'](https://steemit.com/@deanliu/do-not-miss-the-train-to-the-future)

@@ -1,10 +1,11 @@
 
 ---
-title: "[滬尾遊] 再訪Ancre Cafe"
+title: '[滬尾遊] 再訪Ancre Cafe'
 permlink: ancre-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-17 13:02:48
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - photography
 - cafe
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/d0d82c186d0817fbb06af75526bf7ad6d9894690.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/d0d82c186d0817fbb06af75526bf7ad6d9894690.jpg'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[滬尾遊] 再訪Ancre Cafe](https://steemit.com/@deanliu/ancre-cafe)
+This page is synchronized from the post: ['[滬尾遊] 再訪Ancre Cafe'](https://steemit.com/@deanliu/ancre-cafe)

@@ -1,10 +1,11 @@
 
 ---
-title: "SCT社區的啟發： Steem區塊鏈上的tag"
+title: 'SCT社區的啟發： Steem區塊鏈上的tag'
 permlink: sct-steem-tag
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-25 22:27:27
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - blockchain
 - sct-cn
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmaBwb83dtQgxiBmw2FHoCiEZ2HeoU2B2LFuCnrGXSvHxa/cabinet-3283536_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmaBwb83dtQgxiBmw2FHoCiEZ2HeoU2B2LFuCnrGXSvHxa/cabinet-3283536_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ Steemit比較特別，它還是可以選擇顯示所有上Steem的文章，當�
 
 - - -
 
-This page is synchronized from the post: [SCT社區的啟發： Steem區塊鏈上的tag](https://steemit.com/@deanliu/sct-steem-tag)
+This page is synchronized from the post: ['SCT社區的啟發： Steem區塊鏈上的tag'](https://steemit.com/@deanliu/sct-steem-tag)

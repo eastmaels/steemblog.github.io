@@ -1,10 +1,11 @@
 
 ---
-title: "Alternative SBD that you don't want :)  這種SBD還是不用了吧!? :)"
+title: 'Alternative SBD that you don''t want :)  這種SBD還是不用了吧!? :)'
 permlink: alternative-sbd-that-you-don-t-want-sbd
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-07 12:13:33
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - funny
 - money
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Alternative SBD that you don't want :)  這種SBD還是不用了吧!? :)](https://steemit.com/@deanliu/alternative-sbd-that-you-don-t-want-sbd)
+This page is synchronized from the post: ['Alternative SBD that you don''t want :)  這種SBD還是不用了吧!? :)'](https://steemit.com/@deanliu/alternative-sbd-that-you-don-t-want-sbd)

@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Café Imperial in Praha - One of the world's most beautiful cafe"
+title: 'My Europa Plog - Café Imperial in Praha - One of the world''s most beautiful cafe'
 permlink: my-europa-plog-cafe-imperial-at-praha-one-of-the-world-s-most-beautiful-cafe-2017512t62522885z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-12 04:25:27
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - food
 - prague
 - myeuropaplog
-thumbnail: https://i.imgur.com/ce3dfoW.jpg
+thumbnail: 'https://i.imgur.com/ce3dfoW.jpg'
 sidebar:
     right:
         sticky: true
@@ -30,4 +31,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Café Imperial in Praha - One of the world's most beautiful cafe](https://steemit.com/@deanliu/my-europa-plog-cafe-imperial-at-praha-one-of-the-world-s-most-beautiful-cafe-2017512t62522885z)
+This page is synchronized from the post: ['My Europa Plog - Café Imperial in Praha - One of the world''s most beautiful cafe'](https://steemit.com/@deanliu/my-europa-plog-cafe-imperial-at-praha-one-of-the-world-s-most-beautiful-cafe-2017512t62522885z)

@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 兒童節之雞腿小偷與細菌戰"
+title: '[D&TT] 兒童節之雞腿小偷與細菌戰'
 permlink: 3dcanv-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-04 03:53:48
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - drawing
 - family
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmccTkSqMoe2GmpgvMZMYEPj6LvPL8Q9UsGNmoG6XJVe3s/photo6138645676859435257.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmccTkSqMoe2GmpgvMZMYEPj6LvPL8Q9UsGNmoG6XJVe3s/photo6138645676859435257.jpg'
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 兒童節之雞腿小偷與細菌戰](https://steemit.com/@deanliu/3dcanv-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 兒童節之雞腿小偷與細菌戰'](https://steemit.com/@deanliu/3dcanv-d-and-tt)

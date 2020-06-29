@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 15 ｜《文化讀癮．一週譯報》第15期： 薩滿舞——盡顯雨林的豐沛生命"
+title: 'Culture Vulture for CNers Issue 15 ｜《文化讀癮．一週譯報》第15期： 薩滿舞——盡顯雨林的豐沛生命'
 permlink: culture-vulture-for-cners-issue-15-15
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-20 13:32:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - indonesia
-thumbnail: https://steemitimages.com/DQmbULLQcLoYLEKCksvn8jVfVjuFm6Fnc6JTAd3ddR1GhpZ/CV15.jpg
+thumbnail: 'https://steemitimages.com/DQmbULLQcLoYLEKCksvn8jVfVjuFm6Fnc6JTAd3ddR1GhpZ/CV15.jpg'
 sidebar:
     right:
         sticky: true
@@ -139,4 +140,4 @@ CN區的朋友，大家好！
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 15 ｜《文化讀癮．一週譯報》第15期： 薩滿舞——盡顯雨林的豐沛生命](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-15-15)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 15 ｜《文化讀癮．一週譯報》第15期： 薩滿舞——盡顯雨林的豐沛生命'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-15-15)

@@ -1,10 +1,11 @@
 
 ---
-title: "感謝Steempeak！解決我發文的困擾..."
+title: '感謝Steempeak！解決我發文的困擾...'
 permlink: steempeak
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-15 23:24:09
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - steem
 - steem-help
 - steempeak
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/7wXzST3e-E89EA2E5B995E5BFABE785A7202019-05-1420E4B88AE58D889.22.06.png
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/7wXzST3e-E89EA2E5B995E5BFABE785A7202019-05-1420E4B88AE58D889.22.06.png'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [感謝Steempeak！解決我發文的困擾...](https://steemit.com/@deanliu/steempeak)
+This page is synchronized from the post: ['感謝Steempeak！解決我發文的困擾...'](https://steemit.com/@deanliu/steempeak)

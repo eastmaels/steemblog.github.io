@@ -1,10 +1,11 @@
 
 ---
-title: "[News!] Brisbane Airport Merchants Accept Steem as Payments!"
+title: '[News!] Brisbane Airport Merchants Accept Steem as Payments!'
 permlink: news-brisbane-airport-merchants-accept-steem-as-payments
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-02 00:31:48
 categories:
 - steem
@@ -14,7 +15,7 @@ tags:
 - busy
 - travel
 - bitcoin
-thumbnail: https://cdn.steemitimages.com/DQmXrUckc8JHAavbTXeEFX29nLCJfE7WxEyqunCfWBAdmrf/shield-288565_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmXrUckc8JHAavbTXeEFX29nLCJfE7WxEyqunCfWBAdmrf/shield-288565_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ I am really excited by this news and look forward to a wilder adoption of crypto
 
 - - -
 
-This page is synchronized from the post: [[News!] Brisbane Airport Merchants Accept Steem as Payments!](https://steemit.com/@deanliu/news-brisbane-airport-merchants-accept-steem-as-payments)
+This page is synchronized from the post: ['[News!] Brisbane Airport Merchants Accept Steem as Payments!'](https://steemit.com/@deanliu/news-brisbane-airport-merchants-accept-steem-as-payments)

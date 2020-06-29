@@ -1,10 +1,11 @@
 
 ---
-title: "台北木柵動物園 #1 Taipei Muzha Zoo"
+title: '台北木柵動物園 #1 Taipei Muzha Zoo'
 permlink: 1-taipei-muzha-zoo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-12 14:12:09
 categories:
 - zoo
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - busy
-thumbnail: https://ipfs.busy.org/ipfs/QmcVNoDKkvC7B2J4FX151z46857FFppDb6V4ZR1k8Q9ES9
+thumbnail: 'https://ipfs.busy.org/ipfs/QmcVNoDKkvC7B2J4FX151z46857FFppDb6V4ZR1k8Q9ES9'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Village scenery .... nice!
 
 - - -
 
-This page is synchronized from the post: [台北木柵動物園 #1 Taipei Muzha Zoo](https://steemit.com/@deanliu/1-taipei-muzha-zoo)
+This page is synchronized from the post: ['台北木柵動物園 #1 Taipei Muzha Zoo'](https://steemit.com/@deanliu/1-taipei-muzha-zoo)

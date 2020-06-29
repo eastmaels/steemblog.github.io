@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Yoyogi Park 代々木公園"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Yoyogi Park 代々木公園'
 permlink: dean-s-tokyo-snapshots-yoyogi-park
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-24 11:23:51
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - park
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmNnERdhhpaFyVTqQB6s8NeMyMge6imN274PyLUFQGhFdN/DSC_5818.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNnERdhhpaFyVTqQB6s8NeMyMge6imN274PyLUFQGhFdN/DSC_5818.JPG'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Yoyogi Park 代々木公園](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-yoyogi-park)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Yoyogi Park 代々木公園'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-yoyogi-park)

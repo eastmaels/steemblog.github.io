@@ -1,10 +1,11 @@
 
 ---
-title: "[滬尾遊] A beautiful cafe by the riverside ... Ancre Cafe"
+title: '[滬尾遊] A beautiful cafe by the riverside ... Ancre Cafe'
 permlink: a-beautiful-cafe-by-the-riverside-ancre-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-23 12:56:30
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - tamsui
 - busy
 - cafe
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/51d7aeea5f4c3f8e83384b789143b8abf72d99c7.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/51d7aeea5f4c3f8e83384b789143b8abf72d99c7.jpg'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ Ancre Cafe, located on the 2nd floor of a riverside building, is such a relaxing
 
 - - -
 
-This page is synchronized from the post: [[滬尾遊] A beautiful cafe by the riverside ... Ancre Cafe](https://steemit.com/@deanliu/a-beautiful-cafe-by-the-riverside-ancre-cafe)
+This page is synchronized from the post: ['[滬尾遊] A beautiful cafe by the riverside ... Ancre Cafe'](https://steemit.com/@deanliu/a-beautiful-cafe-by-the-riverside-ancre-cafe)

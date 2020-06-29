@@ -1,10 +1,11 @@
 
 ---
-title: "Both Tibet AND Indian dishes for dinner!! Too good that I had it again. 西藏廚房美食又來了，換菜單！"
+title: 'Both Tibet AND Indian dishes for dinner!! Too good that I had it again. 西藏廚房美食又來了，換菜單！'
 permlink: both-tibet-and-indian-dishes-for-dinner-too-good-that-i-had-it-again
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-10 13:33:36
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - tibet
 - indian
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Both Tibet AND Indian dishes for dinner!! Too good that I had it again. 西藏廚房美食又來了，換菜單！](https://steemit.com/@deanliu/both-tibet-and-indian-dishes-for-dinner-too-good-that-i-had-it-again)
+This page is synchronized from the post: ['Both Tibet AND Indian dishes for dinner!! Too good that I had it again. 西藏廚房美食又來了，換菜單！'](https://steemit.com/@deanliu/both-tibet-and-indian-dishes-for-dinner-too-good-that-i-had-it-again)

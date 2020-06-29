@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 こんばんは  Konbanwa!"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 こんばんは  Konbanwa!'
 permlink: deans-tokyo-snapshots----konbanwa-p08mrbfi
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-07 12:35:42
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - photography
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/2801f15d6cd424e7db73854e8f7311b11a86cab2.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/2801f15d6cd424e7db73854e8f7311b11a86cab2.png'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 こんばんは  Konbanwa!](https://steemit.com/@deanliu/deans-tokyo-snapshots----konbanwa-p08mrbfi)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 こんばんは  Konbanwa!'](https://steemit.com/@deanliu/deans-tokyo-snapshots----konbanwa-p08mrbfi)

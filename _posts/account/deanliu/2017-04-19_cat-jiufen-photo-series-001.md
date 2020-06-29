@@ -1,10 +1,11 @@
 
 ---
-title: "Cat - Jiufen photo series 001"
+title: 'Cat - Jiufen photo series 001'
 permlink: cat-jiufen-photo-series-001
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-19 05:45:18
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - life
 - cat
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Cat - Jiufen photo series 001](https://steemit.com/@deanliu/cat-jiufen-photo-series-001)
+This page is synchronized from the post: ['Cat - Jiufen photo series 001'](https://steemit.com/@deanliu/cat-jiufen-photo-series-001)

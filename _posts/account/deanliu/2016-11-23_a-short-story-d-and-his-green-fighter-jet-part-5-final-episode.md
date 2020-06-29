@@ -1,17 +1,18 @@
 
 ---
-title: "短篇故事－少年和他的綠色戰機 (五) 完結篇 A Short Story - D and his Green Fighter Jet - part 5 [final episode]"
+title: '短篇故事－少年和他的綠色戰機 (五) 完結篇 A Short Story - D and his Green Fighter Jet - part 5 [final episode]'
 permlink: a-short-story-d-and-his-green-fighter-jet-part-5-final-episode
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-23 15:10:27
 categories:
 - story
 tags:
 - story
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -62,4 +63,4 @@ Missle Launch? (Y/N) : _</p>
 
 - - -
 
-This page is synchronized from the post: [短篇故事－少年和他的綠色戰機 (五) 完結篇 A Short Story - D and his Green Fighter Jet - part 5 [final episode]](https://steemit.com/@deanliu/a-short-story-d-and-his-green-fighter-jet-part-5-final-episode)
+This page is synchronized from the post: ['短篇故事－少年和他的綠色戰機 (五) 完結篇 A Short Story - D and his Green Fighter Jet - part 5 [final episode]'](https://steemit.com/@deanliu/a-short-story-d-and-his-green-fighter-jet-part-5-final-episode)

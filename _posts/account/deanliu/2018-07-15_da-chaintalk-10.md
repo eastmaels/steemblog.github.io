@@ -1,10 +1,11 @@
 
 ---
-title: "DA-ChainTalk #10 — 區塊鏈上的手續費"
+title: 'DA-ChainTalk #10 — 區塊鏈上的手續費'
 permlink: da-chaintalk-10
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-15 23:34:42
 categories:
 - da-chaintalk
@@ -14,7 +15,7 @@ tags:
 - bandwidth
 - blockchain
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmf8EkBHSRi9ypJDw5zMD9affUGqd1rfyra1cjx3L1wzSH/highway-370005_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmf8EkBHSRi9ypJDw5zMD9affUGqd1rfyra1cjx3L1wzSH/highway-370005_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -98,4 +99,4 @@ EOS用這種方式限制了一個Dapp的運算權力，免於惡意攻擊，同�
 
 - - -
 
-This page is synchronized from the post: [DA-ChainTalk #10 — 區塊鏈上的手續費](https://steemit.com/@deanliu/da-chaintalk-10)
+This page is synchronized from the post: ['DA-ChainTalk #10 — 區塊鏈上的手續費'](https://steemit.com/@deanliu/da-chaintalk-10)

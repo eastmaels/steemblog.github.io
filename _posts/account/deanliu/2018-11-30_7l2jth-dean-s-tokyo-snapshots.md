@@ -1,10 +1,11 @@
 
 ---
-title: "【橫濱】味の牛たん喜助 🍙 Dean's Tokyo Snapshots 🍙 橫濱的喜助牛舌餐廳"
+title: '【橫濱】味の牛たん喜助 🍙 Dean''s Tokyo Snapshots 🍙 橫濱的喜助牛舌餐廳'
 permlink: 7l2jth-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-30 13:19:48
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/a6c91ab29b56c11e0318be01aac994d2db88480b.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/a6c91ab29b56c11e0318be01aac994d2db88480b.png'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [【橫濱】味の牛たん喜助 🍙 Dean's Tokyo Snapshots 🍙 橫濱的喜助牛舌餐廳](https://steemit.com/@deanliu/7l2jth-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['【橫濱】味の牛たん喜助 🍙 Dean''s Tokyo Snapshots 🍙 橫濱的喜助牛舌餐廳'](https://steemit.com/@deanliu/7l2jth-dean-s-tokyo-snapshots)

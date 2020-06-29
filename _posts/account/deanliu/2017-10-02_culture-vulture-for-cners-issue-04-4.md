@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 04 ｜《文化读瘾．一周译报》第4期：承载文化生活的古老建筑"
+title: 'Culture Vulture for CNers Issue 04 ｜《文化读瘾．一周译报》第4期：承载文化生活的古老建筑'
 permlink: culture-vulture-for-cners-issue-04-4
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-02 08:32:45
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - architecture
-thumbnail: https://steemitimages.com/DQmXCSyLpA1uNjCyy1QcwWk3Z6fGt4eYfh62WCfStCa5PPG/banner_simp04.jpg
+thumbnail: 'https://steemitimages.com/DQmXCSyLpA1uNjCyy1QcwWk3Z6fGt4eYfh62WCfStCa5PPG/banner_simp04.jpg'
 sidebar:
     right:
         sticky: true
@@ -183,4 +184,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 04 ｜《文化读瘾．一周译报》第4期：承载文化生活的古老建筑](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-04-4)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 04 ｜《文化读瘾．一周译报》第4期：承载文化生活的古老建筑'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-04-4)

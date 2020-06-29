@@ -1,10 +1,11 @@
 
 ---
-title: "Hikawa Maru @ Yokohama #2 🍙 Dean's Tokyo Snapshots 🍙 橫濱冰川丸號 #2"
+title: 'Hikawa Maru @ Yokohama #2 🍙 Dean''s Tokyo Snapshots 🍙 橫濱冰川丸號 #2'
 permlink: hikawa-maru-yokohama-2-dean-s-tokyo-snapshots-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-28 07:42:51
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmNabXggzXMuwmbZhF6EeauKGrKE3kvdGvK6Tea7iXE2ha/DSC_7405.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNabXggzXMuwmbZhF6EeauKGrKE3kvdGvK6Tea7iXE2ha/DSC_7405.JPG'
 sidebar:
     right:
         sticky: true
@@ -78,4 +79,4 @@ My little Captain! ^_^  我看這位才是艦長？真是年輕有為啊～～�
 
 - - -
 
-This page is synchronized from the post: [Hikawa Maru @ Yokohama #2 🍙 Dean's Tokyo Snapshots 🍙 橫濱冰川丸號 #2](https://steemit.com/@deanliu/hikawa-maru-yokohama-2-dean-s-tokyo-snapshots-2)
+This page is synchronized from the post: ['Hikawa Maru @ Yokohama #2 🍙 Dean''s Tokyo Snapshots 🍙 橫濱冰川丸號 #2'](https://steemit.com/@deanliu/hikawa-maru-yokohama-2-dean-s-tokyo-snapshots-2)

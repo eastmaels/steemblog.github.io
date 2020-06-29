@@ -1,10 +1,11 @@
 
 ---
-title: "Father and Son"
+title: 'Father and Son'
 permlink: father-and-son
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-21 08:44:12
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - photography
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Father and Son](https://steemit.com/@deanliu/father-and-son)
+This page is synchronized from the post: ['Father and Son'](https://steemit.com/@deanliu/father-and-son)

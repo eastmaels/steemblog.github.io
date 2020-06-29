@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Meeting Europe's first Bitcoin ATM in Bratislava! Bought 100 Euros! Step by step"
+title: 'My Europa Plog - Meeting Europe''s first Bitcoin ATM in Bratislava! Bought 100 Euros! Step by step'
 permlink: my-europa-plog-meeting-europe-s-first-bitcoin-atm-in-bratislava-bought-100-euros-step-by-step
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-18 05:15:51
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - beyondbitcoin
 - money
 - myeuroplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Meeting Europe's first Bitcoin ATM in Bratislava! Bought 100 Euros! Step by step](https://steemit.com/@deanliu/my-europa-plog-meeting-europe-s-first-bitcoin-atm-in-bratislava-bought-100-euros-step-by-step)
+This page is synchronized from the post: ['My Europa Plog - Meeting Europe''s first Bitcoin ATM in Bratislava! Bought 100 Euros! Step by step'](https://steemit.com/@deanliu/my-europa-plog-meeting-europe-s-first-bitcoin-atm-in-bratislava-bought-100-euros-step-by-step)

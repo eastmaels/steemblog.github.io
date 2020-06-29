@@ -1,10 +1,11 @@
 
 ---
-title: "[重要文件] A Cyberpunk Manifesto"
+title: '[重要文件] A Cyberpunk Manifesto'
 permlink: a-cyberpunk-manifesto
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-12 08:56:21
 categories:
 - cyberpunk
@@ -14,7 +15,7 @@ tags:
 - future
 - past
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmPuz1sUR6kxM7P5iQWpf7DWQiRW7Atsy7ejW9WM4R13JV/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-12%20%E4%B8%8B%E5%8D%884.48.01.png
+thumbnail: 'https://cdn.steemitimages.com/DQmPuz1sUR6kxM7P5iQWpf7DWQiRW7Atsy7ejW9WM4R13JV/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-07-12%20%E4%B8%8B%E5%8D%884.48.01.png'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ source: [***A Cyberpunk Manifesto***](http://project.cyberpunk.ru/idb/cyberpunk_
 
 - - -
 
-This page is synchronized from the post: [[重要文件] A Cyberpunk Manifesto](https://steemit.com/@deanliu/a-cyberpunk-manifesto)
+This page is synchronized from the post: ['[重要文件] A Cyberpunk Manifesto'](https://steemit.com/@deanliu/a-cyberpunk-manifesto)

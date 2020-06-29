@@ -1,10 +1,11 @@
 
 ---
-title: "京都勝牛炸牛排在鎌倉  🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #6"
+title: '京都勝牛炸牛排在鎌倉  🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #6'
 permlink: dean-s-tokyo-snapshots-kamakura-6
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-01 13:17:30
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/532999f3ff72e17adee0ddec4f965c7404c78409.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/532999f3ff72e17adee0ddec4f965c7404c78409.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ _日本旅遊已結束，繼續以此系列紀錄日本之行...._ ^^
 
 - - -
 
-This page is synchronized from the post: [京都勝牛炸牛排在鎌倉  🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #6](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-6)
+This page is synchronized from the post: ['京都勝牛炸牛排在鎌倉  🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #6'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-kamakura-6)

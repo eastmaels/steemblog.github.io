@@ -1,10 +1,11 @@
 
 ---
-title: "Beauty is only skin deep - 把美女留在今年的句點裡。"
+title: 'Beauty is only skin deep - 把美女留在今年的句點裡。'
 permlink: beauty-is-only-skin-deep
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-27 11:38:36
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - funny
 - sexuality
 - puzzle
-thumbnail: https://steemitimages.com/DQmTkDKGzD2FR8v1x3wtCsQq97UVnPGhYZzpUNvGbt8ZUdu/girl-2632807_640.jpg
+thumbnail: 'https://steemitimages.com/DQmTkDKGzD2FR8v1x3wtCsQq97UVnPGhYZzpUNvGbt8ZUdu/girl-2632807_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -72,4 +73,4 @@ CN區大叔大嬸，兄弟姊妹，小朋友們好，
 
 - - -
 
-This page is synchronized from the post: [Beauty is only skin deep - 把美女留在今年的句點裡。](https://steemit.com/@deanliu/beauty-is-only-skin-deep)
+This page is synchronized from the post: ['Beauty is only skin deep - 把美女留在今年的句點裡。'](https://steemit.com/@deanliu/beauty-is-only-skin-deep)

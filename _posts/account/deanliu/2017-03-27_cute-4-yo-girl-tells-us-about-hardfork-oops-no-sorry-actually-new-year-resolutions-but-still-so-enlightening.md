@@ -1,10 +1,11 @@
 
 ---
-title: "Cute 4 yo girl tells us about Hardfork, oops no, sorry, actually New Year Resolutions ... But still so enlightening!!"
+title: 'Cute 4 yo girl tells us about Hardfork, oops no, sorry, actually New Year Resolutions ... But still so enlightening!!'
 permlink: cute-4-yo-girl-tells-us-about-hardfork-oops-no-sorry-actually-new-year-resolutions-but-still-so-enlightening
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-27 05:51:45
 categories:
 - steemit
@@ -14,7 +15,7 @@ tags:
 - hardfork
 - funny
 - philosophy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -48,4 +49,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Cute 4 yo girl tells us about Hardfork, oops no, sorry, actually New Year Resolutions ... But still so enlightening!!](https://steemit.com/@deanliu/cute-4-yo-girl-tells-us-about-hardfork-oops-no-sorry-actually-new-year-resolutions-but-still-so-enlightening)
+This page is synchronized from the post: ['Cute 4 yo girl tells us about Hardfork, oops no, sorry, actually New Year Resolutions ... But still so enlightening!!'](https://steemit.com/@deanliu/cute-4-yo-girl-tells-us-about-hardfork-oops-no-sorry-actually-new-year-resolutions-but-still-so-enlightening)

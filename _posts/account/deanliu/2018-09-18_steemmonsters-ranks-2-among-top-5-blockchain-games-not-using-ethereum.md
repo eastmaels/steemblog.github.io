@@ -1,10 +1,11 @@
 
 ---
-title: "SteemMonsters ranks #2 among Top 5 Blockchain Games not Using Ethereum"
+title: 'SteemMonsters ranks #2 among Top 5 Blockchain Games "not Using Ethereum"'
 permlink: steemmonsters-ranks-2-among-top-5-blockchain-games-not-using-ethereum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-09-18 00:41:24
 categories:
 - news
@@ -14,7 +15,7 @@ tags:
 - gaming
 - steem
 - blockchain
-thumbnail: https://cdn.steemitimages.com/DQmUNKuk9NXnWNeqwE9Q9n7rcP2exRdkYSydahj1m821LMz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-18%20%E4%B8%8A%E5%8D%888.39.55.png
+thumbnail: 'https://cdn.steemitimages.com/DQmUNKuk9NXnWNeqwE9Q9n7rcP2exRdkYSydahj1m821LMz/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-09-18%20%E4%B8%8A%E5%8D%888.39.55.png'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ Check out their website if you are not yet aware about this fascinating game! ht
 
 - - -
 
-This page is synchronized from the post: [SteemMonsters ranks #2 among Top 5 Blockchain Games not Using Ethereum](https://steemit.com/@deanliu/steemmonsters-ranks-2-among-top-5-blockchain-games-not-using-ethereum)
+This page is synchronized from the post: ['SteemMonsters ranks #2 among Top 5 Blockchain Games "not Using Ethereum"'](https://steemit.com/@deanliu/steemmonsters-ranks-2-among-top-5-blockchain-games-not-using-ethereum)

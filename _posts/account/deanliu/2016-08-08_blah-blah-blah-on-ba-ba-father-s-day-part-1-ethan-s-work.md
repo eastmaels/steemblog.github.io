@@ -1,10 +1,11 @@
 
 ---
-title: "Blah Blah Blah on Ba Ba Father's Day - part 1 - Ethan's work"
+title: 'Blah Blah Blah on Ba Ba Father''s Day - part 1 - Ethan''s work'
 permlink: blah-blah-blah-on-ba-ba-father-s-day-part-1-ethan-s-work
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-08 09:17:15
 categories:
 - life
@@ -13,7 +14,7 @@ tags:
 - whale
 - father
 - art
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -43,4 +44,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Blah Blah Blah on Ba Ba Father's Day - part 1 - Ethan's work](https://steemit.com/@deanliu/blah-blah-blah-on-ba-ba-father-s-day-part-1-ethan-s-work)
+This page is synchronized from the post: ['Blah Blah Blah on Ba Ba Father''s Day - part 1 - Ethan''s work'](https://steemit.com/@deanliu/blah-blah-blah-on-ba-ba-father-s-day-part-1-ethan-s-work)

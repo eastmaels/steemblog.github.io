@@ -1,17 +1,18 @@
 
 ---
-title: "Bye bye Tokyo, bye bye Japan! I'll miss you!"
+title: 'Bye bye Tokyo, bye bye Japan! I''ll miss you!'
 permlink: bye-bye-tokyo-bye-bye-japan-ill-miss-you-ujadz9vd
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-31 08:36:51
 categories:
 - dean-tokyo
 tags:
 - dean-tokyo
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/de1e8050de8cb311939155ece96f585389246b24.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/de1e8050de8cb311939155ece96f585389246b24.png'
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Bye bye Tokyo, bye bye Japan! I'll miss you!](https://steemit.com/@deanliu/bye-bye-tokyo-bye-bye-japan-ill-miss-you-ujadz9vd)
+This page is synchronized from the post: ['Bye bye Tokyo, bye bye Japan! I''ll miss you!'](https://steemit.com/@deanliu/bye-bye-tokyo-bye-bye-japan-ill-miss-you-ujadz9vd)

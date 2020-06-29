@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 TT Profiling"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 TT Profiling'
 permlink: dean-s-tokyo-snapshots-tt-profiling
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-16 23:20:54
 categories:
 - deantt
@@ -13,7 +14,7 @@ tags:
 - dean-tokyo
 - japan
 - photography
-thumbnail: https://cdn.steemitimages.com/DQmVTnZ8suZtqJHcsX4r99Nm4tGij6Ad8vNqU822idEy2RJ/DSC_0082.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmVTnZ8suZtqJHcsX4r99Nm4tGij6Ad8vNqU822idEy2RJ/DSC_0082.JPG'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 TT Profiling](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-tt-profiling)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 TT Profiling'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-tt-profiling)

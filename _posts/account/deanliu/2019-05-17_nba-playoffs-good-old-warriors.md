@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] Good Old Warriors"
+title: '[漫談NBA Playoffs] Good Old Warriors'
 permlink: nba-playoffs-good-old-warriors
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-17 01:23:00
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nba
 - playoffs
 - warriors
-thumbnail: https://cdn.steemitimages.com/DQmT3ndGnWDG68risFQDwH4p4NFK6gMv3jRcsTyVY5SiY4v/image.png
+thumbnail: 'https://cdn.steemitimages.com/DQmT3ndGnWDG68risFQDwH4p4NFK6gMv3jRcsTyVY5SiY4v/image.png'
 sidebar:
     right:
         sticky: true
@@ -47,4 +48,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] Good Old Warriors](https://steemit.com/@deanliu/nba-playoffs-good-old-warriors)
+This page is synchronized from the post: ['[漫談NBA Playoffs] Good Old Warriors'](https://steemit.com/@deanliu/nba-playoffs-good-old-warriors)

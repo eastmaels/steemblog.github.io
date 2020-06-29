@@ -1,10 +1,11 @@
 
 ---
-title: "🐩 This might be how a typical Korean girl joins Steemit  🐩 韓國女孩可能是怎麼來到這裡的"
+title: '🐩 This might be how a typical Korean girl joins Steemit  🐩 韓國女孩可能是怎麼來到這裡的'
 permlink: this-might-be-how-a-typical-korean-girl-joins-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-29 13:34:21
 categories:
 - bitshares
@@ -14,7 +15,7 @@ tags:
 - steemit
 - cn
 - kr
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🐩 This might be how a typical Korean girl joins Steemit  🐩 韓國女孩可能是怎麼來到這裡的](https://steemit.com/@deanliu/this-might-be-how-a-typical-korean-girl-joins-steemit)
+This page is synchronized from the post: ['🐩 This might be how a typical Korean girl joins Steemit  🐩 韓國女孩可能是怎麼來到這裡的'](https://steemit.com/@deanliu/this-might-be-how-a-typical-korean-girl-joins-steemit)

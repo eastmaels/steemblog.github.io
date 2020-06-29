@@ -1,10 +1,11 @@
 
 ---
-title: "How I deal with over-priced SBDs - Part 2 - It's Matchpool this time! :)"
+title: 'How I deal with over-priced SBDs - Part 2 - It''s Matchpool this time! :)'
 permlink: how-i-deal-with-over-priced-sbds-part-2-it-s-matchpool-this-time
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-04 05:35:33
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - sbd
 - matchpool
 - myexperiment
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -52,4 +53,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [How I deal with over-priced SBDs - Part 2 - It's Matchpool this time! :)](https://steemit.com/@deanliu/how-i-deal-with-over-priced-sbds-part-2-it-s-matchpool-this-time)
+This page is synchronized from the post: ['How I deal with over-priced SBDs - Part 2 - It''s Matchpool this time! :)'](https://steemit.com/@deanliu/how-i-deal-with-over-priced-sbds-part-2-it-s-matchpool-this-time)

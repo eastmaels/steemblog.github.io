@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Intense Matcha Ice Cream of Suzukien 壽々喜園 at Asakusa"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Intense Matcha Ice Cream of Suzukien 壽々喜園 at Asakusa'
 permlink: dean-s-tokyo-snapshots-intense-matcha-ice-cream-of-suzukien-at-asakusa
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-17 11:32:30
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - tea
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmQG7tiNA2vhQ9Z88tcwey9YzhGto322jw1Shg66AcUqkr/DSC_0005.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmQG7tiNA2vhQ9Z88tcwey9YzhGto322jw1Shg66AcUqkr/DSC_0005.JPG'
 sidebar:
     right:
         sticky: true
@@ -79,4 +80,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Intense Matcha Ice Cream of Suzukien 壽々喜園 at Asakusa](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-intense-matcha-ice-cream-of-suzukien-at-asakusa)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Intense Matcha Ice Cream of Suzukien 壽々喜園 at Asakusa'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-intense-matcha-ice-cream-of-suzukien-at-asakusa)

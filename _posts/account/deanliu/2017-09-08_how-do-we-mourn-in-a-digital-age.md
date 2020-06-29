@@ -1,10 +1,11 @@
 
 ---
-title: "How Do We Mourn In a Digital Age?  哀傷，在這新的世界？"
+title: 'How Do We Mourn In a Digital Age?  哀傷，在這新的世界？'
 permlink: how-do-we-mourn-in-a-digital-age
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-08 07:45:33
 categories:
 - mourn
@@ -14,7 +15,7 @@ tags:
 - digital
 - cn-reader
 - cn
-thumbnail: https://steemitimages.com/DQmUAKoshD5cjYuWp3Q3pdZkEQS7rF9AX9VntUMv7jrF4fp/pretty-woman-1509956_640.jpg
+thumbnail: 'https://steemitimages.com/DQmUAKoshD5cjYuWp3Q3pdZkEQS7rF9AX9VntUMv7jrF4fp/pretty-woman-1509956_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -90,4 +91,4 @@ Sorry, the blockchain does not have answer this time.
 
 - - -
 
-This page is synchronized from the post: [How Do We Mourn In a Digital Age?  哀傷，在這新的世界？](https://steemit.com/@deanliu/how-do-we-mourn-in-a-digital-age)
+This page is synchronized from the post: ['How Do We Mourn In a Digital Age?  哀傷，在這新的世界？'](https://steemit.com/@deanliu/how-do-we-mourn-in-a-digital-age)

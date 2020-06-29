@@ -1,10 +1,11 @@
 
 ---
-title: "日本住宿經驗談之一：基本認識 🍙 Dean's Tokyo Snapshots 🍙 相鐵 Fresa Inn 六本木"
+title: '日本住宿經驗談之一：基本認識 🍙 Dean''s Tokyo Snapshots 🍙 相鐵 Fresa Inn 六本木'
 permlink: deans-tokyo-snapshots---fresa-inn-brrkgmzm
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-03 10:40:48
 categories:
 - travel
@@ -15,7 +16,7 @@ tags:
 - cn
 - hotel
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmZxYvEaG5Abu9GyLXFbHzL1FPHzEwMotawMNotnWKM1Mn/DSC_5677.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmZxYvEaG5Abu9GyLXFbHzL1FPHzEwMotawMNotnWKM1Mn/DSC_5677.JPG'
 sidebar:
     right:
         sticky: true
@@ -121,4 +122,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [日本住宿經驗談之一：基本認識 🍙 Dean's Tokyo Snapshots 🍙 相鐵 Fresa Inn 六本木](https://steemit.com/@deanliu/deans-tokyo-snapshots---fresa-inn-brrkgmzm)
+This page is synchronized from the post: ['日本住宿經驗談之一：基本認識 🍙 Dean''s Tokyo Snapshots 🍙 相鐵 Fresa Inn 六本木'](https://steemit.com/@deanliu/deans-tokyo-snapshots---fresa-inn-brrkgmzm)

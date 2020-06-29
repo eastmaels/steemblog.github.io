@@ -1,17 +1,18 @@
 
 ---
-title: "隨筆詩 — 島嶼月夜  Poem - An Island Night"
+title: '隨筆詩 — 島嶼月夜  Poem - An Island Night'
 permlink: poem-an-island-night
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-11 08:18:33
 categories:
 - poem
 tags:
 - poem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [隨筆詩 — 島嶼月夜  Poem - An Island Night](https://steemit.com/@deanliu/poem-an-island-night)
+This page is synchronized from the post: ['隨筆詩 — 島嶼月夜  Poem - An Island Night'](https://steemit.com/@deanliu/poem-an-island-night)

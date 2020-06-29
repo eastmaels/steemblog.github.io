@@ -1,10 +1,11 @@
 
 ---
-title: "XPUMP - The smallest home theater in the world"
+title: 'XPUMP - The smallest home theater in the world'
 permlink: xpump-premium-portable-home-theater-at-your-fingertip
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-14 15:48:54
 categories:
 - steemhunt
@@ -14,7 +15,7 @@ tags:
 - gaming
 - acoustics
 - movie
-thumbnail: https://i.imgur.com/YxFotnZ.jpg
+thumbnail: 'https://i.imgur.com/YxFotnZ.jpg'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ This is posted on Steemhunt - A place where you can dig products and earn STEEM.
 
 - - -
 
-This page is synchronized from the post: [XPUMP - The smallest home theater in the world](https://steemit.com/@deanliu/xpump-premium-portable-home-theater-at-your-fingertip)
+This page is synchronized from the post: ['XPUMP - The smallest home theater in the world'](https://steemit.com/@deanliu/xpump-premium-portable-home-theater-at-your-fingertip)

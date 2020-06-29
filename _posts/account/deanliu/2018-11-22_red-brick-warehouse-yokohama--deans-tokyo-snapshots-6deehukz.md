@@ -1,10 +1,11 @@
 
 ---
-title: "Red brick warehouse Yokohama 🍙 Dean's Tokyo Snapshots 🍙 港未來的紅磚倉庫"
+title: 'Red brick warehouse Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 港未來的紅磚倉庫'
 permlink: red-brick-warehouse-yokohama--deans-tokyo-snapshots-6deehukz
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-22 01:43:03
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/9c1e182525123d34a436f9ac7dfd4c64e01e2f46.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/9c1e182525123d34a436f9ac7dfd4c64e01e2f46.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Red brick warehouse Yokohama 🍙 Dean's Tokyo Snapshots 🍙 港未來的紅磚倉庫](https://steemit.com/@deanliu/red-brick-warehouse-yokohama--deans-tokyo-snapshots-6deehukz)
+This page is synchronized from the post: ['Red brick warehouse Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 港未來的紅磚倉庫'](https://steemit.com/@deanliu/red-brick-warehouse-yokohama--deans-tokyo-snapshots-6deehukz)

@@ -1,10 +1,11 @@
 
 ---
-title: "A Simple Comparison - Buy Bitcoins in Taiwan and Sell them in Japan  買賣比特幣－台灣買，日本賣"
+title: 'A Simple Comparison - Buy Bitcoins in Taiwan and Sell them in Japan  買賣比特幣－台灣買，日本賣'
 permlink: a-simple-comparison-buy-bitcoins-in-taiwan-and-sell-them-in-japan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-12 07:12:57
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - japan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Simple Comparison - Buy Bitcoins in Taiwan and Sell them in Japan  買賣比特幣－台灣買，日本賣](https://steemit.com/@deanliu/a-simple-comparison-buy-bitcoins-in-taiwan-and-sell-them-in-japan)
+This page is synchronized from the post: ['A Simple Comparison - Buy Bitcoins in Taiwan and Sell them in Japan  買賣比特幣－台灣買，日本賣'](https://steemit.com/@deanliu/a-simple-comparison-buy-bitcoins-in-taiwan-and-sell-them-in-japan)

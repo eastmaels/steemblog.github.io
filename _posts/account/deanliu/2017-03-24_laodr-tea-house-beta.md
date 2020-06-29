@@ -1,10 +1,11 @@
 
 ---
-title: "🍵 老道茶館 🍵－請上坐，喝杯茶，說點事  🍵 LAODR Tea House [beta]🍵 170324"
+title: '🍵 老道茶館 🍵－請上坐，喝杯茶，說點事  🍵 LAODR Tea House [beta]🍵 170324'
 permlink: laodr-tea-house-beta
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-24 01:45:36
 categories:
 - laodr-teahouse
@@ -12,7 +13,7 @@ tags:
 - laodr-teahouse
 - cn
 - cn-chat
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🍵 老道茶館 🍵－請上坐，喝杯茶，說點事  🍵 LAODR Tea House [beta]🍵 170324](https://steemit.com/@deanliu/laodr-tea-house-beta)
+This page is synchronized from the post: ['🍵 老道茶館 🍵－請上坐，喝杯茶，說點事  🍵 LAODR Tea House [beta]🍵 170324'](https://steemit.com/@deanliu/laodr-tea-house-beta)

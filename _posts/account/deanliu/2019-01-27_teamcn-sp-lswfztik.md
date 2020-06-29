@@ -1,10 +1,11 @@
 
 ---
-title: "為Team-CN  拿下萬SP過好年！本帖要蒸及“嘴后食客頭飄補對 ”"
+title: '為Team-CN  拿下萬SP過好年！本帖要蒸及“嘴后食客頭飄補對 ”'
 permlink: teamcn-sp-lswfztik
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-27 11:23:54
 categories:
 - team-cn
@@ -12,7 +13,7 @@ tags:
 - team-cn
 - cn
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmWnmXD3Zzfr89WDBZNcA76niWsJPpfYuLj42cCJ3cYvSn/snow-monkeys-1394883_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmWnmXD3Zzfr89WDBZNcA76niWsJPpfYuLj42cCJ3cYvSn/snow-monkeys-1394883_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [為Team-CN  拿下萬SP過好年！本帖要蒸及“嘴后食客頭飄補對 ”](https://steemit.com/@deanliu/teamcn-sp-lswfztik)
+This page is synchronized from the post: ['為Team-CN  拿下萬SP過好年！本帖要蒸及“嘴后食客頭飄補對 ”'](https://steemit.com/@deanliu/teamcn-sp-lswfztik)

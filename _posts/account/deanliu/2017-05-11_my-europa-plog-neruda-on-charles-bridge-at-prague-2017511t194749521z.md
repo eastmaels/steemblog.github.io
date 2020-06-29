@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Neruda on Charles Bridge at Prague"
+title: 'My Europa Plog - Neruda on Charles Bridge at Prague'
 permlink: my-europa-plog-neruda-on-charles-bridge-at-prague-2017511t194749521z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-11 17:47:54
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - poem
 - prague
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ Towards where the twilight goes erasing statues.<hr>Texts: poem of Pablo Neruda.
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Neruda on Charles Bridge at Prague](https://steemit.com/@deanliu/my-europa-plog-neruda-on-charles-bridge-at-prague-2017511t194749521z)
+This page is synchronized from the post: ['My Europa Plog - Neruda on Charles Bridge at Prague'](https://steemit.com/@deanliu/my-europa-plog-neruda-on-charles-bridge-at-prague-2017511t194749521z)

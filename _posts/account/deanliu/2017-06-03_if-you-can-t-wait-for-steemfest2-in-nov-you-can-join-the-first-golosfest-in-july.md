@@ -1,10 +1,11 @@
 
 ---
-title: "If You Can't Wait for SteemFest2 in Nov., You Can Join the First GolosFest in July!!"
+title: 'If You Can''t Wait for SteemFest2 in Nov., You Can Join the First GolosFest in July!!'
 permlink: if-you-can-t-wait-for-steemfest2-in-nov-you-can-join-the-first-golosfest-in-july
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-03 05:20:27
 categories:
 - golos
@@ -14,7 +15,7 @@ tags:
 - steemfest
 - news
 - party
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ Book a room at the hotel (on your own) you can, using a special link that will b
 
 - - -
 
-This page is synchronized from the post: [If You Can't Wait for SteemFest2 in Nov., You Can Join the First GolosFest in July!!](https://steemit.com/@deanliu/if-you-can-t-wait-for-steemfest2-in-nov-you-can-join-the-first-golosfest-in-july)
+This page is synchronized from the post: ['If You Can''t Wait for SteemFest2 in Nov., You Can Join the First GolosFest in July!!'](https://steemit.com/@deanliu/if-you-can-t-wait-for-steemfest2-in-nov-you-can-join-the-first-golosfest-in-july)

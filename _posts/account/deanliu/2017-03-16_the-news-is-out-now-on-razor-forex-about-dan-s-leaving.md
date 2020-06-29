@@ -1,10 +1,11 @@
 
 ---
-title: "The News Is Out on Razor Forex - About Dan's Leaving"
+title: 'The News Is Out on Razor Forex - About Dan''s Leaving'
 permlink: the-news-is-out-now-on-razor-forex-about-dan-s-leaving
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-16 05:14:51
 categories:
 - news
@@ -12,7 +13,7 @@ tags:
 - news
 - steemit
 - dan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -37,4 +38,4 @@ Larimer’s two-sentence post, which gave no explanation or reason for the depar
 
 - - -
 
-This page is synchronized from the post: [The News Is Out on Razor Forex - About Dan's Leaving](https://steemit.com/@deanliu/the-news-is-out-now-on-razor-forex-about-dan-s-leaving)
+This page is synchronized from the post: ['The News Is Out on Razor Forex - About Dan''s Leaving'](https://steemit.com/@deanliu/the-news-is-out-now-on-razor-forex-about-dan-s-leaving)

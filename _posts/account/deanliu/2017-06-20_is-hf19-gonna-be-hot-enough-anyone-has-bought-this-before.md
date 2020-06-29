@@ -1,10 +1,11 @@
 
 ---
-title: "IS HF19 Gonna Be HOT Enough? Anyone Has Bought This Before? 這台HF19烤箱夠不夠熱啊！？"
+title: 'IS HF19 Gonna Be HOT Enough? Anyone Has Bought This Before? 這台HF19烤箱夠不夠熱啊！？'
 permlink: is-hf19-gonna-be-hot-enough-anyone-has-bought-this-before
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-20 14:59:57
 categories:
 - hf19
@@ -14,7 +15,7 @@ tags:
 - oven
 - funny
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ I honestly don't know why you are so excited ... But it is a cheaper one that I 
 
 - - -
 
-This page is synchronized from the post: [IS HF19 Gonna Be HOT Enough? Anyone Has Bought This Before? 這台HF19烤箱夠不夠熱啊！？](https://steemit.com/@deanliu/is-hf19-gonna-be-hot-enough-anyone-has-bought-this-before)
+This page is synchronized from the post: ['IS HF19 Gonna Be HOT Enough? Anyone Has Bought This Before? 這台HF19烤箱夠不夠熱啊！？'](https://steemit.com/@deanliu/is-hf19-gonna-be-hot-enough-anyone-has-bought-this-before)

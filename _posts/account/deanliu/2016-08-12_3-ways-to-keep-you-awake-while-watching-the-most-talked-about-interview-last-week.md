@@ -1,10 +1,11 @@
 
 ---
-title: "3 ways to keep you awake while watching  the most talked about interview on Steemit"
+title: '3 ways to keep you awake while watching  the most talked about interview on Steemit'
 permlink: 3-ways-to-keep-you-awake-while-watching-the-most-talked-about-interview-last-week
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-12 18:55:03
 categories:
 - steemit
@@ -12,7 +13,7 @@ tags:
 - steemit
 - steem-help
 - dollarvigilante
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -90,4 +91,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [3 ways to keep you awake while watching  the most talked about interview on Steemit](https://steemit.com/@deanliu/3-ways-to-keep-you-awake-while-watching-the-most-talked-about-interview-last-week)
+This page is synchronized from the post: ['3 ways to keep you awake while watching  the most talked about interview on Steemit'](https://steemit.com/@deanliu/3-ways-to-keep-you-awake-while-watching-the-most-talked-about-interview-last-week)

@@ -1,10 +1,11 @@
 
 ---
-title: "🎈 我成為比特股終身會員啦！🎈 I have become a Lifetime Member of the Bitshares! 🎈"
+title: '🎈 我成為比特股終身會員啦！🎈 I have become a Lifetime Member of the Bitshares! 🎈'
 permlink: i-have-become-a-lifetime-member-of-the-bitshares
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-16 05:32:15
 categories:
 - bitshares
@@ -14,7 +15,7 @@ tags:
 - cryptocurrency
 - cn-cryptocurrency
 - cn
-thumbnail: https://steemitimages.com/500x1200/https://steemitimages.com/DQmVgG9CfU9WtujKGrUQ66dV2vKS78VsPMiAxar2siMitJa/image.png
+thumbnail: 'https://steemitimages.com/500x1200/https://steemitimages.com/DQmVgG9CfU9WtujKGrUQ66dV2vKS78VsPMiAxar2siMitJa/image.png'
 sidebar:
     right:
         sticky: true
@@ -110,4 +111,4 @@ Sorry I will only open them to CN members first. If you are really interested, I
 
 - - -
 
-This page is synchronized from the post: [🎈 我成為比特股終身會員啦！🎈 I have become a Lifetime Member of the Bitshares! 🎈](https://steemit.com/@deanliu/i-have-become-a-lifetime-member-of-the-bitshares)
+This page is synchronized from the post: ['🎈 我成為比特股終身會員啦！🎈 I have become a Lifetime Member of the Bitshares! 🎈'](https://steemit.com/@deanliu/i-have-become-a-lifetime-member-of-the-bitshares)

@@ -1,10 +1,11 @@
 
 ---
-title: "What we talk about when we talk about blockchain?"
+title: 'What we talk about when we talk about blockchain?'
 permlink: what-we-talk-about-when-we-talk-about-blockchain
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-14 11:55:00
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - funny
 - cryptocurrency
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -92,4 +93,4 @@ again, so much has to be changed, so many other critical obstacles have to be co
 
 - - -
 
-This page is synchronized from the post: [What we talk about when we talk about blockchain?](https://steemit.com/@deanliu/what-we-talk-about-when-we-talk-about-blockchain)
+This page is synchronized from the post: ['What we talk about when we talk about blockchain?'](https://steemit.com/@deanliu/what-we-talk-about-when-we-talk-about-blockchain)

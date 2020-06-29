@@ -1,10 +1,11 @@
 
 ---
-title: "Steemit Weekly for CNers - Issue 22 / 《社區週邊事》 - 第 22 期"
+title: 'Steemit Weekly for CNers - Issue 22 / 《社區"週"邊事》 - 第 22 期'
 permlink: steemit-weekly-for-cners-issue-22-22
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-18 09:40:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steemit
 - steemit-weekly
 - busy
-thumbnail: https://i.imgur.com/UeigX9y.png
+thumbnail: 'https://i.imgur.com/UeigX9y.png'
 sidebar:
     right:
         sticky: true
@@ -129,4 +130,4 @@ by **@penguinpablo**
 
 - - -
 
-This page is synchronized from the post: [Steemit Weekly for CNers - Issue 22 / 《社區週邊事》 - 第 22 期](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-22-22)
+This page is synchronized from the post: ['Steemit Weekly for CNers - Issue 22 / 《社區"週"邊事》 - 第 22 期'](https://steemit.com/@deanliu/steemit-weekly-for-cners-issue-22-22)

@@ -1,10 +1,11 @@
 
 ---
-title: "Pay to enroll in a Steemit blogging courses!? surprise surprise ..."
+title: 'Pay to enroll in a Steemit blogging courses!? surprise surprise ...'
 permlink: pay-to-enroll-in-a-steemit-blogging-courses-surprise-surprise
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-05 04:24:45
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - education
 - udemy
 - learning
-thumbnail: https://steemitimages.com/DQmSg9ZxyT6gsSpkSguyg7Q8eBDRwMePrm7AiVwU3k8YFoK/image.png
+thumbnail: 'https://steemitimages.com/DQmSg9ZxyT6gsSpkSguyg7Q8eBDRwMePrm7AiVwU3k8YFoK/image.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ Things really have changed... if you've got something that is valuable to others
 
 - - -
 
-This page is synchronized from the post: [Pay to enroll in a Steemit blogging courses!? surprise surprise ...](https://steemit.com/@deanliu/pay-to-enroll-in-a-steemit-blogging-courses-surprise-surprise)
+This page is synchronized from the post: ['Pay to enroll in a Steemit blogging courses!? surprise surprise ...'](https://steemit.com/@deanliu/pay-to-enroll-in-a-steemit-blogging-courses-surprise-surprise)

@@ -1,10 +1,11 @@
 
 ---
-title: "🐪  The Aladdin's magic lamp 🐪   阿拉丁神燈 🐪"
+title: '🐪  The Aladdin''s magic lamp 🐪   阿拉丁神燈 🐪'
 permlink: the-aladdin-s-magic-lamp
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-04 23:21:27
 categories:
 - story
@@ -14,7 +15,7 @@ tags:
 - dream
 - myeuropaplog
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -68,4 +69,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [🐪  The Aladdin's magic lamp 🐪   阿拉丁神燈 🐪](https://steemit.com/@deanliu/the-aladdin-s-magic-lamp)
+This page is synchronized from the post: ['🐪  The Aladdin''s magic lamp 🐪   阿拉丁神燈 🐪'](https://steemit.com/@deanliu/the-aladdin-s-magic-lamp)

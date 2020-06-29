@@ -1,10 +1,11 @@
 
 ---
-title: "The World's Top 10 Cities to Spend Cryptocurrencies ... "
+title: 'The World''s Top 10 Cities to Spend Cryptocurrencies ... '
 permlink: the-world-s-top-10-cities-to-spend-cryptocurrencies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-05 11:18:36
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - business
 - travel
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmaobTV6DYYVkfMq3Rg3eYkbQza8g3PEKzxyNr5XansZwK/bitcoin-3215526_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmaobTV6DYYVkfMq3Rg3eYkbQza8g3PEKzxyNr5XansZwK/bitcoin-3215526_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -81,4 +82,4 @@ Anyway, do you agree with this list of top 10? I've only been to Prague and Vien
 
 - - -
 
-This page is synchronized from the post: [The World's Top 10 Cities to Spend Cryptocurrencies ... ](https://steemit.com/@deanliu/the-world-s-top-10-cities-to-spend-cryptocurrencies)
+This page is synchronized from the post: ['The World''s Top 10 Cities to Spend Cryptocurrencies ... '](https://steemit.com/@deanliu/the-world-s-top-10-cities-to-spend-cryptocurrencies)

@@ -1,10 +1,11 @@
 
 ---
-title: "Culture Vulture for CNers Issue 05 ｜《文化讀癮．一週譯報》第5期：我的彩虹國度"
+title: 'Culture Vulture for CNers Issue 05 ｜《文化讀癮．一週譯報》第5期：我的彩虹國度'
 permlink: culture-vulture-for-cners-issue-05-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-08 11:38:36
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-culturevulture
 - culture
 - adoption
-thumbnail: https://steemitimages.com/DQmQMyTYTq4xQfNUJpLDpZZE8PpR5QofsCXTZfA4UAx6PvG/CV05.jpg
+thumbnail: 'https://steemitimages.com/DQmQMyTYTq4xQfNUJpLDpZZE8PpR5QofsCXTZfA4UAx6PvG/CV05.jpg'
 sidebar:
     right:
         sticky: true
@@ -96,4 +97,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Culture Vulture for CNers Issue 05 ｜《文化讀癮．一週譯報》第5期：我的彩虹國度](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-05-5)
+This page is synchronized from the post: ['Culture Vulture for CNers Issue 05 ｜《文化讀癮．一週譯報》第5期：我的彩虹國度'](https://steemit.com/@deanliu/culture-vulture-for-cners-issue-05-5)

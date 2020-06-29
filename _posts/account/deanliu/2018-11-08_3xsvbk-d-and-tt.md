@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 與喜歡的女孩一起蓋的房子"
+title: '[D&TT] 與喜歡的女孩一起蓋的房子'
 permlink: 3xsvbk-d-and-tt
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-08 11:23:27
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - love
 - house
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmWR28iWZPw5sejvdDFq9ABFAEUSgE8Duf6ftJ4DUSq7oK/DSC_1189.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmWR28iWZPw5sejvdDFq9ABFAEUSgE8Duf6ftJ4DUSq7oK/DSC_1189.JPG'
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ TT幼兒園最近的主題教學是：建築。老師除了設計了很多關於
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 與喜歡的女孩一起蓋的房子](https://steemit.com/@deanliu/3xsvbk-d-and-tt)
+This page is synchronized from the post: ['[D&TT] 與喜歡的女孩一起蓋的房子'](https://steemit.com/@deanliu/3xsvbk-d-and-tt)

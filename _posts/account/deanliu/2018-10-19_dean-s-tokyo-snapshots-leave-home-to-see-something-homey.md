@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Leave home to see something homey"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Leave home to see something homey'
 permlink: dean-s-tokyo-snapshots-leave-home-to-see-something-homey
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-19 11:31:03
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - taiwan
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/111f998cd7b894b7dbf7bb155deb8a52101f7f8c.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/111f998cd7b894b7dbf7bb155deb8a52101f7f8c.png'
 sidebar:
     right:
         sticky: true
@@ -71,4 +72,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Leave home to see something homey](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-leave-home-to-see-something-homey)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Leave home to see something homey'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-leave-home-to-see-something-homey)

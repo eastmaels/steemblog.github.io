@@ -1,10 +1,11 @@
 
 ---
-title: "詩一首－ 穀雨 A Poem - Grain Rain"
+title: '詩一首－ 穀雨 A Poem - Grain Rain'
 permlink: a-poem-grain-rain
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-08-09 15:30:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - poem
 - writing
 - literature
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [詩一首－ 穀雨 A Poem - Grain Rain](https://steemit.com/@deanliu/a-poem-grain-rain)
+This page is synchronized from the post: ['詩一首－ 穀雨 A Poem - Grain Rain'](https://steemit.com/@deanliu/a-poem-grain-rain)

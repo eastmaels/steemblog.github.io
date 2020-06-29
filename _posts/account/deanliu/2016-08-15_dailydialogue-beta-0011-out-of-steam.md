@@ -1,17 +1,18 @@
 
 ---
-title: "DailyDialogue (beta) #0011 Out of steam"
+title: 'DailyDialogue (beta) #0011 Out of steam'
 permlink: dailydialogue-beta-0011-out-of-steam
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-15 09:31:51
 categories:
 - dailydialogue
 tags:
 - dailydialogue
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DailyDialogue (beta) #0011 Out of steam](https://steemit.com/@deanliu/dailydialogue-beta-0011-out-of-steam)
+This page is synchronized from the post: ['DailyDialogue (beta) #0011 Out of steam'](https://steemit.com/@deanliu/dailydialogue-beta-0011-out-of-steam)

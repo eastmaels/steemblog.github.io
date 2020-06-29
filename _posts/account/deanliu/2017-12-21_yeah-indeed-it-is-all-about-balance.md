@@ -1,10 +1,11 @@
 
 ---
-title: "老人憶往 Yeah, indeed, it is all about balance."
+title: '老人憶往 Yeah, indeed, it is all about balance.'
 permlink: yeah-indeed-it-is-all-about-balance
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-21 08:53:03
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - steem
 - steemit
 - dearfuture
-thumbnail: https://steemitimages.com/DQmRPo2saZphJGwmPgMzpord9reSGy6pDGFgiKvaVtX4Nwz/clock-1274699_640.jpg
+thumbnail: 'https://steemitimages.com/DQmRPo2saZphJGwmPgMzpord9reSGy6pDGFgiKvaVtX4Nwz/clock-1274699_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -116,4 +117,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [老人憶往 Yeah, indeed, it is all about balance.](https://steemit.com/@deanliu/yeah-indeed-it-is-all-about-balance)
+This page is synchronized from the post: ['老人憶往 Yeah, indeed, it is all about balance.'](https://steemit.com/@deanliu/yeah-indeed-it-is-all-about-balance)

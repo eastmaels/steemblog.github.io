@@ -1,10 +1,11 @@
 
 ---
-title: "Steem上創業的系統風險"
+title: 'Steem上創業的系統風險'
 permlink: 6uqtum-steem
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-11 00:39:54
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - startup
 - entrepreneur
 - business
-thumbnail: https://files.steempeak.com/file/steempeak/deanliu/gtD3okxQ-entrepreneur-2275739_1280.jpg
+thumbnail: 'https://files.steempeak.com/file/steempeak/deanliu/gtD3okxQ-entrepreneur-2275739_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ Steem自從Dan走之後，明顯是朝向要做內容界公鏈的方向在走（
 
 - - -
 
-This page is synchronized from the post: [Steem上創業的系統風險](https://steemit.com/@deanliu/6uqtum-steem)
+This page is synchronized from the post: ['Steem上創業的系統風險'](https://steemit.com/@deanliu/6uqtum-steem)

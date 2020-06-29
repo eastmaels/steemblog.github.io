@@ -1,10 +1,11 @@
 
 ---
-title: "人間一刻 #05 🕒 Moments of Life #5"
+title: '人間一刻 #05 🕒 Moments of Life #5'
 permlink: 05-moments-of-life-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-30 01:02:39
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - writing
 - blog
 - typhoon
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [人間一刻 #05 🕒 Moments of Life #5](https://steemit.com/@deanliu/05-moments-of-life-5)
+This page is synchronized from the post: ['人間一刻 #05 🕒 Moments of Life #5'](https://steemit.com/@deanliu/05-moments-of-life-5)

@@ -1,10 +1,11 @@
 
 ---
-title: "2017 Future Commerce Exhibition TAIPEI #1 - Look Around"
+title: '2017 Future Commerce Exhibition TAIPEI #1 - Look Around'
 permlink: 2017-future-commerce-exhibition-taipei-1-look-around
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-28 23:21:45
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - future
 - commerce
 - taiwan
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [2017 Future Commerce Exhibition TAIPEI #1 - Look Around](https://steemit.com/@deanliu/2017-future-commerce-exhibition-taipei-1-look-around)
+This page is synchronized from the post: ['2017 Future Commerce Exhibition TAIPEI #1 - Look Around'](https://steemit.com/@deanliu/2017-future-commerce-exhibition-taipei-1-look-around)

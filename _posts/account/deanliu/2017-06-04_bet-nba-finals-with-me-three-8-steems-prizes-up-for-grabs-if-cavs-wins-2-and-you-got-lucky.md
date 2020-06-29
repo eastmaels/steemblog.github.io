@@ -1,10 +1,11 @@
 
 ---
-title: "Bet NBA Finals with Me - THREE 8 Steems Prizes Up for Grabs If Cavs Wins #2 And You Got Lucky!!"
+title: 'Bet NBA Finals with Me - THREE "8 Steems" Prizes Up for Grabs If Cavs Wins #2 And You Got Lucky!!'
 permlink: bet-nba-finals-with-me-three-8-steems-prizes-up-for-grabs-if-cavs-wins-2-and-you-got-lucky
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-04 08:15:27
 categories:
 - sports
@@ -14,7 +15,7 @@ tags:
 - contest
 - giveaway
 - sportsbet
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Bet NBA Finals with Me - THREE 8 Steems Prizes Up for Grabs If Cavs Wins #2 And You Got Lucky!!](https://steemit.com/@deanliu/bet-nba-finals-with-me-three-8-steems-prizes-up-for-grabs-if-cavs-wins-2-and-you-got-lucky)
+This page is synchronized from the post: ['Bet NBA Finals with Me - THREE "8 Steems" Prizes Up for Grabs If Cavs Wins #2 And You Got Lucky!!'](https://steemit.com/@deanliu/bet-nba-finals-with-me-three-8-steems-prizes-up-for-grabs-if-cavs-wins-2-and-you-got-lucky)

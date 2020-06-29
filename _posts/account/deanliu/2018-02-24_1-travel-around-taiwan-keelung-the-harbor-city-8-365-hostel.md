@@ -1,10 +1,11 @@
 
 ---
-title: "[輕旅行系列] 基隆港都 #1 港與船 [Travel Around Taiwan] Keelung the Harbor city #1 Boats and the Port"
+title: '[輕旅行系列] 基隆港都 #1 港與船 [Travel Around Taiwan] Keelung the Harbor city #1 Boats and the Port'
 permlink: 1-travel-around-taiwan-keelung-the-harbor-city-8-365-hostel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-24 02:26:30
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - keelung
 - cn
-thumbnail: https://steemitimages.com/DQmW6tNfxLGdJZFdzsMo1iwVGQpPdfTVL5jdY2WEsd4hn3w/_20180223_163120.JPG
+thumbnail: 'https://steemitimages.com/DQmW6tNfxLGdJZFdzsMo1iwVGQpPdfTVL5jdY2WEsd4hn3w/_20180223_163120.JPG'
 sidebar:
     right:
         sticky: true
@@ -138,4 +139,4 @@ testing SteemitWorldMap function here ...
 
 - - -
 
-This page is synchronized from the post: [[輕旅行系列] 基隆港都 #1 港與船 [Travel Around Taiwan] Keelung the Harbor city #1 Boats and the Port](https://steemit.com/@deanliu/1-travel-around-taiwan-keelung-the-harbor-city-8-365-hostel)
+This page is synchronized from the post: ['[輕旅行系列] 基隆港都 #1 港與船 [Travel Around Taiwan] Keelung the Harbor city #1 Boats and the Port'](https://steemit.com/@deanliu/1-travel-around-taiwan-keelung-the-harbor-city-8-365-hostel)

@@ -1,10 +1,11 @@
 
 ---
-title: "東京貨幣博物館 🍙 Dean's Tokyo Snapshots 🍙 Tokyo Currency Meseum"
+title: '東京貨幣博物館 🍙 Dean''s Tokyo Snapshots 🍙 Tokyo Currency Meseum'
 permlink: -deans-tokyo-snapshots-tokyo-currency-meseum-1545268646917
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-20 01:17:27
 categories:
 - money
@@ -14,7 +15,7 @@ tags:
 - travel
 - japan
 - dean-tokyo
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/871f040bb64745af5761c247a8b55a6e1b9736f2.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/871f040bb64745af5761c247a8b55a6e1b9736f2.png'
 sidebar:
     right:
         sticky: true
@@ -76,4 +77,4 @@ This page concludes the history of money in Japan, but it says *NOTHING* about b
 
 - - -
 
-This page is synchronized from the post: [東京貨幣博物館 🍙 Dean's Tokyo Snapshots 🍙 Tokyo Currency Meseum](https://steemit.com/@deanliu/-deans-tokyo-snapshots-tokyo-currency-meseum-1545268646917)
+This page is synchronized from the post: ['東京貨幣博物館 🍙 Dean''s Tokyo Snapshots 🍙 Tokyo Currency Meseum'](https://steemit.com/@deanliu/-deans-tokyo-snapshots-tokyo-currency-meseum-1545268646917)

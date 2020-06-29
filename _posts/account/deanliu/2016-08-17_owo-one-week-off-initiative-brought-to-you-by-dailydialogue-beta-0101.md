@@ -1,10 +1,11 @@
 
 ---
-title: "OWO One-Week-Off initiative Brought to You by DailyDialogue (beta) #0101"
+title: 'OWO One-Week-Off initiative Brought to You by DailyDialogue (beta) #0101'
 permlink: owo-one-week-off-initiative-brought-to-you-by-dailydialogue-beta-0101
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-17 05:45:57
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - oneweekoff
 - dailydialogue
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [OWO One-Week-Off initiative Brought to You by DailyDialogue (beta) #0101](https://steemit.com/@deanliu/owo-one-week-off-initiative-brought-to-you-by-dailydialogue-beta-0101)
+This page is synchronized from the post: ['OWO One-Week-Off initiative Brought to You by DailyDialogue (beta) #0101'](https://steemit.com/@deanliu/owo-one-week-off-initiative-brought-to-you-by-dailydialogue-beta-0101)

@@ -1,10 +1,11 @@
 
 ---
-title: "[通知與測試] 用busy.org發文章，有bot給你點讚囉！"
+title: '[通知與測試] 用busy.org發文章，有bot給你點讚囉！'
 permlink: busy-org-bot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-30 04:12:48
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - busy
 - followers
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1509115753/rmpsmlakqwvtfsiertxx.png
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1509115753/rmpsmlakqwvtfsiertxx.png'
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[通知與測試] 用busy.org發文章，有bot給你點讚囉！](https://steemit.com/@deanliu/busy-org-bot)
+This page is synchronized from the post: ['[通知與測試] 用busy.org發文章，有bot給你點讚囉！'](https://steemit.com/@deanliu/busy-org-bot)

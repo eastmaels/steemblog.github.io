@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #3 東京老電車荒川線之三：終點站，早稻田向晚"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #3 東京老電車荒川線之三：終點站，早稻田向晚'
 permlink: dean-s-tokyo-snapshots-arakawa-line-3
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-21 09:09:33
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - photography
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmbfW1L2KzbaHfYWLz5Mxsv1uZGrAh4cubg5eCmfmxCoRd/DSC_6473.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmbfW1L2KzbaHfYWLz5Mxsv1uZGrAh4cubg5eCmfmxCoRd/DSC_6473.JPG'
 sidebar:
     right:
         sticky: true
@@ -77,4 +78,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #3 東京老電車荒川線之三：終點站，早稻田向晚](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-3)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #3 東京老電車荒川線之三：終點站，早稻田向晚'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-3)

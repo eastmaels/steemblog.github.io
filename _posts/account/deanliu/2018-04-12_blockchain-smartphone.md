@@ -1,10 +1,11 @@
 
 ---
-title: "📰 讀報時間 📰 區塊鏈手機？Blockchain smartphone?"
+title: '📰 讀報時間 📰 區塊鏈手機？Blockchain smartphone?'
 permlink: blockchain-smartphone
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-12 00:56:00
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - deans-review
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmNzEtGeUeaMhcWn9HgDupCMLQt7L6LYBG9Cs8kn5mjYur/panorama-2552961_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmNzEtGeUeaMhcWn9HgDupCMLQt7L6LYBG9Cs8kn5mjYur/panorama-2552961_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ https://vimeo.com/232302199
 
 - - -
 
-This page is synchronized from the post: [📰 讀報時間 📰 區塊鏈手機？Blockchain smartphone?](https://steemit.com/@deanliu/blockchain-smartphone)
+This page is synchronized from the post: ['📰 讀報時間 📰 區塊鏈手機？Blockchain smartphone?'](https://steemit.com/@deanliu/blockchain-smartphone)

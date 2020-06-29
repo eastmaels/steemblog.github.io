@@ -1,10 +1,11 @@
 
 ---
-title: "Sharing good news with cn newbies!! 中文區小魚看過來"
+title: 'Sharing good news with cn newbies!! 中文區小魚看過來'
 permlink: sharing-good-news-with-cn-newbies
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-26 02:16:42
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - newbie
 - minnow
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Sharing good news with cn newbies!! 中文區小魚看過來](https://steemit.com/@deanliu/sharing-good-news-with-cn-newbies)
+This page is synchronized from the post: ['Sharing good news with cn newbies!! 中文區小魚看過來'](https://steemit.com/@deanliu/sharing-good-news-with-cn-newbies)

@@ -1,10 +1,11 @@
 
 ---
-title: "[SCT之旅] 平行宇宙 Parallel Universe"
+title: '[SCT之旅] 平行宇宙 Parallel Universe'
 permlink: sct-parallel-universe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-30 23:29:09
 categories:
 - sct
@@ -14,7 +15,7 @@ tags:
 - steem
 - journey
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmUmKNBL73Uv4JdEDyr9si75AV6RfXxcFM6GKsEJsM16KY/space-2638126_640.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmUmKNBL73Uv4JdEDyr9si75AV6RfXxcFM6GKsEJsM16KY/space-2638126_640.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[SCT之旅] 平行宇宙 Parallel Universe](https://steemit.com/@deanliu/sct-parallel-universe)
+This page is synchronized from the post: ['[SCT之旅] 平行宇宙 Parallel Universe'](https://steemit.com/@deanliu/sct-parallel-universe)

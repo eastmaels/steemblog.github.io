@@ -1,10 +1,11 @@
 
 ---
-title: "誰說Token沒價值？我價值4 STEEM的Wonka巧克力！"
+title: '誰說Token沒價值？我價值4 STEEM的Wonka巧克力！'
 permlink: token-4-steem-wonka
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-25 04:37:45
 categories:
 - cn
@@ -15,7 +16,7 @@ tags:
 - token
 - steem
 - partiko
-thumbnail: https://cdn.steemitimages.com/DQmdmZ2kkiWPHevDfjs5crcwXbv9zQihCKf3L45p8kWtXcd/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-25%20%E4%B8%8B%E5%8D%8812.18.03.png
+thumbnail: 'https://cdn.steemitimages.com/DQmdmZ2kkiWPHevDfjs5crcwXbv9zQihCKf3L45p8kWtXcd/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-04-25%20%E4%B8%8B%E5%8D%8812.18.03.png'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [誰說Token沒價值？我價值4 STEEM的Wonka巧克力！](https://steemit.com/@deanliu/token-4-steem-wonka)
+This page is synchronized from the post: ['誰說Token沒價值？我價值4 STEEM的Wonka巧克力！'](https://steemit.com/@deanliu/token-4-steem-wonka)

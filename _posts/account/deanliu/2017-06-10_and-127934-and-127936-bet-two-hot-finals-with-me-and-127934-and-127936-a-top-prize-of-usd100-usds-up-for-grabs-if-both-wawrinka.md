@@ -1,10 +1,11 @@
 
 ---
-title: "Bet Two Hot Finals with Me - A Top Prize of $100 USDs Up for Grabs!! If Both Wawrinka and Cavs Win Their Next Game And You Got Lucky!!"
+title: 'Bet Two Hot Finals with Me - A Top Prize of $100 USDs Up for Grabs!! If Both Wawrinka and Cavs Win Their Next Game And You Got Lucky!!'
 permlink: and-127934-and-127936-bet-two-hot-finals-with-me-and-127934-and-127936-a-top-prize-of-usd100-usds-up-for-grabs-if-both-wawrinka
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-10 11:37:00
 categories:
 - sports
@@ -14,7 +15,7 @@ tags:
 - nba
 - contest
 - giveaway
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Bet Two Hot Finals with Me - A Top Prize of $100 USDs Up for Grabs!! If Both Wawrinka and Cavs Win Their Next Game And You Got Lucky!!](https://steemit.com/@deanliu/and-127934-and-127936-bet-two-hot-finals-with-me-and-127934-and-127936-a-top-prize-of-usd100-usds-up-for-grabs-if-both-wawrinka)
+This page is synchronized from the post: ['Bet Two Hot Finals with Me - A Top Prize of $100 USDs Up for Grabs!! If Both Wawrinka and Cavs Win Their Next Game And You Got Lucky!!'](https://steemit.com/@deanliu/and-127934-and-127936-bet-two-hot-finals-with-me-and-127934-and-127936-a-top-prize-of-usd100-usds-up-for-grabs-if-both-wawrinka)

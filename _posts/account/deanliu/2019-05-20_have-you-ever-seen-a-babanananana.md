@@ -1,10 +1,11 @@
 
 ---
-title: "Have you ever seen a Babanananana? 絕代雙蕉"
+title: 'Have you ever seen a Babanananana? 絕代雙"蕉"'
 permlink: have-you-ever-seen-a-babanananana
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-20 03:14:45
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - food
 - funny
 - weird
-thumbnail: https://ipfs.busy.org/ipfs/Qmc6dgJViRy2REYzemAY7BYVQjQ779k8dKqRFsKsVRAEUL
+thumbnail: 'https://ipfs.busy.org/ipfs/Qmc6dgJViRy2REYzemAY7BYVQjQ779k8dKqRFsKsVRAEUL'
 sidebar:
     right:
         sticky: true
@@ -46,4 +47,4 @@ If you wonder what's like inside the skin, here you go. No anomalies, still two 
 
 - - -
 
-This page is synchronized from the post: [Have you ever seen a Babanananana? 絕代雙蕉](https://steemit.com/@deanliu/have-you-ever-seen-a-babanananana)
+This page is synchronized from the post: ['Have you ever seen a Babanananana? 絕代雙"蕉"'](https://steemit.com/@deanliu/have-you-ever-seen-a-babanananana)

@@ -1,10 +1,11 @@
 
 ---
-title: "My Europa Plog - Auf Wiedersehen! Plog will continue ..."
+title: 'My Europa Plog - Auf Wiedersehen! Plog will continue ...'
 permlink: my-europa-plog-auf-wiedersehen-plog-will-continue
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-22 11:54:24
 categories:
 - travel
@@ -12,7 +13,7 @@ tags:
 - travel
 - myeuropaplog
 - europe
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -34,4 +35,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [My Europa Plog - Auf Wiedersehen! Plog will continue ...](https://steemit.com/@deanliu/my-europa-plog-auf-wiedersehen-plog-will-continue)
+This page is synchronized from the post: ['My Europa Plog - Auf Wiedersehen! Plog will continue ...'](https://steemit.com/@deanliu/my-europa-plog-auf-wiedersehen-plog-will-continue)

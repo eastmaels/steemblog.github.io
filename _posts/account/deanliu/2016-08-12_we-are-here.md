@@ -1,17 +1,18 @@
 
 ---
-title: "We are here"
+title: 'We are here'
 permlink: we-are-here
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-12 06:40:51
 categories:
 - photography
 tags:
 - photography
 - time
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -31,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [We are here](https://steemit.com/@deanliu/we-are-here)
+This page is synchronized from the post: ['We are here'](https://steemit.com/@deanliu/we-are-here)

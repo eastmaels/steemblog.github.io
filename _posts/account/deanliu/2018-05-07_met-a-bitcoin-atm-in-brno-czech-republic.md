@@ -1,10 +1,11 @@
 
 ---
-title: "Met a Bitcoin ATM in Brno, Czech Republic"
+title: 'Met a Bitcoin ATM in Brno, Czech Republic'
 permlink: met-a-bitcoin-atm-in-brno-czech-republic
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-07 05:08:03
 categories:
 - bitcoin
@@ -14,7 +15,7 @@ tags:
 - travel
 - cryptocurrency
 - busy
-thumbnail: https://gateway.ipfs.io/ipfs/QmS19Pp4WNctDqM2GYsZFi5DkxvaCovFN2cbM6D2nnZVfF
+thumbnail: 'https://gateway.ipfs.io/ipfs/QmS19Pp4WNctDqM2GYsZFi5DkxvaCovFN2cbM6D2nnZVfF'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ I visited Prague last year, but have never been to Brno, a city that I can only 
 
 - - -
 
-This page is synchronized from the post: [Met a Bitcoin ATM in Brno, Czech Republic](https://steemit.com/@deanliu/met-a-bitcoin-atm-in-brno-czech-republic)
+This page is synchronized from the post: ['Met a Bitcoin ATM in Brno, Czech Republic'](https://steemit.com/@deanliu/met-a-bitcoin-atm-in-brno-czech-republic)

@@ -1,10 +1,11 @@
 
 ---
-title: "意外找到BigOne客服，KYC瞬間通過！"
+title: '意外找到BigOne客服，KYC瞬間通過！'
 permlink: bigone-kyc
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-01-16 01:35:33
 categories:
 - exchange
@@ -14,7 +15,7 @@ tags:
 - kyc
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmP56x296BgiwbuxtsRpyhQkQArebtPxXjewENTfnNCGJJ/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-01-16%20%E4%B8%8A%E5%8D%889.18.53.png
+thumbnail: 'https://cdn.steemitimages.com/DQmP56x296BgiwbuxtsRpyhQkQArebtPxXjewENTfnNCGJJ/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-01-16%20%E4%B8%8A%E5%8D%889.18.53.png'
 sidebar:
     right:
         sticky: true
@@ -58,4 +59,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [意外找到BigOne客服，KYC瞬間通過！](https://steemit.com/@deanliu/bigone-kyc)
+This page is synchronized from the post: ['意外找到BigOne客服，KYC瞬間通過！'](https://steemit.com/@deanliu/bigone-kyc)

@@ -1,10 +1,11 @@
 
 ---
-title: "Geometry of Tokyo 2 - Light and Shadows - photos from an average joe"
+title: 'Geometry of Tokyo 2 - Light and Shadows - photos from an average joe'
 permlink: geometry-of-tokyo-2-light-and-shadows-photos-from-an-average-joe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-08 04:24:36
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - tokyo
 - japan
 - ja
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -41,4 +42,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Geometry of Tokyo 2 - Light and Shadows - photos from an average joe](https://steemit.com/@deanliu/geometry-of-tokyo-2-light-and-shadows-photos-from-an-average-joe)
+This page is synchronized from the post: ['Geometry of Tokyo 2 - Light and Shadows - photos from an average joe'](https://steemit.com/@deanliu/geometry-of-tokyo-2-light-and-shadows-photos-from-an-average-joe)

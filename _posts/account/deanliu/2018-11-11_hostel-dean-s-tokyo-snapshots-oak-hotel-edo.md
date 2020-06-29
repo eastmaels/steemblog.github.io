@@ -1,10 +1,11 @@
 
 ---
-title: "日本住宿經驗談之二：Hostel 🍙 Dean's Tokyo Snapshots 🍙 Oak Hotel Edo"
+title: '日本住宿經驗談之二：Hostel 🍙 Dean''s Tokyo Snapshots 🍙 Oak Hotel Edo'
 permlink: hostel-dean-s-tokyo-snapshots-oak-hotel-edo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-11 03:56:30
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmfABiwScKqREQZ1ArDKJ9AaJ1z27XaUNFKzuYr6itPHBu/DSC_6575.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmfABiwScKqREQZ1ArDKJ9AaJ1z27XaUNFKzuYr6itPHBu/DSC_6575.JPG'
 sidebar:
     right:
         sticky: true
@@ -118,4 +119,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [日本住宿經驗談之二：Hostel 🍙 Dean's Tokyo Snapshots 🍙 Oak Hotel Edo](https://steemit.com/@deanliu/hostel-dean-s-tokyo-snapshots-oak-hotel-edo)
+This page is synchronized from the post: ['日本住宿經驗談之二：Hostel 🍙 Dean''s Tokyo Snapshots 🍙 Oak Hotel Edo'](https://steemit.com/@deanliu/hostel-dean-s-tokyo-snapshots-oak-hotel-edo)

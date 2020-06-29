@@ -1,10 +1,11 @@
 
 ---
-title: "[Photography] Religious Ambience "
+title: '[Photography] Religious Ambience '
 permlink: photography-religious-ambience
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-03 02:25:39
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmXZQYfBQzzYE1VhoKeYFreWNppTBn4d2kqeExPARSpuQL/DSC_5414.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmXZQYfBQzzYE1VhoKeYFreWNppTBn4d2kqeExPARSpuQL/DSC_5414.JPG'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ Songshan Tzu-you (Ciyou) Temple (松山慈祐宮) is a very historical temple in
 
 - - -
 
-This page is synchronized from the post: [[Photography] Religious Ambience ](https://steemit.com/@deanliu/photography-religious-ambience)
+This page is synchronized from the post: ['[Photography] Religious Ambience '](https://steemit.com/@deanliu/photography-religious-ambience)

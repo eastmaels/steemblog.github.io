@@ -1,10 +1,11 @@
 
 ---
-title: "Sunday SBD Giveaway If You Pick the Winning Meal  週日猜謎來了，這次選邊吃，不猜咖啡廳！"
+title: 'Sunday SBD Giveaway If You Pick the Winning Meal  週日猜謎來了，這次選邊吃，不猜咖啡廳！'
 permlink: sunday-sbd-giveaway-if-you-pick-the-winning-meal
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-26 04:46:48
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - cn
 - contest
 - life
-thumbnail: https://www.steemimg.com/images/2016/09/12/deanliuafb4a.md.jpg
+thumbnail: 'https://www.steemimg.com/images/2016/09/12/deanliuafb4a.md.jpg'
 sidebar:
     right:
         sticky: true
@@ -113,4 +114,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Sunday SBD Giveaway If You Pick the Winning Meal  週日猜謎來了，這次選邊吃，不猜咖啡廳！](https://steemit.com/@deanliu/sunday-sbd-giveaway-if-you-pick-the-winning-meal)
+This page is synchronized from the post: ['Sunday SBD Giveaway If You Pick the Winning Meal  週日猜謎來了，這次選邊吃，不猜咖啡廳！'](https://steemit.com/@deanliu/sunday-sbd-giveaway-if-you-pick-the-winning-meal)

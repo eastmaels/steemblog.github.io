@@ -1,10 +1,11 @@
 
 ---
-title: "Celsius - Decentralized Lending & Borrowing Platform"
+title: 'Celsius - Decentralized Lending & Borrowing Platform'
 permlink: celsius-decentralized-lending-and-borrowing-platform
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-14 04:08:51
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - finance
 - money
 - celsius
-thumbnail: https://steemitimages.com/DQmTnE38paV4MmrK5rKVzu89mbTT3TKszysTcNznrFTcYDp/1.PNG
+thumbnail: 'https://steemitimages.com/DQmTnE38paV4MmrK5rKVzu89mbTT3TKszysTcNznrFTcYDp/1.PNG'
 sidebar:
     right:
         sticky: true
@@ -127,4 +128,4 @@ Dan & Dean.
 
 - - -
 
-This page is synchronized from the post: [Celsius - Decentralized Lending & Borrowing Platform](https://steemit.com/@deanliu/celsius-decentralized-lending-and-borrowing-platform)
+This page is synchronized from the post: ['Celsius - Decentralized Lending & Borrowing Platform'](https://steemit.com/@deanliu/celsius-decentralized-lending-and-borrowing-platform)

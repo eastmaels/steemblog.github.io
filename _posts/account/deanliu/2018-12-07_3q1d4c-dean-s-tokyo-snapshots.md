@@ -1,10 +1,11 @@
 
 ---
-title: "東京洋食 🍙 Dean's Tokyo Snapshots 🍙  "
+title: '東京洋食 🍙 Dean''s Tokyo Snapshots 🍙  '
 permlink: 3q1d4c-dean-s-tokyo-snapshots
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-07 12:46:36
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - japan
 - cn
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/be6a3747361863e009a77a171e1f5779ce071c1e.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/be6a3747361863e009a77a171e1f5779ce071c1e.png'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [東京洋食 🍙 Dean's Tokyo Snapshots 🍙  ](https://steemit.com/@deanliu/3q1d4c-dean-s-tokyo-snapshots)
+This page is synchronized from the post: ['東京洋食 🍙 Dean''s Tokyo Snapshots 🍙  '](https://steemit.com/@deanliu/3q1d4c-dean-s-tokyo-snapshots)

@@ -1,10 +1,11 @@
 
 ---
-title: "Daily Photo in the last day of the year"
+title: 'Daily Photo in the last day of the year'
 permlink: daily-photo-in-the-last-day-of-the-year
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-15 09:04:57
 categories:
 - photography
@@ -13,7 +14,7 @@ tags:
 - life
 - newyear
 - cn
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1518683814/dwh787pmkmxta6gafy6x.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1518683814/dwh787pmkmxta6gafy6x.jpg'
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ Happy Lunar New Year of Dog, everyone!! Wish you a prosperous year ahead!!
 
 - - -
 
-This page is synchronized from the post: [Daily Photo in the last day of the year](https://steemit.com/@deanliu/daily-photo-in-the-last-day-of-the-year)
+This page is synchronized from the post: ['Daily Photo in the last day of the year'](https://steemit.com/@deanliu/daily-photo-in-the-last-day-of-the-year)

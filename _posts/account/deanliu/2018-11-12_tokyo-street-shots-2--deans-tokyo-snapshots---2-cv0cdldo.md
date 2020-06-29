@@ -1,10 +1,11 @@
 
 ---
-title: "Tokyo Street Shots #2 🍙 Dean's Tokyo Snapshots 🍙 東京街景 #2"
+title: 'Tokyo Street Shots #2 🍙 Dean''s Tokyo Snapshots 🍙 東京街景 #2'
 permlink: tokyo-street-shots-2--deans-tokyo-snapshots---2-cv0cdldo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-12 11:32:21
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - cn
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/fcec989c71e48a504b1f4edc3f8e6c2792347a48.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/fcec989c71e48a504b1f4edc3f8e6c2792347a48.png'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Tokyo Street Shots #2 🍙 Dean's Tokyo Snapshots 🍙 東京街景 #2](https://steemit.com/@deanliu/tokyo-street-shots-2--deans-tokyo-snapshots---2-cv0cdldo)
+This page is synchronized from the post: ['Tokyo Street Shots #2 🍙 Dean''s Tokyo Snapshots 🍙 東京街景 #2'](https://steemit.com/@deanliu/tokyo-street-shots-2--deans-tokyo-snapshots---2-cv0cdldo)

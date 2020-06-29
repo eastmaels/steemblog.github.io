@@ -1,10 +1,11 @@
 
 ---
-title: "[區塊鏈遊戲] UnicornGo來囉！"
+title: '[區塊鏈遊戲] UnicornGo來囉！'
 permlink: unicorngo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-25 06:19:00
 categories:
 - unicorngo
@@ -14,7 +15,7 @@ tags:
 - gaming
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmTiX5T2waqoXzizNCiZeyC5vwmcfSd33EY7kPaeH7Pp4r/image.png
+thumbnail: 'https://steemitimages.com/DQmTiX5T2waqoXzizNCiZeyC5vwmcfSd33EY7kPaeH7Pp4r/image.png'
 sidebar:
     right:
         sticky: true
@@ -51,4 +52,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[區塊鏈遊戲] UnicornGo來囉！](https://steemit.com/@deanliu/unicorngo)
+This page is synchronized from the post: ['[區塊鏈遊戲] UnicornGo來囉！'](https://steemit.com/@deanliu/unicorngo)

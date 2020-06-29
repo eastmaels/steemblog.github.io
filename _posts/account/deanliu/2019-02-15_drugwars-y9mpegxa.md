@@ -1,10 +1,11 @@
 
 ---
-title: "[閒聊DrugWars] 遊戲邏輯"
+title: '[閒聊DrugWars] 遊戲邏輯'
 permlink: drugwars-y9mpegxa
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-15 02:22:27
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - games
 - dapp
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmRXBp2PBT7jxLMgKia1Atp5yYsAEMMf4kb2BqpiTRhfSR/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-14%20%E4%B8%8B%E5%8D%885.13.37.png
+thumbnail: 'https://cdn.steemitimages.com/DQmRXBp2PBT7jxLMgKia1Atp5yYsAEMMf4kb2BqpiTRhfSR/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-02-14%20%E4%B8%8B%E5%8D%885.13.37.png'
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [[閒聊DrugWars] 遊戲邏輯](https://steemit.com/@deanliu/drugwars-y9mpegxa)
+This page is synchronized from the post: ['[閒聊DrugWars] 遊戲邏輯'](https://steemit.com/@deanliu/drugwars-y9mpegxa)

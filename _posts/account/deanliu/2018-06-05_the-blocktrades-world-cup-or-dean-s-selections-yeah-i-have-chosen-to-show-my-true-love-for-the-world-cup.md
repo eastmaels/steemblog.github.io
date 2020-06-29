@@ -1,10 +1,11 @@
 
 ---
-title: "The @blocktrades World Cup | Dean's selections ... Yeah, I have chosen to show my TRUE LOVE for the World Cup!!"
+title: 'The @blocktrades World Cup | Dean''s selections ... Yeah, I have chosen to show my TRUE LOVE for the World Cup!!'
 permlink: the-blocktrades-world-cup-or-dean-s-selections-yeah-i-have-chosen-to-show-my-true-love-for-the-world-cup
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-05 23:43:24
 categories:
 - blocktradesworldcup
@@ -14,7 +15,7 @@ tags:
 - sports
 - fun
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmfE7VbWcvhoENahV7cpCJAfMZNa5rV4T2pim6zLGBk8WG/audience-1866738_1280.jpg
+thumbnail: 'https://cdn.steemitimages.com/DQmfE7VbWcvhoENahV7cpCJAfMZNa5rV4T2pim6zLGBk8WG/audience-1866738_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -107,4 +108,4 @@ W | Panama | vs | Tunisia | W
 
 - - -
 
-This page is synchronized from the post: [The @blocktrades World Cup | Dean's selections ... Yeah, I have chosen to show my TRUE LOVE for the World Cup!!](https://steemit.com/@deanliu/the-blocktrades-world-cup-or-dean-s-selections-yeah-i-have-chosen-to-show-my-true-love-for-the-world-cup)
+This page is synchronized from the post: ['The @blocktrades World Cup | Dean''s selections ... Yeah, I have chosen to show my TRUE LOVE for the World Cup!!'](https://steemit.com/@deanliu/the-blocktrades-world-cup-or-dean-s-selections-yeah-i-have-chosen-to-show-my-true-love-for-the-world-cup)

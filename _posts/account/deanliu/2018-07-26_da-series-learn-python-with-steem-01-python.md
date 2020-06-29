@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #01] 安裝Python、文字編輯器與哈囉！"
+title: '[DA series - Learn Python with Steem #01] 安裝Python、文字編輯器與哈囉！'
 permlink: da-series-learn-python-with-steem-01-python
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-26 01:57:06
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -123,4 +124,4 @@ python helloworld.py
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #01] 安裝Python、文字編輯器與哈囉！](https://steemit.com/@deanliu/da-series-learn-python-with-steem-01-python)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #01] 安裝Python、文字編輯器與哈囉！'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-01-python)

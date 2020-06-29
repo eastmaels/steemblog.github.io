@@ -1,17 +1,18 @@
 
 ---
-title: "[社區參考消息] 關於運動下注，可以關注一下  [payout declined]"
+title: '[社區參考消息] 關於運動下注，可以關注一下  [payout declined]'
 permlink: payout-declined
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-16 05:51:48
 categories:
 - cn
 tags:
 - cn
 - memo
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[社區參考消息] 關於運動下注，可以關注一下  [payout declined]](https://steemit.com/@deanliu/payout-declined)
+This page is synchronized from the post: ['[社區參考消息] 關於運動下注，可以關注一下  [payout declined]'](https://steemit.com/@deanliu/payout-declined)

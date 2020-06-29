@@ -1,10 +1,11 @@
 
 ---
-title: "Translation and how we tackle it affects the future scenario of steeemit"
+title: 'Translation and how we tackle it affects the future scenario of steeemit'
 permlink: translation-and-how-we-tackle-it-affects-the-future-scenario-of-steeemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-07-29 06:21:33
 categories:
 - translation
@@ -14,7 +15,7 @@ tags:
 - cn
 - kr
 - steemit
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -31,4 +32,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Translation and how we tackle it affects the future scenario of steeemit](https://steemit.com/@deanliu/translation-and-how-we-tackle-it-affects-the-future-scenario-of-steeemit)
+This page is synchronized from the post: ['Translation and how we tackle it affects the future scenario of steeemit'](https://steemit.com/@deanliu/translation-and-how-we-tackle-it-affects-the-future-scenario-of-steeemit)

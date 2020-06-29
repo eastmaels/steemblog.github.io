@@ -1,10 +1,11 @@
 
 ---
-title: "🚉  [輕旅行系列] 慵懶台南 #6 林百貨 🚉  [Travel Around Taiwan] Enchanting Tainan #6 Hayashi Department Store"
+title: '🚉  [輕旅行系列] 慵懶台南 #6 林百貨 🚉  [Travel Around Taiwan] Enchanting Tainan #6 Hayashi Department Store'
 permlink: 6-travel-around-taiwan-enchanting-tainan-6-hayashi-department-store
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-02-04 13:21:15
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - history
 - cn
-thumbnail: https://steemitimages.com/DQmSLfE8i7WayfnGHs4xVkjMcmQpYfDattYafKUjc2KL4Yi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-04%20%E4%B8%8B%E5%8D%889.16.20.png
+thumbnail: 'https://steemitimages.com/DQmSLfE8i7WayfnGHs4xVkjMcmQpYfDattYafKUjc2KL4Yi/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202018-02-04%20%E4%B8%8B%E5%8D%889.16.20.png'
 sidebar:
     right:
         sticky: true
@@ -169,4 +170,4 @@ Stay tuned for more Enchanting Tainan later ~~~~
 
 - - -
 
-This page is synchronized from the post: [🚉  [輕旅行系列] 慵懶台南 #6 林百貨 🚉  [Travel Around Taiwan] Enchanting Tainan #6 Hayashi Department Store](https://steemit.com/@deanliu/6-travel-around-taiwan-enchanting-tainan-6-hayashi-department-store)
+This page is synchronized from the post: ['🚉  [輕旅行系列] 慵懶台南 #6 林百貨 🚉  [Travel Around Taiwan] Enchanting Tainan #6 Hayashi Department Store'](https://steemit.com/@deanliu/6-travel-around-taiwan-enchanting-tainan-6-hayashi-department-store)

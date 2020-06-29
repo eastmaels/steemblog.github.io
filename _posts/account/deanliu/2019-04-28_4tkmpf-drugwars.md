@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 財大氣粗？財大兵馬壯倒是真的...."
+title: '[DrugWars] 財大氣粗？財大兵馬壯倒是真的....'
 permlink: 4tkmpf-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-28 02:00:42
 categories:
 - cn
@@ -13,7 +14,7 @@ tags:
 - drugwars
 - gaming
 - blockchain
-thumbnail: https://steemitimages.com/640x0/https://res.cloudinary.com/hightouch/image/upload/v1555990666/drugwars/jhg0zj8skgujitrhekd7.jpg
+thumbnail: 'https://steemitimages.com/640x0/https://res.cloudinary.com/hightouch/image/upload/v1555990666/drugwars/jhg0zj8skgujitrhekd7.jpg'
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 財大氣粗？財大兵馬壯倒是真的....](https://steemit.com/@deanliu/4tkmpf-drugwars)
+This page is synchronized from the post: ['[DrugWars] 財大氣粗？財大兵馬壯倒是真的....'](https://steemit.com/@deanliu/4tkmpf-drugwars)

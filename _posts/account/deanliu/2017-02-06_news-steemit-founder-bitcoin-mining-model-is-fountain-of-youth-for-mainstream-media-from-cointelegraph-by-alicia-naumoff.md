@@ -1,10 +1,11 @@
 
 ---
-title: "News - Steemit Founder: Bitcoin Mining Model is Fountain of Youth for Mainstream Media from CoinTelegraph by Alicia Naumoff"
+title: 'News - "Steemit Founder: Bitcoin Mining Model is Fountain of Youth for Mainstream Media" from CoinTelegraph by Alicia Naumoff'
 permlink: news-steemit-founder-bitcoin-mining-model-is-fountain-of-youth-for-mainstream-media-from-cointelegraph-by-alicia-naumoff
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-02-06 07:03:12
 categories:
 - news
@@ -13,7 +14,7 @@ tags:
 - steem
 - steemit
 - blockchain
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [News - Steemit Founder: Bitcoin Mining Model is Fountain of Youth for Mainstream Media from CoinTelegraph by Alicia Naumoff](https://steemit.com/@deanliu/news-steemit-founder-bitcoin-mining-model-is-fountain-of-youth-for-mainstream-media-from-cointelegraph-by-alicia-naumoff)
+This page is synchronized from the post: ['News - "Steemit Founder: Bitcoin Mining Model is Fountain of Youth for Mainstream Media" from CoinTelegraph by Alicia Naumoff'](https://steemit.com/@deanliu/news-steemit-founder-bitcoin-mining-model-is-fountain-of-youth-for-mainstream-media-from-cointelegraph-by-alicia-naumoff)

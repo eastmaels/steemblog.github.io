@@ -1,10 +1,11 @@
 
 ---
-title: "短篇故事：一把電鑽 (中)    An Electrical Drill – Part 2"
+title: '短篇故事：一把電鑽 (中)    An Electrical Drill – Part 2'
 permlink: an-electrical-drill-part-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-10-19 09:16:06
 categories:
 - story
@@ -12,7 +13,7 @@ tags:
 - story
 - life
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [短篇故事：一把電鑽 (中)    An Electrical Drill – Part 2](https://steemit.com/@deanliu/an-electrical-drill-part-2)
+This page is synchronized from the post: ['短篇故事：一把電鑽 (中)    An Electrical Drill – Part 2'](https://steemit.com/@deanliu/an-electrical-drill-part-2)

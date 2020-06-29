@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #00] 歡迎小白們一起來學Coding！"
+title: '[DA series - Learn Python with Steem #00] 歡迎小白們一起來學Coding！'
 permlink: da-series-learn-python-with-steem-00-coding
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-07-25 01:18:00
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -57,4 +58,4 @@ Python無疑是時下最熱門的程式語言(Programming Language)，而其成�
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #00] 歡迎小白們一起來學Coding！](https://steemit.com/@deanliu/da-series-learn-python-with-steem-00-coding)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #00] 歡迎小白們一起來學Coding！'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-00-coding)

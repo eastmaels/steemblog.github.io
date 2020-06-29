@@ -1,10 +1,11 @@
 
 ---
-title: "[ Steem十講之第四講 ] 面子，還是裡子？The social factor"
+title: '[ Steem十講之第四講 ] 面子，還是裡子？The social factor'
 permlink: steem-the-social-factor
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-11 15:53:21
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - cn-chat
 - steem-10
 - social
-thumbnail: https://steemitimages.com/DQmV1jUV2vMWjC4jG25MM1JwBciktAsccLyLv18BVuqfoit/sheep-1642874_1280.jpg
+thumbnail: 'https://steemitimages.com/DQmV1jUV2vMWjC4jG25MM1JwBciktAsccLyLv18BVuqfoit/sheep-1642874_1280.jpg'
 sidebar:
     right:
         sticky: true
@@ -119,4 +120,4 @@ images - pixabay
 
 - - -
 
-This page is synchronized from the post: [[ Steem十講之第四講 ] 面子，還是裡子？The social factor](https://steemit.com/@deanliu/steem-the-social-factor)
+This page is synchronized from the post: ['[ Steem十講之第四講 ] 面子，還是裡子？The social factor'](https://steemit.com/@deanliu/steem-the-social-factor)

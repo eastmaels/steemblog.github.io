@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Japanese Garden"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Japanese Garden'
 permlink: deans-tokyo-snapshots--japanese-garden-wgxdjp9s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-27 00:42:03
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - travel
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/614d5c7ac8f651eaf71e4409dd2fcb5ca511a2b4.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/614d5c7ac8f651eaf71e4409dd2fcb5ca511a2b4.png'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Japanese Garden](https://steemit.com/@deanliu/deans-tokyo-snapshots--japanese-garden-wgxdjp9s)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Japanese Garden'](https://steemit.com/@deanliu/deans-tokyo-snapshots--japanese-garden-wgxdjp9s)

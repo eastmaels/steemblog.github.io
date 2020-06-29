@@ -1,10 +1,11 @@
 
 ---
-title: "[DA series - Learn Python with Steem #05] 基本資料結構"
+title: '[DA series - Learn Python with Steem #05] 基本資料結構'
 permlink: da-series-learn-python-with-steem-05
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-02 01:27:18
 categories:
 - da-learnpythonwithsteem
@@ -14,7 +15,7 @@ tags:
 - steem
 - cn-programming
 - cn
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmbeN1PpqQC2JE5HbpXatb3apUfFhe68fPLctT95FiiRHq/cover.png'
 sidebar:
     right:
         sticky: true
@@ -147,4 +148,4 @@ print(my_phone_book.keys())
 
 - - -
 
-This page is synchronized from the post: [[DA series - Learn Python with Steem #05] 基本資料結構](https://steemit.com/@deanliu/da-series-learn-python-with-steem-05)
+This page is synchronized from the post: ['[DA series - Learn Python with Steem #05] 基本資料結構'](https://steemit.com/@deanliu/da-series-learn-python-with-steem-05)

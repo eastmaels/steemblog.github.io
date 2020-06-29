@@ -1,10 +1,11 @@
 
 ---
-title: "[D&TT] 從戳戳樂談玩具元素"
+title: '[D&TT] 從戳戳樂談玩具元素'
 permlink: d-and-tt-cny
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-15 12:54:15
 categories:
 - deantt
@@ -14,7 +15,7 @@ tags:
 - parenting
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/84769f0ce55553b55c1305581581f13424892477.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/84769f0ce55553b55c1305581581f13424892477.jpg'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ _**D&TT** ( #deantt) 是我的育兒系列，也許談養兒，談育兒，談�
 
 - - -
 
-This page is synchronized from the post: [[D&TT] 從戳戳樂談玩具元素](https://steemit.com/@deanliu/d-and-tt-cny)
+This page is synchronized from the post: ['[D&TT] 從戳戳樂談玩具元素'](https://steemit.com/@deanliu/d-and-tt-cny)

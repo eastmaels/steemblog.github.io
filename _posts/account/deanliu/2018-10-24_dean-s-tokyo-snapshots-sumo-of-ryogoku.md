@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Sumo of Ryogoku 両国相撲"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Sumo of Ryogoku 両国相撲'
 permlink: dean-s-tokyo-snapshots-sumo-of-ryogoku
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-24 00:50:15
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - sports
 - culture
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/bbc6a94dd0b3984e2234c553bbc0c0b9c0a76a0d.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/bbc6a94dd0b3984e2234c553bbc0c0b9c0a76a0d.png'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Sumo of Ryogoku 両国相撲](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-sumo-of-ryogoku)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Sumo of Ryogoku 両国相撲'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-sumo-of-ryogoku)

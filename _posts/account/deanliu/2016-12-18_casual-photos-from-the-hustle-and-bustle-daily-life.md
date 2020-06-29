@@ -1,17 +1,18 @@
 
 ---
-title: "casual photos from the hustle and bustle daily life"
+title: 'casual photos from the hustle and bustle daily life'
 permlink: casual-photos-from-the-hustle-and-bustle-daily-life
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-12-18 07:16:54
 categories:
 - photography
 tags:
 - photography
 - life
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [casual photos from the hustle and bustle daily life](https://steemit.com/@deanliu/casual-photos-from-the-hustle-and-bustle-daily-life)
+This page is synchronized from the post: ['casual photos from the hustle and bustle daily life'](https://steemit.com/@deanliu/casual-photos-from-the-hustle-and-bustle-daily-life)

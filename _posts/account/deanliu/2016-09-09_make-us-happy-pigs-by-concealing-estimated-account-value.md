@@ -1,10 +1,11 @@
 
 ---
-title: "Make Us Happy Pigs by Concealing Estimated Account Value!!"
+title: 'Make Us Happy Pigs by Concealing "Estimated Account Value"!!'
 permlink: make-us-happy-pigs-by-concealing-estimated-account-value
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-09 13:27:48
 categories:
 - steemit
@@ -13,7 +14,7 @@ tags:
 - steemit-ideas
 - steem
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -45,4 +46,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Make Us Happy Pigs by Concealing Estimated Account Value!!](https://steemit.com/@deanliu/make-us-happy-pigs-by-concealing-estimated-account-value)
+This page is synchronized from the post: ['Make Us Happy Pigs by Concealing "Estimated Account Value"!!'](https://steemit.com/@deanliu/make-us-happy-pigs-by-concealing-estimated-account-value)

@@ -1,10 +1,11 @@
 
 ---
-title: "[照片集] 高鐵返台北 [Photography] A High Speed Rail Journey Home"
+title: '[照片集] 高鐵返台北 [Photography] A High Speed Rail Journey Home'
 permlink: photography-a-high-speed-rail-journey-home
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-26 13:20:45
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - railway
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmXDV7eH93FwZog2BpV1wVbsWeUaJdMY4BHhkXaJnLijRt/%E6%A8%82%E7%A7%80%E8%A6%96%E9%A0%BB%E7%AC%AC5%E9%83%A8_20180526205131040.gif
+thumbnail: 'https://cdn.steemitimages.com/DQmXDV7eH93FwZog2BpV1wVbsWeUaJdMY4BHhkXaJnLijRt/%E6%A8%82%E7%A7%80%E8%A6%96%E9%A0%BB%E7%AC%AC5%E9%83%A8_20180526205131040.gif'
 sidebar:
     right:
         sticky: true
@@ -59,4 +60,4 @@ The following photos were taken during my high speed rail trip returning home fr
 
 - - -
 
-This page is synchronized from the post: [[照片集] 高鐵返台北 [Photography] A High Speed Rail Journey Home](https://steemit.com/@deanliu/photography-a-high-speed-rail-journey-home)
+This page is synchronized from the post: ['[照片集] 高鐵返台北 [Photography] A High Speed Rail Journey Home'](https://steemit.com/@deanliu/photography-a-high-speed-rail-journey-home)

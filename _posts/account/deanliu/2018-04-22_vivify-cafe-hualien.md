@@ -1,10 +1,11 @@
 
 ---
-title: "[ Vivify Cafe @ Hualien ] 巷弄隱藏版綠意盎然・回春咖啡"
+title: '[ Vivify Cafe @ Hualien ] 巷弄隱藏版綠意盎然・回春咖啡'
 permlink: vivify-cafe-hualien
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-22 14:05:51
 categories:
 - cafe
@@ -14,7 +15,7 @@ tags:
 - hualien
 - cn
 - busy
-thumbnail: https://steemitimages.com/DQmVaSNafZJ4bCkZHJFHwGCSakqRvBwgRfroUe1kgjLakbn/DSC_4869.JPG
+thumbnail: 'https://steemitimages.com/DQmVaSNafZJ4bCkZHJFHwGCSakqRvBwgRfroUe1kgjLakbn/DSC_4869.JPG'
 sidebar:
     right:
         sticky: true
@@ -99,4 +100,4 @@ I am sharing a great cafe hidden in the street of Hualien - [Vivify Cafe](https:
 
 - - -
 
-This page is synchronized from the post: [[ Vivify Cafe @ Hualien ] 巷弄隱藏版綠意盎然・回春咖啡](https://steemit.com/@deanliu/vivify-cafe-hualien)
+This page is synchronized from the post: ['[ Vivify Cafe @ Hualien ] 巷弄隱藏版綠意盎然・回春咖啡'](https://steemit.com/@deanliu/vivify-cafe-hualien)

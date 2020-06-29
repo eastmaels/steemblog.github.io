@@ -1,10 +1,11 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Four / 七天黑白挑戰 － 第四天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Four / 七天黑白挑戰 － 第四天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-four-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-11 09:20:27
 categories:
 - sevendaybnwchallenge
@@ -12,7 +13,7 @@ tags:
 - sevendaybnwchallenge
 - photography
 - home
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -54,4 +55,4 @@ I nominate @deanliu. Again. Who else?
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Four / 七天黑白挑戰 － 第四天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-four-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Four / 七天黑白挑戰 － 第四天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-four-by-deanliu)

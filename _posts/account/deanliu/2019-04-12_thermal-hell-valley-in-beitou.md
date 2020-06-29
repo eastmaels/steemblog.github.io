@@ -1,10 +1,11 @@
 
 ---
-title: "[北投行走] 煙霧繚繞的地熱谷 Thermal/Hell Valley in Beitou "
+title: '[北投行走] 煙霧繚繞的地熱谷 Thermal/Hell Valley in Beitou '
 permlink: thermal-hell-valley-in-beitou
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-12 11:59:39
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - photography
 - cn
 - nature
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/264c7ade42f09fafdfc783805de595424b88de57.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/264c7ade42f09fafdfc783805de595424b88de57.jpg'
 sidebar:
     right:
         sticky: true
@@ -70,4 +71,4 @@ This post shares my visit to Thermal Valley (aka Hell Valley) in Beitou, Taipei.
 
 - - -
 
-This page is synchronized from the post: [[北投行走] 煙霧繚繞的地熱谷 Thermal/Hell Valley in Beitou ](https://steemit.com/@deanliu/thermal-hell-valley-in-beitou)
+This page is synchronized from the post: ['[北投行走] 煙霧繚繞的地熱谷 Thermal/Hell Valley in Beitou '](https://steemit.com/@deanliu/thermal-hell-valley-in-beitou)

@@ -1,10 +1,11 @@
 
 ---
-title: "South Village 44 Taipei, night version ..."
+title: 'South Village 44 Taipei, night version ...'
 permlink: south-village-44-taipei-night-version
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-27 13:19:36
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - culture
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmWgcQGtd9fb5aqHgZg9UjcekyVqqwhD7iXEsscFCtqmTH/DSC_1423.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmWgcQGtd9fb5aqHgZg9UjcekyVqqwhD7iXEsscFCtqmTH/DSC_1423.JPG'
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ I can't do it better than her, so I present you with something missing in her po
 
 - - -
 
-This page is synchronized from the post: [South Village 44 Taipei, night version ...](https://steemit.com/@deanliu/south-village-44-taipei-night-version)
+This page is synchronized from the post: ['South Village 44 Taipei, night version ...'](https://steemit.com/@deanliu/south-village-44-taipei-night-version)

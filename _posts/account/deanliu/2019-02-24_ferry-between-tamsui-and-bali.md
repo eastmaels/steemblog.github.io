@@ -1,10 +1,11 @@
 
 ---
-title: "[滬尾遊] 八里渡輪 Ferry between Tamsui and Bali"
+title: '[滬尾遊] 八里渡輪 Ferry between Tamsui and Bali'
 permlink: ferry-between-tamsui-and-bali
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-02-24 12:50:09
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - tamsui
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/e136734907917d2c33856c893be750f8c8dd5540.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/e136734907917d2c33856c893be750f8c8dd5540.jpg'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ After leaving the [beautiful cafe](https://steemit.com/travel/@deanliu/a-beautif
 
 - - -
 
-This page is synchronized from the post: [[滬尾遊] 八里渡輪 Ferry between Tamsui and Bali](https://steemit.com/@deanliu/ferry-between-tamsui-and-bali)
+This page is synchronized from the post: ['[滬尾遊] 八里渡輪 Ferry between Tamsui and Bali'](https://steemit.com/@deanliu/ferry-between-tamsui-and-bali)

@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] Meet the two new characters - Hobo & Spy!!"
+title: '[DrugWars] Meet the two new characters - Hobo & Spy!!'
 permlink: drugwars-meet-the-two-new-characters-hobo-and-spy
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-28 02:28:30
 categories:
 - drugwars
@@ -14,7 +15,7 @@ tags:
 - fight
 - gaming
 - dapp
-thumbnail: https://cdn.steemitimages.com/DQmTAGC4auJ51gmVzMjpGEybBR9r8ZPChP2GWjTC7aHCVJu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-28%20%E4%B8%8A%E5%8D%8810.11.41.png
+thumbnail: 'https://cdn.steemitimages.com/DQmTAGC4auJ51gmVzMjpGEybBR9r8ZPChP2GWjTC7aHCVJu/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202019-03-28%20%E4%B8%8A%E5%8D%8810.11.41.png'
 sidebar:
     right:
         sticky: true
@@ -60,4 +61,4 @@ The new battle system seems fun. Look forward to it!
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] Meet the two new characters - Hobo & Spy!!](https://steemit.com/@deanliu/drugwars-meet-the-two-new-characters-hobo-and-spy)
+This page is synchronized from the post: ['[DrugWars] Meet the two new characters - Hobo & Spy!!'](https://steemit.com/@deanliu/drugwars-meet-the-two-new-characters-hobo-and-spy)

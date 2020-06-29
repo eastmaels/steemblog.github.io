@@ -1,10 +1,11 @@
 
 ---
-title: "一鍋麻辣一杯酒。A Spicy Hot Pot Night ..."
+title: '一鍋麻辣一杯酒。A Spicy Hot Pot Night ...'
 permlink: a-spicy-hot-pot-night
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-30 15:33:24
 categories:
 - food
@@ -13,7 +14,7 @@ tags:
 - cn
 - cuisine
 - hotpot
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -85,4 +86,4 @@ https://steemitimages.com/DQmP6Tehe61EkK6dPneYizBJWe5TgPRcbZxBTs374czTipv/DSC_34
 
 - - -
 
-This page is synchronized from the post: [一鍋麻辣一杯酒。A Spicy Hot Pot Night ...](https://steemit.com/@deanliu/a-spicy-hot-pot-night)
+This page is synchronized from the post: ['一鍋麻辣一杯酒。A Spicy Hot Pot Night ...'](https://steemit.com/@deanliu/a-spicy-hot-pot-night)

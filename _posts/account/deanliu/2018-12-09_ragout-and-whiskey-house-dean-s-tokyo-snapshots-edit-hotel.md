@@ -1,10 +1,11 @@
 
 ---
-title: "RAGOUT & WHISKEY HOUSE 🍙 Dean's Tokyo Snapshots 🍙 橫濱Edit Hotel的休閒午餐"
+title: 'RAGOUT & WHISKEY HOUSE 🍙 Dean''s Tokyo Snapshots 🍙 橫濱Edit Hotel的休閒午餐'
 permlink: ragout-and-whiskey-house-dean-s-tokyo-snapshots-edit-hotel
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-12-09 11:47:51
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - busy
 - cn
-thumbnail: https://cdn.steemitimages.com/DQmYCKY2pKZp76WaHrqU89op1kSV7YJWeJy6mXsb6WjhYfN/DSC_7452.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmYCKY2pKZp76WaHrqU89op1kSV7YJWeJy6mXsb6WjhYfN/DSC_7452.JPG'
 sidebar:
     right:
         sticky: true
@@ -88,4 +89,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [RAGOUT & WHISKEY HOUSE 🍙 Dean's Tokyo Snapshots 🍙 橫濱Edit Hotel的休閒午餐](https://steemit.com/@deanliu/ragout-and-whiskey-house-dean-s-tokyo-snapshots-edit-hotel)
+This page is synchronized from the post: ['RAGOUT & WHISKEY HOUSE 🍙 Dean''s Tokyo Snapshots 🍙 橫濱Edit Hotel的休閒午餐'](https://steemit.com/@deanliu/ragout-and-whiskey-house-dean-s-tokyo-snapshots-edit-hotel)

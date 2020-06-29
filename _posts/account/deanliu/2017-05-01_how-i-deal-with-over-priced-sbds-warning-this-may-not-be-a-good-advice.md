@@ -1,10 +1,11 @@
 
 ---
-title: "How I deal with over-priced SBDs ... Warning... this may not be a good example!"
+title: 'How I deal with over-priced SBDs ... Warning... this may not be a good example!'
 permlink: how-i-deal-with-over-priced-sbds-warning-this-may-not-be-a-good-advice
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-05-01 08:51:51
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - ico
 - peerplays
 - sbd
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -49,4 +50,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [How I deal with over-priced SBDs ... Warning... this may not be a good example!](https://steemit.com/@deanliu/how-i-deal-with-over-priced-sbds-warning-this-may-not-be-a-good-advice)
+This page is synchronized from the post: ['How I deal with over-priced SBDs ... Warning... this may not be a good example!'](https://steemit.com/@deanliu/how-i-deal-with-over-priced-sbds-warning-this-may-not-be-a-good-advice)

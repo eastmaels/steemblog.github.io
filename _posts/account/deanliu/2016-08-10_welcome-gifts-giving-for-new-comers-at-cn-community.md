@@ -1,10 +1,11 @@
 
 ---
-title: "Welcome gifts giving for new comers at cn community! 新人歡迎禮物來了!"
+title: 'Welcome gifts giving for new comers at cn community! 新人歡迎禮物來了!'
 permlink: welcome-gifts-giving-for-new-comers-at-cn-community
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-10 04:21:51
 categories:
 - cn
@@ -12,7 +13,7 @@ tags:
 - cn
 - community
 - 
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -50,4 +51,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Welcome gifts giving for new comers at cn community! 新人歡迎禮物來了!](https://steemit.com/@deanliu/welcome-gifts-giving-for-new-comers-at-cn-community)
+This page is synchronized from the post: ['Welcome gifts giving for new comers at cn community! 新人歡迎禮物來了!'](https://steemit.com/@deanliu/welcome-gifts-giving-for-new-comers-at-cn-community)

@@ -1,10 +1,11 @@
 
 ---
-title: "Book Street Underground Taipei - Eslite R79"
+title: 'Book Street Underground Taipei - Eslite R79'
 permlink: book-street-underground-taipei-eslite-r79
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-09-03 15:58:12
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - culture
 - cn
-thumbnail: https://steemitimages.com/DQmTHmv7fKvq8UP23yaz7LxBwDrPv3H9UKqQomrxv7stHxx/DSC_2495.JPG
+thumbnail: 'https://steemitimages.com/DQmTHmv7fKvq8UP23yaz7LxBwDrPv3H9UKqQomrxv7stHxx/DSC_2495.JPG'
 sidebar:
     right:
         sticky: true
@@ -141,4 +142,4 @@ End today's post with my favorite photo from the exhibition. Can you connect wit
 
 - - -
 
-This page is synchronized from the post: [Book Street Underground Taipei - Eslite R79](https://steemit.com/@deanliu/book-street-underground-taipei-eslite-r79)
+This page is synchronized from the post: ['Book Street Underground Taipei - Eslite R79'](https://steemit.com/@deanliu/book-street-underground-taipei-eslite-r79)

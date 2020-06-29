@@ -1,10 +1,11 @@
 
 ---
-title: "Meme challenge #14 - Entry #1 - VIVA Steem! Be the early birds!"
+title: 'Meme challenge #14 - Entry #1 - VIVA Steem! Be the early birds!'
 permlink: meme-challenge-14-entry-1-viva-steem-be-the-early-birds
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-26 07:12:12
 categories:
 - memechallenge
@@ -13,7 +14,7 @@ tags:
 - funny
 - meme
 - viva
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -36,4 +37,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Meme challenge #14 - Entry #1 - VIVA Steem! Be the early birds!](https://steemit.com/@deanliu/meme-challenge-14-entry-1-viva-steem-be-the-early-birds)
+This page is synchronized from the post: ['Meme challenge #14 - Entry #1 - VIVA Steem! Be the early birds!'](https://steemit.com/@deanliu/meme-challenge-14-entry-1-viva-steem-be-the-early-birds)

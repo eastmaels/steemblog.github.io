@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 My Tokyo Crypto Find"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 My Tokyo Crypto Find'
 permlink: dean-s-tokyo-snapshots-my-tokyo-crypto-find
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-13 23:22:18
 categories:
 - crypto
@@ -14,7 +15,7 @@ tags:
 - japan
 - cryptocurrency
 - tokyo
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/339aa543a015b8ead601e3b64e36d8bcfaf8f698.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/339aa543a015b8ead601e3b64e36d8bcfaf8f698.png'
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 My Tokyo Crypto Find](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-my-tokyo-crypto-find)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 My Tokyo Crypto Find'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-my-tokyo-crypto-find)

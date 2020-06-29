@@ -1,10 +1,11 @@
 
 ---
-title: "SteemFest info collection for cn community! 訊息整理：Steem史上第一次[Amsterdam]大集會SteemFest即將開始了!!"
+title: 'SteemFest info collection for cn community! 訊息整理：Steem史上第一次[Amsterdam]大集會SteemFest即將開始了!!'
 permlink: steemfest-info-collection-for-cn-community-steem-amsterdam-steemfest
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-11 05:33:39
 categories:
 - steemfest
@@ -12,7 +13,7 @@ tags:
 - steemfest
 - info
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -53,4 +54,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [SteemFest info collection for cn community! 訊息整理：Steem史上第一次[Amsterdam]大集會SteemFest即將開始了!!](https://steemit.com/@deanliu/steemfest-info-collection-for-cn-community-steem-amsterdam-steemfest)
+This page is synchronized from the post: ['SteemFest info collection for cn community! 訊息整理：Steem史上第一次[Amsterdam]大集會SteemFest即將開始了!!'](https://steemit.com/@deanliu/steemfest-info-collection-for-cn-community-steem-amsterdam-steemfest)

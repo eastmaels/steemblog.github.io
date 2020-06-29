@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #2 東京老電車荒川線之二：途經飛鳥"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #2 東京老電車荒川線之二：途經飛鳥'
 permlink: dean-s-tokyo-snapshots-arakawa-line-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-20 10:58:24
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - photography
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmNVHaPnr4jCW36YDEMwjpokp5xcW9QXqimgJvtzWLR2as/DSC_6448.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNVHaPnr4jCW36YDEMwjpokp5xcW9QXqimgJvtzWLR2as/DSC_6448.JPG'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Arakawa Line #2 東京老電車荒川線之二：途經飛鳥](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-2)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Arakawa Line #2 東京老電車荒川線之二：途經飛鳥'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-arakawa-line-2)

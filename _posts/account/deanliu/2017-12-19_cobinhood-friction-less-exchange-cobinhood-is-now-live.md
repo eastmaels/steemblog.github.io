@@ -1,10 +1,11 @@
 
 ---
-title: "🏂  無摩擦力之所在 － COBINHOOD交易所上線 🏂  Friction-less Exchange - COBINHOOD is now LIVE 🏂"
+title: '🏂  無摩擦力之所在 － COBINHOOD交易所上線 🏂  Friction-less Exchange - COBINHOOD is now LIVE 🏂'
 permlink: cobinhood-friction-less-exchange-cobinhood-is-now-live
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-19 23:27:42
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - ethereum
 - cobinhood
 - cn
-thumbnail: https://steemitimages.com/DQmWXDhKEVemCKRhf1oeKh78q8pJhmLddGb4BVrEDxXZxNe/image.png
+thumbnail: 'https://steemitimages.com/DQmWXDhKEVemCKRhf1oeKh78q8pJhmLddGb4BVrEDxXZxNe/image.png'
 sidebar:
     right:
         sticky: true
@@ -107,4 +108,4 @@ That's why the post title calls it a ***friction-less*** exchange. You can buy, 
 
 - - -
 
-This page is synchronized from the post: [🏂  無摩擦力之所在 － COBINHOOD交易所上線 🏂  Friction-less Exchange - COBINHOOD is now LIVE 🏂](https://steemit.com/@deanliu/cobinhood-friction-less-exchange-cobinhood-is-now-live)
+This page is synchronized from the post: ['🏂  無摩擦力之所在 － COBINHOOD交易所上線 🏂  Friction-less Exchange - COBINHOOD is now LIVE 🏂'](https://steemit.com/@deanliu/cobinhood-friction-less-exchange-cobinhood-is-now-live)

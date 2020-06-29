@@ -1,10 +1,11 @@
 
 ---
-title: "Typhoon MEGI hits directly ... Live reporting from Taiwan  梅姬颱風登陸台灣實況報導"
+title: 'Typhoon MEGI hits directly ... Live reporting from Taiwan  梅姬颱風登陸台灣實況報導'
 permlink: typhoon-megi-hits-directly-live-reporting-from-taiwan
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-27 08:26:27
 categories:
 - news
@@ -13,7 +14,7 @@ tags:
 - typhoon
 - taiwan
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Typhoon MEGI hits directly ... Live reporting from Taiwan  梅姬颱風登陸台灣實況報導](https://steemit.com/@deanliu/typhoon-megi-hits-directly-live-reporting-from-taiwan)
+This page is synchronized from the post: ['Typhoon MEGI hits directly ... Live reporting from Taiwan  梅姬颱風登陸台灣實況報導'](https://steemit.com/@deanliu/typhoon-megi-hits-directly-live-reporting-from-taiwan)

@@ -1,10 +1,11 @@
 
 ---
-title: "我的七八天，我的生活 / My Seven-ish Days, My Life"
+title: '我的七八天，我的生活 / My Seven-ish Days, My Life'
 permlink: my-seven-ish-days-my-life
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-18 03:15:39
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - story
 - cn
 - cn-writing
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -114,4 +115,4 @@ https://steemitimages.com/0x0/https://steemitimages.com/DQmWZ8ZqbDfjMRP51LGR4w4Y
 
 - - -
 
-This page is synchronized from the post: [我的七八天，我的生活 / My Seven-ish Days, My Life](https://steemit.com/@deanliu/my-seven-ish-days-my-life)
+This page is synchronized from the post: ['我的七八天，我的生活 / My Seven-ish Days, My Life'](https://steemit.com/@deanliu/my-seven-ish-days-my-life)

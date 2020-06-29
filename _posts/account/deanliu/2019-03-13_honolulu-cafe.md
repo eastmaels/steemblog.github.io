@@ -1,10 +1,11 @@
 
 ---
-title: "[香港美食] 台北檀島茶餐廳 Honolulu Cafe"
+title: '[香港美食] 台北檀島茶餐廳 Honolulu Cafe'
 permlink: honolulu-cafe
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-03-13 13:12:45
 categories:
 - food
@@ -14,7 +15,7 @@ tags:
 - taipei
 - cn
 - busy
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/ee20073116a4a752c81edc8e441313adbaf3ddb0.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/ee20073116a4a752c81edc8e441313adbaf3ddb0.jpg'
 sidebar:
     right:
         sticky: true
@@ -84,4 +85,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[香港美食] 台北檀島茶餐廳 Honolulu Cafe](https://steemit.com/@deanliu/honolulu-cafe)
+This page is synchronized from the post: ['[香港美食] 台北檀島茶餐廳 Honolulu Cafe'](https://steemit.com/@deanliu/honolulu-cafe)

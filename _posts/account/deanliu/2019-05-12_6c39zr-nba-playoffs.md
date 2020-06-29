@@ -1,10 +1,11 @@
 
 ---
-title: "[漫談NBA Playoffs] 勇士贏了火箭"
+title: '[漫談NBA Playoffs] 勇士贏了火箭'
 permlink: 6c39zr-nba-playoffs
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-05-12 23:40:27
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - nba
 - playoffs
 - warriors
-thumbnail: https://img.ltn.com.tw/Upload/sports/page/800/2019/05/12/phpDsRDIc.jpg
+thumbnail: 'https://img.ltn.com.tw/Upload/sports/page/800/2019/05/12/phpDsRDIc.jpg'
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[漫談NBA Playoffs] 勇士贏了火箭](https://steemit.com/@deanliu/6c39zr-nba-playoffs)
+This page is synchronized from the post: ['[漫談NBA Playoffs] 勇士贏了火箭'](https://steemit.com/@deanliu/6c39zr-nba-playoffs)

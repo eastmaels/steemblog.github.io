@@ -1,10 +1,11 @@
 
 ---
-title: "Rant - Don't like the new Bittrex UI"
+title: 'Rant - Don''t like the new Bittrex UI'
 permlink: rant-don-t-like-the-new-bittrex-ui
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-04-11 09:21:54
 categories:
 - bittrex
@@ -12,7 +13,7 @@ tags:
 - bittrex
 - exchange
 - rant
-thumbnail: https://steemitimages.com/DQmcyAgCajf83ea1cNjVZAsfFwd3gnAM8qrGyQJ4WcmTJUD/image.png
+thumbnail: 'https://steemitimages.com/DQmcyAgCajf83ea1cNjVZAsfFwd3gnAM8qrGyQJ4WcmTJUD/image.png'
 sidebar:
     right:
         sticky: true
@@ -55,4 +56,4 @@ I still don't know what's wrong with the old UI - it has no flaws in my eyes.
 
 - - -
 
-This page is synchronized from the post: [Rant - Don't like the new Bittrex UI](https://steemit.com/@deanliu/rant-don-t-like-the-new-bittrex-ui)
+This page is synchronized from the post: ['Rant - Don''t like the new Bittrex UI'](https://steemit.com/@deanliu/rant-don-t-like-the-new-bittrex-ui)

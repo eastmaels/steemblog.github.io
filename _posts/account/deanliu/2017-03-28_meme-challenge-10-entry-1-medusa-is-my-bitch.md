@@ -1,10 +1,11 @@
 
 ---
-title: "Meme challenge 10 - Entry 1 - Medusa is My Bitch"
+title: 'Meme challenge 10 - Entry 1 - Medusa is My Bitch'
 permlink: meme-challenge-10-entry-1-medusa-is-my-bitch
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-03-28 06:27:18
 categories:
 - memechallenge
@@ -13,7 +14,7 @@ tags:
 - meme
 - greek-mythology
 - funny
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -38,4 +39,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Meme challenge 10 - Entry 1 - Medusa is My Bitch](https://steemit.com/@deanliu/meme-challenge-10-entry-1-medusa-is-my-bitch)
+This page is synchronized from the post: ['Meme challenge 10 - Entry 1 - Medusa is My Bitch'](https://steemit.com/@deanliu/meme-challenge-10-entry-1-medusa-is-my-bitch)

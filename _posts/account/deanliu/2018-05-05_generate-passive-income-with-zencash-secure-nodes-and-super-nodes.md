@@ -1,10 +1,11 @@
 
 ---
-title: "Generate Passive Income with ZENCASH - Secure Nodes and Super Nodes -"
+title: 'Generate Passive Income with ZENCASH - Secure Nodes and Super Nodes -'
 permlink: generate-passive-income-with-zencash-secure-nodes-and-super-nodes
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-05 03:08:45
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - zencash
 - blockchain
 - masternode
-thumbnail: https://steemitimages.com/DQmQFarDji6utwCSJ5ng1WnuQk5vYqxY3WDavFkdVH7mYjt/y4mmqjokpuabpjvm24vqyeclnbvlf3bc3afanit0lqkecxwvtrs2mrpd4tq5oead-.jpg
+thumbnail: 'https://steemitimages.com/DQmQFarDji6utwCSJ5ng1WnuQk5vYqxY3WDavFkdVH7mYjt/y4mmqjokpuabpjvm24vqyeclnbvlf3bc3afanit0lqkecxwvtrs2mrpd4tq5oead-.jpg'
 sidebar:
     right:
         sticky: true
@@ -102,4 +103,4 @@ Dean and Dan.
 
 - - -
 
-This page is synchronized from the post: [Generate Passive Income with ZENCASH - Secure Nodes and Super Nodes -](https://steemit.com/@deanliu/generate-passive-income-with-zencash-secure-nodes-and-super-nodes)
+This page is synchronized from the post: ['Generate Passive Income with ZENCASH - Secure Nodes and Super Nodes -'](https://steemit.com/@deanliu/generate-passive-income-with-zencash-secure-nodes-and-super-nodes)

@@ -1,10 +1,11 @@
 
 ---
-title: "[Cooling Taiwan Summer] [台灣冰涼一夏] GOMAN MANGO's Mango ICO 芒果冰來啦！～～"
+title: '[Cooling Taiwan Summer] [台灣冰涼一夏] GOMAN MANGO''s Mango ICO 芒果冰來啦！～～'
 permlink: cooling-taiwan-summer-goman-mango-s-mango-ico
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-08-16 10:49:06
 categories:
 - mango-ice
@@ -14,7 +15,7 @@ tags:
 - food
 - cn
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmNzzM3ZgFvk5Sg4Qv556QPpiccf3xUwQPrFV1uSKBfHJv/DSC_6180.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmNzzM3ZgFvk5Sg4Qv556QPpiccf3xUwQPrFV1uSKBfHJv/DSC_6180.JPG'
 sidebar:
     right:
         sticky: true
@@ -95,4 +96,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[Cooling Taiwan Summer] [台灣冰涼一夏] GOMAN MANGO's Mango ICO 芒果冰來啦！～～](https://steemit.com/@deanliu/cooling-taiwan-summer-goman-mango-s-mango-ico)
+This page is synchronized from the post: ['[Cooling Taiwan Summer] [台灣冰涼一夏] GOMAN MANGO''s Mango ICO 芒果冰來啦！～～'](https://steemit.com/@deanliu/cooling-taiwan-summer-goman-mango-s-mango-ico)

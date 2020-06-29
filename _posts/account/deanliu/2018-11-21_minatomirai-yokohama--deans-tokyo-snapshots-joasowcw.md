@@ -1,10 +1,11 @@
 
 ---
-title: "Minatomirai Yokohama 🍙 Dean's Tokyo Snapshots 🍙 港未來夜景"
+title: 'Minatomirai Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 港未來夜景'
 permlink: minatomirai-yokohama--deans-tokyo-snapshots-joasowcw
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-21 03:17:12
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/acd94dd5b86e74b794608ef2828c2a50683cd5b1.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/acd94dd5b86e74b794608ef2828c2a50683cd5b1.png'
 sidebar:
     right:
         sticky: true
@@ -61,4 +62,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Minatomirai Yokohama 🍙 Dean's Tokyo Snapshots 🍙 港未來夜景](https://steemit.com/@deanliu/minatomirai-yokohama--deans-tokyo-snapshots-joasowcw)
+This page is synchronized from the post: ['Minatomirai Yokohama 🍙 Dean''s Tokyo Snapshots 🍙 港未來夜景'](https://steemit.com/@deanliu/minatomirai-yokohama--deans-tokyo-snapshots-joasowcw)

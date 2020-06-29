@@ -1,10 +1,11 @@
 
 ---
-title: "[NBA Finals] 火箭蓄勢 勇士達陣"
+title: '[NBA Finals] 火箭蓄勢 勇士達陣'
 permlink: nba-finals
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-05-27 12:56:39
 categories:
 - nba
@@ -14,7 +15,7 @@ tags:
 - life
 - cn
 - busy
-thumbnail: http://www.nba.com/warriors/sites/warriors/files/styles/hi_res_full_width/public/20180526-recap-1905.jpg
+thumbnail: 'http://www.nba.com/warriors/sites/warriors/files/styles/hi_res_full_width/public/20180526-recap-1905.jpg'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[NBA Finals] 火箭蓄勢 勇士達陣](https://steemit.com/@deanliu/nba-finals)
+This page is synchronized from the post: ['[NBA Finals] 火箭蓄勢 勇士達陣'](https://steemit.com/@deanliu/nba-finals)

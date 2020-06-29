@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Lunch at Royal Garden Cafe Aoyama"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Lunch at Royal Garden Cafe Aoyama'
 permlink: dean-s-tokyo-snapshots-lunch-at-royal-garden-cafe-aoyama
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-10 10:41:03
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - japan
 - food
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/8b69e9449548f326df494a8d7cb66f96a1360b28.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/8b69e9449548f326df494a8d7cb66f96a1360b28.png'
 sidebar:
     right:
         sticky: true
@@ -105,4 +106,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Lunch at Royal Garden Cafe Aoyama](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-lunch-at-royal-garden-cafe-aoyama)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Lunch at Royal Garden Cafe Aoyama'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-lunch-at-royal-garden-cafe-aoyama)

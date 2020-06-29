@@ -1,10 +1,11 @@
 
 ---
-title: "The Seven Day B&W Challenge - Day Seven / 七天黑白挑戰 － 第七天 / by @deanliu"
+title: 'The Seven Day B&W Challenge - Day Seven / 七天黑白挑戰 － 第七天 / by @deanliu'
 permlink: the-seven-day-b-and-w-challenge-day-seven-by-deanliu
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-12-16 07:18:42
 categories:
 - sevendaybnwchallenge
@@ -12,7 +13,7 @@ tags:
 - sevendaybnwchallenge
 - photography
 - travel
-thumbnail: https://steemitimages.com/DQmesQX5KYmvHgu5CsukJkuGJxVTdUicdSxYG5oMvWoexqc/IMG_20130923_082440.jpg
+thumbnail: 'https://steemitimages.com/DQmesQX5KYmvHgu5CsukJkuGJxVTdUicdSxYG5oMvWoexqc/IMG_20130923_082440.jpg'
 sidebar:
     right:
         sticky: true
@@ -63,4 +64,4 @@ And if you think this is my final post for this challenge, think again! I might 
 
 - - -
 
-This page is synchronized from the post: [The Seven Day B&W Challenge - Day Seven / 七天黑白挑戰 － 第七天 / by @deanliu](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-seven-by-deanliu)
+This page is synchronized from the post: ['The Seven Day B&W Challenge - Day Seven / 七天黑白挑戰 － 第七天 / by @deanliu'](https://steemit.com/@deanliu/the-seven-day-b-and-w-challenge-day-seven-by-deanliu)

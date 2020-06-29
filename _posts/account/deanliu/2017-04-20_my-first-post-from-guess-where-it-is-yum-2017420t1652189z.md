@@ -1,10 +1,11 @@
 
 ---
-title: "My first post from .... guess where? it is yum!"
+title: 'My first post from .... guess where? it is yum!'
 permlink: my-first-post-from-guess-where-it-is-yum-2017420t1652189z
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-04-20 08:52:21
 categories:
 - food
@@ -12,7 +13,7 @@ tags:
 - food
 - life
 - esteem
-thumbnail: https://i.imgur.com/msqK3NF.jpg
+thumbnail: 'https://i.imgur.com/msqK3NF.jpg'
 sidebar:
     right:
         sticky: true
@@ -35,4 +36,4 @@ It's not easy... But I manage to finish it. :)
 
 - - -
 
-This page is synchronized from the post: [My first post from .... guess where? it is yum!](https://steemit.com/@deanliu/my-first-post-from-guess-where-it-is-yum-2017420t1652189z)
+This page is synchronized from the post: ['My first post from .... guess where? it is yum!'](https://steemit.com/@deanliu/my-first-post-from-guess-where-it-is-yum-2017420t1652189z)

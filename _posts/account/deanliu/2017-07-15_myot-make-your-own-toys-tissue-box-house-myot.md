@@ -1,10 +1,11 @@
 
 ---
-title: "✂ [MYOT - Make Your Own Toys!] Tissue Box House  ✂ [MYOT 自製玩具系列] 面紙盒變房子！✂"
+title: '✂ [MYOT - Make Your Own Toys!] Tissue Box House  ✂ [MYOT 自製玩具系列] 面紙盒變房子！✂'
 permlink: myot-make-your-own-toys-tissue-box-house-myot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-07-15 11:43:57
 categories:
 - life
@@ -14,7 +15,7 @@ tags:
 - toy
 - myot
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -75,4 +76,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [✂ [MYOT - Make Your Own Toys!] Tissue Box House  ✂ [MYOT 自製玩具系列] 面紙盒變房子！✂](https://steemit.com/@deanliu/myot-make-your-own-toys-tissue-box-house-myot)
+This page is synchronized from the post: ['✂ [MYOT - Make Your Own Toys!] Tissue Box House  ✂ [MYOT 自製玩具系列] 面紙盒變房子！✂'](https://steemit.com/@deanliu/myot-make-your-own-toys-tissue-box-house-myot)

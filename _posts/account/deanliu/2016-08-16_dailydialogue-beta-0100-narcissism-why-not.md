@@ -1,16 +1,17 @@
 
 ---
-title: "DailyDialogue (beta) #0100 Narcissism, Why Not?"
+title: 'DailyDialogue (beta) #0100 Narcissism, Why Not?'
 permlink: dailydialogue-beta-0100-narcissism-why-not
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-08-16 10:48:36
 categories:
 - dailydialogue
 tags:
 - dailydialogue
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [DailyDialogue (beta) #0100 Narcissism, Why Not?](https://steemit.com/@deanliu/dailydialogue-beta-0100-narcissism-why-not)
+This page is synchronized from the post: ['DailyDialogue (beta) #0100 Narcissism, Why Not?'](https://steemit.com/@deanliu/dailydialogue-beta-0100-narcissism-why-not)

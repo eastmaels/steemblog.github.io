@@ -1,10 +1,11 @@
 
 ---
-title: "[DrugWars] 史詩戰役與戰之道"
+title: '[DrugWars] 史詩戰役與戰之道'
 permlink: 5sj8iw-drugwars
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-13 09:37:06
 categories:
 - cn
@@ -14,7 +15,7 @@ tags:
 - drugwars
 - busy
 - gaming
-thumbnail: https://ipfs.busy.org/ipfs/QmPVCPGbeuTcTSxcTPH3C4D3KhMYaxap8WjzikrobbKAtq
+thumbnail: 'https://ipfs.busy.org/ipfs/QmPVCPGbeuTcTSxcTPH3C4D3KhMYaxap8WjzikrobbKAtq'
 sidebar:
     right:
         sticky: true
@@ -74,4 +75,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [[DrugWars] 史詩戰役與戰之道](https://steemit.com/@deanliu/5sj8iw-drugwars)
+This page is synchronized from the post: ['[DrugWars] 史詩戰役與戰之道'](https://steemit.com/@deanliu/5sj8iw-drugwars)

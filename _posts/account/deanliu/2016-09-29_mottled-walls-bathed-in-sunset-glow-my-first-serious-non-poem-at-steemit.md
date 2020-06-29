@@ -1,10 +1,11 @@
 
 ---
-title: "Mottled Walls Bathed in Sunset Glow  牆之不成詩 (my first serious non-poem at Steemit)"
+title: 'Mottled Walls Bathed in Sunset Glow  牆之不成詩 (my first serious non-poem at Steemit)'
 permlink: mottled-walls-bathed-in-sunset-glow-my-first-serious-non-poem-at-steemit
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-09-29 05:06:09
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - poem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -44,4 +45,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Mottled Walls Bathed in Sunset Glow  牆之不成詩 (my first serious non-poem at Steemit)](https://steemit.com/@deanliu/mottled-walls-bathed-in-sunset-glow-my-first-serious-non-poem-at-steemit)
+This page is synchronized from the post: ['Mottled Walls Bathed in Sunset Glow  牆之不成詩 (my first serious non-poem at Steemit)'](https://steemit.com/@deanliu/mottled-walls-bathed-in-sunset-glow-my-first-serious-non-poem-at-steemit)

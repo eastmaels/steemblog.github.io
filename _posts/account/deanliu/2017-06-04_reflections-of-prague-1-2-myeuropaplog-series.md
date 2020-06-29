@@ -1,10 +1,11 @@
 
 ---
-title: "Reflections of Prague 1/2 - #myeuropaplog series"
+title: 'Reflections of Prague 1/2 - #myeuropaplog series'
 permlink: reflections-of-prague-1-2-myeuropaplog-series
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-06-04 00:34:54
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - travel
 - myeuropaplog
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -40,4 +41,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [Reflections of Prague 1/2 - #myeuropaplog series](https://steemit.com/@deanliu/reflections-of-prague-1-2-myeuropaplog-series)
+This page is synchronized from the post: ['Reflections of Prague 1/2 - #myeuropaplog series'](https://steemit.com/@deanliu/reflections-of-prague-1-2-myeuropaplog-series)

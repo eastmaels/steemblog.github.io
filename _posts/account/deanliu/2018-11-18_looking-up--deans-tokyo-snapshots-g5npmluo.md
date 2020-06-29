@@ -1,10 +1,11 @@
 
 ---
-title: "Looking Up 🍙 Dean's Tokyo Snapshots 🍙 天空"
+title: 'Looking Up 🍙 Dean''s Tokyo Snapshots 🍙 天空'
 permlink: looking-up--deans-tokyo-snapshots-g5npmluo
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-18 01:40:24
 categories:
 - photography
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - partiko
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/5b5884f28a26b089775108c85f1c944e6b9cf71c.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/5b5884f28a26b089775108c85f1c944e6b9cf71c.png'
 sidebar:
     right:
         sticky: true
@@ -65,4 +66,4 @@ Posted using [Partiko Android](https://steemit.com/@partiko-android)
 
 - - -
 
-This page is synchronized from the post: [Looking Up 🍙 Dean's Tokyo Snapshots 🍙 天空](https://steemit.com/@deanliu/looking-up--deans-tokyo-snapshots-g5npmluo)
+This page is synchronized from the post: ['Looking Up 🍙 Dean''s Tokyo Snapshots 🍙 天空'](https://steemit.com/@deanliu/looking-up--deans-tokyo-snapshots-g5npmluo)

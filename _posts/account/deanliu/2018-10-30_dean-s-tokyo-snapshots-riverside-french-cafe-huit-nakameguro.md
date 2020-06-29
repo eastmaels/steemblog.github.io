@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙Riverside French Cafe - HUIT Nakameguro"
+title: '🍙 Dean''s Tokyo Snapshots 🍙Riverside French Cafe - HUIT Nakameguro'
 permlink: dean-s-tokyo-snapshots-riverside-french-cafe-huit-nakameguro
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-30 11:03:39
 categories:
 - restaurant
@@ -14,7 +15,7 @@ tags:
 - dean-tokyo
 - japan
 - busy
-thumbnail: https://cdn.steemitimages.com/DQmeBqivKL9adZtchG2f8ZiADoVVtdYZQS3ompMfQNsbWN8/DSC_5952.JPG
+thumbnail: 'https://cdn.steemitimages.com/DQmeBqivKL9adZtchG2f8ZiADoVVtdYZQS3ompMfQNsbWN8/DSC_5952.JPG'
 sidebar:
     right:
         sticky: true
@@ -94,4 +95,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙Riverside French Cafe - HUIT Nakameguro](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-riverside-french-cafe-huit-nakameguro)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙Riverside French Cafe - HUIT Nakameguro'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-riverside-french-cafe-huit-nakameguro)

@@ -1,10 +1,11 @@
 
 ---
-title: "一次逛完八大美術社  A Glimpse at BaDa Art Store"
+title: '一次逛完八大美術社  A Glimpse at BaDa Art Store'
 permlink: a-glimpse-at-bada-art-store
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-29 10:39:51
 categories:
 - art
@@ -12,7 +13,7 @@ tags:
 - art
 - poem
 - cn
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -69,4 +70,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [一次逛完八大美術社  A Glimpse at BaDa Art Store](https://steemit.com/@deanliu/a-glimpse-at-bada-art-store)
+This page is synchronized from the post: ['一次逛完八大美術社  A Glimpse at BaDa Art Store'](https://steemit.com/@deanliu/a-glimpse-at-bada-art-store)

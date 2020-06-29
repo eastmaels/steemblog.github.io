@@ -1,10 +1,11 @@
 
 ---
-title: "The pioneer of irrefutable, irreversible and unalterable content"
+title: 'The pioneer of irrefutable, irreversible and unalterable content'
 permlink: the-pioneer-of-irrefutable-irreversible-and-unalterable-content
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-11-16 08:58:15
 categories:
 - blockchain
@@ -14,7 +15,7 @@ tags:
 - decentralization
 - busy
 - books
-thumbnail: https://www.printerland.co.uk/blog/wp-content/uploads/2016/01/Gutenberg-Universit%C3%A4tsbibliothek-Leipzig-F-775x1024.jpg
+thumbnail: 'https://www.printerland.co.uk/blog/wp-content/uploads/2016/01/Gutenberg-Universit%C3%A4tsbibliothek-Leipzig-F-775x1024.jpg'
 sidebar:
     right:
         sticky: true
@@ -67,4 +68,4 @@ Do you read and do you think so? ^^
 
 - - -
 
-This page is synchronized from the post: [The pioneer of irrefutable, irreversible and unalterable content](https://steemit.com/@deanliu/the-pioneer-of-irrefutable-irreversible-and-unalterable-content)
+This page is synchronized from the post: ['The pioneer of irrefutable, irreversible and unalterable content'](https://steemit.com/@deanliu/the-pioneer-of-irrefutable-irreversible-and-unalterable-content)

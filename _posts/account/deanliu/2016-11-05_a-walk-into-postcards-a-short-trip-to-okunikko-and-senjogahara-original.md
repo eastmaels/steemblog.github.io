@@ -1,10 +1,11 @@
 
 ---
-title: "A Walk into Postcards - A Short Trip to Okunikko and Senjogahara (original)"
+title: 'A Walk into Postcards - A Short Trip to Okunikko and Senjogahara (original)'
 permlink: a-walk-into-postcards-a-short-trip-to-okunikko-and-senjogahara-original
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2016-11-05 03:44:54
 categories:
 - photography
@@ -12,7 +13,7 @@ tags:
 - photography
 - japan
 - travel
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -42,4 +43,4 @@ widgets:
 
 - - -
 
-This page is synchronized from the post: [A Walk into Postcards - A Short Trip to Okunikko and Senjogahara (original)](https://steemit.com/@deanliu/a-walk-into-postcards-a-short-trip-to-okunikko-and-senjogahara-original)
+This page is synchronized from the post: ['A Walk into Postcards - A Short Trip to Okunikko and Senjogahara (original)'](https://steemit.com/@deanliu/a-walk-into-postcards-a-short-trip-to-okunikko-and-senjogahara-original)

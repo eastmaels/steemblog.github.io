@@ -1,10 +1,11 @@
 
 ---
-title: "Mobile Mining Experience - Electroneum "
+title: 'Mobile Mining Experience - Electroneum '
 permlink: mobile-mining-experience-electroneum
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-03-22 23:51:21
 categories:
 - cryptocurrency
@@ -14,7 +15,7 @@ tags:
 - mining
 - cn
 - busy
-thumbnail: 
+thumbnail: None
 sidebar:
     right:
         sticky: true
@@ -116,4 +117,4 @@ See!? I did not start introducing this until now as I want to make sure this who
 
 - - -
 
-This page is synchronized from the post: [Mobile Mining Experience - Electroneum ](https://steemit.com/@deanliu/mobile-mining-experience-electroneum)
+This page is synchronized from the post: ['Mobile Mining Experience - Electroneum '](https://steemit.com/@deanliu/mobile-mining-experience-electroneum)

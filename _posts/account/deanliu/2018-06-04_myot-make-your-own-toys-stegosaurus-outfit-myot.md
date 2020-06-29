@@ -1,10 +1,11 @@
 
 ---
-title: "✂ [MYOT - Make Your Own Toys!] Stegosaurus Outfit  ✂ [MYOT 自製玩具系列] 我是劍龍！"
+title: '✂ [MYOT - Make Your Own Toys!] Stegosaurus Outfit  ✂ [MYOT 自製玩具系列] 我是劍龍！'
 permlink: myot-make-your-own-toys-stegosaurus-outfit-myot
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-06-04 12:14:42
 categories:
 - myot
@@ -14,7 +15,7 @@ tags:
 - diy
 - cn
 - busy
-thumbnail: https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmWHw2gerk7i1jWNxpbmAKvvvJWGECPJEPpyZBU2BD5nRE/stegosaurus-1418308_640.png
+thumbnail: 'https://steemitimages.com/0x0/https://cdn.steemitimages.com/DQmWHw2gerk7i1jWNxpbmAKvvvJWGECPJEPpyZBU2BD5nRE/stegosaurus-1418308_640.png'
 sidebar:
     right:
         sticky: true
@@ -97,4 +98,4 @@ Since I had so materials left so I decided to make my kid a pair of hand armors 
 
 - - -
 
-This page is synchronized from the post: [✂ [MYOT - Make Your Own Toys!] Stegosaurus Outfit  ✂ [MYOT 自製玩具系列] 我是劍龍！](https://steemit.com/@deanliu/myot-make-your-own-toys-stegosaurus-outfit-myot)
+This page is synchronized from the post: ['✂ [MYOT - Make Your Own Toys!] Stegosaurus Outfit  ✂ [MYOT 自製玩具系列] 我是劍龍！'](https://steemit.com/@deanliu/myot-make-your-own-toys-stegosaurus-outfit-myot)

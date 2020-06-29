@@ -1,10 +1,11 @@
 
 ---
-title: "A discussion on the business model of Cobinhood - 討論Cobinhood的商業模式，P.S. 華人加油！"
+title: 'A discussion on the business model of Cobinhood - 討論Cobinhood的商業模式，P.S. 華人加油！'
 permlink: a-discussion-on-the-business-model-of-cobinhood-cobinhood-p-s
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2017-10-03 15:22:00
 categories:
 - cobinhood
@@ -14,7 +15,7 @@ tags:
 - cn
 - cn-cryptocurrency
 - ico
-thumbnail: https://i.imgur.com/KkFpi3Y.png
+thumbnail: 'https://i.imgur.com/KkFpi3Y.png'
 sidebar:
     right:
         sticky: true
@@ -89,4 +90,4 @@ Cobinhood的Telegram頻道內每天都有許多訊息，有興趣跟蹤了解的
 
 - - -
 
-This page is synchronized from the post: [A discussion on the business model of Cobinhood - 討論Cobinhood的商業模式，P.S. 華人加油！](https://steemit.com/@deanliu/a-discussion-on-the-business-model-of-cobinhood-cobinhood-p-s)
+This page is synchronized from the post: ['A discussion on the business model of Cobinhood - 討論Cobinhood的商業模式，P.S. 華人加油！'](https://steemit.com/@deanliu/a-discussion-on-the-business-model-of-cobinhood-cobinhood-p-s)

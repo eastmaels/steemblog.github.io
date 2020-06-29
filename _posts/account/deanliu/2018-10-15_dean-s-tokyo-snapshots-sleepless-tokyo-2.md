@@ -1,10 +1,11 @@
 
 ---
-title: "🍙 Dean's Tokyo Snapshots 🍙 Sleepless Tokyo #2"
+title: '🍙 Dean''s Tokyo Snapshots 🍙 Sleepless Tokyo #2'
 permlink: dean-s-tokyo-snapshots-sleepless-tokyo-2
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-10-15 12:44:03
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - photography
 - japan
 - busy
-thumbnail: https://s3.us-east-2.amazonaws.com/partiko.io/img/bd5aa1d63f83c310231c67f3c39fb0a69bba4fe3.png
+thumbnail: 'https://s3.us-east-2.amazonaws.com/partiko.io/img/bd5aa1d63f83c310231c67f3c39fb0a69bba4fe3.png'
 sidebar:
     right:
         sticky: true
@@ -66,4 +67,4 @@ https://steemitimages.com/DQmfZrw9uRCxfKwrzCs24ePqpSyknEeQPD5L9iMo3Z7x1VB/image.
 
 - - -
 
-This page is synchronized from the post: [🍙 Dean's Tokyo Snapshots 🍙 Sleepless Tokyo #2](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-sleepless-tokyo-2)
+This page is synchronized from the post: ['🍙 Dean''s Tokyo Snapshots 🍙 Sleepless Tokyo #2'](https://steemit.com/@deanliu/dean-s-tokyo-snapshots-sleepless-tokyo-2)

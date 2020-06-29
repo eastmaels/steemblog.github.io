@@ -1,10 +1,11 @@
 
 ---
-title: "3AM at Kamakura  🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #5"
+title: '3AM at Kamakura  🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #5'
 permlink: 3am-at-kamakura-dean-s-tokyo-snapshots-kamakura-5
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2019-04-23 13:10:21
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - cn
 - busy
 - moment
-thumbnail: https://d1vof77qrk4l5q.cloudfront.net/img/561a31df3384a029b53698ea54958dc25fc45117.jpg
+thumbnail: 'https://d1vof77qrk4l5q.cloudfront.net/img/561a31df3384a029b53698ea54958dc25fc45117.jpg'
 sidebar:
     right:
         sticky: true
@@ -73,4 +74,4 @@ _日本旅遊已結束，繼續以此系列紀錄日本之行...._ ^^
 
 - - -
 
-This page is synchronized from the post: [3AM at Kamakura  🍙 Dean's Tokyo Snapshots 🍙 鐮倉 Kamakura #5](https://steemit.com/@deanliu/3am-at-kamakura-dean-s-tokyo-snapshots-kamakura-5)
+This page is synchronized from the post: ['3AM at Kamakura  🍙 Dean''s Tokyo Snapshots 🍙 鐮倉 Kamakura #5'](https://steemit.com/@deanliu/3am-at-kamakura-dean-s-tokyo-snapshots-kamakura-5)

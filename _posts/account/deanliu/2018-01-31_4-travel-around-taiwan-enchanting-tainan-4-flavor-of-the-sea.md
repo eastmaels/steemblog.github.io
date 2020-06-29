@@ -1,10 +1,11 @@
 
 ---
-title: "🚉 [輕旅行系列] 慵懶台南 #4 魚味無窮 🚉 [Travel Around Taiwan] Enchanting Tainan #4 Flavor of the sea"
+title: '🚉 [輕旅行系列] 慵懶台南 #4 魚味無窮 🚉 [Travel Around Taiwan] Enchanting Tainan #4 Flavor of the sea'
 permlink: 4-travel-around-taiwan-enchanting-tainan-4-flavor-of-the-sea
 catalog: true
 toc_nav_num: true
 toc: true
+position: 9999
 date: 2018-01-31 04:31:54
 categories:
 - travel
@@ -14,7 +15,7 @@ tags:
 - taiwan
 - cn
 - busy
-thumbnail: https://res.cloudinary.com/hpiynhbhq/image/upload/v1517371509/eyvah8ovir1orvvvq0jc.jpg
+thumbnail: 'https://res.cloudinary.com/hpiynhbhq/image/upload/v1517371509/eyvah8ovir1orvvvq0jc.jpg'
 sidebar:
     right:
         sticky: true
@@ -87,4 +88,4 @@ Stay tuned for more Enchanting Tainan tomorrow ~~~~
 
 - - -
 
-This page is synchronized from the post: [🚉 [輕旅行系列] 慵懶台南 #4 魚味無窮 🚉 [Travel Around Taiwan] Enchanting Tainan #4 Flavor of the sea](https://steemit.com/@deanliu/4-travel-around-taiwan-enchanting-tainan-4-flavor-of-the-sea)
+This page is synchronized from the post: ['🚉 [輕旅行系列] 慵懶台南 #4 魚味無窮 🚉 [Travel Around Taiwan] Enchanting Tainan #4 Flavor of the sea'](https://steemit.com/@deanliu/4-travel-around-taiwan-enchanting-tainan-4-flavor-of-the-sea)
