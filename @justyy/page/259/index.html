@@ -230,6 +230,99 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/steemit-api-transfer-history-api/" class="image is-7by1">
+            <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt="SteemIt API/transfer-history 最简单获取帐号钱包记录的API">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-14T20:14:18.000Z">2017-08-14</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1181 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/steemit-api-transfer-history-api/">SteemIt API/transfer-history 最简单获取帐号钱包记录的API</a>
+            
+        </h1>
+        <div class="content">
+            <p>SteemIt API/transfer-history is made available to public, free of charge, on four API servers world wide.</p>
+<p>&#x4ECA;&#x5929;&#x6211;&#x53C8;&#x60F3;&#x505A;&#x4E00;&#x4E2A;&#x5C0F;&#x529F;&#x80FD;&#x9700;&#x8981;&#x67E5;&#x8BE2;STEEM&#x7528;&#x6237;&#x7684;&#x94B1;&#x5305;&#x5386;&#x53F2;&#xFF0C;&#x7ED3;&#x679C;&#x53C8;&#x53D1;&#x73B0;&#x5B98;&#x65B9;&#x7684;API&#x793A;&#x4F8B;&#x4E0D;&#x591F;&#x7B80;&#x5355;&#x3002;&#x633A;&#x9EBB;&#x70E6;&#x7684;&#xFF0C;&#x67E5;&#x4E86;&#x534A;&#x5C0F;&#x65F6;&#x540E;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x81EA;&#x5DF1;&#x60F3;&#x8981;&#x7684;&#xFF0C;&#x4E8E;&#x662F;&#x679C;&#x65AD;&#x76F4;&#x63A5;&#x722A;&#x53D6;<a href="https://justyy.com/archives/5051" target="_blank" rel="noopener">SteemIt</a>&#x7EBF;&#x4E0A;&#x7684;&#x7F51;&#x9875;&#x3002;&#x5728;&#x8FD9;&#x91CC;&#x5148;&#x611F;&#x8C22; SteemIt.com &#x4E0D;&#x963B;&#x6B62;<a href="https://justyy.com/archives/3679" target="_blank" rel="noopener">PHP</a>&#x76F4;&#x63A5;&#x6293;&#x53D6;&#x3002;</p>
+<p>Let&#x2019;s have a quick look on how to use this API<br>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x770B;&#x6548;&#x679C;&#x5427;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -X POST -d &quot;id=justyy&quot; https://uploadbeta.com/api/steemit/transfer-history/</span><br></pre></td></tr></tbody></table></figure>
+<p>It will soon returns a JSON-encoded string, with a first few lines that look like this:<br>&#x5F88;&#x5FEB;&#x7684;&#xFF0C;&#x5C31;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E32;JSON&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x53D6;&#x524D;&#x9762;&#x51E0;&#x884C;&#xFF0C;&#x5927;&#x6982;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x6784;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[{&quot;time&quot;:&quot;8\/14\/2017, 6:37:15 PM&quot;,</span><br><span class="line">&quot;time_desc&quot;:&quot;1 hour ago&quot;,</span><br><span class="line">&quot;transaction&quot;:&quot;Claim rewards: 8.203 SBD and 6.842 STEEM POWER&quot;,</span><br><span class="line">&quot;memo&quot;:&quot;&quot;},</span><br><span class="line">{&quot;time&quot;:&quot;8\/14\/2017, 6:00:12 PM&quot;,</span><br><span class="line">&quot;time_desc&quot;:&quot;2 hours ago&quot;,</span><br><span class="line">&quot;transaction&quot;:&quot;Claim rewards: 0.052 STEEM POWER&quot;,</span><br><span class="line">&quot;memo&quot;:&quot;&quot;},... ...</span><br></pre></td></tr></tbody></table></figure>
+<p>And, here is how you use it in your production code.<br>&#x600E;&#x4E48;&#x6837;&#xFF0C;&#x591F;&#x597D;&#x7528;&#x5427;&#xFF0C;&#x4F60;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x7528;&#x94F6;&#x6CB3;&#x7CFB;&#x91CC;&#x6700;&#x597D;&#x7528;&#x7684;<a href="https://justyy.com/archives/3637" target="_blank" rel="noopener">PHP&#x8BED;&#x8A00;</a>&#x8FD9;&#x6837;&#x6765;&#x83B7;&#x53D6;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$id = &apos;justyy&apos;;</span><br><span class="line">$tx = json_decode(file_get_contents(&quot;https://uploadbeta.com/api/steemit/transfer-history/?id=&quot; . $id), true);</span><br><span class="line">foreach ($tx as $r) {</span><br><span class="line">  echo $r[&apos;time&apos;];</span><br><span class="line">  echo $r[&apos;time_desc&apos;];</span><br><span class="line">  echo $r[&apos;memo&apos;];</span><br><span class="line">  echo $r[&apos;transaction&apos;];</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="SteemIt-API-transfer-history-&#x670D;&#x52A1;&#x5668;"><a href="#SteemIt-API-transfer-history-&#x670D;&#x52A1;&#x5668;" class="headerlink" title="SteemIt API/transfer-history &#x670D;&#x52A1;&#x5668;"></a>SteemIt API/transfer-history &#x670D;&#x52A1;&#x5668;</h1><p>Like the <a href="https://helloacm.com/how-to-retrieve-steemit-account-information-via-api-steemitaccount/" target="_blank" rel="noopener">API/steemit/account API</a>, Four servers can also be chosen depending on your locations:<br>&#x548C; <a href="https://steemit.com/cn/@justyy/api-steemit-account-steemit-account-api" target="_blank" rel="noopener">SteemIt API/account</a> &#x4E00;&#x6837;&#xFF0C;&#x4E00;&#x5171;&#x6709;4&#x4E2A;API&#x670D;&#x52A1;&#x5668;&#x5DF2;&#x7ECF;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x5F88;&#x591A;&#x5E74;&#x3002;</p>
+<ul>
+<li>&#x7F8E;&#x56FD;&#x4E1C;&#x90E8; (East USA)&#xFF1A;<a href="https://helloacm.com/api/steemit/transfer-history/" target="_blank" rel="noopener">https://helloacm.com/api/steemit/transfer-history/</a></li>
+<li>&#x7F8E;&#x56FD;&#x897F;&#x90E8; (West USA)&#xFF1A;<a href="https://steakovercooked.com/api/steemit/transfer-history/" target="_blank" rel="noopener">https://steakovercooked.com/api/steemit/transfer-history/</a></li>
+<li>&#x65E5;&#x672C;&#x4E1C;&#x4EAC; (Tokyo Japan)&#xFF1A;<a href="https://happyukgo.com/api/steemit/transfer-history/" target="_blank" rel="noopener">https://happyukgo.com/api/steemit/transfer-history/</a></li>
+<li>&#x82F1;&#x56FD;&#x4F26;&#x6566; (London, UK)&#xFF1A;<a href="https://uploadbeta.com/api/steemit/transfer-history/" target="_blank" rel="noopener">https://uploadbeta.com/api/steemit/transfer-history/</a></li>
+</ul>
+<h1 id="Using-CloudFlare-CDN-Edge-Server-&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x6765;&#x63D0;&#x901F;"><a href="#Using-CloudFlare-CDN-Edge-Server-&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x6765;&#x63D0;&#x901F;" class="headerlink" title="Using CloudFlare CDN Edge Server &#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x6765;&#x63D0;&#x901F;"></a>Using CloudFlare CDN Edge Server &#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x670D;&#x52A1;&#x5668;&#x6765;&#x63D0;&#x901F;</h1><p>You could also use <a href="https://helloacm.com/how-to-cache-audiovideo-mp4-using-cloudflare-cdn/" target="_blank" rel="noopener">CloudFlare CDN Edge</a> servers to speed up the API requests by caching it on the edge servers, you need to use it like this:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/api/steemit/transfer-history/?cached&amp;id=justyy</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x60A8;&#x9700;&#x8981;&#x4F7F;&#x7528; /api/steemit/transfer-history/<strong>?cached</strong>&amp;id=justyy &#x7684;&#x5F62;&#x5F0F;&#x5229;&#x7528;<a href="https://justyy.com/archives/3400" target="_blank" rel="noopener">CloudFlare CDN</a>&#x8282;&#x70B9;&#x6765;&#x52A0;&#x901F;&#x3002;</p>
+<h1 id="How-it-works-&#x539F;&#x7406;"><a href="#How-it-works-&#x539F;&#x7406;" class="headerlink" title="How it works? &#x539F;&#x7406;"></a>How it works? &#x539F;&#x7406;</h1><p>The following shows how easy it is to grab the page directly using phpQuery.<br>&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x901A;&#x8FC7; <a href="https://justyy.com/archives/2470" target="_blank" rel="noopener">phpQuery</a> &#x6293;&#x53D6;<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compress.zlib://https://steemit.com/@$id/transfers</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>&#x56E0;&#x4E3A; steemit.com &#x8FD4;&#x56DE;&#x662F;gzip &#x538B;&#x7F29;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x6307;&#x5B9A; <strong>compress.zlib://</strong></p>
+<p>&#x539F;&#x4EE3;&#x7801;&#x5982;&#x4E0B;:  Full <a href="https://helloacm.com/simple-php-function-to-display-daily-bing-wallpaper/" target="_blank" rel="noopener">PHP Source Code</a>:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$id = $_GET[&apos;id&apos;] ?? (($_POST[&apos;id&apos;]) ?? &apos;&apos;);</span><br><span class="line">require_once(&apos;phpQuery.php&apos;);</span><br><span class="line">function getTransfer($id) {</span><br><span class="line">  $doc = phpQuery::newDocumentFile(&quot;compress.zlib://https://steemit.com/@$id/transfers&quot;);</span><br><span class="line">  $arr = array();</span><br><span class="line">  foreach(pq(&apos;tr.Trans&apos;) as $p) {</span><br><span class="line">    $tx = array();</span><br><span class="line">    $x = pq($p);</span><br><span class="line">    $tx[&apos;time&apos;] = $x-&gt;find(&apos;td:first&gt;span&apos;)-&gt;attr(&apos;title&apos;);</span><br><span class="line">    $tx[&apos;time_desc&apos;] = trim(strip_tags($x-&gt;find(&apos;td:first&apos;)-&gt;html()));</span><br><span class="line">    $tx[&apos;transaction&apos;] = trim(strip_tags($x-&gt;find(&apos;td:eq(1)&apos;)-&gt;html()));</span><br><span class="line">    $tx[&apos;memo&apos;] = trim(strip_tags($x-&gt;find(&apos;td:eq(2)&apos;)-&gt;html()));</span><br><span class="line">    $arr[] = $tx;             </span><br><span class="line">  }</span><br><span class="line">  return $arr;</span><br><span class="line">}</span><br><span class="line">$data = getTransfer($id);</span><br><span class="line">header(&quot;Access-Control-Allow-Origin: *&quot;);</span><br><span class="line">header(&apos;Content-Type: application/json&apos;);</span><br><span class="line">die(json_encode($data));</span><br></pre></td></tr></tbody></table></figure>
+<p>I&#x2019;ll show you some simple applications tomorrow of using these APIs.<br>&#x5C31;&#x8FD9;&#x6837;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x660E;&#x5929;&#x6211;&#x4F1A;&#x5199;&#x4E9B;&#x5C0F;&#x7A0B;&#x5E8F;&#xFF0C;&#x8BA9;&#x4F60;&#x4EEC;&#x77A7;&#x77A7;&#xFF0C;&#x8FD9;&#x6837;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x662F;&#x591A;&#x4E48;&#x7684;&#x65B9;&#x4FBF;&#x548C;&#x5FEB;&#x6377;&#xFF01;</p>
+<p><a href="https://steemit.com/cn/@justyy/steem-api-transfer-history-ifttt-slack-how-to-use-steem-api-transfer-history-and-ifttt-to-sync-to-slack" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x4F7F;&#x7528;Steem API/transfer-history&#x548C;IFTTT&#x540C;&#x6B65;&#x5230;Slack&#x6D88;&#x606F;? How to Use Steem API/transfer-history and IFTTT to sync to Slack?</a></p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote @justyy which motivates me to create more quality posts.</p>
+<p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote @justyy  &#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.   </p>
+<p> // &#x7A0D;&#x5019;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x82F1;&#x6587;&#x535A;&#x5BA2;</a>&#x3002;  </p>
+<ul>
+<li><a href="https://justyy.com/archives/5070" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
+<li><a href="https://helloacm.com/how-to-get-transfer-history-of-steemit-accounts-via-steemit-apitransfer-history/" target="_blank" rel="noopener">How to Get Transfer History of SteemIt Accounts via SteemIt API/transfer-history?</a></li>
+</ul>
+<h1 id="&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts"><a href="#&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts" class="headerlink" title="&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts"></a>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</h1><ul>
+<li><a href="https://steemit.com/cn/@justyy/7d7hyi" target="_blank" rel="noopener">&#x4E2D;&#x5E74;&#x5927;&#x53D4;&#x8FD8;&#x6709;&#x68A6;&#x53EF;&#x4EE5;&#x505A;&#x4E48;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/steem-api-transfer-history-ifttt-slack-how-to-use-steem-api-transfer-history-and-ifttt-to-sync-to-slack" target="_blank" rel="noopener">&#x5982;&#x4F55;&#x4F7F;&#x7528;Steem API/transfer-history&#x548C;IFTTT&#x540C;&#x6B65;&#x5230;Slack&#x6D88;&#x606F;? How to Use Steem API/transfer-history and IFTTT to sync to Slack?</a></li>
+<li><a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/api-steemit-account-steemit-account-api" target="_blank" rel="noopener">API steemit/account &#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account &#x7684; API</a></li>
+<li><a href="https://steemit.com/cn/@justyy/code-review-series-value-not-used" target="_blank" rel="noopener">Code Review Series - Value Not Used [&#x5751;&#x7239;&#x7684;&#x4EE3;&#x7801;] - &#x53D8;&#x91CF;&#x672A;&#x4F7F;&#x7528;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql" target="_blank" rel="noopener">&#x673A;&#x5668;&#x5B66;&#x4E60; &#x7528; MySQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5; The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a></li>
+</ul>
+<p><a href="https://justyy.com/gif/steemit.gif" target="_blank" rel="noopener">https://justyy.com/gif/steemit.gif</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemit-api-transfer-history-api" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/200steem-1-sp/" class="image is-7by1">
             <img class="thumbnail" src="https://justyy.com/wp-content/uploads/2017/08/justyy-steem-delegate-sp.jpg" alt="第一次打肿脸充胖子 - 花了200STEEM租1万SP四周！">
         </a>
@@ -520,69 +613,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" class="image is-7by1">
-            <img class="thumbnail" src="https://helloacm.com/wp-content/uploads/2016/07/KNN.png" alt="[机器学习] 用 MySQL 来演示 KNN算法  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-11T13:55:24.000Z">2017-08-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1017 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/">[机器学习] 用 MySQL 来演示 KNN算法  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a>
-            
-        </h1>
-        <div class="content">
-            <br><p><a href="https://justyy.com/archives/2887" target="_blank" rel="noopener">&#x673A;&#x5668;&#x5B66;&#x4E60;</a>&#x8FD9;&#x51E0;&#x5E74;&#x8D8A;&#x6765;&#x8D8A;&#x706B;, &#x7279;&#x522B;&#x662F;&#x76F8;&#x5173;&#x7B97;&#x6CD5;&#x4E94;&#x82B1;&#x516B;&#x95E8;, &#x4F46;&#x6700;&#x6709;&#x540D;&#x7684;&#x5C31;&#x90A3;&#x4E48;&#x51E0;&#x79CD;, &#x800C;&#x5728;&#x8FD9;&#x51E0;&#x79CD;&#x4E2D;, &#x8981;&#x6570;KNN&#x7B97;&#x6CD5;&#x6700;&#x4E3A;&#x7B80;&#x5355;, &#x9AD8;&#x6548;&#x5E76;&#x4E14;&#x6709;&#x9C81;&#x68D2;&#x6027; (Robustness).&#xA0;</p><br><p>&#x6211;&#x4EEC;&#x5148;&#x6765;&#x770B;&#x4E00;&#x95EE;&#x9898;: &#x5DF2;&#x77E5;&#x6B63;&#x65B9;&#x5F62;&#x548C;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x5F52;&#x7C7B;, &#x8BF7;&#x95EE;&#x7EFF;&#x8272;&#x7684;&#x5706;&#x662F;&#x5C5E;&#x4E8E;&#x4E09;&#x89D2;&#x8FD8;&#x662F;&#x5C5E;&#x4E8E;&#x6B63;&#x65B9;&#x5F62;?&#xA0;</p><br><p>The <a href="https://helloacm.com/a-short-introduction-to-k-nearest-neighbors-algorithm/" target="_blank" rel="noopener">K Nearest Neighbor</a> (KNN) Algorithm is well known by its simplicity and robustness in the domain of data mining and <a href="https://helloacm.com/the-machine-learning-case-study-how-to-predict-weight-over-heightgender-using-linear-regression/" target="_blank" rel="noopener">machine learning</a>. It is actually a method based on the statistics. It can be easily described as the following diagram.&#xA0;</p><br><p><img src="https://helloacm.com/wp-content/uploads/2016/07/KNN.png" width="220" height="199"></p><br><p><em>// Image </em><a href="https://helloacm.com/the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" target="_blank" rel="noopener"><em>credited</em></a><em>.&#xA0;</em></p><br><p>Known blue squares and red triangles, you are asked to predict if the green circle belongs to the squares or the triangles. If we choose K=3, then the minimal distances (closest) to the green circle are 2 triangles and 1 square, therefore, the circle belongs to the triangles. However, if we choose K=5, then we have 3 squares and 2 triangles, which will vote the cirlce to the squares group.&#xA0;</p><br><p>&#xA0;&#x8FD9;&#x91CC;&#x7684;KNN &#x6307;&#x7684;&#x662F; K-nearest neighbour &#x7FFB;&#x8BD1;&#x8FC7;&#x6765;&#x5C31;&#x662F; K&#x4E2A;&#x6700;&#x8FD1;&#x7684;&#x90BB;&#x5C45;, &#x5982;&#x679C;&#x6211;&#x4EEC;&#x6307;&#x5B9A;K=3, &#x90A3;&#x4E48;&#x548C;&#x7EFF;&#x8272;&#x5706;&#x6700;&#x8FD1;&#x7684;&#x662F;2&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x548C;1&#x4E2A;&#x6B63;&#x65B9;&#x5F62;, &#x6240;&#x4EE5;&#x6309;&#x591A;&#x6570;&#x4E3A;&#x4E3B;&#x7684;&#x6807;&#x51C6;, &#x6211;&#x4EEC;&#x9884;&#x6D4B;&#x8FD9;&#x4E2A;&#x5706;&#x5C5E;&#x4E8E;&#x4E09;&#x89D2;, &#x76F8;&#x53CD;, &#x5982;&#x679C;K=5&#x7684;&#x60C5;&#x51B5;, &#x548C;&#x5706;&#x6700;&#x8FD1;&#x7684;&#x6709;3&#x4E2A;&#x6B63;&#x65B9;&#x5F62;&#x548C;2&#x4E2A;&#x4E09;&#x89D2;&#x5F62;, &#x8FD9;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x6309;&#x591A;&#x6570;&#x6295;&#x6B63;&#x65B9;&#x5F62;. &#xA0;</p><br><h3>&#x7528; MYSQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5; &#xA0;USING KNN AS PREDICTION ALGORITHM DEMONSTRATION BY MYSQL</h3><br><p>&#x6211;&#x4EEC;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8868;&#x542B;&#x6709;&#x4E24;&#x4E2A;&#x5B57;&#x6BB5;x&#x548C;y,&#xA0;</p><br><p>&#xA0;By the similar principle, KNN can be used to make predictions by averaging (or with weights by <a href="https://helloacm.com/how-to-compute-minkowski-euclidean-and-cityblock-distance-in-c/" target="_blank" rel="noopener">distance</a>) the closest candidates. For example, if we have the following data (<a href="https://helloacm.com/how-to-generate-100k-test-data-to-mysql-database/" target="_blank" rel="noopener">MySQL</a> table <em>test1</em>): &#xA0;</p><br><pre><code>mysql&gt; select * from test1;<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| x &#xA0;&#xA0;&#xA0;| y &#xA0;&#xA0;&#xA0;|<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| &#xA0;&#xA0;&#xA0;1 | &#xA0;&#xA0;23 |<br><br>| &#xA0;1.2 | &#xA0;&#xA0;17 |<br><br>| &#xA0;3.2 | &#xA0;&#xA0;12 |<br><br>| &#xA0;&#xA0;&#xA0;4 | &#xA0;&#xA0;27 |<br><br>| &#xA0;5.1 | &#xA0;&#xA0;&#xA0;8 |<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>5 rows in set (0.04 sec)</code></pre><br><p>&#xA0;&#x5047;&#x8BBE;&#x5DF2;&#x77E5;&#x4E00;&#x4E2A;&#x65B0;&#x70B9;x=6.5, &#x6211;&#x4EEC;&#x60F3;&#x901A;&#x8FC7;KNN (K=2)&#x6765;&#x9884;&#x6D4B;y&#x7684;&#x503C;, &#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;SQL&#x8BED;&#x53E5;&#x6765;&#x67E5;&#x627E;&#x548C;6.5&#x6700;&#x8FD1;&#x7684;&#x4E24;&#x4E2A;&#x70B9;:&#xA0;</p><br><p>&#xA0;We want to predict when x=6.5, the value of y. First of all, for simplicity, we choose K=2, we need to find two points that have the shortest distance to 6.5, so the SQL will be: &#xA0;</p><br><pre><code>mysql&gt; select x,y from test1 order by abs(6.5-x) limit 2;<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| x &#xA0;&#xA0;&#xA0;| y &#xA0;&#xA0;&#xA0;|<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>| &#xA0;5.1 | &#xA0;&#xA0;&#xA0;8 |<br><br>| &#xA0;&#xA0;&#xA0;4 | &#xA0;&#xA0;27 |<br><br>+&#x2014;&#x2014;+&#x2014;&#x2014;+<br><br>2 rows in set (0.00 sec)</code></pre><br><p>&#xA0;&#x7136;&#x540E;&#x9700;&#x8981;&#x505A;&#x7684;&#x5C31;&#x662F;&#x5E73;&#x5747;&#x8FD9;&#x4E24;&#x4E2A;&#x70B9;&#x7684;y&#x503C;, &#x7528;&#x4E00;&#x4E2A;&#x5D4C;&#x5957;SQL&#x8BED;&#x53E5;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;:&#xA0;</p><br><p>&#xA0;Now, the task is just to average their corresponding y values. So using a nested SQL statement is trivial: &#xA0;</p><br><pre><code>mysql&gt; select avg(y) as predicted from (select y from test1 order by abs(6.5-x) limit 2) as KNN;<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>| predicted |<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>| &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;17.5 |<br><br>+&#x2014;&#x2014;&#x2014;&#x2013;+<br><br>1 row in set (0.00 sec)</code></pre><br><p>&#xA0;KNN&#x7B97;&#x6CD5;&#x7B80;&#x5355; &#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5927;&#x7684;&#x95EE;&#x9898;&#x662F;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x662F;&#x5C5E;&#x4E8E; lazy <a href="https://justyy.com/archives/1626" target="_blank" rel="noopener">&#x7B97;&#x6CD5;</a>, &#x610F;&#x601D;&#x662F;&#x62FF;&#x5230;&#x6570;&#x636E; (training set) &#x540E;&#x5E76;&#x4E0D;&#x662F;&#x9A6C;&#x4E0A;&#x8BAD;&#x7EC3;(&#x751A;&#x81F3;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x8BAD;&#x7EC3;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;)&#x800C;&#x662F;&#x7B49;&#x9700;&#x8981;&#x9884;&#x6D4B;&#x7684;&#x65F6;&#x5019;&#x5B9E;&#x65F6;&#x53BB;&#x627E;&#x6700;&#x8FD1;&#x7684;K&#x4E2A;&#x90BB;&#x5C45;, &#x6240;&#x4EE5;&#x5F53;&#x6570;&#x636E;&#x91CF;&#x5927;&#x7684;&#x65F6;&#x5019; &#x6548;&#x7387;&#x5C31;&#x6BD4;&#x8F83;&#x4F4E;&#x4E86;.&#xA0;</p><br><p>&#xA0;KNN is lazy, meaning that it does not train dataset immediately (actually there is no training). When the input is given to the KNN model, it will look for K nearest neighbours at real time, which is slow and inefficient if the dataset is large.&#xA0;</p><br><p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" width="1200" height="628"></p><br><p>Originally published at <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to FOLLOW and Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> which motivates me to create more quality posts.</p><br><p>&#x539F;&#x521B;&#x9996;&#x53D1;&#x4E8E; <a href="https://steemit.com/" target="_blank" rel="noopener">https://steemit.com</a> &#x975E;&#x5E38;&#x611F;&#x8C22;&#x9605;&#x8BFB;, &#x6B22;&#x8FCE;FOLLOW&#x548C;Upvote <a href="https://steemit.com/@justyy" target="_blank" rel="noopener">@justyy</a> &#xA0;&#x80FD;&#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;.&#xA0;&#xA0;&#xA0;&#xA0;// &#x5DF2;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com/" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2; </a>&#x548C;<a href="https://justyy.com/" target="_blank" rel="noopener"> </a><a href="https://helloacm.com" target="_blank" rel="noopener">&#x82F1;&#x6587;&#x7B97;&#x6CD5;&#x535A;&#x5BA2;</a>&#x3002;&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://justyy.com/archives/5043" target="_blank" rel="noopener">[&#x673A;&#x5668;&#x5B66;&#x4E60;] &#x7528; MySQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5;</a></li><br>  <li>&#xA0;<a href="https://helloacm.com/the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql/" target="_blank" rel="noopener">The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a></li><br></ul><br><p><strong>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</strong>&#xA0;</p><br><ul><br>  <li>&#xA0;<a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01; </a>&#xA0;</li><br>  <li><a href="https://steemit.com/cn/@justyy/the-fox" target="_blank" rel="noopener">The Fox &#x82F1;&#x5F0F;&#x5348;&#x9910;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/4cqkxe" target="_blank" rel="noopener">&#x5982;&#x679C;&#x5927;&#x5BB6;&#x8981;&#x662F;&#x4E00;&#x76F4;&#x751F;&#x4E00;&#x76F4;&#x751F;&#x76F4;&#x5230;&#x751F;&#x5230;&#x5973;&#x513F;, &#x5C82;&#x4E0D;&#x662F;&#x7537;&#x5973;&#x6BD4;&#x4F8B;&#x5931;&#x8C03;&#x554A;?&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/adsense-steemit" target="_blank" rel="noopener">&#x4ECE;&#x4E92;&#x8054;&#x7F51;&#x5E7F;&#x544A;(Adsense)&#x6765;&#x8C08;&#x8C08; &#x5F71;&#x54CD; SteemIt &#x7684;&#x6536;&#x5165;&#x56E0;&#x7D20;&#xA0;</a></li><br>  <li><a href="https://steemit.com/cn/@justyy/how-to-claim-bcc-btc-hard-fork-via-c-program-linux-bcc-bitcoin-cash" target="_blank" rel="noopener">How to Claim BCC? BTC Hard-Fork via C program (Linux) &#x5C0F;&#x767D;&#x6559;&#x7A0B;: &#x600E;&#x4E48;&#x9886;&#x53D6; BCC (Bitcoin Cash) ?&#xA0;</a></li><br></ul><br>
-
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/mysql-knn-the-k-nearest-neighbor-algorithm-prediction-demonstration-by-mysql" target="_blank" rel="noopener">[&#x673A;&#x5668;&#x5B66;&#x4E60;] &#x7528; MySQL &#x6765;&#x6F14;&#x793A; KNN&#x7B97;&#x6CD5;  The K Nearest Neighbor Algorithm (Prediction) Demonstration by MySQL</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/258/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/258/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/260/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/260/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -734,7 +773,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 

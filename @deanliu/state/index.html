@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 <title>DA-ChainTalk #1 — State，從宏觀到微觀：以太坊如何將智能合約帶入區塊鏈世界 - deanliu</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -279,7 +279,7 @@
 <h3 id="&#x6240;&#x4EE5;&#x770B;&#x5230;&#x9019;&#x88E1;&#xFF0C;&#x77E5;&#x9053;&#x5E33;&#x6236;&#x6A21;&#x578B;&#x7684;&#x53B2;&#x5BB3;&#x4E86;&#x5427;&#xFF01;"><a href="#&#x6240;&#x4EE5;&#x770B;&#x5230;&#x9019;&#x88E1;&#xFF0C;&#x77E5;&#x9053;&#x5E33;&#x6236;&#x6A21;&#x578B;&#x7684;&#x53B2;&#x5BB3;&#x4E86;&#x5427;&#xFF01;" class="headerlink" title="&#x6240;&#x4EE5;&#x770B;&#x5230;&#x9019;&#x88E1;&#xFF0C;&#x77E5;&#x9053;&#x5E33;&#x6236;&#x6A21;&#x578B;&#x7684;&#x53B2;&#x5BB3;&#x4E86;&#x5427;&#xFF01;"></a>&#x6240;&#x4EE5;&#x770B;&#x5230;&#x9019;&#x88E1;&#xFF0C;&#x77E5;&#x9053;&#x5E33;&#x6236;&#x6A21;&#x578B;&#x7684;&#x53B2;&#x5BB3;&#x4E86;&#x5427;&#xFF01;</h3><p>&#x5229;&#x7528;Account Based&#x7684;&#x65B9;&#x5F0F;&#x7D00;&#x9304;&#x5340;&#x584A;&#x93C8;&#x7684;State&#x8A0A;&#x606F;&#xFF0C;&#x4E0D;&#x4F46;&#x4E00;&#x77F3;&#x4E8C;&#x9CE5;&#x5730;&#x6709;&#x6548;&#x7D00;&#x9304;&#x4E86;&#x300C;&#x5B8F;&#x89C0;&#x5340;&#x584A;&#x72C0;&#x614B;&#x300D;&#x5230;&#x300C;&#x5FAE;&#x89C0;&#x5408;&#x7D04;&#x57F7;&#x884C;&#x5167;&#x5BB9;&#x300D;&#x7B49;&#x7B49;&#x8CC7;&#x8A0A;&#xFF0C;&#x4E5F;&#x66F4;&#x6709;&#x6548;&#x7387;&#x5730;&#x5132;&#x5B58;&#x4E86;&#x6574;&#x500B;&#x5340;&#x584A;&#x93C8;&#x8CC7;&#x8A0A;&#x3001;&#x4E5F;&#x7C21;&#x5316;&#x9A57;&#x8B49;&#x904E;&#x7A0B;&#x3002;<br>&#x5176;&#x5BE6;UTXO&#x4ECD;&#x7136;&#x6709;&#x9019;&#x4E00;&#x4E9B;&#x4E0D;&#x932F;&#x7684;&#x6027;&#x8CEA;&#xFF0C;&#x4F8B;&#x5982;&#x53EF;&#x4EE5;&#x5E73;&#x884C;&#x8655;&#x7406;&#x591A;&#x7B46;&#x4EA4;&#x6613;&#xFF0C;&#x4F7F;&#x5F97;&#x6709;&#x4E9B;&#x65B0;&#x8208;&#x5340;&#x584A;&#x93C8;&#x5E95;&#x5C64;&#x4ECD;&#x7136;&#x9078;&#x64C7;&#x4F7F;&#x7528;UTXO&#xFF0C;&#x4F8B;&#x5982;Qtum&#x5C31;&#x662F;&#x5229;&#x7528;&#x65B0;&#x7684;Value Transfer Protocal&#x4F86;&#x5728;UTXO&#x4E0A;&#x9762;&#x5BE6;&#x8E10;&#x667A;&#x80FD;&#x5408;&#x7D04;(&#x81F3;&#x65BC;&#x7D30;&#x7BC0;&#x561B;&#x2026;&#x6211;&#x9084;&#x4E0D;&#x662F;&#x5F88;&#x4E86;&#x89E3;)&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x96D6;&#x7136;&#x8AAA;Account Based&#x662F;&#x5C07;&#x5340;&#x584A;&#x93C8;&#x5E36;&#x5165;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x6642;&#x4EE3;&#x4E0D;&#x53EF;&#x5426;&#x8A8D;&#x7684;&#x5927;&#x529F;&#x81E3;&#xFF0C;&#x4F46;&#x7A76;&#x7ADF;&#x54EA;&#x500B;model&#x6703;&#x5728;&#x672A;&#x4F86;&#x7684;&#x6230;&#x5834;&#x4E0A;&#x52DD;&#x51FA;&#xFF0C;&#x9084;&#x662F;&#x4E0D;&#x597D;&#x8AAA;&#x7684;&#x5440;&#xFF01;&#x662F;&#x5275;&#x65B0;&#x7684;UTXO&#x53B2;&#x5BB3;&#x9084;&#x662F;Account Based&#x53B2;&#x5BB3;&#x5C31;&#x53EA;&#x80FD;&#x8AAA;&#x898B;&#x4EC1;&#x898B;&#x667A;&#x4E86;&#xFF01;<br>&#x7121;&#x8AD6;&#x5982;&#x4F55;&#xFF0C;&#x5C0D;&#x65BC;&#x628A;&#x9019;&#x91CD;&#x5927;&#x8B8A;&#x9769;&#x5E36;&#x9032;&#x5340;&#x584A;&#x93C8;&#x4E16;&#x754C;&#x7684;&#x5C0F;&#x795E;&#x7AE5;Vitalik&#xFF0C;&#x9084;&#x662F;&#x53D7;&#x6211;&#x4E00;&#x62DC;&#x5427;&#xFF01;<br>(Image Source: <a href="https://www.hksilicon.com/articles/1306221" target="_blank" rel="noopener">&#x9999;&#x6E2F;&#x77FD;&#x8C37;&#x7DB2;&#x7AD9;</a>)<br><img src="https://i.imgur.com/dGHbD4S.png" alt=""></p>
 <h2 id="&#x6700;&#x5F8C;&#xFF0C;&#x8B1D;&#x8B1D;&#x5404;&#x4F4D;&#x56C9;&#xFF5E;"><a href="#&#x6700;&#x5F8C;&#xFF0C;&#x8B1D;&#x8B1D;&#x5404;&#x4F4D;&#x56C9;&#xFF5E;" class="headerlink" title="&#x6700;&#x5F8C;&#xFF0C;&#x8B1D;&#x8B1D;&#x5404;&#x4F4D;&#x56C9;&#xFF5E;"></a>&#x6700;&#x5F8C;&#xFF0C;&#x8B1D;&#x8B1D;&#x5404;&#x4F4D;&#x56C9;&#xFF5E;</h2><p>&#x9019;&#x662F;&#x6211;&#x8207;&#x5289;&#x7F8E;&#x5973;&#x7B2C;&#x4E00;&#x6B21;&#x5408;&#x4F5C;&#xFF0C;&#x6587;&#x7AE0;&#x53EF;&#x80FD;&#x6703;&#x88AB;&#x66F4;&#x591A;&#x4EBA;&#x770B;&#x5F88;&#x7DCA;&#x5F35;&#x963F; &gt;&lt;&#x3002;&#x5982;&#x679C;&#x6709;&#x4EFB;&#x4F55;&#x8981;&#x6279;&#x8A55;&#x6307;&#x6559;&#x6216;&#x662F;&#x5167;&#x5BB9;&#x932F;&#x8AA4;&#xFF0C;&#x6216;&#x662F;&#x5E0C;&#x671B;&#x672A;&#x4F86;&#x6211;&#x5011;&#x8A0E;&#x8AD6;&#x4EC0;&#x9EBC;&#x6BD4;&#x8F03;&#x6280;&#x8853;&#x9762;&#x7684;&#x8A71;&#x984C;&#xFF0C;&#x9084;&#x8ACB;&#x4E0D;&#x541D;&#x6307;&#x6559;&#x8207;&#x63D0;&#x51FA;&#x5594;&#xFF01;&#x8B1D;&#x8B1D;&#x6536;&#x770B;&#xFF0C;&#x4E0B;&#x6B21;&#x518D;&#x898B;&#xFF01;</p>
 <hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/state" target="_blank" rel="noopener">DA-ChainTalk #1 &#x2014; State&#xFF0C;&#x5F9E;&#x5B8F;&#x89C0;&#x5230;&#x5FAE;&#x89C0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x5982;&#x4F55;&#x5C07;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x5E36;&#x5165;&#x5340;&#x584A;&#x93C8;&#x4E16;&#x754C;</a></p>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@deanliu/state" target="_blank" rel="noopener">&#x2018;DA-ChainTalk #1 &#x2014; State&#xFF0C;&#x5F9E;&#x5B8F;&#x89C0;&#x5230;&#x5FAE;&#x89C0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x5982;&#x4F55;&#x5C07;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x5E36;&#x5165;&#x5340;&#x584A;&#x93C8;&#x4E16;&#x754C;&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
@@ -342,7 +342,7 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 deanliu&nbsp;
+                &copy; 2020 deanliu&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
                 </p>
@@ -378,7 +378,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
-<script>moment.locale("en");</script>
+<script>moment.locale("en_US.UTF-8");</script>
 
 
     

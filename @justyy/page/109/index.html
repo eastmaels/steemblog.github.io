@@ -230,6 +230,83 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/coding-exercise-sort-letters-by-case-or/" class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt="Coding Exercise - Sort Letters by Case | 编程练习题 - 排序字母">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-07-10T00:27:30.000Z">2018-07-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 582 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/coding-exercise-sort-letters-by-case-or/">Coding Exercise - Sort Letters by Case | 编程练习题 - 排序字母</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt="image.png"></p>
+<p>Given a string which contains only letters. Sort it by lower case first and upper case second.</p>
+<h2 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h2><p>For &#x201C;abAcD&#x201D;, a reasonable answer is &#x201C;acbAD&#x201D;</p>
+<h2 id="Challenge"><a href="#Challenge" class="headerlink" title="Challenge"></a>Challenge</h2><p>Do it in one-pass and in-place.</p>
+<h2 id="C-Solution"><a href="#C-Solution" class="headerlink" title="C++ Solution"></a>C++ Solution</h2><p>No additional space should be used. We can use two pointers to skip in-place characters from both end, swap them if they are not until they meet in the middle.</p>
+<p>The space complexity is O(1) and the time complexity is O(n).<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    /*</span><br><span class="line">     * @param chars: The letter array you should sort by Case</span><br><span class="line">     * @return: nothing</span><br><span class="line">     */</span><br><span class="line">    void sortLetters(string &amp;chars) {</span><br><span class="line">        int i = 0, j = chars.length() - 1;</span><br><span class="line">        while (i &lt;= j) {</span><br><span class="line">            // skipping in-place lower characters from the begining</span><br><span class="line">            while ((chars[i] &gt;= &apos;a&apos;) &amp;&amp; (chars[i] &lt;= &apos;z&apos;) &amp;&amp; i &lt; j) i ++;</span><br><span class="line">            // skipping in-place upper characters from the end</span><br><span class="line">            while ((chars[j] &gt;= &apos;A&apos;) &amp;&amp; (chars[j] &lt;= &apos;Z&apos;) &amp;&amp; i &lt; j) j --;</span><br><span class="line">            // swap</span><br><span class="line">            auto t = chars[i];</span><br><span class="line">            chars[i] = chars[j];</span><br><span class="line">            chars[j] = t;</span><br><span class="line">            i ++; </span><br><span class="line">            j --;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Support-me-and-my-work-as-a-witness-by"><a href="#Support-me-and-my-work-as-a-witness-by" class="headerlink" title="Support me and my work as a witness by"></a>Support me and <a href="https://helloacm.com/coding-exercise-sort-letters-by-case-c/" target="_blank" rel="noopener">my work</a> as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
+<p>Also reposted to my blog: <a href="https://helloacm.com/coding-exercise-sort-letters-by-case-c/" target="_blank" rel="noopener">https://helloacm.com/coding-exercise-sort-letters-by-case-c/</a></p>
+<hr>
+<p>&#x8FD9;&#x9898;&#x7684;&#x5173;&#x952E;&#x5728;&#x4E8E;&#x4E0D;&#x80FD;&#x989D;&#x5916;&#x5F00;&#x5185;&#x5B58;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x4ECE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x9996;&#x5C3E;&#x5F00;&#x59CB;&#x6765;&#x68C0;&#x67E5;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x4EEC;&#x5728;&#x4E2D;&#x95F4;&#x76F8;&#x9047;&#x3002;&#x5982;&#x679C;&#x9996;&#x6307;&#x9488;&#x9047;&#x5230;&#x4E86;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x5C3E;&#x6307;&#x9488;&#x9047;&#x5230;&#x4E86;&#x5C0F;&#x5199;&#x5B57;&#x6BCD; &#x5C31;&#x628A;&#x5B83;&#x4EEC;&#x4EA4;&#x6362;&#x4E00;&#x4E0B;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; O(n), &#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F; O(1)</p>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
+</ol>
+<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
+<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
+<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
+</ol>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/coding-exercise-sort-letters-by-case-or" target="_blank" rel="noopener">Coding Exercise - Sort Letters by Case | &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898; - &#x6392;&#x5E8F;&#x5B57;&#x6BCD;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-07-09/" class="image is-7by1">
             <img class="thumbnail" src="http://www.bing.com/az/hprichbg/rb/MacawsKissing_ROW11419590512_1920x1080.jpg" alt="【第 叁壹捌 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-07-09)">
         </a>
@@ -3002,105 +3079,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/interview-coding-exercise-nested-string-python-python/" class="image is-7by1">
-            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmP6tEW4mPbW4ATkA1joxLEF8xFdo21oB4ezri4evVeehT" alt="Interview Coding Exercise - Nested String (Python) - 编程练习题 - 匹配的字符串 (Python)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-07-06T00:20:24.000Z">2018-07-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 683 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/interview-coding-exercise-nested-string-python-python/">Interview Coding Exercise - Nested String (Python) - 编程练习题 - 匹配的字符串 (Python)</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://ipfs.busy.org/ipfs/QmP6tEW4mPbW4ATkA1joxLEF8xFdo21oB4ezri4evVeehT" alt="image.png"></p>
-<h2 id="Nested-String"><a href="#Nested-String" class="headerlink" title="Nested String"></a>Nested String</h2><p>A string S consisting of N characters is considered to be properly <a href="https://helloacm.com/interview-coding-exercise-nested-string-python/" target="_blank" rel="noopener">nested</a> if any of the following conditions is true:</p>
-<ul>
-<li>S is empty;</li>
-<li>S has the form &#x201C;(U)&#x201D; or &#x201C;[U]&#x201D; or &#x201C;{U}&#x201D; where U is a properly nested string;</li>
-<li>S has the form &#x201C;VW&#x201D; where V and W are properly nested strings.</li>
-</ul>
-<p>For example, the string &#x201C;{[()()]}&#x201D; is properly nested but &#x201C;([)()]&#x201D; is not.<br>Write a function: <em>def solution(S)</em> ,that, given a string S consisting of N characters, the function returns 1 if S is properly nested and 0 otherwise.</p>
-<p>For example, given S = &#x201C;{[()()]}&#x201D;, the function should return 1.For S = &#x201C;([)()]&#x201D;, the function should return 0, as explained above.</p>
-<p>The assumptions are:</p>
-<ul>
-<li>N is an integer within the range [0..200,000];</li>
-<li>string S consists only of the following characters: &#x201C;(&#x201C;, &#x201C;{&#x201C;, &#x201C;[&#x201C;, &#x201C;]&#x201D;, &#x201C;}&#x201D; and/or &#x201C;)&#x201D;.</li>
-</ul>
-<p>Complexity requirements:</p>
-<ul>
-<li>expected worst-case time complexity is O(N);</li>
-<li>expected worst-case space complexity is O(N) (not counting the storage required for input arguments).</li>
-</ul>
-<h2 id="Solution-Python"><a href="#Solution-Python" class="headerlink" title="Solution (Python)"></a>Solution (Python)</h2><p><a href="https://helloacm.com/tutorial-recursion-and-stack/" target="_blank" rel="noopener">Stack</a> is a FILO (First In Last Out) data structure. The idea is push a opening tag to the stack and pop one from and check if it matches when we see the closing tag. The only thing you need to pay attention to is to check if the stack is empty when you want to pop an element from the stack.</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">def IsNested(s):</span><br><span class="line">    stack = []</span><br><span class="line">    for x in s:</span><br><span class="line">        if x in [&apos;(&apos;, &apos;{&apos;, &apos;[&apos;]:</span><br><span class="line">            stack.append(x)</span><br><span class="line">        elif x in [&apos;)&apos;, &apos;}&apos;, &apos;]&apos;]:</span><br><span class="line">            if len(stack) == 0:</span><br><span class="line">                return 0</span><br><span class="line">            # Pop an element to see if matches</span><br><span class="line">            y = stack.pop()</span><br><span class="line">            if x == &apos;)&apos; and y != &apos;(&apos;:</span><br><span class="line">                return 0</span><br><span class="line">            elif x == &apos;]&apos; and y != &apos;[&apos;:</span><br><span class="line">                return 0</span><br><span class="line">            elif x == &apos;}&apos; and y != &apos;{&apos;:</span><br><span class="line">                return 0</span><br><span class="line">    return 1     </span><br><span class="line">    </span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    # Define Test Cases</span><br><span class="line">    testcases = {</span><br><span class="line">        &quot;([)()]&quot;: 0,</span><br><span class="line">        &quot;{[()()]}&quot;: 1,</span><br><span class="line">        &quot;&quot;: 1,</span><br><span class="line">        &quot;{}&quot;: 1,</span><br><span class="line">        &quot;[]()&quot;: 1,</span><br><span class="line">        &quot;)(&quot;: 0,</span><br><span class="line">        &quot;}{()&quot;: 0,</span><br><span class="line">        &quot;()[}&quot;: 0      </span><br><span class="line">    }</span><br><span class="line">    </span><br><span class="line">    for test in testcases.keys():</span><br><span class="line">        assert testcases[test] == IsNested(test), &quot;Test &quot; + test + &quot; Failed&quot;</span><br><span class="line">    </span><br><span class="line">    print (&quot;All OK.&quot;)</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Support-me-and-my-work-as-a-witness-by"><a href="#Support-me-and-my-work-as-a-witness-by" class="headerlink" title="Support me and my work as a witness by"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</h2><ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
-<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
-</ol>
-<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
-<hr>
-<p>&#x8FD9;&#x662F;&#x6211;&#x6700;&#x8FD1;&#x78B0;&#x5230;&#x7684;&#x4E00;&#x9053;&#x9898;&#xFF0C;&#x4E0D;&#x96BE;&#x3002;&#x9700;&#x8981;&#x5229;&#x7528;&#x5806;&#x6808;&#x6765;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x662F;&#x5339;&#x914D;&#x7684;&#x62EC;&#x53F7;&#xFF0C;&#x65F6;&#x95F4;&#x548C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x90FD;&#x662F;O(n)&#xFF0C;&#x4EE3;&#x7801;&#x770B;&#x4E0A;&#x9762;&#x7684;&#x597D;&#x4E86; - &#x5728;POP&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x68C0;&#x67E5;&#x5806;&#x6808;&#x4E3A;&#x7A7A;&#x3002;</p>
-<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
-<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
-<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
-</ol>
-<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
-<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
-<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
-</ol>
-<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/interview-coding-exercise-nested-string-python-python" target="_blank" rel="noopener">Interview Coding Exercise - Nested String (Python) - &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898; - &#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32; (Python)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/108/">Previous</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/108/">Anterior</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/110/">Next</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@justyy/page/110/">Siguiente</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -3252,7 +3239,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@justyy/content.json"};</script>
 
 
 
