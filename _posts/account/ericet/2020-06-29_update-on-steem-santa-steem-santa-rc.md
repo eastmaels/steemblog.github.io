@@ -8,9 +8,10 @@ toc: true
 position: 9999
 date: 2020-06-29 01:56:48
 categories:
-- cn
+- hive-180932
 tags:
-- cn
+- hive-180932
+- codeonsteem
 - whalepower
 - steem-santa
 - delegation
