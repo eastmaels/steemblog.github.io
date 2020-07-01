@@ -229,6 +229,83 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-13T17:16:45.000Z">2018-01-13</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 339 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/php-client-of-utopian-api/">PHP Client of Utopian API</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="PHP-Client-of-Utopian-API"><a href="#PHP-Client-of-Utopian-API" class="headerlink" title="PHP Client of Utopian API"></a>PHP Client of Utopian API</h3><ul>
+<li><p>What is the project about?<br>The project is to wrap the public <a href="https://helloacm.com/being-part-of-utopian-moderating-team-is-great-intro-post/" target="_blank" rel="noopener">utopian</a> APIs in PHP Class. I have seen @emrebeyler &#x2018;s <a href="https://utopian.io/utopian-io/@emrebeyler/python-client-of-utopian-api" target="_blank" rel="noopener">contribution on Python client</a>, so I think it is a good idea to provide a PHP implementation.</p>
+</li>
+<li><p>Technology Stack<br><a href="https://codingforspeed.com/performance-comparison-between-php7-0-11-and-php5-6-23-on-two-vps/" target="_blank" rel="noopener">PHP 7.0</a></p>
+</li>
+<li><p>Roadmap<br>The next release will be adding more unit tests and more about moderators in terms of rewards, payout etc.</p>
+</li>
+<li><p>How to contribute?<br>Github: <a href="https://github.com/DoctorLai/utopian-api-php-client" target="_blank" rel="noopener">https://github.com/DoctorLai/utopian-api-php-client</a></p>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: git checkout -b my-new-feature</li>
+<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
+<li>Push to the branch: git push origin my-new-feature</li>
+<li>Submit a pull request :D</li>
+</ol>
+</li>
+</ul>
+<h2 id="Installation-and-Usage"><a href="#Installation-and-Usage" class="headerlink" title="Installation and Usage"></a>Installation and Usage</h2><p>You just need to <code>git clone</code> the project and reference the unit</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">require(&apos;class.utopian.php&apos;);</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Creating-Instance"><a href="#Creating-Instance" class="headerlink" title="Creating Instance"></a>Creating Instance</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$utopian = new Utopian();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Getting-a-list-of-moderators"><a href="#Getting-a-list-of-moderators" class="headerlink" title="Getting a list of moderators"></a>Getting a list of moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$moderators = $utopian-&gt;GetModerators()</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Check-if-account-is-moderator-type"><a href="#Check-if-account-is-moderator-type" class="headerlink" title="Check if account is moderator type"></a>Check if account is moderator type</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsModerator(&apos;justyy&apos;)) echo &quot;Hello, yes!&quot;;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Check-if-account-is-sponsor-type"><a href="#Check-if-account-is-sponsor-type" class="headerlink" title="Check if account is sponsor type"></a>Check if account is sponsor type</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsSponsor(&apos;justyy&apos;)) echo &quot;Hello, i am sponsor!&quot;;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-List-of-Sponsors"><a href="#Get-List-of-Sponsors" class="headerlink" title="Get List of Sponsors"></a>Get List of Sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print_r($utopian-&gt;GetSponsors());</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Approved-posts"><a href="#Get-Approved-posts" class="headerlink" title="Get Approved posts"></a>Get Approved posts</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($utopian-&gt;GetPosts() as $post) {</span><br><span class="line">   // do something about $post;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-a-list-of-Hidden-Posts"><a href="#Get-a-list-of-Hidden-Posts" class="headerlink" title="Get a list of Hidden Posts"></a>Get a list of Hidden Posts</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$flagged_posts = $utopian-&gt;GetPosts(array(&quot;status&quot; =&gt; &quot;flagged&quot;));</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-count-of-approved-contribution"><a href="#Get-count-of-approved-contribution" class="headerlink" title="Get count of approved contribution"></a>Get count of approved contribution</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total approved: &quot; . $utopian-&gt;GetCount();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Post-detail"><a href="#Get-Post-detail" class="headerlink" title="Get Post detail"></a>Get Post detail</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var_dump($utopian-&gt;GetPost(&apos;justyy&apos;, &apos;string-contains-test-cannot-be-added-to-the-post&apos;));</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Check-if-bot-is-voting"><a href="#Check-if-bot-is-voting" class="headerlink" title="Check if bot is voting"></a>Check if bot is voting</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsBotVoting()) {</span><br><span class="line"> // ok write a post</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Unit-Tests"><a href="#Unit-Tests" class="headerlink" title="Unit Tests"></a>Unit Tests</h2><p>The unit tests framework is <a href="https://helloacm.com/how-to-unit-test-url-connectivity-via-phpunit/" target="_blank" rel="noopener">phpunit</a> and you can run tests via command <code>phpunit</code></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">PHP Client of Utopian API</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cncnpower-downyy2018-01-13/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-01-13&amp;cn34" alt="Daily #CN Updates CN社区【七天收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过的文章】【YY银行股东名单】(2018-01-13)">
@@ -1794,68 +1871,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/being-part-of-utopian-moderating-team-is-great-intro-post/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1515699098/dnlyehictnx5b12cyxgf.gif" alt="Being part of Utopian Moderating Team is Great ! (Intro Post)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-01-11T19:32:27.000Z">2018-01-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/busy/">busy</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 407 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/being-part-of-utopian-moderating-team-is-great-intro-post/">Being part of Utopian Moderating Team is Great ! (Intro Post)</a>
-            
-        </h1>
-        <div class="content">
-            <p>I have been moderating the utopian posts  for a few weeks now and I enjoy it. The team members are nice and I did learn a lot, and that is not just the technology part.</p>
-<p> I am 33, currently a wireless engineer working for a Wireless company in Cambridgeshire, UK. I finished my bachelor in Computer Science with First Class degree (Huuuuray!) and right after bachelor degree, I finished my PhD in wireless <a href="https://propagationtools.com/wireless/" target="_blank" rel="noopener">propagation modelling</a> in 3.5 years (so I became a <a href="https://helloacm.com/about/" target="_blank" rel="noopener">Doctor</a> in aged 25). Yeah, so I guess my IQ is OK.</p>
-<p>But, to me, the most enjoyable moments are when I created something that is useful or when the first time I got the correct output from programs. I like new technology and am willing to learn them. Being part of Utopian Moderating Team is Great, as I have chances to know the masterpieces created by others.</p>
-<p>However, some others got frustrated when I rejected their work earlier.  And I learn a lot on how to deal with these unpleasant situations when my supervisors set a good example in the discord discussion channel. </p>
-<p>I am a passionate technology lover and I won a third National Price in <a href="https://helloacm.com/about" target="_blank" rel="noopener">ACM (Association Computing Machinery)</a> in high school. That is a programming contest basically you are given 3 hours time to solve a few puzzles using Turbo Pascal (at that time).</p>
-<p>I speak native Chinese (Mandarin) and know English (fluent). I came to UK in 2004 and now settled with a lovely family. My motivation of being a Utopian moderator is to support open source projects, learn new things, and of course earn a little STEEM. :)</p>
-<p>I have known quite a few technology such as C/C++, C#, Delphi/Pascal, Python, Lua, Javascript, <a href="https://helloacm.com/php-function-to-get-exchange-rate-between-cryptocurrency-btc-ltc-eth-to-fiat-currency/" target="_blank" rel="noopener">PHP</a> etc. </p>
-<p>Hey, in case you want to recruit me, here is my <a href="https://steakovercooked.com/documents/cv.pdf" target="_blank" rel="noopener">resume in PDF</a></p>
-<p><a href="https://helloacm.com/being-part-of-utopian-moderating-team-is-great-intro-post/" target="_blank" rel="noopener">Happy coding</a>, happy moderating!</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1515699098/dnlyehictnx5b12cyxgf.gif" alt="13.gif"><br><em>This GIF is made base on my image</em></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/being-part-of-utopian-moderating-team-is-great-intro-post" target="_blank" rel="noopener">Being part of Utopian Moderating Team is Great ! (Intro Post)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -1880,7 +1895,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/290/">290</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/291/">291</a></li>
             
         </ul>
     </nav>

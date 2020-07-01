@@ -230,6 +230,81 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/adding-easy-switch-between-utopian-and-steem-posts-to-utopian-moderator-chrome-extension/" class="image is-7by1">
+            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1517356408/upjm03wfh2lbvnahgcbt.png" alt="Adding `Easy Switch Between Utopian and Steem Posts` to Utopian Moderator Chrome Extension">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-30T23:58:36.000Z">2018-01-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 468 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/adding-easy-switch-between-utopian-and-steem-posts-to-utopian-moderator-chrome-extension/">Adding `Easy Switch Between Utopian and Steem Posts` to Utopian Moderator Chrome Extension</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Utopian-Moderator-amp-Supervisor"><a href="#Utopian-Moderator-amp-Supervisor" class="headerlink" title="Utopian Moderator &amp; Supervisor"></a>Utopian Moderator &amp; Supervisor</h1><p><a href="https://helloacm.com/adding-easy-switch-between-utopian-and-steem-posts-to-utopian-moderator-chrome-extension/" target="_blank" rel="noopener">Utopian Moderator &amp; Supervisor</a> is the FIRST chrome extension that is intended to help the Utopian Moderators &amp; Supervisors in moderating work. </p>
+<h1 id="New-Feature"><a href="#New-Feature" class="headerlink" title="New Feature"></a>New Feature</h1><p><a href="https://steemit.com/utopian-io/@justyy/the-first-utopian-moderator-chrome-extension" target="_blank" rel="noopener">As promised earlier</a>, I am adding a very useful feature to the version 0.0.2:  Allow Easy switch between Utopian and SteemIt posts. </p>
+<h1 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h1><p>Adding a Dropdown menu to allow user select the prefered &#x2018;steem&#x2019; sites i.e. steemit.com or busy.org (more can be added in the future)<br><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1517356408/upjm03wfh2lbvnahgcbt.png" alt="image.png"></p>
+<p>Now, as you are moderating utopian posts, you can easily switch between Utopian to the preferred steem sites by Alt+S short cut. For example,  utopian.io -&gt; busy.org  and busy.org -&gt; utopian.io</p>
+<h1 id="How-to-do"><a href="#How-to-do" class="headerlink" title="How to do?"></a>How to do?</h1><p>In Chrome Extension, you need to inject the scripts to the page, which is a bit tricky. The commits are: <a href="https://github.com/DoctorLai/utopian-moderator/commit/8431c8ff46ce69641bde2c8d572eba5e166692e7#diff-2650fb3e14b7f42d68a8766269c54434" target="_blank" rel="noopener">here</a></p>
+<p>Add this to <code>manifest.json</code><br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;content_scripts&quot;: [{</span><br><span class="line">    &quot;matches&quot;: [&quot;&lt;all_urls&gt;&quot;],</span><br><span class="line">    &quot;js&quot;:[</span><br><span class="line">        &quot;js/jquery-3.2.1.min.js&quot;,</span><br><span class="line">        &quot;js/content.js&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;run_at&quot;:&quot;document_start&quot;</span><br><span class="line">}],</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>The logic code:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">$(function() {</span><br><span class="line">	let id;</span><br><span class="line">	let website;</span><br><span class="line"></span><br><span class="line">	// load settings </span><br><span class="line">	chrome.storage.sync.get(&apos;utopian_settings&apos;, function(data) {</span><br><span class="line">	    if (data &amp;&amp; data.utopian_settings) {</span><br><span class="line">	        let utopian = data.utopian_settings;</span><br><span class="line">	        if (utopian[&quot;steemit_id&quot;]) {</span><br><span class="line">	            id = utopian[&quot;steemit_id&quot;].trim();</span><br><span class="line">	        }</span><br><span class="line">	        if (utopian[&quot;steemit_website&quot;]) {</span><br><span class="line">	            website = utopian[&quot;steemit_website&quot;].trim();</span><br><span class="line">	        }</span><br><span class="line">	    }</span><br><span class="line">	});</span><br><span class="line"></span><br><span class="line">	// use steemit.com if not set</span><br><span class="line">	website = website || &quot;steemit.com&quot;;</span><br><span class="line"></span><br><span class="line">	// short cut Alt + S to switch between utopian and steemit</span><br><span class="line">	$(document).keydown(function(e) {</span><br><span class="line">	    if(e.key.toLowerCase() == &quot;s&quot; &amp;&amp; e.altKey) {</span><br><span class="line">	    	var url = document.location.href;</span><br><span class="line">	    	if (url.includes(&quot;utopian.io&quot;)) {	    		</span><br><span class="line">	    		document.location.href = url.replace(&quot;utopian.io&quot;, website);</span><br><span class="line">	    	} else if (url.includes(&quot;steemit.com&quot;)) {</span><br><span class="line">	    		document.location.href = url.replace(&quot;steemit.com&quot;, &quot;utopian.io&quot;);</span><br><span class="line">	    	} else if (url.includes(&quot;busy.org&quot;)) {</span><br><span class="line">	    		document.location.href = url.replace(&quot;busy.org&quot;, &quot;utopian.io&quot;);</span><br><span class="line">	    	}    	</span><br><span class="line">	    }</span><br><span class="line">	});</span><br><span class="line">})();</span><br></pre></td></tr></tbody></table></figure>
+<h1 id="Roadmap"><a href="#Roadmap" class="headerlink" title="Roadmap"></a>Roadmap</h1><p>I am adding the following features in the next coming versions:</p>
+<ol>
+<li>Show More statistics for a given category.</li>
+<li>Show Personal Moderating statistics</li>
+</ol>
+<h1 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h1><p>Github: <a href="https://github.com/DoctorLai/utopian-moderator" target="_blank" rel="noopener">https://github.com/DoctorLai/utopian-moderator</a></p>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: <code>git checkout -b my-new-feature</code></li>
+<li>Commit your changes: <code>git commit -am &apos;Add some feature&apos;</code></li>
+<li>Push to the branch: <code>git push origin my-new-feature</code></li>
+<li>Submit a pull request.</li>
+</ol>
+<p>Install now at Chrome Webstore: <a href="https://chrome.google.com/webstore/detail/utopian-moderator-supervi/dcjdbldgiiboblbaconadffdaicicebc" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/utopian-moderator-supervi/dcjdbldgiiboblbaconadffdaicicebc</a></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-easy-switch-between-utopian-and-steem-posts-to-utopian-moderator-chrome-extension" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-easy-switch-between-utopian-and-steem-posts-to-utopian-moderator-chrome-extension" target="_blank" rel="noopener">Adding <code>Easy Switch Between Utopian and Steem Posts</code> to Utopian Moderator Chrome Extension</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-01-30/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-01-30&amp;cn34" alt="【第 壹伍捌 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-01-30)">
         </a>
@@ -1830,91 +1905,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/2hj1dy-utopian/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1517157094/fgygkgrdz3iwaehqv10c.png" alt="Utopian 审稿也可以是份养家糊口的工作">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-01-28T16:47:24.000Z">2018-01-28</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1081 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/2hj1dy-utopian/">Utopian 审稿也可以是份养家糊口的工作</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4E4B;&#x524D;&#x8BF4;&#x5230;&#x6211;&#x4E00;&#x5468;&#x5E73;&#x5747;&#x6BCF;&#x5929;&#x5BA1;1-2&#x7BC7;&#x7A3F;&#xFF0C;&#x4E00;&#x5468;&#x7684;&#x6536;&#x5165;&#x53EA;&#x6709;&#x4E0D;&#x5230;3&#x4E2A;STEEM&#xFF0C;&#x5F88;&#x5C11;&#x3002;&#x60F3;&#x4E0D;&#x5230;&#x7B2C;&#x4E8C;&#x5929; <a href="https://justyy.com/archives/5910" target="_blank" rel="noopener">Utopian</a>  &#x5C31;&#x5B9E;&#x884C;&#x4E86;&#x5E95;&#x85AA;&#x673A;&#x5236;&#x3002;&#x5B9E;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F; &#x901A;&#x8FC7; <a href="https://justyy.com/archives/5663" target="_blank" rel="noopener">&#x5BA1;&#x7A3F;&#x4EBA;</a>  (moderator) &#x7684; private posting key &#x6BCF;&#x5468;&#x5728; @utopian.stats  &#x7684;&#x5468;&#x7EDF;&#x8BA1;&#x8D34;&#x4E0B;&#x56DE;&#x590D;&#xFF0C;&#x7136;&#x540E;&#x5F97;&#x5230;&#x70B9;&#x8D5E;&#x3002;</p>
-<p>&#x6BD4;&#x5982;&#xFF0C;&#x5728;<a href="https://steemit.com/utopian-io/@utopian.stats/utopian-pay-2018-1-27#@justyy/utopian-pay-2018-1-27-comment" target="_blank" rel="noopener">&#x8FD9;&#x91CC;</a>  @utopian-io &#x62FF;&#x7740;&#x6211;&#x7684;posting key &#x53D1;&#x4E86;&#x8FD9;&#x8BC4;&#x8BBA;:</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1517157094/fgygkgrdz3iwaehqv10c.png" alt="image.png"></p>
-<p>&#x8BC4;&#x8BBA;&#x5F97;&#x5230;&#x4E86; @utopian-io &#x76F8;&#x5F53; $17.54 &#x7684;&#x70B9;&#x8D5E;&#xFF0C;&#x5982;&#x679C;&#x6309;&#x5F53;&#x524D; SBD &#x6EA2;&#x4EF7;&#xFF0C;&#x8FD9;&#x6700;&#x540E;&#x6536;&#x5165;&#x4E5F;&#x5E94;&#x8BE5;&#x6709; &#x56DB;&#x4E94;&#x5341;&#x7F8E;&#x5143;&#x7684;&#x6536;&#x5165;&#x3002;&#x4E00;&#x4E2A;&#x6708;&#x8F7B;&#x8F7B;&#x677E;&#x677E;200&#x591A;&#x7F8E;&#x5143;&#x3002;&#x8FD9;&#x5728;&#x4E00;&#x4E9B;&#x975E;&#x6D32;&#x8D2B;&#x7A77;&#x56FD;&#x5BB6;&#x6765;&#x8BF4;&#x5DF2;&#x7ECF;&#x662F;&#x975E;&#x5E38;&#x5BCC;&#x88D5;&#x7684;&#x6536;&#x5165;&#x4E86;&#x3002;</p>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x50CF; @rosatravals &#x5BA1;&#x5F97;&#x591A;&#x7684;&#xFF0C;&#x5E95;&#x85AA;&#x4E5F;&#x591A;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1517157220/mka73cin3xtpdt6n75hz.png" alt="image.png"></p>
-<p>&#x83B7;&#x5F97;&#x7684;&#x70B9;&#x8D5E;&#x767E;&#x5206;&#x6BD4;&#xFF08;&#x5E95;&#x85AA;&#xFF09;&#x4E5F;&#x662F;&#x6309;&#x70B9;&#x6570;&#x6765;&#x8BA1;&#x7B97;&#x7684;&#xFF0C;&#x5F53;&#x524D;&#xFF0C;&#x5BA1;&#x4E00;&#x7BC7;&#x5F00;&#x53D1;&#x5F97;1&#x70B9;&#xFF0C;&#x5BA1;&#x4E00;&#x7BC7;&#x7FFB;&#x8BD1;&#x5F97;1.25&#x70B9;&#xFF0C;&#x5BA1;&#x4E00;&#x7BC7;BUG&#x62A5;&#x544A;&#x5F97; 0.75&#x70B9;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x96BE;&#x5EA6;&#xFF08;&#x5DE5;&#x4F5C;&#x91CF;&#xFF09;&#x7CFB;&#x6570;&#x3002;</p>
-<p>&#x76F8;&#x6BD4;&#x6BCF;&#x5929;&#x7EDE;&#x5C3D;&#x8111;&#x6C41;&#x60F3;&#x5199;&#x7740;&#x6587;&#x7AE0;&#x9A97;&#x8D5E;&#x6765;&#x8BF4;&#xFF0C;&#x5BA1;&#x7A3F;&#x8FD9;&#x53EF;&#x662F;&#x9AD8;&#x5927;&#x4E0A;&#x4E5F;&#x4F53;&#x9762;&#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x6211;&#x60F3;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x5929;&#x6309;7&#x5C0F;&#x65F6;&#x5DE5;&#x4F5C;&#x91CF;&#xFF0C;&#x6BCF;5&#x5206;&#x949F;&#x5BA1;&#x4E00;&#x7BC7;&#xFF0C;&#x4E00;&#x5929;&#x80FD;&#x5BA1;80&#x5230;90&#x7BC7;&#xFF0C;&#x4E00;&#x5468;&#x5C31;&#x80FD;&#x5230;&#x8FBE;&#x5BA1;&#x7A3F;&#x5956;&#x52B1;&#x7684;&#x4E0A;&#x9650;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;130&#x4E2A;&#x70B9;&#x3002;&#x5E95;&#x85AA;&#x4E00;&#x5468;&#x80FD;&#x5230; 250&#x7F8E;&#x5143;&#x7684;&#x6536;&#x5165;&#xFF0C;&#x8FD9;&#x8FD8;&#x6CA1;&#x52A0;&#x4E0A;&#x5BA1;&#x4E00;&#x7BC7;&#x8D34;&#x80FD;&#x5F97;&#x5230;&#x7684;&#x7EBF;&#x6027;&#x6536;&#x5165;&#x8FD8;&#x6709;&#x6765;&#x81EA; @utopian.tip &#x7684;&#x5C0F;&#x8D39;&#x6536;&#x5165;&#x5462;&#x3002;</p>
-<p>&#x5BA1;&#x7A3F;&#x8FD9;&#x4EFD;&#x5DE5;&#x4F5C;&#x65F6;&#x95F4;&#x7075;&#x6D3B;&#xFF0C;&#x4E0D;&#x7528;&#x5929;&#x5929;&#x5728;&#x529E;&#x516C;&#x5BA4;&#xFF0C;&#x6709;&#x7535;&#x8111;&#x80FD;&#x4E0A;<a href="https://justyy.com/archives/5908" target="_blank" rel="noopener">STEEM</a>&#x5C31;&#x80FD;&#x5BA1;&#x7A3F;&#xFF0C;&#x7D2F;&#x4E86;&#x60F3;&#x4F11;&#x606F;&#x5C31;&#x80FD;&#x4F11;&#x606F;&#x3002;&#x5BA1;&#x7A3F;&#x8FD8;&#x80FD;&#x62D3;&#x5C55;&#x601D;&#x7EF4;&#xFF0C;&#x770B;&#x770B;&#x522B;&#x4EBA;&#x90FD;&#x505A;&#x4E86;&#x4EC0;&#x4E48;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6574;&#x5929;&#x95ED;&#x95E8;&#x9020;&#x8F66;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#xFF0C;Utopian &#x7684;&#x89C4;&#x5219;&#x8D8A;&#x6765;&#x8D8A;&#x4E25;&#x683C;&#xFF0C;&#x60F3;&#x6DF7;&#x6C34;&#x6478;&#x9C7C;&#x4E5F;&#x8D8A;&#x6765;&#x8D8A;&#x96BE;&#xFF0C;&#x8FD9;&#x4E5F;&#x7ED9;&#x5BA1;&#x7A3F;&#x5E26;&#x6765;&#x4E86;&#x989D;&#x5916;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x3002;</p>
-<p><em>STEEM&#x9996;&#x53D1;&#xFF0C;&#x5DF2;&#x540C;&#x6B65;&#x5230;&#x535A;&#x6587;: <a href="https://justyy.com/archives/5920" target="_blank" rel="noopener">https://justyy.com/archives/5920</a></em></p>
-<hr>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177;</a> &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;10 SP&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;&#x7528;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x8F93;&#x5165;0&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x9000;&#x51FA;&#x80A1;&#x4E1C;&#x3002;&#x6765;&#x53BB;&#x81EA;&#x7531;&#xFF0C;&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x540E;&#x7CFB;&#x7EDF;&#x9700;&#x8981;7&#x5929;&#x624D;&#x80FD;&#x5C06;&#x60A8;&#x4EE3;&#x7406;&#x7684;SP&#x9000;&#x56DE;&#x5230;&#x60A8;&#x7684;&#x5E10;&#x53F7;&#x4E0A;&#x3002;&#x53CB;&#x60C5;&#x63D0;&#x793A;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x628A;&#x6240;&#x6709;SP&#x90FD;&#x4EE3;&#x7406;&#x7ED9;&#x94F6;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x9700;&#x8981;&#x7559;&#x4E00;&#x4E9B;&#x80FD;&#x91CF;&#x53D1;&#x8D34;&#x3002;</p>
-<ul>
-<li><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a></li>
-<li>&#x52A0;&#x5165;&#x516C;&#x4F17;&#x53F7; <strong>justyyuk</strong> &#x5373;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2; BTC, SBD, STEEM, YOYOW, LTC, ETH &#x7B49;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x7684;&#x4EF7;&#x683C;.</li>
-<li><a href="https://steemit.com/cn/@justyy/xi2jn-yy" target="_blank" rel="noopener">&#x5927;&#x5BB6;&#x597D;&#x624D;&#x662F;&#x771F;&#x7684;&#x597D;&#xFF0C;YY&#x94F6;&#x884C;&#x8DB3;&#x7403;&#x961F;&#xFF0C;&#x4F60;&#x8FD8;&#x6709;&#x5565;&#x7406;&#x7531;&#x4E0D;&#x52A0;&#x5165;&#x94F6;&#x884C;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x5F00;&#x542F;&#x4E92;&#x62B1;&#x5927;&#x817F;&#x6A21;&#x5F0F;</a></li>
-</ul>
-<h1 id="&#x731C;&#x60A8;&#x559C;&#x6B22;"><a href="#&#x731C;&#x60A8;&#x559C;&#x6B22;" class="headerlink" title="&#x731C;&#x60A8;&#x559C;&#x6B22;"></a>&#x731C;&#x60A8;&#x559C;&#x6B22;</h1><ul>
-<li><a href="https://steemit.com/cn/@justyy/how-to-connect-to-mysql-using-linqpad-linqpad-mysql" target="_blank" rel="noopener">&#x600E;&#x4E48;&#x6837;&#x901A;&#x8FC7; LinqPad &#x8FDE;&#x63A5;&#x5230; SBDS - MySQL? </a></li>
-<li><a href="https://steemit.com/cn/@justyy/3qfhuo-utopian" target="_blank" rel="noopener">&#x8C08;&#x8C08; Utopian &#x6210;&#x7ACB;&#x516C;&#x53F8;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steemsql" target="_blank" rel="noopener">SteemSQL &#x6536;&#x8D39;&#x4E86; - &#x5F00;&#x94F6;&#x884C;&#x7684;&#x6210;&#x672C;&#x5927;&#x4E86;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/42d6vg" target="_blank" rel="noopener">&#x5F00;&#x53D1;&#x4E00;&#x4E2A;&#x62A5;&#x4EF7;&#x673A;&#x5668;&#x4EBA;&#x8981;&#x5177;&#x5907;&#x54EA;&#x4E9B;&#x77E5;&#x8BC6;&#x6216;&#x6280;&#x80FD;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cat/@justyy/3cy6dm6b" target="_blank" rel="noopener">&#x5144;&#x5F1F;&#x4FE9;&#x653E;&#x5B66;&#x56DE;&#x5BB6;&#x9017;&#x90BB;&#x5C45;&#x7684;&#x732B; - &#x8FD8;&#x597D;&#x82F1;&#x56FD;&#x6CA1;&#x6709;&#x72C2;&#x72AC;&#x75C5;</a></li>
-<li><a href="https://steemit.com/busy/@justyy/old-photography-of-queen-in-1918" target="_blank" rel="noopener">(&#x8001;&#x7167;&#x7247;)&#x82F1;&#x56FD;&#x5973;&#x7687;&#x767E;&#x5E74;&#x524D;&#x9020;&#x8BBF;&#x5251;&#x6865; - Old Photography of Queen in 1918</a></li>
-<li><a href="https://steemit.com/cn/@happyukgo/6kce8s" target="_blank" rel="noopener">&#x505A;&#x5973;&#x4EBA;&#x771F;&#x96BE;</a></li>
-<li><a href="https://steemit.com/busy/@happyukgo/7skaei" target="_blank" rel="noopener">&#x6751;&#x91CC;&#x505C;&#x7535;&#x540E;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/justyyuk-coinmarketcap" target="_blank" rel="noopener">&#x516C;&#x4F17;&#x53F7; justyyuk &#x5168;&#x9762;&#x652F;&#x6301; coinmarketcap &#x865A;&#x62DF;&#x8D27;&#x5E01;&#x5B9E;&#x65F6;&#x4EF7;&#x683C;&#x67E5;&#x8BE2;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steemit-utopian-bug-or-github-issue-report" target="_blank" rel="noopener">SteemIt Utopian &#x4E4C;&#x6258;&#x90A6;&#x600E;&#x4E48;&#x73A9;? (Bug &#x63D0;&#x4EA4;&#x62A5;&#x544A;) | &#x6211;&#x5AB3;&#x5987;&#x4E0A;&#x4E86; github &#x7684; issue report</a></li>
-<li><a href="https://steemit.com/busy/@justyy/vr" target="_blank" rel="noopener">VR &#x4F53;&#x9A8C;&#x8BA9;&#x6211;&#x624B;&#x5FC3;&#x5192;&#x6C57;</a></li>
-<li><a href="https://steemit.com/cn/@happyukgo/steem" target="_blank" rel="noopener">&#x8BF4;&#x8BF4;&#x5199; STEEM&#x7684;&#x539F;&#x56E0;</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/2hj1dy-utopian" target="_blank" rel="noopener">Utopian &#x5BA1;&#x7A3F;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x4EFD;&#x517B;&#x5BB6;&#x7CCA;&#x53E3;&#x7684;&#x5DE5;&#x4F5C;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -1939,7 +1929,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/290/">290</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/291/">291</a></li>
             
         </ul>
     </nav>
