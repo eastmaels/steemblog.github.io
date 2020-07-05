@@ -230,6 +230,92 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap/" class="image is-7by1">
+            <img class="thumbnail" src="https://www.steemimg.com/images/2016/07/31/steemit_error0fdef.png" alt="Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2016-07-31T08:03:33.000Z">2016-07-31</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemit/">steemit</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 505 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap/">Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.</a>
+            
+        </h1>
+        <div class="content">
+            <p>Today, I just tried to visit steemit.com site as usual, but I found that I can&#x2019;t access it normally.</p>
+<p>I got following response when I visited <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> in browser:<br><img src="https://www.steemimg.com/images/2016/07/31/steemit_error0fdef.png" alt="steemit_error0fdef.png"><br>Oh, there seems something wrong about steemit.com:(</p>
+<p>I tried again after a nap, and got:<br><img src="https://www.steemimg.com/images/2016/07/31/steemit_error278cb2.png" alt="steemit_error278cb2.png"></p>
+<p> I discussed it with my friends at QQ group.<br>Some of them said that steemit.com works normally,  but others can&#x2019;t work with it.</p>
+<p>So I try to finger out what happen?</p>
+<hr>
+<ul>
+<li>First I ping the domain of steemit.com at the command prompt:<br><img src="https://www.steemimg.com/images/2016/07/31/steem_ping_windowsa6d06.png" alt="steem_ping_windowsa6d06.png"><br>As you can see, the ping worked fine,  and the IP address is 167.114.34.68<hr>
+</li>
+<li>When I tried to use the IP address directly at browser, I got the same error as I access  it with the domain.<br><img src="https://www.steemimg.com/images/2016/07/31/steem_68b809d.png" alt="steem_68b809d.png"><br>But why some of my friends can worked with the site?<hr>
+</li>
+<li>I try to finger it out use EzDig tool:<br>Here are results:<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> ; &lt;&lt;&gt;&gt; EzDig 3.0 &lt;&lt;&gt;&gt; @198.153.194.1 steemit.com A</span><br><span class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 24734</span><br><span class="line">;;  flags: qr rd ra; QUERY:1, ANSWER:4, AUTHORITY:2, ADDITIONAL:1</span><br><span class="line"></span><br><span class="line">;; OPT PSEUDOSECTION:</span><br><span class="line">; EDNS: version: 0, flags:; udp: 4096</span><br><span class="line"></span><br><span class="line">;; QUESTION SECTION:</span><br><span class="line">steemit.com		IN	A	</span><br><span class="line"></span><br><span class="line">;; ANSWER SECTION:</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.68</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.59</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.89</span><br><span class="line">steemit.com	1800	IN	A	167.114.34.81</span><br><span class="line"></span><br><span class="line">;; AUTHORITY SECTION:</span><br><span class="line">steemit.com	3600	IN	NS	ns38.domaincontrol.com</span><br><span class="line">steemit.com	3600	IN	NS	ns37.domaincontrol.com</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<p>As you can see <strong>there are FOUR addresses</strong> for A record.</p>
+<hr>
+<ul>
+<li><p>I tried to use the IP address directly at browser <a href="https://167.114.34.59" target="_blank" rel="noopener">https://167.114.34.59</a><br>It works fine for me!<br><img src="https://www.steemimg.com/images/2016/07/31/Capture_13a7ce.png" alt="Capture_13a7ce.png"></p>
+<hr>
+<p>Then I tested those IPs with a server which located at softlayer DC.</p>
+</li>
+<li><p>For 167.114.34.68</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> wget https://167.114.34.68 --no-check-certificate</span><br><span class="line">--2016-07-31 06:57:50--  https://167.114.34.68/</span><br><span class="line">Connecting to 167.114.34.68:443... connected.</span><br><span class="line">    WARNING: certificate common name &#x201C;steemit.com&#x201D; doesn&apos;t match requested host name &#x201C;167.114.34.68&#x201D;.</span><br><span class="line">HTTP request sent, awaiting response... 502 Bad Gateway</span><br><span class="line">2016-07-31 06:57:51 ERROR 502: Bad Gateway.</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+</li>
+<li>For 167.114.34.59<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">wget https://167.114.34.59 --no-check-certificate</span><br><span class="line">--2016-07-31 06:57:35--  https://167.114.34.59/</span><br><span class="line">Connecting to 167.114.34.59:443... connected.</span><br><span class="line">    WARNING: certificate common name &#x201C;steemit.com&#x201D; doesn&apos;t match requested host name &#x201C;167.114.34.59&#x201D;.</span><br><span class="line">HTTP request sent, awaiting response... 200 OK</span><br><span class="line">Length: 272853 (266K) [text/html]</span><br><span class="line">Saving to: &#x201C;index.html&#x201D;</span><br><span class="line"></span><br><span class="line">100%[===================================================================================================================================================================================================&gt;] 272,853     1.16M/s   in 0.2s</span><br><span class="line"></span><br><span class="line">2016-07-31 06:57:36 (1.16 MB/s) - &#x201C;index.html&#x201D; saved [272853/272853]</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>And I tested PTR of 167.114.34.68<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> ; &lt;&lt;&gt;&gt; EzDig 3.0 &lt;&lt;&gt;&gt; @208.67.222.222 68.34.114.167.in-addr.arpa PTR</span><br><span class="line">;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 24734</span><br><span class="line">;;  flags: qr rd ra; QUERY:1, ANSWER:1, AUTHORITY:0, ADDITIONAL:1</span><br><span class="line"></span><br><span class="line">;; OPT PSEUDOSECTION:</span><br><span class="line">; EDNS: version: 0, flags:; udp: 4096</span><br><span class="line"></span><br><span class="line">;; QUESTION SECTION:</span><br><span class="line">68.34.114.167.in-addr.arpa		IN	PTR	</span><br><span class="line"></span><br><span class="line">;; ANSWER SECTION:</span><br><span class="line">68.34.114.167.in-addr.arpa	86400	IN	PTR	node003.steem.house</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ul>
+<h1 id="The-results"><a href="#The-results" class="headerlink" title="The results:"></a>The results:</h1><p><strong>There is something wrong with node003(167.114.34.68)</strong><br>Hope this issue be fixed ASAP.</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/steemit-failed-to-access-node003-167-114-34-68-today-hope-be-fixed-asap" target="_blank" rel="noopener">Steemit: Failed to access node003(167.114.34.68) today, Hope be fixed ASAP.</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/how-to-generate-valuable-content/" class="image is-7by1">
             <img class="thumbnail" src="http://steemit.serviceuptime.net/images/20160730_dollars.jpg" alt="How to generate valuable content? (如何生产有价值的内容的思考)">
         </a>
