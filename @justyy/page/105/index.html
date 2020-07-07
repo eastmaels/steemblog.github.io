@@ -230,6 +230,87 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/coding-exercise-find-max-consecutive-ones-1/" class="image is-7by1">
+            <img class="thumbnail" src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt="Coding Exercise - Find Max Consecutive Ones 编程练习题 - 最多连续的 1">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-07-28T23:18:42.000Z">2018-07-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 629 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/coding-exercise-find-max-consecutive-ones-1/">Coding Exercise - Find Max Consecutive Ones 编程练习题 - 最多连续的 1</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://ipfs.busy.org/ipfs/QmfPN8W19QLM76b6UdUgKfFQvZ6niiF1VD4Zk4SqBC2LED" alt=""></p>
+<blockquote>
+<p>Given a binary array, find the maximum number of consecutive 1s in this array.<br>Example 1:<br>Input: [1,1,0,1,1,1]<br>Output: 3<br>Explanation: The first two digits or the last three digits are consecutive 1s.<br>    The maximum number of consecutive 1s is 3.<br>Note: The input array will only contain 0 and 1.<br>The length of input array is a positive integer and will not exceed 10,000</p>
+</blockquote>
+<p>We count of the current consecutive 1s and the maximum count when iterating the numbers from left to right. If current element is 1, we increment the counter and compare to the maximum. Otherwise, we reset the current counter.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution {</span><br><span class="line">public:</span><br><span class="line">    int findMaxConsecutiveOnes(vector&lt;int&gt;&amp; nums) {</span><br><span class="line">        auto r = 0, m1 = 0;</span><br><span class="line">        for (auto n: nums) {</span><br><span class="line">            if (n == 1) {</span><br><span class="line">                r ++;</span><br><span class="line">                m1 = max(m1, r);</span><br><span class="line">            } else {</span><br><span class="line">                r = 0;</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">        return m1;</span><br><span class="line">    }</span><br><span class="line">};</span><br></pre></td></tr></tbody></table></figure>
+<p>Using <a href="https://helloacm.com/interview-coding-exercise-nested-string-python/" target="_blank" rel="noopener">Python</a>, this can be solved in a slightly different way - join the array as a string, split by delimiter &#x2018;0&#x2019; and get the maximum length of the 1s.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">return max([len(i) for i in &quot;&quot;.join(map(str, nums)).split(&apos;0&apos;)])</span><br></pre></td></tr></tbody></table></figure>
+<p>Reposted to: <a href="https://helloacm.com/coding-exercise-find-max-consecutive-ones/" target="_blank" rel="noopener">https://helloacm.com/coding-exercise-find-max-consecutive-ones/</a></p>
+<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
+<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
+</ol>
+<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
+<hr>
+<p>&#x9898;&#x610F;&#xFF1A;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x53EA;&#x542B;&#x6709;1&#x6216;0&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6C42;&#x8FDE;&#x7EED;&#x4E3A;1&#x6700;&#x957F;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#x3002;</p>
+<p>&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x8BB0;&#x5F55;&#x5F53;&#x524D;&#x9047;&#x5230;&#x6700;&#x957F;&#x7684;&#x957F;&#x5EA6;m1&#xFF0C;&#x8FD8;&#x6709;&#x4ECE;&#x4E0A;&#x4E00;&#x6B21;&#x9047;&#x5230;0&#x4EE5;&#x6765;&#x6700;&#x957F;1&#x7684;&#x957F;&#x5EA6;r&#xFF0C;&#x8FB9;&#x904D;&#x5386;&#x8FB9;&#x66F4;&#x65B0;&#x3002;&#x9047;&#x5230;0&#x5C31;&#x91CD;&#x7F6E;r&#x3002;</p>
+<p>&#x7528;<a href="https://justyy.com/archives/5217" target="_blank" rel="noopener">PYTHON</a>&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x505A;&#x6CD5;&#xFF1A;&#x628A;&#x6570;&#x7EC4;&#x8FDE;&#x63A5;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E;&#x6309;0&#x91CD;&#x65B0;&#x5206;&#x7EC4;&#xFF0C;&#x6C42;&#x51FA;&#x5269;&#x4E0B;&#x4E3A;1&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5206;&#x7EC4;&#x4E2D;&#x6700;&#x957F;&#x7684;&#x90A3;&#x4E2A;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
+<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
+<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
+</ol>
+<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
+<p>&#x521A;&#x521A;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com/archives/6434" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a></p>
+<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
+<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
+<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
+</ol>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/coding-exercise-find-max-consecutive-ones-1" target="_blank" rel="noopener">&#x2018;Coding Exercise - Find Max Consecutive Ones &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898; - &#x6700;&#x591A;&#x8FDE;&#x7EED;&#x7684; 1&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-07-28/" class="image is-7by1">
             <img class="thumbnail" src="http://www.bing.com/az/hprichbg/rb/WinskillStones_ROW11166714526_1920x1080.jpg" alt="【第 叁叁柒 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-07-28)">
         </a>
@@ -5980,83 +6061,6 @@
 <p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemvbs-update-add-followers-following-mvests-and-more" target="_blank" rel="noopener">SteemVBS Update - Add Followers, Following, MVests and More</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/coding-exercise-container-with-most-water-recursion/" class="image is-7by1">
-            <img class="thumbnail" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" alt="Coding Exercise - Container With Most Water (Recursion) 编程练习题 - 最多水容器 (递归)">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-07-25T18:57:48.000Z">2018-07-25</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 430 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/coding-exercise-container-with-most-water-recursion/">Coding Exercise - Container With Most Water (Recursion) 编程练习题 - 最多水容器 (递归)</a>
-            
-        </h1>
-        <div class="content">
-            <blockquote>
-<p>Given n non-negative integers a1, a2, &#x2026;, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.<br>Note: You may not slant the container and n is at least 2.</p>
-</blockquote>
-<p><img src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" alt=""></p>
-<blockquote>
-<p>The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain is 49.<br>Example: Input: [1,8,6,2,5,4,8,3,7] Output: 49</p>
-</blockquote>
-<p>Reposted to <a href="https://helloacm.com/coding-exercise-container-with-most-water-recursion/" target="_blank" rel="noopener">my blog: XXX</a> for better indexing.</p>
-<h2 id="Support-me-and-my-work-as-a-witness-witness-thread-by"><a href="#Support-me-and-my-work-as-a-witness-witness-thread-by" class="headerlink" title="Support me and my work as a witness - witness thread by"></a>Support me and my work as a witness - <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness thread</a> by</h2><ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here</a>, or</li>
-<li>voting me as <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a proxy</a>.</li>
-</ol>
-<p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
-<hr>
-<p>XXX&#x539F;&#x6587;&#xFF1A; <a href="https://justyy.com/archives/6431" target="_blank" rel="noopener">https://justyy.com/archives/6431</a></p>
-<h2 id="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;"><a href="#&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C;-&#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A;-&#x89C1;&#x8BC1;&#x4EBA;" class="headerlink" title="&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; &#x89C1;&#x8BC1;&#x4EBA;"></a>&#x652F;&#x6301;&#x6211;&#x7684;&#x5DE5;&#x4F5C; &#x652F;&#x6301;&#x6211;&#x6210;&#x4E3A; <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x89C1;&#x8BC1;&#x4EBA;</a></h2><ol>
-<li><a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x8BF7;&#x5728; &#x8FD9;&#x91CC; &#x6295;&#x6211;&#x4E00;&#x7968;</a>, &#x6216;&#x8005;</li>
-<li>&#x8BBE;&#x7F6E;&#x6211; <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">&#x4E3A;&#x4EE3;&#x7406;</a>.</li>
-</ol>
-<p>&#x8C22;&#x8C22;&#x60A8;&#xFF01; &#x6211;&#x7684;&#x8D21;&#x732E;&#xFF1A;<a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x5DE5;&#x5177;&#x3001;API&#x63A5;&#x53E3;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x548C;&#x6559;&#x7A0B;</a></p>
-<h2 id="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"><a href="#&#x80A1;&#x4E1C;&#x5DE5;&#x5177;" class="headerlink" title="&#x80A1;&#x4E1C;&#x5DE5;&#x5177;"></a>&#x80A1;&#x4E1C;&#x5DE5;&#x5177;</h2><ol>
-<li>&#x6210;&#x4E3A;&#x80A1;&#x4E1C;&#xFF1A;<a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">&#x4EE3;&#x7406;5 SP &#x5373;&#x53EF; &#xFF08;&#x9000;&#x51FA;&#x80A1;&#x4E1C; &#x8F93;&#x5165; 0&#x5373;&#x53EF;&#xFF09;</a></li>
-<li><a href="https://helloacm.com/tools/steemit/list-of-delegators/?id=justyy" target="_blank" rel="noopener">&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x80A1;&#x4E1C;</a></li>
-</ol>
-<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF1A;&#x6BCF;&#x6B21;&#x4EE3;&#x7406;&#x90FD;&#x662F;&#x4EE5;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x8F93;&#x5165;&#x7684;SP&#x6570;&#x91CF;&#x4E3A;&#x6807;&#x51C6;&#xFF0C;&#x6BD4;&#x5982;&#x5DF2;&#x7ECF;&#x4EE3;&#x7406;10 SP&#xFF0C;&#x60F3;&#x591A;&#x4EE3;&#x7406;5 SP&#x5219;&#x9700;&#x8981;&#x8F93;&#x5165; &#x6700;&#x540E;&#x7684;&#x6570;&#x5B57; 15 SP&#xFF08;&#x800C;&#x4E0D;&#x662F; 5&#xFF01;&#xFF09;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/coding-exercise-container-with-most-water-recursion" target="_blank" rel="noopener">Coding Exercise - Container With Most Water (Recursion) &#x7F16;&#x7A0B;&#x7EC3;&#x4E60;&#x9898; - &#x6700;&#x591A;&#x6C34;&#x5BB9;&#x5668; (&#x9012;&#x5F52;)</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
