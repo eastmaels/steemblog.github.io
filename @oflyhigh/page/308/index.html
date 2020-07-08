@@ -230,6 +230,76 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/how-to-transfer-sbd-or-steem-to-multiple-accounts-batch-transfer-with-steem-python/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmUHD9RHmyNtEJz1TRbTyEEvAi2ZsYJHsbqV6s5gnXirTh/image.png" alt="How to transfer SBD or STEEM to multiple accounts? (Batch transfer with steem-python) / 如何向多个账户批量转账">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-09-06T10:49:18.000Z">2017-09-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/steemdev/">steemdev</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 674 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/how-to-transfer-sbd-or-steem-to-multiple-accounts-batch-transfer-with-steem-python/">How to transfer SBD or STEEM to multiple accounts? (Batch transfer with steem-python) / 如何向多个账户批量转账</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Manual-transfer"><a href="#Manual-transfer" class="headerlink" title="Manual transfer"></a>Manual transfer</h1><p>Some of my friends held some very interesting activities on steemit. Such as <code>&#x8C37;&#x54E5;&#x70B9;&#x540D;</code> by @jubi, and <code>&#x4E03;&#x5915;&#x5F81;&#x6587;&#x5927;&#x8D5B;</code>by @rivalhw. The activities are very successful, plenty of people did participate and many people won the prize.</p>
+<p>But, How to pay bonuses is a bit of a hassle, organizers need to log on to the website and transfer bonuses to each winner.</p>
+<p><img src="https://steemitimages.com/DQmUHD9RHmyNtEJz1TRbTyEEvAi2ZsYJHsbqV6s5gnXirTh/image.png" alt=""></p>
+<p><img src="https://steemitimages.com/DQmPisdDLX5W6C3gkgeb6nrds6fGR3FPZ1mFRhgs1PsxFmw/image.png" alt=""></p>
+<p>If there are a large number of winners, We need to do the same thing over and over again.</p>
+<h1 id="Batch-transfer"><a href="#Batch-transfer" class="headerlink" title="Batch transfer"></a>Batch transfer</h1><p>Fortunately, we can implement batch transfers using program.<br>Just installed <strong><em>the official python library for STEEM</em></strong> as I mentioned in <a href="https://steemit.com/steemdev/@oflyhigh/how-to-claim-your-rewards-automatically" target="_blank" rel="noopener">my previous article</a></p>
+<p>But, We need <strong><em>Active private key</em></strong> this time, follow the same steps  in <a href="https://steemit.com/steemdev/@oflyhigh/how-to-claim-your-rewards-automatically" target="_blank" rel="noopener">my previous article</a> but select  <strong><em>Active private key</em></strong>, and then import it to our local wallet.</p>
+<p>A simplest script maybe like this:<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env python</span><br><span class="line">import sys</span><br><span class="line">from steem import Steem</span><br><span class="line"></span><br><span class="line">from_account = &apos;oflyhigh&apos;</span><br><span class="line">to_accounts = [&apos;oflyhigh.test&apos;, &apos;jubi&apos;, &apos;deanliu&apos;]</span><br><span class="line">amount = 0.001</span><br><span class="line">asset = &apos;SBD&apos;</span><br><span class="line">message = &apos;Test transfer!&apos;</span><br><span class="line"></span><br><span class="line">def main(argv=None):</span><br><span class="line">        steem=Steem()</span><br><span class="line">        for to_account in to_accounts:</span><br><span class="line">                steem.transfer(to_account, amount=amount, asset=asset, memo=message, account=from_account)</span><br><span class="line"></span><br><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line">        sys.exit(main())</span><br></pre></td></tr></tbody></table></figure><p></p>
+<p>Now, we can transfer 0.001 SBD to multiple accounts ( @oflyhigh.test, @jubi, @deanliu) by executing the script. A message  <strong><em>Test transfer!</em></strong> was added at the same time.</p>
+<p>Now, let me check my wallet:<br><img src="https://steemitimages.com/DQmYxoV4dimck8qB5YRFa263XcpiQ7kWZc9dUmUiaUUHHEf/image.png" alt=""><br>We made it successfully!</p>
+<h1 id="For-encrypted-messaging"><a href="#For-encrypted-messaging" class="headerlink" title="For encrypted messaging"></a>For encrypted messaging</h1><p><strong><em><code>steem-python</code></em></strong> also supports message encryption.</p>
+<p>To issue a encrypted message, just plus <strong><code>#</code></strong> prefix for your message.<br>For example,<br><code>message = &apos;#Test transfer!&apos;</code></p>
+<p>And you must import <strong><em>memo  private key</em></strong> to your local wallet, otherwise you will get the following error message like this one:<br><code>steembase.exceptions.MissingKeyError: Memo key for oflyhigh missing!</code></p>
+<p>There&#x2019;s a small issue of  <strong><code>steem-python</code></strong> for encrypted memo<br><img src="https://steemitimages.com/DQmZuR52Aj7Tf25pH7KDDPjLfYyM55rmURrpxNnGgYx3Myf/image.png" alt=""><br>We get two <strong>&#x2018;#&#x2019;</strong> in the memo,   which should be one, but it doesn&#x2019;t matter.</p>
+<h1 id="&#x4E2D;&#x6587;"><a href="#&#x4E2D;&#x6587;" class="headerlink" title="&#x4E2D;&#x6587;"></a>&#x4E2D;&#x6587;</h1><p>&#x6211;&#x7684;&#x4E00;&#x4E9B;&#x670B;&#x53CB;&#x5728;STEEMIT&#x4E3E;&#x529E;&#x4E86;&#x5F88;&#x591A;&#x6709;&#x610F;&#x601D;&#x7684;&#x6D3B;&#x52A8;&#xFF0C;&#x6BD4;&#x5982; @jubi &#x7684;<strong><em>&#x8C37;&#x54E5;&#x70B9;&#x540D;</em></strong>&#xFF0C;  @rivalhw &#x7684; <strong><em>&#x4E03;&#x5915;&#x5F81;&#x6587;&#x5927;&#x8D5B;</em></strong>&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E9B;&#x6D3B;&#x52A8;&#x975E;&#x5E38;&#x6210;&#x529F;&#xFF0C;&#x5438;&#x5F15;&#x4E86;&#x5F88;&#x591A;&#x670B;&#x53CB;&#x53C2;&#x52A0;&#x5E76;&#x4E14;&#x5F88;&#x591A;&#x670B;&#x53CB;&#x8D62;&#x5F97;&#x4E86;&#x5956;&#x52B1;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x4F55;&#x53D1;&#x653E;&#x5956;&#x52B1;&#x662F;&#x5F88;&#x9EBB;&#x70E6;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x7EC4;&#x7EC7;&#x8005;&#x8981;&#x767B;&#x9646;&#x7F51;&#x7AD9;&#x7ED9;&#x6BCF;&#x4E2A;&#x83B7;&#x5956;&#x8005;&#x4E00;&#x7B14;&#x4E00;&#x7B14;&#x7684;&#x8F6C;&#x8D26;&#x3002;&#x5982;&#x679C;&#x83B7;&#x5956;&#x8005;&#x5F88;&#x591A;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x4E00;&#x6B21;&#x53C8;&#x4E00;&#x6B21;&#x7684;&#x505A;&#x76F8;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x5E78;&#x8FD0;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x6279;&#x91CF;&#x8F6C;&#x8D26;&#x5E76;&#x9644;&#x52A0;&#x5907;&#x6CE8;&#x4FE1;&#x606F;&#xFF0C;&#x4EE3;&#x7801;&#x53C2;&#x89C1;&#x82F1;&#x6587;&#x90E8;&#x5206;&#x3002;</p>
+<p>&#x7A0B;&#x5E8F;&#x540C;&#x65F6;&#x652F;&#x6301;&#x5907;&#x6CE8;&#x6D88;&#x606F;&#x52A0;&#x5BC6;&#xFF0C;&#x5728;&#x6D88;&#x606F;&#x524D;&#x8FB9;&#x52A0;&#x4E2A;<strong><code>#</code></strong>&#x53F7;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x4F46;&#x662F;<strong><code>steem-python</code></strong>&#x6709;&#x70B9;&#x5C0F;BUG&#xFF0C;&#x8F6C;&#x8D26;&#x540E;&#x7684;&#x6D88;&#x606F;&#x91CC;&#x591A;&#x4E86;&#x4E00;&#x4E2A;<strong><code>#</code></strong>&#x53F7;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x6CA1;&#x5565;&#x5927;&#x5F71;&#x54CD;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-transfer-sbd-or-steem-to-multiple-accounts-batch-transfer-with-steem-python" target="_blank" rel="noopener">How to transfer SBD or STEEM to multiple accounts? (Batch transfer with steem-python) / &#x5982;&#x4F55;&#x5411;&#x591A;&#x4E2A;&#x8D26;&#x6237;&#x6279;&#x91CF;&#x8F6C;&#x8D26;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/how-to-claim-your-rewards-automatically/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmTVK8tNiHwxToLDc6d22641zVhCYSiAp33ovJXgEmCeTh/image.png" alt="How to claim your rewards automatically? / 如何自动收取你的收益">
         </a>
@@ -706,76 +776,6 @@
 <p>&#x6211;&#x5C06;&#x5728;&#x4E0B;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x83B7;&#x5F97;&#x8FD9;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#x3002;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/how-to-calculate-estimated-account-value-part-one" target="_blank" rel="noopener">How to calculate estimated account value: Part One / &#x5982;&#x4F55;&#x8BA1;&#x7B97;&#x8D26;&#x6237;&#x4F30;&#x503C;&#xFF1A;&#x7B2C;&#x4E00;&#x90E8;&#x5206;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/multisignature-account-test/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmSsfYazjF6THVCMUq75KxEtGrtgWR4o2HAALjCz3iGu7J/image.png" alt="Multisignature account test / 多重签名测试">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-31T12:39:54.000Z">2017-08-31</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/multisignature/">multisignature</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 481 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/multisignature-account-test/">Multisignature account test / 多重签名测试</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemitimages.com/DQmSsfYazjF6THVCMUq75KxEtGrtgWR4o2HAALjCz3iGu7J/image.png" alt=""></p>
-<h1 id="Posting-key-test"><a href="#Posting-key-test" class="headerlink" title="Posting key test"></a>Posting key test</h1><h4 id="Setting-Multisignature-posting-key"><a href="#Setting-Multisignature-posting-key" class="headerlink" title="Setting Multisignature posting key"></a>Setting Multisignature posting key</h4><p><code>steempy permissions msa</code><br><img src="https://steemitimages.com/DQmNb1fZ358xBWo2wBjLK33pE1i1jn4E7fLs2gv5JyttJJ8/image.png" alt=""></p>
-<p><code>steempy allow --account msa --permission posting --weight 1 --threshold 2 oflyhigh.test</code><br><img src="https://steemitimages.com/DQmdAagy4mih4EK3t1tGFXueXtFgzBnkij8zNuRyireL5Tr/image.png" alt=""></p>
-<p><code>steempy permissions msa</code><br><img src="https://steemitimages.com/DQmTGqHia4p6SA2wGneoVApbDxAgMEcwGbN1PsWJjmtRq33/image.png" alt=""></p>
-<p>Check it on steemd.com<br><img src="https://steemitimages.com/DQmcve5JQvAXmF91qpjYRKMyu8XSQg8f5QHZFMdU6VGMYc2/image.png" alt=""></p>
-<h4 id="Upvote-my-post-via-command-line-tools"><a href="#Upvote-my-post-via-command-line-tools" class="headerlink" title="Upvote my post via command line tools"></a>Upvote my post via command line tools</h4><p><code>steempy upvote --account msa --weight 100 @oflyhigh/7ukopr</code><br><img src="https://steemitimages.com/DQmcLbyT1TcebuB4ReesXTwG7ddfSTZttxpE2uv4bPpGCkE/image.png" alt=""><br>(Right:      &#x2705;&#xFE0F;     )</p>
-<h4 id="Login-steemit-with-master-password-and-upvote-my-another-post"><a href="#Login-steemit-with-master-password-and-upvote-my-another-post" class="headerlink" title="Login steemit with master password  and upvote my another post"></a>Login steemit with master password  and upvote my another post</h4><p><img src="https://steemitimages.com/DQmNc6EQ9v4vwFPyjcSSGpTtLhU9XSzH5cM5AcJu79UDsS4/image.png" alt=""><br>(Wrong: &#x274C;&#xFE0F;I expect it prompt error messages such as <strong><em>Missing Posting Authority msa</em></strong> or <strong><em>Threshold not satisfied</em></strong>)</p>
-<h1 id="Active-key-test"><a href="#Active-key-test" class="headerlink" title="Active key test"></a>Active key test</h1><h4 id="Setting-Multisignature-active-key"><a href="#Setting-Multisignature-active-key" class="headerlink" title="Setting Multisignature active key"></a>Setting Multisignature active key</h4><p><code>steempy allow --account msa --permission active --weight 1 --threshold 2 oflyhigh.test</code><br><img src="https://steemitimages.com/DQmPFPdaYgg9EFkiGKDJTe2cCuA8UkSzV5oZRuZ8DswaepY/image.png" alt=""></p>
-<p><code>steempy permissions msa</code><br><img src="https://steemitimages.com/DQmbevQCo3W6PvsBBMXMuXCRFxEVixH2kzqNDRFPFoePu8r/image.png" alt=""></p>
-<h4 id="Login-steemit-with-master-password-and-transfer-0-001-SBD-to-oflyhigh"><a href="#Login-steemit-with-master-password-and-transfer-0-001-SBD-to-oflyhigh" class="headerlink" title="Login steemit with master password and transfer 0.001 SBD to oflyhigh"></a>Login steemit with master password and transfer 0.001 SBD to oflyhigh</h4><p><img src="https://steemitimages.com/DQmXag1KyQ6dD7sAqoNuvx8v34xPTpBq2FZBorqShs77ph2/image.png" alt=""><br>(Wrong: &#x274C;&#xFE0F;I expect it prompt error messages such as Missing Active Authority msa or Threshold not satisfied)</p>
-<p>Using oflyhigh.test active key to sign transaction and got broadcast error<br><img src="https://steemitimages.com/DQmcmsfVa2zrHiCjkWmx8FLEfJ7BHtrr9UjRsY7Gn7GbXmQ/image.png" alt=""><br><img src="https://steemitimages.com/DQmaUx8m6AmoHh1KiZRP582LSvk6st82CvwqGh5FqX9UoCU/image.png" alt=""><br>(Right: &#x2705;&#xFE0F; )</p>
-<h1 id="What&#x2019;s-wrong"><a href="#What&#x2019;s-wrong" class="headerlink" title="What&#x2019;s wrong?"></a>What&#x2019;s wrong?</h1><p>Multisignature account is not working as I expected.<br>It should work only when the threshold is met, but it seems not.</p>
-<p>When I almost finish writing this article, I test upvote and tranfer on steemit.com again.</p>
-<p>I Login  steemit.com with master password  and upvote my another post, I got:<br><img src="https://steemitimages.com/DQmP7Bd33bYTG1jfi4bynjtKK63yWeZrhwXryEYg6x2XrUV/image.png" alt=""><br>It seems right. (Does it take time to wait for effect?)</p>
-<p>And I also tested transfer again.<br>The same as before, SBD can be transferred from this account to another account when I logged in with master password, This is not what I expected. &#x1F62D;</p>
-<hr>
-<p>&#x4E2D;&#x6587;&#xFF1A;</p>
-<p>&#x6D4B;&#x8BD5;&#x4E86;&#x4E00;&#x4E0B;&#x591A;&#x91CD;&#x7B7E;&#x540D;&#x8D26;&#x6237;<br>&#x4F46;&#x662F;&#x7ED3;&#x679C;&#x548C;&#x6211;&#x671F;&#x671B;&#x7684;&#x6709;&#x4E9B;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x8BE6;&#x89C1;&#x6B63;&#x6587;&#x3002;<br>&#x4F30;&#x8BA1;&#x662F;&#x6211;&#x54EA;&#x5757;&#x6CA1;&#x5F04;&#x5BF9;&#xFF0C;&#x6216;&#x8005;&#x5927;&#x8111;&#x79C0;&#x9017;&#x4E86;&#xFF0C;&#x660E;&#x5929;&#x518D;&#x7EE7;&#x7EED;&#x6D4B;&#x8BD5;&#x5427;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/multisignature-account-test" target="_blank" rel="noopener">Multisignature account test / &#x591A;&#x91CD;&#x7B7E;&#x540D;&#x6D4B;&#x8BD5;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         

@@ -230,6 +230,106 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/r-matrices-part-2-and-and/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：Matrices(矩阵) Part 2，矩阵访问方式&amp;矩阵操作&amp;进阶操作">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-06-04T00:52:00.000Z">2018-06-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1146 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/r-matrices-part-2-and-and/">继续学R：Matrices(矩阵) Part 2，矩阵访问方式&amp;矩阵操作&amp;进阶操作</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;<a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86;&#x77E9;&#x9635;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x547D;&#x540D;&#x884C;&#x5217;&#xFF0C;&#x4EE5;&#x53CA;&#x6309;&#x4E0B;&#x6807;&#x4EE5;&#x53CA;&#x6309;&#x547D;&#x540D;&#x8BBF;&#x95EE;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
+<h1 id="&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;"><a href="#&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;" class="headerlink" title="&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;"></a>&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;</h1><p>&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#x77E9;&#x9635;&#x7684;&#x6309;&#x4E0B;&#x6807;&#x548C;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x8BB0;&#x5F97;&#x5B66;&#x4E60;&#x5217;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x624D;&#x53EB;&#x4E30;&#x5BCC;&#x5462;&#xFF01;&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<blockquote>
+<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(mylist[2])</code><br><code>print(mylist[c(1,2)])</code><br><code>print(mylist[c(TRUE, FALSE, TRUE, FALSE)])</code><br><code>print(mylist[c(-1,-2)])</code></p>
+</blockquote>
+<p>&#x90A3;&#x4E48;&#x4E0D;&#x96BE;&#x7531;&#x6B64;&#x7591;&#x95EE;&#xFF0C;&#x77E9;&#x9635;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5982;&#x6B64;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x6765;&#x8BD5;&#x8BD5;&#x770B;&#x5427;&#xFF1A;</p>
+<blockquote>
+<p><code>m&lt;-matrix(c(1:12), nrow=3, byrow=TRUE, dimnames=list(c(&apos;r1&apos;, &apos;r2&apos;, &apos;r3&apos;), c(&apos;c1&apos;, &apos;c2&apos;, &apos;c3&apos;, &apos;c4&apos;)))</code><br><code>print(m)</code><br><code>print(m[1, 2])  # &#x8BBF;&#x95EE;&#x7B2C;&#x4E00;&#x884C;&#x7B2C;&#x4E8C;&#x5217;&#x4E0A;&#x7684;&#x5143;&#x7D20;</code><br><code>print(m[c(1,2),c(1,2)])  # &#x8BBF;&#x95EE;&#x7B2C;&#x4E00;&#x884C;&#x548C;&#x7B2C;&#x4E8C;&#x884C;&#x4E0A;&#x7B2C;&#x4E00;&#x5217;&#x548C;&#x7B2C;&#x4E8C;&#x5217;&#x5143;&#x7D20;</code><br><code>print(m[c(TRUE, TRUE, FALSE),c(TRUE, TRUE, FALSE, TRUE)]) # &#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x5217;&#xFF0C;&#x663E;&#x793A;&#x5176;&#x4F59;&#x5185;&#x5BB9;</code><br><code>print(m[-3, -3])  # &#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x5217;&#xFF0C;&#x663E;&#x793A;&#x5176;&#x4F59;&#x5185;&#x5BB9;</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmdUqKeL9Nq8ZcDz6H9yrsaGQpHnc8WQvk8SXKfh7atQWb/image.png" alt=""></p>
+<h1 id="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;"><a href="#&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;" class="headerlink" title="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;"></a>&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;</h1><p><a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">R - Matrices</a>&#x4E00;&#x6587;&#x4E2D;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E86;Matrices(&#x77E9;&#x9635;) &#x7684;&#x52A0;&#x51CF;&#x4E58;&#x9664;&#xFF08;<code>+&#x3001;-&#x3001;x&#x3001;/</code>)&#x8FD0;&#x7B97;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x56DB;&#x5219;&#x8FD0;&#x7B97;&#x3002;<a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">R - Matrices</a>&#x8BF4;&#x8FDB;&#x884C;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x884C;&#x6570;&#x548C;&#x5217;&#x6570;</p>
+<blockquote>
+<p>The dimensions (number of rows and columns) should be same for the matrices involved in the operation.</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x884C;&#x6570;&#x5217;&#x6570;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x65F6;&#x4F1A;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<blockquote>
+<p>Error in m1 + m2 : non-conformable arrays</p>
+</blockquote>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x89C4;&#x89C4;&#x77E9;&#x77E9;&#x7684;&#x64CD;&#x4F5C;&#x4E00;&#x4E0B;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>m1&lt;-matrix(c(1:12), nrow=3, byrow=TRUE)</code><br><code>m2&lt;-matrix(c(1:12), nrow=3, byrow=FALSE)</code><br><code>print(m1)</code><br><code>print(m2)</code><br><code>print(m1+m2)</code><br><code>print(m1-m2)</code><br><code>print(m1*m2)</code><br><code>print(m1/m2)</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmUcP9ZaGfNxxdxhHZ8pD2gJivn2ABdvGozLdGHzymGchn/image.png" alt=""></p>
+<h1 id="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;-&#x8FDB;&#x9636;"><a href="#&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;-&#x8FDB;&#x9636;" class="headerlink" title="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;(&#x8FDB;&#x9636;)"></a>&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;(&#x8FDB;&#x9636;)</h1><p>&#x6709;&#x670B;&#x53CB;&#x5728;&#x6211;<a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x5E16;&#x5B50;</a>&#x91CC;&#x56DE;&#x590D;&#xFF0C;&#x8BF4;R&#x7684;&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#x548C;&#x6570;&#x5B66;&#x4E2D;&#x77E9;&#x9635;&#x7684;&#x4E58;&#x6CD5;&#x6709;&#x4E9B;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x6211;&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x7C7B;&#x4F3C;&#x6211;&#x4EEC;&#x672C;&#x6587;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#xFF0C;&#x628A;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x76F8;&#x4E58;&#xFF0C;&#x5176;&#x5B9E;&#x5C5E;&#x4E8E;<strong><code>hadamard product&#xFF08;&#x54C8;&#x8FBE;&#x739B;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x4E0E;&#x4E4B;&#x76F8;&#x5BF9;&#x7684;&#x8FD8;&#x6709;<strong><code>kronecker product&#xFF08;&#x514B;&#x7F57;&#x5185;&#x514B;&#x79EF;&#xFF0C;&#x4E5F;&#x53EB;&#x76F4;&#x79EF;&#x6216;&#x5F20;&#x91CF;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x8FD8;&#x6709;<strong><code>matmul product&#xFF08;&#x4E00;&#x822C;&#x77E9;&#x9635;&#x4E58;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x4E0D;&#x8FC7;&#x5177;&#x4F53;&#x90FD;&#x662F;&#x548B;&#x56DE;&#x4E8B;&#xFF0C;&#x6211;&#x662F;&#x641E;&#x4E0D;&#x61C2;&#x4E86;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x81EA;&#x5DF1;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#x5427;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;R&#x80AF;&#x5B9A;&#x4E0D;&#x6B62;&#x7B80;&#x5355;&#x5730;&#x652F;&#x6301;&#x54C8;&#x8FBE;&#x739B;&#x79EF;&#xFF0C;&#x5426;&#x5219;&#x5C82;&#x4E0D;&#x662F;&#x5F31;&#x7206;&#x4E86;&#xFF1F;&#x7136;&#x540E;&#x6211;&#x641C;&#x7D22;&#x4E86;&#x4E00;&#x4E0B;R&#x7684;&#x77E9;&#x9635;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x548C;&#x6211;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x90FD;&#x60CA;&#x5446;&#x4E86;&#x3002;</p>
+<center><img src="https://cdn.steemitimages.com/DQmP6ZTQeDfXuMUCh5C19ijheSn1b3cZgUBWT4dbhPGUZda/image.png" alt=""></center>
+
+<p>&#x6211;&#x5C31;&#x622A;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x81EA;&#x5DF1;&#x6765;&#x5B66;&#x5427;&#xFF1A;<a href="https://www.statmethods.net/advstats/matrix.html" target="_blank" rel="noopener">Matrix Algebra</a>&#xFF0C;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x7684;&#x53EA;&#x662F;&#x77E9;&#x9635;&#x5F3A;&#x5927;&#x529F;&#x80FD;&#x7684;&#x51B0;&#x5C71;&#x4E00;&#x89D2;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x6587;&#x672B;&#x94FE;&#x63A5;&#x3002;</p>
+<hr>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x5230;&#x8FD9;&#x91CC;&#x3002;&#x770B;&#x6765;&#x5B66;&#x5B8C;<a href="https://www.tutorialspoint.com/r/index.htm" target="_blank" rel="noopener">R Tutorial</a>&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x5B66;&#x4E86;&#x4E2A;&#x76AE;&#x6BDB;&#xFF0C;&#x4F55;&#x51B5;&#x8FD9;&#x4E2A;&#x8FD8;&#x4E0D;&#x77E5;&#x9053;&#x7334;&#x5E74;&#x5B66;&#x5B8C;&#x5462;&#xFF0C;&#x1F614;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;)  Part 1, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-2-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 2, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE; &amp; &#x8BA1;&#x7B97;&#x957F;&#x5EA6;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-3-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 3, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x64CD;&#x4F5C;(&#x7B97;&#x672F;&#x64CD;&#x4F5C;&amp;&#x6392;&#x5E8F;)</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-list-part-1-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 1, &#x521B;&#x5EFA;&#x5217;&#x8868;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-list-part-2" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 2, &#x5217;&#x8868;&#x7684;&#x64CD;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Matrices(&#x77E9;&#x9635;) Part 1&#xFF0C;&#x521B;&#x5EFA;&#x77E9;&#x9635;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></li>
+<li><a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_matrices.htm</a></li>
+<li><a href="https://www.statmethods.net/advstats/matrix.html" target="_blank" rel="noopener">Matrix Algebra</a></li>
+<li><a href="https://www.r-bloggers.com/quick-review-of-matrix-algebra-in-r/" target="_blank" rel="noopener">Quick Review of Matrix Algebra in R</a></li>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/matmult.html" target="_blank" rel="noopener">Matrix Multiplication</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-matrices-part-2-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Matrices(&#x77E9;&#x9635;) Part 2&#xFF0C;&#x77E9;&#x9635;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&amp;&#x77E9;&#x9635;&#x64CD;&#x4F5C;&amp;&#x8FDB;&#x9636;&#x64CD;&#x4F5C;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/openledger-info-openledger-io/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmToRf2AYD8rdwX1bYNAvFYZbY3oQkZiFhpXsADEiSZTUY/image.png" alt="注意： 请不要登陆 openledger.info\ openledger.io 等站点！！！">
         </a>
@@ -658,104 +758,6 @@
 <p>&#x8FD9;&#x4E2A;&#x91D1;&#x989D;&#x4F30;&#x8BA1;&#x4E70;&#x4E2A;&#x68D2;&#x68D2;&#x7CD6;&#x8DB3;&#x591F;&#x5566;&#xFF0C;&#x522B;&#x5ACC;&#x5C11;&#x54E6;&#xFF0C;&#x5C31;&#x662F;&#x70ED;&#x95F9;&#x4E00;&#x4E0B;&#x1F600;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/2ym9lx" target="_blank" rel="noopener">&#x513F;&#x7AE5;&#x8282;&#x798F;&#x5229;&#xFF0C;&#x53D1;&#x68D2;&#x68D2;&#x7CD6;&#x5566;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/r-list-part-1-and-and/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：List(列表) Part 1, 创建列表&amp;命名&amp;访问">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-06-01T00:43:36.000Z">2018-06-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 982 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/r-list-part-1-and-and/">继续学R：List(列表) Part 1, 创建列表&amp;命名&amp;访问</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x7C97;&#x7565;&#x4E86;&#x6D4F;&#x89C8;&#x4E86;&#x4E00;&#x4E9B;&#x5404;&#x79CD;R&#x76F8;&#x5173;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x624D;&#x60CA;&#x89C9;R&#x542B;&#x91D1;&#x91CF;&#x6700;&#x9AD8;&#x7684;&#x90E8;&#x5206;&#x662F;&#x7EDF;&#x8BA1;&#x5206;&#x6790;&#x90E8;&#x5206;&#xFF0C;&#x90A3;&#x90E8;&#x5206;&#x6211;&#x662F;&#x4E00;&#x70B9;&#x4E0D;&#x61C2;&#x554A;&#xFF0C;&#x6240;&#x4EE5;&#x771F;&#x6000;&#x7591;&#x6211;&#x80FD;&#x5426;&#x575A;&#x6301;&#x4E0B;&#x53BB;&#xFF0C;&#x59D1;&#x4E14;&#x8D70;&#x7740;&#x77A7;&#x5427;&#xFF0C;&#x54EA;&#x5929;&#x5199;&#x4E0D;&#x4E0B;&#x53BB;&#x4E86;&#x70C2;&#x5C3E;&#x4E86;&#xFF0C;&#x90A3;&#x4E5F;&#x662F;&#x610F;&#x6599;&#x4E4B;&#x4E2D;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
-<p>&#x4E4B;&#x524D;&#x5B66;&#x4E86;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#xFF0C;&#x5206;&#x4E09;&#x4E2A;&#x5C0F;&#x8282;&#x5B66;&#x4E60;&#x4E86;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x8BBF;&#x95EE;&#x4EE5;&#x53CA;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6211;&#x4EEC;&#x6765;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;<strong>List/&#x5217;&#x8868;</strong></p>
-<h1 id="&#x521B;&#x5EFA;&#x5217;&#x8868;"><a href="#&#x521B;&#x5EFA;&#x5217;&#x8868;" class="headerlink" title="&#x521B;&#x5EFA;&#x5217;&#x8868;"></a>&#x521B;&#x5EFA;&#x5217;&#x8868;</h1><p>&#x4E0E;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;/Vertors&#x4E0D;&#x540C;&#xFF0C;list&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BB9;&#x7EB3;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<strong><code>list()</code></strong>&#x6765;&#x521B;&#x5EFA;list&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(class(mylist))</code><br><code>print(mylist)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmd1n5HS57Udo8L3r3QuAK4xt7Tn1opZ8G2nw2QqnoUeAt/image.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x793A;&#x4F8B;&#x53EF;&#x89C1;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;vertors&#x7684;&#x7C7B;&#x578B;&#x53D6;&#x51B3;&#x4E8E;&#x5176;&#x5185;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x800C;<strong>list&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#x578B;<code>list</code></strong>&#xFF1B;&#x53E6;&#x5916;&#x4E0D;&#x540C;&#x4E8E;vertors&#x53EA;&#x80FD;&#x5305;&#x542B;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x539F;&#x5B50;&#x5411;&#x91CF;(&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x4F1A;&#x8FDB;&#x884C;&#x8F6C;&#x6362;), <strong>list&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BB9;&#x7EB3;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;</strong>&#x3002;</p>
-<h1 id="&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;"><a href="#&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;" class="headerlink" title="&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;"></a>&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;</h1><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong><code>names()</code></strong>&#x6765;&#x7ED9;&#x5217;&#x8868;&#x5143;&#x7D20;&#x547D;&#x540D;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;number&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code><br><code>print(mylist)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmbbBNNpc8q6ucsBtuUc8nmMFTM3GRhBghqAM46CZ4NLW4/image.png" alt=""></p>
-<h1 id="&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;"><a href="#&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;" class="headerlink" title="&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;"></a>&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;</h1><h4 id="&#x4E0B;&#x6807;&#x8BBF;&#x95EE;"><a href="#&#x4E0B;&#x6807;&#x8BBF;&#x95EE;" class="headerlink" title="&#x4E0B;&#x6807;&#x8BBF;&#x95EE;"></a>&#x4E0B;&#x6807;&#x8BBF;&#x95EE;</h4><p>&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#xFF0C;&#x548C;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(mylist[2])</code><br><code>print(mylist[c(1,2)])</code><br><code>print(mylist[c(TRUE, FALSE, TRUE, FALSE)])</code><br><code>print(mylist[c(-1,-2)])</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmPKqR71rj2hv9UCN6yqxDyE5TrhGhqhoQGTdheCcCdSD2/image.png" alt=""></p>
-<h4 id="&#x547D;&#x540D;&#x8BBF;&#x95EE;"><a href="#&#x547D;&#x540D;&#x8BBF;&#x95EE;" class="headerlink" title="&#x547D;&#x540D;&#x8BBF;&#x95EE;"></a>&#x547D;&#x540D;&#x8BBF;&#x95EE;</h4><p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7ED9;list&#x5143;&#x7D20;&#x521B;&#x5EFA;&#x4E86;&#x540D;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x540D;&#x5B57;&#x4EC5;&#x4EC5;&#x4E3A;&#x4E86;&#x597D;&#x770B;&#x5417;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x5426;&#x5B9A;&#x7684;&#xFF0C;&#x540D;&#x5B57;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;&#x54E6;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;number&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code><br><code>print(mylist$vertors)</code><br><code>print(mylist$number)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmYq2YX8xWcXdAC1njt8zGgkjuWzizyratWyyC5jifdSjN/image.png" alt=""><br>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x795E;&#x5947;&#xFF1F;</p>
-<h6 id="vertors-&#x547D;&#x540D;&#x8BBF;&#x95EE;"><a href="#vertors-&#x547D;&#x540D;&#x8BBF;&#x95EE;" class="headerlink" title="vertors &#x547D;&#x540D;&#x8BBF;&#x95EE;"></a>vertors &#x547D;&#x540D;&#x8BBF;&#x95EE;</h6><p>&#x8BF4;&#x5230;&#x5217;&#x8868;&#x7684;&#x547D;&#x540D;&#x8BBF;&#x95EE;&#xFF0C;&#x6211;&#x4E0D;&#x7981;&#x6709;&#x4E00;&#x4E2A;&#x7591;&#x95EE;&#xFF0C;vertors&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x5149;&#x60F3;&#x6CA1;&#x7528;&#xFF0C;&#x8BD5;&#x8BD5;&#x770B;&#xFF1A;</p>
-<blockquote>
-<p><code>v&lt;-c(1, 2, 3, 4)</code><br><code>names(v)&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;)</code><br><code>print(v)</code><br><code>print(v[&apos;b&apos;])</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmXVkR49uC7a1DzwZ6Xpda5fAfJcTu49sAx6x6Yy4rvAqd/image.png" alt=""><br>&#x8C8C;&#x4F3C;&#x53EF;&#x884C;&#x5462;&#xFF1F;</p>
-<h5 id="&#x91CD;&#x590D;&#x547D;&#x540D;"><a href="#&#x91CD;&#x590D;&#x547D;&#x540D;" class="headerlink" title="&#x91CD;&#x590D;&#x547D;&#x540D;"></a>&#x91CD;&#x590D;&#x547D;&#x540D;</h5><p>&#x5199;&#x5230;&#x8FD9;&#xFF0C;&#x4E0D;&#x7981;&#x53C8;&#x60F3;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x65E2;&#x7136;&#x662F;&#x5BF9;&#x5143;&#x7D20;&#x547D;&#x540D;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x5E94;&#x8BE5;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;<strong>&#x90A3;&#x4E48;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x91CD;&#x590D;&#x7684;&#x547D;&#x540D;&#x4F1A;&#x662F;&#x5982;&#x4F55;&#x5462;&#xFF1F;</strong></p>
-<blockquote>
-<p><code>v&lt;-c(1, 2, 3, 4)</code><br><code>names(v)&lt;-c(&apos;a&apos;, &apos;c&apos;, &apos;c&apos;, &apos;d&apos;)</code><br><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;char&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code></p>
-</blockquote>
-<p>&#x7ADF;&#x7136;&#x90FD;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x51FA;&#x9519;&#xFF0C;&#x90A3;&#x4E48;&#x8BBF;&#x95EE;&#x547D;&#x540D;&#x5143;&#x7D20;&#x65F6;&#x6307;&#x5411;&#x7684;&#x5230;&#x5E95;&#x662F;&#x54EA;&#x4E2A;&#x5143;&#x7D20;&#x5462;&#xFF1F;&#x8FD9;&#x4E2A;&#x5F53;&#x8BFE;&#x540E;&#x9898;&#x7559;&#x7ED9;&#x5927;&#x5BB6;&#x5427;&#x3002;&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;<strong>&#x53EF;&#x4EE5;&#x7ED9;&#x4E0D;&#x540C;&#x5143;&#x7D20;&#x8D77;&#x76F8;&#x540C;&#x547D;&#x540D;&#xFF0C;&#x8C8C;&#x4F3C;&#x6709;&#x70B9;&#x5751;&#x554A;</strong>&#x3002;&#x1F633;</p>
-<hr>
-<p>&#x4ECA;&#x5929;&#x5C31;&#x6C34;&#x5230;&#x8FD9;&#x91CC;&#x4E86;&#xFF0C;&#x4E0B;&#x671F;&#x7EE7;&#x7EED;&#x6C34;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;)  Part 1, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-2-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 2, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE; &amp; &#x8BA1;&#x7B97;&#x957F;&#x5EA6;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-3-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 3, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x64CD;&#x4F5C;(&#x7B97;&#x672F;&#x64CD;&#x4F5C;&amp;&#x6392;&#x5E8F;)</a></li>
-<li><a href="https://www.tutorialspoint.com/r/r_vectors.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_vectors.htm</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-list-part-1-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 1, &#x521B;&#x5EFA;&#x5217;&#x8868;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
