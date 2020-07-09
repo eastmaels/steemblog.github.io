@@ -230,6 +230,88 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/code-review-bound-parameter/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmQj7gNr2hX126jWuUbMr43zbnpTp3xFw4aSVPaBjfxokg/how-to-test-bad-smell-code.jpg" alt="Code Review - Bound Parameter 代码审核之限制参数范围">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2017-08-20T09:22:15.000Z">2017-08-20</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    6 minutes read (About 967 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/code-review-bound-parameter/">Code Review - Bound Parameter 代码审核之限制参数范围</a>
+            
+        </h1>
+        <div class="content">
+            <p>There is a piece of bad-smelling code, I happen to read today. The following aims to compute the angle between two line vectors.</p>
+<p>&#x8FD9;&#x4E24;&#x5929;&#x53C8;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x5386;&#x53F2;&#x9057;&#x7559;&#x4E0B;&#x6765;&#x5199;&#x5F97;&#x5F88;&#x7CDF;&#x7CD5;&#x7684;&#x4EE3;&#x7801;&#x3002;&#x8FD9;&#x4E2A;&#x4EE3;&#x7801;&#x5927;&#x6982;&#x662F;&#x6C42;&#x4E24;&#x6761;&#x7EBF;&#x7684;&#x5939;&#x89D2;&#x3002;</p>
+<p><img src="https://steemitimages.com/DQmQj7gNr2hX126jWuUbMr43zbnpTp3xFw4aSVPaBjfxokg/how-to-test-bad-smell-code.jpg" alt="how-to-test-bad-smell-code.jpg"></p>
+<p>This code has been in the code repro for a long time, and it is brought to attention because of a failing <a href="https://helloacm.com/simple-javascript-unit-testing/" target="_blank" rel="noopener">unit test</a>, where the input to the <em>Math.acos</em> function is bigger but very close to 1. <em>Math.acos</em> function returns Nan in this case.</p>
+<p>&#x53D1;&#x73B0;&#x8FD9;&#x4EE3;&#x7801;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x4E00;&#x4E2A;<a href="https://justyy.com/archives/4917" target="_blank" rel="noopener">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</a>&#x4E0D;&#x901A;&#x8FC7;&#xFF0C;DEBUG&#x8FDB;&#x6765; &#x53D1;&#x73B0;&#x662F;&#x56E0;&#x4E3A; Acos &#x51FD;&#x6570;&#x5728;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x5927;&#x4E8E; 1&#x7684;&#x65F6;&#x5019;&#x8FD4;&#x56DE; Nan&#xFF0C;&#x6D6E;&#x70B9;&#x8FD0;&#x7B97;&#x6709;&#x8BEF;&#x5DEE;&#x8FD4;&#x56DE;&#x4E86;&#x7C7B;&#x4F3C; 1.00000012 &#x4E4B;&#x7C7B;&#x7684;&#x5927;&#x4E8E;1&#x4F46;&#x662F;&#x5374;&#x5F88;&#x9760;&#x8FD1;1&#x7684;&#x6570;&#x503C;&#x3002;</p>
+<p>Easy verification in JS:<br>&#x6BD4;&#x5982;JS&#x91CC;&#xFF1A;<br><img src="https://steemitimages.com/DQme13kmGFScZKqRQf34L6JJJagmhNCf3AGje4QpVwjL1HH/image.png" alt=""></p>
+<p>Our &#x2018;final&#x2019; solution is to bound the parameter to the function.<br>&#x6700;&#x540E;&#x9762;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#x662F;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Math.acos(Math.max(Math.min(1, x), -1));</span><br></pre></td></tr></tbody></table></figure>
+<p>It is not elegant, but it works. If the precision is a high priority, we can create a class that stores the parts of the floating number (integer and fraction) using integer type. The integers do not lose precision and we need to implement the arithmetic operations e.g. how to carry over the values.</p>
+<p>&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x628A;&#x53C2;&#x6570;&#x5F3A;&#x5236;&#x89C4;&#x5B9A;&#x5728;-1&#x5230;1&#x671F;&#x95F4;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x5E76;&#x4E0D;&#x4F18;&#x7F8E;&#x3002;&#x5982;&#x679C;&#x7CBE;&#x5EA6;&#x8981;&#x6C42;&#x66F4;&#x4E25;&#x683C;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x7684;&#x7C7B;&#xFF0C;&#x5206;&#x5F00;&#x7528;&#x6574;&#x6570;&#x6765;&#x4FDD;&#x5B58;&#x6574;&#x6570;&#x90E8;&#x5206;&#x548C;&#x5C0F;&#x6570;&#x90E8;&#x5206;&#xFF0C;&#x8FD9;&#x6837;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x52A0;&#x51CF;&#x4E58;&#x9664;&#x7684;&#x8FD0;&#x7B97;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x6574;&#x6570;&#x90E8;&#x5206;&#x53C2;&#x52A0;&#x8FD0;&#x7B97;&#x6CA1;&#x6709;&#x7CBE;&#x5EA6;&#x635F;&#x5931;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x4F1A;&#x6709;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#x3002;&#x4E0D;&#x8FC7;&#x5F97;&#x5C0F;&#x5FC3;&#x5904;&#x7406;&#x50CF;&#x8FDB;&#x4F4D;&#x8FD9;&#x6837;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>We also have the Math.Net library which provides a rich set of library regarding to Math vectors so this is totally <a href="https://helloacm.com/code-review-reinventing-the-wheel/" target="_blank" rel="noopener">re-inventing the wheel</a>, however if this is a sandbox code, you may also consider operator overloading the vector type. The above code is easily error-prone because it is easy to mess up with the array indices.</p>
+<p>&#x6487;&#x5F00;<a href="https://justyy.com/archives/5082" target="_blank" rel="noopener">&#x91CD;&#x65B0;&#x9020;&#x8F6E;&#x5B50;</a>&#x7684;&#x95EE;&#x9898;&#xFF08;.NET &#x6709;&#x50CF; Math.Net&#x7684;&#x5E93;&#x4E86;&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x7528;&#x73B0;&#x6210;&#x7684;&#x5E93;&#x6765;&#x64CD;&#x4F5C;&#x8FD9;&#x4E9B;&#x5411;&#x91CF;&#x3002;&#x5373;&#x4F7F;&#x4F60;&#x4E0D;&#x7528;&#xFF0C;&#x4F60;&#x4E5F;&#x9700;&#x8981;&#x8003;&#x8651;&#x91CD;&#x8F7D;&#x8FD9;&#x4E9B;&#x4E09;&#x7EF4;&#x5411;&#x91CF;&#x7684;&#x52A0;&#x51CF;&#x4E58;&#x9664;&#x8FD0;&#x7B97;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5F88;&#x5BB9;&#x6613;&#x4E0B;&#x6807;&#x7ED9;&#x5F04;&#x9519;&#x4E86;&#x3002;&#x4E0D;&#x597D;&#x7EF4;&#x62A4;&#x3002;</p>
+<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
+<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
+<p>&#x539F;&#x521B; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<p> // &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;&#x82F1;&#x6587;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x7B97;&#x6CD5;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
+<ul>
+<li><a href="https://helloacm.com/code-review-bound-parameter/" target="_blank" rel="noopener">Code Review &#x2013; Bound Parameter</a></li>
+<li><a href="https://justyy.com/archives/5102" target="_blank" rel="noopener">&#x4EE3;&#x7801;&#x5BA1;&#x6838;&#x4E4B;&#x9650;&#x5236;&#x53C2;&#x6570;&#x8303;&#x56F4;</a></li>
+</ul>
+<h1 id="&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts"><a href="#&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts" class="headerlink" title="&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts"></a>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</h1><ul>
+<li><a href="https://steemit.com/cn/@justyy/7d7hyi" target="_blank" rel="noopener">&#x4E2D;&#x5E74;&#x5927;&#x53D4;&#x8FD8;&#x6709;&#x68A6;&#x53EF;&#x4EE5;&#x505A;&#x4E48;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/3stbmm" target="_blank" rel="noopener">&#x8282;&#x6D41;&#x3001;&#x5F00;&#x6E90;&#x3001;&#x6295;&#x8D44;</a></li>
+<li><a href="https://steemit.com/cn/@someone/the-trip-to-prague--by-justyy" target="_blank" rel="noopener">The Trip to Prague &#x6377;&#x514B;&#x5E03;&#x62C9;&#x683C;&#x4E4B;&#x65C5; by @justyy</a></li>
+<li><a href="https://steemit.com/cn/@justyy/sp-sp" target="_blank" rel="noopener">&#x51FA;&#x79DF;&#x4E9B;SP &#x5F53;&#x4E00;&#x56DE;&#x503A;&#x4E3B; - &#x600E;&#x4E48;&#x6837;&#x628A;&#x4F60;&#x591A;&#x4F59;&#x7684;SP&#x79DF;&#x51FA;&#x53BB;&#x6536;&#x70B9;&#x5229;&#x606F;&#xFF1F;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/the-profiler-told-me-i-wrote-some-useless-code-an-example-of-defensive-programming" target="_blank" rel="noopener">The profiler told me I wrote some useless code (An Example of Defensive Programming) &#x6027;&#x80FD;&#x8BC4;&#x4F30;&#x8F6F;&#x4EF6;&#x8BF4;&#x6211;&#x5199;&#x4E86;&#x51E0;&#x884C;&#x65E0;&#x7528;&#x7684;&#x4EE3;&#x7801;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/4z2jif" target="_blank" rel="noopener">&#x6B65;&#x5B50;&#x8FC8;&#x592A;&#x5927;&#x5BB9;&#x6613;&#x626F;&#x5230;&#x86CB;</a></li>
+<li><a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01;</a></li>
+</ul>
+<p><a href="https://justyy.com/gif/steemit.gif" target="_blank" rel="noopener">https://justyy.com/gif/steemit.gif</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/code-review-bound-parameter" target="_blank" rel="noopener">Code Review - Bound Parameter &#x4EE3;&#x7801;&#x5BA1;&#x6838;&#x4E4B;&#x9650;&#x5236;&#x53C2;&#x6570;&#x8303;&#x56F4;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/3stbmm/" class="image is-7by1">
             <img class="thumbnail" src="https://steemitimages.com/DQmbNEAmTwzhcndfDYGKcEamFkdtoLomMF8cH4x7Ltj1p7V/2011-10-06%2016.14.48.jpg" alt="节流、开源、投资">
         </a>
@@ -672,86 +754,6 @@
 <p><a href="https://justyy.com/gif/steemit.gif" target="_blank" rel="noopener">https://justyy.com/gif/steemit.gif</a></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/a-better-voting-strategy-with-back-tracking-algorithm" target="_blank" rel="noopener">A Better Voting Strategy with Back Tracking Algorithm - &#x901A;&#x8FC7;&#x56DE;&#x6EAF;&#x7B97;&#x6CD5;&#x786E;&#x5B9A;&#x66F4;&#x597D;&#x7684;&#x70B9;&#x8D5E;&#x7B56;&#x7565;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/code-review-reinventing-the-wheel/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmVpD6ZeDvJu6HUwjqsfRSxsXgSM4oGbtEH1JW8cFkWAPk/image.png" alt="[Code Review] - Reinventing the Wheel 代码审核之 重新造轮子">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2017-08-17T11:03:48.000Z">2017-08-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 994 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/code-review-reinventing-the-wheel/">[Code Review] - Reinventing the Wheel 代码审核之 重新造轮子</a>
-            
-        </h1>
-        <div class="content">
-            <p>This is a code change that I observe today. It has been in the codebase for a long time, and I find it interesting to talk about it.</p>
-<p>&#x4ECA;&#x5929;&#x5728;&#x770B;&#x4EE3;&#x7801;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#x7684;&#x65F6;&#x5019;&#x53D1;&#x73B0;&#x6709;&#x8FD9;&#x4E48;&#x4E00;&#x5904;&#x6539;&#x52A8;&#xFF0C; &#x867D;&#x7136;&#x8FD9;&#x4E2A;&#x6539;&#x52A8;&#x5DF2;&#x7ECF;&#x5F88;&#x4E45;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x89C9;&#x5F97;&#x6709;&#x5FC5;&#x8981;&#x62FF;&#x51FA;&#x6765;&#x5927;&#x5BB6;&#x8BA8;&#x8BBA;&#x4E00;&#x4E0B;&#xFF1A;</p>
-<p><img src="https://steemitimages.com/DQmVpD6ZeDvJu6HUwjqsfRSxsXgSM4oGbtEH1JW8cFkWAPk/image.png" alt=""></p>
-<p>The <a href="https://helloacm.com/the-one-line-c-linq-implementation-of-linespace-algorithm/" target="_blank" rel="noopener">LINQ</a> is out since .NET 3.5, and all above code is just doing one thing: select the specific types e.g. either <em>LayoutAnt</em> or <em>LayoutDevice</em> from a member list <em>layoutList</em> . And one line of LINQ does this exactly: <strong>OfType&lt;&gt;</strong></p>
-<p>2007&#x5E74; .NET 3.5 &#x4E4B;&#x540E;&#x63A8;&#x51FA;<a href="https://justyy.com/archives/1151" target="_blank" rel="noopener">LINQ</a>&#xFF0C;&#x5176;&#x5B9E;&#x6574;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x662F;&#x5728;&#x505A;&#x4E00;&#x4EF6;&#x4E8B;&#xFF0C;&#x5C31;&#x662F;&#x8FD4;&#x56DE;&#x7C7B;&#x6210;&#x5458; layoutList &#x4E2D;&#x662F; LayoutDevice &#xFF08;&#x540E;&#x9762;&#x6539;&#x6210;LayoutAnt &#xFF09;&#x7684;&#x5217;&#x8868;&#x3002;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x8FD9;&#x901A;&#x8FC7; <a href="https://justyy.com/archives/2396" target="_blank" rel="noopener">C#</a>&#x7684;<a href="https://justyy.com/archives/1071" target="_blank" rel="noopener">LINQ</a>&#x53EA;&#x9700;&#x8981;&#x7528; OfType&lt;LayOutDevice&gt; &#x6216;&#x8005; OfType&lt;LayOutAnt&gt; &#x5373;&#x53EF;&#xFF08;&#x6682;&#x4E14;&#x4E0D;&#x8BF4;&#x6539;&#x52A8;&#x5305;&#x62EC;&#x91CD;&#x6784;&#x7C7B;&#x578B;&#xFF09;</p>
-<p>The left version is OK, but it is just old-school considering the developer who did not get familiar with LINQ. But the right version is worse. It has added a <em>ref</em> List which will be cleared. This is not unit-testing friendly at all.</p>
-<p>&#x5DE6;&#x8FB9;&#x7684;&#x7248;&#x672C;&#x5B9E;&#x9645;&#x4E0A;&#x662F;OK&#x7684;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x5B66;&#x6821;&#x7684;&#x6807;&#x6559;&#x79D1;&#x4E66;&#x7248;&#x672C;&#xFF0C;&#x65E0;&#x53EF;&#x539A;&#x975E;&#xFF0C;&#x4F46;&#x53F3;&#x8FB9;&#x7684;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x5C31;&#x5927;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x56E0;&#x4E3A;&#x53C2;&#x6570;&#x542B;&#x6709;&#x5F15;&#x7528; ref, &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x6BCF;&#x6B21;&#x90FD;&#x628A;&#x5916;&#x9762;&#x4F20;&#x8FDB;&#x7684;&#x53D8;&#x91CF;&#x7ED9;&#x6E05;&#x7A7A;&#x4E86;&#xFF0C;&#x8FD9;&#x79CD;&#x51FD;&#x6570;&#x62FF;&#x6765;<a href="https://justyy.com/archives/1806" target="_blank" rel="noopener">&#x5355;&#x5143;&#x6D4B;&#x8BD5;</a>&#x5E76;&#x4E0D;&#x53CB;&#x597D;&#x3002;</p>
-<p>The private methods are not <a href="https://helloacm.com/simple-javascript-unit-testing/" target="_blank" rel="noopener">unit-test</a> friendly. And one big issue for both methods is:  the member variable <em>layoutList</em> is referenced. If you really have to re-invent the wheel, at least make it a public, static method which takes a readonly <em>layoutList</em> and returns a new copy of List. In this case, the entire function is immutable, and <a href="https://helloacm.com/writing-unit-tests-in-vbscript/" target="_blank" rel="noopener">unit-test</a> friendly.</p>
-<p>&#x5982;&#x679C;&#x4E00;&#x5B9A;&#x8981;&#x91CD;&#x65B0;&#x9020;&#x8F6E;&#x5B50;&#xFF0C;&#x4E24;&#x4E2A;&#x7248;&#x672C;&#x90FD;&#x6709;&#x5C0F;&#x95EE;&#x9898;&#xFF0C;&#x4E00;&#x4E2A;&#x662F; private &#x65B9;&#x6CD5;&#x4E0D;&#x597D;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x90FD;&#x4F7F;&#x7528;&#x4E86;&#x6210;&#x5458;&#x53D8;&#x91CF; layoutList, &#x6700;&#x597D;&#x662F;&#x6539;&#x6210; public static &#x516C;&#x6709;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x4F20;&#x5165; layoutList, &#x7136;&#x540E;&#x50CF;&#x7B2C;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x8FD4;&#x56DE;&#x65B0;&#x7684;List&#x3002;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x4E2A;&#x516C;&#x6709;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x4E0D;&#x4F1A;&#x66F4;&#x6539; (immutable), &#x8F83;&#x5BB9;&#x6613;&#x88AB;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x3002;</p>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit.png" alt=""></p>
-<p>Originally published at <a href="https://steemit.com" target="_blank" rel="noopener">https://steemit.com</a> Thank you for reading my post, feel free to Follow, Upvote, Reply, ReSteem (repost) @justyy which motivates me to create more quality posts.</p>
-<p>&#x539F;&#x521B; <a href="https://Steemit.com" target="_blank" rel="noopener">https://Steemit.com</a> &#x9996;&#x53D1;&#x3002;&#x611F;&#x8C22;&#x9605;&#x8BFB;&#xFF0C;&#x5982;&#x6709;&#x53EF;&#x80FD;&#xFF0C;&#x6B22;&#x8FCE;Follow, Upvote, Reply, ReSteem (repost) @justyy &#x6FC0;&#x52B1;&#x6211;&#x521B;&#x4F5C;&#x66F4;&#x591A;&#x66F4;&#x597D;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<p> // &#x7A0D;&#x540E;&#x540C;&#x6B65;&#x5230;&#x6211;&#x7684;<a href="https://justyy.com" target="_blank" rel="noopener">&#x4E2D;&#x6587;&#x535A;&#x5BA2;</a>&#x548C;<a href="https://helloacm.com" target="_blank" rel="noopener">&#x82F1;&#x6587;&#x7B97;&#x6CD5;</a><a href="https://codingforspeed.com" target="_blank" rel="noopener">&#x535A;&#x5BA2;</a>&#x3002;</p>
-<ul>
-<li><a href="https://helloacm.com/code-review-reinventing-the-wheel/" target="_blank" rel="noopener">Code Review &#x2013; Reinventing the Wheel</a></li>
-<li><a href="https://justyy.com/archives/5082" target="_blank" rel="noopener">&#x4EE3;&#x7801;&#x5BA1;&#x6838;&#x4E4B; &#x91CD;&#x65B0;&#x9020;&#x8F6E;&#x5B50;</a></li>
-</ul>
-<h1 id="&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts"><a href="#&#x8FD1;&#x671F;&#x70ED;&#x8D34;-Recent-Popular-Posts" class="headerlink" title="&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts"></a>&#x8FD1;&#x671F;&#x70ED;&#x8D34; Recent Popular Posts</h1><ul>
-<li><a href="https://steemit.com/cn/@justyy/simple-method-to-insert-math-equations-in-steemit-markdown-editor-steemit-markdown-editor" target="_blank" rel="noopener">Simple Method to Insert Math Equations in SteemIt MarkDown Editor &#x5982;&#x4F55;&#x5728; SteemIt MarkDown Editor &#x91CC;&#x6DFB;&#x52A0;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/7d7hyi" target="_blank" rel="noopener">&#x4E2D;&#x5E74;&#x5927;&#x53D4;&#x8FD8;&#x6709;&#x68A6;&#x53EF;&#x4EE5;&#x505A;&#x4E48;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/the-best-upvoting-strategy-calculator-in-javascript" target="_blank" rel="noopener">The Best Upvoting Strategy Calculator in Javascript - &#x600E;&#x4E48;&#x6837;&#x70B9;&#x8D5E;&#x6536;&#x76CA;&#x6700;&#x9AD8;? &#xFF08;&#x65B0;&#x8001;&#x7528;&#x6237;&#x90FD;&#x6765;&#x770B;&#x770B;&#xFF09;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/steem-api-transfer-history-ifttt-slack-how-to-use-steem-api-transfer-history-and-ifttt-to-sync-to-slack" target="_blank" rel="noopener">How to Use Steem API/transfer-history and IFTTT to sync to Slack? &#x5982;&#x4F55;&#x4F7F;&#x7528;Steem API/transfer-history&#x548C;IFTTT&#x540C;&#x6B65;&#x5230;Slack&#x6D88;&#x606F;? </a></li>
-<li><a href="https://steemit.com/cn/@justyy/steemit-api-transfer-history-api" target="_blank" rel="noopener">SteemIt API/transfer-history &#x6700;&#x7B80;&#x5355;&#x83B7;&#x53D6;&#x5E10;&#x53F7;&#x94B1;&#x5305;&#x8BB0;&#x5F55;&#x7684;API</a></li>
-<li><a href="https://steemit.com/cn/@justyy/200steem-1-sp" target="_blank" rel="noopener">&#x7B2C;&#x4E00;&#x6B21;&#x6253;&#x80BF;&#x8138;&#x5145;&#x80D6;&#x5B50; - &#x82B1;&#x4E86;200STEEM&#x79DF;1&#x4E07;SP&#x56DB;&#x5468;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/api-steemit-account-steemit-account-api" target="_blank" rel="noopener">API steemit/account &#x7B80;&#x5355;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E0B; steemit/account &#x7684; API</a></li>
-<li><a href="https://steemit.com/cn/@justyy/code-review-series-value-not-used" target="_blank" rel="noopener">Code Review Series - Value Not Used [&#x5751;&#x7239;&#x7684;&#x4EE3;&#x7801;] - &#x53D8;&#x91CF;&#x672A;&#x4F7F;&#x7528;</a></li>
-</ul>
-<p><a href="https://justyy.com/gif/steemit.gif" target="_blank" rel="noopener">https://justyy.com/gif/steemit.gif</a></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/code-review-reinventing-the-wheel" target="_blank" rel="noopener">[Code Review] - Reinventing the Wheel &#x4EE3;&#x7801;&#x5BA1;&#x6838;&#x4E4B; &#x91CD;&#x65B0;&#x9020;&#x8F6E;&#x5B50;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         

@@ -230,6 +230,69 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@lemooljiang/ilt5v/" class="image is-7by1">
+            <img class="thumbnail" src="https://www.steemjiang.com:8081/ipfs/QmRWGhfp43xCipJS4HuoAaRkFBZBp9qcMgPyPrtSjuHo8h" alt="IPFS + Nginx提供https  / 网络研习社#55">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-12-26T15:17:06.000Z">2019-12-26</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/steemjiang/">steemjiang</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 295 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/ilt5v/">IPFS + Nginx提供https  / 网络研习社#55</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://www.steemjiang.com:8081/ipfs/QmRWGhfp43xCipJS4HuoAaRkFBZBp9qcMgPyPrtSjuHo8h" alt="ipfs.jpg"></p>
+<p>IPFS&#x53EA;&#x80FD;http&#x4F20;&#x8F93;&#xFF0C;&#x8981;&#x6709;https&#x5219;&#x5FC5;&#x987B;&#x8981;&#x6709;Nginx&#x505A;&#x53CD;&#x5411;&#x4EE3;&#x7406;&#xFF0C;&#x8FD9;&#x4E24;&#x8005;&#x7EC4;&#x5408;&#x624D;&#x521A;&#x521A;&#x597D;&#xFF01;</p>
+<ol>
+<li><p>&#x8BBE;&#x7F6E;IPFS&#x5BF9;&#x5916;&#x63A5;&#x53E3;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//&#x8BBE;&#x7F6E;&#x63A5;&#x53E3;</span><br><span class="line">ipfs config Addresses.Gateway /ip4/0.0.0.0/tcp/8085  //&#x8BBF;&#x95EE;&#x63A5;&#x53E3;</span><br><span class="line">ipfs config Addresses.API /ip4/127.0.0.1/tcp/9005    //&#x4E0A;&#x4F20;&#x63A5;&#x53E3;</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>&#x8BBE;&#x7F6E;Nginx&#x53CD;&#x5411;&#x4EE3;&#x7406;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">server {</span><br><span class="line">	server_name  example.com;	</span><br><span class="line">	location / {</span><br><span class="line">		proxy_pass http://127.0.0.1:8085;		</span><br><span class="line">	}</span><br><span class="line">	error_page   500 502 503 504  /50x.html;</span><br><span class="line">	location = /50x.html {</span><br><span class="line">		root   /usr/share/nginx/html;</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">    listen 8084 ssl; # managed by Certbot</span><br><span class="line">    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem; # managed by Certbot</span><br><span class="line">    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem; # managed by Certbot</span><br><span class="line">    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot</span><br><span class="line">    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">server {</span><br><span class="line">    listen [::]:9004 ssl ipv6only=on; # managed by Certbot</span><br><span class="line">    listen 9004 ssl; # managed by Certbot</span><br><span class="line">    ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem; # managed by Certbot</span><br><span class="line">    ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem; # managed by Certbot</span><br><span class="line">    include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot</span><br><span class="line">    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot</span><br><span class="line"></span><br><span class="line">    server_name  example.com;</span><br><span class="line">    location / {</span><br><span class="line">        proxy_pass http://127.0.0.1:9005;</span><br><span class="line">     }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+</li>
+</ol>
+<p>&#x4E24;&#x8005;&#x5408;&#x58C1;&#xFF0C;&#x6548;&#x679C;&#x6590;&#x7136;&#xFF01;&#x5927;&#x5BB6;&#x4E5F;&#x53EF;&#x4EE5;&#x770B;&#x5230;SteemJiang&#x5728;&#x56FE;&#x7247;&#x4E0A;&#x4F20;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;IPFS&#xFF0C;&#x5E76;&#x4E14;&#x662F;https&#x7684;&#xFF01;&#x597D;&#x597D;&#x8BBE;&#x7F6E;&#x4E0B;&#xFF0C;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x5F97;&#x90FD;&#x4F1A;&#x5F88;&#x987A;&#x5229;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/ilt5v" target="_blank" rel="noopener">&#x2018;IPFS + Nginx&#x63D0;&#x4F9B;https  / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#55&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@lemooljiang/9h03p/" class="image is-7by1">
             <img class="thumbnail" src="https://www.steemjiang.com:8081/ipfs/QmQgLjQnY3BtVLRdMXgWSyPqGqwptCQFQkFAf2vfbha9Cu" alt="SteemJiang加入IPFS网络，并启用新域名！">
         </a>
@@ -512,71 +575,6 @@
 <p>IPFS&#x7684;&#x516C;&#x7F51;&#x8FD8;&#x86EE;&#x7A00;&#x7F3A;&#x7684;&#xFF0C;&#x518D;&#x52A0;&#x4E0A;&#x56FD;&#x5185;&#x7684;&#x73AF;&#x5883;&#x4F1A;&#x5BFC;&#x81F4;&#x7ECF;&#x5E38;&#x8BBF;&#x95EE;&#x4E0D;&#x4E86;&#xFF01;&#x8FD9;&#x4E2A;&#x6CA1;&#x6709;&#x592A;&#x597D;&#x7684;&#x529E;&#x6CD5;&#xFF0C;&#x9664;&#x4E86;&#x81EA;&#x5DF1;&#x5EFA;&#x7F51;&#x5173;&#x4E4B;&#x5916;&#xFF0C;&#x5C31;&#x662F;&#x968F;&#x65F6;&#x67E5;&#x4E0B;&#x54EA;&#x4E9B;&#x7F51;&#x5173;&#x80FD;&#x7528;&#x3002;</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/zfz8l" target="_blank" rel="noopener">&#x2018;IPFS daemon&#x548C;&#x516C;&#x5171;&#x7F51;&#x5173;  / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#54&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/h5dmy/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmP9sBdD5ZoRTFsbjap2Vt2RjqFhkW4dtGLyG3AZr9Nzmm/ipfs3.jpg" alt="上传图片到IPFS网络  / 网络研习社#53">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-12-17T14:04:27.000Z">2019-12-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/steemjiang/">steemjiang</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    3 minutes read (About 381 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/h5dmy/">上传图片到IPFS网络  / 网络研习社#53</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://cdn.steemitimages.com/DQmP9sBdD5ZoRTFsbjap2Vt2RjqFhkW4dtGLyG3AZr9Nzmm/ipfs3.jpg" alt="ipfs"></p>
-<p>&#x5728;&#x4E0A;&#x4E00;&#x7BC7;&#x300A;&#x96F6;&#x4EE3;&#x7801;&#x7528;IPFS&#x505A;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#x300B;&#x4E2D;&#x542F;&#x52A8;&#x4E86;IPFS&#x7F51;&#x7EDC;&#xFF0C;&#x8FD9;&#x65F6;&#x670D;&#x52A1;&#x5668;&#x8FD9;&#x8FB9;&#x5C31;&#x51C6;&#x5907;&#x597D;&#x4E86;&#xFF0C;&#x524D;&#x7AEF;&#x5C31;&#x53EF;&#x4EE5;&#x5411;IPFS&#x7F51;&#x7EDC;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x4E86;&#x3002;</p>
-<p>&#x5173;&#x952E;&#x7684;&#x51FD;&#x6570;&#x53EA;&#x6709;&#x4E00;&#x4E2A;<code>ipfs.add</code>&#xFF0C;&#x524D;&#x7AEF;&#x8BFB;&#x53D6;&#x56FE;&#x7247;&#xFF0C;&#x7528;<code>ipfs.add</code>&#x4E0A;&#x4F20;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#xFF0C;&#x518D;&#x5728;&#x524D;&#x7AEF;&#x5C55;&#x793A;&#x5C31;&#x597D;&#x5570;&#x3002;</p>
-<h3 id="js-ipfs-http-client"><a href="#js-ipfs-http-client" class="headerlink" title="js-ipfs-http-client"></a>js-ipfs-http-client</h3><ol>
-<li>&#x524D;&#x7AEF;&#x548C;IPFS&#x7F51;&#x7EDC;&#x4EA4;&#x4E92;&#x9700;&#x8981;&#x7528;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#x63D2;&#x4EF6;<code>js-ipfs-http-client</code>&#xFF0C;&#x4E00;&#x6761;&#x547D;&#x4EE4;&#x5C31;&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x597D;&#xFF0C;<code>cnpm install ipfs-http-client --save</code></li>
-<li><p>&#x5FC5;&#x8981;&#x7684;&#x8BBE;&#x7F6E;(vue&#x4E2D;&#x5BFC;&#x5165;&#x5305;&#xFF0C;&#x8FDE;&#x63A5;&#x5BA2;&#x6237;&#x7AEF;)</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import ipfsClient from &apos;ipfs-http-client&apos;</span><br><span class="line"></span><br><span class="line">const ipfs = ipfsClient({ host: &apos;localhost&apos;, port: &apos;9000&apos;, protocol: &apos;http&apos; })</span><br></pre></td></tr></tbody></table></figure>
-</li>
-<li><p>&#x524D;&#x7AEF;&#x4EE3;&#x7801;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;label id=&quot;file2&quot;&gt;Choose file to upload&lt;/label&gt;</span><br><span class="line">&lt;input type=&quot;file&quot; ref=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot; multiple=&quot;multiple&quot;/&gt;</span><br><span class="line">&lt;input type=&quot;submit&quot; @click=&quot;upload&quot;&gt;</span><br><span class="line"></span><br><span class="line">methods:{</span><br><span class="line">upload() {</span><br><span class="line">  let that = this</span><br><span class="line">  let saveImageOnIpfs = (reader) =&gt; {</span><br><span class="line">    return new Promise(function(resolve, reject) {</span><br><span class="line">      const buffer = Buffer.from(reader.result)</span><br><span class="line">      that.ipfs.add(buffer).then((response) =&gt; {</span><br><span class="line">        console.log(response)</span><br><span class="line">        resolve(response[0].hash)</span><br><span class="line">      }).catch((err) =&gt; {</span><br><span class="line">        console.error(err)</span><br><span class="line">        reject(err)</span><br><span class="line">      })</span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line"></span><br><span class="line">  let file = this.$refs.file.files[0]</span><br><span class="line">  console.log(123, file)</span><br><span class="line">  let reader = new FileReader()</span><br><span class="line">  reader.readAsArrayBuffer(file)</span><br><span class="line"></span><br><span class="line">  reader.onloadend = function (e) {</span><br><span class="line">    console.log(233, reader)</span><br><span class="line">    saveImageOnIpfs(reader).then((hash) =&gt; {</span><br><span class="line">      console.log(655, hash) </span><br><span class="line">    })</span><br><span class="line">  }</span><br><span class="line"> }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-</li>
-</ol>
-<p>&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x5C31;&#x8FD9;&#x4E48;&#x51E0;&#x884C;&#x4EE3;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x641E;&#x5B9A;&#xFF0C;&#x6BD4;&#x8D77;PHP&#x7B49;&#x6765;&#x8FD8;&#x662F;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x4F18;&#x52BF;&#xFF0C;&#x81F3;&#x5C11;&#x770B;&#x8D77;&#x6765;&#x7B80;&#x5355;&#x3002;&#x518D;&#x8BF4;&#xFF0C;IPFS&#x548C;&#x533A;&#x5757;&#x94FE;&#x8FDE;&#x63A5;&#x7D27;&#x5BC6;&#xFF0C;&#x662F;&#x5929;&#x751F;&#x7684;&#x76DF;&#x53CB;&#xFF0C;&#x6BD4;&#x5982;Steem &#x548C;IPFS&#x548C;&#x7ED3;&#x5408;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x53D1;&#x51FA;&#x4E0D;&#x9519;&#x7684;&#x5E94;&#x7528;&#x6765;&#xFF0C;<a href="https://starnote.github.io" target="_blank" rel="noopener">&#x661F;&#x7A7A;&#x7B14;&#x8BB0;</a>&#x5C31;&#x4E0D;&#x9519;!</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/h5dmy" target="_blank" rel="noopener">&#x2018;&#x4E0A;&#x4F20;&#x56FE;&#x7247;&#x5230;IPFS&#x7F51;&#x7EDC;  / &#x7F51;&#x7EDC;&#x7814;&#x4E60;&#x793E;#53&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
