@@ -230,6 +230,84 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/cointools-update-adding-cryptocompare-source-context-shortcut/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.utopian.io/posts/3366a0e9e103a2c4c974cb61961faadd1098image.png" alt="CoinTools Update: Adding Cryptocompare Source + Context Shortcut">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-04-25T19:53:36.000Z">2018-04-25</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 542 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/cointools-update-adding-cryptocompare-source-context-shortcut/">CoinTools Update: Adding Cryptocompare Source + Context Shortcut</a>
+            
+        </h1>
+        <div class="content">
+            <h2 id="Introduction-to-CoinTools"><a href="#Introduction-to-CoinTools" class="headerlink" title="Introduction to CoinTools"></a>Introduction to CoinTools</h2><p><a href="https://helloacm.com/cointools-update-enhanced-ux-with-cryptocurrency-search-and-showing-changes/" target="_blank" rel="noopener">CoinTools</a> is a powerful, lightweight Chrome Extension for <a href="https://helloacm.com/cointools-update-adding-cryptocompare-source-context-shortcut/" target="_blank" rel="noopener">Cryptocurrency</a> fans! It can be installed via Chrome Webstore:</p>
+<p><a href="https://chrome.google.com/webstore/detail/coin-tools/fmglcggbdcbkpkfapngjobfeakehpcgj" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/coin-tools/fmglcggbdcbkpkfapngjobfeakehpcgj</a></p>
+<p>For Opera browsers, the workaround is to first install <a href="https://addons.opera.com/en/extensions/details/download-chrome-extension-9/" target="_blank" rel="noopener">Chrome Extension Gadget</a>.</p>
+<p>And similarly for Firefox, you can install <a href="https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Store Foxified</a> before you install CoinTools .</p>
+<h2 id="New-Features-of-CoinTools-v0-0-15-1"><a href="#New-Features-of-CoinTools-v0-0-15-1" class="headerlink" title="New Features of CoinTools v0.0.15.1"></a>New Features of CoinTools v0.0.15.1</h2><p><a href="https://github.com/DoctorLai/CoinTools/commit/b67ef5b67bb4b8c2a541e02d1ddc34fef92a1438" target="_blank" rel="noopener">This commit</a> adds the following features:</p>
+<ol>
+<li>Adding Cryptocompare API as a backup source so that it is more robust and supports less popular fiats such as <a href="https://helloacm.com/cryptocurrency-bots-update-adding-ngn-single-fiat-command/" target="_blank" rel="noopener">NGN</a>.</li>
+<li>Add Context Shortcuts for a few useful Cryptocurrency websites.</li>
+</ol>
+<h2 id="Screenshots-of-CoinTools-v0-0-15-1"><a href="#Screenshots-of-CoinTools-v0-0-15-1" class="headerlink" title="Screenshots of CoinTools v0.0.15.1"></a>Screenshots of CoinTools v0.0.15.1</h2><p>Single Fiat Command to Local Currency<br><img src="https://cdn.utopian.io/posts/3366a0e9e103a2c4c974cb61961faadd1098image.png" alt="image.png"></p>
+<p>History Graph from Cryptocompare<br><img src="https://cdn.utopian.io/posts/8169e175a7415506ac1213e549df0cbc9c6bimage.png" alt="image.png"></p>
+<p>Context Shortcuts<br><img src="https://cdn.utopian.io/posts/2a10e3f80b42602191723b514eff9a3c755fimage.png" alt="image.png"></p>
+<h2 id="Robust-Cryptocompare"><a href="#Robust-Cryptocompare" class="headerlink" title="Robust Cryptocompare"></a>Robust Cryptocompare</h2><p>In this version, we have added the cryptocompare source, which is returned as a Javascript Promise.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// getting conversion from cryptocompare</span><br><span class="line">const getPriceCC = (a, b) =&gt; {</span><br><span class="line">    a = a.toUpperCase();</span><br><span class="line">    b = b.toUpperCase();</span><br><span class="line">    let api = &quot;https://min-api.cryptocompare.com/data/price?fsym=&quot; + a + &quot;&amp;tsyms=&quot; + b;</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">        fetch(api, {mode: &apos;cors&apos;})</span><br><span class="line">        .then(validateResponse)</span><br><span class="line">        .then(readResponseAsJSON)</span><br><span class="line">        .then(function(result) {</span><br><span class="line">            if (result[b]) {</span><br><span class="line">                resolve(result[b]);</span><br><span class="line">            } else {</span><br><span class="line">                reject(&quot;invalid pairs: &quot; + a + &quot;, &quot; + b);</span><br><span class="line">            }</span><br><span class="line">        }).catch(function(error) {</span><br><span class="line">            logit(get_text(&quot;request_failed&quot;, &quot;Request failed&quot;) + &apos;: &apos; + api + &quot;: &quot; + error);</span><br><span class="line">            reject(error);</span><br><span class="line">        });</span><br><span class="line">    });    </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>For example, when coinmarketcap fails, the tool will go to cryptocompare:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">// ajax calling API to return the price of USD for coin</span><br><span class="line">const getPriceOfUSD = (coin) =&gt; {</span><br><span class="line">    return new Promise((resolve, reject) =&gt; {</span><br><span class="line">        let api = &quot;https://api.coinmarketcap.com/v1/ticker/&quot; + coin + &apos;/&apos;;</span><br><span class="line">        fetch(api, {mode: &apos;cors&apos;})</span><br><span class="line">        .then(validateResponse)</span><br><span class="line">        .then(readResponseAsJSON)</span><br><span class="line">        .then(function(result) {</span><br><span class="line">            if (result[0].price_usd) {</span><br><span class="line">                resolve(result[0].price_usd);</span><br><span class="line">            } else {</span><br><span class="line">                getPriceCC(coin, &apos;USD&apos;).then((res) =&gt; {</span><br><span class="line">                    resolve(res);</span><br><span class="line">                }).catch(function(error) {</span><br><span class="line">                    reject(error);</span><br><span class="line">                });</span><br><span class="line">            }</span><br><span class="line">        }).catch(function(error) {</span><br><span class="line">            getPriceCC(coin, &apos;USD&apos;).then((res) =&gt; {</span><br><span class="line">                resolve(res);</span><br><span class="line">            }).catch(function(error) {</span><br><span class="line">                logit(get_text(&quot;request_failed&quot;, &quot;Request failed&quot;) + &apos;: &apos; + api + &quot;: &quot; + error);</span><br><span class="line">                reject(error);</span><br><span class="line">            });            </span><br><span class="line">        });</span><br><span class="line">    });</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Technology"><a href="#Technology" class="headerlink" title="Technology"></a>Technology</h2><p>Javascript that runs in the Chrome Browser (ES6)</p>
+<h2 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a>Contribution</h2><p>Fully Opensource: <a href="https://github.com/DoctorLai/CoinTools" target="_blank" rel="noopener">https://github.com/DoctorLai/CoinTools</a><br>Submit a PR or a issue if you found a bug.</p>
+<hr>
+<p>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</p>
+<ol>
+<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here, or</a></li>
+<li>voting me as a <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">proxy</a></li>
+</ol>
+<p>Some of my contributions: <strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools, Bots, APIs and Tutorial</a></strong></p>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/cointools-update-adding-cryptocompare-source-context-shortcut" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/cointools-update-adding-cryptocompare-source-context-shortcut" target="_blank" rel="noopener">CoinTools Update: Adding Cryptocompare Source + Context Shortcut</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-04-25/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-04-25&amp;cn34" alt="【第 贰肆叁 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-04-25)">
         </a>
@@ -2228,85 +2306,6 @@
 <p>Thank you!</p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-04-23" target="_blank" rel="noopener">&#x3010;&#x7B2C; &#x8D30;&#x8086;&#x58F9; &#x671F;&#x3011;Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;CN&#x533A;&#x8C01;&#x5728;POWER DOWN&#xFF1F;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x3011;(2018-04-23)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/steemtools-update-v0-0-12-your-downvotes-wallet-update-top-witnesses-switch-to/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.utopian.io/posts/aca1a4af3dd60ff948a05fc6e16750f5675awallet-update.jpg" alt="SteemTools Update (v0.0.12):  Your Downvotes, Wallet Update, Top Witnesses, Switch To">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-04-22T17:50:54.000Z">2018-04-22</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    4 minutes read (About 536 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/steemtools-update-v0-0-12-your-downvotes-wallet-update-top-witnesses-switch-to/">SteemTools Update (v0.0.12):  Your Downvotes, Wallet Update, Top Witnesses, Switch To</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="Introduction-to-SteemTools-and-Installation"><a href="#Introduction-to-SteemTools-and-Installation" class="headerlink" title="Introduction to SteemTools and Installation"></a>Introduction to SteemTools and Installation</h2><p><a href="https://helloacm.com/steemtools-update-v0-0-12-your-downvotes-wallet-update-top-witnesses-switch-to/" target="_blank" rel="noopener">SteemTools</a> is a Chrome Extension that provides a set of useful tools for the steemians. It can be downloaded via Google Webstore:</p>
-<p><a href="https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/steem-tools/emjfpeecopppojbhkigjjmcahbfahhbn</a></p>
-<p>For Opera browsers, the workaround is to first install <a href="https://addons.opera.com/en/extensions/details/download-chrome-extension-9/" target="_blank" rel="noopener">Chrome Extension Gadget</a>.</p>
-<p>And similarly for Firefox, you can install <a href="https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/" target="_blank" rel="noopener">Chrome Store Foxified</a> before you install SteemTools.</p>
-<h2 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a>Contribution</h2><p>Fully Open Source: <a href="https://github.com/DoctorLai/SteemTools" target="_blank" rel="noopener">https://github.com/DoctorLai/SteemTools</a><br>You can either submit a Pull Request or open a issue (for suggestions and bug reports)</p>
-<h2 id="Technology-Stack"><a href="#Technology-Stack" class="headerlink" title="Technology Stack"></a>Technology Stack</h2><p>Javascript in Chrome Browser</p>
-<h2 id="New-Features-of-v0-0-12"><a href="#New-Features-of-v0-0-12" class="headerlink" title="New Features of v0.0.12"></a>New Features of v0.0.12</h2><p>Commits <a href="https://github.com/DoctorLai/SteemTools/commit/2c3deb2dc82f0c321dcdd3fad2ddeee79a89cb39" target="_blank" rel="noopener">here</a> and <a href="https://github.com/DoctorLai/SteemTools/commit/df2b13c9893ccb898c9fe0781f793fc5d6a7dc30" target="_blank" rel="noopener">here</a></p>
-<ol>
-<li>Exclusive Server API access to avoid API overloading the server.</li>
-<li>Wallet Tool Update: expanding <em>[username]</em> when sending to multiple accounts</li>
-<li>Top Witnesses</li>
-<li>Switch-To Context Menu</li>
-<li>Your Downvotes History (Tab)</li>
-</ol>
-<h2 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h2><p>expanding <em>[username]</em> when <a href="https://helloacm.com/steemtool-v0-0-9-sending-money-to-multiple-addresses/" target="_blank" rel="noopener">sending to multiple accounts</a><br><img src="https://cdn.utopian.io/posts/aca1a4af3dd60ff948a05fc6e16750f5675awallet-update.jpg" alt="wallet-update.jpg"></p>
-<p>top witnesses<br><img src="https://cdn.utopian.io/posts/8d29e3ee7675161a8ae02afd58af187387d5image.png" alt="image.png"></p>
-<p>your downvoting history<br><img src="https://cdn.utopian.io/posts/4ebb50ec19b26a7e41d413d4253d1dc3baf4image.png" alt="image.png"></p>
-<p>now you can easily switch between steem domains in context menu<br><img src="https://cdn.utopian.io/posts/9c528c2c19d610a3a2ad2804ccc68a70fe2dimage.png" alt="image.png"></p>
-<h2 id="How-to-Implement-Switch-To"><a href="#How-to-Implement-Switch-To" class="headerlink" title="How to Implement Switch-To?"></a>How to Implement Switch-To?</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&apos;use strict&apos;;</span><br><span class="line"></span><br><span class="line">chrome.contextMenus.removeAll();</span><br><span class="line"></span><br><span class="line">// all supported steem domains</span><br><span class="line">let steem_websites = [</span><br><span class="line">	&quot;steemit.com&quot;,</span><br><span class="line">	&quot;busy.org&quot;,</span><br><span class="line">	&quot;steemd.com&quot;,</span><br><span class="line">	&quot;utopian.io&quot;</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line">// create parent context menu item</span><br><span class="line">let parent = chrome.contextMenus.create({</span><br><span class="line">	title: &quot;SteemTools - Switch To&quot;,</span><br><span class="line">	contexts: [&apos;all&apos;]</span><br><span class="line">});</span><br><span class="line"></span><br><span class="line">// switch to click and sub menus</span><br><span class="line">let sz = steem_websites.length;</span><br><span class="line">for (let i = 0; i &lt; sz; ++ i) {</span><br><span class="line">	let cur_domain = steem_websites[i];</span><br><span class="line">	let child = chrome.contextMenus.create({</span><br><span class="line">		title: cur_domain, </span><br><span class="line">		parentId: parent, </span><br><span class="line">		onclick: (info, tab) =&gt; {</span><br><span class="line">			let url = tab.url;</span><br><span class="line">			let domain = url.replace(&apos;http://&apos;,&apos;&apos;).replace(&apos;https://&apos;,&apos;&apos;).split(/[/?#]/)[0];</span><br><span class="line">			if (domain) {</span><br><span class="line">				domain = domain.toLowerCase();</span><br><span class="line">				// only redirects when it is steemit domain</span><br><span class="line">				if (steem_websites.includes(domain)) {</span><br><span class="line">					if (domain != cur_domain) {</span><br><span class="line">						url = url.replace(domain, cur_domain);</span><br><span class="line">						chrome.tabs.update(info.tab, {&quot;url&quot;: url});</span><br><span class="line">					}</span><br><span class="line">				}</span><br><span class="line">			}</span><br><span class="line">		}	</span><br><span class="line">	});	</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<p>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</p>
-<ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here, or</a></li>
-<li>voting me as a <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">proxy</a></li>
-</ol>
-<p>Some of my contributions: <strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools, Bots, APIs and Tutorial</a></strong></p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/steemtools-update-v0-0-12-your-downvotes-wallet-update-top-witnesses-switch-to" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/steemtools-update-v0-0-12-your-downvotes-wallet-update-top-witnesses-switch-to" target="_blank" rel="noopener">SteemTools Update (v0.0.12):  Your Downvotes, Wallet Update, Top Witnesses, Switch To</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         

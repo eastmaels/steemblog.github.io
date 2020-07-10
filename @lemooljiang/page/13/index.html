@@ -230,6 +230,64 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@lemooljiang/dmqyf/" class="image is-7by1">
+            <img class="thumbnail" src="/@lemooljiang/1" alt="以太坊中比mapping更便宜的存储方案：事件日志？">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-21T13:29:27.000Z">2020-04-21</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 391 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/dmqyf/">以太坊中比mapping更便宜的存储方案：事件日志？</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="1" alt="logs.jpg"></p>
+<p>&#x5728;&#x6211;&#x7684;&#x524D;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;<a href="https://steemjiang.com/trend/@lemooljiang/qlky8" target="_blank" rel="noopener">&#x300A;&#x4EE5;&#x592A;&#x574A; + IPFS &#x6570;&#x636E;&#x5B58;&#x50A8;&#x53EF;&#x884C;&#x65B9;&#x6848;&#x300B;</a> &#x63D0;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x4EE5;mapping&#x5B58;&#x50A8;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4E3A;&#x4E86;&#x8282;&#x7EA6;gas&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5C06;&#x5185;&#x5BB9;&#x5B58;&#x5728;IPFS&#x4E0A;&#xFF0C;&#x518D;&#x5B58;&#x5165;mapping&#x4E2D;&#x3002;&#x4F46;&#x4ECA;&#x5929;&#x770B;&#x5230;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;<a href="https://learnblockchain.cn/article/880" target="_blank" rel="noopener">&#x300A;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x4E8B;&#x4EF6;&#x5E94;&#x8BE5;&#x8FD9;&#x4E48;&#x7528;&#xFF01;&#x300B;</a> &#x6709;&#x63D0;&#x5230;&#xFF1A;mapping&#x5B58;&#x50A8;&#x5E76;&#x4E0D;&#x662F;&#x6700;&#x4F18;&#x65B9;&#x6848;&#xFF0C;&#x5408;&#x7EA6;&#x4E8B;&#x4EF6;&#x624D;&#x662F;&#xFF01;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity ^0.5.10;</span><br><span class="line"></span><br><span class="line">contract DocumentRegistry {</span><br><span class="line">  event Registered(uint256 hash, address sender);</span><br><span class="line">  </span><br><span class="line">  function register(uint256 hash) public {</span><br><span class="line">    emit Registered(hash, msg.sender);</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x6848;&#x4F8B;&#xFF0C;&#x5927;&#x4F53;&#x660E;&#x767D;&#x5B83;&#x7684;&#x610F;&#x601D;&#x3002;&#x5C31;&#x662F;&#x8BF4;&#xFF1A;<strong>&#x4EFB;&#x4F55;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#x5176;&#x5B9E;&#x5DF2;&#x7ECF;&#x5B58;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E86;&#xFF01;</strong> &#x5982;&#x679C;&#x4F60;&#x53EA;&#x662F;&#x60F3;&#x628A;&#x6570;&#x636E;&#x5B58;&#x5165;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF0C;&#x7528;&#x4E8B;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x5C31;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#xFF0C;&#x800C;&#x65E0;&#x9700;&#x7528;mapping&#x5B58;&#x50A8;&#xFF01;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x66F4;&#x8282;&#x7EA6;gas! &#x5177;&#x4F53;&#x5BF9;&#x6BD4;&#x6570;&#x636E;&#xFF1A;&#x65E5;&#x5FD7;&#x6BCF;&#x4E2A;&#x5B57;&#x8282;&#x82B1;&#x8D39;8&#x4E2A;Gas&#xFF0C;&#x800C;&#x5408;&#x7EA6;&#x5B58;&#x50A8;(mapping)&#x662F;&#x6BCF;32&#x4E2A;&#x5B57;&#x8282;20,000&#x4E2A;Gas!</p>
+<p>&#x55EF;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x6709;&#x65B0;&#x7684;&#x95EE;&#x9898;&#xFF1A;&#x5982;&#x4F55;&#x904D;&#x5386;&#x8BFB;&#x53D6;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x5728;&#x5408;&#x7EA6;&#x4E2D;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8BFB;&#x53D6;&#x5230;&#x7684;&#xFF0C;&#x53EA;&#x80FD;&#x904D;&#x5386;&#x533A;&#x5757;&#x53BB;&#x83B7;&#x53D6;&#xFF1F;what,&#x8FD9;&#x53C8;&#x662F;&#x4EC0;&#x4E48;&#x9B3C;&#xFF1F;&#x597D;&#x5427;&#xFF0C;&#x6587;&#x7AE0;&#x53EA;&#x662F;&#x8BB2;&#x4E86;&#x524D;&#x534A;&#x6BB5;&#xFF0C;&#x81F3;&#x4E8E;&#x5982;&#x4F55;&#x8BFB;&#x53D6;&#x533A;&#x5757;&#x662F;&#x4EC0;&#x4E48;&#x4E5F;&#x6CA1;&#x8C08;&#x554A;&#x3002;&#x6211;&#x53EA;&#x80FD;&#x7559;&#x7740;&#x8FD9;&#x4E2A;&#x5927;&#x95EE;&#x53F7;&#x53BB;google!</p>
+<p>&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x7559;&#x5F85;&#x4E0B;&#x56DE;&#x5206;&#x89E3;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/dmqyf" target="_blank" rel="noopener">&#x2018;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x6BD4;mapping&#x66F4;&#x4FBF;&#x5B9C;&#x7684;&#x5B58;&#x50A8;&#x65B9;&#x6848;&#xFF1A;&#x4E8B;&#x4EF6;&#x65E5;&#x5FD7;&#xFF1F;&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@lemooljiang/qlky8/" class="image is-7by1">
             <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/QmeLf6LbfZVCYFSRBFsVc6CB19t2F98ay91AZSzEt4VUmJ" alt="以太坊 + IPFS 数据存储可行方案">
         </a>
@@ -528,62 +586,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/4k0mb/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/QmUDPVRfY9kUrCjKt4rVMwPRzQ1Y5rJRi4qCLckwa8mfcX" alt="steem节点国内汇总测试">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-11T11:46:27.000Z">2020-04-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 254 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/4k0mb/">steem节点国内汇总测试</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemjiang.com:8081/ipfs/QmUDPVRfY9kUrCjKt4rVMwPRzQ1Y5rJRi4qCLckwa8mfcX" alt="steemjiangapi.jpg"></p>
-<p>&#x628A;steem&#x8282;&#x70B9;&#x90FD;&#x6C47;&#x603B;&#x6D4B;&#x8BD5;&#x4E0B;&#xFF0C;&#x7ED9;&#x6709;&#x9700;&#x8981;&#x7684;&#x670B;&#x53CB;&#x505A;&#x4E2A;&#x53C2;&#x8003;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x505A;dapp&#x5F00;&#x53D1;&#x7684;&#x3002;</p>
-<p>&#x603B;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x4E0D;&#x662F;&#x5F88;&#x6EE1;&#x610F;&#xFF0C;steem&#x8282;&#x70B9;&#x4E3B;&#x8981;&#x5728;&#x7F8E;&#x56FD;&#x548C;&#x5FB7;&#x56FD;&#x7684;&#x673A;&#x623F;&#xFF0C;&#x56FD;&#x5185;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x8FD8;&#x662F;&#x633A;&#x6162;&#x5730;&#xFF0C;&#x5E0C;&#x671B;&#x4EE5;&#x540E;&#x80FD;&#x6709;&#x6240;&#x6539;&#x8FDB;&#x3002;&#x4EE5;&#x4E0B;&#x662F;&#x4E2A;&#x4EBA;&#x6D4B;&#x8BD5;&#xFF08;&#x5728;&#x5E7F;&#x5DDE;&#xFF09;&#xFF0C;&#x6B22;&#x8FCE;&#x8865;&#x5145;&#x66F4;&#x6B63;&#xFF01;</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">https://cn.steems.top           //&#x5E73;&#x5747; = 256ms</span><br><span class="line">https://steemd.privex.io        //&#x5E73;&#x5747; = 269ms</span><br><span class="line">https://steemd.minnowsupportproject.org  //&#x5E73;&#x5747; = 282ms</span><br><span class="line"></span><br><span class="line">https://api.steemjiang.com      //&#x5E73;&#x5747; = 327ms</span><br><span class="line">https://api.steems.top          //&#x5E73;&#x5747; = 337ms</span><br><span class="line">https://api.justyy.com          //&#x5E73;&#x5747; = 317ms</span><br><span class="line">https://api.steem.bts.tw        //&#x5E73;&#x5747; = 321ms</span><br><span class="line"></span><br><span class="line">https://steem.61bts.com         //&#x5E73;&#x5747; = 36ms,&#x524D;&#x7AEF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br><span class="line">https://s2.61bts.com            //&#x5E73;&#x5747; = 159ms,&#x524D;&#x7AEF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br><span class="line">https://steem.bts.tw            //&#x5E73;&#x5747; = 169ms,&#x524D;&#x7AEF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br><span class="line">https://steem-api.urbanpedia.com //&#x5E73;&#x5747; = 174ms,&#x524D;&#x7AEF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br><span class="line">https://api.steemit.com         //&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br><span class="line">https://api.steemitdev.com      //&#x65E0;&#x6CD5;&#x4F7F;&#x7528;</span><br></pre></td></tr></tbody></table></figure>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/4k0mb" target="_blank" rel="noopener">&#x2018;steem&#x8282;&#x70B9;&#x56FD;&#x5185;&#x6C47;&#x603B;&#x6D4B;&#x8BD5;&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -608,7 +610,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@lemooljiang/page/187/">187</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@lemooljiang/page/188/">188</a></li>
             
         </ul>
     </nav>
