@@ -230,6 +230,71 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@lemooljiang/hlqhg/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/Qmc5kuAif6Vd2iMPtYixe43hC7ktACCxczCX6uhjZpYC9N" alt="实现一个买卖合约 / 学习智能合约#11">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-06-06T08:26:18.000Z">2020-06-06</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@lemooljiang/categories/smartcontract/">smartcontract</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 567 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@lemooljiang/hlqhg/">实现一个买卖合约 / 学习智能合约#11</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemjiang.com:8081/ipfs/Qmc5kuAif6Vd2iMPtYixe43hC7ktACCxczCX6uhjZpYC9N" alt="buy.jpg"></p>
+<p><strong>&#x7528;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x6765;&#x5B9E;&#x73B0;&#x4E70;&#x5356;&#x5408;&#x7EA6;&#x662F;&#x518D;&#x6070;&#x5F53;&#x4E0D;&#x8FC7;&#x4E86;&#xFF01;</strong> &#x5B83;&#x662F;&#x5B8C;&#x5168;&#x7684;&#x53BB;&#x4E2D;&#x4ECB;&#x5316;&#x7684;&#x3001;&#x81EA;&#x52A8;&#x6267;&#x884C;&#x7684;&#x5408;&#x7EA6;&#xFF0C;&#x4E5F;&#x662F;&#x5728;&#x4E00;&#x4E9B;&#x60C5;&#x666F;&#x4E0B;&#x53D6;&#x4EE3;&#x652F;&#x4ED8;&#x5B9D;&#x7B49;&#x4E2D;&#x4ECB;&#x7684;&#x597D;&#x529E;&#x6CD5;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity &gt;=0.5.0 &lt;0.7.0;</span><br><span class="line"></span><br><span class="line">contract Purchase {</span><br><span class="line">    uint public value;</span><br><span class="line">    address payable public seller;</span><br><span class="line">    address payable public buyer;</span><br><span class="line"></span><br><span class="line">    enum State { Created, Locked, Release, Finished }</span><br><span class="line">    //&#x5B9A;&#x4E49;&#x5408;&#x7EA6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x521D;&#x59CB;&#x4E3A;Created</span><br><span class="line">    State public state;</span><br><span class="line"></span><br><span class="line">    modifier condition(bool _condition) {</span><br><span class="line">        require(_condition);</span><br><span class="line">        _;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    modifier onlyBuyer() {</span><br><span class="line">        require(msg.sender == buyer);</span><br><span class="line">        _;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    modifier onlySeller() {</span><br><span class="line">        require(msg.sender == seller);</span><br><span class="line">        _;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    modifier inState(State _state) {</span><br><span class="line">        require(state == _state );</span><br><span class="line">        _;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    event Aborted();</span><br><span class="line">    event PurchaseConfirmed();</span><br><span class="line">    event ItemReceived();</span><br><span class="line">    event SellerRefunded();</span><br><span class="line"></span><br><span class="line">    //&#x5356;&#x5BB6;&#x521B;&#x5EFA;&#x5408;&#x7EA6;&#x65F6;&#x9700;&#x63D0;&#x4EA4;&#x7269;&#x54C1;&#x4EF7;&#x683C;&#x7684;&#x53CC;&#x500D;&#x505A;&#x4E3A;&#x62BC;&#x91D1;&#x3002;</span><br><span class="line">    constructor() public payable {</span><br><span class="line">        seller = msg.sender;</span><br><span class="line">        value = msg.value / 2;</span><br><span class="line">        require((2 * value) == msg.value);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    //&#x5356;&#x5BB6;&#x63D0;&#x524D;&#x7EC8;&#x6B62;&#x5408;&#x7EA6;&#xFF0C;&#x540C;&#x65F6;&#x53D6;&#x56DE;&#x62BC;&#x91D1;&#x3002;</span><br><span class="line">    function abort()</span><br><span class="line">        public</span><br><span class="line">        onlySeller</span><br><span class="line">        inState(State.Created)</span><br><span class="line">    {</span><br><span class="line">        emit Aborted();</span><br><span class="line">        state = State.Finished;</span><br><span class="line">        seller.transfer(address(this).balance);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // &#x4E70;&#x5BB6;&#x786E;&#x8BA4;&#x8D2D;&#x4E70;&#xFF0C;&#x63D0;&#x4EA4;&#x4EF7;&#x683C;+&#x62BC;&#x91D1;&#xFF08;&#x53CC;&#x500D;&#x4EF7;&#x683C;&#xFF09;</span><br><span class="line">    function confirmPurchase()</span><br><span class="line">        public</span><br><span class="line">        inState(State.Created)</span><br><span class="line">        condition(msg.value == (2 * value))</span><br><span class="line">        payable</span><br><span class="line">    {</span><br><span class="line">        emit PurchaseConfirmed();</span><br><span class="line">        buyer = msg.sender;</span><br><span class="line">        state = State.Locked;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    // &#x4E70;&#x5BB6;&#x786E;&#x8BA4;&#x6536;&#x5230;&#x5546;&#x54C1;&#xFF0C;&#x53D6;&#x56DE;&#x62BC;&#x91D1;</span><br><span class="line">    function confirmReceived()</span><br><span class="line">        public</span><br><span class="line">        onlyBuyer</span><br><span class="line">        inState(State.Locked)</span><br><span class="line">    {</span><br><span class="line">        emit ItemReceived();</span><br><span class="line">        state = State.Release;</span><br><span class="line">        buyer.transfer(value);</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    //&#x5356;&#x5BB6;&#x786E;&#x8BA4;&#x4EA4;&#x6613;&#x5B8C;&#x6210;&#xFF0C;&#x53D6;&#x56DE;&#x4EF7;&#x683C;+&#x62BC;&#x91D1;&#xFF08;3&#x500D;&#x4EF7;&#x683C;&#xFF09;</span><br><span class="line">    function refundSeller()</span><br><span class="line">        public</span><br><span class="line">        onlySeller</span><br><span class="line">        inState(State.Release)</span><br><span class="line">    {</span><br><span class="line">        emit SellerRefunded();</span><br><span class="line">        state = State.Finished;</span><br><span class="line">        seller.transfer(3 * value);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://steemjiang.com:8081/ipfs/QmQnwsiLnW9hkJKmZEEbwDV5Lg5UQeXznhP7tdavyr4Mv6" alt="buy2.jpg"></p>
+<p>&#x7ED3;&#x548C;&#x4E0A;&#x56FE;&#xFF0C;&#x7A0D;&#x634B;&#x4E00;&#x4E0B;&#x903B;&#x8F91;&#xFF1A;</p>
+<ol>
+<li>&#x7531;&#x5356;&#x5BB6;&#x53D1;&#x8D77;&#x5408;&#x7EA6;&#xFF0C;&#x5C06;2&#x500D;&#x62BC;&#x91D1;&#x6253;&#x5230;&#x5408;&#x7EA6;&#x8D26;&#x6237;&#xFF0C;&#x8868;&#x793A;&#x8981;&#x5356;&#x4E1C;&#x897F;&#x4E86;&#x3002;</li>
+<li>&#x4E70;&#x5BB6;&#x8868;&#x793A;&#x5BF9;&#x5546;&#x54C1;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x4E8E;&#x662F;&#x4E5F;&#x4EA4;&#x7EB3;2&#x500D;&#x7684;&#x91D1;&#x989D;&#xFF08;&#x7269;&#x4EF7;+&#x62BC;&#x91D1;&#xFF09;&#x5230;&#x5408;&#x7EA6;&#x8D26;&#x6237;&#x3002;</li>
+<li>&#x5356;&#x5BB6;&#x5C06;&#x5546;&#x54C1;&#x53D1;&#x9001;&#x7ED9;&#x4E70;&#x5BB6;&#x3002;</li>
+<li>&#x4E70;&#x5BB6;&#x6536;&#x5230;&#x5546;&#x54C1;&#x540E;&#x786E;&#x8BA4;&#xFF0C;&#x62BC;&#x91D1;&#x81EA;&#x52A8;&#x8FD4;&#x8FD8;&#x7ED9;&#x4E70;&#x5BB6;&#x3002;</li>
+<li>&#x5356;&#x5BB6;&#x786E;&#x8BA4;&#x4EA4;&#x6613;&#x5B8C;&#x6210;&#x7EC8;&#x6B62;&#x5408;&#x7EA6;&#xFF0C;&#x540C;&#x65F6;&#x5F97;&#x5230;&#x8D26;&#x6237;&#x7684;&#x4F59;&#x989D;&#xFF08;3A&#xFF09;&#x3002;</li>
+</ol>
+<p>&#x540C;&#x6B64;&#x53EF;&#x89C1;&#xFF0C;&#x7528;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x6765;&#x5B9E;&#x73B0;&#x4E70;&#x5356;&#x662F;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x53BB;&#x4E2D;&#x4ECB;&#x5316;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x57FA;&#x4E8E;&#x4E00;&#x79CD;&#x5185;&#x5728;&#x7684;&#x52A8;&#x529B;&#xFF08;&#x6709;&#x62BC;&#x91D1;&#x7684;&#x5B58;&#x5728;&#xFF09;&#x4E70;&#x5356;&#x53CC;&#x65B9;&#x662F;&#x4F1A;&#x81EA;&#x52A8;&#x5730;&#x53BB;&#x5B8C;&#x6210;&#x5408;&#x7EA6;&#x7684;&#x3002;&#x5982;&#x679C;&#x662F;&#x4E00;&#x4E9B;&#x6570;&#x5B57;&#x8D44;&#x4EA7;&#xFF0C;&#x7528;&#x5B83;&#x6765;&#x4EA4;&#x6613;&#x662F;&#x4E0D;&#x662F;&#x6BD4;&#x5728;&#x6DD8;&#x5B9D;&#x4E0A;&#x66F4;&#x597D;&#x5462;&#xFF1F;&#xFF01;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/hlqhg" target="_blank" rel="noopener">&#x2018;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x4E70;&#x5356;&#x5408;&#x7EA6; / &#x5B66;&#x4E60;&#x667A;&#x80FD;&#x5408;&#x7EA6;#11&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@lemooljiang/briyf/" class="image is-7by1">
             <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/QmYGhYm42dejDwAChYnvBzB5n7LtaKLYX4gaTSRR8iH2PP" alt="学习测试ICO合约 / 学习智能合约#10">
         </a>
@@ -517,63 +582,6 @@
 </ol>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/gjhs4" target="_blank" rel="noopener">&#x2018;&#x8BD5;&#x8BD5;&#x6295;&#x7968;&#x5408;&#x7EA6; / &#x5B66;&#x4E60;&#x667A;&#x80FD;&#x5408;&#x7EA6;#8&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@lemooljiang/n47h6/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemjiang.com:8081/ipfs/QmZpwQTYE3Tjp3xMiEa4BpPMxCrSdR86FvWyqRLR8bXDtD" alt="广州暴雨，水漫金山">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-05-31T13:16:54.000Z">2020-05-31</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@lemooljiang/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 300 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@lemooljiang/n47h6/">广州暴雨，水漫金山</a>
-            
-        </h1>
-        <div class="content">
-            <p><img src="https://steemjiang.com:8081/ipfs/QmZpwQTYE3Tjp3xMiEa4BpPMxCrSdR86FvWyqRLR8bXDtD" alt="subway.jpg"></p>
-<p><strong>&#x597D;&#x50CF;&#x6BCF;&#x5E74;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5E7F;&#x5DDE;&#x90FD;&#x8981;&#x88AB;&#x6DF9;&#x51E0;&#x6B21;&#xFF01;</strong> </p>
-<p>&#x8FD9;&#x51E0;&#x5929;&#x53C8;&#x662F;&#x8FDE;&#x7EED;&#x51E0;&#x573A;&#x66B4;&#x96E8;&#xFF0C;&#x4E0B;&#x5F97;&#x4EBA;&#x662F;&#x5FC3;&#x809D;&#x98A4;&#x554A;&#xFF0C;&#x771F;&#x662F;&#x5927;&#x5230;&#x6CA1;&#x8FB9;&#x4E86;&#x3002;&#x6211;&#x662F;&#x6574;&#x5929;&#x5446;&#x5728;&#x5BB6;&#x90FD;&#x63D0;&#x5FC3;&#x540A;&#x80C6;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;&#x597D;&#x50CF;&#x4E5F;&#x6CA1;&#x4EC0;&#x4E48;&#x503C;&#x5F97;&#x6211;&#x62C5;&#x5FC3;&#x7684;&#x554A;&#x3002;&#x53BB;&#x5E74;&#x6CA1;&#x7559;&#x610F;&#xFF0C;&#x8F66;&#x505C;&#x5728;&#x4F4E;&#x6D3C;&#x5904;&#xFF0C;&#x7ED3;&#x679C;&#x4E2D;&#x62DB;&#x4E86;&#x3002;&#x7ED3;&#x679C;&#x662F;&#x73B0;&#x5728;&#x6BCF;&#x6BCF;&#x8F66;&#x90FD;&#x505C;&#x5728;&#x9AD8;&#x5730;&#xFF0C;&#x5C31;&#x662F;&#x8981;&#x591A;&#x8D70;&#x51E0;&#x6B65;&#x4E86;&#x3002;</p>
-<p>&#x5728;&#x7F51;&#x4E0A;&#x968F;&#x610F;&#x4E00;&#x7FFB;&#xFF0C;&#x53C8;&#x662F;&#x4E00;&#x5806;&#x88AB;&#x6DF9;&#x7684;&#x6D88;&#x606F;&#x3002;&#x5012;&#x4E0D;&#x662F;&#x5E7F;&#x5DDE;&#x6392;&#x6C34;&#x4E0D;&#x7ED9;&#x529B;&#xFF0C;&#x800C;&#x662F;&#x964D;&#x96E8;&#x91CF;&#x7740;&#x5B9E;&#x592A;&#x5927;&#xFF01;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4EB2;&#x8EAB;&#x4F53;&#x4F1A;&#xFF0C;&#x662F;&#x6709;&#x70B9;&#x96BE;&#x7406;&#x89E3;&#x4EC0;&#x4E48;&#x53EB;&#x503E;&#x76C6;&#x5927;&#x96E8;&#xFF01;&#x77ED;&#x77ED;&#x51E0;&#x4E2A;&#x5C0F;&#x65F6;&#x5185;&#x5C31;&#x662F;&#x4E0A;&#x767E;&#x6BEB;&#x7C73;&#x7684;&#x964D;&#x96E8;&#xFF01;&#x4F60;&#x8981;&#x77E5;&#x9053;&#x65B0;&#x7586;&#x5E74;&#x964D;&#x96E8;&#x91CF;&#x4E5F;&#x624D;150&#x6BEB;&#x7C73;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5E7F;&#x5DDE;&#x4E24;&#x5C0F;&#x65F6;&#x7684;&#x96E8;&#x91CF;&#x591F;&#x65B0;&#x7586;&#x4E0B;&#x4E00;&#x5E74;&#x7684;&#xFF01;</p>
-<p>&#x78B0;&#x5230;&#x8FD9;&#x4E9B;&#x4E2A;&#x60C5;&#x51B5;&#x4E5F;&#x6CA1;&#x5565;&#x529E;&#x6CD5;&#x3002;&#x6211;&#x7B49;&#x5403;&#x74DC;&#x7FA4;&#x4F17;&#x4E5F;&#x5C31;&#x662F;&#x8DDF;&#x7740;&#x770B;&#x770B;&#x60C5;&#x51B5;&#xFF0C;&#x591A;&#x591A;&#x7559;&#x610F;&#x3002;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@lemooljiang/n47h6" target="_blank" rel="noopener">&#x2018;&#x5E7F;&#x5DDE;&#x66B4;&#x96E8;&#xFF0C;&#x6C34;&#x6F2B;&#x91D1;&#x5C71;&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
