@@ -230,6 +230,86 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/awk-tutorial-how-often-do-you-generate-a-witness-block-awk/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemitimages.com/DQmRetzutBZxSgDXxNc1WG3FyZjQmc45CSSyp5A1VTdHbfw/image.png" alt="AWK Tutorial: How often do you generate a Witness Block? 使用AWK来看见证人生成块的速度">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-03-09T14:46:39.000Z">2018-03-09</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/steemstem/">steemstem</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 722 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/awk-tutorial-how-often-do-you-generate-a-witness-block-awk/">AWK Tutorial: How often do you generate a Witness Block? 使用AWK来看见证人生成块的速度</a>
+            
+        </h1>
+        <div class="content">
+            <p><img src="https://steemitimages.com/DQmRetzutBZxSgDXxNc1WG3FyZjQmc45CSSyp5A1VTdHbfw/image.png" alt=""></p>
+<p>How many hours/minutes or blocks are there since last time you generate a block as a witness? Today we are going to find out the answer using the LINUX <a href="https://helloacm.com/awk-tutorial-how-often-do-you-generate-a-witness-block-steemit/" target="_blank" rel="noopener">AWK programming</a>.</p>
+<p>First, we know that if you run <code>docker logs [Your Container ID]</code> you will see lots of log messages, such as:</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606238/t0xpcxxqda3rygk5eur4.png" alt="image.png"></p>
+<p>The <code>./run.sh logs</code> prints a tail-ed messages and we can to <code>grep &quot;Generated&quot;</code> to see the list of blocks:</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606293/myj9peicheqzrsneufor.png" alt="image.png"></p>
+<p>So the next thing is to get the 8-th column with prints the block number. Using AWK, we know the 8-th column is stored in $8 and we can use the following Linux command to print the number of blocks since last commit and the hours passed (steemit generates a block every 3 seconds);</p>
+<p><code>NR</code> is the row number in AWK, and <code>substr($8, 2)</code> removes the hash tag.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  cur=substr($8,2);</span><br><span class="line">  if (NR&gt;1){</span><br><span class="line">    print &quot;blocks=&quot;,cur-prev,&quot; hours=&quot;, (cur-prev)*3/3600</span><br><span class="line">  }</span><br><span class="line">  prev=cur;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>The complete command is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs [Replace with your Container ID] | grep &quot;Generated&quot; | awk &apos;{cur=substr($8,2);if (NR&gt;1){print &quot;blocks=&quot;,cur-prev,&quot; hours=&quot;,(cur-prev)*3/3600}prev=cur;}&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606441/ow9edqjofntqenjgd4pv.png" alt="image.png"></p>
+<p>Yeah, I am getting faster and faster&#x2026; Please help me to achieve my aim of producing a block every hour by <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">voting me as a witness</a>. Thanks!</p>
+<p>SteemIt Witness Post: <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">Just another Witness</a></p>
+<hr>
+<p>&#x6BCF;&#x6B21;&#x89C1;&#x8BC1;&#x4EBA;&#x51FA;&#x5757;&#xFF0C;&#x5AB3;&#x5987;&#x603B;&#x6211;&#x8BF4; &#x201C;&#x53C8;&#x751F;&#x4E86;&#x201D;&#x3002; &#x6BCF;&#x6B21;&#x51FA;&#x5757;&#x6211;&#x603B;&#x4F1A;&#x53BB;&#x7B97;&#x4E00;&#x4E0B;&#x79BB;&#x4E0A;&#x6B21;&#x51FA;&#x5757;&#x591A;&#x5C11;&#x65F6;&#x95F4;&#xFF0C;&#x8FD9;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F53;&#x524D;&#x5757;&#x6570;&#x548C;&#x4E0A;&#x6B21;&#x51FA;&#x5757;&#x6570;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>docker logs [&#x5BB9;&#x5668; ID]</code> &#x6765;&#x663E;&#x793A;&#x5F88;&#x591A;&#x5F88;&#x591A;&#x7684;&#x8BB0;&#x5F55;&#xFF1A;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606238/t0xpcxxqda3rygk5eur4.png" alt="image.png"></p>
+<p>&#x6709;&#x4E00;&#x4E2A;&#x811A;&#x672C; <code>./run.sh logs</code>&#x662F;&#x663E;&#x793A;&#x6700;&#x8FD1;&#x51E0;&#x6761;&#x8BB0;&#x5F55; (tail) &#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7BA1;&#x9053; <code>grep &quot;Generated&quot;</code> &#x5217;&#x51FA;&#x51FA;&#x5757;&#x65F6;&#x5019;&#x7684;&#x8BB0;&#x5F55;&#x3002;</p>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606293/myj9peicheqzrsneufor.png" alt="image.png"></p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<a href="https://justyy.com/archives/6108" target="_blank" rel="noopener">AWK</a>&#x6765;&#x5904;&#x7406;&#x6587;&#x672C;&#x4E86;&#xFF0C;&#x6BD4;&#x5982; $8 &#x8FD4;&#x56DE;&#x7B2C;8&#x5217;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x7B97;&#x51FA;&#x6BCF;&#x6B21;&#x51FA;&#x5757;&#x7684;&#x95F4;&#x9694;&#xFF0C;&#x7136;&#x540E;&#x5DF2;&#x77E5;&#x6BCF;3&#x79D2;STEEM&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5757;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x4EEC;&#x5C31;&#x77E5;&#x9053;&#x65F6;&#x95F4;&#x4E86;&#x3002;</p>
+<p><code>NR</code> &#x8868;&#x793A;&#x884C;&#x53F7;&#xFF0C; <code>substr($8, 2)</code> &#x53BB;&#x6389;&#x7B2C;8&#x5217;&#x4E2D;&#x7684; # &#x5B57;&#x7B26;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F97;&#x5230;&#x5757;&#x53F7;&#x3002;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  cur=substr($8,2);</span><br><span class="line">  if (NR&gt;1){ </span><br><span class="line">    print &quot;blocks=&quot;,cur-prev,&quot; hours=&quot;, (cur-prev)*3/3600</span><br><span class="line">  }</span><br><span class="line">  prev=cur;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x5B8C;&#x6574;&#x7684;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker logs [&#x5BB9;&#x5668;ID] | grep &quot;Generated&quot; | awk &apos;{cur=substr($8,2);if (NR&gt;1){print &quot;blocks=&quot;,cur-prev,&quot; hours=&quot;,(cur-prev)*3/3600}prev=cur;}&apos;</span><br></pre></td></tr></tbody></table></figure>
+<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520606441/ow9edqjofntqenjgd4pv.png" alt="image.png"></p>
+<p>&#x6211;&#x7684;&#x76EE;&#x6807;&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x65F6;&#x751F;&#x6210;&#x4E00;&#x5757;&#xFF0C;&#x8BF7;&#x5E2E;&#x52A9;&#x6211;&#x8FBE;&#x6210;&#x8FD9;&#x4E2A;&#x76EE;&#x6807;&#x5427;&#xFF0C; <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">&#x6295;&#x6211;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x611F;&#x8C22;&#xFF01;</a>.</p>
+<p>SteemIt &#x89C1;&#x8BC1;&#x4EBA;&#x8D34;: <a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x6295;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E26;&#x9886;CN&#x793E;&#x533A;&#x4E00;&#x8D77;&#x8131;&#x8D2B;&#x81F4;&#x5BCC;!</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/awk-tutorial-how-often-do-you-generate-a-witness-block-awk" target="_blank" rel="noopener">AWK Tutorial: How often do you generate a Witness Block? &#x4F7F;&#x7528;AWK&#x6765;&#x770B;&#x89C1;&#x8BC1;&#x4EBA;&#x751F;&#x6210;&#x5757;&#x7684;&#x901F;&#x5EA6;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/--daily-cn-updates-cncnpower-downyy2018-03-09/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-03-09&amp;cn34" alt="【第 壹玖陆 期】Daily #CN Updates CN社区【收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过文章】【YY银行股东】(2018-03-09)">
         </a>
@@ -2142,88 +2222,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/3qengr/" class="image is-7by1">
-            <img class="thumbnail" src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520354940/wies2ymqrpb0fwcssw6g.png" alt="真正意义上的鼓励优秀作品 - 优秀被错过文章 有奖励啦！">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-03-06T16:53:54.000Z">2018-03-06</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    6 minutes read (About 918 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/3qengr/">真正意义上的鼓励优秀作品 - 优秀被错过文章 有奖励啦！</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x5927;&#x5BB6;&#x90FD;&#x77E5;&#x9053;&#x6211;&#x7684;&#x65E5;&#x62A5;&#x7B2C;&#x4E00;&#x9879;&#x5C31;&#x662F; &#x300A;&#x90A3;&#x4E9B;&#x4F18;&#x79C0;&#x53EF;&#x80FD;&#x88AB;&#x9519;&#x8FC7;&#x7684;&#x6587;&#x7AE0;&#x300B;&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x8BA4;&#x8BC6;&#x9009;&#x51FA;&#x4E00;&#x4E9B;&#x6BD4;&#x8F83; &#x597D;&#x7684;&#x6587;&#x7AE0; &#x4F46;&#x662F;&#x6536;&#x76CA;&#x5374;&#x6BD4;&#x8F83;&#x4F4E;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x901A;&#x8FC7; @dailychina &#x5929;&#x5929;&#x56DE;&#x590D;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520354940/wies2ymqrpb0fwcssw6g.png" alt="image.png"></p>
-<p>&#x5BF9;&#x4E8E;&#x4F5C;&#x8005;&#x6765;&#x8BF4;&#xFF0C;&#x9664;&#x4E86;&#x5FC3;&#x7406;&#x5F97;&#x5230;&#x8868;&#x626C;&#x4E4B;&#x5916; &#x5E76;&#x6CA1;&#x5565;&#x5375;&#x7528;&#xFF0C;&#x662F;&#x5427;&#x3002;&#x800C;&#x4E14;&#x6709;&#x4E9B;&#x4F5C;&#x8005;&#x7ECF;&#x5E38;&#x4E0A;&#x699C;&#x554A;&#xFF0C;&#x4E8E;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;&#x6708;&#x524D;&#xFF0C;&#x6211;&#x5C31;&#x60F3;&#x7740;&#x5956;&#x52B1;&#x8FD9;&#x4E9B;&#x4F5C;&#x8005;&#xFF0C;&#x6709;&#x60F3;&#x6CD5;&#xFF0C;&#x4F46;&#x4E00;&#x76F4;&#x592A;&#x5FD9;&#xFF0C;&#x4ECA;&#x5929;&#x624D;&#x6709;&#x7A7A;&#x5B9E;&#x73B0;&#x3002;</p>
-<p>&#x5956;&#x52B1;&#x5C31;&#x662F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x56DE;&#x590D; dailychina &#xFF0C;&#x90A3;&#x4E48;&#x5728;24&#x5C0F;&#x65F6;&#x5185;&#xFF0C;&#x8BC4;&#x8BBA;&#x5C31;&#x4F1A;&#x88AB;&#x70B9;&#x8D5E;&#xFF0C;&#x867D;&#x7136;&#x80FD;&#x91CF;&#x4E0D;&#x591A;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x8FD8;&#x662F;&#x5C3D;&#x91CF;&#x6324;&#x51FA;&#x4E00;&#x4E9B;&#x6765;&#x9F13;&#x52B1;&#x8FD9;&#x4E9B;&#x4F18;&#x8D28;&#x4F5C;&#x8005;&#xFF0C;&#x8FD8;&#x662F;&#x90A3;&#x53E5;&#x8BDD;&#xFF0C;&#x5927;&#x5BB6;&#x597D;&#x624D;&#x662F;&#x771F;&#x7684;&#x597D;&#x3002;</p>
-<p><img src="https://res.cloudinary.com/hpiynhbhq/image/upload/v1520355071/h16gqd82o0rtnhv1qpcx.png" alt="image.png"></p>
-<p>&#x968F;&#x7740; &#x6709;&#x6548; SP&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x8FD9;&#x4E9B;<a href="https://justyy.com/archives/5802" target="_blank" rel="noopener">&#x70B9;&#x8D5E;</a>&#x503C;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#xFF0C;&#x5BF9;&#x4E8E;&#x5C0F;&#x9C7C;&#x6765;&#x8BF4;&#x6536;&#x5165;&#x4E5F;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x3002;&#x597D;&#x597D;&#x5199;&#x5427;&#x3002;</p>
-<p>&#x6CE8;&#x610F;&#xFF0C;&#x522B;&#x5237;&#x6C34;&#x6587;&#xFF0C;&#x4E3E;&#x62A5;&#x8BF7; report@justyy.com  &#x6211;&#x5DF2;&#x7ECF;&#x62C9;&#x4E86;&#x5F88;&#x591A;&#x53F7;&#x4E0A;&#x9ED1;&#x540D;&#x5355;&#x4E86;&#x3002;&#x6211;&#x5F88;&#x7ECF;&#x5E38;&#x68C0;&#x67E5;&#x8FD9;&#x4E2A;&#x699C;&#x5355;&#x662F;&#x5426;&#x591F;&#x4F18;&#x79C0;&#xFF0C;&#x5E76;&#x968F;&#x65F6;&#x8C03;&#x6574;&#x53C2;&#x6570;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x9886;&#x8D4F;&#x5931;&#x8D25;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x6211;&#xFF0C;&#x6211;&#x4F1A;&#x4EBA;&#x5DE5;&#x8865;&#x8D4F;&#x3002;</p>
-<p>&#x540C;&#x6B65;&#x5230;&#x535A;&#x6587;: <a href="https://justyy.com/archives/6102" target="_blank" rel="noopener">https://justyy.com/archives/6102</a></p>
-<hr>
-<p><img src="https://justyy.com/wp-content/uploads/2017/07/justyy-steemit-300x200.png" alt=""></p>
-<p>&#x901A;&#x8FC7; <a href="https://helloacm.com/tools/steemit/delegate-form/?delegatee=justyy" target="_blank" rel="noopener">SP &#x4EE3;&#x7406;&#x5DE5;&#x5177; &#x6210;&#x4E3A; YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;</a>&#xFF0C;&#x597D;&#x5904;&#x591A;&#x591A;&#x3002;&#x53EA;&#x8981;&#x4EE3;&#x7406;&#x5927;&#x4E8E;<strong>5 SP</strong>&#x7ED9; @justyy &#x5373;&#x53EF;&#x81EA;&#x52A8;&#x6210;&#x4E3A;YY&#x80A1;&#x4E1C;&#x3002;&#x7528;&#x540C;&#x6837;&#x7684;&#x5DE5;&#x5177;&#x8F93;&#x5165;0&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x9000;&#x51FA;&#x80A1;&#x4E1C;&#x3002;&#x6765;&#x53BB;&#x81EA;&#x7531;&#xFF0C;&#x53D6;&#x6D88;&#x4EE3;&#x7406;&#x540E;&#x7CFB;&#x7EDF;&#x9700;&#x8981;7&#x5929;&#x624D;&#x80FD;&#x5C06;&#x60A8;&#x4EE3;&#x7406;&#x7684;SP&#x9000;&#x56DE;&#x5230;&#x60A8;&#x7684;&#x5E10;&#x53F7;&#x4E0A;&#x3002;&#x53CB;&#x60C5;&#x63D0;&#x793A;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x628A;&#x6240;&#x6709;SP&#x90FD;&#x4EE3;&#x7406;&#x7ED9;&#x94F6;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;&#x4F60;&#x9700;&#x8981;&#x7559;&#x4E00;&#x4E9B;&#x80FD;&#x91CF;&#x53D1;&#x8D34;&#x3002;</p>
-<ul>
-<li><a href="https://helloacm.com/tools/steemit-tools/" target="_blank" rel="noopener">SteemIt &#x6559;&#x7A0B;&#x3001;&#x673A;&#x5668;&#x4EBA;&#x3001;&#x5728;&#x7EBF;&#x5DE5;&#x5177;&#x548C;API&#x63A5;&#x53E3;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/2bwmvk-yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x6709;&#x6761;&#x4EF6;&#x52A0;&#x606F;&#x8BD5;&#x884C;&#x6761;&#x4F8B;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/xi2jn-yy" target="_blank" rel="noopener">&#x5927;&#x5BB6;&#x597D;&#x624D;&#x662F;&#x771F;&#x7684;&#x597D;&#xFF0C;YY&#x94F6;&#x884C;&#x8DB3;&#x7403;&#x961F;&#xFF0C;&#x4F60;&#x8FD8;&#x6709;&#x5565;&#x7406;&#x7531;&#x4E0D;&#x52A0;&#x5165;&#x94F6;&#x884C;&#xFF1F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x5F00;&#x542F;&#x4E92;&#x62B1;&#x5927;&#x817F;&#x6A21;&#x5F0F;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/yy-100-5-sp" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x8FCE;&#x6765;&#x7B2C;100&#x4E2A;&#x80A1;&#x4E1C;&#xFF01;&#x611F;&#x8C22;&#x4E00;&#x8DEF;&#x4E0A;&#x6709;&#x4F60;&#x4EEC;&#xFF01;5 SP&#x5373;&#x53EF;&#x52A0;&#x76DF;&#xFF01;</a></li>
-<li>&#x52A0;&#x5165;&#x516C;&#x4F17;&#x53F7; <strong>justyyuk</strong> &#x5373;&#x53EF;&#x4EE5;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2; <a href="https://justyy.com/archives/5685" target="_blank" rel="noopener">BTC</a>, SBD, STEEM, <a href="https://justyy.com/archives/5657" target="_blank" rel="noopener">YOYOW</a>, LTC, <a href="https://justyy.com/archives/5653" target="_blank" rel="noopener">ETH</a> &#x7B49;&#x865A;&#x62DF;&#x8D27;&#x5E01;&#x7684;&#x4EF7;&#x683C;.<br><img src="https://justyy.com/wp-content/uploads/2018/01/wechat-justyyuk.jpg" alt=""></li>
-</ul>
-<h2 id="&#x731C;&#x60A8;&#x559C;&#x6B22;"><a href="#&#x731C;&#x60A8;&#x559C;&#x6B22;" class="headerlink" title="&#x731C;&#x60A8;&#x559C;&#x6B22;"></a>&#x731C;&#x60A8;&#x559C;&#x6B22;</h2><ul>
-<li><a href="https://steemit.com/cn/@justyy/2bwmvk-yy" target="_blank" rel="noopener">YY &#x94F6;&#x884C;&#x6709;&#x6761;&#x4EF6;&#x52A0;&#x606F;&#x8BD5;&#x884C;&#x6761;&#x4F8B;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/discord" target="_blank" rel="noopener">&#x7528;&#x516C;&#x4F17;&#x53F7;&#x548C; Discord &#x67E5;&#x770B;&#x89C1;&#x8BC1;&#x4EBA;&#x4FE1;&#x606F;</a></li>
-<li><a href="https://steemit.com/steemit/@justyy/discord-p" target="_blank" rel="noopener">Discord &#x548C;&#x516C;&#x4F17;&#x53F7;&#x90FD;&#x542F;&#x7528; &#x5F3A;&#x5927;&#x7684; P&#x547D;&#x4EE4;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/discord-steemit" target="_blank" rel="noopener">The SteemIt Discord Bot!  Discord &#x673A;&#x5668;&#x4EBA; steemit &#x4E0A;&#x7EBF;&#x4E86;&#xFF01;</a></li>
-<li><a href="https://steemit.com/cn/@justyy/discord-cnsteem-discord" target="_blank" rel="noopener">Discord &#x865A;&#x62DF;&#x8D27;&#x5E01;&#x67E5;&#x8BE2;&#x673A;&#x5668;&#x4EBA;&#x4E0A;&#x7EBF;&#x4E86;&#xFF01;</a></li>
-</ul>
-<h2 id="&#x6765;&#x5427;&#xFF0C;&#x6295;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E26;&#x9886;CN&#x793E;&#x533A;&#x4E00;&#x8D77;&#x8131;&#x8D2B;&#x81F4;&#x5BCC;&#xFF01;"><a href="#&#x6765;&#x5427;&#xFF0C;&#x6295;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E26;&#x9886;CN&#x793E;&#x533A;&#x4E00;&#x8D77;&#x8131;&#x8D2B;&#x81F4;&#x5BCC;&#xFF01;" class="headerlink" title="&#x6765;&#x5427;&#xFF0C;&#x6295;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E26;&#x9886;CN&#x793E;&#x533A;&#x4E00;&#x8D77;&#x8131;&#x8D2B;&#x81F4;&#x5BCC;&#xFF01;"></a><a href="https://steemit.com/cn/@justyy/5h6gyv-cn" target="_blank" rel="noopener">&#x6765;&#x5427;&#xFF0C;&#x6295;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E26;&#x9886;CN&#x793E;&#x533A;&#x4E00;&#x8D77;&#x8131;&#x8D2B;&#x81F4;&#x5BCC;&#xFF01;</a></h2><ul>
-<li>&#x901A;&#x8FC7; <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">steemconnect</a> &#x6295;&#x7968;&#x53EA;&#x9700;&#x8981;&#x51E0;&#x5341;&#x79D2; ^_^</li>
-</ul>
-<h2 id="Support-me-and-my-work-as-a-witness-by-voting-for-me-here"><a href="#Support-me-and-my-work-as-a-witness-by-voting-for-me-here" class="headerlink" title="Support me and my work as a witness by voting for me here!"></a>Support me and my work as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by voting for me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here!</a></h2><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/3qengr" target="_blank" rel="noopener">&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x9F13;&#x52B1;&#x4F18;&#x79C0;&#x4F5C;&#x54C1; - &#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x6587;&#x7AE0; &#x6709;&#x5956;&#x52B1;&#x5566;&#xFF01;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -2248,7 +2246,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/292/">292</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/293/">293</a></li>
             
         </ul>
     </nav>
