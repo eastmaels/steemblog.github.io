@@ -37,7 +37,7 @@ https://pools.balancer.exchange/#/pool/0x72Cd8f4504941Bf8c5a21d1Fd83A96499FD71d2
 
 ![](https://cdn.steemitimages.com/DQmW6qEyYWcxHXPjePUnNkfxFGCD81eQvq7g2kgNjEntK5T/image.png)
 
-여기에 풀을 넣는 과정에서
+이 풀에 musd, usdc 넣는 과정에서요.
 
 이더리움 가스비만 5달러 이상 나간거 같아요.
 
