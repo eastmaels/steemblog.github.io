@@ -230,6 +230,76 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/the-python-function-to-retrieve-the-producer-reward-for-witness/" class="image is-7by1">
+            <img class="thumbnail" src="https://steemyy.com/images/vote-for-justyy.jpg" alt="The Python Function to Retrieve the Producer Reward for Witness">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-07-02T19:12:24.000Z">2020-07-02</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/codeonsteem/">codeonsteem</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 331 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/the-python-function-to-retrieve-the-producer-reward-for-witness/">The Python Function to Retrieve the Producer Reward for Witness</a>
+            
+        </h1>
+        <div class="content">
+            <p>As you know, the witness is rewarded for produce a block. The TOP 20 gets to produce the blocks more frequently than the backup witnesses, but the reward for each block is different: currently 484 VESTS for TOP 20 while around 2425 VESTS for others on the <a href="https://helloacm.com/steemjs-programming-what-happens-on-the-steem-blockchain-in-the-last-24-hours/" title="SteemJs Programming: What Happens on the Steem Blockchain in the Last 24 Hours?" target="_blank" rel="noopener">steem blockchain</a>.</p>
+<p>How do we get the reward given a block number? Unfortunately, it is not through the <code>get_block</code> api. Instead, we need to use <code>get_ops_in_block</code> which is provided by <code>account_plugin_history</code></p>
+<blockquote>
+<p>curl -s &#x2013;data &#x2018;{&#x201C;jsonrpc&#x201D;:&#x201D;2.0&#x201D;, &#x201C;method&#x201D;:&#x201D;condenser_api.get_ops_in_block&#x201D;, &#x201C;params&#x201D;:[43880000,true], &#x201C;id&#x201D;:1}&#x2019; <a href="https://api.steemit.com" target="_blank" rel="noopener">https://api.steemit.com</a></p>
+</blockquote>
+<p>This returns like:</p>
+<blockquote>
+<p>{&#x201C;jsonrpc&#x201D;:&#x201D;2.0&#x201D;,&#x201D;result&#x201D;:[{&#x201C;trx_id&#x201D;:&#x201D;0000000000000000000000000000000000000000&#x201D;,&#x201D;block&#x201D;:43880000,&#x201D;trx_in_block&#x201D;:4294967295,&#x201D;op_in_trx&#x201D;:0,&#x201D;virtual_op&#x201D;:1,&#x201D;timestamp&#x201D;:&#x201D;2020-<br>06-01T17:49:18&#x201D;,&#x201D;op&#x201D;:[&#x201C;producer_reward&#x201D;,{&#x201C;producer&#x201D;:&#x201D;hinomaru-jp&#x201D;,&#x201D;vesting_shares&#x201D;:&#x201D;481.663694 VESTS&#x201D;}]}],&#x201D;id&#x201D;:1}</p>
+</blockquote>
+<p>Then, we can wrap it up in a Python function (please note that we need to scan the transactions array and look for the <code>producer_reward</code> ops.</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">def getReward(block):</span><br><span class="line">  data={&quot;jsonrpc&quot;:&quot;2.0&quot;, &quot;method&quot;:&quot;condenser_api.get_ops_in_block&quot;, &quot;params&quot;:[block, True], &quot;id&quot;:1}</span><br><span class="line">  result = requests.post(url=&quot;https://api.steemit.com&quot;, json = data)</span><br><span class="line">  jsonData = result.json()</span><br><span class="line">  for tx in jsonData:</span><br><span class="line">    if tx[&apos;op&apos;][0] == &apos;producer_reward&apos;:</span><br><span class="line">      return tx[&apos;op&apos;][1][&apos;vesting_shares&apos;]</span><br><span class="line">  return None</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+
+<p>Every little helps! I hope this helps!</p>
+<p><strong>Steem On!~</strong></p>
+<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="Reposted to Blog"></a><em><a href="https://helloacm.com/the-python-function-to-retrieve-the-producer-reward-for-witness/" target="_blank" rel="noopener">Reposted to Blog</a></em></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/the-python-function-to-retrieve-the-producer-reward-for-witness" target="_blank" rel="noopener">&#x2018;The Python Function to Retrieve the Producer Reward for Witness&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/some-thoughts-on-the-steem-rpc-node-infrastructure/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQma8xrKGxG7Pb6CoUYCUBsP3BbWx7P1QBNoTe9MvyzN4SD/image.png" alt="Some thoughts on the Steem RPC Node Infrastructure">
         </a>
@@ -552,71 +622,6 @@
 <p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
 <h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/leetcode-biweekly-contest-29" target="_blank" rel="noopener">&#x2018;Leetcode Biweekly Contest 29&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/set-up-health-checks-for-rpc-node-api-justyy-com-using-cloudflare/" class="image is-7by1">
-            <img class="thumbnail" src="https://helloacm.com/wp-content/uploads/2020/06/cloudflare-edit-health-checks.jpg" alt="Set Up  Health Checks for RPC Node api.justyy.com using CloudFlare">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-06-26T17:19:12.000Z">2020-06-26</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/witness-category/">witness-category</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 231 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/set-up-health-checks-for-rpc-node-api-justyy-com-using-cloudflare/">Set Up  Health Checks for RPC Node api.justyy.com using CloudFlare</a>
-            
-        </h1>
-        <div class="content">
-            <p>I want to be notified when my RPC node is down. Thus I use the CloudFlare Health Checks to monitor this for me.</p>
-<p>In the CloudFlare Traffic Tab, you can add a Rule to specify which service/URL you want to monitor</p>
-<p><img src="https://helloacm.com/wp-content/uploads/2020/06/cloudflare-edit-health-checks.jpg" alt=""></p>
-<p>In this case, I ask the cloudflare to look for 200 response code and the &#x201C;OK&#x201D; text in the response text.</p>
-<p>If anything goes wrong, I&#x2019;ll receive the email notifications!</p>
-<p><img src="https://helloacm.com/wp-content/uploads/2020/06/cloudflare-email-notification-for-health-checks.jpg" alt=""></p>
-<hr>
-
-<p>Every little helps! I hope this helps!</p>
-<p><strong>Steem On!~</strong></p>
-<h2 id="Reposted-to-Blog"><a href="#Reposted-to-Blog" class="headerlink" title="Reposted to Blog"></a><em>Reposted to <a href="https://helloacm.com/set-up-website-health-checks-canaries-using-cloudflare/" target="_blank" rel="noopener">Blog</a></em></h2><p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
-<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
-<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
-<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/set-up-health-checks-for-rpc-node-api-justyy-com-using-cloudflare" target="_blank" rel="noopener">&#x2018;Set Up  Health Checks for RPC Node api.justyy.com using CloudFlare&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
