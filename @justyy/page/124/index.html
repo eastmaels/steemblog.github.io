@@ -229,6 +229,85 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-image">
+        <a href="/@justyy/images-with-querystring-parameters-are-incorrectly-interpreted-steemit-condenser/" class="image is-7by1">
+            <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/test/?key=aa" alt="Images with QueryString Parameters are Incorrectly Interpreted (Steemit/Condenser)">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-05-24T00:06:18.000Z">2018-05-24</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 276 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/images-with-querystring-parameters-are-incorrectly-interpreted-steemit-condenser/">Images with QueryString Parameters are Incorrectly Interpreted (Steemit/Condenser)</a>
+            
+        </h1>
+        <div class="content">
+            <h4 id="Project-Information"><a href="#Project-Information" class="headerlink" title="Project Information"></a>Project Information</h4><ul>
+<li>Repository: <a href="https://github.com/steemit/condenser" target="_blank" rel="noopener">https://github.com/steemit/condenser</a></li>
+<li>Project Name: SteemIt UI</li>
+<li>Publisher (if applicable): SteemIt Inc.</li>
+</ul>
+<h4 id="Expected-behavior"><a href="#Expected-behavior" class="headerlink" title="Expected behavior"></a>Expected behavior</h4><p>Images that are with query string parameters should be displayed correctly.</p>
+<h4 id="Actual-behavior"><a href="#Actual-behavior" class="headerlink" title="Actual behavior"></a>Actual behavior</h4><p>Images that are with query string parameters are ignored, and therefore displayed incorrectly or broken.</p>
+<h4 id="How-to-reproduce"><a href="#How-to-reproduce" class="headerlink" title="How to reproduce"></a>How to reproduce</h4><p>I have got two images:</p>
+<ol>
+<li><code>https://uploadbeta.com/api/pictures/random/test/?key=aa</code></li>
+<li><code>https://uploadbeta.com/api/pictures/random/test/</code></li>
+</ol>
+<p>As you can see, the first image URL has a query string,, they are two totally different images.  If you add them to steemit, they will automatically prepended:</p>
+<ol>
+<li><code>https://cdn.steemitimages.com/0x0/https://uploadbeta.com/api/pictures/random/test/?key=aa</code></li>
+<li><code>https://cdn.steemitimages.com/0x0/https://uploadbeta.com/api/pictures/random/test/</code> </li>
+</ol>
+<p>However, The image with query string is shown incorrectly, in fact, it is shown as the second image.</p>
+<p>First Image (with query string parameters )<br><img src="https://uploadbeta.com/api/pictures/random/test/?key=aa" alt=""></p>
+<p>Second Image<br><img src="/https://uploadbeta.com/api/pictures/random/test/" alt=""></p>
+<p><strong>Please note that if you use <a href="https://busy.org/@justyy/images-with-querystring-parameters-are-incorrectly-interpreted-steemit-condenser" target="_blank" rel="noopener">busy.org</a> to read this post, two images are displayed correctly</strong></p>
+<p>This is a critical bug which I think has been introduced lately (regression). I found this bug because I use a API to insert pictures with query parameters but suddenly it doesn&#x2019;t work anymore.</p>
+<ul>
+<li>Browser/App version: Chrome v66</li>
+<li>Operating system: Win 10 64-bit</li>
+</ul>
+<h4 id="GitHub-Account"><a href="#GitHub-Account" class="headerlink" title="GitHub Account"></a>GitHub Account</h4><p><a href="https://github.com/doctorlai" target="_blank" rel="noopener">https://github.com/doctorlai</a></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/images-with-querystring-parameters-are-incorrectly-interpreted-steemit-condenser" target="_blank" rel="noopener">Images with QueryString Parameters are Incorrectly Interpreted (Steemit/Condenser)</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
@@ -2286,72 +2365,6 @@
 <p>Thank you! <strong>Some of My Contributions: <a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tutorials, Robots, Tools and APIs</a></strong></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/--daily-cn-updates-cncnpower-downyy2018-05-21" target="_blank" rel="noopener">&#x3010;&#x7B2C; &#x8D30;&#x9646;&#x7396; &#x671F;&#x3011;Daily #CN Updates CN&#x793E;&#x533A;&#x3010;&#x6536;&#x76CA;&#x6392;&#x884C;&#x699C;&#x3011;&#x3010;CN&#x533A;&#x8C01;&#x5728;POWER DOWN&#xFF1F;&#x3011;&#x3010;&#x4F18;&#x79C0;&#x88AB;&#x9519;&#x8FC7;&#x6587;&#x7AE0;&#x3011;&#x3010;YY&#x94F6;&#x884C;&#x80A1;&#x4E1C;&#x3011;(2018-05-21)</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/daily-quality-cn-posts-selected-and-rewarded-promo-cn/" class="image is-7by1">
-            <img class="thumbnail" src="https://steemitimages.com/DQmcuw5wQdCybjUk9EjzbDqWf2aZYHiKaCptD8SFsX6vKth/image.png" alt="Daily Quality #CN Posts Selected and Rewarded #promo-cn">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-20T10:09:57.000Z">2018-05-20</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/witness-category/">witness-category</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 330 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/daily-quality-cn-posts-selected-and-rewarded-promo-cn/">Daily Quality #CN Posts Selected and Rewarded #promo-cn</a>
-            
-        </h1>
-        <div class="content">
-            <p>One of the biggest problems of steemit is that new users lose interests quickly when they realize soon that they can&#x2019;t really earn  &#x2018;that much&#x2019; just by writing good contents. A few penny per post will soon turn them away because even good contents are nor discovered (few followers) neither promoted to the front-pages.</p>
-<p>I manage a SteemIt CN wechat group and the motivation of #promo-cn (as part of my witness campagins <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">Witness Thread</a>) is to promote steemit in CN community.</p>
-<p>@dailychina selects a few quality posts daily, publish them in @justyy &#x2018;s daily CN post e.g. <a href="https://steemit.com/cn-stats/@justyy/--daily-cn-updates-cncnpower-downyy2018-05-20" target="_blank" rel="noopener">this</a> and rewards them.</p>
-<p><img src="https://steemitimages.com/DQmcuw5wQdCybjUk9EjzbDqWf2aZYHiKaCptD8SFsX6vKth/image.png" alt=""></p>
-<p>The idea is to engage the steemians and reward them when they have good contents. Machine learning algorithms help to generate the list. There is even a blacklist to help improve the list.</p>
-<p>The process has been running for months and really good feedbacks are received. I am so happy to see this actually makes the world a little bit better. ^_^</p>
-<h2 id="If-you-find-this-idea-useful"><a href="#If-you-find-this-idea-useful" class="headerlink" title="If you find this idea useful"></a>If you find this idea useful</h2><p>You can delegate SP to @dailychina via this <a href="https://helloacm.com/tools/steemit/sp-delegate-form/?delegatee=dailychina" target="_blank" rel="noopener">online tool</a> made by myself. ^_^</p>
-<hr>
-<p>Support me and <a href="https://helloacm.com/introducing-steemit-auto-claim-rewards/" target="_blank" rel="noopener">my work</a> as a <a href="https://steemit.com/witness-category/@justyy/justyy-just-another-witness" target="_blank" rel="noopener">witness</a> by</p>
-<ol>
-<li>voting me <a href="https://steemconnect.com/sign/account_witness_vote?approve=1&amp;witness=justyy" target="_blank" rel="noopener">here, or</a></li>
-<li>voting me as a <a href="https://v2.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">proxy</a></li>
-</ol>
-<p>Some of my contributions: <strong><a href="https://helloacm.com/tools/steemit/" target="_blank" rel="noopener">SteemIt Tools, Bots, APIs and Tutorial</a></strong> Thank you!</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/daily-quality-cn-posts-selected-and-rewarded-promo-cn" target="_blank" rel="noopener">Daily Quality #CN Posts Selected and Rewarded #promo-cn</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
