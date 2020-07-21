@@ -230,6 +230,156 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@justyy/introducing-the-witness-voting-tool/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmeCxrSt5Bd5nWnmyXs9abgMfmVT5ao1R5i77p1sXsM4rr/image.png" alt="Introducing the Witness Voting Tool">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-04T13:18:12.000Z">2020-04-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/programming/">programming</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 284 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/introducing-the-witness-voting-tool/">Introducing the Witness Voting Tool</a>
+            
+        </h1>
+        <div class="content">
+            <p>With lots of happening, I am just keen in making mini-tools. Here is another one:</p>
+<p><strong><a href="https://steemyy.com/witness-voting/" target="_blank" rel="noopener">https://steemyy.com/witness-voting/</a></strong></p>
+<p><img src="https://cdn.steemitimages.com/DQmeCxrSt5Bd5nWnmyXs9abgMfmVT5ao1R5i77p1sXsM4rr/image.png" alt="image.png"></p>
+<h2 id="What-you-can-do-in-this-tool"><a href="#What-you-can-do-in-this-tool" class="headerlink" title="What you can do in this tool?"></a>What you can do in this tool?</h2><ol>
+<li>cast a witness vote (approve)</li>
+<li>cast a witness un-vote (unapprove)</li>
+<li>set a proxy</li>
+<li>clear a proxy.</li>
+</ol>
+<p>You can do this by redirect to SteemConnect, or if you prefer, you can broadcast the action via SteemJs - which you will need to enter active key once (pretty safe, as the key will not go anywhere else).</p>
+<p>If you choose the SteemJs method, you will need also your account ID.</p>
+<p>The tool is also available in Chinese: <strong><a href="https://steemyy.com/voting-witness/" target="_blank" rel="noopener">https://steemyy.com/voting-witness/</a></strong></p>
+<p>The Core SteemJs code to broadcast a Witness Vote is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// approve = 1, unapprove = 0</span><br><span class="line">steem.broadcast.accountWitnessVote(ActiveKey, YourAccount, Witness, approve, function(err, result) {</span><br><span class="line">  if (err) {</span><br><span class="line">      log(err);        </span><br><span class="line">  } else {</span><br><span class="line">      log(&quot;Successful!&quot;, result);</span><br><span class="line">  }</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<p>and to broadcast a Witness Proxy is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steem.broadcast.accountWitnessProxy(ActiveKey, YourAccount, WitnessProxy, function(err, result) {</span><br><span class="line">  if (err) {</span><br><span class="line">      log(err);        </span><br><span class="line">  } else {</span><br><span class="line">      log(&quot;Successful!&quot;, result);</span><br><span class="line">  }</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<hr>
+<p>I hope this helps!</p>
+<p><strong>Steem On!~</strong></p>
+<hr>
+<p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/introducing-the-witness-voting-tool" target="_blank" rel="noopener">&#x2018;Introducing the Witness Voting Tool&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@justyy/delegation-tool-upgrade-delegate-via-steemjs/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmcdRdHMnqdHJHCzcc3THHT2w9UB9659emh7jXJ3F4P5Q6/image.png" alt="Delegation Tool Upgrade: Delegate via SteemJs">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-03T19:20:12.000Z">2020-04-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/steem-tools/">steem-tools</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 284 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/delegation-tool-upgrade-delegate-via-steemjs/">Delegation Tool Upgrade: Delegate via SteemJs</a>
+            
+        </h1>
+        <div class="content">
+            <p>Previously, the SP Delegation Tool I developed is only a simple tool that collects data in a simple form and redirects to SteemConnect.</p>
+<p>My friends told me that the SteemConnect is blocked in China, some others told me that the SteemConnect is not user-friendly with too many buttons flowing between pages.</p>
+<p>Thus, I have provided another way to delegate - via SteemJS.</p>
+<p><img src="https://cdn.steemitimages.com/DQmcdRdHMnqdHJHCzcc3THHT2w9UB9659emh7jXJ3F4P5Q6/image.png" alt="image.png"></p>
+<p><strong>Tool: <a href="https://steemyy.com/sp-delegate-form/" target="_blank" rel="noopener">https://steemyy.com/sp-delegate-form/</a></strong><br><strong>Also available in Chinese: <a href="https://steemyy.com/delegate-form/" target="_blank" rel="noopener">https://steemyy.com/delegate-form/</a></strong></p>
+<p>Basically, The Core SteemJs code to broadcast a delegation is:</p>
+<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">steem.broadcast.delegateVestingShares(ActiveKey, delegator, delegatee, amount + &quot; VESTS&quot;, function(err, result) {</span><br><span class="line">  if (err) {</span><br><span class="line">      log(err);        </span><br><span class="line">  } else {</span><br><span class="line">      log(&quot;Successful!&quot;, result);</span><br><span class="line">  }</span><br><span class="line">});</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="How-to-use"><a href="#How-to-use" class="headerlink" title="How to use?"></a>How to use?</h2><ol>
+<li>Enter Delegator ID (Who you are)</li>
+<li>Enter Delegatee ID (Who you want to delegate SP/Vests to?)</li>
+<li>Amount (0 to undelegate)</li>
+<li>Unit (SP or VESTS): if entered SP, it will automatically be converted to VESTS</li>
+<li>Active Key (safe to use it in your browser)</li>
+<li>Click the Button</li>
+<li>Wait for the confirmed message.</li>
+</ol>
+<hr>
+<p>I hope this helps!</p>
+<p><strong>Steem On!~</strong></p>
+<hr>
+<p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""></p>
+<p><br><br><strong>Alternatively, you could <a href="https://steemyy.com/witness-voting/?witness=justyy&amp;action=proxy" target="_blank" rel="noopener">proxy to me</a>  if you are too lazy to vote!</strong></p>
+<p>Also: you can vote me at the tool I made:  <a href="https://steemyy.com/witness-voting/?witness=justyy" target="_blank" rel="noopener">https://steemyy.com/witness-voting/?witness=justyy</a></p>
+<h3 id="Visit-me-at-https-steemyy-com"><a href="#Visit-me-at-https-steemyy-com" class="headerlink" title="Visit me at:  https://steemyy.com"></a>Visit me at:  <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a></h3><hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/delegation-tool-upgrade-delegate-via-steemjs" target="_blank" rel="noopener">&#x2018;Delegation Tool Upgrade: Delegate via SteemJs&#x2019;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@justyy/rpc-nodes-version-detection-using-steemjs/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmeEfkerw5oTwbobUiccPHFPC1XyGrxMCB7Mt3HAUeFjZK/image.png" alt="RPC Nodes Version Detection using SteemJs">
         </a>
@@ -488,137 +638,6 @@
 <p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><a href="https://steemyy.com/images/vote-for-justyy.jpg" target="_blank" rel="noopener">https://steemyy.com/images/vote-for-justyy.jpg</a></p>
 <hr>
 <p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/simple-sp-hp-delegation-tool-for-steem-or-hive-blockchain" target="_blank" rel="noopener">&#x2018;Simple SP/HP Delegation Tool for Steem Blockchain&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/my-full-node-https-api-justyy-com/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZoie5BzBC6PK4d78ApfDig8JaBjPtduWH153VGDawWTn/image.png" alt="My Full Node https://api.justyy.com">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-21T16:35:51.000Z">2020-03-21</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/steemdev/">steemdev</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    a minute read (About 160 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/my-full-node-https-api-justyy-com/">My Full Node https://api.justyy.com</a>
-            
-        </h1>
-        <div class="content">
-            <p>Hey Steemians!</p>
-<p>Thank you for staying at STEEM!</p>
-<p>Here is a Full Node you can use (since the recent fork, many nodes are moving to HIVE):</p>
-<p><a href="https://api.justyy.com" target="_blank" rel="noopener">https://api.justyy.com</a></p>
-<p><img src="https://cdn.steemitimages.com/DQmZoie5BzBC6PK4d78ApfDig8JaBjPtduWH153VGDawWTn/image.png" alt="image.png"></p>
-<p>You can use <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a> to check the health of a few nodes:</p>
-<p><img src="https://cdn.steemitimages.com/DQmSCs9rmaDW1jyhwFrrQDy17s2Q4mHRrtvYQRdBaeuiwLW/image.png" alt="image.png"></p>
-<p>You can use the Online Steem-Js Editor: <a href="https://steemyy.com/steemjs/" target="_blank" rel="noopener">https://steemyy.com/steemjs/</a></p>
-<p><img src="https://cdn.steemitimages.com/DQmfKBbqhA33kL4wDkJw82ELFDHq136EZyf6EYzQcW4VPec/image.png" alt="image.png"></p>
-<p>I hope this helps!</p>
-<p><strong>Steem On!~</strong></p>
-<hr>
-<p>If you like my work, please consider voting for me, thanks!<br><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><a href="https://steemyy.com/images/vote-for-justyy.jpg" target="_blank" rel="noopener">https://steemyy.com/images/vote-for-justyy.jpg</a></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/my-full-node-https-api-justyy-com" target="_blank" rel="noopener">&#x2018;My Full Node https://api.justyy.com&#x2019;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@justyy/query-the-blockchain-for-delegators-tool-upgrade-steem/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmdvpXz3aZdZHQEHSRcgFYvycmpUzabgvrLpRL8nT8KAZ5/image.png" alt="Query the Blockchain for Delegators (Tool Upgrade) - 查询steem帐号代理的工具">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-17T21:27:03.000Z">2020-03-17</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/cn-reader/">cn-reader</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 360 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/query-the-blockchain-for-delegators-tool-upgrade-steem/">Query the Blockchain for Delegators (Tool Upgrade) - 查询steem帐号代理的工具</a>
-            
-        </h1>
-        <div class="content">
-            <p>I have implemented a new tool to query the blockchain for delegators.<br><a href="https://steemyy.com/delegators/" target="_blank" rel="noopener">https://steemyy.com/delegators/</a></p>
-<p><img src="https://cdn.steemitimages.com/DQmdvpXz3aZdZHQEHSRcgFYvycmpUzabgvrLpRL8nT8KAZ5/image.png" alt=""></p>
-<p>It integrates with SteemSQL so that you can pick either way to query the blockchain.</p>
-<p><img src="https://cdn.steemitimages.com/DQmaZWgJk8dZ2BCbNMHa3SMLRrHtAbU7dGYQ1aFJRg2HMZ9/image.png" alt=""></p>
-<ol>
-<li>If you choose <em>Query via SQL</em> it will ask for steemsql to get the list of delegators . However, the server may not be available.</li>
-<li>If you choose <em>Search the Blockchain</em>, it will use SteemJS to query the blockchain. Generally available, but very slow especially if the account has lots of the records - which need to be scanned completely.</li>
-</ol>
-<p>&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014; Chinese Version&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;&#x2014;-<br>steemsql &#x7ECF;&#x5E38;&#x4E0D;&#x597D;&#x7528;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x7ED9;&#x8BE5;&#x5DE5;&#x5177;&#x52A0;&#x5165;&#x4E86; steemjs &#x7248;&#x672C;<br>&#x5DE5;&#x5177;&#x5730;&#x5740;&#xFF1A;<a href="https://steemyy.com/list-of-delegators/" target="_blank" rel="noopener">https://steemyy.com/list-of-delegators/</a></p>
-<p><img src="https://cdn.steemitimages.com/DQmTRV9UKMGGRfK1V9X9f1DzpbDdWWyvGXWvARX3833dd68/image.png" alt=""></p>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x4FDD;&#x7559;&#x7528; steemsql &#x7684;&#x65B9;&#x5F0F;&#x6765;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x7528;&#x7684;&#x8BDD;&#x3002;<br><img src="https://cdn.steemitimages.com/DQmXrxdvxRQ4XWbhVM7AoFPkM6JwMU2YwbHhDCaJKwnGBDZ/image.png" alt=""></p>
-<p><strong>Steem On!~</strong></p>
-<hr>
-<h4 id="justyy-is-the-author-of-https-steemyy-com-and-he-supports-and-promotes-the-CN-community"><a href="#justyy-is-the-author-of-https-steemyy-com-and-he-supports-and-promotes-the-CN-community" class="headerlink" title="@justyy is the author of https://steemyy.com and he supports and promotes the CN community."></a>@justyy is the author of <a href="https://steemyy.com" target="_blank" rel="noopener">https://steemyy.com</a> and he supports and promotes the CN community.</h4><h4 id="Vote-for-My-Witness-&#x652F;&#x6301;&#x884C;&#x957F;&#x5F53;STEEM&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x6BCF;&#x4EBA;&#x53EF;&#x4EE5;&#x6295;30&#x7968;&#x3002;"><a href="#Vote-for-My-Witness-&#x652F;&#x6301;&#x884C;&#x957F;&#x5F53;STEEM&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x6BCF;&#x4EBA;&#x53EF;&#x4EE5;&#x6295;30&#x7968;&#x3002;" class="headerlink" title="Vote for My Witness &#x652F;&#x6301;&#x884C;&#x957F;&#x5F53;STEEM&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x6BCF;&#x4EBA;&#x53EF;&#x4EE5;&#x6295;30&#x7968;&#x3002;"></a>Vote for My Witness &#x652F;&#x6301;&#x884C;&#x957F;&#x5F53;STEEM&#x7684;&#x89C1;&#x8BC1;&#x4EBA;&#xFF0C;&#x6BCF;&#x4EBA;&#x53EF;&#x4EE5;&#x6295;30&#x7968;&#x3002;</h4><p><a href="https://steemit.com/~witnesses" target="_blank" rel="noopener">https://steemit.com/~witnesses</a> type in <strong>justyy</strong> and click <strong><em>VOTE</em></strong><br><img src="https://steemyy.com/images/vote-for-justyy.jpg" alt=""><br>Or <a href="https://steemconnect.com/sign/account-witness-vote?witness=justyy&amp;approve=1" target="_blank" rel="noopener">Vote @justyy via Steemconnect</a> <strong>Thank you!</strong><br>&#x6216;&#x8005; &#x76F4;&#x63A5;&#x8BBE;&#x7F6E;&#x884C;&#x957F;&#x4E3A;&#x89C1;&#x8BC1;&#x4EBA;&#x4EE3;&#x7406;&#x5427; - &#x6295;&#x4E86;&#x884C;&#x957F;&#x5C31;&#x7B49;&#x4E8E;&#x652F;&#x6301;CN&#x533A;&#x7684;&#x6240;&#x6709;&#x89C1;&#x8BC1;&#x4EBA;&#x3002;<br>Or voting me as <a href="https://beta.steemconnect.com/sign/account-witness-proxy?proxy=justyy&amp;approve=1" target="_blank" rel="noopener">a witness proxy</a> - let @justyy represent you.</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/query-the-blockchain-for-delegators-tool-upgrade-steem" target="_blank" rel="noopener">&#x2018;Query the Blockchain for Delegators (Tool Upgrade) - &#x67E5;&#x8BE2;steem&#x5E10;&#x53F7;&#x4EE3;&#x7406;&#x7684;&#x5DE5;&#x5177;&#x2019;</a></p>
 <script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
         </div>
         
