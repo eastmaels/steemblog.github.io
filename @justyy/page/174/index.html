@@ -229,6 +229,88 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-01-15T19:56:39.000Z">2018-01-15</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 477 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@justyy/adding-sponsors-class-to-php-client-of-utopian-api/">Adding Sponsors Class to PHP Client of Utopian API</a>
+            
+        </h1>
+        <div class="content">
+            <p>The project  <a href="https://utopian.io/utopian-io/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">PHP Client of Utopian API</a> wraps the Utopian APIs and yesterday, the sub class <code>Moderators</code> has been added to the project, see <a href="https://utopian.io/utopian-io/@justyy/adding-moderators-class-to-php-client-of-utopian-api" target="_blank" rel="noopener">Adding Moderator Class to PHP Client of Utopian API</a>. Today, <code>Sponsors</code> have been added to the project so it is now very convenient to know, with a few lines of code, for example, the list of sponsors that are also witnesses or who opt-out receiving steem payout.</p>
+<h3 id="PHP-Client-of-Utopian-API"><a href="#PHP-Client-of-Utopian-API" class="headerlink" title="PHP Client of Utopian API"></a>PHP Client of Utopian API</h3><ul>
+<li><p>What is the project about?<br>The project is to wrap the public utopian APIs in PHP Class. I have seen @emrebeyler &#x2018;s <a href="https://utopian.io/utopian-io/@emrebeyler/python-client-of-utopian-api" target="_blank" rel="noopener">contribution on Python client</a>, so I think it is a good idea to provide a <a href="https://helloacm.com/adding-sponsors-class-to-php-client-of-utopian-api/" target="_blank" rel="noopener">PHP implementation</a>.</p>
+</li>
+<li><p>Technology Stack<br>PHP 7.0</p>
+</li>
+<li><p>Roadmap<br>The next release will be adding more unit tests and more other advance API wrappers such as statistics helpers.</p>
+</li>
+<li><p>How to contribute?<br>Github: <a href="https://github.com/DoctorLai/utopian-api-php-client" target="_blank" rel="noopener">https://github.com/DoctorLai/utopian-api-php-client</a></p>
+<ol>
+<li>Fork it!</li>
+<li>Create your feature branch: git checkout -b my-new-feature</li>
+<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
+<li>Push to the branch: git push origin my-new-feature</li>
+<li>Submit a pull request :D</li>
+</ol>
+</li>
+</ul>
+<h1 id="This-Commits"><a href="#This-Commits" class="headerlink" title="This Commits"></a>This Commits</h1><ul>
+<li><a href="https://github.com/DoctorLai/utopian-api-php-client/commits/master/class.sponsors.php" target="_blank" rel="noopener">class.sponsors.php</a></li>
+<li><a href="https://github.com/DoctorLai/utopian-api-php-client/commits/master/tests/sponsors_test.php" target="_blank" rel="noopener">sponsors_tests.php</a></li>
+<li><a href="https://github.com/DoctorLai/utopian-api-php-client/commit/6fc9a85729e66670457bfc8e25a1448bca5c23b1#diff-04c6e90faac2675aa89e2176d2eec7d8" target="_blank" rel="noopener">README.md</a></li>
+</ul>
+<h2 id="Reload-the-Data-Sponsors"><a href="#Reload-the-Data-Sponsors" class="headerlink" title="Reload the Data (Sponsors)"></a>Reload the Data (Sponsors)</h2><p>This will re-fetch the data from Utopian API.<br></p><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sponsors-&gt;Reload();</span><br></pre></td></tr></tbody></table></figure><p></p>
+<h2 id="Raw-Data-Sponsors"><a href="#Raw-Data-Sponsors" class="headerlink" title="Raw Data (Sponsors)"></a>Raw Data (Sponsors)</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$sponsors-&gt;GetRawData();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-a-list-of-Sponsors"><a href="#Get-a-list-of-Sponsors" class="headerlink" title="Get a list of Sponsors"></a>Get a list of Sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print_r($sponsors-&gt;GetList());</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-Number-of-sponsors"><a href="#Get-Total-Number-of-sponsors" class="headerlink" title="Get Total Number of sponsors"></a>Get Total Number of sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;there are &quot; . $sponsors-&gt;GetTotal() . &quot; sponsors.&quot;;</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Find-a-Sponsor"><a href="#Find-a-Sponsor" class="headerlink" title="Find a Sponsor"></a>Find a Sponsor</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ned = $sponsors-&gt;GetSponsor(&apos;ned&apos;);</span><br><span class="line">print_r($ned);</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-Paid-Rewards"><a href="#Get-Total-Paid-Rewards" class="headerlink" title="Get Total Paid Rewards"></a>Get Total Paid Rewards</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total Paid Rewards: &quot; . $sponsors-&gt;GetTotalPaidRewards();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-of-should-receive-rewards"><a href="#Get-Total-of-should-receive-rewards" class="headerlink" title="Get Total of should_receive_rewards"></a>Get Total of should_receive_rewards</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Should Receive Total: &quot; . $sponsors-&gt;GetShouldReceiveRewards();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-Sum-of-total-paid-rewards-steem"><a href="#Get-Total-Sum-of-total-paid-rewards-steem" class="headerlink" title="Get Total Sum of total_paid_rewards_steem"></a>Get Total Sum of total_paid_rewards_steem</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Steem: &quot; . $sponsors-&gt;GetTotalPaidRewardsSteem();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-Vesting-by-all-sponsors"><a href="#Get-Total-Vesting-by-all-sponsors" class="headerlink" title="Get Total Vesting by all sponsors"></a>Get Total Vesting by all sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total Vesting by all sponsors: &quot; . $sponsors-&gt;GetTotalVesting();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-a-list-of-Witnesses"><a href="#Get-a-list-of-Witnesses" class="headerlink" title="Get a list of Witnesses"></a>Get a list of Witnesses</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($sponsors-&gt;GetListOfWitness() as $acc) {</span><br><span class="line">   echo &quot;Witness: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-Total-of-paid-rewards-steem"><a href="#Get-Total-of-paid-rewards-steem" class="headerlink" title="Get Total of paid-rewards-steem"></a>Get Total of paid-rewards-steem</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total Paid Rewards Steem: &quot; . $sponsors-&gt;GetTotalPaidRewardsSteem();</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="Get-a-list-of-Opted-out-sponsors"><a href="#Get-a-list-of-Opted-out-sponsors" class="headerlink" title="Get a list of Opted-out sponsors"></a>Get a list of Opted-out sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($sponsors-&gt;GetListOfOptedOutSponsors() as $acc) {</span><br><span class="line">   echo &quot;Opted_out: &quot; . $acc;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/adding-sponsors-class-to-php-client-of-utopian-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/adding-sponsors-class-to-php-client-of-utopian-api" target="_blank" rel="noopener">Adding Sponsors Class to PHP Client of Utopian API</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-image">
         <a href="/@justyy/daily-cn-updates-cncnpower-downyy2018-01-15/" class="image is-7by1">
             <img class="thumbnail" src="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture&amp;date=2018-01-15&amp;cn34" alt="Daily #CN Updates CN社区【七天收益排行榜】【CN区谁在POWER DOWN？】【优秀被错过的文章】【YY银行股东名单】(2018-01-15)">
@@ -1937,83 +2019,6 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-01-13T17:16:45.000Z">2018-01-13</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@justyy/categories/utopian-io/">utopian-io</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    2 minutes read (About 339 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@justyy/php-client-of-utopian-api/">PHP Client of Utopian API</a>
-            
-        </h1>
-        <div class="content">
-            <h3 id="PHP-Client-of-Utopian-API"><a href="#PHP-Client-of-Utopian-API" class="headerlink" title="PHP Client of Utopian API"></a>PHP Client of Utopian API</h3><ul>
-<li><p>What is the project about?<br>The project is to wrap the public <a href="https://helloacm.com/being-part-of-utopian-moderating-team-is-great-intro-post/" target="_blank" rel="noopener">utopian</a> APIs in PHP Class. I have seen @emrebeyler &#x2018;s <a href="https://utopian.io/utopian-io/@emrebeyler/python-client-of-utopian-api" target="_blank" rel="noopener">contribution on Python client</a>, so I think it is a good idea to provide a PHP implementation.</p>
-</li>
-<li><p>Technology Stack<br><a href="https://codingforspeed.com/performance-comparison-between-php7-0-11-and-php5-6-23-on-two-vps/" target="_blank" rel="noopener">PHP 7.0</a></p>
-</li>
-<li><p>Roadmap<br>The next release will be adding more unit tests and more about moderators in terms of rewards, payout etc.</p>
-</li>
-<li><p>How to contribute?<br>Github: <a href="https://github.com/DoctorLai/utopian-api-php-client" target="_blank" rel="noopener">https://github.com/DoctorLai/utopian-api-php-client</a></p>
-<ol>
-<li>Fork it!</li>
-<li>Create your feature branch: git checkout -b my-new-feature</li>
-<li>Commit your changes: git commit -am &#x2018;Add some feature&#x2019;</li>
-<li>Push to the branch: git push origin my-new-feature</li>
-<li>Submit a pull request :D</li>
-</ol>
-</li>
-</ul>
-<h2 id="Installation-and-Usage"><a href="#Installation-and-Usage" class="headerlink" title="Installation and Usage"></a>Installation and Usage</h2><p>You just need to <code>git clone</code> the project and reference the unit</p>
-<figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">require(&apos;class.utopian.php&apos;);</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Creating-Instance"><a href="#Creating-Instance" class="headerlink" title="Creating Instance"></a>Creating Instance</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$utopian = new Utopian();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Getting-a-list-of-moderators"><a href="#Getting-a-list-of-moderators" class="headerlink" title="Getting a list of moderators"></a>Getting a list of moderators</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$moderators = $utopian-&gt;GetModerators()</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Check-if-account-is-moderator-type"><a href="#Check-if-account-is-moderator-type" class="headerlink" title="Check if account is moderator type"></a>Check if account is moderator type</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsModerator(&apos;justyy&apos;)) echo &quot;Hello, yes!&quot;;</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Check-if-account-is-sponsor-type"><a href="#Check-if-account-is-sponsor-type" class="headerlink" title="Check if account is sponsor type"></a>Check if account is sponsor type</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsSponsor(&apos;justyy&apos;)) echo &quot;Hello, i am sponsor!&quot;;</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-List-of-Sponsors"><a href="#Get-List-of-Sponsors" class="headerlink" title="Get List of Sponsors"></a>Get List of Sponsors</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print_r($utopian-&gt;GetSponsors());</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Approved-posts"><a href="#Get-Approved-posts" class="headerlink" title="Get Approved posts"></a>Get Approved posts</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">foreach ($utopian-&gt;GetPosts() as $post) {</span><br><span class="line">   // do something about $post;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-a-list-of-Hidden-Posts"><a href="#Get-a-list-of-Hidden-Posts" class="headerlink" title="Get a list of Hidden Posts"></a>Get a list of Hidden Posts</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$flagged_posts = $utopian-&gt;GetPosts(array(&quot;status&quot; =&gt; &quot;flagged&quot;));</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-count-of-approved-contribution"><a href="#Get-count-of-approved-contribution" class="headerlink" title="Get count of approved contribution"></a>Get count of approved contribution</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;Total approved: &quot; . $utopian-&gt;GetCount();</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Get-Post-detail"><a href="#Get-Post-detail" class="headerlink" title="Get Post detail"></a>Get Post detail</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var_dump($utopian-&gt;GetPost(&apos;justyy&apos;, &apos;string-contains-test-cannot-be-added-to-the-post&apos;));</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Check-if-bot-is-voting"><a href="#Check-if-bot-is-voting" class="headerlink" title="Check if bot is voting"></a>Check if bot is voting</h2><figure class="highlight plain hljs"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if ($utopian-&gt;IsBotVoting()) {</span><br><span class="line"> // ok write a post</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="Unit-Tests"><a href="#Unit-Tests" class="headerlink" title="Unit Tests"></a>Unit Tests</h2><p>The unit tests framework is <a href="https://helloacm.com/how-to-unit-test-url-connectivity-via-phpunit/" target="_blank" rel="noopener">phpunit</a> and you can run tests via command <code>phpunit</code></p>
-<p><br></p><hr><em>Posted on <a href="https://utopian.io/utopian-io/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">Utopian.io -  Rewarding Open Source Contributors</a></em><hr><p></p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@justyy/php-client-of-utopian-api" target="_blank" rel="noopener">PHP Client of Utopian API</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
@@ -2038,7 +2043,7 @@
             
             <li><span class="pagination-ellipsis has-text-black-ter">&hellip;</span></li>
             
-            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/294/">294</a></li>
+            <li><a class="pagination-link has-text-black-ter" href="/@justyy/page/295/">295</a></li>
             
         </ul>
     </nav>
