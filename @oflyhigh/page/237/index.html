@@ -230,6 +230,181 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/@oflyhigh/r-matrices-part-2-and-and/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：Matrices(矩阵) Part 2，矩阵访问方式&amp;矩阵操作&amp;进阶操作">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-06-04T00:52:00.000Z">2018-06-04</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    8 minutes read (About 1146 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/r-matrices-part-2-and-and/">继续学R：Matrices(矩阵) Part 2，矩阵访问方式&amp;矩阵操作&amp;进阶操作</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x5728;<a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;</a>&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86;&#x77E9;&#x9635;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x547D;&#x540D;&#x884C;&#x5217;&#xFF0C;&#x4EE5;&#x53CA;&#x6309;&#x4E0B;&#x6807;&#x4EE5;&#x53CA;&#x6309;&#x547D;&#x540D;&#x8BBF;&#x95EE;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
+<h1 id="&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;"><a href="#&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;" class="headerlink" title="&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;"></a>&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x7684;&#x6DF1;&#x5165;&#x63A2;&#x7D22;</h1><p>&#x5C3D;&#x7BA1;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#x77E9;&#x9635;&#x7684;&#x6309;&#x4E0B;&#x6807;&#x548C;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x8BB0;&#x5F97;&#x5B66;&#x4E60;&#x5217;&#x8868;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&#x624D;&#x53EB;&#x4E30;&#x5BCC;&#x5462;&#xFF01;&#x6BD4;&#x5982;&#x8BF4;&#xFF1A;</p>
+<blockquote>
+<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(mylist[2])</code><br><code>print(mylist[c(1,2)])</code><br><code>print(mylist[c(TRUE, FALSE, TRUE, FALSE)])</code><br><code>print(mylist[c(-1,-2)])</code></p>
+</blockquote>
+<p>&#x90A3;&#x4E48;&#x4E0D;&#x96BE;&#x7531;&#x6B64;&#x7591;&#x95EE;&#xFF0C;&#x77E9;&#x9635;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x5982;&#x6B64;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x6765;&#x8BD5;&#x8BD5;&#x770B;&#x5427;&#xFF1A;</p>
+<blockquote>
+<p><code>m&lt;-matrix(c(1:12), nrow=3, byrow=TRUE, dimnames=list(c(&apos;r1&apos;, &apos;r2&apos;, &apos;r3&apos;), c(&apos;c1&apos;, &apos;c2&apos;, &apos;c3&apos;, &apos;c4&apos;)))</code><br><code>print(m)</code><br><code>print(m[1, 2])  # &#x8BBF;&#x95EE;&#x7B2C;&#x4E00;&#x884C;&#x7B2C;&#x4E8C;&#x5217;&#x4E0A;&#x7684;&#x5143;&#x7D20;</code><br><code>print(m[c(1,2),c(1,2)])  # &#x8BBF;&#x95EE;&#x7B2C;&#x4E00;&#x884C;&#x548C;&#x7B2C;&#x4E8C;&#x884C;&#x4E0A;&#x7B2C;&#x4E00;&#x5217;&#x548C;&#x7B2C;&#x4E8C;&#x5217;&#x5143;&#x7D20;</code><br><code>print(m[c(TRUE, TRUE, FALSE),c(TRUE, TRUE, FALSE, TRUE)]) # &#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x5217;&#xFF0C;&#x663E;&#x793A;&#x5176;&#x4F59;&#x5185;&#x5BB9;</code><br><code>print(m[-3, -3])  # &#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x884C;&#xFF0C;&#x5173;&#x95ED;&#x7B2C;&#x4E09;&#x5217;&#xFF0C;&#x663E;&#x793A;&#x5176;&#x4F59;&#x5185;&#x5BB9;</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmdUqKeL9Nq8ZcDz6H9yrsaGQpHnc8WQvk8SXKfh7atQWb/image.png" alt=""></p>
+<h1 id="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;"><a href="#&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;" class="headerlink" title="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;"></a>&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;</h1><p><a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">R - Matrices</a>&#x4E00;&#x6587;&#x4E2D;&#xFF0C;&#x4ECB;&#x7ECD;&#x4E86;Matrices(&#x77E9;&#x9635;) &#x7684;&#x52A0;&#x51CF;&#x4E58;&#x9664;&#xFF08;<code>+&#x3001;-&#x3001;x&#x3001;/</code>)&#x8FD0;&#x7B97;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x56DB;&#x5219;&#x8FD0;&#x7B97;&#x3002;<a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">R - Matrices</a>&#x8BF4;&#x8FDB;&#x884C;&#x8FD9;&#x4E9B;&#x8FD0;&#x7B97;&#x7684;&#x4E24;&#x4E2A;&#x77E9;&#x9635;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x76F8;&#x540C;&#x884C;&#x6570;&#x548C;&#x5217;&#x6570;</p>
+<blockquote>
+<p>The dimensions (number of rows and columns) should be same for the matrices involved in the operation.</p>
+</blockquote>
+<p>&#x5982;&#x679C;&#x884C;&#x6570;&#x5217;&#x6570;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x65F6;&#x4F1A;&#x63D0;&#x793A;&#x5982;&#x4E0B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<blockquote>
+<p>Error in m1 + m2 : non-conformable arrays</p>
+</blockquote>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x89C4;&#x89C4;&#x77E9;&#x77E9;&#x7684;&#x64CD;&#x4F5C;&#x4E00;&#x4E0B;&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<p><code>m1&lt;-matrix(c(1:12), nrow=3, byrow=TRUE)</code><br><code>m2&lt;-matrix(c(1:12), nrow=3, byrow=FALSE)</code><br><code>print(m1)</code><br><code>print(m2)</code><br><code>print(m1+m2)</code><br><code>print(m1-m2)</code><br><code>print(m1*m2)</code><br><code>print(m1/m2)</code></p>
+</blockquote>
+<p><img src="https://cdn.steemitimages.com/DQmUcP9ZaGfNxxdxhHZ8pD2gJivn2ABdvGozLdGHzymGchn/image.png" alt=""></p>
+<h1 id="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;-&#x8FDB;&#x9636;"><a href="#&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;-&#x8FDB;&#x9636;" class="headerlink" title="&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;(&#x8FDB;&#x9636;)"></a>&#x77E9;&#x9635;&#x7684;&#x64CD;&#x4F5C;(&#x8FDB;&#x9636;)</h1><p>&#x6709;&#x670B;&#x53CB;&#x5728;&#x6211;<a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x4E4B;&#x524D;&#x7684;&#x5E16;&#x5B50;</a>&#x91CC;&#x56DE;&#x590D;&#xFF0C;&#x8BF4;R&#x7684;&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#x548C;&#x6570;&#x5B66;&#x4E2D;&#x77E9;&#x9635;&#x7684;&#x4E58;&#x6CD5;&#x6709;&#x4E9B;&#x4E0D;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x6211;&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#xFF0C;&#x7C7B;&#x4F3C;&#x6211;&#x4EEC;&#x672C;&#x6587;&#x4E2D;&#x4ECB;&#x7ECD;&#x7684;&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#xFF0C;&#x628A;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x76F8;&#x4E58;&#xFF0C;&#x5176;&#x5B9E;&#x5C5E;&#x4E8E;<strong><code>hadamard product&#xFF08;&#x54C8;&#x8FBE;&#x739B;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x4E0E;&#x4E4B;&#x76F8;&#x5BF9;&#x7684;&#x8FD8;&#x6709;<strong><code>kronecker product&#xFF08;&#x514B;&#x7F57;&#x5185;&#x514B;&#x79EF;&#xFF0C;&#x4E5F;&#x53EB;&#x76F4;&#x79EF;&#x6216;&#x5F20;&#x91CF;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x8FD8;&#x6709;<strong><code>matmul product&#xFF08;&#x4E00;&#x822C;&#x77E9;&#x9635;&#x4E58;&#x79EF;&#xFF09;</code></strong>&#xFF0C;&#x4E0D;&#x8FC7;&#x5177;&#x4F53;&#x90FD;&#x662F;&#x548B;&#x56DE;&#x4E8B;&#xFF0C;&#x6211;&#x662F;&#x641E;&#x4E0D;&#x61C2;&#x4E86;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x81EA;&#x5DF1;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#x5427;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;R&#x80AF;&#x5B9A;&#x4E0D;&#x6B62;&#x7B80;&#x5355;&#x5730;&#x652F;&#x6301;&#x54C8;&#x8FBE;&#x739B;&#x79EF;&#xFF0C;&#x5426;&#x5219;&#x5C82;&#x4E0D;&#x662F;&#x5F31;&#x7206;&#x4E86;&#xFF1F;&#x7136;&#x540E;&#x6211;&#x641C;&#x7D22;&#x4E86;&#x4E00;&#x4E0B;R&#x7684;&#x77E9;&#x9635;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x6211;&#x548C;&#x6211;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x90FD;&#x60CA;&#x5446;&#x4E86;&#x3002;</p>
+<center><img src="https://cdn.steemitimages.com/DQmP6ZTQeDfXuMUCh5C19ijheSn1b3cZgUBWT4dbhPGUZda/image.png" alt=""></center>
+
+<p>&#x6211;&#x5C31;&#x622A;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x81EA;&#x5DF1;&#x6765;&#x5B66;&#x5427;&#xFF1A;<a href="https://www.statmethods.net/advstats/matrix.html" target="_blank" rel="noopener">Matrix Algebra</a>&#xFF0C;&#x8FD9;&#x91CC;&#x5217;&#x51FA;&#x7684;&#x53EA;&#x662F;&#x77E9;&#x9635;&#x5F3A;&#x5927;&#x529F;&#x80FD;&#x7684;&#x51B0;&#x5C71;&#x4E00;&#x89D2;&#xFF0C;&#x611F;&#x5174;&#x8DA3;&#x7684;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x6587;&#x672B;&#x94FE;&#x63A5;&#x3002;</p>
+<hr>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x4ECA;&#x5929;&#x5C31;&#x5230;&#x8FD9;&#x91CC;&#x3002;&#x770B;&#x6765;&#x5B66;&#x5B8C;<a href="https://www.tutorialspoint.com/r/index.htm" target="_blank" rel="noopener">R Tutorial</a>&#xFF0C;&#x4E0D;&#x8FC7;&#x662F;&#x5B66;&#x4E86;&#x4E2A;&#x76AE;&#x6BDB;&#xFF0C;&#x4F55;&#x51B5;&#x8FD9;&#x4E2A;&#x8FD8;&#x4E0D;&#x77E5;&#x9053;&#x7334;&#x5E74;&#x5B66;&#x5B8C;&#x5462;&#xFF0C;&#x1F614;</p>
+<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
+<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;)  Part 1, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-2-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 2, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE; &amp; &#x8BA1;&#x7B97;&#x957F;&#x5EA6;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-3-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 3, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x64CD;&#x4F5C;(&#x7B97;&#x672F;&#x64CD;&#x4F5C;&amp;&#x6392;&#x5E8F;)</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-list-part-1-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 1, &#x521B;&#x5EFA;&#x5217;&#x8868;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-list-part-2" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 2, &#x5217;&#x8868;&#x7684;&#x64CD;&#x4F5C;</a></li>
+<li><a href="https://steemit.com/r/@oflyhigh/r-matrices-part-1" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Matrices(&#x77E9;&#x9635;) Part 1&#xFF0C;&#x521B;&#x5EFA;&#x77E9;&#x9635;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></li>
+<li><a href="https://www.tutorialspoint.com/r/r_matrices.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_matrices.htm</a></li>
+<li><a href="https://www.statmethods.net/advstats/matrix.html" target="_blank" rel="noopener">Matrix Algebra</a></li>
+<li><a href="https://www.r-bloggers.com/quick-review-of-matrix-algebra-in-r/" target="_blank" rel="noopener">Quick Review of Matrix Algebra in R</a></li>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/matmult.html" target="_blank" rel="noopener">Matrix Multiplication</a></li>
+</ul>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-matrices-part-2-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Matrices(&#x77E9;&#x9635;) Part 2&#xFF0C;&#x77E9;&#x9635;&#x8BBF;&#x95EE;&#x65B9;&#x5F0F;&amp;&#x77E9;&#x9635;&#x64CD;&#x4F5C;&amp;&#x8FDB;&#x9636;&#x64CD;&#x4F5C;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
+        <a href="/@oflyhigh/openledger-info-openledger-io/" class="image is-7by1">
+            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmToRf2AYD8rdwX1bYNAvFYZbY3oQkZiFhpXsADEiSZTUY/image.png" alt="注意： 请不要登陆 openledger.info\ openledger.io 等站点！！！">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-06-03T13:10:00.000Z">2018-06-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/@oflyhigh/categories/openledger/">openledger</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    4 minutes read (About 639 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/@oflyhigh/openledger-info-openledger-io/">注意： 请不要登陆 openledger.info\ openledger.io 等站点！！！</a>
+            
+        </h1>
+        <div class="content">
+            <p>&#x4ECA;&#x5929;&#x767B;&#x9646; openledger.info&#x7684;&#x535A;&#x5BA2;&#xFF0C;&#x770B;&#x5230;&#x6700;&#x65B0;&#x4E00;&#x6761;&#x6D88;&#x606F;&#x662F;&#x63D0;&#x793A;&#x5927;&#x5BB6;&#x4E0D;&#x8981;&#x8BBF;&#x95EE;openledger.info\ openledger.io&#x57DF;&#x540D;&#x4EE5;&#x53CA;&#x76F8;&#x5173;&#x5B50;&#x57DF;&#x540D;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x4ED6;&#x4EEC;&#x7684;&#x57DF;&#x540D;&#x88AB;&#x9ED1;&#x4E86;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x662F;DNS&#x52AB;&#x6301;&#xFF0C;&#x662F;<strong>&#x57DF;&#x540D;&#x63A7;&#x5236;&#x6743;&#x76F4;&#x63A5;&#x5230;&#x9ED1;&#x5BA2;&#x624B;&#x91CC;</strong>&#x4E86;&#xFF09;</p>
+<p><img src="https://cdn.steemitimages.com/DQmToRf2AYD8rdwX1bYNAvFYZbY3oQkZiFhpXsADEiSZTUY/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<p>&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x9ED1;&#x5BA2;&#x53EF;&#x4EE5;&#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x9493;&#x9C7C;&#x7AD9;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x57DF;&#x540D;&#x6307;&#x8FC7;&#x53BB;&#xFF0C;&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x597D;SSL&#x8BC1;&#x4E66;&#xFF0C;&#x7136;&#x540E;&#x5750;&#x7B49;&#x7528;&#x6237;&#x767B;&#x9646;&#x5373;&#x53EF;&#x3002;&#x4E00;&#x65E6;&#x7528;&#x6237;&#x767B;&#x9646;openledger&#x76F8;&#x5173;&#x7684;&#x4EA4;&#x6613;&#x6240;&#xFF0C;&#x90A3;&#x4E48;<strong>&#x8D26;&#x6237;&#x554A;&#x3001;&#x79C1;&#x94A5;&#x554A;&#x3001;&#x5BC6;&#x7801;&#x554A;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F88;&#x8F7B;&#x6613;&#x7684;&#x88AB;&#x9ED1;&#x5BA2;&#x622A;&#x83B7;</strong>&#xFF0C;&#x7136;&#x540E;&#x5982;&#x679C;&#x4F60;&#x8D26;&#x6237;&#x5185;&#x8D44;&#x4EA7;&#x591F;&#x591A;&#xFF0C;&#x9ED1;&#x5BA2;&#x624B;&#x901F;&#x591F;&#x5FEB;(&#x6216;&#x8005;&#x7A0B;&#x5E8F;&#x6548;&#x7387;&#x591F;&#x9AD8;)&#xFF0C;&#x90A3;&#x4E48;&#x9664;&#x4E86;&#x54C7;&#x54C7;&#x5927;&#x54ED;&#xFF0C;&#x8C8C;&#x4F3C;&#x522B;&#x65E0;&#x4ED6;&#x6CD5;&#x3002;</p>
+<p>&#x603B;&#x4E4B;&#xFF0C;&#x4ECE;&#x7528;&#x6237;/&#x8BBF;&#x5BA2;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x4F60;&#x770B;&#x4E0D;&#x51FA;&#x4EFB;&#x4F55;&#x5F02;&#x5E38;&#xFF0C; &#x7136;&#x540E;&#x5C31;&#x4E0A;&#x5F53;&#x4E86;&#xFF0C;&#x7136;&#x540E;&#x94B1;&#x5C31;&#x6CA1;&#x4E86;&#x1F62D; openledger&#x5B98;&#x65B9;&#x7ED9;&#x51FA;&#x7684;&#x5EFA;&#x8BAE;&#x662F;&#xFF0C;&#x4F7F;&#x7528;bitshares&#x5B98;&#x7F51;&#x7684;&#x94B1;&#x5305;&#xFF1A;<a href="https://wallet.bitshares.org&#x3002;&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x8D26;&#x6237;&#x88AB;&#x9ED1;&#x7684;&#xFF0C;&#x5EFA;&#x8BAE;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x94FE;&#x63A5;**&#x4FEE;&#x6539;&#x5BC6;&#x7801;**&#xFF1A;https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password" target="_blank" rel="noopener">https://wallet.bitshares.org&#x3002;&#x5E76;&#x4E14;&#x5BF9;&#x4E8E;&#x8D26;&#x6237;&#x88AB;&#x9ED1;&#x7684;&#xFF0C;&#x5EFA;&#x8BAE;&#x53C2;&#x8003;&#x5982;&#x4E0B;&#x94FE;&#x63A5;**&#x4FEE;&#x6539;&#x5BC6;&#x7801;**&#xFF1A;https://github.com/bitshares/bitshares-ui/wiki/Cloud-Wallet-Login-and-changing-password</a></p>
+<p>&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x6CE8;&#x610F;&#x5230;&#x597D;&#x591A;OpenLedger&#x7684;&#x5185;&#x76D8;&#x8D44;&#x4EA7;&#x5DF2;&#x7ECF;&#x7981;&#x6B62;&#x4EA4;&#x6613;&#x4E86;&#xFF0C;&#x6BD4;&#x5982;&#x5728;&#x5185;&#x76D8;&#x8BBF;&#x95EE;Open.EOS&#x3001;OPEN.ETH&#x3001;OPEN.BTC&#x3001;OPEN.STEEM&#x7B49;&#x8D44;&#x4EA7;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5F97;&#x5230;&#x7C7B;&#x4F3C;&#x5982;&#x4E0B;&#x63D0;&#x793A;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>The owner of OPEN.EOS has disabled trading in this market.</li>
+<li>The owner of OPEN.ETH has disabled trading in this market.</li>
+<li>The owner of OPEN.BTC has disabled trading in this market.</li>
+<li>The owner of OPEN.STEEM has disabled trading in this market.</li>
+</ul>
+</blockquote>
+<p>&#x6D89;&#x53CA;&#x7684;OpenLedger&#x7684;&#x5185;&#x76D8;&#x8D44;&#x4EA7;&#x6709;BTC&#x3001;ETH&#x3001;EOS&#x3001;KRM&#x3001;STEEM&#x3001;DASH&#x4EE5;&#x53CA; LTC&#x3002;</p>
+<p>&#x6309;&#x8BF4;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6CA1;&#x767B;&#x9646;&#x9493;&#x9C7C;&#x7AD9;&#x70B9;&#xFF0C;&#x6CA1;&#x5728;&#x9493;&#x9C7C;&#x7AD9;&#x70B9;&#x8F93;&#x5165;&#x8FC7;&#x8D26;&#x6237;&#x5BC6;&#x7801;&#x5BFC;&#x5165;&#x8FC7;&#x79C1;&#x94A5;&#x4EC0;&#x4E48;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x8D26;&#x6237;&#x4EE5;&#x53CA;&#x8D26;&#x6237;&#x8D44;&#x4EA7;&#x5E94;&#x8BE5;&#x662F;&#x5B89;&#x5168;&#x7684;&#x3002;</p>
+<p><img src="https://cdn.steemitimages.com/DQmSw4Wwbs7dSAuEerHNMtj8spYQBooiE6FBoQj8fkWkRuH/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
+<h1 id="&#x5212;&#x91CD;&#x70B9;"><a href="#&#x5212;&#x91CD;&#x70B9;" class="headerlink" title="&#x5212;&#x91CD;&#x70B9;"></a>&#x5212;&#x91CD;&#x70B9;</h1><ul>
+<li>OpenLedger&#x76F8;&#x5173;&#x57DF;&#x540D;&#x843D;&#x5230;&#x9ED1;&#x5BA2;&#x624B;&#x4E2D;&#x4E86;</li>
+<li>&#x5148;&#x4E0D;&#x8981;&#x767B;&#x9646;openledger.info\ openledger.io&#x7B49;&#x76F8;&#x5173;&#x57DF;&#x540D;&#x5B50;&#x57DF;&#x540D;&#x7AD9;&#x70B9;</li>
+<li>&#x5982;&#x679C;&#x8FD9;&#x4E24;&#x5929;&#x767B;&#x9646;&#x8FC7;&#xFF0C;&#x90A3;&#x4E48;&#x6709;&#x88AB;&#x9ED1;&#x7684;&#x53EF;&#x80FD;&#xFF0C;&#x5FEB;&#x53BB;&#x4FEE;&#x6539;&#x5BC6;&#x7801;&#x5BC6;&#x94A5;</li>
+<li>OpenLedger&#x7684;&#x8D26;&#x6237;&#x53EF;&#x4EE5;&#x5728;<a href="https://wallet.bitshares.org" target="_blank" rel="noopener">https://wallet.bitshares.org</a></li>
+</ul>
+<p>&#x4F46;&#x613F;OpenLedger&#x65E9;&#x70B9;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x5427;&#x3002;</p>
+<hr>
+<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/openledger-info-openledger-io" target="_blank" rel="noopener">&#x6CE8;&#x610F;&#xFF1A; &#x8BF7;&#x4E0D;&#x8981;&#x767B;&#x9646; openledger.info\ openledger.io &#x7B49;&#x7AD9;&#x70B9;&#xFF01;&#xFF01;&#xFF01;</a></p>
+<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/@oflyhigh/r-matrices-part-1/" class="image is-7by1">
             <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：Matrices(矩阵) Part 1，创建矩阵&amp;命名&amp;访问">
         </a>
@@ -598,178 +773,15 @@
 
 
 
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/r-list-part-1-and-and/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt="继续学R：List(列表) Part 1, 创建列表&amp;命名&amp;访问">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-06-01T00:43:36.000Z">2018-06-01</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/r/">r</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 982 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/r-list-part-1-and-and/">继续学R：List(列表) Part 1, 创建列表&amp;命名&amp;访问</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x7C97;&#x7565;&#x4E86;&#x6D4F;&#x89C8;&#x4E86;&#x4E00;&#x4E9B;&#x5404;&#x79CD;R&#x76F8;&#x5173;&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x624D;&#x60CA;&#x89C9;R&#x542B;&#x91D1;&#x91CF;&#x6700;&#x9AD8;&#x7684;&#x90E8;&#x5206;&#x662F;&#x7EDF;&#x8BA1;&#x5206;&#x6790;&#x90E8;&#x5206;&#xFF0C;&#x90A3;&#x90E8;&#x5206;&#x6211;&#x662F;&#x4E00;&#x70B9;&#x4E0D;&#x61C2;&#x554A;&#xFF0C;&#x6240;&#x4EE5;&#x771F;&#x6000;&#x7591;&#x6211;&#x80FD;&#x5426;&#x575A;&#x6301;&#x4E0B;&#x53BB;&#xFF0C;&#x59D1;&#x4E14;&#x8D70;&#x7740;&#x77A7;&#x5427;&#xFF0C;&#x54EA;&#x5929;&#x5199;&#x4E0D;&#x4E0B;&#x53BB;&#x4E86;&#x70C2;&#x5C3E;&#x4E86;&#xFF0C;&#x90A3;&#x4E5F;&#x662F;&#x610F;&#x6599;&#x4E4B;&#x4E2D;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmULNEof836YCum6PtcjGH8DLRMXySbL31WY8ZPaGThPJG/image.png" alt=""></p>
-<p>&#x4E4B;&#x524D;&#x5B66;&#x4E86;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#xFF0C;&#x5206;&#x4E09;&#x4E2A;&#x5C0F;&#x8282;&#x5B66;&#x4E60;&#x4E86;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x8BBF;&#x95EE;&#x4EE5;&#x53CA;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x6211;&#x4EEC;&#x6765;&#x4E86;&#x89E3;&#x4E00;&#x4E0B;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x590D;&#x6742;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;<strong>List/&#x5217;&#x8868;</strong></p>
-<h1 id="&#x521B;&#x5EFA;&#x5217;&#x8868;"><a href="#&#x521B;&#x5EFA;&#x5217;&#x8868;" class="headerlink" title="&#x521B;&#x5EFA;&#x5217;&#x8868;"></a>&#x521B;&#x5EFA;&#x5217;&#x8868;</h1><p>&#x4E0E;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;/Vertors&#x4E0D;&#x540C;&#xFF0C;list&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BB9;&#x7EB3;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<strong><code>list()</code></strong>&#x6765;&#x521B;&#x5EFA;list&#xFF0C;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(class(mylist))</code><br><code>print(mylist)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmd1n5HS57Udo8L3r3QuAK4xt7Tn1opZ8G2nw2QqnoUeAt/image.png" alt=""></p>
-<p>&#x901A;&#x8FC7;&#x793A;&#x4F8B;&#x53EF;&#x89C1;&#xFF0C;&#x4E0D;&#x540C;&#x4E8E;vertors&#x7684;&#x7C7B;&#x578B;&#x53D6;&#x51B3;&#x4E8E;&#x5176;&#x5185;&#x5143;&#x7D20;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x800C;<strong>list&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x7C7B;&#x578B;<code>list</code></strong>&#xFF1B;&#x53E6;&#x5916;&#x4E0D;&#x540C;&#x4E8E;vertors&#x53EA;&#x80FD;&#x5305;&#x542B;&#x76F8;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x539F;&#x5B50;&#x5411;&#x91CF;(&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x4F1A;&#x8FDB;&#x884C;&#x8F6C;&#x6362;), <strong>list&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5BB9;&#x7EB3;&#x591A;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x5143;&#x7D20;</strong>&#x3002;</p>
-<h1 id="&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;"><a href="#&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;" class="headerlink" title="&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;"></a>&#x547D;&#x540D;&#x5217;&#x8868;&#x5143;&#x7D20;</h1><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<strong><code>names()</code></strong>&#x6765;&#x7ED9;&#x5217;&#x8868;&#x5143;&#x7D20;&#x547D;&#x540D;&#x3002;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;number&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code><br><code>print(mylist)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmbbBNNpc8q6ucsBtuUc8nmMFTM3GRhBghqAM46CZ4NLW4/image.png" alt=""></p>
-<h1 id="&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;"><a href="#&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;" class="headerlink" title="&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;"></a>&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;</h1><h4 id="&#x4E0B;&#x6807;&#x8BBF;&#x95EE;"><a href="#&#x4E0B;&#x6807;&#x8BBF;&#x95EE;" class="headerlink" title="&#x4E0B;&#x6807;&#x8BBF;&#x95EE;"></a>&#x4E0B;&#x6807;&#x8BBF;&#x95EE;</h4><p>&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#xFF0C;&#x548C;&#x901A;&#x8FC7;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>print(mylist[2])</code><br><code>print(mylist[c(1,2)])</code><br><code>print(mylist[c(TRUE, FALSE, TRUE, FALSE)])</code><br><code>print(mylist[c(-1,-2)])</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmPKqR71rj2hv9UCN6yqxDyE5TrhGhqhoQGTdheCcCdSD2/image.png" alt=""></p>
-<h4 id="&#x547D;&#x540D;&#x8BBF;&#x95EE;"><a href="#&#x547D;&#x540D;&#x8BBF;&#x95EE;" class="headerlink" title="&#x547D;&#x540D;&#x8BBF;&#x95EE;"></a>&#x547D;&#x540D;&#x8BBF;&#x95EE;</h4><p>&#x6211;&#x4EEC;&#x4E4B;&#x524D;&#x7ED9;list&#x5143;&#x7D20;&#x521B;&#x5EFA;&#x4E86;&#x540D;&#x5B57;&#xFF0C;&#x90A3;&#x4E48;&#x540D;&#x5B57;&#x4EC5;&#x4EC5;&#x4E3A;&#x4E86;&#x597D;&#x770B;&#x5417;&#xFF1F;&#x7B54;&#x6848;&#x662F;&#x5426;&#x5B9A;&#x7684;&#xFF0C;&#x540D;&#x5B57;&#x8FD8;&#x53EF;&#x4EE5;&#x7528;&#x8BBF;&#x95EE;&#x5217;&#x8868;&#x5143;&#x7D20;&#x54E6;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<blockquote>
-<p><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;number&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code><br><code>print(mylist$vertors)</code><br><code>print(mylist$number)</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmYq2YX8xWcXdAC1njt8zGgkjuWzizyratWyyC5jifdSjN/image.png" alt=""><br>&#x662F;&#x4E0D;&#x662F;&#x5F88;&#x795E;&#x5947;&#xFF1F;</p>
-<h6 id="vertors-&#x547D;&#x540D;&#x8BBF;&#x95EE;"><a href="#vertors-&#x547D;&#x540D;&#x8BBF;&#x95EE;" class="headerlink" title="vertors &#x547D;&#x540D;&#x8BBF;&#x95EE;"></a>vertors &#x547D;&#x540D;&#x8BBF;&#x95EE;</h6><p>&#x8BF4;&#x5230;&#x5217;&#x8868;&#x7684;&#x547D;&#x540D;&#x8BBF;&#x95EE;&#xFF0C;&#x6211;&#x4E0D;&#x7981;&#x6709;&#x4E00;&#x4E2A;&#x7591;&#x95EE;&#xFF0C;vertors&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x5462;&#xFF1F;&#x5149;&#x60F3;&#x6CA1;&#x7528;&#xFF0C;&#x8BD5;&#x8BD5;&#x770B;&#xFF1A;</p>
-<blockquote>
-<p><code>v&lt;-c(1, 2, 3, 4)</code><br><code>names(v)&lt;-c(&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;d&apos;)</code><br><code>print(v)</code><br><code>print(v[&apos;b&apos;])</code></p>
-</blockquote>
-<p><img src="https://cdn.steemitimages.com/DQmXVkR49uC7a1DzwZ6Xpda5fAfJcTu49sAx6x6Yy4rvAqd/image.png" alt=""><br>&#x8C8C;&#x4F3C;&#x53EF;&#x884C;&#x5462;&#xFF1F;</p>
-<h5 id="&#x91CD;&#x590D;&#x547D;&#x540D;"><a href="#&#x91CD;&#x590D;&#x547D;&#x540D;" class="headerlink" title="&#x91CD;&#x590D;&#x547D;&#x540D;"></a>&#x91CD;&#x590D;&#x547D;&#x540D;</h5><p>&#x5199;&#x5230;&#x8FD9;&#xFF0C;&#x4E0D;&#x7981;&#x53C8;&#x60F3;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x65E2;&#x7136;&#x662F;&#x5BF9;&#x5143;&#x7D20;&#x547D;&#x540D;&#xFF0C;&#x90A3;&#x4E48;&#x547D;&#x540D;&#x5E94;&#x8BE5;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;<strong>&#x90A3;&#x4E48;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4F20;&#x5165;&#x91CD;&#x590D;&#x7684;&#x547D;&#x540D;&#x4F1A;&#x662F;&#x5982;&#x4F55;&#x5462;&#xFF1F;</strong></p>
-<blockquote>
-<p><code>v&lt;-c(1, 2, 3, 4)</code><br><code>names(v)&lt;-c(&apos;a&apos;, &apos;c&apos;, &apos;c&apos;, &apos;d&apos;)</code><br><code>mylist&lt;-list(&apos;a&apos;, 5.2, c(7, 8, 9), 3+4i)</code><br><code>names(mylist)&lt;-c(&apos;char&apos;, &apos;char&apos;, &apos;vertors&apos;, &apos;complex&apos;)</code></p>
-</blockquote>
-<p>&#x7ADF;&#x7136;&#x90FD;&#x6CA1;&#x6709;&#x6267;&#x884C;&#x51FA;&#x9519;&#xFF0C;&#x90A3;&#x4E48;&#x8BBF;&#x95EE;&#x547D;&#x540D;&#x5143;&#x7D20;&#x65F6;&#x6307;&#x5411;&#x7684;&#x5230;&#x5E95;&#x662F;&#x54EA;&#x4E2A;&#x5143;&#x7D20;&#x5462;&#xFF1F;&#x8FD9;&#x4E2A;&#x5F53;&#x8BFE;&#x540E;&#x9898;&#x7559;&#x7ED9;&#x5927;&#x5BB6;&#x5427;&#x3002;&#x8BF4;&#x5B9E;&#x8BDD;&#xFF0C;<strong>&#x53EF;&#x4EE5;&#x7ED9;&#x4E0D;&#x540C;&#x5143;&#x7D20;&#x8D77;&#x76F8;&#x540C;&#x547D;&#x540D;&#xFF0C;&#x8C8C;&#x4F3C;&#x6709;&#x70B9;&#x5751;&#x554A;</strong>&#x3002;&#x1F633;</p>
-<hr>
-<p>&#x4ECA;&#x5929;&#x5C31;&#x6C34;&#x5230;&#x8FD9;&#x91CC;&#x4E86;&#xFF0C;&#x4E0B;&#x671F;&#x7EE7;&#x7EED;&#x6C34;&#x3002;</p>
-<h1 id="&#x76F8;&#x5173;&#x94FE;&#x63A5;"><a href="#&#x76F8;&#x5173;&#x94FE;&#x63A5;" class="headerlink" title="&#x76F8;&#x5173;&#x94FE;&#x63A5;"></a>&#x76F8;&#x5173;&#x94FE;&#x63A5;</h1><ul>
-<li><a href="https://steemit.com/r/@oflyhigh/r" target="_blank" rel="noopener">&#x5B66;R&#xFF1A;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/5m2s1h-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x5B89;&#x88C5;&#x8F6F;&#x4EF6;&#x5305;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-r" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;&#x53E6;&#x4E00;&#x6B3E;&#x5728;&#x7EBF;R&#x73AF;&#x5883;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-r-6" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;R&#x7684;6&#x5927;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x539F;&#x5B50;&#x5411;&#x91CF;)</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-1-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;)  Part 1, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x521B;&#x5EFA;&amp;&#x7C7B;&#x578B;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-2-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 2, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x8BBF;&#x95EE; &amp; &#x8BA1;&#x7B97;&#x957F;&#x5EA6;</a></li>
-<li><a href="https://steemit.com/r/@oflyhigh/r-vector-part-3-cny-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;Vector(&#x5411;&#x91CF;) Part 3, &#x591A;&#x5143;&#x7D20;&#x5411;&#x91CF;&#x7684;&#x64CD;&#x4F5C;(&#x7B97;&#x672F;&#x64CD;&#x4F5C;&amp;&#x6392;&#x5E8F;)</a></li>
-<li><a href="https://www.tutorialspoint.com/r/r_vectors.htm" target="_blank" rel="noopener">https://www.tutorialspoint.com/r/r_vectors.htm</a></li>
-</ul>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/r-list-part-1-and-and" target="_blank" rel="noopener">&#x7EE7;&#x7EED;&#x5B66;R&#xFF1A;List(&#x5217;&#x8868;) Part 1, &#x521B;&#x5EFA;&#x5217;&#x8868;&amp;&#x547D;&#x540D;&amp;&#x8BBF;&#x95EE;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/@oflyhigh/4rioe/" class="image is-7by1">
-            <img class="thumbnail" src="https://cdn.steemitimages.com/DQmZQe2Si2BKQ66uiidmcyrmc5654wM1JZC92smEYKzfnYG/image.png" alt="保险保什么">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-05-31T12:35:33.000Z">2018-05-31</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/@oflyhigh/categories/cn/">cn</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 minutes read (About 1039 words)
-                </span>
-                
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/@oflyhigh/4rioe/">保险保什么</a>
-            
-        </h1>
-        <div class="content">
-            <p>&#x4ECA;&#x5929;&#x4E00;&#x5237;&#x5FAE;&#x4FE1;&#xFF0C;&#x4E00;&#x4E2A;&#x670B;&#x53CB;&#x7FA4;&#x91CC;&#x51E0;&#x767E;&#x6761;&#x4FE1;&#x606F;&#xFF0C;&#x5E73;&#x65F6;&#x662F;&#x6CA1;&#x8FD9;&#x4E48;&#x70ED;&#x95F9;&#x7684;&#xFF0C;&#x770B;&#x4E86;&#x4E00;&#x4E0B;&#x4E00;&#x5806;&#x56FE;&#x7247;&#x4E00;&#x5806;&#x89C6;&#x9891;&#xFF0C;&#x804A;&#x7684;&#x662F;&#x6211;&#x4EEC;&#x9644;&#x8FD1;&#x4E00;&#x4E2A;&#x5C0F;&#x533A;&#x53D1;&#x751F;&#x4E86;&#x7164;&#x6C14;&#x7206;&#x70B8;&#xFF0C;&#x7136;&#x540E;&#x5F15;&#x53D1;&#x4E86;&#x5927;&#x706B;&#xFF0C;&#x9020;&#x6210;&#x81F3;&#x5C11;3&#x4EBA;&#x4EE5;&#x4E0A;&#x6B7B;&#x4EA1;&#xFF08;&#x8BF4;96144&#x62AC;&#x8D70;&#x4E09;&#x4E2A;&#x4EBA;&#xFF09;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmZQe2Si2BKQ66uiidmcyrmc5654wM1JZC92smEYKzfnYG/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x7136;&#x540E;&#x53C8;&#x4ECE;&#x7164;&#x6C14;&#x7206;&#x70B8;&#x804A;&#x5230;&#x71C3;&#x6C14;&#x4FDD;&#x9669;&#xFF0C;&#x5176;&#x4E2D;&#x51E0;&#x4E2A;&#x670B;&#x53CB;&#x4E00;&#x76F4;&#x5728;&#x7FA4;&#x91CC;&#x529D;&#x5927;&#x5BB6;&#xFF0C;&#x71C3;&#x6C14;&#x4FDD;&#x9669;&#x4E00;&#x5B9A;&#x8981;&#x4E70;&#x554A;&#xFF0C;&#x6BCF;&#x5E74;&#x624D;20&#x5143;&#xFF0C;&#x4E70;&#x4E86;&#x624D;&#x80FD;&#x4FDD;&#x969C;&#x751F;&#x547D;&#x548C;&#x8D22;&#x4EA7;&#x5B89;&#x5168;&#x4E91;&#x4E91;&#x3002;</p>
-<p>&#x5176;&#x5B9E;&#x6211;&#x5E76;&#x4E0D;&#x53CD;&#x5BF9;&#x4E70;&#x4EC0;&#x4E48;&#x71C3;&#x6C14;&#x4FDD;&#x9669;&#xFF0C;&#x6BCF;&#x5E74;&#x6284;&#x8868;&#x5458;&#x63A8;&#x9500;&#x4FDD;&#x9669;&#x7684;&#x65F6;&#x5019;&#x6211;&#x90FD;&#x75DB;&#x5FEB;&#x5730;&#x4EA4;&#x4E86;&#x94B1;&#xFF0C;&#x4E00;&#x5219;20&#x5143;&#x5E76;&#x4E0D;&#x591A;&#xFF0C;&#x4E8C;&#x5219;&#x53D7;&#x4E0D;&#x4E86;&#x6284;&#x8868;&#x5458;&#x78E8;&#x53FD;&#x3002;&#x4ECA;&#x5E74;&#x6284;&#x8868;&#x5458;&#x63A8;&#x9500;&#x4FDD;&#x9669;&#x65F6;&#x9694;&#x58C1;&#x90BB;&#x5C45;&#x62D2;&#x7EDD;&#x8D2D;&#x4E70;&#xFF0C;&#x7136;&#x540E;&#x6284;&#x8868;&#x5458;&#x8BF4;&#x5DF2;&#x7ECF;&#x597D;&#x51E0;&#x5BB6;&#x6CA1;&#x4E70;&#x4FDD;&#x9669;&#x7136;&#x540E;&#x7206;&#x70B8;&#x4E86;&#x4F24;&#x4EA1;&#x60E8;&#x91CD;&#x7B49;&#x7B49;&#x3002;&#x9694;&#x58C1;&#x90BB;&#x5C45;&#x4E5F;&#x591F;&#x575A;&#x51B3;&#xFF0C;&#x544A;&#x8BC9;&#x6284;&#x8868;&#x5458;&#xFF0C;&#x51FA;&#x4E8B;&#x6211;&#x81EA;&#x5DF1;&#x8D1F;&#x8D23;&#x3002;</p>
-<p>&#x6211;&#x6253;&#x5FC3;&#x5E95;&#x8BA8;&#x538C;&#x6284;&#x8868;&#x5458;&#x63A8;&#x9500;&#x4FDD;&#x9669;&#x7684;&#x8BDD;&#x8BED;&#xFF0C;&#x4E70;&#x4E0D;&#x4E70;&#x4FDD;&#x9669;&#x548C;&#x53D1;&#x4E0D;&#x53D1;&#x751F;&#x7206;&#x70B8;&#x6709;&#x4EC0;&#x4E48;&#x5FC5;&#x7136;&#x5173;&#x7CFB;&#x5417;&#xFF1F;&#x542C;&#x5979;&#x7684;&#x8BED;&#x6C14;&#xFF0C;&#x4E0D;&#x4E70;&#x4FDD;&#x9669;&#x7206;&#x70B8;&#x7684;&#x6982;&#x7387;&#x5C31;&#x4F1A;&#x9AD8;&#x4E86;&#x5F88;&#x591A;&#x4E00;&#x6837;&#xFF0C;&#x771F;&#x662F;&#x8BA9;&#x4EBA;&#x8BA8;&#x538C;&#x3002;&#x6211;&#x7684;&#x90BB;&#x5C45;&#x4F30;&#x8BA1;&#x4E5F;&#x88AB;&#x5979;&#x6C14;&#x5230;&#x4E86;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x8BF4;&#x5230;&#x4FDD;&#x9669;&#xFF0C;&#x6211;&#x5C31;&#x60F3;&#x8D77;&#x6211;&#x4EE5;&#x524D;&#x73A9;&#x7684;&#x8D85;&#x7EA7;&#x739B;&#x4E3D;&#x554A;&#x3001;&#x5766;&#x514B;&#x5927;&#x51B3;&#x6218;&#x554A;&#x4E4B;&#x7C7B;&#x7684;&#x6E38;&#x620F;&#xFF0C;&#x91CC;&#x8FB9;&#x6709;&#x4E9B;&#x7279;&#x6B8A;&#x9053;&#x5177;&#x4E00;&#x65E6;&#x5F97;&#x5230;&#xFF0C;&#x6E38;&#x620F;&#x4EBA;&#x7269;&#x5C31;&#x5904;&#x4E8E;&#x65E0;&#x654C;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4EC0;&#x4E48;&#x5404;&#x79CD;&#x653B;&#x51FB;&#x3001;&#x5B50;&#x5F39;&#x554A;&#x5565;&#x7684;&#x7EDF;&#x7EDF;&#x65E0;&#x6548;&#xFF0C;&#x6211;&#x548C;&#x5C0F;&#x4F19;&#x4F34;&#x4EEC;&#x5F53;&#x65F6;&#x628A;&#x8FD9;&#x4E2A;&#x7279;&#x6B8A;&#x7684;&#x9053;&#x5177;&#x8D77;&#x540D;&#x53EB;&#x505A;&#x4FDD;&#x9669;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmagiUK9ghUsvT7DYbZGjQWdwAfdg6P4X78MonreevmDK5/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x800C;&#x957F;&#x5927;&#x4EE5;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x4F1A;&#x63A5;&#x89E6;&#x5230;&#x5404;&#x5F0F;&#x5404;&#x6837;&#x7684;&#x4FDD;&#x9669;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x516C;&#x53F8;&#x90FD;&#x8981;&#x4EA4;&#x7684;&#x5931;&#x4E1A;&#x4FDD;&#x9669;&#x3001;&#x533B;&#x7597;&#x4FDD;&#x9669;&#x3001;&#x517B;&#x8001;&#x4FDD;&#x9669;&#xFF1B;&#x6C7D;&#x8F66;&#x5565;&#x7684;&#x6709;&#x8F66;&#x635F;&#x9669;&#x3001;&#x76D7;&#x62A2;&#x9669;&#x3001;&#x7B2C;&#x4E09;&#x8005;&#x8D23;&#x4EFB;&#x9669;&#xFF1B;&#x51FA;&#x53BB;&#x65C5;&#x6E38;&#x5565;&#x7684;&#x6709;&#x610F;&#x5916;&#x4F24;&#x5BB3;&#x9669;&#xFF1B;&#x5176;&#x5B83;&#x7684;&#x5546;&#x4E1A;&#x7684;&#x8FD8;&#x6709;&#x91CD;&#x5927;&#x75BE;&#x75C5;&#x9669;&#x4EE5;&#x53CA;&#x4EBA;&#x5BFF;&#x9669;&#x7B49;&#x7B49;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4ED4;&#x7EC6;&#x4E00;&#x60F3;&#xFF0C;&#x53D1;&#x73B0;&#x8FD9;&#x4E9B;&#x4FDD;&#x9669;&#x548C;&#x6211;&#x4EEC;&#x5C0F;&#x65F6;&#x5019;&#x6E38;&#x620F;&#x91CC;&#x7684;&#x4FDD;&#x9669;&#x5B8C;&#x5168;&#x662F;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x6E38;&#x620F;&#x91CC;&#x4FDD;&#x9669;&#x52A0;&#x4E0A;&#x77E5;&#x4E4E;&#x5C31;&#x662F;&#x65E0;&#x654C;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5565;&#x4E5F;&#x4E0D;&#x6015;&#x4E86;&#x3002;&#x800C;&#x751F;&#x6D3B;&#x4E2D;&#x7684;&#x8FD9;&#x4E9B;&#x4FDD;&#x9669;&#xFF0C;&#x5931;&#x4E1A;&#x9669;&#x6CA1;&#x6CD5;&#x4FDD;&#x8BC1;&#x4F60;&#x4E0D;&#x5931;&#x4E1A;&#xFF0C;&#x517B;&#x8001;&#x9669;&#x6CA1;&#x6CD5;&#x4FDD;&#x8BC1;&#x4F60;&#x4E0D;&#x8001;&#x751A;&#x81F3;&#x6CA1;&#x6CD5;&#x4FDD;&#x8BC1;&#x4F60;&#x6D3B;&#x5230;&#x8001;&#xFF0C;&#x533B;&#x7597;&#x548C;&#x91CD;&#x5927;&#x75BE;&#x75C5;&#x9669;&#x4FDD;&#x4E0D;&#x4E86;&#x4F60;&#x4E0D;&#x751F;&#x75C5;&#xFF0C;&#x610F;&#x5916;&#x4F24;&#x5BB3;&#x4EE5;&#x53CA;&#x4EBA;&#x5BFF;&#x9669;&#x4FDD;&#x4E0D;&#x4E86;&#x4F60;&#x4E0D;&#x51FA;&#x610F;&#x5916;&#x751A;&#x81F3;&#x4E0D;&#x727A;&#x7272;&#x2026;&#x2026;</p>
-<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x8FD9;&#x4E9B;&#x4FDD;&#x9669;&#x80AF;&#x5B9A;&#x4E0D;&#x662F;&#x4E00;&#x65E0;&#x662F;&#x5904;&#xFF0C;&#x5931;&#x4E1A;&#x9669;&#x5F53;&#x4F60;&#x5931;&#x4E1A;&#x4E86;&#x4F1A;&#x7ED9;&#x4F60;&#x4E00;&#x4E01;&#x70B9;&#x8865;&#x507F;&#xFF0C;&#x517B;&#x8001;&#x9669;&#x4F60;&#x8981;&#x662F;&#x80FD;&#x6328;&#x8FC7;65&#x5C81;&#x90A3;&#x4E48;&#x5C31;&#x53EF;&#x4EE5;&#x9886;&#x517B;&#x8001;&#x91D1;&#xFF0C;&#x533B;&#x7597;&#x548C;&#x91CD;&#x75BE;&#x9669;&#x4E00;&#x65E6;&#x4F60;&#x751F;&#x75C5;&#x4E86;&#x4F1A;&#x5E2E;&#x4F60;&#x51FA;&#x70B9;&#x533B;&#x7597;&#x8D39;&#xFF0C;&#x610F;&#x5916;&#x4F24;&#x5BB3;&#x548C;&#x4EBA;&#x5BFF;&#x9669;&#x5565;&#x7684;&#x4E00;&#x4F46;&#x4F60;OVER&#x4E86;&#x5BB6;&#x4EBA;&#x80FD;&#x5F97;&#x5230;&#x4E00;&#x70B9;&#x8865;&#x507F;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#xFF0C;&#x4FDD;&#x9669;&#x8FD8;&#x6709;&#x6709;&#x7528;&#x7684;&#xFF0C;&#x6709;&#x6761;&#x4EF6;&#x7684;&#x8BE5;&#x4E70;&#x8FD8;&#x5F97;&#x4E70;&#xFF0C;&#x53E6;&#x5916;&#x6709;&#x4E9B;&#x4FDD;&#x9669;&#x8C8C;&#x4F3C;&#x4F60;&#x4E0D;&#x4E70;&#x90FD;&#x4E0D;&#x884C;&#xFF0C;&#x7ED9;&#x4F60;&#x7684;&#x798F;&#x5229;&#x4F60;&#x4E0D;&#x80FD;&#x4E0D;&#x8981;&#x3002;&#x53E6;&#x5916;&#x6709;&#x65F6;&#x5019;&#x5168;&#x5BB6;&#x7684;&#x91CD;&#x62C5;&#x90FD;&#x6311;&#x80A9;&#x4E0A;&#xFF0C;&#x6240;&#x4EE5;&#x4E70;&#x4E2A;&#x610F;&#x5916;&#x9669;&#x5565;&#x7684;&#x4E5F;&#x7B97;&#x7ED9;&#x5BB6;&#x4EBA;&#x4E00;&#x4EFD;&#x4FDD;&#x969C;&#x3002;</p>
-<p><img src="https://cdn.steemitimages.com/DQmY9DCoyQwNJuZv3wffKgKEBaRgTY9bG6PYeQbYEZsTXeL/image.png" alt=""><br>(&#x56FE;&#x6E90; &#xFF1A;<a href="https://pixabay.com/" target="_blank" rel="noopener">pixabay</a>)</p>
-<p>&#x4F46;&#x662F;&#x5C31;&#x4ECA;&#x5929;&#x7684;&#x7206;&#x70B8;&#x4E8B;&#x6545;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x4FDD;&#x4E86;&#x71C3;&#x6C14;&#x9669;&#xFF0C;&#x90A3;&#x4E48;&#x4E8B;&#x540E;&#x4F1A;&#x62FF;&#x5230;&#x4E00;&#x70B9;&#x8865;&#x507F;&#x5427;&#xFF0C;&#x4F46;&#x662F;&#x71C3;&#x6C14;&#x9669;&#x771F;&#x7684;&#x4FDD;&#x8BC1;&#x4E0D;&#x4E86;&#x4E0D;&#x7206;&#x70B8;&#xFF0C;&#x6240;&#x4EE5;&#x5E73;&#x65F6;&#x5EFA;&#x7ACB;&#x8D77;&#x5B89;&#x5168;&#x610F;&#x8BC6;&#xFF0C;&#x505A;&#x597D;&#x5404;&#x9879;&#x68C0;&#x67E5;&#x624D;&#x662F;&#x91CD;&#x4E2D;&#x4E4B;&#x91CD;&#x554A;&#x3002;&#x4E0D;&#x7136;&#xFF0C;&#x62FF;&#x7684;&#x90A3;&#x4E9B;&#x8865;&#x507F;&#x80FD;&#x6362;&#x56DE;&#x8FD9;&#x4E09;&#x6761;&#x4EBA;&#x547D;&#x5417;&#xFF1F;</p>
-<hr>
-<p>This page is synchronized from the post: <a href="https://steemit.com/@oflyhigh/4rioe" target="_blank" rel="noopener">&#x4FDD;&#x9669;&#x4FDD;&#x4EC0;&#x4E48;</a></p>
-<script>document.querySelectorAll(".not-gallery-item").forEach(e=>{if(!e.dataset.src)return;const t=document.createElement("img");t.style="display:none !important;",t.src=e.dataset.src,t.addEventListener("error",()=>{t.remove(),e.style.color="inherit",e.style.backgroundImage="none",e.style.background="none"}),t.addEventListener("load",()=>{t.remove()}),document.body.appendChild(t)});</script>
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-
-
-
 
     
 <div class="card card-transparent">
     <nav class="pagination is-centered" role="navigation" aria-label="pagination">
         <div class="pagination-previous">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/236/">Anterior</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/236/">Previous</a>
         </div>
         <div class="pagination-next">
-            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/238/">Siguiente</a>
+            <a class="is-flex-grow has-text-black-ter" href="/@oflyhigh/page/238/">Next</a>
         </div>
         <ul class="pagination-list is-hidden-mobile">
             
@@ -921,7 +933,7 @@
         </div>
     </div>
 </div>
-<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Entradas",PAGES:"Pages",CATEGORIES:"Categorias",TAGS:"Etiquetas",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
+<script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"Posts",PAGES:"Pages",CATEGORIES:"Categories",TAGS:"Tags",UNTITLED:"(Untitled)"},CONTENT_URL:"/@oflyhigh/content.json"};</script>
 
 
 
